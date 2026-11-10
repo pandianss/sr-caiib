@@ -16,11 +16,19 @@ const fixtures = args.includes('--fixtures');
 const out = args.includes('--out') ? args[args.indexOf('--out') + 1] : join(root, 'public', 'content');
 const readJson = p => JSON.parse(readFileSync(p, 'utf8'));
 const fail = msg => { console.error(`build-content: ${msg}`); process.exit(1); };
-const SOURCE_ID = 'IIBF_ELECTIVES_2025_BOOKLET';
-const SYLLABUS_VERSION = 'IIBF-ELECTIVES-2025-BOOKLET-PROVISIONAL';
+const SOURCE_ID = 'IIBF_CAIIB_RULES_SYLLABUS_2026';
+const SYLLABUS_VERSION = 'IIBF-CAIIB-RULES-SYLLABUS-2026';
+const ORDER = ['ABM', 'BFM', 'ABFM', 'BRBL', 'CB', 'RM', 'ITDB', 'HRM', 'RB'];
 
-// ---- baseline catalogue from the syllabus transcription -------------------------------------------------------
-const src = readJson(join(root, 'visual-map', 'source-data.json'));
+// ---- baseline catalogue from the official syllabus extraction ---------------------------------------------------
+// content/syllabus/caiib-2026.json is produced by scripts/extract-syllabus.mjs from the official IIBF PDF recorded
+// in content/sources/registry.json. (visual-map/source-data.json is the kit's earlier elective-only transcription.)
+const src = readJson(join(root, 'content', 'syllabus', 'caiib-2026.json'));
+const registry = readJson(join(root, 'content', 'sources', 'registry.json'));
+const syllabusSource = registry.sources.find(x => x.source_id === SOURCE_ID);
+if (!syllabusSource) fail(`source registry has no entry ${SOURCE_ID}`);
+if (syllabusSource.sha256 !== src.source.sha256) fail('the syllabus extraction was made from a different file than the one in the source registry');
+if (src.extraction.issues.length) fail(`syllabus extraction has unresolved issues: ${src.extraction.issues.join('; ')}`);
 const objectivesDir = join(root, 'content', 'objectives');
 const ledgerDir = join(root, 'content', 'ledger');
 /** Editorially derived objectives, one file per paper: [{ id, unit_id, title, description? }] */
@@ -30,10 +38,11 @@ const ledgerRecords = new Map((existsSync(ledgerDir) ? readdirSync(ledgerDir).fi
 
 const catalogue = { syllabus_version: SYLLABUS_VERSION, modules: [], units: [], objectives: derivedObjectives.map(({ id, unit_id, title, description }) => ({ id, unit_id, title, ...(description ? { description } : {}) })) };
 const papers = [];
+const inferred = src.extraction.notes.filter(n => /plain-type heading/.test(n)).length;
 for (const p of src.papers) {
   const topics = [];
   for (const m of p.modules) {
-    const moduleTitle = m.kind === 'appendix' ? `Appendix: ${m.title}` : `${m.label}: ${m.title}`;
+    const moduleTitle = m.kind === 'appendix' ? (m.title === 'Appendix' ? 'Appendix' : `Appendix: ${m.title}`) : `${m.label}: ${m.title}`;
     catalogue.modules.push({ id: m.id, paper_id: p.id, title: moduleTitle });
     for (const u of m.units) {
       catalogue.units.push({ id: u.id, module_id: m.id, title: u.title });
@@ -44,16 +53,19 @@ for (const p of src.papers) {
       topics.push({
         topic_id: u.id, paper_id: p.id, module_id: m.id, module_title: moduleTitle, module_kind: m.kind === 'appendix' ? 'appendix' : 'module', title: u.title,
         official_scope_text: u.scope_text ?? '', syllabus_source_id: SOURCE_ID, locator: `PDF page${u.pages.length > 1 ? 's' : ''} ${u.pages.join(', ')}`,
-        baseline_issue: u.kind === 'named_section' ? null : 'Editorial container for an unheaded list in the source; not an official unit heading.',
-        kind: u.kind === 'named_section' ? 'named_section' : 'editorial_container', objectives,
+        baseline_issue: u.baseline_issue ?? null, kind: u.kind === 'named_section' ? 'named_section' : 'editorial_container', objectives,
         blocked_reason: objectives.length ? null : 'Teaching sources (the textbooks or primary references) are not yet accessible, so objectives, lessons and assessments have not been produced.',
       });
     }
   }
-  papers.push({ paper_id: p.id, title: PAPER_NAMES[p.id], kind: 'elective', baseline: { status: 'provisional', note: `Topics transcribed from "${src.source.title}". Applicability to the target session is unconfirmed, so this is not yet a verified denominator.`, syllabus_source_id: SOURCE_ID }, topics });
+  papers.push({
+    paper_id: p.id, title: PAPER_NAMES[p.id], kind: p.kind,
+    baseline: { status: 'verified', note: `Topics are the section headings of "${syllabusSource.title}" (IIBF, PDF dated ${syllabusSource.document_date}), extracted by script and cross-checked; not yet proofread line by line by a person.`, syllabus_source_id: SOURCE_ID },
+    topics,
+  });
 }
-for (const id of COMPULSORY_PAPERS) papers.unshift({ paper_id: id, title: PAPER_NAMES[id], kind: 'compulsory', baseline: { status: 'missing', note: 'No official syllabus document for this paper has been obtained yet. Its modules and topics are unknown.', syllabus_source_id: null }, topics: [] });
-papers.sort((a, b) => ['ABM', 'BFM', 'ABFM', 'BRBL', 'CB', 'RM', 'ITDB', 'HRM', 'RB'].indexOf(a.paper_id) - ['ABM', 'BFM', 'ABFM', 'BRBL', 'CB', 'RM', 'ITDB', 'HRM', 'RB'].indexOf(b.paper_id));
+for (const id of ORDER) if (!papers.some(p => p.paper_id === id)) papers.push({ paper_id: id, title: PAPER_NAMES[id], kind: COMPULSORY_PAPERS.includes(id) ? 'compulsory' : 'elective', baseline: { status: 'missing', note: 'No official syllabus document for this paper has been obtained yet. Its modules and topics are unknown.', syllabus_source_id: null }, topics: [] });
+papers.sort((a, b) => ORDER.indexOf(a.paper_id) - ORDER.indexOf(b.paper_id));
 const cat = validateCatalogue(catalogue);
 if (!cat.ok) fail(`catalogue invalid: ${JSON.stringify(cat.issues.slice(0, 5))}`);
 
@@ -107,9 +119,10 @@ if (fixtures) {
 
 // ---- coverage ledger -------------------------------------------------------------------------------------------
 const ledger = {
-  ledger_version: '1', generated_at: manifest.generated_at, baseline_version: SYLLABUS_VERSION, exam_session: 'CAIIB 2026 (unverified)',
-  verdict: 'Baseline unconfirmed: compulsory papers missing, elective baseline provisional, no content authored.',
-  sources: [{ source_id: SOURCE_ID, title: src.source.title, authority: 'IIBF', fingerprint_sha256: src.source.sha256, session_applicability: src.source.session_applicability, note: `${src.source.document_kind}; ${src.source.pdf_pages} PDF pages. ${src.notes.join(' ')}` }],
+  ledger_version: '2', generated_at: manifest.generated_at, baseline_version: SYLLABUS_VERSION,
+  exam_session: contexts.filter(c => c.kind !== 'fixture').map(c => c.label).join(', '),
+  verdict: `Baseline established from the official 2026 syllabus (${inferred} plain-type headings inferred and flagged). No objectives derived and no content authored: teaching sources are not yet accessible.`,
+  sources: registry.sources.map(x => ({ source_id: x.source_id, title: x.title, authority: x.authority, fingerprint_sha256: x.sha256, session_applicability: x.session_applicability, note: `${x.url} · retrieved ${x.retrieved_on}. ${x.note}` })),
   papers,
 };
 const problems = reconcileLedger(ledger, catalogue.units.map(u => u.id), catalogue.objectives.map(o => o.id), publishedItemIds);

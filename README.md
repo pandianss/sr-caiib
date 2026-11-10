@@ -4,8 +4,9 @@ An offline-first learning app (installable web app) for the CAIIB examinations, 
 accounts, purchases and signed offline access. Built from the specification in `docs/` and `AGENTS.md`.
 
 **Current status is in [PROJECT_STATE.md](PROJECT_STATE.md).** In short: the application and backend work and
-are tested; **no real curriculum has been authored yet** and the exam rules for the session are unverified, so a
-release build ships with the syllabus coverage map but no lessons.
+are tested; **no real curriculum has been authored yet**, so a
+release build ships with the official 2026 syllabus outline and coverage map (276 topics across nine papers)
+but no lessons.
 
 ## Run it
 
@@ -44,7 +45,8 @@ npm run build:fixtures # offline-test build in dist-fixtures/ (fixtures included
 
 ## Content
 
-`npm run content:build` turns `visual-map/source-data.json`, `content/objectives/`, `content/ledger/` and
+`npm run content:build` turns `content/syllabus/caiib-2026.json` (extracted from the official IIBF PDF by
+`scripts/extract-syllabus.mjs`; sources in `content/sources/registry.json`), `content/objectives/`, `content/ledger/` and
 `content/packs/` into the catalogue, coverage ledger and manifest the app loads. A published pack must pass
 `validatePack`; synthetic material cannot be published. Authoring workflow: `docs/specs/content-pipeline.md`.
 

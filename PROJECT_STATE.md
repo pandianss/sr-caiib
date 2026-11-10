@@ -1,18 +1,22 @@
 # Project execution state
 
-Last updated: 10 November 2026, end of session 2. Completion is **blocked** on source access (see Blockers).
+Last updated: 11 November 2026, session 3. Completion is **blocked** on teaching-source access (see Blockers).
 
 ## Scope and decisions
 
 - Product specification revision: `docs/product-spec.md`, 10 November 2026 (autonomous full-project delivery).
 - Platform: greenfield, none specified → mobile-first TypeScript PWA (React 19, Vite 7, IndexedDB) plus a
   minimal Node backend (built-ins only: `node:http`, `node:sqlite`, `node:crypto`).
-- Target session: CAIIB 2026 — **exam rules, question count, passing rule and regulatory cutoff not verified**.
-  The app carries the session as `status: unverified`, so release builds offer no timed mock or pass/fail.
+- Target session: **CAIIB December 2026** (`CAIIB-2026-DEC`), verified from IIBF's "CAIIB Rules & Syllabus 2026":
+  100 questions / 100 marks (IIBF may vary the count), 2 hours, no negative marking, pass mark 50, calculator
+  policy. Exam dates 6-27 Dec 2026 from the IIBF CAIIB page. Regulatory cut-off 30 June 2026 is **derived from the
+  document's general rule**; its example table still shows 2025 sessions.
 - Repository: `D:\projects\sr-caiib`, own git repo, branch `main`. Author identity copied from the parent
   `D:\` repo's history (`pandianss`, GitHub no-reply address) as local config.
-- Source access available: only `visual-map/source-data.json` (2025 elective booklet transcription).
-  No NotebookLM access, no PDFs, nothing fetched from IIBF or Razorpay.
+- Source access available: four official IIBF documents fetched with owner approval on 10 Nov 2026 and
+  recorded in `content/sources/registry.json` (URLs, SHA-256, facts taken, open points). Local copies are in
+  `content/sources/iibf/` and are not committed. Razorpay's public docs were read. **No teaching sources**
+  (NotebookLM notebook or textbook PDFs) are accessible.
 - Consequential decisions:
   - Kit contents copied to the repo root and kept byte-identical; `caiib-agent-kit/` untouched and git-ignored.
   - UI components are hand-built on Material 3 token roles (`src/app/styles.css`); there is no maintained
@@ -38,8 +42,8 @@ Last updated: 10 November 2026, end of session 2. Completion is **blocked** on s
 | Dimension | Status | Evidence or remaining condition |
 | --- | --- | --- |
 | Implementation | in_progress (feature-complete against synthetic content) | All screens, engine, storage, backend and service worker exist and are tested. Not yet exercised with real published content, a real payment provider, a screen reader or a physical phone. |
-| Original full-syllabus content | blocked | 0 objectives, 0 lessons, 0 questions authored. Compulsory syllabus missing; elective outline provisional. |
-| Release readiness | blocked | Needs content, verified exam configuration and provider sandbox verification. |
+| Original full-syllabus content | blocked | Official baseline now established for all nine papers (276 topics). 0 objectives, 0 lessons, 0 questions authored: no teaching sources. |
+| Release readiness | blocked | Needs content and provider sandbox verification. Exam configuration is verified. |
 | Live launch | pending | Owner action; not started. |
 
 ## Acceptance matrix
@@ -51,8 +55,8 @@ synthetic fixtures), **A** = `scripts/ui-audit.js` measured on the rendered DOM.
 | --- | --- | --- | --- |
 | Paper isolation | passed | T `storage-session` "paper isolation"; B paper switch BFM/CB | — |
 | Elective changes | passed (logic) | B elective chips keep history; unfinished session in another paper shown on Today with Resume | Not re-tested with real packs |
-| Coverage ledger | in_progress | `npm run content:build` reconciles ledger ↔ catalogue (124 elective topics, 0 objectives) and fails on mismatch | No published items exist to map |
-| Visual coverage map | passed for current data | B `#/coverage`: nine papers, "Baseline incomplete: total … unknown", no percentage, compulsory papers "Syllabus missing", drill-down shows exact gap; learner state separate | Standalone HTML export not regenerated (kit's planning map kept) |
+| Coverage ledger | in_progress | `npm run content:build` reconciles ledger ↔ catalogue (276 official topics in 44 modules/appendices, 0 objectives) and fails on mismatch or on a source-fingerprint mismatch | No objectives or published items yet |
+| Visual coverage map | passed for current data | B `#/coverage`: "0 of 276 official topics are reviewed and published", each paper "Syllabus verified" with its own denominator (BRBL 64), drill-down shows official scope, the exact gap and plain-type-heading notes; learner state separate. The earlier "baseline incomplete" state was observed before the syllabus was loaded | Standalone HTML export not regenerated |
 | Syllabus completion | blocked | — | Sources |
 | Original authorship | blocked | — | No content yet |
 | Source trust | passed (mechanism) | T pack verification rejects unpublished/synthetic as published; build rejects invalid packs | No real items |
@@ -78,16 +82,27 @@ synthetic fixtures), **A** = `scripts/ui-audit.js` measured on the rendered DOM.
 
 ## Source and content checkpoint
 
-- Source inventory: `caiib syllabus.pdf` (elective booklet, "Rules & Syllabus 2025", sha256 `3a45f14f…5590`
-  per the kit's transcription); session applicability unconfirmed.
-- Baseline `IIBF-ELECTIVES-2025-BOOKLET-PROVISIONAL`: 27 modules/appendices, 124 units (123 named sections +
-  1 editorial container) across CB, RM, ITDB, HRM, RB. ABM, BFM, ABFM, BRBL: missing.
-- Official topic denominator: unknown. Editorial objectives: 0. Drafted / reviewed / published: 0 / 0 / 0.
-- Ledger: generated at build into `public/content/coverage.json` from `visual-map/source-data.json` +
-  `content/objectives/*.json` + `content/ledger/*.json` (the last two do not exist yet).
-- Next content cursor: after sources are available — verify exam config and cutoff, add compulsory baselines,
-  then batch 1 = first unit of the learner-featured elective.
-- Outstanding findings: Razorpay protocol details and all IIBF exam facts are unverified against live sources.
+- Source registry: `content/sources/registry.json`.
+  - `IIBF_CAIIB_RULES_SYLLABUS_2026`: "CAIIB Rules & Syllabus 2026", 29 pages, PDF dated 23 Feb 2026,
+    sha256 `038c859f…99c9`, linked from the official CAIIB page. Covers all nine papers.
+  - `IIBF_CAIIB_PAGE_SCHEDULE_2026`: exam dates for the May/June and December 2026 sessions.
+  - `IIBF_NOTICE_QUESTIONS_WITHOUT_OPTIONS_2023`: numerical-answer rules (digits, minus, decimal point only;
+    one mark each; rounding examples).
+  - `IIBF_NOTICE_CUTOFF_GUIDELINES`: older notice showing the same cut-off pattern.
+- Baseline `IIBF-CAIIB-RULES-SYLLABUS-2026` (`content/syllabus/caiib-2026.json`, produced by
+  `scripts/extract-syllabus.mjs`): 41 modules + 3 appendices, **276 topics**: ABM 32, BFM 31, ABFM 25, BRBL 64,
+  CB 19, RM 40, ITDB 20, HRM 25, RB 20.
+- How it was checked: headings by font size; 5 plain-type headings inferred and flagged on the topic (3 by
+  paragraph structure, 2 by reading the page via an override list tied to the file's hash); elective results
+  compared with the kit's independent hand-checked 2025 transcription: 123 of 124 titles identical, the other
+  differing only in the name given to an unheaded appendix list. **Review method: automated plus spot reading
+  by the agent. Not proofread line by line by a person.**
+- Official topic denominator: 276. Editorial objectives: 0. Drafted / reviewed / published: 0 / 0 / 0.
+- Open source points: the cut-off for December 2026 is derived from the general rule (no 2026 table); the
+  numerical notice gives rounding examples but no rule for an exact tie, so authored numericals must avoid tie
+  cases until confirmed; `visual-map/source-data.json` (2025 booklet) is superseded and unused by the build.
+- Next content cursor: derive editorial objectives for the first unit of each paper once teaching sources are
+  available, then batch 1 per `docs/prompts/notebooklm-extraction.md`.
 
 ## Verification log
 
@@ -99,23 +114,27 @@ synthetic fixtures), **A** = `scripts/ui-audit.js` measured on the rendered DOM.
 | Rendered UI audit | Browser pane (Chromium), dev server, fixtures | `window.__audit(routes, {theme, textScale})` from `scripts/ui-audit.js` | 0 findings at 320, 375, 1280 px; light/dark; 200% text. Two real defects found and fixed first: bottom nav overflow at 200% text, worked-step overflow at 200% text | 200% emulated via root font size; audit self-checked with injected bad elements |
 | Journeys | same | Scripted clicks on the real DOM | onboarding → lesson → reload/resume → practice → mock → expiry; paywall → sign-in → pending → verified → refund | Driven by script, not by hand; few screenshots (pane was often hidden) |
 | Offline | Browser pane, `vite preview` of dist-fixtures | Load, stop server, reload, study | Worked after fixing a service-worker `Vary` bug found by this test | Desktop only |
+| Syllabus extraction | Windows 11, Node 24.21.0 | `node scripts/extract-syllabus.mjs content/sources/iibf/caiib-rules-syllabus.pdf content/syllabus/caiib-2026.json` | 9 papers, 276 sections, 0 issues, 10 notes; elective cross-check 123/124 | Automated; not human-proofread |
+| Razorpay documentation check | WebFetch, 11 Nov 2026 | Standard Checkout integration steps and webhook validation pages | Orders endpoint, Basic auth, paise amounts, 40-char receipt, handler fields, `order_id|payment_id` HMAC-SHA256 hex using the server's order id, raw-body webhook HMAC, `x-razorpay-event-id`, unordered delivery: all match `server/payments.ts`. Added the mandatory `amount`/`currency` checkout options | Reading docs is not sandbox verification; refund status values are not covered by those pages |
+| Full check after baseline | same | `npm run check` | 163 tests pass, lint clean | — |
 | Provider sandbox, screen reader, phone hardware, clean clone | — | — | not_run | — |
 
 ## Blockers
 
 | Dependency | Affected | Attempts | Independent work left | Minimum action |
 | --- | --- | --- | --- | --- |
-| Official IIBF documents (compulsory syllabus, session rules, cutoff notice) | Baseline for 4 papers, exam configuration, mocks in release, CRI denominator | None fetched: owner approval for fetching was promised first | None of substance | Say "yes, fetch from iibf.org.in", or drop the PDFs into `content/sources/` |
-| Teaching sources (NotebookLM notebook or authorized PDF exports) | Every lesson and question, all nine papers | None possible without access | None | Sign in to NotebookLM in the browser pane, or place exports in `content/sources/` |
-| Razorpay test keys + support/refund text | Provider sandbox verification | Adapter and local stand-in tests only | None | Put test keys in a local `.env` (not in chat or git) |
+| Teaching sources (NotebookLM notebook or authorized PDF exports of the IIBF books) | Every objective, lesson and question, all nine papers | None possible without access; banking facts are not written from memory | None | Sign in to NotebookLM in the browser pane, or place exports in `content/sources/books/` |
+| Razorpay test keys + support/refund text | Provider sandbox verification | Adapter checked against current docs and a local stand-in | None | Put test keys and `SUPPORT_TEXT` in a local `.env` (not in chat or git) |
+| A person to proofread the syllabus extraction (recommended, not blocking) | Confidence in the 276-topic denominator | Automated cross-checks done | — | Compare `content/syllabus/caiib-2026.json` titles with the PDF, especially the 5 flagged headings |
 
 ## Resume instruction
 
-- Last completed logical unit: full application verified against fixtures; docs written; all checks green.
+- Last completed logical unit: official baseline and exam configuration loaded; all checks green; committed.
 - Nothing is half-edited.
-- Exact next action when sources are approved: fetch and record the official CAIIB rules/syllabus and
-  cutoff notice → fill `content/exam-contexts.json` (verified config) → extend `scripts/build-content.mjs`
-  inputs with compulsory baselines → start authoring batch 1 per `docs/prompts/notebooklm-extraction.md`.
-- Also still to do without owner input: re-check Razorpay's current documentation against `server/payments.ts`
-  (web research, part of the same approval), try a clean `npm ci` clone, optional standalone map export.
+- Exact next action when teaching sources are available: source inventory (Prompt A) → derive objectives into
+  `content/objectives/<PAPER>.json` → author batch 1 → import with `npm run import:staging` → review → publish
+  wrapper into `content/packs/` → `npm run content:build`.
+- Still possible without owner input: clean `npm ci` clone test; optional standalone coverage-map export.
 - Run: `npm run dev:fixtures` (http://localhost:5173) and `npm run server` (http://localhost:8787).
+- To refresh the baseline from a newer IIBF PDF: update the registry entry and rerun
+  `scripts/extract-syllabus.mjs`; the build refuses a syllabus whose hash differs from the registry.

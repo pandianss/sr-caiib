@@ -91,6 +91,13 @@ export class AppModel {
       const prefs = await this.store.loadPrefs(Intl.DateTimeFormat().resolvedOptions().timeZone);
       this.state = { ...this.state, prefs };
       await this.loadStatic();
+      // If the chosen exam session no longer exists (for example it was replaced by a verified one), ask the
+      // learner to choose again. History, attempts and bookmarks are untouched.
+      const known = this.state.contexts.some(c => c.exam_context_id === this.state.prefs.exam_context_id);
+      if (this.state.prefs.onboarded && this.state.contexts.length && !known) {
+        const reset = { ...this.state.prefs, onboarded: false };
+        await this.store.savePrefs(reset); this.state = { ...this.state, prefs: reset };
+      }
       await this.reloadLocal();
       this.set({ phase: 'ready', token: (await this.store.kvGet<string>('auth_token')) ?? null });
     } catch (e) {

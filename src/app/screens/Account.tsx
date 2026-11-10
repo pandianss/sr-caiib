@@ -50,7 +50,8 @@ export function Account() {
   const openProvider = async () => {
     if (c.step !== 'awaiting_payment' || c.simulated) return;
     if (!(await loadRazorpay()) || !window.Razorpay) { model.toast('The payment window could not be loaded. Check your connection and try again. You have not been charged.'); return; }
-    new window.Razorpay({ key: c.key_id, order_id: c.provider_order_id, name: 'CAIIB study pass', description: offer?.title, prefill: { email: s.prefs.account?.email },
+    // Options per Razorpay Standard Checkout: key, amount (paise), currency, name and order_id are mandatory.
+    new window.Razorpay({ key: c.key_id, amount: c.amount_minor, currency: 'INR', order_id: c.provider_order_id, name: 'CAIIB study pass', description: offer?.title, prefill: { email: s.prefs.account?.email },
       handler: (r: { razorpay_payment_id: string; razorpay_signature: string }) => { void model.completeCheckout(c.order_id, r.razorpay_payment_id, r.razorpay_signature); },
       modal: { ondismiss: () => { void model.cancelCheckout(); } } }).open();
   };
