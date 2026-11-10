@@ -52,10 +52,11 @@ const reject = (p: Promise<unknown>, code: string) => assert.rejects(p, (e: { co
 test('configuration guards: no simulation in production, live keys need an explicit owner switch', () => {
   assert.throws(() => loadConfig({ APP_MODE: 'production', PAYMENT_PROVIDER: 'local_test', MAIL_MODE: 'http', MAIL_HTTP_URL: 'https://mail.example.test', ENTITLEMENT_PRIVATE_KEY_FILE: 'k.pem' }), ConfigError);
   assert.throws(() => loadConfig({ APP_MODE: 'production', PAYMENT_PROVIDER: 'disabled' }), /MAIL_MODE=http/);
-  const rz = { PAYMENT_PROVIDER: 'razorpay', RAZORPAY_KEY_SECRET: 's', RAZORPAY_WEBHOOK_SECRET: 'w' };
+  const rz = { PAYMENT_PROVIDER: 'razorpay', RAZORPAY_KEY_SECRET: 's', RAZORPAY_WEBHOOK_SECRET: 'w', SUPPORT_TEXT: 'Email support@example.test. Refunds within 7 days if no paid unit was opened.' };
+  assert.throws(() => loadConfig({ ...rz, SUPPORT_TEXT: '', RAZORPAY_KEY_ID: 'rzp_test_abc' }), /SUPPORT_TEXT/);
   assert.throws(() => loadConfig({ ...rz, RAZORPAY_KEY_ID: 'rzp_live_abc' }), /LIVE_PURCHASES_ENABLED/);
   assert.throws(() => loadConfig({ ...rz, RAZORPAY_KEY_ID: 'rzp_test_abc', LIVE_PURCHASES_ENABLED: 'true' }), /test key/);
-  assert.throws(() => loadConfig({ PAYMENT_PROVIDER: 'razorpay' }), /RAZORPAY_KEY_ID/);
+  assert.throws(() => loadConfig({ PAYMENT_PROVIDER: 'razorpay', SUPPORT_TEXT: 'x' }), /RAZORPAY_KEY_ID/);
   assert.equal(loadConfig({ ...rz, RAZORPAY_KEY_ID: 'rzp_test_abc' }).payment.mode, 'razorpay');
 });
 

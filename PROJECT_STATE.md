@@ -1,91 +1,121 @@
 # Project execution state
 
-Last updated: 10 November 2026 (session 1, stopped at a usage limit — not at a completion point).
+Last updated: 10 November 2026, end of session 2. Completion is **blocked** on source access (see Blockers).
 
 ## Scope and decisions
 
 - Product specification revision: `docs/product-spec.md`, 10 November 2026 (autonomous full-project delivery).
-- Platform: greenfield, no platform specified → mobile-first TypeScript PWA with IndexedDB, plus a minimal Node backend for accounts, purchases and entitlements (as the spec prescribes).
-- Target session: CAIIB 2026 — **not yet verified against an official IIBF source**.
-- Repository: `D:\projects\sr-caiib` has its own git repo (the drive-wide `D:\` repo ignores `projects/*`). **No commit exists yet**: `git commit` failed because no git author identity is configured. All files are staged.
-- Source access available: only `visual-map/source-data.json` (2025 elective booklet transcription). No NotebookLM access, no PDFs, no web fetch of IIBF documents has been done.
+- Platform: greenfield, none specified → mobile-first TypeScript PWA (React 19, Vite 7, IndexedDB) plus a
+  minimal Node backend (built-ins only: `node:http`, `node:sqlite`, `node:crypto`).
+- Target session: CAIIB 2026 — **exam rules, question count, passing rule and regulatory cutoff not verified**.
+  The app carries the session as `status: unverified`, so release builds offer no timed mock or pass/fail.
+- Repository: `D:\projects\sr-caiib`, own git repo, branch `main`. Author identity copied from the parent
+  `D:\` repo's history (`pandianss`, GitHub no-reply address) as local config.
+- Source access available: only `visual-map/source-data.json` (2025 elective booklet transcription).
+  No NotebookLM access, no PDFs, nothing fetched from IIBF or Razorpay.
 - Consequential decisions:
-  - Kit contents were copied to the repo root (`docs/`, `src/types`, `src/validation`, `src/import`, `scripts/`, `tests/`, `data/`, `visual-map/`); the original `caiib-agent-kit/` is left untouched and git-ignored.
-  - Backend uses only Node built-ins (`node:http`, `node:sqlite`, `node:crypto`); zero runtime dependencies.
-  - Offline entitlement tokens are ES256 (P-256) compact JWS, chosen for universal WebCrypto support.
-  - Account recovery is email + one-time code. Production needs an HTTP mail endpoint (`MAIL_MODE=http`).
-  - UI components will be hand-built on Material 3 tokens (no maintained React M3 library); not started.
-  - One active pack per paper; a "full" pack is installed only when entitled, with `free_unit_ids` staying open after expiry.
-  - Numeric grading policy `GRADING_POLICY_V1`, scheduler `SM2_V1`, evidence policy `EVIDENCE_POLICY_V1` are documented at the top of `src/core/grading.ts`, `sm2.ts`, `evidence.ts`.
-  - Test price ₹399 / 6 months is a configurable proposal (`server/commerce.ts`), not an approved offer.
-- Optional backlog: Google Play Billing route, cloud-hosted CMS, dynamic colour.
+  - Kit contents copied to the repo root and kept byte-identical; `caiib-agent-kit/` untouched and git-ignored.
+  - UI components are hand-built on Material 3 token roles (`src/app/styles.css`); there is no maintained
+    React Material 3 library. Static light/dark palettes; no dynamic colour.
+  - Offline entitlement tokens are ES256 (P-256) compact JWS for universal WebCrypto support.
+  - Account recovery is email + one-time code. Production needs an HTTP mail endpoint.
+  - One active pack per paper. A "full" pack is used only with a valid entitlement; `free_unit_ids` stay open.
+  - Policies documented in code: `GRADING_POLICY_V1` (`src/core/grading.ts`), `SM2_V1` (`src/core/sm2.ts`),
+    `EVIDENCE_POLICY_V1` (`src/core/evidence.ts`). Reading speed 180 wpm and 72 s planning pace are estimates.
+  - Mock expiry auto-submits saved answers; unanswered score zero. This is a product behaviour pending the
+    verified official instruction.
+  - Practice re-answers of an item already answered are recorded with `answer_was_revealed_prior: true`.
+  - Bottom-navigation labels are capped near 130% at 200% text so four destinations stay visible.
+  - In development with simulated payments only, one synthetic fixture paper (CB) is marked pass-only so the
+    lock, checkout, restore and refund screens can be exercised. Release builds contain no fixtures.
+  - Test price ₹399 / 6 months is a configurable proposal, not an approved offer. Support/refund text is
+    required configuration (`SUPPORT_TEXT`) before Razorpay can be enabled.
+- Optional backlog: Google Play Billing route, standalone HTML export of the coverage map from the ledger,
+  CMS, dynamic colour, per-question idle detection finer than the 10-minute cutoff.
 
 ## Delivery status
 
 | Dimension | Status | Evidence or remaining condition |
 | --- | --- | --- |
-| Implementation | in_progress | Engine, storage and backend done and tested. **No UI, service worker, content build scripts or in-app coverage map yet.** |
-| Original full-syllabus content | blocked | No source access; zero lessons or questions authored. Compulsory-paper syllabus missing. |
-| Release readiness | pending | Depends on the two rows above. |
+| Implementation | in_progress (feature-complete against synthetic content) | All screens, engine, storage, backend and service worker exist and are tested. Not yet exercised with real published content, a real payment provider, a screen reader or a physical phone. |
+| Original full-syllabus content | blocked | 0 objectives, 0 lessons, 0 questions authored. Compulsory syllabus missing; elective outline provisional. |
+| Release readiness | blocked | Needs content, verified exam configuration and provider sandbox verification. |
 | Live launch | pending | Owner action; not started. |
 
-## Acceptance and work queue
+## Acceptance matrix
 
-| ID | Required outcome | Status | Evidence / next action |
+Evidence key: **T** = automated test, **B** = observed in the running app in the browser pane (Chromium,
+synthetic fixtures), **A** = `scripts/ui-audit.js` measured on the rendered DOM.
+
+| Area | Status | Evidence | Remaining |
 | --- | --- | --- | --- |
-| E1 | Deterministic grading (choice + numeric, no tolerance) | passed (engine) | `tests/core/grading.test.ts` |
-| E2 | SM-2 scheduler, idempotent review events, time-zone day boundary | passed (engine) | `tests/core/sm2-evidence.test.ts` |
-| E3 | Derived first exposure, CRI thresholds, weak-area minimum evidence | passed (engine) | `tests/core/sm2-evidence.test.ts` |
-| E4 | Pack checksum/schema verification, atomic activation, last-known-good, pinning | passed (engine) | `tests/core/storage-session.test.ts` |
-| E5 | Paper isolation (BFM vs ABFM), scoped search | passed (engine) | same file |
-| E6 | Practice explicit submit; mock persisted deadline, expiry grading | passed (engine) | same file |
-| E7 | Persistence across restart (IndexedDB via fake-indexeddb) | passed (engine) | same file; real-browser check pending |
-| C1 | Purchase ledger: spoofed callback, mismatch, duplicate/out-of-order webhooks, refund, restore, wrong account | passed (LOCAL SIMULATION only) | `tests/server/commerce.test.ts` |
-| C2 | Signed offline entitlement: counterfeit, wrong account, lease, expiry, clock rollback, bounded finish | passed (local) | same file |
-| C3 | Progress sync idempotent by event ID | passed (local) | same file |
-| C4 | Razorpay sandbox verification | blocked | Needs owner's Razorpay test keys. Adapter written from known API behaviour; **current official docs not re-checked**. |
-| U1 | PWA UI: Today / Learn / Practice / Library, paper selector, onboarding, lesson/practice/mock players, paywall states | pending | Not started. Next task. |
-| U2 | Service worker / offline shell, pack download management UI | pending | Not started. |
-| U3 | Accessibility + adaptive layout inspection (narrow/wide, light/dark, 200% text) | pending | Needs U1. |
-| K1 | Catalogue + coverage ledger generated from `visual-map/source-data.json`; `scripts/build-content.mjs`, `scripts/build-sw.mjs` | pending | Scripts are referenced in `package.json` but **do not exist yet**, so `npm run build` fails. |
-| K2 | In-app visual coverage map reconciled with the ledger | pending | `src/core/coverage.ts` model exists; no data or screen yet. |
-| K3 | Official baseline for ABM, BFM, ABFM, BRBL; verified exam configuration and cutoff | blocked | Needs IIBF documents (owner approval to fetch, or supplied PDFs). |
-| K4 | Original reviewed curriculum, all nine papers | blocked | Needs NotebookLM access or PDF exports. |
-| Q1 | Lint | pending | ESLint installed, no config written, never run. |
-| Q2 | Packaging, deployment docs, `.env.example`, README | pending | Not started. |
+| Paper isolation | passed | T `storage-session` "paper isolation"; B paper switch BFM/CB | — |
+| Elective changes | passed (logic) | B elective chips keep history; unfinished session in another paper shown on Today with Resume | Not re-tested with real packs |
+| Coverage ledger | in_progress | `npm run content:build` reconciles ledger ↔ catalogue (124 elective topics, 0 objectives) and fails on mismatch | No published items exist to map |
+| Visual coverage map | passed for current data | B `#/coverage`: nine papers, "Baseline incomplete: total … unknown", no percentage, compulsory papers "Syllabus missing", drill-down shows exact gap; learner state separate | Standalone HTML export not regenerated (kit's planning map kept) |
+| Syllabus completion | blocked | — | Sources |
+| Original authorship | blocked | — | No content yet |
+| Source trust | passed (mechanism) | T pack verification rejects unpublished/synthetic as published; build rejects invalid packs | No real items |
+| Exam context pinning | passed (logic) | T attempts pin pack/config version; old pack retained while pinned | — |
+| Navigation | passed | B start short session, find formula, change paper, resume after reload | — |
+| Answer behaviour | passed | T grading suite; B empty/comma/unit input rejected with messages, explicit Submit, feedback after | — |
+| Case studies | passed | B scenario pane open beside/above each question; 4 independent questions | — |
+| Offline study | passed (desktop Chromium) | B `dist-fixtures` build: server stopped, page reloaded, resumed lesson, self-check, quiz and results all worked from cache + IndexedDB | Not tested on a phone or in airplane mode as such |
+| First use | passed | B onboarding lists exactly what is available; release build states nothing is published | — |
+| Persistence | passed | T IndexedDB restart test; B reload mid-lesson restored answered state and "Resumed" notice | — |
+| Downloads | passed (logic) | T truncated/corrupt/mismatched/incompatible packs rejected, atomic activation, rollback, pinning | Download-failed UI seen only via tests, not provoked in browser |
+| Synchronisation | passed (local server) | T duplicate upload → one event, foreign events rejected; B sign-in then "Progress is synced" | — |
+| Mock timing | passed | T deadline math; B timer 19:52 → 19:45 across reload, forced deadline → reopened as "Time expired", stamped at deadline | — |
+| Mastery evidence | passed | T first exposure, repeats, CRI ≥20 rule, weak-area ≥10 rule; B Performance shows "Insufficient evidence" | — |
+| Accessibility | partially passed | A: zero findings for overflow, <48px targets, contrast <4.5:1, unnamed controls on 18 routes + lesson, case and feedback states at 375px light/dark and 200% text; B dialog focus trap, Escape, focus return, arrow-key tabs, skip link, landmarks | **No screen-reader run** (NVDA/TalkBack) and no manual keyboard pass by a person |
+| Adaptive layout | passed (emulated) | A zero findings at 320×640, 375×812 and 1280×800 (rail + split case layout) | On-screen keyboard and device insets not tested on hardware |
+| Interaction completeness | passed for exercised paths | B every control used in the flows above | Razorpay checkout window path never executed |
+| Commerce: ledger | passed (LOCAL SIMULATION) | T `tests/server/commerce.test.ts` (14 tests); B fail, cancel, pending, app closed + server restart, verified, refund → relocked | Simulation is not provider evidence |
+| Commerce: offline entitlement | passed | T counterfeit, wrong account, lease, expiry, rollback, bounded finish; B real WebCrypto verification unlocked the unit | — |
+| Commerce: provider sandbox | **blocked** | — | Owner's Razorpay test keys; then run the checklist in `docs/operations.md` |
+| Build, type, lint, tests | passed | `npm run check` → 163 tests pass, 0 lint problems; `npm run build` ok; `npm audit --omit=dev` 0 vulnerabilities | — |
+| Clean setup reproduction | not_run | — | `npm ci` on a fresh clone not yet tried |
 
 ## Source and content checkpoint
 
-- Source inventory: `caiib syllabus.pdf` (elective booklet 2025, sha256 `3a45f14f…5590`, per `visual-map/source-data.json`); session applicability unconfirmed.
-- Official baseline: electives provisional (25 modules, 2 appendices, 123 named sections + 1 editorial container); four compulsory papers missing.
-- Ledger: not generated yet. Official topic denominator: unknown. Objectives derived: 0.
-- Completed / reviewed / published counts: 0 / 0 / 0.
-- Latest batch: none. Next cursor: generate catalogue + ledger (K1), then first elective batch once sources are accessible.
-- Visual map: original kit planning map only (`visual-map/coverage-map.html`).
+- Source inventory: `caiib syllabus.pdf` (elective booklet, "Rules & Syllabus 2025", sha256 `3a45f14f…5590`
+  per the kit's transcription); session applicability unconfirmed.
+- Baseline `IIBF-ELECTIVES-2025-BOOKLET-PROVISIONAL`: 27 modules/appendices, 124 units (123 named sections +
+  1 editorial container) across CB, RM, ITDB, HRM, RB. ABM, BFM, ABFM, BRBL: missing.
+- Official topic denominator: unknown. Editorial objectives: 0. Drafted / reviewed / published: 0 / 0 / 0.
+- Ledger: generated at build into `public/content/coverage.json` from `visual-map/source-data.json` +
+  `content/objectives/*.json` + `content/ledger/*.json` (the last two do not exist yet).
+- Next content cursor: after sources are available — verify exam config and cutoff, add compulsory baselines,
+  then batch 1 = first unit of the learner-featured elective.
+- Outstanding findings: Razorpay protocol details and all IIBF exam facts are unverified against live sources.
 
 ## Verification log
 
-| Check | Environment | Command | Observed outcome | Limitations |
+| Check | Environment | Command or interaction | Outcome | Limitations |
 | --- | --- | --- | --- | --- |
-| Kit contract tests | Windows 11, Node 24.21.0 | `node --test "tests/*.test.mjs"` | 110 passed, 0 failed | Synthetic fixtures |
-| Engine tests | same | `node --test "tests/core/*.test.ts"` | 39 passed, 0 failed | Synthetic fixtures; IndexedDB is fake-indexeddb |
-| Backend tests | same | `node --test "tests/server/*.test.ts"` | 14 passed, 0 failed | Local simulation; not provider sandbox |
-| Type check (core + server + tests) | same | `node_modules\.bin\tsc.cmd --noEmit -p tsconfig.json` | no errors | `tsconfig.app.json` not yet exercised (no UI) |
-| Full `npm test`, lint, build, rendered UI | — | — | not_run | |
+| Full check | Windows 11, Node 24.21.0 | `npm run check` | types ok, lint 0 problems, 163 tests pass (110 kit, 39 engine, 14 backend) | Synthetic data; payments simulated |
+| Release build | same | `npm run build` | dist/ built, 11 files precached, 0 published packs | — |
+| Fixture build | same | `npm run build:fixtures` | dist-fixtures/ built, 15 files precached | Not a release artefact |
+| Rendered UI audit | Browser pane (Chromium), dev server, fixtures | `window.__audit(routes, {theme, textScale})` from `scripts/ui-audit.js` | 0 findings at 320, 375, 1280 px; light/dark; 200% text. Two real defects found and fixed first: bottom nav overflow at 200% text, worked-step overflow at 200% text | 200% emulated via root font size; audit self-checked with injected bad elements |
+| Journeys | same | Scripted clicks on the real DOM | onboarding → lesson → reload/resume → practice → mock → expiry; paywall → sign-in → pending → verified → refund | Driven by script, not by hand; few screenshots (pane was often hidden) |
+| Offline | Browser pane, `vite preview` of dist-fixtures | Load, stop server, reload, study | Worked after fixing a service-worker `Vary` bug found by this test | Desktop only |
+| Provider sandbox, screen reader, phone hardware, clean clone | — | — | not_run | — |
 
 ## Blockers
 
-| Dependency | Affected tasks | Minimum external action |
-| --- | --- | --- |
-| Git author identity | First commit | Set `user.name` / `user.email` for this repo, or say which identity to use |
-| Official IIBF syllabus/session documents | K3, exam config, mocks in release | Approve fetching from iibf.org.in, or drop the PDFs into the repo |
-| NotebookLM sources or PDF exports | K4 (all content) | Sign in to NotebookLM in the browser pane, or place authorized exports in the repo |
-| Razorpay test keys | C4 | Put test keys in a local `.env` (never in chat or git) |
+| Dependency | Affected | Attempts | Independent work left | Minimum action |
+| --- | --- | --- | --- | --- |
+| Official IIBF documents (compulsory syllabus, session rules, cutoff notice) | Baseline for 4 papers, exam configuration, mocks in release, CRI denominator | None fetched: owner approval for fetching was promised first | None of substance | Say "yes, fetch from iibf.org.in", or drop the PDFs into `content/sources/` |
+| Teaching sources (NotebookLM notebook or authorized PDF exports) | Every lesson and question, all nine papers | None possible without access | None | Sign in to NotebookLM in the browser pane, or place exports in `content/sources/` |
+| Razorpay test keys + support/refund text | Provider sandbox verification | Adapter and local stand-in tests only | None | Put test keys in a local `.env` (not in chat or git) |
 
 ## Resume instruction
 
-- Last completed logical unit: backend commerce + tests (all green).
-- Unfinished: nothing half-written; `package.json` scripts `build`, `content:build`, `dev:fixtures` reference scripts/config not yet created.
-- Exact next action: write `scripts/build-content.mjs` (catalogue + ledger from `visual-map/source-data.json`, fixture manifest in fixtures mode), then `vite.config.ts`, `index.html` and the React app under `src/app/` using `src/core` and `src/storage`.
-- Regenerate fixtures: `node scripts/make-fixtures.mjs`. Run API: `npm run server` (http://localhost:8787, simulated payments).
-- Next full acceptance reconciliation: after U1–U3.
+- Last completed logical unit: full application verified against fixtures; docs written; all checks green.
+- Nothing is half-edited.
+- Exact next action when sources are approved: fetch and record the official CAIIB rules/syllabus and
+  cutoff notice → fill `content/exam-contexts.json` (verified config) → extend `scripts/build-content.mjs`
+  inputs with compulsory baselines → start authoring batch 1 per `docs/prompts/notebooklm-extraction.md`.
+- Also still to do without owner input: re-check Razorpay's current documentation against `server/payments.ts`
+  (web research, part of the same approval), try a clean `npm ci` clone, optional standalone map export.
+- Run: `npm run dev:fixtures` (http://localhost:5173) and `npm run server` (http://localhost:8787).

@@ -52,9 +52,11 @@ export function createApp(o: AppOptions): App {
   const now = o.now ?? Date.now;
   const manifest = (): AppManifest => readJson<AppManifest>(join(config.contentDir, 'manifest.json')) ?? { generated_at: new Date(0).toISOString(), packs: [] };
   const availability = () => {
-    const paid = manifest().packs.filter(p => p.kind === 'published' && p.access === 'full');
+    // In development with simulated payments, a pass-only FIXTURE pack may stand in so the purchase flow can be exercised.
+    const devFixtures = config.mode === 'development' && adapter?.simulated === true;
+    const paid = manifest().packs.filter(p => p.access === 'full' && (p.kind === 'published' || (devFixtures && p.kind === 'fixture')));
     if (!paid.length) return { description: 'No paid content has been published yet. The pass cannot be purchased until reviewed content is available.', purchasable: false };
-    const list = paid.map(p => `${PAPER_NAMES[p.paper_id]} (${p.unit_ids.length} unit${p.unit_ids.length === 1 ? '' : 's'})`).join('; ');
+    const list = paid.map(p => `${PAPER_NAMES[p.paper_id]} (${p.unit_ids.length} unit${p.unit_ids.length === 1 ? '' : 's'}${p.kind === 'fixture' ? ', engineering sample' : ''})`).join('; ');
     return { description: `Currently available: ${list}. Papers and units not listed here are not yet published and are not part of what you are buying today.`, purchasable: true };
   };
   const commerce = new Commerce({ db, config, adapter, mailer, now, availability });
@@ -90,7 +92,7 @@ export function createApp(o: AppOptions): App {
     // ---- offers and checkout -----------------------------------------------------------------------------------
     if (route === 'GET /offers') {
       const av = availability();
-      return send(res, 200, { offers: offers(config, av.description), purchasing_enabled: Boolean(adapter) && av.purchasable, purchasable_reason: av.purchasable ? null : av.description, simulated_payments: adapter?.simulated ?? false, key_id: adapter?.publicKeyId() ?? null, business_time_zone: config.businessTimeZone, offline_lease_days: config.offlineLeaseDays, support: 'Refunds and support: contact the publisher using the details shown in the app before purchase.' });
+      return send(res, 200, { offers: offers(config, av.description), purchasing_enabled: Boolean(adapter) && av.purchasable, purchasable_reason: av.purchasable ? null : av.description, simulated_payments: adapter?.simulated ?? false, key_id: adapter?.publicKeyId() ?? null, business_time_zone: config.businessTimeZone, offline_lease_days: config.offlineLeaseDays, support: config.supportText ?? 'Support contact and refund terms have not been set by the publisher yet. Real purchases stay disabled until they are.' });
     }
     if (route === 'POST /checkout/orders') { const a = commerce.authenticate(auth); const b = await json(req); return send(res, 200, await commerce.createOrder(a, b.product_id, b.idempotency_key)); }
     if (route === 'POST /checkout/verify') { const a = commerce.authenticate(auth); const b = await json(req); const out = await commerce.verifyCheckout(a, b.order_id, b.provider_payment_id, b.signature); return send(res, 200, { ...out, entitlement: commerce.issueEntitlement(a), server_time: new Date(now()).toISOString() }); }
@@ -177,6 +179,13 @@ export function createApp(o: AppOptions): App {
         if (!order) throw new HttpError(404, 'unknown_order', 'Order not found.');
         const outcome = b.outcome === 'failed' ? 'failed' : b.outcome === 'authorized' ? 'authorized' : 'captured';
         return send(res, 200, adapter.simulatePayment(order.provider_order_id, outcome));
+      }
+      if (route === 'POST /dev/sim/capture') { // the pretend provider finishes processing a pending payment
+        const a = commerce.authenticate(auth); const b = await json(req);
+        const order = one<{ provider_order_id: string }>(db, 'SELECT provider_order_id FROM orders WHERE order_id = ? AND account_id = ?', String(b.order_id), a.account_id);
+        if (!order) throw new HttpError(404, 'unknown_order', 'Order not found.');
+        for (const p of await adapter.fetchPaymentsForOrder(order.provider_order_id)) adapter.simulateCapture(p.provider_payment_id);
+        return send(res, 200, { ok: true });
       }
       if (route === 'POST /dev/sim/refund') {
         const a = commerce.authenticate(auth); const b = await json(req);

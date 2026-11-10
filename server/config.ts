@@ -26,6 +26,8 @@ export interface ServerConfig {
   mail: { mode: 'log' | 'http'; httpUrl: string | null; httpToken: string | null; from: string };
   entitlementKeyFile: string;
   adminToken: string | null;
+  /** Publisher's support contact and refund terms, shown before checkout. Required before real payments. */
+  supportText: string | null;
 }
 
 export class ConfigError extends Error {}
@@ -58,6 +60,7 @@ export function loadConfig(env: Record<string, string | undefined> = process.env
     mail: { mode: env.MAIL_MODE === 'http' ? 'http' : 'log', httpUrl: env.MAIL_HTTP_URL ?? null, httpToken: env.MAIL_HTTP_TOKEN ?? null, from: env.MAIL_FROM ?? 'no-reply@localhost' },
     entitlementKeyFile: env.ENTITLEMENT_PRIVATE_KEY_FILE ?? join(dataDir, 'entitlement-key.pem'),
     adminToken: env.ADMIN_TOKEN ?? null,
+    supportText: env.SUPPORT_TEXT?.trim() || null,
   };
   validateConfig(config, Boolean(env.ENTITLEMENT_PRIVATE_KEY_FILE));
   return config;
@@ -73,6 +76,7 @@ export function validateConfig(c: ServerConfig, explicitKeyFile: boolean): void 
   }
   if (c.mail.mode === 'http' && !c.mail.httpUrl) throw new ConfigError('MAIL_MODE=http needs MAIL_HTTP_URL.');
   if (c.payment.mode === 'razorpay') {
+    if (!c.supportText) throw new ConfigError('PAYMENT_PROVIDER=razorpay needs SUPPORT_TEXT: the support contact and refund terms shown to buyers before checkout.');
     const { razorpayKeyId: id, razorpayKeySecret: secret, razorpayWebhookSecret: hook } = c.payment;
     if (!id || !secret || !hook) throw new ConfigError('PAYMENT_PROVIDER=razorpay needs RAZORPAY_KEY_ID, RAZORPAY_KEY_SECRET and RAZORPAY_WEBHOOK_SECRET.');
     if (!/^rzp_(test|live)_/.test(id)) throw new ConfigError('RAZORPAY_KEY_ID must start with rzp_test_ or rzp_live_.');

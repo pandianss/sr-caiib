@@ -260,7 +260,7 @@ test('recommendation priority: resume, then due reviews, then missed objectives,
   assert.ok(ten.steps.length >= five.steps.length); assert.ok(ten.estimateSeconds <= 600);
 });
 
-test('access: paid units need entitlement, free units and fixtures do not', () => {
+test('access: paid units need entitlement, free units and free packs do not', () => {
   const full = fixtureRecord('BFM', { kind: 'published', access: 'full', free_unit_ids: ['BFM::MOD_FIX::U01'] });
   assert.equal(unitAccessible(full, 'BFM::MOD_FIX::U01', false), true);
   assert.equal(unitAccessible(full, 'BFM::MOD_FIX::U02', false), false);

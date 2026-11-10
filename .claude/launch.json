@@ -1,0 +1,8 @@
+﻿{
+  "version": "0.0.1",
+  "configurations": [
+    { "name": "app-fixtures", "runtimeExecutable": "npm.cmd", "runtimeArgs": ["run", "dev:fixtures"], "port": 5173 },
+    { "name": "api", "runtimeExecutable": "node", "runtimeArgs": ["server/main.ts"], "port": 8787 },
+    { "name": "built-fixtures", "runtimeExecutable": "node", "runtimeArgs": ["node_modules/vite/bin/vite.js", "preview", "--outDir", "dist-fixtures", "--port", "4173", "--strictPort", "--mode", "fixtures"], "port": 4173 }
+  ]
+}

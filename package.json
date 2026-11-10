@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "caiib-learning-app",
   "version": "0.1.0",
   "private": true,
@@ -7,14 +7,15 @@
     "node": ">=22.18.0"
   },
   "scripts": {
-    "dev": "vite",
-    "dev:fixtures": "vite --mode fixtures",
-    "server": "node server/main.ts",
+    "dev": "node scripts/build-content.mjs && vite",
+    "dev:fixtures": "node scripts/build-content.mjs --fixtures && vite --mode fixtures",
+    "server": "node --env-file-if-exists=.env server/main.ts",
     "build": "node scripts/build-content.mjs && vite build && node scripts/build-sw.mjs",
     "preview": "vite preview",
+    "build:fixtures": "node scripts/build-content.mjs --fixtures && vite build --mode fixtures --outDir dist-fixtures && node scripts/build-sw.mjs dist-fixtures",
     "typecheck": "tsc --noEmit -p tsconfig.json && tsc --noEmit -p tsconfig.app.json",
     "lint": "eslint .",
-    "test": "node --test \"tests/*.test.mjs\" \"tests/**/*.test.ts\"",
+    "test": "node --test \"tests/*.test.mjs\" \"tests/core/*.test.ts\" \"tests/server/*.test.ts\"",
     "check": "npm run typecheck && npm run lint && npm test",
     "content:build": "node scripts/build-content.mjs",
     "validate:pack": "node scripts/validate-pack.mjs",
@@ -32,6 +33,7 @@
     "@types/react-dom": "^19.2.0",
     "@vitejs/plugin-react": "^5.1.0",
     "eslint": "^9.39.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
     "fake-indexeddb": "^6.2.0",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.46.0",

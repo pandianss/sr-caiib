@@ -38,7 +38,7 @@ export function seededShuffle<T>(items: readonly T[], seed: string): T[] {
 // ---- access -----------------------------------------------------------------------------------------------
 /** Whether a unit of an installed pack may be opened. `entitled` comes from verified offline entitlement. */
 export function unitAccessible(record: PackRecord, unitId: string, entitled: boolean): boolean {
-  return record.kind === 'fixture' || record.access === 'free' || entitled || record.free_unit_ids.includes(unitId);
+  return record.access === 'free' || entitled || record.free_unit_ids.includes(unitId);
 }
 
 // ---- attempts ---------------------------------------------------------------------------------------------
