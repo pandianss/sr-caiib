@@ -1,0 +1,139 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "SYNTHETIC-B001",
+  "paper_id": "BFM",
+  "unit_label": "SYNTHETIC cross-unit batch; use explicit per-draft mapping",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "TEST_FACTS"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "statement": "Two lots of three units have six units in total.",
+      "source_id": "TEST_FACTS",
+      "locator": "Synthetic arithmetic: multiplication",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F002",
+      "statement": "Twelve tokens divided into three equal groups gives four tokens per group.",
+      "source_id": "TEST_FACTS",
+      "locator": "Synthetic arithmetic: division",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    }
+  ],
+  "drafts": [
+    {
+      "draft_id": "D001",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "title": "SYNTHETIC: counting equal lots",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "For equal lots, multiply the number of lots by the size of each lot. Two lots with three units each contain six units. This is test material only.",
+        "self_check": {
+          "mode": "question",
+          "question_id": "D002"
+        }
+      }
+    },
+    {
+      "draft_id": "D002",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "In this synthetic case, how many units are in two lots containing three units each?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "5",
+            "explanation_md": "Adding the two quantities does not count both equal lots."
+          },
+          {
+            "option_id": "B",
+            "text_md": "6",
+            "explanation_md": "Two lots of three gives six."
+          },
+          {
+            "option_id": "C",
+            "text_md": "3",
+            "explanation_md": "That counts only one lot."
+          },
+          {
+            "option_id": "D",
+            "text_md": "9",
+            "explanation_md": "That would count three lots."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "Multiply 2 by 3 to obtain 6.",
+        "case_study_id": "CS1",
+        "marks": 1
+      }
+    },
+    {
+      "draft_id": "D003",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F002"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "In this synthetic case, divide twelve tokens equally into three groups. Give tokens per group to two decimal places.",
+        "numeric_rule": {
+          "expected_answer": "4.00",
+          "unit_label": "tokens per group",
+          "precision_decimals": 2,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Report two decimal places using HALF_UP.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "12 / 3 = 4.00 tokens per group.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Divide twelve tokens into three equal groups.",
+            "formula_or_substitution": "12 / 3",
+            "intermediate_result": "4"
+          }
+        ],
+        "case_study_id": "CS1",
+        "marks": 1
+      }
+    },
+    {
+      "draft_id": "CS1",
+      "item_type": "case_study",
+      "variant": "scenario",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ],
+      "payload": {
+        "title": "SYNTHETIC: independent counting tasks",
+        "scenario_narrative_md": "TEST ONLY. A teaching tray holds two lots of three units each. Separately, twelve tokens must be shared equally between three groups. Each question can be answered from this scenario without an earlier answer.",
+        "question_ids": [
+          "D002",
+          "D003"
+        ],
+        "reference_tables_md": [
+          "| Test task | Given quantities |\n| --- | --- |\n| Lots | 2 lots; 3 units each |\n| Groups | 12 tokens; 3 equal groups |"
+        ]
+      }
+    }
+  ],
+  "unresolved": [],
+  "next_batch_hint": null
+}
