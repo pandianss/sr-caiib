@@ -118,7 +118,7 @@ export function App() {
   useEffect(() => { if (document.activeElement?.getAttribute('role') === 'tab') return; document.getElementById('main')?.focus({ preventScroll: true }); window.scrollTo(0, 0); }, [route.join('/')]); // eslint-disable-line react-hooks/exhaustive-deps
   useEffect(() => { if (!s.toast) return; const t = setTimeout(() => model.toast(null), 7000); return () => clearTimeout(t); }, [s.toast]);
 
-  if (s.phase === 'loading') return <div className="app"><main className="main"><Empty title="Loading your study dataâ€¦" /></main></div>;
+  if (s.phase === 'loading') return <div className="app"><main className="main"><Empty title="Loading your study data…" /></main></div>;
   if (s.phase === 'storage_error') return (
     <div className="app"><main className="main"><Empty title="Your progress cannot be saved on this device right now" action={<div className="actions"><Button variant="filled" onClick={() => window.location.reload()}>Try again</Button><Button variant="outlined" onClick={() => void model.bootTemporary()}>Continue without saving</Button></div>}>
       {s.bootError} This can happen in private browsing or when storage is blocked or full. Nothing has been deleted.</Empty></main></div>);

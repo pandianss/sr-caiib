@@ -1,0 +1,916 @@
+{
+ "access": "free",
+ "free_unit_ids": [
+  "BFM::MOD_A::U01"
+ ],
+ "change_summary": "First lessons and questions for Exchange Rates and Forex Business. This topic is only partly covered so far.",
+ "minimum_client_version": "0.1.0",
+ "published_from": "content/publish/BFM-2026DEC-v1.json",
+ "pack": {
+  "schema_version": "2.0.0",
+  "pack_id": "BFM-2026DEC",
+  "pack_version": "1",
+  "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+  "exam_context_id": "CAIIB-2026-DEC",
+  "paper_id": "BFM",
+  "items": [
+   {
+    "title": "Reading a two-way quote",
+    "prerequisite_objective_ids": [],
+    "core_explanation_md": "A dealer rarely gives one price. A quote such as USD/INR 83.2450/83.2550 carries two: the rate at which the **quoting bank buys** a dollar (the bid, 83.2450) and the rate at which it **sells** one (the offer, 83.2550). Both sides are named from the bank's point of view, never the customer's.\n\nIndia uses the direct method: one unit of foreign currency is priced in a varying number of rupees. Under a direct quote the bank buys low and sells high. So an exporter's dollars are bought on the bid side and an importer's dollars are sold on the offer side; for customers the bank then moves each side further in its own favour by an exchange margin. The rates here are illustrative.",
+    "expanded_explanation_md": "An indirect quote turns the picture round: the home currency is the fixed unit (for example ₹100) and the number of foreign currency units varies. In the international market the pound, the euro, the Australian dollar and the New Zealand dollar are quoted this way against the US dollar: one unit of that currency for so many dollars.\n\nThe dealer's rule turns round as well. With an indirect quote the bank quotes the lower figure when it sells, because handing over fewer foreign units for the same amount of home currency is the dearer price.",
+    "self_check": {
+     "mode": "question",
+     "question_id": "item_b01a0bed00fb8efb41c182f4e0a9b9af279bc75b679b8110ab87c41c50370b77"
+    },
+    "item_type": "card",
+    "card_type": "concept",
+    "id": "item_772f7f88d1b7db188f35b1d20fe87b44fedba878c7b3b06e6440b9a939011fc7",
+    "schema_version": "2.0.0",
+    "revision": 1,
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "paper_id": "BFM",
+    "module_id": "BFM::MOD_A",
+    "unit_id": "BFM::MOD_A::U01",
+    "objective_ids": [
+     "BFM::MOD_A::U01::LO_02"
+    ],
+    "context": {
+     "kind": "exam",
+     "exam_context_id": "CAIIB-2026-DEC",
+     "regulatory_cutoff_date": "2026-06-30"
+    },
+    "citations": [
+     {
+      "source_id": "S03",
+      "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+      "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+      "publication_date": null,
+      "effective_date": null,
+      "locator": "Printed p. 11, heading Direct and Indirect Quotes"
+     },
+     {
+      "source_id": "S03",
+      "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+      "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+      "publication_date": null,
+      "effective_date": null,
+      "locator": "Printed p. 11, heading Direct and Indirect Quotes"
+     },
+     {
+      "source_id": "S03",
+      "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+      "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+      "publication_date": null,
+      "effective_date": null,
+      "locator": "Printed p. 11, heading Direct and Indirect Quotes"
+     },
+     {
+      "source_id": "S03",
+      "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+      "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+      "publication_date": null,
+      "effective_date": null,
+      "locator": "Printed p. 12, heading Bid and Offer Rates"
+     },
+     {
+      "source_id": "S03",
+      "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+      "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+      "publication_date": null,
+      "effective_date": null,
+      "locator": "Printed p. 35, section 1.8 Foreign Exchange Arithmetic - Concepts and Examples"
+     },
+     {
+      "source_id": "S03",
+      "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+      "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+      "publication_date": null,
+      "effective_date": null,
+      "locator": "Printed p. 11, heading Direct and Indirect Quotes (example of an indirect quote); printed p. 38, Example 7 (answer)"
+     }
+    ],
+    "origin": "source_assisted",
+    "publication_state": "published",
+    "review": {
+     "verified_at": "2026-11-11T18:00:00Z",
+     "reviewer_id": "coding-agent (Claude), same agent as author",
+     "method": "automated",
+     "source_verified": true,
+     "answer_checked": true,
+     "calculations": "not_applicable"
+    }
+   },
+   {
+    "title": "Two quotes for one import payment",
+    "prerequisite_objective_ids": [
+     "BFM::MOD_A::U01::LO_02"
+    ],
+    "core_explanation_md": "A customer rate is the interbank rate moved in the bank's favour by an exchange margin. That lets you compare quotes that are worded differently. Illustrative case: an importer must pay USD 40,000 while interbank spot USD/INR is 83.4125/83.4175. Bank A says it will add a margin of 6 paise to the interbank rate. Bank B simply quotes an all-in rate of 83.4700. Which bank costs the importer less, and what margin is Bank B really charging?",
+    "worked_steps": [
+     {
+      "step_number": 1,
+      "description": "The importer is buying dollars, so both banks are selling: the starting point is the interbank selling rate.",
+      "formula_or_substitution": "Offer side of 83.4125/83.4175",
+      "intermediate_result": "83.4175"
+     },
+     {
+      "step_number": 2,
+      "description": "Bank A: add its margin, because a bank sells high.",
+      "formula_or_substitution": "83.4175 + 0.0600",
+      "intermediate_result": "₹83.4775 per USD"
+     },
+     {
+      "step_number": 3,
+      "description": "Cost at Bank A.",
+      "formula_or_substitution": "40,000 × 83.4775",
+      "intermediate_result": "₹33,39,100.00"
+     },
+     {
+      "step_number": 4,
+      "description": "Cost at Bank B at its all-in rate.",
+      "formula_or_substitution": "40,000 × 83.4700",
+      "intermediate_result": "₹33,38,800.00"
+     },
+     {
+      "step_number": 5,
+      "description": "Margin hidden inside Bank B's rate.",
+      "formula_or_substitution": "83.4700 − 83.4175",
+      "intermediate_result": "₹0.0525 per USD (5.25 paise)"
+     },
+     {
+      "step_number": 6,
+      "description": "Saving by choosing Bank B.",
+      "formula_or_substitution": "33,39,100.00 − 33,38,800.00",
+      "intermediate_result": "₹300.00"
+     }
+    ],
+    "final_answer_with_unit": "Bank B is cheaper by ₹300.00; its rate carries a margin of 5.25 paise per dollar against Bank A's 6 paise",
+    "self_check": {
+     "mode": "self_assessed",
+     "prompt_text": "For an importer buying dollars, which side of the interbank quote do you compare a bank's all-in rate with, and what does the difference tell you?",
+     "expected_takeaway": "The interbank selling (offer) rate, because the bank is selling. The excess of the all-in rate over that rate is the margin the bank is charging."
+    },
+    "item_type": "card",
+    "card_type": "worked_example",
+    "id": "item_714418e20097048d3b5463d3b5952ca0b09f260d35f7174e4a5a593fe5bcd90a",
+    "schema_version": "2.0.0",
+    "revision": 1,
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "paper_id": "BFM",
+    "module_id": "BFM::MOD_A",
+    "unit_id": "BFM::MOD_A::U01",
+    "objective_ids": [
+     "BFM::MOD_A::U01::LO_03"
+    ],
+    "context": {
+     "kind": "exam",
+     "exam_context_id": "CAIIB-2026-DEC",
+     "regulatory_cutoff_date": "2026-06-30"
+    },
+    "citations": [
+     {
+      "source_id": "S03",
+      "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+      "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+      "publication_date": null,
+      "effective_date": null,
+      "locator": "Printed p. 12, heading Bid and Offer Rates"
+     },
+     {
+      "source_id": "S03",
+      "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+      "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+      "publication_date": null,
+      "effective_date": null,
+      "locator": "Printed p. 35, section 1.8 Foreign Exchange Arithmetic - Concepts and Examples"
+     }
+    ],
+    "origin": "source_assisted",
+    "publication_state": "published",
+    "review": {
+     "verified_at": "2026-11-11T18:00:00Z",
+     "reviewer_id": "coding-agent (Claude), same agent as author",
+     "method": "automated",
+     "source_verified": true,
+     "answer_checked": true,
+     "calculations": "verified"
+    }
+   },
+   {
+    "difficulty": "easy",
+    "stem_md": "A bank's dealer quotes USD/INR 83.2450/83.2550 (illustrative rates). A garment exporter sells USD 20,000 to this bank at the quoted rate, with no further margin. Which rate applies, and why?",
+    "options": [
+     {
+      "option_id": "A",
+      "text_md": "83.2550, because the exporter is the seller and a seller gets the offer",
+      "explanation_md": "Bid and offer are named from the quoting bank's side. The offer is where the bank sells, not where the customer sells."
+     },
+     {
+      "option_id": "B",
+      "text_md": "83.2450, because the bank is buying dollars and it buys at its bid",
+      "explanation_md": "The exporter's sale is the bank's purchase, and the quoting bank buys at the lower, bid side of a direct quote."
+     },
+     {
+      "option_id": "C",
+      "text_md": "83.2500, because a customer deal is done at the midpoint of the quote",
+      "explanation_md": "The midpoint is not a dealing rate. The bank deals at its bid or its offer."
+     },
+     {
+      "option_id": "D",
+      "text_md": "83.2400, because a customer always deals a little below the quoted bid",
+      "explanation_md": "Nothing is deducted here: the question says the deal is done at the quoted rate with no further margin."
+     }
+    ],
+    "correct_option_id": "B",
+    "correct_explanation_md": "Look at the deal from the quoting bank's side: it is buying dollars. In a direct quote the bank buys at the first, lower rate (the bid), so the exporter receives ₹83.2450 per dollar.",
+    "item_type": "question",
+    "question_type": "single_choice",
+    "id": "item_b01a0bed00fb8efb41c182f4e0a9b9af279bc75b679b8110ab87c41c50370b77",
+    "schema_version": "2.0.0",
+    "revision": 1,
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "paper_id": "BFM",
+    "module_id": "BFM::MOD_A",
+    "unit_id": "BFM::MOD_A::U01",
+    "objective_ids": [
+     "BFM::MOD_A::U01::LO_02"
+    ],
+    "context": {
+     "kind": "exam",
+     "exam_context_id": "CAIIB-2026-DEC",
+     "regulatory_cutoff_date": "2026-06-30"
+    },
+    "citations": [
+     {
+      "source_id": "S03",
+      "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+      "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+      "publication_date": null,
+      "effective_date": null,
+      "locator": "Printed p. 11, heading Direct and Indirect Quotes"
+     },
+     {
+      "source_id": "S03",
+      "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+      "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+      "publication_date": null,
+      "effective_date": null,
+      "locator": "Printed p. 12, heading Bid and Offer Rates"
+     }
+    ],
+    "origin": "source_assisted",
+    "publication_state": "published",
+    "review": {
+     "verified_at": "2026-11-11T18:00:00Z",
+     "reviewer_id": "coding-agent (Claude), same agent as author",
+     "method": "automated",
+     "source_verified": true,
+     "answer_checked": true,
+     "calculations": "not_applicable"
+    }
+   },
+   {
+    "difficulty": "medium",
+    "stem_md": "Two banks strike a USD/INR deal on Thursday, 12 November 2026 for value **spot**. Saturday and Sunday are not working days, and there are no other holidays in either centre. On which date do the funds settle?",
+    "options": [
+     {
+      "option_id": "A",
+      "text_md": "Friday, 13 November 2026",
+      "explanation_md": "The next working day after the deal date is value tom, not spot."
+     },
+     {
+      "option_id": "B",
+      "text_md": "Saturday, 14 November 2026",
+      "explanation_md": "This counts two calendar days. Spot counts working days, and Saturday is not one."
+     },
+     {
+      "option_id": "C",
+      "text_md": "Monday, 16 November 2026",
+      "explanation_md": "Friday is the first working day after the deal; the weekend is skipped, so Monday is the second."
+     },
+     {
+      "option_id": "D",
+      "text_md": "Tuesday, 17 November 2026",
+      "explanation_md": "This is the third working day after the deal. A date after the spot date would make it a forward."
+     }
+    ],
+    "correct_option_id": "C",
+    "correct_explanation_md": "Spot settles on the second working day after the deal date. From Thursday, Friday is the first working day; Saturday and Sunday do not count and push settlement on; Monday, 16 November 2026 is the second.",
+    "item_type": "question",
+    "question_type": "single_choice",
+    "id": "item_8a98bd56e626c2e2f6f9377f24fa18a40869eb3593bdeb4be9055e58258200b9",
+    "schema_version": "2.0.0",
+    "revision": 1,
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "paper_id": "BFM",
+    "module_id": "BFM::MOD_A",
+    "unit_id": "BFM::MOD_A::U01",
+    "objective_ids": [
+     "BFM::MOD_A::U01::LO_02"
+    ],
+    "context": {
+     "kind": "exam",
+     "exam_context_id": "CAIIB-2026-DEC",
+     "regulatory_cutoff_date": "2026-06-30"
+    },
+    "citations": [
+     {
+      "source_id": "S03",
+      "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+      "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+      "publication_date": null,
+      "effective_date": null,
+      "locator": "Printed p. 9, headings Tom, Spot and Forward"
+     },
+     {
+      "source_id": "S03",
+      "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+      "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+      "publication_date": null,
+      "effective_date": null,
+      "locator": "Printed p. 42, Keywords"
+     },
+     {
+      "source_id": "S03",
+      "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+      "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+      "publication_date": null,
+      "effective_date": null,
+      "locator": "Printed p. 9, heading Spot"
+     }
+    ],
+    "origin": "source_assisted",
+    "publication_state": "published",
+    "review": {
+     "verified_at": "2026-11-11T18:00:00Z",
+     "reviewer_id": "coding-agent (Claude), same agent as author",
+     "method": "automated",
+     "source_verified": true,
+     "answer_checked": true,
+     "calculations": "not_applicable"
+    }
+   },
+   {
+    "difficulty": "medium",
+    "stem_md": "A customer's account was debited ₹10,43,718.75 for an outward remittance of USD 12,500, before charges and taxes. At that moment interbank spot USD/INR was 83.4125/83.4175 (illustrative rates). How much exchange margin, in paise per dollar, did the bank load on the deal?",
+    "numeric_rule": {
+     "expected_answer": "8.00",
+     "unit_label": "paise per USD",
+     "precision_decimals": 2,
+     "rounding_mode": "HALF_UP",
+     "rounding_instruction": "Give the margin in paise to 2 decimal places.",
+     "allow_negative": false
+    },
+    "correct_explanation_md": "First find the rate the customer actually paid: 10,43,718.75 ÷ 12,500 = 83.4975. An outward remittance is a sale of dollars by the bank, so compare with the interbank selling rate: 83.4975 − 83.4175 = 0.0800 rupees, which is 8 paise per dollar. Comparing with the buying rate (83.4125) would overstate the margin as 8.5 paise.",
+    "worked_solution_steps": [
+     {
+      "step_number": 1,
+      "description": "Rate charged to the customer.",
+      "formula_or_substitution": "10,43,718.75 ÷ 12,500",
+      "intermediate_result": "83.4975"
+     },
+     {
+      "step_number": 2,
+      "description": "The bank sold dollars, so the base is the interbank selling rate.",
+      "formula_or_substitution": "Offer side of 83.4125/83.4175",
+      "intermediate_result": "83.4175"
+     },
+     {
+      "step_number": 3,
+      "description": "Margin is the excess over that rate, converted to paise.",
+      "formula_or_substitution": "(83.4975 − 83.4175) × 100",
+      "intermediate_result": "8.00 paise"
+     }
+    ],
+    "item_type": "question",
+    "question_type": "numeric_input",
+    "id": "item_3941c554da304c00837f97bcf82a9fff48c8297e4ab3c8c6bfe22434714c3e08",
+    "schema_version": "2.0.0",
+    "revision": 1,
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "paper_id": "BFM",
+    "module_id": "BFM::MOD_A",
+    "unit_id": "BFM::MOD_A::U01",
+    "objective_ids": [
+     "BFM::MOD_A::U01::LO_03"
+    ],
+    "context": {
+     "kind": "exam",
+     "exam_context_id": "CAIIB-2026-DEC",
+     "regulatory_cutoff_date": "2026-06-30"
+    },
+    "citations": [
+     {
+      "source_id": "S03",
+      "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+      "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+      "publication_date": null,
+      "effective_date": null,
+      "locator": "Printed p. 12, heading Bid and Offer Rates"
+     },
+     {
+      "source_id": "S03",
+      "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+      "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+      "publication_date": null,
+      "effective_date": null,
+      "locator": "Printed p. 35, section 1.8 Foreign Exchange Arithmetic - Concepts and Examples"
+     }
+    ],
+    "origin": "source_assisted",
+    "publication_state": "published",
+    "review": {
+     "verified_at": "2026-11-11T18:00:00Z",
+     "reviewer_id": "coding-agent (Claude), same agent as author",
+     "method": "automated",
+     "source_verified": true,
+     "answer_checked": true,
+     "calculations": "verified"
+    }
+   },
+   {
+    "title": "Who is in the forex market, and what each is there for",
+    "prerequisite_objective_ids": [],
+    "core_explanation_md": "The foreign exchange market has no building. It is a web of dealing rooms and screens that passes business from centre to centre round the clock, Monday to Friday: Tokyo and Sydney first, then Singapore, India and the Gulf, then Frankfurt and London, and New York last. Most deals are struck over the counter, by phone or on electronic platforms.\n\nThree kinds of player meet there:\n\n- **The steerer.** A central bank manages the country's reserves and steps in to calm swings in its own currency.\n- **The price makers and go-betweens.** Large commercial banks quote a buying and a selling rate at the same time, deal for customers and for their own books, and take views on rates. Brokers act as middlemen between the others.\n- **The users.** Investment funds, companies and individuals come for a reason outside the market: investing abroad, hedging, paying for trade, travel.",
+    "expanded_explanation_md": "Why does it matter who is on the other side? Because the motive tells you how to read the move. A bank that quotes both sides all day gives the market its depth: a caller can deal either way at once. A central bank dealing in size is usually not chasing a profit; it is smoothing the value of the home currency.",
+    "self_check": {
+     "mode": "question",
+     "question_id": "item_b3a07ceff3b72bc5a763499a00784c47a5327de9feb756c6eb6eadc5284b7679"
+    },
+    "item_type": "card",
+    "card_type": "concept",
+    "id": "item_f18bb170aa440852c4a3f72085b6e586364aded284f9a1fce5b2bb71f9eaa35d",
+    "schema_version": "2.0.0",
+    "revision": 1,
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "paper_id": "BFM",
+    "module_id": "BFM::MOD_A",
+    "unit_id": "BFM::MOD_A::U01",
+    "objective_ids": [
+     "BFM::MOD_A::U01::LO_01"
+    ],
+    "context": {
+     "kind": "exam",
+     "exam_context_id": "CAIIB-2026-DEC",
+     "regulatory_cutoff_date": "2026-06-30"
+    },
+    "citations": [
+     {
+      "source_id": "S03",
+      "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+      "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+      "publication_date": null,
+      "effective_date": null,
+      "locator": "Printed p. 5, heading Foreign exchange Markets"
+     },
+     {
+      "source_id": "S03",
+      "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+      "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+      "publication_date": null,
+      "effective_date": null,
+      "locator": "Printed p. 5, heading Foreign exchange Markets"
+     },
+     {
+      "source_id": "S03",
+      "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+      "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+      "publication_date": null,
+      "effective_date": null,
+      "locator": "Printed p. 5, list of major participants"
+     },
+     {
+      "source_id": "S03",
+      "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+      "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+      "publication_date": null,
+      "effective_date": null,
+      "locator": "Printed p. 6, heading Foreign exchange Markets (continued)"
+     },
+     {
+      "source_id": "S03",
+      "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+      "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+      "publication_date": null,
+      "effective_date": null,
+      "locator": "Printed p. 6, heading Foreign exchange Markets (continued)"
+     }
+    ],
+    "origin": "source_assisted",
+    "publication_state": "published",
+    "review": {
+     "verified_at": "2026-11-11T18:00:00Z",
+     "reviewer_id": "coding-agent (Claude), same agent as author",
+     "method": "automated",
+     "source_verified": true,
+     "answer_checked": true,
+     "calculations": "not_applicable"
+    }
+   },
+   {
+    "title": "Forward rate from spot rate and forward margin",
+    "prerequisite_objective_ids": [
+     "BFM::MOD_A::U01::LO_02"
+    ],
+    "core_explanation_md": "A forward rate is built, not guessed: take today's spot rate and adjust it by the forward margin for the period. If the foreign currency costs more for future delivery than for spot, it is at a **premium** and the margin is added. If it costs less, it is at a **discount** and the margin is subtracted.\n\nThe two currencies of a pair always mirror each other: when the dollar is at a premium against the rupee, the rupee is at a discount against the dollar.",
+    "expanded_explanation_md": "What sets the margin? Mainly the gap between interest rates in the two currencies, together with expected demand and supply for them. So a forward rate is an expectation written into today's prices. It is not a promise about where the spot rate will stand on that date.",
+    "formula_spec": {
+     "latex_expression": "F = S + m",
+     "variables": [
+      {
+       "symbol": "F",
+       "name": "Forward rate",
+       "unit": "home currency per unit of foreign currency"
+      },
+      {
+       "symbol": "S",
+       "name": "Spot rate",
+       "unit": "home currency per unit of foreign currency"
+      },
+      {
+       "symbol": "m",
+       "name": "Forward margin: positive for a premium, negative for a discount",
+       "unit": "same unit as S"
+      }
+     ],
+     "assumptions": [
+      "Direct quotation: home currency per unit of foreign currency.",
+      "The spot rate and the margin are for the same side of the quote, buying or selling.",
+      "The margin is for the same period as the forward contract."
+     ],
+     "common_errors": [
+      "Adding a discount instead of subtracting it.",
+      "Adding a margin quoted in paise or pips to a rate in rupees without converting it first.",
+      "Forgetting that a premium on one currency of the pair is a discount on the other."
+     ]
+    },
+    "self_check": {
+     "mode": "self_assessed",
+     "prompt_text": "Spot USD/INR is 83.40 and the dollar is at a three-month discount of 30 paise (illustrative figures). What is the three-month forward rate, and which currency is at a premium?",
+     "expected_takeaway": "83.10: the discount is subtracted, 83.40 − 0.30. With the dollar at a discount, the rupee is at a premium."
+    },
+    "item_type": "card",
+    "card_type": "formula",
+    "id": "item_7d12fab56bff9a545850d7596c0f4df43b6022fd37fcbeb9ef975c089d457c68",
+    "schema_version": "2.0.0",
+    "revision": 1,
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "paper_id": "BFM",
+    "module_id": "BFM::MOD_A",
+    "unit_id": "BFM::MOD_A::U01",
+    "objective_ids": [
+     "BFM::MOD_A::U01::LO_03"
+    ],
+    "context": {
+     "kind": "exam",
+     "exam_context_id": "CAIIB-2026-DEC",
+     "regulatory_cutoff_date": "2026-06-30"
+    },
+    "citations": [
+     {
+      "source_id": "S03",
+      "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+      "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+      "publication_date": null,
+      "effective_date": null,
+      "locator": "Printed p. 10, heading Forward Margins - Premium and Discounts"
+     },
+     {
+      "source_id": "S03",
+      "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+      "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+      "publication_date": null,
+      "effective_date": null,
+      "locator": "Printed pp. 10-11, heading Forward Margins - Premium and Discounts"
+     }
+    ],
+    "origin": "source_assisted",
+    "publication_state": "published",
+    "review": {
+     "verified_at": "2026-11-11T18:00:00Z",
+     "reviewer_id": "coding-agent (Claude), same agent as author",
+     "method": "automated",
+     "source_verified": true,
+     "answer_checked": true,
+     "calculations": "verified"
+    }
+   },
+   {
+    "title": "No EUR/INR quote on the screen: an exporter's rate by the chain rule",
+    "prerequisite_objective_ids": [
+     "BFM::MOD_A::U01::LO_02"
+    ],
+    "core_explanation_md": "In India a straight interbank quote exists for USD/INR; other currencies reach the rupee through the dollar. Illustrative case: a Coimbatore textile exporter receives EUR 25,000. The dealer sees EUR/USD 1.0836/1.0841 and USD/INR 83.4125/83.4175. What interbank EUR/INR rate does the bank start from, before its own margin?",
+    "worked_steps": [
+     {
+      "step_number": 1,
+      "description": "Follow the money. The bank buys euros from the exporter, so to square itself it sells those euros for dollars: the market buys euros at its bid.",
+      "formula_or_substitution": "Bid side of EUR/USD 1.0836/1.0841",
+      "intermediate_result": "1 EUR = 1.0836 USD"
+     },
+     {
+      "step_number": 2,
+      "description": "It then sells the dollars for rupees: the market buys dollars at its bid.",
+      "formula_or_substitution": "Bid side of USD/INR 83.4125/83.4175",
+      "intermediate_result": "1 USD = ₹83.4125"
+     },
+     {
+      "step_number": 3,
+      "description": "Chain the two so that the dollar cancels.",
+      "formula_or_substitution": "1.0836 × 83.4125",
+      "intermediate_result": "90.385785, taken as ₹90.3858 per EUR"
+     },
+     {
+      "step_number": 4,
+      "description": "Rupees for the exporter at that rate, before the bank's margin.",
+      "formula_or_substitution": "25,000 × 90.3858",
+      "intermediate_result": "₹22,59,645.00"
+     }
+    ],
+    "final_answer_with_unit": "Interbank EUR/INR buying rate ₹90.3858 per EUR; EUR 25,000 is worth ₹22,59,645.00 before margin",
+    "self_check": {
+     "mode": "self_assessed",
+     "prompt_text": "For the exporter's euros, why are both legs taken at the bid, and what would change for an importer who needs euros?",
+     "expected_takeaway": "The bank is selling in both legs (euros for dollars, then dollars for rupees), and the market buys at its bid each time. For an importer the bank buys in both legs, so both legs are taken at the offer."
+    },
+    "item_type": "card",
+    "card_type": "worked_example",
+    "id": "item_13a003edf244481cd4761f49b2fc2a0bac2124e5f3e31e660a7b56d00d53d8dd",
+    "schema_version": "2.0.0",
+    "revision": 1,
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "paper_id": "BFM",
+    "module_id": "BFM::MOD_A",
+    "unit_id": "BFM::MOD_A::U01",
+    "objective_ids": [
+     "BFM::MOD_A::U01::LO_03"
+    ],
+    "context": {
+     "kind": "exam",
+     "exam_context_id": "CAIIB-2026-DEC",
+     "regulatory_cutoff_date": "2026-06-30"
+    },
+    "citations": [
+     {
+      "source_id": "S03",
+      "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+      "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+      "publication_date": null,
+      "effective_date": null,
+      "locator": "Printed p. 12, heading Cross Rates"
+     },
+     {
+      "source_id": "S03",
+      "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+      "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+      "publication_date": null,
+      "effective_date": null,
+      "locator": "Printed p. 13, heading Chain Rule"
+     },
+     {
+      "source_id": "S03",
+      "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+      "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+      "publication_date": null,
+      "effective_date": null,
+      "locator": "Printed p. 12, heading Bid and Offer Rates"
+     }
+    ],
+    "origin": "source_assisted",
+    "publication_state": "published",
+    "review": {
+     "verified_at": "2026-11-11T18:00:00Z",
+     "reviewer_id": "coding-agent (Claude), same agent as author",
+     "method": "automated",
+     "source_verified": true,
+     "answer_checked": true,
+     "calculations": "verified"
+    }
+   },
+   {
+    "difficulty": "easy",
+    "stem_md": "The rupee swings sharply within an hour of trading. One participant sells dollars from the country's reserves, not to earn a profit but to steady the rate. Which participant is acting in its expected role?",
+    "options": [
+     {
+      "option_id": "A",
+      "text_md": "A commercial bank quoting two-way prices to callers",
+      "explanation_md": "A market-making bank gives the market depth by quoting both sides; steadying the currency from reserves is not its role."
+     },
+     {
+      "option_id": "B",
+      "text_md": "A forex broker matching a buyer with a seller",
+      "explanation_md": "A broker is a middleman between other participants and holds no national reserves."
+     },
+     {
+      "option_id": "C",
+      "text_md": "The central bank",
+      "explanation_md": "A central bank manages the reserves and uses the market to reduce volatility in the value of the home currency."
+     },
+     {
+      "option_id": "D",
+      "text_md": "A company covering an import payment",
+      "explanation_md": "A company comes to the market for its own trade or investment needs, not to steady the exchange rate."
+     }
+    ],
+    "correct_option_id": "C",
+    "correct_explanation_md": "Managing the reserves and intervening to smooth the value of the home currency is the central bank's part in the market. The other three deal for customers, for commission or for their own commercial needs.",
+    "item_type": "question",
+    "question_type": "single_choice",
+    "id": "item_b3a07ceff3b72bc5a763499a00784c47a5327de9feb756c6eb6eadc5284b7679",
+    "schema_version": "2.0.0",
+    "revision": 1,
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "paper_id": "BFM",
+    "module_id": "BFM::MOD_A",
+    "unit_id": "BFM::MOD_A::U01",
+    "objective_ids": [
+     "BFM::MOD_A::U01::LO_01"
+    ],
+    "context": {
+     "kind": "exam",
+     "exam_context_id": "CAIIB-2026-DEC",
+     "regulatory_cutoff_date": "2026-06-30"
+    },
+    "citations": [
+     {
+      "source_id": "S03",
+      "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+      "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+      "publication_date": null,
+      "effective_date": null,
+      "locator": "Printed p. 5, list of major participants"
+     },
+     {
+      "source_id": "S03",
+      "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+      "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+      "publication_date": null,
+      "effective_date": null,
+      "locator": "Printed p. 6, heading Foreign exchange Markets (continued)"
+     }
+    ],
+    "origin": "source_assisted",
+    "publication_state": "published",
+    "review": {
+     "verified_at": "2026-11-11T18:00:00Z",
+     "reviewer_id": "coding-agent (Claude), same agent as author",
+     "method": "automated",
+     "source_verified": true,
+     "answer_checked": true,
+     "calculations": "not_applicable"
+    }
+   },
+   {
+    "difficulty": "easy",
+    "stem_md": "A dealer's screen shows the interbank selling rate for USD/INR at 83.4175 for spot and 84.6325 for delivery in six months (illustrative figures). By how many paise per dollar is the dollar at a forward premium for six months?",
+    "numeric_rule": {
+     "expected_answer": "121.50",
+     "unit_label": "paise per USD",
+     "precision_decimals": 2,
+     "rounding_mode": "HALF_UP",
+     "rounding_instruction": "Give the premium in paise to 2 decimal places.",
+     "allow_negative": false
+    },
+    "correct_explanation_md": "Forward rate = spot rate + premium, so the premium is the forward rate less the spot rate: 84.6325 − 83.4175 = 1.2150 rupees, which is 121.50 paise. The dollar costs more for future delivery, so it is at a premium (and the rupee at a discount).",
+    "worked_solution_steps": [
+     {
+      "step_number": 1,
+      "description": "Rearrange forward = spot + premium.",
+      "formula_or_substitution": "84.6325 − 83.4175",
+      "intermediate_result": "1.2150 rupees"
+     },
+     {
+      "step_number": 2,
+      "description": "Convert rupees to paise.",
+      "formula_or_substitution": "1.2150 × 100",
+      "intermediate_result": "121.50 paise"
+     }
+    ],
+    "item_type": "question",
+    "question_type": "numeric_input",
+    "id": "item_939ce9d34cf464b1b55e4f21b7f5bc11eb2506b60989550c288e0cb6773f2085",
+    "schema_version": "2.0.0",
+    "revision": 1,
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "paper_id": "BFM",
+    "module_id": "BFM::MOD_A",
+    "unit_id": "BFM::MOD_A::U01",
+    "objective_ids": [
+     "BFM::MOD_A::U01::LO_03"
+    ],
+    "context": {
+     "kind": "exam",
+     "exam_context_id": "CAIIB-2026-DEC",
+     "regulatory_cutoff_date": "2026-06-30"
+    },
+    "citations": [
+     {
+      "source_id": "S03",
+      "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+      "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+      "publication_date": null,
+      "effective_date": null,
+      "locator": "Printed p. 10, heading Forward Margins - Premium and Discounts"
+     }
+    ],
+    "origin": "source_assisted",
+    "publication_state": "published",
+    "review": {
+     "verified_at": "2026-11-11T18:00:00Z",
+     "reviewer_id": "coding-agent (Claude), same agent as author",
+     "method": "automated",
+     "source_verified": true,
+     "answer_checked": true,
+     "calculations": "verified"
+    }
+   },
+   {
+    "difficulty": "hard",
+    "stem_md": "A dealer has EUR/USD 1.0836/1.0841 and USD/INR 83.4125/83.4175 (illustrative figures) and must make a two-way EUR/INR price through the dollar. Take each derived EUR/INR rate to 4 decimal places. What is the spread between the bank's EUR/INR buying and selling rates, in paise?",
+    "numeric_rule": {
+     "expected_answer": "4.71",
+     "unit_label": "paise per EUR",
+     "precision_decimals": 2,
+     "rounding_mode": "HALF_UP",
+     "rounding_instruction": "Round each derived rate to 4 decimal places first, then give the spread in paise to 2 decimal places.",
+     "allow_negative": false
+    },
+    "correct_explanation_md": "Buying rate: both legs at the bid, 1.0836 × 83.4125 = 90.385785, taken as 90.3858. Selling rate: both legs at the offer, 1.0841 × 83.4175 = 90.43291175, taken as 90.4329. Spread = 90.4329 − 90.3858 = 0.0471 rupees = 4.71 paise. Mixing a bid with an offer gives neither of the bank's rates.",
+    "worked_solution_steps": [
+     {
+      "step_number": 1,
+      "description": "Bank buys euros: bid × bid.",
+      "formula_or_substitution": "1.0836 × 83.4125",
+      "intermediate_result": "90.385785 → 90.3858"
+     },
+     {
+      "step_number": 2,
+      "description": "Bank sells euros: offer × offer.",
+      "formula_or_substitution": "1.0841 × 83.4175",
+      "intermediate_result": "90.43291175 → 90.4329"
+     },
+     {
+      "step_number": 3,
+      "description": "Spread in paise.",
+      "formula_or_substitution": "(90.4329 − 90.3858) × 100",
+      "intermediate_result": "4.71 paise"
+     }
+    ],
+    "item_type": "question",
+    "question_type": "numeric_input",
+    "id": "item_5f8cfe514fa18f379719f80117725facd1fc5da5ba483f32f04bc3bd8bb201ca",
+    "schema_version": "2.0.0",
+    "revision": 1,
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "paper_id": "BFM",
+    "module_id": "BFM::MOD_A",
+    "unit_id": "BFM::MOD_A::U01",
+    "objective_ids": [
+     "BFM::MOD_A::U01::LO_03"
+    ],
+    "context": {
+     "kind": "exam",
+     "exam_context_id": "CAIIB-2026-DEC",
+     "regulatory_cutoff_date": "2026-06-30"
+    },
+    "citations": [
+     {
+      "source_id": "S03",
+      "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+      "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+      "publication_date": null,
+      "effective_date": null,
+      "locator": "Printed p. 12, heading Cross Rates"
+     },
+     {
+      "source_id": "S03",
+      "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+      "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+      "publication_date": null,
+      "effective_date": null,
+      "locator": "Printed p. 13, heading Chain Rule"
+     },
+     {
+      "source_id": "S03",
+      "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+      "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+      "publication_date": null,
+      "effective_date": null,
+      "locator": "Printed p. 12, heading Bid and Offer Rates"
+     }
+    ],
+    "origin": "source_assisted",
+    "publication_state": "published",
+    "review": {
+     "verified_at": "2026-11-11T18:00:00Z",
+     "reviewer_id": "coding-agent (Claude), same agent as author",
+     "method": "automated",
+     "source_verified": true,
+     "answer_checked": true,
+     "calculations": "verified"
+    }
+   }
+  ]
+ }
+}

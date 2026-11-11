@@ -45,6 +45,7 @@ Last updated: 11 November 2026, session 5. Content authoring is **unblocked for 
 
 | Dimension | Status | Evidence or remaining condition |
 | --- | --- | --- |
+| First published content | done (small) | Pack `BFM-2026DEC` v1: 11 items (4 cards, 1 worked example, 6 questions) for part of one BFM topic, free sample. Published on the authoring agent's review alone by owner decision of 11 Nov 2026. Seen working in the app: lesson, self-check, sources, practice, short mock. |
 | Implementation | in_progress (feature-complete against synthetic content) | All screens, engine, storage, backend and service worker exist and are tested. Not yet exercised with real published content, a real payment provider, a screen reader or a physical phone. |
 | Original full-syllabus content | in_progress, mostly blocked | 276-topic baseline. Batch `BFM-A-U01-B001`: 7 editorial objectives, now 12 draft items in two batches (6 cards, 6 questions) as **drafts** (source and originality review pending). 0 topics drafted adequately, 0 reviewed, 0 published. Courseware on disk for ABM, BFM, ABFM, BRBL, CB (171 topics); 105 topics in RM, ITDB, HRM, RB have no source. |
 | Release readiness | blocked | Needs content and provider sandbox verification. Exam configuration is verified. |
@@ -118,6 +119,10 @@ synthetic fixtures), **A** = `scripts/ui-audit.js` measured on the rendered DOM.
 - Batch `content/batches/BFM-A-U01-B002/`: 6 more draft items (participants card, forward-rate formula card,
   cross-rate worked example, 1 choice question, 2 numericals), written from pages read directly; calculations
   recomputed in `tests/content/batch-b002.test.ts`. Draft items in total: 12, all in `BFM::MOD_A::U01`.
+- Published: `content/packs/BFM-2026DEC.json` from `content/publish/BFM-2026DEC-v1.json` via
+  `scripts/publish-pack.mjs` (review method `automated`, reviewer = authoring agent). Held back: the FEMA
+  definition card (B001 D001); India Code did not respond, and a search result suggests the Act has more
+  sub-clauses than the courseware quotes. Topics published and complete: still 0 of 276.
 - Next content cursor: `BFM-A-U01-B003` — value-date lesson and indirect-quote question (LO_02), customer
   forward-rate worked example (LO_03), then LO_04–LO_07; then `BFM::MOD_A::U02`.
 
@@ -146,14 +151,16 @@ synthetic fixtures), **A** = `scripts/ui-audit.js` measured on the rendered DOM.
 | --- | --- | --- | --- | --- |
 | Courseware for RM, ITDB, HRM, RB | 105 topics in four electives | None possible | Authoring the 171 topics that do have a source | Put those four books in `content/sources/books/` |
 | Primary sources for applicability at the 30 June 2026 cut-off (FEMA text, FEDAI rules, RBI directions) | Publication of regulatory-sensitive items | Not yet attempted for this batch | Web research on official sites is covered by the earlier approval to fetch official documents | None yet |
-| A human or independent reviewer | The quality bar for publication | Agent self-review recorded honestly | — | Owner decision: accept agent-only review for publication, or name a reviewer |
+| FEMA text from India Code (site timed out on 11 Nov 2026) | Publishing the FEMA definition card | Three attempts | — | Retry later; no owner action needed |
 | Razorpay test keys + support/refund text | Provider sandbox verification | Adapter checked against current docs and a local stand-in | None | Put test keys and `SUPPORT_TEXT` in a local `.env` (not in chat or git) |
 | A person to proofread the syllabus extraction (recommended, not blocking) | Confidence in the 276-topic denominator | Automated cross-checks done | — | Compare `content/syllabus/caiib-2026.json` titles with the PDF, especially the 6 flagged headings |
 
 ## Resume instruction
 
-- Last completed logical unit: notebook inventory and batch `BFM-A-U01-B001` imported as drafts and recorded
-  in the ledger; all checks green; committed.
+- Last completed logical unit: first pack published (11 items); encoding damage from earlier PowerShell bulk
+  edits repaired in five files; all checks green; committed.
+- Tooling caution: never rewrite source files with PowerShell `Get-Content -Raw` + `WriteAllText`; it corrupts
+  non-ASCII characters. Use the Edit tool or Python with explicit UTF-8.
 - Nothing is half-edited.
 - Exact next action: batch `BFM-A-U01-B003`, working from the PDF pages directly (S03, PDF page = printed + 17):
   read printed pp. 7–8 and 14–29 for factors, dealing room, derivatives and RBI/FEDAI guidelines; write facts

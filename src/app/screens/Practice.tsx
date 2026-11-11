@@ -20,7 +20,7 @@ export function Practice() {
   if (!record) return <><div className="section"><h1>Practice</h1><p className="support">{PAPER_NAMES[paper]}</p></div><Empty title="No questions are available for this paper yet" action={<Button variant="filled" href="#/coverage">See the coverage map</Button>}>Questions are published only after their sources, answers and calculations have been reviewed.</Empty></>;
   return (
     <>
-      <div className="section"><h1>Practice</h1><p className="support">{PAPER_NAMES[paper]} Â· {all.length} question{all.length === 1 ? '' : 's'} available to you</p></div>
+      <div className="section"><h1>Practice</h1><p className="support">{PAPER_NAMES[paper]} · {all.length} question{all.length === 1 ? '' : 's'} available to you</p></div>
       {active && <Banner kind="warn" action={<Button variant="outlined" onClick={() => { void model.setPaper(active.attempt.paper_id).then(() => go(`attempt/${active.attempt.attempt_id}`)); }}>Resume</Button>}>Unfinished {active.attempt.mode === 'mock' ? 'timed mock' : 'practice set'}: {active.title} ({PAPER_NAMES[active.attempt.paper_id]}). Finish or end it before starting another.</Banner>}
       <section className="section" aria-labelledby="p1"><h2 id="p1">Practise by type</h2>
         <p className="support">You choose or type an answer, then press Submit. Feedback and the explanation appear after each submission. Questions you have not seen come first.</p>
@@ -60,7 +60,7 @@ function Frame({ a, right, children, wide }: { a: AttemptRecord; right?: React.R
     <div className="app focused">
       <a className="skip" href="#main">Skip to content</a>
       <header className="appbar"><IconButton icon="close" label={a.attempt.status === 'active' ? 'Leave. Your answers are saved and you can resume.' : 'Close'} onClick={() => go('practice')} />
-        <div className="grow"><strong>{a.title}</strong><div className="support">{PAPER_NAMES[a.attempt.paper_id]} Â· {a.attempt.mode === 'mock' ? 'Timed mock' : 'Practice'}{a.fixture ? ' Â· engineering sample' : ''}</div></div>{right}</header>
+        <div className="grow"><strong>{a.title}</strong><div className="support">{PAPER_NAMES[a.attempt.paper_id]} · {a.attempt.mode === 'mock' ? 'Timed mock' : 'Practice'}{a.fixture ? ' · engineering sample' : ''}</div></div>{right}</header>
       <main className={`main${wide ? ' wide' : ''}`} id="main" tabIndex={-1}>{children}</main>
     </div>
   );
@@ -142,7 +142,7 @@ function MockPlayer({ a }: { a: AttemptRecord }) {
   const body = (
     <div className="section">
       <QuestionView q={q} number={idx + 1} total={total} response={draft} onResponse={onResponse} error={error} />
-      <p className="support" role="status">{a.attempt.saved_responses[q.id] !== undefined ? 'âœ“ Answer saved. You can change it until you submit the mock.' : 'No answer saved for this question.'}</p>
+      <p className="support" role="status">{a.attempt.saved_responses[q.id] !== undefined ? '✓ Answer saved. You can change it until you submit the mock.' : 'No answer saved for this question.'}</p>
       <div className="sticky-actions"><div className="actions">
         <Button variant="outlined" disabled={idx === 0} onClick={() => goto(idx - 1)}>Previous</Button>
         <Button variant="tonal" onClick={() => void model.attemptFlag(id, q.id, !flagged)}><Icon name="flag" size={18} />{flagged ? 'Unflag' : 'Flag to revisit'}</Button>
@@ -152,10 +152,10 @@ function MockPlayer({ a }: { a: AttemptRecord }) {
   return (
     <Frame a={a} wide={Boolean(cs)} right={<><span className={`timer${low ? ' low' : ''}`} role="timer" aria-label={`Time remaining ${formatClock(clock.remainingMs ?? 0)}`}><Icon name="clock" size={18} /> {formatClock(clock.remainingMs ?? 0)}</span><Button onClick={() => setNav(true)}>Questions</Button></>}>
       <Announce message={announce} />
-      <p className="support">{answered} of {total} answered Â· {a.attempt.flagged_item_ids.length} flagged Â· ends {formatDateTime(a.attempt.expires_at_iso!)}{low ? ' Â· under 5 minutes left' : ''}</p>
+      <p className="support">{answered} of {total} answered · {a.attempt.flagged_item_ids.length} flagged · ends {formatDateTime(a.attempt.expires_at_iso!)}{low ? ' · under 5 minutes left' : ''}</p>
       {cs ? <div className="split"><aside className="pane card" aria-label="Case scenario"><details className="more" open><summary>Scenario: {cs.title}</summary><div><Scenario cs={cs} /></div></details></aside>{body}</div> : body}
       {nav && <Sheet title="Questions" onClose={() => setNav(false)}>
-        <p className="support">Filled = answered. âš‘ = flagged. The outlined number is the current question.</p>
+        <p className="support">Filled = answered. ⚑ = flagged. The outlined number is the current question.</p>
         <div className="qnav">{a.attempt.question_order.map((r, i) => { const ans = a.attempt.saved_responses[r.item_id] !== undefined; const fl = a.attempt.flagged_item_ids.includes(r.item_id); return <button type="button" key={r.item_id} className={`${ans ? 'answered' : ''} ${fl ? 'flagged' : ''}`} aria-current={i === idx ? 'true' : undefined} aria-label={`Question ${i + 1}, ${ans ? 'answered' : 'not answered'}${fl ? ', flagged' : ''}`} onClick={() => goto(i)}>{i + 1}</button>; })}</div>
         <Button variant="filled" block onClick={() => { setNav(false); setConfirm(true); }}>Review and submit</Button></Sheet>}
       {confirm && <Sheet title="Submit this mock?" onClose={() => setConfirm(false)}>
@@ -182,7 +182,7 @@ function Results({ a }: { a: AttemptRecord }) {
         {mock && a.attempt.status === 'expired' && <p className="support">The clock reached its end time, so your saved answers were submitted automatically.</p>}</div>
       <div className="stat-grid">
         {mock && a.result && <div className="stat"><b>{a.result.marks_obtained} / {a.result.total_marks}</b><span className="support">marks</span></div>}
-        <div className="stat"><b>{correct}</b><span className="support">âœ“ correct</span></div><div className="stat"><b>{wrong}</b><span className="support">âœ— not correct</span></div><div className="stat"><b>{unanswered}</b><span className="support">unanswered</span></div>
+        <div className="stat"><b>{correct}</b><span className="support">✓ correct</span></div><div className="stat"><b>{wrong}</b><span className="support">✗ not correct</span></div><div className="stat"><b>{unanswered}</b><span className="support">unanswered</span></div>
       </div>
       {mock && (summary ? <Banner kind={summary.passed ? 'ok' : 'warn'}>{summary.passed ? 'This score meets' : 'This score is below'} the pass mark recorded for this session's configuration. A practice mock is not a prediction of your exam result.</Banner>
         : <Banner>No pass or fail is shown: {order.length !== model.state.contexts.find(c => c.exam_context_id === a.attempt.exam_context_id)?.config?.question_count ? 'this was a short mock, not a full-length paper' : 'the passing rule for this session has not been verified'}.</Banner>)}
@@ -193,8 +193,8 @@ function Results({ a }: { a: AttemptRecord }) {
         <ul className="list">{rows.map(r => (
           <li key={r.id}>
             <button type="button" className="item" aria-expanded={open === r.id} onClick={() => setOpen(open === r.id ? null : r.id)}>
-              <span className="grow"><span className="title">Question {r.i + 1}</span><span className="meta" style={{ display: 'block' }}>{r.q ? r.q.stem_md.slice(0, 90) : 'Content no longer on this device'}{r.q && r.q.stem_md.length > 90 ? 'â€¦' : ''}</span></span>
-              {!r.answered ? <Tag>Unanswered</Tag> : r.correct ? <Tag kind="ok">âœ“ Correct</Tag> : <Tag kind="bad">âœ— Not correct</Tag>}
+              <span className="grow"><span className="title">Question {r.i + 1}</span><span className="meta" style={{ display: 'block' }}>{r.q ? r.q.stem_md.slice(0, 90) : 'Content no longer on this device'}{r.q && r.q.stem_md.length > 90 ? '…' : ''}</span></span>
+              {!r.answered ? <Tag>Unanswered</Tag> : r.correct ? <Tag kind="ok">✓ Correct</Tag> : <Tag kind="bad">✗ Not correct</Tag>}
             </button>
             {open === r.id && r.q && <div style={{ padding: '0 0 1rem' }}><QuestionView q={r.q} response={r.response} onResponse={() => {}} disabled feedback={{ correct: r.answered && r.correct }} />{!r.answered && <p className="support">You did not answer this question.</p>}</div>}
           </li>))}</ul>
