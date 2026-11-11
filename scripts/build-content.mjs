@@ -30,7 +30,7 @@ if (!syllabusSource) fail(`source registry has no entry ${SOURCE_ID}`);
 if (syllabusSource.sha256 !== src.source.sha256) fail('the syllabus extraction was made from a different file than the one in the source registry');
 if (src.extraction.issues.length) fail(`syllabus extraction has unresolved issues: ${src.extraction.issues.join('; ')}`);
 const availability = readJson(join(root, 'content', 'sources', 'availability.json'));
-const available = new Set(availability.available_unit_ids), partial = new Set(availability.partial_unit_ids);
+const available = new Set(availability.available_unit_ids), partial = new Set(availability.partial_unit_ids), availablePapers = new Set(availability.available_paper_ids ?? []);
 const objectivesDir = join(root, 'content', 'objectives');
 const ledgerDir = join(root, 'content', 'ledger');
 /** Editorially derived objectives, one file per paper: [{ id, unit_id, title, description? }] */
@@ -57,7 +57,7 @@ for (const p of src.papers) {
         official_scope_text: u.scope_text ?? '', syllabus_source_id: SOURCE_ID, locator: `PDF page${u.pages.length > 1 ? 's' : ''} ${u.pages.join(', ')}`,
         baseline_issue: u.baseline_issue ?? null, kind: u.kind === 'named_section' ? 'named_section' : 'editorial_container', objectives,
         // A topic is blocked only when no accessible source covers it; otherwise it is simply not written yet.
-        blocked_reason: objectives.length || available.has(u.id) ? null : partial.has(u.id) ? availability.reason_partial : availability.reason_unavailable,
+        blocked_reason: objectives.length || available.has(u.id) || availablePapers.has(p.id) ? null : partial.has(u.id) ? availability.reason_partial : availability.reason_unavailable,
       });
     }
   }
@@ -124,7 +124,7 @@ if (fixtures) {
 const ledger = {
   ledger_version: '2', generated_at: manifest.generated_at, baseline_version: SYLLABUS_VERSION,
   exam_session: contexts.filter(c => c.kind !== 'fixture').map(c => c.label).join(', '),
-  verdict: `Baseline established from the official 2026 syllabus (${inferred} plain-type headings inferred and flagged). ${catalogue.objectives.length} editorial objectives derived; drafts exist for ${[...ledgerRecords.values()].filter(r => r.lesson_item_ids.length + r.worked_example_item_ids.length + r.assessment_item_ids.length > 0).length} of them and none is reviewed or published. Accessible courseware covers ${available.size} topics fully and ${partial.size} partly.`,
+  verdict: `Baseline established from the official 2026 syllabus (${inferred} plain-type headings inferred and flagged). ${catalogue.objectives.length} editorial objectives derived; drafts exist for ${[...ledgerRecords.values()].filter(r => r.lesson_item_ids.length + r.worked_example_item_ids.length + r.assessment_item_ids.length > 0).length} of them and none is reviewed or published. Courseware is available for ${papers.filter(x => x.topics.some(t => !t.blocked_reason)).map(x => x.paper_id).join(', ') || 'no paper'}; ${papers.reduce((n, x) => n + x.topics.filter(t => t.blocked_reason).length, 0)} topics have no source.`,
   sources: registry.sources.map(x => ({ source_id: x.source_id, title: x.title, authority: x.authority, fingerprint_sha256: x.sha256, session_applicability: x.session_applicability, note: `${x.url} · retrieved ${x.retrieved_on}. ${x.note}` })),
   papers,
 };

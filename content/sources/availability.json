@@ -1,14 +1,15 @@
 {
-  "note": "Which syllabus topics the accessible teaching sources can support. Based on content/sources/notebook-inventory.md (the notebook's own report of where each textbook file stops). Mapping from textbook units to syllabus topics is by order within each module and has not been confirmed page by page.",
+  "note": "Which syllabus topics the accessible teaching sources can support. Complete courseware PDFs for five papers are on disk (content/sources/registry.json, S01-S05). The owner's notebook holds only the first 200 pages of each and is no longer the working source.",
   "as_of": "2026-11-11",
-  "available_unit_ids": [
-    "ABM::MOD_A::U01", "ABM::MOD_A::U02", "ABM::MOD_A::U03", "ABM::MOD_A::U04", "ABM::MOD_A::U05", "ABM::MOD_A::U06", "ABM::MOD_A::U07", "ABM::MOD_A::U08", "ABM::MOD_A::U09",
-    "ABFM::MOD_A::U01", "ABFM::MOD_A::U02", "ABFM::MOD_A::U03", "ABFM::MOD_A::U04", "ABFM::MOD_A::U05", "ABFM::MOD_A::U06", "ABFM::MOD_B::U01",
-    "BFM::MOD_A::U01", "BFM::MOD_A::U02", "BFM::MOD_A::U03", "BFM::MOD_A::U04", "BFM::MOD_A::U05", "BFM::MOD_A::U06",
-    "BRBL::MOD_A::U01", "BRBL::MOD_A::U02", "BRBL::MOD_A::U03", "BRBL::MOD_A::U04", "BRBL::MOD_A::U05", "BRBL::MOD_A::U06", "BRBL::MOD_A::U07", "BRBL::MOD_B::U01", "BRBL::MOD_B::U02",
-    "CB::MOD_A::U01", "CB::MOD_A::U02", "CB::MOD_A::U03", "CB::MOD_B::U01", "CB::MOD_B::U02"
+  "available_paper_ids": [
+    "ABM",
+    "BFM",
+    "ABFM",
+    "BRBL",
+    "CB"
   ],
-  "partial_unit_ids": ["ABFM::MOD_B::U02", "BRBL::MOD_B::U03", "CB::MOD_B::U03"],
-  "reason_unavailable": "The courseware file available for this paper stops before this topic, or no courseware for this paper is available yet, so lessons and questions cannot be written for it.",
-  "reason_partial": "The courseware file available for this paper ends part-way through this topic, so it cannot be covered completely yet."
+  "available_unit_ids": [],
+  "partial_unit_ids": [],
+  "reason_unavailable": "No courseware for this paper is available yet, so lessons and questions cannot be written for it.",
+  "reason_partial": "The courseware available for this paper covers this topic only in part."
 }

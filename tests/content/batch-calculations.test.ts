@@ -37,24 +37,25 @@ test('BFM-A-U01-B001: worked example D003 (two quotes for one import payment)', 
   assert.ok(card.final_answer_with_unit.includes('300.00') && card.final_answer_with_unit.includes('5.25 paise'));
 });
 
-test('BFM-A-U01-B001: numeric question D006 expected answer and grading', () => {
+test('BFM-A-U01-B001: numeric question D006 (margin inferred from the amount debited)', () => {
   const b = bundle('BFM-A-U01-B001'); const q = itemFor(b, 'D006') as QuestionItem;
   assert.equal(q.item_type === 'question' && q.question_type, 'numeric_input');
   if (q.question_type !== 'numeric_input') return;
-  const rate = add(d('83.4175'), d('0.0800'));
-  const exact = mul(d('12500'), rate);
+  const debited = d('1043718.75'), usd = d('12500'), bid = d('83.4125'), offer = d('83.4175');
+  const rate = div(debited, usd, 10);
   assert.equal(plain(rate, 4), '83.4975');
-  assert.equal(toPlain(exact), '1043718.75000000'.slice(0, toPlain(exact).length), 'product is exact');
-  assert.equal(plain(exact, q.numeric_rule.precision_decimals), q.numeric_rule.expected_answer);
-  // Not a rounding tie: the exact value already has two decimals, so the unstated tie rule cannot matter.
-  assert.equal(toPlain(round(exact, 2, 'TOWARD_ZERO'), 2), toPlain(round(exact, 2, 'AWAY_FROM_ZERO'), 2));
-  assert.deepEqual(gradeNumeric('1043718.75', q.numeric_rule), { status: 'graded', is_correct: true, normalized_response: '1043718.75' });
-  // Plausible wrong answers are rejected: using the buying rate, forgetting the margin, deducting the margin.
-  for (const wrong of [plain(mul(d('12500'), add(d('83.4125'), d('0.0800'))), 2), plain(mul(d('12500'), d('83.4175')), 2), plain(mul(d('12500'), sub(d('83.4175'), d('0.0800'))), 2)]) {
-    const g = gradeNumeric(wrong, q.numeric_rule); assert.equal(g.status === 'graded' && g.is_correct, false, wrong);
-  }
+  assert.equal(toPlain(mul(rate, usd), 2).length > 0 && plain(mul(d('83.4975'), usd), 2), '1043718.75'); // the stem's amount is exact at that rate
+  const marginPaise = mul(sub(rate, offer), d('100'));
+  assert.equal(plain(marginPaise, q.numeric_rule.precision_decimals), q.numeric_rule.expected_answer);
+  assert.equal(q.numeric_rule.expected_answer, '8.00');
+  // Not a rounding tie, so the unstated tie rule cannot matter.
+  assert.equal(toPlain(round(marginPaise, 2, 'TOWARD_ZERO'), 2), toPlain(round(marginPaise, 2, 'AWAY_FROM_ZERO'), 2));
+  assert.deepEqual(gradeNumeric('8', q.numeric_rule), { status: 'graded', is_correct: true, normalized_response: '8.00' });
+  // Wrong methods are rejected: comparing with the buying rate, or answering in rupees instead of paise.
+  for (const wrong of [plain(mul(sub(rate, bid), d('100')), 2), plain(sub(rate, offer), 2)]) { const g = gradeNumeric(wrong, q.numeric_rule); assert.equal(g.status === 'graded' && g.is_correct, false, wrong); }
+  assert.equal(plain(mul(sub(rate, bid), d('100')), 2), '8.50'); // the figure the explanation warns about
   const shown = (q.worked_solution_steps ?? []).map(s => s.intermediate_result).join(' | ');
-  assert.ok(shown.includes('83.4975') && shown.includes(formatIndian(exact, 2)), shown);
+  assert.ok(shown.includes('83.4975') && shown.includes('83.4175') && shown.includes('8.00 paise'), shown);
 });
 
 test('BFM-A-U01-B001: value-date question D005 calendar facts', () => {

@@ -59,9 +59,9 @@
     },
     {
       "fact_id": "F007",
-      "statement": "When quoting under the indirect method the bank quotes the lower figure when it sells (sell low).",
+      "statement": "In an indirect quote the first figure is the higher one: the bank buys foreign currency at the higher figure and sells it at the lower figure (the courseware shows Rs. 100 = USD 1.3342/1.3340 and uses the phrase \"sell low\").",
       "source_id": "S03",
-      "locator": "Printed p. 38, section 1.8 Foreign Exchange Arithmetic - Concepts and Examples",
+      "locator": "Printed p. 11, heading Direct and Indirect Quotes (example of an indirect quote); printed p. 38, Example 7 (answer)",
       "regulatory_sensitive": false,
       "evidence_status": "needs_review"
     },
@@ -91,11 +91,11 @@
     },
     {
       "fact_id": "F011",
-      "statement": "Under FEDAI Rule 5, on settlement of merchant transactions the rupee amount is rounded off to the rupee or to actual paise according to the bank's internal policy.",
+      "statement": "FEDAI Rule 5(ix): on settlement of merchant transactions, rounding off is to the rupee amount or to actual paise, as per the bank's internal policy.",
       "source_id": "S03",
       "locator": "Printed p. 30, Rule 5 - Foreign Exchange Contracts, item (ix)",
       "regulatory_sensitive": true,
-      "evidence_status": "needs_review"
+      "evidence_status": "explicit"
     }
   ],
   "drafts": [
@@ -289,53 +289,50 @@
       "variant": "numeric_input",
       "fact_ids": [
         "F005",
-        "F006",
-        "F011"
+        "F006"
       ],
       "payload": {
         "difficulty": "medium",
-        "stem_md": "Interbank spot USD/INR is 83.4125/83.4175 (illustrative rates). A bank loads an exchange margin of 8 paise per dollar on customer deals. A customer remits USD 12,500 abroad at the resulting rate. How many rupees does the bank debit for the dollars? Ignore charges and taxes.",
+        "stem_md": "A customer's account was debited ₹10,43,718.75 for an outward remittance of USD 12,500, before charges and taxes. At that moment interbank spot USD/INR was 83.4125/83.4175 (illustrative rates). How much exchange margin, in paise per dollar, did the bank load on the deal?",
         "numeric_rule": {
-          "expected_answer": "1043718.75",
-          "unit_label": "rupees",
+          "expected_answer": "8.00",
+          "unit_label": "paise per USD",
           "precision_decimals": 2,
           "rounding_mode": "HALF_UP",
-          "rounding_instruction": "Give the rupee amount to 2 decimal places.",
+          "rounding_instruction": "Give the margin in paise to 2 decimal places.",
           "allow_negative": false
         },
-        "correct_explanation_md": "An outward remittance means the bank sells dollars, so it starts from the interbank selling rate and adds its margin: 83.4175 + 0.0800 = 83.4975. Then 12,500 × 83.4975 = ₹10,43,718.75.",
+        "correct_explanation_md": "First find the rate the customer actually paid: 10,43,718.75 ÷ 12,500 = 83.4975. An outward remittance is a sale of dollars by the bank, so compare with the interbank selling rate: 83.4975 − 83.4175 = 0.0800 rupees, which is 8 paise per dollar. Comparing with the buying rate (83.4125) would overstate the margin as 8.5 paise.",
         "worked_solution_steps": [
           {
             "step_number": 1,
-            "description": "The bank is selling dollars: take the interbank selling rate.",
+            "description": "Rate charged to the customer.",
+            "formula_or_substitution": "10,43,718.75 ÷ 12,500",
+            "intermediate_result": "83.4975"
+          },
+          {
+            "step_number": 2,
+            "description": "The bank sold dollars, so the base is the interbank selling rate.",
             "formula_or_substitution": "Offer side of 83.4125/83.4175",
             "intermediate_result": "83.4175"
           },
           {
-            "step_number": 2,
-            "description": "Add the margin, because the bank sells high.",
-            "formula_or_substitution": "83.4175 + 0.0800",
-            "intermediate_result": "83.4975"
-          },
-          {
             "step_number": 3,
-            "description": "Multiply by the dollar amount.",
-            "formula_or_substitution": "12,500 × 83.4975",
-            "intermediate_result": "10,43,718.75"
+            "description": "Margin is the excess over that rate, converted to paise.",
+            "formula_or_substitution": "(83.4975 − 83.4175) × 100",
+            "intermediate_result": "8.00 paise"
           }
         ]
       }
     }
   ],
   "unresolved": [
-    "Source support was obtained through NotebookLM answers and its verbatim quotations with printed page numbers. The book pages themselves have not been read independently, because the notebook shows this source only as page images.",
-    "The courseware cites FEMA 'Section 2' without a clause letter; confirm the exact clause against the Act before publication.",
-    "F007 (sell low under indirect quotation) rests on an example annotation on printed p. 38, not on a stated rule; confirm wording on the page.",
-    "F011 (FEDAI Rule 5 rounding) and all FEDAI material need a check against the rules in force at the 30 June 2026 cut-off.",
-    "After the notebook audit, D003 and D005 were redesigned and D001, D002 and D004 revised. The redesigned drafts have not been re-audited.",
-    "Originality has only been compared with the courseware through NotebookLM; a direct comparison with printed pp. 4-43 (examples and Check Your Progress) is still required, especially for D004.",
+    "The courseware cites FEMA \"Section 2\" without a clause letter (read on printed p. 4); confirm the exact clause against the Act before publication.",
+    "FEDAI rules (F011) and the FEMA definition need a check against primary sources as at the 30 June 2026 cut-off.",
+    "F007 is an inference from the indirect-quote example on printed p. 11 and the \"sell low\" note on p. 38, not a stated rule.",
     "LO_03 is only partly covered: forward rates from forward margins and cross rates through the chain rule still need teaching and numerical assessment.",
-    "LO_01 is only partly covered: market organisation, participants and trading hours are not yet taught or assessed."
+    "LO_01 is only partly covered: market organisation, participants and trading hours are not yet taught or assessed.",
+    "LO_02: value dates are assessed but not yet taught in a card."
   ],
   "next_batch_hint": "BFM-A-U01-B002: forward margins and cross rates (LO_03), then the forex market and its participants (LO_01)."
 }

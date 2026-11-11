@@ -1,5 +1,10 @@
 # Notebook source inventory
 
+> **Superseded as the working source on 11 November 2026.** The owner placed the complete PDFs of the five
+> books in `content/sources/books/` (718, 626, 774, 662 and 517 pages). They are recorded in
+> `content/sources/registry.json` and are read page by page with `scripts/render-page.mjs`. The notebook holds
+> only the first 200 pages of each book; this file is kept as the record of what it contained.
+
 Notebook: "Bank Financial Management" (`notebook.google.com/notebook/d5c1b149-e0a5-49e3-8018-09034bec8de7`),
 owner's Google account, 10 sources. Inventory taken 11 November 2026 by asking the notebook's chat; the
 entries are **as reported by the notebook's model** and have not been checked against title pages by eye.

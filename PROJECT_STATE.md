@@ -1,6 +1,6 @@
 # Project execution state
 
-Last updated: 11 November 2026, session 4. Completion is **blocked**: the accessible courseware covers about 39 of 276 topics, and review of drafts needs readable pages (see Blockers).
+Last updated: 11 November 2026, session 5. Content authoring is **unblocked for five papers** (171 topics); the other four electives (105 topics) have no courseware. Completion remains blocked on those books, provider sandbox keys and the sheer volume of authoring still to do.
 
 ## Scope and decisions
 
@@ -18,6 +18,9 @@ Last updated: 11 November 2026, session 4. Completion is **blocked**: the access
   `content/sources/iibf/` and are not committed. Razorpay's public docs were read. The owner's notebook is accessible in the
   browser pane after owner sign-in (session 4); see `content/sources/notebook-inventory.md`. It holds five
   courseware files that each **stop at about printed page 180**, and no courseware for RM, ITDB, HRM or RB.
+  On 11 Nov 2026 the owner placed the **complete PDFs** of those five books in `content/sources/books/`
+  (scans, no text layer; registry entries S01–S05). They are read by rendering pages to images with
+  `scripts/render-page.mjs`. These PDFs, not the notebook, are now the working source.
 - Consequential decisions:
   - Kit contents copied to the repo root and kept byte-identical; `caiib-agent-kit/` untouched and git-ignored.
   - UI components are hand-built on Material 3 token roles (`src/app/styles.css`); there is no maintained
@@ -43,7 +46,7 @@ Last updated: 11 November 2026, session 4. Completion is **blocked**: the access
 | Dimension | Status | Evidence or remaining condition |
 | --- | --- | --- |
 | Implementation | in_progress (feature-complete against synthetic content) | All screens, engine, storage, backend and service worker exist and are tested. Not yet exercised with real published content, a real payment provider, a screen reader or a physical phone. |
-| Original full-syllabus content | in_progress, mostly blocked | 276-topic baseline. Batch `BFM-A-U01-B001`: 7 editorial objectives, 3 cards and 3 questions as **drafts** (source and originality review pending). 0 topics drafted adequately, 0 reviewed, 0 published. Accessible courseware covers 36 topics fully, 3 partly; 237 have no source. |
+| Original full-syllabus content | in_progress, mostly blocked | 276-topic baseline. Batch `BFM-A-U01-B001`: 7 editorial objectives, 3 cards and 3 questions as **drafts** (source and originality review pending). 0 topics drafted adequately, 0 reviewed, 0 published. Courseware on disk for ABM, BFM, ABFM, BRBL, CB (171 topics); 105 topics in RM, ITDB, HRM, RB have no source. |
 | Release readiness | blocked | Needs content and provider sandbox verification. Exam configuration is verified. |
 | Live launch | pending | Owner action; not started. |
 
@@ -99,14 +102,16 @@ synthetic fixtures), **A** = `scripts/ui-audit.js` measured on the rendered DOM.
   differing only in the name given to an unheaded appendix list. **Review method: automated plus spot reading
   by the agent. Not proofread line by line by a person.**
 - Official topic denominator: 276. Editorial objectives: 7 (all in `BFM::MOD_A::U01`). Topics adequately
-  drafted / assessed / reviewed / published: 0 / 0 / 0 / 0. Topics with accessible source: 36 full, 3 partial
-  (`content/sources/availability.json`).
+  drafted / assessed / reviewed / published: 0 / 0 / 0 / 0. Papers with courseware on disk: ABM, BFM, ABFM,
+  BRBL, CB (`content/sources/availability.json`); 105 topics blocked for want of a source.
 - Notebook inventory: `content/sources/notebook-inventory.md` (as reported by the notebook's model).
 - Latest batch: `content/batches/BFM-A-U01-B001/` (staging, import config, draft bundle, review record).
   6 draft items: statute card, concept card, worked example, 2 choice questions, 1 numerical. Calculations
-  recomputed independently in `tests/content/batch-calculations.test.ts` (pass). Source support and originality
-  are **pending**: the notebook shows book pages only as images, so every locator and quotation is
-  model-reported, and the redesigned drafts were not re-audited.
+  recomputed independently in `tests/content/batch-calculations.test.ts` (pass). After the full PDF arrived,
+  16 pages were **read directly**: 10 of 11 facts confirmed as worded, one is an inference (flagged); originality
+  compared with the book's ten worked examples and self-test questions, and one more question (D006) redesigned.
+  Still pending: applicability at the cut-off against primary sources, and any independent or human review.
+  The reviewer so far is the authoring agent.
 - Open source points: the cut-off for December 2026 is derived from the general rule (no 2026 table); the
   numerical notice gives rounding examples but no rule for an exact tie, so authored numericals must avoid tie
   cases until confirmed; `visual-map/source-data.json` (2025 booklet) is superseded and unused by the build.
@@ -128,15 +133,17 @@ synthetic fixtures), **A** = `scripts/ui-audit.js` measured on the rendered DOM.
 | Full check after baseline | same | `npm run check` | 163 tests pass, lint clean | — |
 | Notebook access | Browser pane, owner signed in, 11 Nov 2026 | Four chat questions: source inventory; fact brief for BFM unit 1; completeness of each file plus verbatim support; audit of six drafts | Inventory and completeness recorded; brief had 3 errors caught by the verbatim check; audit led to 2 redesigns and 3 revisions | All model-mediated. Page images could not be read at the pane's size |
 | Batch BFM-A-U01-B001 | Windows 11, Node 24.21.0 | `npm run validate:staging`, `npm run import:staging`, `npm run check` | 6 valid draft items; 168 tests pass (5 new content checks) | Structure and arithmetic only; not source truth or originality |
+| Book PDFs | same | pdfjs inventory script; `node scripts/render-page.mjs <pdf> <dir> <pages>` then reading the images | 5 complete scanned books (718/626/774/662/517 pages), fingerprints recorded; BFM copyright page and printed pp. 4, 9, 11, 12, 30, 33, 35–43 read | Title pages of the other four books not yet read; page images are 640×840 px, legible but small |
+| Batch B001 page review | same | Direct reading against `content/batches/BFM-A-U01-B001/staging.json` | 10 facts confirmed, 1 inference flagged, D006 redesigned; see the batch's `review.md` | Same agent wrote and reviewed; no human review |
 | Provider sandbox, screen reader, phone hardware, clean clone | — | — | not_run | — |
 
 ## Blockers
 
 | Dependency | Affected | Attempts | Independent work left | Minimum action |
 | --- | --- | --- | --- | --- |
-| Complete courseware for the five books in the notebook (each file stops near printed p. 180) | 237 of 276 topics: everything after BFM unit 6, ABM Module A, ABFM unit 8, BRBL unit 9, CB unit 6 | Asked the notebook where each file's body text ends | Drafting the 36–39 covered topics | Add the full books to the notebook, or place the full PDFs in `content/sources/books/` |
-| Courseware for RM, ITDB, HRM, RB | 105 topics in four electives | None possible | None | Add those books the same way |
-| Readable pages for review | Source-support and originality review of every draft, so nothing can be published | Tried the notebook's source viewer (page images only) and citation pop-ups (image excerpts); the pane is too small to read a page | — | Put the PDFs in `content/sources/books/` (best: pages can then be read directly), or widen the browser pane a lot |
+| Courseware for RM, ITDB, HRM, RB | 105 topics in four electives | None possible | Authoring the 171 topics that do have a source | Put those four books in `content/sources/books/` |
+| Primary sources for applicability at the 30 June 2026 cut-off (FEMA text, FEDAI rules, RBI directions) | Publication of regulatory-sensitive items | Not yet attempted for this batch | Web research on official sites is covered by the earlier approval to fetch official documents | None yet |
+| A human or independent reviewer | The quality bar for publication | Agent self-review recorded honestly | — | Owner decision: accept agent-only review for publication, or name a reviewer |
 | Razorpay test keys + support/refund text | Provider sandbox verification | Adapter checked against current docs and a local stand-in | None | Put test keys and `SUPPORT_TEXT` in a local `.env` (not in chat or git) |
 | A person to proofread the syllabus extraction (recommended, not blocking) | Confidence in the 276-topic denominator | Automated cross-checks done | — | Compare `content/syllabus/caiib-2026.json` titles with the PDF, especially the 6 flagged headings |
 
@@ -145,9 +152,12 @@ synthetic fixtures), **A** = `scripts/ui-audit.js` measured on the rendered DOM.
 - Last completed logical unit: notebook inventory and batch `BFM-A-U01-B001` imported as drafts and recorded
   in the ledger; all checks green; committed.
 - Nothing is half-edited.
-- Exact next action: batch `BFM-A-U01-B002` through the notebook chat (fact brief → verbatim support → author →
-  import → audit → ledger), same pattern as B001. The notebook needs the owner signed in to
-  `notebook.google.com` in the browser pane. Publication stays blocked until pages can be read for review.
+- Exact next action: batch `BFM-A-U01-B002`, working from the PDF pages directly: render and read printed
+  pp. 5–8 (markets and participants), 10 (forward margins), 13 (chain rule) of S03 (PDF page = printed + 17),
+  write facts with page locators, author, import, recompute, compare with the book's examples, update the ledger.
+  The notebook is no longer needed. Then LO_04–LO_07, then `BFM::MOD_A::U02`.
+- Scale reminder: one batch covered part of one of 276 topics. Finishing five papers is on the order of several
+  hundred batches.
 - Still possible without owner input: clean `npm ci` clone test; optional standalone coverage-map export.
 - Run: `npm run dev:fixtures` (http://localhost:5173) and `npm run server` (http://localhost:8787).
 - To refresh the baseline from a newer IIBF PDF: update the registry entry and rerun
