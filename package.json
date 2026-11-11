@@ -15,7 +15,7 @@
     "build:fixtures": "node scripts/build-content.mjs --fixtures && vite build --mode fixtures --outDir dist-fixtures && node scripts/build-sw.mjs dist-fixtures",
     "typecheck": "tsc --noEmit -p tsconfig.json && tsc --noEmit -p tsconfig.app.json",
     "lint": "eslint .",
-    "test": "node --test \"tests/*.test.mjs\" \"tests/core/*.test.ts\" \"tests/server/*.test.ts\"",
+    "test": "node --test \"tests/*.test.mjs\" \"tests/core/*.test.ts\" \"tests/server/*.test.ts\" \"tests/content/*.test.ts\"",
     "check": "npm run typecheck && npm run lint && npm test",
     "content:build": "node scripts/build-content.mjs",
     "validate:pack": "node scripts/validate-pack.mjs",

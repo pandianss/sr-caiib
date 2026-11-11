@@ -1,0 +1,341 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BFM-A-U01-B001",
+  "paper_id": "BFM",
+  "unit_label": "Module A: International Banking - Exchange Rates and Forex Business",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S03"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "statement": "FEMA, 1999 (Section 2, as cited by the courseware) defines foreign exchange as foreign currency, and includes (i) deposits, credits and balances payable in foreign currency, and drafts, traveller's cheques, letters of credit and bills of exchange expressed or drawn in Indian currency but payable in foreign currency; and (ii) instruments payable, at the option of the drawee, holder or another party, in Indian or foreign currency or partly in each.",
+      "source_id": "S03",
+      "locator": "Printed p. 4, heading 1.2 Foreign Exchange - Definition and Markets",
+      "regulatory_sensitive": true,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F002",
+      "statement": "Under a direct quote the amount of local currency varies for a fixed unit of foreign currency, as in India where one US dollar is priced in rupees.",
+      "source_id": "S03",
+      "locator": "Printed p. 11, heading Direct and Indirect Quotes",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F003",
+      "statement": "Under an indirect quote the local currency unit is fixed (for example Rs. 100) and the number of foreign currency units varies.",
+      "source_id": "S03",
+      "locator": "Printed p. 11, heading Direct and Indirect Quotes",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F004",
+      "statement": "The pound sterling, euro, Australian dollar and New Zealand dollar are quoted as one unit of that currency against a varying number of US dollars.",
+      "source_id": "S03",
+      "locator": "Printed p. 11, heading Direct and Indirect Quotes",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F005",
+      "statement": "Buying and selling rates are also called bid and offer rates; in a two-way quote the quoting bank bids (buys) at the first figure and offers (sells) at the second.",
+      "source_id": "S03",
+      "locator": "Printed p. 12, heading Bid and Offer Rates",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F006",
+      "statement": "For customer deals under direct quotation the exchange margin is deducted from the interbank buying rate for inward remittances, because the bank buys low, and added to the interbank selling rate for outward remittances, because the bank sells high.",
+      "source_id": "S03",
+      "locator": "Printed p. 35, section 1.8 Foreign Exchange Arithmetic - Concepts and Examples",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F007",
+      "statement": "When quoting under the indirect method the bank quotes the lower figure when it sells (sell low).",
+      "source_id": "S03",
+      "locator": "Printed p. 38, section 1.8 Foreign Exchange Arithmetic - Concepts and Examples",
+      "regulatory_sensitive": false,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F008",
+      "statement": "A tom deal settles on the next working day after the deal date; a spot deal settles on the second working day after the deal date; a forward deal settles on any day after the spot date.",
+      "source_id": "S03",
+      "locator": "Printed p. 9, headings Tom, Spot and Forward",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F009",
+      "statement": "A ready or cash deal is settled on the same day (value today).",
+      "source_id": "S03",
+      "locator": "Printed p. 42, Keywords",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F010",
+      "statement": "Intervening Saturdays and Sundays postpone the settlement date to the next working day.",
+      "source_id": "S03",
+      "locator": "Printed p. 9, heading Spot",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F011",
+      "statement": "Under FEDAI Rule 5, on settlement of merchant transactions the rupee amount is rounded off to the rupee or to actual paise according to the bank's internal policy.",
+      "source_id": "S03",
+      "locator": "Printed p. 30, Rule 5 - Foreign Exchange Contracts, item (ix)",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "draft_id": "D001",
+      "item_type": "card",
+      "variant": "statute",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "title": "What the law counts as foreign exchange",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "In Indian law, \"foreign exchange\" is wider than another country's banknotes. FEMA, 1999 starts with **foreign currency** and then brings in two further limbs:\n\n1. deposits, credits and balances payable in foreign currency, together with drafts, traveller's cheques, letters of credit and bills of exchange that are expressed or drawn in Indian currency but **payable in foreign currency**;\n2. any instrument that the drawee, the holder or another party may choose to have paid in Indian currency or in foreign currency, or partly in each.\n\nThe practical point from the first limb: paper written in rupees is still foreign exchange when it is payable in foreign currency.",
+        "statute_spec": {
+          "act_or_direction_name": "Foreign Exchange Management Act, 1999",
+          "section_or_clause": "Section 2 (definition of foreign exchange)",
+          "rule_summary": "Foreign exchange means foreign currency. It includes foreign-currency deposits, credits and balances; drafts, traveller's cheques, letters of credit and bills of exchange expressed in Indian currency but payable in foreign currency; and instruments payable, at a party's option, in Indian or foreign currency or partly in each.",
+          "applicability": "Used to decide whether a balance, claim or instrument is treated as foreign exchange in a bank's dealings with its customers.",
+          "exceptions": [],
+          "thresholds_or_penalties": []
+        },
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "A draft is drawn in rupees but is payable in US dollars in New York. Is it foreign exchange under FEMA, and what decides it?",
+          "expected_takeaway": "Yes. The definition covers drafts expressed in Indian currency but payable in foreign currency; the currency of payment decides it, not the currency the draft is written in."
+        }
+      }
+    },
+    {
+      "draft_id": "D002",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F002",
+        "F003",
+        "F004",
+        "F005",
+        "F006",
+        "F007"
+      ],
+      "payload": {
+        "title": "Reading a two-way quote",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "A dealer rarely gives one price. A quote such as USD/INR 83.2450/83.2550 carries two: the rate at which the **quoting bank buys** a dollar (the bid, 83.2450) and the rate at which it **sells** one (the offer, 83.2550). Both sides are named from the bank's point of view, never the customer's.\n\nIndia uses the direct method: one unit of foreign currency is priced in a varying number of rupees. Under a direct quote the bank buys low and sells high. So an exporter's dollars are bought on the bid side and an importer's dollars are sold on the offer side; for customers the bank then moves each side further in its own favour by an exchange margin. The rates here are illustrative.",
+        "expanded_explanation_md": "An indirect quote turns the picture round: the home currency is the fixed unit (for example ₹100) and the number of foreign currency units varies. In the international market the pound, the euro, the Australian dollar and the New Zealand dollar are quoted this way against the US dollar: one unit of that currency for so many dollars.\n\nThe dealer's rule turns round as well. With an indirect quote the bank quotes the lower figure when it sells, because handing over fewer foreign units for the same amount of home currency is the dearer price.",
+        "self_check": {
+          "mode": "question",
+          "question_id": "D004"
+        }
+      }
+    },
+    {
+      "draft_id": "D003",
+      "item_type": "card",
+      "variant": "worked_example",
+      "fact_ids": [
+        "F005",
+        "F006"
+      ],
+      "payload": {
+        "title": "Two quotes for one import payment",
+        "prerequisite_objective_ids": [
+          "BFM::MOD_A::U01::LO_02"
+        ],
+        "core_explanation_md": "A customer rate is the interbank rate moved in the bank's favour by an exchange margin. That lets you compare quotes that are worded differently. Illustrative case: an importer must pay USD 40,000 while interbank spot USD/INR is 83.4125/83.4175. Bank A says it will add a margin of 6 paise to the interbank rate. Bank B simply quotes an all-in rate of 83.4700. Which bank costs the importer less, and what margin is Bank B really charging?",
+        "worked_steps": [
+          {
+            "step_number": 1,
+            "description": "The importer is buying dollars, so both banks are selling: the starting point is the interbank selling rate.",
+            "formula_or_substitution": "Offer side of 83.4125/83.4175",
+            "intermediate_result": "83.4175"
+          },
+          {
+            "step_number": 2,
+            "description": "Bank A: add its margin, because a bank sells high.",
+            "formula_or_substitution": "83.4175 + 0.0600",
+            "intermediate_result": "₹83.4775 per USD"
+          },
+          {
+            "step_number": 3,
+            "description": "Cost at Bank A.",
+            "formula_or_substitution": "40,000 × 83.4775",
+            "intermediate_result": "₹33,39,100.00"
+          },
+          {
+            "step_number": 4,
+            "description": "Cost at Bank B at its all-in rate.",
+            "formula_or_substitution": "40,000 × 83.4700",
+            "intermediate_result": "₹33,38,800.00"
+          },
+          {
+            "step_number": 5,
+            "description": "Margin hidden inside Bank B's rate.",
+            "formula_or_substitution": "83.4700 − 83.4175",
+            "intermediate_result": "₹0.0525 per USD (5.25 paise)"
+          },
+          {
+            "step_number": 6,
+            "description": "Saving by choosing Bank B.",
+            "formula_or_substitution": "33,39,100.00 − 33,38,800.00",
+            "intermediate_result": "₹300.00"
+          }
+        ],
+        "final_answer_with_unit": "Bank B is cheaper by ₹300.00; its rate carries a margin of 5.25 paise per dollar against Bank A's 6 paise",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "For an importer buying dollars, which side of the interbank quote do you compare a bank's all-in rate with, and what does the difference tell you?",
+          "expected_takeaway": "The interbank selling (offer) rate, because the bank is selling. The excess of the all-in rate over that rate is the margin the bank is charging."
+        }
+      }
+    },
+    {
+      "draft_id": "D004",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F002",
+        "F005"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "A bank's dealer quotes USD/INR 83.2450/83.2550 (illustrative rates). A garment exporter sells USD 20,000 to this bank at the quoted rate, with no further margin. Which rate applies, and why?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "83.2550, because the exporter is the seller and a seller gets the offer",
+            "explanation_md": "Bid and offer are named from the quoting bank's side. The offer is where the bank sells, not where the customer sells."
+          },
+          {
+            "option_id": "B",
+            "text_md": "83.2450, because the bank is buying dollars and it buys at its bid",
+            "explanation_md": "The exporter's sale is the bank's purchase, and the quoting bank buys at the lower, bid side of a direct quote."
+          },
+          {
+            "option_id": "C",
+            "text_md": "83.2500, because a customer deal is done at the midpoint of the quote",
+            "explanation_md": "The midpoint is not a dealing rate. The bank deals at its bid or its offer."
+          },
+          {
+            "option_id": "D",
+            "text_md": "83.2400, because a customer always deals a little below the quoted bid",
+            "explanation_md": "Nothing is deducted here: the question says the deal is done at the quoted rate with no further margin."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "Look at the deal from the quoting bank's side: it is buying dollars. In a direct quote the bank buys at the first, lower rate (the bid), so the exporter receives ₹83.2450 per dollar."
+      }
+    },
+    {
+      "draft_id": "D005",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F008",
+        "F009",
+        "F010"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Two banks strike a USD/INR deal on Thursday, 12 November 2026 for value **spot**. Saturday and Sunday are not working days, and there are no other holidays in either centre. On which date do the funds settle?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Friday, 13 November 2026",
+            "explanation_md": "The next working day after the deal date is value tom, not spot."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Saturday, 14 November 2026",
+            "explanation_md": "This counts two calendar days. Spot counts working days, and Saturday is not one."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Monday, 16 November 2026",
+            "explanation_md": "Friday is the first working day after the deal; the weekend is skipped, so Monday is the second."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Tuesday, 17 November 2026",
+            "explanation_md": "This is the third working day after the deal. A date after the spot date would make it a forward."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "Spot settles on the second working day after the deal date. From Thursday, Friday is the first working day; Saturday and Sunday do not count and push settlement on; Monday, 16 November 2026 is the second."
+      }
+    },
+    {
+      "draft_id": "D006",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F005",
+        "F006",
+        "F011"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Interbank spot USD/INR is 83.4125/83.4175 (illustrative rates). A bank loads an exchange margin of 8 paise per dollar on customer deals. A customer remits USD 12,500 abroad at the resulting rate. How many rupees does the bank debit for the dollars? Ignore charges and taxes.",
+        "numeric_rule": {
+          "expected_answer": "1043718.75",
+          "unit_label": "rupees",
+          "precision_decimals": 2,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give the rupee amount to 2 decimal places.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "An outward remittance means the bank sells dollars, so it starts from the interbank selling rate and adds its margin: 83.4175 + 0.0800 = 83.4975. Then 12,500 × 83.4975 = ₹10,43,718.75.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "The bank is selling dollars: take the interbank selling rate.",
+            "formula_or_substitution": "Offer side of 83.4125/83.4175",
+            "intermediate_result": "83.4175"
+          },
+          {
+            "step_number": 2,
+            "description": "Add the margin, because the bank sells high.",
+            "formula_or_substitution": "83.4175 + 0.0800",
+            "intermediate_result": "83.4975"
+          },
+          {
+            "step_number": 3,
+            "description": "Multiply by the dollar amount.",
+            "formula_or_substitution": "12,500 × 83.4975",
+            "intermediate_result": "10,43,718.75"
+          }
+        ]
+      }
+    }
+  ],
+  "unresolved": [
+    "Source support was obtained through NotebookLM answers and its verbatim quotations with printed page numbers. The book pages themselves have not been read independently, because the notebook shows this source only as page images.",
+    "The courseware cites FEMA 'Section 2' without a clause letter; confirm the exact clause against the Act before publication.",
+    "F007 (sell low under indirect quotation) rests on an example annotation on printed p. 38, not on a stated rule; confirm wording on the page.",
+    "F011 (FEDAI Rule 5 rounding) and all FEDAI material need a check against the rules in force at the 30 June 2026 cut-off.",
+    "After the notebook audit, D003 and D005 were redesigned and D001, D002 and D004 revised. The redesigned drafts have not been re-audited.",
+    "Originality has only been compared with the courseware through NotebookLM; a direct comparison with printed pp. 4-43 (examples and Check Your Progress) is still required, especially for D004.",
+    "LO_03 is only partly covered: forward rates from forward margins and cross rates through the chain rule still need teaching and numerical assessment.",
+    "LO_01 is only partly covered: market organisation, participants and trading hours are not yet taught or assessed."
+  ],
+  "next_batch_hint": "BFM-A-U01-B002: forward margins and cross rates (LO_03), then the forex market and its participants (LO_01)."
+}

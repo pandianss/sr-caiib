@@ -29,6 +29,8 @@ const syllabusSource = registry.sources.find(x => x.source_id === SOURCE_ID);
 if (!syllabusSource) fail(`source registry has no entry ${SOURCE_ID}`);
 if (syllabusSource.sha256 !== src.source.sha256) fail('the syllabus extraction was made from a different file than the one in the source registry');
 if (src.extraction.issues.length) fail(`syllabus extraction has unresolved issues: ${src.extraction.issues.join('; ')}`);
+const availability = readJson(join(root, 'content', 'sources', 'availability.json'));
+const available = new Set(availability.available_unit_ids), partial = new Set(availability.partial_unit_ids);
 const objectivesDir = join(root, 'content', 'objectives');
 const ledgerDir = join(root, 'content', 'ledger');
 /** Editorially derived objectives, one file per paper: [{ id, unit_id, title, description? }] */
@@ -54,7 +56,8 @@ for (const p of src.papers) {
         topic_id: u.id, paper_id: p.id, module_id: m.id, module_title: moduleTitle, module_kind: m.kind === 'appendix' ? 'appendix' : 'module', title: u.title,
         official_scope_text: u.scope_text ?? '', syllabus_source_id: SOURCE_ID, locator: `PDF page${u.pages.length > 1 ? 's' : ''} ${u.pages.join(', ')}`,
         baseline_issue: u.baseline_issue ?? null, kind: u.kind === 'named_section' ? 'named_section' : 'editorial_container', objectives,
-        blocked_reason: objectives.length ? null : 'Teaching sources (the textbooks or primary references) are not yet accessible, so objectives, lessons and assessments have not been produced.',
+        // A topic is blocked only when no accessible source covers it; otherwise it is simply not written yet.
+        blocked_reason: objectives.length || available.has(u.id) ? null : partial.has(u.id) ? availability.reason_partial : availability.reason_unavailable,
       });
     }
   }
@@ -121,7 +124,7 @@ if (fixtures) {
 const ledger = {
   ledger_version: '2', generated_at: manifest.generated_at, baseline_version: SYLLABUS_VERSION,
   exam_session: contexts.filter(c => c.kind !== 'fixture').map(c => c.label).join(', '),
-  verdict: `Baseline established from the official 2026 syllabus (${inferred} plain-type headings inferred and flagged). No objectives derived and no content authored: teaching sources are not yet accessible.`,
+  verdict: `Baseline established from the official 2026 syllabus (${inferred} plain-type headings inferred and flagged). ${catalogue.objectives.length} editorial objectives derived; drafts exist for ${[...ledgerRecords.values()].filter(r => r.lesson_item_ids.length + r.worked_example_item_ids.length + r.assessment_item_ids.length > 0).length} of them and none is reviewed or published. Accessible courseware covers ${available.size} topics fully and ${partial.size} partly.`,
   sources: registry.sources.map(x => ({ source_id: x.source_id, title: x.title, authority: x.authority, fingerprint_sha256: x.sha256, session_applicability: x.session_applicability, note: `${x.url} · retrieved ${x.retrieved_on}. ${x.note}` })),
   papers,
 };
