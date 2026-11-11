@@ -46,7 +46,7 @@ Last updated: 11 November 2026, session 5. Content authoring is **unblocked for 
 | Dimension | Status | Evidence or remaining condition |
 | --- | --- | --- |
 | Implementation | in_progress (feature-complete against synthetic content) | All screens, engine, storage, backend and service worker exist and are tested. Not yet exercised with real published content, a real payment provider, a screen reader or a physical phone. |
-| Original full-syllabus content | in_progress, mostly blocked | 276-topic baseline. Batch `BFM-A-U01-B001`: 7 editorial objectives, 3 cards and 3 questions as **drafts** (source and originality review pending). 0 topics drafted adequately, 0 reviewed, 0 published. Courseware on disk for ABM, BFM, ABFM, BRBL, CB (171 topics); 105 topics in RM, ITDB, HRM, RB have no source. |
+| Original full-syllabus content | in_progress, mostly blocked | 276-topic baseline. Batch `BFM-A-U01-B001`: 7 editorial objectives, now 12 draft items in two batches (6 cards, 6 questions) as **drafts** (source and originality review pending). 0 topics drafted adequately, 0 reviewed, 0 published. Courseware on disk for ABM, BFM, ABFM, BRBL, CB (171 topics); 105 topics in RM, ITDB, HRM, RB have no source. |
 | Release readiness | blocked | Needs content and provider sandbox verification. Exam configuration is verified. |
 | Live launch | pending | Owner action; not started. |
 
@@ -115,8 +115,11 @@ synthetic fixtures), **A** = `scripts/ui-audit.js` measured on the rendered DOM.
 - Open source points: the cut-off for December 2026 is derived from the general rule (no 2026 table); the
   numerical notice gives rounding examples but no rule for an exact tie, so authored numericals must avoid tie
   cases until confirmed; `visual-map/source-data.json` (2025 booklet) is superseded and unused by the build.
-- Next content cursor: `BFM-A-U01-B002` — forward rates and cross rates (LO_03), a value-date lesson (LO_02),
-  market organisation and participants (LO_01); then LO_04–LO_07; then `BFM::MOD_A::U02`.
+- Batch `content/batches/BFM-A-U01-B002/`: 6 more draft items (participants card, forward-rate formula card,
+  cross-rate worked example, 1 choice question, 2 numericals), written from pages read directly; calculations
+  recomputed in `tests/content/batch-b002.test.ts`. Draft items in total: 12, all in `BFM::MOD_A::U01`.
+- Next content cursor: `BFM-A-U01-B003` — value-date lesson and indirect-quote question (LO_02), customer
+  forward-rate worked example (LO_03), then LO_04–LO_07; then `BFM::MOD_A::U02`.
 
 ## Verification log
 
@@ -152,9 +155,9 @@ synthetic fixtures), **A** = `scripts/ui-audit.js` measured on the rendered DOM.
 - Last completed logical unit: notebook inventory and batch `BFM-A-U01-B001` imported as drafts and recorded
   in the ledger; all checks green; committed.
 - Nothing is half-edited.
-- Exact next action: batch `BFM-A-U01-B002`, working from the PDF pages directly: render and read printed
-  pp. 5–8 (markets and participants), 10 (forward margins), 13 (chain rule) of S03 (PDF page = printed + 17),
-  write facts with page locators, author, import, recompute, compare with the book's examples, update the ledger.
+- Exact next action: batch `BFM-A-U01-B003`, working from the PDF pages directly (S03, PDF page = printed + 17):
+  read printed pp. 7–8 and 14–29 for factors, dealing room, derivatives and RBI/FEDAI guidelines; write facts
+  with page locators, author, import, recompute, compare with the book's examples, update the ledger.
   The notebook is no longer needed. Then LO_04–LO_07, then `BFM::MOD_A::U02`.
 - Scale reminder: one batch covered part of one of 276 topics. Finishing five papers is on the order of several
   hundred batches.

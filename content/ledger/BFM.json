@@ -5,25 +5,30 @@
     "origin": "editorial",
     "source_support": "supported",
     "lesson_item_ids": [
-      "item_bfedec5692880586fb296b7ecf4b9c6d4ec409b47b99b4d81a1ea08ea0decb77"
+      "item_bfedec5692880586fb296b7ecf4b9c6d4ec409b47b99b4d81a1ea08ea0decb77",
+      "item_f18bb170aa440852c4a3f72085b6e586364aded284f9a1fce5b2bb71f9eaa35d"
     ],
     "worked_example_item_ids": [],
-    "assessment_item_ids": [],
-    "teaching_adequate": false,
+    "assessment_item_ids": [
+      "item_b3a07ceff3b72bc5a763499a00784c47a5327de9feb756c6eb6eadc5284b7679"
+    ],
+    "teaching_adequate": true,
     "assessment_adequate": false,
     "review": {
       "source": "pending",
       "originality": "passed",
       "calculations": "not_applicable",
       "record_refs": [
-        "content/batches/BFM-A-U01-B001/review.md"
+        "content/batches/BFM-A-U01-B001/review.md",
+        "content/batches/BFM-A-U01-B002/review.md"
       ]
     },
     "published_item_ids": [],
     "gaps": [
-      "Only the legal definition is drafted (one card, self-assessed check). Market organisation, participants, trading hours and centres are not yet taught, and there is no scored question for this objective.",
-      "Source support confirmed by reading the printed pages; applicability at the 30 June 2026 cut-off still to be checked against primary sources (FEMA clause, FEDAI rules).",
-      "Originality check was done by the authoring agent against the pages listed in the review record; no independent or human review yet."
+      "Assessment is thin: one scored question on participants; the legal definition has only a self-assessed check.",
+      "Trading hours under FEDAI rules are not covered.",
+      "Applicability at the 30 June 2026 cut-off still to be checked against primary sources (FEMA clause).",
+      "Reviewed only by the authoring agent; no independent or human review."
     ]
   },
   {
@@ -62,12 +67,17 @@
     "statement": "Work out customer (merchant) rates, forward rates and cross rates from interbank quotes",
     "origin": "editorial",
     "source_support": "supported",
-    "lesson_item_ids": [],
+    "lesson_item_ids": [
+      "item_7d12fab56bff9a545850d7596c0f4df43b6022fd37fcbeb9ef975c089d457c68"
+    ],
     "worked_example_item_ids": [
-      "item_714418e20097048d3b5463d3b5952ca0b09f260d35f7174e4a5a593fe5bcd90a"
+      "item_714418e20097048d3b5463d3b5952ca0b09f260d35f7174e4a5a593fe5bcd90a",
+      "item_13a003edf244481cd4761f49b2fc2a0bac2124e5f3e31e660a7b56d00d53d8dd"
     ],
     "assessment_item_ids": [
-      "item_3941c554da304c00837f97bcf82a9fff48c8297e4ab3c8c6bfe22434714c3e08"
+      "item_3941c554da304c00837f97bcf82a9fff48c8297e4ab3c8c6bfe22434714c3e08",
+      "item_939ce9d34cf464b1b55e4f21b7f5bc11eb2506b60989550c288e0cb6773f2085",
+      "item_5f8cfe514fa18f379719f80117725facd1fc5da5ba483f32f04bc3bd8bb201ca"
     ],
     "teaching_adequate": false,
     "assessment_adequate": false,
@@ -77,14 +87,16 @@
       "calculations": "passed",
       "record_refs": [
         "content/batches/BFM-A-U01-B001/review.md",
-        "tests/content/batch-calculations.test.ts"
+        "tests/content/batch-calculations.test.ts",
+        "content/batches/BFM-A-U01-B002/review.md",
+        "tests/content/batch-b002.test.ts"
       ]
     },
     "published_item_ids": [],
     "gaps": [
-      "Only customer (merchant) rates are covered. Forward rates from forward margins and cross rates through the chain rule still need a lesson, a worked example and numerical questions.",
-      "Source support confirmed by reading the printed pages; applicability at the 30 June 2026 cut-off still to be checked against primary sources (FEMA clause, FEDAI rules).",
-      "Originality check was done by the authoring agent against the pages listed in the review record; no independent or human review yet."
+      "Customer rates and cross rates each have a worked example and a numerical question. Forward rates have a formula card and one numerical, but no worked example of a customer forward rate (forward margin plus exchange margin).",
+      "Applicability at the 30 June 2026 cut-off still to be checked against primary sources (FEDAI rules).",
+      "Reviewed only by the authoring agent; no independent or human review."
     ]
   },
   {
