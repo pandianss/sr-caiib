@@ -1,0 +1,126 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BFM-A-U01-B006",
+  "paper_id": "BFM",
+  "unit_label": "Module A: International Banking - Exchange Rates and Forex Business",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": ["S03"],
+  "facts": [
+    { "fact_id": "F001", "statement": "A currency swap exchanges cash flows in one currency for cash flows in another currency, and offers an efficient way to hedge forex risk and interest rate risk at the same time.", "source_id": "S03", "locator": "Printed p. 25, heading Currency Swap", "regulatory_sensitive": false, "evidence_status": "explicit" },
+    { "fact_id": "F002", "statement": "In a fixed-to-floating zero coupon swap the fixed-rate cash flows are not paid periodically but once, at the end of the swap's life, while the other party keeps making regular floating-rate payments.", "source_id": "S03", "locator": "Printed p. 25, heading Zero Coupon Swaps", "regulatory_sensitive": false, "evidence_status": "explicit" },
+    { "fact_id": "F003", "statement": "An equity swap exchanges future cash flows where one set is equity-based (the return on a reference equity) and the other is a fixed-income flow such as a benchmark interest rate, letting each party diversify income while keeping its original assets.", "source_id": "S03", "locator": "Printed p. 25, heading Equity Swap", "regulatory_sensitive": false, "evidence_status": "explicit" },
+    { "fact_id": "F004", "statement": "In a basis swap the cash flows on both legs are linked to different floating rates; it can be an interest rate swap or a currency swap.", "source_id": "S03", "locator": "Printed p. 25, heading Basis Swap", "regulatory_sensitive": false, "evidence_status": "explicit" },
+    { "fact_id": "F005", "statement": "A dealer maintains a funds position and a currency position. The funds position reflects inflows and outflows of funds (receivables and payables); mismatches expose the bank to interest cost on Nostro overdrafts or lost interest on surplus credit balances.", "source_id": "S03", "locator": "Printed p. 15, paragraph on the dealer's two positions", "regulatory_sensitive": false, "evidence_status": "explicit" },
+    { "fact_id": "F006", "statement": "The currency position deals with overbought or oversold positions arising from merchant and interbank deals; the net position exposes the dealer to exchange rate risk and must be kept within limits set by management. Ready items and forwards both enter it.", "source_id": "S03", "locator": "Printed p. 15", "regulatory_sensitive": false, "evidence_status": "explicit" },
+    { "fact_id": "F007", "statement": "The need for an integrated treasury, instead of keeping foreign exchange and domestic currency markets separate, arose from interest rate deregulation, liberalisation of exchange control, development of forex markets, advances in the settlement system, and the dealing environment.", "source_id": "S03", "locator": "Printed p. 15, paragraph before Functions of Integrated Treasury", "regulatory_sensitive": false, "evidence_status": "explicit" },
+    { "fact_id": "F008", "statement": "Functions of an integrated treasury include liquidity and funds management, asset-liability management and pricing, risk management of market, credit and operational risk, transfer pricing, developing derivative products, arbitrage, capital adequacy, and minimising provisioning for non-performing assets.", "source_id": "S03", "locator": "Printed pp. 15-16, Functions of Integrated Treasury", "regulatory_sensitive": false, "evidence_status": "explicit" }
+  ],
+  "drafts": [
+    {
+      "draft_id": "D001",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": ["F001", "F002", "F003", "F004"],
+      "payload": {
+        "title": "Four swaps told apart by what changes hands",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "A swap is an agreement to exchange streams of cash flows. The useful question for each variety is: *what is on each leg?*\n\n- **Currency swap**: one leg is in one currency, the other in another. It can hedge exchange rate risk and interest rate risk in a single arrangement.\n- **Zero coupon swap**: the fixed leg pays nothing along the way and settles in one payment at the end, while the other party keeps paying its floating rate regularly.\n- **Equity swap**: one leg follows the return on a reference equity, the other a fixed-income flow such as a benchmark interest rate. Each party gets the exposure it wants without selling the assets it holds.\n- **Basis swap**: both legs are floating, but tied to *different* floating rates.\n\nCompare with the plain interest rate swap you have already met, where one leg is fixed and the other floating.",
+        "self_check": { "mode": "question", "question_id": "D004" }
+      }
+    },
+    {
+      "draft_id": "D002",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": ["F005", "F006"],
+      "payload": {
+        "title": "A dealer's two books: funds and currency",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "A dealer watches two positions at once, and each hides a different risk.\n\n- **Funds position**: money coming in and going out, receivables and payables. If they do not match, the bank either funds a gap by overdrawing a Nostro account and pays interest, or sits on surplus credit balances and loses interest. The risk is an **interest** cost.\n- **Currency position**: the net holding of each currency after all deals, merchant and interbank. If the dealer has bought more than sold, the position is **overbought**; if sold more, **oversold**. Either leaves the bank exposed to **exchange rate** movements, so the dealer must keep it within the limits management sets.\n\nBoth positions include deals that are ready now and forwards that fall due later.",
+        "expanded_explanation_md": "Overbought means long: the bank gains if the currency rises and loses if it falls. Oversold means short: the opposite.",
+        "self_check": { "mode": "self_assessed", "prompt_text": "A dealer has bought USD 5 million and sold USD 4 million during the day. Which position is this, and what does a fall in the dollar do to it?", "expected_takeaway": "Overbought by USD 1 million (long). A fall in the dollar causes a loss on the net position." }
+      }
+    },
+    {
+      "draft_id": "D003",
+      "item_type": "card",
+      "variant": "worked_example",
+      "fact_ids": ["F006"],
+      "payload": {
+        "title": "Closing the day: the net dollar position and what a rate move does to it",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "Illustrative case: during the day a dealer buys USD 3,000,000 from customers, sells USD 1,200,000 to customers, buys USD 500,000 from another bank and sells USD 1,900,000 to another bank. At the close USD/INR falls by 60 paise. What is the dealer's net position and the effect on the bank?",
+        "worked_steps": [
+          { "step_number": 1, "description": "Add what was bought.", "formula_or_substitution": "3,000,000 + 500,000", "intermediate_result": "USD 3,500,000 bought" },
+          { "step_number": 2, "description": "Add what was sold.", "formula_or_substitution": "1,200,000 + 1,900,000", "intermediate_result": "USD 3,100,000 sold" },
+          { "step_number": 3, "description": "Net position: bought minus sold. A positive result means overbought.", "formula_or_substitution": "3,500,000 − 3,100,000", "intermediate_result": "USD 400,000 overbought" },
+          { "step_number": 4, "description": "The bank is long dollars and the dollar has fallen against the rupee by 0.60. Revalue the net position.", "formula_or_substitution": "400,000 × 0.60", "intermediate_result": "₹2,40,000.00 loss" }
+        ],
+        "final_answer_with_unit": "Net position USD 400,000 overbought; a 60-paise fall in USD/INR costs the bank ₹2,40,000.00",
+        "self_check": { "mode": "self_assessed", "prompt_text": "Had the same day left the dealer oversold by USD 400,000, what would the same 60-paise fall have done?", "expected_takeaway": "A gain of ₹2,40,000.00, because an oversold (short) position profits when the currency falls." }
+      }
+    },
+    {
+      "draft_id": "D004",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": ["F004"],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "In which swap are the cash flows on both legs linked to floating rates, but to two different floating rates?",
+        "options": [
+          { "option_id": "A", "text_md": "A zero coupon swap", "explanation_md": "A zero coupon swap has a fixed leg paid once at the end; it does not link both legs to floating rates." },
+          { "option_id": "B", "text_md": "An equity swap", "explanation_md": "One leg of an equity swap follows the return on a reference equity, which is not a floating interest rate." },
+          { "option_id": "C", "text_md": "A basis swap", "explanation_md": "Both legs are floating, each tied to a different floating rate." },
+          { "option_id": "D", "text_md": "A fixed-to-floating interest rate swap", "explanation_md": "One leg is fixed, so both legs are not floating." }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "A basis swap has both legs floating, linked to different floating rates; it can be an interest rate swap or a currency swap."
+      }
+    },
+    {
+      "draft_id": "D005",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": ["F006"],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A dealer's dollar deals for the day (illustrative figures): bought USD 1,600,000 from customers; sold USD 2,350,000 to customers; bought USD 400,000 from another bank; sold USD 250,000 to another bank. At the close the dollar rises by 45 paise against the rupee. By how many rupees does the revalued net position change the bank's result, as a positive number if it is a loss?",
+        "numeric_rule": { "expected_answer": "270000.00", "unit_label": "rupees (loss)", "precision_decimals": 2, "rounding_mode": "HALF_UP", "rounding_instruction": "Give the loss in rupees to 2 decimal places.", "allow_negative": false },
+        "correct_explanation_md": "Bought: 1,600,000 + 400,000 = USD 2,000,000. Sold: 2,350,000 + 250,000 = USD 2,600,000. Net: 2,000,000 − 2,600,000 = USD 600,000, so the dealer is oversold (short). A short position loses when the dollar rises: 600,000 × 0.45 = ₹2,70,000.00.",
+        "worked_solution_steps": [
+          { "step_number": 1, "description": "Total bought.", "formula_or_substitution": "1,600,000 + 400,000", "intermediate_result": "2,000,000" },
+          { "step_number": 2, "description": "Total sold.", "formula_or_substitution": "2,350,000 + 250,000", "intermediate_result": "2,600,000" },
+          { "step_number": 3, "description": "Net position (oversold by the difference).", "formula_or_substitution": "2,600,000 − 2,000,000", "intermediate_result": "600,000 oversold" },
+          { "step_number": 4, "description": "A rise of 0.45 on a short position is a loss.", "formula_or_substitution": "600,000 × 0.45", "intermediate_result": "2,70,000.00" }
+        ]
+      }
+    },
+    {
+      "draft_id": "D006",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": ["F007"],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "Which development is given as a reason why banks needed an integrated treasury rather than keeping their foreign exchange and domestic currency operations separate?",
+        "options": [
+          { "option_id": "A", "text_md": "Fixing of all interest rates by the regulator", "explanation_md": "The reason is the opposite: the deregulation of interest rates." },
+          { "option_id": "B", "text_md": "Tighter exchange control on cross-border flows", "explanation_md": "The reason is the opposite: the liberalisation of exchange control." },
+          { "option_id": "C", "text_md": "Liberalisation of exchange control", "explanation_md": "Exchange control was liberalised, which linked the forex and domestic markets and called for joint management." },
+          { "option_id": "D", "text_md": "Slower settlement systems between currencies", "explanation_md": "The reason is the opposite: advances in the settlement system." }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "Liberalisation of exchange control is one of the reasons listed, along with interest rate deregulation, the development of forex markets, advances in the settlement system and the changed dealing environment."
+      }
+    }
+  ],
+  "unresolved": [
+    "LO_06: option pricing elements and the relation between futures prices and spot prices are not taught.",
+    "LO_05: the RBI internal control guidelines and board-fixed limits are regulation-sensitive and not used.",
+    "Only functions of an integrated treasury that do not state a regulatory requirement were drawn on in facts; the card set does not teach the function list as such.",
+    "Reviewer for this batch is the authoring agent; no independent or human review."
+  ],
+  "next_batch_hint": "BFM-A-U01-B007: option pricing elements (LO_06), then RBI and FEDAI guidelines (LO_07) from printed p. 27, with a primary-source check."
+}
