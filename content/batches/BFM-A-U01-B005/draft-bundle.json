@@ -1,0 +1,836 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BFM-A-U01-B005",
+    "paper_id": "BFM",
+    "unit_label": "Module A: International Banking - Exchange Rates and Forex Business",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S03"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "statement": "A derivative is a financial product whose value comes from another underlying asset or exposure (commodity, equity, bond, a foreign currency position and so on); futures, forwards, options and swaps are derivatives, and they are used either for speculation (taking a position hoping for profit) or for hedging (reducing the risks of everyday cash flows).",
+        "source_id": "S03",
+        "locator": "Printed p. 21, section 1.6 Derivative Products",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "F002",
+        "statement": "A forward contract is a negotiated, tailor-made agreement between two parties to fix a foreign exchange rate in advance; it is traded over the counter, not on an exchange, and is used to hedge future receivables (an exporter) or future payables (an importer).",
+        "source_id": "S03",
+        "locator": "Printed p. 22, heading Forward Contracts",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "F003",
+        "statement": "A foreign currency futures contract is a standardised contract traded on an exchange to buy or sell a standard amount of foreign exchange at a fixed time, place and price; the clearing house conducts the trade and guarantees both sides, and manages credit risk by maintaining margins.",
+        "source_id": "S03",
+        "locator": "Printed pp. 21-22, Foreign Currency Futures and Futures Contracts - Characteristics",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "F004",
+        "statement": "Forwards are of any size while futures are standardised; forwards are between a client and a bank while futures are between clients and the exchange; forward prices come from bid and ask quotes while futures prices come from open outcry or an electronic platform; futures need initial and mark-to-market margins while forwards have no explicit collateral; forwards are delivered or cancelled on due dates while futures are settled by offsetting positions or sometimes physical delivery.",
+        "source_id": "S03",
+        "locator": "Printed p. 23, heading Forward Contracts v/s Futures Contracts",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "F005",
+        "statement": "An option gives the buyer the right but not the obligation to buy or sell an amount of currency at a fixed price for a specified period. A call gives the right to buy (generally imports) and a put gives the right to sell (generally exports). The buyer is the holder; the seller is the writer or grantor.",
+        "source_id": "S03",
+        "locator": "Printed pp. 23-24, heading OPTIONS",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "F006",
+        "statement": "Every option has three price elements: the strike (exercise) price, the premium paid when the option is bought, and the spot rate at that time.",
+        "source_id": "S03",
+        "locator": "Printed p. 24",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "F007",
+        "statement": "An American option can be exercised at any time up to expiry; a European option only on its expiry date.",
+        "source_id": "S03",
+        "locator": "Printed p. 24, Types of Option",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "F008",
+        "statement": "An option is at the money when its exercise price equals the spot price, in the money when exercising it immediately would be profitable (before the cost of the premium), and out of the money when exercising it immediately would not be profitable (before the premium).",
+        "source_id": "S03",
+        "locator": "Printed p. 24, At the Money, In the Money and Out of Money Options",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "F009",
+        "statement": "A swap is an agreement between two parties to exchange a series of cash flows over a period. In an interest rate swap one leg is at a fixed rate and the other at a floating rate, only the interest cash flows are exchanged (not the principal), and the notional amount is the basis for calculating them.",
+        "source_id": "S03",
+        "locator": "Printed pp. 24-25, SWAPS and Interest Rate Swap",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      }
+    ],
+    "drafts": [
+      {
+        "draft_id": "D001",
+        "item_type": "card",
+        "variant": "concept",
+        "fact_ids": [
+          "F001",
+          "F002",
+          "F003",
+          "F004"
+        ],
+        "payload": {
+          "title": "Forward or future: who writes the terms, and who stands behind the deal",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "A derivative is a product whose value is derived from something else, such as a currency position. Used to take a view it is speculation; used to cut the risk in everyday cash flows it is hedging.\n\nTwo derivatives fix a future exchange rate today, and they differ on two questions.\n\n- **Who writes the terms?** A **forward** is negotiated between a customer and a bank, in any size and for the dates they agree. A **future** is a standard contract, in a fixed size, traded on an exchange.\n- **Who stands behind it?** In a forward you rely on the other party, and no collateral is demanded explicitly. In a future the clearing house sits between buyer and seller and guarantees both, and it protects itself by collecting margins.\n\nA forward is typically settled by delivery or cancellation on the due date. A future is usually closed out by taking an opposite position.",
+          "expanded_explanation_md": "That is why a forward is the usual tool for an exporter or importer with a known amount and date: it can be tailored. The standard future suits those who want a traded, guaranteed contract and can manage margin calls.",
+          "self_check": {
+            "mode": "question",
+            "question_id": "D004"
+          }
+        }
+      },
+      {
+        "draft_id": "D002",
+        "item_type": "card",
+        "variant": "concept",
+        "fact_ids": [
+          "F005",
+          "F006",
+          "F007",
+          "F008"
+        ],
+        "payload": {
+          "title": "Options: a right you pay for",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "An option gives its buyer the **right, not the obligation**, to buy or sell currency at a fixed price during a set period. Because the buyer can walk away, the buyer pays for the right: the **premium**.\n\n- A **call** is a right to buy; a **put** is a right to sell. In currency business calls tend to suit importers and puts exporters.\n- The buyer is the **holder**; the seller is the **writer** (or grantor).\n- The fixed price is the **strike** (exercise) price.\n- An **American** option can be exercised at any time up to expiry; a **European** option only on the expiry date.\n\nCompare the strike with today's spot rate, ignoring the premium: if exercising now would pay, the option is **in the money**; if not, **out of the money**; if strike and spot are equal, **at the money**.",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "An importer holds a call on dollars with a strike of 84.00. Spot is 84.50. Is the option in, at or out of the money, and why?",
+            "expected_takeaway": "In the money: exercising lets the importer buy at 84.00 what costs 84.50 in the market, a gain before the premium."
+          }
+        }
+      },
+      {
+        "draft_id": "D003",
+        "item_type": "card",
+        "variant": "worked_example",
+        "fact_ids": [
+          "F005",
+          "F006",
+          "F008"
+        ],
+        "payload": {
+          "title": "An importer's call option: the cost in two futures",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "Illustrative case: an importer must buy USD 100,000 in three months and does not want to pay more than about ₹84.35 per dollar. It buys a call option with a strike of ₹84.00 and pays a premium of ₹0.35 per dollar at the start. Work out the effective cost per dollar and the total outlay if, at expiry, spot is (a) 84.80 or (b) 83.60. Ignore interest on the premium.",
+          "worked_steps": [
+            {
+              "step_number": 1,
+              "description": "Premium paid on day one for USD 100,000.",
+              "formula_or_substitution": "100,000 × 0.35",
+              "intermediate_result": "₹35,000.00"
+            },
+            {
+              "step_number": 2,
+              "description": "Case (a), spot 84.80: the call is in the money (strike 84.00 is below spot). Exercise it and buy at the strike.",
+              "formula_or_substitution": "100,000 × 84.00",
+              "intermediate_result": "₹84,00,000.00"
+            },
+            {
+              "step_number": 3,
+              "description": "Total outlay in case (a): strike cost plus premium.",
+              "formula_or_substitution": "84,00,000.00 + 35,000.00",
+              "intermediate_result": "₹84,35,000.00 (₹84.35 per USD)"
+            },
+            {
+              "step_number": 4,
+              "description": "Case (b), spot 83.60: the call is out of the money. Let it lapse and buy in the market.",
+              "formula_or_substitution": "100,000 × 83.60",
+              "intermediate_result": "₹83,60,000.00"
+            },
+            {
+              "step_number": 5,
+              "description": "Total outlay in case (b): market cost plus the premium already paid.",
+              "formula_or_substitution": "83,60,000.00 + 35,000.00",
+              "intermediate_result": "₹83,95,000.00 (₹83.95 per USD)"
+            }
+          ],
+          "final_answer_with_unit": "Outlay ₹84,35,000.00 (₹84.35 per USD) if spot is 84.80; ₹83,95,000.00 (₹83.95 per USD) if spot is 83.60. The importer's cost is capped at ₹84.35 per USD and it still gains if the rupee strengthens",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "What does the premium buy the importer, and what is the most the importer can end up paying per dollar here?",
+            "expected_takeaway": "The right to buy at the strike whatever happens to spot, and so a cap on the cost: strike plus premium, ₹84.35 per dollar."
+          }
+        }
+      },
+      {
+        "draft_id": "D004",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F003",
+          "F004"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A corporate wants a currency contract in which the credit risk of the other side is taken over by a clearing house, which collects margins to protect itself. Which contract fits?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "A forward contract with its bank, because the bank guarantees delivery",
+              "explanation_md": "A forward is between the customer and the bank, which is the counterparty; no clearing house stands between them."
+            },
+            {
+              "option_id": "B",
+              "text_md": "A foreign currency futures contract traded on an exchange",
+              "explanation_md": "In an exchange-traded futures contract the clearing house guarantees both sides and manages credit risk through margins."
+            },
+            {
+              "option_id": "C",
+              "text_md": "A tailor-made over-the-counter swap agreed privately with a dealer",
+              "explanation_md": "A privately agreed swap is a contract between two parties; no clearing house is involved."
+            },
+            {
+              "option_id": "D",
+              "text_md": "A spot deal, because settlement is two working days away",
+              "explanation_md": "A spot deal is not a derivative, and the nature of the counterparty's risk is not changed by settlement timing."
+            }
+          ],
+          "correct_option_id": "B",
+          "correct_explanation_md": "Futures are standardised and traded on an exchange, where the clearing house conducts the trade and guarantees both buyer and seller, managing credit risk through margins. A forward relies on the counterparty."
+        }
+      },
+      {
+        "draft_id": "D005",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F009"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A company pays a fixed rate of 7.10% p.a. and receives a floating rate on an interest rate swap with a notional amount of ₹20,00,00,000 (illustrative figures). For one quarter the floating rate is 6.90% p.a. Treat a quarter as exactly one-quarter of a year, and assume cash flows are netted and no principal is exchanged. What net amount does the company pay for the quarter, in rupees?",
+          "numeric_rule": {
+            "expected_answer": "100000.00",
+            "unit_label": "rupees",
+            "precision_decimals": 2,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Give the amount to 2 decimal places.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "Both interest flows are worked on the notional amount, which is never itself exchanged. Fixed leg for the quarter: 20,00,00,000 × 7.10% ÷ 4 = ₹35,50,000. Floating leg: 20,00,00,000 × 6.90% ÷ 4 = ₹34,50,000. The company pays the larger and receives the smaller, so the net payment is ₹1,00,000.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "Fixed leg for one quarter.",
+              "formula_or_substitution": "20,00,00,000 × 0.0710 ÷ 4",
+              "intermediate_result": "35,50,000.00"
+            },
+            {
+              "step_number": 2,
+              "description": "Floating leg for one quarter.",
+              "formula_or_substitution": "20,00,00,000 × 0.0690 ÷ 4",
+              "intermediate_result": "34,50,000.00"
+            },
+            {
+              "step_number": 3,
+              "description": "Net payment by the fixed-rate payer.",
+              "formula_or_substitution": "35,50,000.00 − 34,50,000.00",
+              "intermediate_result": "1,00,000.00"
+            }
+          ]
+        }
+      },
+      {
+        "draft_id": "D006",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F005",
+          "F008"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "An exporter holds a put option on US dollars with a strike of ₹83.00. Spot USD/INR is now ₹84.00. Ignoring the premium, how is the option described?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "In the money, because the strike is below the spot rate",
+              "explanation_md": "That reasoning suits a call. A put is a right to sell: the exporter would sell at 83.00 what the market pays 84.00 for."
+            },
+            {
+              "option_id": "B",
+              "text_md": "At the money, because the strike and spot are within one rupee",
+              "explanation_md": "At the money means the strike equals the spot rate; being close is not enough."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Out of the money, because selling at the strike would give less than the market",
+              "explanation_md": "Exercising now would not be profitable, since the exporter would receive 83.00 instead of selling at 84.00 in the market."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Out of the money, because a put can only be exercised on the expiry date",
+              "explanation_md": "Whether a put can be exercised early depends on whether it is American or European; that is not what decides how far in or out of the money it is."
+            }
+          ],
+          "correct_option_id": "C",
+          "correct_explanation_md": "A put is the right to sell at the strike. With a strike of 83.00 and spot at 84.00, exercising would earn less than the market pays, so exercising now would not be profitable: the option is out of the money."
+        }
+      }
+    ],
+    "unresolved": [
+      "LO_06 is only partly covered: swaps beyond the interest rate swap (currency, zero coupon, equity and basis swaps) are not taught, and option pricing elements are not covered.",
+      "Statements on printed pp. 22-23 about conditions on forward contracts in India (documentary evidence of the underlying, hedge maturity, cancellation after maturity) are regulation-sensitive and were not used.",
+      "LO_05 is still missing the funds and currency positions and the integrated treasury (printed pp. 15-16).",
+      "Reviewer for this batch is the authoring agent; no independent or human review."
+    ],
+    "next_batch_hint": "BFM-A-U01-B006: swaps and the funds and currency positions and integrated treasury (LO_05, LO_06), then LO_07."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BFM-A-U01-B005",
+    "paper_id": "BFM",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 7, Compulsory Paper II, Module A: International Banking, Exchange Rates and Forex Business"
+    },
+    "sources": [
+      {
+        "source_id": "S03",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BFM::MOD_A::U01",
+        "objective_ids": [
+          "BFM::MOD_A::U01::LO_06"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BFM::MOD_A::U01",
+        "objective_ids": [
+          "BFM::MOD_A::U01::LO_06"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BFM::MOD_A::U01",
+        "objective_ids": [
+          "BFM::MOD_A::U01::LO_06"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BFM::MOD_A::U01",
+        "objective_ids": [
+          "BFM::MOD_A::U01::LO_06"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "unit_id": "BFM::MOD_A::U01",
+        "objective_ids": [
+          "BFM::MOD_A::U01::LO_06"
+        ]
+      },
+      {
+        "draft_id": "D006",
+        "unit_id": "BFM::MOD_A::U01",
+        "objective_ids": [
+          "BFM::MOD_A::U01::LO_06"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BFM-A-U01-B005",
+      "draft_id": "D001",
+      "item_id": "item_408e7631cde8feb51dbc96a0359b4130e56e5f7563ba2e39d09d8ac263643251"
+    },
+    {
+      "batch_id": "BFM-A-U01-B005",
+      "draft_id": "D002",
+      "item_id": "item_151400a88d1fb23fd735163c446b943894e3ca9d6cdabe7bb3c8edeaf8716b1b"
+    },
+    {
+      "batch_id": "BFM-A-U01-B005",
+      "draft_id": "D003",
+      "item_id": "item_53f08badc3de6f7e22cb66c992bd31653834c50dcc9a84bf9993f8e3c0c5cc4c"
+    },
+    {
+      "batch_id": "BFM-A-U01-B005",
+      "draft_id": "D004",
+      "item_id": "item_a2ddfb846807f7ec90643324aa7764fa1b83bf35ad26811ba4103bb0544470ed"
+    },
+    {
+      "batch_id": "BFM-A-U01-B005",
+      "draft_id": "D005",
+      "item_id": "item_51e328fa02d9d208eafa8c84815fb4efcb6f9eb3919da2f263613a35ee8bb439"
+    },
+    {
+      "batch_id": "BFM-A-U01-B005",
+      "draft_id": "D006",
+      "item_id": "item_66520d17e255cc6b062854c997bdc967b65c5d4fe56e14a3c96a2b54aaf6a784"
+    }
+  ],
+  "items": [
+    {
+      "title": "Forward or future: who writes the terms, and who stands behind the deal",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "A derivative is a product whose value is derived from something else, such as a currency position. Used to take a view it is speculation; used to cut the risk in everyday cash flows it is hedging.\n\nTwo derivatives fix a future exchange rate today, and they differ on two questions.\n\n- **Who writes the terms?** A **forward** is negotiated between a customer and a bank, in any size and for the dates they agree. A **future** is a standard contract, in a fixed size, traded on an exchange.\n- **Who stands behind it?** In a forward you rely on the other party, and no collateral is demanded explicitly. In a future the clearing house sits between buyer and seller and guarantees both, and it protects itself by collecting margins.\n\nA forward is typically settled by delivery or cancellation on the due date. A future is usually closed out by taking an opposite position.",
+      "expanded_explanation_md": "That is why a forward is the usual tool for an exporter or importer with a known amount and date: it can be tailored. The standard future suits those who want a traded, guaranteed contract and can manage margin calls.",
+      "self_check": {
+        "mode": "question",
+        "question_id": "item_a2ddfb846807f7ec90643324aa7764fa1b83bf35ad26811ba4103bb0544470ed"
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_408e7631cde8feb51dbc96a0359b4130e56e5f7563ba2e39d09d8ac263643251",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U01",
+      "objective_ids": [
+        "BFM::MOD_A::U01::LO_06"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed p. 21, section 1.6 Derivative Products"
+        },
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed p. 22, heading Forward Contracts"
+        },
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 21-22, Foreign Currency Futures and Futures Contracts - Characteristics"
+        },
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed p. 23, heading Forward Contracts v/s Futures Contracts"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Options: a right you pay for",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "An option gives its buyer the **right, not the obligation**, to buy or sell currency at a fixed price during a set period. Because the buyer can walk away, the buyer pays for the right: the **premium**.\n\n- A **call** is a right to buy; a **put** is a right to sell. In currency business calls tend to suit importers and puts exporters.\n- The buyer is the **holder**; the seller is the **writer** (or grantor).\n- The fixed price is the **strike** (exercise) price.\n- An **American** option can be exercised at any time up to expiry; a **European** option only on the expiry date.\n\nCompare the strike with today's spot rate, ignoring the premium: if exercising now would pay, the option is **in the money**; if not, **out of the money**; if strike and spot are equal, **at the money**.",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "An importer holds a call on dollars with a strike of 84.00. Spot is 84.50. Is the option in, at or out of the money, and why?",
+        "expected_takeaway": "In the money: exercising lets the importer buy at 84.00 what costs 84.50 in the market, a gain before the premium."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_151400a88d1fb23fd735163c446b943894e3ca9d6cdabe7bb3c8edeaf8716b1b",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U01",
+      "objective_ids": [
+        "BFM::MOD_A::U01::LO_06"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 23-24, heading OPTIONS"
+        },
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed p. 24"
+        },
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed p. 24, Types of Option"
+        },
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed p. 24, At the Money, In the Money and Out of Money Options"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "An importer's call option: the cost in two futures",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "Illustrative case: an importer must buy USD 100,000 in three months and does not want to pay more than about ₹84.35 per dollar. It buys a call option with a strike of ₹84.00 and pays a premium of ₹0.35 per dollar at the start. Work out the effective cost per dollar and the total outlay if, at expiry, spot is (a) 84.80 or (b) 83.60. Ignore interest on the premium.",
+      "worked_steps": [
+        {
+          "step_number": 1,
+          "description": "Premium paid on day one for USD 100,000.",
+          "formula_or_substitution": "100,000 × 0.35",
+          "intermediate_result": "₹35,000.00"
+        },
+        {
+          "step_number": 2,
+          "description": "Case (a), spot 84.80: the call is in the money (strike 84.00 is below spot). Exercise it and buy at the strike.",
+          "formula_or_substitution": "100,000 × 84.00",
+          "intermediate_result": "₹84,00,000.00"
+        },
+        {
+          "step_number": 3,
+          "description": "Total outlay in case (a): strike cost plus premium.",
+          "formula_or_substitution": "84,00,000.00 + 35,000.00",
+          "intermediate_result": "₹84,35,000.00 (₹84.35 per USD)"
+        },
+        {
+          "step_number": 4,
+          "description": "Case (b), spot 83.60: the call is out of the money. Let it lapse and buy in the market.",
+          "formula_or_substitution": "100,000 × 83.60",
+          "intermediate_result": "₹83,60,000.00"
+        },
+        {
+          "step_number": 5,
+          "description": "Total outlay in case (b): market cost plus the premium already paid.",
+          "formula_or_substitution": "83,60,000.00 + 35,000.00",
+          "intermediate_result": "₹83,95,000.00 (₹83.95 per USD)"
+        }
+      ],
+      "final_answer_with_unit": "Outlay ₹84,35,000.00 (₹84.35 per USD) if spot is 84.80; ₹83,95,000.00 (₹83.95 per USD) if spot is 83.60. The importer's cost is capped at ₹84.35 per USD and it still gains if the rupee strengthens",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "What does the premium buy the importer, and what is the most the importer can end up paying per dollar here?",
+        "expected_takeaway": "The right to buy at the strike whatever happens to spot, and so a cap on the cost: strike plus premium, ₹84.35 per dollar."
+      },
+      "item_type": "card",
+      "card_type": "worked_example",
+      "id": "item_53f08badc3de6f7e22cb66c992bd31653834c50dcc9a84bf9993f8e3c0c5cc4c",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U01",
+      "objective_ids": [
+        "BFM::MOD_A::U01::LO_06"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 23-24, heading OPTIONS"
+        },
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed p. 24"
+        },
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed p. 24, At the Money, In the Money and Out of Money Options"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A corporate wants a currency contract in which the credit risk of the other side is taken over by a clearing house, which collects margins to protect itself. Which contract fits?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "A forward contract with its bank, because the bank guarantees delivery",
+          "explanation_md": "A forward is between the customer and the bank, which is the counterparty; no clearing house stands between them."
+        },
+        {
+          "option_id": "B",
+          "text_md": "A foreign currency futures contract traded on an exchange",
+          "explanation_md": "In an exchange-traded futures contract the clearing house guarantees both sides and manages credit risk through margins."
+        },
+        {
+          "option_id": "C",
+          "text_md": "A tailor-made over-the-counter swap agreed privately with a dealer",
+          "explanation_md": "A privately agreed swap is a contract between two parties; no clearing house is involved."
+        },
+        {
+          "option_id": "D",
+          "text_md": "A spot deal, because settlement is two working days away",
+          "explanation_md": "A spot deal is not a derivative, and the nature of the counterparty's risk is not changed by settlement timing."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_explanation_md": "Futures are standardised and traded on an exchange, where the clearing house conducts the trade and guarantees both buyer and seller, managing credit risk through margins. A forward relies on the counterparty.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_a2ddfb846807f7ec90643324aa7764fa1b83bf35ad26811ba4103bb0544470ed",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U01",
+      "objective_ids": [
+        "BFM::MOD_A::U01::LO_06"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 21-22, Foreign Currency Futures and Futures Contracts - Characteristics"
+        },
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed p. 23, heading Forward Contracts v/s Futures Contracts"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A company pays a fixed rate of 7.10% p.a. and receives a floating rate on an interest rate swap with a notional amount of ₹20,00,00,000 (illustrative figures). For one quarter the floating rate is 6.90% p.a. Treat a quarter as exactly one-quarter of a year, and assume cash flows are netted and no principal is exchanged. What net amount does the company pay for the quarter, in rupees?",
+      "numeric_rule": {
+        "expected_answer": "100000.00",
+        "unit_label": "rupees",
+        "precision_decimals": 2,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Give the amount to 2 decimal places.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "Both interest flows are worked on the notional amount, which is never itself exchanged. Fixed leg for the quarter: 20,00,00,000 × 7.10% ÷ 4 = ₹35,50,000. Floating leg: 20,00,00,000 × 6.90% ÷ 4 = ₹34,50,000. The company pays the larger and receives the smaller, so the net payment is ₹1,00,000.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "Fixed leg for one quarter.",
+          "formula_or_substitution": "20,00,00,000 × 0.0710 ÷ 4",
+          "intermediate_result": "35,50,000.00"
+        },
+        {
+          "step_number": 2,
+          "description": "Floating leg for one quarter.",
+          "formula_or_substitution": "20,00,00,000 × 0.0690 ÷ 4",
+          "intermediate_result": "34,50,000.00"
+        },
+        {
+          "step_number": 3,
+          "description": "Net payment by the fixed-rate payer.",
+          "formula_or_substitution": "35,50,000.00 − 34,50,000.00",
+          "intermediate_result": "1,00,000.00"
+        }
+      ],
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_51e328fa02d9d208eafa8c84815fb4efcb6f9eb3919da2f263613a35ee8bb439",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U01",
+      "objective_ids": [
+        "BFM::MOD_A::U01::LO_06"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 24-25, SWAPS and Interest Rate Swap"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "An exporter holds a put option on US dollars with a strike of ₹83.00. Spot USD/INR is now ₹84.00. Ignoring the premium, how is the option described?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "In the money, because the strike is below the spot rate",
+          "explanation_md": "That reasoning suits a call. A put is a right to sell: the exporter would sell at 83.00 what the market pays 84.00 for."
+        },
+        {
+          "option_id": "B",
+          "text_md": "At the money, because the strike and spot are within one rupee",
+          "explanation_md": "At the money means the strike equals the spot rate; being close is not enough."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Out of the money, because selling at the strike would give less than the market",
+          "explanation_md": "Exercising now would not be profitable, since the exporter would receive 83.00 instead of selling at 84.00 in the market."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Out of the money, because a put can only be exercised on the expiry date",
+          "explanation_md": "Whether a put can be exercised early depends on whether it is American or European; that is not what decides how far in or out of the money it is."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_explanation_md": "A put is the right to sell at the strike. With a strike of 83.00 and spot at 84.00, exercising would earn less than the market pays, so exercising now would not be profitable: the option is out of the money.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_66520d17e255cc6b062854c997bdc967b65c5d4fe56e14a3c96a2b54aaf6a784",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U01",
+      "objective_ids": [
+        "BFM::MOD_A::U01::LO_06"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 23-24, heading OPTIONS"
+        },
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed p. 24, At the Money, In the Money and Out of Money Options"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}
