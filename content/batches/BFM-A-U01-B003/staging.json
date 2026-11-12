@@ -1,0 +1,128 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BFM-A-U01-B003",
+  "paper_id": "BFM",
+  "unit_label": "Module A: International Banking - Exchange Rates and Forex Business",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": ["S03"],
+  "facts": [
+    { "fact_id": "F001", "statement": "Most forex deals are done on a spot basis, with delivery on the second working day after the deal; spot rates are the base rates for other rates of a currency, and the date on which the currencies are actually exchanged is called the value date or settlement date.", "source_id": "S03", "locator": "Printed p. 8, section 1.4 Exchange Rate Mechanism, heading Types and calculation", "regulatory_sensitive": false, "evidence_status": "explicit" },
+    { "fact_id": "F002", "statement": "Ready or cash: settlement on the date of the deal. Tom: settlement on the next working day. Spot: settlement on the second working day after the deal. Forward: delivery on any day after the spot date.", "source_id": "S03", "locator": "Printed pp. 8-9, headings Ready or Cash, Tom, Spot, Forward", "regulatory_sensitive": false, "evidence_status": "explicit" },
+    { "fact_id": "F003", "statement": "If a settlement date is not a working day in the markets where the currencies are settled, settlement moves to the next working day; intervening Saturdays and Sundays also postpone it.", "source_id": "S03", "locator": "Printed p. 9, headings Tom and Spot", "regulatory_sensitive": false, "evidence_status": "explicit" },
+    { "fact_id": "F004", "statement": "Fundamental reasons are causes that affect a government's basic economic and monetary policies and normally act on long-term exchange rates: a balance of payments surplus generally strengthens the home currency and a deficit weakens it; high growth raises production, exports and the currency's value; expansionary fiscal policy can raise growth; monetary policy influences the currency through interest rates and money supply; political stability supports a strong currency.", "source_id": "S03", "locator": "Printed p. 7, section 1.3 Factors Determining Exchange Rates, (a) Fundamental reasons", "regulatory_sensitive": false, "evidence_status": "explicit" },
+    { "fact_id": "F005", "statement": "High domestic interest rates tend to attract overseas capital so the currency appreciates in the short term; in the longer term high interest rates slow the economy and weaken the home currency.", "source_id": "S03", "locator": "Printed p. 7, (a) Fundamental reasons, Interest rates", "regulatory_sensitive": false, "evidence_status": "explicit" },
+    { "fact_id": "F006", "statement": "Technical reasons: government controls can give a currency an unrealistic value and lead to violent rate movements; freedom or restriction on capital movement affects exchange rates; capital normally moves from lower-yielding to higher-yielding currencies.", "source_id": "S03", "locator": "Printed p. 8, (b) Technical reasons", "regulatory_sensitive": false, "evidence_status": "explicit" },
+    { "fact_id": "F007", "statement": "Speculation can have a major effect on exchange rates: expecting a depreciation, speculators buy the foreign currency now to sell it later, and the expectation can spread to other participants; speculative deals also give the market depth and liquidity.", "source_id": "S03", "locator": "Printed p. 8, (c) Speculation", "regulatory_sensitive": false, "evidence_status": "explicit" },
+    { "fact_id": "F008", "statement": "Forward rate = spot rate + premium (or − discount).", "source_id": "S03", "locator": "Printed p. 10, heading Forward Margins - Premium and Discounts", "regulatory_sensitive": false, "evidence_status": "explicit" },
+    { "fact_id": "F009", "statement": "For a sale to a customer the exchange margin is added to the bank's selling rate, and for a forward sale contract the premium is charged for the full period up to the end date of the contract.", "source_id": "S03", "locator": "Printed p. 35, Example 1 (answer); printed p. 40, Note", "regulatory_sensitive": false, "evidence_status": "explicit" },
+    { "fact_id": "F010", "statement": "In a two-way quote such as GBP/USD the quoting bank buys the first-named currency at the first figure and sells it at the second.", "source_id": "S03", "locator": "Printed p. 12, heading Bid and Offer Rates", "regulatory_sensitive": false, "evidence_status": "explicit" }
+  ],
+  "drafts": [
+    {
+      "draft_id": "D001",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": ["F001", "F002", "F003"],
+      "payload": {
+        "title": "Value dates: when the money actually moves",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "Agreeing a rate and exchanging the money are two different moments. The day the currencies really change hands is the **value date**, and its name tells you how far it is from the deal date:\n\n| Name | Money moves |\n| --- | --- |\n| Cash (ready) | the same day |\n| Tom | the next working day |\n| Spot | the second working day |\n| Forward | any day after spot |\n\nSpot is the market's normal basis, and other rates for a currency are built from the spot rate. Count **working** days: a Saturday, Sunday or holiday in a centre where the currency is settled pushes the date to the next working day.",
+        "expanded_explanation_md": "Why two days for spot? Deals are struck across time zones, and both banks need time to instruct payment in two different countries. A deal done for an earlier date than spot (cash or tom) or a later one (forward) is priced by adjusting the spot rate.",
+        "self_check": { "mode": "self_assessed", "prompt_text": "Without looking: name the four value dates in order and say what happens when the date falls on a weekend.", "expected_takeaway": "Cash (same day), tom (next working day), spot (second working day), forward (any later day). A weekend or holiday moves settlement to the next working day." }
+      }
+    },
+    {
+      "draft_id": "D002",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": ["F004", "F005", "F006", "F007"],
+      "payload": {
+        "title": "What moves an exchange rate: slow forces, frictions and expectations",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "Three kinds of pressure act on a currency, and they work on different clocks.\n\n- **Fundamentals** are the slow forces that come from the economy and its policies: the balance of payments (a surplus tends to strengthen the home currency, a deficit to weaken it), growth, fiscal and monetary policy, interest rates and political stability. They shape the rate over the long run.\n- **Technical reasons** are frictions in how money is allowed to move: government controls that hold a currency at an unrealistic value, and freedom or restriction on capital flows. Capital tends to move from lower-yielding to higher-yielding currencies.\n- **Speculation** is expectation turned into deals: if a fall is expected, players buy the foreign currency now, and the belief can spread and move the rate by itself.",
+        "expanded_explanation_md": "Interest rates cut both ways. A rise in domestic rates tends to pull in overseas capital, so the currency firms up in the short term. Kept high for long, the same rates slow the economy, and that weakens the currency over time.\n\nSpeculation is not only a threat: speculative deals also add depth and liquidity to the market.",
+        "self_check": { "mode": "question", "question_id": "D005" }
+      }
+    },
+    {
+      "draft_id": "D003",
+      "item_type": "card",
+      "variant": "worked_example",
+      "fact_ids": ["F008", "F009"],
+      "payload": {
+        "title": "Book the dollars forward, or wait? An importer's break-even",
+        "prerequisite_objective_ids": ["BFM::MOD_A::U01::LO_02"],
+        "core_explanation_md": "A customer's forward rate is built in the same way as a spot customer rate, with one more layer: the forward margin. Illustrative case: an importer must pay USD 50,000 in three months. Interbank spot USD/INR is 83.4125/83.4175, the dollar's three-month premium on the selling side is 42 paise, and the bank's exchange margin is 5 paise. What rate fixes the cost today, and how high must the dollar go for the forward to have been the cheaper choice?",
+        "worked_steps": [
+          { "step_number": 1, "description": "The bank will sell dollars, so start from the interbank selling rate.", "formula_or_substitution": "Offer side of 83.4125/83.4175", "intermediate_result": "83.4175" },
+          { "step_number": 2, "description": "Add the full three-month premium to reach the interbank forward rate.", "formula_or_substitution": "83.4175 + 0.4200", "intermediate_result": "83.8375" },
+          { "step_number": 3, "description": "Add the exchange margin, because the bank sells high.", "formula_or_substitution": "83.8375 + 0.0500", "intermediate_result": "₹83.8875 per USD" },
+          { "step_number": 4, "description": "Cost fixed by the forward contract.", "formula_or_substitution": "50,000 × 83.8875", "intermediate_result": "₹41,94,375.00" },
+          { "step_number": 5, "description": "Break-even: with the same 5 paise margin on a spot purchase in three months, waiting costs the same when the interbank selling rate then equals the forward interbank rate.", "formula_or_substitution": "83.8875 − 0.0500", "intermediate_result": "83.8375" }
+        ],
+        "final_answer_with_unit": "Forward rate ₹83.8875 per USD, fixing the cost at ₹41,94,375.00; waiting is dearer only if the interbank selling rate in three months is above 83.8375",
+        "self_check": { "mode": "self_assessed", "prompt_text": "List, in order, the three figures added together to get an importer's forward rate.", "expected_takeaway": "The interbank spot selling rate, the forward premium for the period, and the bank's exchange margin." }
+      }
+    },
+    {
+      "draft_id": "D004",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": ["F010"],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "A bank quotes GBP/USD 1.2710/1.2720 (illustrative figures). A customer sells GBP 10,000 to the bank at the quoted rate. How many US dollars does the customer receive?",
+        "numeric_rule": { "expected_answer": "12710.00", "unit_label": "US dollars", "precision_decimals": 2, "rounding_mode": "HALF_UP", "rounding_instruction": "Give the amount to 2 decimal places.", "allow_negative": false },
+        "correct_explanation_md": "The quote prices one pound in dollars. The customer's sale is the bank's purchase of pounds, so the first figure applies: 10,000 × 1.2710 = USD 12,710.00. Using 1.2720 would be the rate at which the bank sells pounds.",
+        "worked_solution_steps": [
+          { "step_number": 1, "description": "The bank is buying pounds: take the first figure.", "formula_or_substitution": "Bid side of 1.2710/1.2720", "intermediate_result": "1.2710" },
+          { "step_number": 2, "description": "Multiply by the pounds sold.", "formula_or_substitution": "10,000 × 1.2710", "intermediate_result": "12,710.00" }
+        ]
+      }
+    },
+    {
+      "draft_id": "D005",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": ["F005"],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A country raises its domestic interest rates sharply and keeps them high for several years. Going by the fundamental factors, what is the expected effect on its currency?",
+        "options": [
+          { "option_id": "A", "text_md": "It firms up in the short term as overseas capital comes in, then tends to weaken as high rates slow the economy", "explanation_md": "High rates attract capital at first; kept high, they slow the economy, which weakens the currency over the longer term." },
+          { "option_id": "B", "text_md": "It weakens at once and keeps weakening, because high rates always mean a weak currency", "explanation_md": "The first effect of higher rates is the opposite: they tend to draw in overseas capital." },
+          { "option_id": "C", "text_md": "It strengthens in the short term and keeps strengthening for as long as rates stay high", "explanation_md": "The short-term part is right, but over the longer term high rates slow the economy and weaken the currency." },
+          { "option_id": "D", "text_md": "Nothing changes, because interest rates are a technical factor that affects only forward margins", "explanation_md": "Interest rates are listed among the fundamental reasons and do act on the exchange rate." }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "Interest rates work in two stages. Higher domestic rates tend to attract overseas capital, so the currency appreciates in the short term. Over the longer term, high rates slow the economy down and that weakens the home currency."
+      }
+    },
+    {
+      "draft_id": "D006",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": ["F004", "F006", "F007"],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "For years a government holds its currency at a fixed level through exchange controls. When the controls are lifted, the rate moves violently within days. Which kind of reason best explains the movement?",
+        "options": [
+          { "option_id": "A", "text_md": "A fundamental reason, because it follows a change in the balance of payments", "explanation_md": "Nothing in the case says the balance of payments changed; the trigger was the removal of controls." },
+          { "option_id": "B", "text_md": "A technical reason, because controls had kept the currency at an unrealistic value", "explanation_md": "Government controls and restrictions on capital movement are technical reasons, and they can end in violent rate movements." },
+          { "option_id": "C", "text_md": "Speculation, because any sharp movement is caused by speculators", "explanation_md": "Speculation can move rates, but the case describes controls holding an unrealistic value, not deals driven by expectation." },
+          { "option_id": "D", "text_md": "A fundamental reason, because political stability has improved", "explanation_md": "The case gives no information about political stability." }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "Government controls that hold a currency at an unrealistic value, and the freedom or restriction of capital movement, are technical reasons. When such controls go, the rate can move violently towards a realistic level."
+      }
+    }
+  ],
+  "unresolved": [
+    "LO_02: indirect quotation as such (home currency fixed) still has no scored question; D004 tests a quote whose base currency is not the dollar.",
+    "LO_04: the exchange rate mechanism is covered through value dates and forward margins in other cards; purchasing power and other theories are not in the courseware pages read and are not taught.",
+    "LO_05 to LO_07 (dealing room, derivatives, RBI and FEDAI guidelines) have no content yet.",
+    "Reviewer for this batch is the authoring agent; no independent or human review."
+  ],
+  "next_batch_hint": "BFM-A-U01-B004: dealing room operations (LO_05) from printed pp. 14 onwards, then derivatives (LO_06) and RBI/FEDAI guidelines (LO_07)."
+}

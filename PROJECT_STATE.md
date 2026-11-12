@@ -1,6 +1,6 @@
 # Project execution state
 
-Last updated: 11 November 2026, session 5. Content authoring is **unblocked for five papers** (171 topics); the other four electives (105 topics) have no courseware. Completion remains blocked on those books, provider sandbox keys and the sheer volume of authoring still to do.
+Last updated: 12 November 2026, session 6. Content authoring is **unblocked for five papers** (171 topics); the other four electives (105 topics) have no courseware. Completion remains blocked on those books, provider sandbox keys and the sheer volume of authoring still to do.
 
 ## Scope and decisions
 
@@ -45,7 +45,7 @@ Last updated: 11 November 2026, session 5. Content authoring is **unblocked for 
 
 | Dimension | Status | Evidence or remaining condition |
 | --- | --- | --- |
-| First published content | done (small) | Pack `BFM-2026DEC` v1: 11 items (4 cards, 1 worked example, 6 questions) for part of one BFM topic, free sample. Published on the authoring agent's review alone by owner decision of 11 Nov 2026. Seen working in the app: lesson, self-check, sources, practice, short mock. |
+| First published content | done (small) | Pack `BFM-2026DEC` v2 (12 Nov 2026): 17 items (9 cards incl. 3 worked examples and 1 formula card, 8 questions) for part of one BFM topic, free sample. Objectives published and complete: 2 of 7 in that topic (LO_03, LO_04); topics complete: 0 of 276. Published on the authoring agent's review alone by owner decision of 11 Nov 2026. Seen working in the app: lesson, self-check, sources, practice, short mock. |
 | Implementation | in_progress (feature-complete against synthetic content) | All screens, engine, storage, backend and service worker exist and are tested. Not yet exercised with real published content, a real payment provider, a screen reader or a physical phone. |
 | Original full-syllabus content | in_progress, mostly blocked | 276-topic baseline. Batch `BFM-A-U01-B001`: 7 editorial objectives, now 12 draft items in two batches (6 cards, 6 questions) as **drafts** (source and originality review pending). 0 topics drafted adequately, 0 reviewed, 0 published. Courseware on disk for ABM, BFM, ABFM, BRBL, CB (171 topics); 105 topics in RM, ITDB, HRM, RB have no source. |
 | Release readiness | blocked | Needs content and provider sandbox verification. Exam configuration is verified. |
@@ -123,7 +123,10 @@ synthetic fixtures), **A** = `scripts/ui-audit.js` measured on the rendered DOM.
   `scripts/publish-pack.mjs` (review method `automated`, reviewer = authoring agent). Held back: the FEMA
   definition card (B001 D001); India Code did not respond, and a search result suggests the Act has more
   sub-clauses than the courseware quotes. Topics published and complete: still 0 of 276.
-- Next content cursor: `BFM-A-U01-B003` — value-date lesson and indirect-quote question (LO_02), customer
+- Batch `content/batches/BFM-A-U01-B003/` (12 Nov): value dates, factors, customer forward rate, three questions;
+  published in pack v2 (`content/publish/BFM-2026DEC-v2.json`).
+- Next content cursor: `BFM-A-U01-B004` (dealing room LO_05, from printed p. 14 on), then LO_06, LO_07, an
+  indirect-quote question for LO_02, a definition question for LO_01. Superseded note follows: `BFM-A-U01-B003` — value-date lesson and indirect-quote question (LO_02), customer
   forward-rate worked example (LO_03), then LO_04–LO_07; then `BFM::MOD_A::U02`.
 
 ## Verification log
@@ -162,7 +165,7 @@ synthetic fixtures), **A** = `scripts/ui-audit.js` measured on the rendered DOM.
 - Tooling caution: never rewrite source files with PowerShell `Get-Content -Raw` + `WriteAllText`; it corrupts
   non-ASCII characters. Use the Edit tool or Python with explicit UTF-8.
 - Nothing is half-edited.
-- Exact next action: batch `BFM-A-U01-B003`, working from the PDF pages directly (S03, PDF page = printed + 17):
+- Exact next action: batch `BFM-A-U01-B004` (render printed pp. 14–29 of S03 = PDF 31–46). Earlier note: batch `BFM-A-U01-B003`, working from the PDF pages directly (S03, PDF page = printed + 17):
   read printed pp. 7–8 and 14–29 for factors, dealing room, derivatives and RBI/FEDAI guidelines; write facts
   with page locators, author, import, recompute, compare with the book's examples, update the ledger.
   The notebook is no longer needed. Then LO_04–LO_07, then `BFM::MOD_A::U02`.

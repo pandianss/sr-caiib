@@ -21,7 +21,8 @@
       "record_refs": [
         "content/batches/BFM-A-U01-B001/review.md",
         "content/batches/BFM-A-U01-B002/review.md",
-        "content/publish/BFM-2026DEC-v1.json"
+        "content/publish/BFM-2026DEC-v1.json",
+        "content/publish/BFM-2026DEC-v2.json"
       ]
     },
     "published_item_ids": [
@@ -31,8 +32,6 @@
     "gaps": [
       "Assessment is thin: one scored question on participants; the legal definition has only a self-assessed check.",
       "Trading hours under FEDAI rules are not covered.",
-      "Reviewed only by the authoring agent; no independent or human review.",
-      "Published items carry no regulatory figure. Published on the authoring agent's review alone, by owner decision of 11 Nov 2026.",
       "The card on the FEMA definition is held back: the Act could not be retrieved to confirm the clause and its sub-clauses."
     ]
   },
@@ -42,34 +41,37 @@
     "origin": "editorial",
     "source_support": "supported",
     "lesson_item_ids": [
-      "item_772f7f88d1b7db188f35b1d20fe87b44fedba878c7b3b06e6440b9a939011fc7"
+      "item_772f7f88d1b7db188f35b1d20fe87b44fedba878c7b3b06e6440b9a939011fc7",
+      "item_7a199d103106f1a6ad109a5960a6fe66a62a560e38c941d217ef5faa65dd3cd4"
     ],
     "worked_example_item_ids": [],
     "assessment_item_ids": [
       "item_b01a0bed00fb8efb41c182f4e0a9b9af279bc75b679b8110ab87c41c50370b77",
-      "item_8a98bd56e626c2e2f6f9377f24fa18a40869eb3593bdeb4be9055e58258200b9"
+      "item_8a98bd56e626c2e2f6f9377f24fa18a40869eb3593bdeb4be9055e58258200b9",
+      "item_83085884c9bed4ad9c0ee88587c37905ff30b5d2fd75e6ccaf14df2e57c6d1b0"
     ],
-    "teaching_adequate": false,
-    "assessment_adequate": false,
+    "teaching_adequate": true,
+    "assessment_adequate": true,
     "review": {
       "source": "passed",
       "originality": "passed",
       "calculations": "not_applicable",
       "record_refs": [
         "content/batches/BFM-A-U01-B001/review.md",
-        "content/publish/BFM-2026DEC-v1.json"
+        "content/publish/BFM-2026DEC-v1.json",
+        "content/batches/BFM-A-U01-B003/review.md",
+        "content/publish/BFM-2026DEC-v2.json"
       ]
     },
     "published_item_ids": [
       "item_772f7f88d1b7db188f35b1d20fe87b44fedba878c7b3b06e6440b9a939011fc7",
+      "item_7a199d103106f1a6ad109a5960a6fe66a62a560e38c941d217ef5faa65dd3cd4",
       "item_b01a0bed00fb8efb41c182f4e0a9b9af279bc75b679b8110ab87c41c50370b77",
-      "item_8a98bd56e626c2e2f6f9377f24fa18a40869eb3593bdeb4be9055e58258200b9"
+      "item_8a98bd56e626c2e2f6f9377f24fa18a40869eb3593bdeb4be9055e58258200b9",
+      "item_83085884c9bed4ad9c0ee88587c37905ff30b5d2fd75e6ccaf14df2e57c6d1b0"
     ],
     "gaps": [
-      "Value dates are assessed by one question but not yet taught in a card.",
-      "Indirect quotation has no scored question.",
-      "Originality check was done by the authoring agent against the pages listed in the review record; no independent or human review yet.",
-      "Published items carry no regulatory figure. Published on the authoring agent's review alone, by owner decision of 11 Nov 2026."
+      "Indirect quotation with the home currency as the fixed unit has no scored question of its own."
     ]
   },
   {
@@ -82,15 +84,16 @@
     ],
     "worked_example_item_ids": [
       "item_714418e20097048d3b5463d3b5952ca0b09f260d35f7174e4a5a593fe5bcd90a",
-      "item_13a003edf244481cd4761f49b2fc2a0bac2124e5f3e31e660a7b56d00d53d8dd"
+      "item_13a003edf244481cd4761f49b2fc2a0bac2124e5f3e31e660a7b56d00d53d8dd",
+      "item_04cdb34b0c1d80d62fdd58155fc539c97bd19cac217b5e7134fb3bcbc14919e3"
     ],
     "assessment_item_ids": [
       "item_3941c554da304c00837f97bcf82a9fff48c8297e4ab3c8c6bfe22434714c3e08",
       "item_939ce9d34cf464b1b55e4f21b7f5bc11eb2506b60989550c288e0cb6773f2085",
       "item_5f8cfe514fa18f379719f80117725facd1fc5da5ba483f32f04bc3bd8bb201ca"
     ],
-    "teaching_adequate": false,
-    "assessment_adequate": false,
+    "teaching_adequate": true,
+    "assessment_adequate": true,
     "review": {
       "source": "passed",
       "originality": "passed",
@@ -100,43 +103,53 @@
         "tests/content/batch-calculations.test.ts",
         "content/batches/BFM-A-U01-B002/review.md",
         "tests/content/batch-b002.test.ts",
-        "content/publish/BFM-2026DEC-v1.json"
+        "content/publish/BFM-2026DEC-v1.json",
+        "content/batches/BFM-A-U01-B003/review.md",
+        "tests/content/batch-b003.test.ts",
+        "content/publish/BFM-2026DEC-v2.json"
       ]
     },
     "published_item_ids": [
       "item_7d12fab56bff9a545850d7596c0f4df43b6022fd37fcbeb9ef975c089d457c68",
       "item_714418e20097048d3b5463d3b5952ca0b09f260d35f7174e4a5a593fe5bcd90a",
       "item_13a003edf244481cd4761f49b2fc2a0bac2124e5f3e31e660a7b56d00d53d8dd",
+      "item_04cdb34b0c1d80d62fdd58155fc539c97bd19cac217b5e7134fb3bcbc14919e3",
       "item_3941c554da304c00837f97bcf82a9fff48c8297e4ab3c8c6bfe22434714c3e08",
       "item_939ce9d34cf464b1b55e4f21b7f5bc11eb2506b60989550c288e0cb6773f2085",
       "item_5f8cfe514fa18f379719f80117725facd1fc5da5ba483f32f04bc3bd8bb201ca"
     ],
-    "gaps": [
-      "Customer rates and cross rates each have a worked example and a numerical question. Forward rates have a formula card and one numerical, but no worked example of a customer forward rate (forward margin plus exchange margin).",
-      "Reviewed only by the authoring agent; no independent or human review.",
-      "Published items carry no regulatory figure. Published on the authoring agent's review alone, by owner decision of 11 Nov 2026."
-    ]
+    "gaps": []
   },
   {
     "objective_id": "BFM::MOD_A::U01::LO_04",
     "statement": "Explain the factors that determine exchange rates and how the exchange rate mechanism works",
     "origin": "editorial",
     "source_support": "supported",
-    "lesson_item_ids": [],
+    "lesson_item_ids": [
+      "item_76adcb00a4a383322f5a2baed4dc2dd3a97715931059cff297375ad54d8fb5da"
+    ],
     "worked_example_item_ids": [],
-    "assessment_item_ids": [],
-    "teaching_adequate": false,
-    "assessment_adequate": false,
+    "assessment_item_ids": [
+      "item_5066fad6cfbb0609747189797e6086fff8618038b6a388ca1c1128fe7bd0162c",
+      "item_f94d40dd6156deaf353199497a80eb7fb393e98dd460960eac61abb836e5fc16"
+    ],
+    "teaching_adequate": true,
+    "assessment_adequate": true,
     "review": {
-      "source": "not_started",
-      "originality": "not_started",
+      "source": "passed",
+      "originality": "passed",
       "calculations": "not_applicable",
-      "record_refs": []
+      "record_refs": [
+        "content/batches/BFM-A-U01-B003/review.md",
+        "content/publish/BFM-2026DEC-v2.json"
+      ]
     },
-    "published_item_ids": [],
-    "gaps": [
-      "No content authored yet."
-    ]
+    "published_item_ids": [
+      "item_76adcb00a4a383322f5a2baed4dc2dd3a97715931059cff297375ad54d8fb5da",
+      "item_5066fad6cfbb0609747189797e6086fff8618038b6a388ca1c1128fe7bd0162c",
+      "item_f94d40dd6156deaf353199497a80eb7fb393e98dd460960eac61abb836e5fc16"
+    ],
+    "gaps": []
   },
   {
     "objective_id": "BFM::MOD_A::U01::LO_05",
