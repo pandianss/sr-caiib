@@ -1,0 +1,368 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BFM-A-U03-B001",
+  "paper_id": "BFM",
+  "unit_label": "Module A: International Banking - Correspondent Banking and NRI Accounts",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S03"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "statement": "A correspondent bank is a financial institution in a host country that provides services to banks present elsewhere; the bank in the home country that relies on it as its agent is the respondent bank. Banks use correspondents to reach foreign markets and clients without opening branches abroad, avoiding the cost of a branch network and branch licensing restrictions.",
+      "source_id": "S03",
+      "locator": "Printed pp. 62-63, sections 3.2 and 3.2.1",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F002",
+      "statement": "Account services of a correspondent bank require an account relationship with the foreign bank: clearing house functions (outward and inward payments, collections, statements, reimbursement of LC claims), collections of bills and cheques, payments, overdrafts and loan facilities, and investment of overnight surplus balances.",
+      "source_id": "S03",
+      "locator": "Printed p. 64, section 3.2.2 A, items (i) to (v)",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F003",
+      "statement": "Other correspondent services do not normally require an account relationship and rest on the relationship and credit assessment: letter of credit advising and confirmation, buyer's and supplier's credit, bankers acceptances, guarantees, foreign exchange services, custodial services, trade referrals and credit reports, fund raising services and training.",
+      "source_id": "S03",
+      "locator": "Printed p. 65, section 3.2.3",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F004",
+      "statement": "Nostro means 'our account with you': a foreign currency account a bank keeps with a bank in the host country. Vostro means 'your account with us': a non-resident bank's account with a home bank, in the home currency. Loro means 'their account with them': the account of another bank, a third-party account. A mirror account is the bank's own record of its Nostro account, kept in the books in two currencies (foreign and home) and used to reconcile entries in the Nostro.",
+      "source_id": "S03",
+      "locator": "Printed p. 65, section 3.3",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F005",
+      "statement": "SWIFT (Society for Worldwide Interbank Financial Telecommunications) is a global, member-owned co-operative society that provides secure financial messaging. It authenticates messages through bilateral key exchange and is available round the clock.",
+      "source_id": "S03",
+      "locator": "Printed p. 66, section 3.4.1",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F006",
+      "statement": "CHIPS is a US dollar payment system in New York that nets participants' payment instructions through the day, with the net position debited or credited to each bank's account with the Federal Reserve. Fedwire is operated by the Federal Reserve and settles on a gross basis, identifying banks by ABA numbers. TARGET (now TARGET2) is the euro real-time gross settlement system. CHAPS is the British equivalent of CHIPS, handling payments in London.",
+      "source_id": "S03",
+      "locator": "Printed pp. 67-68, sections 3.4.2 to 3.4.5",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    }
+  ],
+  "drafts": [
+    {
+      "draft_id": "D001",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "title": "Why a bank rents someone else's branch abroad",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "A bank that wants to serve clients across borders has two choices: build branches in each country, or ask a local bank to act for it. **Correspondent banking** is the second choice.\n\n- The local bank abroad, which carries out the work, is the **correspondent bank**.\n- The bank back home that relies on it as its agent is the **respondent bank**.\n\nWhy do banks choose this route?\n\n1. A branch network is expensive to build and run.\n2. Some countries restrict foreign bank licences, so a branch may simply not be allowed.\n3. The correspondent already has local staff, systems and standing, and charges fees for what it does.\n\nIn a narrow sense the two banks hold accounts with each other; in a wider sense, one bank can act as agent for another without any account between them.",
+        "self_check": {
+          "mode": "question",
+          "question_id": "D006"
+        }
+      }
+    },
+    {
+      "draft_id": "D002",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F002",
+        "F003"
+      ],
+      "payload": {
+        "title": "Which correspondent services need an account behind them?",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "Sort correspondent services by one test: **does money move through an account the two banks keep with each other?**\n\n**Yes, an account is needed:**\n- clearing house work: outward and inward payments, statements, reimbursement of LC claims and cheques\n- collections of bills and cheques, credited to the account once realised\n- payments made by debiting the account\n- overdrafts and short-term loans, often to cover an overnight gap\n- investing overnight surplus balances\n\n**No, a relationship and a credit assessment are enough:**\n- advising and confirming letters of credit\n- buyer's credit and supplier's credit, bankers acceptances, guarantees\n- foreign exchange services, including derivatives\n- custody, trade referrals, credit reports on foreign parties\n- help raising funds, and training",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "A respondent bank asks its correspondent to confirm a letter of credit, and also to remit a customer's payment from its account. Which request depends on an account, and why?",
+          "expected_takeaway": "The remittance: it is paid by debiting the account. Confirmation is a credit-based service and needs no account."
+        }
+      }
+    },
+    {
+      "draft_id": "D003",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "title": "Nostro, Vostro, Loro: whose books are you reading?",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "One account, three names. The name depends on **who is speaking**.\n\n- **Nostro**: \"our account with you\". Said by the bank that owns the balance, about the foreign currency account it holds abroad.\n- **Vostro**: \"your account with us\". Said by the bank that holds the account for someone else, about that other bank's account kept in its books in the home currency.\n- **Loro**: \"their account with them\". Said by a third bank, about an account two other banks have between them.\n\nFor the same account: the owner calls it Nostro, the holder calls it Vostro, and an outsider calls it Loro.\n\nA **mirror account** is different: it is not an account with anyone. It is the owner's own bookkeeping copy of its Nostro, kept in the foreign currency and the home currency, so that entries can be matched with the statement the correspondent sends.",
+        "self_check": {
+          "mode": "question",
+          "question_id": "D005"
+        }
+      }
+    },
+    {
+      "draft_id": "D004",
+      "item_type": "card",
+      "variant": "worked_example",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "title": "Why the mirror account and the statement disagree, and how to close the gap",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "Illustrative case: an Indian bank's mirror account for its US dollar Nostro shows a balance of USD 250,000.00. The correspondent's statement shows USD 262,500.00. The bank finds two entries the correspondent has booked which it has not yet recorded: a collection credited for USD 20,000.00 whose advice has not arrived, and bank charges of USD 7,500.00 debited. Does the difference reconcile?",
+        "worked_steps": [
+          {
+            "step_number": 1,
+            "description": "Start from the bank's own record (the mirror balance).",
+            "formula_or_substitution": "Mirror balance",
+            "intermediate_result": "USD 250,000.00"
+          },
+          {
+            "step_number": 2,
+            "description": "Add the credit the correspondent has booked but the bank has not recorded.",
+            "formula_or_substitution": "250,000.00 + 20,000.00",
+            "intermediate_result": "USD 270,000.00"
+          },
+          {
+            "step_number": 3,
+            "description": "Deduct the charges the correspondent has debited but the bank has not recorded.",
+            "formula_or_substitution": "270,000.00 − 7,500.00",
+            "intermediate_result": "USD 262,500.00"
+          },
+          {
+            "step_number": 4,
+            "description": "Compare with the statement balance.",
+            "formula_or_substitution": "262,500.00 − 262,500.00",
+            "intermediate_result": "USD 0.00 unexplained"
+          }
+        ],
+        "final_answer_with_unit": "Reconciled: the USD 12,500.00 difference is fully explained by the unrecorded credit of USD 20,000.00 less charges of USD 7,500.00",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "After reconciling, what should the bank do with the two unrecorded entries?",
+          "expected_takeaway": "Record them in the mirror account so that its books match the statement; the difference was timing, not an error."
+        }
+      }
+    },
+    {
+      "draft_id": "D005",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "An Indian bank keeps a euro account with a bank in Germany. How does the Indian bank refer to this account in its own books?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "A Nostro account",
+            "explanation_md": "It is the Indian bank's own foreign currency account with a bank abroad: 'our account with you'."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A Vostro account",
+            "explanation_md": "The German bank would call it a Vostro, since it holds the account in its books for the Indian bank; the Indian bank does not."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A Loro account",
+            "explanation_md": "Loro is used by a third bank about an account between two others."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A mirror account",
+            "explanation_md": "A mirror account is the Indian bank's bookkeeping copy of its Nostro, not the account held in Germany."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "The owner of a foreign currency balance held abroad calls it a Nostro account, 'our account with you'. The German bank calls the same account a Vostro, and a third bank calls it a Loro."
+      }
+    },
+    {
+      "draft_id": "D006",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F002",
+        "F003"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Which of the following correspondent bank services does NOT normally require an account relationship between the two banks?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Making a payment by debiting the respondent bank's account",
+            "explanation_md": "Payments are made through the account, so an account is needed."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Granting an overnight overdraft on the account",
+            "explanation_md": "An overdraft is a facility on an account, so one is needed."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Confirming a letter of credit issued by the respondent bank",
+            "explanation_md": "LC confirmation rests on the relationship and credit assessment, not on an account."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Crediting the proceeds of collected bills to the respondent bank",
+            "explanation_md": "Proceeds are credited to the account, so an account is needed."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "Confirming a letter of credit is one of the services offered on the basis of the relationship and credit assessment. Payments, overdrafts and credit of collection proceeds all run through an account."
+      }
+    },
+    {
+      "draft_id": "D007",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A bank's mirror account for its Nostro shows USD 318,400.00. The correspondent's statement includes a credit of USD 41,250.00 for collected bills and a debit of USD 3,150.00 for charges, neither yet recorded by the bank (illustrative figures). What balance should the statement show, in USD?",
+        "numeric_rule": {
+          "expected_answer": "356500.00",
+          "unit_label": "USD",
+          "precision_decimals": 2,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give the balance in USD to 2 decimal places.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "Add the unrecorded credit and deduct the unrecorded debit: 318,400.00 + 41,250.00 − 3,150.00 = 356,500.00.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Add the unrecorded credit.",
+            "formula_or_substitution": "318,400.00 + 41,250.00",
+            "intermediate_result": "359,650.00"
+          },
+          {
+            "step_number": 2,
+            "description": "Deduct the unrecorded charges.",
+            "formula_or_substitution": "359,650.00 − 3,150.00",
+            "intermediate_result": "356,500.00"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D008",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F005"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "Which statement about SWIFT is consistent with the courseware?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "It is a member-owned co-operative society that provides secure financial messaging",
+            "explanation_md": "This is the courseware's description."
+          },
+          {
+            "option_id": "B",
+            "text_md": "It is a central bank that settles the net positions of member banks",
+            "explanation_md": "SWIFT carries messages; it is not a central bank and does not settle positions."
+          },
+          {
+            "option_id": "C",
+            "text_md": "It is a New York clearing system that nets US dollar payments each day",
+            "explanation_md": "That describes CHIPS, not SWIFT."
+          },
+          {
+            "option_id": "D",
+            "text_md": "It is a government-owned network of the Reserve Bank of India for domestic transfers",
+            "explanation_md": "SWIFT is owned by its member banks and institutions and works globally."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "SWIFT is a global co-operative society owned by its member banks and financial institutions that provides secure financial messaging, authenticating messages through bilateral key exchange."
+      }
+    },
+    {
+      "draft_id": "D009",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F006"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Participating banks send US dollar payment instructions through the day; at the end of the day the instructions are netted and each bank's net position is debited or credited to its account with the Federal Reserve. Which system is this?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "CHIPS",
+            "explanation_md": "CHIPS nets participants' instructions and settles the net position through the Federal Reserve accounts."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Fedwire",
+            "explanation_md": "Fedwire settles each payment on a gross basis; it does not net."
+          },
+          {
+            "option_id": "C",
+            "text_md": "TARGET2",
+            "explanation_md": "TARGET2 is the euro real-time gross settlement system."
+          },
+          {
+            "option_id": "D",
+            "text_md": "SWIFT",
+            "explanation_md": "SWIFT carries messages; it does not net or settle."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "CHIPS nets the day's instructions between participants and settles each bank's net position through its Federal Reserve account. Fedwire and TARGET2 settle gross, and SWIFT only carries messages."
+      }
+    },
+    {
+      "draft_id": "D010",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F005",
+        "F006"
+      ],
+      "payload": {
+        "title": "Messages versus money: telling the payment rails apart",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "Two jobs are easy to confuse: **sending the instruction** and **settling the money**.\n\n- **SWIFT** carries the secure message. It is a co-operative owned by its member banks and institutions, and it authenticates messages through keys the banks exchange with each other. It is not itself a place where funds are settled.\n- **CHIPS** (New York, US dollars) nets participants' instructions through the day; each bank's net position is then debited or credited to its account with the Federal Reserve. It is mainly used for interbank foreign exchange and Eurodollar settlements.\n- **Fedwire** (run by the Federal Reserve) settles payments one by one, on a gross basis. Banks are identified by ABA numbers.\n- **CHAPS** is the British counterpart to CHIPS, handling payments in London.\n- **TARGET** (today TARGET2) is the euro real-time gross settlement system.\n\nA useful habit: ask of any system, *does it only message, or does it settle, and if it settles, net or gross?*",
+        "self_check": {
+          "mode": "question",
+          "question_id": "D009"
+        }
+      }
+    }
+  ],
+  "unresolved": [
+    "LO_03: RTGS and NEFT in India (printed pp. 68-69) are not used: their minimum amounts, timings and settlement intervals are RBI rules that change and have not been checked against RBI sources.",
+    "LO_03: the courseware says CHAPS works on net settlement principles like CHIPS; this has not been checked against another source, so no item states CHAPS's settlement mode.",
+    "LO_01: the FATF-based due-diligence statements for cross-border correspondent relationships (printed p. 63) are not used.",
+    "LO_04: NRI banking (printed pp. 69 onward) is not drafted; it is regulation-heavy.",
+    "Membership and volume figures for CHIPS, CHAPS, TARGET2 and SWIFT change and are not used.",
+    "Reviewer for this batch is the authoring agent; no independent or human review."
+  ],
+  "next_batch_hint": "BFM-A-U03-B002: NRI banking, printed p. 69 onward, drafted and held back unless verified against RBI/FEMA sources."
+}
