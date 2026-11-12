@@ -3,13 +3,13 @@
  "free_unit_ids": [
   "BFM::MOD_A::U01"
  ],
- "change_summary": "Adds swap types, the dealer's funds and currency positions with a worked example, and the case for an integrated treasury, with three questions. Exchange Rates and Forex Business is still only partly covered.",
+ "change_summary": "Adds how to convert an indirect quote, an importer comparing two quote styles, the five elements of an option price and a question on integrated treasury functions.",
  "minimum_client_version": "0.1.0",
- "published_from": "content/publish/BFM-2026DEC-v5.json",
+ "published_from": "content/publish/BFM-2026DEC-v6.json",
  "pack": {
   "schema_version": "2.0.0",
   "pack_id": "BFM-2026DEC",
-  "pack_version": "5",
+  "pack_version": "6",
   "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
   "exam_context_id": "CAIIB-2026-DEC",
   "paper_id": "BFM",
@@ -93,7 +93,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-12T18:00:00Z",
+     "verified_at": "2026-11-12T22:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -189,7 +189,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-12T18:00:00Z",
+     "verified_at": "2026-11-12T22:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -262,7 +262,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-12T18:00:00Z",
+     "verified_at": "2026-11-12T22:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -343,7 +343,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-12T18:00:00Z",
+     "verified_at": "2026-11-12T22:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -421,7 +421,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-12T18:00:00Z",
+     "verified_at": "2026-11-12T22:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -500,7 +500,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-12T18:00:00Z",
+     "verified_at": "2026-11-12T22:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -588,7 +588,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-12T18:00:00Z",
+     "verified_at": "2026-11-12T22:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -680,7 +680,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-12T18:00:00Z",
+     "verified_at": "2026-11-12T22:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -753,7 +753,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-12T18:00:00Z",
+     "verified_at": "2026-11-12T22:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -817,7 +817,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-12T18:00:00Z",
+     "verified_at": "2026-11-12T22:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -903,7 +903,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-12T18:00:00Z",
+     "verified_at": "2026-11-12T22:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -967,7 +967,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-12T18:00:00Z",
+     "verified_at": "2026-11-12T22:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -1038,7 +1038,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-12T18:00:00Z",
+     "verified_at": "2026-11-12T22:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -1128,7 +1128,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-12T18:00:00Z",
+     "verified_at": "2026-11-12T22:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -1192,7 +1192,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-12T18:00:00Z",
+     "verified_at": "2026-11-12T22:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -1257,7 +1257,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-12T18:00:00Z",
+     "verified_at": "2026-11-12T22:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -1338,7 +1338,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-12T18:00:00Z",
+     "verified_at": "2026-11-12T22:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -1401,7 +1401,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-12T18:00:00Z",
+     "verified_at": "2026-11-12T22:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -1480,7 +1480,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-12T18:00:00Z",
+     "verified_at": "2026-11-12T22:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -1562,7 +1562,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-12T18:00:00Z",
+     "verified_at": "2026-11-12T22:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -1635,7 +1635,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-12T18:00:00Z",
+     "verified_at": "2026-11-12T22:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -1708,7 +1708,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-12T18:00:00Z",
+     "verified_at": "2026-11-12T22:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -1772,7 +1772,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-12T18:00:00Z",
+     "verified_at": "2026-11-12T22:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -1843,7 +1843,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-12T18:00:00Z",
+     "verified_at": "2026-11-12T22:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -1914,7 +1914,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-12T18:00:00Z",
+     "verified_at": "2026-11-12T22:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -2010,7 +2010,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-12T18:00:00Z",
+     "verified_at": "2026-11-12T22:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -2083,7 +2083,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-12T18:00:00Z",
+     "verified_at": "2026-11-12T22:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -2153,7 +2153,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-12T18:00:00Z",
+     "verified_at": "2026-11-12T22:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -2226,7 +2226,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-12T18:00:00Z",
+     "verified_at": "2026-11-12T22:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -2296,7 +2296,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-12T18:00:00Z",
+     "verified_at": "2026-11-12T22:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -2352,7 +2352,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-12T18:00:00Z",
+     "verified_at": "2026-11-12T22:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -2426,7 +2426,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-12T18:00:00Z",
+     "verified_at": "2026-11-12T22:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -2491,7 +2491,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-12T18:00:00Z",
+     "verified_at": "2026-11-12T22:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -2567,7 +2567,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-12T18:00:00Z",
+     "verified_at": "2026-11-12T22:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -2632,7 +2632,395 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-12T18:00:00Z",
+     "verified_at": "2026-11-12T22:00:00Z",
+     "reviewer_id": "coding-agent (Claude), same agent as author",
+     "method": "automated",
+     "source_verified": true,
+     "answer_checked": true,
+     "calculations": "not_applicable"
+    }
+   },
+   {
+    "title": "Five dials that set an option's price",
+    "prerequisite_objective_ids": [],
+    "core_explanation_md": "An option's premium is not guessed; it comes from five inputs, and it helps to think of them as dials.\n\n1. **Spot rate today**: where the currency trades now, which sets how far the strike is from the market.\n2. **Time to maturity**: how long the holder has for the right to become valuable.\n3. **Forward rate for that maturity**: where the market expects the rate for the same date.\n4. **Interest rates** in the two currencies over the period, which drive the gap between spot and forward.\n5. **Volatility**: how widely the rate is likely to swing between spot and forward.\n\nThe first four position the strike against where the rate is likely to be; the fifth says how far it may wander. Remember that every option also has three price elements you pay or fix: the strike, the premium and the spot rate at purchase.",
+    "self_check": {
+     "mode": "question",
+     "question_id": "item_db0cb170ac2abe9c4d61ac6848f207b2c89bb575af3106eebdd1df0350f5183c"
+    },
+    "item_type": "card",
+    "card_type": "concept",
+    "id": "item_beb6e08619c00f31c93e646d5a3564e21ef3a04f2f5ac99eeb45a9f1d3a14b60",
+    "schema_version": "2.0.0",
+    "revision": 1,
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "paper_id": "BFM",
+    "module_id": "BFM::MOD_A",
+    "unit_id": "BFM::MOD_A::U01",
+    "objective_ids": [
+     "BFM::MOD_A::U01::LO_06"
+    ],
+    "context": {
+     "kind": "exam",
+     "exam_context_id": "CAIIB-2026-DEC",
+     "regulatory_cutoff_date": "2026-06-30"
+    },
+    "citations": [
+     {
+      "source_id": "S03",
+      "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+      "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+      "publication_date": null,
+      "effective_date": null,
+      "locator": "Printed p. 24, Pricing of an option combines the following 5 elements"
+     }
+    ],
+    "origin": "source_assisted",
+    "publication_state": "published",
+    "review": {
+     "verified_at": "2026-11-12T22:00:00Z",
+     "reviewer_id": "coding-agent (Claude), same agent as author",
+     "method": "automated",
+     "source_verified": true,
+     "answer_checked": true,
+     "calculations": "not_applicable"
+    }
+   },
+   {
+    "title": "From an indirect quote to the rupee price of a foreign unit",
+    "prerequisite_objective_ids": [
+     "BFM::MOD_A::U01::LO_02"
+    ],
+    "core_explanation_md": "An indirect quote fixes the home currency and lets the foreign amount vary: for example, ₹100 buys so many US dollars. India works in direct quotes, where the rupee price of one foreign unit is what moves. To turn one into the other you **divide the fixed rupee amount by the foreign amount**.\n\nA quick check: the more foreign currency ₹100 buys, the cheaper that foreign currency is in rupees, so the direct rate must fall.",
+    "formula_spec": {
+     "latex_expression": "D = \\frac{H}{F}",
+     "variables": [
+      {
+       "symbol": "D",
+       "name": "Direct rate: rupees per one unit of foreign currency",
+       "unit": "₹ per unit of foreign currency"
+      },
+      {
+       "symbol": "H",
+       "name": "Fixed home currency amount in the indirect quote",
+       "unit": "₹"
+      },
+      {
+       "symbol": "F",
+       "name": "Foreign currency units quoted for H",
+       "unit": "units of foreign currency"
+      }
+     ],
+     "assumptions": [
+      "A single, one-sided rate. For a two-way quote convert each side separately and watch which side is the bank's buying rate.",
+      "Round only at the end, to the number of decimals the question states."
+     ],
+     "common_errors": [
+      "Multiplying H by F instead of dividing.",
+      "Using ₹1 instead of the fixed amount quoted (₹100 here).",
+      "Rounding the foreign amount before dividing."
+     ]
+    },
+    "self_check": {
+     "mode": "self_assessed",
+     "prompt_text": "₹100 = USD 1.2500. Without a calculator, what is the rupee price of one dollar, and does it rise or fall if ₹100 buys more dollars?",
+     "expected_takeaway": "₹80.00 (100 ÷ 1.25). It falls: if ₹100 buys more dollars, each dollar costs fewer rupees."
+    },
+    "item_type": "card",
+    "card_type": "formula",
+    "id": "item_09260e3738bd5324f03d4a848c710f03e11ca6b0ce8f51e34ac80a08780a60a0",
+    "schema_version": "2.0.0",
+    "revision": 1,
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "paper_id": "BFM",
+    "module_id": "BFM::MOD_A",
+    "unit_id": "BFM::MOD_A::U01",
+    "objective_ids": [
+     "BFM::MOD_A::U01::LO_02"
+    ],
+    "context": {
+     "kind": "exam",
+     "exam_context_id": "CAIIB-2026-DEC",
+     "regulatory_cutoff_date": "2026-06-30"
+    },
+    "citations": [
+     {
+      "source_id": "S03",
+      "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+      "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+      "publication_date": null,
+      "effective_date": null,
+      "locator": "Printed p. 11, heading Direct and Indirect Quotes"
+     }
+    ],
+    "origin": "source_assisted",
+    "publication_state": "published",
+    "review": {
+     "verified_at": "2026-11-12T22:00:00Z",
+     "reviewer_id": "coding-agent (Claude), same agent as author",
+     "method": "automated",
+     "source_verified": true,
+     "answer_checked": true,
+     "calculations": "verified"
+    }
+   },
+   {
+    "title": "Two quotes, two styles: which is cheaper for the importer?",
+    "prerequisite_objective_ids": [
+     "BFM::MOD_A::U01::LO_02"
+    ],
+    "core_explanation_md": "Illustrative case: an importer must buy USD 50,000. One dealer quotes directly: ₹83.2000 per dollar. Another quotes indirectly: ₹100 = USD 1.2030. Treat both as the price at which the bank sells dollars. Which is cheaper, and by how much on the whole payment?",
+    "worked_steps": [
+     {
+      "step_number": 1,
+      "description": "Convert the indirect quote to a rupee price per dollar: divide the fixed rupees by the dollars.",
+      "formula_or_substitution": "100 ÷ 1.2030",
+      "intermediate_result": "83.12552 → ₹83.1255 per USD (4 decimals)"
+     },
+     {
+      "step_number": 2,
+      "description": "Cost at the direct quote.",
+      "formula_or_substitution": "50,000 × 83.2000",
+      "intermediate_result": "₹41,60,000.00"
+     },
+     {
+      "step_number": 3,
+      "description": "Cost at the converted indirect quote.",
+      "formula_or_substitution": "50,000 × 83.1255",
+      "intermediate_result": "₹41,56,275.00"
+     },
+     {
+      "step_number": 4,
+      "description": "Difference.",
+      "formula_or_substitution": "41,60,000.00 − 41,56,275.00",
+      "intermediate_result": "₹3,725.00"
+     }
+    ],
+    "final_answer_with_unit": "The indirect quote is cheaper: ₹41,56,275.00 against ₹41,60,000.00, a saving of ₹3,725.00",
+    "self_check": {
+     "mode": "self_assessed",
+     "prompt_text": "Why must you convert before comparing, and what would go wrong if you compared 83.2000 with 1.2030 directly?",
+     "expected_takeaway": "The two numbers mean different things: one is rupees per dollar, the other dollars per ₹100. Only after dividing do they share a unit."
+    },
+    "item_type": "card",
+    "card_type": "worked_example",
+    "id": "item_e3ceb0b73447079813257d2316fcfafb90eb4ae1ed4bb590ca89acf9c082679c",
+    "schema_version": "2.0.0",
+    "revision": 1,
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "paper_id": "BFM",
+    "module_id": "BFM::MOD_A",
+    "unit_id": "BFM::MOD_A::U01",
+    "objective_ids": [
+     "BFM::MOD_A::U01::LO_02"
+    ],
+    "context": {
+     "kind": "exam",
+     "exam_context_id": "CAIIB-2026-DEC",
+     "regulatory_cutoff_date": "2026-06-30"
+    },
+    "citations": [
+     {
+      "source_id": "S03",
+      "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+      "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+      "publication_date": null,
+      "effective_date": null,
+      "locator": "Printed p. 11, heading Direct and Indirect Quotes"
+     }
+    ],
+    "origin": "source_assisted",
+    "publication_state": "published",
+    "review": {
+     "verified_at": "2026-11-12T22:00:00Z",
+     "reviewer_id": "coding-agent (Claude), same agent as author",
+     "method": "automated",
+     "source_verified": true,
+     "answer_checked": true,
+     "calculations": "verified"
+    }
+   },
+   {
+    "difficulty": "medium",
+    "stem_md": "According to the courseware, option pricing combines five elements. Which of the following is NOT one of them?",
+    "options": [
+     {
+      "option_id": "A",
+      "text_md": "Volatility, the standard deviation from spot to forward rates",
+      "explanation_md": "Volatility is one of the five elements."
+     },
+     {
+      "option_id": "B",
+      "text_md": "The time remaining to maturity",
+      "explanation_md": "Time to maturity is one of the five elements."
+     },
+     {
+      "option_id": "C",
+      "text_md": "The credit rating of the option holder",
+      "explanation_md": "The holder's credit rating is not among the five elements listed; the price depends on rates, time and volatility, not on who the buyer is."
+     },
+     {
+      "option_id": "D",
+      "text_md": "The interest rates for the currencies over the intervening period",
+      "explanation_md": "Interest rates over the period are one of the five elements."
+     }
+    ],
+    "correct_option_id": "C",
+    "correct_explanation_md": "The five elements are the present spot rate, time to maturity, the forward rate for the matching maturity, interest rates over the period and volatility. The holder's credit rating is not one of them.",
+    "item_type": "question",
+    "question_type": "single_choice",
+    "id": "item_db0cb170ac2abe9c4d61ac6848f207b2c89bb575af3106eebdd1df0350f5183c",
+    "schema_version": "2.0.0",
+    "revision": 1,
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "paper_id": "BFM",
+    "module_id": "BFM::MOD_A",
+    "unit_id": "BFM::MOD_A::U01",
+    "objective_ids": [
+     "BFM::MOD_A::U01::LO_06"
+    ],
+    "context": {
+     "kind": "exam",
+     "exam_context_id": "CAIIB-2026-DEC",
+     "regulatory_cutoff_date": "2026-06-30"
+    },
+    "citations": [
+     {
+      "source_id": "S03",
+      "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+      "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+      "publication_date": null,
+      "effective_date": null,
+      "locator": "Printed p. 24, Pricing of an option combines the following 5 elements"
+     }
+    ],
+    "origin": "source_assisted",
+    "publication_state": "published",
+    "review": {
+     "verified_at": "2026-11-12T22:00:00Z",
+     "reviewer_id": "coding-agent (Claude), same agent as author",
+     "method": "automated",
+     "source_verified": true,
+     "answer_checked": true,
+     "calculations": "not_applicable"
+    }
+   },
+   {
+    "difficulty": "easy",
+    "stem_md": "A foreign dealer quotes the rupee indirectly: ₹100 = USD 1.2000 (illustrative). What is the rupee price of one US dollar, to 4 decimal places?",
+    "numeric_rule": {
+     "expected_answer": "83.3333",
+     "unit_label": "rupees per USD",
+     "precision_decimals": 4,
+     "rounding_mode": "HALF_UP",
+     "rounding_instruction": "Divide, then round to 4 decimal places.",
+     "allow_negative": false
+    },
+    "correct_explanation_md": "Divide the fixed rupee amount by the dollars it buys: 100 ÷ 1.2000 = 83.3333... rupees, which is 83.3333 to four decimals.",
+    "worked_solution_steps": [
+     {
+      "step_number": 1,
+      "description": "Fixed rupees divided by dollars.",
+      "formula_or_substitution": "100 ÷ 1.2000",
+      "intermediate_result": "83.33333 → 83.3333"
+     }
+    ],
+    "item_type": "question",
+    "question_type": "numeric_input",
+    "id": "item_8acfac4f5ab6e0217751f755dd43c756161b608f1af6dcda71d572ef02731e70",
+    "schema_version": "2.0.0",
+    "revision": 1,
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "paper_id": "BFM",
+    "module_id": "BFM::MOD_A",
+    "unit_id": "BFM::MOD_A::U01",
+    "objective_ids": [
+     "BFM::MOD_A::U01::LO_02"
+    ],
+    "context": {
+     "kind": "exam",
+     "exam_context_id": "CAIIB-2026-DEC",
+     "regulatory_cutoff_date": "2026-06-30"
+    },
+    "citations": [
+     {
+      "source_id": "S03",
+      "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+      "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+      "publication_date": null,
+      "effective_date": null,
+      "locator": "Printed p. 11, heading Direct and Indirect Quotes"
+     }
+    ],
+    "origin": "source_assisted",
+    "publication_state": "published",
+    "review": {
+     "verified_at": "2026-11-12T22:00:00Z",
+     "reviewer_id": "coding-agent (Claude), same agent as author",
+     "method": "automated",
+     "source_verified": true,
+     "answer_checked": true,
+     "calculations": "verified"
+    }
+   },
+   {
+    "difficulty": "medium",
+    "stem_md": "Which of the following is a function of a bank's integrated treasury?",
+    "options": [
+     {
+      "option_id": "A",
+      "text_md": "Issuing currency notes to the public",
+      "explanation_md": "Note issue is the central bank's function, not a bank treasury's."
+     },
+     {
+      "option_id": "B",
+      "text_md": "Fixing the policy repo rate",
+      "explanation_md": "The policy rate is set by the central bank; a bank treasury works within it."
+     },
+     {
+      "option_id": "C",
+      "text_md": "Transfer pricing: setting benchmark rates for business groups so that funds are deployed optimally",
+      "explanation_md": "Transfer pricing is listed among the functions of an integrated treasury."
+     },
+     {
+      "option_id": "D",
+      "text_md": "Licensing new banks to operate in India",
+      "explanation_md": "Licensing banks is a regulator's task."
+     }
+    ],
+    "correct_option_id": "C",
+    "correct_explanation_md": "An integrated treasury performs transfer pricing, setting benchmark rates for business groups so that funds are deployed optimally. The other three are tasks of the central bank or regulator.",
+    "item_type": "question",
+    "question_type": "single_choice",
+    "id": "item_489b0d52d0c974e8ff745c9ebbe81ca8325ead9a6ba3021aafef68fa359123ee",
+    "schema_version": "2.0.0",
+    "revision": 1,
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "paper_id": "BFM",
+    "module_id": "BFM::MOD_A",
+    "unit_id": "BFM::MOD_A::U01",
+    "objective_ids": [
+     "BFM::MOD_A::U01::LO_05"
+    ],
+    "context": {
+     "kind": "exam",
+     "exam_context_id": "CAIIB-2026-DEC",
+     "regulatory_cutoff_date": "2026-06-30"
+    },
+    "citations": [
+     {
+      "source_id": "S03",
+      "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+      "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+      "publication_date": null,
+      "effective_date": null,
+      "locator": "Printed p. 16, Functions of Integrated Treasury, items (v), (vi), (vii) and (ix)"
+     }
+    ],
+    "origin": "source_assisted",
+    "publication_state": "published",
+    "review": {
+     "verified_at": "2026-11-12T22:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
