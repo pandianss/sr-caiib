@@ -1,0 +1,743 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BFM-A-U01-B007",
+    "paper_id": "BFM",
+    "unit_label": "Module A: International Banking - Exchange Rates and Forex Business",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S03"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "statement": "FEDAI Rule 1 (as the courseware states it): normal market hours for foreign currency/rupee transactions are 9.00 am to 5.00 pm on working days; customer and interbank cross-currency transactions beyond those hours are permitted; transactions with persons resident outside India through foreign branches may run beyond normal hours but cash value transactions only up to 5.00 pm; a known holiday is one known at least 3 working days before the date, and any other holiday is a suddenly declared holiday.",
+        "source_id": "S03",
+        "locator": "Printed p. 28, Rule 1 - Hours of business",
+        "regulatory_sensitive": true,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "F002",
+        "statement": "FEDAI Rule 6 (as the courseware states it): the customer requests extension or cancellation before the maturity date; an extension is a cancellation and rebooking at the same time, with any profit or loss passed on to or recovered from the customer; a purchase contract is cancelled at the TT selling rate and a sale contract at the TT buying rate, applying forward TT rates where the contract is cancelled before maturity.",
+        "source_id": "S03",
+        "locator": "Printed p. 30, Rule 6 - Early delivery, extension and cancellation, items (ii), (iii) and (v)",
+        "regulatory_sensitive": true,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "F003",
+        "statement": "FEDAI Rule 6 (as the courseware states it): if a contract is not cancelled on or before the maturity date, the bank automatically cancels it on the third day from the maturity date; losses are recovered and profits are not passed on; where the reasons for cancellation are beyond the client's control the bank may, under its internal policy, pass on the profit even after maturity.",
+        "source_id": "S03",
+        "locator": "Printed p. 30, Rule 6, items (vi) and (vii)",
+        "regulatory_sensitive": true,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "F004",
+        "statement": "Third-party sources found on 12 Nov 2026 indicate that FEDAI revised Rule 1 and a general rule with effect from 14 February 2022 (to allow certain foreign exchange transactions on Saturdays, Sundays and holidays under bank policy), that FEDAI's rule numbering differs from the courseware's in an older published copy, and that RBI recognised FEDAI as a self-regulatory organisation in January 2026. None could be confirmed against FEDAI's or RBI's own pages.",
+        "source_id": "S03",
+        "locator": "Not from the courseware: web search results, unverified; see review record",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "draft_id": "D001",
+        "item_type": "card",
+        "variant": "statute",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "title": "FEDAI Rule 1: when the dealing day runs and what counts as a known holiday",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "FEDAI's first rule fixes the working day for rupee-foreign currency business. Normal market hours run from **9.00 am to 5.00 pm** on working days. Two relaxations matter in practice: cross-currency deals for customers and interbank counterparties may be done beyond those hours, and deals with non-residents through the bank's foreign branches may run on, but **cash value** deals only until 5.00 pm.\n\nThe rule also separates holidays into two kinds by notice. A **known holiday** is one that is known at least **three working days** before the date. A holiday announced later than that is a **suddenly declared holiday**.",
+          "statute_spec": {
+            "act_or_direction_name": "FEDAI rules (Rule 1 - Hours of business), as stated in the CAIIB courseware",
+            "section_or_clause": "Rule 1",
+            "rule_summary": "Normal market hours for foreign currency/rupee transactions are 9.00 am to 5.00 pm on working days. Cross-currency customer and interbank deals may be done beyond normal hours. Deals with non-residents through foreign branches may run beyond normal hours but cash value deals only up to 5.00 pm. A holiday known at least 3 working days before the date is a known holiday; otherwise it is a suddenly declared holiday.",
+            "applicability": "Authorised dealers in foreign exchange in India. HELD BACK from publication: the rulebook text has not been checked against FEDAI's own current version.",
+            "exceptions": [
+              "Individuals' transactions can be handled on Saturdays, Sundays and holidays as per the bank's internal policy, within the bank's overnight open position limits."
+            ],
+            "thresholds_or_penalties": [
+              "Normal hours: 9.00 am to 5.00 pm",
+              "Known holiday: known at least 3 working days before the date"
+            ]
+          },
+          "self_check": {
+            "mode": "question",
+            "question_id": "D004"
+          }
+        }
+      },
+      {
+        "draft_id": "D002",
+        "item_type": "card",
+        "variant": "statute",
+        "fact_ids": [
+          "F002",
+          "F003"
+        ],
+        "payload": {
+          "title": "FEDAI Rule 6: cancelling or extending a forward contract",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "A forward contract is meant to be used on its due date. When a customer will not do that, Rule 6 sets out what happens.\n\n- The customer asks for **extension or cancellation before maturity**.\n- A contract is cancelled by dealing the other way: a **purchase** contract at the **TT selling rate**, a **sale** contract at the **TT buying rate**. Cancelled before maturity, the forward TT rates apply.\n- An **extension** is a cancellation and a fresh booking made together; the profit or loss on the cancelled leg is passed on to, or recovered from, the customer.\n- If the customer does nothing by maturity, the bank **cancels automatically** on the third day from maturity: losses are recovered, profits are **not** passed on.",
+          "expanded_explanation_md": "The asymmetry at the end is deliberate: leaving a contract to lapse is not rewarded. The courseware adds that the bank may, under its own policy, pass on the profit even after maturity when the reasons were beyond the client's control.",
+          "statute_spec": {
+            "act_or_direction_name": "FEDAI rules (Rule 6 - Early delivery, extension and cancellation), as stated in the CAIIB courseware",
+            "section_or_clause": "Rule 6",
+            "rule_summary": "The customer requests extension or cancellation before maturity. Cancellation is at the opposite TT rate: a purchase contract at the TT selling rate, a sale contract at the TT buying rate (forward TT rates before maturity). An extension is a simultaneous cancellation and rebooking with profit or loss passed on or recovered. A contract not cancelled on or before maturity is cancelled automatically on the third day from maturity, losses recovered and profits not passed on.",
+            "applicability": "Authorised dealers in foreign exchange in India. HELD BACK from publication: the rulebook text has not been checked against FEDAI's own current version.",
+            "exceptions": [
+              "Where the reasons for cancellation are beyond the client's control, the bank may, under its internal policy, pass on the profit even after maturity."
+            ],
+            "thresholds_or_penalties": [
+              "Automatic cancellation on the third day from the maturity date"
+            ]
+          },
+          "self_check": {
+            "mode": "question",
+            "question_id": "D006"
+          }
+        }
+      },
+      {
+        "draft_id": "D003",
+        "item_type": "card",
+        "variant": "worked_example",
+        "fact_ids": [
+          "F002"
+        ],
+        "payload": {
+          "title": "What cancelling a forward purchase costs the customer",
+          "prerequisite_objective_ids": [
+            "BFM::MOD_A::U01::LO_03"
+          ],
+          "core_explanation_md": "Illustrative case: an importer booked a forward contract with its bank to buy USD 400,000 at 83.7500. Before maturity the importer cancels. The bank's interbank rate for the cancellation date is 84.0100 and its exchange margin is 9 paise. What does the cancellation cost the importer?",
+          "worked_steps": [
+            {
+              "step_number": 1,
+              "description": "The bank sold dollars under the contract, so it cancels by buying them back; the rule for a purchase contract (customer buying) is the TT selling rate. Start from the interbank selling rate and add the margin.",
+              "formula_or_substitution": "84.0100 + 0.0900",
+              "intermediate_result": "84.1000"
+            },
+            {
+              "step_number": 2,
+              "description": "Rupees at the contracted rate.",
+              "formula_or_substitution": "400,000 × 83.7500",
+              "intermediate_result": "₹3,35,00,000.00"
+            },
+            {
+              "step_number": 3,
+              "description": "Rupees at the cancellation rate.",
+              "formula_or_substitution": "400,000 × 84.1000",
+              "intermediate_result": "₹3,36,40,000.00"
+            },
+            {
+              "step_number": 4,
+              "description": "Difference, recovered from the customer because the dollar became dearer.",
+              "formula_or_substitution": "3,36,40,000.00 − 3,35,00,000.00",
+              "intermediate_result": "₹1,40,000.00"
+            }
+          ],
+          "final_answer_with_unit": "Cancellation rate ₹84.1000 per USD; the importer pays ₹1,40,000.00",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Had the dollar fallen below the contract rate by cancellation, who would receive the difference, and what if the contract had simply lapsed?",
+            "expected_takeaway": "The customer would receive it on a cancellation requested in time; if the contract lapsed and was cancelled automatically, a profit would not be passed on."
+          }
+        }
+      },
+      {
+        "draft_id": "D004",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A holiday for Friday is announced on Thursday afternoon. Under the courseware's statement of FEDAI Rule 1, how is Friday's holiday classed?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "A known holiday, because it was announced before it arrived",
+              "explanation_md": "Any holiday is announced before it arrives; the test is how many working days' notice there was."
+            },
+            {
+              "option_id": "B",
+              "text_md": "A known holiday, because it falls within the same week as the announcement",
+              "explanation_md": "The week is not the test. A known holiday is known at least three working days before the date."
+            },
+            {
+              "option_id": "C",
+              "text_md": "A suddenly declared holiday, because it was known less than three working days before the date",
+              "explanation_md": "Only one working day separates the announcement from the holiday, which is fewer than three, so it is a suddenly declared holiday."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Neither, because holidays are classed only by the bank's board",
+              "explanation_md": "The rule classes holidays by the notice given before the date."
+            }
+          ],
+          "correct_option_id": "C",
+          "correct_explanation_md": "A known holiday is one known at least three working days before the date. An announcement made the day before gives far less notice, so Friday's holiday is a suddenly declared holiday."
+        }
+      },
+      {
+        "draft_id": "D005",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F002"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A customer booked a forward sale contract: the bank sold USD 200,000 at 84.4000 (illustrative figures). Before maturity the customer cancels, and the bank cancels the contract at its TT buying rate of 84.1000. How much does the customer have to pay the bank on cancellation, in rupees?",
+          "numeric_rule": {
+            "expected_answer": "60000.00",
+            "unit_label": "rupees",
+            "precision_decimals": 2,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Give the amount to 2 decimal places.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "A sale contract is cancelled at the TT buying rate. The bank sold dollars at 84.4000 and buys them back at 84.1000, so it receives less than it paid out by 0.3000 rupees per dollar, recovered from the customer: 200,000 × 0.3000 = ₹60,000.00.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "Contract rate less cancellation rate.",
+              "formula_or_substitution": "84.4000 − 84.1000",
+              "intermediate_result": "0.3000"
+            },
+            {
+              "step_number": 2,
+              "description": "Multiply by the dollars.",
+              "formula_or_substitution": "200,000 × 0.3000",
+              "intermediate_result": "60,000.00"
+            }
+          ]
+        }
+      },
+      {
+        "draft_id": "D006",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F003"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "An importer neither uses nor cancels a forward contract by its maturity date, and the contract would have shown a profit on cancellation. Under the courseware's statement of FEDAI Rule 6, what happens?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The contract stays open until the customer asks for cancellation, with the profit held for the customer",
+              "explanation_md": "The rule provides for automatic cancellation; the contract does not stay open."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The bank cancels it automatically on the third day from maturity and does not pass the profit on",
+              "explanation_md": "Unutilised contracts are cancelled automatically on the third day from maturity: losses are recovered and profits are not passed on."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The bank cancels it on the maturity date and passes the profit on in full",
+              "explanation_md": "Cancellation is not on the maturity date and profits are not passed on in the ordinary case."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The contract is extended automatically for one month at the customer's cost",
+              "explanation_md": "An extension is made at the customer's request as a cancellation and fresh booking; it is not automatic."
+            }
+          ],
+          "correct_option_id": "B",
+          "correct_explanation_md": "A contract not cancelled on or before maturity is cancelled automatically on the third day from maturity. Losses are recovered; profits are not passed on, although the bank may under its policy pass on a profit where the reasons were beyond the client's control."
+        }
+      }
+    ],
+    "unresolved": [
+      "ALL items in this batch restate FEDAI rules as the courseware gives them. FEDAI's current rulebook could not be retrieved (RBI pages redirect; the only copy found is an older third-party list with different rule numbers), so applicability at the 30 June 2026 cut-off is UNVERIFIED and the batch is held back from publication.",
+      "Web results suggest Rule 1 was revised from 14 February 2022 and that RBI recognised FEDAI as an SRO in January 2026; neither could be confirmed from a primary page.",
+      "The courseware's printed pp. 29-32 (export, import, clean instrument rules, Rules 7-8 and the FBIL note) are not used. New RBI export and import regulations notified in January 2026 may supersede parts of them.",
+      "Reviewer for this batch is the authoring agent; no independent or human review."
+    ],
+    "next_batch_hint": "Held until a primary source for FEDAI rules is reachable. Meanwhile BFM-A-U01-B008 should close the other gaps in this topic: option pricing elements (LO_06), an indirect-quote question (LO_02), a definition question for LO_01, and better distractors for B006 D006."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BFM-A-U01-B007",
+    "paper_id": "BFM",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 7, Compulsory Paper II, Module A: International Banking, Exchange Rates and Forex Business"
+    },
+    "sources": [
+      {
+        "source_id": "S03",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BFM::MOD_A::U01",
+        "objective_ids": [
+          "BFM::MOD_A::U01::LO_07"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BFM::MOD_A::U01",
+        "objective_ids": [
+          "BFM::MOD_A::U01::LO_07"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BFM::MOD_A::U01",
+        "objective_ids": [
+          "BFM::MOD_A::U01::LO_07"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BFM::MOD_A::U01",
+        "objective_ids": [
+          "BFM::MOD_A::U01::LO_07"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "unit_id": "BFM::MOD_A::U01",
+        "objective_ids": [
+          "BFM::MOD_A::U01::LO_07"
+        ]
+      },
+      {
+        "draft_id": "D006",
+        "unit_id": "BFM::MOD_A::U01",
+        "objective_ids": [
+          "BFM::MOD_A::U01::LO_07"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BFM-A-U01-B007",
+      "draft_id": "D001",
+      "item_id": "item_d0971af2b49c8c1fc65b478af2cfc8e9939ef7d14624bc9d01ab7b9f16b5b87a"
+    },
+    {
+      "batch_id": "BFM-A-U01-B007",
+      "draft_id": "D002",
+      "item_id": "item_dd36e6a1bc4c5c82352bf8bc7ab5dfe1081c3f6073afe47a49e77be667182519"
+    },
+    {
+      "batch_id": "BFM-A-U01-B007",
+      "draft_id": "D003",
+      "item_id": "item_45661ec62349459a78ebbe05abd8baea71612bc0975f99ac66a9011731d0003e"
+    },
+    {
+      "batch_id": "BFM-A-U01-B007",
+      "draft_id": "D004",
+      "item_id": "item_4737299780a54891f6427bcf445e2458ec53a1490adbd3f430312ac9b023cdcd"
+    },
+    {
+      "batch_id": "BFM-A-U01-B007",
+      "draft_id": "D005",
+      "item_id": "item_aa2e9a75e2a0b1d11129e60f827392cffa25271f89077e25ab262594f66084d7"
+    },
+    {
+      "batch_id": "BFM-A-U01-B007",
+      "draft_id": "D006",
+      "item_id": "item_06f926805b0cee057b3cc651b5f8211a5bb21a7118cbc9e3b5d46a0a7806b74b"
+    }
+  ],
+  "items": [
+    {
+      "title": "FEDAI Rule 1: when the dealing day runs and what counts as a known holiday",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "FEDAI's first rule fixes the working day for rupee-foreign currency business. Normal market hours run from **9.00 am to 5.00 pm** on working days. Two relaxations matter in practice: cross-currency deals for customers and interbank counterparties may be done beyond those hours, and deals with non-residents through the bank's foreign branches may run on, but **cash value** deals only until 5.00 pm.\n\nThe rule also separates holidays into two kinds by notice. A **known holiday** is one that is known at least **three working days** before the date. A holiday announced later than that is a **suddenly declared holiday**.",
+      "statute_spec": {
+        "act_or_direction_name": "FEDAI rules (Rule 1 - Hours of business), as stated in the CAIIB courseware",
+        "section_or_clause": "Rule 1",
+        "rule_summary": "Normal market hours for foreign currency/rupee transactions are 9.00 am to 5.00 pm on working days. Cross-currency customer and interbank deals may be done beyond normal hours. Deals with non-residents through foreign branches may run beyond normal hours but cash value deals only up to 5.00 pm. A holiday known at least 3 working days before the date is a known holiday; otherwise it is a suddenly declared holiday.",
+        "applicability": "Authorised dealers in foreign exchange in India. HELD BACK from publication: the rulebook text has not been checked against FEDAI's own current version.",
+        "exceptions": [
+          "Individuals' transactions can be handled on Saturdays, Sundays and holidays as per the bank's internal policy, within the bank's overnight open position limits."
+        ],
+        "thresholds_or_penalties": [
+          "Normal hours: 9.00 am to 5.00 pm",
+          "Known holiday: known at least 3 working days before the date"
+        ]
+      },
+      "self_check": {
+        "mode": "question",
+        "question_id": "item_4737299780a54891f6427bcf445e2458ec53a1490adbd3f430312ac9b023cdcd"
+      },
+      "item_type": "card",
+      "card_type": "statute",
+      "id": "item_d0971af2b49c8c1fc65b478af2cfc8e9939ef7d14624bc9d01ab7b9f16b5b87a",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U01",
+      "objective_ids": [
+        "BFM::MOD_A::U01::LO_07"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed p. 28, Rule 1 - Hours of business"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "FEDAI Rule 6: cancelling or extending a forward contract",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "A forward contract is meant to be used on its due date. When a customer will not do that, Rule 6 sets out what happens.\n\n- The customer asks for **extension or cancellation before maturity**.\n- A contract is cancelled by dealing the other way: a **purchase** contract at the **TT selling rate**, a **sale** contract at the **TT buying rate**. Cancelled before maturity, the forward TT rates apply.\n- An **extension** is a cancellation and a fresh booking made together; the profit or loss on the cancelled leg is passed on to, or recovered from, the customer.\n- If the customer does nothing by maturity, the bank **cancels automatically** on the third day from maturity: losses are recovered, profits are **not** passed on.",
+      "expanded_explanation_md": "The asymmetry at the end is deliberate: leaving a contract to lapse is not rewarded. The courseware adds that the bank may, under its own policy, pass on the profit even after maturity when the reasons were beyond the client's control.",
+      "statute_spec": {
+        "act_or_direction_name": "FEDAI rules (Rule 6 - Early delivery, extension and cancellation), as stated in the CAIIB courseware",
+        "section_or_clause": "Rule 6",
+        "rule_summary": "The customer requests extension or cancellation before maturity. Cancellation is at the opposite TT rate: a purchase contract at the TT selling rate, a sale contract at the TT buying rate (forward TT rates before maturity). An extension is a simultaneous cancellation and rebooking with profit or loss passed on or recovered. A contract not cancelled on or before maturity is cancelled automatically on the third day from maturity, losses recovered and profits not passed on.",
+        "applicability": "Authorised dealers in foreign exchange in India. HELD BACK from publication: the rulebook text has not been checked against FEDAI's own current version.",
+        "exceptions": [
+          "Where the reasons for cancellation are beyond the client's control, the bank may, under its internal policy, pass on the profit even after maturity."
+        ],
+        "thresholds_or_penalties": [
+          "Automatic cancellation on the third day from the maturity date"
+        ]
+      },
+      "self_check": {
+        "mode": "question",
+        "question_id": "item_06f926805b0cee057b3cc651b5f8211a5bb21a7118cbc9e3b5d46a0a7806b74b"
+      },
+      "item_type": "card",
+      "card_type": "statute",
+      "id": "item_dd36e6a1bc4c5c82352bf8bc7ab5dfe1081c3f6073afe47a49e77be667182519",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U01",
+      "objective_ids": [
+        "BFM::MOD_A::U01::LO_07"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed p. 30, Rule 6 - Early delivery, extension and cancellation, items (ii), (iii) and (v)"
+        },
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed p. 30, Rule 6, items (vi) and (vii)"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "What cancelling a forward purchase costs the customer",
+      "prerequisite_objective_ids": [
+        "BFM::MOD_A::U01::LO_03"
+      ],
+      "core_explanation_md": "Illustrative case: an importer booked a forward contract with its bank to buy USD 400,000 at 83.7500. Before maturity the importer cancels. The bank's interbank rate for the cancellation date is 84.0100 and its exchange margin is 9 paise. What does the cancellation cost the importer?",
+      "worked_steps": [
+        {
+          "step_number": 1,
+          "description": "The bank sold dollars under the contract, so it cancels by buying them back; the rule for a purchase contract (customer buying) is the TT selling rate. Start from the interbank selling rate and add the margin.",
+          "formula_or_substitution": "84.0100 + 0.0900",
+          "intermediate_result": "84.1000"
+        },
+        {
+          "step_number": 2,
+          "description": "Rupees at the contracted rate.",
+          "formula_or_substitution": "400,000 × 83.7500",
+          "intermediate_result": "₹3,35,00,000.00"
+        },
+        {
+          "step_number": 3,
+          "description": "Rupees at the cancellation rate.",
+          "formula_or_substitution": "400,000 × 84.1000",
+          "intermediate_result": "₹3,36,40,000.00"
+        },
+        {
+          "step_number": 4,
+          "description": "Difference, recovered from the customer because the dollar became dearer.",
+          "formula_or_substitution": "3,36,40,000.00 − 3,35,00,000.00",
+          "intermediate_result": "₹1,40,000.00"
+        }
+      ],
+      "final_answer_with_unit": "Cancellation rate ₹84.1000 per USD; the importer pays ₹1,40,000.00",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Had the dollar fallen below the contract rate by cancellation, who would receive the difference, and what if the contract had simply lapsed?",
+        "expected_takeaway": "The customer would receive it on a cancellation requested in time; if the contract lapsed and was cancelled automatically, a profit would not be passed on."
+      },
+      "item_type": "card",
+      "card_type": "worked_example",
+      "id": "item_45661ec62349459a78ebbe05abd8baea71612bc0975f99ac66a9011731d0003e",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U01",
+      "objective_ids": [
+        "BFM::MOD_A::U01::LO_07"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed p. 30, Rule 6 - Early delivery, extension and cancellation, items (ii), (iii) and (v)"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A holiday for Friday is announced on Thursday afternoon. Under the courseware's statement of FEDAI Rule 1, how is Friday's holiday classed?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "A known holiday, because it was announced before it arrived",
+          "explanation_md": "Any holiday is announced before it arrives; the test is how many working days' notice there was."
+        },
+        {
+          "option_id": "B",
+          "text_md": "A known holiday, because it falls within the same week as the announcement",
+          "explanation_md": "The week is not the test. A known holiday is known at least three working days before the date."
+        },
+        {
+          "option_id": "C",
+          "text_md": "A suddenly declared holiday, because it was known less than three working days before the date",
+          "explanation_md": "Only one working day separates the announcement from the holiday, which is fewer than three, so it is a suddenly declared holiday."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Neither, because holidays are classed only by the bank's board",
+          "explanation_md": "The rule classes holidays by the notice given before the date."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_explanation_md": "A known holiday is one known at least three working days before the date. An announcement made the day before gives far less notice, so Friday's holiday is a suddenly declared holiday.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_4737299780a54891f6427bcf445e2458ec53a1490adbd3f430312ac9b023cdcd",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U01",
+      "objective_ids": [
+        "BFM::MOD_A::U01::LO_07"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed p. 28, Rule 1 - Hours of business"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A customer booked a forward sale contract: the bank sold USD 200,000 at 84.4000 (illustrative figures). Before maturity the customer cancels, and the bank cancels the contract at its TT buying rate of 84.1000. How much does the customer have to pay the bank on cancellation, in rupees?",
+      "numeric_rule": {
+        "expected_answer": "60000.00",
+        "unit_label": "rupees",
+        "precision_decimals": 2,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Give the amount to 2 decimal places.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "A sale contract is cancelled at the TT buying rate. The bank sold dollars at 84.4000 and buys them back at 84.1000, so it receives less than it paid out by 0.3000 rupees per dollar, recovered from the customer: 200,000 × 0.3000 = ₹60,000.00.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "Contract rate less cancellation rate.",
+          "formula_or_substitution": "84.4000 − 84.1000",
+          "intermediate_result": "0.3000"
+        },
+        {
+          "step_number": 2,
+          "description": "Multiply by the dollars.",
+          "formula_or_substitution": "200,000 × 0.3000",
+          "intermediate_result": "60,000.00"
+        }
+      ],
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_aa2e9a75e2a0b1d11129e60f827392cffa25271f89077e25ab262594f66084d7",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U01",
+      "objective_ids": [
+        "BFM::MOD_A::U01::LO_07"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed p. 30, Rule 6 - Early delivery, extension and cancellation, items (ii), (iii) and (v)"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "An importer neither uses nor cancels a forward contract by its maturity date, and the contract would have shown a profit on cancellation. Under the courseware's statement of FEDAI Rule 6, what happens?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The contract stays open until the customer asks for cancellation, with the profit held for the customer",
+          "explanation_md": "The rule provides for automatic cancellation; the contract does not stay open."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The bank cancels it automatically on the third day from maturity and does not pass the profit on",
+          "explanation_md": "Unutilised contracts are cancelled automatically on the third day from maturity: losses are recovered and profits are not passed on."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The bank cancels it on the maturity date and passes the profit on in full",
+          "explanation_md": "Cancellation is not on the maturity date and profits are not passed on in the ordinary case."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The contract is extended automatically for one month at the customer's cost",
+          "explanation_md": "An extension is made at the customer's request as a cancellation and fresh booking; it is not automatic."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_explanation_md": "A contract not cancelled on or before maturity is cancelled automatically on the third day from maturity. Losses are recovered; profits are not passed on, although the bank may under its policy pass on a profit where the reasons were beyond the client's control.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_06f926805b0cee057b3cc651b5f8211a5bb21a7118cbc9e3b5d46a0a7806b74b",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U01",
+      "objective_ids": [
+        "BFM::MOD_A::U01::LO_07"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed p. 30, Rule 6, items (vi) and (vii)"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}
