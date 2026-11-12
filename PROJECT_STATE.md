@@ -1,6 +1,6 @@
 # Project execution state
 
-Last updated: 12 November 2026, session 6. Content authoring is **unblocked for five papers** (171 topics); the other four electives (105 topics) have no courseware. Completion remains blocked on those books, provider sandbox keys and the sheer volume of authoring still to do.
+Last updated: 12 November 2026, session 6. Authoring model switched from Fable 5.2 to Sonnet 5.5 at the owner's request (batch 4 onward); nothing in the process depends on the model. Content authoring is **unblocked for five papers** (171 topics); the other four electives (105 topics) have no courseware. Completion remains blocked on those books, provider sandbox keys and the sheer volume of authoring still to do.
 
 ## Scope and decisions
 
@@ -45,7 +45,7 @@ Last updated: 12 November 2026, session 6. Content authoring is **unblocked for 
 
 | Dimension | Status | Evidence or remaining condition |
 | --- | --- | --- |
-| First published content | done (small) | Pack `BFM-2026DEC` v2 (12 Nov 2026): 17 items (8 cards incl. 3 worked examples and 1 formula card, 9 questions) for part of one BFM topic, free sample. Objectives published and complete: 2 of 7 in that topic (LO_03, LO_04); topics complete: 0 of 276. Published on the authoring agent's review alone by owner decision of 11 Nov 2026. Seen working in the app: lesson, self-check, sources, practice, short mock. |
+| First published content | done (small) | Pack `BFM-2026DEC` v3 (12 Nov 2026): 23 items (11 cards incl. 4 worked examples and 1 formula card, 12 questions) for part of one BFM topic, free sample. Objectives published and complete: 2 of 7 in that topic (LO_03, LO_04); topics complete: 0 of 276. Published on the authoring agent's review alone by owner decision of 11 Nov 2026. Seen working in the app: lesson, self-check, sources, practice, short mock. |
 | Implementation | in_progress (feature-complete against synthetic content) | All screens, engine, storage, backend and service worker exist and are tested. Not yet exercised with real published content, a real payment provider, a screen reader or a physical phone. |
 | Original full-syllabus content | in_progress, mostly blocked | 276-topic baseline. Batch `BFM-A-U01-B001`: 7 editorial objectives, now 12 draft items in two batches (6 cards, 6 questions) as **drafts** (source and originality review pending). 0 topics drafted adequately, 0 reviewed, 0 published. Courseware on disk for ABM, BFM, ABFM, BRBL, CB (171 topics); 105 topics in RM, ITDB, HRM, RB have no source. |
 | Release readiness | blocked | Needs content and provider sandbox verification. Exam configuration is verified. |
@@ -125,7 +125,8 @@ synthetic fixtures), **A** = `scripts/ui-audit.js` measured on the rendered DOM.
   sub-clauses than the courseware quotes. Topics published and complete: still 0 of 276.
 - Batch `content/batches/BFM-A-U01-B003/` (12 Nov): value dates, factors, customer forward rate, three questions;
   published in pack v2 (`content/publish/BFM-2026DEC-v2.json`).
-- Next content cursor: `BFM-A-U01-B004` (dealing room LO_05, from printed p. 14 on), then LO_06, LO_07, an
+- Batch `content/batches/BFM-A-U01-B004/` (12 Nov, Sonnet 5.5): front/mid/back office, five dealing-room risks, settlement vs pre-settlement worked example, 3 questions; pack v3 (`content/publish/BFM-2026DEC-v3.json`). A numerical slip in the book's settlement-risk illustration was found and reported in the review record.
+- Next content cursor: `BFM-A-U01-B005` (funds and currency positions, integrated treasury: printed pp. 15-16; then derivatives LO_06 from p. 20). Earlier note: `BFM-A-U01-B004` (dealing room LO_05, from printed p. 14 on), then LO_06, LO_07, an
   indirect-quote question for LO_02, a definition question for LO_01. Superseded note follows: `BFM-A-U01-B003` — value-date lesson and indirect-quote question (LO_02), customer
   forward-rate worked example (LO_03), then LO_04–LO_07; then `BFM::MOD_A::U02`.
 
