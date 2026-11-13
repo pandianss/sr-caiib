@@ -1,0 +1,3617 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BFM-B-U05-B002",
+    "paper_id": "BFM",
+    "unit_label": "Module B unit 5 additional reading: Altman Z score, implied default probability, collateral haircuts and transition matrix",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S03",
+      "RBI_CAP_2025"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "statement": "In the courseware's additional reading, Altman's model for manufacturing firms expresses a borrower's default risk as a score Z = 1.2 X1 + 1.4 X2 + 3.3 X3 + 0.6 X4 + 1.0 X5, where X1 is net working capital to total assets, X2 retained earnings to total assets, X3 earnings before interest and taxes to total assets, X4 market value of equity to the book value of long-term debt, and X5 sales to total assets. A firm with a Z score below 1.81 is to be classed as a high-risk borrower; the higher the Z score, the lower the default risk.",
+        "source_id": "S03",
+        "locator": "Printed p. 452",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "F002",
+        "statement": "The courseware infers a borrower's default probability from interest rates: a lender needs an expected return on one-year corporate debt at least equal to the one-year risk-free return (Government securities or Treasury bills). With i the risk-free one-year rate and k the one-year rate on the corporate zero-coupon debt, the probability of default is p = 1 - (1 + i) / (1 + k). Its example (risk-free 9 per cent, corporate 12.50 per cent) gives 1 - 1.09/1.125, which it states as 3 per cent (unrounded 3.11 per cent). The relationship holds only if nothing is recovered on default.",
+        "source_id": "S03",
+        "locator": "Printed pp. 452-453",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "F003",
+        "statement": "For a collateralised transaction the exposure after risk mitigation is E* = max{0, E x (1 + He) - C x (1 - Hc - Hfx)}, where E is the exposure, He the haircut for the exposure, C the collateral, Hc the collateral haircut and Hfx the haircut for currency mismatch (8 per cent standard); E* is multiplied by the counterparty's risk weight. The haircut for the exposure is a premium factor and that for collateral a discount factor. Under the Directions, loans and investments a bank has acquired in its banking operations take no exposure haircut (they are not marked to market), whereas exposures arising from repo-style transactions, in which securities are sold, lent or pledged, attract one; Table 27 haircuts apply to the eligible collateral. The courseware's illustration applies an exposure-weighted average haircut of 9 per cent to loan exposures and so shows a higher E* than the Directions would.",
+        "source_id": "RBI_CAP_2025",
+        "locator": "Directions paragraphs 161 to 163 and Table 27; S03 printed p. 453",
+        "regulatory_sensitive": true,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "F004",
+        "statement": "A rating transition (migration) matrix shows, for each starting rating, the percentage of borrowers that hold or change rating, or default, over a period, normally a year; every row adds to 100 per cent. The entry on the diagonal is the share that keeps its rating, entries on one side are upgrades and on the other downgrades, and the default column is the one-year probability of default for that rating. The courseware presents such a matrix with the number of accounts in each rating and reads one row aloud.",
+        "source_id": "S03",
+        "locator": "Printed pp. 453-454",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      }
+    ],
+    "drafts": [
+      {
+        "draft_id": "D001",
+        "item_type": "card",
+        "variant": "concept",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "title": "Altman's Z score for a manufacturing borrower",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "The courseware's additional reading describes **Altman's model**, which turns **five accounting ratios** into one **Z score**:\n\n**Z = 1.2 X1 + 1.4 X2 + 3.3 X3 + 0.6 X4 + 1.0 X5**\n\n| Ratio | Meaning | Weight |\n| --- | --- | --- |\n| **X1** | **net working capital ÷ total assets** | 1.2 |\n| **X2** | **retained earnings ÷ total assets** | 1.4 |\n| **X3** | **EBIT ÷ total assets** | 3.3 |\n| **X4** | **market value of equity ÷ book value of long-term debt** | 0.6 |\n| **X5** | **sales ÷ total assets** | 1.0 |\n\n- **Below 1.81** means a **high-risk borrower**.\n- A **higher Z** means **lower default risk**.\n- Note that **X3 has the largest weight**; profitability on assets counts for most.",
+          "self_check": {
+            "mode": "question",
+            "question_id": "D009"
+          }
+        }
+      },
+      {
+        "draft_id": "D002",
+        "item_type": "card",
+        "variant": "concept",
+        "fact_ids": [
+          "F002"
+        ],
+        "payload": {
+          "title": "Default probability from interest rates",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "A lender must earn **at least the risk-free rate** on one-year corporate debt. The extra yield over the risk-free rate therefore signals the market's view of **default risk**.\n\nWith **i** = one-year **risk-free** rate and **k** = one-year **corporate zero-coupon** rate:\n\n**p (default) = 1 − (1 + i) ÷ (1 + k)**\n\n- Corporate yield **rises**, risk-free unchanged → **p rises**.\n- The formula equates what a risk-free investment grows to with what the corporate bond is **expected** to return, so it **assumes nothing is recovered** after default.\n- The courseware's own illustration rounds its answer; **compute unrounded** in an examination and round only at the end.",
+          "self_check": {
+            "mode": "question",
+            "question_id": "D015"
+          }
+        }
+      },
+      {
+        "draft_id": "D003",
+        "item_type": "card",
+        "variant": "concept",
+        "fact_ids": [
+          "F003"
+        ],
+        "payload": {
+          "title": "Exposure after collateral, with haircuts",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "**E\\* = max{0, E × (1 + He) − C × (1 − Hc − Hfx)}**\n\n| Symbol | Meaning |\n| --- | --- |\n| **E** | exposure |\n| **He** | haircut on the **exposure** (a **premium**, pushes it up) |\n| **C** | collateral value |\n| **Hc** | haircut on the **collateral** (a **discount**) |\n| **Hfx** | **currency mismatch** haircut, **8%** |\n\n- **E\\*** cannot go below **zero**. Multiply it by the counterparty **risk weight** to get the RWA.\n- **Directions**: **loans and investments** carry **no exposure haircut** (He = 0); **repo-style** exposures (securities sold, lent or pledged) **do**.\n- **Courseware illustration**: applies an **exposure-weighted average haircut** to loans, so its E\\* is **higher** than the Directions' answer. For examinations, read the question: use the **haircuts it gives**.",
+          "self_check": {
+            "mode": "question",
+            "question_id": "D018"
+          }
+        }
+      },
+      {
+        "draft_id": "D004",
+        "item_type": "card",
+        "variant": "concept",
+        "fact_ids": [
+          "F004"
+        ],
+        "payload": {
+          "title": "Reading a rating transition matrix",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "Each **row** is a **starting rating**; each **column** is the rating **one year later** (the last column is **default**).\n\n- **Every row adds to 100%.**\n- **Diagonal** = share that **keeps** its rating.\n- Entries towards better ratings are **upgrades**; towards worse ratings are **downgrades**.\n- The **default column** is the **one-year probability of default** for that grade.\n\n**Illustration (new figures)**\n\n| From | Accounts | A | BBB | BB | B | Default |\n| --- | --- | --- | --- | --- | --- | --- |\n| **A** | 800 | 94 | 5 | 1 | 0 | 0 |\n| **BBB** | 600 | 3 | 88 | 7 | 1 | 1 |\n| **BB** | 400 | 0 | 6 | 80 | 10 | 4 |\n| **B** | 200 | 0 | 0 | 8 | 74 | 18 |\n\nOf the **400 BB** accounts, **80%** stay BB, **6%** are upgraded to BBB, **10%** fall to B and **4%** default.",
+          "self_check": {
+            "mode": "question",
+            "question_id": "D023"
+          }
+        }
+      },
+      {
+        "draft_id": "D005",
+        "item_type": "card",
+        "variant": "worked_example",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "title": "Scoring two borrowers with the Z model",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "Two manufacturers are scored on the five ratios. **P**: X1 0.20, X2 0.15, X3 0.10, X4 0.80, X5 1.10. **Q**: X1 0.05, X2 0.04, X3 0.03, X4 0.30, X5 0.90.",
+          "worked_steps": [
+            {
+              "step_number": 1,
+              "description": "Weighted ratios of P",
+              "formula_or_substitution": "1.2×0.20 + 1.4×0.15 + 3.3×0.10 + 0.6×0.80 + 1.0×1.10",
+              "intermediate_result": "0.24 + 0.21 + 0.33 + 0.48 + 1.10"
+            },
+            {
+              "step_number": 2,
+              "description": "Z score of P",
+              "formula_or_substitution": "0.24 + 0.21 + 0.33 + 0.48 + 1.10",
+              "intermediate_result": "2.36"
+            },
+            {
+              "step_number": 3,
+              "description": "Weighted ratios of Q",
+              "formula_or_substitution": "1.2×0.05 + 1.4×0.04 + 3.3×0.03 + 0.6×0.30 + 1.0×0.90",
+              "intermediate_result": "0.06 + 0.056 + 0.099 + 0.18 + 0.90"
+            },
+            {
+              "step_number": 4,
+              "description": "Z score of Q",
+              "formula_or_substitution": "0.06 + 0.056 + 0.099 + 0.18 + 0.90",
+              "intermediate_result": "1.295"
+            },
+            {
+              "step_number": 5,
+              "description": "Compare with 1.81",
+              "formula_or_substitution": "P: 2.36 > 1.81;  Q: 1.295 < 1.81",
+              "intermediate_result": "P not flagged; Q is a high-risk borrower"
+            }
+          ],
+          "final_answer_with_unit": "Z of P = 2.36 (not in the high-risk band); Z of Q = 1.295 (high-risk, below 1.81).",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Which single ratio would move Q's score most if it improved by 0.05?",
+            "expected_takeaway": "X3, because its weight of 3.3 is the largest: a 0.05 rise adds 0.165 to Z."
+          }
+        }
+      },
+      {
+        "draft_id": "D006",
+        "item_type": "card",
+        "variant": "worked_example",
+        "fact_ids": [
+          "F002"
+        ],
+        "payload": {
+          "title": "Implied default probability",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "The one-year risk-free rate is **7%**, and a company's one-year zero-coupon debenture yields **9.5%**. Find the default probability implied by the two rates.",
+          "worked_steps": [
+            {
+              "step_number": 1,
+              "description": "Risk-free growth factor",
+              "formula_or_substitution": "1 + 0.07",
+              "intermediate_result": "1.07"
+            },
+            {
+              "step_number": 2,
+              "description": "Corporate growth factor",
+              "formula_or_substitution": "1 + 0.095",
+              "intermediate_result": "1.095"
+            },
+            {
+              "step_number": 3,
+              "description": "Ratio",
+              "formula_or_substitution": "1.07 ÷ 1.095",
+              "intermediate_result": "0.977169"
+            },
+            {
+              "step_number": 4,
+              "description": "Default probability",
+              "formula_or_substitution": "1 − 0.977169",
+              "intermediate_result": "2.28%"
+            }
+          ],
+          "final_answer_with_unit": "The implied probability of default is about 2.28% (assuming no recovery).",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Would the implied probability be higher or lower if the corporate rate were 10.5%?",
+            "expected_takeaway": "Higher: 1 − 1.07/1.105 is about 3.17%."
+          }
+        }
+      },
+      {
+        "draft_id": "D007",
+        "item_type": "card",
+        "variant": "worked_example",
+        "fact_ids": [
+          "F003"
+        ],
+        "payload": {
+          "title": "Exposure after collateral: loans and a repo-style case",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "A bank holds loans of **₹60 crore** and **₹40 crore** to one group, secured by eligible **gold collateral of ₹90 crore** (haircut **15%**; same currency). Separately, a repo-style exposure of **₹100 crore** has an exposure haircut of **4.8%**, secured by the same kind of collateral worth ₹90 crore.",
+          "worked_steps": [
+            {
+              "step_number": 1,
+              "description": "Collateral after haircut",
+              "formula_or_substitution": "90 × (1 − 0.15)",
+              "intermediate_result": "₹76.50 crore"
+            },
+            {
+              "step_number": 2,
+              "description": "Loans: exposure haircut nil, so E*",
+              "formula_or_substitution": "max(0, 100 − 76.50)",
+              "intermediate_result": "₹23.50 crore"
+            },
+            {
+              "step_number": 3,
+              "description": "Repo-style: exposure after premium",
+              "formula_or_substitution": "100 × (1 + 0.048)",
+              "intermediate_result": "₹104.80 crore"
+            },
+            {
+              "step_number": 4,
+              "description": "Repo-style E*",
+              "formula_or_substitution": "max(0, 104.80 − 76.50)",
+              "intermediate_result": "₹28.30 crore"
+            }
+          ],
+          "final_answer_with_unit": "E* = ₹23.50 crore for the loans and ₹28.30 crore for the repo-style exposure.",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "What would E* be for the loans if the courseware's 4.8% weighted exposure haircut were wrongly applied?",
+            "expected_takeaway": "₹104.80 crore less ₹76.50 crore, that is ₹28.30 crore, an overstatement of ₹4.80 crore."
+          }
+        }
+      },
+      {
+        "draft_id": "D008",
+        "item_type": "card",
+        "variant": "worked_example",
+        "fact_ids": [
+          "F004"
+        ],
+        "payload": {
+          "title": "Reading the BB row of the matrix",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "Using the transition matrix in the card: **400 BB accounts**, BB row: **0** to A, **6** to BBB, **80** stay BB, **10** to B, **4** default (per cent).",
+          "worked_steps": [
+            {
+              "step_number": 1,
+              "description": "Upgraded to BBB",
+              "formula_or_substitution": "400 × 6%",
+              "intermediate_result": "24"
+            },
+            {
+              "step_number": 2,
+              "description": "Stay in BB",
+              "formula_or_substitution": "400 × 80%",
+              "intermediate_result": "320"
+            },
+            {
+              "step_number": 3,
+              "description": "Downgraded to B",
+              "formula_or_substitution": "400 × 10%",
+              "intermediate_result": "40"
+            },
+            {
+              "step_number": 4,
+              "description": "Default",
+              "formula_or_substitution": "400 × 4%",
+              "intermediate_result": "16"
+            },
+            {
+              "step_number": 5,
+              "description": "Check",
+              "formula_or_substitution": "24 + 320 + 40 + 16",
+              "intermediate_result": "400"
+            }
+          ],
+          "final_answer_with_unit": "Expected after a year: 24 upgraded, 320 unchanged, 40 downgraded to B and 16 in default (total 400).",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "What is the one-year probability of default for BBB in this matrix?",
+            "expected_takeaway": "1%, the entry in the default column of the BBB row."
+          }
+        }
+      },
+      {
+        "draft_id": "D009",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "difficulty": "easy",
+          "stem_md": "In the courseware's version of Altman's model, what does a Z score below 1.81 indicate?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "A borrower of the best quality",
+              "explanation_md": "Opposite."
+            },
+            {
+              "option_id": "B",
+              "text_md": "A high-risk borrower",
+              "explanation_md": "Rule."
+            },
+            {
+              "option_id": "C",
+              "text_md": "A borrower that has already defaulted",
+              "explanation_md": "Not so."
+            },
+            {
+              "option_id": "D",
+              "text_md": "A borrower to be exempted from review",
+              "explanation_md": "Not so."
+            }
+          ],
+          "correct_option_id": "B",
+          "correct_explanation_md": "A score below 1.81 means the firm should be classed as high-risk."
+        }
+      },
+      {
+        "draft_id": "D010",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "In the Z score formula, the ratio X3 is",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Sales to total assets",
+              "explanation_md": "X5."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Retained earnings to total assets",
+              "explanation_md": "X2."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Earnings before interest and taxes to total assets",
+              "explanation_md": "Rule."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Net working capital to total assets",
+              "explanation_md": "X1."
+            }
+          ],
+          "correct_option_id": "C",
+          "correct_explanation_md": "X3 is EBIT divided by total assets."
+        }
+      },
+      {
+        "draft_id": "D011",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Which ratio in the Z score uses the market value of equity?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "X1",
+              "explanation_md": "Working capital."
+            },
+            {
+              "option_id": "B",
+              "text_md": "X3",
+              "explanation_md": "EBIT."
+            },
+            {
+              "option_id": "C",
+              "text_md": "X5",
+              "explanation_md": "Sales."
+            },
+            {
+              "option_id": "D",
+              "text_md": "X4, market value of equity to the book value of long-term debt",
+              "explanation_md": "Rule."
+            }
+          ],
+          "correct_option_id": "D",
+          "correct_explanation_md": "X4 compares equity at market value with long-term debt at book value."
+        }
+      },
+      {
+        "draft_id": "D012",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "Which ratio carries the largest weight in the Z score?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "EBIT to total assets, with 3.3",
+              "explanation_md": "Rule."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Sales to total assets, with 1.0",
+              "explanation_md": "Smaller."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Retained earnings to total assets, with 1.4",
+              "explanation_md": "Smaller."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Net working capital to total assets, with 1.2",
+              "explanation_md": "Smaller."
+            }
+          ],
+          "correct_option_id": "A",
+          "correct_explanation_md": "The weight on X3 is 3.3, larger than any other."
+        }
+      },
+      {
+        "draft_id": "D013",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A rise in a borrower's Z score means that its default risk",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Has risen",
+              "explanation_md": "Opposite."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Has fallen",
+              "explanation_md": "Rule."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Is unchanged",
+              "explanation_md": "Not so."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Cannot be judged without a rating",
+              "explanation_md": "Not so."
+            }
+          ],
+          "correct_option_id": "B",
+          "correct_explanation_md": "The higher the Z score, the lower the default risk."
+        }
+      },
+      {
+        "draft_id": "D014",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "How many financial ratios does the Z score formula combine?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Three",
+              "explanation_md": "Not so."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Seven",
+              "explanation_md": "Not so."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Five",
+              "explanation_md": "Rule."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Nine",
+              "explanation_md": "Not so."
+            }
+          ],
+          "correct_option_id": "C",
+          "correct_explanation_md": "It combines five ratios, X1 to X5."
+        }
+      },
+      {
+        "draft_id": "D015",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F002"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "With i the risk-free one-year rate and k the corporate one-year rate, the implied probability of default is",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "(1 + i) ÷ (1 + k)",
+              "explanation_md": "This is the probability of no default."
+            },
+            {
+              "option_id": "B",
+              "text_md": "k − i",
+              "explanation_md": "Not exact."
+            },
+            {
+              "option_id": "C",
+              "text_md": "1 − (1 + k) ÷ (1 + i)",
+              "explanation_md": "Inverted."
+            },
+            {
+              "option_id": "D",
+              "text_md": "1 − (1 + i) ÷ (1 + k)",
+              "explanation_md": "Rule."
+            }
+          ],
+          "correct_option_id": "D",
+          "correct_explanation_md": "The probability of default is one minus the ratio of the two growth factors."
+        }
+      },
+      {
+        "draft_id": "D016",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F002"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "The default probability formula based on interest rates implicitly assumes that, on default,",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Nothing is recovered",
+              "explanation_md": "Rule."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The whole amount is recovered",
+              "explanation_md": "Not so."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Half the amount is recovered",
+              "explanation_md": "Not so."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Collateral is always sold at a premium",
+              "explanation_md": "Not so."
+            }
+          ],
+          "correct_option_id": "A",
+          "correct_explanation_md": "Equating the two expected payoffs with a zero payoff on default means no recovery is assumed."
+        }
+      },
+      {
+        "draft_id": "D017",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F002"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "If the corporate rate rises while the risk-free rate is unchanged, the implied default probability",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Falls",
+              "explanation_md": "Opposite."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Rises",
+              "explanation_md": "Rule."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Does not change",
+              "explanation_md": "Not so."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Becomes negative",
+              "explanation_md": "Not so."
+            }
+          ],
+          "correct_option_id": "B",
+          "correct_explanation_md": "A larger k reduces the ratio (1 + i) ÷ (1 + k), so p rises."
+        }
+      },
+      {
+        "draft_id": "D018",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F003"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "Under the Directions, what exposure haircut applies to a loan a bank has granted in its normal course of business?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "A premium equal to the collateral haircut",
+              "explanation_md": "Not so."
+            },
+            {
+              "option_id": "B",
+              "text_md": "8 per cent",
+              "explanation_md": "Currency mismatch only."
+            },
+            {
+              "option_id": "C",
+              "text_md": "None, because the loan is not marked to market",
+              "explanation_md": "Rule."
+            },
+            {
+              "option_id": "D",
+              "text_md": "15 per cent",
+              "explanation_md": "Gold collateral."
+            }
+          ],
+          "correct_option_id": "C",
+          "correct_explanation_md": "Loans and investments acquired in banking operations are not volatile in this sense, so no exposure haircut applies."
+        }
+      },
+      {
+        "draft_id": "D019",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F003"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "Which exposure attracts an upward volatility adjustment under the Directions?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "A cash credit limit",
+              "explanation_md": "Loan."
+            },
+            {
+              "option_id": "B",
+              "text_md": "A term loan against property",
+              "explanation_md": "Loan."
+            },
+            {
+              "option_id": "C",
+              "text_md": "A deposit with the Reserve Bank",
+              "explanation_md": "Not so."
+            },
+            {
+              "option_id": "D",
+              "text_md": "An exposure from a repo-style transaction in which securities are sold, lent or pledged",
+              "explanation_md": "Rule."
+            }
+          ],
+          "correct_option_id": "D",
+          "correct_explanation_md": "The value of securities sold, lent or pledged in repo-style transactions is subject to market volatility, so the exposure takes a haircut."
+        }
+      },
+      {
+        "draft_id": "D020",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F003"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "In the collateral formula, the haircut on the collateral acts as",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "A discount that lowers the collateral's value",
+              "explanation_md": "Rule."
+            },
+            {
+              "option_id": "B",
+              "text_md": "A premium that raises the collateral's value",
+              "explanation_md": "Opposite."
+            },
+            {
+              "option_id": "C",
+              "text_md": "A charge added to the exposure",
+              "explanation_md": "That is He."
+            },
+            {
+              "option_id": "D",
+              "text_md": "A tax on the borrower",
+              "explanation_md": "Not so."
+            }
+          ],
+          "correct_option_id": "A",
+          "correct_explanation_md": "The collateral is multiplied by (1 − Hc − Hfx), so the haircut reduces it."
+        }
+      },
+      {
+        "draft_id": "D021",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F003"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "What standard supervisory haircut covers a currency mismatch between exposure and collateral?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "15 per cent",
+              "explanation_md": "Gold."
+            },
+            {
+              "option_id": "B",
+              "text_md": "8 per cent",
+              "explanation_md": "Rule."
+            },
+            {
+              "option_id": "C",
+              "text_md": "4 per cent",
+              "explanation_md": "Not so."
+            },
+            {
+              "option_id": "D",
+              "text_md": "25 per cent",
+              "explanation_md": "Not so."
+            }
+          ],
+          "correct_option_id": "B",
+          "correct_explanation_md": "The standard supervisory haircut for currency risk is 8 per cent."
+        }
+      },
+      {
+        "draft_id": "D022",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F003"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "What does the floor of zero in E* = max{0, ...} mean?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The bank must hold zero capital",
+              "explanation_md": "Not so."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The collateral is ignored",
+              "explanation_md": "Not so."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Over-collateralisation cannot produce a negative exposure",
+              "explanation_md": "Rule."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The exposure doubles",
+              "explanation_md": "Not so."
+            }
+          ],
+          "correct_option_id": "C",
+          "correct_explanation_md": "If the adjusted collateral exceeds the adjusted exposure, E* is set at zero rather than a negative figure."
+        }
+      },
+      {
+        "draft_id": "D023",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F004"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "In a rating transition matrix, the entries in each row add up to",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The number of accounts",
+              "explanation_md": "Not so."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The default rate",
+              "explanation_md": "Not so."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Zero",
+              "explanation_md": "Not so."
+            },
+            {
+              "option_id": "D",
+              "text_md": "100 per cent",
+              "explanation_md": "Rule."
+            }
+          ],
+          "correct_option_id": "D",
+          "correct_explanation_md": "A row covers all possible outcomes for borrowers starting at that rating, so it adds to 100 per cent."
+        }
+      },
+      {
+        "draft_id": "D024",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F004"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "The entry on the diagonal of a transition matrix shows the share of borrowers that",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Keep their rating",
+              "explanation_md": "Rule."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Default",
+              "explanation_md": "Last column."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Are upgraded",
+              "explanation_md": "Off the diagonal."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Were not rated",
+              "explanation_md": "Not so."
+            }
+          ],
+          "correct_option_id": "A",
+          "correct_explanation_md": "The diagonal compares each rating with itself, that is borrowers whose rating is unchanged."
+        }
+      },
+      {
+        "draft_id": "D025",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F004"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "The default column in a one-year transition matrix gives, for each starting rating,",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The recovery rate",
+              "explanation_md": "Not so."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The one-year probability of default",
+              "explanation_md": "Rule."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The loss given default",
+              "explanation_md": "Not so."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The number of accounts",
+              "explanation_md": "Not so."
+            }
+          ],
+          "correct_option_id": "B",
+          "correct_explanation_md": "It is the share of borrowers at that rating that default within the year."
+        }
+      },
+      {
+        "draft_id": "D026",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F004"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "In the matrix in the card, which starting rating has the highest one-year probability of default?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "BB, at 4 per cent",
+              "explanation_md": "Lower."
+            },
+            {
+              "option_id": "B",
+              "text_md": "BBB, at 1 per cent",
+              "explanation_md": "Lower."
+            },
+            {
+              "option_id": "C",
+              "text_md": "B, at 18 per cent",
+              "explanation_md": "Rule."
+            },
+            {
+              "option_id": "D",
+              "text_md": "A, at 0 per cent",
+              "explanation_md": "Lower."
+            }
+          ],
+          "correct_option_id": "C",
+          "correct_explanation_md": "Reading the default column, the B row shows 18 per cent, the highest."
+        }
+      },
+      {
+        "draft_id": "D027",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A borrower has X1 = 0.10, X2 = 0.08, X3 = 0.06, X4 = 0.50 and X5 = 1.00. What is its Z score, to two decimals?",
+          "numeric_rule": {
+            "expected_answer": "1.73",
+            "unit_label": "Z score",
+            "precision_decimals": 2,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Give the answer to 2 decimal places.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "1.2×0.10 = 0.12; 1.4×0.08 = 0.112; 3.3×0.06 = 0.198; 0.6×0.50 = 0.30; 1.0×1.00 = 1.00; total 1.730, below 1.81 so high-risk.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "Weighted ratios",
+              "formula_or_substitution": "0.12 + 0.112 + 0.198 + 0.30 + 1.00",
+              "intermediate_result": "1.730"
+            }
+          ]
+        }
+      },
+      {
+        "draft_id": "D028",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "A borrower has X1 = 0.30, X2 = 0.20, X3 = 0.12, X4 = 1.00 and X5 = 1.30. What is its Z score, to two decimals?",
+          "numeric_rule": {
+            "expected_answer": "2.94",
+            "unit_label": "Z score",
+            "precision_decimals": 2,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Give the answer to 2 decimal places.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "0.36 + 0.28 + 0.396 + 0.60 + 1.30 = 2.936, which rounds to 2.94.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "Weighted ratios",
+              "formula_or_substitution": "0.36 + 0.28 + 0.396 + 0.60 + 1.30",
+              "intermediate_result": "2.936"
+            }
+          ]
+        }
+      },
+      {
+        "draft_id": "D029",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F002"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "The one-year risk-free rate is 6% and a company's one-year zero-coupon debt yields 8%. What default probability is implied, in per cent, to two decimals?",
+          "numeric_rule": {
+            "expected_answer": "1.85",
+            "unit_label": "%",
+            "precision_decimals": 2,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Give the answer to 2 decimal places.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "1 − 1.06/1.08 = 1 − 0.981481 = 0.018519, that is 1.85%.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "Ratio",
+              "formula_or_substitution": "1.06 ÷ 1.08",
+              "intermediate_result": "0.981481"
+            },
+            {
+              "step_number": 2,
+              "description": "Probability",
+              "formula_or_substitution": "1 − 0.981481",
+              "intermediate_result": "1.85%"
+            }
+          ]
+        }
+      },
+      {
+        "draft_id": "D030",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F002"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "The one-year risk-free rate is 8% and the corporate one-year rate is 11.5%. What default probability is implied, in per cent, to two decimals?",
+          "numeric_rule": {
+            "expected_answer": "3.14",
+            "unit_label": "%",
+            "precision_decimals": 2,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Give the answer to 2 decimal places.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "1 − 1.08/1.115 = 1 − 0.968610 = 0.031390, that is 3.14%.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "Ratio",
+              "formula_or_substitution": "1.08 ÷ 1.115",
+              "intermediate_result": "0.968610"
+            },
+            {
+              "step_number": 2,
+              "description": "Probability",
+              "formula_or_substitution": "1 − 0.968610",
+              "intermediate_result": "3.14%"
+            }
+          ]
+        }
+      },
+      {
+        "draft_id": "D031",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F003"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "A loan of ₹200 crore (no exposure haircut, same currency) is secured by eligible collateral of ₹150 crore with a collateral haircut of 20%. What is the exposure after risk mitigation, in ₹ crore?",
+          "numeric_rule": {
+            "expected_answer": "80",
+            "unit_label": "₹ crore",
+            "precision_decimals": 0,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Give a whole number.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "Collateral after haircut = 150 × 0.80 = 120; E* = 200 − 120 = 80.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "Collateral after haircut",
+              "formula_or_substitution": "150 × 0.80",
+              "intermediate_result": "120"
+            },
+            {
+              "step_number": 2,
+              "description": "E*",
+              "formula_or_substitution": "200 − 120",
+              "intermediate_result": "80"
+            }
+          ]
+        }
+      },
+      {
+        "draft_id": "D032",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F003"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "A loan of ₹120 crore (no exposure haircut) is secured by collateral of ₹100 crore in another currency, with a collateral haircut of 10% and the standard currency mismatch haircut. What is the exposure after risk mitigation, in ₹ crore?",
+          "numeric_rule": {
+            "expected_answer": "38",
+            "unit_label": "₹ crore",
+            "precision_decimals": 0,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Give a whole number.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "Adjusted collateral = 100 × (1 − 0.10 − 0.08) = 82; E* = 120 − 82 = 38.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "Adjusted collateral",
+              "formula_or_substitution": "100 × 0.82",
+              "intermediate_result": "82"
+            },
+            {
+              "step_number": 2,
+              "description": "E*",
+              "formula_or_substitution": "120 − 82",
+              "intermediate_result": "38"
+            }
+          ]
+        }
+      },
+      {
+        "draft_id": "D033",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F004"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Using the transition matrix in the card, how many of the 400 BB accounts are expected to be rated B or to default within a year?",
+          "numeric_rule": {
+            "expected_answer": "56",
+            "unit_label": "accounts",
+            "precision_decimals": 0,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Give a whole number.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "BB to B is 10% and BB to default is 4%: 14% of 400 = 56.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "Share",
+              "formula_or_substitution": "10% + 4%",
+              "intermediate_result": "14%"
+            },
+            {
+              "step_number": 2,
+              "description": "Accounts",
+              "formula_or_substitution": "400 × 14%",
+              "intermediate_result": "56"
+            }
+          ]
+        }
+      },
+      {
+        "draft_id": "D034",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F004"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "Using the transition matrix in the card, how many defaults are expected within a year across all four rating groups together?",
+          "numeric_rule": {
+            "expected_answer": "58",
+            "unit_label": "accounts",
+            "precision_decimals": 0,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Give a whole number.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "A: 800 × 0% = 0; BBB: 600 × 1% = 6; BB: 400 × 4% = 16; B: 200 × 18% = 36; total 58.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "Defaults by group",
+              "formula_or_substitution": "0 + 6 + 16 + 36",
+              "intermediate_result": "58"
+            }
+          ]
+        }
+      }
+    ],
+    "unresolved": [
+      "All of this reading rests on the courseware (printed pp. 452-454) alone except the collateral haircut rules, which were checked against the 2025 Capital Adequacy Directions (paragraphs 161 to 163). The Altman coefficients, the 1.81 cut-off and the definition of X4 (market value of equity to book value of long-term debt) are the courseware's; no external source on the Z model was read.",
+      "The courseware applies an exposure-weighted average haircut of 9 per cent to loan exposures and obtains an exposure after mitigation of ₹87 crore; the Directions state that loans take no exposure haircut, which would give ₹60 crore on the same figures. The Directions are taught and the difference is stated in the lesson.",
+      "The courseware's default probability example is rounded to 3 per cent (unrounded 3.11 per cent); the no-recovery assumption is the author's reading of the formula, not a statement in the courseware.",
+      "All numbers in the examples and the transition matrix are new; the courseware's illustration (Mahan Bank, LM Ltd, its matrix) is not reproduced.",
+      "Reviewer for this batch is the authoring agent; no independent or human review."
+    ],
+    "next_batch_hint": "Module C and the remaining papers."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BFM-B-U05-B002",
+    "paper_id": "BFM",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 8, Compulsory Paper II, Module A: International Banking, External Commercial Borrowings and Foreign Investments in India"
+    },
+    "sources": [
+      {
+        "source_id": "S03",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "RBI_CAP_2025",
+        "authority": "Reserve Bank of India",
+        "title": "Reserve Bank of India (Commercial Banks - Prudential Norms on Capital Adequacy) Directions, 2025",
+        "url": "https://www.caalley.com/rbi_mc_md_25/md/151MD.pdf",
+        "publication_date": "2025-11-28",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BFM::MOD_B::U05",
+        "objective_ids": [
+          "BFM::MOD_B::U05::LO_08"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BFM::MOD_B::U05",
+        "objective_ids": [
+          "BFM::MOD_B::U05::LO_08"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BFM::MOD_B::U05",
+        "objective_ids": [
+          "BFM::MOD_B::U05::LO_08"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BFM::MOD_B::U05",
+        "objective_ids": [
+          "BFM::MOD_B::U05::LO_08"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "unit_id": "BFM::MOD_B::U05",
+        "objective_ids": [
+          "BFM::MOD_B::U05::LO_08"
+        ]
+      },
+      {
+        "draft_id": "D006",
+        "unit_id": "BFM::MOD_B::U05",
+        "objective_ids": [
+          "BFM::MOD_B::U05::LO_08"
+        ]
+      },
+      {
+        "draft_id": "D007",
+        "unit_id": "BFM::MOD_B::U05",
+        "objective_ids": [
+          "BFM::MOD_B::U05::LO_08"
+        ]
+      },
+      {
+        "draft_id": "D008",
+        "unit_id": "BFM::MOD_B::U05",
+        "objective_ids": [
+          "BFM::MOD_B::U05::LO_08"
+        ]
+      },
+      {
+        "draft_id": "D009",
+        "unit_id": "BFM::MOD_B::U05",
+        "objective_ids": [
+          "BFM::MOD_B::U05::LO_08"
+        ]
+      },
+      {
+        "draft_id": "D010",
+        "unit_id": "BFM::MOD_B::U05",
+        "objective_ids": [
+          "BFM::MOD_B::U05::LO_08"
+        ]
+      },
+      {
+        "draft_id": "D011",
+        "unit_id": "BFM::MOD_B::U05",
+        "objective_ids": [
+          "BFM::MOD_B::U05::LO_08"
+        ]
+      },
+      {
+        "draft_id": "D012",
+        "unit_id": "BFM::MOD_B::U05",
+        "objective_ids": [
+          "BFM::MOD_B::U05::LO_08"
+        ]
+      },
+      {
+        "draft_id": "D013",
+        "unit_id": "BFM::MOD_B::U05",
+        "objective_ids": [
+          "BFM::MOD_B::U05::LO_08"
+        ]
+      },
+      {
+        "draft_id": "D014",
+        "unit_id": "BFM::MOD_B::U05",
+        "objective_ids": [
+          "BFM::MOD_B::U05::LO_08"
+        ]
+      },
+      {
+        "draft_id": "D015",
+        "unit_id": "BFM::MOD_B::U05",
+        "objective_ids": [
+          "BFM::MOD_B::U05::LO_08"
+        ]
+      },
+      {
+        "draft_id": "D016",
+        "unit_id": "BFM::MOD_B::U05",
+        "objective_ids": [
+          "BFM::MOD_B::U05::LO_08"
+        ]
+      },
+      {
+        "draft_id": "D017",
+        "unit_id": "BFM::MOD_B::U05",
+        "objective_ids": [
+          "BFM::MOD_B::U05::LO_08"
+        ]
+      },
+      {
+        "draft_id": "D018",
+        "unit_id": "BFM::MOD_B::U05",
+        "objective_ids": [
+          "BFM::MOD_B::U05::LO_08"
+        ]
+      },
+      {
+        "draft_id": "D019",
+        "unit_id": "BFM::MOD_B::U05",
+        "objective_ids": [
+          "BFM::MOD_B::U05::LO_08"
+        ]
+      },
+      {
+        "draft_id": "D020",
+        "unit_id": "BFM::MOD_B::U05",
+        "objective_ids": [
+          "BFM::MOD_B::U05::LO_08"
+        ]
+      },
+      {
+        "draft_id": "D021",
+        "unit_id": "BFM::MOD_B::U05",
+        "objective_ids": [
+          "BFM::MOD_B::U05::LO_08"
+        ]
+      },
+      {
+        "draft_id": "D022",
+        "unit_id": "BFM::MOD_B::U05",
+        "objective_ids": [
+          "BFM::MOD_B::U05::LO_08"
+        ]
+      },
+      {
+        "draft_id": "D023",
+        "unit_id": "BFM::MOD_B::U05",
+        "objective_ids": [
+          "BFM::MOD_B::U05::LO_08"
+        ]
+      },
+      {
+        "draft_id": "D024",
+        "unit_id": "BFM::MOD_B::U05",
+        "objective_ids": [
+          "BFM::MOD_B::U05::LO_08"
+        ]
+      },
+      {
+        "draft_id": "D025",
+        "unit_id": "BFM::MOD_B::U05",
+        "objective_ids": [
+          "BFM::MOD_B::U05::LO_08"
+        ]
+      },
+      {
+        "draft_id": "D026",
+        "unit_id": "BFM::MOD_B::U05",
+        "objective_ids": [
+          "BFM::MOD_B::U05::LO_08"
+        ]
+      },
+      {
+        "draft_id": "D027",
+        "unit_id": "BFM::MOD_B::U05",
+        "objective_ids": [
+          "BFM::MOD_B::U05::LO_08"
+        ]
+      },
+      {
+        "draft_id": "D028",
+        "unit_id": "BFM::MOD_B::U05",
+        "objective_ids": [
+          "BFM::MOD_B::U05::LO_08"
+        ]
+      },
+      {
+        "draft_id": "D029",
+        "unit_id": "BFM::MOD_B::U05",
+        "objective_ids": [
+          "BFM::MOD_B::U05::LO_08"
+        ]
+      },
+      {
+        "draft_id": "D030",
+        "unit_id": "BFM::MOD_B::U05",
+        "objective_ids": [
+          "BFM::MOD_B::U05::LO_08"
+        ]
+      },
+      {
+        "draft_id": "D031",
+        "unit_id": "BFM::MOD_B::U05",
+        "objective_ids": [
+          "BFM::MOD_B::U05::LO_08"
+        ]
+      },
+      {
+        "draft_id": "D032",
+        "unit_id": "BFM::MOD_B::U05",
+        "objective_ids": [
+          "BFM::MOD_B::U05::LO_08"
+        ]
+      },
+      {
+        "draft_id": "D033",
+        "unit_id": "BFM::MOD_B::U05",
+        "objective_ids": [
+          "BFM::MOD_B::U05::LO_08"
+        ]
+      },
+      {
+        "draft_id": "D034",
+        "unit_id": "BFM::MOD_B::U05",
+        "objective_ids": [
+          "BFM::MOD_B::U05::LO_08"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BFM-B-U05-B002",
+      "draft_id": "D001",
+      "item_id": "item_700ac8bfc9684094dc106293bde4bbc26e09042fbf50cbb23e18080da3156c11"
+    },
+    {
+      "batch_id": "BFM-B-U05-B002",
+      "draft_id": "D002",
+      "item_id": "item_9ef3ecf816e8b12028370c2ee4e93b6d8d8e1c4c516512c400a8ce0f31ca81e2"
+    },
+    {
+      "batch_id": "BFM-B-U05-B002",
+      "draft_id": "D003",
+      "item_id": "item_d693485cb28bea8d781a88373d43824f465c88fd28f5eefc2068f579292c85af"
+    },
+    {
+      "batch_id": "BFM-B-U05-B002",
+      "draft_id": "D004",
+      "item_id": "item_cbdc03af9313f92f5e9d888874bb6b7bd899685850b3312303bc35d414037576"
+    },
+    {
+      "batch_id": "BFM-B-U05-B002",
+      "draft_id": "D005",
+      "item_id": "item_37cc3b0fd0acfc6d03fdeaf84d39073e69457bc20e1ed2324f308608c1ecf61c"
+    },
+    {
+      "batch_id": "BFM-B-U05-B002",
+      "draft_id": "D006",
+      "item_id": "item_f8ef742fcd2848c7df5ed018440912b7efbe5e3e73c2408be443749aca819b37"
+    },
+    {
+      "batch_id": "BFM-B-U05-B002",
+      "draft_id": "D007",
+      "item_id": "item_11058198f867c3473e92ef3eeedc1f05d27ace20a7f40acda9a19068bd335176"
+    },
+    {
+      "batch_id": "BFM-B-U05-B002",
+      "draft_id": "D008",
+      "item_id": "item_c308bfd309e5b5f9a3b8648b1f12d85e955f7a4f2f797aebb4f9c98d2cbbafb7"
+    },
+    {
+      "batch_id": "BFM-B-U05-B002",
+      "draft_id": "D009",
+      "item_id": "item_30f3d390b377320d86ba4d1b452a3e58f1b89b134b391022f304b15e6f54d7d4"
+    },
+    {
+      "batch_id": "BFM-B-U05-B002",
+      "draft_id": "D010",
+      "item_id": "item_375526c05b490f7fa41100e7e1b5ea83ae8f022ed8b1b49b20ddb5a4a1c16a5a"
+    },
+    {
+      "batch_id": "BFM-B-U05-B002",
+      "draft_id": "D011",
+      "item_id": "item_3b299b7ef7528e262ba35fab11f927485cbd4824d14379e4d10b211e10a64415"
+    },
+    {
+      "batch_id": "BFM-B-U05-B002",
+      "draft_id": "D012",
+      "item_id": "item_2ee161d36f65043dc3495190df310dff515a20c234c7ca6a38e715239eae11c4"
+    },
+    {
+      "batch_id": "BFM-B-U05-B002",
+      "draft_id": "D013",
+      "item_id": "item_3898eea1245814e635662669f0daacfdd3bbecb971a0c0862d1e5f1d383ec1b6"
+    },
+    {
+      "batch_id": "BFM-B-U05-B002",
+      "draft_id": "D014",
+      "item_id": "item_c87d9f961235f287820460636638c160c1de5ed35020ce8beee0cd20becf4454"
+    },
+    {
+      "batch_id": "BFM-B-U05-B002",
+      "draft_id": "D015",
+      "item_id": "item_99dd508e9f73db20c4e5596bc3165ff1736122f3aa4d503b0efe17bf0c1682cb"
+    },
+    {
+      "batch_id": "BFM-B-U05-B002",
+      "draft_id": "D016",
+      "item_id": "item_615edb10470132cbdaf9c9465327d73f531b8c605618b90ca4e2880d781903c0"
+    },
+    {
+      "batch_id": "BFM-B-U05-B002",
+      "draft_id": "D017",
+      "item_id": "item_e02f70d6362c9c41c369e5fdc3b1e167c0f6e2d3677497ce2a1ca93105704017"
+    },
+    {
+      "batch_id": "BFM-B-U05-B002",
+      "draft_id": "D018",
+      "item_id": "item_ac42e6c9f28aa24e29a4cc859009bc614e671f10b0530a29fce44a70f984b396"
+    },
+    {
+      "batch_id": "BFM-B-U05-B002",
+      "draft_id": "D019",
+      "item_id": "item_bae0836c12be24c70c7b478e692ce28bffc65020d8f9d9b5b530a62107f7a364"
+    },
+    {
+      "batch_id": "BFM-B-U05-B002",
+      "draft_id": "D020",
+      "item_id": "item_c3b6a7ff96f3a1c243d21c2a56bd871fd4e9e22d8394809d24a01c0fe2225212"
+    },
+    {
+      "batch_id": "BFM-B-U05-B002",
+      "draft_id": "D021",
+      "item_id": "item_d50df1ba50969cd5d90e7f6a75c5673179d1dae38b73514821e755d981ffcdcd"
+    },
+    {
+      "batch_id": "BFM-B-U05-B002",
+      "draft_id": "D022",
+      "item_id": "item_ac2c75f66015795ca1fd6a8b22da45dd0a585e81f112e3b7fce87f64b9b97d80"
+    },
+    {
+      "batch_id": "BFM-B-U05-B002",
+      "draft_id": "D023",
+      "item_id": "item_87ef917f090ae99adc424dd87867860b14b37d438b6ec37c2385c2312debc40c"
+    },
+    {
+      "batch_id": "BFM-B-U05-B002",
+      "draft_id": "D024",
+      "item_id": "item_731c79e7318efd58a0d65205de4681fe8f96818fa81512e7c1b7532a3d7de9a1"
+    },
+    {
+      "batch_id": "BFM-B-U05-B002",
+      "draft_id": "D025",
+      "item_id": "item_91fd0cfc21c26f46d69689255d9b4cec347619aac794d22d01d585e16da91e22"
+    },
+    {
+      "batch_id": "BFM-B-U05-B002",
+      "draft_id": "D026",
+      "item_id": "item_1124230809d7ee5729a27b2c7d568924616ae163fa638e62b1e28244aba4f786"
+    },
+    {
+      "batch_id": "BFM-B-U05-B002",
+      "draft_id": "D027",
+      "item_id": "item_15a0a877da5b5e0d44310d7a01a5ae21df3b60155c5ff5c434cbba3e81e10409"
+    },
+    {
+      "batch_id": "BFM-B-U05-B002",
+      "draft_id": "D028",
+      "item_id": "item_d91021eeefc8db4c8c487925286a3d5929c8683e0ddf8fdc334c8c1e084c2541"
+    },
+    {
+      "batch_id": "BFM-B-U05-B002",
+      "draft_id": "D029",
+      "item_id": "item_3dcd8414f982c9255d3dc78f47af078f5622b4f6d901cd77c878972e35dd463e"
+    },
+    {
+      "batch_id": "BFM-B-U05-B002",
+      "draft_id": "D030",
+      "item_id": "item_b67490d88ceb4439faa0a6126c5b51fd3c5af23a4ffb6e778c555407946f90d7"
+    },
+    {
+      "batch_id": "BFM-B-U05-B002",
+      "draft_id": "D031",
+      "item_id": "item_6df4bfb4d8e17dcd12dec21e531bd731edc6a1021dc7f504572a66414d391a4f"
+    },
+    {
+      "batch_id": "BFM-B-U05-B002",
+      "draft_id": "D032",
+      "item_id": "item_8cebeda4ae169b8cb9e457e4ba291747156c25d4e61754f0e97e2716715cd8d1"
+    },
+    {
+      "batch_id": "BFM-B-U05-B002",
+      "draft_id": "D033",
+      "item_id": "item_9a60614181812f8f2fe970c08741934a49f80b5a33a25feda6168099e99027f4"
+    },
+    {
+      "batch_id": "BFM-B-U05-B002",
+      "draft_id": "D034",
+      "item_id": "item_49bba0a3b1705e81f90a7ecf68980eba12f0a15837ffd2db1fc37a28a41b5257"
+    }
+  ],
+  "items": [
+    {
+      "title": "Altman's Z score for a manufacturing borrower",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "The courseware's additional reading describes **Altman's model**, which turns **five accounting ratios** into one **Z score**:\n\n**Z = 1.2 X1 + 1.4 X2 + 3.3 X3 + 0.6 X4 + 1.0 X5**\n\n| Ratio | Meaning | Weight |\n| --- | --- | --- |\n| **X1** | **net working capital ÷ total assets** | 1.2 |\n| **X2** | **retained earnings ÷ total assets** | 1.4 |\n| **X3** | **EBIT ÷ total assets** | 3.3 |\n| **X4** | **market value of equity ÷ book value of long-term debt** | 0.6 |\n| **X5** | **sales ÷ total assets** | 1.0 |\n\n- **Below 1.81** means a **high-risk borrower**.\n- A **higher Z** means **lower default risk**.\n- Note that **X3 has the largest weight**; profitability on assets counts for most.",
+      "self_check": {
+        "mode": "question",
+        "question_id": "item_30f3d390b377320d86ba4d1b452a3e58f1b89b134b391022f304b15e6f54d7d4"
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_700ac8bfc9684094dc106293bde4bbc26e09042fbf50cbb23e18080da3156c11",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U05",
+      "objective_ids": [
+        "BFM::MOD_B::U05::LO_08"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed p. 452"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Default probability from interest rates",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "A lender must earn **at least the risk-free rate** on one-year corporate debt. The extra yield over the risk-free rate therefore signals the market's view of **default risk**.\n\nWith **i** = one-year **risk-free** rate and **k** = one-year **corporate zero-coupon** rate:\n\n**p (default) = 1 − (1 + i) ÷ (1 + k)**\n\n- Corporate yield **rises**, risk-free unchanged → **p rises**.\n- The formula equates what a risk-free investment grows to with what the corporate bond is **expected** to return, so it **assumes nothing is recovered** after default.\n- The courseware's own illustration rounds its answer; **compute unrounded** in an examination and round only at the end.",
+      "self_check": {
+        "mode": "question",
+        "question_id": "item_99dd508e9f73db20c4e5596bc3165ff1736122f3aa4d503b0efe17bf0c1682cb"
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_9ef3ecf816e8b12028370c2ee4e93b6d8d8e1c4c516512c400a8ce0f31ca81e2",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U05",
+      "objective_ids": [
+        "BFM::MOD_B::U05::LO_08"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 452-453"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Exposure after collateral, with haircuts",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "**E\\* = max{0, E × (1 + He) − C × (1 − Hc − Hfx)}**\n\n| Symbol | Meaning |\n| --- | --- |\n| **E** | exposure |\n| **He** | haircut on the **exposure** (a **premium**, pushes it up) |\n| **C** | collateral value |\n| **Hc** | haircut on the **collateral** (a **discount**) |\n| **Hfx** | **currency mismatch** haircut, **8%** |\n\n- **E\\*** cannot go below **zero**. Multiply it by the counterparty **risk weight** to get the RWA.\n- **Directions**: **loans and investments** carry **no exposure haircut** (He = 0); **repo-style** exposures (securities sold, lent or pledged) **do**.\n- **Courseware illustration**: applies an **exposure-weighted average haircut** to loans, so its E\\* is **higher** than the Directions' answer. For examinations, read the question: use the **haircuts it gives**.",
+      "self_check": {
+        "mode": "question",
+        "question_id": "item_ac42e6c9f28aa24e29a4cc859009bc614e671f10b0530a29fce44a70f984b396"
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_d693485cb28bea8d781a88373d43824f465c88fd28f5eefc2068f579292c85af",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U05",
+      "objective_ids": [
+        "BFM::MOD_B::U05::LO_08"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "RBI_CAP_2025",
+          "authority": "Reserve Bank of India",
+          "title": "Reserve Bank of India (Commercial Banks - Prudential Norms on Capital Adequacy) Directions, 2025",
+          "url": "https://www.caalley.com/rbi_mc_md_25/md/151MD.pdf",
+          "publication_date": "2025-11-28",
+          "effective_date": null,
+          "locator": "Directions paragraphs 161 to 163 and Table 27; S03 printed p. 453"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Reading a rating transition matrix",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "Each **row** is a **starting rating**; each **column** is the rating **one year later** (the last column is **default**).\n\n- **Every row adds to 100%.**\n- **Diagonal** = share that **keeps** its rating.\n- Entries towards better ratings are **upgrades**; towards worse ratings are **downgrades**.\n- The **default column** is the **one-year probability of default** for that grade.\n\n**Illustration (new figures)**\n\n| From | Accounts | A | BBB | BB | B | Default |\n| --- | --- | --- | --- | --- | --- | --- |\n| **A** | 800 | 94 | 5 | 1 | 0 | 0 |\n| **BBB** | 600 | 3 | 88 | 7 | 1 | 1 |\n| **BB** | 400 | 0 | 6 | 80 | 10 | 4 |\n| **B** | 200 | 0 | 0 | 8 | 74 | 18 |\n\nOf the **400 BB** accounts, **80%** stay BB, **6%** are upgraded to BBB, **10%** fall to B and **4%** default.",
+      "self_check": {
+        "mode": "question",
+        "question_id": "item_87ef917f090ae99adc424dd87867860b14b37d438b6ec37c2385c2312debc40c"
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_cbdc03af9313f92f5e9d888874bb6b7bd899685850b3312303bc35d414037576",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U05",
+      "objective_ids": [
+        "BFM::MOD_B::U05::LO_08"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 453-454"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Scoring two borrowers with the Z model",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "Two manufacturers are scored on the five ratios. **P**: X1 0.20, X2 0.15, X3 0.10, X4 0.80, X5 1.10. **Q**: X1 0.05, X2 0.04, X3 0.03, X4 0.30, X5 0.90.",
+      "worked_steps": [
+        {
+          "step_number": 1,
+          "description": "Weighted ratios of P",
+          "formula_or_substitution": "1.2×0.20 + 1.4×0.15 + 3.3×0.10 + 0.6×0.80 + 1.0×1.10",
+          "intermediate_result": "0.24 + 0.21 + 0.33 + 0.48 + 1.10"
+        },
+        {
+          "step_number": 2,
+          "description": "Z score of P",
+          "formula_or_substitution": "0.24 + 0.21 + 0.33 + 0.48 + 1.10",
+          "intermediate_result": "2.36"
+        },
+        {
+          "step_number": 3,
+          "description": "Weighted ratios of Q",
+          "formula_or_substitution": "1.2×0.05 + 1.4×0.04 + 3.3×0.03 + 0.6×0.30 + 1.0×0.90",
+          "intermediate_result": "0.06 + 0.056 + 0.099 + 0.18 + 0.90"
+        },
+        {
+          "step_number": 4,
+          "description": "Z score of Q",
+          "formula_or_substitution": "0.06 + 0.056 + 0.099 + 0.18 + 0.90",
+          "intermediate_result": "1.295"
+        },
+        {
+          "step_number": 5,
+          "description": "Compare with 1.81",
+          "formula_or_substitution": "P: 2.36 > 1.81;  Q: 1.295 < 1.81",
+          "intermediate_result": "P not flagged; Q is a high-risk borrower"
+        }
+      ],
+      "final_answer_with_unit": "Z of P = 2.36 (not in the high-risk band); Z of Q = 1.295 (high-risk, below 1.81).",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Which single ratio would move Q's score most if it improved by 0.05?",
+        "expected_takeaway": "X3, because its weight of 3.3 is the largest: a 0.05 rise adds 0.165 to Z."
+      },
+      "item_type": "card",
+      "card_type": "worked_example",
+      "id": "item_37cc3b0fd0acfc6d03fdeaf84d39073e69457bc20e1ed2324f308608c1ecf61c",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U05",
+      "objective_ids": [
+        "BFM::MOD_B::U05::LO_08"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed p. 452"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Implied default probability",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "The one-year risk-free rate is **7%**, and a company's one-year zero-coupon debenture yields **9.5%**. Find the default probability implied by the two rates.",
+      "worked_steps": [
+        {
+          "step_number": 1,
+          "description": "Risk-free growth factor",
+          "formula_or_substitution": "1 + 0.07",
+          "intermediate_result": "1.07"
+        },
+        {
+          "step_number": 2,
+          "description": "Corporate growth factor",
+          "formula_or_substitution": "1 + 0.095",
+          "intermediate_result": "1.095"
+        },
+        {
+          "step_number": 3,
+          "description": "Ratio",
+          "formula_or_substitution": "1.07 ÷ 1.095",
+          "intermediate_result": "0.977169"
+        },
+        {
+          "step_number": 4,
+          "description": "Default probability",
+          "formula_or_substitution": "1 − 0.977169",
+          "intermediate_result": "2.28%"
+        }
+      ],
+      "final_answer_with_unit": "The implied probability of default is about 2.28% (assuming no recovery).",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Would the implied probability be higher or lower if the corporate rate were 10.5%?",
+        "expected_takeaway": "Higher: 1 − 1.07/1.105 is about 3.17%."
+      },
+      "item_type": "card",
+      "card_type": "worked_example",
+      "id": "item_f8ef742fcd2848c7df5ed018440912b7efbe5e3e73c2408be443749aca819b37",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U05",
+      "objective_ids": [
+        "BFM::MOD_B::U05::LO_08"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 452-453"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Exposure after collateral: loans and a repo-style case",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "A bank holds loans of **₹60 crore** and **₹40 crore** to one group, secured by eligible **gold collateral of ₹90 crore** (haircut **15%**; same currency). Separately, a repo-style exposure of **₹100 crore** has an exposure haircut of **4.8%**, secured by the same kind of collateral worth ₹90 crore.",
+      "worked_steps": [
+        {
+          "step_number": 1,
+          "description": "Collateral after haircut",
+          "formula_or_substitution": "90 × (1 − 0.15)",
+          "intermediate_result": "₹76.50 crore"
+        },
+        {
+          "step_number": 2,
+          "description": "Loans: exposure haircut nil, so E*",
+          "formula_or_substitution": "max(0, 100 − 76.50)",
+          "intermediate_result": "₹23.50 crore"
+        },
+        {
+          "step_number": 3,
+          "description": "Repo-style: exposure after premium",
+          "formula_or_substitution": "100 × (1 + 0.048)",
+          "intermediate_result": "₹104.80 crore"
+        },
+        {
+          "step_number": 4,
+          "description": "Repo-style E*",
+          "formula_or_substitution": "max(0, 104.80 − 76.50)",
+          "intermediate_result": "₹28.30 crore"
+        }
+      ],
+      "final_answer_with_unit": "E* = ₹23.50 crore for the loans and ₹28.30 crore for the repo-style exposure.",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "What would E* be for the loans if the courseware's 4.8% weighted exposure haircut were wrongly applied?",
+        "expected_takeaway": "₹104.80 crore less ₹76.50 crore, that is ₹28.30 crore, an overstatement of ₹4.80 crore."
+      },
+      "item_type": "card",
+      "card_type": "worked_example",
+      "id": "item_11058198f867c3473e92ef3eeedc1f05d27ace20a7f40acda9a19068bd335176",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U05",
+      "objective_ids": [
+        "BFM::MOD_B::U05::LO_08"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "RBI_CAP_2025",
+          "authority": "Reserve Bank of India",
+          "title": "Reserve Bank of India (Commercial Banks - Prudential Norms on Capital Adequacy) Directions, 2025",
+          "url": "https://www.caalley.com/rbi_mc_md_25/md/151MD.pdf",
+          "publication_date": "2025-11-28",
+          "effective_date": null,
+          "locator": "Directions paragraphs 161 to 163 and Table 27; S03 printed p. 453"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Reading the BB row of the matrix",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "Using the transition matrix in the card: **400 BB accounts**, BB row: **0** to A, **6** to BBB, **80** stay BB, **10** to B, **4** default (per cent).",
+      "worked_steps": [
+        {
+          "step_number": 1,
+          "description": "Upgraded to BBB",
+          "formula_or_substitution": "400 × 6%",
+          "intermediate_result": "24"
+        },
+        {
+          "step_number": 2,
+          "description": "Stay in BB",
+          "formula_or_substitution": "400 × 80%",
+          "intermediate_result": "320"
+        },
+        {
+          "step_number": 3,
+          "description": "Downgraded to B",
+          "formula_or_substitution": "400 × 10%",
+          "intermediate_result": "40"
+        },
+        {
+          "step_number": 4,
+          "description": "Default",
+          "formula_or_substitution": "400 × 4%",
+          "intermediate_result": "16"
+        },
+        {
+          "step_number": 5,
+          "description": "Check",
+          "formula_or_substitution": "24 + 320 + 40 + 16",
+          "intermediate_result": "400"
+        }
+      ],
+      "final_answer_with_unit": "Expected after a year: 24 upgraded, 320 unchanged, 40 downgraded to B and 16 in default (total 400).",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "What is the one-year probability of default for BBB in this matrix?",
+        "expected_takeaway": "1%, the entry in the default column of the BBB row."
+      },
+      "item_type": "card",
+      "card_type": "worked_example",
+      "id": "item_c308bfd309e5b5f9a3b8648b1f12d85e955f7a4f2f797aebb4f9c98d2cbbafb7",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U05",
+      "objective_ids": [
+        "BFM::MOD_B::U05::LO_08"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 453-454"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "easy",
+      "stem_md": "In the courseware's version of Altman's model, what does a Z score below 1.81 indicate?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "A borrower of the best quality",
+          "explanation_md": "Opposite."
+        },
+        {
+          "option_id": "B",
+          "text_md": "A high-risk borrower",
+          "explanation_md": "Rule."
+        },
+        {
+          "option_id": "C",
+          "text_md": "A borrower that has already defaulted",
+          "explanation_md": "Not so."
+        },
+        {
+          "option_id": "D",
+          "text_md": "A borrower to be exempted from review",
+          "explanation_md": "Not so."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_explanation_md": "A score below 1.81 means the firm should be classed as high-risk.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_30f3d390b377320d86ba4d1b452a3e58f1b89b134b391022f304b15e6f54d7d4",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U05",
+      "objective_ids": [
+        "BFM::MOD_B::U05::LO_08"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed p. 452"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "In the Z score formula, the ratio X3 is",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Sales to total assets",
+          "explanation_md": "X5."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Retained earnings to total assets",
+          "explanation_md": "X2."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Earnings before interest and taxes to total assets",
+          "explanation_md": "Rule."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Net working capital to total assets",
+          "explanation_md": "X1."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_explanation_md": "X3 is EBIT divided by total assets.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_375526c05b490f7fa41100e7e1b5ea83ae8f022ed8b1b49b20ddb5a4a1c16a5a",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U05",
+      "objective_ids": [
+        "BFM::MOD_B::U05::LO_08"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed p. 452"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Which ratio in the Z score uses the market value of equity?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "X1",
+          "explanation_md": "Working capital."
+        },
+        {
+          "option_id": "B",
+          "text_md": "X3",
+          "explanation_md": "EBIT."
+        },
+        {
+          "option_id": "C",
+          "text_md": "X5",
+          "explanation_md": "Sales."
+        },
+        {
+          "option_id": "D",
+          "text_md": "X4, market value of equity to the book value of long-term debt",
+          "explanation_md": "Rule."
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_explanation_md": "X4 compares equity at market value with long-term debt at book value.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_3b299b7ef7528e262ba35fab11f927485cbd4824d14379e4d10b211e10a64415",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U05",
+      "objective_ids": [
+        "BFM::MOD_B::U05::LO_08"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed p. 452"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "Which ratio carries the largest weight in the Z score?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "EBIT to total assets, with 3.3",
+          "explanation_md": "Rule."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Sales to total assets, with 1.0",
+          "explanation_md": "Smaller."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Retained earnings to total assets, with 1.4",
+          "explanation_md": "Smaller."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Net working capital to total assets, with 1.2",
+          "explanation_md": "Smaller."
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_explanation_md": "The weight on X3 is 3.3, larger than any other.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_2ee161d36f65043dc3495190df310dff515a20c234c7ca6a38e715239eae11c4",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U05",
+      "objective_ids": [
+        "BFM::MOD_B::U05::LO_08"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed p. 452"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A rise in a borrower's Z score means that its default risk",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Has risen",
+          "explanation_md": "Opposite."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Has fallen",
+          "explanation_md": "Rule."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Is unchanged",
+          "explanation_md": "Not so."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Cannot be judged without a rating",
+          "explanation_md": "Not so."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_explanation_md": "The higher the Z score, the lower the default risk.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_3898eea1245814e635662669f0daacfdd3bbecb971a0c0862d1e5f1d383ec1b6",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U05",
+      "objective_ids": [
+        "BFM::MOD_B::U05::LO_08"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed p. 452"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "How many financial ratios does the Z score formula combine?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Three",
+          "explanation_md": "Not so."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Seven",
+          "explanation_md": "Not so."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Five",
+          "explanation_md": "Rule."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Nine",
+          "explanation_md": "Not so."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_explanation_md": "It combines five ratios, X1 to X5.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_c87d9f961235f287820460636638c160c1de5ed35020ce8beee0cd20becf4454",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U05",
+      "objective_ids": [
+        "BFM::MOD_B::U05::LO_08"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed p. 452"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "With i the risk-free one-year rate and k the corporate one-year rate, the implied probability of default is",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "(1 + i) ÷ (1 + k)",
+          "explanation_md": "This is the probability of no default."
+        },
+        {
+          "option_id": "B",
+          "text_md": "k − i",
+          "explanation_md": "Not exact."
+        },
+        {
+          "option_id": "C",
+          "text_md": "1 − (1 + k) ÷ (1 + i)",
+          "explanation_md": "Inverted."
+        },
+        {
+          "option_id": "D",
+          "text_md": "1 − (1 + i) ÷ (1 + k)",
+          "explanation_md": "Rule."
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_explanation_md": "The probability of default is one minus the ratio of the two growth factors.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_99dd508e9f73db20c4e5596bc3165ff1736122f3aa4d503b0efe17bf0c1682cb",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U05",
+      "objective_ids": [
+        "BFM::MOD_B::U05::LO_08"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 452-453"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "The default probability formula based on interest rates implicitly assumes that, on default,",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Nothing is recovered",
+          "explanation_md": "Rule."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The whole amount is recovered",
+          "explanation_md": "Not so."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Half the amount is recovered",
+          "explanation_md": "Not so."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Collateral is always sold at a premium",
+          "explanation_md": "Not so."
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_explanation_md": "Equating the two expected payoffs with a zero payoff on default means no recovery is assumed.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_615edb10470132cbdaf9c9465327d73f531b8c605618b90ca4e2880d781903c0",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U05",
+      "objective_ids": [
+        "BFM::MOD_B::U05::LO_08"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 452-453"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "If the corporate rate rises while the risk-free rate is unchanged, the implied default probability",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Falls",
+          "explanation_md": "Opposite."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Rises",
+          "explanation_md": "Rule."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Does not change",
+          "explanation_md": "Not so."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Becomes negative",
+          "explanation_md": "Not so."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_explanation_md": "A larger k reduces the ratio (1 + i) ÷ (1 + k), so p rises.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_e02f70d6362c9c41c369e5fdc3b1e167c0f6e2d3677497ce2a1ca93105704017",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U05",
+      "objective_ids": [
+        "BFM::MOD_B::U05::LO_08"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 452-453"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "Under the Directions, what exposure haircut applies to a loan a bank has granted in its normal course of business?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "A premium equal to the collateral haircut",
+          "explanation_md": "Not so."
+        },
+        {
+          "option_id": "B",
+          "text_md": "8 per cent",
+          "explanation_md": "Currency mismatch only."
+        },
+        {
+          "option_id": "C",
+          "text_md": "None, because the loan is not marked to market",
+          "explanation_md": "Rule."
+        },
+        {
+          "option_id": "D",
+          "text_md": "15 per cent",
+          "explanation_md": "Gold collateral."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_explanation_md": "Loans and investments acquired in banking operations are not volatile in this sense, so no exposure haircut applies.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_ac42e6c9f28aa24e29a4cc859009bc614e671f10b0530a29fce44a70f984b396",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U05",
+      "objective_ids": [
+        "BFM::MOD_B::U05::LO_08"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "RBI_CAP_2025",
+          "authority": "Reserve Bank of India",
+          "title": "Reserve Bank of India (Commercial Banks - Prudential Norms on Capital Adequacy) Directions, 2025",
+          "url": "https://www.caalley.com/rbi_mc_md_25/md/151MD.pdf",
+          "publication_date": "2025-11-28",
+          "effective_date": null,
+          "locator": "Directions paragraphs 161 to 163 and Table 27; S03 printed p. 453"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "Which exposure attracts an upward volatility adjustment under the Directions?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "A cash credit limit",
+          "explanation_md": "Loan."
+        },
+        {
+          "option_id": "B",
+          "text_md": "A term loan against property",
+          "explanation_md": "Loan."
+        },
+        {
+          "option_id": "C",
+          "text_md": "A deposit with the Reserve Bank",
+          "explanation_md": "Not so."
+        },
+        {
+          "option_id": "D",
+          "text_md": "An exposure from a repo-style transaction in which securities are sold, lent or pledged",
+          "explanation_md": "Rule."
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_explanation_md": "The value of securities sold, lent or pledged in repo-style transactions is subject to market volatility, so the exposure takes a haircut.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_bae0836c12be24c70c7b478e692ce28bffc65020d8f9d9b5b530a62107f7a364",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U05",
+      "objective_ids": [
+        "BFM::MOD_B::U05::LO_08"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "RBI_CAP_2025",
+          "authority": "Reserve Bank of India",
+          "title": "Reserve Bank of India (Commercial Banks - Prudential Norms on Capital Adequacy) Directions, 2025",
+          "url": "https://www.caalley.com/rbi_mc_md_25/md/151MD.pdf",
+          "publication_date": "2025-11-28",
+          "effective_date": null,
+          "locator": "Directions paragraphs 161 to 163 and Table 27; S03 printed p. 453"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "In the collateral formula, the haircut on the collateral acts as",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "A discount that lowers the collateral's value",
+          "explanation_md": "Rule."
+        },
+        {
+          "option_id": "B",
+          "text_md": "A premium that raises the collateral's value",
+          "explanation_md": "Opposite."
+        },
+        {
+          "option_id": "C",
+          "text_md": "A charge added to the exposure",
+          "explanation_md": "That is He."
+        },
+        {
+          "option_id": "D",
+          "text_md": "A tax on the borrower",
+          "explanation_md": "Not so."
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_explanation_md": "The collateral is multiplied by (1 − Hc − Hfx), so the haircut reduces it.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_c3b6a7ff96f3a1c243d21c2a56bd871fd4e9e22d8394809d24a01c0fe2225212",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U05",
+      "objective_ids": [
+        "BFM::MOD_B::U05::LO_08"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "RBI_CAP_2025",
+          "authority": "Reserve Bank of India",
+          "title": "Reserve Bank of India (Commercial Banks - Prudential Norms on Capital Adequacy) Directions, 2025",
+          "url": "https://www.caalley.com/rbi_mc_md_25/md/151MD.pdf",
+          "publication_date": "2025-11-28",
+          "effective_date": null,
+          "locator": "Directions paragraphs 161 to 163 and Table 27; S03 printed p. 453"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "What standard supervisory haircut covers a currency mismatch between exposure and collateral?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "15 per cent",
+          "explanation_md": "Gold."
+        },
+        {
+          "option_id": "B",
+          "text_md": "8 per cent",
+          "explanation_md": "Rule."
+        },
+        {
+          "option_id": "C",
+          "text_md": "4 per cent",
+          "explanation_md": "Not so."
+        },
+        {
+          "option_id": "D",
+          "text_md": "25 per cent",
+          "explanation_md": "Not so."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_explanation_md": "The standard supervisory haircut for currency risk is 8 per cent.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_d50df1ba50969cd5d90e7f6a75c5673179d1dae38b73514821e755d981ffcdcd",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U05",
+      "objective_ids": [
+        "BFM::MOD_B::U05::LO_08"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "RBI_CAP_2025",
+          "authority": "Reserve Bank of India",
+          "title": "Reserve Bank of India (Commercial Banks - Prudential Norms on Capital Adequacy) Directions, 2025",
+          "url": "https://www.caalley.com/rbi_mc_md_25/md/151MD.pdf",
+          "publication_date": "2025-11-28",
+          "effective_date": null,
+          "locator": "Directions paragraphs 161 to 163 and Table 27; S03 printed p. 453"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "What does the floor of zero in E* = max{0, ...} mean?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The bank must hold zero capital",
+          "explanation_md": "Not so."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The collateral is ignored",
+          "explanation_md": "Not so."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Over-collateralisation cannot produce a negative exposure",
+          "explanation_md": "Rule."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The exposure doubles",
+          "explanation_md": "Not so."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_explanation_md": "If the adjusted collateral exceeds the adjusted exposure, E* is set at zero rather than a negative figure.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_ac2c75f66015795ca1fd6a8b22da45dd0a585e81f112e3b7fce87f64b9b97d80",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U05",
+      "objective_ids": [
+        "BFM::MOD_B::U05::LO_08"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "RBI_CAP_2025",
+          "authority": "Reserve Bank of India",
+          "title": "Reserve Bank of India (Commercial Banks - Prudential Norms on Capital Adequacy) Directions, 2025",
+          "url": "https://www.caalley.com/rbi_mc_md_25/md/151MD.pdf",
+          "publication_date": "2025-11-28",
+          "effective_date": null,
+          "locator": "Directions paragraphs 161 to 163 and Table 27; S03 printed p. 453"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "In a rating transition matrix, the entries in each row add up to",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The number of accounts",
+          "explanation_md": "Not so."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The default rate",
+          "explanation_md": "Not so."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Zero",
+          "explanation_md": "Not so."
+        },
+        {
+          "option_id": "D",
+          "text_md": "100 per cent",
+          "explanation_md": "Rule."
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_explanation_md": "A row covers all possible outcomes for borrowers starting at that rating, so it adds to 100 per cent.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_87ef917f090ae99adc424dd87867860b14b37d438b6ec37c2385c2312debc40c",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U05",
+      "objective_ids": [
+        "BFM::MOD_B::U05::LO_08"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 453-454"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "The entry on the diagonal of a transition matrix shows the share of borrowers that",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Keep their rating",
+          "explanation_md": "Rule."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Default",
+          "explanation_md": "Last column."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Are upgraded",
+          "explanation_md": "Off the diagonal."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Were not rated",
+          "explanation_md": "Not so."
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_explanation_md": "The diagonal compares each rating with itself, that is borrowers whose rating is unchanged.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_731c79e7318efd58a0d65205de4681fe8f96818fa81512e7c1b7532a3d7de9a1",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U05",
+      "objective_ids": [
+        "BFM::MOD_B::U05::LO_08"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 453-454"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "The default column in a one-year transition matrix gives, for each starting rating,",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The recovery rate",
+          "explanation_md": "Not so."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The one-year probability of default",
+          "explanation_md": "Rule."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The loss given default",
+          "explanation_md": "Not so."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The number of accounts",
+          "explanation_md": "Not so."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_explanation_md": "It is the share of borrowers at that rating that default within the year.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_91fd0cfc21c26f46d69689255d9b4cec347619aac794d22d01d585e16da91e22",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U05",
+      "objective_ids": [
+        "BFM::MOD_B::U05::LO_08"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 453-454"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "In the matrix in the card, which starting rating has the highest one-year probability of default?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "BB, at 4 per cent",
+          "explanation_md": "Lower."
+        },
+        {
+          "option_id": "B",
+          "text_md": "BBB, at 1 per cent",
+          "explanation_md": "Lower."
+        },
+        {
+          "option_id": "C",
+          "text_md": "B, at 18 per cent",
+          "explanation_md": "Rule."
+        },
+        {
+          "option_id": "D",
+          "text_md": "A, at 0 per cent",
+          "explanation_md": "Lower."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_explanation_md": "Reading the default column, the B row shows 18 per cent, the highest.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_1124230809d7ee5729a27b2c7d568924616ae163fa638e62b1e28244aba4f786",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U05",
+      "objective_ids": [
+        "BFM::MOD_B::U05::LO_08"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 453-454"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A borrower has X1 = 0.10, X2 = 0.08, X3 = 0.06, X4 = 0.50 and X5 = 1.00. What is its Z score, to two decimals?",
+      "numeric_rule": {
+        "expected_answer": "1.73",
+        "unit_label": "Z score",
+        "precision_decimals": 2,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Give the answer to 2 decimal places.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "1.2×0.10 = 0.12; 1.4×0.08 = 0.112; 3.3×0.06 = 0.198; 0.6×0.50 = 0.30; 1.0×1.00 = 1.00; total 1.730, below 1.81 so high-risk.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "Weighted ratios",
+          "formula_or_substitution": "0.12 + 0.112 + 0.198 + 0.30 + 1.00",
+          "intermediate_result": "1.730"
+        }
+      ],
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_15a0a877da5b5e0d44310d7a01a5ae21df3b60155c5ff5c434cbba3e81e10409",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U05",
+      "objective_ids": [
+        "BFM::MOD_B::U05::LO_08"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed p. 452"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "A borrower has X1 = 0.30, X2 = 0.20, X3 = 0.12, X4 = 1.00 and X5 = 1.30. What is its Z score, to two decimals?",
+      "numeric_rule": {
+        "expected_answer": "2.94",
+        "unit_label": "Z score",
+        "precision_decimals": 2,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Give the answer to 2 decimal places.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "0.36 + 0.28 + 0.396 + 0.60 + 1.30 = 2.936, which rounds to 2.94.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "Weighted ratios",
+          "formula_or_substitution": "0.36 + 0.28 + 0.396 + 0.60 + 1.30",
+          "intermediate_result": "2.936"
+        }
+      ],
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_d91021eeefc8db4c8c487925286a3d5929c8683e0ddf8fdc334c8c1e084c2541",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U05",
+      "objective_ids": [
+        "BFM::MOD_B::U05::LO_08"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed p. 452"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "The one-year risk-free rate is 6% and a company's one-year zero-coupon debt yields 8%. What default probability is implied, in per cent, to two decimals?",
+      "numeric_rule": {
+        "expected_answer": "1.85",
+        "unit_label": "%",
+        "precision_decimals": 2,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Give the answer to 2 decimal places.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "1 − 1.06/1.08 = 1 − 0.981481 = 0.018519, that is 1.85%.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "Ratio",
+          "formula_or_substitution": "1.06 ÷ 1.08",
+          "intermediate_result": "0.981481"
+        },
+        {
+          "step_number": 2,
+          "description": "Probability",
+          "formula_or_substitution": "1 − 0.981481",
+          "intermediate_result": "1.85%"
+        }
+      ],
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_3dcd8414f982c9255d3dc78f47af078f5622b4f6d901cd77c878972e35dd463e",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U05",
+      "objective_ids": [
+        "BFM::MOD_B::U05::LO_08"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 452-453"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "The one-year risk-free rate is 8% and the corporate one-year rate is 11.5%. What default probability is implied, in per cent, to two decimals?",
+      "numeric_rule": {
+        "expected_answer": "3.14",
+        "unit_label": "%",
+        "precision_decimals": 2,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Give the answer to 2 decimal places.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "1 − 1.08/1.115 = 1 − 0.968610 = 0.031390, that is 3.14%.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "Ratio",
+          "formula_or_substitution": "1.08 ÷ 1.115",
+          "intermediate_result": "0.968610"
+        },
+        {
+          "step_number": 2,
+          "description": "Probability",
+          "formula_or_substitution": "1 − 0.968610",
+          "intermediate_result": "3.14%"
+        }
+      ],
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_b67490d88ceb4439faa0a6126c5b51fd3c5af23a4ffb6e778c555407946f90d7",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U05",
+      "objective_ids": [
+        "BFM::MOD_B::U05::LO_08"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 452-453"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "A loan of ₹200 crore (no exposure haircut, same currency) is secured by eligible collateral of ₹150 crore with a collateral haircut of 20%. What is the exposure after risk mitigation, in ₹ crore?",
+      "numeric_rule": {
+        "expected_answer": "80",
+        "unit_label": "₹ crore",
+        "precision_decimals": 0,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Give a whole number.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "Collateral after haircut = 150 × 0.80 = 120; E* = 200 − 120 = 80.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "Collateral after haircut",
+          "formula_or_substitution": "150 × 0.80",
+          "intermediate_result": "120"
+        },
+        {
+          "step_number": 2,
+          "description": "E*",
+          "formula_or_substitution": "200 − 120",
+          "intermediate_result": "80"
+        }
+      ],
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_6df4bfb4d8e17dcd12dec21e531bd731edc6a1021dc7f504572a66414d391a4f",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U05",
+      "objective_ids": [
+        "BFM::MOD_B::U05::LO_08"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "RBI_CAP_2025",
+          "authority": "Reserve Bank of India",
+          "title": "Reserve Bank of India (Commercial Banks - Prudential Norms on Capital Adequacy) Directions, 2025",
+          "url": "https://www.caalley.com/rbi_mc_md_25/md/151MD.pdf",
+          "publication_date": "2025-11-28",
+          "effective_date": null,
+          "locator": "Directions paragraphs 161 to 163 and Table 27; S03 printed p. 453"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "A loan of ₹120 crore (no exposure haircut) is secured by collateral of ₹100 crore in another currency, with a collateral haircut of 10% and the standard currency mismatch haircut. What is the exposure after risk mitigation, in ₹ crore?",
+      "numeric_rule": {
+        "expected_answer": "38",
+        "unit_label": "₹ crore",
+        "precision_decimals": 0,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Give a whole number.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "Adjusted collateral = 100 × (1 − 0.10 − 0.08) = 82; E* = 120 − 82 = 38.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "Adjusted collateral",
+          "formula_or_substitution": "100 × 0.82",
+          "intermediate_result": "82"
+        },
+        {
+          "step_number": 2,
+          "description": "E*",
+          "formula_or_substitution": "120 − 82",
+          "intermediate_result": "38"
+        }
+      ],
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_8cebeda4ae169b8cb9e457e4ba291747156c25d4e61754f0e97e2716715cd8d1",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U05",
+      "objective_ids": [
+        "BFM::MOD_B::U05::LO_08"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "RBI_CAP_2025",
+          "authority": "Reserve Bank of India",
+          "title": "Reserve Bank of India (Commercial Banks - Prudential Norms on Capital Adequacy) Directions, 2025",
+          "url": "https://www.caalley.com/rbi_mc_md_25/md/151MD.pdf",
+          "publication_date": "2025-11-28",
+          "effective_date": null,
+          "locator": "Directions paragraphs 161 to 163 and Table 27; S03 printed p. 453"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Using the transition matrix in the card, how many of the 400 BB accounts are expected to be rated B or to default within a year?",
+      "numeric_rule": {
+        "expected_answer": "56",
+        "unit_label": "accounts",
+        "precision_decimals": 0,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Give a whole number.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "BB to B is 10% and BB to default is 4%: 14% of 400 = 56.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "Share",
+          "formula_or_substitution": "10% + 4%",
+          "intermediate_result": "14%"
+        },
+        {
+          "step_number": 2,
+          "description": "Accounts",
+          "formula_or_substitution": "400 × 14%",
+          "intermediate_result": "56"
+        }
+      ],
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_9a60614181812f8f2fe970c08741934a49f80b5a33a25feda6168099e99027f4",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U05",
+      "objective_ids": [
+        "BFM::MOD_B::U05::LO_08"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 453-454"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "Using the transition matrix in the card, how many defaults are expected within a year across all four rating groups together?",
+      "numeric_rule": {
+        "expected_answer": "58",
+        "unit_label": "accounts",
+        "precision_decimals": 0,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Give a whole number.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "A: 800 × 0% = 0; BBB: 600 × 1% = 6; BB: 400 × 4% = 16; B: 200 × 18% = 36; total 58.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "Defaults by group",
+          "formula_or_substitution": "0 + 6 + 16 + 36",
+          "intermediate_result": "58"
+        }
+      ],
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_49bba0a3b1705e81f90a7ecf68980eba12f0a15837ffd2db1fc37a28a41b5257",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U05",
+      "objective_ids": [
+        "BFM::MOD_B::U05::LO_08"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 453-454"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}
