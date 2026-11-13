@@ -1,0 +1,4124 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "ABM-A-U06-B001",
+    "paper_id": "ABM",
+    "unit_label": "Module A unit 6 (part 1): Theory of Probability: counting, probability rules, random variables, expectation and variance",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S01"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "statement": "Probability is a numerical measure of the chance of an event happening, between 0 and 1 (a 60 per cent chance of rain is a probability of 0.6). The factorial of n is n! = n x (n-1) x ... x 2 x 1, with 0! = 1 and 1! = 1.",
+        "source_id": "S01",
+        "locator": "Printed p. 106, section 6.1",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "F002",
+        "statement": "A permutation is an arrangement in which order matters: P(n, r) = n! / (n - r)! is the number of ways to arrange r of n things. A combination is a selection in which order does not matter: C(n, r) = n! / (r! (n - r)!). The two are related by P(n, r) = r! x C(n, r). Selecting 3 of 5 pencils is C(5, 3) = 10; choosing 3 of 7 boys and 4 of 6 girls can be done in C(7, 3) x C(6, 4) = 35 x 15 = 525 ways.",
+        "source_id": "S01",
+        "locator": "Printed pp. 106-107, section 6.1 items 1 and 2 and Examples 1 and 2 (the printed note on P and C has a typographical error)",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "F003",
+        "statement": "A random experiment has several possible outcomes under identical conditions. The set of all outcomes is the sample space S and its elements are sample points; n(S) is their number. An event is any subset of S. A certain event contains all sample points; an impossible event is the empty set. Events are mutually exclusive if they cannot occur together (A intersect B is empty); equally likely if there is no reason to prefer one; exhaustive if together they make up the sample space (A union B = S); and complementary if they are both exhaustive and mutually exclusive, the complement of A being written A-complement.",
+        "source_id": "S01",
+        "locator": "Printed pp. 107-109, sections 6.1 items 3 to 6",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "F004",
+        "statement": "If the sample space has n equally likely, exhaustive and mutually exclusive sample points and m of them are favourable to event A, then P(A) = m / n = n(A) / n(S), so 0 <= P(A) <= 1. For two dice n(S) = 36, and the probability that both show the same number is 6/36 = 1/6, that the first shows 6 is 1/6 and that the total is 8 is 5/36. Drawing two balls from a bag of 10 white and 11 black uses combinations: n(S) = C(21, 2) = 210, so P(both white) = C(10, 2)/210 = 45/210 = 0.2143.",
+        "source_id": "S01",
+        "locator": "Printed pp. 109-111, section 6.2 and Examples 1 to 3",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "F005",
+        "statement": "For arrangements, when a pair of items must always be together treat the pair as one item and arrange the group, then arrange the pair internally (six magazines with a given pair together: 5! x 2! = 240 of 6! = 720, probability 1/3); the cases where the pair is never together are the total minus the cases where it is always together (480/720 = 2/3). For a fixed placement such as two named letters at the two ends of six, the remaining letters can be arranged in 4! ways and the two letters in 2! ways, giving 48/720.",
+        "source_id": "S01",
+        "locator": "Printed pp. 111-112, Examples 4 to 6",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "F006",
+        "statement": "Addition theorem: P(A union B) = P(A) + P(B) - P(A intersect B). If A and B are mutually exclusive P(A union B) = P(A) + P(B). For three events, P(A union B union C) = P(A) + P(B) + P(C) - P(A int B) - P(B int C) - P(A int C) + P(A int B int C). Also P(A) = P(A int B) + P(A int B-complement), P(A-complement) = 1 - P(A), and the probability of neither event is P(A-complement int B-complement) = 1 - P(A union B). For a card drawn from a pack, P(red or picture) = 26/52 + 12/52 - 6/52 = 8/13.",
+        "source_id": "S01",
+        "locator": "Printed pp. 112-114, Addition Theorem and corollaries 1 to 7, and Example 1",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "F007",
+        "statement": "The conditional probability of A given that B has occurred is P(A | B) = P(A intersect B) / P(B). The multiplication theorem gives P(A int B) = P(A) P(B | A) = P(B) P(A | B). Events are independent if the occurrence of one does not affect the other, and then P(A int B) = P(A) P(B). For two stages, P(B) = P(B | A1) P(A1) + P(B | A2) P(A2). If P(A) = 0.2 and P(B) = 0.4 are independent, P(both) = 0.08, P(only A) = 0.12, P(only B) = 0.32, P(at least one) = 0.52 and P(neither) = 0.48. Odds against an event of 2 to 1 correspond to probability 1/3. If P(A) = 0.8 and P(A int B) = 0.6 then P(B | A) = 0.75.",
+        "source_id": "S01",
+        "locator": "Printed pp. 113-116, section 6.3 and its examples",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "F008",
+        "statement": "A random variable is a function X from the sample space to the real numbers. A discrete random variable takes a finite or countably infinite set of values (age in years, number of arrivals at a clinic, number of accidents); a continuous random variable takes infinitely many values in a range (percentage of marks, weight).",
+        "source_id": "S01",
+        "locator": "Printed p. 116, section 6.4",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "F009",
+        "statement": "A probability mass function f(x) of a discrete variable satisfies f(x) >= 0 and the sum of f(x) over all x equals 1, with P(X = x) = f(x). A probability density function of a continuous variable satisfies f(x) >= 0 and integrates to 1, and the probability that a continuous variable takes one particular value is zero. The cumulative distribution function is F(x) = P(X <= x); it lies between 0 and 1, is non-decreasing and continuous from the right, with F(minus infinity) = 0 and F(plus infinity) = 1.",
+        "source_id": "S01",
+        "locator": "Printed p. 117, section 6.5",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "F010",
+        "statement": "The expectation (mean) of a discrete random variable is E(X) = Sum x f(x); the variance is V(X) = E{[X - E(X)]^2} = E(X^2) - (E(X))^2 = Sum (x - E(X))^2 f(x), and the standard deviation is its square root. Properties: E(aX + b) = a E(X) + b and V(aX + b) = a^2 V(X). For f = 0.3, 0.5, 0.2 at x = 1, 2, 3, E(X) = 1.9, E(X^2) = 4.1, V(X) = 0.49, SD = 0.7, and E(2X + 3) = 6.8. If f(0) = k, f(1) = k and f(2) = k + 0.1, then k = 0.3, E(X) = 1.1 and V(X) = 0.69.",
+        "source_id": "S01",
+        "locator": "Printed pp. 117-119, section 6.6 and Examples 1 and 2",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      }
+    ],
+    "drafts": [
+      {
+        "draft_id": "D001",
+        "item_type": "card",
+        "variant": "formula",
+        "fact_ids": [
+          "F001",
+          "F002"
+        ],
+        "payload": {
+          "prerequisite_objective_ids": [],
+          "title": "Factorials, permutations and combinations",
+          "core_explanation_md": "Counting comes before probability. Three tools:\n\n- **n factorial** (n!): multiply n by every whole number below it. By agreement 0! = 1.\n- **Permutation** P(n, r): ways to **arrange** r items chosen from n, where order matters (a first, second and third officer in a ranking).\n- **Combination** C(n, r): ways to **select** r items from n, where order does not matter (a committee of three).\n\nEvery selection of r items can be arranged in r! orders, which is why P(n, r) = r! x C(n, r).\n\nWhen a task has stages, multiply the ways at each stage: choosing 3 of 7 officers and 4 of 6 clerks gives C(7,3) x C(6,4).",
+          "expanded_explanation_md": "Ask one question: \"does swapping two chosen items give a different outcome?\" If yes, permutation; if no, combination.",
+          "formula_spec": {
+            "latex_expression": "n! = n(n-1)\\cdots 1,\\quad P(n,r) = \\frac{n!}{(n-r)!},\\quad C(n,r) = \\frac{n!}{r!\\,(n-r)!},\\quad P(n,r) = r!\\,C(n,r)",
+            "variables": [
+              {
+                "symbol": "n",
+                "name": "Number of items available",
+                "unit": "count"
+              },
+              {
+                "symbol": "r",
+                "name": "Number chosen (r at most n)",
+                "unit": "count"
+              },
+              {
+                "symbol": "P(n,r)",
+                "name": "Ordered arrangements",
+                "unit": "count"
+              },
+              {
+                "symbol": "C(n,r)",
+                "name": "Unordered selections",
+                "unit": "count"
+              }
+            ],
+            "assumptions": [
+              "Items are distinct and chosen without repetition.",
+              "0! = 1."
+            ],
+            "common_errors": [
+              "Using a permutation when order does not matter.",
+              "Adding the ways for different stages instead of multiplying.",
+              "Forgetting that C(n, r) = C(n, n - r)."
+            ]
+          },
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "How many different panels of 3 can be chosen from 8 officers, and how many ways to fill the posts of chair, secretary and treasurer from the same 8?",
+            "expected_takeaway": "Panels: C(8,3) = 56. Posts: P(8,3) = 336, which is 3! = 6 times 56."
+          }
+        }
+      },
+      {
+        "draft_id": "D002",
+        "item_type": "card",
+        "variant": "concept",
+        "fact_ids": [
+          "F003"
+        ],
+        "payload": {
+          "prerequisite_objective_ids": [],
+          "title": "Sample space and events: the vocabulary",
+          "core_explanation_md": "A **random experiment** has several possible outcomes, and you cannot say beforehand which will occur: tossing a coin, rolling a die, checking whether a loan will be repaid. List every possible outcome and you have the **sample space** S. An **event** is any collection of outcomes, a subset of S.\n\n| Type of event | Meaning |\n| --- | --- |\n| Certain | Contains every outcome |\n| Impossible | Contains none (the empty set) |\n| Mutually exclusive | Cannot happen together |\n| Equally likely | No reason to prefer one outcome |\n| Exhaustive | Together they cover the sample space |\n| Complementary | Exhaustive **and** mutually exclusive: exactly one of the pair happens |\n\nOn one throw of a die, \"odd\" and \"even\" are complementary. \"Odd\" and \"multiple of 3\" are neither mutually exclusive (3 is both) nor exhaustive (2 is neither).",
+          "expanded_explanation_md": "The complement of A is \"A does not happen\". Every event and its complement are complementary, so their probabilities add to 1.",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Are \"loan approved\" and \"loan rejected\" for one application mutually exclusive, exhaustive, or both?",
+            "expected_takeaway": "Both (if no third outcome such as \"pending\" exists): they cannot happen together and between them cover all outcomes, so they are complementary."
+          }
+        }
+      },
+      {
+        "draft_id": "D003",
+        "item_type": "card",
+        "variant": "formula",
+        "fact_ids": [
+          "F004",
+          "F005"
+        ],
+        "payload": {
+          "prerequisite_objective_ids": [],
+          "title": "Classical probability: favourable over possible",
+          "core_explanation_md": "When all outcomes are equally likely, count them:\n\nP(A) = number of outcomes in A divided by number of outcomes in S.\n\nThe answer always lies between 0 (impossible) and 1 (certain).\n\nCounting is where the work is. Use the tools:\n\n- **Selections**: combinations. Two balls from 10 white and 11 black give 210 possible pairs; both white can happen in C(10,2) = 45 ways.\n- **Arrangements**: factorials. For \"two items always together\", glue them into one item, arrange, then arrange inside the glue. For \"never together\", subtract the \"always together\" count from the total.",
+          "expanded_explanation_md": "The formula works only if the outcomes you count are equally likely. Counting \"heads or tails\" outcomes of a biased coin would not give the right probability.",
+          "formula_spec": {
+            "latex_expression": "P(A) = \\frac{n(A)}{n(S)},\\qquad 0 \\le P(A) \\le 1",
+            "variables": [
+              {
+                "symbol": "n(A)",
+                "name": "Outcomes favourable to A",
+                "unit": "count"
+              },
+              {
+                "symbol": "n(S)",
+                "name": "All possible outcomes",
+                "unit": "count"
+              },
+              {
+                "symbol": "P(A)",
+                "name": "Probability of A",
+                "unit": "pure number between 0 and 1"
+              }
+            ],
+            "assumptions": [
+              "Outcomes are equally likely, exhaustive and mutually exclusive."
+            ],
+            "common_errors": [
+              "Counting outcomes that are not equally likely.",
+              "Using a permutation count for n(A) and a combination count for n(S) (or the reverse).",
+              "Reporting a probability above 1."
+            ]
+          },
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Two dice are thrown. What is the probability that the total is 7?",
+            "expected_takeaway": "Six of the 36 equally likely outcomes give 7 ((1,6), (2,5), ..., (6,1)), so 6/36 = 1/6."
+          }
+        }
+      },
+      {
+        "draft_id": "D004",
+        "item_type": "card",
+        "variant": "formula",
+        "fact_ids": [
+          "F006"
+        ],
+        "payload": {
+          "prerequisite_objective_ids": [],
+          "title": "The addition rule and the complement rule",
+          "core_explanation_md": "\"A **or** B\" means at least one of the two happens. Adding P(A) and P(B) counts the overlap twice, so subtract it once:\n\n**P(A or B) = P(A) + P(B) - P(A and B).**\n\nIf A and B are mutually exclusive there is no overlap and the last term is zero.\n\nThe **complement rule** is often quicker: P(A does not happen) = 1 - P(A). In particular, P(neither A nor B) = 1 - P(A or B).\n\nFor a card drawn from a pack: P(red) = 26/52, P(picture) = 12/52, P(red and picture) = 6/52, so P(red or picture) = 32/52 = 8/13.",
+          "expanded_explanation_md": "For \"at least one\" questions, work out the complement (\"none\") and subtract from 1. It usually saves a lot of arithmetic.",
+          "formula_spec": {
+            "latex_expression": "P(A\\cup B) = P(A) + P(B) - P(A\\cap B),\\qquad P(A^c) = 1 - P(A),\\qquad P(\\text{neither}) = 1 - P(A\\cup B)",
+            "variables": [
+              {
+                "symbol": "P(A or B)",
+                "name": "Probability that at least one occurs",
+                "unit": "pure number"
+              },
+              {
+                "symbol": "P(A and B)",
+                "name": "Probability that both occur",
+                "unit": "pure number"
+              }
+            ],
+            "assumptions": [
+              "A and B are events of the same sample space.",
+              "For mutually exclusive events P(A and B) = 0."
+            ],
+            "common_errors": [
+              "Forgetting to subtract the overlap.",
+              "Subtracting the overlap when events are mutually exclusive (it is zero anyway).",
+              "Using 1 - P(A) - P(B) for \"neither\" without removing double counting."
+            ]
+          },
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "P(A) = 0.5, P(B) = 0.4 and P(A and B) = 0.2. What are P(A or B) and P(neither)?",
+            "expected_takeaway": "P(A or B) = 0.5 + 0.4 - 0.2 = 0.7; P(neither) = 0.3."
+          }
+        }
+      },
+      {
+        "draft_id": "D005",
+        "item_type": "card",
+        "variant": "formula",
+        "fact_ids": [
+          "F007"
+        ],
+        "payload": {
+          "prerequisite_objective_ids": [],
+          "title": "Conditional probability, multiplication and independence",
+          "core_explanation_md": "Learning that B has happened changes the odds of A. **Conditional probability** restricts attention to the world where B happened:\n\nP(A given B) = P(A and B) / P(B).\n\nRearranged, it gives the **multiplication rule**: P(A and B) = P(B) x P(A given B).\n\nIf knowing B tells you nothing about A, the events are **independent**, P(A given B) = P(A), and the rule simplifies to P(A and B) = P(A) x P(B).\n\nFor a two-stage process, add over the first-stage outcomes (total probability): P(B) = P(B given A1) P(A1) + P(B given A2) P(A2).",
+          "expanded_explanation_md": "Do not confuse independent with mutually exclusive. Two mutually exclusive events with positive probabilities are never independent: if one occurs the other certainly does not, so P(A and B) = 0, which differs from P(A) x P(B).",
+          "formula_spec": {
+            "latex_expression": "P(A\\mid B) = \\frac{P(A\\cap B)}{P(B)},\\quad P(A\\cap B) = P(B)P(A\\mid B),\\quad \\text{independent: } P(A\\cap B) = P(A)P(B)",
+            "variables": [
+              {
+                "symbol": "P(A | B)",
+                "name": "Probability of A given that B has occurred",
+                "unit": "pure number"
+              },
+              {
+                "symbol": "P(A and B)",
+                "name": "Probability that both occur",
+                "unit": "pure number"
+              }
+            ],
+            "assumptions": [
+              "P(B) is greater than zero.",
+              "Independence is assumed only when the events genuinely do not affect each other."
+            ],
+            "common_errors": [
+              "Multiplying P(A) and P(B) for events that are not independent.",
+              "Dividing by P(A) instead of P(B) (check which event is \"given\").",
+              "Treating mutually exclusive events as independent."
+            ]
+          },
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "P(A) = 0.8 and P(A and B) = 0.6. What is P(B given A)?",
+            "expected_takeaway": "0.6 / 0.8 = 0.75."
+          }
+        }
+      },
+      {
+        "draft_id": "D006",
+        "item_type": "card",
+        "variant": "concept",
+        "fact_ids": [
+          "F007"
+        ],
+        "payload": {
+          "prerequisite_objective_ids": [],
+          "title": "Putting the rules to work: odds, two stages and independence checks",
+          "core_explanation_md": "Three tasks come up often.\n\n**Odds to probability.** Odds of m to n in favour mean probability m/(m+n); odds of m to n against mean probability n/(m+n) in favour. Odds against of 2 to 1 means a probability of 1/3.\n\n**Two stages.** When the second stage depends on the first, split by the first stage and add: P(rejected) = P(rejected given branch A) P(branch A) + P(rejected given branch B) P(branch B).\n\n**Independence check.** Compute P(A) x P(B) and compare with P(A and B). Equal means independent; different means the events influence each other.",
+          "expanded_explanation_md": "Tree diagrams help: each branch carries a conditional probability, multiply along a path, add across paths that lead to the same event.",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Odds against a stock rising are 3 to 2. What is the probability that it rises?",
+            "expected_takeaway": "2/(3+2) = 0.4."
+          }
+        }
+      },
+      {
+        "draft_id": "D007",
+        "item_type": "card",
+        "variant": "concept",
+        "fact_ids": [
+          "F008",
+          "F009"
+        ],
+        "payload": {
+          "prerequisite_objective_ids": [],
+          "title": "Random variables and their distributions",
+          "core_explanation_md": "A **random variable** turns an outcome into a number: the number of cheques returned today, the time a customer waits, the return on a portfolio.\n\n| | Discrete | Continuous |\n| --- | --- | --- |\n| Values | Countable (0, 1, 2, ...) | Any value in a range |\n| Example | Accidents, arrivals, age in years | Weight, percentage of marks, waiting time |\n| Description of probabilities | **Mass function** f(x): P(X = x) | **Density function** f(x): probability is area under the curve |\n| Rule | Each f(x) is at least 0; all f(x) add to 1 | f(x) is at least 0; total area is 1 |\n\nFor a continuous variable the probability of any **single exact value** is zero; probabilities belong to intervals.\n\nThe **cumulative distribution function** F(x) = P(X is at most x) works for both types. It never decreases, starts at 0 and ends at 1.",
+          "expanded_explanation_md": "A probability table is a valid mass function only if no probability is negative and the probabilities total exactly 1. That is the first check on any distribution you are given.",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "A table of probabilities for X = 0, 1, 2 reads 0.5, 0.4, 0.3. Is it a valid distribution?",
+            "expected_takeaway": "No: the probabilities add to 1.2, not 1."
+          }
+        }
+      },
+      {
+        "draft_id": "D008",
+        "item_type": "card",
+        "variant": "formula",
+        "fact_ids": [
+          "F010"
+        ],
+        "payload": {
+          "prerequisite_objective_ids": [],
+          "title": "Expectation, variance and standard deviation of a discrete variable",
+          "core_explanation_md": "The **expectation** is the long-run average: weight each value by its probability and add.\n\nThe **variance** measures scatter about that average: the expected squared deviation. A shortcut is the mean of the squares minus the square of the mean. The **standard deviation** is its square root, back in the original units.\n\nChanging units is easy: adding a constant b shifts the mean by b and leaves the variance unchanged; multiplying by a multiplies the mean by a and the variance by a squared.",
+          "expanded_explanation_md": "If a payoff is 500 times a count plus a fixed 100, the expected payoff is 500 times the expected count plus 100, and the standard deviation is 500 times that of the count. The fixed 100 does not add any spread.",
+          "formula_spec": {
+            "latex_expression": "E(X) = \\sum x f(x),\\quad V(X) = E(X^2) - [E(X)]^2,\\quad E(aX+b) = aE(X)+b,\\quad V(aX+b) = a^2V(X)",
+            "variables": [
+              {
+                "symbol": "f(x)",
+                "name": "Probability of the value x",
+                "unit": "pure number"
+              },
+              {
+                "symbol": "E(X)",
+                "name": "Expected value",
+                "unit": "units of X"
+              },
+              {
+                "symbol": "V(X)",
+                "name": "Variance",
+                "unit": "units of X squared"
+              },
+              {
+                "symbol": "a, b",
+                "name": "Constants in the linear change",
+                "unit": "as given"
+              }
+            ],
+            "assumptions": [
+              "The probabilities form a valid distribution (they total 1)."
+            ],
+            "common_errors": [
+              "Taking E(X squared) as the square of E(X).",
+              "Adding b to the variance of aX + b.",
+              "Forgetting to square a in V(aX + b)."
+            ]
+          },
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "E(X) = 21 and V(X) = 49. What are E(2X + 3) and V(3X + 5)?",
+            "expected_takeaway": "E(2X + 3) = 45; V(3X + 5) = 9 x 49 = 441."
+          }
+        }
+      },
+      {
+        "draft_id": "D009",
+        "item_type": "card",
+        "variant": "worked_example",
+        "fact_ids": [
+          "F002",
+          "F004"
+        ],
+        "payload": {
+          "prerequisite_objective_ids": [],
+          "title": "A panel drawn from officers and clerks",
+          "core_explanation_md": "A panel of 3 is chosen at random from 5 officers and 4 clerks. Find the probability that it has exactly 2 clerks.",
+          "worked_steps": [
+            {
+              "step_number": 1,
+              "description": "All possible panels: choose 3 of 9.",
+              "formula_or_substitution": "C(9, 3) = 9 x 8 x 7 / 6",
+              "intermediate_result": "84"
+            },
+            {
+              "step_number": 2,
+              "description": "Favourable panels: 2 of 4 clerks and 1 of 5 officers.",
+              "formula_or_substitution": "C(4, 2) x C(5, 1) = 6 x 5",
+              "intermediate_result": "30"
+            },
+            {
+              "step_number": 3,
+              "description": "Probability.",
+              "formula_or_substitution": "30 / 84",
+              "intermediate_result": "0.3571 (that is 5/14)"
+            }
+          ],
+          "final_answer_with_unit": "Probability 5/14, about 0.3571",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Why do we multiply 6 and 5 rather than add?",
+            "expected_takeaway": "Each choice of two clerks can be paired with each choice of one officer, so the stages multiply."
+          }
+        }
+      },
+      {
+        "draft_id": "D010",
+        "item_type": "card",
+        "variant": "worked_example",
+        "fact_ids": [
+          "F005"
+        ],
+        "payload": {
+          "prerequisite_objective_ids": [
+            "ABM::MOD_A::U06::LO_01"
+          ],
+          "title": "Two loan files side by side",
+          "core_explanation_md": "Five loan files are placed in a row in random order. What is the probability that two particular files are next to each other, and that they are not?",
+          "worked_steps": [
+            {
+              "step_number": 1,
+              "description": "All orders of five files.",
+              "formula_or_substitution": "5!",
+              "intermediate_result": "120"
+            },
+            {
+              "step_number": 2,
+              "description": "Glue the two files into one block: arrange 4 items, then the two inside the block.",
+              "formula_or_substitution": "4! x 2!",
+              "intermediate_result": "24 x 2 = 48"
+            },
+            {
+              "step_number": 3,
+              "description": "Probability together.",
+              "formula_or_substitution": "48 / 120",
+              "intermediate_result": "0.4"
+            },
+            {
+              "step_number": 4,
+              "description": "Never together: complement.",
+              "formula_or_substitution": "1 - 0.4",
+              "intermediate_result": "0.6"
+            }
+          ],
+          "final_answer_with_unit": "Together 0.4; not together 0.6",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Check the second answer by counting.",
+            "expected_takeaway": "120 - 48 = 72 orders keep them apart, and 72/120 = 0.6."
+          }
+        }
+      },
+      {
+        "draft_id": "D011",
+        "item_type": "card",
+        "variant": "worked_example",
+        "fact_ids": [
+          "F006",
+          "F007"
+        ],
+        "payload": {
+          "prerequisite_objective_ids": [
+            "ABM::MOD_A::U06::LO_01"
+          ],
+          "title": "Savings accounts and loans: union, neither, conditional and independence",
+          "core_explanation_md": "Among a bank's customers, 60 per cent have a savings account (S), 30 per cent have a loan (L) and 20 per cent have both. Find P(S or L), P(neither), P(L given S), and decide whether S and L are independent.",
+          "worked_steps": [
+            {
+              "step_number": 1,
+              "description": "Addition rule.",
+              "formula_or_substitution": "0.6 + 0.3 - 0.2",
+              "intermediate_result": "0.7"
+            },
+            {
+              "step_number": 2,
+              "description": "Complement for neither.",
+              "formula_or_substitution": "1 - 0.7",
+              "intermediate_result": "0.3"
+            },
+            {
+              "step_number": 3,
+              "description": "Conditional probability.",
+              "formula_or_substitution": "0.2 / 0.6",
+              "intermediate_result": "0.3333"
+            },
+            {
+              "step_number": 4,
+              "description": "Independence test: compare P(S) x P(L) with P(S and L).",
+              "formula_or_substitution": "0.6 x 0.3 = 0.18 against 0.20",
+              "intermediate_result": "0.18 is not 0.20"
+            }
+          ],
+          "final_answer_with_unit": "P(S or L) = 0.7; P(neither) = 0.3; P(L given S) = 1/3 (above P(L) = 0.3); not independent, since having a savings account makes a loan slightly more likely",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "If S and L were independent, what would P(S and L) be?",
+            "expected_takeaway": "0.6 x 0.3 = 0.18."
+          }
+        }
+      },
+      {
+        "draft_id": "D012",
+        "item_type": "card",
+        "variant": "worked_example",
+        "fact_ids": [
+          "F007"
+        ],
+        "payload": {
+          "prerequisite_objective_ids": [
+            "ABM::MOD_A::U06::LO_01"
+          ],
+          "title": "Rejection rate across two branches (total probability)",
+          "core_explanation_md": "Branch A processes 60 per cent of a bank's loan applications and rejects 10 per cent of them; Branch B processes 40 per cent and rejects 20 per cent. What is the probability that a randomly chosen application is rejected?",
+          "worked_steps": [
+            {
+              "step_number": 1,
+              "description": "Branch A path.",
+              "formula_or_substitution": "0.6 x 0.10",
+              "intermediate_result": "0.06"
+            },
+            {
+              "step_number": 2,
+              "description": "Branch B path.",
+              "formula_or_substitution": "0.4 x 0.20",
+              "intermediate_result": "0.08"
+            },
+            {
+              "step_number": 3,
+              "description": "Add the paths that lead to rejection.",
+              "formula_or_substitution": "0.06 + 0.08",
+              "intermediate_result": "0.14"
+            }
+          ],
+          "final_answer_with_unit": "Probability of rejection 0.14, that is 14 per cent",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Why is the overall rate not the plain average of 10 and 20 per cent?",
+            "expected_takeaway": "The branches handle different shares of the applications, so each rate is weighted by its share (60:40), giving 14 and not 15 per cent."
+          }
+        }
+      },
+      {
+        "draft_id": "D013",
+        "item_type": "card",
+        "variant": "worked_example",
+        "fact_ids": [
+          "F009",
+          "F010"
+        ],
+        "payload": {
+          "prerequisite_objective_ids": [
+            "ABM::MOD_A::U06::LO_01"
+          ],
+          "title": "Missing probability, expectation, variance and a linear payoff",
+          "core_explanation_md": "The number X of overdue instalments on a loan has probabilities 0.4, 0.3, 0.2 and 0.1 for X = 0, 1, 2, 3. Find E(X), V(X) and SD, and the mean and standard deviation of the penalty Y = 500X + 100 rupees. Separately, a variable with values 0, 1, 2 has probabilities 2k, 3k and 0.5: find k, E(X), V(X) and the CDF.",
+          "worked_steps": [
+            {
+              "step_number": 1,
+              "description": "Expectation of X.",
+              "formula_or_substitution": "0 x 0.4 + 1 x 0.3 + 2 x 0.2 + 3 x 0.1",
+              "intermediate_result": "1.0"
+            },
+            {
+              "step_number": 2,
+              "description": "Expectation of X squared.",
+              "formula_or_substitution": "0 + 0.3 + 4 x 0.2 + 9 x 0.1",
+              "intermediate_result": "2.0"
+            },
+            {
+              "step_number": 3,
+              "description": "Variance and standard deviation.",
+              "formula_or_substitution": "2.0 - 1.0^2; square root",
+              "intermediate_result": "1.0; 1.0"
+            },
+            {
+              "step_number": 4,
+              "description": "Penalty: mean and standard deviation.",
+              "formula_or_substitution": "500 x 1.0 + 100; 500 x 1.0",
+              "intermediate_result": "Rs 600; Rs 500 (variance 2,50,000)"
+            },
+            {
+              "step_number": 5,
+              "description": "Find k: probabilities must total 1.",
+              "formula_or_substitution": "2k + 3k + 0.5 = 1",
+              "intermediate_result": "k = 0.1, probabilities 0.2, 0.3, 0.5"
+            },
+            {
+              "step_number": 6,
+              "description": "Second variable: E(X), E(X squared), V(X).",
+              "formula_or_substitution": "0.3 + 1.0; 0.3 + 2.0; 2.3 - 1.3^2",
+              "intermediate_result": "1.3; 2.3; 0.61"
+            },
+            {
+              "step_number": 7,
+              "description": "CDF: running totals.",
+              "formula_or_substitution": "0.2; 0.2 + 0.3; 0.5 + 0.5",
+              "intermediate_result": "0.2, 0.5, 1.0"
+            }
+          ],
+          "final_answer_with_unit": "E(X) = 1, V(X) = 1, SD = 1; penalty mean Rs 600 with standard deviation Rs 500. Second variable: k = 0.1, E = 1.3, V = 0.61, CDF 0.2, 0.5, 1.0",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Why does the fixed Rs 100 not change the standard deviation of the penalty?",
+            "expected_takeaway": "Adding a constant shifts every value equally, so the spread about the mean is unchanged; only the multiplier 500 scales it."
+          }
+        }
+      },
+      {
+        "draft_id": "D014",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F002"
+        ],
+        "payload": {
+          "difficulty": "easy",
+          "stem_md": "Which situation needs a combination rather than a permutation?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Choosing a chairperson, a secretary and a treasurer from 8 directors",
+              "explanation_md": "The posts are different, so order matters."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Ranking 3 of 8 loan proposals as first, second and third",
+              "explanation_md": "A ranking is an ordered arrangement."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Choosing a committee of 3 from 8 directors, with no posts assigned",
+              "explanation_md": "Only who is in the committee matters, not the order, so a combination."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Seating 8 directors in a row",
+              "explanation_md": "Seating is an arrangement: order matters."
+            }
+          ],
+          "correct_option_id": "C",
+          "correct_explanation_md": "A selection in which order is irrelevant is a combination; assigning distinct roles or ranks is a permutation."
+        }
+      },
+      {
+        "draft_id": "D015",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F003"
+        ],
+        "payload": {
+          "difficulty": "easy",
+          "stem_md": "On one application, \"approved\" and \"rejected\" are the only two outcomes. These events are",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Complementary",
+              "explanation_md": "They cannot occur together and together cover all outcomes."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Independent",
+              "explanation_md": "Knowing one happened settles the other entirely."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Equal in probability",
+              "explanation_md": "Nothing says they are equally likely."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Impossible",
+              "explanation_md": "Each can occur."
+            }
+          ],
+          "correct_option_id": "A",
+          "correct_explanation_md": "Two events that are both mutually exclusive and exhaustive are complementary."
+        }
+      },
+      {
+        "draft_id": "D016",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F003"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A loan is classified as \"above Rs 5 lakh\" (event A) or \"Rs 10 lakh or below\" (event B). Which statement is right?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "A and B are mutually exclusive",
+              "explanation_md": "A loan of Rs 7 lakh is in both."
+            },
+            {
+              "option_id": "B",
+              "text_md": "A and B are exhaustive but not mutually exclusive",
+              "explanation_md": "Every loan is in A or B (or both), but some loans are in both."
+            },
+            {
+              "option_id": "C",
+              "text_md": "A and B are complementary",
+              "explanation_md": "Complementary events cannot overlap."
+            },
+            {
+              "option_id": "D",
+              "text_md": "A and B are impossible events",
+              "explanation_md": "Both have loans in them."
+            }
+          ],
+          "correct_option_id": "B",
+          "correct_explanation_md": "Every loan falls in at least one of A and B, so they are exhaustive; loans between Rs 5 and 10 lakh belong to both, so they are not mutually exclusive."
+        }
+      },
+      {
+        "draft_id": "D017",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F003"
+        ],
+        "payload": {
+          "difficulty": "easy",
+          "stem_md": "On a single throw of a die, the event \"getting a 7\" is",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "A certain event",
+              "explanation_md": "A certain event contains every outcome."
+            },
+            {
+              "option_id": "B",
+              "text_md": "An impossible event, with probability 0",
+              "explanation_md": "A die has no face showing 7, so the event is the empty set."
+            },
+            {
+              "option_id": "C",
+              "text_md": "A complementary event",
+              "explanation_md": "Complementarity needs a pair of events."
+            },
+            {
+              "option_id": "D",
+              "text_md": "An exhaustive event",
+              "explanation_md": "It does not cover the sample space."
+            }
+          ],
+          "correct_option_id": "B",
+          "correct_explanation_md": "An event with no favourable outcomes is impossible and has probability zero."
+        }
+      },
+      {
+        "draft_id": "D018",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F007"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Events A and B are independent if",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "P(A and B) = 0",
+              "explanation_md": "That describes mutually exclusive events."
+            },
+            {
+              "option_id": "B",
+              "text_md": "P(A and B) = P(A) x P(B)",
+              "explanation_md": "Independence means the occurrence of one does not affect the other, so the joint probability is the product."
+            },
+            {
+              "option_id": "C",
+              "text_md": "P(A or B) = P(A) + P(B)",
+              "explanation_md": "That holds when the events are mutually exclusive."
+            },
+            {
+              "option_id": "D",
+              "text_md": "P(A) = P(B)",
+              "explanation_md": "Equal probabilities do not mean independence."
+            }
+          ],
+          "correct_option_id": "B",
+          "correct_explanation_md": "Independent events satisfy P(A and B) = P(A) P(B)."
+        }
+      },
+      {
+        "draft_id": "D019",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F007",
+          "F003"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "Two events A and B each have a positive probability and are mutually exclusive. Can they also be independent?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Yes, always",
+              "explanation_md": "The product of two positive probabilities is positive, but P(A and B) is zero."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Yes, but only when P(A) = P(B)",
+              "explanation_md": "Equality plays no part."
+            },
+            {
+              "option_id": "C",
+              "text_md": "No: P(A and B) = 0 but P(A) x P(B) is positive",
+              "explanation_md": "If one occurs the other cannot, so they affect each other and cannot be independent."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Only if their union is the sample space",
+              "explanation_md": "That is a different condition."
+            }
+          ],
+          "correct_option_id": "C",
+          "correct_explanation_md": "For mutually exclusive events P(A and B) = 0, while independence would require it to equal P(A) P(B), which is positive."
+        }
+      },
+      {
+        "draft_id": "D020",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F006"
+        ],
+        "payload": {
+          "difficulty": "easy",
+          "stem_md": "For any event A, the probability that A does not occur is",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "P(A) - 1",
+              "explanation_md": "This would be negative."
+            },
+            {
+              "option_id": "B",
+              "text_md": "1 - P(A)",
+              "explanation_md": "The complement rule."
+            },
+            {
+              "option_id": "C",
+              "text_md": "1 / P(A)",
+              "explanation_md": "This is not a probability."
+            },
+            {
+              "option_id": "D",
+              "text_md": "P(A) squared",
+              "explanation_md": "Not a rule."
+            }
+          ],
+          "correct_option_id": "B",
+          "correct_explanation_md": "The probability of the complement is 1 - P(A)."
+        }
+      },
+      {
+        "draft_id": "D021",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F008"
+        ],
+        "payload": {
+          "difficulty": "easy",
+          "stem_md": "Which is a discrete random variable?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The time a customer waits at a counter",
+              "explanation_md": "Time takes any value in a range: continuous."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The weight of a cash bag",
+              "explanation_md": "Weight is continuous."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The number of cheques returned in a day",
+              "explanation_md": "A count takes separate whole values: discrete."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The percentage return on a portfolio",
+              "explanation_md": "A percentage return can take any value in a range: continuous."
+            }
+          ],
+          "correct_option_id": "C",
+          "correct_explanation_md": "A variable that takes a finite or countable set of values, such as a count, is discrete."
+        }
+      },
+      {
+        "draft_id": "D022",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F009"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "For a continuous random variable, the probability that it equals one exact value such as 50.000 is",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The height of its density at that value",
+              "explanation_md": "A density is not a probability."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Between 0 and 1 but not zero",
+              "explanation_md": "Probability is attached to intervals."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Zero",
+              "explanation_md": "A single point has no width, so the area above it is zero."
+            },
+            {
+              "option_id": "D",
+              "text_md": "One",
+              "explanation_md": "Only a certain event has probability one."
+            }
+          ],
+          "correct_option_id": "C",
+          "correct_explanation_md": "For a continuous variable probabilities belong to intervals; the probability of any single value is zero."
+        }
+      },
+      {
+        "draft_id": "D023",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F009"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Which of these tables for X = 0, 1, 2, 3 could be a valid probability mass function?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "0.2, 0.3, 0.4, 0.3",
+              "explanation_md": "These add to 1.2."
+            },
+            {
+              "option_id": "B",
+              "text_md": "0.5, 0.3, 0.4, -0.2",
+              "explanation_md": "A probability cannot be negative."
+            },
+            {
+              "option_id": "C",
+              "text_md": "0.1, 0.4, 0.3, 0.1",
+              "explanation_md": "These add to 0.9, not 1."
+            },
+            {
+              "option_id": "D",
+              "text_md": "0.1, 0.4, 0.3, 0.2",
+              "explanation_md": "All are non-negative and they add to 1."
+            }
+          ],
+          "correct_option_id": "D",
+          "correct_explanation_md": "A probability mass function needs non-negative values that total exactly 1."
+        }
+      },
+      {
+        "draft_id": "D024",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F010"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Y = 2X + 3. Compared with X, the variance of Y is",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Larger by 3",
+              "explanation_md": "Adding a constant does not change variance."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Four times as large",
+              "explanation_md": "Variance scales by the square of the multiplier: 2 squared = 4."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Twice as large",
+              "explanation_md": "That would be the effect on the standard deviation."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The same",
+              "explanation_md": "The multiplier 2 does change the spread."
+            }
+          ],
+          "correct_option_id": "B",
+          "correct_explanation_md": "V(aX + b) = a squared V(X), so multiplying by 2 gives four times the variance and adding 3 has no effect."
+        }
+      },
+      {
+        "draft_id": "D025",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F009"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "Which of these could be the values of a cumulative distribution function F at x = 1, 2, 3, 4?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "0.2, 0.6, 0.5, 1.0",
+              "explanation_md": "F can never decrease, and here it falls from 0.6 to 0.5."
+            },
+            {
+              "option_id": "B",
+              "text_md": "0.2, 0.5, 0.8, 1.0",
+              "explanation_md": "Non-decreasing, between 0 and 1 and ending at 1."
+            },
+            {
+              "option_id": "C",
+              "text_md": "0.3, 0.6, 0.9, 1.2",
+              "explanation_md": "F cannot exceed 1."
+            },
+            {
+              "option_id": "D",
+              "text_md": "0.5, 0.5, 0.5, 0.4",
+              "explanation_md": "F cannot fall to 0.4 and must end at 1."
+            }
+          ],
+          "correct_option_id": "B",
+          "correct_explanation_md": "A cumulative distribution function never decreases, stays between 0 and 1 and reaches 1."
+        }
+      },
+      {
+        "draft_id": "D026",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F002"
+        ],
+        "payload": {
+          "difficulty": "easy",
+          "stem_md": "In how many ways can a committee of 3 be selected from 8 people?",
+          "numeric_rule": {
+            "expected_answer": "56",
+            "unit_label": "ways",
+            "precision_decimals": 0,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Give a whole number.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "C(8, 3) = 8 x 7 x 6 / (3 x 2 x 1) = 56.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "Apply the formula.",
+              "formula_or_substitution": "8 x 7 x 6 / 6",
+              "intermediate_result": "56"
+            }
+          ]
+        }
+      },
+      {
+        "draft_id": "D027",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F002"
+        ],
+        "payload": {
+          "difficulty": "easy",
+          "stem_md": "In how many ways can the first and second prizes be awarded among 6 branches (one prize per branch)?",
+          "numeric_rule": {
+            "expected_answer": "30",
+            "unit_label": "ways",
+            "precision_decimals": 0,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Give a whole number.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "P(6, 2) = 6 x 5 = 30.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "Permutation.",
+              "formula_or_substitution": "6 x 5",
+              "intermediate_result": "30"
+            }
+          ]
+        }
+      },
+      {
+        "draft_id": "D028",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F004"
+        ],
+        "payload": {
+          "difficulty": "easy",
+          "stem_md": "Two dice are thrown. What is the probability that the total is 7? (Give the decimal to 4 places.)",
+          "numeric_rule": {
+            "expected_answer": "0.1667",
+            "unit_label": "probability",
+            "precision_decimals": 4,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Give the answer to 4 decimal places.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "Six of the 36 outcomes give a total of 7, so the probability is 6/36 = 0.1667.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "Favourable over possible.",
+              "formula_or_substitution": "6 / 36",
+              "intermediate_result": "0.1667"
+            }
+          ]
+        }
+      },
+      {
+        "draft_id": "D029",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F004"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Three fair coins are tossed. What is the probability of getting at least one head?",
+          "numeric_rule": {
+            "expected_answer": "0.875",
+            "unit_label": "probability",
+            "precision_decimals": 3,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Give the answer to 3 decimal places.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "There are 8 equally likely outcomes and only TTT has no head, so P = 1 - 1/8 = 7/8 = 0.875.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "Complement.",
+              "formula_or_substitution": "1 - 1/8",
+              "intermediate_result": "0.875"
+            }
+          ]
+        }
+      },
+      {
+        "draft_id": "D030",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F006"
+        ],
+        "payload": {
+          "difficulty": "easy",
+          "stem_md": "P(A) = 0.5, P(B) = 0.4 and P(A and B) = 0.2. What is P(A or B)?",
+          "numeric_rule": {
+            "expected_answer": "0.70",
+            "unit_label": "probability",
+            "precision_decimals": 2,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Give the answer to 2 decimal places.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "P(A or B) = 0.5 + 0.4 - 0.2 = 0.70.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "Addition rule.",
+              "formula_or_substitution": "0.5 + 0.4 - 0.2",
+              "intermediate_result": "0.70"
+            }
+          ]
+        }
+      },
+      {
+        "draft_id": "D031",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F007"
+        ],
+        "payload": {
+          "difficulty": "easy",
+          "stem_md": "P(A) = 0.5 and P(A and B) = 0.3. What is P(B given A)?",
+          "numeric_rule": {
+            "expected_answer": "0.60",
+            "unit_label": "probability",
+            "precision_decimals": 2,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Give the answer to 2 decimal places.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "P(B | A) = 0.3 / 0.5 = 0.60.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "Divide.",
+              "formula_or_substitution": "0.3 / 0.5",
+              "intermediate_result": "0.60"
+            }
+          ]
+        }
+      },
+      {
+        "draft_id": "D032",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F007"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A and B are independent with P(A) = 0.3 and P(B) = 0.5. What is the probability that at least one occurs?",
+          "numeric_rule": {
+            "expected_answer": "0.65",
+            "unit_label": "probability",
+            "precision_decimals": 2,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Give the answer to 2 decimal places.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "P(both) = 0.3 x 0.5 = 0.15, so P(at least one) = 0.3 + 0.5 - 0.15 = 0.65.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "Joint probability.",
+              "formula_or_substitution": "0.3 x 0.5",
+              "intermediate_result": "0.15"
+            },
+            {
+              "step_number": 2,
+              "description": "Addition rule.",
+              "formula_or_substitution": "0.3 + 0.5 - 0.15",
+              "intermediate_result": "0.65"
+            }
+          ]
+        }
+      },
+      {
+        "draft_id": "D033",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F007"
+        ],
+        "payload": {
+          "difficulty": "easy",
+          "stem_md": "The odds against a stock price rising are 3 to 2. What is the probability that it rises?",
+          "numeric_rule": {
+            "expected_answer": "0.40",
+            "unit_label": "probability",
+            "precision_decimals": 2,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Give the answer to 2 decimal places.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "Odds against 3 to 2 mean 3 parts against and 2 parts for, so P(rise) = 2/5 = 0.40.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "Parts in favour over total parts.",
+              "formula_or_substitution": "2 / (3 + 2)",
+              "intermediate_result": "0.40"
+            }
+          ]
+        }
+      },
+      {
+        "draft_id": "D034",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F010"
+        ],
+        "payload": {
+          "difficulty": "easy",
+          "stem_md": "X takes the values 10, 20 and 30 with probabilities 0.2, 0.5 and 0.3. What is E(X)?",
+          "numeric_rule": {
+            "expected_answer": "21",
+            "unit_label": "units",
+            "precision_decimals": 0,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Give a whole number.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "E(X) = 10 x 0.2 + 20 x 0.5 + 30 x 0.3 = 2 + 10 + 9 = 21.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "Weighted sum.",
+              "formula_or_substitution": "2 + 10 + 9",
+              "intermediate_result": "21"
+            }
+          ]
+        }
+      },
+      {
+        "draft_id": "D035",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F010"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "For the same X (values 10, 20, 30 with probabilities 0.2, 0.5, 0.3), what is the variance V(X)?",
+          "numeric_rule": {
+            "expected_answer": "49",
+            "unit_label": "units squared",
+            "precision_decimals": 0,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Give a whole number.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "E(X squared) = 100 x 0.2 + 400 x 0.5 + 900 x 0.3 = 20 + 200 + 270 = 490, and V(X) = 490 - 21 squared = 490 - 441 = 49.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "E(X squared).",
+              "formula_or_substitution": "20 + 200 + 270",
+              "intermediate_result": "490"
+            },
+            {
+              "step_number": 2,
+              "description": "Subtract the square of the mean.",
+              "formula_or_substitution": "490 - 441",
+              "intermediate_result": "49"
+            }
+          ]
+        }
+      },
+      {
+        "draft_id": "D036",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F010"
+        ],
+        "payload": {
+          "difficulty": "easy",
+          "stem_md": "E(X) = 21 and V(X) = 49. What is E(2X + 3)?",
+          "numeric_rule": {
+            "expected_answer": "45",
+            "unit_label": "units",
+            "precision_decimals": 0,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Give a whole number.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "E(2X + 3) = 2 x 21 + 3 = 45.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "Linear change.",
+              "formula_or_substitution": "2 x 21 + 3",
+              "intermediate_result": "45"
+            }
+          ]
+        }
+      },
+      {
+        "draft_id": "D037",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F010"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "V(X) = 49. What is V(3X + 5)?",
+          "numeric_rule": {
+            "expected_answer": "441",
+            "unit_label": "units squared",
+            "precision_decimals": 0,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Give a whole number.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "V(3X + 5) = 3 squared x 49 = 441; the constant 5 does not matter.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "Square the multiplier.",
+              "formula_or_substitution": "9 x 49",
+              "intermediate_result": "441"
+            }
+          ]
+        }
+      }
+    ],
+    "unresolved": [
+      "Courseware printed p. 105 (unit title page) not read; terminal questions and answer key on pp. 132-133 were read but not used (the key appears to contain errors, noted in the review).",
+      "The courseware prints P(n, r) = r! - C(n, r) where P(n, r) = r! x C(n, r) is meant; the items use the correct relation.",
+      "The courseware writes the conditional probability notation as P(B/A) in places where it means P(A | B); the items use the standard notation.",
+      "Continuous distributions (PDF integrals, uniform distribution example) are mentioned by the courseware; items cover the definitions and properties but not integration exercises.",
+      "Reviewer for this batch is the authoring agent; no independent or human review."
+    ],
+    "next_batch_hint": "ABM-A-U06-B002: binomial, Poisson and normal distributions, credit risk, value at risk, option valuation (printed pp. 120-132 = PDF pp. 135-147)."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "ABM-A-U06-B001",
+    "paper_id": "ABM",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 5, Compulsory Paper I, Module A: Statistics, Theory of Probability"
+    },
+    "sources": [
+      {
+        "source_id": "S01",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Advanced Bank Management (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "ABM::MOD_A::U06",
+        "objective_ids": [
+          "ABM::MOD_A::U06::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "ABM::MOD_A::U06",
+        "objective_ids": [
+          "ABM::MOD_A::U06::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "ABM::MOD_A::U06",
+        "objective_ids": [
+          "ABM::MOD_A::U06::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "ABM::MOD_A::U06",
+        "objective_ids": [
+          "ABM::MOD_A::U06::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "unit_id": "ABM::MOD_A::U06",
+        "objective_ids": [
+          "ABM::MOD_A::U06::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D006",
+        "unit_id": "ABM::MOD_A::U06",
+        "objective_ids": [
+          "ABM::MOD_A::U06::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D007",
+        "unit_id": "ABM::MOD_A::U06",
+        "objective_ids": [
+          "ABM::MOD_A::U06::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D008",
+        "unit_id": "ABM::MOD_A::U06",
+        "objective_ids": [
+          "ABM::MOD_A::U06::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D009",
+        "unit_id": "ABM::MOD_A::U06",
+        "objective_ids": [
+          "ABM::MOD_A::U06::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D010",
+        "unit_id": "ABM::MOD_A::U06",
+        "objective_ids": [
+          "ABM::MOD_A::U06::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D011",
+        "unit_id": "ABM::MOD_A::U06",
+        "objective_ids": [
+          "ABM::MOD_A::U06::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D012",
+        "unit_id": "ABM::MOD_A::U06",
+        "objective_ids": [
+          "ABM::MOD_A::U06::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D013",
+        "unit_id": "ABM::MOD_A::U06",
+        "objective_ids": [
+          "ABM::MOD_A::U06::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D014",
+        "unit_id": "ABM::MOD_A::U06",
+        "objective_ids": [
+          "ABM::MOD_A::U06::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D015",
+        "unit_id": "ABM::MOD_A::U06",
+        "objective_ids": [
+          "ABM::MOD_A::U06::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D016",
+        "unit_id": "ABM::MOD_A::U06",
+        "objective_ids": [
+          "ABM::MOD_A::U06::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D017",
+        "unit_id": "ABM::MOD_A::U06",
+        "objective_ids": [
+          "ABM::MOD_A::U06::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D018",
+        "unit_id": "ABM::MOD_A::U06",
+        "objective_ids": [
+          "ABM::MOD_A::U06::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D019",
+        "unit_id": "ABM::MOD_A::U06",
+        "objective_ids": [
+          "ABM::MOD_A::U06::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D020",
+        "unit_id": "ABM::MOD_A::U06",
+        "objective_ids": [
+          "ABM::MOD_A::U06::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D021",
+        "unit_id": "ABM::MOD_A::U06",
+        "objective_ids": [
+          "ABM::MOD_A::U06::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D022",
+        "unit_id": "ABM::MOD_A::U06",
+        "objective_ids": [
+          "ABM::MOD_A::U06::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D023",
+        "unit_id": "ABM::MOD_A::U06",
+        "objective_ids": [
+          "ABM::MOD_A::U06::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D024",
+        "unit_id": "ABM::MOD_A::U06",
+        "objective_ids": [
+          "ABM::MOD_A::U06::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D025",
+        "unit_id": "ABM::MOD_A::U06",
+        "objective_ids": [
+          "ABM::MOD_A::U06::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D026",
+        "unit_id": "ABM::MOD_A::U06",
+        "objective_ids": [
+          "ABM::MOD_A::U06::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D027",
+        "unit_id": "ABM::MOD_A::U06",
+        "objective_ids": [
+          "ABM::MOD_A::U06::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D028",
+        "unit_id": "ABM::MOD_A::U06",
+        "objective_ids": [
+          "ABM::MOD_A::U06::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D029",
+        "unit_id": "ABM::MOD_A::U06",
+        "objective_ids": [
+          "ABM::MOD_A::U06::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D030",
+        "unit_id": "ABM::MOD_A::U06",
+        "objective_ids": [
+          "ABM::MOD_A::U06::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D031",
+        "unit_id": "ABM::MOD_A::U06",
+        "objective_ids": [
+          "ABM::MOD_A::U06::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D032",
+        "unit_id": "ABM::MOD_A::U06",
+        "objective_ids": [
+          "ABM::MOD_A::U06::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D033",
+        "unit_id": "ABM::MOD_A::U06",
+        "objective_ids": [
+          "ABM::MOD_A::U06::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D034",
+        "unit_id": "ABM::MOD_A::U06",
+        "objective_ids": [
+          "ABM::MOD_A::U06::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D035",
+        "unit_id": "ABM::MOD_A::U06",
+        "objective_ids": [
+          "ABM::MOD_A::U06::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D036",
+        "unit_id": "ABM::MOD_A::U06",
+        "objective_ids": [
+          "ABM::MOD_A::U06::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D037",
+        "unit_id": "ABM::MOD_A::U06",
+        "objective_ids": [
+          "ABM::MOD_A::U06::LO_03"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "ABM-A-U06-B001",
+      "draft_id": "D001",
+      "item_id": "item_073302613be4d2367ece3eb3e24652307fbb1e9bfb9eda33fdd2a80c7c8c0433"
+    },
+    {
+      "batch_id": "ABM-A-U06-B001",
+      "draft_id": "D002",
+      "item_id": "item_3eb8386021b6dc654565434055dac01d9326bf5948a5452381f408f77d050e2b"
+    },
+    {
+      "batch_id": "ABM-A-U06-B001",
+      "draft_id": "D003",
+      "item_id": "item_03d6e2018e9d0d6283f80c5dc8dda553b54d0f95fe450ada107a21b8fba4d885"
+    },
+    {
+      "batch_id": "ABM-A-U06-B001",
+      "draft_id": "D004",
+      "item_id": "item_0db11969e6dd247693a75b6dfc6efd586adc68cabf67b6f0bdaf0b0fe55834a7"
+    },
+    {
+      "batch_id": "ABM-A-U06-B001",
+      "draft_id": "D005",
+      "item_id": "item_9ca66fdff0b6a482747f7deda38c651ef106fed8ad83e331aee4116d996a90aa"
+    },
+    {
+      "batch_id": "ABM-A-U06-B001",
+      "draft_id": "D006",
+      "item_id": "item_b486dd8857b6477949fdae04934aa76993aa35ab1fb003e09b881df9024ad490"
+    },
+    {
+      "batch_id": "ABM-A-U06-B001",
+      "draft_id": "D007",
+      "item_id": "item_c7e920c529cd8c4339bd58357f9e1a3a0c21a3a821b81b8a1c37c3829532e1c1"
+    },
+    {
+      "batch_id": "ABM-A-U06-B001",
+      "draft_id": "D008",
+      "item_id": "item_425d2d8337c6a177ab3958d4ca742e59aff14cdc3322c603b337fc596c5f11c5"
+    },
+    {
+      "batch_id": "ABM-A-U06-B001",
+      "draft_id": "D009",
+      "item_id": "item_26b7214aa3b116d8b45511918f5acd8d1aac782957b2600260a331dc8ac6e57d"
+    },
+    {
+      "batch_id": "ABM-A-U06-B001",
+      "draft_id": "D010",
+      "item_id": "item_3b32317be4513b9fd9dc0193eccacd32c82384f96f1d2bd8434b35de3dc86acb"
+    },
+    {
+      "batch_id": "ABM-A-U06-B001",
+      "draft_id": "D011",
+      "item_id": "item_5047c1a4e4779e7b9a3da83595006ff1430037b27099bff193132a1e483fe4a2"
+    },
+    {
+      "batch_id": "ABM-A-U06-B001",
+      "draft_id": "D012",
+      "item_id": "item_065b17502cd53fd147cbf3043c9a3a89ecc9a7b9c12602c6851c44c40e0c243b"
+    },
+    {
+      "batch_id": "ABM-A-U06-B001",
+      "draft_id": "D013",
+      "item_id": "item_b7fe2138c27eddaa9d8b02310b27a98e28d4664ebb3224ffc2ee8d41ec8da995"
+    },
+    {
+      "batch_id": "ABM-A-U06-B001",
+      "draft_id": "D014",
+      "item_id": "item_b906bd1871d54a850311b3dc11477d477aeebfa1a766da90a944e14a195dfaf1"
+    },
+    {
+      "batch_id": "ABM-A-U06-B001",
+      "draft_id": "D015",
+      "item_id": "item_fc2eea3429bfbbfc697b61c29aa791cba2d789d470e53d0c1659278b513a3507"
+    },
+    {
+      "batch_id": "ABM-A-U06-B001",
+      "draft_id": "D016",
+      "item_id": "item_7b8b11d7f4d7e1ee81d82ab7c820d1e7e5c19b811b1aa0407e088f6f3a9391e2"
+    },
+    {
+      "batch_id": "ABM-A-U06-B001",
+      "draft_id": "D017",
+      "item_id": "item_cd012289d7e3c38b2a1d41c05c4d206d5980a69789e69e3a92656ec6803b7270"
+    },
+    {
+      "batch_id": "ABM-A-U06-B001",
+      "draft_id": "D018",
+      "item_id": "item_a0c3a273d5caf43cd621a4d568d0407095808de4d5ae85fb00d9ede1b3a1879c"
+    },
+    {
+      "batch_id": "ABM-A-U06-B001",
+      "draft_id": "D019",
+      "item_id": "item_8e696eb6c6e2dd4510a79eb719654f29b09de534ebc0ac97bc61643a388b6993"
+    },
+    {
+      "batch_id": "ABM-A-U06-B001",
+      "draft_id": "D020",
+      "item_id": "item_4722c33eac917edb5af6f548be5b206bbf24f35da679e5ac1ab61b32e329beed"
+    },
+    {
+      "batch_id": "ABM-A-U06-B001",
+      "draft_id": "D021",
+      "item_id": "item_86d4766e6317f2361cb660464b695a8f527ade0586de0204e805935cdc24495e"
+    },
+    {
+      "batch_id": "ABM-A-U06-B001",
+      "draft_id": "D022",
+      "item_id": "item_807777bf5f9d377e587768643e4baa23625e95ae562cfcb065d83a5b42eaadb8"
+    },
+    {
+      "batch_id": "ABM-A-U06-B001",
+      "draft_id": "D023",
+      "item_id": "item_5d3109411f43337d39cb29c3710864ae3f16628afd5ea077472a711923c621e1"
+    },
+    {
+      "batch_id": "ABM-A-U06-B001",
+      "draft_id": "D024",
+      "item_id": "item_9149725fe7152142cdd858c2a980fcd209282683d174e7d343ddba2b931477d5"
+    },
+    {
+      "batch_id": "ABM-A-U06-B001",
+      "draft_id": "D025",
+      "item_id": "item_ba5273b0460eb5ba0d4592afd90e20f230693bcfe9a0ff82b685a08bef2e2a51"
+    },
+    {
+      "batch_id": "ABM-A-U06-B001",
+      "draft_id": "D026",
+      "item_id": "item_0a7d83150f56cd2ba0236d0b892dafb81a269ae321157813680ae6cdabfe2d93"
+    },
+    {
+      "batch_id": "ABM-A-U06-B001",
+      "draft_id": "D027",
+      "item_id": "item_a7ef020ac8c3fb4d52269d47e449a3742dabba772d6b9c2c9bdcddcb737abff0"
+    },
+    {
+      "batch_id": "ABM-A-U06-B001",
+      "draft_id": "D028",
+      "item_id": "item_f2947110d55f0179c71d2ab7dc50f0fb6e3793fde0b99a9e68dbb26e12ff17b7"
+    },
+    {
+      "batch_id": "ABM-A-U06-B001",
+      "draft_id": "D029",
+      "item_id": "item_6fcf41651a62f28fd8de23018fa69e7b3e5017796c8e642d4a547312fd91f217"
+    },
+    {
+      "batch_id": "ABM-A-U06-B001",
+      "draft_id": "D030",
+      "item_id": "item_a5f92d6ffa0237607e1804018190c536d0ef88ec96b83caaaf886d8e8fdf7546"
+    },
+    {
+      "batch_id": "ABM-A-U06-B001",
+      "draft_id": "D031",
+      "item_id": "item_7691c822053d8e24750a464b8443d3aa4d65255d3ee847d69fec79abb877f581"
+    },
+    {
+      "batch_id": "ABM-A-U06-B001",
+      "draft_id": "D032",
+      "item_id": "item_ba7e2080a7408e76ba59a56139e166ac38ca2469291c1a76d5edcbe3ddb49fb9"
+    },
+    {
+      "batch_id": "ABM-A-U06-B001",
+      "draft_id": "D033",
+      "item_id": "item_b73ef527dc715882ebba8fa4140aadd96499e55e499ebf3630f8c570e9d2293f"
+    },
+    {
+      "batch_id": "ABM-A-U06-B001",
+      "draft_id": "D034",
+      "item_id": "item_220ba4a432452a758cc48ca6d69f9fa53904f1f98a3280e41fed9d34a03a6db7"
+    },
+    {
+      "batch_id": "ABM-A-U06-B001",
+      "draft_id": "D035",
+      "item_id": "item_28fda36db54a1e7745e30a38b645b0022f68e4d2f62f9035dd3952013bd57d81"
+    },
+    {
+      "batch_id": "ABM-A-U06-B001",
+      "draft_id": "D036",
+      "item_id": "item_25c29e7086229e7f834ce507c8ee6220d4013b3aaf71c87f6243ccc06b72eb88"
+    },
+    {
+      "batch_id": "ABM-A-U06-B001",
+      "draft_id": "D037",
+      "item_id": "item_8e44e7b41bb15e1832016eb89fd8f8811e1aa35f621f302392ee93cd5183c7d9"
+    }
+  ],
+  "items": [
+    {
+      "prerequisite_objective_ids": [],
+      "title": "Factorials, permutations and combinations",
+      "core_explanation_md": "Counting comes before probability. Three tools:\n\n- **n factorial** (n!): multiply n by every whole number below it. By agreement 0! = 1.\n- **Permutation** P(n, r): ways to **arrange** r items chosen from n, where order matters (a first, second and third officer in a ranking).\n- **Combination** C(n, r): ways to **select** r items from n, where order does not matter (a committee of three).\n\nEvery selection of r items can be arranged in r! orders, which is why P(n, r) = r! x C(n, r).\n\nWhen a task has stages, multiply the ways at each stage: choosing 3 of 7 officers and 4 of 6 clerks gives C(7,3) x C(6,4).",
+      "expanded_explanation_md": "Ask one question: \"does swapping two chosen items give a different outcome?\" If yes, permutation; if no, combination.",
+      "formula_spec": {
+        "latex_expression": "n! = n(n-1)\\cdots 1,\\quad P(n,r) = \\frac{n!}{(n-r)!},\\quad C(n,r) = \\frac{n!}{r!\\,(n-r)!},\\quad P(n,r) = r!\\,C(n,r)",
+        "variables": [
+          {
+            "symbol": "n",
+            "name": "Number of items available",
+            "unit": "count"
+          },
+          {
+            "symbol": "r",
+            "name": "Number chosen (r at most n)",
+            "unit": "count"
+          },
+          {
+            "symbol": "P(n,r)",
+            "name": "Ordered arrangements",
+            "unit": "count"
+          },
+          {
+            "symbol": "C(n,r)",
+            "name": "Unordered selections",
+            "unit": "count"
+          }
+        ],
+        "assumptions": [
+          "Items are distinct and chosen without repetition.",
+          "0! = 1."
+        ],
+        "common_errors": [
+          "Using a permutation when order does not matter.",
+          "Adding the ways for different stages instead of multiplying.",
+          "Forgetting that C(n, r) = C(n, n - r)."
+        ]
+      },
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "How many different panels of 3 can be chosen from 8 officers, and how many ways to fill the posts of chair, secretary and treasurer from the same 8?",
+        "expected_takeaway": "Panels: C(8,3) = 56. Posts: P(8,3) = 336, which is 3! = 6 times 56."
+      },
+      "item_type": "card",
+      "card_type": "formula",
+      "id": "item_073302613be4d2367ece3eb3e24652307fbb1e9bfb9eda33fdd2a80c7c8c0433",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABM",
+      "module_id": "ABM::MOD_A",
+      "unit_id": "ABM::MOD_A::U06",
+      "objective_ids": [
+        "ABM::MOD_A::U06::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed p. 106, section 6.1"
+        },
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 106-107, section 6.1 items 1 and 2 and Examples 1 and 2 (the printed note on P and C has a typographical error)"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "prerequisite_objective_ids": [],
+      "title": "Sample space and events: the vocabulary",
+      "core_explanation_md": "A **random experiment** has several possible outcomes, and you cannot say beforehand which will occur: tossing a coin, rolling a die, checking whether a loan will be repaid. List every possible outcome and you have the **sample space** S. An **event** is any collection of outcomes, a subset of S.\n\n| Type of event | Meaning |\n| --- | --- |\n| Certain | Contains every outcome |\n| Impossible | Contains none (the empty set) |\n| Mutually exclusive | Cannot happen together |\n| Equally likely | No reason to prefer one outcome |\n| Exhaustive | Together they cover the sample space |\n| Complementary | Exhaustive **and** mutually exclusive: exactly one of the pair happens |\n\nOn one throw of a die, \"odd\" and \"even\" are complementary. \"Odd\" and \"multiple of 3\" are neither mutually exclusive (3 is both) nor exhaustive (2 is neither).",
+      "expanded_explanation_md": "The complement of A is \"A does not happen\". Every event and its complement are complementary, so their probabilities add to 1.",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Are \"loan approved\" and \"loan rejected\" for one application mutually exclusive, exhaustive, or both?",
+        "expected_takeaway": "Both (if no third outcome such as \"pending\" exists): they cannot happen together and between them cover all outcomes, so they are complementary."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_3eb8386021b6dc654565434055dac01d9326bf5948a5452381f408f77d050e2b",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABM",
+      "module_id": "ABM::MOD_A",
+      "unit_id": "ABM::MOD_A::U06",
+      "objective_ids": [
+        "ABM::MOD_A::U06::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 107-109, sections 6.1 items 3 to 6"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "prerequisite_objective_ids": [],
+      "title": "Classical probability: favourable over possible",
+      "core_explanation_md": "When all outcomes are equally likely, count them:\n\nP(A) = number of outcomes in A divided by number of outcomes in S.\n\nThe answer always lies between 0 (impossible) and 1 (certain).\n\nCounting is where the work is. Use the tools:\n\n- **Selections**: combinations. Two balls from 10 white and 11 black give 210 possible pairs; both white can happen in C(10,2) = 45 ways.\n- **Arrangements**: factorials. For \"two items always together\", glue them into one item, arrange, then arrange inside the glue. For \"never together\", subtract the \"always together\" count from the total.",
+      "expanded_explanation_md": "The formula works only if the outcomes you count are equally likely. Counting \"heads or tails\" outcomes of a biased coin would not give the right probability.",
+      "formula_spec": {
+        "latex_expression": "P(A) = \\frac{n(A)}{n(S)},\\qquad 0 \\le P(A) \\le 1",
+        "variables": [
+          {
+            "symbol": "n(A)",
+            "name": "Outcomes favourable to A",
+            "unit": "count"
+          },
+          {
+            "symbol": "n(S)",
+            "name": "All possible outcomes",
+            "unit": "count"
+          },
+          {
+            "symbol": "P(A)",
+            "name": "Probability of A",
+            "unit": "pure number between 0 and 1"
+          }
+        ],
+        "assumptions": [
+          "Outcomes are equally likely, exhaustive and mutually exclusive."
+        ],
+        "common_errors": [
+          "Counting outcomes that are not equally likely.",
+          "Using a permutation count for n(A) and a combination count for n(S) (or the reverse).",
+          "Reporting a probability above 1."
+        ]
+      },
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Two dice are thrown. What is the probability that the total is 7?",
+        "expected_takeaway": "Six of the 36 equally likely outcomes give 7 ((1,6), (2,5), ..., (6,1)), so 6/36 = 1/6."
+      },
+      "item_type": "card",
+      "card_type": "formula",
+      "id": "item_03d6e2018e9d0d6283f80c5dc8dda553b54d0f95fe450ada107a21b8fba4d885",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABM",
+      "module_id": "ABM::MOD_A",
+      "unit_id": "ABM::MOD_A::U06",
+      "objective_ids": [
+        "ABM::MOD_A::U06::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 109-111, section 6.2 and Examples 1 to 3"
+        },
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 111-112, Examples 4 to 6"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "prerequisite_objective_ids": [],
+      "title": "The addition rule and the complement rule",
+      "core_explanation_md": "\"A **or** B\" means at least one of the two happens. Adding P(A) and P(B) counts the overlap twice, so subtract it once:\n\n**P(A or B) = P(A) + P(B) - P(A and B).**\n\nIf A and B are mutually exclusive there is no overlap and the last term is zero.\n\nThe **complement rule** is often quicker: P(A does not happen) = 1 - P(A). In particular, P(neither A nor B) = 1 - P(A or B).\n\nFor a card drawn from a pack: P(red) = 26/52, P(picture) = 12/52, P(red and picture) = 6/52, so P(red or picture) = 32/52 = 8/13.",
+      "expanded_explanation_md": "For \"at least one\" questions, work out the complement (\"none\") and subtract from 1. It usually saves a lot of arithmetic.",
+      "formula_spec": {
+        "latex_expression": "P(A\\cup B) = P(A) + P(B) - P(A\\cap B),\\qquad P(A^c) = 1 - P(A),\\qquad P(\\text{neither}) = 1 - P(A\\cup B)",
+        "variables": [
+          {
+            "symbol": "P(A or B)",
+            "name": "Probability that at least one occurs",
+            "unit": "pure number"
+          },
+          {
+            "symbol": "P(A and B)",
+            "name": "Probability that both occur",
+            "unit": "pure number"
+          }
+        ],
+        "assumptions": [
+          "A and B are events of the same sample space.",
+          "For mutually exclusive events P(A and B) = 0."
+        ],
+        "common_errors": [
+          "Forgetting to subtract the overlap.",
+          "Subtracting the overlap when events are mutually exclusive (it is zero anyway).",
+          "Using 1 - P(A) - P(B) for \"neither\" without removing double counting."
+        ]
+      },
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "P(A) = 0.5, P(B) = 0.4 and P(A and B) = 0.2. What are P(A or B) and P(neither)?",
+        "expected_takeaway": "P(A or B) = 0.5 + 0.4 - 0.2 = 0.7; P(neither) = 0.3."
+      },
+      "item_type": "card",
+      "card_type": "formula",
+      "id": "item_0db11969e6dd247693a75b6dfc6efd586adc68cabf67b6f0bdaf0b0fe55834a7",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABM",
+      "module_id": "ABM::MOD_A",
+      "unit_id": "ABM::MOD_A::U06",
+      "objective_ids": [
+        "ABM::MOD_A::U06::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 112-114, Addition Theorem and corollaries 1 to 7, and Example 1"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "prerequisite_objective_ids": [],
+      "title": "Conditional probability, multiplication and independence",
+      "core_explanation_md": "Learning that B has happened changes the odds of A. **Conditional probability** restricts attention to the world where B happened:\n\nP(A given B) = P(A and B) / P(B).\n\nRearranged, it gives the **multiplication rule**: P(A and B) = P(B) x P(A given B).\n\nIf knowing B tells you nothing about A, the events are **independent**, P(A given B) = P(A), and the rule simplifies to P(A and B) = P(A) x P(B).\n\nFor a two-stage process, add over the first-stage outcomes (total probability): P(B) = P(B given A1) P(A1) + P(B given A2) P(A2).",
+      "expanded_explanation_md": "Do not confuse independent with mutually exclusive. Two mutually exclusive events with positive probabilities are never independent: if one occurs the other certainly does not, so P(A and B) = 0, which differs from P(A) x P(B).",
+      "formula_spec": {
+        "latex_expression": "P(A\\mid B) = \\frac{P(A\\cap B)}{P(B)},\\quad P(A\\cap B) = P(B)P(A\\mid B),\\quad \\text{independent: } P(A\\cap B) = P(A)P(B)",
+        "variables": [
+          {
+            "symbol": "P(A | B)",
+            "name": "Probability of A given that B has occurred",
+            "unit": "pure number"
+          },
+          {
+            "symbol": "P(A and B)",
+            "name": "Probability that both occur",
+            "unit": "pure number"
+          }
+        ],
+        "assumptions": [
+          "P(B) is greater than zero.",
+          "Independence is assumed only when the events genuinely do not affect each other."
+        ],
+        "common_errors": [
+          "Multiplying P(A) and P(B) for events that are not independent.",
+          "Dividing by P(A) instead of P(B) (check which event is \"given\").",
+          "Treating mutually exclusive events as independent."
+        ]
+      },
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "P(A) = 0.8 and P(A and B) = 0.6. What is P(B given A)?",
+        "expected_takeaway": "0.6 / 0.8 = 0.75."
+      },
+      "item_type": "card",
+      "card_type": "formula",
+      "id": "item_9ca66fdff0b6a482747f7deda38c651ef106fed8ad83e331aee4116d996a90aa",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABM",
+      "module_id": "ABM::MOD_A",
+      "unit_id": "ABM::MOD_A::U06",
+      "objective_ids": [
+        "ABM::MOD_A::U06::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 113-116, section 6.3 and its examples"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "prerequisite_objective_ids": [],
+      "title": "Putting the rules to work: odds, two stages and independence checks",
+      "core_explanation_md": "Three tasks come up often.\n\n**Odds to probability.** Odds of m to n in favour mean probability m/(m+n); odds of m to n against mean probability n/(m+n) in favour. Odds against of 2 to 1 means a probability of 1/3.\n\n**Two stages.** When the second stage depends on the first, split by the first stage and add: P(rejected) = P(rejected given branch A) P(branch A) + P(rejected given branch B) P(branch B).\n\n**Independence check.** Compute P(A) x P(B) and compare with P(A and B). Equal means independent; different means the events influence each other.",
+      "expanded_explanation_md": "Tree diagrams help: each branch carries a conditional probability, multiply along a path, add across paths that lead to the same event.",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Odds against a stock rising are 3 to 2. What is the probability that it rises?",
+        "expected_takeaway": "2/(3+2) = 0.4."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_b486dd8857b6477949fdae04934aa76993aa35ab1fb003e09b881df9024ad490",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABM",
+      "module_id": "ABM::MOD_A",
+      "unit_id": "ABM::MOD_A::U06",
+      "objective_ids": [
+        "ABM::MOD_A::U06::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 113-116, section 6.3 and its examples"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "prerequisite_objective_ids": [],
+      "title": "Random variables and their distributions",
+      "core_explanation_md": "A **random variable** turns an outcome into a number: the number of cheques returned today, the time a customer waits, the return on a portfolio.\n\n| | Discrete | Continuous |\n| --- | --- | --- |\n| Values | Countable (0, 1, 2, ...) | Any value in a range |\n| Example | Accidents, arrivals, age in years | Weight, percentage of marks, waiting time |\n| Description of probabilities | **Mass function** f(x): P(X = x) | **Density function** f(x): probability is area under the curve |\n| Rule | Each f(x) is at least 0; all f(x) add to 1 | f(x) is at least 0; total area is 1 |\n\nFor a continuous variable the probability of any **single exact value** is zero; probabilities belong to intervals.\n\nThe **cumulative distribution function** F(x) = P(X is at most x) works for both types. It never decreases, starts at 0 and ends at 1.",
+      "expanded_explanation_md": "A probability table is a valid mass function only if no probability is negative and the probabilities total exactly 1. That is the first check on any distribution you are given.",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "A table of probabilities for X = 0, 1, 2 reads 0.5, 0.4, 0.3. Is it a valid distribution?",
+        "expected_takeaway": "No: the probabilities add to 1.2, not 1."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_c7e920c529cd8c4339bd58357f9e1a3a0c21a3a821b81b8a1c37c3829532e1c1",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABM",
+      "module_id": "ABM::MOD_A",
+      "unit_id": "ABM::MOD_A::U06",
+      "objective_ids": [
+        "ABM::MOD_A::U06::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed p. 116, section 6.4"
+        },
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed p. 117, section 6.5"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "prerequisite_objective_ids": [],
+      "title": "Expectation, variance and standard deviation of a discrete variable",
+      "core_explanation_md": "The **expectation** is the long-run average: weight each value by its probability and add.\n\nThe **variance** measures scatter about that average: the expected squared deviation. A shortcut is the mean of the squares minus the square of the mean. The **standard deviation** is its square root, back in the original units.\n\nChanging units is easy: adding a constant b shifts the mean by b and leaves the variance unchanged; multiplying by a multiplies the mean by a and the variance by a squared.",
+      "expanded_explanation_md": "If a payoff is 500 times a count plus a fixed 100, the expected payoff is 500 times the expected count plus 100, and the standard deviation is 500 times that of the count. The fixed 100 does not add any spread.",
+      "formula_spec": {
+        "latex_expression": "E(X) = \\sum x f(x),\\quad V(X) = E(X^2) - [E(X)]^2,\\quad E(aX+b) = aE(X)+b,\\quad V(aX+b) = a^2V(X)",
+        "variables": [
+          {
+            "symbol": "f(x)",
+            "name": "Probability of the value x",
+            "unit": "pure number"
+          },
+          {
+            "symbol": "E(X)",
+            "name": "Expected value",
+            "unit": "units of X"
+          },
+          {
+            "symbol": "V(X)",
+            "name": "Variance",
+            "unit": "units of X squared"
+          },
+          {
+            "symbol": "a, b",
+            "name": "Constants in the linear change",
+            "unit": "as given"
+          }
+        ],
+        "assumptions": [
+          "The probabilities form a valid distribution (they total 1)."
+        ],
+        "common_errors": [
+          "Taking E(X squared) as the square of E(X).",
+          "Adding b to the variance of aX + b.",
+          "Forgetting to square a in V(aX + b)."
+        ]
+      },
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "E(X) = 21 and V(X) = 49. What are E(2X + 3) and V(3X + 5)?",
+        "expected_takeaway": "E(2X + 3) = 45; V(3X + 5) = 9 x 49 = 441."
+      },
+      "item_type": "card",
+      "card_type": "formula",
+      "id": "item_425d2d8337c6a177ab3958d4ca742e59aff14cdc3322c603b337fc596c5f11c5",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABM",
+      "module_id": "ABM::MOD_A",
+      "unit_id": "ABM::MOD_A::U06",
+      "objective_ids": [
+        "ABM::MOD_A::U06::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 117-119, section 6.6 and Examples 1 and 2"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "prerequisite_objective_ids": [],
+      "title": "A panel drawn from officers and clerks",
+      "core_explanation_md": "A panel of 3 is chosen at random from 5 officers and 4 clerks. Find the probability that it has exactly 2 clerks.",
+      "worked_steps": [
+        {
+          "step_number": 1,
+          "description": "All possible panels: choose 3 of 9.",
+          "formula_or_substitution": "C(9, 3) = 9 x 8 x 7 / 6",
+          "intermediate_result": "84"
+        },
+        {
+          "step_number": 2,
+          "description": "Favourable panels: 2 of 4 clerks and 1 of 5 officers.",
+          "formula_or_substitution": "C(4, 2) x C(5, 1) = 6 x 5",
+          "intermediate_result": "30"
+        },
+        {
+          "step_number": 3,
+          "description": "Probability.",
+          "formula_or_substitution": "30 / 84",
+          "intermediate_result": "0.3571 (that is 5/14)"
+        }
+      ],
+      "final_answer_with_unit": "Probability 5/14, about 0.3571",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Why do we multiply 6 and 5 rather than add?",
+        "expected_takeaway": "Each choice of two clerks can be paired with each choice of one officer, so the stages multiply."
+      },
+      "item_type": "card",
+      "card_type": "worked_example",
+      "id": "item_26b7214aa3b116d8b45511918f5acd8d1aac782957b2600260a331dc8ac6e57d",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABM",
+      "module_id": "ABM::MOD_A",
+      "unit_id": "ABM::MOD_A::U06",
+      "objective_ids": [
+        "ABM::MOD_A::U06::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 106-107, section 6.1 items 1 and 2 and Examples 1 and 2 (the printed note on P and C has a typographical error)"
+        },
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 109-111, section 6.2 and Examples 1 to 3"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "prerequisite_objective_ids": [
+        "ABM::MOD_A::U06::LO_01"
+      ],
+      "title": "Two loan files side by side",
+      "core_explanation_md": "Five loan files are placed in a row in random order. What is the probability that two particular files are next to each other, and that they are not?",
+      "worked_steps": [
+        {
+          "step_number": 1,
+          "description": "All orders of five files.",
+          "formula_or_substitution": "5!",
+          "intermediate_result": "120"
+        },
+        {
+          "step_number": 2,
+          "description": "Glue the two files into one block: arrange 4 items, then the two inside the block.",
+          "formula_or_substitution": "4! x 2!",
+          "intermediate_result": "24 x 2 = 48"
+        },
+        {
+          "step_number": 3,
+          "description": "Probability together.",
+          "formula_or_substitution": "48 / 120",
+          "intermediate_result": "0.4"
+        },
+        {
+          "step_number": 4,
+          "description": "Never together: complement.",
+          "formula_or_substitution": "1 - 0.4",
+          "intermediate_result": "0.6"
+        }
+      ],
+      "final_answer_with_unit": "Together 0.4; not together 0.6",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Check the second answer by counting.",
+        "expected_takeaway": "120 - 48 = 72 orders keep them apart, and 72/120 = 0.6."
+      },
+      "item_type": "card",
+      "card_type": "worked_example",
+      "id": "item_3b32317be4513b9fd9dc0193eccacd32c82384f96f1d2bd8434b35de3dc86acb",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABM",
+      "module_id": "ABM::MOD_A",
+      "unit_id": "ABM::MOD_A::U06",
+      "objective_ids": [
+        "ABM::MOD_A::U06::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 111-112, Examples 4 to 6"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "prerequisite_objective_ids": [
+        "ABM::MOD_A::U06::LO_01"
+      ],
+      "title": "Savings accounts and loans: union, neither, conditional and independence",
+      "core_explanation_md": "Among a bank's customers, 60 per cent have a savings account (S), 30 per cent have a loan (L) and 20 per cent have both. Find P(S or L), P(neither), P(L given S), and decide whether S and L are independent.",
+      "worked_steps": [
+        {
+          "step_number": 1,
+          "description": "Addition rule.",
+          "formula_or_substitution": "0.6 + 0.3 - 0.2",
+          "intermediate_result": "0.7"
+        },
+        {
+          "step_number": 2,
+          "description": "Complement for neither.",
+          "formula_or_substitution": "1 - 0.7",
+          "intermediate_result": "0.3"
+        },
+        {
+          "step_number": 3,
+          "description": "Conditional probability.",
+          "formula_or_substitution": "0.2 / 0.6",
+          "intermediate_result": "0.3333"
+        },
+        {
+          "step_number": 4,
+          "description": "Independence test: compare P(S) x P(L) with P(S and L).",
+          "formula_or_substitution": "0.6 x 0.3 = 0.18 against 0.20",
+          "intermediate_result": "0.18 is not 0.20"
+        }
+      ],
+      "final_answer_with_unit": "P(S or L) = 0.7; P(neither) = 0.3; P(L given S) = 1/3 (above P(L) = 0.3); not independent, since having a savings account makes a loan slightly more likely",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "If S and L were independent, what would P(S and L) be?",
+        "expected_takeaway": "0.6 x 0.3 = 0.18."
+      },
+      "item_type": "card",
+      "card_type": "worked_example",
+      "id": "item_5047c1a4e4779e7b9a3da83595006ff1430037b27099bff193132a1e483fe4a2",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABM",
+      "module_id": "ABM::MOD_A",
+      "unit_id": "ABM::MOD_A::U06",
+      "objective_ids": [
+        "ABM::MOD_A::U06::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 112-114, Addition Theorem and corollaries 1 to 7, and Example 1"
+        },
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 113-116, section 6.3 and its examples"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "prerequisite_objective_ids": [
+        "ABM::MOD_A::U06::LO_01"
+      ],
+      "title": "Rejection rate across two branches (total probability)",
+      "core_explanation_md": "Branch A processes 60 per cent of a bank's loan applications and rejects 10 per cent of them; Branch B processes 40 per cent and rejects 20 per cent. What is the probability that a randomly chosen application is rejected?",
+      "worked_steps": [
+        {
+          "step_number": 1,
+          "description": "Branch A path.",
+          "formula_or_substitution": "0.6 x 0.10",
+          "intermediate_result": "0.06"
+        },
+        {
+          "step_number": 2,
+          "description": "Branch B path.",
+          "formula_or_substitution": "0.4 x 0.20",
+          "intermediate_result": "0.08"
+        },
+        {
+          "step_number": 3,
+          "description": "Add the paths that lead to rejection.",
+          "formula_or_substitution": "0.06 + 0.08",
+          "intermediate_result": "0.14"
+        }
+      ],
+      "final_answer_with_unit": "Probability of rejection 0.14, that is 14 per cent",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Why is the overall rate not the plain average of 10 and 20 per cent?",
+        "expected_takeaway": "The branches handle different shares of the applications, so each rate is weighted by its share (60:40), giving 14 and not 15 per cent."
+      },
+      "item_type": "card",
+      "card_type": "worked_example",
+      "id": "item_065b17502cd53fd147cbf3043c9a3a89ecc9a7b9c12602c6851c44c40e0c243b",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABM",
+      "module_id": "ABM::MOD_A",
+      "unit_id": "ABM::MOD_A::U06",
+      "objective_ids": [
+        "ABM::MOD_A::U06::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 113-116, section 6.3 and its examples"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "prerequisite_objective_ids": [
+        "ABM::MOD_A::U06::LO_01"
+      ],
+      "title": "Missing probability, expectation, variance and a linear payoff",
+      "core_explanation_md": "The number X of overdue instalments on a loan has probabilities 0.4, 0.3, 0.2 and 0.1 for X = 0, 1, 2, 3. Find E(X), V(X) and SD, and the mean and standard deviation of the penalty Y = 500X + 100 rupees. Separately, a variable with values 0, 1, 2 has probabilities 2k, 3k and 0.5: find k, E(X), V(X) and the CDF.",
+      "worked_steps": [
+        {
+          "step_number": 1,
+          "description": "Expectation of X.",
+          "formula_or_substitution": "0 x 0.4 + 1 x 0.3 + 2 x 0.2 + 3 x 0.1",
+          "intermediate_result": "1.0"
+        },
+        {
+          "step_number": 2,
+          "description": "Expectation of X squared.",
+          "formula_or_substitution": "0 + 0.3 + 4 x 0.2 + 9 x 0.1",
+          "intermediate_result": "2.0"
+        },
+        {
+          "step_number": 3,
+          "description": "Variance and standard deviation.",
+          "formula_or_substitution": "2.0 - 1.0^2; square root",
+          "intermediate_result": "1.0; 1.0"
+        },
+        {
+          "step_number": 4,
+          "description": "Penalty: mean and standard deviation.",
+          "formula_or_substitution": "500 x 1.0 + 100; 500 x 1.0",
+          "intermediate_result": "Rs 600; Rs 500 (variance 2,50,000)"
+        },
+        {
+          "step_number": 5,
+          "description": "Find k: probabilities must total 1.",
+          "formula_or_substitution": "2k + 3k + 0.5 = 1",
+          "intermediate_result": "k = 0.1, probabilities 0.2, 0.3, 0.5"
+        },
+        {
+          "step_number": 6,
+          "description": "Second variable: E(X), E(X squared), V(X).",
+          "formula_or_substitution": "0.3 + 1.0; 0.3 + 2.0; 2.3 - 1.3^2",
+          "intermediate_result": "1.3; 2.3; 0.61"
+        },
+        {
+          "step_number": 7,
+          "description": "CDF: running totals.",
+          "formula_or_substitution": "0.2; 0.2 + 0.3; 0.5 + 0.5",
+          "intermediate_result": "0.2, 0.5, 1.0"
+        }
+      ],
+      "final_answer_with_unit": "E(X) = 1, V(X) = 1, SD = 1; penalty mean Rs 600 with standard deviation Rs 500. Second variable: k = 0.1, E = 1.3, V = 0.61, CDF 0.2, 0.5, 1.0",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Why does the fixed Rs 100 not change the standard deviation of the penalty?",
+        "expected_takeaway": "Adding a constant shifts every value equally, so the spread about the mean is unchanged; only the multiplier 500 scales it."
+      },
+      "item_type": "card",
+      "card_type": "worked_example",
+      "id": "item_b7fe2138c27eddaa9d8b02310b27a98e28d4664ebb3224ffc2ee8d41ec8da995",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABM",
+      "module_id": "ABM::MOD_A",
+      "unit_id": "ABM::MOD_A::U06",
+      "objective_ids": [
+        "ABM::MOD_A::U06::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed p. 117, section 6.5"
+        },
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 117-119, section 6.6 and Examples 1 and 2"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "easy",
+      "stem_md": "Which situation needs a combination rather than a permutation?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Choosing a chairperson, a secretary and a treasurer from 8 directors",
+          "explanation_md": "The posts are different, so order matters."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Ranking 3 of 8 loan proposals as first, second and third",
+          "explanation_md": "A ranking is an ordered arrangement."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Choosing a committee of 3 from 8 directors, with no posts assigned",
+          "explanation_md": "Only who is in the committee matters, not the order, so a combination."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Seating 8 directors in a row",
+          "explanation_md": "Seating is an arrangement: order matters."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_explanation_md": "A selection in which order is irrelevant is a combination; assigning distinct roles or ranks is a permutation.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_b906bd1871d54a850311b3dc11477d477aeebfa1a766da90a944e14a195dfaf1",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABM",
+      "module_id": "ABM::MOD_A",
+      "unit_id": "ABM::MOD_A::U06",
+      "objective_ids": [
+        "ABM::MOD_A::U06::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 106-107, section 6.1 items 1 and 2 and Examples 1 and 2 (the printed note on P and C has a typographical error)"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "easy",
+      "stem_md": "On one application, \"approved\" and \"rejected\" are the only two outcomes. These events are",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Complementary",
+          "explanation_md": "They cannot occur together and together cover all outcomes."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Independent",
+          "explanation_md": "Knowing one happened settles the other entirely."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Equal in probability",
+          "explanation_md": "Nothing says they are equally likely."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Impossible",
+          "explanation_md": "Each can occur."
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_explanation_md": "Two events that are both mutually exclusive and exhaustive are complementary.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_fc2eea3429bfbbfc697b61c29aa791cba2d789d470e53d0c1659278b513a3507",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABM",
+      "module_id": "ABM::MOD_A",
+      "unit_id": "ABM::MOD_A::U06",
+      "objective_ids": [
+        "ABM::MOD_A::U06::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 107-109, sections 6.1 items 3 to 6"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A loan is classified as \"above Rs 5 lakh\" (event A) or \"Rs 10 lakh or below\" (event B). Which statement is right?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "A and B are mutually exclusive",
+          "explanation_md": "A loan of Rs 7 lakh is in both."
+        },
+        {
+          "option_id": "B",
+          "text_md": "A and B are exhaustive but not mutually exclusive",
+          "explanation_md": "Every loan is in A or B (or both), but some loans are in both."
+        },
+        {
+          "option_id": "C",
+          "text_md": "A and B are complementary",
+          "explanation_md": "Complementary events cannot overlap."
+        },
+        {
+          "option_id": "D",
+          "text_md": "A and B are impossible events",
+          "explanation_md": "Both have loans in them."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_explanation_md": "Every loan falls in at least one of A and B, so they are exhaustive; loans between Rs 5 and 10 lakh belong to both, so they are not mutually exclusive.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_7b8b11d7f4d7e1ee81d82ab7c820d1e7e5c19b811b1aa0407e088f6f3a9391e2",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABM",
+      "module_id": "ABM::MOD_A",
+      "unit_id": "ABM::MOD_A::U06",
+      "objective_ids": [
+        "ABM::MOD_A::U06::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 107-109, sections 6.1 items 3 to 6"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "easy",
+      "stem_md": "On a single throw of a die, the event \"getting a 7\" is",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "A certain event",
+          "explanation_md": "A certain event contains every outcome."
+        },
+        {
+          "option_id": "B",
+          "text_md": "An impossible event, with probability 0",
+          "explanation_md": "A die has no face showing 7, so the event is the empty set."
+        },
+        {
+          "option_id": "C",
+          "text_md": "A complementary event",
+          "explanation_md": "Complementarity needs a pair of events."
+        },
+        {
+          "option_id": "D",
+          "text_md": "An exhaustive event",
+          "explanation_md": "It does not cover the sample space."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_explanation_md": "An event with no favourable outcomes is impossible and has probability zero.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_cd012289d7e3c38b2a1d41c05c4d206d5980a69789e69e3a92656ec6803b7270",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABM",
+      "module_id": "ABM::MOD_A",
+      "unit_id": "ABM::MOD_A::U06",
+      "objective_ids": [
+        "ABM::MOD_A::U06::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 107-109, sections 6.1 items 3 to 6"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Events A and B are independent if",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "P(A and B) = 0",
+          "explanation_md": "That describes mutually exclusive events."
+        },
+        {
+          "option_id": "B",
+          "text_md": "P(A and B) = P(A) x P(B)",
+          "explanation_md": "Independence means the occurrence of one does not affect the other, so the joint probability is the product."
+        },
+        {
+          "option_id": "C",
+          "text_md": "P(A or B) = P(A) + P(B)",
+          "explanation_md": "That holds when the events are mutually exclusive."
+        },
+        {
+          "option_id": "D",
+          "text_md": "P(A) = P(B)",
+          "explanation_md": "Equal probabilities do not mean independence."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_explanation_md": "Independent events satisfy P(A and B) = P(A) P(B).",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_a0c3a273d5caf43cd621a4d568d0407095808de4d5ae85fb00d9ede1b3a1879c",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABM",
+      "module_id": "ABM::MOD_A",
+      "unit_id": "ABM::MOD_A::U06",
+      "objective_ids": [
+        "ABM::MOD_A::U06::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 113-116, section 6.3 and its examples"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "Two events A and B each have a positive probability and are mutually exclusive. Can they also be independent?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Yes, always",
+          "explanation_md": "The product of two positive probabilities is positive, but P(A and B) is zero."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Yes, but only when P(A) = P(B)",
+          "explanation_md": "Equality plays no part."
+        },
+        {
+          "option_id": "C",
+          "text_md": "No: P(A and B) = 0 but P(A) x P(B) is positive",
+          "explanation_md": "If one occurs the other cannot, so they affect each other and cannot be independent."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Only if their union is the sample space",
+          "explanation_md": "That is a different condition."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_explanation_md": "For mutually exclusive events P(A and B) = 0, while independence would require it to equal P(A) P(B), which is positive.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_8e696eb6c6e2dd4510a79eb719654f29b09de534ebc0ac97bc61643a388b6993",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABM",
+      "module_id": "ABM::MOD_A",
+      "unit_id": "ABM::MOD_A::U06",
+      "objective_ids": [
+        "ABM::MOD_A::U06::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 113-116, section 6.3 and its examples"
+        },
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 107-109, sections 6.1 items 3 to 6"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "easy",
+      "stem_md": "For any event A, the probability that A does not occur is",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "P(A) - 1",
+          "explanation_md": "This would be negative."
+        },
+        {
+          "option_id": "B",
+          "text_md": "1 - P(A)",
+          "explanation_md": "The complement rule."
+        },
+        {
+          "option_id": "C",
+          "text_md": "1 / P(A)",
+          "explanation_md": "This is not a probability."
+        },
+        {
+          "option_id": "D",
+          "text_md": "P(A) squared",
+          "explanation_md": "Not a rule."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_explanation_md": "The probability of the complement is 1 - P(A).",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_4722c33eac917edb5af6f548be5b206bbf24f35da679e5ac1ab61b32e329beed",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABM",
+      "module_id": "ABM::MOD_A",
+      "unit_id": "ABM::MOD_A::U06",
+      "objective_ids": [
+        "ABM::MOD_A::U06::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 112-114, Addition Theorem and corollaries 1 to 7, and Example 1"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "easy",
+      "stem_md": "Which is a discrete random variable?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The time a customer waits at a counter",
+          "explanation_md": "Time takes any value in a range: continuous."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The weight of a cash bag",
+          "explanation_md": "Weight is continuous."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The number of cheques returned in a day",
+          "explanation_md": "A count takes separate whole values: discrete."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The percentage return on a portfolio",
+          "explanation_md": "A percentage return can take any value in a range: continuous."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_explanation_md": "A variable that takes a finite or countable set of values, such as a count, is discrete.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_86d4766e6317f2361cb660464b695a8f527ade0586de0204e805935cdc24495e",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABM",
+      "module_id": "ABM::MOD_A",
+      "unit_id": "ABM::MOD_A::U06",
+      "objective_ids": [
+        "ABM::MOD_A::U06::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed p. 116, section 6.4"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "For a continuous random variable, the probability that it equals one exact value such as 50.000 is",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The height of its density at that value",
+          "explanation_md": "A density is not a probability."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Between 0 and 1 but not zero",
+          "explanation_md": "Probability is attached to intervals."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Zero",
+          "explanation_md": "A single point has no width, so the area above it is zero."
+        },
+        {
+          "option_id": "D",
+          "text_md": "One",
+          "explanation_md": "Only a certain event has probability one."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_explanation_md": "For a continuous variable probabilities belong to intervals; the probability of any single value is zero.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_807777bf5f9d377e587768643e4baa23625e95ae562cfcb065d83a5b42eaadb8",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABM",
+      "module_id": "ABM::MOD_A",
+      "unit_id": "ABM::MOD_A::U06",
+      "objective_ids": [
+        "ABM::MOD_A::U06::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed p. 117, section 6.5"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Which of these tables for X = 0, 1, 2, 3 could be a valid probability mass function?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "0.2, 0.3, 0.4, 0.3",
+          "explanation_md": "These add to 1.2."
+        },
+        {
+          "option_id": "B",
+          "text_md": "0.5, 0.3, 0.4, -0.2",
+          "explanation_md": "A probability cannot be negative."
+        },
+        {
+          "option_id": "C",
+          "text_md": "0.1, 0.4, 0.3, 0.1",
+          "explanation_md": "These add to 0.9, not 1."
+        },
+        {
+          "option_id": "D",
+          "text_md": "0.1, 0.4, 0.3, 0.2",
+          "explanation_md": "All are non-negative and they add to 1."
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_explanation_md": "A probability mass function needs non-negative values that total exactly 1.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_5d3109411f43337d39cb29c3710864ae3f16628afd5ea077472a711923c621e1",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABM",
+      "module_id": "ABM::MOD_A",
+      "unit_id": "ABM::MOD_A::U06",
+      "objective_ids": [
+        "ABM::MOD_A::U06::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed p. 117, section 6.5"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Y = 2X + 3. Compared with X, the variance of Y is",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Larger by 3",
+          "explanation_md": "Adding a constant does not change variance."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Four times as large",
+          "explanation_md": "Variance scales by the square of the multiplier: 2 squared = 4."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Twice as large",
+          "explanation_md": "That would be the effect on the standard deviation."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The same",
+          "explanation_md": "The multiplier 2 does change the spread."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_explanation_md": "V(aX + b) = a squared V(X), so multiplying by 2 gives four times the variance and adding 3 has no effect.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_9149725fe7152142cdd858c2a980fcd209282683d174e7d343ddba2b931477d5",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABM",
+      "module_id": "ABM::MOD_A",
+      "unit_id": "ABM::MOD_A::U06",
+      "objective_ids": [
+        "ABM::MOD_A::U06::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 117-119, section 6.6 and Examples 1 and 2"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "Which of these could be the values of a cumulative distribution function F at x = 1, 2, 3, 4?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "0.2, 0.6, 0.5, 1.0",
+          "explanation_md": "F can never decrease, and here it falls from 0.6 to 0.5."
+        },
+        {
+          "option_id": "B",
+          "text_md": "0.2, 0.5, 0.8, 1.0",
+          "explanation_md": "Non-decreasing, between 0 and 1 and ending at 1."
+        },
+        {
+          "option_id": "C",
+          "text_md": "0.3, 0.6, 0.9, 1.2",
+          "explanation_md": "F cannot exceed 1."
+        },
+        {
+          "option_id": "D",
+          "text_md": "0.5, 0.5, 0.5, 0.4",
+          "explanation_md": "F cannot fall to 0.4 and must end at 1."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_explanation_md": "A cumulative distribution function never decreases, stays between 0 and 1 and reaches 1.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_ba5273b0460eb5ba0d4592afd90e20f230693bcfe9a0ff82b685a08bef2e2a51",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABM",
+      "module_id": "ABM::MOD_A",
+      "unit_id": "ABM::MOD_A::U06",
+      "objective_ids": [
+        "ABM::MOD_A::U06::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed p. 117, section 6.5"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "easy",
+      "stem_md": "In how many ways can a committee of 3 be selected from 8 people?",
+      "numeric_rule": {
+        "expected_answer": "56",
+        "unit_label": "ways",
+        "precision_decimals": 0,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Give a whole number.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "C(8, 3) = 8 x 7 x 6 / (3 x 2 x 1) = 56.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "Apply the formula.",
+          "formula_or_substitution": "8 x 7 x 6 / 6",
+          "intermediate_result": "56"
+        }
+      ],
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_0a7d83150f56cd2ba0236d0b892dafb81a269ae321157813680ae6cdabfe2d93",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABM",
+      "module_id": "ABM::MOD_A",
+      "unit_id": "ABM::MOD_A::U06",
+      "objective_ids": [
+        "ABM::MOD_A::U06::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 106-107, section 6.1 items 1 and 2 and Examples 1 and 2 (the printed note on P and C has a typographical error)"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "easy",
+      "stem_md": "In how many ways can the first and second prizes be awarded among 6 branches (one prize per branch)?",
+      "numeric_rule": {
+        "expected_answer": "30",
+        "unit_label": "ways",
+        "precision_decimals": 0,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Give a whole number.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "P(6, 2) = 6 x 5 = 30.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "Permutation.",
+          "formula_or_substitution": "6 x 5",
+          "intermediate_result": "30"
+        }
+      ],
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_a7ef020ac8c3fb4d52269d47e449a3742dabba772d6b9c2c9bdcddcb737abff0",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABM",
+      "module_id": "ABM::MOD_A",
+      "unit_id": "ABM::MOD_A::U06",
+      "objective_ids": [
+        "ABM::MOD_A::U06::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 106-107, section 6.1 items 1 and 2 and Examples 1 and 2 (the printed note on P and C has a typographical error)"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "easy",
+      "stem_md": "Two dice are thrown. What is the probability that the total is 7? (Give the decimal to 4 places.)",
+      "numeric_rule": {
+        "expected_answer": "0.1667",
+        "unit_label": "probability",
+        "precision_decimals": 4,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Give the answer to 4 decimal places.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "Six of the 36 outcomes give a total of 7, so the probability is 6/36 = 0.1667.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "Favourable over possible.",
+          "formula_or_substitution": "6 / 36",
+          "intermediate_result": "0.1667"
+        }
+      ],
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_f2947110d55f0179c71d2ab7dc50f0fb6e3793fde0b99a9e68dbb26e12ff17b7",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABM",
+      "module_id": "ABM::MOD_A",
+      "unit_id": "ABM::MOD_A::U06",
+      "objective_ids": [
+        "ABM::MOD_A::U06::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 109-111, section 6.2 and Examples 1 to 3"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Three fair coins are tossed. What is the probability of getting at least one head?",
+      "numeric_rule": {
+        "expected_answer": "0.875",
+        "unit_label": "probability",
+        "precision_decimals": 3,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Give the answer to 3 decimal places.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "There are 8 equally likely outcomes and only TTT has no head, so P = 1 - 1/8 = 7/8 = 0.875.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "Complement.",
+          "formula_or_substitution": "1 - 1/8",
+          "intermediate_result": "0.875"
+        }
+      ],
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_6fcf41651a62f28fd8de23018fa69e7b3e5017796c8e642d4a547312fd91f217",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABM",
+      "module_id": "ABM::MOD_A",
+      "unit_id": "ABM::MOD_A::U06",
+      "objective_ids": [
+        "ABM::MOD_A::U06::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 109-111, section 6.2 and Examples 1 to 3"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "easy",
+      "stem_md": "P(A) = 0.5, P(B) = 0.4 and P(A and B) = 0.2. What is P(A or B)?",
+      "numeric_rule": {
+        "expected_answer": "0.70",
+        "unit_label": "probability",
+        "precision_decimals": 2,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Give the answer to 2 decimal places.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "P(A or B) = 0.5 + 0.4 - 0.2 = 0.70.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "Addition rule.",
+          "formula_or_substitution": "0.5 + 0.4 - 0.2",
+          "intermediate_result": "0.70"
+        }
+      ],
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_a5f92d6ffa0237607e1804018190c536d0ef88ec96b83caaaf886d8e8fdf7546",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABM",
+      "module_id": "ABM::MOD_A",
+      "unit_id": "ABM::MOD_A::U06",
+      "objective_ids": [
+        "ABM::MOD_A::U06::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 112-114, Addition Theorem and corollaries 1 to 7, and Example 1"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "easy",
+      "stem_md": "P(A) = 0.5 and P(A and B) = 0.3. What is P(B given A)?",
+      "numeric_rule": {
+        "expected_answer": "0.60",
+        "unit_label": "probability",
+        "precision_decimals": 2,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Give the answer to 2 decimal places.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "P(B | A) = 0.3 / 0.5 = 0.60.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "Divide.",
+          "formula_or_substitution": "0.3 / 0.5",
+          "intermediate_result": "0.60"
+        }
+      ],
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_7691c822053d8e24750a464b8443d3aa4d65255d3ee847d69fec79abb877f581",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABM",
+      "module_id": "ABM::MOD_A",
+      "unit_id": "ABM::MOD_A::U06",
+      "objective_ids": [
+        "ABM::MOD_A::U06::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 113-116, section 6.3 and its examples"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A and B are independent with P(A) = 0.3 and P(B) = 0.5. What is the probability that at least one occurs?",
+      "numeric_rule": {
+        "expected_answer": "0.65",
+        "unit_label": "probability",
+        "precision_decimals": 2,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Give the answer to 2 decimal places.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "P(both) = 0.3 x 0.5 = 0.15, so P(at least one) = 0.3 + 0.5 - 0.15 = 0.65.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "Joint probability.",
+          "formula_or_substitution": "0.3 x 0.5",
+          "intermediate_result": "0.15"
+        },
+        {
+          "step_number": 2,
+          "description": "Addition rule.",
+          "formula_or_substitution": "0.3 + 0.5 - 0.15",
+          "intermediate_result": "0.65"
+        }
+      ],
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_ba7e2080a7408e76ba59a56139e166ac38ca2469291c1a76d5edcbe3ddb49fb9",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABM",
+      "module_id": "ABM::MOD_A",
+      "unit_id": "ABM::MOD_A::U06",
+      "objective_ids": [
+        "ABM::MOD_A::U06::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 113-116, section 6.3 and its examples"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "easy",
+      "stem_md": "The odds against a stock price rising are 3 to 2. What is the probability that it rises?",
+      "numeric_rule": {
+        "expected_answer": "0.40",
+        "unit_label": "probability",
+        "precision_decimals": 2,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Give the answer to 2 decimal places.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "Odds against 3 to 2 mean 3 parts against and 2 parts for, so P(rise) = 2/5 = 0.40.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "Parts in favour over total parts.",
+          "formula_or_substitution": "2 / (3 + 2)",
+          "intermediate_result": "0.40"
+        }
+      ],
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_b73ef527dc715882ebba8fa4140aadd96499e55e499ebf3630f8c570e9d2293f",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABM",
+      "module_id": "ABM::MOD_A",
+      "unit_id": "ABM::MOD_A::U06",
+      "objective_ids": [
+        "ABM::MOD_A::U06::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 113-116, section 6.3 and its examples"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "easy",
+      "stem_md": "X takes the values 10, 20 and 30 with probabilities 0.2, 0.5 and 0.3. What is E(X)?",
+      "numeric_rule": {
+        "expected_answer": "21",
+        "unit_label": "units",
+        "precision_decimals": 0,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Give a whole number.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "E(X) = 10 x 0.2 + 20 x 0.5 + 30 x 0.3 = 2 + 10 + 9 = 21.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "Weighted sum.",
+          "formula_or_substitution": "2 + 10 + 9",
+          "intermediate_result": "21"
+        }
+      ],
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_220ba4a432452a758cc48ca6d69f9fa53904f1f98a3280e41fed9d34a03a6db7",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABM",
+      "module_id": "ABM::MOD_A",
+      "unit_id": "ABM::MOD_A::U06",
+      "objective_ids": [
+        "ABM::MOD_A::U06::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 117-119, section 6.6 and Examples 1 and 2"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "For the same X (values 10, 20, 30 with probabilities 0.2, 0.5, 0.3), what is the variance V(X)?",
+      "numeric_rule": {
+        "expected_answer": "49",
+        "unit_label": "units squared",
+        "precision_decimals": 0,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Give a whole number.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "E(X squared) = 100 x 0.2 + 400 x 0.5 + 900 x 0.3 = 20 + 200 + 270 = 490, and V(X) = 490 - 21 squared = 490 - 441 = 49.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "E(X squared).",
+          "formula_or_substitution": "20 + 200 + 270",
+          "intermediate_result": "490"
+        },
+        {
+          "step_number": 2,
+          "description": "Subtract the square of the mean.",
+          "formula_or_substitution": "490 - 441",
+          "intermediate_result": "49"
+        }
+      ],
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_28fda36db54a1e7745e30a38b645b0022f68e4d2f62f9035dd3952013bd57d81",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABM",
+      "module_id": "ABM::MOD_A",
+      "unit_id": "ABM::MOD_A::U06",
+      "objective_ids": [
+        "ABM::MOD_A::U06::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 117-119, section 6.6 and Examples 1 and 2"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "easy",
+      "stem_md": "E(X) = 21 and V(X) = 49. What is E(2X + 3)?",
+      "numeric_rule": {
+        "expected_answer": "45",
+        "unit_label": "units",
+        "precision_decimals": 0,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Give a whole number.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "E(2X + 3) = 2 x 21 + 3 = 45.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "Linear change.",
+          "formula_or_substitution": "2 x 21 + 3",
+          "intermediate_result": "45"
+        }
+      ],
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_25c29e7086229e7f834ce507c8ee6220d4013b3aaf71c87f6243ccc06b72eb88",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABM",
+      "module_id": "ABM::MOD_A",
+      "unit_id": "ABM::MOD_A::U06",
+      "objective_ids": [
+        "ABM::MOD_A::U06::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 117-119, section 6.6 and Examples 1 and 2"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "V(X) = 49. What is V(3X + 5)?",
+      "numeric_rule": {
+        "expected_answer": "441",
+        "unit_label": "units squared",
+        "precision_decimals": 0,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Give a whole number.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "V(3X + 5) = 3 squared x 49 = 441; the constant 5 does not matter.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "Square the multiplier.",
+          "formula_or_substitution": "9 x 49",
+          "intermediate_result": "441"
+        }
+      ],
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_8e44e7b41bb15e1832016eb89fd8f8811e1aa35f621f302392ee93cd5183c7d9",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABM",
+      "module_id": "ABM::MOD_A",
+      "unit_id": "ABM::MOD_A::U06",
+      "objective_ids": [
+        "ABM::MOD_A::U06::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 117-119, section 6.6 and Examples 1 and 2"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

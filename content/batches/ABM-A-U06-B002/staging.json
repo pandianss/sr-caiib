@@ -1,0 +1,1766 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "ABM-A-U06-B002",
+  "paper_id": "ABM",
+  "unit_label": "Module A unit 6 (part 2): Theory of Probability: binomial, Poisson and normal distributions, credit risk, value at risk, option valuation",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S01"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "statement": "A random variable X counting successes in n repeated independent trials with success probability p at each trial follows a binomial distribution: f(x) = C(n, x) p^x q^(n-x) for x = 0, 1, ..., n, with q = 1 - p. Mean = np, variance = npq, skewness measure = (1 - 2p)^2 / (npq) and kurtosis measure = 3 + (1 - 6pq) / (npq). The distribution is symmetric if p = q = 0.5, positively skewed if p < 0.5 and negatively skewed if p > 0.5. For the mode let M = (n + 1) p: if M is not an integer the mode is its integral part, and if M is an integer there are two modes, M - 1 and M. Courseware examples: n = 8, p = 1/2 gives P(|X - 4| <= 2) = 119/128; n = 60, p = 0.7 gives mean 42, variance 12.6, standard deviation 3.55 and mode 42.",
+      "source_id": "S01",
+      "locator": "Printed pp. 120-121, section 6.7 (the courseware states the integer-M rule inconsistently as \"M - 2 and M\" and \"M - 1 and M\")",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F002",
+      "statement": "A random variable X taking the values 0, 1, 2, ... is a Poisson random variable with parameter lambda > 0 if f(x) = e^(-lambda) lambda^x / x!, where e is about 2.7183. Examples: misprints on a page, wrong telephone numbers dialled in a day, customers entering a post office in a day. Mean = lambda and variance = lambda; skewness measure = 1/lambda and kurtosis measure = 3 + 1/lambda. The mode is the integral part of lambda if lambda is not an integer, and there are two modes, lambda - 1 and lambda, if it is. Courseware examples: lambda = 1.8 gives P(X = 4) = 0.0723 and P(X >= 2) = 0.538 as printed (0.5372 when recomputed); lambda = 0.5 (accidents per week) gives P(X < 2) = 0.9098, P(X > 2) = 0.0144 and P(no accident in three weeks) = 0.223; for 1.2 misprints a page, ten pages have total mean 12 and P(total = 5) = 0.0127.",
+      "source_id": "S01",
+      "locator": "Printed pp. 122-124, section 6.8",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F003",
+      "statement": "The normal distribution has the bell-shaped, symmetric density f(x) = (1 / (sigma sqrt(2 pi))) e^(-(x - mu)^2 / (2 sigma^2)) with parameters mu and sigma squared; the total area is 1, mean = median = mode = mu, the quartile deviation is 0.6745 sigma and the mean deviation 0.7979 sigma. With mu = 0 and sigma squared = 1 the variable is the standard normal Z. A normal variable is standardised by Z = (X - mu) / sigma. Courseware examples: incomes N(800, 400) for 1,000 employees give P(750 < x < 820) = 0.3413 + 0.4938 = 0.8351, P(x > 760) = 0.9772; a battery life N(50, 9) gives P(x > 53) = 0.5 - 0.3413 = 0.1587 and P(53 < x < 55) = 0.4525 - 0.3413 = 0.1112.",
+      "source_id": "S01",
+      "locator": "Printed pp. 124-125, section 6.9",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F004",
+      "statement": "Credit risk is the possibility or probability of a loss from a borrower's failure to repay a loan or meet contractual obligations. Three types: credit default risk (loss when the borrower cannot repay in full or when 90 days pass after the due date), concentration risk (arising from significant exposure to one individual, group, company or industry, which can inflict large losses on the core operations of a bank) and country or sovereign risk (a government or central bank unwilling or unable to meet its contractual obligations).",
+      "source_id": "S01",
+      "locator": "Printed p. 126, section 6.10",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F005",
+      "statement": "To estimate expected loss in advance a lender uses the exposure at default (EAD, the value of the loan at default), the probability of default (PD) and the loss given default (LGD, the part of the loan that would be lost if default occurs even though some may be recovered). The courseware prints the formula as Expected loss = PD x EAD x (1 - LGD); its Problem 1 (EAD Rs 20,00,000, PD 100 per cent, LGD 50 per cent) gives Rs 10,00,000 and its Problem 2 (EAD Rs 35,00,000, PD 0.20 per cent, LGD 57 per cent) gives Rs 3,010 by that formula. Since the text defines LGD as the part lost, the usual form is Expected loss = PD x LGD x EAD, which gives Rs 3,990 for Problem 2.",
+      "source_id": "S01",
+      "locator": "Printed pp. 126-127, section 6.10 (the printed formula uses 1 - LGD, which conflicts with the definition of LGD in the same passage)",
+      "regulatory_sensitive": false,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F006",
+      "statement": "Value at risk (VaR) is a financial metric that estimates the maximum amount a portfolio could lose over a specified period at a stated level of confidence, such as 95 or 99 per cent. The courseware's formulas are VaR at 95 per cent = [return of the portfolio - 1.65 sigma] x value of the portfolio and VaR at 99 per cent = [return - 2.33 sigma] x value, assuming stock returns are normally distributed with sigma the standard deviation of the returns. Its examples: portfolio Rs 30,000, return 10 per cent and standard deviation 12 per cent, VaR at 95 per cent = (0.10 - 0.198) x 30,000 = -2,940 (9.8 per cent of the portfolio); portfolio Rs 2,50,000, return 15 per cent, standard deviation 10 per cent, VaR at 99 per cent = (0.15 - 0.233) x 2,50,000 = -20,750 (8.3 per cent).",
+      "source_id": "S01",
+      "locator": "Printed pp. 127-128, section 6.11 (the courseware calls the figures \"daily\" although its inputs are one-month returns)",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F007",
+      "statement": "An option gives its holder the right, with no obligation, to buy (call) or sell (put) the underlying asset at a predetermined price on or before a predetermined date; the person who writes the option is obliged to sell or buy if it is exercised. The predetermined price is the strike or exercise price and the date is the maturity date. A European option can be exercised only on the maturity date, an American option on or before it. The price paid for the option is its premium or value.",
+      "source_id": "S01",
+      "locator": "Printed p. 129, section 6.12",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F008",
+      "statement": "Factors affecting option price: a higher strike price lowers the call price and raises the put price; a longer time to maturity raises both call and put prices; a higher stock price raises the call price and lowers the put price; a higher risk-free interest rate raises the call price and lowers the put price; higher volatility of the underlying raises both. The value on the date of maturity is the intrinsic value, and before maturity an option also carries time value that falls as maturity approaches.",
+      "source_id": "S01",
+      "locator": "Printed pp. 129-131, section 6.12",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F009",
+      "statement": "An option's value cannot be negative. A call is worth at least the stock price minus the present value of the strike price, so C >= max[0, PP - PV(SP)]; a put is worth at least PV(SP) - PP. The binomial option pricing model assumes prices move at discrete intervals, going up by u per cent or down by d per cent at each interval with probability p and 1 - p, over n intervals, so the number of upward moves follows a binomial distribution. The Black-Scholes model assumes prices move continuously and returns are normally distributed: C = N(d1) S - N(d2) K e^(-r(T - t)), with d1 = [ln(S/K) + (r + sigma^2/2)(T - t)] / (sigma sqrt(T - t)) and d2 = d1 - sigma sqrt(T - t), N being the standard normal cumulative distribution; the put follows from put-call parity, P = K e^(-r(T - t)) - S + C. Option traders buy options priced below the model value and sell those priced above it.",
+      "source_id": "S01",
+      "locator": "Printed pp. 130-132, section 6.12",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    }
+  ],
+  "drafts": [
+    {
+      "draft_id": "D001",
+      "item_type": "card",
+      "variant": "formula",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "The binomial distribution",
+        "core_explanation_md": "Use the binomial when you count **successes** in a **fixed number n of independent trials**, each with the **same success probability p**. Typical bank cases: the number of loans, out of 20, that go bad, if each does so independently with probability 0.05; the number of cheques, out of 50, returned.\n\nThe chance of exactly x successes is the number of ways to place them times the probability of each such sequence: C(n, x) p to the x times q to the (n - x), where q = 1 - p.\n\nHandy summary figures: mean np, variance npq. The **mode** is the whole-number part of (n + 1)p; if (n + 1)p is itself a whole number there are two modes, one below it.",
+        "expanded_explanation_md": "Check the conditions before using it. If trials influence one another, or p changes from trial to trial, the binomial formula will give wrong probabilities.",
+        "formula_spec": {
+          "latex_expression": "P(X=x) = \\binom{n}{x}p^x q^{n-x},\\quad E(X) = np,\\quad V(X) = npq,\\quad M = (n+1)p",
+          "variables": [
+            {
+              "symbol": "n",
+              "name": "Number of independent trials",
+              "unit": "count"
+            },
+            {
+              "symbol": "p",
+              "name": "Probability of success in each trial",
+              "unit": "pure number"
+            },
+            {
+              "symbol": "q",
+              "name": "1 - p",
+              "unit": "pure number"
+            },
+            {
+              "symbol": "x",
+              "name": "Number of successes",
+              "unit": "count"
+            }
+          ],
+          "assumptions": [
+            "Fixed number of trials.",
+            "Each trial has two outcomes, success or failure.",
+            "Trials are independent with constant p."
+          ],
+          "common_errors": [
+            "Using the binomial when p changes between trials.",
+            "Forgetting the combination factor C(n, x).",
+            "Reporting only the integral part of M when M is an integer (there are two modes, M - 1 and M)."
+          ]
+        },
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "n = 10 and p = 0.2. What are the mean, the variance and the mode?",
+          "expected_takeaway": "Mean 2, variance 1.6, M = 11 x 0.2 = 2.2 so the mode is 2."
+        }
+      }
+    },
+    {
+      "draft_id": "D002",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "Shape of a binomial distribution",
+        "core_explanation_md": "The shape follows p:\n\n| p | Shape |\n| --- | --- |\n| Less than 0.5 | Positively skewed (long right tail): small counts are the most likely |\n| Exactly 0.5 | Symmetric |\n| More than 0.5 | Negatively skewed (long left tail): large counts are the most likely |\n\nThe courseware measures skewness as (1 - 2p) squared over npq, which is zero only when p is 0.5, and kurtosis as 3 + (1 - 6pq)/npq, which moves towards 3 as n grows.",
+        "expanded_explanation_md": "The sign of the skew is read from p. The squared skewness measure given in the courseware cannot itself be negative, so it shows how much asymmetry there is rather than which way.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Each of 60 loans repays with probability 0.7. Is the distribution of the number repaying skewed to the left or the right?",
+          "expected_takeaway": "Negatively skewed (long left tail), because p = 0.7 is above 0.5."
+        }
+      }
+    },
+    {
+      "draft_id": "D003",
+      "item_type": "card",
+      "variant": "formula",
+      "fact_ids": [
+        "F002"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "The Poisson distribution",
+        "core_explanation_md": "The Poisson distribution counts how many times something happens in a **fixed interval** (a day, a page, a week) when the events occur at random at an **average rate lambda** per interval: misprints per page, wrong numbers dialled per day, customers arriving per hour.\n\nThe chance of exactly x events is e to the minus lambda times lambda to the x, divided by x factorial.\n\nTwo remarkable facts: the **mean and the variance are both lambda**, and for several independent intervals the total is Poisson too, with the rates added (ten pages at 1.2 misprints each give a rate of 12).\n\nThe mode is the whole-number part of lambda, or two modes (lambda - 1 and lambda) if lambda is a whole number.",
+        "expanded_explanation_md": "For \"at least\" questions use the complement: P(X at least 2) = 1 - P(0) - P(1). Summing infinitely many terms is never needed.",
+        "formula_spec": {
+          "latex_expression": "P(X=x) = \\frac{e^{-\\lambda}\\lambda^x}{x!},\\quad E(X) = V(X) = \\lambda",
+          "variables": [
+            {
+              "symbol": "lambda",
+              "name": "Average number of events per interval",
+              "unit": "events per interval"
+            },
+            {
+              "symbol": "x",
+              "name": "Number of events",
+              "unit": "count"
+            },
+            {
+              "symbol": "e",
+              "name": "Euler constant, about 2.71828",
+              "unit": "pure number"
+            }
+          ],
+          "assumptions": [
+            "Events occur randomly and independently at a constant average rate.",
+            "The interval for lambda matches the interval being asked about."
+          ],
+          "common_errors": [
+            "Using a weekly rate for a monthly question without rescaling lambda.",
+            "Computing \"at least\" probabilities by adding terms instead of using the complement.",
+            "Thinking the variance differs from the mean."
+          ]
+        },
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "A branch averages 2.5 failed transactions an hour. What is the rate for a 2-hour period?",
+          "expected_takeaway": "lambda = 5, because rates for independent intervals add."
+        }
+      }
+    },
+    {
+      "draft_id": "D004",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F001",
+        "F002",
+        "F003"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "Which distribution fits the question?",
+        "core_explanation_md": "Three questions pick the model.\n\n| Ask | Binomial | Poisson | Normal |\n| --- | --- | --- | --- |\n| What is counted or measured? | Successes in n trials | Events in an interval | A measurement on a continuous scale |\n| Is there a fixed number of trials? | Yes (n) | No upper limit | Not applicable |\n| Parameters | n and p | lambda | mu and sigma |\n| Mean and variance | np and npq | Both lambda | mu and sigma squared |\n\nExamples: loans out of 20 that default (binomial); wrong numbers dialled in a day (Poisson); daily cash demand in rupees (normal).",
+        "expanded_explanation_md": "The first two give probabilities for exact counts (a mass function). The normal gives probabilities for ranges (areas under a density), and the chance of exactly one value is zero.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Which model for \"the number of customers arriving at a counter in a given hour\"?",
+          "expected_takeaway": "Poisson: events counted in a fixed interval at an average rate."
+        }
+      }
+    },
+    {
+      "draft_id": "D005",
+      "item_type": "card",
+      "variant": "formula",
+      "fact_ids": [
+        "F003"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "The normal distribution and standardising",
+        "core_explanation_md": "The normal curve is a symmetric bell. Its centre is the mean, which also equals the median and the mode, and the total area under it is 1. Two numbers fix it: the mean mu and the standard deviation sigma. About half of the data lie on each side of the mean.\n\nTo find a probability, **standardise**: Z = (X - mu) / sigma tells you how many standard deviations X is from the mean. Then use the standard normal table of areas between 0 and z:\n\n- values on opposite sides of the mean: add the two areas;\n- values on the same side: subtract the smaller from the larger;\n- tails: take 0.5 minus the area from 0 to z.",
+        "expanded_explanation_md": "For a normal variable the quartile deviation is about 0.6745 sigma and the mean deviation about 0.7979 sigma, a quick check when someone quotes figures for a normal data set.",
+        "formula_spec": {
+          "latex_expression": "Z = \\frac{X - \\mu}{\\sigma},\\quad Z \\sim N(0, 1),\\quad \\text{mean} = \\text{median} = \\text{mode} = \\mu",
+          "variables": [
+            {
+              "symbol": "mu",
+              "name": "Mean of X",
+              "unit": "units of X"
+            },
+            {
+              "symbol": "sigma",
+              "name": "Standard deviation of X",
+              "unit": "units of X"
+            },
+            {
+              "symbol": "Z",
+              "name": "Standardised value",
+              "unit": "standard deviations"
+            }
+          ],
+          "assumptions": [
+            "X is normally distributed.",
+            "The variance is given as sigma squared (take the square root for sigma)."
+          ],
+          "common_errors": [
+            "Using the variance in place of the standard deviation in Z.",
+            "Adding areas for two z values on the same side of zero.",
+            "Treating P(X = a) as non-zero."
+          ]
+        },
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "X is normal with mean 200 and variance 1,600. What is the z value of x = 260?",
+          "expected_takeaway": "sigma = 40, so z = 60/40 = 1.5."
+        }
+      }
+    },
+    {
+      "draft_id": "D006",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "Credit risk and its three faces",
+        "core_explanation_md": "**Credit risk** is the chance of a loss because a borrower does not pay as promised. Three types appear in this course:\n\n| Type | What goes wrong | Warning sign |\n| --- | --- | --- |\n| **Credit default risk** | Borrower cannot repay in full, or is 90 days past due | Overdue instalments |\n| **Concentration risk** | Too much exposure to one borrower, group or industry | One failure hurts the whole bank |\n| **Country (sovereign) risk** | A government or central bank cannot or will not meet its obligations | Lending to a state in distress |\n\nProbability theory enters because default is uncertain: lenders estimate a **probability of default** and use it to price and provision.",
+        "expanded_explanation_md": "Concentration risk is about size, not about whether any one borrower is weak. A large exposure to a healthy borrower is still a concentration.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "A bank lends 40 per cent of its portfolio to one steel group. Which credit risk is this?",
+          "expected_takeaway": "Concentration risk: significant exposure to a single group or industry."
+        }
+      }
+    },
+    {
+      "draft_id": "D007",
+      "item_type": "card",
+      "variant": "formula",
+      "fact_ids": [
+        "F005"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "Expected loss = PD x LGD x EAD",
+        "core_explanation_md": "To decide in advance how much to expect to lose on a loan, combine three estimates:\n\n- **EAD**, exposure at default: how much is owed when default happens;\n- **PD**, probability of default: how likely default is over the period;\n- **LGD**, loss given default: the **share** of the exposure that would be lost (not recovered).\n\nExpected loss is PD times EAD times LGD. If you are told the **recovery rate** instead, LGD = 1 - recovery rate.\n\nExample: EAD Rs 35,00,000, PD 0.20 per cent, LGD 57 per cent gives 0.0020 x 35,00,000 x 0.57 = Rs 3,990.",
+        "expanded_explanation_md": "The courseware prints the formula as PD x EAD x (1 - LGD) and gets Rs 3,010 for the example above. That factor (1 - LGD) is the share *recovered*, which conflicts with its own definition of LGD as the part lost. If a question is set from the book, check what the setter intends; this course teaches the standard form.",
+        "formula_spec": {
+          "latex_expression": "EL = PD \\times EAD \\times LGD,\\qquad LGD = 1 - \\text{recovery rate}",
+          "variables": [
+            {
+              "symbol": "PD",
+              "name": "Probability of default over the period",
+              "unit": "pure number"
+            },
+            {
+              "symbol": "EAD",
+              "name": "Exposure at default",
+              "unit": "rupees"
+            },
+            {
+              "symbol": "LGD",
+              "name": "Loss given default as a share of EAD",
+              "unit": "pure number"
+            },
+            {
+              "symbol": "EL",
+              "name": "Expected loss",
+              "unit": "rupees"
+            }
+          ],
+          "assumptions": [
+            "PD, LGD and EAD refer to the same loan and period.",
+            "LGD is the share lost, not the share recovered."
+          ],
+          "common_errors": [
+            "Multiplying by (1 - LGD) when LGD already is the share lost.",
+            "Using LGD in per cent without converting to a fraction.",
+            "Mixing a monthly PD with an annual exposure."
+          ]
+        },
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "EAD Rs 10,00,000, PD 5 per cent and recovery rate 75 per cent. Expected loss?",
+          "expected_takeaway": "LGD = 25 per cent, so EL = 0.05 x 10,00,000 x 0.25 = Rs 12,500."
+        }
+      }
+    },
+    {
+      "draft_id": "D008",
+      "item_type": "card",
+      "variant": "formula",
+      "fact_ids": [
+        "F006"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "Value at risk for a normal portfolio",
+        "core_explanation_md": "**Value at risk** answers: \"over a stated period, with a stated level of confidence, how much could the portfolio lose?\" If returns are normal with mean r and standard deviation sigma:\n\n- at **95 per cent** confidence, the worst return is r minus 1.65 sigma;\n- at **99 per cent**, it is r minus 2.33 sigma.\n\nMultiply that worst return by the portfolio value. A negative answer is a loss, and VaR is usually quoted as the size of that loss.\n\nThe period of the return and of sigma sets the period of the VaR: monthly inputs give a monthly VaR.",
+        "expanded_explanation_md": "The multipliers come from the normal curve: 1.65 leaves about 5 per cent in the lower tail (exactly 1.645) and 2.33 about 1 per cent (exactly 2.326). The method assumes returns really are normal, which is a strong assumption in a crisis.",
+        "formula_spec": {
+          "latex_expression": "VaR_{95\\%} = (r - 1.65\\sigma)\\times V,\\qquad VaR_{99\\%} = (r - 2.33\\sigma)\\times V",
+          "variables": [
+            {
+              "symbol": "r",
+              "name": "Mean return for the period",
+              "unit": "fraction"
+            },
+            {
+              "symbol": "sigma",
+              "name": "Standard deviation of returns for the period",
+              "unit": "fraction"
+            },
+            {
+              "symbol": "V",
+              "name": "Portfolio value",
+              "unit": "rupees"
+            }
+          ],
+          "assumptions": [
+            "Returns are normally distributed.",
+            "r and sigma are for the same period as the VaR."
+          ],
+          "common_errors": [
+            "Using the 95 per cent multiplier for a 99 per cent VaR.",
+            "Mixing a daily sigma with a monthly return.",
+            "Quoting the negative number as a gain."
+          ]
+        },
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Portfolio Rs 2,00,000, mean return 6 per cent, sigma 5 per cent. What is the 95 per cent loss?",
+          "expected_takeaway": "(0.06 - 1.65 x 0.05) x 2,00,000 = -4,500: a possible loss of Rs 4,500."
+        }
+      }
+    },
+    {
+      "draft_id": "D009",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F007"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "Options: the words you need",
+        "core_explanation_md": "An **option** is a right, not an obligation.\n\n| Term | Meaning |\n| --- | --- |\n| **Call** | The right to **buy** the underlying at a fixed price |\n| **Put** | The right to **sell** the underlying at a fixed price |\n| **Holder** (buyer) | Has the right and pays the premium |\n| **Writer** (seller) | Must deliver or buy if the holder exercises |\n| **Strike (exercise) price** | The fixed price in the contract |\n| **Maturity date** | The last day (or only day) the option can be exercised |\n| **European / American** | European: exercise only at maturity. American: any time up to maturity |\n| **Premium** | The price of the option |\n\nA forward contract commits both sides; an option lets the holder walk away if the market price is more favourable.",
+        "expanded_explanation_md": "If the market price beats the strike, a call holder exercises and buys cheaply; if not, the option expires worthless and the holder loses only the premium.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Who is obliged to act if an option is exercised, the holder or the writer?",
+          "expected_takeaway": "The writer: the holder has only a right."
+        }
+      }
+    },
+    {
+      "draft_id": "D010",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F008"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "What moves an option's price",
+        "core_explanation_md": "Five factors, and how a **rise** in each affects the price:\n\n| Factor rises | Call price | Put price |\n| --- | --- | --- |\n| Strike price | Falls | Rises |\n| Time to maturity | Rises | Rises |\n| Stock (underlying) price | Rises | Falls |\n| Risk-free interest rate | Rises | Falls |\n| Volatility | Rises | Rises |\n\nWhy volatility helps both: the holder is protected against bad moves (can walk away) but gains from favourable ones, so more uncertainty adds value to either right. Why time helps both: more time means more chance of a favourable move.",
+        "expanded_explanation_md": "Before maturity an option has **time value** on top of its intrinsic value (the difference between stock and strike, if favourable). Time value shrinks to zero at maturity.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "A stock's volatility doubles. What happens to the call and put prices?",
+          "expected_takeaway": "Both rise, because greater uncertainty makes either right more valuable."
+        }
+      }
+    },
+    {
+      "draft_id": "D011",
+      "item_type": "card",
+      "variant": "formula",
+      "fact_ids": [
+        "F009"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "Option value bounds and the two pricing models",
+        "core_explanation_md": "An option never has negative value, and arbitrage fixes a floor:\n\n- **Call**: worth at least the stock price minus the **present value** of the strike, and never less than zero: max[0, S - PV(K)].\n- **Put**: worth at least PV(K) - S (or zero).\n\nTwo models give the exact price.\n\n- **Binomial model**: price moves at discrete steps, up or down by set percentages with probabilities p and 1 - p; the number of up moves is binomial.\n- **Black-Scholes model**: price moves continuously and returns are normal; the call value uses the standard normal cumulative N(d1) and N(d2) with d1 and d2 built from the stock price, strike, rate, volatility and time.\n\nThe put follows from put-call parity: P = K e to the minus r(T - t) minus S plus C.",
+        "expanded_explanation_md": "A trader compares the market price with the model value: buy options priced below it, sell those priced above. The details of the formulas are beyond hand calculation; understand the inputs and the direction of each effect.",
+        "formula_spec": {
+          "latex_expression": "C \\ge \\max[0,\\ S - PV(K)],\\quad P \\ge PV(K) - S,\\quad C = N(d_1)S - N(d_2)Ke^{-r(T-t)},\\quad P = Ke^{-r(T-t)} - S + C",
+          "variables": [
+            {
+              "symbol": "S",
+              "name": "Present stock price",
+              "unit": "rupees"
+            },
+            {
+              "symbol": "K",
+              "name": "Strike price",
+              "unit": "rupees"
+            },
+            {
+              "symbol": "PV(K)",
+              "name": "Present value of the strike, K discounted at the risk-free rate",
+              "unit": "rupees"
+            },
+            {
+              "symbol": "r, sigma, T - t",
+              "name": "Risk-free rate, volatility and time to expiry",
+              "unit": "per year, per year, years"
+            },
+            {
+              "symbol": "N(.)",
+              "name": "Standard normal cumulative distribution",
+              "unit": "probability"
+            }
+          ],
+          "assumptions": [
+            "Black-Scholes: continuously moving prices and normally distributed returns.",
+            "The bounds hold for the stated option style and no arbitrage."
+          ],
+          "common_errors": [
+            "Using the strike price instead of its present value in the bound.",
+            "Forgetting the floor at zero.",
+            "Using N(d2) in place of N(-d2) when writing the put directly (use put-call parity)."
+          ]
+        },
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Stock Rs 120, strike Rs 100, discount factor 1/1.05. What is the lower bound for the call?",
+          "expected_takeaway": "PV(K) = 95.24, so the bound is 120 - 95.24 = 24.76."
+        }
+      }
+    },
+    {
+      "draft_id": "D012",
+      "item_type": "card",
+      "variant": "worked_example",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [
+          "ABM::MOD_A::U06::LO_01"
+        ],
+        "title": "Defaults among ten loans",
+        "core_explanation_md": "A bank has 10 independent loans, each with a 0.2 probability of defaulting. Find P(exactly 2 default), P(at most 1 defaults), the mean, the variance and the mode.",
+        "worked_steps": [
+          {
+            "step_number": 1,
+            "description": "Number of ways to choose the two defaulters.",
+            "formula_or_substitution": "C(10, 2)",
+            "intermediate_result": "45"
+          },
+          {
+            "step_number": 2,
+            "description": "Probability of exactly 2.",
+            "formula_or_substitution": "45 x 0.2^2 x 0.8^8 = 45 x 0.04 x 0.16777",
+            "intermediate_result": "0.3020"
+          },
+          {
+            "step_number": 3,
+            "description": "P(0) and P(1).",
+            "formula_or_substitution": "0.8^10; 10 x 0.2 x 0.8^9",
+            "intermediate_result": "0.1074; 0.2684"
+          },
+          {
+            "step_number": 4,
+            "description": "P(at most 1).",
+            "formula_or_substitution": "P(0) + P(1)",
+            "intermediate_result": "0.3758"
+          },
+          {
+            "step_number": 5,
+            "description": "Mean and variance.",
+            "formula_or_substitution": "10 x 0.2; 10 x 0.2 x 0.8",
+            "intermediate_result": "2; 1.6"
+          },
+          {
+            "step_number": 6,
+            "description": "Mode: M = (n + 1)p = 11 x 0.2.",
+            "formula_or_substitution": "integral part of 2.2",
+            "intermediate_result": "2"
+          }
+        ],
+        "final_answer_with_unit": "P(exactly 2) = 0.3020; P(at most 1) = 0.3758; mean 2, variance 1.6, mode 2 defaults",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Which way is this distribution skewed?",
+          "expected_takeaway": "Positively (long right tail), because p = 0.2 is below 0.5."
+        }
+      }
+    },
+    {
+      "draft_id": "D013",
+      "item_type": "card",
+      "variant": "worked_example",
+      "fact_ids": [
+        "F002"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [
+          "ABM::MOD_A::U06::LO_01"
+        ],
+        "title": "Failed transactions per week: a Poisson case",
+        "core_explanation_md": "A branch averages 2.5 failed ATM transactions a week, occurring at random. Find P(none), P(at most 1) and P(three or more), and give the mode.",
+        "worked_steps": [
+          {
+            "step_number": 1,
+            "description": "P(0).",
+            "formula_or_substitution": "e^(-2.5)",
+            "intermediate_result": "0.0821"
+          },
+          {
+            "step_number": 2,
+            "description": "P(1).",
+            "formula_or_substitution": "e^(-2.5) x 2.5",
+            "intermediate_result": "0.2052"
+          },
+          {
+            "step_number": 3,
+            "description": "P(at most 1).",
+            "formula_or_substitution": "0.0821 + 0.2052",
+            "intermediate_result": "0.2873"
+          },
+          {
+            "step_number": 4,
+            "description": "P(2).",
+            "formula_or_substitution": "e^(-2.5) x 2.5^2 / 2",
+            "intermediate_result": "0.2565"
+          },
+          {
+            "step_number": 5,
+            "description": "P(three or more) by complement.",
+            "formula_or_substitution": "1 - (P(0) + P(1) + P(2))",
+            "intermediate_result": "0.4562"
+          },
+          {
+            "step_number": 6,
+            "description": "Mode: lambda = 2.5 is not a whole number.",
+            "formula_or_substitution": "integral part of 2.5",
+            "intermediate_result": "2"
+          }
+        ],
+        "final_answer_with_unit": "P(none) = 0.0821; P(at most 1) = 0.2873; P(3 or more) = 0.4562; mode 2",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "What is the mean and variance of the weekly count?",
+          "expected_takeaway": "Both equal lambda = 2.5."
+        }
+      }
+    },
+    {
+      "draft_id": "D014",
+      "item_type": "card",
+      "variant": "worked_example",
+      "fact_ids": [
+        "F003"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [
+          "ABM::MOD_A::U06::LO_01"
+        ],
+        "title": "Daily cash demand as a normal variable",
+        "core_explanation_md": "Daily cash demand at a branch is normal with mean Rs 200 lakh and standard deviation Rs 40 lakh. Using the table areas P(0 < Z < 1) = 0.3413, P(0 < Z < 1.5) = 0.4332 and P(0 < Z < 2) = 0.4772, find P(160 < X < 260) and P(X > 280). Out of 250 working days, about how many days exceed Rs 280 lakh?",
+        "worked_steps": [
+          {
+            "step_number": 1,
+            "description": "Standardise 160, 260 and 280.",
+            "formula_or_substitution": "(160 - 200)/40; (260 - 200)/40; (280 - 200)/40",
+            "intermediate_result": "-1; 1.5; 2"
+          },
+          {
+            "step_number": 2,
+            "description": "Opposite sides of the mean: add the areas.",
+            "formula_or_substitution": "0.3413 + 0.4332",
+            "intermediate_result": "0.7745"
+          },
+          {
+            "step_number": 3,
+            "description": "Upper tail beyond z = 2.",
+            "formula_or_substitution": "0.5 - 0.4772",
+            "intermediate_result": "0.0228"
+          },
+          {
+            "step_number": 4,
+            "description": "Expected days out of 250.",
+            "formula_or_substitution": "250 x 0.0228",
+            "intermediate_result": "5.7, about 6 days"
+          }
+        ],
+        "final_answer_with_unit": "P(160 < X < 260) = 0.7745; P(X > 280) = 0.0228, about 6 days in 250",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Why is P(X = 200 exactly) not 0.5?",
+          "expected_takeaway": "For a continuous variable the probability of one exact value is zero; 0.5 is the probability of being below (or above) the mean."
+        }
+      }
+    },
+    {
+      "draft_id": "D015",
+      "item_type": "card",
+      "variant": "worked_example",
+      "fact_ids": [
+        "F005"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [
+          "ABM::MOD_A::U06::LO_01"
+        ],
+        "title": "Expected loss on a term loan",
+        "core_explanation_md": "A bank lends Rs 40,00,000 to a firm. Its probability of default over the year is 2 per cent. If it defaults, the bank expects to recover 55 per cent of the exposure. Find the expected loss.",
+        "worked_steps": [
+          {
+            "step_number": 1,
+            "description": "Loss given default from the recovery rate.",
+            "formula_or_substitution": "1 - 0.55",
+            "intermediate_result": "0.45"
+          },
+          {
+            "step_number": 2,
+            "description": "Expected loss = PD x LGD x EAD.",
+            "formula_or_substitution": "0.02 x 0.45 x 40,00,000",
+            "intermediate_result": "Rs 36,000"
+          },
+          {
+            "step_number": 3,
+            "description": "Check: if default is certain, the loss would be.",
+            "formula_or_substitution": "0.45 x 40,00,000",
+            "intermediate_result": "Rs 18,00,000"
+          }
+        ],
+        "final_answer_with_unit": "Expected loss Rs 36,000 (0.9 per cent of the exposure)",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "What would the expected loss be at PD 4 per cent?",
+          "expected_takeaway": "Double: Rs 72,000."
+        }
+      }
+    },
+    {
+      "draft_id": "D016",
+      "item_type": "card",
+      "variant": "worked_example",
+      "fact_ids": [
+        "F006"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [
+          "ABM::MOD_A::U06::LO_01"
+        ],
+        "title": "Value at risk of a one-month portfolio",
+        "core_explanation_md": "A portfolio of Rs 5,00,000 has a mean monthly return of 1 per cent and a monthly standard deviation of 4 per cent. Find the one-month VaR at 95 per cent and at 99 per cent.",
+        "worked_steps": [
+          {
+            "step_number": 1,
+            "description": "Worst return at 95 per cent.",
+            "formula_or_substitution": "0.01 - 1.65 x 0.04",
+            "intermediate_result": "-0.056"
+          },
+          {
+            "step_number": 2,
+            "description": "VaR at 95 per cent.",
+            "formula_or_substitution": "-0.056 x 5,00,000",
+            "intermediate_result": "-Rs 28,000, a loss of Rs 28,000"
+          },
+          {
+            "step_number": 3,
+            "description": "Worst return at 99 per cent.",
+            "formula_or_substitution": "0.01 - 2.33 x 0.04",
+            "intermediate_result": "-0.0832"
+          },
+          {
+            "step_number": 4,
+            "description": "VaR at 99 per cent.",
+            "formula_or_substitution": "-0.0832 x 5,00,000",
+            "intermediate_result": "-Rs 41,600, a loss of Rs 41,600"
+          }
+        ],
+        "final_answer_with_unit": "One-month VaR: Rs 28,000 at 95 per cent confidence and Rs 41,600 at 99 per cent",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Why is the 99 per cent figure larger?",
+          "expected_takeaway": "A higher confidence level covers more of the bad outcomes, so the loss figure is bigger."
+        }
+      }
+    },
+    {
+      "draft_id": "D017",
+      "item_type": "card",
+      "variant": "worked_example",
+      "fact_ids": [
+        "F009"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [
+          "ABM::MOD_A::U06::LO_01"
+        ],
+        "title": "Lower bounds for a call and a put",
+        "core_explanation_md": "A stock trades at Rs 120. A one-year option has strike Rs 100 and the risk-free rate is 5 per cent. Find the lower bounds for the call and the put.",
+        "worked_steps": [
+          {
+            "step_number": 1,
+            "description": "Present value of the strike.",
+            "formula_or_substitution": "100 / 1.05",
+            "intermediate_result": "95.24"
+          },
+          {
+            "step_number": 2,
+            "description": "Call bound: stock minus PV of strike, floored at 0.",
+            "formula_or_substitution": "max[0, 120 - 95.24]",
+            "intermediate_result": "24.76"
+          },
+          {
+            "step_number": 3,
+            "description": "Put bound: PV of strike minus stock, floored at 0.",
+            "formula_or_substitution": "max[0, 95.24 - 120]",
+            "intermediate_result": "0"
+          }
+        ],
+        "final_answer_with_unit": "Call worth at least Rs 24.76; put worth at least zero (its formula bound is negative)",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Why is the put's bound zero?",
+          "expected_takeaway": "The stock price is above the present value of the strike, so the formula gives a negative number, and option values cannot be negative."
+        }
+      }
+    },
+    {
+      "draft_id": "D018",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "Which of these is best modelled by a binomial distribution?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The number of loans, out of 20 independent loans each with a 5 per cent chance of default, that default",
+            "explanation_md": "A fixed number of independent trials with a constant success probability."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The weights of 20 randomly selected loan files",
+            "explanation_md": "Weights are measured on a continuous scale, not counted as successes."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The number of customers who arrive at a counter in an hour",
+            "explanation_md": "There is no fixed number of trials; this is a count in an interval, which suits the Poisson distribution."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The time taken to approve a loan",
+            "explanation_md": "Time is continuous."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "Binomial counts successes in a fixed number of independent trials with constant probability of success."
+      }
+    },
+    {
+      "draft_id": "D019",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Each of 60 loans is repaid with probability 0.7. The distribution of the number repaid is",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Symmetric",
+            "explanation_md": "Symmetry needs p = 0.5."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Positively skewed",
+            "explanation_md": "That happens when p is below 0.5."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Negatively skewed",
+            "explanation_md": "With p above 0.5 the long tail is on the left."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Uniform",
+            "explanation_md": "Not a feature of the binomial."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "A binomial with p greater than 0.5 is negatively skewed."
+      }
+    },
+    {
+      "draft_id": "D020",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "For a binomial with n = 9 and p = 0.5, the mode is",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only 4",
+            "explanation_md": "M = 10 x 0.5 = 5 is a whole number, so there are two modes."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Only 5",
+            "explanation_md": "There are two modes, not one."
+          },
+          {
+            "option_id": "C",
+            "text_md": "4 and 5, because (n + 1)p = 5 is an integer",
+            "explanation_md": "When (n + 1)p is a whole number M, the modes are M - 1 and M."
+          },
+          {
+            "option_id": "D",
+            "text_md": "4.5",
+            "explanation_md": "A mode must be a possible value of the variable."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "If (n + 1)p is an integer M, there are two modes: M - 1 and M."
+      }
+    },
+    {
+      "draft_id": "D021",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F002"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "A Poisson variable has mean 4. Its variance is",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "2",
+            "explanation_md": "That would be the square root."
+          },
+          {
+            "option_id": "B",
+            "text_md": "4",
+            "explanation_md": "For a Poisson distribution mean and variance are equal."
+          },
+          {
+            "option_id": "C",
+            "text_md": "16",
+            "explanation_md": "The variance is not the mean squared."
+          },
+          {
+            "option_id": "D",
+            "text_md": "It cannot be determined",
+            "explanation_md": "It equals the mean."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "The Poisson distribution has mean and variance both equal to lambda."
+      }
+    },
+    {
+      "draft_id": "D022",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F002"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "Which count is most naturally modelled as a Poisson variable?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The number of wrong telephone numbers dialled in a day",
+            "explanation_md": "A random count of events in a fixed interval at an average rate."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The number of heads in exactly 10 tosses of a coin",
+            "explanation_md": "A fixed number of trials suggests the binomial."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The height of a customer",
+            "explanation_md": "Height is continuous."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The weight of a cash bag",
+            "explanation_md": "Weight is continuous."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "Poisson counts random events in a fixed interval such as a day, page or hour."
+      }
+    },
+    {
+      "draft_id": "D023",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F003"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "For a normal distribution with mean 50, which statement is true?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The median is 50 and the mode is 50",
+            "explanation_md": "The mean, median and mode coincide for the normal distribution."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The median is above 50",
+            "explanation_md": "It is symmetric about the mean."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The mode is below 50",
+            "explanation_md": "The peak is at the mean."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The probability of exactly 50 is 0.5",
+            "explanation_md": "The probability of any single value is zero."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "The normal distribution is symmetric, with mean, median and mode all equal to mu."
+      }
+    },
+    {
+      "draft_id": "D024",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A bank has 35 per cent of its loan book with a single industrial group. This mainly illustrates",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Credit default risk",
+            "explanation_md": "No default has occurred in the description."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Country risk",
+            "explanation_md": "No government is involved."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Concentration risk",
+            "explanation_md": "Significant exposure to one group can inflict large losses on the bank."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Market risk",
+            "explanation_md": "The description concerns a lending exposure, not price movements."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "A large exposure to a single borrower, group or industry is concentration risk."
+      }
+    },
+    {
+      "draft_id": "D025",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "Under the courseware, a loan is in credit default when the borrower cannot repay in full or",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "When 30 days have passed since the due date",
+            "explanation_md": "The courseware uses 90 days."
+          },
+          {
+            "option_id": "B",
+            "text_md": "When 90 days have passed since the due date",
+            "explanation_md": "The default definition includes 90 days past due."
+          },
+          {
+            "option_id": "C",
+            "text_md": "When the interest rate rises",
+            "explanation_md": "Not a default criterion."
+          },
+          {
+            "option_id": "D",
+            "text_md": "When the borrower changes address",
+            "explanation_md": "Not a default criterion."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "Credit default risk covers inability to repay in full or the passing of 90 days after the due date."
+      }
+    },
+    {
+      "draft_id": "D026",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F006"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Value at risk at a 95 per cent confidence level over one month is best described as",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The average monthly return",
+            "explanation_md": "That is the mean return, not a loss measure."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The loss that the portfolio is expected to exceed with probability about 5 per cent in the month",
+            "explanation_md": "It is a loss level exceeded only in the worst few per cent of outcomes, in the courseware's normal-returns method."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The standard deviation of the portfolio",
+            "explanation_md": "The standard deviation is an input."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The total value of the portfolio",
+            "explanation_md": "VaR is a loss amount, not the portfolio value."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "VaR estimates the maximum loss over a period at a stated confidence level, so a 95 per cent VaR is a loss that should be exceeded only about 5 per cent of the time."
+      }
+    },
+    {
+      "draft_id": "D027",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F007"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "The holder of a put option has the right to",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Buy the underlying at the strike price",
+            "explanation_md": "That is a call."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Sell the underlying at the strike price",
+            "explanation_md": "A put gives the right to sell at the strike price."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Force the writer to buy at any price",
+            "explanation_md": "The price is the strike price."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Receive the premium",
+            "explanation_md": "The holder pays the premium."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "A put gives its holder the right, but not the obligation, to sell at the strike price."
+      }
+    },
+    {
+      "draft_id": "D028",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F007"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A European option differs from an American option in that it",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Can be exercised only on the maturity date",
+            "explanation_md": "European options are exercisable only at maturity."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Can be exercised at any time up to maturity",
+            "explanation_md": "That describes an American option."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Cannot be a put",
+            "explanation_md": "Either style can be a call or a put."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Has no strike price",
+            "explanation_md": "All options have a strike price."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "A European option may be exercised only at maturity; an American option on or before it."
+      }
+    },
+    {
+      "draft_id": "D029",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F008"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Other things equal, a higher strike price makes",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The call cheaper and the put dearer",
+            "explanation_md": "A call lets you buy at the strike, so a higher strike is worse for the buyer; a put lets you sell at it, so it is better."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The call dearer and the put cheaper",
+            "explanation_md": "This is the reverse."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Both dearer",
+            "explanation_md": "The effects are opposite."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Both cheaper",
+            "explanation_md": "The effects are opposite."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "A higher strike lowers the call price and raises the put price."
+      }
+    },
+    {
+      "draft_id": "D030",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F008"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "If the volatility of the underlying stock increases, other things equal, the prices of call and put options",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Both rise",
+            "explanation_md": "Greater uncertainty makes either right more valuable."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Both fall",
+            "explanation_md": "The holder can walk away from bad outcomes."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The call rises and the put falls",
+            "explanation_md": "This is the effect of a higher stock price or interest rate."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Are unaffected",
+            "explanation_md": "Volatility is a key driver of option value."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "Higher volatility raises the prices of both calls and puts."
+      }
+    },
+    {
+      "draft_id": "D031",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F008"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "If the risk-free interest rate rises, other things equal,",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The call price rises and the put price falls",
+            "explanation_md": "A higher rate lowers the present value of the strike, which helps the call and hurts the put."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Both prices rise",
+            "explanation_md": "The effects differ."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The call price falls and the put price rises",
+            "explanation_md": "This is the opposite."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Neither is affected",
+            "explanation_md": "The rate affects the present value of the strike."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "A higher interest rate raises the call price and lowers the put price."
+      }
+    },
+    {
+      "draft_id": "D032",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A coin-like trial has n = 5 independent trials with success probability 0.5. What is the probability of exactly 3 successes?",
+        "numeric_rule": {
+          "expected_answer": "0.3125",
+          "unit_label": "probability",
+          "precision_decimals": 4,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give the answer to 4 decimal places.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "C(5, 3) x 0.5^3 x 0.5^2 = 10 / 32 = 0.3125.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Ways.",
+            "formula_or_substitution": "C(5, 3)",
+            "intermediate_result": "10"
+          },
+          {
+            "step_number": 2,
+            "description": "Probability.",
+            "formula_or_substitution": "10 x 0.5^5",
+            "intermediate_result": "0.3125"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D033",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "Each of 40 loans is delinquent with probability 0.15, independently. What is the expected number of delinquent loans?",
+        "numeric_rule": {
+          "expected_answer": "6",
+          "unit_label": "loans",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "Mean = np = 40 x 0.15 = 6.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "np.",
+            "formula_or_substitution": "40 x 0.15",
+            "intermediate_result": "6"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D034",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "For the same 40 loans (p = 0.15), what is the variance of the number of delinquent loans?",
+        "numeric_rule": {
+          "expected_answer": "5.1",
+          "unit_label": "loans squared",
+          "precision_decimals": 1,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give the answer to 1 decimal place.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "Variance = npq = 40 x 0.15 x 0.85 = 5.1.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "npq.",
+            "formula_or_substitution": "40 x 0.15 x 0.85",
+            "intermediate_result": "5.1"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D035",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Four independent loans each default with probability 0.1. What is the probability that none defaults?",
+        "numeric_rule": {
+          "expected_answer": "0.6561",
+          "unit_label": "probability",
+          "precision_decimals": 4,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give the answer to 4 decimal places.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "0.9^4 = 0.6561.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "All four repay.",
+            "formula_or_substitution": "0.9^4",
+            "intermediate_result": "0.6561"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D036",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "For a binomial with n = 15 and p = 0.3, what is the mode?",
+        "numeric_rule": {
+          "expected_answer": "4",
+          "unit_label": "successes",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "M = (n + 1)p = 16 x 0.3 = 4.8, not an integer, so the mode is its integral part, 4.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "M.",
+            "formula_or_substitution": "16 x 0.3",
+            "intermediate_result": "4.8"
+          },
+          {
+            "step_number": 2,
+            "description": "Integral part.",
+            "formula_or_substitution": "floor(4.8)",
+            "intermediate_result": "4"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D037",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F002"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Wrong numbers dialled at a branch average 3 a day (Poisson). What is the probability of none in a day?",
+        "numeric_rule": {
+          "expected_answer": "0.0498",
+          "unit_label": "probability",
+          "precision_decimals": 4,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give the answer to 4 decimal places.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "P(0) = e^(-3) = 0.0498.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "e to the minus 3.",
+            "formula_or_substitution": "e^(-3)",
+            "intermediate_result": "0.0498"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D038",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F002"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "For a Poisson variable with lambda = 2, what is P(X = 2)?",
+        "numeric_rule": {
+          "expected_answer": "0.2707",
+          "unit_label": "probability",
+          "precision_decimals": 4,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give the answer to 4 decimal places.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "P(2) = e^(-2) x 2^2 / 2! = 2 e^(-2) = 0.2707.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Substitute.",
+            "formula_or_substitution": "e^(-2) x 4 / 2",
+            "intermediate_result": "0.2707"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D039",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F002"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "For a Poisson variable with lambda = 0.5, what is the probability of at least one event?",
+        "numeric_rule": {
+          "expected_answer": "0.3935",
+          "unit_label": "probability",
+          "precision_decimals": 4,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give the answer to 4 decimal places.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "P(at least one) = 1 - e^(-0.5) = 1 - 0.6065 = 0.3935.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Complement of none.",
+            "formula_or_substitution": "1 - e^(-0.5)",
+            "intermediate_result": "0.3935"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D040",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F003"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "Daily cash demand is normal with mean 200 and standard deviation 40 (Rs lakh). What is the z value of Rs 260 lakh?",
+        "numeric_rule": {
+          "expected_answer": "1.50",
+          "unit_label": "standard deviations",
+          "precision_decimals": 2,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give the answer to 2 decimal places.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "z = (260 - 200) / 40 = 1.50.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Standardise.",
+            "formula_or_substitution": "(260 - 200)/40",
+            "intermediate_result": "1.50"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D041",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F003"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "For the same demand (mean 200, standard deviation 40), use P(0 < Z < 2) = 0.4772 to find P(X > 280).",
+        "numeric_rule": {
+          "expected_answer": "0.0228",
+          "unit_label": "probability",
+          "precision_decimals": 4,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give the answer to 4 decimal places.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "z = (280 - 200)/40 = 2, and the upper tail is 0.5 - 0.4772 = 0.0228.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "z.",
+            "formula_or_substitution": "(280 - 200)/40",
+            "intermediate_result": "2"
+          },
+          {
+            "step_number": 2,
+            "description": "Tail.",
+            "formula_or_substitution": "0.5 - 0.4772",
+            "intermediate_result": "0.0228"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D042",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F005"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "EAD is Rs 20,00,000, PD is 1.5 per cent and LGD is 40 per cent. What is the expected loss in rupees?",
+        "numeric_rule": {
+          "expected_answer": "12000",
+          "unit_label": "Rs",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "EL = 0.015 x 0.40 x 20,00,000 = 12,000.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Multiply.",
+            "formula_or_substitution": "0.015 x 0.40 x 20,00,000",
+            "intermediate_result": "12,000"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D043",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F005"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A loan of Rs 10,00,000 has PD 5 per cent and an expected recovery rate of 75 per cent. What is the expected loss in rupees?",
+        "numeric_rule": {
+          "expected_answer": "12500",
+          "unit_label": "Rs",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "LGD = 1 - 0.75 = 0.25, so EL = 0.05 x 0.25 x 10,00,000 = 12,500.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "LGD.",
+            "formula_or_substitution": "1 - 0.75",
+            "intermediate_result": "0.25"
+          },
+          {
+            "step_number": 2,
+            "description": "EL.",
+            "formula_or_substitution": "0.05 x 0.25 x 10,00,000",
+            "intermediate_result": "12,500"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D044",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F006"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A portfolio of Rs 2,00,000 has a mean monthly return of 6 per cent and a monthly standard deviation of 5 per cent. Using 1.65 for 95 per cent confidence, what is the monthly VaR as a loss in rupees?",
+        "numeric_rule": {
+          "expected_answer": "4500",
+          "unit_label": "Rs",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give the loss as a positive whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "(0.06 - 1.65 x 0.05) x 2,00,000 = (0.06 - 0.0825) x 2,00,000 = -4,500, a loss of Rs 4,500.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Worst return.",
+            "formula_or_substitution": "0.06 - 0.0825",
+            "intermediate_result": "-0.0225"
+          },
+          {
+            "step_number": 2,
+            "description": "Times value.",
+            "formula_or_substitution": "-0.0225 x 2,00,000",
+            "intermediate_result": "-4,500, a loss of Rs 4,500"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D045",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F009"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "A stock trades at Rs 70 and the present value of the strike price is Rs 62. What is the lower bound for the value of the call (in rupees)?",
+        "numeric_rule": {
+          "expected_answer": "8",
+          "unit_label": "Rs",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "Lower bound = max[0, 70 - 62] = 8.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Subtract.",
+            "formula_or_substitution": "70 - 62",
+            "intermediate_result": "8"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D046",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F009"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "The present value of the strike is Rs 100 and the stock price is Rs 88. What is the lower bound for the value of the put (in rupees)?",
+        "numeric_rule": {
+          "expected_answer": "12",
+          "unit_label": "Rs",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "Lower bound = max[0, 100 - 88] = 12.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Subtract.",
+            "formula_or_substitution": "100 - 88",
+            "intermediate_result": "12"
+          }
+        ]
+      }
+    }
+  ],
+  "unresolved": [
+    "The courseware prints expected loss as PD x EAD x (1 - LGD) while describing LGD as the part of the loan lost; the items teach EL = PD x EAD x LGD (fact F007 is flagged needs_review) and the review explains why.",
+    "The courseware states the binomial mode rule for an integer M as \"M - 2 and M\" in one line and \"M - 1 and M\" in the next; the items use M - 1 and M.",
+    "The courseware labels its value-at-risk figures \"daily\" although its returns are described as one-month; the items state the holding period used in each case.",
+    "The courseware prints the Black-Scholes put formula with N(d2) and N(d1) where N(-d2) and N(-d1) are meant; the items give the put through put-call parity only.",
+    "The courseware's option pricing section states the binomial option pricing model without derivation and uses a different symbol set (a, b, B[n, a, p]); only the assumptions are taught, and no numerical binomial option pricing is asked.",
+    "Courseware terminal questions on printed pp. 132-133 were read but not used.",
+    "Reviewer for this batch is the authoring agent; no independent or human review."
+  ],
+  "next_batch_hint": "ABM-A-U07-B001: Estimation (courseware unit 7, printed p. 134 = PDF p. 149)."
+}
