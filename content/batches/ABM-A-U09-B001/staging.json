@@ -1,0 +1,1067 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "ABM-A-U09-B001",
+  "paper_id": "ABM",
+  "unit_label": "Module A unit 9: Simulation",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S01"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "statement": "Simulation is a way of studying the effects of changes in a real system through models: the imitation of a real thing or process, acting out or mimicking an actual or probable real-life condition, event or situation to find the cause of a past occurrence or to forecast the future effects of assumed circumstances. It may use a set of equations (a mathematical model), a physical model, stage rehearsal, computer graphics or a game. Simulations allow experiments without actual exposure or risk but may be gross simplifications, and they are only as good as their underlying assumptions. In finance it generally means using a computer to experiment on a model of a real system, even before the system is operational.",
+      "source_id": "S01",
+      "locator": "Printed p. 162, section 9.1",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F002",
+      "statement": "Simulation is appropriate when the size or complexity of a problem makes other techniques difficult or impossible (queueing, inventory, layout and maintenance problems) and can be used with traditional statistical and management techniques. It is useful in training (for example driving lessons) and in finance in foreign exchange, investment and risk management; listed applications include air traffic queueing, aircraft maintenance scheduling, assembly line scheduling, inventory reorder design, railroad operations, facility layout, risk modelling in finance, the foreign exchange market and the stock market.",
+      "source_id": "S01",
+      "locator": "Printed p. 162, section 9.2",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F003",
+      "statement": "In the courseware's inventory example an outlet buys milk at Rs 32 and sells it at Rs 36 per litre and throws away what is unsold. Demand per day has relative frequencies 1/10, 3/10, 2/10, 3/10 and 1/10 at 35, 45, 55, 65 and 75 litres. The old ordering rule orders the previous day's demand; the new rule orders the mean of the last ten days' sales, which is 55 litres here. Daily profit is P = (sold quantity x selling price) - (ordered quantity x cost price).",
+      "source_id": "S01",
+      "locator": "Printed p. 163, section 9.2",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F004",
+      "statement": "To simulate demand, each outcome of the probability distribution is assigned a block of two-digit random numbers (00 to 99) whose size is proportional to its probability: with probabilities 0.1, 0.3, 0.2, 0.3 and 0.1 the intervals are 00-09, 10-39, 40-59, 60-89 and 90-99. Each day: choose a random number, find its interval, read the demand for that interval, take the quantity sold as the lesser of demand and quantity ordered, and calculate profit; repeat for the number of days to be simulated (20 in the courseware example, in which the average profit per day was Rs 24 under the old rule and Rs 58 under the new one).",
+      "source_id": "S01",
+      "locator": "Printed pp. 163-165, section 9.2",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F005",
+      "statement": "Simulation methodology: define the problem (objectives and the relevant controllable and uncontrollable variables: in the milk example the ordering rule is controllable and daily demand is not); construct the simulation model (variables, parameters, decision rules, probability distributions and the time incrementing procedure); specify the starting conditions and run length and run the simulation; evaluate the results; propose a new experiment; stop.",
+      "source_id": "S01",
+      "locator": "Printed p. 165, section 9.3",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F006",
+      "statement": "Important features: the model must be representative of the system; time is advanced by a simulated clock using either fixed time increments (the clock moves by hours, days or months, used when events occur with regularity) or variable time increments (the clock jumps to the next event, used when events are infrequent, for example ordering only when inventory falls to a certain level); simulation can deal with dynamic systems; models are custom built for the problem, unlike linear programming where only the values are restated; building and running a model is a guideline, not a rigid rule; and run length can be a specified period, long enough to give large samples, or until equilibrium is reached, when simulated data correspond to historical frequencies.",
+      "source_id": "S01",
+      "locator": "Printed pp. 165-166, section 9.3 Important Features",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F007",
+      "statement": "Simulation is desirable when experiments on the real system would disrupt ongoing activities, would be too costly, would require many observations over an extended period, would not allow exact replication of events, or would not allow control of key variables; it is preferable when a mathematical model is not available, is too complex and arduous to solve, is beyond the capability of available personnel, or is not robust enough to give information on all factors of interest. Disadvantages: it is time consuming, requires computer expertise, quantifying and casting complex problems may be difficult, and there are few principles to guide what to include in the model and how long to run it, so it is more an art than a science.",
+      "source_id": "S01",
+      "locator": "Printed pp. 166-167, Advantages and Disadvantages",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    }
+  ],
+  "drafts": [
+    {
+      "draft_id": "D001",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "What simulation is, and when to use it",
+        "core_explanation_md": "**Simulation** means experimenting on a **model** of a system instead of on the system itself. You imitate how the system behaves, run it many times under assumed conditions, and watch what happens.\n\nThe model can be a set of equations, a physical model, a rehearsal, a computer graphic or a game. In banking and finance it is nearly always a computer model.\n\nWhy do it?\n\n- The real experiment would be risky, costly, slow or disruptive.\n- The problem is too large or too complex for a formula (queues at counters, inventory rules, forex and investment risk).\n- You want to train people safely, as a driving simulator does.\n\nThe limit: a simulation is **only as good as its assumptions**. A neat result from a wrong model is still wrong.",
+        "expanded_explanation_md": "Simulation is often used alongside statistics and management techniques, not instead of them. Statistics supplies the probability distributions that drive the model.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Name two reasons for simulating instead of experimenting on the real system, and one limit of simulation.",
+          "expected_takeaway": "Any two of: the experiment would be risky, costly, disruptive or slow; or the problem is too complex for other methods. Limit: results are only as good as the model's assumptions."
+        }
+      }
+    },
+    {
+      "draft_id": "D002",
+      "item_type": "card",
+      "variant": "formula",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "Random-number intervals: turning probabilities into draws",
+        "core_explanation_md": "To make a computer or a table of random numbers behave like a real demand pattern, give each possible outcome a block of the numbers 00 to 99 **as large as its probability**.\n\n| Demand | Probability | Cumulative | Random numbers |\n| --- | --- | --- | --- |\n| 35 | 0.1 | 0.1 | 00 to 09 (10 numbers) |\n| 45 | 0.3 | 0.4 | 10 to 39 (30 numbers) |\n| 55 | 0.2 | 0.6 | 40 to 59 (20 numbers) |\n| 65 | 0.3 | 0.9 | 60 to 89 (30 numbers) |\n| 75 | 0.1 | 1.0 | 90 to 99 (10 numbers) |\n\nEach block starts where the previous one ends (cumulative probability times 100). A random number such as 52 lands in 40 to 59, so that day's demand is 55.",
+        "expanded_explanation_md": "Because every two-digit number is equally likely, an outcome with probability 0.3 is chosen 30 times in 100 over a long run. In a short run the proportions will not match exactly; that is natural sampling variation.",
+        "formula_spec": {
+          "latex_expression": "\\text{interval for outcome } k:\\ [\\,100 F_{k-1},\\ 100 F_k - 1\\,],\\quad F_k = \\sum_{j \\le k} p_j",
+          "variables": [
+            {
+              "symbol": "p_j",
+              "name": "Probability of outcome j",
+              "unit": "pure number"
+            },
+            {
+              "symbol": "F_k",
+              "name": "Cumulative probability up to outcome k",
+              "unit": "pure number"
+            },
+            {
+              "symbol": "interval",
+              "name": "Block of two-digit random numbers assigned to outcome k",
+              "unit": "00 to 99"
+            }
+          ],
+          "assumptions": [
+            "Probabilities add to 1.",
+            "Random numbers are equally likely and independent."
+          ],
+          "common_errors": [
+            "Making an interval too short or too long for its probability.",
+            "Overlapping intervals or leaving gaps.",
+            "Using three-digit numbers with two-digit intervals."
+          ]
+        },
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "An outcome has probability 0.25 and the cumulative probability before it is 0.40. Which two-digit numbers are assigned to it?",
+          "expected_takeaway": "40 to 64 (25 numbers, starting at 40)."
+        }
+      }
+    },
+    {
+      "draft_id": "D003",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F003",
+        "F004"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "Running a manual simulation, step by step",
+        "core_explanation_md": "Take a branch kiosk that buys a perishable item at a cost, sells it at a price and loses unsold stock each day. Each simulated day:\n\n1. **Draw** a random number.\n2. **Look up** its interval in the demand table and read off the demand.\n3. **Sold quantity** = the smaller of demand and the quantity ordered.\n4. **Profit** = sold x price - ordered x cost.\n\nRepeat for many days, then average the daily profits. To compare two **ordering rules**, run both on the **same random numbers**, so that the difference comes from the rule and not from luck.",
+        "expanded_explanation_md": "Ordering more than demand wastes stock; ordering less loses sales. The simulation finds which rule balances the two over many days.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Why compare two ordering rules on the same set of random numbers?",
+          "expected_takeaway": "So that both rules face the same demand sequence, and any difference in profit is due to the rules."
+        }
+      }
+    },
+    {
+      "draft_id": "D004",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F005",
+        "F006"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "Simulation methodology: define, build, run, evaluate",
+        "core_explanation_md": "| Stage | What you do |\n| --- | --- |\n| **Define the problem** | State the objective; separate **controllable** variables (decision rule, order quantity) from **uncontrollable** ones (demand) |\n| **Build the model** | Choose variables, parameters, decision rules, probability distributions and how **time** advances |\n| **Run** | Set starting conditions and **run length**; run the model |\n| **Evaluate** | Examine the results with statistical tests |\n| **New experiment** | Change something and compare |\n\n**Time**: with **fixed increments** the clock moves by a set step (hour, day, month); use when events occur regularly. With **variable increments** the clock jumps to the next event; use when events are infrequent (ordering only when stock falls to a level).\n\n**Run length**: a fixed period; long enough to give large samples; or until equilibrium (simulated data match the historical frequencies).",
+        "expanded_explanation_md": "A simulated clock is needed in either case. Models are custom-built for each problem, unlike linear programming, where the same structure is reused with new numbers.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Stock is reordered only when it falls to 100 units. Fixed or variable time increments?",
+          "expected_takeaway": "Variable: events are infrequent and irregular, so the clock should jump to the next event."
+        }
+      }
+    },
+    {
+      "draft_id": "D005",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F007"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "When simulation helps and what it costs",
+        "core_explanation_md": "| Simulation is desirable when real experiments... | Simulation is preferable when a mathematical model... |\n| --- | --- |\n| would disrupt ongoing activities | is not available |\n| would be too costly | is too complex or arduous to solve |\n| need many observations over a long time | is beyond the available personnel |\n| cannot replicate events exactly | is not robust enough to cover all factors of interest |\n| do not allow control of key variables | |\n\n**Drawbacks**: it takes time; it needs computer expertise; some problems are hard to quantify; and there are few firm rules about what to include in the model and how long to run it, so it is **more art than science**.",
+        "expanded_explanation_md": "Because the results come from random draws, they carry sampling variation. Longer runs reduce it but do not remove the need to check the assumptions.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Give one advantage and one disadvantage of simulation.",
+          "expected_takeaway": "Advantage: it lets you experiment without disrupting or risking the real system. Disadvantage: it is time consuming and needs expertise, with few rules for model design."
+        }
+      }
+    },
+    {
+      "draft_id": "D006",
+      "item_type": "card",
+      "variant": "worked_example",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [
+          "ABM::MOD_A::U09::LO_01"
+        ],
+        "title": "Building random-number intervals for a kiosk's daily demand",
+        "core_explanation_md": "Daily demand for a branch kiosk's sandwiches is 20, 30, 40 or 50 with probabilities 0.2, 0.3, 0.4 and 0.1. Assign two-digit random numbers.",
+        "worked_steps": [
+          {
+            "step_number": 1,
+            "description": "Cumulative probabilities.",
+            "formula_or_substitution": "0.2; 0.2 + 0.3; 0.5 + 0.4; 0.9 + 0.1",
+            "intermediate_result": "0.2, 0.5, 0.9, 1.0"
+          },
+          {
+            "step_number": 2,
+            "description": "Interval for demand 20: 00 up to 100 x 0.2 - 1.",
+            "formula_or_substitution": "00 to 19",
+            "intermediate_result": "20 numbers"
+          },
+          {
+            "step_number": 3,
+            "description": "Interval for demand 30.",
+            "formula_or_substitution": "20 to 49",
+            "intermediate_result": "30 numbers"
+          },
+          {
+            "step_number": 4,
+            "description": "Interval for demand 40.",
+            "formula_or_substitution": "50 to 89",
+            "intermediate_result": "40 numbers"
+          },
+          {
+            "step_number": 5,
+            "description": "Interval for demand 50.",
+            "formula_or_substitution": "90 to 99",
+            "intermediate_result": "10 numbers"
+          },
+          {
+            "step_number": 6,
+            "description": "Check that the blocks cover 00 to 99 once.",
+            "formula_or_substitution": "20 + 30 + 40 + 10",
+            "intermediate_result": "100 numbers"
+          }
+        ],
+        "final_answer_with_unit": "Demand 20: 00-19; 30: 20-49; 40: 50-89; 50: 90-99",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Which demand does the random number 49 give, and which does 50 give?",
+          "expected_takeaway": "49 gives 30 (the 20 to 49 block); 50 gives 40."
+        }
+      }
+    },
+    {
+      "draft_id": "D007",
+      "item_type": "card",
+      "variant": "worked_example",
+      "fact_ids": [
+        "F003",
+        "F004"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [
+          "ABM::MOD_A::U09::LO_02"
+        ],
+        "title": "Ten simulated days: ordering 40 against ordering 30",
+        "core_explanation_md": "The kiosk buys each sandwich for Rs 20 and sells it for Rs 30; unsold ones are thrown away. Using the intervals above and the ten random numbers 12, 47, 83, 25, 64, 91, 38, 05, 14, 71, simulate ten days under two rules: order 40 a day, or order 30 a day. Compare average daily profit.",
+        "worked_steps": [
+          {
+            "step_number": 1,
+            "description": "Demand for each random number.",
+            "formula_or_substitution": "12, 47, 83, 25, 64, 91, 38, 05, 14, 71",
+            "intermediate_result": "20, 30, 40, 30, 40, 50, 30, 20, 20, 40"
+          },
+          {
+            "step_number": 2,
+            "description": "Rule A (order 40): sold = min(demand, 40).",
+            "formula_or_substitution": "20, 30, 40, 30, 40, 40, 30, 20, 20, 40",
+            "intermediate_result": "20, 30, 40, 30, 40, 40, 30, 20, 20, 40"
+          },
+          {
+            "step_number": 3,
+            "description": "Rule A profit = 30 x sold - 20 x 40 = 30 x sold - 800.",
+            "formula_or_substitution": "each day",
+            "intermediate_result": "-200, 100, 400, 100, 400, 400, 100, -200, -200, 400"
+          },
+          {
+            "step_number": 4,
+            "description": "Rule A average.",
+            "formula_or_substitution": "1300 / 10",
+            "intermediate_result": "130"
+          },
+          {
+            "step_number": 5,
+            "description": "Rule B (order 30): sold = min(demand, 30); profit = 30 x sold - 600.",
+            "formula_or_substitution": "20, 30, 30, 30, 30, 30, 30, 20, 20, 30",
+            "intermediate_result": "0, 300, 300, 300, 300, 300, 300, 0, 0, 300"
+          },
+          {
+            "step_number": 6,
+            "description": "Rule B average.",
+            "formula_or_substitution": "2100 / 10",
+            "intermediate_result": "210"
+          }
+        ],
+        "final_answer_with_unit": "Over these ten days: ordering 40 earns an average of Rs 130 a day and ordering 30 earns Rs 210 a day, so ordering 30 is better on this run",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does a ten-day run prove ordering 30 is better in the long run?",
+          "expected_takeaway": "No: ten days is a short run with sampling variation. A longer run, or the expected-value calculation, is needed to be confident."
+        }
+      }
+    },
+    {
+      "draft_id": "D008",
+      "item_type": "card",
+      "variant": "worked_example",
+      "fact_ids": [
+        "F004",
+        "F007"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [
+          "ABM::MOD_A::U09::LO_02"
+        ],
+        "title": "Check the simulation against the exact expected profit",
+        "core_explanation_md": "For the same kiosk (demand 20, 30, 40, 50 with probabilities 0.2, 0.3, 0.4, 0.1), compute the expected daily profit of ordering 40 and of ordering 30 exactly, and compare with the ten-day simulation.",
+        "worked_steps": [
+          {
+            "step_number": 1,
+            "description": "Expected demand.",
+            "formula_or_substitution": "20 x 0.2 + 30 x 0.3 + 40 x 0.4 + 50 x 0.1",
+            "intermediate_result": "34"
+          },
+          {
+            "step_number": 2,
+            "description": "Order 40: expected sold = 20 x 0.2 + 30 x 0.3 + 40 x (0.4 + 0.1).",
+            "formula_or_substitution": "4 + 9 + 20",
+            "intermediate_result": "33"
+          },
+          {
+            "step_number": 3,
+            "description": "Expected profit, order 40.",
+            "formula_or_substitution": "30 x 33 - 800",
+            "intermediate_result": "190"
+          },
+          {
+            "step_number": 4,
+            "description": "Order 30: expected sold = 20 x 0.2 + 30 x (0.3 + 0.4 + 0.1).",
+            "formula_or_substitution": "4 + 24",
+            "intermediate_result": "28"
+          },
+          {
+            "step_number": 5,
+            "description": "Expected profit, order 30.",
+            "formula_or_substitution": "30 x 28 - 600",
+            "intermediate_result": "240"
+          },
+          {
+            "step_number": 6,
+            "description": "Compare with the ten-day simulation.",
+            "formula_or_substitution": "130 and 210 against 190 and 240",
+            "intermediate_result": "close, but not equal: short-run sampling variation"
+          }
+        ],
+        "final_answer_with_unit": "Exact expected profit: Rs 190 a day for ordering 40 and Rs 240 for ordering 30, so ordering 30 is better in expectation too; the ten-day simulation (Rs 130 and Rs 210) is near these but not exact",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Why use simulation if the exact answer can be calculated here?",
+          "expected_takeaway": "Real systems are usually too complex for an exact calculation; this small case is a way to see how close a simulation comes."
+        }
+      }
+    },
+    {
+      "draft_id": "D009",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "Simulation is best described as",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Experimenting on a model of a system to predict how the real system would behave",
+            "explanation_md": "It imitates the real system through a model."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Collecting data from every unit of a population",
+            "explanation_md": "That is a census."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Solving a set of inequalities by the simplex method",
+            "explanation_md": "That is linear programming."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Fitting a regression line to observed data",
+            "explanation_md": "That is regression."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "Simulation studies the effect of changes in a real system through models that imitate it."
+      }
+    },
+    {
+      "draft_id": "D010",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F002"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "For which problem is simulation most appropriate?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Finding the mean of five numbers",
+            "explanation_md": "A direct calculation is enough."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Studying how queue lengths at a busy branch change with the number of tellers when arrivals are random",
+            "explanation_md": "Queueing problems are complex and are extensively studied through simulation."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Computing a standard deviation from a frequency table",
+            "explanation_md": "A formula settles it."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Reading the median from a cumulative frequency table",
+            "explanation_md": "A formula settles it."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "Queueing, inventory, layout and risk problems are typical simulation applications."
+      }
+    },
+    {
+      "draft_id": "D011",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A simulation shows that a new teller-scheduling plan cuts waiting time by 40 per cent. The most important caution is that",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The result is only as good as the assumptions in the model",
+            "explanation_md": "A simulation can be a gross simplification of reality."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A simulation always gives exact answers",
+            "explanation_md": "It gives estimates from a model."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A simulation cannot include random events",
+            "explanation_md": "Random draws are central to it."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Simulation results never need checking",
+            "explanation_md": "They should be evaluated and compared with other information."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "A simulation is only as good as the assumptions underlying the model."
+      }
+    },
+    {
+      "draft_id": "D012",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Demand of 45 has probability 0.3 and the cumulative probability before it is 0.1. With two-digit random numbers, the interval assigned to 45 is",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "10 to 39",
+            "explanation_md": "The block starts at 10 and covers 30 numbers."
+          },
+          {
+            "option_id": "B",
+            "text_md": "00 to 29",
+            "explanation_md": "It would start at 00 only if nothing came before it."
+          },
+          {
+            "option_id": "C",
+            "text_md": "10 to 30",
+            "explanation_md": "That block has only 21 numbers."
+          },
+          {
+            "option_id": "D",
+            "text_md": "10 to 40",
+            "explanation_md": "That block has 31 numbers."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "The interval starts at 100 x 0.1 = 10 and holds 30 numbers: 10 to 39."
+      }
+    },
+    {
+      "draft_id": "D013",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "On a day when demand is 50 and 40 units were ordered, the quantity sold is",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "50",
+            "explanation_md": "You cannot sell more than you have."
+          },
+          {
+            "option_id": "B",
+            "text_md": "40, the lesser of demand and quantity ordered",
+            "explanation_md": "Sales are limited by stock."
+          },
+          {
+            "option_id": "C",
+            "text_md": "90",
+            "explanation_md": "Demand and stock are not added."
+          },
+          {
+            "option_id": "D",
+            "text_md": "10",
+            "explanation_md": "That is the unmet demand."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "Quantity sold is the lesser of the demand and the quantity available (ordered)."
+      }
+    },
+    {
+      "draft_id": "D014",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Two ordering rules are compared by simulation. Why should both be run on the same sequence of random numbers?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "So that any difference in profit comes from the rules rather than from different random demand",
+            "explanation_md": "Both then face identical demand each day."
+          },
+          {
+            "option_id": "B",
+            "text_md": "To make both rules give equal profit",
+            "explanation_md": "The rules can still differ."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Because random numbers are used up once",
+            "explanation_md": "They can be reused."
+          },
+          {
+            "option_id": "D",
+            "text_md": "To remove the need for a run length",
+            "explanation_md": "A run length is still needed."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "Using the same random numbers gives a fair comparison between rules."
+      }
+    },
+    {
+      "draft_id": "D015",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F005"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "In a simulation of a shop's ordering rule, the demand for the product is a(n)",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Uncontrollable variable, outside the decision maker's control",
+            "explanation_md": "Demand is determined by customers."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Controllable variable, set by the manager",
+            "explanation_md": "The ordering rule is the controllable one."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Parameter that can be changed by the simulation clock",
+            "explanation_md": "The clock only advances time."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Constraint of a linear programme",
+            "explanation_md": "It is not an LP constraint."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "The ordering rule is controllable; demand is an uncontrollable variable."
+      }
+    },
+    {
+      "draft_id": "D016",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F006"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Stock is reordered only when it falls to a set level, which happens infrequently and irregularly. The suitable time-incrementing method is",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Fixed time increments of one day",
+            "explanation_md": "Fixed increments suit events occurring with regularity."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Variable time increments: the clock advances to the next event",
+            "explanation_md": "When events are infrequent, jump from event to event."
+          },
+          {
+            "option_id": "C",
+            "text_md": "No clock is needed",
+            "explanation_md": "A simulated clock is a must."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Increments of one year",
+            "explanation_md": "Not related to the event pattern."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "Variable time increments suit infrequent, irregular events; fixed ones suit regular events."
+      }
+    },
+    {
+      "draft_id": "D017",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F006"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "One way to choose the run length is to run the model until simulated data correspond to historical data. This is the",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Equilibrium approach",
+            "explanation_md": "The run continues until simulated frequencies match historical ones."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Fixed-period approach",
+            "explanation_md": "That runs for a specified period."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Large-sample approach",
+            "explanation_md": "That runs long enough to give large samples."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Simplex approach",
+            "explanation_md": "Not a run-length method."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "Running until simulated data match historical frequencies is the equilibrium approach to run length."
+      }
+    },
+    {
+      "draft_id": "D018",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F007"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "Simulation is desirable when experiments on the real system",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Would be too costly or would disrupt ongoing activities",
+            "explanation_md": "These are stated advantages of simulation."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Are cheap and instant",
+            "explanation_md": "Then the real experiment would do."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Give exact answers",
+            "explanation_md": "Not a reason."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Need no control of variables",
+            "explanation_md": "Lack of control favours simulation."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "Simulation is desirable when real experiments would disrupt activities, cost too much, or allow no control of key variables."
+      }
+    },
+    {
+      "draft_id": "D019",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F007"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Which is a disadvantage of simulation?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "It requires computer expertise and is time consuming",
+            "explanation_md": "These are listed disadvantages."
+          },
+          {
+            "option_id": "B",
+            "text_md": "It cannot represent random events",
+            "explanation_md": "It can."
+          },
+          {
+            "option_id": "C",
+            "text_md": "It never allows changes to the model",
+            "explanation_md": "Experiments with changes are its purpose."
+          },
+          {
+            "option_id": "D",
+            "text_md": "It can be used only for production problems",
+            "explanation_md": "It applies to finance, queueing and many other areas."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "Time-consuming, expert-dependent and with few design principles (\"more art than science\")."
+      }
+    },
+    {
+      "draft_id": "D020",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F006"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "How does a simulation model differ from a linear programming model?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "A simulation model is custom built for the problem, while a linear programme is a standard structure with restated values",
+            "explanation_md": "Simulation models are built specially for each problem."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A simulation always gives the optimal answer",
+            "explanation_md": "It evaluates alternatives; it does not guarantee optimality."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A linear programme handles dynamic systems better",
+            "explanation_md": "Simulation handles dynamic systems."
+          },
+          {
+            "option_id": "D",
+            "text_md": "There is no difference",
+            "explanation_md": "They differ in structure and use."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "Simulation models are custom built, whereas LP can be reused across situations by restating values."
+      }
+    },
+    {
+      "draft_id": "D021",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "An outcome has probability 0.35. How many of the two-digit random numbers 00 to 99 are assigned to it?",
+        "numeric_rule": {
+          "expected_answer": "35",
+          "unit_label": "numbers",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "Each two-digit number represents 1 per cent, so 0.35 gets 35 numbers.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Probability times 100.",
+            "formula_or_substitution": "0.35 x 100",
+            "intermediate_result": "35"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D022",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "The cumulative probability before an outcome is 0.40. At which random number does its interval start?",
+        "numeric_rule": {
+          "expected_answer": "40",
+          "unit_label": "random number",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "The interval starts at 100 x 0.40 = 40.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Cumulative times 100.",
+            "formula_or_substitution": "0.40 x 100",
+            "intermediate_result": "40"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D023",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Demand is 20 for random numbers 00-19, 30 for 20-49, 40 for 50-89 and 50 for 90-99. What demand does the random number 57 give?",
+        "numeric_rule": {
+          "expected_answer": "40",
+          "unit_label": "units",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "57 lies in 50 to 89, so demand is 40.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Find the block.",
+            "formula_or_substitution": "57 in 50-89",
+            "intermediate_result": "40"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D024",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "Demand is 50 and the quantity ordered is 40. What is the quantity sold?",
+        "numeric_rule": {
+          "expected_answer": "40",
+          "unit_label": "units",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "Sold = min(50, 40) = 40.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Lesser value.",
+            "formula_or_substitution": "min(50, 40)",
+            "intermediate_result": "40"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D025",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F003"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Each unit costs Rs 20 and sells for Rs 30. If 40 are ordered and 30 sell (the rest are discarded), what is the profit in rupees?",
+        "numeric_rule": {
+          "expected_answer": "100",
+          "unit_label": "Rs",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "Profit = 30 x 30 - 20 x 40 = 900 - 800 = 100.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Revenue.",
+            "formula_or_substitution": "30 x 30",
+            "intermediate_result": "900"
+          },
+          {
+            "step_number": 2,
+            "description": "Cost.",
+            "formula_or_substitution": "20 x 40",
+            "intermediate_result": "800"
+          },
+          {
+            "step_number": 3,
+            "description": "Profit.",
+            "formula_or_substitution": "900 - 800",
+            "intermediate_result": "100"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D026",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F003"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Demand is 20, 30, 40 or 50 with probabilities 0.2, 0.3, 0.4 and 0.1. What is the expected demand?",
+        "numeric_rule": {
+          "expected_answer": "34",
+          "unit_label": "units",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "E(D) = 4 + 9 + 16 + 5 = 34.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Weighted sum.",
+            "formula_or_substitution": "20 x 0.2 + 30 x 0.3 + 40 x 0.4 + 50 x 0.1",
+            "intermediate_result": "34"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D027",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "Four simulated daily profits are -200, 100, 400 and 100 (Rs). What is the average daily profit?",
+        "numeric_rule": {
+          "expected_answer": "100",
+          "unit_label": "Rs",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "(-200 + 100 + 400 + 100) / 4 = 400 / 4 = 100.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Sum.",
+            "formula_or_substitution": "-200 + 100 + 400 + 100",
+            "intermediate_result": "400"
+          },
+          {
+            "step_number": 2,
+            "description": "Divide by 4.",
+            "formula_or_substitution": "400 / 4",
+            "intermediate_result": "100"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D028",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "A rule yields an average profit of Rs 190 a day. What total profit does that imply over a 20-day simulation?",
+        "numeric_rule": {
+          "expected_answer": "3800",
+          "unit_label": "Rs",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "190 x 20 = 3,800.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Multiply.",
+            "formula_or_substitution": "190 x 20",
+            "intermediate_result": "3,800"
+          }
+        ]
+      }
+    }
+  ],
+  "unresolved": [
+    "Courseware printed p. 161 (unit title page) not read.",
+    "The courseware's 20-day milk simulation table (printed p. 164) was not recomputed; the items use new data. Its conclusion that the new rule improves profitability rests on one 20-day run and is not a statistical test.",
+    "The Shrimps Galore case study (printed pp. 167-169) uses normal random deviates and supply variation that the unit text does not teach; it is not used.",
+    "The courseware's objectives mention random number generation, but the unit text shows only the use of two-digit random numbers against probability intervals; computer pseudo-random generators are not described by the courseware and no item covers them.",
+    "Reviewer for this batch is the authoring agent; no independent or human review."
+  ],
+  "next_batch_hint": "ABM-B-U10-B001: Fundamentals of Human Resource Management (courseware unit 10, printed p. 173 = PDF p. 188). Module B contents: units 10 to 16 (p. 173, 197, 249, 286, 307, 339, 362)."
+}
