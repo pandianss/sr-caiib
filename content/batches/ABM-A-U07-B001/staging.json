@@ -1,0 +1,1460 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "ABM-A-U07-B001",
+  "paper_id": "ABM",
+  "unit_label": "Module A unit 7: Estimation",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S01"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "statement": "Inference is the process of drawing conclusions about a parameter from a sample. The two main areas of inferential statistics are estimation and testing of hypothesis. Estimating a parameter means using a statistic from the sample data (for example the sample mean) to say something about the population parameter (the population mean).",
+      "source_id": "S01",
+      "locator": "Printed p. 135, section 7.1",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F002",
+      "statement": "A point estimate is a single number used to estimate an unknown population parameter. It is either right or wrong, so on its own it does not show how wrong it might be. An interval estimate is a range of values used to estimate a parameter; it indicates the error by the extent of its range and by the probability of the true parameter lying within it. A point estimate is much more useful accompanied by an estimate of the error that might be involved.",
+      "source_id": "S01",
+      "locator": "Printed pp. 135-136, section 7.2",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F003",
+      "statement": "A sample statistic used to estimate a population parameter is called an estimator (the sample mean for the population mean, the sample proportion for the population proportion, the sample range for the population range). A specific numerical value of an estimator observed in one sample is an estimate.",
+      "source_id": "S01",
+      "locator": "Printed p. 136, section 7.3",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F004",
+      "statement": "Four criteria of a good estimator: unbiased (the mean of its sampling distribution equals the parameter, so on average it is neither too high nor too low); efficient (it has the smaller standard error among competing statistics from samples of the same size, as when the standard error of the sample mean is 1.05 and that of the sample median is 1.6, so the mean is more efficient); consistent (as the sample size increases it becomes almost certain that the statistic is very close to the parameter); and sufficient (it uses so much of the information in the sample that no other estimator could extract more).",
+      "source_id": "S01",
+      "locator": "Printed pp. 136-137, Criteria of a Good Estimator",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F005",
+      "statement": "The sample mean x-bar is the point estimator of the population mean (it is unbiased, consistent and the most efficient, and its sampling distribution can be approximated by the normal distribution for a sufficiently large sample). In the courseware 35 cartons with total 3,570 syringes give x-bar = 102. The point estimator of the population variance is s^2 = Sum (x - x-bar)^2 / (n - 1); dividing by n gives an estimator with some bias. For five readings 4.33, 4.37, 4.36, 4.32 and 4.37 the courseware finds x-bar = 4.35 and s^2 = 0.0022 / 4 = 0.00055. The sample proportion p-bar is the point estimator of the population proportion p (unbiased, consistent, efficient and sufficient): 4 damaged cartons in 50 give p-bar = 0.08.",
+      "source_id": "S01",
+      "locator": "Printed pp. 137-139, section 7.4",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F006",
+      "statement": "The standard error of the mean for an infinite population is sigma / sqrt(n); with sigma = 10 months and n = 200 batteries it is 10 / sqrt(200) = 0.707 month. The probability that a sample mean lies within plus or minus one, two and three standard errors of the population mean is 0.683, 0.955 and 0.997, so with a sample mean of 36 months the life lies between 35.293 and 36.707 months with 68.3 per cent confidence, between 34.586 and 37.414 months with 95.5 per cent and between 33.879 and 38.121 months with 99.7 per cent. A given interval either contains the population mean or does not, because the population mean is a fixed parameter; the confidence is that in 95.5 per cent of all samples the interval constructed contains it.",
+      "source_id": "S01",
+      "locator": "Printed pp. 140-142, section 7.5",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F007",
+      "statement": "The probability associated with an interval estimate is its confidence level, and the range of the estimate is the confidence interval, with lower and upper confidence limits (LCL and UCL), written x-bar plus or minus z standard errors. About 90 per cent of the normal area lies within 1.64 standard errors, 95 per cent within 1.96 and 99 per cent within 2.58. The most used confidence levels are 90, 95 and 99 per cent, but any level may be used. A higher confidence level gives a wider and so less precise interval; a tighter interval has a lower confidence level. If many samples of the same size are drawn, about 95 per cent of the 95 per cent confidence intervals contain the population mean.",
+      "source_id": "S01",
+      "locator": "Printed pp. 142-143, section 7.6",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F008",
+      "statement": "For a large sample (n > 30) the central limit theorem allows the normal distribution to be used even if the population is not normal. With known population standard deviation, the confidence limits for the mean are x-bar plus or minus z sigma / sqrt(n). Courseware example: n = 100 wiper blades, x-bar = 21 months, sigma = 6 months, standard error 0.6, 95 per cent confidence (z = 1.96), limits 21 - 1.18 = 19.82 and 21 + 1.18 = 22.18 months.",
+      "source_id": "S01",
+      "locator": "Printed pp. 143-144, section 7.7",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F009",
+      "statement": "When the population standard deviation is unknown it is estimated by the sample standard deviation with divisor n - 1 (sigma-hat = s). If the population is finite and the sample is more than 5 per cent of it, the estimated standard error uses the finite population multiplier: sigma-hat of x-bar = (sigma-hat / sqrt(n)) x sqrt((N - n) / (N - 1)). Courseware example: N = 700 families, n = 50, x-bar = Rs 11,800, s = Rs 950 gives Rs 129.57, and the 90 per cent limits (z = 1.64) are Rs 11,587.50 and Rs 12,012.50.",
+      "source_id": "S01",
+      "locator": "Printed pp. 144-145, section 7.7",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F010",
+      "statement": "For a proportion, the sampling distribution has mean p and standard error sqrt(pq / n); with p unknown it is estimated by sqrt(p-bar q-bar / n). The binomial can be approximated by the normal when n p and n q are both at least 5. Courseware example: n = 75 employees, p-bar = 0.4, estimated standard error sqrt(0.4 x 0.6 / 75) = 0.057, 99 per cent confidence (z = 2.58) limits 0.253 and 0.547.",
+      "source_id": "S01",
+      "locator": "Printed pp. 145-147, section 7.8 (the courseware rounds the standard error to 0.057 before computing the limits)",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    }
+  ],
+  "drafts": [
+    {
+      "draft_id": "D001",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F001",
+        "F002",
+        "F003"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "Estimating: point, interval, estimator and estimate",
+        "core_explanation_md": "We seldom know a population value (the average balance of **all** accounts, the share of **all** loans that will turn bad). We take a sample and **infer**.\n\n| Term | Meaning | Example |\n| --- | --- | --- |\n| **Estimator** | The sample statistic used (a formula or rule) | The sample mean |\n| **Estimate** | The number that formula gives for one sample | Rs 18,400 |\n| **Point estimate** | A single value | \"The average balance is Rs 18,400\" |\n| **Interval estimate** | A range, with a probability attached | \"Between Rs 17,900 and Rs 18,900, with 95 per cent confidence\" |\n\nA point estimate is either right or wrong, and it does not tell you how wrong. An interval estimate tells you both the likely **size of the error** (its width) and **how sure** you are (its probability).",
+        "expanded_explanation_md": "Statistics has two main tools of inference: **estimation** (this unit) and **testing of hypotheses**. Estimation asks \"what is the value?\"; testing asks \"is this claim about the value plausible?\"",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Is \"the sample mean\" an estimator or an estimate? And \"Rs 18,400 from this sample\"?",
+          "expected_takeaway": "The sample mean is an estimator (the rule); Rs 18,400 is an estimate (its value in one sample)."
+        }
+      }
+    },
+    {
+      "draft_id": "D002",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "Four marks of a good estimator",
+        "core_explanation_md": "| Property | Plain meaning |\n| --- | --- |\n| **Unbiased** | On average it hits the target: the mean of its sampling distribution equals the parameter, so it is not systematically too high or too low |\n| **Efficient** | Among competing estimators it varies least from sample to sample, that is, it has the **smaller standard error** |\n| **Consistent** | As the sample grows it gets almost certainly very close to the parameter |\n| **Sufficient** | It uses all the information the sample holds about the parameter |\n\nExample of efficiency: for samples of the same size the sample mean has a standard error of 1.05 and the sample median 1.6. The mean is the more efficient estimator of the population mean.",
+        "expanded_explanation_md": "Consistency also tells you whether a bigger sample will help. If an estimator is not consistent, taking more observations wastes time and money.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Estimator A has a standard error of 2.0 and estimator B of 3.5, both unbiased. Which is more efficient, and why?",
+          "expected_takeaway": "A: with the same bias (none), the smaller standard error means less variation from sample to sample."
+        }
+      }
+    },
+    {
+      "draft_id": "D003",
+      "item_type": "card",
+      "variant": "formula",
+      "fact_ids": [
+        "F005"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "Point estimators of the mean, variance and proportion",
+        "core_explanation_md": "Three standard point estimators:\n\n- **Mean**: the sample mean estimates the population mean.\n- **Variance**: add the squared deviations from the sample mean and divide by **n - 1**, not n. Dividing by n gives an estimator that is biased (it tends to be too small), while dividing by n - 1 makes it **unbiased**.\n- **Proportion**: the sample proportion p-bar = (number with the characteristic) / n estimates the population proportion.\n\nThe standard deviation estimate is the square root of the variance estimate.",
+        "expanded_explanation_md": "Earlier, when describing a data set that was the whole population, the divisor was N. Here the data are a sample drawn to say something about a bigger population, so the divisor is n - 1.",
+        "formula_spec": {
+          "latex_expression": "\\hat{\\mu} = \\bar{x} = \\frac{\\sum x}{n},\\quad s^2 = \\frac{\\sum (x-\\bar{x})^2}{n-1},\\quad \\bar{p} = \\frac{x}{n}",
+          "variables": [
+            {
+              "symbol": "n",
+              "name": "Sample size",
+              "unit": "count"
+            },
+            {
+              "symbol": "x-bar",
+              "name": "Sample mean",
+              "unit": "units of x"
+            },
+            {
+              "symbol": "s squared",
+              "name": "Estimate of the population variance",
+              "unit": "units of x squared"
+            },
+            {
+              "symbol": "p-bar",
+              "name": "Sample proportion",
+              "unit": "pure number"
+            }
+          ],
+          "assumptions": [
+            "Simple random sample from the population.",
+            "n is at least 2 for a variance estimate."
+          ],
+          "common_errors": [
+            "Dividing by n when estimating a population variance from a sample.",
+            "Reporting the variance when the standard deviation is asked.",
+            "Counting the population size in place of n."
+          ]
+        },
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Five readings have squared deviations adding to 90. What is the estimate of the population variance?",
+          "expected_takeaway": "90 / (5 - 1) = 22.5."
+        }
+      }
+    },
+    {
+      "draft_id": "D004",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F006",
+        "F007"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "Confidence levels and confidence intervals",
+        "core_explanation_md": "A **confidence interval** is a sample mean plus or minus a multiple of the standard error:\n\n**x-bar plus or minus z x (standard error)**, where z is chosen by how confident you want to be.\n\n| Confidence level | z (standard errors either side) |\n| --- | --- |\n| 68.3 per cent | 1 |\n| 90 per cent | 1.64 |\n| 95 per cent | 1.96 |\n| 95.5 per cent | 2 |\n| 99 per cent | 2.58 |\n| 99.7 per cent | 3 |\n\nThe ends are the **lower** and **upper confidence limits**.\n\n**Trade-off.** More confidence needs a wider interval, and a wide interval is less precise. A 99 per cent interval is surer but fuzzier than a 90 per cent one.",
+        "expanded_explanation_md": "A bank manager who wants a very precise estimate must accept less confidence, or take a bigger sample (which shrinks the standard error).",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Which is wider, a 90 per cent or a 99 per cent interval from the same sample, and why?",
+          "expected_takeaway": "The 99 per cent interval: it uses 2.58 standard errors each side instead of 1.64, to be more sure of containing the parameter."
+        }
+      }
+    },
+    {
+      "draft_id": "D005",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F006",
+        "F007"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "Reading a confidence interval correctly",
+        "core_explanation_md": "The population mean is a **fixed number**. It does not move; your interval does, from sample to sample.\n\nSo it is wrong to say \"there is a 95 per cent chance that the mean lies in this interval\". Say instead: **if we drew many samples and built an interval from each in the same way, about 95 per cent of those intervals would contain the true mean.** This particular interval either contains it or it does not; the 95 per cent describes the method.\n\nA picture to hold: five intervals drawn from five samples; four catch the true mean, one misses.",
+        "expanded_explanation_md": "In practice we have one sample and one interval, and we say we are 95 per cent confident because the method works 95 times in 100.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "What does \"95 per cent confident\" describe: this one interval, or the method of building intervals?",
+          "expected_takeaway": "The method: about 95 per cent of intervals built this way contain the population mean."
+        }
+      }
+    },
+    {
+      "draft_id": "D006",
+      "item_type": "card",
+      "variant": "formula",
+      "fact_ids": [
+        "F008"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "Interval estimate of a mean from a large sample (sigma known)",
+        "core_explanation_md": "With a large sample (n above 30) the sample mean is approximately normal even if the population is not. So:\n\n1. Find the standard error: sigma divided by the square root of n.\n2. Pick z for the confidence level.\n3. Add and subtract z standard errors from the sample mean.\n\nExample shape: n = 100, mean 21 months, sigma 6 months. Standard error 0.6. For 95 per cent confidence the margin is 1.96 x 0.6 = 1.18, so the interval is 19.82 to 22.18 months.",
+        "expanded_explanation_md": "The margin (z times the standard error) is the same on both sides. Quadrupling the sample size halves the standard error and so halves the margin.",
+        "formula_spec": {
+          "latex_expression": "\\bar{x} \\pm z\\,\\frac{\\sigma}{\\sqrt{n}}",
+          "variables": [
+            {
+              "symbol": "x-bar",
+              "name": "Sample mean",
+              "unit": "units of x"
+            },
+            {
+              "symbol": "sigma",
+              "name": "Known population standard deviation",
+              "unit": "units of x"
+            },
+            {
+              "symbol": "n",
+              "name": "Sample size (above 30)",
+              "unit": "count"
+            },
+            {
+              "symbol": "z",
+              "name": "1.64, 1.96 or 2.58 for 90, 95 or 99 per cent",
+              "unit": "standard errors"
+            }
+          ],
+          "assumptions": [
+            "Simple random sample, n above 30.",
+            "Population standard deviation known.",
+            "Infinite population, or a sample under 5 per cent of a finite one."
+          ],
+          "common_errors": [
+            "Using sigma instead of sigma over the square root of n as the margin.",
+            "Choosing the wrong z for the confidence level.",
+            "Applying the formula to a small sample from a non-normal population."
+          ]
+        },
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Sample mean 50, sigma 12, n = 36, 95 per cent confidence. What are the limits?",
+          "expected_takeaway": "Standard error 2; margin 1.96 x 2 = 3.92; limits 46.08 and 53.92."
+        }
+      }
+    },
+    {
+      "draft_id": "D007",
+      "item_type": "card",
+      "variant": "formula",
+      "fact_ids": [
+        "F009"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "When sigma is unknown, or the population is small",
+        "core_explanation_md": "Two practical complications:\n\n**sigma unknown.** Replace sigma by the sample standard deviation s, computed with divisor n - 1 (called sigma-hat).\n\n**finite population.** If you sample more than 5 per cent of a finite population without replacement, shrink the standard error with the finite population multiplier:\n\nestimated standard error = (sigma-hat over root n) x root of ((N - n) / (N - 1)).\n\nThen build the interval as before.\n\nExample: 700 families, sample 50, mean Rs 11,800, s = Rs 950. The sample is 7 per cent of the population, so the multiplier applies; the estimated standard error is Rs 129.57 and the 90 per cent limits are Rs 11,587.50 to Rs 12,012.50.",
+        "expanded_explanation_md": "Skipping the multiplier when it is needed overstates the standard error and gives an interval that is wider than necessary.",
+        "formula_spec": {
+          "latex_expression": "\\hat{\\sigma}_{\\bar{x}} = \\frac{\\hat{\\sigma}}{\\sqrt{n}}\\sqrt{\\frac{N-n}{N-1}},\\qquad \\bar{x} \\pm z\\,\\hat{\\sigma}_{\\bar{x}}",
+          "variables": [
+            {
+              "symbol": "sigma-hat",
+              "name": "Sample standard deviation (divisor n - 1) used as the estimate of sigma",
+              "unit": "units of x"
+            },
+            {
+              "symbol": "N",
+              "name": "Population size",
+              "unit": "count"
+            },
+            {
+              "symbol": "n",
+              "name": "Sample size",
+              "unit": "count"
+            }
+          ],
+          "assumptions": [
+            "Finite population, sampling without replacement, n/N above 0.05.",
+            "Large sample (n above 30)."
+          ],
+          "common_errors": [
+            "Using divisor n for the sample standard deviation.",
+            "Applying the multiplier when the sample is under 5 per cent of the population.",
+            "Using the multiplier's square root incorrectly (N - n over N - 1, not N - n over N)."
+          ]
+        },
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "N = 100 and n = 25. Does the finite population multiplier apply, and what is its value?",
+          "expected_takeaway": "Yes: 25 per cent is above 5 per cent. sqrt(75/99) = 0.8704."
+        }
+      }
+    },
+    {
+      "draft_id": "D008",
+      "item_type": "card",
+      "variant": "formula",
+      "fact_ids": [
+        "F010"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "Interval estimate of a proportion from a large sample",
+        "core_explanation_md": "Counting successes follows the binomial distribution, but for a large enough sample the **normal** distribution approximates it. The rule of thumb: both n times p and n times q must be **at least 5**.\n\nSteps:\n\n1. Sample proportion p-bar; q-bar = 1 - p-bar.\n2. Estimated standard error = square root of (p-bar x q-bar / n).\n3. Limits: p-bar plus or minus z standard errors.\n\nExample: 75 employees, 40 per cent prefer their own retirement plan. Estimated standard error = sqrt(0.4 x 0.6 / 75), about 0.0566. At 99 per cent confidence (z = 2.58) the limits are about 0.254 and 0.546.",
+        "expanded_explanation_md": "The courseware rounds the standard error to 0.057 first, which gives limits 0.253 and 0.547. Rounding at the end gives 0.254 and 0.546; either way the story is the same.",
+        "formula_spec": {
+          "latex_expression": "\\hat{\\sigma}_{\\bar{p}} = \\sqrt{\\frac{\\bar{p}\\bar{q}}{n}},\\qquad \\bar{p} \\pm z\\,\\hat{\\sigma}_{\\bar{p}}",
+          "variables": [
+            {
+              "symbol": "p-bar",
+              "name": "Sample proportion",
+              "unit": "pure number"
+            },
+            {
+              "symbol": "q-bar",
+              "name": "1 - p-bar",
+              "unit": "pure number"
+            },
+            {
+              "symbol": "n",
+              "name": "Sample size",
+              "unit": "count"
+            },
+            {
+              "symbol": "z",
+              "name": "Multiplier for the confidence level",
+              "unit": "standard errors"
+            }
+          ],
+          "assumptions": [
+            "n p-bar and n q-bar both at least 5.",
+            "Simple random sample."
+          ],
+          "common_errors": [
+            "Using the formula when n times p-bar or n times q-bar is below 5.",
+            "Forgetting to take the square root.",
+            "Expressing limits in per cent in one place and as a fraction in another."
+          ]
+        },
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "n = 100 and p-bar = 0.4. What is the estimated standard error of the proportion?",
+          "expected_takeaway": "sqrt(0.4 x 0.6 / 100) = sqrt(0.0024), about 0.0490."
+        }
+      }
+    },
+    {
+      "draft_id": "D009",
+      "item_type": "card",
+      "variant": "worked_example",
+      "fact_ids": [
+        "F005"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [
+          "ABM::MOD_A::U07::LO_01"
+        ],
+        "title": "Estimating the mean and variance from six loan processing times",
+        "core_explanation_md": "Six randomly chosen loan applications took 4, 6, 7, 9, 10 and 12 days to process. Find the point estimates of the population mean and variance, and the variance you would get by wrongly dividing by n.",
+        "worked_steps": [
+          {
+            "step_number": 1,
+            "description": "Sample mean.",
+            "formula_or_substitution": "(4 + 6 + 7 + 9 + 10 + 12) / 6 = 48 / 6",
+            "intermediate_result": "8"
+          },
+          {
+            "step_number": 2,
+            "description": "Deviations from the mean.",
+            "formula_or_substitution": "4-8, 6-8, 7-8, 9-8, 10-8, 12-8",
+            "intermediate_result": "-4, -2, -1, 1, 2, 4"
+          },
+          {
+            "step_number": 3,
+            "description": "Sum of squared deviations.",
+            "formula_or_substitution": "16 + 4 + 1 + 1 + 4 + 16",
+            "intermediate_result": "42"
+          },
+          {
+            "step_number": 4,
+            "description": "Variance estimate (divisor n - 1).",
+            "formula_or_substitution": "42 / 5",
+            "intermediate_result": "8.4"
+          },
+          {
+            "step_number": 5,
+            "description": "Standard deviation estimate.",
+            "formula_or_substitution": "sqrt(8.4)",
+            "intermediate_result": "2.90"
+          },
+          {
+            "step_number": 6,
+            "description": "Divisor n would give (biased, smaller).",
+            "formula_or_substitution": "42 / 6",
+            "intermediate_result": "7.0"
+          }
+        ],
+        "final_answer_with_unit": "Mean estimate 8 days; variance estimate 8.4 days squared (standard deviation about 2.90 days); dividing by n would give 7.0, too small on average",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Why is 8.4 preferred over 7.0 as an estimate of the population variance?",
+          "expected_takeaway": "Dividing by n - 1 makes the estimator unbiased; dividing by n tends to underestimate the variance."
+        }
+      }
+    },
+    {
+      "draft_id": "D010",
+      "item_type": "card",
+      "variant": "worked_example",
+      "fact_ids": [
+        "F006",
+        "F007",
+        "F008"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [
+          "ABM::MOD_A::U07::LO_04"
+        ],
+        "title": "Loan processing time: intervals at three confidence levels",
+        "core_explanation_md": "For 64 loan applications the mean processing time is 18 days. The population standard deviation is known to be 4 days. Build intervals with confidence levels 68.3, 90, 95 and 99 per cent.",
+        "worked_steps": [
+          {
+            "step_number": 1,
+            "description": "Standard error.",
+            "formula_or_substitution": "4 / sqrt(64) = 4 / 8",
+            "intermediate_result": "0.5 day"
+          },
+          {
+            "step_number": 2,
+            "description": "68.3 per cent (z = 1).",
+            "formula_or_substitution": "18 plus or minus 0.5",
+            "intermediate_result": "17.5 to 18.5"
+          },
+          {
+            "step_number": 3,
+            "description": "90 per cent (z = 1.64).",
+            "formula_or_substitution": "18 plus or minus 0.82",
+            "intermediate_result": "17.18 to 18.82"
+          },
+          {
+            "step_number": 4,
+            "description": "95 per cent (z = 1.96).",
+            "formula_or_substitution": "18 plus or minus 0.98",
+            "intermediate_result": "17.02 to 18.98"
+          },
+          {
+            "step_number": 5,
+            "description": "99 per cent (z = 2.58).",
+            "formula_or_substitution": "18 plus or minus 1.29",
+            "intermediate_result": "16.71 to 19.29"
+          },
+          {
+            "step_number": 6,
+            "description": "Widths of the four intervals.",
+            "formula_or_substitution": "1.00; 1.64; 1.96; 2.58",
+            "intermediate_result": "width grows with confidence"
+          }
+        ],
+        "final_answer_with_unit": "Intervals (days): 68.3 per cent 17.5 to 18.5; 90 per cent 17.18 to 18.82; 95 per cent 17.02 to 18.98; 99 per cent 16.71 to 19.29. More confidence, wider interval",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "What would you change to get a narrower 95 per cent interval?",
+          "expected_takeaway": "Increase the sample size: the standard error (and so the margin) shrinks as n grows."
+        }
+      }
+    },
+    {
+      "draft_id": "D011",
+      "item_type": "card",
+      "variant": "worked_example",
+      "fact_ids": [
+        "F009"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [
+          "ABM::MOD_A::U07::LO_04"
+        ],
+        "title": "Average balance when the population is small and sigma unknown",
+        "core_explanation_md": "A bank has 800 accounts of a certain type. A simple random sample of 100 (without replacement) has mean balance Rs 24,000 and sample standard deviation Rs 3,000. Estimate the mean balance of all 800 accounts with 90 per cent confidence.",
+        "worked_steps": [
+          {
+            "step_number": 1,
+            "description": "Sampling fraction.",
+            "formula_or_substitution": "100 / 800",
+            "intermediate_result": "0.125, above 0.05: use the multiplier"
+          },
+          {
+            "step_number": 2,
+            "description": "Standard error without the multiplier.",
+            "formula_or_substitution": "3,000 / sqrt(100)",
+            "intermediate_result": "300"
+          },
+          {
+            "step_number": 3,
+            "description": "Finite population multiplier.",
+            "formula_or_substitution": "sqrt((800 - 100) / (800 - 1)) = sqrt(700/799)",
+            "intermediate_result": "0.9360"
+          },
+          {
+            "step_number": 4,
+            "description": "Estimated standard error.",
+            "formula_or_substitution": "300 x 0.9360",
+            "intermediate_result": "280.80"
+          },
+          {
+            "step_number": 5,
+            "description": "Margin at 90 per cent (z = 1.64).",
+            "formula_or_substitution": "1.64 x 280.80",
+            "intermediate_result": "460.51"
+          },
+          {
+            "step_number": 6,
+            "description": "Limits.",
+            "formula_or_substitution": "24,000 minus and plus 460.51",
+            "intermediate_result": "23539.49 and 24460.51"
+          }
+        ],
+        "final_answer_with_unit": "With 90 per cent confidence the mean balance of all 800 accounts lies between Rs 23539.49 and Rs 24460.51",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "What would the standard error be if the multiplier were wrongly omitted?",
+          "expected_takeaway": "Rs 300, which overstates it and widens the interval."
+        }
+      }
+    },
+    {
+      "draft_id": "D012",
+      "item_type": "card",
+      "variant": "worked_example",
+      "fact_ids": [
+        "F010"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [
+          "ABM::MOD_A::U07::LO_04"
+        ],
+        "title": "Share of problem loans from a sample of 200",
+        "core_explanation_md": "In a random sample of 200 loans, 18 are non-performing. Estimate the proportion of non-performing loans in the whole portfolio with 95 per cent confidence.",
+        "worked_steps": [
+          {
+            "step_number": 1,
+            "description": "Sample proportion.",
+            "formula_or_substitution": "18 / 200",
+            "intermediate_result": "0.09"
+          },
+          {
+            "step_number": 2,
+            "description": "Check the normal approximation: n p-bar and n q-bar.",
+            "formula_or_substitution": "200 x 0.09; 200 x 0.91",
+            "intermediate_result": "18 and 182, both at least 5"
+          },
+          {
+            "step_number": 3,
+            "description": "Estimated standard error.",
+            "formula_or_substitution": "sqrt(0.09 x 0.91 / 200) = sqrt(0.0004095)",
+            "intermediate_result": "0.0202"
+          },
+          {
+            "step_number": 4,
+            "description": "Margin at 95 per cent (z = 1.96).",
+            "formula_or_substitution": "1.96 x 0.0202",
+            "intermediate_result": "0.0397"
+          },
+          {
+            "step_number": 5,
+            "description": "Limits.",
+            "formula_or_substitution": "0.09 minus and plus 0.0397",
+            "intermediate_result": "0.0503 to 0.1297"
+          }
+        ],
+        "final_answer_with_unit": "With 95 per cent confidence the portfolio's non-performing share lies between 5.03 and 12.97 per cent",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Why is a sample of 200 enough for the normal approximation here?",
+          "expected_takeaway": "Both n p-bar = 18 and n q-bar = 182 exceed 5, which is the rule of thumb."
+        }
+      }
+    },
+    {
+      "draft_id": "D013",
+      "item_type": "card",
+      "variant": "worked_example",
+      "fact_ids": [
+        "F006",
+        "F007"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [
+          "ABM::MOD_A::U07::LO_04"
+        ],
+        "title": "How the margin responds to the sample size",
+        "core_explanation_md": "The population standard deviation is 12 and the confidence level is 95 per cent (z = 1.96). Compare the margin of error for samples of 36, 144 and 576.",
+        "worked_steps": [
+          {
+            "step_number": 1,
+            "description": "Standard errors.",
+            "formula_or_substitution": "12/6; 12/12; 12/24",
+            "intermediate_result": "2; 1; 0.5"
+          },
+          {
+            "step_number": 2,
+            "description": "Margins at 95 per cent.",
+            "formula_or_substitution": "1.96 x 2; 1.96 x 1; 1.96 x 0.5",
+            "intermediate_result": "3.92; 1.96; 0.98"
+          },
+          {
+            "step_number": 3,
+            "description": "Pattern.",
+            "formula_or_substitution": "each fourfold increase in n",
+            "intermediate_result": "halves the margin"
+          }
+        ],
+        "final_answer_with_unit": "Margins 3.92, 1.96 and 0.98: quadrupling the sample size halves the margin of error",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "To cut the margin to one-third, by what factor must n rise?",
+          "expected_takeaway": "Nine times, because the standard error varies with 1 divided by the square root of n."
+        }
+      }
+    },
+    {
+      "draft_id": "D014",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F003"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "The sample mean computed from today's sample of loan files is Rs 3,40,000. The rule \"add the values and divide by n\" is the ____ and Rs 3,40,000 is the ____.",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Estimate; estimator",
+            "explanation_md": "This reverses the terms."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Estimator; estimate",
+            "explanation_md": "The statistic used is the estimator, and its value in one sample is an estimate."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Parameter; statistic",
+            "explanation_md": "A parameter describes the population."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Interval; point",
+            "explanation_md": "Both are single numbers or rules, not intervals."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "The sample statistic used is the estimator; a specific value it takes in one sample is an estimate."
+      }
+    },
+    {
+      "draft_id": "D015",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An estimator is unbiased if",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Its standard error is zero",
+            "explanation_md": "No estimator from a sample has zero standard error."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The mean of its sampling distribution equals the population parameter",
+            "explanation_md": "On average it is neither too high nor too low."
+          },
+          {
+            "option_id": "C",
+            "text_md": "It uses every observation",
+            "explanation_md": "That is closer to sufficiency."
+          },
+          {
+            "option_id": "D",
+            "text_md": "It gets closer to the parameter as n grows",
+            "explanation_md": "That describes consistency."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "An unbiased estimator has a sampling distribution whose mean equals the parameter."
+      }
+    },
+    {
+      "draft_id": "D016",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "The standard error of the sample mean is 1.05 and that of the sample median is 1.6, both for samples of the same size from one population. Which statement is correct?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The median is the more efficient estimator",
+            "explanation_md": "It has the larger standard error."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The mean is the more efficient estimator",
+            "explanation_md": "The smaller standard error means less variation between samples."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Both are equally efficient",
+            "explanation_md": "The standard errors differ."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Neither is unbiased",
+            "explanation_md": "Nothing here says so."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "The estimator with the smaller standard error is more efficient."
+      }
+    },
+    {
+      "draft_id": "D017",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "An estimator that becomes almost certain to be very close to the parameter as the sample size increases is called",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Unbiased",
+            "explanation_md": "Unbiasedness is about average position."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Efficient",
+            "explanation_md": "Efficiency compares standard errors."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Sufficient",
+            "explanation_md": "Sufficiency is about using all information."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Consistent",
+            "explanation_md": "This is the definition of consistency."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "Consistency means the statistic approaches the parameter as the sample grows."
+      }
+    },
+    {
+      "draft_id": "D018",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F005"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "To estimate a population variance from a sample, the sum of squared deviations from the sample mean is divided by",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "n, giving an unbiased estimator",
+            "explanation_md": "Dividing by n gives a biased estimator."
+          },
+          {
+            "option_id": "B",
+            "text_md": "n - 1, giving an unbiased estimator",
+            "explanation_md": "n - 1 removes the bias."
+          },
+          {
+            "option_id": "C",
+            "text_md": "n + 1",
+            "explanation_md": "Not used."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The population size N",
+            "explanation_md": "N is not known or used for the sample estimator."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "The estimator of the population variance uses divisor n - 1, which is unbiased."
+      }
+    },
+    {
+      "draft_id": "D019",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F002"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "What advantage does an interval estimate have over a point estimate?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "It is always correct",
+            "explanation_md": "It has a stated probability of being correct."
+          },
+          {
+            "option_id": "B",
+            "text_md": "It shows the likely size of the error and the probability of containing the parameter",
+            "explanation_md": "The range and the confidence level convey reliability."
+          },
+          {
+            "option_id": "C",
+            "text_md": "It needs no sample",
+            "explanation_md": "Both need sample data."
+          },
+          {
+            "option_id": "D",
+            "text_md": "It removes sampling error",
+            "explanation_md": "Sampling error remains."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "An interval estimate expresses the error by its range and by the probability of containing the true parameter."
+      }
+    },
+    {
+      "draft_id": "D020",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F007"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "From the same sample, a 99 per cent confidence interval for the mean compared with a 90 per cent one is",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Narrower",
+            "explanation_md": "Higher confidence needs a wider interval."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Wider",
+            "explanation_md": "It uses 2.58 standard errors each side instead of 1.64."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The same width",
+            "explanation_md": "The multipliers differ."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Wider only if n is small",
+            "explanation_md": "It is wider for any n."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "A higher confidence level gives a wider, less precise interval."
+      }
+    },
+    {
+      "draft_id": "D021",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F006",
+        "F007"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "A 95 per cent confidence interval for the mean is 17.0 to 19.0. Which interpretation is correct?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The population mean varies and lies between 17 and 19 on 95 per cent of days",
+            "explanation_md": "The population mean is a fixed parameter."
+          },
+          {
+            "option_id": "B",
+            "text_md": "In repeated samples, about 95 per cent of intervals built in this way would contain the population mean",
+            "explanation_md": "The confidence level describes the method over many samples."
+          },
+          {
+            "option_id": "C",
+            "text_md": "95 per cent of individual observations lie between 17 and 19",
+            "explanation_md": "The interval is for the mean, not for individual values."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The sample mean is 95 per cent likely to be 18",
+            "explanation_md": "This is not what the interval says."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "The population mean is fixed; the confidence level is the long-run proportion of such intervals that contain it."
+      }
+    },
+    {
+      "draft_id": "D022",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F008"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A sample of 50 is drawn from a population that is not normal. The normal distribution may still be used for the sample mean because",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The central limit theorem applies for samples above 30",
+            "explanation_md": "The sampling distribution of the mean approaches normal as n grows."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The population must be normal if n exceeds 30",
+            "explanation_md": "The population need not be normal."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The standard error is then zero",
+            "explanation_md": "It is not zero."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Sample means are always exactly normal",
+            "explanation_md": "They are only approximately normal."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "For large samples the central limit theorem lets the normal distribution be used even when the population is not normal."
+      }
+    },
+    {
+      "draft_id": "D023",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F009"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A simple random sample is 12 per cent of a finite population and the population standard deviation is estimated from the sample. Which is correct for the standard error?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Use sigma-hat over root n only",
+            "explanation_md": "The sample is above 5 per cent of the population."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Multiply sigma-hat over root n by the finite population multiplier",
+            "explanation_md": "When n/N is above 0.05 the multiplier is applied."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Divide by n instead of n - 1 in sigma-hat",
+            "explanation_md": "The divisor for the estimate is n - 1."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Use the proportion formula",
+            "explanation_md": "This is a mean."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "Above 5 per cent sampling fraction the standard error is multiplied by the finite population multiplier; the estimate of sigma uses divisor n - 1."
+      }
+    },
+    {
+      "draft_id": "D024",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F010"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Before building a normal-approximation confidence interval for a proportion from a sample of 40 loans with sample proportion 0.05, a check shows",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "n p-bar = 2 is below 5, so the normal approximation is not suitable",
+            "explanation_md": "Both n p-bar and n q-bar should be at least 5."
+          },
+          {
+            "option_id": "B",
+            "text_md": "n q-bar = 38, which is enough, so the approximation is fine",
+            "explanation_md": "Both products must reach 5, and n p-bar is only 2."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The sample is above 30, which is all that is needed",
+            "explanation_md": "Size alone is not the test for a proportion."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Proportions need no check",
+            "explanation_md": "The check is required."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "The normal approximation for a proportion needs both n p-bar and n q-bar to be at least 5; here n p-bar = 2."
+      }
+    },
+    {
+      "draft_id": "D025",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F009"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "When the population standard deviation is unknown, a large-sample interval for the mean uses",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The sample standard deviation (divisor n - 1) in its place",
+            "explanation_md": "The sample standard deviation estimates sigma."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The sample range",
+            "explanation_md": "The range is not used for the standard error."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The population variance, estimated as zero",
+            "explanation_md": "Never."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Nothing: the interval cannot be built",
+            "explanation_md": "It can be built with the estimate."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "The sample standard deviation with divisor n - 1 is used as the estimate of sigma."
+      }
+    },
+    {
+      "draft_id": "D026",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F005"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "The processing times (days) of five files are 12, 15, 18, 21 and 24. What is the point estimate of the population mean?",
+        "numeric_rule": {
+          "expected_answer": "18",
+          "unit_label": "days",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "(12 + 15 + 18 + 21 + 24) / 5 = 90 / 5 = 18.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Mean.",
+            "formula_or_substitution": "90 / 5",
+            "intermediate_result": "18"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D027",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F005"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "For the same five files (12, 15, 18, 21, 24), what is the point estimate of the population variance?",
+        "numeric_rule": {
+          "expected_answer": "22.5",
+          "unit_label": "days squared",
+          "precision_decimals": 1,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give the answer to 1 decimal place.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "Deviations from 18 are -6, -3, 0, 3 and 6, with squares adding to 90; 90 / (5 - 1) = 22.5.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Squared deviations.",
+            "formula_or_substitution": "36 + 9 + 0 + 9 + 36",
+            "intermediate_result": "90"
+          },
+          {
+            "step_number": 2,
+            "description": "Divide by n - 1.",
+            "formula_or_substitution": "90 / 4",
+            "intermediate_result": "22.5"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D028",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F005"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "In a sample of 60 customers, 9 prefer to bank online. What is the sample proportion?",
+        "numeric_rule": {
+          "expected_answer": "0.15",
+          "unit_label": "proportion",
+          "precision_decimals": 2,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give the answer to 2 decimal places.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "9 / 60 = 0.15.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Divide.",
+            "formula_or_substitution": "9 / 60",
+            "intermediate_result": "0.15"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D029",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F006"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "The population standard deviation is 12 and the sample size is 36. What is the standard error of the mean?",
+        "numeric_rule": {
+          "expected_answer": "2",
+          "unit_label": "units",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "12 / sqrt(36) = 12 / 6 = 2.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Divide.",
+            "formula_or_substitution": "12 / 6",
+            "intermediate_result": "2"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D030",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F008"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "The sample mean is 50 and the standard error is 2. What is the upper limit of the 95 per cent confidence interval (z = 1.96)?",
+        "numeric_rule": {
+          "expected_answer": "53.92",
+          "unit_label": "units",
+          "precision_decimals": 2,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give the answer to 2 decimal places.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "50 + 1.96 x 2 = 50 + 3.92 = 53.92.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Margin.",
+            "formula_or_substitution": "1.96 x 2",
+            "intermediate_result": "3.92"
+          },
+          {
+            "step_number": 2,
+            "description": "Add.",
+            "formula_or_substitution": "50 + 3.92",
+            "intermediate_result": "53.92"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D031",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F007"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "The sample mean is 50 and the standard error is 2. What is the lower limit of the 90 per cent confidence interval (z = 1.64)?",
+        "numeric_rule": {
+          "expected_answer": "46.72",
+          "unit_label": "units",
+          "precision_decimals": 2,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give the answer to 2 decimal places.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "50 - 1.64 x 2 = 50 - 3.28 = 46.72.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Margin.",
+            "formula_or_substitution": "1.64 x 2",
+            "intermediate_result": "3.28"
+          },
+          {
+            "step_number": 2,
+            "description": "Subtract.",
+            "formula_or_substitution": "50 - 3.28",
+            "intermediate_result": "46.72"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D032",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F009"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Sigma-hat is 60, the sample size is 25 and the population size is 100 (sampling without replacement). What is the estimated standard error of the mean, to 2 decimal places?",
+        "numeric_rule": {
+          "expected_answer": "10.44",
+          "unit_label": "units",
+          "precision_decimals": 2,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give the answer to 2 decimal places.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "(60 / 5) x sqrt((100 - 25) / (100 - 1)) = 12 x sqrt(75/99) = 12 x 0.87039 = 10.44.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Plain standard error.",
+            "formula_or_substitution": "60 / sqrt(25)",
+            "intermediate_result": "12"
+          },
+          {
+            "step_number": 2,
+            "description": "Multiplier.",
+            "formula_or_substitution": "sqrt(75 / 99)",
+            "intermediate_result": "0.8704"
+          },
+          {
+            "step_number": 3,
+            "description": "Product.",
+            "formula_or_substitution": "12 x 0.8704",
+            "intermediate_result": "10.44"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D033",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F010"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "The sample proportion is 0.4 and the sample size is 100. What is the estimated standard error of the proportion, to 4 decimal places?",
+        "numeric_rule": {
+          "expected_answer": "0.0490",
+          "unit_label": "proportion",
+          "precision_decimals": 4,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give the answer to 4 decimal places.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "sqrt(0.4 x 0.6 / 100) = sqrt(0.0024) = 0.0490.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Under the root.",
+            "formula_or_substitution": "0.4 x 0.6 / 100",
+            "intermediate_result": "0.0024"
+          },
+          {
+            "step_number": 2,
+            "description": "Root.",
+            "formula_or_substitution": "sqrt(0.0024)",
+            "intermediate_result": "0.0490"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D034",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F010"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "The sample proportion is 0.30 and its estimated standard error is 0.04. What is the upper limit of the 99 per cent confidence interval (z = 2.58)?",
+        "numeric_rule": {
+          "expected_answer": "0.4032",
+          "unit_label": "proportion",
+          "precision_decimals": 4,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give the answer to 4 decimal places.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "0.30 + 2.58 x 0.04 = 0.30 + 0.1032 = 0.4032.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Margin.",
+            "formula_or_substitution": "2.58 x 0.04",
+            "intermediate_result": "0.1032"
+          },
+          {
+            "step_number": 2,
+            "description": "Add.",
+            "formula_or_substitution": "0.30 + 0.1032",
+            "intermediate_result": "0.4032"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D035",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F007"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "The standard error is 0.5. What is the full width of the 95 per cent confidence interval (z = 1.96)?",
+        "numeric_rule": {
+          "expected_answer": "1.96",
+          "unit_label": "units",
+          "precision_decimals": 2,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give the answer to 2 decimal places.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "Width = 2 x 1.96 x 0.5 = 1.96.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Twice the margin.",
+            "formula_or_substitution": "2 x 1.96 x 0.5",
+            "intermediate_result": "1.96"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D036",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F006"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "According to the courseware, what is the confidence level (in per cent) for an interval of plus or minus 2 standard errors around the sample mean?",
+        "numeric_rule": {
+          "expected_answer": "95.5",
+          "unit_label": "per cent",
+          "precision_decimals": 1,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give the answer to 1 decimal place.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "The probability that a sample mean lies within plus or minus 2 standard errors of the population mean is 0.955, so the interval carries 95.5 per cent confidence.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Courseware figure.",
+            "formula_or_substitution": "within 2 standard errors",
+            "intermediate_result": "95.5 per cent"
+          }
+        ]
+      }
+    }
+  ],
+  "unresolved": [
+    "Courseware printed p. 134 (unit title page) not read; terminal questions on pp. 147-150 were read but not used.",
+    "The courseware rounds the standard error of a proportion to 0.057 before computing limits (0.253 to 0.547); unrounded the limits are 0.254 to 0.546. Items carry unrounded values and say so.",
+    "In Table 7.2 (printed p. 138) one squared deviation is printed as 881 where (-9) squared is 81; the printed total 1,228 uses 81. Items do not use this table.",
+    "The courseware says the 95.5 per cent figure applies to plus or minus 2 standard errors (the exact multiplier for 95 per cent is 1.96); items use each figure as the courseware states it.",
+    "The courseware mentions hypothesis testing as the second area of inferential statistics but does not teach it in this unit; no item covers it.",
+    "Reviewer for this batch is the authoring agent; no independent or human review."
+  ],
+  "next_batch_hint": "ABM-A-U08-B001: Linear Programming (courseware unit 8, printed p. 151 = PDF p. 166)."
+}
