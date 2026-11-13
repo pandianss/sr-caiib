@@ -1,0 +1,419 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BFM-A-U02-B002",
+  "paper_id": "BFM",
+  "unit_label": "Module A: International Banking - Liberalised Remittance Scheme (LRS) and other Remittance Facilities for Residents",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S03",
+    "ITA2025_S394",
+    "FB2026_MEMO"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "statement": "Under section 394 of the Income-tax Act, 2025 (in force from 1 April 2026), an authorised dealer collects tax at source on a remittance under the Liberalised Remittance Scheme of an amount or aggregate of amounts exceeding ten lakh rupees: at 2% where the purpose is education or medical treatment and at 20% for other purposes.",
+      "source_id": "ITA2025_S394",
+      "locator": "Section 394(1), Table, item 7",
+      "regulatory_sensitive": true,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F002",
+      "statement": "The authorised dealer does not collect tax on an LRS remittance that is a loan obtained from a financial institution for the purpose of pursuing education, nor on an amount on which the seller has already collected tax on an overseas tour programme package, nor where the buyer is liable to deduct tax at source under another provision and has deducted it.",
+      "source_id": "ITA2025_S394",
+      "locator": "Section 394(4)(a) and (b) and 394(5)",
+      "regulatory_sensitive": true,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F003",
+      "statement": "The sale of an overseas tour programme package, including travel, hotel stay, boarding or lodging and similar expenses, attracts tax collected by the seller at 2%. The Finance Bill 2026 memorandum proposed that the threshold for this provision be removed so that it applies irrespective of the amount.",
+      "source_id": "ITA2025_S394",
+      "locator": "Section 394(1), Table, item 8; Finance Bill 2026 memorandum, paragraph 8 on Table item 8",
+      "regulatory_sensitive": true,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F004",
+      "statement": "Before 1 April 2026 the rate for LRS remittances for education or medical treatment above ten lakh rupees was 5%; the Finance Bill 2026 proposed reducing it to 2%. The courseware (S03 printed pp. 53-54) describes the rules of 1 October 2020: 5% above Rs 7 lakh, 0.5% for an education loan, 10% without PAN.",
+      "source_id": "FB2026_MEMO",
+      "locator": "Paragraph 6 on Table item 7; S03 printed pp. 53-54",
+      "regulatory_sensitive": true,
+      "evidence_status": "explicit"
+    }
+  ],
+  "drafts": [
+    {
+      "draft_id": "D001",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "title": "TCS on foreign remittances: the three things to know",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "When a resident individual sends money abroad under the LRS, the **authorised dealer bank collects tax at source (TCS)** from the remitter. Three facts decide it.\n\n1. **The trigger**: the remittances in the financial year, taken together, **exceed ₹10 lakh**.\n2. **The rate depends on the purpose**: **2%** for **education or medical treatment**; **20%** for **every other purpose** (investment abroad, gifts, family maintenance, travel and the rest).\n3. **The collector**: the authorised dealer bank, at the time of the remittance.\n\nThe provision is section 394 of the Income-tax Act, 2025, in force from 1 April 2026.",
+        "self_check": {
+          "mode": "question",
+          "question_id": "D005"
+        }
+      }
+    },
+    {
+      "draft_id": "D002",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F002",
+        "F003"
+      ],
+      "payload": {
+        "title": "When no TCS is collected on an LRS remittance",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "Three situations switch the collection off or move it to someone else.\n\n- **Education funded by a loan** from a financial institution: **no TCS** on that remittance.\n- **Overseas tour package**: the **seller** (the tour operator) collects **2%** on the package price, with no ₹10 lakh threshold. The bank does **not** collect again on the amount the seller has already taxed.\n- **Tax already deducted**: if the person receiving the money is subject to tax deducted at source under another provision of the Act and it **has** been deducted, the bank does not collect TCS.\n\nCheck order for a bank officer: *tour package already taxed? education loan? tax already deducted? If none, test the ₹10 lakh aggregate.*",
+        "self_check": {
+          "mode": "question",
+          "question_id": "D010"
+        }
+      }
+    },
+    {
+      "draft_id": "D003",
+      "item_type": "card",
+      "variant": "worked_example",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "title": "TCS across a year of remittances for investment abroad",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "Illustrative case, taxed at the rate for purposes other than education or medical treatment (20%): a resident individual remits ₹4,00,000 in May, ₹8,50,000 in August and ₹1,00,000 in December, all to buy investments abroad. Tax is collected on the part of the year's total above the ₹10 lakh threshold. How much TCS is collected on each remittance?",
+        "worked_steps": [
+          {
+            "step_number": 1,
+            "description": "May: running total is ₹4,00,000, below the threshold.",
+            "formula_or_substitution": "4,00,000 ≤ 10,00,000",
+            "intermediate_result": "TCS ₹0.00"
+          },
+          {
+            "step_number": 2,
+            "description": "August: running total after the remittance.",
+            "formula_or_substitution": "4,00,000 + 8,50,000",
+            "intermediate_result": "₹12,50,000"
+          },
+          {
+            "step_number": 3,
+            "description": "The part of the total above the threshold is taxed at 20%.",
+            "formula_or_substitution": "(12,50,000 − 10,00,000) × 20%",
+            "intermediate_result": "₹50,000.00"
+          },
+          {
+            "step_number": 4,
+            "description": "December: the whole ₹1,00,000 falls above the threshold, so it is all taxed at 20%.",
+            "formula_or_substitution": "1,00,000 × 20%",
+            "intermediate_result": "₹20,000.00"
+          },
+          {
+            "step_number": 5,
+            "description": "Total collected in the year.",
+            "formula_or_substitution": "0 + 50,000 + 20,000",
+            "intermediate_result": "₹70,000.00"
+          }
+        ],
+        "final_answer_with_unit": "TCS: ₹0.00 in May, ₹50,000.00 in August and ₹20,000.00 in December, ₹70,000.00 in all",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Had all three remittances been for education paid from the remitter's own funds, what would the August and December TCS have been?",
+          "expected_takeaway": "At 2%: ₹5,000.00 in August (2,50,000 × 2%) and ₹2,000.00 in December (1,00,000 × 2%)."
+        }
+      }
+    },
+    {
+      "draft_id": "D004",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "title": "Old numbers in older books: what changed in 2026",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "Courseware written in 2020 or soon after teaches the **original** TCS rules: **5%** on LRS remittances above **₹7 lakh**, **0.5%** for an education loan, and **10%** if PAN or Aadhaar is missing.\n\nThe current position for the December 2026 exam (section 394 of the Income-tax Act, 2025):\n\n- Threshold: **₹10 lakh** a year, not ₹7 lakh.\n- Education or medical treatment: **2%** (it was 5% until 1 April 2026).\n- All other purposes: **20%**.\n- Education loan from a financial institution: **no TCS** (not 0.5%).\n- Overseas tour package: **2%** collected by the seller, with no threshold.\n\nIf an exam question quotes the older figures, it follows the older rules; the table above is the current law.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Which of these figures is out of date: ₹7 lakh threshold, ₹10 lakh threshold, 2% for education, 20% for investment?",
+          "expected_takeaway": "The ₹7 lakh threshold. The current threshold is ₹10 lakh."
+        }
+      }
+    },
+    {
+      "draft_id": "D005",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "At what rate is tax collected at source on an LRS remittance for education or medical treatment above the threshold?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "5%",
+            "explanation_md": "This was the rate until 1 April 2026."
+          },
+          {
+            "option_id": "B",
+            "text_md": "10%",
+            "explanation_md": "No such rate applies to education or medical remittances."
+          },
+          {
+            "option_id": "C",
+            "text_md": "2%",
+            "explanation_md": "This is the rate for education or medical treatment under section 394."
+          },
+          {
+            "option_id": "D",
+            "text_md": "20%",
+            "explanation_md": "That is the rate for other purposes."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "Section 394 provides 2% for education or medical treatment and 20% for other purposes, where the remittance or aggregate exceeds ten lakh rupees."
+      }
+    },
+    {
+      "draft_id": "D006",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "Above what aggregate amount of LRS remittances in a financial year does TCS apply under the current law?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "₹7 lakh",
+            "explanation_md": "That was the threshold under the original 2020 rule."
+          },
+          {
+            "option_id": "B",
+            "text_md": "₹10 lakh",
+            "explanation_md": "Section 394 sets the threshold at ten lakh rupees."
+          },
+          {
+            "option_id": "C",
+            "text_md": "₹5 lakh",
+            "explanation_md": "No such threshold applies."
+          },
+          {
+            "option_id": "D",
+            "text_md": "₹25 lakh",
+            "explanation_md": "The threshold is lower."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "TCS applies to an LRS remittance or aggregate of remittances exceeding ten lakh rupees."
+      }
+    },
+    {
+      "draft_id": "D007",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "Who collects the tax at source on a remittance made under the LRS?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The Reserve Bank of India",
+            "explanation_md": "RBI does not collect the tax."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The recipient abroad",
+            "explanation_md": "The tax is collected in India by the bank."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The income-tax assessing officer",
+            "explanation_md": "The assessing officer does not collect it at the time of remittance."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The authorised dealer bank through which the remittance is made",
+            "explanation_md": "Section 394 names the authorised dealer as the collector."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "The authorised dealer collects the tax at the time of the remittance."
+      }
+    },
+    {
+      "draft_id": "D008",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A resident individual remits ₹21,50,000 in a financial year for her own education abroad, paid from her savings, with no education loan (illustrative figures). Tax is collected on the part above the ₹10 lakh threshold. How much TCS does the bank collect, in rupees?",
+        "numeric_rule": {
+          "expected_answer": "23000.00",
+          "unit_label": "rupees",
+          "precision_decimals": 2,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give the tax in rupees to 2 decimal places.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "The part above the threshold is 21,50,000 − 10,00,000 = 11,50,000. At 2% for education: 11,50,000 × 2% = ₹23,000.00.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Part above the threshold",
+            "formula_or_substitution": "21,50,000 − 10,00,000",
+            "intermediate_result": "11,50,000"
+          },
+          {
+            "step_number": 2,
+            "description": "Apply the 2% education rate",
+            "formula_or_substitution": "11,50,000 × 2%",
+            "intermediate_result": "23,000.00"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D009",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A resident individual makes two remittances in one financial year to buy foreign shares: ₹11,00,000 in June and ₹6,00,000 in October (illustrative figures). Tax is collected on the part of the year's total above the ₹10 lakh threshold. How much TCS is collected in total over the two remittances, in rupees?",
+        "numeric_rule": {
+          "expected_answer": "140000.00",
+          "unit_label": "rupees",
+          "precision_decimals": 2,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give the tax in rupees to 2 decimal places.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "The total is 11,00,000 + 6,00,000 = 17,00,000; the part above ₹10 lakh is 7,00,000. At 20%: 7,00,000 × 20% = ₹1,40,000.00 (₹20,000 in June on 1,00,000 and ₹1,20,000 in October on 6,00,000).",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Total for the year",
+            "formula_or_substitution": "11,00,000 + 6,00,000",
+            "intermediate_result": "17,00,000"
+          },
+          {
+            "step_number": 2,
+            "description": "Part above the threshold",
+            "formula_or_substitution": "17,00,000 − 10,00,000",
+            "intermediate_result": "7,00,000"
+          },
+          {
+            "step_number": 3,
+            "description": "Apply 20% for investment abroad",
+            "formula_or_substitution": "7,00,000 × 20%",
+            "intermediate_result": "1,40,000.00"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D010",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F002"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A student remits ₹18,00,000 for university fees abroad, funded entirely by a loan from a bank. What is the position on TCS?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "TCS at 2% on the whole amount",
+            "explanation_md": "The loan exception applies."
+          },
+          {
+            "option_id": "B",
+            "text_md": "TCS at 20% on the amount above ₹10 lakh",
+            "explanation_md": "The remittance is an education-loan remittance, not an \"other purposes\" one."
+          },
+          {
+            "option_id": "C",
+            "text_md": "No TCS is collected on that remittance",
+            "explanation_md": "An education loan from a financial institution is outside the collection."
+          },
+          {
+            "option_id": "D",
+            "text_md": "TCS at 0.5% on the amount above ₹7 lakh",
+            "explanation_md": "That was the original 2020 rule, not the current one."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "Where the amount remitted is a loan obtained from a financial institution to pursue education, the authorised dealer does not collect tax at source."
+      }
+    },
+    {
+      "draft_id": "D011",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F003"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A family buys an overseas tour package of ₹2,00,000 from a tour operator in India. Who collects tax at source, at what rate, and is there a threshold?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The seller, at 2%, with no threshold",
+            "explanation_md": "Section 394 item 8 gives 2%, collected by the seller, and the Finance Bill 2026 removed the threshold."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The bank, at 20% above ₹10 lakh",
+            "explanation_md": "The package is taxed by the seller."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The seller, at 5% above ₹7 lakh",
+            "explanation_md": "Those are the earlier figures."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Nobody, since the amount is under ₹10 lakh",
+            "explanation_md": "The tour package provision has no threshold."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "The seller collects 2% on an overseas tour programme package, irrespective of the amount; the bank does not collect again on the amount the seller has taxed."
+      }
+    }
+  ],
+  "unresolved": [
+    "The Income-tax Act, 2025 text retrieved says \"an amount or aggregate of the amounts exceeding ten lakh rupees\" without spelling out whether the rate applies to the excess only. The items compute on the part above the threshold, which is how the courseware examples (printed pp. 53-54) and the earlier provision worked and how the Finance Bill memorandum describes it, but explicit current wording was not retrieved. The stems state the basis.",
+    "The footnote to section 394 quotes an earlier form of the table clauses (\"5% of amount or aggregate of amounts up to ten lakh rupees; 20% of amount or aggregate of amounts exceeding ten lakh rupees\"), whose reading is unclear; the current clauses are used.",
+    "Whether the aggregate for the threshold mixes purposes (education and other) is not stated in the text retrieved; no item mixes purposes in one computation.",
+    "The additional 10% rate where PAN or Aadhaar is not furnished (courseware) is not taught: it belongs to a separate section not retrieved.",
+    "TCS on transfers from a domestic rupee account to an NRO account under the LRS (courseware printed p. 53) is not taught.",
+    "Finance Act 2026 (Act No. 4 of 2026) is cited through the Income Tax Department's section 394 page and its footnotes; the Act itself was not downloaded.",
+    "Reviewer for this batch is the authoring agent; no independent or human review."
+  ],
+  "next_batch_hint": "BFM-A-U02-B003: current account facilities for residents and the reporting requirements, after checking RBI sources."
+}
