@@ -1,0 +1,1649 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BFM-B-U03-B002",
+  "paper_id": "BFM",
+  "unit_label": "Module B unit 3 (part 2): capital charge for credit, market and operational risk and credit risk mitigation",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S03",
+    "RBI_CAP_2025"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "statement": "Banks in India follow the standardised approach for credit risk, relying on ratings of external credit rating agencies accredited by the Reserve Bank or on specific risk weights prescribed in the Directions. Fund-based and non-fund-based claims on the Central Government, and claims guaranteed by it, attract zero risk weight; direct exposures to State Governments and investment in State Government securities attract zero, and State Government guaranteed claims 20 per cent; claims on the Reserve Bank, DICGC, CGTMSE and similar trusts backed by an explicit Central Government guarantee attract the sovereign weight, and claims on ECGC 20 per cent. These weights apply while the asset is performing; non-performing sovereign exposures take the NPA weights.",
+      "source_id": "RBI_CAP_2025",
+      "locator": "Paragraphs 30 to 35",
+      "regulatory_sensitive": true,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F002",
+      "statement": "Claims on corporates and on NBFCs other than core investment companies are risk weighted by the long-term rating of agencies registered with SEBI and accredited by the Reserve Bank: AAA 20 per cent, AA 30, A 50, BBB 100, BB and below 150, unrated 100. Short-term ratings: A1+ 20 per cent, A1 30, A2 50, A3 100, A4 and D 150, unrated 100. Core investment companies, rated or unrated, carry 100 per cent. Unrated claims with aggregate banking system exposure above ₹200 crore carry 150 per cent, as do claims above ₹100 crore that were rated and became unrated; no unrated corporate may be weighted below its sovereign. For non-resident corporates rated by S&P, Fitch or Moody's: AAA to AA 20 per cent, A 50, BBB to BB 100, below BB 150, unrated 100.",
+      "source_id": "RBI_CAP_2025",
+      "locator": "Paragraphs 47 to 49 and Tables 9.1, 9.2, 10.1",
+      "regulatory_sensitive": true,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F003",
+      "statement": "Claims that meet the four criteria for the regulatory retail portfolio carry a risk weight of 75 per cent. Housing loans to individuals fully secured by a residential property occupied by or rented out by the borrower are risk weighted by loan to value ratio (principal plus accrued interest and charges over the realisable value of the property) and size; for loans sanctioned on or after 7 June 2017: up to ₹30 lakh, LTV up to 80 per cent 35 and above 80 up to 90 per cent 50; above ₹30 lakh up to ₹75 lakh, LTV up to 80 per cent 35; above ₹75 lakh, LTV up to 75 per cent 50; commercial real estate residential housing 75 per cent and other commercial real estate 100 per cent. Different tables apply to loans sanctioned earlier and in the window from 16 October 2020 to 31 March 2023. Exposures to a third dwelling unit onwards of an individual are treated as commercial real estate.",
+      "source_id": "RBI_CAP_2025",
+      "locator": "Paragraphs 50 and 55 to 56, Tables 11 to 13",
+      "regulatory_sensitive": true,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F004",
+      "statement": "The unsecured portion of a non-performing asset, net of specific provisions (including partial write-offs), is risk weighted at 150 per cent when specific provisions are less than 20 per cent of the outstanding amount, 100 per cent when at least 20 per cent, and 50 per cent when at least 50 per cent. For a qualifying residential mortgage NPA: 100 per cent net of specific provisions, 75 per cent when provisions are at least 20 but less than 50 per cent, and 50 per cent when provisions are 50 per cent or more. Only collateral eligible for credit risk mitigation counts to define the secured portion.",
+      "source_id": "RBI_CAP_2025",
+      "locator": "Paragraphs 63 to 68",
+      "regulatory_sensitive": true,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F005",
+      "statement": "Claims on scheduled banks (commercial banks, regional rural banks, local area banks and co-operative banks) that comply with the minimum CET1 plus the applicable capital conservation buffer carry a risk weight of 20 per cent for all other claims; for non-scheduled banks the risk weight is 100 per cent; investments in the equity and capital instruments of other banks, within limits, carry 125 per cent or the rating based weight, whichever is higher, or 250 per cent (300 per cent for non-scheduled banks) above the 10 per cent holding. The domestic rating agencies named in the courseware are CARE, CRISIL, ICRA, India Ratings, Acuite and Infomerics (the 2025 Directions' table also lists Brickwork), and the international ones are Fitch, Moody's and Standard and Poor's.",
+      "source_id": "RBI_CAP_2025",
+      "locator": "Paragraph 42 and Table 7; S03 printed p. 328",
+      "regulatory_sensitive": true,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F006",
+      "statement": "The internal ratings based (IRB) approach derives capital from the bank's own estimates of four parameters: probability of default (PD, a borrower measure), loss given default (LGD, linked to collateral), exposure at default (EAD, how much of a facility is likely to be drawn) and effective maturity (M); risk weights follow from formulae set by the Basel Committee. In the foundation IRB the bank estimates PD while the supervisor sets LGD and EAD (and sometimes M); in the advanced IRB the bank estimates all of them, with longer data requirements (PD 5 years, LGD and EAD 7 years in the courseware). Banks in India follow the standardised approach under the 2025 Directions.",
+      "source_id": "S03",
+      "locator": "Printed pp. 329-330, section 13.8; Directions paragraph 30",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F007",
+      "statement": "Credit risk mitigation (CRM) is recognised on these principles: a CRM transaction must not get a higher capital requirement than the same transaction without it; effects are not double counted (no extra recognition where an issue-specific rating already reflects the CRM); principal-only ratings are not allowed; residual risks (legal, operational, liquidity, market) must be controlled and the Reserve Bank may impose additional capital charges; documents must be binding and legally enforceable. A bank in India adopts the comprehensive approach for collateral, on an account-by-account basis: exposure after mitigation E* = max {0, [E × (1 + He) − C × (1 − Hc − Hfx)]}, where He and Hc are haircuts on exposure and collateral and Hfx is the haircut for currency mismatch, and RWA = E* × risk weight of the counterparty. Only standard supervisory haircuts (10-business day holding period, daily revaluation) are used; the haircut for currency mismatch is 8 per cent; zero haircut applies to National Savings Certificates, Kisan Vikas Patras, surrender value of insurance policies and the bank's own deposits.",
+      "source_id": "RBI_CAP_2025",
+      "locator": "Paragraphs 162 and 163 and the CRM principles; S03 printed pp. 330-333",
+      "regulatory_sensitive": true,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F008",
+      "statement": "On-balance sheet netting is confined to loans and advances against deposits with legally enforceable netting arrangements; loans are treated as exposure and deposits as collateral with zero haircut except for currency mismatch. For guarantees that are direct, explicit, irrevocable and unconditional, a substitution approach applies: the protected portion takes the risk weight of the guarantor if lower than the counterparty's, and the uncovered portion keeps the counterparty's weight; the guarantor must be a sovereign or sovereign entity (including BIS, IMF, ECB, MDBs, ECGC, CGTSI), bank or primary dealer with a lower weight, or another rated entity, and a special purpose entity cannot be an eligible guarantor for securitisation exposures; if the guaranteed exposure turns non-performing the guarantee no longer mitigates.",
+      "source_id": "RBI_CAP_2025",
+      "locator": "Paragraphs 166 to 169; S03 printed pp. 333-335",
+      "regulatory_sensitive": true,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F009",
+      "statement": "Capital for market risk applies to interest rate related instruments and equities in the trading book and to foreign exchange (and gold) positions in the whole bank. The charge for interest rate risk has two parts: specific risk for each security and general market risk for the portfolio; the duration method calculates general market risk in steps: price sensitivity (modified duration) of each position multiplied by the assumed change in yield for its time band (1.00 per cent for the four bands up to 12 months, 0.90, 0.80 and 0.75 for the three bands between one and 3.6 years, falling through 0.75, 0.70, 0.65 to 0.60 per cent for the longer bands); a 5 per cent vertical disallowance on matched positions within a band; and horizontal disallowances of 40 per cent within zone 1, 30 per cent within zones 2 and 3, 40 per cent between adjacent zones and 100 per cent between zones 1 and 3. Short positions are allowed only in derivatives and Central Government securities. Specific risk for equity is 11.25 per cent (or the rating warranted, if higher) of gross equity positions and general market risk 9 per cent; foreign exchange and gold open positions carry a 100 per cent risk weight so the higher of the open position and the limit attracts a 9 per cent capital charge. Specific risk for Central and State Government securities guaranteed by the Centre is zero; State guaranteed securities carry 0.28, 1.13 and 1.80 per cent by residual maturity. The market risk charge is the sum of the interest rate, equity and foreign exchange charges and RWA is the charge times 12.5. The courseware states 9 per cent specific and 9 per cent general (18 per cent) for equity; the 2025 Directions give 11.25 and 9.",
+      "source_id": "RBI_CAP_2025",
+      "locator": "Paragraphs 182 to 199 and Tables 30, 35, 36; S03 printed pp. 335-342",
+      "regulatory_sensitive": true,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F010",
+      "statement": "Operational risk is defined as the risk of loss resulting from inadequate or failed internal processes, people and systems or from external events, including legal risk (such as fines, penalties or punitive damages from supervisory actions and private settlements) but excluding strategic and reputational risk. The Basel framework offers the basic indicator approach, the standardised approach and the advanced measurement approaches; the courseware says the BIS is contemplating repealing the advanced approaches and replacing them with a standardised measurement approach, and the Directions encourage banks to be ready to migrate to the new standardised approach. Banks in India compute capital under the Basic Indicator Approach: the average over the previous three years of 15 per cent of positive gross income, excluding years of zero or negative gross income from numerator and denominator. Gross income is net interest income plus net non-interest income, gross of provisions and write-offs and of operating expenses; excluded are reversals of provisions, income from disposal of property, realised profits or losses on sale of securities in the banking book (the held to maturity category in the courseware), income from legal settlements, extraordinary items and income from insurance activities. In the Directions' formula gross income equals net profit plus provisions and contingencies plus operating expenses, less those excluded items.",
+      "source_id": "RBI_CAP_2025",
+      "locator": "Paragraphs 214 to 217 and 218; S03 printed pp. 342-343",
+      "regulatory_sensitive": true,
+      "evidence_status": "explicit"
+    }
+  ],
+  "drafts": [
+    {
+      "draft_id": "D001",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "title": "Standardised approach: sovereign and guaranteed claims",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "Banks in India use the **standardised approach**: risk weights come from **ratings by RBI-accredited external agencies** or from **weights set in the Directions**.\n\n| Claim | Risk weight |\n| --- | --- |\n| **Central Government** (fund and non-fund based) and **claims it guarantees** | **0%** |\n| **State Government** direct exposure and **State Government securities** | **0%** |\n| **State Government guaranteed** claims | **20%** |\n| **RBI, DICGC, CGTMSE** etc. backed by **explicit Central guarantee** | **sovereign weight (0%)** |\n| **ECGC** | **20%** |\n\nThese weights hold while the asset is **performing**; a **non-performing** sovereign exposure takes the **NPA weights**.",
+        "self_check": {
+          "mode": "question",
+          "question_id": "D013"
+        }
+      }
+    },
+    {
+      "draft_id": "D002",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F002"
+      ],
+      "payload": {
+        "title": "Risk weights for corporates",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "| Long-term rating | AAA | AA | A | BBB | BB and below | Unrated |\n| --- | --- | --- | --- | --- | --- | --- |\n| **Risk weight** | **20%** | **30%** | **50%** | **100%** | **150%** | **100%** |\n\n| Short-term rating | A1+ | A1 | A2 | A3 | A4 and D | Unrated |\n| --- | --- | --- | --- | --- | --- | --- |\n| **Risk weight** | **20%** | **30%** | **50%** | **100%** | **150%** | **100%** |\n\n- **Core investment companies**: **100%**, rated or not.\n- **Unrated** claims with **banking system exposure above ₹200 crore**: **150%**; **rated earlier, now unrated, above ₹100 crore**: **150%**.\n- No unrated corporate gets a weight **below its sovereign**.\n- **Non-resident corporates** (S&P/Fitch/Moody's): **AAA–AA 20%, A 50%, BBB–BB 100%, below BB 150%, unrated 100%**.",
+        "self_check": {
+          "mode": "question",
+          "question_id": "D016"
+        }
+      }
+    },
+    {
+      "draft_id": "D003",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F003",
+        "F004"
+      ],
+      "payload": {
+        "title": "Retail, housing and non-performing assets",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "**Regulatory retail** (four criteria met): **75%**.\n\n**Housing loans** (loans sanctioned **on or after 7 June 2017**), by **loan-to-value (LTV)** and size:\n| Loan | LTV | Weight |\n| --- | --- | --- |\n| **Up to ₹30 lakh** | **≤ 80%** | **35%** |\n| | **> 80% to 90%** | **50%** |\n| **₹30 lakh to ₹75 lakh** | **≤ 80%** | **35%** |\n| **Above ₹75 lakh** | **≤ 75%** | **50%** |\n| **CRE residential housing** | | **75%** |\n| **Commercial real estate** | | **100%** |\n\n(Other tables cover earlier sanction dates and the window **16 Oct 2020 to 31 Mar 2023**. Exposure to a **third dwelling unit onwards** is treated as **CRE**.)\n\n**NPAs** (unsecured portion, **net of specific provisions**): **150%** if provisions **< 20%** of the outstanding; **100%** if **≥ 20%**; **50%** if **≥ 50%**. **Residential mortgage NPA**: **100%**; **75%** at provisions **20% to < 50%**; **50%** at **≥ 50%**.",
+        "self_check": {
+          "mode": "question",
+          "question_id": "D019"
+        }
+      }
+    },
+    {
+      "draft_id": "D004",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F005",
+        "F006"
+      ],
+      "payload": {
+        "title": "Banks as counterparties, rating agencies and the IRB approach",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "**Banks**: claims on **scheduled banks** meeting **minimum CET1 + CCB** carry **20%** (other claims); **non-scheduled banks** **100%**.\n\n**Rating agencies**: domestic **CARE, CRISIL, ICRA, India Ratings, Acuité, Infomerics** (the 2025 Directions' table also names **Brickwork**); international **Fitch, Moody's, S&P**.\n\n**IRB approach** (not used in India; banks follow the standardised approach): capital comes from four inputs:\n| Input | Meaning |\n| --- | --- |\n| **PD** | **probability of default** (borrower) |\n| **LGD** | **loss given default** (collateral) |\n| **EAD** | **exposure at default** (amount likely drawn) |\n| **M** | **maturity** |\n\n**Foundation IRB**: **bank estimates PD**; **supervisor sets LGD and EAD**. **Advanced IRB**: **bank estimates all**, with **longer data histories**.",
+        "self_check": {
+          "mode": "question",
+          "question_id": "D022"
+        }
+      }
+    },
+    {
+      "draft_id": "D005",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F007"
+      ],
+      "payload": {
+        "title": "Credit risk mitigation: principles and the comprehensive approach",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "**Principles**: a transaction with CRM must **never need more capital** than the same one without it; **no double counting**; **principal-only ratings not allowed**; **residual risks** (legal, operational, liquidity, market) must be controlled, and RBI may add capital; **legal certainty**.\n\n**Comprehensive approach** (the one banks in India use), **account by account**:\n\n**E\\* = max { 0, [ E × (1 + He) − C × (1 − Hc − Hfx) ] }**\n\n- **E** exposure, **C** collateral value.\n- **He, Hc** haircuts on exposure and collateral; **Hfx** haircut for **currency mismatch**.\n- **RWA = E\\* × risk weight of the counterparty**.\n\n**Haircuts**: **standard supervisory haircuts only** (10-day holding period, daily revaluation); **currency mismatch 8%**; **zero haircut** for **National Savings Certificates, Kisan Vikas Patras, surrender value of insurance policies and the bank's own deposits**.",
+        "self_check": {
+          "mode": "question",
+          "question_id": "D025"
+        }
+      }
+    },
+    {
+      "draft_id": "D006",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F008"
+      ],
+      "payload": {
+        "title": "Netting and guarantees as mitigants",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "**On-balance sheet netting**: only **loans against deposits** with a **legally enforceable netting arrangement**; loans are the **exposure**, deposits the **collateral**; **haircut zero** unless there is a **currency mismatch**.\n\n**Guarantees** must be **direct, explicit, irrevocable and unconditional**. **Substitution approach**: the **guaranteed part takes the guarantor's risk weight** if lower; the **uncovered part keeps the borrower's**.\n\n**Eligible guarantors**: **sovereigns and sovereign entities (BIS, IMF, ECB, MDBs, ECGC, CGTSI)**, **banks and primary dealers** with lower weight, **other rated entities**; for **securitisation**, rated **BBB- or better** (A- or better when the guarantee was given), and **SPEs cannot** be guarantors.\n\nIf the guaranteed exposure turns **non-performing**, the **guarantee stops counting** as mitigation.",
+        "self_check": {
+          "mode": "question",
+          "question_id": "D028"
+        }
+      }
+    },
+    {
+      "draft_id": "D007",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F009"
+      ],
+      "payload": {
+        "title": "Market risk capital: duration method, equity and forex",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "**Scope**: **interest rate instruments and equities in the trading book**; **forex and gold positions in the whole bank**.\n\n**Interest rate risk = specific risk (per security) + general market risk (portfolio)**.\n\n**General market risk, duration method**\n1. Compute **modified duration** of each position.\n2. Apply the **assumed yield change**: **1.00%** for bands up to **12 months**; **0.90 / 0.80 / 0.75** for **1.0–1.9 / 1.9–2.8 / 2.8–3.6 years**; **0.75 / 0.70 / 0.65** for **3.6–4.3 / 4.3–5.7 / 5.7–7.3 years**; **0.60%** beyond **7.3 years**.\n3. Slot into **15 time bands**.\n4. **5% vertical disallowance** on matched positions within a band.\n5. **Horizontal disallowance** of matched amounts: **40% within zone 1; 30% within zones 2 and 3; 40% between adjacent zones; 100% between zones 1 and 3**.\n\n**Short positions** only in **derivatives and Central Government securities**.\n\n**Equity**: **specific risk 11.25%** (or rating-based, if higher) **+ general market risk 9%** on gross positions. (The courseware says 9% + 9%; the 2025 Directions say 11.25% + 9%.)\n\n**Forex and gold**: **higher of open position and limit × 9%**.\n\n**Total** = interest rate + equity + forex charge; **RWA = charge × 12.5**.",
+        "self_check": {
+          "mode": "question",
+          "question_id": "D031"
+        }
+      }
+    },
+    {
+      "draft_id": "D008",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F009"
+      ],
+      "payload": {
+        "title": "Specific risk charges for government securities",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "| Security | Specific risk charge |\n| --- | --- |\n| **Central and State Government securities** | **0%** |\n| Securities **guaranteed by the Central Government** | **0%** |\n| **State Government guaranteed** securities | **0.28%** (**up to 6 months**), **1.13%** (**6 to 24 months**), **1.80%** (**over 24 months**) |\n| **Foreign sovereign AAA–AA** | **0%** |\n| **Foreign sovereign BB to B**, **below B**, **unrated** | **9%**, **13.5%**, **13.5%** |\n\nSecurity Receipts: **13.5%** (equal to **150%** risk weight).",
+        "self_check": {
+          "mode": "question",
+          "question_id": "D036"
+        }
+      }
+    },
+    {
+      "draft_id": "D009",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F010"
+      ],
+      "payload": {
+        "title": "Operational risk capital: gross income and the Basic Indicator Approach",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "**Definition**: loss from **inadequate or failed processes, people, systems or external events**, **including legal risk** (fines, penalties, punitive damages) but **excluding strategic and reputational risk**.\n\n**Approaches**: **Basic Indicator**, **Standardised**, **Advanced Measurement**. (The courseware says the BIS plans to **replace AMA** with a **standardised measurement approach**; the Directions encourage banks to prepare for the **new standardised approach**.)\n\n**India**: **Basic Indicator Approach**: **average of 15% × positive gross income over the last three years**; **years with zero or negative income are dropped** from both numerator and denominator.\n\n**Gross income** = **net interest income + net non-interest income**, **gross of provisions, write-offs and operating expenses**; **excludes** reversals of provisions, income from **sale of property**, **realised profit or loss on banking book securities**, **legal settlements**, **extraordinary items** and **insurance income**.",
+        "self_check": {
+          "mode": "question",
+          "question_id": "D037"
+        }
+      }
+    },
+    {
+      "draft_id": "D010",
+      "item_type": "card",
+      "variant": "worked_example",
+      "fact_ids": [
+        "F002"
+      ],
+      "payload": {
+        "title": "Risk-weighted assets of a corporate portfolio",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "Illustrative case: a bank has long-term claims on corporates of ₹200 crore rated AAA, ₹150 crore rated A, ₹100 crore unrated (aggregate banking exposure under ₹200 crore) and ₹40 crore rated BB. Find the risk-weighted assets and the capital needed at 9% and with the 2.5% buffer (11.5%).",
+        "worked_steps": [
+          {
+            "step_number": 1,
+            "description": "AAA at 20%.",
+            "formula_or_substitution": "200 × 20%",
+            "intermediate_result": "₹40 crore"
+          },
+          {
+            "step_number": 2,
+            "description": "A at 50%.",
+            "formula_or_substitution": "150 × 50%",
+            "intermediate_result": "₹75 crore"
+          },
+          {
+            "step_number": 3,
+            "description": "Unrated at 100%.",
+            "formula_or_substitution": "100 × 100%",
+            "intermediate_result": "₹100 crore"
+          },
+          {
+            "step_number": 4,
+            "description": "BB at 150%.",
+            "formula_or_substitution": "40 × 150%",
+            "intermediate_result": "₹60 crore"
+          },
+          {
+            "step_number": 5,
+            "description": "Risk-weighted assets.",
+            "formula_or_substitution": "40 + 75 + 100 + 60",
+            "intermediate_result": "₹275 crore"
+          },
+          {
+            "step_number": 6,
+            "description": "Capital at 9%.",
+            "formula_or_substitution": "275 × 9%",
+            "intermediate_result": "₹24.75 crore"
+          },
+          {
+            "step_number": 7,
+            "description": "Capital at 11.5%.",
+            "formula_or_substitution": "275 × 11.5%",
+            "intermediate_result": "₹31.625 crore"
+          }
+        ],
+        "final_answer_with_unit": "RWA is ₹275 crore; capital needed is ₹24.75 crore at 9% and ₹31.625 crore at 11.5%",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "What happens to the BB claim's capital if the borrower is upgraded to A?",
+          "expected_takeaway": "The weight falls from 150% to 50%, so its RWA falls from ₹60 crore to ₹20 crore."
+        }
+      }
+    },
+    {
+      "draft_id": "D011",
+      "item_type": "card",
+      "variant": "worked_example",
+      "fact_ids": [
+        "F007"
+      ],
+      "payload": {
+        "title": "Exposure after collateral under the comprehensive approach",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "Illustrative case: a corporate loan of ₹100 crore (counterparty risk weight 100%, haircut on exposure 0) is secured by securities worth ₹50 crore, with a collateral haircut of 6% (an assumed figure) and an additional 8% haircut because the collateral is in a different currency. Find the exposure after mitigation and the risk-weighted assets.",
+        "worked_steps": [
+          {
+            "step_number": 1,
+            "description": "Haircut-adjusted collateral.",
+            "formula_or_substitution": "50 × (1 − 0.06 − 0.08)",
+            "intermediate_result": "₹43 crore"
+          },
+          {
+            "step_number": 2,
+            "description": "Exposure after mitigation.",
+            "formula_or_substitution": "max{0, 100 − 43}",
+            "intermediate_result": "₹57 crore"
+          },
+          {
+            "step_number": 3,
+            "description": "Risk-weighted assets.",
+            "formula_or_substitution": "57 × 100%",
+            "intermediate_result": "₹57 crore"
+          }
+        ],
+        "final_answer_with_unit": "Exposure after mitigation is ₹57 crore and RWA ₹57 crore, against ₹100 crore without the collateral",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Why is the collateral value reduced and the exposure value not?",
+          "expected_takeaway": "The collateral may fall in value and move against the exposure in currency terms, so it is cut by haircuts; here the exposure is a loan whose value does not move with the market, so its haircut is zero."
+        }
+      }
+    },
+    {
+      "draft_id": "D012",
+      "item_type": "card",
+      "variant": "worked_example",
+      "fact_ids": [
+        "F009"
+      ],
+      "payload": {
+        "title": "General market risk: horizontal disallowance",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "Illustrative case: after applying assumed yield changes, a bank's positions are a long of ₹60 crore in the 6 to 12 month band (zone 1), a short of ₹45 crore (through derivatives) in the 1.9 to 2.8 year band (zone 2) and a long of ₹120 crore in the 7.3 to 9.3 year band (zone 3). Find the general market risk capital charge.",
+        "worked_steps": [
+          {
+            "step_number": 1,
+            "description": "Net position of the whole book.",
+            "formula_or_substitution": "60 − 45 + 120",
+            "intermediate_result": "₹135 crore"
+          },
+          {
+            "step_number": 2,
+            "description": "Vertical disallowance: no band holds both long and short.",
+            "formula_or_substitution": "none",
+            "intermediate_result": "₹0"
+          },
+          {
+            "step_number": 3,
+            "description": "Zones 1 and 2 are adjacent: matched amount.",
+            "formula_or_substitution": "min(60, 45)",
+            "intermediate_result": "₹45 crore"
+          },
+          {
+            "step_number": 4,
+            "description": "Horizontal disallowance between adjacent zones.",
+            "formula_or_substitution": "45 × 40%",
+            "intermediate_result": "₹18 crore"
+          },
+          {
+            "step_number": 5,
+            "description": "Zone 3 is long like the rest, so no offset with it.",
+            "formula_or_substitution": "no match",
+            "intermediate_result": "₹0"
+          },
+          {
+            "step_number": 6,
+            "description": "General market risk charge.",
+            "formula_or_substitution": "135 + 0 + 18",
+            "intermediate_result": "₹153 crore"
+          }
+        ],
+        "final_answer_with_unit": "The general market risk capital charge is ₹153 crore",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "What would the disallowance be if the zone 2 short were against a zone 3 long instead of zone 1?",
+          "expected_takeaway": "Zones 2 and 3 are adjacent, so matched amounts between them would attract the 40% disallowance for adjacent zones."
+        }
+      }
+    },
+    {
+      "draft_id": "D013",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "What risk weight applies to a fund-based claim on the Central Government?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "20 per cent",
+            "explanation_md": "State guaranteed claims."
+          },
+          {
+            "option_id": "B",
+            "text_md": "0 per cent",
+            "explanation_md": "Zero."
+          },
+          {
+            "option_id": "C",
+            "text_md": "50 per cent",
+            "explanation_md": "Not so."
+          },
+          {
+            "option_id": "D",
+            "text_md": "100 per cent",
+            "explanation_md": "Not so."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "Both fund-based and non-fund-based claims on the Central Government attract zero risk weight."
+      }
+    },
+    {
+      "draft_id": "D014",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "What risk weight applies to a claim guaranteed by a State Government?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "0 per cent",
+            "explanation_md": "Direct State exposures."
+          },
+          {
+            "option_id": "B",
+            "text_md": "50 per cent",
+            "explanation_md": "Not so."
+          },
+          {
+            "option_id": "C",
+            "text_md": "20 per cent",
+            "explanation_md": "State guaranteed claims."
+          },
+          {
+            "option_id": "D",
+            "text_md": "100 per cent",
+            "explanation_md": "Not so."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "Direct exposure to State Governments attracts zero, but State Government guaranteed claims attract 20 per cent."
+      }
+    },
+    {
+      "draft_id": "D015",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A sovereign exposure that is classified as non-performing takes which risk weight?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Zero, always",
+            "explanation_md": "Only while performing."
+          },
+          {
+            "option_id": "B",
+            "text_md": "20 per cent",
+            "explanation_md": "Not so."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The weight of the borrower's rating",
+            "explanation_md": "Not so."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The weight applicable to NPAs",
+            "explanation_md": "Sovereign weights apply only while performing."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "The sovereign risk weights apply as long as the assets are standard or performing; non-performing ones attract NPA weights."
+      }
+    },
+    {
+      "draft_id": "D016",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F002"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "What risk weight applies to a long-term claim on a corporate rated A by a domestic agency?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "50 per cent",
+            "explanation_md": "A is 50."
+          },
+          {
+            "option_id": "B",
+            "text_md": "20 per cent",
+            "explanation_md": "AAA."
+          },
+          {
+            "option_id": "C",
+            "text_md": "100 per cent",
+            "explanation_md": "BBB or unrated."
+          },
+          {
+            "option_id": "D",
+            "text_md": "150 per cent",
+            "explanation_md": "BB and below."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "AAA 20, AA 30, A 50, BBB 100, BB and below 150, unrated 100."
+      }
+    },
+    {
+      "draft_id": "D017",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F002"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "What risk weight applies to an unrated corporate claim where the borrower's aggregate banking system exposure is ₹250 crore?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "100 per cent",
+            "explanation_md": "Standard unrated weight below that."
+          },
+          {
+            "option_id": "B",
+            "text_md": "150 per cent",
+            "explanation_md": "Above ₹200 crore unrated."
+          },
+          {
+            "option_id": "C",
+            "text_md": "50 per cent",
+            "explanation_md": "Not so."
+          },
+          {
+            "option_id": "D",
+            "text_md": "75 per cent",
+            "explanation_md": "Retail."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "All unrated claims with aggregate exposure from the banking system of more than ₹200 crore attract 150 per cent."
+      }
+    },
+    {
+      "draft_id": "D018",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F002"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "What is the risk weight on exposures to core investment companies?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Rating-based like other NBFCs",
+            "explanation_md": "Excluded."
+          },
+          {
+            "option_id": "B",
+            "text_md": "150 per cent",
+            "explanation_md": "Not so."
+          },
+          {
+            "option_id": "C",
+            "text_md": "100 per cent, rated or unrated",
+            "explanation_md": "Fixed."
+          },
+          {
+            "option_id": "D",
+            "text_md": "20 per cent",
+            "explanation_md": "Not so."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "Exposures to CICs, rated as well as unrated, are risk weighted at 100 per cent."
+      }
+    },
+    {
+      "draft_id": "D019",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F003"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "What risk weight applies to claims in the regulatory retail portfolio?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "35 per cent",
+            "explanation_md": "Housing."
+          },
+          {
+            "option_id": "B",
+            "text_md": "100 per cent",
+            "explanation_md": "Corporate."
+          },
+          {
+            "option_id": "C",
+            "text_md": "50 per cent",
+            "explanation_md": "Housing with higher LTV."
+          },
+          {
+            "option_id": "D",
+            "text_md": "75 per cent",
+            "explanation_md": "Retail."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "Claims meeting the criteria for the regulatory retail portfolio attract 75 per cent."
+      }
+    },
+    {
+      "draft_id": "D020",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F003"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "An individual housing loan of ₹25 lakh sanctioned after 7 June 2017 has an LTV of 85 per cent. Which risk weight applies?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "50 per cent",
+            "explanation_md": "Up to 30 lakh, LTV above 80 up to 90."
+          },
+          {
+            "option_id": "B",
+            "text_md": "35 per cent",
+            "explanation_md": "LTV up to 80."
+          },
+          {
+            "option_id": "C",
+            "text_md": "75 per cent",
+            "explanation_md": "CRE residential."
+          },
+          {
+            "option_id": "D",
+            "text_md": "100 per cent",
+            "explanation_md": "Not so."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "For loans up to ₹30 lakh, LTV above 80 and up to 90 per cent carries 50 per cent."
+      }
+    },
+    {
+      "draft_id": "D021",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "An NPA has specific provisions of 25 per cent of the outstanding amount. What risk weight applies to the unsecured portion net of provisions?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "150 per cent",
+            "explanation_md": "Provisions below 20 per cent."
+          },
+          {
+            "option_id": "B",
+            "text_md": "100 per cent",
+            "explanation_md": "Provisions at least 20 per cent."
+          },
+          {
+            "option_id": "C",
+            "text_md": "50 per cent",
+            "explanation_md": "Provisions at least 50 per cent."
+          },
+          {
+            "option_id": "D",
+            "text_md": "75 per cent",
+            "explanation_md": "Residential NPAs only."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "The weight is 150 per cent below 20 per cent provisions, 100 per cent at 20 per cent or more and 50 per cent at 50 per cent or more."
+      }
+    },
+    {
+      "draft_id": "D022",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F005"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Which Indian rating agency is NOT named in the courseware's list of domestic agencies?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "CARE",
+            "explanation_md": "Named."
+          },
+          {
+            "option_id": "B",
+            "text_md": "ICRA",
+            "explanation_md": "Named."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Brickwork Ratings",
+            "explanation_md": "The 2025 Directions list it; the courseware does not."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Infomerics",
+            "explanation_md": "Named."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "The courseware names CARE, CRISIL, ICRA, India Ratings, Acuite and Infomerics; the 2025 Directions' table also lists Brickwork."
+      }
+    },
+    {
+      "draft_id": "D023",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F006"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "In the IRB approach, which parameter measures the likelihood that a borrower will default over a given horizon?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Loss given default",
+            "explanation_md": "Proportion lost."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Exposure at default",
+            "explanation_md": "Amount drawn."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Maturity",
+            "explanation_md": "Remaining life."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Probability of default",
+            "explanation_md": "PD."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "PD measures the likelihood that the borrower will default over a given time horizon."
+      }
+    },
+    {
+      "draft_id": "D024",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F006"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "What is the difference between foundation and advanced IRB?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "In the foundation approach the supervisor sets LGD and EAD; in the advanced the bank estimates all parameters",
+            "explanation_md": "This is the difference."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The foundation approach uses no ratings",
+            "explanation_md": "Not so."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The advanced approach uses supervisory risk weights",
+            "explanation_md": "Not so."
+          },
+          {
+            "option_id": "D",
+            "text_md": "There is none",
+            "explanation_md": "There is."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "In foundation IRB the bank estimates PD and the supervisor sets LGD and EAD; in advanced IRB the bank estimates all."
+      }
+    },
+    {
+      "draft_id": "D025",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F007"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Which approach to collateral do banks in India adopt?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The simple approach",
+            "explanation_md": "Not for India."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The comprehensive approach",
+            "explanation_md": "Prescribed."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The advanced IRB approach",
+            "explanation_md": "Not used."
+          },
+          {
+            "option_id": "D",
+            "text_md": "None",
+            "explanation_md": "Prescribed."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "A bank in India adopts the comprehensive approach, which allows fuller offset of collateral against exposures."
+      }
+    },
+    {
+      "draft_id": "D026",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F007"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "What is the standard supervisory haircut for currency mismatch between exposure and collateral?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "4 per cent",
+            "explanation_md": "Not so."
+          },
+          {
+            "option_id": "B",
+            "text_md": "12 per cent",
+            "explanation_md": "Not so."
+          },
+          {
+            "option_id": "C",
+            "text_md": "8 per cent",
+            "explanation_md": "Standard."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Zero",
+            "explanation_md": "Not so."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "The standard supervisory haircut for currency risk is eight per cent."
+      }
+    },
+    {
+      "draft_id": "D027",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F007"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "For which collateral is a zero haircut allowed?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Equity shares",
+            "explanation_md": "Not zero."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Corporate bonds",
+            "explanation_md": "Not zero."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Land and buildings",
+            "explanation_md": "Not eligible."
+          },
+          {
+            "option_id": "D",
+            "text_md": "National Savings Certificates, Kisan Vikas Patras, surrender value of insurance policies and the bank's own deposits",
+            "explanation_md": "Listed."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "A zero haircut may be applied for those instruments."
+      }
+    },
+    {
+      "draft_id": "D028",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F008"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Under the substitution approach for guarantees, what risk weight applies to the guaranteed portion?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The guarantor's weight, if lower than the borrower's",
+            "explanation_md": "Substitution."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The borrower's weight always",
+            "explanation_md": "Not so."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Zero always",
+            "explanation_md": "Not so."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The average of both",
+            "explanation_md": "Not so."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "The protected portion is assigned the risk weight of the guarantor and the uncovered portion retains that of the counterparty."
+      }
+    },
+    {
+      "draft_id": "D029",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F008"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "A guaranteed exposure turns non-performing. What happens to the guarantee as mitigation?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "It continues in full",
+            "explanation_md": "Ceases."
+          },
+          {
+            "option_id": "B",
+            "text_md": "It ceases to be a credit risk mitigant and the NPA treatment applies",
+            "explanation_md": "Rule."
+          },
+          {
+            "option_id": "C",
+            "text_md": "It doubles",
+            "explanation_md": "Not so."
+          },
+          {
+            "option_id": "D",
+            "text_md": "It converts to collateral",
+            "explanation_md": "Not so."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "When a guaranteed exposure is classified as non-performing, the guarantee ceases to be a credit risk mitigant."
+      }
+    },
+    {
+      "draft_id": "D030",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F009"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Which positions are subject to capital charge for market risk?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only the banking book",
+            "explanation_md": "Not so."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Only derivatives",
+            "explanation_md": "Not so."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Interest rate instruments and equities in the trading book, and foreign exchange and gold positions throughout the bank",
+            "explanation_md": "Scope."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Only loans",
+            "explanation_md": "Not so."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "Market risk capital covers interest rate instruments and equities in the trading book and foreign exchange (including precious metals) positions throughout the bank."
+      }
+    },
+    {
+      "draft_id": "D031",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F009"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Under the duration method, what is the vertical disallowance?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "40 per cent",
+            "explanation_md": "Horizontal."
+          },
+          {
+            "option_id": "B",
+            "text_md": "100 per cent",
+            "explanation_md": "Zones 1 and 3."
+          },
+          {
+            "option_id": "C",
+            "text_md": "None",
+            "explanation_md": "There is one."
+          },
+          {
+            "option_id": "D",
+            "text_md": "5 per cent of the matched positions within a time band",
+            "explanation_md": "Basis risk."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "Long and short positions in each time band are subject to a 5 per cent vertical disallowance designed to capture basis risk."
+      }
+    },
+    {
+      "draft_id": "D032",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F009"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "What horizontal disallowance applies between zone 1 and zone 3?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "100 per cent",
+            "explanation_md": "Maximum."
+          },
+          {
+            "option_id": "B",
+            "text_md": "40 per cent",
+            "explanation_md": "Adjacent zones."
+          },
+          {
+            "option_id": "C",
+            "text_md": "30 per cent",
+            "explanation_md": "Within zones 2 and 3."
+          },
+          {
+            "option_id": "D",
+            "text_md": "5 per cent",
+            "explanation_md": "Vertical."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "Between zones 1 and 3 the horizontal disallowance is 100 per cent."
+      }
+    },
+    {
+      "draft_id": "D033",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F009"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "Under the 2025 Directions, what is the capital charge on equity positions in the trading book (specific plus general, in the standard case)?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "9 per cent plus 9 per cent",
+            "explanation_md": "The courseware figure."
+          },
+          {
+            "option_id": "B",
+            "text_md": "11.25 per cent specific plus 9 per cent general",
+            "explanation_md": "Directions."
+          },
+          {
+            "option_id": "C",
+            "text_md": "9 per cent in total",
+            "explanation_md": "Not so."
+          },
+          {
+            "option_id": "D",
+            "text_md": "12.5 per cent",
+            "explanation_md": "The RWA multiplier."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "Specific risk is 11.25 per cent (or the rating-based charge if higher) and general market risk 9 per cent on gross equity positions."
+      }
+    },
+    {
+      "draft_id": "D034",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F009"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "What capital charge applies to the open foreign exchange position or limit, whichever is higher?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "100 per cent",
+            "explanation_md": "Risk weight."
+          },
+          {
+            "option_id": "B",
+            "text_md": "18 per cent",
+            "explanation_md": "Not so."
+          },
+          {
+            "option_id": "C",
+            "text_md": "9 per cent",
+            "explanation_md": "Directions."
+          },
+          {
+            "option_id": "D",
+            "text_md": "5 per cent",
+            "explanation_md": "Not so."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "Open positions carry a 100 per cent risk weight, so the higher of the open position or limit attracts a 9 per cent capital charge."
+      }
+    },
+    {
+      "draft_id": "D035",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F009"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "How are risk weighted assets for market risk obtained from the market risk capital charge?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Divide by 12.5",
+            "explanation_md": "Reverse."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Multiply by 9",
+            "explanation_md": "Not so."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Add 2.5 per cent",
+            "explanation_md": "Not so."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Multiply the charge by 12.5",
+            "explanation_md": "Conversion."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "RWAs for market risk are the capital charge multiplied by 12.5."
+      }
+    },
+    {
+      "draft_id": "D036",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F009"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "What specific risk charge applies to a Central Government security?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Zero",
+            "explanation_md": "Zero."
+          },
+          {
+            "option_id": "B",
+            "text_md": "0.28 per cent",
+            "explanation_md": "State guaranteed."
+          },
+          {
+            "option_id": "C",
+            "text_md": "9 per cent",
+            "explanation_md": "Foreign BB to B."
+          },
+          {
+            "option_id": "D",
+            "text_md": "13.5 per cent",
+            "explanation_md": "Below B."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "Central and State Government securities attract zero specific risk charge."
+      }
+    },
+    {
+      "draft_id": "D037",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F010"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Which approach do banks in India use to compute operational risk capital?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The Advanced Measurement Approach",
+            "explanation_md": "Not used."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The Basic Indicator Approach",
+            "explanation_md": "Directions."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The Standardised Approach",
+            "explanation_md": "Not used."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Internal models",
+            "explanation_md": "Not used."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "A bank computes the capital requirement for operational risk under the Basic Indicator Approach."
+      }
+    },
+    {
+      "draft_id": "D038",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F010"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Which is excluded from gross income for the Basic Indicator Approach?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Net interest income",
+            "explanation_md": "Included."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Net non-interest income",
+            "explanation_md": "Included."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Income from insurance activities",
+            "explanation_md": "Excluded."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Fees received",
+            "explanation_md": "Included."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "Income derived from insurance activities and from insurance claims in favour of the bank is excluded."
+      }
+    },
+    {
+      "draft_id": "D039",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F010"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "In the Basic Indicator Approach, what happens to a year with negative gross income?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "It is counted as zero in the denominator",
+            "explanation_md": "Excluded."
+          },
+          {
+            "option_id": "B",
+            "text_md": "It reduces the capital charge",
+            "explanation_md": "Not so."
+          },
+          {
+            "option_id": "C",
+            "text_md": "It is replaced by the average",
+            "explanation_md": "Not so."
+          },
+          {
+            "option_id": "D",
+            "text_md": "It is excluded from both numerator and denominator",
+            "explanation_md": "Rule."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "Figures for any year in which annual gross income is negative or zero are excluded from both the numerator and denominator."
+      }
+    },
+    {
+      "draft_id": "D040",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F010"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Which risks fall outside the Basel definition of operational risk?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Strategic and reputational risk",
+            "explanation_md": "Excluded."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Legal risk",
+            "explanation_md": "Included."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Fraud",
+            "explanation_md": "Included."
+          },
+          {
+            "option_id": "D",
+            "text_md": "System failure",
+            "explanation_md": "Included."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "The definition includes legal risk but excludes strategic and reputational risk."
+      }
+    },
+    {
+      "draft_id": "D041",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F002"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A bank has long-term corporate claims of ₹120 crore rated AA, ₹80 crore rated BBB and ₹50 crore rated BB. What are the risk-weighted assets, in ₹ crore?",
+        "numeric_rule": {
+          "expected_answer": "191",
+          "unit_label": "₹ crore",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "AA 30%: 36; BBB 100%: 80; BB 150%: 75. Total = 36 + 80 + 75 = 191.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "AA",
+            "formula_or_substitution": "120 × 30%",
+            "intermediate_result": "36"
+          },
+          {
+            "step_number": 2,
+            "description": "BBB",
+            "formula_or_substitution": "80 × 100%",
+            "intermediate_result": "80"
+          },
+          {
+            "step_number": 3,
+            "description": "BB",
+            "formula_or_substitution": "50 × 150%",
+            "intermediate_result": "75"
+          },
+          {
+            "step_number": 4,
+            "description": "Total",
+            "formula_or_substitution": "36 + 80 + 75",
+            "intermediate_result": "191"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D042",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F007"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "A ₹200 crore corporate loan (risk weight 100%, exposure haircut zero) is secured by collateral worth ₹120 crore with a collateral haircut of 10% and a currency mismatch haircut of 8%. What is the exposure after mitigation, in ₹ crore, to two decimals?",
+        "numeric_rule": {
+          "expected_answer": "101.60",
+          "unit_label": "₹ crore",
+          "precision_decimals": 2,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give the answer to 2 decimal places.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "Adjusted collateral = 120 × (1 − 0.10 − 0.08) = 120 × 0.82 = 98.40. E* = 200 − 98.40 = 101.60.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Adjusted collateral",
+            "formula_or_substitution": "120 × 0.82",
+            "intermediate_result": "98.40"
+          },
+          {
+            "step_number": 2,
+            "description": "E*",
+            "formula_or_substitution": "200 − 98.40",
+            "intermediate_result": "101.60"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D043",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F009"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A bank holds equity shares of ₹500 crore in its trading book. Using the 2025 Directions, what is the capital charge for market risk (specific plus general) in ₹ crore, to two decimals?",
+        "numeric_rule": {
+          "expected_answer": "101.25",
+          "unit_label": "₹ crore",
+          "precision_decimals": 2,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give the answer to 2 decimal places.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "Specific 11.25% + general 9% = 20.25%; 20.25% of 500 = 101.25.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Combined rate",
+            "formula_or_substitution": "11.25% + 9%",
+            "intermediate_result": "20.25%"
+          },
+          {
+            "step_number": 2,
+            "description": "Charge",
+            "formula_or_substitution": "500 × 20.25%",
+            "intermediate_result": "101.25"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D044",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F009"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A bank's net open foreign exchange position is ₹80 crore against an approved limit of ₹100 crore. What is the capital charge for foreign exchange risk, in ₹ crore?",
+        "numeric_rule": {
+          "expected_answer": "9",
+          "unit_label": "₹ crore",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "The higher of the open position and the limit (₹100 crore) attracts a 9% charge: 9.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Higher of position and limit",
+            "formula_or_substitution": "max(80, 100)",
+            "intermediate_result": "100"
+          },
+          {
+            "step_number": 2,
+            "description": "Charge",
+            "formula_or_substitution": "100 × 9%",
+            "intermediate_result": "9"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D045",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F010"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "A bank's gross income was ₹400 crore, ₹500 crore and minus ₹50 crore in the last three years. What is the Basic Indicator Approach capital charge, in ₹ crore, to one decimal?",
+        "numeric_rule": {
+          "expected_answer": "67.5",
+          "unit_label": "₹ crore",
+          "precision_decimals": 1,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give the answer to 1 decimal places.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "The negative year is excluded: average of the two positive years = (400 + 500) ÷ 2 = 450; 15% of 450 = 67.5.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Average of positive years",
+            "formula_or_substitution": "(400 + 500) ÷ 2",
+            "intermediate_result": "450"
+          },
+          {
+            "step_number": 2,
+            "description": "Charge at 15%",
+            "formula_or_substitution": "450 × 15%",
+            "intermediate_result": "67.5"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D046",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "An unsecured NPA of ₹100 crore has specific provisions of ₹25 crore. What are the risk-weighted assets on the unsecured portion net of provisions, in ₹ crore?",
+        "numeric_rule": {
+          "expected_answer": "75",
+          "unit_label": "₹ crore",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "Provisions are 25% of the outstanding, so the weight is 100% on the net amount of 75: RWA = 75.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Net of provisions",
+            "formula_or_substitution": "100 − 25",
+            "intermediate_result": "75"
+          },
+          {
+            "step_number": 2,
+            "description": "Weight at 100%",
+            "formula_or_substitution": "75 × 100%",
+            "intermediate_result": "75"
+          }
+        ]
+      }
+    }
+  ],
+  "unresolved": [
+    "The Capital Adequacy Directions copy used is updated to 7 October 2026, after the cut-off; some inserted text carries effect from 1 October 2026 (an Eighth Amendment of 10 June 2026) and amendments between 28 November 2025 and 7 October 2026 were not compared. The tables taught are the standard cases; the Directions contain many further categories (specified categories, off-balance sheet conversion factors, securitisation, counterparty credit risk, options, collateral haircut tables) which are not taught.",
+    "Where the courseware differs from the Directions (equity charge 9 plus 9 against 11.25 plus 9; Brickwork among rating agencies; held to maturity wording in gross income; the courseware's HFT/AFS description of the trading book) the cards follow the Directions and flag the difference.",
+    "The Basel Committee texts were not read. The IRB approach and the Basel standardised measurement approach are described from the courseware; the courseware's 22/23 per cent illustration for IRB risk weights and its data history figures are the courseware's.",
+    "Housing loan risk weights for loans sanctioned after 31 March 2023 were not read (only Tables 11 to 13); the card teaches the table for loans sanctioned on or after 7 June 2017 and names the others.",
+    "The courseware's worked example of general market risk (₹472.5 crore) is not reproduced; the example here uses new figures with the same method.",
+    "Reviewer for this batch is the authoring agent; no independent or human review."
+  ],
+  "next_batch_hint": "Part 3: Pillar 2, Pillar 3, buffers, leverage ratio, D-SIBs and risk based supervision."
+}
