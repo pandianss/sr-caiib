@@ -1,0 +1,868 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BFM-A-U01-B009",
+  "paper_id": "BFM",
+  "unit_label": "Module A: International Banking - Exchange Rates and Forex Business",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S03",
+    "FEDAI_RULES_10E"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "statement": "Rule 1: the normal market hours for on-shore deliverable foreign currency/rupee transactions in the inter-bank market and for client transactions are 9.00 a.m. to 5.00 p.m. IST on working days, as prescribed by the Reserve Bank for inter-bank transactions. Authorised dealers may undertake customer and inter-bank transactions on business days beyond normal market hours, provided the net overnight open position (NOOP) limit is maintained at all times, including from end of day to 9.00 a.m. next day. Transactions for individual persons (including joint accounts and proprietary firms) can be undertaken even on Saturdays, Sundays and holidays under the bank's policy. Spot date roll-over for foreign currency/rupee transactions takes place at 12.00 midnight IST. Saturday is not a working business day for foreign exchange business except for those individual transactions. A known holiday is one known at least three working business days before the date; any other holiday is a suddenly declared holiday.",
+      "source_id": "FEDAI_RULES_10E",
+      "locator": "Rule 1.1 to 1.4, as amended on 23 January 2020, 14 February 2022 and 5 April 2024",
+      "regulatory_sensitive": true,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F002",
+      "statement": "Rule 2: foreign currency export bills are purchased, discounted or negotiated at the authorised dealer's current bill buying rate or the contracted rate, with interest for the normal transit period and/or usance recovered up front. Each dealer sets and publishes its own crystallisation policy for unpaid bills; on crystallisation the TT selling rate applies and the recoverable amount is the crystallised rupee amount with interest and charges; interest is recovered from the date of crystallisation for the overdue period and until recovery; export bills payable in countries with externalisation issues are crystallised under the policy despite advice of payment in local currency. After crystallisation, when realisation is advised, the TT buying rate or contract rate converts the proceeds. If a bill is dishonoured before crystallisation, the bank recovers the rupee equivalent and foreign currency charges at the TT selling rate with interest and rupee charges. On early realisation, interest for the unexpired period is refunded and notional swap cost is paid or recovered.",
+      "source_id": "FEDAI_RULES_10E",
+      "locator": "Rule 2.1 and 2.2",
+      "regulatory_sensitive": true,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F003",
+      "statement": "Normal transit period (NTP) is the average period from negotiation, purchase or discount to receipt of bill proceeds, not the time goods take to arrive. Where an export usance bill has a fixed due date (from shipment or bill of exchange date), NTP does not apply. For bills drawn on DP or at sight, not under a letter of credit: 25 days for foreign currency bills and 20 days for rupee bills. A dealer may use a different transit period for exceptional situations, documented with reasons, and finance beyond the prescribed NTP is limited to 90 days from the date of shipment; due dates cannot change after purchase, discount or negotiation. Exports to countries under United Nations guidelines: maximum 120 days. Rupee bills under letters of credit: 3 days where reimbursement is at the centre of negotiation, 7 days where in India at a different centre, 20 days where by banks outside India and 20 days where reimbursement is by RBI under state credit. TT reimbursement under letters of credit: 5 days where by electronic means, or 5 days plus the additional period where the claim is after a number of days from negotiation.",
+      "source_id": "FEDAI_RULES_10E",
+      "locator": "Rule 2.3",
+      "regulatory_sensitive": true,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F004",
+      "statement": "Rule 2.5 and 2.4: for bills sent for collection or goods sent on consignment, proceeds are converted at the prevailing TT buying rate or contract rate only after the foreign currency is credited to the dealer's Nostro account, and the bank must credit the exporter within two working business days of the credit advice and compliance, failing which it pays compensation at the minimum rate charged on export credit plus compensation for adverse exchange movement under its policy. On a change in the usance of a bill, post-shipment interest is charged under the bank's guidelines plus notional swap difference.",
+      "source_id": "FEDAI_RULES_10E",
+      "locator": "Rule 2.4 and 2.5",
+      "regulatory_sensitive": true,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F005",
+      "statement": "Rule 3: retirement of import bills and crystallisation of unpaid import bills are done at the hedge contract rate if one is in place, otherwise at the prevailing bill selling rate; unpaid foreign currency import bills under letters of credit are crystallised under the bank's stated policy. Bills negotiated under import letters of credit carry the commercial rate applicable to the bank's domestic advances; interest remittable on interest-bearing bills is subject to RBI's directive.",
+      "source_id": "FEDAI_RULES_10E",
+      "locator": "Rule 3.1 to 3.3",
+      "regulatory_sensitive": true,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F006",
+      "statement": "Rule 4: outward remittance is effected at the bank's TT selling rate or the contract rate; inward remittance converted at the TT buying rate or contract rate, and foreign currency inward remittance up to an amount under the bank's uniform policy may be converted immediately into rupees if all information is available. The dealer must pay or intimate the beneficiary within two working business days of the credit advice and transfer funds within two working business days of receiving compliant disposal instructions; for delay it pays interest at 2% over its savings bank rate and compensation for adverse exchange movement; if the beneficiary does not respond within five working business days and the bank does not return the remittance, it crystallises it under its policy within the period allowed for surrender of foreign currency. Foreign currency travellers' cheques, notes and card balances are encashed or sold at the appropriate buying or selling rate at the dealer's option. Rule 4.6 deals with inter-bank Vostro transfers: Form A3 within five working business days, penalty Rs 1,000 a day beyond that, claims within 15 days and a cap of Rs 10,000 on a late claim.",
+      "source_id": "FEDAI_RULES_10E",
+      "locator": "Rule 4.1 to 4.6",
+      "regulatory_sensitive": true,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F007",
+      "statement": "Rule 5: exchange contracts are for definite amounts and periods; an option period of delivery chosen by the customer may not extend beyond one month; if a fixed delivery date or the last option date is a known holiday, the last date is the preceding working business day, and if a suddenly declared holiday, the next working business day. A ready or cash merchant contract is deliverable on the same day, a value next day contract on the next working business day, and a spot contract on the second succeeding working business day; a forward contract is deliverable beyond the spot date, its duration computed from the spot value date. All contracts read as delivered or paid for at the bank and at the named place. The date of delivery is, for bills negotiated, purchased or discounted, the date of negotiation, purchase or discount and payment of rupees; for export bills sent for collection, the date of payment of rupees on realisation; for import bills, the earlier of retirement or crystallisation. In forward merchant contracts the merchant has the option of delivery. The merchant purchase contract states the tenor; merchant quotations are in direct terms (rupees and paise for one unit or 100 units); rupee amounts may be rounded off or taken in actual paise under the bank's policy.",
+      "source_id": "FEDAI_RULES_10E",
+      "locator": "Rule 5.1 to 5.8",
+      "regulatory_sensitive": true,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F008",
+      "statement": "Rule 6: at a customer's request it is optional for a bank to accept or give early delivery or extend a contract, and the customer must deliver or ask for extension or cancellation on or before maturity. On early delivery the bank recovers or pays the swap difference, plus interest on outlay or inflow of funds. An extension is a cancellation (at the appropriate selling or buying rate on the date of cancellation) and simultaneous rebooking at the current rate; the difference between the contracted and cancellation rates is recovered or paid. On cancellation at the customer's request, the dealer recovers or pays the difference between the contracted rate and the cancellation rate; purchase contracts are cancelled at the TT selling rate and sale contracts at the TT buying rate (the appropriate forward rate if before maturity). Recovery may be in a lump sum or instalments uniformly over the remaining maturity at least quarterly, never beyond maturity, under a Board-approved policy. A contract does not become void if it becomes impossible to perform; the customer must apply for cancellation. A matured contract with no instructions is cancelled by the bank within three working business days after maturity; the customer is liable for any exchange difference against him and not entitled to a gain, though the bank may pass on the gain if the delay was beyond the client's control and this is recorded. Swap cost is recovered in all early delivery cases whether or not an actual swap is made.",
+      "source_id": "FEDAI_RULES_10E",
+      "locator": "Rule 6.1 to 6.6",
+      "regulatory_sensitive": true,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F009",
+      "statement": "Rule 7: FEDAI accredits exchange brokers (voice) only; electronic trading platforms such as multi-bank portals and electronic order matching systems need RBI authorisation. Authorised dealers use accredited intermediaries and pay no brokerage or fees to other bank employees. All contracts, confirmations and advices must carry the clause \"Subject to the Rules & Regulations of the Foreign Exchange Dealers' Association of India\"; no contract is made with an intermediary as a principal.",
+      "source_id": "FEDAI_RULES_10E",
+      "locator": "Rule 7.1 to 7.5",
+      "regulatory_sensitive": true,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F010",
+      "statement": "Rule 8: for late delivery of any currency under a foreign exchange contract the seller bank pays interest for the days of delay at 2% over the overnight benchmark rate of the currency (FBIL MIBOR for rupees, SOFR for US dollars, ESTR for euro, TONA for yen, SARON for Swiss francs, CORRA for Canadian dollars, SORA for sterling as printed), and for other currencies 2% over the notional overdraft rate payable by the buyer bank. The buyer bank must accept back-valued funds delivered within two working business days of the due date; after that it may accept value-dated funds or claim interest. A claim for delay must be made within 15 working business days of the due date, or interest is limited to 60 days; the seller bank must settle within 15 working business days of the claim or pay interest for the whole period. A claim unsettled for 60 days may be referred to FEDAI. Wrong delivery and undue enrichment are compensated; forward contract settlement on a month-end holiday follows the known and suddenly declared holiday rules; for interbank forward contracts with option of delivery, two working business days' notice is needed; all member banks dealing in forex forwards must be members of the CCIL forex forward guaranteed settlement segment.",
+      "source_id": "FEDAI_RULES_10E",
+      "locator": "Rule 8.1 to 8.12",
+      "regulatory_sensitive": true,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F011",
+      "statement": "The courseware's statement of the FEDAI rules (S03 printed pp. 28-32) corresponds to the earlier edition: for example Rule 1 market hours with a 4.30 p.m. customer cut-off, and rule numbering.",
+      "source_id": "S03",
+      "locator": "S03 printed pp. 28-32",
+      "regulatory_sensitive": true,
+      "evidence_status": "explicit"
+    }
+  ],
+  "drafts": [
+    {
+      "draft_id": "D001",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F001",
+        "F011"
+      ],
+      "payload": {
+        "title": "FEDAI Rule 1: when the dealing day runs, and what a known holiday is",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "**FEDAI** is the dealers' association whose rules govern how authorised dealers handle forex. Its **Rule 1** deals with time.\n\n- **Normal market hours**: **9.00 a.m. to 5.00 p.m. IST** on working days, for inter-bank and client transactions in on-shore deliverable foreign currency/rupee deals, **as prescribed by the RBI** for inter-bank transactions (older books show a **4.30 p.m. customer cut-off**, now gone).\n- **Beyond hours**: allowed on **business days** for customers and banks, **provided the NOOP limit** (net overnight open position) is **maintained at all times**, including from end of day to 9 a.m. next day.\n- **Individuals** (including joint accounts and proprietary firms): may deal **even on Saturdays, Sundays and holidays**, under the bank's policy.\n- **Spot date rolls over at 12.00 midnight IST.**\n- **Saturday** is not a working business day for forex, except for those individual deals.\n- **Known holiday**: known **at least three working business days** before the date. Any other holiday is **suddenly declared**.",
+        "self_check": {
+          "mode": "question",
+          "question_id": "D012"
+        }
+      }
+    },
+    {
+      "draft_id": "D002",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F002"
+      ],
+      "payload": {
+        "title": "FEDAI Rule 2: pricing and recovering an export bill",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "**Buying the bill**: at the bank's **current bill buying rate** or the **contracted rate**. **Interest** for the **transit period and/or usance** is taken **up front**.\n\n**If the bill is not paid on time**: each bank has its **own, published crystallisation policy**. On crystallisation the bank applies its **TT selling rate**; the customer owes the **crystallised rupee amount plus interest and charges**, and interest runs **from the crystallisation date** until recovery. Bills for **countries with externalisation problems** are crystallised under the same policy, even if payment was made in **local currency**.\n\n**If the proceeds arrive after crystallisation**: converted at the **TT buying rate** (or the contract rate).\n\n**If the bill is dishonoured before crystallisation**: the bank recovers the **rupee equivalent and foreign currency charges at the TT selling rate**, with interest and rupee charges.\n\n**Paid early**: **interest for the unexpired period is refunded**, and **notional swap cost** is paid or recovered.",
+        "self_check": {
+          "mode": "question",
+          "question_id": "D013"
+        }
+      }
+    },
+    {
+      "draft_id": "D003",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F003"
+      ],
+      "payload": {
+        "title": "Normal transit period: the number of days, by type of bill",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "The **normal transit period (NTP)** is the **average time from negotiation or discount until the money arrives**. It is **not** the time the goods take to reach the buyer.\n\n- **Fixed due date** (usance bills reckoned from shipment or bill date): **no NTP**.\n- **DP or sight bills, not under LC**: **foreign currency 25 days; rupee 20 days**.\n- **Rupee bills under LC**: **3 days** (reimbursement at the negotiating centre), **7 days** (elsewhere in India), **20 days** (banks outside India, or RBI under state credit).\n- **TT reimbursement under LC**: **5 days** where by electronic means; **5 days plus the extra period** where the LC says the claim comes later.\n- **UN guideline countries**: **maximum 120 days**.\n- A bank may use a **different NTP** for exceptional cases with **documented reasons**; finance **beyond the prescribed NTP** is capped at **90 days from shipment**; **no change in due date** after purchase, discount or negotiation.",
+        "self_check": {
+          "mode": "question",
+          "question_id": "D014"
+        }
+      }
+    },
+    {
+      "draft_id": "D004",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F004",
+        "F006"
+      ],
+      "payload": {
+        "title": "Rules 2.4, 2.5 and 4: collections, tenor changes, remittances and delays",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "**Export bills on collection or consignment**: proceeds are converted at the **TT buying rate** (or contract rate) **only after the money is credited to the bank's Nostro account**. The bank must credit the exporter **within two working business days**; if late, it pays **compensation at the minimum export credit rate** plus compensation for **adverse exchange movement**.\n\n**Remittances**: **outward** at the **TT selling rate**; **inward** at the **TT buying rate** (or contract rate). The bank must inform or pay the beneficiary **within two working business days** of the credit advice. If late, it pays **interest at 2% over its savings rate**. If the beneficiary says nothing for **five working business days** and the bank does not return the money, it must **crystallise the remittance** within the time allowed for surrendering foreign currency.\n\n**Vostro transfers between banks (Rule 4.6)**: the remitting bank sends **Form A3 within five working business days**; beyond that it pays **₹1,000 a day**; a claim lodged after **15 days** is capped at **₹10,000**.",
+        "self_check": {
+          "mode": "question",
+          "question_id": "D015"
+        }
+      }
+    },
+    {
+      "draft_id": "D005",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F005"
+      ],
+      "payload": {
+        "title": "FEDAI Rule 3: import bills",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "**Retiring or crystallising an import bill**: at the **hedge contract rate** if the importer has a hedge; otherwise at the **prevailing bill selling rate**.\n\n**Unpaid foreign currency import bills under letters of credit** are **crystallised under the bank's stated policy**.\n\n**Interest**: bills negotiated under import letters of credit carry the **commercial rate for the bank's domestic advances**; interest on **interest-bearing bills** follows **RBI's directive**.",
+        "self_check": {
+          "mode": "question",
+          "question_id": "D016"
+        }
+      }
+    },
+    {
+      "draft_id": "D006",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F007"
+      ],
+      "payload": {
+        "title": "FEDAI Rule 5: contracts, delivery dates and quotes",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "- **Definite amounts and periods**.\n- **Delivery**: **ready or cash** = **same day**; **value next day** = the **next working business day**; **spot** = the **second working business day** after the deal; **forward** = beyond spot, with the period counted from the **spot value date**.\n- **Option period** chosen by the customer: **not beyond one month**; the contract states the **first and last dates**.\n- **Holidays**: if the fixed date or last option date is a **known holiday**, the last delivery date is the **preceding** working business day; if it is a **suddenly declared holiday**, the **next** working business day.\n- **Date of delivery**: bills **negotiated, purchased or discounted** = the date of **negotiation and payment of rupees**; bills **on collection** = the date **rupees are paid on realisation**; **import bills** = **retirement or crystallisation, whichever is earlier**.\n- **Merchant has the option of delivery** (except NDDC).\n- **Quotes** in **direct terms** (rupees and paise per 1 or 100 units); **rounding** to the rupee or actual paise under the bank's policy.",
+        "self_check": {
+          "mode": "question",
+          "question_id": "D017"
+        }
+      }
+    },
+    {
+      "draft_id": "D007",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F008"
+      ],
+      "payload": {
+        "title": "FEDAI Rule 6: early delivery, extension and cancellation",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "**Optional for the bank**: accepting or giving **early delivery**, or **extending** a contract. The **customer must deliver or ask** for extension or cancellation **on or before maturity**.\n\n- **Early delivery**: the bank recovers or pays the **swap difference**, plus **interest on the funds outlay or inflow**; **swap cost is recovered from the customer** even if no swap is actually done.\n- **Extension** = **cancel** at the appropriate rate on that date and **rebook at the current rate**; the **cancellation difference** is settled.\n- **Cancellation** at the customer's request: the customer pays or receives the **difference between the contract rate and the cancellation rate**. **Purchase contracts** cancel at the **TT selling rate**; **sale contracts** at the **TT buying rate** (the **forward** TT rate if before maturity).\n- **Recovery** may be a **lump sum or instalments**, uniformly over the **remaining maturity**, at least **quarterly**, never beyond maturity, under a **Board-approved policy**.\n- **A contract that becomes impossible to perform is not void**: the customer must apply for cancellation.\n- **No instructions after maturity**: the bank **cancels within three working business days**; the customer **bears any loss** but **gets no gain**, unless the delay was **beyond the client's control** and the bank records why.",
+        "self_check": {
+          "mode": "question",
+          "question_id": "D019"
+        }
+      }
+    },
+    {
+      "draft_id": "D008",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F009",
+        "F010"
+      ],
+      "payload": {
+        "title": "FEDAI Rules 7 and 8: brokers and settling between banks",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "**Rule 7: intermediaries**\n- FEDAI accredits **exchange brokers (voice)** only. **Electronic platforms** (multi-bank portals, order matching systems) need **RBI authorisation**.\n- Banks use only **accredited** intermediaries, and pay **no brokerage or fees to other bank employees**.\n- Every contract, confirmation and advice carries **\"Subject to the Rules & Regulations of the Foreign Exchange Dealers' Association of India\"**; **no contract with an intermediary as principal**.\n\n**Rule 8: delays between banks**\n- A **seller bank** that delivers funds late pays **interest for the days of delay at 2% over the overnight benchmark** of the currency.\n- The buyer bank must accept **back-valued** funds delivered **within two working business days** of the due date; later, it may choose **value-dated funds or interest**.\n- **Claim within 15 working business days** of the due date, or interest is **capped at 60 days**; the seller bank must **settle within 15 working business days** of the claim, or pay interest for the **whole** period.\n- **60 days** unsettled: refer to **FEDAI**, whose decision binds both banks.\n- Banks dealing in forex forwards must be members of **CCIL's forex forward guaranteed settlement** segment.",
+        "self_check": {
+          "mode": "question",
+          "question_id": "D022"
+        }
+      }
+    },
+    {
+      "draft_id": "D009",
+      "item_type": "card",
+      "variant": "worked_example",
+      "fact_ids": [
+        "F002",
+        "F005"
+      ],
+      "payload": {
+        "title": "Crystallising an unpaid bill, and what happens if it is paid afterwards",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "Illustrative case: an exporter's bill for USD 60,000 is unpaid on its due date. The bank crystallises it under its policy when its TT selling rate is ₹84.2250. Two weeks later the buyer's payment reaches the bank's Nostro account while the TT buying rate is ₹83.9500. Separately, an importer's unpaid sight bill for USD 40,000 is crystallised on a day when there is no hedge contract and the bill selling rate is ₹84.5500. What are the rupee amounts?",
+        "worked_steps": [
+          {
+            "step_number": 1,
+            "description": "Export bill crystallised at the TT selling rate.",
+            "formula_or_substitution": "60,000 × 84.2250",
+            "intermediate_result": "₹50,53,500.00 recoverable from the exporter"
+          },
+          {
+            "step_number": 2,
+            "description": "After crystallisation, when the foreign currency arrives, the proceeds convert at the TT buying rate.",
+            "formula_or_substitution": "60,000 × 83.9500",
+            "intermediate_result": "₹50,37,000.00 credited"
+          },
+          {
+            "step_number": 3,
+            "description": "The difference left with the exporter.",
+            "formula_or_substitution": "50,53,500.00 − 50,37,000.00",
+            "intermediate_result": "₹16,500.00 net recoverable"
+          },
+          {
+            "step_number": 4,
+            "description": "Import bill crystallised with no hedge: prevailing bill selling rate.",
+            "formula_or_substitution": "40,000 × 84.5500",
+            "intermediate_result": "₹33,82,000.00 payable by the importer"
+          }
+        ],
+        "final_answer_with_unit": "Export bill: ₹50,53,500.00 recoverable at crystallisation, ₹50,37,000.00 credited on later realisation, leaving ₹16,500.00 to recover; import bill: ₹33,82,000.00 payable at the bill selling rate",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Interest on the export bill: from which date and until which date does it run?",
+          "expected_takeaway": "From the date of crystallisation for the overdue period and thereafter until the date of recovery of the crystallised amount."
+        }
+      }
+    },
+    {
+      "draft_id": "D010",
+      "item_type": "card",
+      "variant": "worked_example",
+      "fact_ids": [
+        "F007",
+        "F008"
+      ],
+      "payload": {
+        "title": "Cancelling a forward contract, and counting an inter-bank claim deadline",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "Illustrative case A: a customer booked a forward sale of USD 150,000 at ₹83.2000. Before maturity he asks to cancel; the forward TT buying rate on that day is ₹82.6500. Illustrative case B: a seller bank paid funds late on a contract due on Monday 10 August 2026. The buyer bank wants to know the last day for a claim for the full delay, counting 15 working business days (Monday to Friday, no holidays) from the due date.",
+        "worked_steps": [
+          {
+            "step_number": 1,
+            "description": "A sale contract is cancelled at the TT buying rate. Rate difference.",
+            "formula_or_substitution": "83.2000 − 82.6500",
+            "intermediate_result": "₹0.5500 per USD"
+          },
+          {
+            "step_number": 2,
+            "description": "The bank sold at the higher contracted rate than the cancellation buying rate, so the customer pays the difference.",
+            "formula_or_substitution": "150,000 × 0.5500",
+            "intermediate_result": "₹82,500.00 payable by the customer"
+          },
+          {
+            "step_number": 3,
+            "description": "B: count 15 working business days after Monday 10 August 2026.",
+            "formula_or_substitution": "11-14 Aug (4), 17-21 Aug (9), 24-28 Aug (14), 31 Aug (15)",
+            "intermediate_result": "Monday 31 August 2026"
+          }
+        ],
+        "final_answer_with_unit": "A: the customer pays ₹82,500.00 on cancellation. B: a claim for the full delay must be made by 31 August 2026",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "If the claim is lodged after that date, how long is the interest period capped at?",
+          "expected_takeaway": "The seller bank pays interest for a maximum of 60 days only."
+        }
+      }
+    },
+    {
+      "draft_id": "D011",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "At what time does the spot date roll over for foreign currency/rupee transactions under the FEDAI Rules?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "5.00 p.m. IST",
+            "explanation_md": "That is the end of normal market hours."
+          },
+          {
+            "option_id": "B",
+            "text_md": "12.00 midnight IST",
+            "explanation_md": "This is the roll-over time stated in Rule 1.2."
+          },
+          {
+            "option_id": "C",
+            "text_md": "9.00 a.m. IST",
+            "explanation_md": "That is the market opening time."
+          },
+          {
+            "option_id": "D",
+            "text_md": "4.30 p.m. IST",
+            "explanation_md": "That was the customer cut-off in earlier editions."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "Spot date roll-over for foreign currency/rupee transactions takes place at 12.00 midnight IST."
+      }
+    },
+    {
+      "draft_id": "D012",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "A holiday for Friday is declared on the preceding Thursday afternoon, which is one working business day before. Under Rule 1.4, what kind of holiday is it?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "A suddenly declared holiday, since it was not known at least three working business days before",
+            "explanation_md": "A known holiday is known at least three working business days before the date."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A known holiday, because it was declared before the day",
+            "explanation_md": "It must be known at least three working business days before."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A known holiday only if the Reserve Bank declared it",
+            "explanation_md": "The test is the notice period, not who declares."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Not a holiday for forex purposes",
+            "explanation_md": "The rule applies to holidays for forex business."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "A holiday known less than three working business days before the date is a suddenly declared holiday."
+      }
+    },
+    {
+      "draft_id": "D013",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F002"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An export bill is crystallised because it is unpaid on its due date. Which rate does the authorised dealer apply?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Its TT buying rate",
+            "explanation_md": "That applies to conversion of proceeds after crystallisation."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Its bill buying rate",
+            "explanation_md": "That is used when the bill is first purchased or discounted."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Its TT selling rate",
+            "explanation_md": "Crystallisation uses the TT selling rate."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The RBI reference rate",
+            "explanation_md": "The rule specifies the bank's TT selling rate."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "For crystallisation into rupee liability the authorised dealer applies its TT selling rate of exchange."
+      }
+    },
+    {
+      "draft_id": "D014",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F003"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "What is the normal transit period for a foreign currency export bill drawn on DP or at sight terms and not under a letter of credit?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "20 days",
+            "explanation_md": "That is for rupee bills not under letters of credit."
+          },
+          {
+            "option_id": "B",
+            "text_md": "3 days",
+            "explanation_md": "That is for rupee bills under LC with reimbursement at the negotiating centre."
+          },
+          {
+            "option_id": "C",
+            "text_md": "120 days",
+            "explanation_md": "That is the maximum for exports to countries under UN guidelines."
+          },
+          {
+            "option_id": "D",
+            "text_md": "25 days",
+            "explanation_md": "This is the prescribed NTP."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "The normal transit period for foreign currency bills on DP or sight terms, not under LC, is 25 days."
+      }
+    },
+    {
+      "draft_id": "D015",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An exporter's bill sent on collection is credited to the bank's Nostro account. Within what time must the bank credit the exporter's account once guidelines are complied with, and at what rate is the conversion made?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Within seven days, at the bill buying rate",
+            "explanation_md": "Neither matches the rule."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Within two working business days, at the TT buying rate or contract rate",
+            "explanation_md": "These are the rule's terms."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Within two working business days, at the TT selling rate",
+            "explanation_md": "Selling rate is for crystallisation and outward remittances."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Immediately, at the card rate",
+            "explanation_md": "Not the rule."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "The bank transfers funds within two working business days of the Nostro credit and compliance, converting at the TT buying rate or contract rate."
+      }
+    },
+    {
+      "draft_id": "D016",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F005"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An importer has no hedge contract. At which rate is an import bill retired or crystallised under Rule 3?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The TT buying rate",
+            "explanation_md": "That is for inward proceeds."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The bill buying rate",
+            "explanation_md": "That is for export bills."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The prevailing bill selling rate",
+            "explanation_md": "Without a hedge, the bill selling rate applies."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The forward rate for the due date",
+            "explanation_md": "A forward rate applies only if there is a hedge contract."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "Import bills are retired or crystallised at the hedge contract rate if there is one, otherwise at the prevailing bill selling rate."
+      }
+    },
+    {
+      "draft_id": "D017",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F007"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Under FEDAI Rule 5, on which day is a spot contract deliverable?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The same day",
+            "explanation_md": "That is a ready or cash contract."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The next working business day",
+            "explanation_md": "That is a value next day contract."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The third working business day",
+            "explanation_md": "No such rule applies."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The second succeeding working business day after the contract date",
+            "explanation_md": "This is the spot rule."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "A spot contract is deliverable on the second succeeding working business day following the contract date."
+      }
+    },
+    {
+      "draft_id": "D018",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F007"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "How long can the option period of delivery of a forward contract, chosen by the customer, extend?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Not beyond one month",
+            "explanation_md": "This is the limit."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Not beyond three months",
+            "explanation_md": "No such limit applies."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Not beyond one week",
+            "explanation_md": "No such limit applies."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Up to the full contract period",
+            "explanation_md": "It must not extend beyond one month."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "The option period of delivery shall not extend beyond one month."
+      }
+    },
+    {
+      "draft_id": "D019",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F008"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "A customer's forward purchase contract is cancelled at his request before maturity. At which rate is it cancelled?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The TT buying rate",
+            "explanation_md": "Sale contracts are cancelled at the TT buying rate."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The original contract rate",
+            "explanation_md": "The difference between that and the cancellation rate is settled."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The appropriate forward TT selling rate of the bank",
+            "explanation_md": "Purchase contracts are cancelled at the TT selling rate (forward rate before maturity)."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The card rate on the day",
+            "explanation_md": "The rule specifies the TT rate."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "Purchase contracts are cancelled at the TT selling rate of the contracting authorised dealer, and the appropriate forward TT rate applies if the cancellation is before maturity."
+      }
+    },
+    {
+      "draft_id": "D020",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F008"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "A customer gives no instructions about a forward contract that has matured. What does Rule 6 provide?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The contract is extended automatically for one month",
+            "explanation_md": "There is no automatic extension."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The bank cancels it within three working business days after maturity; the customer bears any loss but gets no gain unless the delay was beyond his control and the bank records why",
+            "explanation_md": "This is the rule."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The contract is void",
+            "explanation_md": "A contract that cannot be performed is not void."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The bank must pass on any gain to the customer",
+            "explanation_md": "The customer is not entitled to the gain unless the exception applies."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "A matured contract with no instructions is cancelled within three working business days; the customer is liable for loss and not entitled to gain, except where the delay was beyond his control and the bank records the justification."
+      }
+    },
+    {
+      "draft_id": "D021",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F009"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Which intermediaries does FEDAI accredit, under Rule 7?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Multi-bank portals and electronic order matching systems",
+            "explanation_md": "Those need RBI authorisation."
+          },
+          {
+            "option_id": "B",
+            "text_md": "All intermediaries including electronic platforms",
+            "explanation_md": "Only voice brokers are accredited by FEDAI."
+          },
+          {
+            "option_id": "C",
+            "text_md": "No intermediaries",
+            "explanation_md": "FEDAI accredits voice brokers."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Exchange brokers (voice) only",
+            "explanation_md": "Electronic trading platforms need RBI authorisation."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "FEDAI accredits exchange brokers (voice) only; electronic trading platforms such as MBPs and EOMs need authorisation from RBI."
+      }
+    },
+    {
+      "draft_id": "D022",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F010"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "A claim for delayed settlement under Rule 8 is not lodged within 15 working business days of the due date. What is the consequence?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "No interest is payable",
+            "explanation_md": "Interest is payable up to the cap."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Interest is payable for the full period",
+            "explanation_md": "The full period applies only if the claim is made in time or the seller bank delays settlement."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Interest is payable by the seller bank for a maximum of 60 days only",
+            "explanation_md": "This is the cap."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The matter must go to FEDAI at once",
+            "explanation_md": "Reference to FEDAI follows 60 days of non-settlement."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "If the claim is not made within 15 working business days, the seller bank pays interest for a maximum of 60 days."
+      }
+    },
+    {
+      "draft_id": "D023",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F010"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "At what rate does a seller bank pay interest for late delivery of funds in a foreign exchange contract, under Rule 8.2?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "2% over its savings bank rate",
+            "explanation_md": "That is for delayed inward remittances to a beneficiary."
+          },
+          {
+            "option_id": "B",
+            "text_md": "2% over the benchmark overnight rate of the currency concerned",
+            "explanation_md": "This is the rate."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The bank rate plus 5%",
+            "explanation_md": "No such rate applies."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Nil, unless the delay exceeds a week",
+            "explanation_md": "Interest is payable for the days of delay."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "The seller bank pays interest for the days of delay at 2% over the benchmark rate of the currency concerned."
+      }
+    },
+    {
+      "draft_id": "D024",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F008"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A customer booked a forward sale of USD 90,000 at ₹83.7500. The contract is cancelled before maturity at a forward TT buying rate of ₹83.1000. What is the amount the customer pays on cancellation, in rupees?",
+        "numeric_rule": {
+          "expected_answer": "58500.00",
+          "unit_label": "rupees",
+          "precision_decimals": 2,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give the answer to 2 decimal places.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "A sale contract is cancelled at the TT buying rate. Difference 83.7500 − 83.1000 = 0.6500; 90,000 × 0.6500 = ₹58,500.00, payable by the customer.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Rate difference",
+            "formula_or_substitution": "83.7500 − 83.1000",
+            "intermediate_result": "0.6500"
+          },
+          {
+            "step_number": 2,
+            "description": "Amount",
+            "formula_or_substitution": "90,000 × 0.6500",
+            "intermediate_result": "58,500.00"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D025",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F002"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An unpaid export bill for USD 45,000 is crystallised at the TT selling rate of ₹84.3000. What rupee amount is recoverable from the exporter before interest and charges?",
+        "numeric_rule": {
+          "expected_answer": "3793500.00",
+          "unit_label": "rupees",
+          "precision_decimals": 2,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give the answer to 2 decimal places.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "The recoverable amount is the crystallised amount at the TT selling rate: 45,000 × 84.3000 = ₹37,93,500.00.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Multiply by the TT selling rate",
+            "formula_or_substitution": "45,000 × 84.3000",
+            "intermediate_result": "37,93,500.00"
+          }
+        ]
+      }
+    }
+  ],
+  "unresolved": [
+    "This batch replaces batch BFM-A-U01-B007, which restated the courseware's earlier-edition wording and stays unpublished as superseded. It also supplies the FEDAI rules that the held crystallisation items in BFM-A-U04-B003 and the Normal Transit Period in BFM-A-U05-B003 depended on.",
+    "The FEDAI Rules are taken from FEDAI's own AR Circular No. 02/2024 (5 April 2024), the latest amendment found; the saved copy carries the full updated text. A 2026 FEDAI newsletter exists but announces no new edition. RBI's January 2026 recognition of FEDAI as a self-regulatory organisation was not confirmed.",
+    "The text of the saved PDF shows some formatting residue from tracked amendments in Rule 8.2 (old benchmark names appear alongside new ones); the new benchmarks (SOFR, ESTR, TONA, SARON, CORRA, SORA) are those in the circular's table of revisions, and the items do not test the benchmark list.",
+    "Reviewer for this batch is the authoring agent; no independent or human review."
+  ],
+  "next_batch_hint": "RBI internal control guidelines for forex business (LO_05) and the FEMA definition (LO_01)."
+}
