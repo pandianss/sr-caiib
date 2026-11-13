@@ -1,0 +1,408 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BFM-A-U03-B004",
+  "paper_id": "BFM",
+  "unit_label": "Module A: International Banking - Correspondent Banking and NRI Accounts",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S03",
+    "RBI_FAQ_IMMOV",
+    "RBI_APDIR_14_2026",
+    "RBI_FEMA_395_2019"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "statement": "Under Schedule III of the NDI Rules, as amended by the Third Amendment Rules (S.O. 3030(E), 12 June 2026), investment in equity instruments of a listed Indian company on a recognised stock exchange is open to all individual persons resident outside India, where it was previously permitted only to NRIs and OCIs, with enhanced investment limits. Banks may open a repatriable rupee account for the purpose; breaches are reclassified from portfolio to direct investment under the FPI framework. The circular does not state the new limit figures.",
+      "source_id": "RBI_APDIR_14_2026",
+      "locator": "Paragraphs 1 to 2 of A.P. (DIR Series) Circular No. 14 dated 15 June 2026; S03 printed p. 80 states the older limits (5% individual, 10% aggregate)",
+      "regulatory_sensitive": true,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F002",
+      "statement": "Repatriation basis (Schedule III): payment is by inward remittance through banking channels or out of a repatriable deposit account; the investor designates a repatriable rupee account used only for these investments; sale proceeds (net of taxes) of equity may be remitted abroad or credited to that designated account; sale proceeds of mutual fund units may be remitted outside India or credited to any account under the Deposit Regulations at the NRI/OCI's option.",
+      "source_id": "RBI_FEMA_395_2019",
+      "locator": "Section 3.1, Schedule III, parts A and B",
+      "regulatory_sensitive": true,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F003",
+      "statement": "Non-repatriation basis (Schedule IV): an NRI or OCI buying equity instruments, units or a contribution to the capital of an LLP pays by inward remittance or out of NRE, FCNR(B) or NRO funds; the sale or maturity proceeds (net of taxes) are credited only to the NRO account, whichever account paid; the amount invested and the capital appreciation cannot be repatriated. The same treatment applies to an investment in a firm or proprietary concern.",
+      "source_id": "RBI_FEMA_395_2019",
+      "locator": "Section 3.1, Schedule IV, paragraphs 1 and 2; S03 printed p. 81 agrees on non-repatriable investment",
+      "regulatory_sensitive": true,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F004",
+      "statement": "An NRI or OCI may purchase immovable property in India other than agricultural land, a farm house or plantation property; may acquire it as a gift from a relative who is a resident, NRI or OCI, or by inheritance; may sell non-agricultural property to a resident, NRI or OCI; and may sell or gift agricultural land only to a resident. Payment must be through banking channels or out of NRE, FCNR(B) or NRO accounts, not through travellers' cheques or foreign currency notes.",
+      "source_id": "RBI_FAQ_IMMOV",
+      "locator": "Part II, Q1 and Q2; S03 printed pp. 81-82 agrees in substance",
+      "regulatory_sensitive": true,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F005",
+      "statement": "NRIs and PIOs may remit the sale proceeds of immovable property other than agricultural land, a farm house or plantation property if the property was acquired in accordance with the foreign exchange law in force at the time, or the NDI Rules, and the price was paid in foreign exchange received through banking channels or out of FCNR(B) or NRE funds; for residential property, repatriation is restricted to not more than two such properties. Repatriation up to USD 1 million per financial year, along with other assets, is allowed under the Remittance of Assets Regulations, 2016.",
+      "source_id": "RBI_FAQ_IMMOV",
+      "locator": "Part II, Q7; S03 printed p. 82 agrees on the two-property restriction",
+      "regulatory_sensitive": true,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F006",
+      "statement": "Citizens of Pakistan, Bangladesh, Sri Lanka, Afghanistan, China, Iran, Nepal, Bhutan, Macau, Hong Kong or the Democratic People's Republic of Korea, irrespective of residential status, cannot acquire or transfer immovable property in India without the prior permission of the Reserve Bank, other than on lease not exceeding five years; the prohibition does not apply to an OCI.",
+      "source_id": "RBI_FAQ_IMMOV",
+      "locator": "Part II, Q4; S03 printed p. 82 lists ten countries and omits the Democratic People's Republic of Korea",
+      "regulatory_sensitive": true,
+      "evidence_status": "explicit"
+    }
+  ],
+  "drafts": [
+    {
+      "draft_id": "D001",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F002",
+        "F003"
+      ],
+      "payload": {
+        "title": "Two ways to invest: money that can leave, money that stays",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "When an NRI invests in India, the first decision is the **route**, because it fixes where the money may go on exit.\n\n**Repatriation route** (Schedule III, listed equity and mutual fund units)\n- Pay by inward remittance, or from a **repatriable** deposit account. A designated repatriable rupee account is used only for these investments.\n- Sale proceeds (net of taxes) may be **sent abroad** or kept in that designated account. For mutual fund units, the NRI chooses between remitting and any permitted account.\n\n**Non-repatriation route** (Schedule IV: equity, units, LLP capital; also firms and proprietary concerns)\n- Pay by remittance, or from an **NRE, FCNR(B) or NRO** account.\n- Proceeds go **only to the NRO account**, whichever account paid. The amount invested and the gain **cannot be repatriated**.\n\nShortcut: *repatriable in, repatriable out; non-repatriable investments always come back to an NRO account.*",
+        "self_check": {
+          "mode": "question",
+          "question_id": "D006"
+        }
+      }
+    },
+    {
+      "draft_id": "D002",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "title": "Shares on the stock exchange: what changed in June 2026",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "Courseware written before mid-2026 describes the **Portfolio Investment Scheme**: only NRIs and PIOs, through a designated bank branch, up to 5% of a company's paid-up capital each and 10% for all NRIs together.\n\nOn **12 June 2026** the Government amended the Non-Debt Instruments Rules (S.O. 3030(E)), and on **15 June 2026** the Reserve Bank gave effect to it in A.P. (DIR Series) Circular No. 14:\n\n- **Who**: every **individual person resident outside India**, not only NRIs and OCIs, may buy and sell shares of listed Indian companies on a recognised stock exchange on a repatriation basis.\n- **Limits**: **enhanced** from the old 5% and 10%. The circular itself does not state the new figures.\n- **Account**: the bank opens a repatriable rupee account for the investor.\n- **Breach of limits**: the holding is reclassified from portfolio investment to direct investment under the framework for foreign portfolio investors.\n\nFor the exam, remember the **direction of change** (wider eligibility, higher limits). Do not quote the old 5% and 10% as current.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "A foreign national with no Indian roots lives abroad and wants to buy shares of a listed Indian company on the stock exchange. Before June 2026, could he use the NRI route, and what is the position now?",
+          "expected_takeaway": "Before June 2026 the route was only for NRIs and OCIs, so no. Since the June 2026 amendment, any individual resident outside India may use Schedule III, subject to the enhanced limits."
+        }
+      }
+    },
+    {
+      "draft_id": "D003",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F004",
+        "F006"
+      ],
+      "payload": {
+        "title": "Buying and selling property in India as an NRI",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "What an NRI or OCI may do with immovable property in India:\n\n- **Buy**: residential or commercial property from a resident, NRI or OCI. **Not** agricultural land, a farm house or plantation property.\n- **Receive as gift** (not agricultural): from a relative who is a resident, NRI or OCI. **Inherit**: any property, from anyone who acquired it lawfully.\n- **Sell or gift**: non-agricultural property to a resident, NRI or OCI; **agricultural land only to a resident**.\n- **Pay for it**: through banking channels, or from **NRE, FCNR(B) or NRO** accounts. Not by travellers' cheques or foreign currency notes.\n\nRestricted buyers: citizens of Pakistan, Bangladesh, Sri Lanka, Afghanistan, China, Iran, Nepal, Bhutan, Macau, Hong Kong and North Korea need prior RBI permission (other than for a lease of up to five years), but this bar **does not apply to an OCI**.",
+        "self_check": {
+          "mode": "question",
+          "question_id": "D008"
+        }
+      }
+    },
+    {
+      "draft_id": "D004",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F005"
+      ],
+      "payload": {
+        "title": "Sending the sale proceeds of a property abroad",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "Selling the property is easy; sending the money out has conditions. For non-agricultural property sold by an NRI or PIO:\n\n1. The property must have been **acquired lawfully** under the exchange rules then in force.\n2. The **price must have been paid in foreign exchange** through banking channels, or from FCNR(B) or NRE funds.\n3. For **residential** property, repatriation covers **not more than two properties**.\n\nIn addition, repatriation sits within the **USD 1 million per financial year** facility, which covers the person's other eligible assets too.",
+        "self_check": {
+          "mode": "question",
+          "question_id": "D010"
+        }
+      }
+    },
+    {
+      "draft_id": "D005",
+      "item_type": "card",
+      "variant": "worked_example",
+      "fact_ids": [
+        "F005"
+      ],
+      "payload": {
+        "title": "Which sale proceeds can leave India?",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "Illustrative case: an NRI bought three residential flats in India, each paid for out of his NRE account, and has now sold all three. He asks his bank to remit the sale proceeds abroad. How many of the three can have their proceeds repatriated, and why?",
+        "worked_steps": [
+          {
+            "step_number": 1,
+            "description": "Check how each flat was paid for: foreign exchange through banking channels, or FCNR(B) or NRE funds.",
+            "formula_or_substitution": "3 flats, all paid from the NRE account",
+            "intermediate_result": "All three meet the payment condition"
+          },
+          {
+            "step_number": 2,
+            "description": "Check the acquisition was lawful under the exchange rules at the time.",
+            "formula_or_substitution": "Assumed lawful",
+            "intermediate_result": "All three meet the acquisition condition"
+          },
+          {
+            "step_number": 3,
+            "description": "Apply the cap for residential property: repatriation covers not more than two properties.",
+            "formula_or_substitution": "min(3, 2)",
+            "intermediate_result": "2 flats"
+          },
+          {
+            "step_number": 4,
+            "description": "The remaining flat is not excluded from sale, only from repatriation of its proceeds. The proceeds of any repatriated flats also count within USD 1 million per financial year.",
+            "formula_or_substitution": "3 − 2",
+            "intermediate_result": "1 flat whose proceeds stay in India"
+          }
+        ],
+        "final_answer_with_unit": "Proceeds of two flats may be repatriated (inside the USD 1 million yearly facility); the third flat's proceeds stay in India",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "What if one flat had been paid for with money from an NRO account that came from rent earned in India?",
+          "expected_takeaway": "The payment condition asks for foreign exchange received through banking channels or FCNR(B)/NRE funds, so that flat would fail the test."
+        }
+      }
+    },
+    {
+      "draft_id": "D006",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F003"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An NRI buys listed shares on a non-repatriation basis, paying from his NRE account. Where must the sale proceeds (net of taxes) be credited when he sells them?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Back to his NRE account, because that paid for the shares",
+            "explanation_md": "The account used for payment does not decide where the proceeds go."
+          },
+          {
+            "option_id": "B",
+            "text_md": "To any account abroad of his choice",
+            "explanation_md": "Non-repatriable investments cannot be repatriated."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Only to his NRO account, whichever account paid for the shares",
+            "explanation_md": "Under Schedule IV, proceeds are credited only to the NRO account."
+          },
+          {
+            "option_id": "D",
+            "text_md": "To his FCNR(B) account",
+            "explanation_md": "Proceeds cannot go to FCNR(B)."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "On the non-repatriation route, sale or maturity proceeds (net of taxes) are credited only to the NRO account, irrespective of the account from which payment was made, and the invested amount and appreciation cannot be repatriated."
+      }
+    },
+    {
+      "draft_id": "D007",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F003"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Which of the following may be used to pay for an NRI's investment in equity instruments on a non-repatriation basis?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Inward remittance from abroad through banking channels, or funds in an NRE, FCNR(B) or NRO account",
+            "explanation_md": "These are the permitted modes of payment."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Only funds held in an NRO account",
+            "explanation_md": "NRE and FCNR(B) funds and inward remittances are also permitted."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Foreign currency notes handed over at the company's office",
+            "explanation_md": "Payment must be through banking channels."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Only inward remittance; no account balances may be used",
+            "explanation_md": "Balances in NRE, FCNR(B) and NRO accounts may be used."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "Payment may be made by inward remittance through banking channels or out of NRE, FCNR(B) or NRO funds."
+      }
+    },
+    {
+      "draft_id": "D008",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "Which of the following may an NRI NOT acquire by purchase in India?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "A residential flat from a resident",
+            "explanation_md": "An NRI may buy residential property."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A shop from another NRI",
+            "explanation_md": "An NRI may buy commercial property from a resident, NRI or OCI."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A residential flat from an OCI",
+            "explanation_md": "An NRI may buy residential property from a resident, NRI or OCI."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A farm house",
+            "explanation_md": "Agricultural land, farm houses and plantation property cannot be bought by an NRI by purchase."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "NRIs and OCIs may purchase non-agricultural property but not agricultural land, a farm house or plantation property."
+      }
+    },
+    {
+      "draft_id": "D009",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An NRI is buying a flat in India. Which mode of payment is permitted?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Travellers' cheques",
+            "explanation_md": "Payment may not be made through travellers' cheques."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A transfer from his NRO account through banking channels",
+            "explanation_md": "Funds held in NRE, FCNR(B) or NRO accounts may be used."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Foreign currency notes",
+            "explanation_md": "Payment may not be made in foreign currency notes."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Cash paid directly to the seller outside banking channels",
+            "explanation_md": "Payment must be through banking channels."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "Payment must be through banking channels, or out of NRE, FCNR(B) or NRO accounts; travellers' cheques and foreign currency notes are not allowed."
+      }
+    },
+    {
+      "draft_id": "D010",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F005"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An NRI paid for three residential flats from his NRE account and sells all three. How many flats' sale proceeds can he repatriate, as far as the property-count restriction goes?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "All three, since each was paid in foreign exchange",
+            "explanation_md": "The two-property restriction applies even when each was paid for in foreign exchange."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Only one",
+            "explanation_md": "The restriction allows two, not one."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Not more than two",
+            "explanation_md": "For residential property, repatriation of sale proceeds is restricted to not more than two properties."
+          },
+          {
+            "option_id": "D",
+            "text_md": "None, since property sale proceeds cannot be repatriated",
+            "explanation_md": "Proceeds can be repatriated within the conditions."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "Repatriation of sale proceeds of residential property is restricted to not more than two properties, subject to the other conditions and the USD 1 million yearly facility."
+      }
+    },
+    {
+      "draft_id": "D011",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Following the amendment of the NDI Rules in June 2026, who may invest in shares of listed Indian companies on a recognised stock exchange under Schedule III on a repatriation basis?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only NRIs and OCIs, as before",
+            "explanation_md": "That was the position before the amendment."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Only NRIs, since OCIs now invest through FPIs",
+            "explanation_md": "OCIs are covered, along with other individuals resident outside India."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Only persons registered as foreign portfolio investors with SEBI",
+            "explanation_md": "The amendment lets individuals use the route without FPI registration."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Any individual person resident outside India, including NRIs and OCIs",
+            "explanation_md": "This is the widening made by the June 2026 amendment."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "The amendment, given effect by RBI on 15 June 2026, extended the Schedule III route from NRIs and OCIs to all individual persons resident outside India, with enhanced limits."
+      }
+    }
+  ],
+  "unresolved": [
+    "Government securities, treasury bills, PSU bonds, mutual fund and company fixed-deposit purchases without limit (printed pp. 81-82) are not taught: they were not found in the RBI sources fetched.",
+    "The new Schedule III limit figures are not stated by RBI circular 14. Secondary sources (EY, TaxGuru) say the individual limit is below 10% and the aggregate 24%; the Rules text was not retrieved, so no item states these figures and the card tells learners the direction of change only.",
+    "The courseware (printed p. 80) gives the older 5% and 10% limits and a Portfolio Investment Scheme description that the June 2026 amendment supersedes.",
+    "Courseware printed p. 82 mentions a ten-year lock-in for property bought while resident; the RBI FAQ fetched does not state it, so it is not taught.",
+    "Conditions on investing in a firm or proprietary concern (not agricultural, plantation or real estate business) are in the Rules text, not the regulations fetched; not taught.",
+    "RBI FAQ Part II Q7(a) says property held under FEMA section 6(5) (owned while resident, or inherited from a resident) cannot have its sale proceeds repatriated without RBI approval, while Q7(b) separately allows up to USD 1 million per year for some of the same persons; the interplay is not clear from the FAQ, so it is not taught.",
+    "Reviewer for this batch is the authoring agent; no independent or human review."
+  ],
+  "next_batch_hint": "BFM-A-U02 (LRS) or retrieval of the NDI Rules text to close the Schedule III limit figures."
+}
