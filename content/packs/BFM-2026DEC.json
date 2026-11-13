@@ -3,13 +3,13 @@
  "free_unit_ids": [
   "BFM::MOD_A::U01"
  ],
- "change_summary": "Adds EDPMS and the follow-up of export bills including the caution list, factoring, RBI's conditions for non-recourse export factoring, forfaiting, and a comparison of factoring and forfaiting, with two worked financing calculations.",
+ "change_summary": "Adds importer rules checked against the RBI Import Master Direction: the six-month payment limit, the extension test (lower of USD 1 million and 10% of two years' remittances), advance remittance and guarantee thresholds, the certificate in lieu of the bill of entry, import finance and IDPMS, and the periods for trade credit.",
  "minimum_client_version": "0.1.0",
- "published_from": "content/publish/BFM-2026DEC-v22.json",
+ "published_from": "content/publish/BFM-2026DEC-v23.json",
  "pack": {
   "schema_version": "2.0.0",
   "pack_id": "BFM-2026DEC",
-  "pack_version": "22",
+  "pack_version": "23",
   "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
   "exam_context_id": "CAIIB-2026-DEC",
   "paper_id": "BFM",
@@ -93,7 +93,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -189,7 +189,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -262,7 +262,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -343,7 +343,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -421,7 +421,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -500,7 +500,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -588,7 +588,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -680,7 +680,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -753,7 +753,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -817,7 +817,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -903,7 +903,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -967,7 +967,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -1038,7 +1038,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -1128,7 +1128,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -1192,7 +1192,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -1257,7 +1257,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -1338,7 +1338,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -1401,7 +1401,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -1480,7 +1480,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -1562,7 +1562,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -1635,7 +1635,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -1708,7 +1708,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -1772,7 +1772,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -1843,7 +1843,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -1914,7 +1914,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -2010,7 +2010,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -2083,7 +2083,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -2153,7 +2153,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -2226,7 +2226,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -2296,7 +2296,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -2352,7 +2352,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -2426,7 +2426,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -2491,7 +2491,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -2567,7 +2567,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -2632,7 +2632,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -2678,7 +2678,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -2756,7 +2756,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -2832,7 +2832,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -2897,7 +2897,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -2955,7 +2955,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -3020,7 +3020,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -3066,7 +3066,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -3121,7 +3121,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -3167,7 +3167,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -3241,7 +3241,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -3306,7 +3306,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -3379,7 +3379,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -3443,7 +3443,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -3508,7 +3508,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -3573,7 +3573,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -3627,7 +3627,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -3683,7 +3683,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -3757,7 +3757,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -3856,7 +3856,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -3904,7 +3904,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -3970,7 +3970,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -4036,7 +4036,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -4102,7 +4102,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -4168,7 +4168,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -4234,7 +4234,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -4281,7 +4281,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -4337,7 +4337,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -4385,7 +4385,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -4441,7 +4441,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -4488,7 +4488,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -4535,7 +4535,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -4610,7 +4610,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -4675,7 +4675,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -4741,7 +4741,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -4816,7 +4816,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -4891,7 +4891,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -4957,7 +4957,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -5023,7 +5023,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -5089,7 +5089,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -5145,7 +5145,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -5193,7 +5193,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -5249,7 +5249,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -5296,7 +5296,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -5371,7 +5371,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -5437,7 +5437,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -5503,7 +5503,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -5569,7 +5569,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -5635,7 +5635,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -5701,7 +5701,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -5767,7 +5767,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -5814,7 +5814,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -5879,7 +5879,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -5926,7 +5926,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -5974,7 +5974,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -6030,7 +6030,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -6077,7 +6077,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -6124,7 +6124,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -6217,7 +6217,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -6292,7 +6292,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -6358,7 +6358,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -6424,7 +6424,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -6498,7 +6498,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -6564,7 +6564,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -6630,7 +6630,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -6696,7 +6696,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -6762,7 +6762,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -6828,7 +6828,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -6894,7 +6894,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -6960,7 +6960,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -7007,7 +7007,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -7063,7 +7063,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -7144,7 +7144,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -7192,7 +7192,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -7258,7 +7258,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -7324,7 +7324,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -7390,7 +7390,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -7455,7 +7455,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -7526,7 +7526,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -7592,7 +7592,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -7658,7 +7658,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -7705,7 +7705,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -7752,7 +7752,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -7799,7 +7799,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -7864,7 +7864,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -7920,7 +7920,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -7989,7 +7989,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -8055,7 +8055,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -8121,7 +8121,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -8187,7 +8187,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -8262,7 +8262,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -8328,7 +8328,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -8387,7 +8387,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -8453,7 +8453,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -8519,7 +8519,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -8585,7 +8585,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -8639,7 +8639,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -8685,7 +8685,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -8731,7 +8731,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -8777,7 +8777,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -8831,7 +8831,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -8877,7 +8877,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -8951,7 +8951,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -9016,7 +9016,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -9081,7 +9081,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -9146,7 +9146,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -9211,7 +9211,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -9276,7 +9276,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -9341,7 +9341,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -9406,7 +9406,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -9471,7 +9471,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -9536,7 +9536,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -9601,7 +9601,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -9655,7 +9655,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -9701,7 +9701,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -9755,7 +9755,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -9801,7 +9801,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -9847,7 +9847,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -9901,7 +9901,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -9969,7 +9969,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -10034,7 +10034,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -10099,7 +10099,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -10164,7 +10164,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -10229,7 +10229,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -10294,7 +10294,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -10359,7 +10359,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -10424,7 +10424,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -10489,7 +10489,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -10554,7 +10554,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -10619,7 +10619,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -10684,7 +10684,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -10749,7 +10749,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -10795,7 +10795,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -10842,7 +10842,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -10888,7 +10888,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -10934,7 +10934,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -10990,7 +10990,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -11045,7 +11045,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -11091,7 +11091,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -11167,7 +11167,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -11232,7 +11232,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -11297,7 +11297,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -11362,7 +11362,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -11420,7 +11420,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -11485,7 +11485,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -11551,7 +11551,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -11617,7 +11617,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -11683,7 +11683,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -11748,7 +11748,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -11813,7 +11813,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -11859,7 +11859,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -11905,7 +11905,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -11951,7 +11951,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -11997,7 +11997,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -12059,7 +12059,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -12124,7 +12124,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -12189,7 +12189,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -12254,7 +12254,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -12319,7 +12319,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -12384,7 +12384,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -12449,7 +12449,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -12514,7 +12514,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -12579,7 +12579,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -12644,7 +12644,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -12690,7 +12690,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -12737,7 +12737,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -12783,7 +12783,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -12829,7 +12829,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -12875,7 +12875,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -12921,7 +12921,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -12967,7 +12967,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -13035,7 +13035,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -13100,7 +13100,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -13165,7 +13165,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -13231,7 +13231,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -13297,7 +13297,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -13363,7 +13363,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -13428,7 +13428,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -13493,7 +13493,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -13558,7 +13558,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -13623,7 +13623,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -13688,7 +13688,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -13753,7 +13753,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -13818,7 +13818,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -13883,7 +13883,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -13938,7 +13938,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -14003,7 +14003,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -14050,7 +14050,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -14097,7 +14097,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -14162,7 +14162,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -14209,7 +14209,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -14293,7 +14293,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -14352,7 +14352,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -14418,7 +14418,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -14484,7 +14484,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -14550,7 +14550,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -14616,7 +14616,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -14682,7 +14682,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -14748,7 +14748,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -14814,7 +14814,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -14880,7 +14880,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -14946,7 +14946,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -15012,7 +15012,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -15068,7 +15068,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -15115,7 +15115,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -15171,7 +15171,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -15218,7 +15218,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -15264,7 +15264,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -15310,7 +15310,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -15385,7 +15385,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -15444,7 +15444,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -15510,7 +15510,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -15576,7 +15576,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -15642,7 +15642,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -15708,7 +15708,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -15773,7 +15773,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -15838,7 +15838,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -15903,7 +15903,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -15969,7 +15969,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -16035,7 +16035,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -16099,7 +16099,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -16146,7 +16146,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -16193,7 +16193,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -16249,7 +16249,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -16313,7 +16313,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -16360,7 +16360,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -16432,7 +16432,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -16491,7 +16491,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -16557,7 +16557,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -16623,7 +16623,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -16689,7 +16689,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -16755,7 +16755,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -16821,7 +16821,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -16887,7 +16887,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -16953,7 +16953,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -17019,7 +17019,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -17085,7 +17085,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -17132,7 +17132,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -17179,7 +17179,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -17225,7 +17225,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -17272,7 +17272,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -17318,7 +17318,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -17364,7 +17364,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -17458,7 +17458,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -17516,7 +17516,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -17582,7 +17582,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -17648,7 +17648,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -17714,7 +17714,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -17780,7 +17780,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -17845,7 +17845,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -17910,7 +17910,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -17975,7 +17975,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -18040,7 +18040,7 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
@@ -18106,12 +18106,1053 @@
     "origin": "source_assisted",
     "publication_state": "published",
     "review": {
-     "verified_at": "2026-11-14T16:00:00Z",
+     "verified_at": "2026-11-14T18:00:00Z",
      "reviewer_id": "coding-agent (Claude), same agent as author",
      "method": "automated",
      "source_verified": true,
      "answer_checked": true,
      "calculations": "not_applicable"
+    }
+   },
+   {
+    "title": "Paying for imports on time: the six-month rule and interest",
+    "prerequisite_objective_ids": [],
+    "core_explanation_md": "**Standard rule**: the importer should **complete remittance within six months of the date of shipment**, unless money is **withheld as a performance guarantee**.\n\n**When payment is late**: the bank may permit settlement of dues **delayed by disputes or financial difficulties**. **Interest** on delayed payments or usance bills may be paid only for **less than three years from the shipment date**, at the **rate prescribed for trade credit**.\n\n**Prepaying a usance bill**: the remittance is made **after deducting the interest for the unexpired part** of the usance.",
+    "self_check": {
+     "mode": "question",
+     "question_id": "item_e0fe6fab7d094151226634a5a4c34ee5c9460920e294bdde28c015706543eb21"
+    },
+    "item_type": "card",
+    "card_type": "concept",
+    "id": "item_db4083137fef232aa2896ac2b704b1c38e52003e4dca7fcbf210b1986ada224d",
+    "schema_version": "2.0.0",
+    "revision": 1,
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "paper_id": "BFM",
+    "module_id": "BFM::MOD_A",
+    "unit_id": "BFM::MOD_A::U05",
+    "objective_ids": [
+     "BFM::MOD_A::U05::LO_07"
+    ],
+    "context": {
+     "kind": "exam",
+     "exam_context_id": "CAIIB-2026-DEC",
+     "regulatory_cutoff_date": "2026-06-30"
+    },
+    "citations": [
+     {
+      "source_id": "RBI_MD_IMPORT",
+      "authority": "Reserve Bank of India",
+      "title": "Master Direction - Import of Goods and Services, FED Master Direction No. 17/2016-17",
+      "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=10201",
+      "publication_date": "2026-01-12",
+      "effective_date": null,
+      "locator": "Section B.5.1; S03 printed p. 153"
+     },
+     {
+      "source_id": "RBI_MD_IMPORT",
+      "authority": "Reserve Bank of India",
+      "title": "Master Direction - Import of Goods and Services, FED Master Direction No. 17/2016-17",
+      "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=10201",
+      "publication_date": "2026-01-12",
+      "effective_date": null,
+      "locator": "Section C.2 (i) and (ii)"
+     }
+    ],
+    "origin": "source_assisted",
+    "publication_state": "published",
+    "review": {
+     "verified_at": "2026-11-14T18:00:00Z",
+     "reviewer_id": "coding-agent (Claude), same agent as author",
+     "method": "automated",
+     "source_verified": true,
+     "answer_checked": true,
+     "calculations": "not_applicable"
+    }
+   },
+   {
+    "title": "Extending the time to pay an import bill: the import version of the rule",
+    "prerequisite_objective_ids": [],
+    "core_explanation_md": "An importer who cannot pay on time may ask the bank for an **extension**. The bank can grant **up to six months at a time**, to a **maximum of three years**, whatever the invoice value, if the delay is due to **disputes** about quantity or quality, **financial difficulty**, or a **suit** against the seller.\n\n**Checks**: the invoices are **not under investigation** by the Enforcement Directorate, CBI or others; and, for an extension **beyond one year from remittance**, the importer's **total outstanding** must not exceed **USD 1 million or 10% of average import remittances over the previous two financial years, whichever is lower**.\n\nCompare with exporters: the export test is **whichever is higher** (USD 1 million or 10% of three years' realisations). The import test is **whichever is lower**, over **two** years. **Beyond the limits**: the bank refers to the **RBI Regional Office**. Every extension is **reported in IDPMS**.",
+    "self_check": {
+     "mode": "question",
+     "question_id": "item_34b905c4f1bf09aad6b58391d9e8a0c2df504c94d045124ef5069c4e96f8a9a3"
+    },
+    "item_type": "card",
+    "card_type": "concept",
+    "id": "item_8a3e1cbab431cc83b7e09fcc1ec3b420f109003133a431d002a2cc280de1bdc7",
+    "schema_version": "2.0.0",
+    "revision": 1,
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "paper_id": "BFM",
+    "module_id": "BFM::MOD_A",
+    "unit_id": "BFM::MOD_A::U05",
+    "objective_ids": [
+     "BFM::MOD_A::U05::LO_07"
+    ],
+    "context": {
+     "kind": "exam",
+     "exam_context_id": "CAIIB-2026-DEC",
+     "regulatory_cutoff_date": "2026-06-30"
+    },
+    "citations": [
+     {
+      "source_id": "RBI_MD_IMPORT",
+      "authority": "Reserve Bank of India",
+      "title": "Master Direction - Import of Goods and Services, FED Master Direction No. 17/2016-17",
+      "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=10201",
+      "publication_date": "2026-01-12",
+      "effective_date": null,
+      "locator": "Section B.5.4"
+     }
+    ],
+    "origin": "source_assisted",
+    "publication_state": "published",
+    "review": {
+     "verified_at": "2026-11-14T18:00:00Z",
+     "reviewer_id": "coding-agent (Claude), same agent as author",
+     "method": "automated",
+     "source_verified": true,
+     "answer_checked": true,
+     "calculations": "not_applicable"
+    }
+   },
+   {
+    "title": "Paying a supplier in advance: when a guarantee is needed",
+    "prerequisite_objective_ids": [],
+    "core_explanation_md": "A bank may allow an **advance remittance for imports without any overall ceiling**, on these conditions:\n\n- **Up to USD 2,00,000**: no guarantee.\n- **Above USD 2,00,000**: an **unconditional, irrevocable standby letter of credit** or a **guarantee** from an international bank of repute (or from an Indian bank issued against that bank's counter-guarantee).\n- **Exception for private importers**: if the importer **cannot** get the guarantee and the bank is satisfied about its **track record and bona fides**, the guarantee **need not be insisted on up to USD 5 million**, under a **Board-approved policy**.\n- **Public sector and government bodies**: a **specific waiver from the Ministry of Finance** is needed before remitting **more than USD 1,00,000** without a guarantee.\n\nThe bank creates an **ORM** in IDPMS for **every** such remittance.",
+    "self_check": {
+     "mode": "question",
+     "question_id": "item_ed9ea51cccf2b40126842a1cb40846312dd92af5501fd21ad685edb41d011756"
+    },
+    "item_type": "card",
+    "card_type": "concept",
+    "id": "item_9b6578a432462eaa319c86bf1e3292fd938cf0904c9f8fc10ac79b0c66e2b4bb",
+    "schema_version": "2.0.0",
+    "revision": 1,
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "paper_id": "BFM",
+    "module_id": "BFM::MOD_A",
+    "unit_id": "BFM::MOD_A::U05",
+    "objective_ids": [
+     "BFM::MOD_A::U05::LO_07"
+    ],
+    "context": {
+     "kind": "exam",
+     "exam_context_id": "CAIIB-2026-DEC",
+     "regulatory_cutoff_date": "2026-06-30"
+    },
+    "citations": [
+     {
+      "source_id": "RBI_MD_IMPORT",
+      "authority": "Reserve Bank of India",
+      "title": "Master Direction - Import of Goods and Services, FED Master Direction No. 17/2016-17",
+      "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=10201",
+      "publication_date": "2026-01-12",
+      "effective_date": null,
+      "locator": "Section C.1.1"
+     }
+    ],
+    "origin": "source_assisted",
+    "publication_state": "published",
+    "review": {
+     "verified_at": "2026-11-14T18:00:00Z",
+     "reviewer_id": "coding-agent (Claude), same agent as author",
+     "method": "automated",
+     "source_verified": true,
+     "answer_checked": true,
+     "calculations": "not_applicable"
+    }
+   },
+   {
+    "title": "When a CEO's certificate can replace the bill of entry",
+    "prerequisite_objective_ids": [],
+    "core_explanation_md": "Normally the importer shows the **exchange control copy of the bill of entry**. In place of it a bank may accept a **certificate from the CEO or auditor** that the goods have really been imported, **if both** hold:\n\n- **less than USD 10,00,000** (one million) was remitted; and\n- the importer is a **listed company with net worth of at least ₹100 crore** at its last audited balance sheet, **or** a **public sector company** or government undertaking.\n\nThe facility can also be extended to **autonomous bodies audited by the Comptroller and Auditor General**, such as scientific bodies and academic institutions. At **EDI ports** the bank downloads the bill of entry from the **BoE Master in IDPMS** and creates an **ORM**.",
+    "self_check": {
+     "mode": "question",
+     "question_id": "item_80f3ddd47e782c71aad1e0412931250780db3254b23415d84ad28012397c7088"
+    },
+    "item_type": "card",
+    "card_type": "concept",
+    "id": "item_29676449da452a63321fb504ab6f9dc9becc811f77dfe9b1490a5005437dca13",
+    "schema_version": "2.0.0",
+    "revision": 1,
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "paper_id": "BFM",
+    "module_id": "BFM::MOD_A",
+    "unit_id": "BFM::MOD_A::U05",
+    "objective_ids": [
+     "BFM::MOD_A::U05::LO_07"
+    ],
+    "context": {
+     "kind": "exam",
+     "exam_context_id": "CAIIB-2026-DEC",
+     "regulatory_cutoff_date": "2026-06-30"
+    },
+    "citations": [
+     {
+      "source_id": "RBI_MD_IMPORT",
+      "authority": "Reserve Bank of India",
+      "title": "Master Direction - Import of Goods and Services, FED Master Direction No. 17/2016-17",
+      "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=10201",
+      "publication_date": "2026-01-12",
+      "effective_date": null,
+      "locator": "Section C.7.2"
+     }
+    ],
+    "origin": "source_assisted",
+    "publication_state": "published",
+    "review": {
+     "verified_at": "2026-11-14T18:00:00Z",
+     "reviewer_id": "coding-agent (Claude), same agent as author",
+     "method": "automated",
+     "source_verified": true,
+     "answer_checked": true,
+     "calculations": "not_applicable"
+    }
+   },
+   {
+    "title": "Financing imports, and the system that tracks them",
+    "prerequisite_objective_ids": [],
+    "core_explanation_md": "**Import letter of credit (usance)**: the importer gets **credit from the supplier** on the strength of the **bank's credibility**.\n\n**Import loan**: a loan against **imported raw material or goods for trading**, secured by **pledge or hypothecation**; importers use them even at higher rates, waiting for prices to rise or the rupee to fall.\n\n**Supplier's credit** vs **buyer's credit**\n- **Supplier's credit**: **the overseas supplier** lends directly to the importer.\n- **Buyer's credit**: the **importer arranges** a loan from a **bank or institution abroad** to pay the supplier **on immediate terms**.\n\n**IDPMS (Import Data Processing and Monitoring System)**, in use from **10 October 2016**: customs, RBI and banks share one platform. **Customs data from the bill of entry** flows to the system and on to the bank **by its AD code**. The bank records **each step** (document submission, remittance data) **in real time**. **No separate Bill of Entry statement** is filed.",
+    "self_check": {
+     "mode": "question",
+     "question_id": "item_815f97ceb29c2bedbef0081bed3622bddb6d7be2334d7b4afe3b4037a8006a1a"
+    },
+    "item_type": "card",
+    "card_type": "concept",
+    "id": "item_71f3706aef205f534655400dcf0bd117aa9fcc69117f2482be320b0bb1a43686",
+    "schema_version": "2.0.0",
+    "revision": 1,
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "paper_id": "BFM",
+    "module_id": "BFM::MOD_A",
+    "unit_id": "BFM::MOD_A::U05",
+    "objective_ids": [
+     "BFM::MOD_A::U05::LO_08"
+    ],
+    "context": {
+     "kind": "exam",
+     "exam_context_id": "CAIIB-2026-DEC",
+     "regulatory_cutoff_date": "2026-06-30"
+    },
+    "citations": [
+     {
+      "source_id": "S03",
+      "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+      "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+      "publication_date": null,
+      "effective_date": null,
+      "locator": "S03 printed pp. 153-158"
+     }
+    ],
+    "origin": "source_assisted",
+    "publication_state": "published",
+    "review": {
+     "verified_at": "2026-11-14T18:00:00Z",
+     "reviewer_id": "coding-agent (Claude), same agent as author",
+     "method": "automated",
+     "source_verified": true,
+     "answer_checked": true,
+     "calculations": "not_applicable"
+    }
+   },
+   {
+    "title": "Trade credit: how long it may last",
+    "prerequisite_objective_ids": [],
+    "core_explanation_md": "Any **deferred payment arrangement** for imports, including **supplier's and buyer's credit**, is a **trade credit** if it runs for:\n\n- up to **three years** for **capital goods**; or\n- up to **one year or the operating cycle, whichever is shorter**, for **non-capital goods**.\n\nTrade credits follow the **Master Direction on External Commercial Borrowings, Trade Credits and Structured Obligations**, not the ordinary import payment rules.\n\n(How much a bank may approve per import, and what the **all-in cost** may be, are set in that Master Direction. Those figures have moved with the LIBOR transition and are not tested here.)",
+    "self_check": {
+     "mode": "question",
+     "question_id": "item_ef1cbca55f9fb0f7acf35f22f40492ac46624830ec7b087e55a815cf4b7a0aef"
+    },
+    "item_type": "card",
+    "card_type": "concept",
+    "id": "item_7726e343c9fa570295ad91001e92c4e7ddae965167ae8ad0078de85f645a0681",
+    "schema_version": "2.0.0",
+    "revision": 1,
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "paper_id": "BFM",
+    "module_id": "BFM::MOD_A",
+    "unit_id": "BFM::MOD_A::U05",
+    "objective_ids": [
+     "BFM::MOD_A::U05::LO_09"
+    ],
+    "context": {
+     "kind": "exam",
+     "exam_context_id": "CAIIB-2026-DEC",
+     "regulatory_cutoff_date": "2026-06-30"
+    },
+    "citations": [
+     {
+      "source_id": "RBI_MD_IMPORT",
+      "authority": "Reserve Bank of India",
+      "title": "Master Direction - Import of Goods and Services, FED Master Direction No. 17/2016-17",
+      "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=10201",
+      "publication_date": "2026-01-12",
+      "effective_date": null,
+      "locator": "Section B.5.2"
+     }
+    ],
+    "origin": "source_assisted",
+    "publication_state": "published",
+    "review": {
+     "verified_at": "2026-11-14T18:00:00Z",
+     "reviewer_id": "coding-agent (Claude), same agent as author",
+     "method": "automated",
+     "source_verified": true,
+     "answer_checked": true,
+     "calculations": "not_applicable"
+    }
+   },
+   {
+    "title": "Can the bank extend this import bill?",
+    "prerequisite_objective_ids": [],
+    "core_explanation_md": "Illustrative case: goods are shipped on 15 March 2026. The importer does not pay and a dispute about quality follows. Later, the importer asks for an extension beyond one year from the remittance date. Its total outstanding is USD 1,400,000, and its average import remittances over the preceding two financial years were USD 18,000,000. What is the standard payment deadline, and can the bank extend beyond one year?",
+    "worked_steps": [
+     {
+      "step_number": 1,
+      "description": "Standard deadline: six months from the date of shipment.",
+      "formula_or_substitution": "15 March 2026 + 6 months",
+      "intermediate_result": "15 September 2026"
+     },
+     {
+      "step_number": 2,
+      "description": "10% of average import remittances over the preceding two financial years.",
+      "formula_or_substitution": "18,000,000 × 10%",
+      "intermediate_result": "USD 1,800,000.00"
+     },
+     {
+      "step_number": 3,
+      "description": "The limit is the lower of USD 1 million and that 10%.",
+      "formula_or_substitution": "min(1,000,000, 1,800,000)",
+      "intermediate_result": "USD 1,000,000"
+     },
+     {
+      "step_number": 4,
+      "description": "Compare the outstanding with the limit.",
+      "formula_or_substitution": "1,400,000 − 1,000,000",
+      "intermediate_result": "USD 400,000 over the limit"
+     }
+    ],
+    "final_answer_with_unit": "The standard deadline is 15 September 2026. Beyond one year the bank cannot extend: the outstanding exceeds the limit of USD 1,000,000 by USD 400,000, so the case must go to the RBI Regional Office",
+    "self_check": {
+     "mode": "self_assessed",
+     "prompt_text": "If the same importer's average remittances had been USD 8,000,000, what would the limit be?",
+     "expected_takeaway": "USD 800,000 (10% of 8 million, which is lower than USD 1 million)."
+    },
+    "item_type": "card",
+    "card_type": "worked_example",
+    "id": "item_4b65b70b2f20919496d8f71f441119330608f5a1b2d638151eaccf07a03e6902",
+    "schema_version": "2.0.0",
+    "revision": 1,
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "paper_id": "BFM",
+    "module_id": "BFM::MOD_A",
+    "unit_id": "BFM::MOD_A::U05",
+    "objective_ids": [
+     "BFM::MOD_A::U05::LO_07"
+    ],
+    "context": {
+     "kind": "exam",
+     "exam_context_id": "CAIIB-2026-DEC",
+     "regulatory_cutoff_date": "2026-06-30"
+    },
+    "citations": [
+     {
+      "source_id": "RBI_MD_IMPORT",
+      "authority": "Reserve Bank of India",
+      "title": "Master Direction - Import of Goods and Services, FED Master Direction No. 17/2016-17",
+      "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=10201",
+      "publication_date": "2026-01-12",
+      "effective_date": null,
+      "locator": "Section B.5.4"
+     },
+     {
+      "source_id": "RBI_MD_IMPORT",
+      "authority": "Reserve Bank of India",
+      "title": "Master Direction - Import of Goods and Services, FED Master Direction No. 17/2016-17",
+      "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=10201",
+      "publication_date": "2026-01-12",
+      "effective_date": null,
+      "locator": "Section B.5.1; S03 printed p. 153"
+     }
+    ],
+    "origin": "source_assisted",
+    "publication_state": "published",
+    "review": {
+     "verified_at": "2026-11-14T18:00:00Z",
+     "reviewer_id": "coding-agent (Claude), same agent as author",
+     "method": "automated",
+     "source_verified": true,
+     "answer_checked": true,
+     "calculations": "verified"
+    }
+   },
+   {
+    "difficulty": "easy",
+    "stem_md": "Within how long from the date of shipment should remittances against normal imports be completed?",
+    "options": [
+     {
+      "option_id": "A",
+      "text_md": "Three months",
+      "explanation_md": "That is the extra time the bank may allow for evidence of import."
+     },
+     {
+      "option_id": "B",
+      "text_md": "Six months",
+      "explanation_md": "This is the standard limit."
+     },
+     {
+      "option_id": "C",
+      "text_md": "Twelve months",
+      "explanation_md": "That was a temporary COVID-19 extension for shipments up to 31 July 2020."
+     },
+     {
+      "option_id": "D",
+      "text_md": "Three years",
+      "explanation_md": "That is the period for trade credit on capital goods."
+     }
+    ],
+    "correct_option_id": "B",
+    "correct_explanation_md": "Remittances against imports should be completed not later than six months from the date of shipment, except where amounts are withheld as a performance guarantee.",
+    "item_type": "question",
+    "question_type": "single_choice",
+    "id": "item_e0fe6fab7d094151226634a5a4c34ee5c9460920e294bdde28c015706543eb21",
+    "schema_version": "2.0.0",
+    "revision": 1,
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "paper_id": "BFM",
+    "module_id": "BFM::MOD_A",
+    "unit_id": "BFM::MOD_A::U05",
+    "objective_ids": [
+     "BFM::MOD_A::U05::LO_07"
+    ],
+    "context": {
+     "kind": "exam",
+     "exam_context_id": "CAIIB-2026-DEC",
+     "regulatory_cutoff_date": "2026-06-30"
+    },
+    "citations": [
+     {
+      "source_id": "RBI_MD_IMPORT",
+      "authority": "Reserve Bank of India",
+      "title": "Master Direction - Import of Goods and Services, FED Master Direction No. 17/2016-17",
+      "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=10201",
+      "publication_date": "2026-01-12",
+      "effective_date": null,
+      "locator": "Section B.5.1; S03 printed p. 153"
+     }
+    ],
+    "origin": "source_assisted",
+    "publication_state": "published",
+    "review": {
+     "verified_at": "2026-11-14T18:00:00Z",
+     "reviewer_id": "coding-agent (Claude), same agent as author",
+     "method": "automated",
+     "source_verified": true,
+     "answer_checked": true,
+     "calculations": "not_applicable"
+    }
+   },
+   {
+    "difficulty": "hard",
+    "stem_md": "For an extension of time to pay an import bill beyond one year from the date of remittance, what limit applies to the importer's total outstanding?",
+    "options": [
+     {
+      "option_id": "A",
+      "text_md": "USD one million or 10% of average realisations in the preceding three financial years, whichever is higher",
+      "explanation_md": "That is the export version of the test."
+     },
+     {
+      "option_id": "B",
+      "text_md": "USD five million",
+      "explanation_md": "That is the ceiling for advance remittance without guarantee."
+     },
+     {
+      "option_id": "C",
+      "text_md": "USD one million or 10% of average import remittances in the preceding two financial years, whichever is lower",
+      "explanation_md": "This is the stated limit."
+     },
+     {
+      "option_id": "D",
+      "text_md": "There is no limit",
+      "explanation_md": "A limit applies."
+     }
+    ],
+    "correct_option_id": "C",
+    "correct_explanation_md": "For extension beyond one year the outstanding must not exceed USD one million or 10% of average import remittances in the preceding two financial years, whichever is lower.",
+    "item_type": "question",
+    "question_type": "single_choice",
+    "id": "item_34b905c4f1bf09aad6b58391d9e8a0c2df504c94d045124ef5069c4e96f8a9a3",
+    "schema_version": "2.0.0",
+    "revision": 1,
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "paper_id": "BFM",
+    "module_id": "BFM::MOD_A",
+    "unit_id": "BFM::MOD_A::U05",
+    "objective_ids": [
+     "BFM::MOD_A::U05::LO_07"
+    ],
+    "context": {
+     "kind": "exam",
+     "exam_context_id": "CAIIB-2026-DEC",
+     "regulatory_cutoff_date": "2026-06-30"
+    },
+    "citations": [
+     {
+      "source_id": "RBI_MD_IMPORT",
+      "authority": "Reserve Bank of India",
+      "title": "Master Direction - Import of Goods and Services, FED Master Direction No. 17/2016-17",
+      "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=10201",
+      "publication_date": "2026-01-12",
+      "effective_date": null,
+      "locator": "Section B.5.4"
+     }
+    ],
+    "origin": "source_assisted",
+    "publication_state": "published",
+    "review": {
+     "verified_at": "2026-11-14T18:00:00Z",
+     "reviewer_id": "coding-agent (Claude), same agent as author",
+     "method": "automated",
+     "source_verified": true,
+     "answer_checked": true,
+     "calculations": "not_applicable"
+    }
+   },
+   {
+    "difficulty": "medium",
+    "stem_md": "What is the longest extension an authorised dealer can grant at a time for settling import dues, and the overall maximum?",
+    "options": [
+     {
+      "option_id": "A",
+      "text_md": "Three months at a time, up to one year",
+      "explanation_md": "The periods are longer."
+     },
+     {
+      "option_id": "B",
+      "text_md": "One year at a time, up to five years",
+      "explanation_md": "The periods are shorter."
+     },
+     {
+      "option_id": "C",
+      "text_md": "Six months at a time, with no overall maximum",
+      "explanation_md": "There is a three-year maximum."
+     },
+     {
+      "option_id": "D",
+      "text_md": "Six months at a time, up to three years",
+      "explanation_md": "These are the stated limits."
+     }
+    ],
+    "correct_option_id": "D",
+    "correct_explanation_md": "The bank may extend by up to six months at a time, to a maximum of three years, for the listed reasons.",
+    "item_type": "question",
+    "question_type": "single_choice",
+    "id": "item_8d123a83029a08d0fda72aa9a6a3cc6cca7528d465ccbff189258411c78106b5",
+    "schema_version": "2.0.0",
+    "revision": 1,
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "paper_id": "BFM",
+    "module_id": "BFM::MOD_A",
+    "unit_id": "BFM::MOD_A::U05",
+    "objective_ids": [
+     "BFM::MOD_A::U05::LO_07"
+    ],
+    "context": {
+     "kind": "exam",
+     "exam_context_id": "CAIIB-2026-DEC",
+     "regulatory_cutoff_date": "2026-06-30"
+    },
+    "citations": [
+     {
+      "source_id": "RBI_MD_IMPORT",
+      "authority": "Reserve Bank of India",
+      "title": "Master Direction - Import of Goods and Services, FED Master Direction No. 17/2016-17",
+      "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=10201",
+      "publication_date": "2026-01-12",
+      "effective_date": null,
+      "locator": "Section B.5.4"
+     }
+    ],
+    "origin": "source_assisted",
+    "publication_state": "published",
+    "review": {
+     "verified_at": "2026-11-14T18:00:00Z",
+     "reviewer_id": "coding-agent (Claude), same agent as author",
+     "method": "automated",
+     "source_verified": true,
+     "answer_checked": true,
+     "calculations": "not_applicable"
+    }
+   },
+   {
+    "difficulty": "medium",
+    "stem_md": "An importer wants to remit an advance of USD 1,500,000 to an overseas supplier. It is a private company that cannot obtain a bank guarantee from the supplier, and its bank is satisfied about its track record. What is the position?",
+    "options": [
+     {
+      "option_id": "A",
+      "text_md": "The bank need not insist on a guarantee or standby letter of credit, as the advance is within USD 5,000,000, under a Board-approved policy",
+      "explanation_md": "This is the exception."
+     },
+     {
+      "option_id": "B",
+      "text_md": "A guarantee is always required above USD 200,000",
+      "explanation_md": "The exception allows up to USD 5,000,000."
+     },
+     {
+      "option_id": "C",
+      "text_md": "RBI approval is required above USD 1,000,000",
+      "explanation_md": "No such prior approval applies at this amount."
+     },
+     {
+      "option_id": "D",
+      "text_md": "The advance is not allowed",
+      "explanation_md": "Advance remittance is allowed on the conditions."
+     }
+    ],
+    "correct_option_id": "A",
+    "correct_explanation_md": "Where the importer cannot obtain a guarantee and the bank is satisfied about its track record and bona fides, the requirement may be waived for advances up to USD 5,000,000 under a Board-approved policy.",
+    "item_type": "question",
+    "question_type": "single_choice",
+    "id": "item_ed9ea51cccf2b40126842a1cb40846312dd92af5501fd21ad685edb41d011756",
+    "schema_version": "2.0.0",
+    "revision": 1,
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "paper_id": "BFM",
+    "module_id": "BFM::MOD_A",
+    "unit_id": "BFM::MOD_A::U05",
+    "objective_ids": [
+     "BFM::MOD_A::U05::LO_07"
+    ],
+    "context": {
+     "kind": "exam",
+     "exam_context_id": "CAIIB-2026-DEC",
+     "regulatory_cutoff_date": "2026-06-30"
+    },
+    "citations": [
+     {
+      "source_id": "RBI_MD_IMPORT",
+      "authority": "Reserve Bank of India",
+      "title": "Master Direction - Import of Goods and Services, FED Master Direction No. 17/2016-17",
+      "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=10201",
+      "publication_date": "2026-01-12",
+      "effective_date": null,
+      "locator": "Section C.1.1"
+     }
+    ],
+    "origin": "source_assisted",
+    "publication_state": "published",
+    "review": {
+     "verified_at": "2026-11-14T18:00:00Z",
+     "reviewer_id": "coding-agent (Claude), same agent as author",
+     "method": "automated",
+     "source_verified": true,
+     "answer_checked": true,
+     "calculations": "not_applicable"
+    }
+   },
+   {
+    "difficulty": "medium",
+    "stem_md": "A public sector company wants to remit an advance of USD 300,000 and cannot obtain a bank guarantee from the supplier. What must it have?",
+    "options": [
+     {
+      "option_id": "A",
+      "text_md": "Nothing, since it is below USD 5,000,000",
+      "explanation_md": "The USD 5 million relaxation does not apply to public sector bodies."
+     },
+     {
+      "option_id": "B",
+      "text_md": "A certificate from the CEO",
+      "explanation_md": "A CEO certificate relates to evidence of import."
+     },
+     {
+      "option_id": "C",
+      "text_md": "A specific waiver of the bank guarantee from the Ministry of Finance",
+      "explanation_md": "A waiver is needed above USD 100,000."
+     },
+     {
+      "option_id": "D",
+      "text_md": "RBI's prior permission through the Regional Office",
+      "explanation_md": "The waiver comes from the Ministry of Finance."
+     }
+    ],
+    "correct_option_id": "C",
+    "correct_explanation_md": "A public sector company or government undertaking needs a specific waiver from the Ministry of Finance before remitting more than USD 100,000 without a guarantee.",
+    "item_type": "question",
+    "question_type": "single_choice",
+    "id": "item_aa7089b9429e4b14c44ee0f55cca3182af49d464cd2a86d64a05194e6b6d4235",
+    "schema_version": "2.0.0",
+    "revision": 1,
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "paper_id": "BFM",
+    "module_id": "BFM::MOD_A",
+    "unit_id": "BFM::MOD_A::U05",
+    "objective_ids": [
+     "BFM::MOD_A::U05::LO_07"
+    ],
+    "context": {
+     "kind": "exam",
+     "exam_context_id": "CAIIB-2026-DEC",
+     "regulatory_cutoff_date": "2026-06-30"
+    },
+    "citations": [
+     {
+      "source_id": "RBI_MD_IMPORT",
+      "authority": "Reserve Bank of India",
+      "title": "Master Direction - Import of Goods and Services, FED Master Direction No. 17/2016-17",
+      "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=10201",
+      "publication_date": "2026-01-12",
+      "effective_date": null,
+      "locator": "Section C.1.1"
+     }
+    ],
+    "origin": "source_assisted",
+    "publication_state": "published",
+    "review": {
+     "verified_at": "2026-11-14T18:00:00Z",
+     "reviewer_id": "coding-agent (Claude), same agent as author",
+     "method": "automated",
+     "source_verified": true,
+     "answer_checked": true,
+     "calculations": "not_applicable"
+    }
+   },
+   {
+    "difficulty": "hard",
+    "stem_md": "Which importer may give a CEO's certificate instead of the exchange control copy of the bill of entry?",
+    "options": [
+     {
+      "option_id": "A",
+      "text_md": "A private company with net worth of Rs 500 crore",
+      "explanation_md": "Only listed companies, public sector companies and certain bodies qualify."
+     },
+     {
+      "option_id": "B",
+      "text_md": "A company listed in India with net worth of at least Rs 100 crore, for a remittance below USD 1,000,000",
+      "explanation_md": "This satisfies both conditions."
+     },
+     {
+      "option_id": "C",
+      "text_md": "A listed company remitting USD 2,000,000",
+      "explanation_md": "The remittance must be below USD 1,000,000."
+     },
+     {
+      "option_id": "D",
+      "text_md": "Any importer that gives an undertaking",
+      "explanation_md": "The facility has specific eligibility."
+     }
+    ],
+    "correct_option_id": "B",
+    "correct_explanation_md": "The certificate is accepted if the remittance is below USD 1,000,000 and the importer is a listed company with net worth of at least Rs 100 crore, or a public sector undertaking.",
+    "item_type": "question",
+    "question_type": "single_choice",
+    "id": "item_80f3ddd47e782c71aad1e0412931250780db3254b23415d84ad28012397c7088",
+    "schema_version": "2.0.0",
+    "revision": 1,
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "paper_id": "BFM",
+    "module_id": "BFM::MOD_A",
+    "unit_id": "BFM::MOD_A::U05",
+    "objective_ids": [
+     "BFM::MOD_A::U05::LO_07"
+    ],
+    "context": {
+     "kind": "exam",
+     "exam_context_id": "CAIIB-2026-DEC",
+     "regulatory_cutoff_date": "2026-06-30"
+    },
+    "citations": [
+     {
+      "source_id": "RBI_MD_IMPORT",
+      "authority": "Reserve Bank of India",
+      "title": "Master Direction - Import of Goods and Services, FED Master Direction No. 17/2016-17",
+      "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=10201",
+      "publication_date": "2026-01-12",
+      "effective_date": null,
+      "locator": "Section C.7.2"
+     }
+    ],
+    "origin": "source_assisted",
+    "publication_state": "published",
+    "review": {
+     "verified_at": "2026-11-14T18:00:00Z",
+     "reviewer_id": "coding-agent (Claude), same agent as author",
+     "method": "automated",
+     "source_verified": true,
+     "answer_checked": true,
+     "calculations": "not_applicable"
+    }
+   },
+   {
+    "difficulty": "medium",
+    "stem_md": "What is buyer's credit?",
+    "options": [
+     {
+      "option_id": "A",
+      "text_md": "Credit extended directly by the overseas supplier to the importer",
+      "explanation_md": "That is supplier's credit."
+     },
+     {
+      "option_id": "B",
+      "text_md": "An advance paid by the importer to the supplier",
+      "explanation_md": "That is an advance remittance."
+     },
+     {
+      "option_id": "C",
+      "text_md": "A guarantee issued by the importer's bank",
+      "explanation_md": "That is a different instrument."
+     },
+     {
+      "option_id": "D",
+      "text_md": "Credit arranged by the importer from a bank or financial institution outside India to pay for imports",
+      "explanation_md": "This is the definition."
+     }
+    ],
+    "correct_option_id": "D",
+    "correct_explanation_md": "Buyer's credit is credit arranged by the importer from a bank or financial institution abroad, so the supplier is paid immediately.",
+    "item_type": "question",
+    "question_type": "single_choice",
+    "id": "item_815f97ceb29c2bedbef0081bed3622bddb6d7be2334d7b4afe3b4037a8006a1a",
+    "schema_version": "2.0.0",
+    "revision": 1,
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "paper_id": "BFM",
+    "module_id": "BFM::MOD_A",
+    "unit_id": "BFM::MOD_A::U05",
+    "objective_ids": [
+     "BFM::MOD_A::U05::LO_08"
+    ],
+    "context": {
+     "kind": "exam",
+     "exam_context_id": "CAIIB-2026-DEC",
+     "regulatory_cutoff_date": "2026-06-30"
+    },
+    "citations": [
+     {
+      "source_id": "S03",
+      "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+      "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+      "publication_date": null,
+      "effective_date": null,
+      "locator": "S03 printed pp. 153-158"
+     }
+    ],
+    "origin": "source_assisted",
+    "publication_state": "published",
+    "review": {
+     "verified_at": "2026-11-14T18:00:00Z",
+     "reviewer_id": "coding-agent (Claude), same agent as author",
+     "method": "automated",
+     "source_verified": true,
+     "answer_checked": true,
+     "calculations": "not_applicable"
+    }
+   },
+   {
+    "difficulty": "medium",
+    "stem_md": "For how long can a deferred payment arrangement for non-capital goods be treated as trade credit?",
+    "options": [
+     {
+      "option_id": "A",
+      "text_md": "Up to one year or the operating cycle, whichever is less",
+      "explanation_md": "This is the stated period."
+     },
+     {
+      "option_id": "B",
+      "text_md": "Up to three years",
+      "explanation_md": "That is for capital goods."
+     },
+     {
+      "option_id": "C",
+      "text_md": "Up to five years",
+      "explanation_md": "The earlier version of the rule allowed five years; it was reduced."
+     },
+     {
+      "option_id": "D",
+      "text_md": "Up to six months",
+      "explanation_md": "That is the standard import payment period."
+     }
+    ],
+    "correct_option_id": "A",
+    "correct_explanation_md": "Deferred payment arrangements for non-capital goods are trade credits for up to one year or the operating cycle, whichever is less; for capital goods, up to three years.",
+    "item_type": "question",
+    "question_type": "single_choice",
+    "id": "item_ef1cbca55f9fb0f7acf35f22f40492ac46624830ec7b087e55a815cf4b7a0aef",
+    "schema_version": "2.0.0",
+    "revision": 1,
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "paper_id": "BFM",
+    "module_id": "BFM::MOD_A",
+    "unit_id": "BFM::MOD_A::U05",
+    "objective_ids": [
+     "BFM::MOD_A::U05::LO_09"
+    ],
+    "context": {
+     "kind": "exam",
+     "exam_context_id": "CAIIB-2026-DEC",
+     "regulatory_cutoff_date": "2026-06-30"
+    },
+    "citations": [
+     {
+      "source_id": "RBI_MD_IMPORT",
+      "authority": "Reserve Bank of India",
+      "title": "Master Direction - Import of Goods and Services, FED Master Direction No. 17/2016-17",
+      "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=10201",
+      "publication_date": "2026-01-12",
+      "effective_date": null,
+      "locator": "Section B.5.2"
+     }
+    ],
+    "origin": "source_assisted",
+    "publication_state": "published",
+    "review": {
+     "verified_at": "2026-11-14T18:00:00Z",
+     "reviewer_id": "coding-agent (Claude), same agent as author",
+     "method": "automated",
+     "source_verified": true,
+     "answer_checked": true,
+     "calculations": "not_applicable"
+    }
+   },
+   {
+    "difficulty": "medium",
+    "stem_md": "What does the importer's bank no longer have to file separately because of IDPMS?",
+    "options": [
+     {
+      "option_id": "A",
+      "text_md": "An outward remittance message",
+      "explanation_md": "The bank creates an ORM in IDPMS for each remittance."
+     },
+     {
+      "option_id": "B",
+      "text_md": "KYC records for the importer",
+      "explanation_md": "KYC obligations continue."
+     },
+     {
+      "option_id": "C",
+      "text_md": "A Bill of Entry statement",
+      "explanation_md": "Bill of Entry data now reaches RBI through IDPMS."
+     },
+     {
+      "option_id": "D",
+      "text_md": "Evidence of import for delivery against acceptance imports",
+      "explanation_md": "Evidence is verified in IDPMS."
+     }
+    ],
+    "correct_option_id": "C",
+    "correct_explanation_md": "Because all information on bills of entry is available to RBI through the IDPMS server, banks no longer file a separate Bill of Entry statement.",
+    "item_type": "question",
+    "question_type": "single_choice",
+    "id": "item_302f1b2605a8237d43bbd82313a89da972975a23cd852b7dc59d0e133211a99f",
+    "schema_version": "2.0.0",
+    "revision": 1,
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "paper_id": "BFM",
+    "module_id": "BFM::MOD_A",
+    "unit_id": "BFM::MOD_A::U05",
+    "objective_ids": [
+     "BFM::MOD_A::U05::LO_08"
+    ],
+    "context": {
+     "kind": "exam",
+     "exam_context_id": "CAIIB-2026-DEC",
+     "regulatory_cutoff_date": "2026-06-30"
+    },
+    "citations": [
+     {
+      "source_id": "S03",
+      "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+      "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+      "publication_date": null,
+      "effective_date": null,
+      "locator": "S03 printed pp. 153-158"
+     }
+    ],
+    "origin": "source_assisted",
+    "publication_state": "published",
+    "review": {
+     "verified_at": "2026-11-14T18:00:00Z",
+     "reviewer_id": "coding-agent (Claude), same agent as author",
+     "method": "automated",
+     "source_verified": true,
+     "answer_checked": true,
+     "calculations": "not_applicable"
+    }
+   },
+   {
+    "difficulty": "hard",
+    "stem_md": "Goods are shipped on 15 March 2026. By what date should remittance for a normal import be completed?",
+    "options": [
+     {
+      "option_id": "A",
+      "text_md": "15 June 2026",
+      "explanation_md": "That is only three months."
+     },
+     {
+      "option_id": "B",
+      "text_md": "15 September 2026",
+      "explanation_md": "Six months from the shipment date."
+     },
+     {
+      "option_id": "C",
+      "text_md": "15 March 2027",
+      "explanation_md": "That is twelve months."
+     },
+     {
+      "option_id": "D",
+      "text_md": "15 December 2026",
+      "explanation_md": "That is nine months."
+     }
+    ],
+    "correct_option_id": "B",
+    "correct_explanation_md": "Six months from 15 March 2026 is 15 September 2026.",
+    "item_type": "question",
+    "question_type": "single_choice",
+    "id": "item_6fa571cdf61733953b6a26cd0c69c38c842deb0fe92edb8b1f4b822118576e58",
+    "schema_version": "2.0.0",
+    "revision": 1,
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "paper_id": "BFM",
+    "module_id": "BFM::MOD_A",
+    "unit_id": "BFM::MOD_A::U05",
+    "objective_ids": [
+     "BFM::MOD_A::U05::LO_07"
+    ],
+    "context": {
+     "kind": "exam",
+     "exam_context_id": "CAIIB-2026-DEC",
+     "regulatory_cutoff_date": "2026-06-30"
+    },
+    "citations": [
+     {
+      "source_id": "RBI_MD_IMPORT",
+      "authority": "Reserve Bank of India",
+      "title": "Master Direction - Import of Goods and Services, FED Master Direction No. 17/2016-17",
+      "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=10201",
+      "publication_date": "2026-01-12",
+      "effective_date": null,
+      "locator": "Section B.5.1; S03 printed p. 153"
+     },
+     {
+      "source_id": "RBI_MD_IMPORT",
+      "authority": "Reserve Bank of India",
+      "title": "Master Direction - Import of Goods and Services, FED Master Direction No. 17/2016-17",
+      "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=10201",
+      "publication_date": "2026-01-12",
+      "effective_date": null,
+      "locator": "Section B.5.4"
+     }
+    ],
+    "origin": "source_assisted",
+    "publication_state": "published",
+    "review": {
+     "verified_at": "2026-11-14T18:00:00Z",
+     "reviewer_id": "coding-agent (Claude), same agent as author",
+     "method": "automated",
+     "source_verified": true,
+     "answer_checked": true,
+     "calculations": "verified"
     }
    }
   ]

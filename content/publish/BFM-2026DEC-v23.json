@@ -1,0 +1,1941 @@
+{
+  "pack_id": "BFM-2026DEC",
+  "pack_version": "23",
+  "paper_id": "BFM",
+  "exam_context_id": "CAIIB-2026-DEC",
+  "access": "free",
+  "free_unit_ids": [
+    "BFM::MOD_A::U01"
+  ],
+  "change_summary": "Adds importer rules checked against the RBI Import Master Direction: the six-month payment limit, the extension test (lower of USD 1 million and 10% of two years' remittances), advance remittance and guarantee thresholds, the certificate in lieu of the bill of entry, import finance and IDPMS, and the periods for trade credit.",
+  "reviewer_id": "coding-agent (Claude), same agent as author",
+  "review_method": "automated",
+  "verified_at": "2026-11-14T18:00:00Z",
+  "owner_decision": "On 11 Nov 2026 the owner accepted publication on the agent's review alone, without a human reviewer.",
+  "held_back": [
+    {
+      "batch": "BFM-A-U01-B001",
+      "draft_id": "D001",
+      "reason": "Restates the FEMA definition of foreign exchange as the courseware quotes it. The Act could not be retrieved from India Code to confirm the clause and sub-clauses, and a search result suggests the Act lists more sub-clauses than the courseware quotes."
+    },
+    {
+      "batch": "BFM-A-U04-B003",
+      "draft_id": "D009",
+      "reason": "The crystallisation worked example rests on FEDAI guidelines (courseware printed p. 108) that could not be retrieved, so applicability at the 30 June 2026 cut-off is unverified."
+    },
+    {
+      "batch": "BFM-A-U04-B003",
+      "draft_id": "D020",
+      "reason": "The usance crystallisation question rests on FEDAI guidelines that could not be retrieved."
+    },
+    {
+      "batch": "BFM-A-U04-B003",
+      "draft_id": "D021",
+      "reason": "The rupee crystallisation numerical rests on FEDAI guidelines that could not be retrieved."
+    },
+    {
+      "batch": "BFM-A-U04-B004",
+      "draft_id": "D006",
+      "reason": "The commercial standby safeguards for imports (courseware printed pp. 111-112) rest on older RBI circulars and on authorised dealers' guarantee powers; the current RBI Import Master Direction does not contain them and the guarantees Master Direction was not retrieved."
+    },
+    {
+      "batch": "BFM-A-U04-B004",
+      "draft_id": "D016",
+      "reason": "The question on the commercial standby safeguards rests on the same unverified RBI rules."
+    },
+    {
+      "batch": "BFM-A-U05-B005",
+      "draft_id": "D008",
+      "reason": "The trade credit amount and all-in-cost ceilings are in the Master Direction on External Commercial Borrowings, Trade Credits and Structured Obligations, which was not retrieved, and moved with the LIBOR transition."
+    },
+    {
+      "batch": "BFM-A-U05-B005",
+      "draft_id": "D019",
+      "reason": "The question on the trade credit ceiling rests on the same unverified figures."
+    }
+  ],
+  "items": [
+    {
+      "batch": "BFM-A-U01-B001",
+      "draft_id": "D002",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U01-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U01-B001",
+      "draft_id": "D003",
+      "calculations": "verified",
+      "calculation_ref": "tests/content/batch-calculations.test.ts",
+      "review_ref": "content/batches/BFM-A-U01-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U01-B001",
+      "draft_id": "D004",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U01-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U01-B001",
+      "draft_id": "D005",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U01-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U01-B001",
+      "draft_id": "D006",
+      "calculations": "verified",
+      "calculation_ref": "tests/content/batch-calculations.test.ts",
+      "review_ref": "content/batches/BFM-A-U01-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U01-B002",
+      "draft_id": "D001",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U01-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U01-B002",
+      "draft_id": "D002",
+      "calculations": "verified",
+      "calculation_ref": "tests/content/batch-b002.test.ts",
+      "review_ref": "content/batches/BFM-A-U01-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U01-B002",
+      "draft_id": "D003",
+      "calculations": "verified",
+      "calculation_ref": "tests/content/batch-b002.test.ts",
+      "review_ref": "content/batches/BFM-A-U01-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U01-B002",
+      "draft_id": "D004",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U01-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U01-B002",
+      "draft_id": "D005",
+      "calculations": "verified",
+      "calculation_ref": "tests/content/batch-b002.test.ts",
+      "review_ref": "content/batches/BFM-A-U01-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U01-B002",
+      "draft_id": "D006",
+      "calculations": "verified",
+      "calculation_ref": "tests/content/batch-b002.test.ts",
+      "review_ref": "content/batches/BFM-A-U01-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U01-B003",
+      "draft_id": "D001",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U01-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U01-B003",
+      "draft_id": "D002",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U01-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U01-B003",
+      "draft_id": "D003",
+      "calculations": "verified",
+      "review_ref": "content/batches/BFM-A-U01-B003/review.md",
+      "calculation_ref": "tests/content/batch-b003.test.ts"
+    },
+    {
+      "batch": "BFM-A-U01-B003",
+      "draft_id": "D004",
+      "calculations": "verified",
+      "review_ref": "content/batches/BFM-A-U01-B003/review.md",
+      "calculation_ref": "tests/content/batch-b003.test.ts"
+    },
+    {
+      "batch": "BFM-A-U01-B003",
+      "draft_id": "D005",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U01-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U01-B003",
+      "draft_id": "D006",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U01-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U01-B004",
+      "draft_id": "D001",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U01-B004/review.md"
+    },
+    {
+      "batch": "BFM-A-U01-B004",
+      "draft_id": "D002",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U01-B004/review.md"
+    },
+    {
+      "batch": "BFM-A-U01-B004",
+      "draft_id": "D003",
+      "calculations": "verified",
+      "review_ref": "content/batches/BFM-A-U01-B004/review.md",
+      "calculation_ref": "tests/content/batch-b004.test.ts"
+    },
+    {
+      "batch": "BFM-A-U01-B004",
+      "draft_id": "D004",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U01-B004/review.md"
+    },
+    {
+      "batch": "BFM-A-U01-B004",
+      "draft_id": "D005",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U01-B004/review.md"
+    },
+    {
+      "batch": "BFM-A-U01-B004",
+      "draft_id": "D006",
+      "calculations": "verified",
+      "review_ref": "content/batches/BFM-A-U01-B004/review.md",
+      "calculation_ref": "tests/content/batch-b004.test.ts"
+    },
+    {
+      "batch": "BFM-A-U01-B005",
+      "draft_id": "D001",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U01-B005/review.md"
+    },
+    {
+      "batch": "BFM-A-U01-B005",
+      "draft_id": "D002",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U01-B005/review.md"
+    },
+    {
+      "batch": "BFM-A-U01-B005",
+      "draft_id": "D003",
+      "calculations": "verified",
+      "review_ref": "content/batches/BFM-A-U01-B005/review.md",
+      "calculation_ref": "tests/content/batch-b005.test.ts"
+    },
+    {
+      "batch": "BFM-A-U01-B005",
+      "draft_id": "D004",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U01-B005/review.md"
+    },
+    {
+      "batch": "BFM-A-U01-B005",
+      "draft_id": "D005",
+      "calculations": "verified",
+      "review_ref": "content/batches/BFM-A-U01-B005/review.md",
+      "calculation_ref": "tests/content/batch-b005.test.ts"
+    },
+    {
+      "batch": "BFM-A-U01-B005",
+      "draft_id": "D006",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U01-B005/review.md"
+    },
+    {
+      "batch": "BFM-A-U01-B006",
+      "draft_id": "D001",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U01-B006/review.md"
+    },
+    {
+      "batch": "BFM-A-U01-B006",
+      "draft_id": "D002",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U01-B006/review.md"
+    },
+    {
+      "batch": "BFM-A-U01-B006",
+      "draft_id": "D003",
+      "calculations": "verified",
+      "review_ref": "content/batches/BFM-A-U01-B006/review.md",
+      "calculation_ref": "tests/content/batch-b006.test.ts"
+    },
+    {
+      "batch": "BFM-A-U01-B006",
+      "draft_id": "D004",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U01-B006/review.md"
+    },
+    {
+      "batch": "BFM-A-U01-B006",
+      "draft_id": "D005",
+      "calculations": "verified",
+      "review_ref": "content/batches/BFM-A-U01-B006/review.md",
+      "calculation_ref": "tests/content/batch-b006.test.ts"
+    },
+    {
+      "batch": "BFM-A-U01-B006",
+      "draft_id": "D006",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U01-B006/review.md"
+    },
+    {
+      "batch": "BFM-A-U01-B008",
+      "draft_id": "D001",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U01-B008/review.md"
+    },
+    {
+      "batch": "BFM-A-U01-B008",
+      "draft_id": "D002",
+      "calculations": "verified",
+      "review_ref": "content/batches/BFM-A-U01-B008/review.md",
+      "calculation_ref": "tests/content/batch-b008.test.ts"
+    },
+    {
+      "batch": "BFM-A-U01-B008",
+      "draft_id": "D003",
+      "calculations": "verified",
+      "review_ref": "content/batches/BFM-A-U01-B008/review.md",
+      "calculation_ref": "tests/content/batch-b008.test.ts"
+    },
+    {
+      "batch": "BFM-A-U01-B008",
+      "draft_id": "D004",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U01-B008/review.md"
+    },
+    {
+      "batch": "BFM-A-U01-B008",
+      "draft_id": "D005",
+      "calculations": "verified",
+      "review_ref": "content/batches/BFM-A-U01-B008/review.md",
+      "calculation_ref": "tests/content/batch-b008.test.ts"
+    },
+    {
+      "batch": "BFM-A-U01-B008",
+      "draft_id": "D006",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U01-B008/review.md"
+    },
+    {
+      "batch": "BFM-A-U03-B001",
+      "draft_id": "D001",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U03-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U03-B001",
+      "draft_id": "D002",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U03-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U03-B001",
+      "draft_id": "D003",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U03-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U03-B001",
+      "draft_id": "D004",
+      "calculations": "verified",
+      "calculation_ref": "tests/content/batch-u03-b001.test.ts",
+      "review_ref": "content/batches/BFM-A-U03-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U03-B001",
+      "draft_id": "D005",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U03-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U03-B001",
+      "draft_id": "D006",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U03-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U03-B001",
+      "draft_id": "D007",
+      "calculations": "verified",
+      "calculation_ref": "tests/content/batch-u03-b001.test.ts",
+      "review_ref": "content/batches/BFM-A-U03-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U03-B001",
+      "draft_id": "D008",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U03-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U03-B001",
+      "draft_id": "D009",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U03-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U03-B001",
+      "draft_id": "D010",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U03-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U03-B002",
+      "draft_id": "D001",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U03-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U03-B002",
+      "draft_id": "D002",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U03-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U03-B002",
+      "draft_id": "D003",
+      "calculations": "verified",
+      "review_ref": "content/batches/BFM-A-U03-B002/review.md",
+      "calculation_ref": "tests/content/batch-u03-b002.test.ts"
+    },
+    {
+      "batch": "BFM-A-U03-B002",
+      "draft_id": "D004",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U03-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U03-B002",
+      "draft_id": "D005",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U03-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U03-B002",
+      "draft_id": "D006",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U03-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U03-B002",
+      "draft_id": "D007",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U03-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U03-B002",
+      "draft_id": "D008",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U03-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U03-B002",
+      "draft_id": "D009",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U03-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U03-B003",
+      "draft_id": "D001",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U03-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U03-B003",
+      "draft_id": "D002",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U03-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U03-B003",
+      "draft_id": "D003",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U03-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U03-B003",
+      "draft_id": "D004",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U03-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U03-B003",
+      "draft_id": "D005",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U03-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U03-B003",
+      "draft_id": "D006",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U03-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U03-B003",
+      "draft_id": "D007",
+      "calculations": "verified",
+      "review_ref": "content/batches/BFM-A-U03-B003/review.md",
+      "calculation_ref": "tests/content/batch-u03-b003.test.ts"
+    },
+    {
+      "batch": "BFM-A-U03-B003",
+      "draft_id": "D008",
+      "calculations": "verified",
+      "review_ref": "content/batches/BFM-A-U03-B003/review.md",
+      "calculation_ref": "tests/content/batch-u03-b003.test.ts"
+    },
+    {
+      "batch": "BFM-A-U03-B003",
+      "draft_id": "D009",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U03-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U03-B003",
+      "draft_id": "D010",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U03-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U03-B003",
+      "draft_id": "D011",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U03-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U03-B003",
+      "draft_id": "D012",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U03-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U03-B003",
+      "draft_id": "D013",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U03-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U03-B003",
+      "draft_id": "D014",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U03-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U03-B004",
+      "draft_id": "D001",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U03-B004/review.md"
+    },
+    {
+      "batch": "BFM-A-U03-B004",
+      "draft_id": "D002",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U03-B004/review.md"
+    },
+    {
+      "batch": "BFM-A-U03-B004",
+      "draft_id": "D003",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U03-B004/review.md"
+    },
+    {
+      "batch": "BFM-A-U03-B004",
+      "draft_id": "D004",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U03-B004/review.md"
+    },
+    {
+      "batch": "BFM-A-U03-B004",
+      "draft_id": "D005",
+      "calculations": "verified",
+      "review_ref": "content/batches/BFM-A-U03-B004/review.md",
+      "calculation_ref": "tests/content/batch-u03-b004.test.ts"
+    },
+    {
+      "batch": "BFM-A-U03-B004",
+      "draft_id": "D006",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U03-B004/review.md"
+    },
+    {
+      "batch": "BFM-A-U03-B004",
+      "draft_id": "D007",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U03-B004/review.md"
+    },
+    {
+      "batch": "BFM-A-U03-B004",
+      "draft_id": "D008",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U03-B004/review.md"
+    },
+    {
+      "batch": "BFM-A-U03-B004",
+      "draft_id": "D009",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U03-B004/review.md"
+    },
+    {
+      "batch": "BFM-A-U03-B004",
+      "draft_id": "D010",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U03-B004/review.md"
+    },
+    {
+      "batch": "BFM-A-U03-B004",
+      "draft_id": "D011",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U03-B004/review.md"
+    },
+    {
+      "batch": "BFM-A-U02-B001",
+      "draft_id": "D001",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U02-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U02-B001",
+      "draft_id": "D002",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U02-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U02-B001",
+      "draft_id": "D003",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U02-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U02-B001",
+      "draft_id": "D004",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U02-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U02-B001",
+      "draft_id": "D005",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U02-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U02-B001",
+      "draft_id": "D006",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U02-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U02-B001",
+      "draft_id": "D007",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U02-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U02-B001",
+      "draft_id": "D008",
+      "calculations": "verified",
+      "review_ref": "content/batches/BFM-A-U02-B001/review.md",
+      "calculation_ref": "tests/content/batch-u02-b001.test.ts"
+    },
+    {
+      "batch": "BFM-A-U02-B001",
+      "draft_id": "D009",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U02-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U02-B001",
+      "draft_id": "D010",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U02-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U02-B001",
+      "draft_id": "D011",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U02-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U02-B001",
+      "draft_id": "D012",
+      "calculations": "verified",
+      "review_ref": "content/batches/BFM-A-U02-B001/review.md",
+      "calculation_ref": "tests/content/batch-u02-b001.test.ts"
+    },
+    {
+      "batch": "BFM-A-U02-B001",
+      "draft_id": "D013",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U02-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U02-B001",
+      "draft_id": "D014",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U02-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U02-B001",
+      "draft_id": "D015",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U02-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U02-B001",
+      "draft_id": "D016",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U02-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U02-B001",
+      "draft_id": "D017",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U02-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U02-B001",
+      "draft_id": "D018",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U02-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U02-B001",
+      "draft_id": "D019",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U02-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U02-B002",
+      "draft_id": "D001",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U02-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U02-B002",
+      "draft_id": "D002",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U02-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U02-B002",
+      "draft_id": "D003",
+      "calculations": "verified",
+      "review_ref": "content/batches/BFM-A-U02-B002/review.md",
+      "calculation_ref": "tests/content/batch-u02-b002.test.ts"
+    },
+    {
+      "batch": "BFM-A-U02-B002",
+      "draft_id": "D004",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U02-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U02-B002",
+      "draft_id": "D005",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U02-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U02-B002",
+      "draft_id": "D006",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U02-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U02-B002",
+      "draft_id": "D007",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U02-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U02-B002",
+      "draft_id": "D008",
+      "calculations": "verified",
+      "review_ref": "content/batches/BFM-A-U02-B002/review.md",
+      "calculation_ref": "tests/content/batch-u02-b002.test.ts"
+    },
+    {
+      "batch": "BFM-A-U02-B002",
+      "draft_id": "D009",
+      "calculations": "verified",
+      "review_ref": "content/batches/BFM-A-U02-B002/review.md",
+      "calculation_ref": "tests/content/batch-u02-b002.test.ts"
+    },
+    {
+      "batch": "BFM-A-U02-B002",
+      "draft_id": "D010",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U02-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U02-B002",
+      "draft_id": "D011",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U02-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U02-B003",
+      "draft_id": "D001",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U02-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U02-B003",
+      "draft_id": "D002",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U02-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U02-B003",
+      "draft_id": "D003",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U02-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U02-B003",
+      "draft_id": "D004",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U02-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U02-B003",
+      "draft_id": "D005",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U02-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U02-B003",
+      "draft_id": "D006",
+      "calculations": "verified",
+      "review_ref": "content/batches/BFM-A-U02-B003/review.md",
+      "calculation_ref": "tests/content/batch-u02-b003.test.ts"
+    },
+    {
+      "batch": "BFM-A-U02-B003",
+      "draft_id": "D007",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U02-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U02-B003",
+      "draft_id": "D008",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U02-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U02-B003",
+      "draft_id": "D009",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U02-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U02-B003",
+      "draft_id": "D010",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U02-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U02-B003",
+      "draft_id": "D011",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U02-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U02-B003",
+      "draft_id": "D012",
+      "calculations": "verified",
+      "review_ref": "content/batches/BFM-A-U02-B003/review.md",
+      "calculation_ref": "tests/content/batch-u02-b003.test.ts"
+    },
+    {
+      "batch": "BFM-A-U02-B003",
+      "draft_id": "D013",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U02-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U02-B003",
+      "draft_id": "D014",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U02-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U02-B003",
+      "draft_id": "D015",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U02-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B001",
+      "draft_id": "D001",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B001",
+      "draft_id": "D002",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B001",
+      "draft_id": "D003",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B001",
+      "draft_id": "D004",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B001",
+      "draft_id": "D005",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B001",
+      "draft_id": "D006",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B001",
+      "draft_id": "D007",
+      "calculations": "verified",
+      "review_ref": "content/batches/BFM-A-U04-B001/review.md",
+      "calculation_ref": "tests/content/batch-u04-b001.test.ts"
+    },
+    {
+      "batch": "BFM-A-U04-B001",
+      "draft_id": "D008",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B001",
+      "draft_id": "D009",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B001",
+      "draft_id": "D010",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B001",
+      "draft_id": "D011",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B001",
+      "draft_id": "D012",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B001",
+      "draft_id": "D013",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B001",
+      "draft_id": "D014",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B001",
+      "draft_id": "D015",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B001",
+      "draft_id": "D016",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B001",
+      "draft_id": "D017",
+      "calculations": "verified",
+      "review_ref": "content/batches/BFM-A-U04-B001/review.md",
+      "calculation_ref": "tests/content/batch-u04-b001.test.ts"
+    },
+    {
+      "batch": "BFM-A-U04-B002",
+      "draft_id": "D001",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B002",
+      "draft_id": "D002",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B002",
+      "draft_id": "D003",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B002",
+      "draft_id": "D004",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B002",
+      "draft_id": "D005",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B002",
+      "draft_id": "D006",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B002",
+      "draft_id": "D007",
+      "calculations": "verified",
+      "review_ref": "content/batches/BFM-A-U04-B002/review.md",
+      "calculation_ref": "tests/content/batch-u04-b002.test.ts"
+    },
+    {
+      "batch": "BFM-A-U04-B002",
+      "draft_id": "D008",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B002",
+      "draft_id": "D009",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B002",
+      "draft_id": "D010",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B002",
+      "draft_id": "D011",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B002",
+      "draft_id": "D012",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B002",
+      "draft_id": "D013",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B002",
+      "draft_id": "D014",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B002",
+      "draft_id": "D015",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B002",
+      "draft_id": "D016",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B002",
+      "draft_id": "D017",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B002",
+      "draft_id": "D018",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B002",
+      "draft_id": "D019",
+      "calculations": "verified",
+      "review_ref": "content/batches/BFM-A-U04-B002/review.md",
+      "calculation_ref": "tests/content/batch-u04-b002.test.ts"
+    },
+    {
+      "batch": "BFM-A-U04-B003",
+      "draft_id": "D001",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B003",
+      "draft_id": "D002",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B003",
+      "draft_id": "D003",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B003",
+      "draft_id": "D004",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B003",
+      "draft_id": "D005",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B003",
+      "draft_id": "D006",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B003",
+      "draft_id": "D007",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B003",
+      "draft_id": "D008",
+      "calculations": "verified",
+      "review_ref": "content/batches/BFM-A-U04-B003/review.md",
+      "calculation_ref": "tests/content/batch-u04-b003.test.ts"
+    },
+    {
+      "batch": "BFM-A-U04-B003",
+      "draft_id": "D010",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B003",
+      "draft_id": "D011",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B003",
+      "draft_id": "D012",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B003",
+      "draft_id": "D013",
+      "calculations": "verified",
+      "review_ref": "content/batches/BFM-A-U04-B003/review.md",
+      "calculation_ref": "tests/content/batch-u04-b003.test.ts"
+    },
+    {
+      "batch": "BFM-A-U04-B003",
+      "draft_id": "D014",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B003",
+      "draft_id": "D015",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B003",
+      "draft_id": "D016",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B003",
+      "draft_id": "D017",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B003",
+      "draft_id": "D018",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B003",
+      "draft_id": "D019",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B004",
+      "draft_id": "D001",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B004/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B004",
+      "draft_id": "D002",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B004/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B004",
+      "draft_id": "D003",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B004/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B004",
+      "draft_id": "D004",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B004/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B004",
+      "draft_id": "D005",
+      "calculations": "verified",
+      "review_ref": "content/batches/BFM-A-U04-B004/review.md",
+      "calculation_ref": "tests/content/batch-u04-b004.test.ts"
+    },
+    {
+      "batch": "BFM-A-U04-B004",
+      "draft_id": "D007",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B004/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B004",
+      "draft_id": "D008",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B004/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B004",
+      "draft_id": "D009",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B004/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B004",
+      "draft_id": "D010",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B004/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B004",
+      "draft_id": "D011",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B004/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B004",
+      "draft_id": "D012",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B004/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B004",
+      "draft_id": "D013",
+      "calculations": "verified",
+      "review_ref": "content/batches/BFM-A-U04-B004/review.md",
+      "calculation_ref": "tests/content/batch-u04-b004.test.ts"
+    },
+    {
+      "batch": "BFM-A-U04-B004",
+      "draft_id": "D014",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B004/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B004",
+      "draft_id": "D015",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B004/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B005",
+      "draft_id": "D001",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B005/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B005",
+      "draft_id": "D002",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B005/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B005",
+      "draft_id": "D003",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B005/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B005",
+      "draft_id": "D004",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B005/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B005",
+      "draft_id": "D005",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B005/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B005",
+      "draft_id": "D006",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B005/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B005",
+      "draft_id": "D007",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B005/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B005",
+      "draft_id": "D008",
+      "calculations": "verified",
+      "review_ref": "content/batches/BFM-A-U04-B005/review.md",
+      "calculation_ref": "tests/content/batch-u04-b005.test.ts"
+    },
+    {
+      "batch": "BFM-A-U04-B005",
+      "draft_id": "D009",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B005/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B005",
+      "draft_id": "D010",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B005/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B005",
+      "draft_id": "D011",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B005/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B005",
+      "draft_id": "D012",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B005/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B005",
+      "draft_id": "D013",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B005/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B005",
+      "draft_id": "D014",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B005/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B005",
+      "draft_id": "D015",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B005/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B005",
+      "draft_id": "D016",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B005/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B005",
+      "draft_id": "D017",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B005/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B005",
+      "draft_id": "D018",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B005/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B005",
+      "draft_id": "D019",
+      "calculations": "verified",
+      "review_ref": "content/batches/BFM-A-U04-B005/review.md",
+      "calculation_ref": "tests/content/batch-u04-b005.test.ts"
+    },
+    {
+      "batch": "BFM-A-U04-B005",
+      "draft_id": "D020",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B005/review.md"
+    },
+    {
+      "batch": "BFM-A-U04-B005",
+      "draft_id": "D021",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U04-B005/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B001",
+      "draft_id": "D001",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B001",
+      "draft_id": "D002",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B001",
+      "draft_id": "D003",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B001",
+      "draft_id": "D004",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B001",
+      "draft_id": "D005",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B001",
+      "draft_id": "D006",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B001",
+      "draft_id": "D007",
+      "calculations": "verified",
+      "review_ref": "content/batches/BFM-A-U05-B001/review.md",
+      "calculation_ref": "tests/content/batch-u05-b001.test.ts"
+    },
+    {
+      "batch": "BFM-A-U05-B001",
+      "draft_id": "D008",
+      "calculations": "verified",
+      "review_ref": "content/batches/BFM-A-U05-B001/review.md",
+      "calculation_ref": "tests/content/batch-u05-b001.test.ts"
+    },
+    {
+      "batch": "BFM-A-U05-B001",
+      "draft_id": "D009",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B001",
+      "draft_id": "D010",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B001",
+      "draft_id": "D011",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B001",
+      "draft_id": "D012",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B001",
+      "draft_id": "D013",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B001",
+      "draft_id": "D014",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B001",
+      "draft_id": "D015",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B001",
+      "draft_id": "D016",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B001",
+      "draft_id": "D017",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B001/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B001",
+      "draft_id": "D018",
+      "calculations": "verified",
+      "review_ref": "content/batches/BFM-A-U05-B001/review.md",
+      "calculation_ref": "tests/content/batch-u05-b001.test.ts"
+    },
+    {
+      "batch": "BFM-A-U05-B002",
+      "draft_id": "D001",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B002",
+      "draft_id": "D002",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B002",
+      "draft_id": "D003",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B002",
+      "draft_id": "D004",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B002",
+      "draft_id": "D005",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B002",
+      "draft_id": "D006",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B002",
+      "draft_id": "D007",
+      "calculations": "verified",
+      "review_ref": "content/batches/BFM-A-U05-B002/review.md",
+      "calculation_ref": "tests/content/batch-u05-b002.test.ts"
+    },
+    {
+      "batch": "BFM-A-U05-B002",
+      "draft_id": "D008",
+      "calculations": "verified",
+      "review_ref": "content/batches/BFM-A-U05-B002/review.md",
+      "calculation_ref": "tests/content/batch-u05-b002.test.ts"
+    },
+    {
+      "batch": "BFM-A-U05-B002",
+      "draft_id": "D009",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B002",
+      "draft_id": "D010",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B002",
+      "draft_id": "D011",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B002",
+      "draft_id": "D012",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B002",
+      "draft_id": "D013",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B002",
+      "draft_id": "D014",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B002",
+      "draft_id": "D015",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B002",
+      "draft_id": "D016",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B002",
+      "draft_id": "D017",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B002/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B003",
+      "draft_id": "D001",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B003",
+      "draft_id": "D002",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B003",
+      "draft_id": "D003",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B003",
+      "draft_id": "D004",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B003",
+      "draft_id": "D005",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B003",
+      "draft_id": "D006",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B003",
+      "draft_id": "D007",
+      "calculations": "verified",
+      "review_ref": "content/batches/BFM-A-U05-B003/review.md",
+      "calculation_ref": "tests/content/batch-u05-b003.test.ts"
+    },
+    {
+      "batch": "BFM-A-U05-B003",
+      "draft_id": "D008",
+      "calculations": "verified",
+      "review_ref": "content/batches/BFM-A-U05-B003/review.md",
+      "calculation_ref": "tests/content/batch-u05-b003.test.ts"
+    },
+    {
+      "batch": "BFM-A-U05-B003",
+      "draft_id": "D009",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B003",
+      "draft_id": "D010",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B003",
+      "draft_id": "D011",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B003",
+      "draft_id": "D012",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B003",
+      "draft_id": "D013",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B003",
+      "draft_id": "D014",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B003",
+      "draft_id": "D015",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B003",
+      "draft_id": "D016",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B003/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B003",
+      "draft_id": "D017",
+      "calculations": "verified",
+      "review_ref": "content/batches/BFM-A-U05-B003/review.md",
+      "calculation_ref": "tests/content/batch-u05-b003.test.ts"
+    },
+    {
+      "batch": "BFM-A-U05-B004",
+      "draft_id": "D001",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B004/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B004",
+      "draft_id": "D002",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B004/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B004",
+      "draft_id": "D003",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B004/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B004",
+      "draft_id": "D004",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B004/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B004",
+      "draft_id": "D005",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B004/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B004",
+      "draft_id": "D006",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B004/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B004",
+      "draft_id": "D007",
+      "calculations": "verified",
+      "review_ref": "content/batches/BFM-A-U05-B004/review.md",
+      "calculation_ref": "tests/content/batch-u05-b004.test.ts"
+    },
+    {
+      "batch": "BFM-A-U05-B004",
+      "draft_id": "D008",
+      "calculations": "verified",
+      "review_ref": "content/batches/BFM-A-U05-B004/review.md",
+      "calculation_ref": "tests/content/batch-u05-b004.test.ts"
+    },
+    {
+      "batch": "BFM-A-U05-B004",
+      "draft_id": "D009",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B004/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B004",
+      "draft_id": "D010",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B004/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B004",
+      "draft_id": "D011",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B004/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B004",
+      "draft_id": "D012",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B004/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B004",
+      "draft_id": "D013",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B004/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B004",
+      "draft_id": "D014",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B004/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B004",
+      "draft_id": "D015",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B004/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B004",
+      "draft_id": "D016",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B004/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B004",
+      "draft_id": "D017",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B004/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B005",
+      "draft_id": "D001",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B005/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B005",
+      "draft_id": "D002",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B005/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B005",
+      "draft_id": "D003",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B005/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B005",
+      "draft_id": "D004",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B005/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B005",
+      "draft_id": "D005",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B005/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B005",
+      "draft_id": "D006",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B005/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B005",
+      "draft_id": "D007",
+      "calculations": "verified",
+      "review_ref": "content/batches/BFM-A-U05-B005/review.md",
+      "calculation_ref": "tests/content/batch-u05-b005.test.ts"
+    },
+    {
+      "batch": "BFM-A-U05-B005",
+      "draft_id": "D009",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B005/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B005",
+      "draft_id": "D010",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B005/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B005",
+      "draft_id": "D011",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B005/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B005",
+      "draft_id": "D012",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B005/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B005",
+      "draft_id": "D013",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B005/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B005",
+      "draft_id": "D014",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B005/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B005",
+      "draft_id": "D015",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B005/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B005",
+      "draft_id": "D016",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B005/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B005",
+      "draft_id": "D017",
+      "calculations": "not_applicable",
+      "review_ref": "content/batches/BFM-A-U05-B005/review.md"
+    },
+    {
+      "batch": "BFM-A-U05-B005",
+      "draft_id": "D018",
+      "calculations": "verified",
+      "review_ref": "content/batches/BFM-A-U05-B005/review.md",
+      "calculation_ref": "tests/content/batch-u05-b005.test.ts"
+    }
+  ]
+}
