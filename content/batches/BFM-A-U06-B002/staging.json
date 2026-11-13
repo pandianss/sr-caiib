@@ -1,0 +1,500 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BFM-A-U06-B002",
+  "paper_id": "BFM",
+  "unit_label": "Module A: International Banking - External Commercial Borrowings and Foreign Investments in India",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S03",
+    "RBI_FEMA_395_2019"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "statement": "An Indian company issuing equity instruments to a person resident outside India, where the issue is reckoned as foreign direct investment, reports the issue in Form FC-GPR not later than thirty days from the date of issue. An Indian company that has received FDI, or an LLP that has received capital contribution, in the previous year including the current year, submits Form FLA on or before 15 July each year, the year being April to March. An Indian company issuing employees' stock options to non-resident employees or directors files Form ESOP within 30 days of the date of issue.",
+      "source_id": "RBI_FEMA_395_2019",
+      "locator": "Regulation 4(1), (2) and (4)",
+      "regulatory_sensitive": true,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F002",
+      "statement": "Form FC-TRS is filed for transfer of equity instruments between a non-resident holding on a repatriable basis and a non-resident holding on a non-repatriable basis, and between a non-resident holding on a repatriable basis and a resident; the onus is on the resident transferor or transferee, or the non-resident holding on a non-repatriable basis. A transfer on a recognised stock exchange by a non-resident is reported by that person. A sale between a non-resident holding on a non-repatriable basis and a resident is not reported in Form FC-TRS. Form FC-TRS is filed within sixty days of transfer of equity instruments or receipt or remittance of funds, whichever is earlier; for deferred payment, a report is made on receipt of every tranche.",
+      "source_id": "RBI_FEMA_395_2019",
+      "locator": "Regulation 4(3)",
+      "regulatory_sensitive": true,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F003",
+      "statement": "An LLP receiving consideration for capital contribution and acquisition of profit shares files Form LLP (I) within 30 days of receipt; disinvestment or transfer of capital contribution or profit share between a resident and a non-resident is filed in Form LLP (II) within 60 days from receipt of funds, with the onus on the resident. The domestic custodian reports depository receipts in Form DRR within 30 days of the close of the issue. An investment vehicle issuing units to a non-resident files Form InVI within 30 days of the issue of units. An Indian start-up issuing convertible notes to a non-resident files Form CN within 30 days of the issue, and a resident transferor or transferee of such notes reports the transfer within 30 days.",
+      "source_id": "RBI_FEMA_395_2019",
+      "locator": "Regulation 4(5), (6), (7), (10) and (12)",
+      "regulatory_sensitive": true,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F004",
+      "statement": "Authorised Dealer Category I banks report to the Reserve Bank in Form LEC (FII) the purchase or transfer of equity instruments by foreign portfolio investors on Indian stock exchanges, and in Form LEC (IFI) the purchase or transfer of equity instruments by an individual resident outside India, including an NRI or OCI, on Indian stock exchanges. An Indian entity or investment vehicle making a downstream investment that counts as indirect foreign investment notifies the Secretariat for Industrial Assistance, DPIIT within 30 days of the investment and files Form DI with the Reserve Bank within 30 days of the allotment of equity instruments.",
+      "source_id": "RBI_FEMA_395_2019",
+      "locator": "Regulation 4(8), (9) and (11)",
+      "regulatory_sensitive": true,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F005",
+      "statement": "The courseware (S03 printed pp. 170-176) teaches the key concepts of foreign investment under the Non-Debt Instruments Rules: foreign direct investment as investment in equity instruments by a person resident outside India on a repatriable basis in an unlisted company, in a listed company at 10 per cent or more of fully diluted paid-up equity, or in an LLP; foreign portfolio investment below 10 per cent; downstream investment; sectoral caps; eligible investors, investees and instruments; prohibited sectors; rules for pledge of shares; and a table of transfer routes.",
+      "source_id": "S03",
+      "locator": "Printed pp. 170-176",
+      "regulatory_sensitive": true,
+      "evidence_status": "explicit"
+    }
+  ],
+  "drafts": [
+    {
+      "draft_id": "D001",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F001",
+        "F003"
+      ],
+      "payload": {
+        "title": "The investee company's forms: who files what, and when",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "**The company that receives foreign money files** (under the Mode of Payment and Reporting Regulations):\n\n| Form | What it reports | When |\n| --- | --- | --- |\n| **FC-GPR** | Issue of equity to a non-resident that counts as **FDI** | **Within 30 days** of the issue |\n| **ESOP** | Stock options to non-resident employees or directors | **Within 30 days** of the issue |\n| **LLP (I)** | An LLP receiving capital contribution or profit share consideration | **Within 30 days** of receiving the money |\n| **CN** | A start-up issuing **convertible notes** to a non-resident | **Within 30 days** of issue |\n| **InVI** | An **investment vehicle** issuing units to a non-resident | **Within 30 days** of the issue |\n| **FLA** | **Annual** return of foreign liabilities and assets, by a company that received FDI or an LLP that received capital contribution | By **15 July** each year (the year runs April to March) |\n\nThe **custodian** files **Form DRR** for depository receipts, **within 30 days of the close of the issue**.",
+        "self_check": {
+          "mode": "question",
+          "question_id": "D007"
+        }
+      }
+    },
+    {
+      "draft_id": "D002",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F002",
+        "F003"
+      ],
+      "payload": {
+        "title": "Transfers of shares between residents and non-residents: Form FC-TRS and LLP (II)",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "**Form FC-TRS** is filed when equity instruments move\n- between a **non-resident holding on a repatriable basis** and a **non-resident holding on a non-repatriable basis**, or\n- between a **non-resident holding on a repatriable basis** and a **resident**.\n\n**Who files**: the **resident** transferor or transferee, or the **non-resident holding on a non-repatriable basis**. A non-resident who **sells on a recognised stock exchange** reports it **himself**.\n\n**When**: within **60 days** of the transfer or of the **receipt or remittance of funds, whichever is earlier**. For **deferred payment**, report on receipt of **each tranche**.\n\n**Not reported**: a **sale** between a non-resident holding on a **non-repatriable** basis and a **resident**.\n\n**LLPs**: disinvestment or transfer of capital or profit share between a resident and a non-resident is reported in **Form LLP (II)** within **60 days** of receipt of funds, with the onus on the **resident**.",
+        "self_check": {
+          "mode": "question",
+          "question_id": "D008"
+        }
+      }
+    },
+    {
+      "draft_id": "D003",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "title": "What the banks and investing companies report",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "**Banks** (authorised dealers) report **purchases by foreign investors on Indian stock exchanges**:\n- **Form LEC (FII)**: purchases or transfers by **foreign portfolio investors**.\n- **Form LEC (IFI)**: purchases or transfers by an **individual resident outside India**, including **NRIs and OCIs**.\n\n**Downstream investment** (an Indian company that has foreign investment investing in another Indian entity, where it counts as **indirect foreign investment** for the investee):\n- **notify the Secretariat for Industrial Assistance, DPIIT** within **30 days** of the investment, and\n- file **Form DI** with the Reserve Bank within **30 days** of allotment.\n\nOne useful way to remember the timings: **30 days to report an issue or an allotment; 60 days to report a transfer; 15 July for the annual return.**",
+        "self_check": {
+          "mode": "question",
+          "question_id": "D009"
+        }
+      }
+    },
+    {
+      "draft_id": "D004",
+      "item_type": "card",
+      "variant": "worked_example",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ],
+      "payload": {
+        "title": "Counting the days for three filings",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "Illustrative case: an Indian company issues equity shares to a non-resident investor on 5 March 2026, and the issue counts as FDI. Separately, a resident sells shares to a non-resident holding on a repatriable basis: the shares are transferred on 20 January 2026 and the funds were received earlier, on 12 January 2026. What are the due dates for Form FC-GPR and Form FC-TRS, and when is Form FLA due for the year?",
+        "worked_steps": [
+          {
+            "step_number": 1,
+            "description": "Form FC-GPR is due not later than thirty days from the date of issue.",
+            "formula_or_substitution": "5 March 2026 + 30 days",
+            "intermediate_result": "4 April 2026"
+          },
+          {
+            "step_number": 2,
+            "description": "Form FC-TRS is due within sixty days of the transfer or of receipt of funds, whichever is earlier: here the funds came first.",
+            "formula_or_substitution": "12 January 2026 + 60 days",
+            "intermediate_result": "13 March 2026"
+          },
+          {
+            "step_number": 3,
+            "description": "Form FLA is due by 15 July each year; the company that received FDI in the year April 2026 to March 2027 or earlier years files it for that period.",
+            "formula_or_substitution": "15 July",
+            "intermediate_result": "15 July 2026"
+          }
+        ],
+        "final_answer_with_unit": "FC-GPR by 4 April 2026; FC-TRS by 13 March 2026; FLA by 15 July 2026",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "If the funds for the transfer had arrived after the share transfer, which date starts the 60 days?",
+          "expected_takeaway": "The transfer date, because the 60 days run from the transfer or the receipt of funds, whichever is earlier."
+        }
+      }
+    },
+    {
+      "draft_id": "D005",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F005"
+      ],
+      "payload": {
+        "title": "Foreign direct investment, portfolio investment and the sectors that are closed (held back)",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "The courseware teaches the key concepts of foreign investment. **FDI** is investment by a person resident outside India in equity instruments on a repatriable basis in an **unlisted company**, in a **listed company at 10% or more** of the paid-up equity on a fully diluted basis, or in an **LLP**. **Portfolio investment** is below 10% of a listed company. **Downstream investment** is investment by a foreign-owned or foreign-controlled Indian entity in another Indian entity. Sectors closed to foreign investment include **lottery business, gambling and betting (including casinos), chit funds, Nidhi companies, trading in transferable development rights, real estate business and farmhouse construction, manufacture of tobacco and substitutes**, and sectors not open to private investment such as **atomic energy and railways**.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "A non-resident buys 7% of a listed company on the stock exchange. Is this FDI or portfolio investment?",
+          "expected_takeaway": "Portfolio investment, since it is below 10% on a fully diluted basis."
+        }
+      }
+    },
+    {
+      "draft_id": "D006",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Within how many days of the issue of equity instruments to a non-resident, reckoned as FDI, must the Indian company file Form FC-GPR?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Sixty days",
+            "explanation_md": "That is the period for Form FC-TRS."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Thirty days",
+            "explanation_md": "This is the period."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Fifteen days",
+            "explanation_md": "No such period applies."
+          },
+          {
+            "option_id": "D",
+            "text_md": "By 15 July",
+            "explanation_md": "That is the date for Form FLA."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "Form FC-GPR must be filed not later than thirty days from the date of issue of the equity instruments."
+      }
+    },
+    {
+      "draft_id": "D007",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "By which date each year must an Indian company that has received FDI submit the annual return on foreign liabilities and assets (Form FLA)?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "31 March",
+            "explanation_md": "That is the end of the financial year."
+          },
+          {
+            "option_id": "B",
+            "text_md": "30 April",
+            "explanation_md": "That is not the due date."
+          },
+          {
+            "option_id": "C",
+            "text_md": "15 July",
+            "explanation_md": "This is the due date for Form FLA."
+          },
+          {
+            "option_id": "D",
+            "text_md": "31 December",
+            "explanation_md": "That is not the due date."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "Form FLA is due on or before the 15th day of July each year, the year being April to March."
+      }
+    },
+    {
+      "draft_id": "D008",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F002"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Within how many days must Form FC-TRS be filed for a transfer of equity instruments, and from when do they run?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Thirty days, from the date of transfer",
+            "explanation_md": "Thirty days applies to issues."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Sixty days, from the date of the board resolution",
+            "explanation_md": "The days run from the transfer or funds."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Ninety days, from the end of the quarter",
+            "explanation_md": "No such period applies."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Sixty days, from the transfer or the receipt or remittance of funds, whichever is earlier",
+            "explanation_md": "This is the rule."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "Form FC-TRS is filed within sixty days of transfer of the equity instruments or receipt or remittance of funds, whichever is earlier."
+      }
+    },
+    {
+      "draft_id": "D009",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F002"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "Which of these transfers is NOT required to be reported in Form FC-TRS?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "A sale between a non-resident holding on a non-repatriable basis and a resident",
+            "explanation_md": "The regulations say this sale is not reported in Form FC-TRS."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A sale by a non-resident on a recognised stock exchange",
+            "explanation_md": "This is reported by the non-resident."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A transfer between a repatriable non-resident holder and a resident",
+            "explanation_md": "This is reported."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A transfer between a repatriable non-resident holder and a non-repatriable non-resident holder",
+            "explanation_md": "This is reported."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "A sale between a non-resident holding on a non-repatriable basis and a person resident in India does not need to be reported in Form FC-TRS."
+      }
+    },
+    {
+      "draft_id": "D010",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F003"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Which form does an investment vehicle that has issued units to a non-resident file, and within how many days of the issue?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Form FC-GPR, within sixty days",
+            "explanation_md": "FC-GPR is for equity issues by companies."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Form DRR, within ninety days",
+            "explanation_md": "DRR is for depository receipts."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Form InVI, within thirty days",
+            "explanation_md": "This is the form and period."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Form LLP (II), within thirty days",
+            "explanation_md": "LLP (II) is for LLP transfers."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "An investment vehicle that has issued units to a person resident outside India files Form InVI within 30 days of the issue of units."
+      }
+    },
+    {
+      "draft_id": "D011",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F003"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Who files Form DRR for depository receipts, and when?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The investee company, by 15 July",
+            "explanation_md": "That describes Form FLA."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The domestic custodian, within 30 days of the close of the issue",
+            "explanation_md": "This is the rule."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The foreign depository, within 60 days",
+            "explanation_md": "The domestic custodian files."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The authorised dealer, daily",
+            "explanation_md": "The bank files LEC forms, not DRR."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "The domestic custodian reports the issue or transfer of depository receipts in Form DRR within 30 days of the close of the issue."
+      }
+    },
+    {
+      "draft_id": "D012",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Which form do authorised dealer banks file for an individual resident outside India, including an NRI or OCI, buying shares on an Indian stock exchange?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Form LEC (FII)",
+            "explanation_md": "This is for foreign portfolio investors."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Form FC-GPR",
+            "explanation_md": "This is filed by the issuing company."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Form DI",
+            "explanation_md": "This is for downstream investment."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Form LEC (IFI)",
+            "explanation_md": "This is the form for individual foreign investors."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "The designated authorised dealer banks report purchases and transfers by individuals resident outside India, including NRIs and OCIs, on stock exchanges in Form LEC (IFI)."
+      }
+    },
+    {
+      "draft_id": "D013",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A foreign-owned Indian company makes a downstream investment in another Indian entity that is indirect foreign investment for the investee. By when must it file Form DI with the Reserve Bank?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Within 60 days of the investment",
+            "explanation_md": "That is not the period."
+          },
+          {
+            "option_id": "B",
+            "text_md": "By 15 July",
+            "explanation_md": "That is for Form FLA."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Within 30 days of allotment of equity instruments",
+            "explanation_md": "This is the period."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Within 15 days of the investment",
+            "explanation_md": "No such period applies."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "Form DI is filed with the Reserve Bank within 30 days from the date of allotment of equity instruments; DPIIT is notified within 30 days of the investment."
+      }
+    },
+    {
+      "draft_id": "D014",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "An Indian company issues equity shares to a non-resident investor on 5 March 2026 (FDI). By what date must it file Form FC-GPR?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "5 April 2026",
+            "explanation_md": "That would be thirty-one days."
+          },
+          {
+            "option_id": "B",
+            "text_md": "4 April 2026",
+            "explanation_md": "Thirty days from 5 March is 4 April."
+          },
+          {
+            "option_id": "C",
+            "text_md": "3 May 2026",
+            "explanation_md": "That is sixty days."
+          },
+          {
+            "option_id": "D",
+            "text_md": "15 July 2026",
+            "explanation_md": "That is the Form FLA date."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "Thirty days from 5 March 2026 is 4 April 2026."
+      }
+    }
+  ],
+  "unresolved": [
+    "The Non-Debt Instruments Rules, 2019 (Ministry of Finance) and the Consolidated FDI Policy were not retrievable (DPIIT blocked access; RBI hosts the Mode of Payment and Reporting Regulations but not the Rules). The definitions of FDI and FPI, downstream investment, eligible investors, investees and instruments, prohibited sectors, the rules on pledge of shares and the transfer-route table (courseware printed pp. 170-176) are therefore not taught; the card and its self-check are drafted but held back.",
+    "The reporting forms and timelines are taught from the Mode of Payment and Reporting Regulations as amended up to 13 June 2026 (RBI page), which match the courseware table (printed p. 176) and were in force at the cut-off.",
+    "The June 2026 widening of Schedule III (all individuals resident outside India may invest in listed equity) is taught in batch BFM-A-U03-B004; RBI had a draft Foreign Investment Rules, 2026 out for comment until 31 August 2026, which is not law at the cut-off.",
+    "FIRMS portal workflow (entity master, business user, printed pp. 174-175) is a system procedure not checked against current RBI instructions and is not taught.",
+    "Reviewer for this batch is the authoring agent; no independent or human review."
+  ],
+  "next_batch_hint": "BFM Module B (Treasury and Investment Management): see the courseware contents; units begin around printed p. 180."
+}
