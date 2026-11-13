@@ -1,0 +1,1277 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BFM-A-U06-B004",
+    "paper_id": "BFM",
+    "unit_label": "Module A: External Commercial Borrowings - receipt of proceeds, reporting and conversion",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S03",
+      "RBI_FEMA_3R_2026A"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "statement": "A borrower draws down an external commercial borrowing (ECB) only after obtaining a Loan Registration Number (LRN) from the Reserve Bank through its designated authorised dealer Category I bank. Proceeds meant for a permitted rupee expenditure in India are credited to a rupee account with the designated bank by the end of the month following receipt, and may sit in an unencumbered fixed deposit of up to one year with that bank until used. Proceeds meant for a permitted foreign currency expenditure may be credited to a foreign currency account with the designated bank in India or to one outside India.",
+        "source_id": "RBI_FEMA_3R_2026A",
+        "locator": "Regulation 10 of the ECB schedule",
+        "regulatory_sensitive": true,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "F002",
+        "statement": "Reporting runs through the designated authorised dealer: Form ECB 1 gives the details of the borrowing and obtains the LRN; a Revised Form ECB 1 reports any change in previously reported parameters within seven calendar days from the end of the month in which the change took effect; Form ECB 2 reports receipt of proceeds and debt servicing within seven calendar days from the end of the month in which the proceeds were received or servicing was done, and any event that alters the outstanding under an LRN is reported in it. Late reporting is regularised by paying a late submission fee after completing the report. The designated bank may seek cancellation of an LRN at the borrower's request if no drawdown has happened. A borrower with an active LRN is treated as untraceable if it files no return for four consecutive quarters and the bank is satisfied that neither the borrower nor its auditors, directors or promoters respond despite documented attempts and that it is not operating at its registered office.",
+        "source_id": "RBI_FEMA_3R_2026A",
+        "locator": "Regulation 16",
+        "regulatory_sensitive": true,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "F003",
+        "statement": "An ECB, including one matured but unpaid, may be converted into a non-debt instrument subject to the Non-Debt Instruments Rules, 2019, on these conditions: no additional cost is payable to the lender for the conversion; the lender consents; the consent of other lenders is available or at least information about the conversion is exchanged with them. Prudential rules, including those on restructuring, apply if the borrower has taken credit from an entity regulated by the Reserve Bank. The liability eligible for conversion is fixed at the exchange rate on the date of the conversion agreement, or at a rate that gives a liability no higher than that rate gives. The minimum average maturity period need not be met for conversion of an ECB (including FCCB and FCEB) into non-debt instruments, for repayment of an ECB from proceeds of non-debt instruments issued on a repatriation basis and received after the drawdown, for refinance, for waiver of debt by the lender, or for repayment needed for corporate actions such as merger or liquidation.",
+        "source_id": "RBI_FEMA_3R_2026A",
+        "locator": "Regulations 6(4) and 13",
+        "regulatory_sensitive": true,
+        "evidence_status": "explicit"
+      }
+    ],
+    "drafts": [
+      {
+        "draft_id": "D001",
+        "item_type": "card",
+        "variant": "concept",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "title": "Drawing down an ECB: the loan number and where the money goes",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "**Before any money comes in**: the borrower gets a **Loan Registration Number (LRN)** from the **Reserve Bank**, through its **designated AD Category I bank** (the bank it has chosen to report and monitor the loan). **No LRN, no drawdown.**\n\n**Where the proceeds land**\n- For a **permitted rupee spend in India**: credit them to a **rupee account with the designated bank** by the **end of the next month**. Until used, they may be held in an **unencumbered fixed deposit of up to one year** with that bank.\n- For a **permitted foreign currency spend**: a **foreign currency account** with the designated bank in India, **or** one **outside India**.",
+          "self_check": {
+            "mode": "question",
+            "question_id": "D005"
+          }
+        }
+      },
+      {
+        "draft_id": "D002",
+        "item_type": "card",
+        "variant": "concept",
+        "fact_ids": [
+          "F002"
+        ],
+        "payload": {
+          "title": "The ECB forms and their deadlines",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "| Form | Reports | When |\n| --- | --- | --- |\n| **ECB 1** | the loan's details, to **obtain the LRN** | **before drawdown** |\n| **Revised ECB 1** | **any change** in what was reported | **within 7 calendar days from the end of the month** in which the change took effect |\n| **ECB 2** | **receipt of proceeds** and **debt servicing**; any event that **changes the outstanding** | **within 7 calendar days from the end of the month** of the receipt or servicing |\n\n**Late?** Finish the report, then pay the **late submission fee**.\n\n**LRN cancelled** only on the borrower's request and only if **no drawdown** has occurred.\n\n**Untraceable borrower**: an active LRN holder who files **no return for four consecutive quarters**, where the bank has **documented repeated failed attempts** to reach the borrower, its **auditors, directors or promoters**, and finds it **not operating at its registered office**.",
+          "self_check": {
+            "mode": "question",
+            "question_id": "D007"
+          }
+        }
+      },
+      {
+        "draft_id": "D003",
+        "item_type": "card",
+        "variant": "concept",
+        "fact_ids": [
+          "F003"
+        ],
+        "payload": {
+          "title": "Turning an ECB into shares",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "An ECB, **even one that has matured but not been paid**, can be **converted into a non-debt instrument** (for example equity), under the **Non-Debt Instruments Rules**.\n\n**Conditions**\n- **No extra cost** to the lender for enabling the conversion.\n- The **lender consents**.\n- **Other lenders** consent, or are at least **informed**.\n- If the borrower also borrows from an **RBI-regulated entity**, **prudential rules (including restructuring)** apply.\n\n**How much converts**: the liability is fixed at the **exchange rate on the date of the conversion agreement**, or any rate that gives a figure **no higher** than that.\n\n**Minimum average maturity (MAMP) need not be met** for: conversion to non-debt instruments; repayment from **repatriable equity proceeds received after the drawdown**; **refinance**; **waiver of debt by the lender**; repayment required for **corporate actions** such as merger, demerger or liquidation.",
+          "self_check": {
+            "mode": "question",
+            "question_id": "D009"
+          }
+        }
+      },
+      {
+        "draft_id": "D004",
+        "item_type": "card",
+        "variant": "worked_example",
+        "fact_ids": [
+          "F003"
+        ],
+        "payload": {
+          "title": "How many shares does a converted ECB buy?",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "Illustrative case: an Indian company owes USD 2,400,000 on an ECB. Lender and company agree to convert the whole amount into equity shares issued at ₹1,200 each. On the agreement date the rate is ₹84.50 per USD. How much rupee liability converts and how many shares are issued?",
+          "worked_steps": [
+            {
+              "step_number": 1,
+              "description": "Convert the dollar liability at the rate on the agreement date.",
+              "formula_or_substitution": "2,400,000 × 84.50",
+              "intermediate_result": "₹20,28,00,000"
+            },
+            {
+              "step_number": 2,
+              "description": "Divide by the issue price per share.",
+              "formula_or_substitution": "20,28,00,000 ÷ 1,200",
+              "intermediate_result": "1,69,000 shares"
+            }
+          ],
+          "final_answer_with_unit": "₹20,28,00,000 of liability converts into 1,69,000 shares",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "If the rate had been ₹86.00 on the day payment was due but the agreement was signed at ₹84.50, which rate governs?",
+            "expected_takeaway": "The rate on the date of the conversion agreement (or any rate giving no higher liability), so ₹84.50."
+          }
+        }
+      },
+      {
+        "draft_id": "D005",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A company wants to draw down an ECB. When must it have obtained the Loan Registration Number?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Within seven days after the drawdown",
+              "explanation_md": "It must come first."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Before the drawdown, through its designated authorised dealer bank",
+              "explanation_md": "The LRN is a precondition."
+            },
+            {
+              "option_id": "C",
+              "text_md": "At the end of the financial year",
+              "explanation_md": "Not the rule."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Only if the loan exceeds USD 50 million",
+              "explanation_md": "It applies to every ECB."
+            }
+          ],
+          "correct_option_id": "B",
+          "correct_explanation_md": "An eligible borrower shall draw down ECB only after obtaining the Loan Registration Number from the Reserve Bank through the designated bank."
+        }
+      },
+      {
+        "draft_id": "D006",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "ECB proceeds meant for a permitted rupee expenditure are received. What must the borrower do?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Keep them in a foreign bank indefinitely",
+              "explanation_md": "Rupee spending needs a rupee account."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Convert them within a year",
+              "explanation_md": "Not the rule."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Credit them to a rupee account with the designated bank by the end of the following month",
+              "explanation_md": "This is the rule."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Hold them with any bank of choice at any time",
+              "explanation_md": "The designated bank is specified."
+            }
+          ],
+          "correct_option_id": "C",
+          "correct_explanation_md": "Proceeds meant for rupee expenditure must be credited to a rupee account with the designated AD Category I bank by the end of the succeeding month."
+        }
+      },
+      {
+        "draft_id": "D007",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F002"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A borrower receives ECB proceeds on 12 March. By when must Form ECB 2 reach the designated bank?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "19 March, seven days after receipt",
+              "explanation_md": "The count begins at the end of the month."
+            },
+            {
+              "option_id": "B",
+              "text_md": "30 April",
+              "explanation_md": "Not the deadline."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Before the end of March",
+              "explanation_md": "Not required to be earlier."
+            },
+            {
+              "option_id": "D",
+              "text_md": "7 April, being seven calendar days from the end of March",
+              "explanation_md": "Seven days from the end of the month of receipt."
+            }
+          ],
+          "correct_option_id": "D",
+          "correct_explanation_md": "Form ECB 2 is due within seven calendar days from the end of the month in which the proceeds were received, which is 7 April."
+        }
+      },
+      {
+        "draft_id": "D008",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F002"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "An ECB borrower with an active LRN files no return for four consecutive quarters. When is it treated as untraceable?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "When the bank also finds that neither the borrower nor its auditors, directors or promoters respond despite documented attempts and that it does not operate at its registered office",
+              "explanation_md": "Both conditions must hold."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Automatically after four quarters, whatever the bank finds",
+              "explanation_md": "The bank must be satisfied on the further conditions."
+            },
+            {
+              "option_id": "C",
+              "text_md": "After one missed quarter",
+              "explanation_md": "Four quarters are needed."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Only when the Reserve Bank inspects",
+              "explanation_md": "No such inspection is required."
+            }
+          ],
+          "correct_option_id": "A",
+          "correct_explanation_md": "Four consecutive quarters of no returns is only the first condition; the bank must also be satisfied about non-response and non-operation at the registered office."
+        }
+      },
+      {
+        "draft_id": "D009",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F003"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Which is a condition for converting an ECB into equity?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The Reserve Bank must approve every conversion in advance",
+              "explanation_md": "The framework sets conditions, not approval of each case."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The borrower must first repay a third of the loan",
+              "explanation_md": "Not a condition."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The lender consents and no additional cost is payable to the lender for the conversion",
+              "explanation_md": "These are conditions."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Only unmatured ECBs can be converted",
+              "explanation_md": "Matured but unpaid ECBs can also be converted."
+            }
+          ],
+          "correct_option_id": "C",
+          "correct_explanation_md": "The lender's consent, no extra cost to the lender, and the consent of other lenders (or at least information to them) are conditions."
+        }
+      },
+      {
+        "draft_id": "D010",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F003"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "Which situation is exempt from the minimum average maturity period for ECB?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Repayment of an ECB because the lender asked for early cash",
+              "explanation_md": "Not an exemption."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Repayment of ECB using proceeds of equity received on a repatriation basis after the drawdown",
+              "explanation_md": "This is an exemption."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Any ECB under USD 10 million",
+              "explanation_md": "Not an exemption."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Repayment out of the borrower's current account",
+              "explanation_md": "Not an exemption."
+            }
+          ],
+          "correct_option_id": "B",
+          "correct_explanation_md": "The MAMP is not required for repayment of ECB using proceeds of non-debt instruments issued on a repatriation basis, provided the proceeds are received after drawdown."
+        }
+      },
+      {
+        "draft_id": "D011",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F003"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "At which exchange rate is the ECB liability eligible for conversion into equity determined?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The rate on the date of drawdown",
+              "explanation_md": "Not the rule."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The rate on the last day of the financial year",
+              "explanation_md": "Not the rule."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The Reserve Bank's rate on the date the shares are listed",
+              "explanation_md": "Not the rule."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The rate on the date of the conversion agreement, or any rate giving a liability no higher than that",
+              "explanation_md": "This is the rule."
+            }
+          ],
+          "correct_option_id": "D",
+          "correct_explanation_md": "The liability is determined by the exchange rate on the date of the conversion agreement, or a rate that does not give a higher liability."
+        }
+      },
+      {
+        "draft_id": "D012",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F003"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "An Indian company owes USD 1,800,000 on an ECB that it converts into equity at ₹950 per share, at an agreement-date rate of ₹83.20 per USD. How many whole shares are issued?",
+          "numeric_rule": {
+            "expected_answer": "157642",
+            "unit_label": "shares",
+            "precision_decimals": 0,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Give a whole number.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "Liability in rupees = 1,800,000 × 83.20 = ₹14,97,60,000. Divided by ₹950 = 157,642.1, so 157,642 whole shares (the balance is a fraction of a share).",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "Rupee liability",
+              "formula_or_substitution": "1,800,000 × 83.20",
+              "intermediate_result": "₹14,97,60,000"
+            },
+            {
+              "step_number": 2,
+              "description": "Shares at ₹950",
+              "formula_or_substitution": "14,97,60,000 ÷ 950",
+              "intermediate_result": "157,642.1"
+            },
+            {
+              "step_number": 3,
+              "description": "Whole shares",
+              "formula_or_substitution": "round down",
+              "intermediate_result": "157,642"
+            }
+          ]
+        }
+      }
+    ],
+    "unresolved": [
+      "The text is the Reserve Bank notification of 9 February 2026 (FEMA 3(R)(5)/2026-RB). Earlier versions and the Master Direction on External Commercial Borrowings, Trade Credits and Structured Obligations, which gives the procedure in detail, were not retrieved.",
+      "The courseware describes the earlier ECB framework (tracks and all-in-cost ceilings); the 2026 framework differs and the differences are not taught as an exam point.",
+      "Late submission fee amounts and the Form ECB formats were not examined.",
+      "Reviewer for this batch is the authoring agent; no independent or human review."
+    ],
+    "next_batch_hint": "Travel foreign exchange limits and overseas investment (unit 2)."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BFM-A-U06-B004",
+    "paper_id": "BFM",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 8, Compulsory Paper II, Module A: International Banking, External Commercial Borrowings and Foreign Investments in India"
+    },
+    "sources": [
+      {
+        "source_id": "S03",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "RBI_FEMA_3R_2026A",
+        "authority": "Reserve Bank of India",
+        "title": "Foreign Exchange Management (Borrowing and Lending) (Amendment) Regulations, 2026",
+        "url": "https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=13306&Mode=0",
+        "publication_date": "2026-02-09",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BFM::MOD_A::U06",
+        "objective_ids": [
+          "BFM::MOD_A::U06::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BFM::MOD_A::U06",
+        "objective_ids": [
+          "BFM::MOD_A::U06::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BFM::MOD_A::U06",
+        "objective_ids": [
+          "BFM::MOD_A::U06::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BFM::MOD_A::U06",
+        "objective_ids": [
+          "BFM::MOD_A::U06::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "unit_id": "BFM::MOD_A::U06",
+        "objective_ids": [
+          "BFM::MOD_A::U06::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D006",
+        "unit_id": "BFM::MOD_A::U06",
+        "objective_ids": [
+          "BFM::MOD_A::U06::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D007",
+        "unit_id": "BFM::MOD_A::U06",
+        "objective_ids": [
+          "BFM::MOD_A::U06::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D008",
+        "unit_id": "BFM::MOD_A::U06",
+        "objective_ids": [
+          "BFM::MOD_A::U06::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D009",
+        "unit_id": "BFM::MOD_A::U06",
+        "objective_ids": [
+          "BFM::MOD_A::U06::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D010",
+        "unit_id": "BFM::MOD_A::U06",
+        "objective_ids": [
+          "BFM::MOD_A::U06::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D011",
+        "unit_id": "BFM::MOD_A::U06",
+        "objective_ids": [
+          "BFM::MOD_A::U06::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D012",
+        "unit_id": "BFM::MOD_A::U06",
+        "objective_ids": [
+          "BFM::MOD_A::U06::LO_04"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BFM-A-U06-B004",
+      "draft_id": "D001",
+      "item_id": "item_0d44a7a8e350c8e816759a53e485295dbc638a9e1b53c7c96663805f143d4020"
+    },
+    {
+      "batch_id": "BFM-A-U06-B004",
+      "draft_id": "D002",
+      "item_id": "item_86e1b76929ef3985a6740deeb18f485ee752f87776f11a7624e0d453a3b0f18f"
+    },
+    {
+      "batch_id": "BFM-A-U06-B004",
+      "draft_id": "D003",
+      "item_id": "item_3b82da0e498415b6913942197ae86839c41ca749e684f23b7716c8222c3bf0ef"
+    },
+    {
+      "batch_id": "BFM-A-U06-B004",
+      "draft_id": "D004",
+      "item_id": "item_f561df85c1882488a5e53fe6f2d207fc4385b789091d4595ac75f931ccf895ff"
+    },
+    {
+      "batch_id": "BFM-A-U06-B004",
+      "draft_id": "D005",
+      "item_id": "item_21a6957175e9a736a284374d359594e5c211ceeaf82b94320945e762b7fe5d7d"
+    },
+    {
+      "batch_id": "BFM-A-U06-B004",
+      "draft_id": "D006",
+      "item_id": "item_f92739eac7729056081a8bc23c95f4c9765f72ffed9d124640ec8c870658ac61"
+    },
+    {
+      "batch_id": "BFM-A-U06-B004",
+      "draft_id": "D007",
+      "item_id": "item_99ac8dcfa1182be868045abd643cbd6f8e9faa73b86c40fd4641ae67a0d95373"
+    },
+    {
+      "batch_id": "BFM-A-U06-B004",
+      "draft_id": "D008",
+      "item_id": "item_087d0471aa51960f201fcfedf0895347ab75cc0b4ac2ddb9aa1bc431093438d0"
+    },
+    {
+      "batch_id": "BFM-A-U06-B004",
+      "draft_id": "D009",
+      "item_id": "item_73993a68a413dd1e3b8cfdb2b61c90993ad4020ad0fb8d2fefe694f09da076d6"
+    },
+    {
+      "batch_id": "BFM-A-U06-B004",
+      "draft_id": "D010",
+      "item_id": "item_9e269719fe1decb01833b7d89715895b2b3472fbbc375490e25fe832237df9fb"
+    },
+    {
+      "batch_id": "BFM-A-U06-B004",
+      "draft_id": "D011",
+      "item_id": "item_24e7837201dc0b07a4842eb4b1e2ea2c50ff8dae6dd3a1ab91e930d8951ee143"
+    },
+    {
+      "batch_id": "BFM-A-U06-B004",
+      "draft_id": "D012",
+      "item_id": "item_d00b27a78e6e66e456d49174cdead8d1424dfc416774484a8c701e5e18698e8e"
+    }
+  ],
+  "items": [
+    {
+      "title": "Drawing down an ECB: the loan number and where the money goes",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "**Before any money comes in**: the borrower gets a **Loan Registration Number (LRN)** from the **Reserve Bank**, through its **designated AD Category I bank** (the bank it has chosen to report and monitor the loan). **No LRN, no drawdown.**\n\n**Where the proceeds land**\n- For a **permitted rupee spend in India**: credit them to a **rupee account with the designated bank** by the **end of the next month**. Until used, they may be held in an **unencumbered fixed deposit of up to one year** with that bank.\n- For a **permitted foreign currency spend**: a **foreign currency account** with the designated bank in India, **or** one **outside India**.",
+      "self_check": {
+        "mode": "question",
+        "question_id": "item_21a6957175e9a736a284374d359594e5c211ceeaf82b94320945e762b7fe5d7d"
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_0d44a7a8e350c8e816759a53e485295dbc638a9e1b53c7c96663805f143d4020",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U06",
+      "objective_ids": [
+        "BFM::MOD_A::U06::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "RBI_FEMA_3R_2026A",
+          "authority": "Reserve Bank of India",
+          "title": "Foreign Exchange Management (Borrowing and Lending) (Amendment) Regulations, 2026",
+          "url": "https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=13306&Mode=0",
+          "publication_date": "2026-02-09",
+          "effective_date": null,
+          "locator": "Regulation 10 of the ECB schedule"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "The ECB forms and their deadlines",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "| Form | Reports | When |\n| --- | --- | --- |\n| **ECB 1** | the loan's details, to **obtain the LRN** | **before drawdown** |\n| **Revised ECB 1** | **any change** in what was reported | **within 7 calendar days from the end of the month** in which the change took effect |\n| **ECB 2** | **receipt of proceeds** and **debt servicing**; any event that **changes the outstanding** | **within 7 calendar days from the end of the month** of the receipt or servicing |\n\n**Late?** Finish the report, then pay the **late submission fee**.\n\n**LRN cancelled** only on the borrower's request and only if **no drawdown** has occurred.\n\n**Untraceable borrower**: an active LRN holder who files **no return for four consecutive quarters**, where the bank has **documented repeated failed attempts** to reach the borrower, its **auditors, directors or promoters**, and finds it **not operating at its registered office**.",
+      "self_check": {
+        "mode": "question",
+        "question_id": "item_99ac8dcfa1182be868045abd643cbd6f8e9faa73b86c40fd4641ae67a0d95373"
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_86e1b76929ef3985a6740deeb18f485ee752f87776f11a7624e0d453a3b0f18f",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U06",
+      "objective_ids": [
+        "BFM::MOD_A::U06::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "RBI_FEMA_3R_2026A",
+          "authority": "Reserve Bank of India",
+          "title": "Foreign Exchange Management (Borrowing and Lending) (Amendment) Regulations, 2026",
+          "url": "https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=13306&Mode=0",
+          "publication_date": "2026-02-09",
+          "effective_date": null,
+          "locator": "Regulation 16"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Turning an ECB into shares",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "An ECB, **even one that has matured but not been paid**, can be **converted into a non-debt instrument** (for example equity), under the **Non-Debt Instruments Rules**.\n\n**Conditions**\n- **No extra cost** to the lender for enabling the conversion.\n- The **lender consents**.\n- **Other lenders** consent, or are at least **informed**.\n- If the borrower also borrows from an **RBI-regulated entity**, **prudential rules (including restructuring)** apply.\n\n**How much converts**: the liability is fixed at the **exchange rate on the date of the conversion agreement**, or any rate that gives a figure **no higher** than that.\n\n**Minimum average maturity (MAMP) need not be met** for: conversion to non-debt instruments; repayment from **repatriable equity proceeds received after the drawdown**; **refinance**; **waiver of debt by the lender**; repayment required for **corporate actions** such as merger, demerger or liquidation.",
+      "self_check": {
+        "mode": "question",
+        "question_id": "item_73993a68a413dd1e3b8cfdb2b61c90993ad4020ad0fb8d2fefe694f09da076d6"
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_3b82da0e498415b6913942197ae86839c41ca749e684f23b7716c8222c3bf0ef",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U06",
+      "objective_ids": [
+        "BFM::MOD_A::U06::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "RBI_FEMA_3R_2026A",
+          "authority": "Reserve Bank of India",
+          "title": "Foreign Exchange Management (Borrowing and Lending) (Amendment) Regulations, 2026",
+          "url": "https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=13306&Mode=0",
+          "publication_date": "2026-02-09",
+          "effective_date": null,
+          "locator": "Regulations 6(4) and 13"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "How many shares does a converted ECB buy?",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "Illustrative case: an Indian company owes USD 2,400,000 on an ECB. Lender and company agree to convert the whole amount into equity shares issued at ₹1,200 each. On the agreement date the rate is ₹84.50 per USD. How much rupee liability converts and how many shares are issued?",
+      "worked_steps": [
+        {
+          "step_number": 1,
+          "description": "Convert the dollar liability at the rate on the agreement date.",
+          "formula_or_substitution": "2,400,000 × 84.50",
+          "intermediate_result": "₹20,28,00,000"
+        },
+        {
+          "step_number": 2,
+          "description": "Divide by the issue price per share.",
+          "formula_or_substitution": "20,28,00,000 ÷ 1,200",
+          "intermediate_result": "1,69,000 shares"
+        }
+      ],
+      "final_answer_with_unit": "₹20,28,00,000 of liability converts into 1,69,000 shares",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "If the rate had been ₹86.00 on the day payment was due but the agreement was signed at ₹84.50, which rate governs?",
+        "expected_takeaway": "The rate on the date of the conversion agreement (or any rate giving no higher liability), so ₹84.50."
+      },
+      "item_type": "card",
+      "card_type": "worked_example",
+      "id": "item_f561df85c1882488a5e53fe6f2d207fc4385b789091d4595ac75f931ccf895ff",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U06",
+      "objective_ids": [
+        "BFM::MOD_A::U06::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "RBI_FEMA_3R_2026A",
+          "authority": "Reserve Bank of India",
+          "title": "Foreign Exchange Management (Borrowing and Lending) (Amendment) Regulations, 2026",
+          "url": "https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=13306&Mode=0",
+          "publication_date": "2026-02-09",
+          "effective_date": null,
+          "locator": "Regulations 6(4) and 13"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A company wants to draw down an ECB. When must it have obtained the Loan Registration Number?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Within seven days after the drawdown",
+          "explanation_md": "It must come first."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Before the drawdown, through its designated authorised dealer bank",
+          "explanation_md": "The LRN is a precondition."
+        },
+        {
+          "option_id": "C",
+          "text_md": "At the end of the financial year",
+          "explanation_md": "Not the rule."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Only if the loan exceeds USD 50 million",
+          "explanation_md": "It applies to every ECB."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_explanation_md": "An eligible borrower shall draw down ECB only after obtaining the Loan Registration Number from the Reserve Bank through the designated bank.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_21a6957175e9a736a284374d359594e5c211ceeaf82b94320945e762b7fe5d7d",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U06",
+      "objective_ids": [
+        "BFM::MOD_A::U06::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "RBI_FEMA_3R_2026A",
+          "authority": "Reserve Bank of India",
+          "title": "Foreign Exchange Management (Borrowing and Lending) (Amendment) Regulations, 2026",
+          "url": "https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=13306&Mode=0",
+          "publication_date": "2026-02-09",
+          "effective_date": null,
+          "locator": "Regulation 10 of the ECB schedule"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "ECB proceeds meant for a permitted rupee expenditure are received. What must the borrower do?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Keep them in a foreign bank indefinitely",
+          "explanation_md": "Rupee spending needs a rupee account."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Convert them within a year",
+          "explanation_md": "Not the rule."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Credit them to a rupee account with the designated bank by the end of the following month",
+          "explanation_md": "This is the rule."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Hold them with any bank of choice at any time",
+          "explanation_md": "The designated bank is specified."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_explanation_md": "Proceeds meant for rupee expenditure must be credited to a rupee account with the designated AD Category I bank by the end of the succeeding month.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_f92739eac7729056081a8bc23c95f4c9765f72ffed9d124640ec8c870658ac61",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U06",
+      "objective_ids": [
+        "BFM::MOD_A::U06::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "RBI_FEMA_3R_2026A",
+          "authority": "Reserve Bank of India",
+          "title": "Foreign Exchange Management (Borrowing and Lending) (Amendment) Regulations, 2026",
+          "url": "https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=13306&Mode=0",
+          "publication_date": "2026-02-09",
+          "effective_date": null,
+          "locator": "Regulation 10 of the ECB schedule"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A borrower receives ECB proceeds on 12 March. By when must Form ECB 2 reach the designated bank?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "19 March, seven days after receipt",
+          "explanation_md": "The count begins at the end of the month."
+        },
+        {
+          "option_id": "B",
+          "text_md": "30 April",
+          "explanation_md": "Not the deadline."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Before the end of March",
+          "explanation_md": "Not required to be earlier."
+        },
+        {
+          "option_id": "D",
+          "text_md": "7 April, being seven calendar days from the end of March",
+          "explanation_md": "Seven days from the end of the month of receipt."
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_explanation_md": "Form ECB 2 is due within seven calendar days from the end of the month in which the proceeds were received, which is 7 April.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_99ac8dcfa1182be868045abd643cbd6f8e9faa73b86c40fd4641ae67a0d95373",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U06",
+      "objective_ids": [
+        "BFM::MOD_A::U06::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "RBI_FEMA_3R_2026A",
+          "authority": "Reserve Bank of India",
+          "title": "Foreign Exchange Management (Borrowing and Lending) (Amendment) Regulations, 2026",
+          "url": "https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=13306&Mode=0",
+          "publication_date": "2026-02-09",
+          "effective_date": null,
+          "locator": "Regulation 16"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "An ECB borrower with an active LRN files no return for four consecutive quarters. When is it treated as untraceable?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "When the bank also finds that neither the borrower nor its auditors, directors or promoters respond despite documented attempts and that it does not operate at its registered office",
+          "explanation_md": "Both conditions must hold."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Automatically after four quarters, whatever the bank finds",
+          "explanation_md": "The bank must be satisfied on the further conditions."
+        },
+        {
+          "option_id": "C",
+          "text_md": "After one missed quarter",
+          "explanation_md": "Four quarters are needed."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Only when the Reserve Bank inspects",
+          "explanation_md": "No such inspection is required."
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_explanation_md": "Four consecutive quarters of no returns is only the first condition; the bank must also be satisfied about non-response and non-operation at the registered office.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_087d0471aa51960f201fcfedf0895347ab75cc0b4ac2ddb9aa1bc431093438d0",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U06",
+      "objective_ids": [
+        "BFM::MOD_A::U06::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "RBI_FEMA_3R_2026A",
+          "authority": "Reserve Bank of India",
+          "title": "Foreign Exchange Management (Borrowing and Lending) (Amendment) Regulations, 2026",
+          "url": "https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=13306&Mode=0",
+          "publication_date": "2026-02-09",
+          "effective_date": null,
+          "locator": "Regulation 16"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Which is a condition for converting an ECB into equity?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The Reserve Bank must approve every conversion in advance",
+          "explanation_md": "The framework sets conditions, not approval of each case."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The borrower must first repay a third of the loan",
+          "explanation_md": "Not a condition."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The lender consents and no additional cost is payable to the lender for the conversion",
+          "explanation_md": "These are conditions."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Only unmatured ECBs can be converted",
+          "explanation_md": "Matured but unpaid ECBs can also be converted."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_explanation_md": "The lender's consent, no extra cost to the lender, and the consent of other lenders (or at least information to them) are conditions.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_73993a68a413dd1e3b8cfdb2b61c90993ad4020ad0fb8d2fefe694f09da076d6",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U06",
+      "objective_ids": [
+        "BFM::MOD_A::U06::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "RBI_FEMA_3R_2026A",
+          "authority": "Reserve Bank of India",
+          "title": "Foreign Exchange Management (Borrowing and Lending) (Amendment) Regulations, 2026",
+          "url": "https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=13306&Mode=0",
+          "publication_date": "2026-02-09",
+          "effective_date": null,
+          "locator": "Regulations 6(4) and 13"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "Which situation is exempt from the minimum average maturity period for ECB?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Repayment of an ECB because the lender asked for early cash",
+          "explanation_md": "Not an exemption."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Repayment of ECB using proceeds of equity received on a repatriation basis after the drawdown",
+          "explanation_md": "This is an exemption."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Any ECB under USD 10 million",
+          "explanation_md": "Not an exemption."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Repayment out of the borrower's current account",
+          "explanation_md": "Not an exemption."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_explanation_md": "The MAMP is not required for repayment of ECB using proceeds of non-debt instruments issued on a repatriation basis, provided the proceeds are received after drawdown.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_9e269719fe1decb01833b7d89715895b2b3472fbbc375490e25fe832237df9fb",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U06",
+      "objective_ids": [
+        "BFM::MOD_A::U06::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "RBI_FEMA_3R_2026A",
+          "authority": "Reserve Bank of India",
+          "title": "Foreign Exchange Management (Borrowing and Lending) (Amendment) Regulations, 2026",
+          "url": "https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=13306&Mode=0",
+          "publication_date": "2026-02-09",
+          "effective_date": null,
+          "locator": "Regulations 6(4) and 13"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "At which exchange rate is the ECB liability eligible for conversion into equity determined?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The rate on the date of drawdown",
+          "explanation_md": "Not the rule."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The rate on the last day of the financial year",
+          "explanation_md": "Not the rule."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The Reserve Bank's rate on the date the shares are listed",
+          "explanation_md": "Not the rule."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The rate on the date of the conversion agreement, or any rate giving a liability no higher than that",
+          "explanation_md": "This is the rule."
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_explanation_md": "The liability is determined by the exchange rate on the date of the conversion agreement, or a rate that does not give a higher liability.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_24e7837201dc0b07a4842eb4b1e2ea2c50ff8dae6dd3a1ab91e930d8951ee143",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U06",
+      "objective_ids": [
+        "BFM::MOD_A::U06::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "RBI_FEMA_3R_2026A",
+          "authority": "Reserve Bank of India",
+          "title": "Foreign Exchange Management (Borrowing and Lending) (Amendment) Regulations, 2026",
+          "url": "https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=13306&Mode=0",
+          "publication_date": "2026-02-09",
+          "effective_date": null,
+          "locator": "Regulations 6(4) and 13"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "An Indian company owes USD 1,800,000 on an ECB that it converts into equity at ₹950 per share, at an agreement-date rate of ₹83.20 per USD. How many whole shares are issued?",
+      "numeric_rule": {
+        "expected_answer": "157642",
+        "unit_label": "shares",
+        "precision_decimals": 0,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Give a whole number.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "Liability in rupees = 1,800,000 × 83.20 = ₹14,97,60,000. Divided by ₹950 = 157,642.1, so 157,642 whole shares (the balance is a fraction of a share).",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "Rupee liability",
+          "formula_or_substitution": "1,800,000 × 83.20",
+          "intermediate_result": "₹14,97,60,000"
+        },
+        {
+          "step_number": 2,
+          "description": "Shares at ₹950",
+          "formula_or_substitution": "14,97,60,000 ÷ 950",
+          "intermediate_result": "157,642.1"
+        },
+        {
+          "step_number": 3,
+          "description": "Whole shares",
+          "formula_or_substitution": "round down",
+          "intermediate_result": "157,642"
+        }
+      ],
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_d00b27a78e6e66e456d49174cdead8d1424dfc416774484a8c701e5e18698e8e",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U06",
+      "objective_ids": [
+        "BFM::MOD_A::U06::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "RBI_FEMA_3R_2026A",
+          "authority": "Reserve Bank of India",
+          "title": "Foreign Exchange Management (Borrowing and Lending) (Amendment) Regulations, 2026",
+          "url": "https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=13306&Mode=0",
+          "publication_date": "2026-02-09",
+          "effective_date": null,
+          "locator": "Regulations 6(4) and 13"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}
