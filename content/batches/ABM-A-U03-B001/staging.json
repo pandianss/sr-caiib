@@ -1,0 +1,2020 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "ABM-A-U03-B001",
+  "paper_id": "ABM",
+  "unit_label": "Module A unit 3: Measures of Central Tendency and Dispersion, Skewness, Kurtosis",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S01"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "statement": "Measures of central tendency (averages) condense data into a single value and make comparison between data sets possible. A good measure is rigidly defined, simple to understand and calculate, based on all the observations, capable of further mathematical treatment, least affected by sampling fluctuations, not unduly affected by extreme values and easy to interpret. The three kinds of average are the mean (arithmetic, geometric, harmonic), the median and the mode.",
+      "source_id": "S01",
+      "locator": "Printed p. 47, sections 3.1",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F002",
+      "statement": "The arithmetic mean of raw data is the sum of the observations divided by their number; for grouped data it is the sum of frequency times value divided by the total frequency, using class marks for class intervals. The combined mean of two groups of sizes n1 and n2 with means m1 and m2 is (n1 m1 + n2 m2) / (n1 + n2), extended in the same way to more groups. A mean found to include a wrong observation is corrected by taking the original sum (n times the mean), subtracting the wrong value and adding the right one, then dividing by n. A missing value or frequency is found by writing the mean equation and solving it.",
+      "source_id": "S01",
+      "locator": "Printed pp. 48-50, sections 3.2 and 3.3 and Examples 1 to 9",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F003",
+      "statement": "The arithmetic mean is rigidly defined, simple, based on all observations, readily treated algebraically and least affected by sampling fluctuations. Its demerits are that it is highly affected by extreme values, cannot properly average ratios and percentages, is not appropriate for a highly skewed distribution, cannot be computed accurately if an item is missing, may not coincide with any observed value, and cannot be calculated when open-end class intervals are present.",
+      "source_id": "S01",
+      "locator": "Printed p. 50, Merits and Demerits of Arithmetic Mean",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F004",
+      "statement": "The geometric mean of n positive values is the nth root of their product, taking account of compounding from period to period; for grouped data each value is raised to its frequency and the root is of the total frequency. It is used for index numbers, annual return on a portfolio and compounded annual growth rates, and is not much affected by sampling fluctuations. It cannot be calculated when any value is zero or negative, and is harder to compute and understand.",
+      "source_id": "S01",
+      "locator": "Printed pp. 50-51, section 3.4",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F005",
+      "statement": "The harmonic mean is the reciprocal of the arithmetic mean of the reciprocals of the observations: n divided by the sum of 1/x (for grouped data n divided by the sum of f/x). It is appropriate for averaging ratios or rates whose values are measured in different units, such as speed (km per hour) and different rates in finance, whereas the arithmetic mean suits values with the same units.",
+      "source_id": "S01",
+      "locator": "Printed pp. 51-52, section 3.5",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F006",
+      "statement": "For two numbers, arithmetic mean x harmonic mean = (geometric mean) squared; the courseware states the ordering as AM > HM > GM and uses the relation to find an HM from an AM of 16 and a GM of 8 (its final division is printed as 64/6 although the quotient is 64/16 = 4). For positive values that are not all equal the standard ordering is AM > GM > HM.",
+      "source_id": "S01",
+      "locator": "Printed p. 53, Comparison and Example 14 (ordering and arithmetic in the courseware differ from the standard result)",
+      "regulatory_sensitive": false,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F007",
+      "statement": "The median is the middle value when the observations are arranged in order: for an odd number n it is the ((n+1)/2)th observation and for an even number it is the average of the (n/2)th and (n/2 + 1)th. For grouped data the median class is the class whose less-than cumulative frequency first exceeds N/2, and median = l1 + ((N/2 - cf) / f) x (l2 - l1), where l1 and l2 are the limits of the median class, f its frequency and cf the cumulative frequency of the class before it. For a discrete frequency table the median is the value whose cumulative frequency first exceeds N/2. Inclusive classes are first converted to class boundaries.",
+      "source_id": "S01",
+      "locator": "Printed pp. 53-57, section 3.6 and Examples 15 to 19",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F008",
+      "statement": "Quartiles divide an ordered distribution into four equal parts: Q1 (lower quartile), Q2 (the median) and Q3 (upper quartile). For grouped data they use the same interpolation as the median, with N/4, N/2 and 3N/4 in place of N/2. The median is rigidly defined and not affected by extreme values, but it is not based on all observations, is affected by sampling fluctuations and does not lend itself to further algebraic treatment.",
+      "source_id": "S01",
+      "locator": "Printed pp. 53, 58-59, sections 3.6 and Example 21",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F009",
+      "statement": "The mode is the most frequently occurring value; a distribution can have two or more modes (multimodal). For grouped data the modal class is the class of highest frequency and mode = l1 + ((f1 - f0) / (2 f1 - f0 - f2)) x (l2 - l1), with f1 the modal class frequency and f0 and f2 the frequencies of the classes before and after it. The mode is easy to understand and little affected by sampling fluctuations, but is ill-defined, not based on all observations and not amenable to algebraic treatment. For moderately skewed data the three measures are related by Mode = 3 Median - 2 Mean.",
+      "source_id": "S01",
+      "locator": "Printed pp. 59-61, section 3.7 and Examples 22 to 24",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F010",
+      "statement": "Dispersion measures the scatter of items about the averages. The absolute measures are range, quartile deviation, mean deviation and standard deviation; the corresponding relative measures are the coefficients of range, quartile deviation, mean deviation and variation. A good measure is rigidly defined, based on all observations, simple, capable of further algebraic treatment and little affected by sampling fluctuations.",
+      "source_id": "S01",
+      "locator": "Printed p. 61, section 3.8",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F011",
+      "statement": "The range is maximum minus minimum and the coefficient of range is (max - min) / (max + min). The range is easy to understand and calculate but is not based on all observations, has no sampling stability, and becomes less satisfactory as the amount of data grows.",
+      "source_id": "S01",
+      "locator": "Printed pp. 62-63, section 3.9",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F012",
+      "statement": "Quartile deviation is the half of the interquartile range, QD = (Q3 - Q1) / 2, and its coefficient is (Q3 - Q1) / (Q3 + Q1). It is easy to calculate and not affected by extreme values, but it is not based on all observations, not capable of algebraic treatment and affected by sampling fluctuations.",
+      "source_id": "S01",
+      "locator": "Printed p. 63, section 3.10",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F013",
+      "statement": "Mean deviation is the arithmetic mean of the absolute deviations from an average: Sum|x - mean| / n for raw data and Sum f|x - mean| / Sum f for grouped data, with the class marks as x; the coefficient of mean deviation is the mean deviation divided by the average used. Mean deviation is smallest when taken about the median. It is based on all observations and easy to calculate, but ignores signs and so is not capable of further algebraic treatment.",
+      "source_id": "S01",
+      "locator": "Printed pp. 63-65, Mean Deviation and Examples 26 to 28",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F014",
+      "statement": "Standard deviation is the square root of the average squared deviation from the mean: sigma = sqrt(Sum(x - mean)^2 / n) = sqrt(Sum x^2 / n - mean^2) for raw data, and sqrt(Sum f x^2 / N - (Sum f x / N)^2) for grouped data. The coefficient of variation is CV = (sigma / mean) x 100 per cent. A small standard deviation means a high degree of consistency and homogeneity. The measure is rigidly defined and based on all observations, but it is not easy to compute or understand and gives more weight to extreme items.",
+      "source_id": "S01",
+      "locator": "Printed pp. 65-67, section 3.11 and Examples 29 to 31",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F015",
+      "statement": "Skewness is the degree of departure from a symmetrical distribution. In positive skew the longer tail is on the right and the mean and median are greater than the mode; in negative skew the longer tail is on the left and the mean and median are less than the mode. Karl Pearson's measure is beta1 = mu3^2 / mu2^3, where mu2 and mu3 are the second and third central moments (the averages of (x - mean)^2 and (x - mean)^3, weighted by frequency for grouped data); the direction of skew follows the sign of mu3.",
+      "source_id": "S01",
+      "locator": "Printed pp. 67-68, section 3.12",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F016",
+      "statement": "Kurtosis describes the peakedness or flatness of a distribution and the weight of its tails. A distribution with the peak of the normal curve is mesokurtic, a higher and sharper peak with fatter tails is leptokurtic, and a lower, flatter peak with thinner tails is platykurtic. The measure is beta2 = mu4 / mu2^2, with mu4 the fourth central moment; the courseware compares it with 0 (the usual comparison value for the normal distribution in this form is 3) and prints \"mesokurtic\" twice in its list of cases, and its worked example computes beta2 = 0.025 from 3,600,000 / 12,000^2 where the central moments are divided by n (mu4 = 36,000 and mu2 = 120 give 2.5).",
+      "source_id": "S01",
+      "locator": "Printed pp. 68-69, section 3.12 and Example 32 (convention and arithmetic in the courseware differ from the standard result)",
+      "regulatory_sensitive": false,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "draft_id": "D001",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "title": "What an average is for, and what makes one good",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "A long list of numbers is hard to hold in the mind. An **average** squeezes it into one representative value, and lets you compare one group with another. There are three families:\n\n| Average | Idea |\n| --- | --- |\n| Mean (arithmetic, geometric, harmonic) | A calculated value from all the data |\n| Median | The middle value of the ordered data |\n| Mode | The most frequent value |\n\nA good average is clearly defined, simple, uses every observation, can be used in further algebra, is stable between samples, is not dominated by extreme values and is easy to interpret. No single average ticks every box, so choosing one means deciding which property matters for the question at hand.",
+        "expanded_explanation_md": "This is why you will see the median for incomes (extreme values do not dominate), the mean for totals that must add up, and the mode for \"what is the most common outcome\".",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Name two properties of a good average, and say which average gives up the property of using every observation.",
+          "expected_takeaway": "Any two of: rigidly defined, simple, uses all observations, algebraic treatment, stable under sampling, not unduly affected by extremes, easy to interpret. The median and the mode do not use every observation."
+        }
+      }
+    },
+    {
+      "draft_id": "D002",
+      "item_type": "card",
+      "variant": "formula",
+      "fact_ids": [
+        "F002"
+      ],
+      "payload": {
+        "title": "Arithmetic mean: raw, grouped, combined and corrected",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "One idea, four situations:\n\n- **Raw data**: add the values and divide by how many there are.\n- **Grouped data**: multiply each value (or class mark) by its frequency, add, and divide by the total frequency.\n- **Combined mean**: you cannot just average two group means; weight each by its group size.\n- **Corrected mean**: if one value was recorded wrongly, rebuild the total (mean times n), take out the wrong value, put in the right one, and divide again.\n\nA missing value or frequency is found by writing the mean as an equation and solving for the unknown.",
+        "expanded_explanation_md": "The corrected-mean method is the same as adjusting a ledger total: you do not recount everything, you reverse the error. Combined means appear whenever branches, products or customer segments are pooled.",
+        "formula_spec": {
+          "latex_expression": "\\bar{x} = \\frac{\\sum x}{n},\\quad \\bar{x} = \\frac{\\sum f x}{\\sum f},\\quad \\bar{x}_c = \\frac{n_1 \\bar{x}_1 + n_2 \\bar{x}_2}{n_1 + n_2}",
+          "variables": [
+            {
+              "symbol": "x",
+              "name": "Observation, or class mark for grouped data",
+              "unit": "same as the variable"
+            },
+            {
+              "symbol": "f",
+              "name": "Frequency",
+              "unit": "count"
+            },
+            {
+              "symbol": "n",
+              "name": "Number of observations",
+              "unit": "count"
+            },
+            {
+              "symbol": "x1, x2 (means)",
+              "name": "Means of the groups being pooled",
+              "unit": "same as the variable"
+            },
+            {
+              "symbol": "n1, n2",
+              "name": "Sizes of the groups",
+              "unit": "count"
+            }
+          ],
+          "assumptions": [
+            "For grouped data the class mark stands for every value in the class, so the grouped mean is an approximation.",
+            "The corrected mean uses the same n as the original."
+          ],
+          "common_errors": [
+            "Averaging two group means without weighting by group size.",
+            "Using the class limit instead of the class mark for grouped data.",
+            "Correcting the mean directly instead of correcting the sum."
+          ]
+        },
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "A mean of 50 observations is 40. One value recorded as 90 should have been 60. What is the corrected mean?",
+          "expected_takeaway": "Original sum 2,000; corrected sum 2,000 - 90 + 60 = 1,970; corrected mean 1,970/50 = 39.4."
+        }
+      }
+    },
+    {
+      "draft_id": "D003",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F003"
+      ],
+      "payload": {
+        "title": "When the arithmetic mean misleads",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "The mean is the workhorse: it uses every observation, is easy to compute and supports further algebra. Its strength is also its weakness, because every value pulls on it.\n\n- **Extreme values** drag it. One very large loan moves the average loan.\n- **Skewed data**: it sits away from where most observations lie.\n- **Open-end classes** such as \"above 50 lakh\" have no class mark, so the mean cannot be computed properly.\n- **Ratios and percentages**: averaging rates with the arithmetic mean can give a wrong answer.\n- It may equal no actual value (an average of 2.4 children).\n\nWhen these problems bite, look to the median, or to the geometric or harmonic mean for rates.",
+        "expanded_explanation_md": "A useful test is to compare the mean with the median: if they are far apart, a few extreme observations are probably doing the work.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Why is the arithmetic mean a poor choice for a table whose last class is \"above 50 lakh\"?",
+          "expected_takeaway": "The open-end class has no upper limit, so it has no class mark to multiply by its frequency, and the mean cannot be computed accurately."
+        }
+      }
+    },
+    {
+      "draft_id": "D004",
+      "item_type": "card",
+      "variant": "formula",
+      "fact_ids": [
+        "F004",
+        "F005",
+        "F006"
+      ],
+      "payload": {
+        "title": "Geometric and harmonic means, and how they compare with the arithmetic mean",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "Use the right mean for the kind of quantity:\n\n| Mean | Formula idea | Use it for |\n| --- | --- | --- |\n| Arithmetic | Sum divided by n | Values in the same units |\n| Geometric | nth root of the product | Growth that compounds: average annual growth, index numbers, portfolio return |\n| Harmonic | n divided by the sum of reciprocals | Rates and ratios in different units, such as speed |\n\nGeometric needs all values positive. For positive values that are not all equal, **AM is larger than GM, which is larger than HM**. For exactly two numbers, AM x HM = GM squared.",
+        "expanded_explanation_md": "Why the geometric mean for growth? Growth factors multiply, so the single constant factor that gives the same overall result is their geometric mean, not their arithmetic mean. The courseware prints the order as AM > HM > GM; the standard result, which the worked examples here confirm, puts GM above HM.",
+        "formula_spec": {
+          "latex_expression": "GM = \\left(x_1 x_2 \\cdots x_n\\right)^{1/n},\\quad HM = \\frac{n}{\\sum 1/x_i},\\quad AM \\times HM = GM^2 \\text{ (two numbers)}",
+          "variables": [
+            {
+              "symbol": "x",
+              "name": "Positive observations (growth factors for GM, rates for HM)",
+              "unit": "same as the variable"
+            },
+            {
+              "symbol": "n",
+              "name": "Number of observations",
+              "unit": "count"
+            }
+          ],
+          "assumptions": [
+            "All values positive for GM and HM.",
+            "For HM to be the right average of speeds, the distances travelled at each speed must be equal.",
+            "AM x HM = GM squared holds only for two values."
+          ],
+          "common_errors": [
+            "Using the arithmetic mean of growth rates to describe compounded growth.",
+            "Taking the harmonic mean when different distances are covered at different speeds without weighting.",
+            "Applying AM x HM = GM squared to more than two numbers."
+          ]
+        },
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "An account grows by factors 1.20 and 1.05 over two years. Which mean of the two factors gives the constant yearly factor?",
+          "expected_takeaway": "The geometric mean, the square root of 1.20 x 1.05 = 1.26, which is about 1.1225."
+        }
+      }
+    },
+    {
+      "draft_id": "D005",
+      "item_type": "card",
+      "variant": "formula",
+      "fact_ids": [
+        "F007",
+        "F008"
+      ],
+      "payload": {
+        "title": "Median and quartiles, raw and grouped",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "Sort first. Then:\n\n- **Raw data**: with an odd count take the middle value; with an even count average the two middle values.\n- **Grouped data**: find the **median class**, the first class whose less-than cumulative frequency goes beyond N/2, then interpolate inside it.\n- **Quartiles** work the same way with N/4 (Q1), N/2 (Q2, the median) and 3N/4 (Q3).\n\nIn each case the interpolation starts at the lower limit of the class, adds the fraction of the class still needed and scales by the class width. Make sure the classes are continuous (use boundaries for inclusive classes) before you start.",
+        "expanded_explanation_md": "The median is the safe choice when extreme values or open-end classes are present, because it needs only the order, not the size, of the outer values.",
+        "formula_spec": {
+          "latex_expression": "\\text{Median} = l_1 + \\frac{N/2 - cf}{f}\\,(l_2 - l_1),\\quad Q_1:\\ N/4,\\quad Q_3:\\ 3N/4",
+          "variables": [
+            {
+              "symbol": "l1, l2",
+              "name": "Lower and upper limits of the median (or quartile) class",
+              "unit": "same as the variable"
+            },
+            {
+              "symbol": "N",
+              "name": "Total frequency",
+              "unit": "count"
+            },
+            {
+              "symbol": "cf",
+              "name": "Cumulative frequency of the class before it",
+              "unit": "count"
+            },
+            {
+              "symbol": "f",
+              "name": "Frequency of the class",
+              "unit": "count"
+            }
+          ],
+          "assumptions": [
+            "Classes are continuous, in ascending order.",
+            "The median class is the one whose cumulative frequency first exceeds N/2 (N/4 or 3N/4 for quartiles)."
+          ],
+          "common_errors": [
+            "Using the class frequency instead of the preceding cumulative frequency for cf.",
+            "Forgetting the class width factor.",
+            "Using N/2 for every quartile."
+          ]
+        },
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "N = 80 and the cumulative frequencies of the first three classes are 10, 30 and 55. Which class holds the median, and which holds Q1?",
+          "expected_takeaway": "N/2 = 40, first exceeded by 55, so the third class; N/4 = 20, first exceeded by 30, so the second class."
+        }
+      }
+    },
+    {
+      "draft_id": "D006",
+      "item_type": "card",
+      "variant": "formula",
+      "fact_ids": [
+        "F009"
+      ],
+      "payload": {
+        "title": "Mode, and the mean-median-mode relation",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "The **mode** is the value that occurs most often. In a frequency table, the **modal class** is the class with the highest frequency. The mode is then placed inside it by pulling it towards the more crowded neighbour: if the class after the modal class is fuller than the one before, the mode sits above the middle of the modal class.\n\nA distribution can have two modes (bimodal) or more (multimodal).\n\nFor moderately skewed data the three averages are tied together: **Mode = 3 x Median - 2 x Mean**. If two are known, estimate the third.",
+        "expanded_explanation_md": "The relation is an empirical rule, not an identity. It works well for single-peaked, only mildly skewed distributions and poorly for very uneven ones.",
+        "formula_spec": {
+          "latex_expression": "\\text{Mode} = l_1 + \\frac{f_1 - f_0}{2 f_1 - f_0 - f_2}\\,(l_2 - l_1),\\qquad \\text{Mode} \\approx 3\\,\\text{Median} - 2\\,\\text{Mean}",
+          "variables": [
+            {
+              "symbol": "l1, l2",
+              "name": "Limits of the modal class",
+              "unit": "same as the variable"
+            },
+            {
+              "symbol": "f1",
+              "name": "Frequency of the modal class",
+              "unit": "count"
+            },
+            {
+              "symbol": "f0, f2",
+              "name": "Frequencies of the classes before and after it",
+              "unit": "count"
+            }
+          ],
+          "assumptions": [
+            "Equal class widths.",
+            "The relation with the median and mean holds only approximately, for moderately skewed single-peaked data."
+          ],
+          "common_errors": [
+            "Taking the middle of the modal class without adjusting for the neighbours.",
+            "Swapping f0 and f2.",
+            "Treating the three-median-two-mean relation as exact."
+          ]
+        },
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Modal class 20-30 has frequency 30, the class before has 20 and the class after has 10. Is the mode above or below the middle (25) of the class?",
+          "expected_takeaway": "Below: the class before is fuller than the one after, which pulls the mode down. 20 + (30 - 20) / (60 - 20 - 10) x 10 = 23.33."
+        }
+      }
+    },
+    {
+      "draft_id": "D007",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F003",
+        "F008",
+        "F009",
+        "F004"
+      ],
+      "payload": {
+        "title": "Choosing between mean, median and mode",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "Pick the average that matches the question and the shape of the data.\n\n| Average | Best when | Weak when |\n| --- | --- | --- |\n| Arithmetic mean | Totals matter; data roughly symmetric | Extreme values, skew, open-end classes |\n| Median | Skewed data, extreme values, open ends | You need further algebra, or every value must count |\n| Mode | You want the most common value | The distribution has no clear peak or several |\n| Geometric mean | Compounded growth | Zero or negative values |\n| Harmonic mean | Rates over equal distances or equal amounts | Zero values |\n\nIf the data are **positively skewed**, expect mean > median > mode; if **negatively skewed**, the reverse.",
+        "expanded_explanation_md": "When in doubt, report the mean and the median together. A large gap between them tells the reader the data are skewed.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Deposit balances are strongly right-skewed. Which of mean and median will be larger, and which would you quote as \"typical\"?",
+          "expected_takeaway": "The mean will be larger; the median is the better typical value because large balances do not drag it."
+        }
+      }
+    },
+    {
+      "draft_id": "D008",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F010"
+      ],
+      "payload": {
+        "title": "Dispersion: how spread out the data are",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "Two sets of branch deposits can have the same average and be very different: one steady, one swinging wildly. An average hides that. **Dispersion** measures the scatter.\n\n| Absolute (in the units of the data) | Relative (a pure number, for comparison) |\n| --- | --- |\n| Range | Coefficient of range |\n| Quartile deviation | Coefficient of quartile deviation |\n| Mean deviation | Coefficient of mean deviation |\n| Standard deviation | Coefficient of variation |\n\nUse an **absolute** measure within one series. Use a **relative** one to compare series measured in different units or with very different averages.",
+        "expanded_explanation_md": "As with averages, a good measure is well defined, uses all observations, is simple, allows algebra and is stable between samples. The standard deviation does best on most of these, which is why it is the standard.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "You want to compare the spread of loan amounts (in rupees) with the spread of loan tenures (in months). Absolute or relative measure?",
+          "expected_takeaway": "Relative, because the units differ; use the coefficient of variation."
+        }
+      }
+    },
+    {
+      "draft_id": "D009",
+      "item_type": "card",
+      "variant": "formula",
+      "fact_ids": [
+        "F011",
+        "F012",
+        "F013"
+      ],
+      "payload": {
+        "title": "Range, quartile deviation and mean deviation",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "Three ways to measure scatter, from rough to thorough:\n\n- **Range**: largest minus smallest. Quick, but uses only two observations.\n- **Quartile deviation**: half the gap between the upper and lower quartiles. It ignores the extremes, so it is steady.\n- **Mean deviation**: the average of the absolute distances from an average (the mean, or the median, which gives the smaller value). It uses every observation, but throwing away the signs makes it awkward for further algebra.\n\nEach has a coefficient that divides by a comparable quantity, so you can compare series.",
+        "expanded_explanation_md": "Remember what each coefficient divides by: the sum of the extremes for range, the sum of the quartiles for quartile deviation, and the average used for mean deviation.",
+        "formula_spec": {
+          "latex_expression": "R = x_{max} - x_{min},\\quad QD = \\frac{Q_3 - Q_1}{2},\\quad MD = \\frac{\\sum f |x - \\bar{x}|}{\\sum f}",
+          "variables": [
+            {
+              "symbol": "R",
+              "name": "Range",
+              "unit": "same as the variable"
+            },
+            {
+              "symbol": "QD",
+              "name": "Quartile deviation",
+              "unit": "same as the variable"
+            },
+            {
+              "symbol": "MD",
+              "name": "Mean deviation about the mean",
+              "unit": "same as the variable"
+            },
+            {
+              "symbol": "coefficients",
+              "name": "Range: (max - min)/(max + min); QD: (Q3 - Q1)/(Q3 + Q1); MD: MD divided by the mean",
+              "unit": "pure number"
+            }
+          ],
+          "assumptions": [
+            "Absolute deviations are used in MD (signs ignored).",
+            "Class marks stand for the values in a grouped table."
+          ],
+          "common_errors": [
+            "Dividing the range by the mean instead of by max + min for the coefficient.",
+            "Forgetting to take absolute values in MD.",
+            "Using Q3 - Q1 without halving for QD."
+          ]
+        },
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Q1 = 12 and Q3 = 28. What are the quartile deviation and its coefficient?",
+          "expected_takeaway": "QD = (28 - 12)/2 = 8; coefficient = 16/40 = 0.4."
+        }
+      }
+    },
+    {
+      "draft_id": "D010",
+      "item_type": "card",
+      "variant": "formula",
+      "fact_ids": [
+        "F014"
+      ],
+      "payload": {
+        "title": "Standard deviation, variance and coefficient of variation",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "The **standard deviation** squares each deviation from the mean (so the signs cannot cancel), averages the squares, and takes the root to get back to the original units. The average of the squares is the **variance**.\n\nA shortcut avoids computing every deviation: **mean of the squares minus square of the mean**.\n\nThe **coefficient of variation** expresses the standard deviation as a percentage of the mean, which makes different series comparable. The series with the smaller CV is the more consistent.",
+        "expanded_explanation_md": "This unit divides by n (the whole data set is treated as the population). Later, when estimating from a sample, a different divisor is used; check which the question intends.",
+        "formula_spec": {
+          "latex_expression": "\\sigma = \\sqrt{\\frac{\\sum f (x - \\bar{x})^2}{N}} = \\sqrt{\\frac{\\sum f x^2}{N} - \\bar{x}^2},\\qquad CV = \\frac{\\sigma}{\\bar{x}} \\times 100",
+          "variables": [
+            {
+              "symbol": "sigma",
+              "name": "Standard deviation",
+              "unit": "same as the variable"
+            },
+            {
+              "symbol": "x",
+              "name": "Value or class mark",
+              "unit": "same as the variable"
+            },
+            {
+              "symbol": "f",
+              "name": "Frequency (1 for raw data)",
+              "unit": "count"
+            },
+            {
+              "symbol": "N",
+              "name": "Total frequency",
+              "unit": "count"
+            },
+            {
+              "symbol": "CV",
+              "name": "Coefficient of variation",
+              "unit": "per cent"
+            }
+          ],
+          "assumptions": [
+            "Divisor is N, not N - 1.",
+            "The mean is not zero when CV is used."
+          ],
+          "common_errors": [
+            "Squaring each frequency-weighted total instead of squaring the mean (mean of squares less square of the mean).",
+            "Taking the root before dividing by N.",
+            "Reporting the variance when the standard deviation is asked."
+          ]
+        },
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Mean 60 and standard deviation 9. What is the CV, and what does a smaller CV in another branch tell you?",
+          "expected_takeaway": "CV = 9/60 x 100 = 15 per cent; the branch with the smaller CV is more consistent."
+        }
+      }
+    },
+    {
+      "draft_id": "D011",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F014",
+        "F010"
+      ],
+      "payload": {
+        "title": "Reading a standard deviation and comparing consistency",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "A standard deviation by itself needs a yardstick. Is 20 big? For deposits averaging 80 it is large; for 200 it is modest. That is the job of the **coefficient of variation**.\n\n| Branch | Mean daily transactions | Standard deviation | CV |\n| --- | --- | --- | --- |\n| A | 200 | 30 | 15 per cent |\n| B | 80 | 20 | 25 per cent |\n\nBranch B has the smaller standard deviation but the larger CV, so its volumes swing more *relative to its size*. Branch A is the more consistent. Quoting the standard deviation alone would have given the opposite impression.",
+        "expanded_explanation_md": "The standard deviation gives more weight to extreme items (squaring magnifies large deviations), so a few outliers can inflate it. Always look at the data behind the number.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Two series have the same mean. The first has standard deviation 12 and the second 8. Which is more consistent?",
+          "expected_takeaway": "The second: with equal means the smaller standard deviation also means the smaller CV."
+        }
+      }
+    },
+    {
+      "draft_id": "D012",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F015",
+        "F016"
+      ],
+      "payload": {
+        "title": "Skewness and kurtosis: shape beyond average and spread",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "Two distributions can share a mean and a standard deviation and still look different.\n\n**Skewness** is lopsidedness.\n\n| Skew | Longer tail | Order of the averages |\n| --- | --- | --- |\n| Positive | Right | Mean > median > mode |\n| Symmetric | Neither | All equal |\n| Negative | Left | Mean < median < mode |\n\nIt is measured with the **third central moment** (the average cube of deviations from the mean): positive means a longer right tail, negative a longer left tail, zero a symmetric shape.\n\n**Kurtosis** is peakedness and tail weight, measured from the fourth central moment as mu4 divided by mu2 squared. Taller and sharper with fat tails is **leptokurtic**; like the normal curve is **mesokurtic**; flatter with thin tails is **platykurtic**.",
+        "expanded_explanation_md": "A caution on conventions. In this form, mu4/mu2 squared equals 3 for the normal curve, so leptokurtic means above 3. The courseware compares the value with 0 (the \"excess\" form, measured as mu4/mu2 squared minus 3). Check which form a question uses.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Mean 52, median 48, mode 44. Is the skew positive or negative, and which tail is longer?",
+          "expected_takeaway": "Positive skew (mean > median > mode); the longer tail is on the right."
+        }
+      }
+    },
+    {
+      "draft_id": "D013",
+      "item_type": "card",
+      "variant": "worked_example",
+      "fact_ids": [
+        "F002"
+      ],
+      "payload": {
+        "title": "Pooling three staff groups, then correcting one salary",
+        "prerequisite_objective_ids": [
+          "ABM::MOD_A::U03::LO_01"
+        ],
+        "core_explanation_md": "A bank has 40 clerks with a mean monthly pay of Rs 32,000, 25 officers with a mean of Rs 54,000 and 15 managers with a mean of Rs 80,000. Find the combined mean. Later it is found that one manager's pay was entered as Rs 80,000 when it should have been Rs 98,000. Find the corrected mean.",
+        "worked_steps": [
+          {
+            "step_number": 1,
+            "description": "Total pay of each group (size x mean).",
+            "formula_or_substitution": "40 x 32,000; 25 x 54,000; 15 x 80,000",
+            "intermediate_result": "12,80,000; 13,50,000; 12,00,000"
+          },
+          {
+            "step_number": 2,
+            "description": "Total pay of all groups and number of staff.",
+            "formula_or_substitution": "12,80,000 + 13,50,000 + 12,00,000; 40 + 25 + 15",
+            "intermediate_result": "Rs 38,30,000; 80 staff"
+          },
+          {
+            "step_number": 3,
+            "description": "Combined mean.",
+            "formula_or_substitution": "38,30,000 / 80",
+            "intermediate_result": "Rs 47,875"
+          },
+          {
+            "step_number": 4,
+            "description": "Correct the total: remove the wrong value, add the right one.",
+            "formula_or_substitution": "38,30,000 - 80,000 + 98,000",
+            "intermediate_result": "Rs 38,48,000"
+          },
+          {
+            "step_number": 5,
+            "description": "Corrected mean.",
+            "formula_or_substitution": "38,48,000 / 80",
+            "intermediate_result": "Rs 48,100"
+          }
+        ],
+        "final_answer_with_unit": "Combined mean Rs 47,875 per month; corrected mean Rs 48,100 per month",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "The plain average of the three group means is Rs 55,333. Why is it wrong?",
+          "expected_takeaway": "It ignores group sizes: there are many more clerks than managers, so the clerks' lower pay should weigh more."
+        }
+      }
+    },
+    {
+      "draft_id": "D014",
+      "item_type": "card",
+      "variant": "worked_example",
+      "fact_ids": [
+        "F002"
+      ],
+      "payload": {
+        "title": "Finding a missing frequency from a known mean",
+        "prerequisite_objective_ids": [
+          "ABM::MOD_A::U03::LO_01"
+        ],
+        "core_explanation_md": "Loan sizes (Rs lakh) are grouped: 0-10 has 8 loans, 10-20 has 12, 20-30 has an unknown number x, and 30-40 has 10. The mean loan size is Rs 22 lakh. Find x.",
+        "worked_steps": [
+          {
+            "step_number": 1,
+            "description": "Class marks.",
+            "formula_or_substitution": "(0+10)/2, (10+20)/2, (20+30)/2, (30+40)/2",
+            "intermediate_result": "5, 15, 25, 35"
+          },
+          {
+            "step_number": 2,
+            "description": "Sum of frequency x mark in terms of x.",
+            "formula_or_substitution": "8x5 + 12x15 + x x 25 + 10x35",
+            "intermediate_result": "570 + 25x"
+          },
+          {
+            "step_number": 3,
+            "description": "Total frequency.",
+            "formula_or_substitution": "8 + 12 + x + 10",
+            "intermediate_result": "30 + x"
+          },
+          {
+            "step_number": 4,
+            "description": "Mean equation.",
+            "formula_or_substitution": "(570 + 25x) / (30 + x) = 22",
+            "intermediate_result": "570 + 25x = 660 + 22x"
+          },
+          {
+            "step_number": 5,
+            "description": "Solve.",
+            "formula_or_substitution": "3x = 90",
+            "intermediate_result": "x = 30"
+          },
+          {
+            "step_number": 6,
+            "description": "Check.",
+            "formula_or_substitution": "(570 + 750) / 60",
+            "intermediate_result": "22"
+          }
+        ],
+        "final_answer_with_unit": "30 loans in the class 20-30",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "What would the mean be if x were 0?",
+          "expected_takeaway": "570/30 = 19 lakh, lower because there are no loans in the higher-value class."
+        }
+      }
+    },
+    {
+      "draft_id": "D015",
+      "item_type": "card",
+      "variant": "worked_example",
+      "fact_ids": [
+        "F004",
+        "F005",
+        "F006"
+      ],
+      "payload": {
+        "title": "Average growth and average speed: geometric and harmonic means",
+        "prerequisite_objective_ids": [
+          "ABM::MOD_A::U03::LO_02"
+        ],
+        "core_explanation_md": "Part A: a branch's deposits grew by 0 per cent, 10 per cent and 21 per cent in three successive years. What constant yearly growth gives the same result? Part B: an officer drives the same distance to a branch at 40 km/h and returns at 60 km/h. What is the average speed for the round trip? Check AM x HM = GM squared on the two speeds.",
+        "worked_steps": [
+          {
+            "step_number": 1,
+            "description": "A: growth factors.",
+            "formula_or_substitution": "1.00, 1.10, 1.21",
+            "intermediate_result": "multiply to give the overall growth"
+          },
+          {
+            "step_number": 2,
+            "description": "A: product of the factors.",
+            "formula_or_substitution": "1.00 x 1.10 x 1.21",
+            "intermediate_result": "1.331"
+          },
+          {
+            "step_number": 3,
+            "description": "A: geometric mean (cube root).",
+            "formula_or_substitution": "1.331 ^ (1/3)",
+            "intermediate_result": "1.10, a constant 10 per cent a year"
+          },
+          {
+            "step_number": 4,
+            "description": "A: the arithmetic mean of the rates overstates it.",
+            "formula_or_substitution": "(0 + 10 + 21) / 3",
+            "intermediate_result": "10.33 per cent"
+          },
+          {
+            "step_number": 5,
+            "description": "B: equal distances, so use the harmonic mean.",
+            "formula_or_substitution": "2 / (1/40 + 1/60) = 2 / (5/120)",
+            "intermediate_result": "48 km/h"
+          },
+          {
+            "step_number": 6,
+            "description": "B: AM x HM = GM squared.",
+            "formula_or_substitution": "50 x 48 and 40 x 60",
+            "intermediate_result": "2,400 = 2,400"
+          }
+        ],
+        "final_answer_with_unit": "Constant growth 10 per cent a year (not 10.33); average speed 48 km/h",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Why is the average speed 48 and not the arithmetic mean 50?",
+          "expected_takeaway": "The officer spends more time at the slower speed, because the same distance takes longer at 40 km/h; the harmonic mean accounts for that."
+        }
+      }
+    },
+    {
+      "draft_id": "D016",
+      "item_type": "card",
+      "variant": "worked_example",
+      "fact_ids": [
+        "F007",
+        "F008"
+      ],
+      "payload": {
+        "title": "Median and both quartiles of 120 loan sizes",
+        "prerequisite_objective_ids": [
+          "ABM::MOD_A::U03::LO_03"
+        ],
+        "core_explanation_md": "Loan sizes (Rs lakh) of 120 accounts: 0-5 has 12, 5-10 has 20, 10-15 has 40, 15-20 has 36 and 20-25 has 12. Find the median, Q1 and Q3.",
+        "worked_steps": [
+          {
+            "step_number": 1,
+            "description": "Less-than cumulative frequencies.",
+            "formula_or_substitution": "12; 12+20; 32+40; 72+36; 108+12",
+            "intermediate_result": "12, 32, 72, 108, 120"
+          },
+          {
+            "step_number": 2,
+            "description": "Median: N/2 = 60. First cumulative frequency above 60 is 72, class 10-15 (cf before = 32).",
+            "formula_or_substitution": "10 + (60 - 32)/40 x 5",
+            "intermediate_result": "13.5"
+          },
+          {
+            "step_number": 3,
+            "description": "Q1: N/4 = 30. First cumulative frequency above 30 is 32, class 5-10 (cf before = 12).",
+            "formula_or_substitution": "5 + (30 - 12)/20 x 5",
+            "intermediate_result": "9.5"
+          },
+          {
+            "step_number": 4,
+            "description": "Q3: 3N/4 = 90. First cumulative frequency above 90 is 108, class 15-20 (cf before = 72).",
+            "formula_or_substitution": "15 + (90 - 72)/36 x 5",
+            "intermediate_result": "17.5"
+          }
+        ],
+        "final_answer_with_unit": "Median Rs 13.5 lakh; Q1 Rs 9.5 lakh; Q3 Rs 17.5 lakh",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Half of the loans are below which value, and what share lie between Q1 and Q3?",
+          "expected_takeaway": "Half are below Rs 13.5 lakh; half of all loans (the middle 50 per cent) lie between Rs 9.5 and Rs 17.5 lakh."
+        }
+      }
+    },
+    {
+      "draft_id": "D017",
+      "item_type": "card",
+      "variant": "worked_example",
+      "fact_ids": [
+        "F009"
+      ],
+      "payload": {
+        "title": "Mode of the same loans, checked against the mean and median",
+        "prerequisite_objective_ids": [
+          "ABM::MOD_A::U03::LO_04"
+        ],
+        "core_explanation_md": "Using the same 120 loan sizes (classes 0-5 to 20-25 with frequencies 12, 20, 40, 36, 12; median 13.5), find the mode from the grouped formula, and test the relation Mode = 3 Median - 2 Mean.",
+        "worked_steps": [
+          {
+            "step_number": 1,
+            "description": "Modal class: highest frequency.",
+            "formula_or_substitution": "frequency 40",
+            "intermediate_result": "class 10-15; f0 = 20, f2 = 36"
+          },
+          {
+            "step_number": 2,
+            "description": "Mode by the grouped formula.",
+            "formula_or_substitution": "10 + (40 - 20) / (80 - 20 - 36) x 5 = 10 + 20/24 x 5",
+            "intermediate_result": "14.1667"
+          },
+          {
+            "step_number": 3,
+            "description": "Mean from class marks 2.5, 7.5, 12.5, 17.5, 22.5.",
+            "formula_or_substitution": "(30 + 150 + 500 + 630 + 270) / 120 = 1,580 / 120",
+            "intermediate_result": "13.1667"
+          },
+          {
+            "step_number": 4,
+            "description": "Empirical relation.",
+            "formula_or_substitution": "3 x 13.5 - 2 x 13.1667",
+            "intermediate_result": "14.1667"
+          }
+        ],
+        "final_answer_with_unit": "Mode Rs 14.17 lakh; it agrees with 3 x median - 2 x mean (also 14.17), which holds here because the distribution is only mildly skewed",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Here mean 13.17 < median 13.5 < mode 14.17. What does that order say about the skew?",
+          "expected_takeaway": "Negative skew: the mean and the median are below the mode, with a longer left tail."
+        }
+      }
+    },
+    {
+      "draft_id": "D018",
+      "item_type": "card",
+      "variant": "worked_example",
+      "fact_ids": [
+        "F011",
+        "F012",
+        "F013"
+      ],
+      "payload": {
+        "title": "Quartile deviation and mean deviation of the loan data",
+        "prerequisite_objective_ids": [
+          "ABM::MOD_A::U03::LO_05"
+        ],
+        "core_explanation_md": "For the 120 loans (classes 0-5 to 20-25, frequencies 12, 20, 40, 36, 12; Q1 = 9.5, Q3 = 17.5; mean 13.1667 lakh), find the quartile deviation, its coefficient, the mean deviation about the mean and its coefficient.",
+        "worked_steps": [
+          {
+            "step_number": 1,
+            "description": "Quartile deviation.",
+            "formula_or_substitution": "(17.5 - 9.5) / 2",
+            "intermediate_result": "4.0"
+          },
+          {
+            "step_number": 2,
+            "description": "Coefficient of quartile deviation.",
+            "formula_or_substitution": "(17.5 - 9.5) / (17.5 + 9.5) = 8/27",
+            "intermediate_result": "0.2963"
+          },
+          {
+            "step_number": 3,
+            "description": "Absolute deviations of the class marks from 13.1667.",
+            "formula_or_substitution": "|2.5 - 13.1667|, |7.5 - ...|, |12.5 - ...|, |17.5 - ...|, |22.5 - ...|",
+            "intermediate_result": "10.6667, 5.6667, 0.6667, 4.3333, 9.3333"
+          },
+          {
+            "step_number": 4,
+            "description": "Frequency x deviation, summed.",
+            "formula_or_substitution": "128 + 113.3333 + 26.6667 + 156 + 112",
+            "intermediate_result": "536"
+          },
+          {
+            "step_number": 5,
+            "description": "Mean deviation.",
+            "formula_or_substitution": "536 / 120",
+            "intermediate_result": "4.4667"
+          },
+          {
+            "step_number": 6,
+            "description": "Coefficient of mean deviation.",
+            "formula_or_substitution": "4.4667 / 13.1667",
+            "intermediate_result": "0.3392"
+          }
+        ],
+        "final_answer_with_unit": "QD Rs 4.0 lakh, coefficient 0.2963; mean deviation Rs 4.47 lakh, coefficient 0.3392",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Why can the coefficients be compared with those of a series measured in another unit?",
+          "expected_takeaway": "Each coefficient divides a deviation by a quantity in the same unit, so the unit cancels and a pure number remains."
+        }
+      }
+    },
+    {
+      "draft_id": "D019",
+      "item_type": "card",
+      "variant": "worked_example",
+      "fact_ids": [
+        "F014"
+      ],
+      "payload": {
+        "title": "Standard deviation, variance and CV of the loan data; two branches compared",
+        "prerequisite_objective_ids": [
+          "ABM::MOD_A::U03::LO_06"
+        ],
+        "core_explanation_md": "For the 120 loans (marks 2.5, 7.5, 12.5, 17.5, 22.5 with frequencies 12, 20, 40, 36, 12), find the variance, standard deviation and coefficient of variation. Then compare two branches: A has mean 200 and standard deviation 30, B has mean 80 and standard deviation 20.",
+        "worked_steps": [
+          {
+            "step_number": 1,
+            "description": "Sum of f x squared.",
+            "formula_or_substitution": "12x6.25 + 20x56.25 + 40x156.25 + 36x306.25 + 12x506.25",
+            "intermediate_result": "75 + 1,125 + 6,250 + 11,025 + 6,075 = 24,550"
+          },
+          {
+            "step_number": 2,
+            "description": "Mean of the squares.",
+            "formula_or_substitution": "24,550 / 120",
+            "intermediate_result": "204.5833"
+          },
+          {
+            "step_number": 3,
+            "description": "Square of the mean.",
+            "formula_or_substitution": "13.1667 squared",
+            "intermediate_result": "173.3611"
+          },
+          {
+            "step_number": 4,
+            "description": "Variance, then standard deviation.",
+            "formula_or_substitution": "204.5833 - 173.3611; square root",
+            "intermediate_result": "31.2222; 5.59"
+          },
+          {
+            "step_number": 5,
+            "description": "Coefficient of variation.",
+            "formula_or_substitution": "5.5877 / 13.1667 x 100",
+            "intermediate_result": "42.44 per cent"
+          },
+          {
+            "step_number": 6,
+            "description": "Branch A and B CVs.",
+            "formula_or_substitution": "30/200 x 100 and 20/80 x 100",
+            "intermediate_result": "15 per cent and 25 per cent"
+          }
+        ],
+        "final_answer_with_unit": "Variance 31.22, standard deviation Rs 5.59 lakh, CV 42.44 per cent; Branch A (CV 15 per cent) is more consistent than B (25 per cent)",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Branch B has the smaller standard deviation. Why is it still the less consistent branch?",
+          "expected_takeaway": "Consistency is relative to the size of the average: B's standard deviation is a bigger share of its much smaller mean."
+        }
+      }
+    },
+    {
+      "draft_id": "D020",
+      "item_type": "card",
+      "variant": "worked_example",
+      "fact_ids": [
+        "F015",
+        "F016"
+      ],
+      "payload": {
+        "title": "Moments, skewness and kurtosis for five observations",
+        "prerequisite_objective_ids": [
+          "ABM::MOD_A::U03::LO_07"
+        ],
+        "core_explanation_md": "Five daily collections (Rs thousand): 2, 4, 6, 8 and 20. Find the mean, the second, third and fourth central moments, the skewness measure beta1 and the kurtosis measure beta2, and describe the shape.",
+        "worked_steps": [
+          {
+            "step_number": 1,
+            "description": "Mean.",
+            "formula_or_substitution": "(2 + 4 + 6 + 8 + 20) / 5",
+            "intermediate_result": "8"
+          },
+          {
+            "step_number": 2,
+            "description": "Deviations from the mean.",
+            "formula_or_substitution": "2-8, 4-8, 6-8, 8-8, 20-8",
+            "intermediate_result": "-6, -4, -2, 0, 12"
+          },
+          {
+            "step_number": 3,
+            "description": "Second central moment: mean of squares of deviations.",
+            "formula_or_substitution": "(36 + 16 + 4 + 0 + 144) / 5",
+            "intermediate_result": "40"
+          },
+          {
+            "step_number": 4,
+            "description": "Third central moment: mean of cubes.",
+            "formula_or_substitution": "(-216 - 64 - 8 + 0 + 1,728) / 5",
+            "intermediate_result": "288"
+          },
+          {
+            "step_number": 5,
+            "description": "Fourth central moment: mean of fourth powers.",
+            "formula_or_substitution": "(1,296 + 256 + 16 + 0 + 20,736) / 5",
+            "intermediate_result": "4,460.8"
+          },
+          {
+            "step_number": 6,
+            "description": "beta1 = mu3 squared over mu2 cubed; beta2 = mu4 over mu2 squared.",
+            "formula_or_substitution": "288^2 / 40^3 = 82,944 / 64,000; 4,460.8 / 1,600",
+            "intermediate_result": "1.296; 2.788"
+          }
+        ],
+        "final_answer_with_unit": "Positive skew (mu3 = 288 > 0, with mean 8 above median 6); beta2 = 2.788, a little below the normal value of 3 in this form, so slightly platykurtic",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Which observation causes the positive skew, and what happens to mu3 if it is removed?",
+          "expected_takeaway": "The value 20 creates the long right tail; without it the deviations are more balanced and mu3 shrinks sharply."
+        }
+      }
+    },
+    {
+      "draft_id": "D021",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F003"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "A frequency table of loan amounts ends with the class \"above Rs 50 lakh\". Which average cannot be computed exactly from this table?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The median, whenever the median class is not the open-end class",
+            "explanation_md": "The median needs only cumulative frequencies, so it can be found."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The arithmetic mean, because the open-end class has no class mark",
+            "explanation_md": "The mean needs a class mark for every class, and an open-end class has none."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The mode, whenever the modal class is not the open-end class",
+            "explanation_md": "The mode depends only on the frequencies of the modal class and its neighbours."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Quartile Q1, whenever Q1 lies in a closed class",
+            "explanation_md": "Quartiles use cumulative frequencies, so a closed class is fine."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "The arithmetic mean multiplies each class mark by its frequency. An open-end class has no upper limit and hence no class mark."
+      }
+    },
+    {
+      "draft_id": "D022",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F002"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "The mean monthly pay of 30 officers is Rs 50,000 and of 10 clerks is Rs 30,000. The mean pay of all 40 staff is found by",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Taking (50,000 + 30,000) / 2",
+            "explanation_md": "This ignores group sizes and overstates the effect of the small clerk group."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Taking (30 x 50,000 + 10 x 30,000) / 40, weighting by group size",
+            "explanation_md": "A combined mean weights each group mean by the number of observations in the group."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Taking the median of the two means",
+            "explanation_md": "With two values this equals their plain average and ignores weights."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Adding the two means and dividing by 40",
+            "explanation_md": "The sum of means is not a total of pay."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "The combined mean is (n1 x m1 + n2 x m2) / (n1 + n2): each group mean is weighted by its size."
+      }
+    },
+    {
+      "draft_id": "D023",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F004",
+        "F005"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Which average is the appropriate one to summarise annual deposit growth rates compounded over several years?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The arithmetic mean of the yearly growth rates",
+            "explanation_md": "It overstates compounded growth."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The harmonic mean of the yearly growth rates",
+            "explanation_md": "The harmonic mean is for rates such as speed over equal distances."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The mode of the yearly growth rates",
+            "explanation_md": "The mode ignores most of the years."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The geometric mean of the yearly growth factors",
+            "explanation_md": "Growth factors multiply, so their geometric mean gives the constant factor with the same overall effect."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "The geometric mean takes account of compounding and is used for average growth rates and portfolio returns."
+      }
+    },
+    {
+      "draft_id": "D024",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F004",
+        "F006"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "For three positive observations that are not all equal, which order of the three means is correct?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Arithmetic mean > geometric mean > harmonic mean",
+            "explanation_md": "This is the standard order for positive values that are not all equal."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Harmonic mean > geometric mean > arithmetic mean",
+            "explanation_md": "This is the reverse of the correct order."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Geometric mean > arithmetic mean > harmonic mean",
+            "explanation_md": "The arithmetic mean is the largest of the three."
+          },
+          {
+            "option_id": "D",
+            "text_md": "All three are equal",
+            "explanation_md": "They are equal only when all the observations are equal."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "For positive values not all equal, AM > GM > HM. The courseware prints AM > HM > GM, which does not hold."
+      }
+    },
+    {
+      "draft_id": "D025",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A series of annual growth factors contains a zero (a year in which the whole value was wiped out). Which statement is right about its geometric mean?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The geometric mean of the factors cannot be calculated if any value is zero or negative",
+            "explanation_md": "The geometric mean needs positive values."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The geometric mean is then equal to the arithmetic mean",
+            "explanation_md": "No such rule exists."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The geometric mean becomes larger than the arithmetic mean",
+            "explanation_md": "It is not defined for such values."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The geometric mean can be computed by dropping the sign",
+            "explanation_md": "Dropping signs changes the data and is not a valid method."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "The geometric mean is defined only for positive values."
+      }
+    },
+    {
+      "draft_id": "D026",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F007"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "In a grouped frequency table the median class is the class",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "With the highest frequency",
+            "explanation_md": "That defines the modal class."
+          },
+          {
+            "option_id": "B",
+            "text_md": "In the middle of the table by position",
+            "explanation_md": "The position of the class in the list does not decide it."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Whose less-than cumulative frequency first exceeds N/2",
+            "explanation_md": "The median lies in the class where the cumulative count first passes half the total."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Whose class mark is nearest to the mean",
+            "explanation_md": "That does not define the median class."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "The median class is the one whose less-than cumulative frequency first exceeds N/2."
+      }
+    },
+    {
+      "draft_id": "D027",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F008",
+        "F003"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "Salaries in a department are 12, 14, 15, 16, 18 and 250 (Rs thousand). Which average is least affected by the value 250?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The arithmetic mean",
+            "explanation_md": "The mean is strongly pulled by 250."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The median",
+            "explanation_md": "The median depends on position, so the extreme value has little effect."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The geometric mean",
+            "explanation_md": "The geometric mean is also pulled up by the large value."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The range",
+            "explanation_md": "The range is not an average, and it is entirely determined by the extreme value."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "The median needs only the order of the values, so extreme values hardly change it."
+      }
+    },
+    {
+      "draft_id": "D028",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F008"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "The second quartile Q2 of a distribution is",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The mean",
+            "explanation_md": "Not generally equal to the mean."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The mode",
+            "explanation_md": "Not generally equal to the mode."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The median",
+            "explanation_md": "Q2 divides the data into two equal halves, so it is the median."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The quartile deviation",
+            "explanation_md": "The quartile deviation is (Q3 - Q1) / 2."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "Q1, Q2 and Q3 split the data into four equal parts, and Q2 is the median."
+      }
+    },
+    {
+      "draft_id": "D029",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F009",
+        "F015"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A distribution is positively skewed. Which ordering of the three averages is expected?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Mean < median < mode",
+            "explanation_md": "That is the order for negative skew."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Mean > median > mode",
+            "explanation_md": "In positive skew the long right tail pulls the mean up most and the mode is lowest."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Median > mean > mode",
+            "explanation_md": "The median lies between the other two in a skewed unimodal distribution."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Mean = median = mode",
+            "explanation_md": "That is a symmetric distribution."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "Positive skew has a longer right tail, so mean > median > mode."
+      }
+    },
+    {
+      "draft_id": "D030",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F009"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "A distribution of customer ages has two distinct peaks of nearly equal height. The distribution is called",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Symmetrical",
+            "explanation_md": "Symmetry is not what two peaks indicate."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Unimodal",
+            "explanation_md": "There are two peaks."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Bimodal, having two modes",
+            "explanation_md": "Two or more values with equal or nearly equal highest frequency make the data multimodal; two gives bimodal."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Platykurtic with no mode",
+            "explanation_md": "A mode exists wherever a value is most frequent."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "A distribution with two peaks of similar height has two modes and is bimodal."
+      }
+    },
+    {
+      "draft_id": "D031",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F010"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "To compare the spread of loan amounts (in rupees) with the spread of loan tenures (in months), which measure should you use?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The range of each",
+            "explanation_md": "Ranges are in different units and cannot be compared."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The standard deviation of each",
+            "explanation_md": "Standard deviations are also in different units."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A coefficient such as the coefficient of variation",
+            "explanation_md": "Relative measures are pure numbers and allow comparison across units."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The mean of each",
+            "explanation_md": "The mean describes the centre, not the spread."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "Relative measures of dispersion (the coefficients) are free of units and so can be compared across series."
+      }
+    },
+    {
+      "draft_id": "D032",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F011"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "The main weakness of the range as a measure of dispersion is that",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "It is based only on the two extreme observations",
+            "explanation_md": "The range ignores all values between the largest and the smallest."
+          },
+          {
+            "option_id": "B",
+            "text_md": "It is hard to calculate",
+            "explanation_md": "It is the simplest measure."
+          },
+          {
+            "option_id": "C",
+            "text_md": "It cannot be computed for positive numbers",
+            "explanation_md": "It can be computed for any set of numbers."
+          },
+          {
+            "option_id": "D",
+            "text_md": "It is always zero",
+            "explanation_md": "It is zero only if all observations are equal."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "The range uses only the maximum and the minimum, so it has no sampling stability and ignores the rest of the data."
+      }
+    },
+    {
+      "draft_id": "D033",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F014"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "Two branches have the same average deposits. Branch X has a smaller standard deviation than Branch Y. Which statement is right?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "X's deposits are more consistent than Y's",
+            "explanation_md": "A smaller standard deviation with equal means means more consistency."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Y's deposits are more consistent than X's",
+            "explanation_md": "The larger spread belongs to Y."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Both are equally consistent",
+            "explanation_md": "The standard deviations differ."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Nothing can be said without the median",
+            "explanation_md": "With the same mean, the standard deviation settles the comparison."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "A small standard deviation means a high degree of consistency and homogeneity."
+      }
+    },
+    {
+      "draft_id": "D034",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F014"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Branch P has mean 120 and standard deviation 18. Branch Q has mean 60 and standard deviation 12. Which statement is correct?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "P is more variable because its standard deviation is larger",
+            "explanation_md": "The standard deviations are in the same unit but the means differ a lot."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Q is less consistent, because its CV (20 per cent) is higher than P's (15 per cent)",
+            "explanation_md": "CV = sigma / mean x 100: P is 15 per cent and Q is 20 per cent, so Q varies more relative to its size."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The two are equally consistent",
+            "explanation_md": "The CVs differ (15 and 20 per cent)."
+          },
+          {
+            "option_id": "D",
+            "text_md": "P is less consistent, because its CV is larger",
+            "explanation_md": "P's CV is 15 per cent, which is smaller than Q's."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "Consistency is judged by the coefficient of variation: the smaller the CV, the more consistent. P is at 15 per cent and Q at 20 per cent."
+      }
+    },
+    {
+      "draft_id": "D035",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F015"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A distribution has mean 38, median 42 and mode 46. This indicates",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Positive skew, with a longer right tail",
+            "explanation_md": "In positive skew the mean is the largest of the three."
+          },
+          {
+            "option_id": "B",
+            "text_md": "No skew",
+            "explanation_md": "The averages differ, so the distribution is not symmetric."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Negative skew, with a longer left tail",
+            "explanation_md": "The mean and median below the mode, with the long tail on the left, is negative skew."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Skew cannot be read from averages",
+            "explanation_md": "The order of the averages indicates the direction of skew."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "With mean < median < mode the longer tail is on the left, which is negative skew."
+      }
+    },
+    {
+      "draft_id": "D036",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F016"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A distribution with a higher, sharper peak and fatter tails than the normal curve is called",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Mesokurtic",
+            "explanation_md": "Mesokurtic has the same peak as the normal curve."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Platykurtic",
+            "explanation_md": "Platykurtic distributions are flatter, with thinner tails."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Symmetrical",
+            "explanation_md": "Symmetry is about skewness, not peakedness."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Leptokurtic",
+            "explanation_md": "A higher, sharper peak with fatter tails is leptokurtic."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "Leptokurtic distributions have a higher and sharper peak and fatter tails than the normal (mesokurtic) curve."
+      }
+    },
+    {
+      "draft_id": "D037",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F002"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "The mean of eight observations is 50. Seven of them are 45, 52, 38, 60, 41, 55 and 47. What is the eighth?",
+        "numeric_rule": {
+          "expected_answer": "62",
+          "unit_label": "units",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "Total = 8 x 50 = 400. The seven add to 338, so the eighth is 400 - 338 = 62.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Total of all eight.",
+            "formula_or_substitution": "8 x 50",
+            "intermediate_result": "400"
+          },
+          {
+            "step_number": 2,
+            "description": "Sum of the seven known.",
+            "formula_or_substitution": "45 + 52 + 38 + 60 + 41 + 55 + 47",
+            "intermediate_result": "338"
+          },
+          {
+            "step_number": 3,
+            "description": "Missing value.",
+            "formula_or_substitution": "400 - 338",
+            "intermediate_result": "62"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D038",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F002"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "60 savings accounts have a mean balance of Rs 18,000 and 40 other accounts have a mean balance of Rs 28,000. What is the combined mean balance of the 100 accounts, in rupees?",
+        "numeric_rule": {
+          "expected_answer": "22000",
+          "unit_label": "Rs",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "Combined mean = (60 x 18,000 + 40 x 28,000) / 100 = (10,80,000 + 11,20,000) / 100 = 22,000.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Total of each group.",
+            "formula_or_substitution": "60 x 18,000; 40 x 28,000",
+            "intermediate_result": "10,80,000; 11,20,000"
+          },
+          {
+            "step_number": 2,
+            "description": "Divide the sum by 100.",
+            "formula_or_substitution": "22,00,000 / 100",
+            "intermediate_result": "22,000"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D039",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "What is the geometric mean of 2, 4 and 8?",
+        "numeric_rule": {
+          "expected_answer": "4",
+          "unit_label": "units",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "The product is 64 and the cube root of 64 is 4.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Product.",
+            "formula_or_substitution": "2 x 4 x 8",
+            "intermediate_result": "64"
+          },
+          {
+            "step_number": 2,
+            "description": "Cube root.",
+            "formula_or_substitution": "64 ^ (1/3)",
+            "intermediate_result": "4"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D040",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F005"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A clerk carries cash the same distance to a branch at 30 km/h and returns at 45 km/h. What is the average speed for the round trip, in km/h?",
+        "numeric_rule": {
+          "expected_answer": "36",
+          "unit_label": "km/h",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "For equal distances the average speed is the harmonic mean: 2 / (1/30 + 1/45) = 2 / (5/90) = 36.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Sum of reciprocals.",
+            "formula_or_substitution": "1/30 + 1/45",
+            "intermediate_result": "5/90"
+          },
+          {
+            "step_number": 2,
+            "description": "Harmonic mean.",
+            "formula_or_substitution": "2 / (5/90)",
+            "intermediate_result": "36"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D041",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F007"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Complaint resolution times (days) are 0-10: 5, 10-20: 15, 20-30: 20 and 30-40: 10 (50 complaints). What is the median, in days, to 2 decimal places?",
+        "numeric_rule": {
+          "expected_answer": "22.50",
+          "unit_label": "days",
+          "precision_decimals": 2,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give the answer to 2 decimal places.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "N/2 = 25. Cumulative frequencies 5, 20, 40, 50, so the median class is 20-30 with cf = 20 before it: 20 + (25 - 20)/20 x 10 = 22.50.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Cumulative frequencies.",
+            "formula_or_substitution": "5; 5+15; 20+20; 40+10",
+            "intermediate_result": "5, 20, 40, 50"
+          },
+          {
+            "step_number": 2,
+            "description": "Median class.",
+            "formula_or_substitution": "N/2 = 25",
+            "intermediate_result": "20-30"
+          },
+          {
+            "step_number": 3,
+            "description": "Interpolate.",
+            "formula_or_substitution": "20 + (25 - 20) / 20 x 10",
+            "intermediate_result": "22.50"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D042",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F009"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Ticket sizes (Rs thousand) are grouped as 0-10: 4, 10-20: 11, 20-30: 18, 30-40: 8 and 40-50: 3. Using the grouped formula, what is the mode, to 2 decimal places?",
+        "numeric_rule": {
+          "expected_answer": "24.12",
+          "unit_label": "Rs thousand",
+          "precision_decimals": 2,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give the answer to 2 decimal places.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "The modal class is 20-30 with f1 = 18, f0 = 11 and f2 = 8: 20 + (18 - 11) / (36 - 11 - 8) x 10 = 20 + 70/17 = 24.1176, or 24.12.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Modal class and neighbours.",
+            "formula_or_substitution": "f1 = 18, f0 = 11, f2 = 8",
+            "intermediate_result": "class 20-30"
+          },
+          {
+            "step_number": 2,
+            "description": "Denominator.",
+            "formula_or_substitution": "2 x 18 - 11 - 8",
+            "intermediate_result": "17"
+          },
+          {
+            "step_number": 3,
+            "description": "Mode.",
+            "formula_or_substitution": "20 + 7 / 17 x 10",
+            "intermediate_result": "24.12"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D043",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F009"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "For a moderately skewed distribution the mean is 40 and the median is 36. Use the empirical relation to estimate the mode.",
+        "numeric_rule": {
+          "expected_answer": "28",
+          "unit_label": "units",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "Mode = 3 x median - 2 x mean = 108 - 80 = 28.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "3 x median.",
+            "formula_or_substitution": "3 x 36",
+            "intermediate_result": "108"
+          },
+          {
+            "step_number": 2,
+            "description": "2 x mean.",
+            "formula_or_substitution": "2 x 40",
+            "intermediate_result": "80"
+          },
+          {
+            "step_number": 3,
+            "description": "Mode.",
+            "formula_or_substitution": "108 - 80",
+            "intermediate_result": "28"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D044",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F012"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "For a distribution Q1 = 20 and Q3 = 60. What is the coefficient of quartile deviation?",
+        "numeric_rule": {
+          "expected_answer": "0.50",
+          "unit_label": "pure number",
+          "precision_decimals": 2,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give the answer to 2 decimal places.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "Coefficient = (Q3 - Q1) / (Q3 + Q1) = 40 / 80 = 0.50.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Difference and sum.",
+            "formula_or_substitution": "60 - 20; 60 + 20",
+            "intermediate_result": "40; 80"
+          },
+          {
+            "step_number": 2,
+            "description": "Ratio.",
+            "formula_or_substitution": "40 / 80",
+            "intermediate_result": "0.50"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D045",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F014"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "The following eight daily balances (Rs lakh) are 3, 5, 5, 5, 6, 6, 8 and 10. What is the standard deviation, dividing by n?",
+        "numeric_rule": {
+          "expected_answer": "2",
+          "unit_label": "Rs lakh",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "Mean = 48/8 = 6. Squared deviations: 9, 1, 1, 1, 0, 0, 4, 16 = 32. Variance = 32/8 = 4 and the standard deviation = 2.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Mean.",
+            "formula_or_substitution": "48 / 8",
+            "intermediate_result": "6"
+          },
+          {
+            "step_number": 2,
+            "description": "Squared deviations total.",
+            "formula_or_substitution": "9+1+1+1+0+0+4+16",
+            "intermediate_result": "32"
+          },
+          {
+            "step_number": 3,
+            "description": "Variance, then root.",
+            "formula_or_substitution": "32 / 8 = 4; sqrt(4)",
+            "intermediate_result": "2"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D046",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F014"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "A series has mean 80 and standard deviation 12. What is the coefficient of variation, in per cent?",
+        "numeric_rule": {
+          "expected_answer": "15",
+          "unit_label": "per cent",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "CV = 12 / 80 x 100 = 15 per cent.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Divide and scale.",
+            "formula_or_substitution": "12 / 80 x 100",
+            "intermediate_result": "15"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D047",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F011"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "The highest and lowest daily cash positions at a branch are Rs 90 lakh and Rs 30 lakh. What is the coefficient of range?",
+        "numeric_rule": {
+          "expected_answer": "0.50",
+          "unit_label": "pure number",
+          "precision_decimals": 2,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give the answer to 2 decimal places.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "Coefficient of range = (max - min) / (max + min) = 60 / 120 = 0.50.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Ratio.",
+            "formula_or_substitution": "(90 - 30) / (90 + 30)",
+            "intermediate_result": "0.50"
+          }
+        ]
+      }
+    }
+  ],
+  "unresolved": [
+    "The courseware prints the order AM > HM > GM and divides 64 by 6 in Example 14; the items teach AM > GM > HM and 64/16 = 4 (facts F006, flagged needs_review).",
+    "The courseware compares beta2 with 0 and lists mesokurtic twice; its Example 32 computes beta2 = 0.025 while the central moments it gives imply 2.5. The items teach the standard mu4/mu2^2 with comparison value 3 and note the courseware's convention (fact F016, flagged needs_review).",
+    "Courseware says the sign of beta1 follows mu3, but beta1 = mu3^2/mu2^3 cannot be negative; items use the sign of mu3 for direction only.",
+    "Courseware printed p. 46 (unit title page) not read; terminal questions on p. 70 were read but not used.",
+    "Reviewer for this batch is the authoring agent; no independent or human review."
+  ],
+  "next_batch_hint": "ABM-A-U04-B001: Correlation and Regression (courseware unit 4, printed p. 71 = PDF p. 86)."
+}
