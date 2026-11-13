@@ -1,0 +1,1539 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BFM-A-U03-B005",
+    "paper_id": "BFM",
+    "unit_label": "Module A: correspondent banking, NRI loans and LRS conditions - additional assessment",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S03",
+      "RBI_FAQ_NRACC",
+      "RBI_MD_INR_LENDING",
+      "RBI_MD_LRS"
+    ],
+    "facts": [
+      {
+        "fact_id": "AF001",
+        "statement": "A correspondent bank is a financial institution in a host country that provides services to banks present elsewhere; the bank in the home country that relies on it as its agent is the respondent bank. Banks use correspondents to reach foreign markets and clients without opening branches abroad, avoiding the cost of a branch network and branch licensing restrictions.",
+        "source_id": "S03",
+        "locator": "Printed pp. 62-63, sections 3.2 and 3.2.1",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "AF002",
+        "statement": "Account services of a correspondent bank require an account relationship with the foreign bank: clearing house functions (outward and inward payments, collections, statements, reimbursement of LC claims), collections of bills and cheques, payments, overdrafts and loan facilities, and investment of overnight surplus balances.",
+        "source_id": "S03",
+        "locator": "Printed p. 64, section 3.2.2 A, items (i) to (v)",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "AF003",
+        "statement": "Other correspondent services do not normally require an account relationship and rest on the relationship and credit assessment: letter of credit advising and confirmation, buyer's and supplier's credit, bankers acceptances, guarantees, foreign exchange services, custodial services, trade referrals and credit reports, fund raising services and training.",
+        "source_id": "S03",
+        "locator": "Printed p. 65, section 3.2.3",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "BF006",
+        "statement": "Loans in India against NRE or FCNR(B) deposits may be given to the account holder or to third parties, subject to usual margin requirements, but may not be used for relending, agricultural or plantation activities, or investment in real estate. For a third-party loan there must be no direct or indirect foreign exchange consideration for the depositor pledging the deposit. A loan to the account holder may be repaid by adjusting the deposit, by inward remittance or from the holder's NRO balances. Premature withdrawal of a deposit is not available while a loan against it is outstanding. Loans outside India against NRE or FCNR(B) deposits are allowed through branches or correspondents of the bank, subject to margin; they are not permitted against NRO balances.",
+        "source_id": "RBI_FAQ_NRACC",
+        "locator": "Q3, rows \"Loans in India\" and \"Loans outside India\"; S03 printed pp. 82-83 agrees",
+        "regulatory_sensitive": true,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "BF007",
+        "statement": "An authorised dealer or a housing finance institution approved by the National Housing Bank may give an NRI or PIO a rupee housing loan to acquire residential accommodation in India. The amount, margin and repayment period are the same as for a resident; the loan may not be credited to an NRE, FCNR(B) or NRNR account; it must be fully secured by an equitable mortgage of the property, with a lien on other assets in India if necessary; instalments, interest and charges may be paid by remittance from abroad, from funds in an NRE, FCNR(B), NRNR, NRO or NRSR account, from rental income from the property, or by a relative in India through an account-to-account transfer; the interest rate must conform to RBI and NHB directives.",
+        "source_id": "RBI_MD_INR_LENDING",
+        "locator": "Section 4; S03 printed p. 83 agrees on the main conditions but omits the relative's transfer",
+        "regulatory_sensitive": true,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "CF007",
+        "statement": "The authorised dealer must ensure that payment is received out of the remitter's own funds by a cheque drawn on the applicant's account, by debit to the account, or by demand draft or pay order (or card of the cardholder); must certify that the remittance is not made directly or indirectly by or to ineligible entities; must keep on record the information on which the transaction was done; must refuse in writing and, if it suspects contravention, report to the Reserve Bank where the applicant refuses to comply; must follow KYC and anti-money laundering rules; and, for a new customer making a capital account remittance, must carry out due diligence and obtain the previous year's bank statement or the latest tax assessment order or return.",
+        "source_id": "RBI_MD_LRS",
+        "locator": "Part B, paragraphs 2 to 9",
+        "regulatory_sensitive": true,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "CF008",
+        "statement": "Remittances under the scheme are reported in FETERS in the normal course, and authorised dealer banks are guided by FED Master Direction No. 18/2015-16 on Reporting under FEMA, 1999. Banks, including those with no presence in India, must obtain prior RBI approval for schemes they market in India to residents for soliciting foreign currency deposits for overseas branches or acting as agents for overseas mutual funds or other foreign financial services companies.",
+        "source_id": "RBI_MD_LRS",
+        "locator": "Part B, paragraphs 12 and 13",
+        "regulatory_sensitive": true,
+        "evidence_status": "explicit"
+      }
+    ],
+    "drafts": [
+      {
+        "draft_id": "D001",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "AF001"
+        ],
+        "payload": {
+          "difficulty": "easy",
+          "stem_md": "In correspondent banking, what is the bank in the home country that relies on a bank abroad as its agent called?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The correspondent bank",
+              "explanation_md": "The correspondent is the bank abroad that provides the service."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The respondent bank",
+              "explanation_md": "It is the respondent; the foreign bank is the correspondent."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The clearing bank",
+              "explanation_md": "Not the term."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The nostro bank",
+              "explanation_md": "Not the term."
+            }
+          ],
+          "correct_option_id": "B",
+          "correct_explanation_md": "A correspondent bank is the institution in the host country; the home country bank that relies on it as its agent is the respondent bank."
+        }
+      },
+      {
+        "draft_id": "D002",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "AF001"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Why does a bank use correspondent banks rather than open its own branches abroad?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Because correspondent banks may not charge fees",
+              "explanation_md": "Not the reason."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Because branches abroad are forbidden to all Indian banks",
+              "explanation_md": "Not so."
+            },
+            {
+              "option_id": "C",
+              "text_md": "To reach foreign markets and clients without the cost of a branch network and branch licensing restrictions",
+              "explanation_md": "This is the reason."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Because it avoids all exchange control rules",
+              "explanation_md": "Not so."
+            }
+          ],
+          "correct_option_id": "C",
+          "correct_explanation_md": "Banks use correspondents to serve foreign markets and clients without opening branches abroad, avoiding branch costs and licensing restrictions."
+        }
+      },
+      {
+        "draft_id": "D003",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "AF002"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Which correspondent service needs an account relationship between the two banks?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Advising a letter of credit",
+              "explanation_md": "This rests on relationship and credit assessment."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Issuing a credit report on a buyer",
+              "explanation_md": "No account is needed."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Training of staff",
+              "explanation_md": "No account is needed."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Payments and collections handled through the clearing house function on the foreign bank",
+              "explanation_md": "Clearing, payments, collections, overdraft and investment of overnight balances need an account."
+            }
+          ],
+          "correct_option_id": "D",
+          "correct_explanation_md": "Clearing house functions, collections, payments, overdrafts and loan facilities and investment of overnight balances require an account relationship."
+        }
+      },
+      {
+        "draft_id": "D004",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "AF003"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Which of the following correspondent bank services does NOT normally need an account with the correspondent?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Confirmation of a letter of credit",
+              "explanation_md": "Letter of credit advising and confirmation rest on the relationship and credit assessment."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Payment of an outward remittance from the respondent's account",
+              "explanation_md": "Needs an account."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Statement and reimbursement of LC claims through the account",
+              "explanation_md": "Needs an account."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Investment of the respondent's overnight surplus",
+              "explanation_md": "Needs an account."
+            }
+          ],
+          "correct_option_id": "A",
+          "correct_explanation_md": "Advising and confirmation of letters of credit, guarantees, credit reports and similar services do not normally require an account relationship."
+        }
+      },
+      {
+        "draft_id": "D005",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "BF006"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "An NRI wants a loan in India against his NRE fixed deposit and then asks to withdraw the deposit prematurely while the loan is outstanding. What is the position?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "He may withdraw at once and repay later",
+              "explanation_md": "Not permitted."
+            },
+            {
+              "option_id": "B",
+              "text_md": "He may withdraw if the bank agrees",
+              "explanation_md": "Not permitted while the loan is outstanding."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Premature withdrawal is not available while the loan is outstanding",
+              "explanation_md": "This is the rule."
+            },
+            {
+              "option_id": "D",
+              "text_md": "He may withdraw half the deposit",
+              "explanation_md": "Not permitted."
+            }
+          ],
+          "correct_option_id": "C",
+          "correct_explanation_md": "Premature withdrawal of a deposit is not available while a loan against it is outstanding."
+        }
+      },
+      {
+        "draft_id": "D006",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "BF006"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "For what purpose may a loan in India against an NRE deposit NOT be used?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Personal expenses",
+              "explanation_md": "Not barred by this rule."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Investment in real estate",
+              "explanation_md": "Relending, agriculture, plantation and real estate investment are barred."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Meeting business working capital in a permitted activity",
+              "explanation_md": "Not barred by this rule."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Purchase of a car",
+              "explanation_md": "Not barred by this rule."
+            }
+          ],
+          "correct_option_id": "B",
+          "correct_explanation_md": "Loans against NRE or FCNR(B) deposits may not be used for relending, agricultural or plantation activities or real estate investment."
+        }
+      },
+      {
+        "draft_id": "D007",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "BF006"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "A loan outside India is sought against which balance?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "An NRO balance",
+              "explanation_md": "Not permitted against NRO balances."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Any resident rupee deposit",
+              "explanation_md": "Not the facility."
+            },
+            {
+              "option_id": "C",
+              "text_md": "A foreign currency deposit of a resident",
+              "explanation_md": "Not the facility."
+            },
+            {
+              "option_id": "D",
+              "text_md": "An NRE or FCNR(B) deposit through a branch or correspondent of the bank, subject to margin; not an NRO balance",
+              "explanation_md": "This is the rule."
+            }
+          ],
+          "correct_option_id": "D",
+          "correct_explanation_md": "Loans outside India are allowed against NRE or FCNR(B) deposits, subject to margin, and not against NRO balances."
+        }
+      },
+      {
+        "draft_id": "D008",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "BF007"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Into which account may the proceeds of a rupee housing loan to an NRI NOT be credited?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "An NRE, FCNR(B) or NRNR account",
+              "explanation_md": "The loan may not be credited to these accounts."
+            },
+            {
+              "option_id": "B",
+              "text_md": "An NRO account",
+              "explanation_md": "Not barred."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The seller's account",
+              "explanation_md": "Not barred."
+            },
+            {
+              "option_id": "D",
+              "text_md": "A joint account with a resident relative",
+              "explanation_md": "Not barred by this rule."
+            }
+          ],
+          "correct_option_id": "A",
+          "correct_explanation_md": "The housing loan may not be credited to an NRE, FCNR(B) or NRNR account."
+        }
+      },
+      {
+        "draft_id": "D009",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "BF007"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "From which source may the instalments of an NRI's housing loan be paid?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only by remittance from abroad",
+              "explanation_md": "Other sources are allowed."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Only from rental income",
+              "explanation_md": "Other sources are allowed."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Remittance from abroad, funds in NRE, FCNR(B), NRNR, NRO or NRSR accounts, rental income from the property, or a relative in India by account transfer",
+              "explanation_md": "All of these are allowed."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Only from the NRE account",
+              "explanation_md": "Other sources are allowed."
+            }
+          ],
+          "correct_option_id": "C",
+          "correct_explanation_md": "Instalments may be paid by remittance from abroad, from the listed accounts, from rental income, or by a relative in India through an account-to-account transfer."
+        }
+      },
+      {
+        "draft_id": "D010",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "CF007"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "An authorised dealer receives a remittance request under the Liberalised Remittance Scheme. How must payment be received?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "In cash from any person",
+              "explanation_md": "Not permitted."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Out of the remitter's own funds by cheque on his account, debit to his account, demand draft or pay order (or his own card)",
+              "explanation_md": "This is the rule."
+            },
+            {
+              "option_id": "C",
+              "text_md": "By cheque drawn by a friend",
+              "explanation_md": "The funds must be the remitter's own."
+            },
+            {
+              "option_id": "D",
+              "text_md": "From a loan from an overseas lender",
+              "explanation_md": "Not the stated modes."
+            }
+          ],
+          "correct_option_id": "B",
+          "correct_explanation_md": "The dealer must ensure payment is received out of the remitter's own funds by cheque on his account, debit to the account, demand draft or pay order or his own card."
+        }
+      },
+      {
+        "draft_id": "D011",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "CF007"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "A new customer asks for a capital account remittance under the scheme. What additional step must the bank take?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Obtain approval of the Reserve Bank in every case",
+              "explanation_md": "Not required."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Take a cash margin of ten per cent",
+              "explanation_md": "Not stated."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Nothing beyond KYC",
+              "explanation_md": "Additional documents are required for a new customer."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Carry out due diligence and obtain the previous year's bank statement or the latest tax assessment order or return",
+              "explanation_md": "This is the requirement."
+            }
+          ],
+          "correct_option_id": "D",
+          "correct_explanation_md": "For a new customer making a capital account remittance, the bank must do due diligence and obtain the previous year's statement or latest tax assessment order or return."
+        }
+      },
+      {
+        "draft_id": "D012",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "CF008"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Through which system are LRS remittances reported?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "FETERS, in the normal course",
+              "explanation_md": "This is the system."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The bank's internal register only",
+              "explanation_md": "The reporting goes to the Reserve Bank system."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Customs EDI",
+              "explanation_md": "Not the system."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The stock exchange",
+              "explanation_md": "Not the system."
+            }
+          ],
+          "correct_option_id": "A",
+          "correct_explanation_md": "Remittances under the scheme are reported in FETERS in the normal course."
+        }
+      },
+      {
+        "draft_id": "D013",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "CF008"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "A foreign bank with no presence in India wants to market in India a scheme for soliciting foreign currency deposits for its overseas branch from residents. What does it need?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Nothing, as it has no presence in India",
+              "explanation_md": "The requirement applies to banks with no presence too."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Prior approval of the Reserve Bank",
+              "explanation_md": "This is required."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Only a licence from SEBI",
+              "explanation_md": "Not the requirement."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Only registration with a local magistrate",
+              "explanation_md": "Not the requirement."
+            }
+          ],
+          "correct_option_id": "B",
+          "correct_explanation_md": "Banks, including those with no presence in India, must obtain prior RBI approval for schemes they market in India to residents for soliciting foreign currency deposits for overseas branches."
+        }
+      }
+    ],
+    "unresolved": [
+      "This batch adds assessment questions only, using facts already established in batches BFM-A-U03-B001, BFM-A-U03-B003 and BFM-A-U02-B003; their evidence limits carry over.",
+      "FED Master Direction No. 18/2015-16 on Reporting under FEMA was not retrieved in substance (the RBI page lists only its update history); only the reporting statement in the LRS Master Direction is used.",
+      "Reviewer for this batch is the authoring agent; no independent or human review."
+    ],
+    "next_batch_hint": "Standby letters of credit and the letter of credit flow (unit 4)."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BFM-A-U03-B005",
+    "paper_id": "BFM",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 8, Compulsory Paper II, Module A: International Banking, External Commercial Borrowings and Foreign Investments in India"
+    },
+    "sources": [
+      {
+        "source_id": "S03",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "RBI_FAQ_NRACC",
+        "authority": "Reserve Bank of India",
+        "title": "Accounts in India by Non-residents (FAQ, as on January 16, 2025)",
+        "url": "https://www.rbi.org.in/commonman/english/scripts/FAQs.aspx?Id=3",
+        "publication_date": "2025-01-16",
+        "effective_date": null
+      },
+      {
+        "source_id": "RBI_MD_INR_LENDING",
+        "authority": "Reserve Bank of India",
+        "title": "Master Direction on Borrowing and Lending transactions in Indian Rupee between persons resident in India and NRIs/PIOs",
+        "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=10191",
+        "publication_date": "2026-09-08",
+        "effective_date": null
+      },
+      {
+        "source_id": "RBI_MD_LRS",
+        "authority": "Reserve Bank of India",
+        "title": "Master Direction - Liberalised Remittance Scheme (LRS), FED Master Direction No. 7/2015-16",
+        "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=10192",
+        "publication_date": "2024-09-06",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BFM::MOD_A::U03",
+        "objective_ids": [
+          "BFM::MOD_A::U03::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BFM::MOD_A::U03",
+        "objective_ids": [
+          "BFM::MOD_A::U03::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BFM::MOD_A::U03",
+        "objective_ids": [
+          "BFM::MOD_A::U03::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BFM::MOD_A::U03",
+        "objective_ids": [
+          "BFM::MOD_A::U03::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "unit_id": "BFM::MOD_A::U03",
+        "objective_ids": [
+          "BFM::MOD_A::U03::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D006",
+        "unit_id": "BFM::MOD_A::U03",
+        "objective_ids": [
+          "BFM::MOD_A::U03::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D007",
+        "unit_id": "BFM::MOD_A::U03",
+        "objective_ids": [
+          "BFM::MOD_A::U03::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D008",
+        "unit_id": "BFM::MOD_A::U03",
+        "objective_ids": [
+          "BFM::MOD_A::U03::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D009",
+        "unit_id": "BFM::MOD_A::U03",
+        "objective_ids": [
+          "BFM::MOD_A::U03::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D010",
+        "unit_id": "BFM::MOD_A::U02",
+        "objective_ids": [
+          "BFM::MOD_A::U02::LO_06"
+        ]
+      },
+      {
+        "draft_id": "D011",
+        "unit_id": "BFM::MOD_A::U02",
+        "objective_ids": [
+          "BFM::MOD_A::U02::LO_06"
+        ]
+      },
+      {
+        "draft_id": "D012",
+        "unit_id": "BFM::MOD_A::U02",
+        "objective_ids": [
+          "BFM::MOD_A::U02::LO_06"
+        ]
+      },
+      {
+        "draft_id": "D013",
+        "unit_id": "BFM::MOD_A::U02",
+        "objective_ids": [
+          "BFM::MOD_A::U02::LO_06"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BFM-A-U03-B005",
+      "draft_id": "D001",
+      "item_id": "item_cf0017bcbd224bf530757eeb0d9b3983d206b8bd4ce4b435efbfbd39782a2a4c"
+    },
+    {
+      "batch_id": "BFM-A-U03-B005",
+      "draft_id": "D002",
+      "item_id": "item_a4dcff012c7083cfc31acd27f9e247e6539e884ccce93792c7d48c552bb1f410"
+    },
+    {
+      "batch_id": "BFM-A-U03-B005",
+      "draft_id": "D003",
+      "item_id": "item_0b8cf00b257b4fe6608ba9064a43f828d61d995c7f460ae272adeda0687a839c"
+    },
+    {
+      "batch_id": "BFM-A-U03-B005",
+      "draft_id": "D004",
+      "item_id": "item_7f1bbac259171f24d5b7135f456f0216b2c0f422ca776109c565eee7f42ac83f"
+    },
+    {
+      "batch_id": "BFM-A-U03-B005",
+      "draft_id": "D005",
+      "item_id": "item_549387d340ddd2ded31c9f6dcd5a56dbe83a98a89e8d9050f8990dada8621111"
+    },
+    {
+      "batch_id": "BFM-A-U03-B005",
+      "draft_id": "D006",
+      "item_id": "item_1bbb4023022c54da3c89fe4d94c6e74dcad4bc93bd11b735d2a27e5327895fdb"
+    },
+    {
+      "batch_id": "BFM-A-U03-B005",
+      "draft_id": "D007",
+      "item_id": "item_ea6d93874a36367295dd3fd880ecd43acfe3f563fefef22ac10692f521b29d4d"
+    },
+    {
+      "batch_id": "BFM-A-U03-B005",
+      "draft_id": "D008",
+      "item_id": "item_b5eb49a0161c4c0fada51e0fc40cb9e82160285c311887115b5f7368328f64c3"
+    },
+    {
+      "batch_id": "BFM-A-U03-B005",
+      "draft_id": "D009",
+      "item_id": "item_d51bd8c4044f1f362f0dc84c864d272f016453dbefc49beaeed7b95d5dbefb79"
+    },
+    {
+      "batch_id": "BFM-A-U03-B005",
+      "draft_id": "D010",
+      "item_id": "item_054f26587aec04a376715c90d7eb32eb546a5b4d4ae6bc6727459761a7d29046"
+    },
+    {
+      "batch_id": "BFM-A-U03-B005",
+      "draft_id": "D011",
+      "item_id": "item_3720d829e8446d96dd74c606777eceee45c53608bb55f1ed4b8e1ae10b32290c"
+    },
+    {
+      "batch_id": "BFM-A-U03-B005",
+      "draft_id": "D012",
+      "item_id": "item_8fc453e4d31b78935fc3b4be76b859787208750d07f0947a2215088fdcee0dc5"
+    },
+    {
+      "batch_id": "BFM-A-U03-B005",
+      "draft_id": "D013",
+      "item_id": "item_a16857bcac6e67f42adf6420575994a776cb33bd3ee1ae7c612116a501e7b73a"
+    }
+  ],
+  "items": [
+    {
+      "difficulty": "easy",
+      "stem_md": "In correspondent banking, what is the bank in the home country that relies on a bank abroad as its agent called?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The correspondent bank",
+          "explanation_md": "The correspondent is the bank abroad that provides the service."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The respondent bank",
+          "explanation_md": "It is the respondent; the foreign bank is the correspondent."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The clearing bank",
+          "explanation_md": "Not the term."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The nostro bank",
+          "explanation_md": "Not the term."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_explanation_md": "A correspondent bank is the institution in the host country; the home country bank that relies on it as its agent is the respondent bank.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_cf0017bcbd224bf530757eeb0d9b3983d206b8bd4ce4b435efbfbd39782a2a4c",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U03",
+      "objective_ids": [
+        "BFM::MOD_A::U03::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 62-63, sections 3.2 and 3.2.1"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Why does a bank use correspondent banks rather than open its own branches abroad?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Because correspondent banks may not charge fees",
+          "explanation_md": "Not the reason."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Because branches abroad are forbidden to all Indian banks",
+          "explanation_md": "Not so."
+        },
+        {
+          "option_id": "C",
+          "text_md": "To reach foreign markets and clients without the cost of a branch network and branch licensing restrictions",
+          "explanation_md": "This is the reason."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Because it avoids all exchange control rules",
+          "explanation_md": "Not so."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_explanation_md": "Banks use correspondents to serve foreign markets and clients without opening branches abroad, avoiding branch costs and licensing restrictions.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_a4dcff012c7083cfc31acd27f9e247e6539e884ccce93792c7d48c552bb1f410",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U03",
+      "objective_ids": [
+        "BFM::MOD_A::U03::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 62-63, sections 3.2 and 3.2.1"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Which correspondent service needs an account relationship between the two banks?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Advising a letter of credit",
+          "explanation_md": "This rests on relationship and credit assessment."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Issuing a credit report on a buyer",
+          "explanation_md": "No account is needed."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Training of staff",
+          "explanation_md": "No account is needed."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Payments and collections handled through the clearing house function on the foreign bank",
+          "explanation_md": "Clearing, payments, collections, overdraft and investment of overnight balances need an account."
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_explanation_md": "Clearing house functions, collections, payments, overdrafts and loan facilities and investment of overnight balances require an account relationship.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_0b8cf00b257b4fe6608ba9064a43f828d61d995c7f460ae272adeda0687a839c",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U03",
+      "objective_ids": [
+        "BFM::MOD_A::U03::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed p. 64, section 3.2.2 A, items (i) to (v)"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Which of the following correspondent bank services does NOT normally need an account with the correspondent?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Confirmation of a letter of credit",
+          "explanation_md": "Letter of credit advising and confirmation rest on the relationship and credit assessment."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Payment of an outward remittance from the respondent's account",
+          "explanation_md": "Needs an account."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Statement and reimbursement of LC claims through the account",
+          "explanation_md": "Needs an account."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Investment of the respondent's overnight surplus",
+          "explanation_md": "Needs an account."
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_explanation_md": "Advising and confirmation of letters of credit, guarantees, credit reports and similar services do not normally require an account relationship.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_7f1bbac259171f24d5b7135f456f0216b2c0f422ca776109c565eee7f42ac83f",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U03",
+      "objective_ids": [
+        "BFM::MOD_A::U03::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed p. 65, section 3.2.3"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "An NRI wants a loan in India against his NRE fixed deposit and then asks to withdraw the deposit prematurely while the loan is outstanding. What is the position?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "He may withdraw at once and repay later",
+          "explanation_md": "Not permitted."
+        },
+        {
+          "option_id": "B",
+          "text_md": "He may withdraw if the bank agrees",
+          "explanation_md": "Not permitted while the loan is outstanding."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Premature withdrawal is not available while the loan is outstanding",
+          "explanation_md": "This is the rule."
+        },
+        {
+          "option_id": "D",
+          "text_md": "He may withdraw half the deposit",
+          "explanation_md": "Not permitted."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_explanation_md": "Premature withdrawal of a deposit is not available while a loan against it is outstanding.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_549387d340ddd2ded31c9f6dcd5a56dbe83a98a89e8d9050f8990dada8621111",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U03",
+      "objective_ids": [
+        "BFM::MOD_A::U03::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "RBI_FAQ_NRACC",
+          "authority": "Reserve Bank of India",
+          "title": "Accounts in India by Non-residents (FAQ, as on January 16, 2025)",
+          "url": "https://www.rbi.org.in/commonman/english/scripts/FAQs.aspx?Id=3",
+          "publication_date": "2025-01-16",
+          "effective_date": null,
+          "locator": "Q3, rows \"Loans in India\" and \"Loans outside India\"; S03 printed pp. 82-83 agrees"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "For what purpose may a loan in India against an NRE deposit NOT be used?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Personal expenses",
+          "explanation_md": "Not barred by this rule."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Investment in real estate",
+          "explanation_md": "Relending, agriculture, plantation and real estate investment are barred."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Meeting business working capital in a permitted activity",
+          "explanation_md": "Not barred by this rule."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Purchase of a car",
+          "explanation_md": "Not barred by this rule."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_explanation_md": "Loans against NRE or FCNR(B) deposits may not be used for relending, agricultural or plantation activities or real estate investment.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_1bbb4023022c54da3c89fe4d94c6e74dcad4bc93bd11b735d2a27e5327895fdb",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U03",
+      "objective_ids": [
+        "BFM::MOD_A::U03::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "RBI_FAQ_NRACC",
+          "authority": "Reserve Bank of India",
+          "title": "Accounts in India by Non-residents (FAQ, as on January 16, 2025)",
+          "url": "https://www.rbi.org.in/commonman/english/scripts/FAQs.aspx?Id=3",
+          "publication_date": "2025-01-16",
+          "effective_date": null,
+          "locator": "Q3, rows \"Loans in India\" and \"Loans outside India\"; S03 printed pp. 82-83 agrees"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "A loan outside India is sought against which balance?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "An NRO balance",
+          "explanation_md": "Not permitted against NRO balances."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Any resident rupee deposit",
+          "explanation_md": "Not the facility."
+        },
+        {
+          "option_id": "C",
+          "text_md": "A foreign currency deposit of a resident",
+          "explanation_md": "Not the facility."
+        },
+        {
+          "option_id": "D",
+          "text_md": "An NRE or FCNR(B) deposit through a branch or correspondent of the bank, subject to margin; not an NRO balance",
+          "explanation_md": "This is the rule."
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_explanation_md": "Loans outside India are allowed against NRE or FCNR(B) deposits, subject to margin, and not against NRO balances.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_ea6d93874a36367295dd3fd880ecd43acfe3f563fefef22ac10692f521b29d4d",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U03",
+      "objective_ids": [
+        "BFM::MOD_A::U03::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "RBI_FAQ_NRACC",
+          "authority": "Reserve Bank of India",
+          "title": "Accounts in India by Non-residents (FAQ, as on January 16, 2025)",
+          "url": "https://www.rbi.org.in/commonman/english/scripts/FAQs.aspx?Id=3",
+          "publication_date": "2025-01-16",
+          "effective_date": null,
+          "locator": "Q3, rows \"Loans in India\" and \"Loans outside India\"; S03 printed pp. 82-83 agrees"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Into which account may the proceeds of a rupee housing loan to an NRI NOT be credited?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "An NRE, FCNR(B) or NRNR account",
+          "explanation_md": "The loan may not be credited to these accounts."
+        },
+        {
+          "option_id": "B",
+          "text_md": "An NRO account",
+          "explanation_md": "Not barred."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The seller's account",
+          "explanation_md": "Not barred."
+        },
+        {
+          "option_id": "D",
+          "text_md": "A joint account with a resident relative",
+          "explanation_md": "Not barred by this rule."
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_explanation_md": "The housing loan may not be credited to an NRE, FCNR(B) or NRNR account.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_b5eb49a0161c4c0fada51e0fc40cb9e82160285c311887115b5f7368328f64c3",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U03",
+      "objective_ids": [
+        "BFM::MOD_A::U03::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "RBI_MD_INR_LENDING",
+          "authority": "Reserve Bank of India",
+          "title": "Master Direction on Borrowing and Lending transactions in Indian Rupee between persons resident in India and NRIs/PIOs",
+          "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=10191",
+          "publication_date": "2026-09-08",
+          "effective_date": null,
+          "locator": "Section 4; S03 printed p. 83 agrees on the main conditions but omits the relative's transfer"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "From which source may the instalments of an NRI's housing loan be paid?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only by remittance from abroad",
+          "explanation_md": "Other sources are allowed."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Only from rental income",
+          "explanation_md": "Other sources are allowed."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Remittance from abroad, funds in NRE, FCNR(B), NRNR, NRO or NRSR accounts, rental income from the property, or a relative in India by account transfer",
+          "explanation_md": "All of these are allowed."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Only from the NRE account",
+          "explanation_md": "Other sources are allowed."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_explanation_md": "Instalments may be paid by remittance from abroad, from the listed accounts, from rental income, or by a relative in India through an account-to-account transfer.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_d51bd8c4044f1f362f0dc84c864d272f016453dbefc49beaeed7b95d5dbefb79",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U03",
+      "objective_ids": [
+        "BFM::MOD_A::U03::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "RBI_MD_INR_LENDING",
+          "authority": "Reserve Bank of India",
+          "title": "Master Direction on Borrowing and Lending transactions in Indian Rupee between persons resident in India and NRIs/PIOs",
+          "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=10191",
+          "publication_date": "2026-09-08",
+          "effective_date": null,
+          "locator": "Section 4; S03 printed p. 83 agrees on the main conditions but omits the relative's transfer"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "An authorised dealer receives a remittance request under the Liberalised Remittance Scheme. How must payment be received?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "In cash from any person",
+          "explanation_md": "Not permitted."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Out of the remitter's own funds by cheque on his account, debit to his account, demand draft or pay order (or his own card)",
+          "explanation_md": "This is the rule."
+        },
+        {
+          "option_id": "C",
+          "text_md": "By cheque drawn by a friend",
+          "explanation_md": "The funds must be the remitter's own."
+        },
+        {
+          "option_id": "D",
+          "text_md": "From a loan from an overseas lender",
+          "explanation_md": "Not the stated modes."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_explanation_md": "The dealer must ensure payment is received out of the remitter's own funds by cheque on his account, debit to the account, demand draft or pay order or his own card.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_054f26587aec04a376715c90d7eb32eb546a5b4d4ae6bc6727459761a7d29046",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U02",
+      "objective_ids": [
+        "BFM::MOD_A::U02::LO_06"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "RBI_MD_LRS",
+          "authority": "Reserve Bank of India",
+          "title": "Master Direction - Liberalised Remittance Scheme (LRS), FED Master Direction No. 7/2015-16",
+          "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=10192",
+          "publication_date": "2024-09-06",
+          "effective_date": null,
+          "locator": "Part B, paragraphs 2 to 9"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "A new customer asks for a capital account remittance under the scheme. What additional step must the bank take?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Obtain approval of the Reserve Bank in every case",
+          "explanation_md": "Not required."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Take a cash margin of ten per cent",
+          "explanation_md": "Not stated."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Nothing beyond KYC",
+          "explanation_md": "Additional documents are required for a new customer."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Carry out due diligence and obtain the previous year's bank statement or the latest tax assessment order or return",
+          "explanation_md": "This is the requirement."
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_explanation_md": "For a new customer making a capital account remittance, the bank must do due diligence and obtain the previous year's statement or latest tax assessment order or return.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_3720d829e8446d96dd74c606777eceee45c53608bb55f1ed4b8e1ae10b32290c",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U02",
+      "objective_ids": [
+        "BFM::MOD_A::U02::LO_06"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "RBI_MD_LRS",
+          "authority": "Reserve Bank of India",
+          "title": "Master Direction - Liberalised Remittance Scheme (LRS), FED Master Direction No. 7/2015-16",
+          "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=10192",
+          "publication_date": "2024-09-06",
+          "effective_date": null,
+          "locator": "Part B, paragraphs 2 to 9"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Through which system are LRS remittances reported?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "FETERS, in the normal course",
+          "explanation_md": "This is the system."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The bank's internal register only",
+          "explanation_md": "The reporting goes to the Reserve Bank system."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Customs EDI",
+          "explanation_md": "Not the system."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The stock exchange",
+          "explanation_md": "Not the system."
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_explanation_md": "Remittances under the scheme are reported in FETERS in the normal course.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_8fc453e4d31b78935fc3b4be76b859787208750d07f0947a2215088fdcee0dc5",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U02",
+      "objective_ids": [
+        "BFM::MOD_A::U02::LO_06"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "RBI_MD_LRS",
+          "authority": "Reserve Bank of India",
+          "title": "Master Direction - Liberalised Remittance Scheme (LRS), FED Master Direction No. 7/2015-16",
+          "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=10192",
+          "publication_date": "2024-09-06",
+          "effective_date": null,
+          "locator": "Part B, paragraphs 12 and 13"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "A foreign bank with no presence in India wants to market in India a scheme for soliciting foreign currency deposits for its overseas branch from residents. What does it need?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Nothing, as it has no presence in India",
+          "explanation_md": "The requirement applies to banks with no presence too."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Prior approval of the Reserve Bank",
+          "explanation_md": "This is required."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Only a licence from SEBI",
+          "explanation_md": "Not the requirement."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Only registration with a local magistrate",
+          "explanation_md": "Not the requirement."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_explanation_md": "Banks, including those with no presence in India, must obtain prior RBI approval for schemes they market in India to residents for soliciting foreign currency deposits for overseas branches.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_a16857bcac6e67f42adf6420575994a776cb33bd3ee1ae7c612116a501e7b73a",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U02",
+      "objective_ids": [
+        "BFM::MOD_A::U02::LO_06"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "RBI_MD_LRS",
+          "authority": "Reserve Bank of India",
+          "title": "Master Direction - Liberalised Remittance Scheme (LRS), FED Master Direction No. 7/2015-16",
+          "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=10192",
+          "publication_date": "2024-09-06",
+          "effective_date": null,
+          "locator": "Part B, paragraphs 12 and 13"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

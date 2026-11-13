@@ -1,0 +1,655 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BFM-A-U04-B006",
+  "paper_id": "BFM",
+  "unit_label": "Module A: Letters of credit and guarantees - flow and the Guarantees Regulations, 2026",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S03",
+    "RBI_FEMA_8R_2026"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "statement": "A guarantee, including a counter-guarantee, is a contract, by whatever name called, to perform the promise or discharge a debt, obligation or liability (including a portfolio of them) if the principal debtor defaults. The creditor is the person to whom the guarantee is given, the principal debtor is the person whose default is guaranteed and the surety is the person who gives the guarantee. Save as otherwise provided or with the Reserve Bank's general or special permission, no person resident in India may be a party (principal debtor, surety or creditor) to a guarantee where any other party is resident outside India, except in accordance with the regulations.",
+      "source_id": "RBI_FEMA_8R_2026",
+      "locator": "Regulations 2 and 3",
+      "regulatory_sensitive": true,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F002",
+      "statement": "The regulations do not apply to a guarantee undertaken by a branch of an authorised dealer bank outside India or in an International Financial Services Centre (unless another party is resident in India); to an Irrevocable Payment Commitment issued by an authorised dealer as custodian bank where the principal debtor is a registered foreign portfolio investor and the creditor is an authorised central counterparty in India; or to a guarantee given in accordance with the Overseas Investment Regulations, 2022.",
+      "source_id": "RBI_FEMA_8R_2026",
+      "locator": "Regulation 4",
+      "regulatory_sensitive": true,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F003",
+      "statement": "A resident in India may act as surety or principal debtor if the underlying transaction is not prohibited and the surety and principal debtor are eligible to lend to and borrow from each other respectively under the Borrowing and Lending Regulations, 2018. That second condition does not apply to a guarantee given by an authorised dealer bank and covered by a counter-guarantee, or issued against one hundred per cent collateral in the form of a deposit, from a person resident outside India; to a guarantee given by the India agent of a foreign shipping or airline company in connection with its liability to a statutory or Government authority in India; or where both surety and principal debtor are residents in India. A resident creditor may arrange or obtain a guarantee in its favour; where principal debtor and surety are both non-resident the creditor must ensure that the underlying transaction is not prohibited.",
+      "source_id": "RBI_FEMA_8R_2026",
+      "locator": "Regulations 5 and 6",
+      "regulatory_sensitive": true,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F004",
+      "statement": "A guarantee must be reported: by the surety where it is resident in India; by the principal debtor that arranged the guarantee where the surety is non-resident; or by the creditor where both surety and principal debtor are non-resident or where the creditor arranged the guarantee. The reporting person reports issuance, any later change (amount, extension of period or pre-closure) and invocation, on Form GRN, to an authorised dealer bank each quarter within fifteen calendar days from the end of the quarter, and the bank submits the returns to the Reserve Bank within thirty calendar days from the end of the quarter.",
+      "source_id": "RBI_FEMA_8R_2026",
+      "locator": "Regulation 7 and the Annex (Form GRN)",
+      "regulatory_sensitive": true,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F005",
+      "statement": "A resident who does not report in time may report along with, or pay, a late submission fee equal to ₹7,500 plus 0.025 per cent of A multiplied by n, rounded upwards to the nearest hundred, where n is the number of years of delay rounded upwards to the nearest month and expressed up to two decimal places, and A is the amount involved in the delayed reporting in rupees.",
+      "source_id": "RBI_FEMA_8R_2026",
+      "locator": "Regulation 8",
+      "regulatory_sensitive": true,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "AF003",
+      "statement": "A documentary credit is a signed or authenticated instrument issued by the buyer's banker, embodying an undertaking to pay a stated amount against presentation of documents evidencing shipment and complying with the credit terms. The parties are the applicant (buyer, on whose behalf it is opened); the beneficiary (seller); the issuing or opening bank, which establishes the credit; the advising bank in the seller's country, which authenticates and advises it as the issuing bank's agent; the confirming bank, if any, which undertakes to pay on behalf of the issuing bank; the negotiating or nominated bank, which negotiates and pays the beneficiary; and the reimbursing bank, which reimburses the negotiating or confirming bank.",
+      "source_id": "S03",
+      "locator": "Printed pp. 91-92, section 4.2",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "AF007",
+      "statement": "In an export credit flow the buyer's bank sends the credit by SWIFT (message MT 700) to the exporter's bank or another bank with which it has correspondent relations; the receiving bank authenticates and advises it. After shipment the exporter submits the documents to the nominated bank, which scrutinises them and may negotiate or forward them to the issuing bank. The issuing bank scrutinises them independently and, if compliant, delivers them to the importer against payment (sight) or acceptance (usance), and pays by remitting funds to the Nostro account of the nominated bank (message MT 202) or conveys its acceptance by SWIFT.",
+      "source_id": "S03",
+      "locator": "Printed pp. 95-98, section 4.4",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    }
+  ],
+  "drafts": [
+    {
+      "draft_id": "D001",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ],
+      "payload": {
+        "title": "Guarantees and the exchange control line: who may be a party",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "A **guarantee** (including a **counter-guarantee**) is a contract to **perform a promise or pay a debt if the principal debtor defaults**. Three roles:\n\n- **Creditor**: the person who **receives** the guarantee.\n- **Principal debtor**: the person whose **default** is covered.\n- **Surety**: the person who **gives** it.\n\n**The rule**: a **resident of India** may be a party (debtor, surety or creditor) to a guarantee **with a non-resident party only as these regulations allow**, or with the Reserve Bank's permission.\n\n**Not covered by the regulations**\n- A guarantee given by an **authorised dealer's branch outside India or in an IFSC** (unless another party is resident in India).\n- An **Irrevocable Payment Commitment** by an authorised dealer as **custodian bank**, where the debtor is a **registered FPI** and the creditor an **authorised central counterparty**.\n- A guarantee given under the **Overseas Investment Regulations, 2022**.\n\n**Link to standby credits**: a **standby letter of credit** works like a guarantee (the seller claims by declaring the customer defaulted), so an authorised dealer's standby that backs an exposure between a resident and a non-resident is dealt with under this guarantee framework.",
+        "self_check": {
+          "mode": "question",
+          "question_id": "D007"
+        }
+      }
+    },
+    {
+      "draft_id": "D002",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F003"
+      ],
+      "payload": {
+        "title": "Who may be surety, debtor or creditor, and the two tests",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "**A resident acting as surety or principal debtor** must satisfy **both**:\n1. The **underlying transaction is not prohibited** under FEMA.\n2. The **surety and the principal debtor are eligible to lend to and borrow from each other** under the **Borrowing and Lending Regulations, 2018**.\n\n**Test 2 is waived** for:\n- a guarantee by an **authorised dealer bank** that is **covered by a counter-guarantee**, or issued against **100% collateral in a deposit**, from a **non-resident**;\n- a guarantee by the **India agent of a foreign shipping or airline company** for its liability to a **statutory or Government authority** in India;\n- a guarantee where **surety and principal debtor are both residents of India**.\n\n**A resident creditor** may arrange or obtain a guarantee in its favour. If **principal debtor and surety are both non-resident**, the creditor must make sure the **underlying transaction is not prohibited**.",
+        "self_check": {
+          "mode": "question",
+          "question_id": "D009"
+        }
+      }
+    },
+    {
+      "draft_id": "D003",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F004",
+        "F005"
+      ],
+      "payload": {
+        "title": "Reporting a guarantee and the late submission fee",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "**Who reports** (on **Form GRN**):\n\n| Situation | Reporting party |\n| --- | --- |\n| Surety is **resident in India** | the **surety** |\n| Surety is **non-resident** | the **principal debtor** that arranged it |\n| Surety and debtor **both non-resident**, or the creditor arranged it | the **creditor** |\n\n**What to report**: **issuance**, any **change** (amount, extension, pre-closure) and **invocation**.\n\n**When**: to an **authorised dealer bank every quarter, within 15 calendar days from the quarter end**; the bank files with RBI **within 30 calendar days** from the quarter end.\n\n**Late**: report and pay the **late submission fee**:\n\n**Fee = ₹7,500 + 0.025% × A × n, rounded upwards to the nearest ₹100**\n\nwhere **A** = rupee amount involved, **n** = years of delay (rounded **up** to the nearest month, shown to two decimals).",
+        "self_check": {
+          "mode": "question",
+          "question_id": "D011"
+        }
+      }
+    },
+    {
+      "draft_id": "D004",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "AF003"
+      ],
+      "payload": {
+        "title": "The parties to a documentary credit and what each does",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "A **documentary credit** is the **buyer's bank's undertaking to pay** a stated sum **against documents showing shipment** that comply with the credit.\n\n| Party | Role |\n| --- | --- |\n| **Applicant** | the **buyer**, who asks for the credit |\n| **Beneficiary** | the **seller** |\n| **Issuing (opening) bank** | **establishes** the credit |\n| **Advising bank** | in the seller's country; **authenticates** and **advises** the credit as the issuing bank's agent |\n| **Confirming bank** (if any) | **adds its own undertaking** to pay on the issuing bank's behalf |\n| **Nominated / negotiating bank** | **negotiates** and **pays the beneficiary** |\n| **Reimbursing bank** | **repays** the negotiating or confirming bank |",
+        "self_check": {
+          "mode": "question",
+          "question_id": "D013"
+        }
+      }
+    },
+    {
+      "draft_id": "D005",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "AF007"
+      ],
+      "payload": {
+        "title": "An export credit from opening to payment, step by step",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "1. The **buyer's bank (issuing bank)** sends the credit by **SWIFT (MT 700)** to the **exporter's bank** or another bank with which it has correspondent relations.\n2. The **receiving bank authenticates and advises** it to the exporter.\n3. After **shipment**, the **exporter hands the documents** to the **nominated bank**.\n4. The nominated bank **scrutinises** them and either **negotiates** (pays the exporter) or **forwards** them to the issuing bank.\n5. The **issuing bank scrutinises independently**. If the documents **comply**, it **delivers them to the importer** against **payment (sight)** or **acceptance (usance)**.\n6. **Settlement**: the issuing bank **remits funds to the nominated bank's Nostro account (MT 202)**, or sends its **acceptance by SWIFT** for payment at maturity.\n\n**Import side**: the importer is the **applicant** and the importer's bank is the **issuing bank**; it receives the documents, checks them and releases them against the importer's payment or acceptance.",
+        "self_check": {
+          "mode": "question",
+          "question_id": "D015"
+        }
+      }
+    },
+    {
+      "draft_id": "D006",
+      "item_type": "card",
+      "variant": "worked_example",
+      "fact_ids": [
+        "F005"
+      ],
+      "payload": {
+        "title": "A late submission fee for a guarantee return",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "Illustrative case: a resident surety should have reported a guarantee of ₹1,35,70,000 but reports six months late. Find the late submission fee.",
+        "worked_steps": [
+          {
+            "step_number": 1,
+            "description": "Number of years of delay (six months).",
+            "formula_or_substitution": "6 ÷ 12",
+            "intermediate_result": "0.50"
+          },
+          {
+            "step_number": 2,
+            "description": "The variable part of the fee.",
+            "formula_or_substitution": "0.025% × 1,35,70,000 × 0.50",
+            "intermediate_result": "₹1,696.25"
+          },
+          {
+            "step_number": 3,
+            "description": "Add the fixed part.",
+            "formula_or_substitution": "7,500 + 1,696.25",
+            "intermediate_result": "₹9,196.25"
+          },
+          {
+            "step_number": 4,
+            "description": "Round upwards to the nearest hundred.",
+            "formula_or_substitution": "round up 9,196.25",
+            "intermediate_result": "₹9,200"
+          }
+        ],
+        "final_answer_with_unit": "The late submission fee is ₹9,200",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Why is the fee ₹9,200 and not ₹9,100?",
+          "expected_takeaway": "The rule rounds upwards, not to the nearest hundred, so anything above ₹9,100 goes to ₹9,200."
+        }
+      }
+    },
+    {
+      "draft_id": "D007",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Which best describes a guarantee for the purposes of the Guarantees Regulations, 2026?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only a document called a guarantee issued by a bank",
+            "explanation_md": "The definition covers contracts by whatever name."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A contract to perform a promise or discharge a debt if the principal debtor defaults, whatever it is called",
+            "explanation_md": "This is the definition."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A loan advanced to a principal debtor",
+            "explanation_md": "Not the definition."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A payment made in advance of an import",
+            "explanation_md": "Not the definition."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "A guarantee, including a counter-guarantee, is a contract, by whatever name called, to perform a promise or discharge a debt or liability on the principal debtor's default."
+      }
+    },
+    {
+      "draft_id": "D008",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F002"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Which of these is outside the Guarantees Regulations, 2026?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "A guarantee by an Indian bank in favour of a foreign supplier for a resident importer",
+            "explanation_md": "This is covered."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A guarantee by a resident company for a non-resident subsidiary",
+            "explanation_md": "This is covered."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A guarantee given by a branch of an authorised dealer bank in an International Financial Services Centre, where no party is resident in India",
+            "explanation_md": "This is exempt."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A guarantee in favour of a resident creditor for a non-resident debtor",
+            "explanation_md": "This is covered."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "The regulations do not apply to a guarantee undertaken by a branch of an authorised dealer bank outside India or in an IFSC unless another party is resident in India."
+      }
+    },
+    {
+      "draft_id": "D009",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F003"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "A resident principal debtor and a resident surety are both in India. Must the surety and debtor satisfy the test of eligibility to lend to and borrow from each other under the 2018 Borrowing and Lending Regulations?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Yes, in every case",
+            "explanation_md": "The proviso waives it."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Yes, but only above USD 1 million",
+            "explanation_md": "No such threshold."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Only if the creditor is a bank",
+            "explanation_md": "Not the rule."
+          },
+          {
+            "option_id": "D",
+            "text_md": "No, the test does not apply where both surety and principal debtor are residents in India",
+            "explanation_md": "This is one of the provisos."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "The eligibility test does not apply where both the surety and the principal debtor are persons resident in India."
+      }
+    },
+    {
+      "draft_id": "D010",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F003"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "An authorised dealer bank issues a guarantee covered by a counter-guarantee from a non-resident bank. What follows about the eligibility test to lend and borrow between surety and debtor?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "It does not apply to such a guarantee",
+            "explanation_md": "The proviso covers guarantees covered by a counter-guarantee or 100% deposit collateral."
+          },
+          {
+            "option_id": "B",
+            "text_md": "It applies fully",
+            "explanation_md": "The proviso waives it."
+          },
+          {
+            "option_id": "C",
+            "text_md": "It applies only if the guarantee exceeds one year",
+            "explanation_md": "No such condition."
+          },
+          {
+            "option_id": "D",
+            "text_md": "It applies only to the counter-guarantor",
+            "explanation_md": "Not the rule."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "The second condition does not apply to a guarantee given by an authorised dealer bank covered by a counter-guarantee or against 100% collateral from a non-resident."
+      }
+    },
+    {
+      "draft_id": "D011",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A resident in India is surety to a guarantee in favour of a foreign creditor. Who must report it, and to whom?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The foreign creditor, to the Reserve Bank directly",
+            "explanation_md": "The surety reports in this case."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The principal debtor, annually",
+            "explanation_md": "Not the rule."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The surety, to an authorised dealer bank, quarterly within 15 calendar days of the quarter end",
+            "explanation_md": "The surety reports where it is resident in India."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Nobody, if the amount is small",
+            "explanation_md": "No exemption by amount."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "Where the surety is resident in India it reports issuance, change and invocation to an authorised dealer bank quarterly within fifteen days of the quarter end."
+      }
+    },
+    {
+      "draft_id": "D012",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "By when must an authorised dealer bank submit the guarantee returns it receives to the Reserve Bank?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Within fifteen calendar days from the end of the quarter",
+            "explanation_md": "That is the period for the reporting party."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Within thirty calendar days from the end of the respective quarter",
+            "explanation_md": "This is the period."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Within seven days of receiving each return",
+            "explanation_md": "Not the rule."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Annually",
+            "explanation_md": "Not the rule."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "The authorised dealer bank must submit the returns to the Reserve Bank within thirty calendar days from the end of the quarter."
+      }
+    },
+    {
+      "draft_id": "D013",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "AF003"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "In a documentary credit, which bank authenticates the credit and advises it to the beneficiary as the issuing bank's agent?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The reimbursing bank",
+            "explanation_md": "It reimburses the negotiating bank."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The confirming bank",
+            "explanation_md": "It adds an undertaking to pay."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The applicant's bank always",
+            "explanation_md": "The applicant's bank is the issuing bank."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The advising bank",
+            "explanation_md": "This is its role."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "The advising bank in the seller's country authenticates and advises the credit as the issuing bank's agent."
+      }
+    },
+    {
+      "draft_id": "D014",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "AF003"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "Which party repays the negotiating or confirming bank that has paid the beneficiary?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The reimbursing bank",
+            "explanation_md": "This is its role."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The advising bank",
+            "explanation_md": "It only advises."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The applicant directly",
+            "explanation_md": "The bank chain settles through the reimbursing bank."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The beneficiary",
+            "explanation_md": "The beneficiary was paid by the bank."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "The reimbursing bank reimburses the negotiating or confirming bank."
+      }
+    },
+    {
+      "draft_id": "D015",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "AF007"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "In an export credit, after the exporter ships the goods, to whom does he hand the documents?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Directly to the importer",
+            "explanation_md": "Documents go through banks."
+          },
+          {
+            "option_id": "B",
+            "text_md": "To the nominated bank, which scrutinises them and negotiates or forwards them",
+            "explanation_md": "This is the step."
+          },
+          {
+            "option_id": "C",
+            "text_md": "To the reimbursing bank",
+            "explanation_md": "Not the step."
+          },
+          {
+            "option_id": "D",
+            "text_md": "To customs only",
+            "explanation_md": "Not the step."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "After shipment the exporter submits the documents to the nominated bank, which scrutinises them and may negotiate or forward them to the issuing bank."
+      }
+    },
+    {
+      "draft_id": "D016",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "AF007"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "How does the issuing bank settle with the nominated bank when the documents under a sight credit comply?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "By sending the documents back",
+            "explanation_md": "Not settlement."
+          },
+          {
+            "option_id": "B",
+            "text_md": "By paying the importer",
+            "explanation_md": "The importer pays the issuing bank."
+          },
+          {
+            "option_id": "C",
+            "text_md": "By remitting funds to the Nostro account of the nominated bank, with a SWIFT message MT 202",
+            "explanation_md": "This is the settlement."
+          },
+          {
+            "option_id": "D",
+            "text_md": "By debiting the exporter",
+            "explanation_md": "Not the step."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "The issuing bank pays by remitting funds to the Nostro account of the nominated bank (message MT 202), or conveys acceptance by SWIFT."
+      }
+    },
+    {
+      "draft_id": "D017",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "AF007"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Which SWIFT message carries the issue of a documentary credit from the issuing bank to the advising bank?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "MT 202",
+            "explanation_md": "This is the bank-to-bank transfer used for settlement."
+          },
+          {
+            "option_id": "B",
+            "text_md": "MT 103",
+            "explanation_md": "Not the message for a credit."
+          },
+          {
+            "option_id": "C",
+            "text_md": "MT 940",
+            "explanation_md": "A statement message."
+          },
+          {
+            "option_id": "D",
+            "text_md": "MT 700",
+            "explanation_md": "This is the message."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "The buyer's bank sends the credit by SWIFT message MT 700."
+      }
+    },
+    {
+      "draft_id": "D018",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F005"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "A resident surety reports a guarantee of ₹82,40,000 three months late. What is the late submission fee, in rupees?",
+        "numeric_rule": {
+          "expected_answer": "8100",
+          "unit_label": "rupees",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "n = 3 ÷ 12 = 0.25. Variable part = 0.025% × 82,40,000 × 0.25 = ₹515. Fee = 7,500 + 515 = ₹8,015, rounded upwards to the nearest hundred = ₹8,100.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Years of delay",
+            "formula_or_substitution": "3 ÷ 12",
+            "intermediate_result": "0.25"
+          },
+          {
+            "step_number": 2,
+            "description": "Variable part",
+            "formula_or_substitution": "0.025% × 82,40,000 × 0.25",
+            "intermediate_result": "₹515"
+          },
+          {
+            "step_number": 3,
+            "description": "Add the fixed part",
+            "formula_or_substitution": "7,500 + 515",
+            "intermediate_result": "₹8,015"
+          },
+          {
+            "step_number": 4,
+            "description": "Round upwards to the hundred",
+            "formula_or_substitution": "round up 8,015",
+            "intermediate_result": "₹8,100"
+          }
+        ]
+      }
+    }
+  ],
+  "unresolved": [
+    "The Guarantees Regulations, 2026 do not mention standby letters of credit; the link drawn in the first card (a standby works like a guarantee) is from the courseware (printed p. 94). The courseware's rules for commercial standby credits for imports (selected importers, supplier credit reports) rest on older Reserve Bank circulars that the 2026 Regulations supersede or replace; they were not verified and are not taught.",
+    "ISP 98 itself was not retrieved (ICC publication) and its articles are not taught.",
+    "The Master Direction page seen in search results states that the Regulations took effect on 10 January 2026; the notification says from publication in the Official Gazette. The Gazette date was not checked.",
+    "The letter of credit flow is taught from the courseware (printed pp. 91-98); UCP 600 itself was not retrieved.",
+    "Reviewer for this batch is the authoring agent; no independent or human review."
+  ],
+  "next_batch_hint": "None planned for unit 4."
+}
