@@ -674,13 +674,13 @@
             },
             {
               "option_id": "B",
-              "text_md": "Estimator; estimate",
-              "explanation_md": "The statistic used is the estimator, and its value in one sample is an estimate."
+              "text_md": "Parameter; statistic",
+              "explanation_md": "A parameter describes the population."
             },
             {
               "option_id": "C",
-              "text_md": "Parameter; statistic",
-              "explanation_md": "A parameter describes the population."
+              "text_md": "Estimator; estimate",
+              "explanation_md": "The statistic used is the estimator, and its value in one sample is an estimate."
             },
             {
               "option_id": "D",
@@ -688,7 +688,7 @@
               "explanation_md": "Both are single numbers or rules, not intervals."
             }
           ],
-          "correct_option_id": "B",
+          "correct_option_id": "C",
           "correct_explanation_md": "The sample statistic used is the estimator; a specific value it takes in one sample is an estimate."
         }
       },
@@ -710,21 +710,21 @@
             },
             {
               "option_id": "B",
-              "text_md": "The mean of its sampling distribution equals the population parameter",
-              "explanation_md": "On average it is neither too high nor too low."
-            },
-            {
-              "option_id": "C",
               "text_md": "It uses every observation",
               "explanation_md": "That is closer to sufficiency."
             },
             {
-              "option_id": "D",
+              "option_id": "C",
               "text_md": "It gets closer to the parameter as n grows",
               "explanation_md": "That describes consistency."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The mean of its sampling distribution equals the population parameter",
+              "explanation_md": "On average it is neither too high nor too low."
             }
           ],
-          "correct_option_id": "B",
+          "correct_option_id": "D",
           "correct_explanation_md": "An unbiased estimator has a sampling distribution whose mean equals the parameter."
         }
       },
@@ -741,13 +741,13 @@
           "options": [
             {
               "option_id": "A",
-              "text_md": "The median is the more efficient estimator",
-              "explanation_md": "It has the larger standard error."
+              "text_md": "The mean is the more efficient estimator",
+              "explanation_md": "The smaller standard error means less variation between samples."
             },
             {
               "option_id": "B",
-              "text_md": "The mean is the more efficient estimator",
-              "explanation_md": "The smaller standard error means less variation between samples."
+              "text_md": "The median is the more efficient estimator",
+              "explanation_md": "It has the larger standard error."
             },
             {
               "option_id": "C",
@@ -760,7 +760,7 @@
               "explanation_md": "Nothing here says so."
             }
           ],
-          "correct_option_id": "B",
+          "correct_option_id": "A",
           "correct_explanation_md": "The estimator with the smaller standard error is more efficient."
         }
       },
@@ -782,21 +782,21 @@
             },
             {
               "option_id": "B",
+              "text_md": "Consistent",
+              "explanation_md": "This is the definition of consistency."
+            },
+            {
+              "option_id": "C",
               "text_md": "Efficient",
               "explanation_md": "Efficiency compares standard errors."
             },
             {
-              "option_id": "C",
+              "option_id": "D",
               "text_md": "Sufficient",
               "explanation_md": "Sufficiency is about using all information."
-            },
-            {
-              "option_id": "D",
-              "text_md": "Consistent",
-              "explanation_md": "This is the definition of consistency."
             }
           ],
-          "correct_option_id": "D",
+          "correct_option_id": "B",
           "correct_explanation_md": "Consistency means the statistic approaches the parameter as the sample grows."
         }
       },
@@ -818,13 +818,13 @@
             },
             {
               "option_id": "B",
-              "text_md": "n - 1, giving an unbiased estimator",
-              "explanation_md": "n - 1 removes the bias."
+              "text_md": "n + 1",
+              "explanation_md": "Not used."
             },
             {
               "option_id": "C",
-              "text_md": "n + 1",
-              "explanation_md": "Not used."
+              "text_md": "n - 1, giving an unbiased estimator",
+              "explanation_md": "n - 1 removes the bias."
             },
             {
               "option_id": "D",
@@ -832,7 +832,7 @@
               "explanation_md": "N is not known or used for the sample estimator."
             }
           ],
-          "correct_option_id": "B",
+          "correct_option_id": "C",
           "correct_explanation_md": "The estimator of the population variance uses divisor n - 1, which is unbiased."
         }
       },
@@ -854,21 +854,21 @@
             },
             {
               "option_id": "B",
-              "text_md": "It shows the likely size of the error and the probability of containing the parameter",
-              "explanation_md": "The range and the confidence level convey reliability."
-            },
-            {
-              "option_id": "C",
               "text_md": "It needs no sample",
               "explanation_md": "Both need sample data."
             },
             {
-              "option_id": "D",
+              "option_id": "C",
               "text_md": "It removes sampling error",
               "explanation_md": "Sampling error remains."
+            },
+            {
+              "option_id": "D",
+              "text_md": "It shows the likely size of the error and the probability of containing the parameter",
+              "explanation_md": "The range and the confidence level convey reliability."
             }
           ],
-          "correct_option_id": "B",
+          "correct_option_id": "D",
           "correct_explanation_md": "An interval estimate expresses the error by its range and by the probability of containing the true parameter."
         }
       },
@@ -885,13 +885,13 @@
           "options": [
             {
               "option_id": "A",
-              "text_md": "Narrower",
-              "explanation_md": "Higher confidence needs a wider interval."
+              "text_md": "Wider",
+              "explanation_md": "It uses 2.58 standard errors each side instead of 1.64."
             },
             {
               "option_id": "B",
-              "text_md": "Wider",
-              "explanation_md": "It uses 2.58 standard errors each side instead of 1.64."
+              "text_md": "Narrower",
+              "explanation_md": "Higher confidence needs a wider interval."
             },
             {
               "option_id": "C",
@@ -904,7 +904,7 @@
               "explanation_md": "It is wider for any n."
             }
           ],
-          "correct_option_id": "B",
+          "correct_option_id": "A",
           "correct_explanation_md": "A higher confidence level gives a wider, less precise interval."
         }
       },
@@ -958,18 +958,18 @@
           "options": [
             {
               "option_id": "A",
-              "text_md": "The central limit theorem applies for samples above 30",
-              "explanation_md": "The sampling distribution of the mean approaches normal as n grows."
-            },
-            {
-              "option_id": "B",
               "text_md": "The population must be normal if n exceeds 30",
               "explanation_md": "The population need not be normal."
             },
             {
-              "option_id": "C",
+              "option_id": "B",
               "text_md": "The standard error is then zero",
               "explanation_md": "It is not zero."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The central limit theorem applies for samples above 30",
+              "explanation_md": "The sampling distribution of the mean approaches normal as n grows."
             },
             {
               "option_id": "D",
@@ -977,7 +977,7 @@
               "explanation_md": "They are only approximately normal."
             }
           ],
-          "correct_option_id": "A",
+          "correct_option_id": "C",
           "correct_explanation_md": "For large samples the central limit theorem lets the normal distribution be used even when the population is not normal."
         }
       },
@@ -999,21 +999,21 @@
             },
             {
               "option_id": "B",
-              "text_md": "Multiply sigma-hat over root n by the finite population multiplier",
-              "explanation_md": "When n/N is above 0.05 the multiplier is applied."
-            },
-            {
-              "option_id": "C",
               "text_md": "Divide by n instead of n - 1 in sigma-hat",
               "explanation_md": "The divisor for the estimate is n - 1."
             },
             {
-              "option_id": "D",
+              "option_id": "C",
               "text_md": "Use the proportion formula",
               "explanation_md": "This is a mean."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Multiply sigma-hat over root n by the finite population multiplier",
+              "explanation_md": "When n/N is above 0.05 the multiplier is applied."
             }
           ],
-          "correct_option_id": "B",
+          "correct_option_id": "D",
           "correct_explanation_md": "Above 5 per cent sampling fraction the standard error is multiplied by the finite population multiplier; the estimate of sigma uses divisor n - 1."
         }
       },
@@ -1066,13 +1066,13 @@
           "options": [
             {
               "option_id": "A",
-              "text_md": "The sample standard deviation (divisor n - 1) in its place",
-              "explanation_md": "The sample standard deviation estimates sigma."
+              "text_md": "The sample range",
+              "explanation_md": "The range is not used for the standard error."
             },
             {
               "option_id": "B",
-              "text_md": "The sample range",
-              "explanation_md": "The range is not used for the standard error."
+              "text_md": "The sample standard deviation (divisor n - 1) in its place",
+              "explanation_md": "The sample standard deviation estimates sigma."
             },
             {
               "option_id": "C",
@@ -1085,7 +1085,7 @@
               "explanation_md": "It can be built with the estimate."
             }
           ],
-          "correct_option_id": "A",
+          "correct_option_id": "B",
           "correct_explanation_md": "The sample standard deviation with divisor n - 1 is used as the estimate of sigma."
         }
       },
@@ -2844,13 +2844,13 @@
         },
         {
           "option_id": "B",
-          "text_md": "Estimator; estimate",
-          "explanation_md": "The statistic used is the estimator, and its value in one sample is an estimate."
+          "text_md": "Parameter; statistic",
+          "explanation_md": "A parameter describes the population."
         },
         {
           "option_id": "C",
-          "text_md": "Parameter; statistic",
-          "explanation_md": "A parameter describes the population."
+          "text_md": "Estimator; estimate",
+          "explanation_md": "The statistic used is the estimator, and its value in one sample is an estimate."
         },
         {
           "option_id": "D",
@@ -2858,7 +2858,7 @@
           "explanation_md": "Both are single numbers or rules, not intervals."
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "C",
       "correct_explanation_md": "The sample statistic used is the estimator; a specific value it takes in one sample is an estimate.",
       "item_type": "question",
       "question_type": "single_choice",
@@ -2902,21 +2902,21 @@
         },
         {
           "option_id": "B",
-          "text_md": "The mean of its sampling distribution equals the population parameter",
-          "explanation_md": "On average it is neither too high nor too low."
-        },
-        {
-          "option_id": "C",
           "text_md": "It uses every observation",
           "explanation_md": "That is closer to sufficiency."
         },
         {
-          "option_id": "D",
+          "option_id": "C",
           "text_md": "It gets closer to the parameter as n grows",
           "explanation_md": "That describes consistency."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The mean of its sampling distribution equals the population parameter",
+          "explanation_md": "On average it is neither too high nor too low."
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "D",
       "correct_explanation_md": "An unbiased estimator has a sampling distribution whose mean equals the parameter.",
       "item_type": "question",
       "question_type": "single_choice",
@@ -2955,13 +2955,13 @@
       "options": [
         {
           "option_id": "A",
-          "text_md": "The median is the more efficient estimator",
-          "explanation_md": "It has the larger standard error."
+          "text_md": "The mean is the more efficient estimator",
+          "explanation_md": "The smaller standard error means less variation between samples."
         },
         {
           "option_id": "B",
-          "text_md": "The mean is the more efficient estimator",
-          "explanation_md": "The smaller standard error means less variation between samples."
+          "text_md": "The median is the more efficient estimator",
+          "explanation_md": "It has the larger standard error."
         },
         {
           "option_id": "C",
@@ -2974,7 +2974,7 @@
           "explanation_md": "Nothing here says so."
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "A",
       "correct_explanation_md": "The estimator with the smaller standard error is more efficient.",
       "item_type": "question",
       "question_type": "single_choice",
@@ -3018,21 +3018,21 @@
         },
         {
           "option_id": "B",
+          "text_md": "Consistent",
+          "explanation_md": "This is the definition of consistency."
+        },
+        {
+          "option_id": "C",
           "text_md": "Efficient",
           "explanation_md": "Efficiency compares standard errors."
         },
         {
-          "option_id": "C",
+          "option_id": "D",
           "text_md": "Sufficient",
           "explanation_md": "Sufficiency is about using all information."
-        },
-        {
-          "option_id": "D",
-          "text_md": "Consistent",
-          "explanation_md": "This is the definition of consistency."
         }
       ],
-      "correct_option_id": "D",
+      "correct_option_id": "B",
       "correct_explanation_md": "Consistency means the statistic approaches the parameter as the sample grows.",
       "item_type": "question",
       "question_type": "single_choice",
@@ -3076,13 +3076,13 @@
         },
         {
           "option_id": "B",
-          "text_md": "n - 1, giving an unbiased estimator",
-          "explanation_md": "n - 1 removes the bias."
+          "text_md": "n + 1",
+          "explanation_md": "Not used."
         },
         {
           "option_id": "C",
-          "text_md": "n + 1",
-          "explanation_md": "Not used."
+          "text_md": "n - 1, giving an unbiased estimator",
+          "explanation_md": "n - 1 removes the bias."
         },
         {
           "option_id": "D",
@@ -3090,7 +3090,7 @@
           "explanation_md": "N is not known or used for the sample estimator."
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "C",
       "correct_explanation_md": "The estimator of the population variance uses divisor n - 1, which is unbiased.",
       "item_type": "question",
       "question_type": "single_choice",
@@ -3134,21 +3134,21 @@
         },
         {
           "option_id": "B",
-          "text_md": "It shows the likely size of the error and the probability of containing the parameter",
-          "explanation_md": "The range and the confidence level convey reliability."
-        },
-        {
-          "option_id": "C",
           "text_md": "It needs no sample",
           "explanation_md": "Both need sample data."
         },
         {
-          "option_id": "D",
+          "option_id": "C",
           "text_md": "It removes sampling error",
           "explanation_md": "Sampling error remains."
+        },
+        {
+          "option_id": "D",
+          "text_md": "It shows the likely size of the error and the probability of containing the parameter",
+          "explanation_md": "The range and the confidence level convey reliability."
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "D",
       "correct_explanation_md": "An interval estimate expresses the error by its range and by the probability of containing the true parameter.",
       "item_type": "question",
       "question_type": "single_choice",
@@ -3187,13 +3187,13 @@
       "options": [
         {
           "option_id": "A",
-          "text_md": "Narrower",
-          "explanation_md": "Higher confidence needs a wider interval."
+          "text_md": "Wider",
+          "explanation_md": "It uses 2.58 standard errors each side instead of 1.64."
         },
         {
           "option_id": "B",
-          "text_md": "Wider",
-          "explanation_md": "It uses 2.58 standard errors each side instead of 1.64."
+          "text_md": "Narrower",
+          "explanation_md": "Higher confidence needs a wider interval."
         },
         {
           "option_id": "C",
@@ -3206,7 +3206,7 @@
           "explanation_md": "It is wider for any n."
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "A",
       "correct_explanation_md": "A higher confidence level gives a wider, less precise interval.",
       "item_type": "question",
       "question_type": "single_choice",
@@ -3311,18 +3311,18 @@
       "options": [
         {
           "option_id": "A",
-          "text_md": "The central limit theorem applies for samples above 30",
-          "explanation_md": "The sampling distribution of the mean approaches normal as n grows."
-        },
-        {
-          "option_id": "B",
           "text_md": "The population must be normal if n exceeds 30",
           "explanation_md": "The population need not be normal."
         },
         {
-          "option_id": "C",
+          "option_id": "B",
           "text_md": "The standard error is then zero",
           "explanation_md": "It is not zero."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The central limit theorem applies for samples above 30",
+          "explanation_md": "The sampling distribution of the mean approaches normal as n grows."
         },
         {
           "option_id": "D",
@@ -3330,7 +3330,7 @@
           "explanation_md": "They are only approximately normal."
         }
       ],
-      "correct_option_id": "A",
+      "correct_option_id": "C",
       "correct_explanation_md": "For large samples the central limit theorem lets the normal distribution be used even when the population is not normal.",
       "item_type": "question",
       "question_type": "single_choice",
@@ -3374,21 +3374,21 @@
         },
         {
           "option_id": "B",
-          "text_md": "Multiply sigma-hat over root n by the finite population multiplier",
-          "explanation_md": "When n/N is above 0.05 the multiplier is applied."
-        },
-        {
-          "option_id": "C",
           "text_md": "Divide by n instead of n - 1 in sigma-hat",
           "explanation_md": "The divisor for the estimate is n - 1."
         },
         {
-          "option_id": "D",
+          "option_id": "C",
           "text_md": "Use the proportion formula",
           "explanation_md": "This is a mean."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Multiply sigma-hat over root n by the finite population multiplier",
+          "explanation_md": "When n/N is above 0.05 the multiplier is applied."
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "D",
       "correct_explanation_md": "Above 5 per cent sampling fraction the standard error is multiplied by the finite population multiplier; the estimate of sigma uses divisor n - 1.",
       "item_type": "question",
       "question_type": "single_choice",
@@ -3485,13 +3485,13 @@
       "options": [
         {
           "option_id": "A",
-          "text_md": "The sample standard deviation (divisor n - 1) in its place",
-          "explanation_md": "The sample standard deviation estimates sigma."
+          "text_md": "The sample range",
+          "explanation_md": "The range is not used for the standard error."
         },
         {
           "option_id": "B",
-          "text_md": "The sample range",
-          "explanation_md": "The range is not used for the standard error."
+          "text_md": "The sample standard deviation (divisor n - 1) in its place",
+          "explanation_md": "The sample standard deviation estimates sigma."
         },
         {
           "option_id": "C",
@@ -3504,7 +3504,7 @@
           "explanation_md": "It can be built with the estimate."
         }
       ],
-      "correct_option_id": "A",
+      "correct_option_id": "B",
       "correct_explanation_md": "The sample standard deviation with divisor n - 1 is used as the estimate of sigma.",
       "item_type": "question",
       "question_type": "single_choice",

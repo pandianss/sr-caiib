@@ -796,18 +796,18 @@
         "options": [
           {
             "option_id": "A",
-            "text_md": "The number of loans, out of 20 independent loans each with a 5 per cent chance of default, that default",
-            "explanation_md": "A fixed number of independent trials with a constant success probability."
-          },
-          {
-            "option_id": "B",
             "text_md": "The weights of 20 randomly selected loan files",
             "explanation_md": "Weights are measured on a continuous scale, not counted as successes."
           },
           {
-            "option_id": "C",
+            "option_id": "B",
             "text_md": "The number of customers who arrive at a counter in an hour",
             "explanation_md": "There is no fixed number of trials; this is a count in an interval, which suits the Poisson distribution."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The number of loans, out of 20 independent loans each with a 5 per cent chance of default, that default",
+            "explanation_md": "A fixed number of independent trials with a constant success probability."
           },
           {
             "option_id": "D",
@@ -815,7 +815,7 @@
             "explanation_md": "Time is continuous."
           }
         ],
-        "correct_option_id": "A",
+        "correct_option_id": "C",
         "correct_explanation_md": "Binomial counts successes in a fixed number of independent trials with constant probability of success."
       }
     },
@@ -842,16 +842,16 @@
           },
           {
             "option_id": "C",
-            "text_md": "Negatively skewed",
-            "explanation_md": "With p above 0.5 the long tail is on the left."
+            "text_md": "Uniform",
+            "explanation_md": "Not a feature of the binomial."
           },
           {
             "option_id": "D",
-            "text_md": "Uniform",
-            "explanation_md": "Not a feature of the binomial."
+            "text_md": "Negatively skewed",
+            "explanation_md": "With p above 0.5 the long tail is on the left."
           }
         ],
-        "correct_option_id": "C",
+        "correct_option_id": "D",
         "correct_explanation_md": "A binomial with p greater than 0.5 is negatively skewed."
       }
     },
@@ -868,18 +868,18 @@
         "options": [
           {
             "option_id": "A",
+            "text_md": "4 and 5, because (n + 1)p = 5 is an integer",
+            "explanation_md": "When (n + 1)p is a whole number M, the modes are M - 1 and M."
+          },
+          {
+            "option_id": "B",
             "text_md": "Only 4",
             "explanation_md": "M = 10 x 0.5 = 5 is a whole number, so there are two modes."
           },
           {
-            "option_id": "B",
+            "option_id": "C",
             "text_md": "Only 5",
             "explanation_md": "There are two modes, not one."
-          },
-          {
-            "option_id": "C",
-            "text_md": "4 and 5, because (n + 1)p = 5 is an integer",
-            "explanation_md": "When (n + 1)p is a whole number M, the modes are M - 1 and M."
           },
           {
             "option_id": "D",
@@ -887,7 +887,7 @@
             "explanation_md": "A mode must be a possible value of the variable."
           }
         ],
-        "correct_option_id": "C",
+        "correct_option_id": "A",
         "correct_explanation_md": "If (n + 1)p is an integer M, there are two modes: M - 1 and M."
       }
     },
@@ -940,18 +940,18 @@
         "options": [
           {
             "option_id": "A",
-            "text_md": "The number of wrong telephone numbers dialled in a day",
-            "explanation_md": "A random count of events in a fixed interval at an average rate."
-          },
-          {
-            "option_id": "B",
             "text_md": "The number of heads in exactly 10 tosses of a coin",
             "explanation_md": "A fixed number of trials suggests the binomial."
           },
           {
-            "option_id": "C",
+            "option_id": "B",
             "text_md": "The height of a customer",
             "explanation_md": "Height is continuous."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The number of wrong telephone numbers dialled in a day",
+            "explanation_md": "A random count of events in a fixed interval at an average rate."
           },
           {
             "option_id": "D",
@@ -959,7 +959,7 @@
             "explanation_md": "Weight is continuous."
           }
         ],
-        "correct_option_id": "A",
+        "correct_option_id": "C",
         "correct_explanation_md": "Poisson counts random events in a fixed interval such as a day, page or hour."
       }
     },
@@ -976,26 +976,26 @@
         "options": [
           {
             "option_id": "A",
-            "text_md": "The median is 50 and the mode is 50",
-            "explanation_md": "The mean, median and mode coincide for the normal distribution."
-          },
-          {
-            "option_id": "B",
             "text_md": "The median is above 50",
             "explanation_md": "It is symmetric about the mean."
           },
           {
-            "option_id": "C",
+            "option_id": "B",
             "text_md": "The mode is below 50",
             "explanation_md": "The peak is at the mean."
           },
           {
-            "option_id": "D",
+            "option_id": "C",
             "text_md": "The probability of exactly 50 is 0.5",
             "explanation_md": "The probability of any single value is zero."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The median is 50 and the mode is 50",
+            "explanation_md": "The mean, median and mode coincide for the normal distribution."
           }
         ],
-        "correct_option_id": "A",
+        "correct_option_id": "D",
         "correct_explanation_md": "The normal distribution is symmetric, with mean, median and mode all equal to mu."
       }
     },
@@ -1012,18 +1012,18 @@
         "options": [
           {
             "option_id": "A",
+            "text_md": "Concentration risk",
+            "explanation_md": "Significant exposure to one group can inflict large losses on the bank."
+          },
+          {
+            "option_id": "B",
             "text_md": "Credit default risk",
             "explanation_md": "No default has occurred in the description."
           },
           {
-            "option_id": "B",
+            "option_id": "C",
             "text_md": "Country risk",
             "explanation_md": "No government is involved."
-          },
-          {
-            "option_id": "C",
-            "text_md": "Concentration risk",
-            "explanation_md": "Significant exposure to one group can inflict large losses on the bank."
           },
           {
             "option_id": "D",
@@ -1031,7 +1031,7 @@
             "explanation_md": "The description concerns a lending exposure, not price movements."
           }
         ],
-        "correct_option_id": "C",
+        "correct_option_id": "A",
         "correct_explanation_md": "A large exposure to a single borrower, group or industry is concentration risk."
       }
     },
@@ -1089,13 +1089,13 @@
           },
           {
             "option_id": "B",
-            "text_md": "The loss that the portfolio is expected to exceed with probability about 5 per cent in the month",
-            "explanation_md": "It is a loss level exceeded only in the worst few per cent of outcomes, in the courseware's normal-returns method."
+            "text_md": "The standard deviation of the portfolio",
+            "explanation_md": "The standard deviation is an input."
           },
           {
             "option_id": "C",
-            "text_md": "The standard deviation of the portfolio",
-            "explanation_md": "The standard deviation is an input."
+            "text_md": "The loss that the portfolio is expected to exceed with probability about 5 per cent in the month",
+            "explanation_md": "It is a loss level exceeded only in the worst few per cent of outcomes, in the courseware's normal-returns method."
           },
           {
             "option_id": "D",
@@ -1103,7 +1103,7 @@
             "explanation_md": "VaR is a loss amount, not the portfolio value."
           }
         ],
-        "correct_option_id": "B",
+        "correct_option_id": "C",
         "correct_explanation_md": "VaR estimates the maximum loss over a period at a stated confidence level, so a 95 per cent VaR is a loss that should be exceeded only about 5 per cent of the time."
       }
     },
@@ -1125,21 +1125,21 @@
           },
           {
             "option_id": "B",
-            "text_md": "Sell the underlying at the strike price",
-            "explanation_md": "A put gives the right to sell at the strike price."
-          },
-          {
-            "option_id": "C",
             "text_md": "Force the writer to buy at any price",
             "explanation_md": "The price is the strike price."
           },
           {
-            "option_id": "D",
+            "option_id": "C",
             "text_md": "Receive the premium",
             "explanation_md": "The holder pays the premium."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Sell the underlying at the strike price",
+            "explanation_md": "A put gives the right to sell at the strike price."
           }
         ],
-        "correct_option_id": "B",
+        "correct_option_id": "D",
         "correct_explanation_md": "A put gives its holder the right, but not the obligation, to sell at the strike price."
       }
     },
@@ -1192,13 +1192,13 @@
         "options": [
           {
             "option_id": "A",
-            "text_md": "The call cheaper and the put dearer",
-            "explanation_md": "A call lets you buy at the strike, so a higher strike is worse for the buyer; a put lets you sell at it, so it is better."
+            "text_md": "The call dearer and the put cheaper",
+            "explanation_md": "This is the reverse."
           },
           {
             "option_id": "B",
-            "text_md": "The call dearer and the put cheaper",
-            "explanation_md": "This is the reverse."
+            "text_md": "The call cheaper and the put dearer",
+            "explanation_md": "A call lets you buy at the strike, so a higher strike is worse for the buyer; a put lets you sell at it, so it is better."
           },
           {
             "option_id": "C",
@@ -1211,7 +1211,7 @@
             "explanation_md": "The effects are opposite."
           }
         ],
-        "correct_option_id": "A",
+        "correct_option_id": "B",
         "correct_explanation_md": "A higher strike lowers the call price and raises the put price."
       }
     },
@@ -1228,18 +1228,18 @@
         "options": [
           {
             "option_id": "A",
-            "text_md": "Both rise",
-            "explanation_md": "Greater uncertainty makes either right more valuable."
-          },
-          {
-            "option_id": "B",
             "text_md": "Both fall",
             "explanation_md": "The holder can walk away from bad outcomes."
           },
           {
-            "option_id": "C",
+            "option_id": "B",
             "text_md": "The call rises and the put falls",
             "explanation_md": "This is the effect of a higher stock price or interest rate."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Both rise",
+            "explanation_md": "Greater uncertainty makes either right more valuable."
           },
           {
             "option_id": "D",
@@ -1247,7 +1247,7 @@
             "explanation_md": "Volatility is a key driver of option value."
           }
         ],
-        "correct_option_id": "A",
+        "correct_option_id": "C",
         "correct_explanation_md": "Higher volatility raises the prices of both calls and puts."
       }
     },
@@ -1264,26 +1264,26 @@
         "options": [
           {
             "option_id": "A",
-            "text_md": "The call price rises and the put price falls",
-            "explanation_md": "A higher rate lowers the present value of the strike, which helps the call and hurts the put."
-          },
-          {
-            "option_id": "B",
             "text_md": "Both prices rise",
             "explanation_md": "The effects differ."
           },
           {
-            "option_id": "C",
+            "option_id": "B",
             "text_md": "The call price falls and the put price rises",
             "explanation_md": "This is the opposite."
           },
           {
-            "option_id": "D",
+            "option_id": "C",
             "text_md": "Neither is affected",
             "explanation_md": "The rate affects the present value of the strike."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The call price rises and the put price falls",
+            "explanation_md": "A higher rate lowers the present value of the strike, which helps the call and hurts the put."
           }
         ],
-        "correct_option_id": "A",
+        "correct_option_id": "D",
         "correct_explanation_md": "A higher interest rate raises the call price and lowers the put price."
       }
     },

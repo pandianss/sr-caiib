@@ -464,13 +464,13 @@
           "options": [
             {
               "option_id": "A",
-              "text_md": "Non-negativity of the variables",
-              "explanation_md": "The number of loans can still be non-negative."
+              "text_md": "Linearity: profit is not proportional to the number of loans",
+              "explanation_md": "A constant profit per unit is required; here it changes with volume."
             },
             {
               "option_id": "B",
-              "text_md": "Linearity: profit is not proportional to the number of loans",
-              "explanation_md": "A constant profit per unit is required; here it changes with volume."
+              "text_md": "Non-negativity of the variables",
+              "explanation_md": "The number of loans can still be non-negative."
             },
             {
               "option_id": "C",
@@ -483,7 +483,7 @@
               "explanation_md": "The figures are given as known."
             }
           ],
-          "correct_option_id": "B",
+          "correct_option_id": "A",
           "correct_explanation_md": "Linear programming requires proportionality: the same profit per unit at every level of activity."
         }
       },
@@ -505,13 +505,13 @@
             },
             {
               "option_id": "B",
-              "text_md": "The objective function",
-              "explanation_md": "That is what is optimised."
+              "text_md": "Decision variables",
+              "explanation_md": "The variables that the decision maker chooses."
             },
             {
               "option_id": "C",
-              "text_md": "Decision variables",
-              "explanation_md": "The variables that the decision maker chooses."
+              "text_md": "The objective function",
+              "explanation_md": "That is what is optimised."
             },
             {
               "option_id": "D",
@@ -519,7 +519,7 @@
               "explanation_md": "Slacks measure unused resources."
             }
           ],
-          "correct_option_id": "C",
+          "correct_option_id": "B",
           "correct_explanation_md": "Decision variables are the quantities to be determined."
         }
       },
@@ -572,26 +572,26 @@
           "options": [
             {
               "option_id": "A",
-              "text_md": "The set of points satisfying every constraint together",
-              "explanation_md": "Only such points are plans that respect all limits."
-            },
-            {
-              "option_id": "B",
               "text_md": "The set of points on the objective function line",
               "explanation_md": "That is an iso-profit line."
             },
             {
-              "option_id": "C",
+              "option_id": "B",
               "text_md": "The point with the highest profit",
               "explanation_md": "That is the optimum, a single point (or edge)."
             },
             {
-              "option_id": "D",
+              "option_id": "C",
               "text_md": "The part of the plane outside all constraints",
               "explanation_md": "It is the overlap inside the constraints."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The set of points satisfying every constraint together",
+              "explanation_md": "Only such points are plans that respect all limits."
             }
           ],
-          "correct_option_id": "A",
+          "correct_option_id": "D",
           "correct_explanation_md": "The feasible region is the area where all constraints and non-negativity conditions hold at once."
         }
       },
@@ -644,13 +644,13 @@
           "options": [
             {
               "option_id": "A",
-              "text_md": "At least one at a corner (extreme point) of the feasible region",
-              "explanation_md": "Corner points are enough to search."
+              "text_md": "Always strictly inside the feasible region",
+              "explanation_md": "The optimum is on the boundary."
             },
             {
               "option_id": "B",
-              "text_md": "Always strictly inside the feasible region",
-              "explanation_md": "The optimum is on the boundary."
+              "text_md": "At least one at a corner (extreme point) of the feasible region",
+              "explanation_md": "Corner points are enough to search."
             },
             {
               "option_id": "C",
@@ -663,7 +663,7 @@
               "explanation_md": "It depends on the problem."
             }
           ],
-          "correct_option_id": "A",
+          "correct_option_id": "B",
           "correct_explanation_md": "An optimal solution, if one exists, lies at at least one extreme point of the feasible region."
         }
       },
@@ -716,26 +716,26 @@
           "options": [
             {
               "option_id": "A",
-              "text_md": "Make the constraint an equation, representing unused resource",
-              "explanation_md": "Slack equals the unused part of the resource and makes the inequality an equation."
-            },
-            {
-              "option_id": "B",
               "text_md": "Make the profit larger",
               "explanation_md": "It does not change the objective coefficients (they are zero)."
             },
             {
-              "option_id": "C",
+              "option_id": "B",
               "text_md": "Allow negative decision variables",
               "explanation_md": "All variables stay non-negative."
             },
             {
-              "option_id": "D",
+              "option_id": "C",
               "text_md": "Remove the objective function",
               "explanation_md": "The objective remains."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Make the constraint an equation, representing unused resource",
+              "explanation_md": "Slack equals the unused part of the resource and makes the inequality an equation."
             }
           ],
-          "correct_option_id": "A",
+          "correct_option_id": "D",
           "correct_explanation_md": "A slack variable converts an inequality into an equation and measures the unused resource."
         }
       },
@@ -824,18 +824,18 @@
           "options": [
             {
               "option_id": "A",
-              "text_md": "When there is no negative number in the Z-row",
-              "explanation_md": "No entering variable can improve the objective."
-            },
-            {
-              "option_id": "B",
               "text_md": "When all solution values are equal",
               "explanation_md": "No such rule."
             },
             {
-              "option_id": "C",
+              "option_id": "B",
               "text_md": "After exactly two iterations",
               "explanation_md": "The number of iterations varies."
+            },
+            {
+              "option_id": "C",
+              "text_md": "When there is no negative number in the Z-row",
+              "explanation_md": "No entering variable can improve the objective."
             },
             {
               "option_id": "D",
@@ -843,7 +843,7 @@
               "explanation_md": "Z starts at zero."
             }
           ],
-          "correct_option_id": "A",
+          "correct_option_id": "C",
           "correct_explanation_md": "The optimum tableau for a maximisation has no negative entry in the Z-row."
         }
       },
@@ -865,21 +865,21 @@
             },
             {
               "option_id": "B",
-              "text_md": "The resource is abundant: 25 units are left unused",
-              "explanation_md": "A positive slack marks a resource that is not fully used."
-            },
-            {
-              "option_id": "C",
               "text_md": "The solution is not optimal",
               "explanation_md": "Slack values do not decide optimality."
             },
             {
-              "option_id": "D",
+              "option_id": "C",
               "text_md": "The profit is 25",
               "explanation_md": "Slack is not profit."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The resource is abundant: 25 units are left unused",
+              "explanation_md": "A positive slack marks a resource that is not fully used."
             }
           ],
-          "correct_option_id": "B",
+          "correct_option_id": "D",
           "correct_explanation_md": "A positive slack in the optimum tableau shows an abundant resource; a zero slack shows a scarce resource."
         }
       },
@@ -896,13 +896,13 @@
           "options": [
             {
               "option_id": "A",
-              "text_md": "The most negative entry",
-              "explanation_md": "That is the maximisation rule."
+              "text_md": "The largest positive entry",
+              "explanation_md": "In minimisation a positive entry signals potential improvement."
             },
             {
               "option_id": "B",
-              "text_md": "The largest positive entry",
-              "explanation_md": "In minimisation a positive entry signals potential improvement."
+              "text_md": "The most negative entry",
+              "explanation_md": "That is the maximisation rule."
             },
             {
               "option_id": "C",
@@ -915,7 +915,7 @@
               "explanation_md": "Not a criterion."
             }
           ],
-          "correct_option_id": "B",
+          "correct_option_id": "A",
           "correct_explanation_md": "For minimisation the entering variable has the largest positive Z-row entry."
         }
       },
@@ -2345,13 +2345,13 @@
       "options": [
         {
           "option_id": "A",
-          "text_md": "Non-negativity of the variables",
-          "explanation_md": "The number of loans can still be non-negative."
+          "text_md": "Linearity: profit is not proportional to the number of loans",
+          "explanation_md": "A constant profit per unit is required; here it changes with volume."
         },
         {
           "option_id": "B",
-          "text_md": "Linearity: profit is not proportional to the number of loans",
-          "explanation_md": "A constant profit per unit is required; here it changes with volume."
+          "text_md": "Non-negativity of the variables",
+          "explanation_md": "The number of loans can still be non-negative."
         },
         {
           "option_id": "C",
@@ -2364,7 +2364,7 @@
           "explanation_md": "The figures are given as known."
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "A",
       "correct_explanation_md": "Linear programming requires proportionality: the same profit per unit at every level of activity.",
       "item_type": "question",
       "question_type": "single_choice",
@@ -2408,13 +2408,13 @@
         },
         {
           "option_id": "B",
-          "text_md": "The objective function",
-          "explanation_md": "That is what is optimised."
+          "text_md": "Decision variables",
+          "explanation_md": "The variables that the decision maker chooses."
         },
         {
           "option_id": "C",
-          "text_md": "Decision variables",
-          "explanation_md": "The variables that the decision maker chooses."
+          "text_md": "The objective function",
+          "explanation_md": "That is what is optimised."
         },
         {
           "option_id": "D",
@@ -2422,7 +2422,7 @@
           "explanation_md": "Slacks measure unused resources."
         }
       ],
-      "correct_option_id": "C",
+      "correct_option_id": "B",
       "correct_explanation_md": "Decision variables are the quantities to be determined.",
       "item_type": "question",
       "question_type": "single_choice",
@@ -2519,26 +2519,26 @@
       "options": [
         {
           "option_id": "A",
-          "text_md": "The set of points satisfying every constraint together",
-          "explanation_md": "Only such points are plans that respect all limits."
-        },
-        {
-          "option_id": "B",
           "text_md": "The set of points on the objective function line",
           "explanation_md": "That is an iso-profit line."
         },
         {
-          "option_id": "C",
+          "option_id": "B",
           "text_md": "The point with the highest profit",
           "explanation_md": "That is the optimum, a single point (or edge)."
         },
         {
-          "option_id": "D",
+          "option_id": "C",
           "text_md": "The part of the plane outside all constraints",
           "explanation_md": "It is the overlap inside the constraints."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The set of points satisfying every constraint together",
+          "explanation_md": "Only such points are plans that respect all limits."
         }
       ],
-      "correct_option_id": "A",
+      "correct_option_id": "D",
       "correct_explanation_md": "The feasible region is the area where all constraints and non-negativity conditions hold at once.",
       "item_type": "question",
       "question_type": "single_choice",
@@ -2635,13 +2635,13 @@
       "options": [
         {
           "option_id": "A",
-          "text_md": "At least one at a corner (extreme point) of the feasible region",
-          "explanation_md": "Corner points are enough to search."
+          "text_md": "Always strictly inside the feasible region",
+          "explanation_md": "The optimum is on the boundary."
         },
         {
           "option_id": "B",
-          "text_md": "Always strictly inside the feasible region",
-          "explanation_md": "The optimum is on the boundary."
+          "text_md": "At least one at a corner (extreme point) of the feasible region",
+          "explanation_md": "Corner points are enough to search."
         },
         {
           "option_id": "C",
@@ -2654,7 +2654,7 @@
           "explanation_md": "It depends on the problem."
         }
       ],
-      "correct_option_id": "A",
+      "correct_option_id": "B",
       "correct_explanation_md": "An optimal solution, if one exists, lies at at least one extreme point of the feasible region.",
       "item_type": "question",
       "question_type": "single_choice",
@@ -2751,26 +2751,26 @@
       "options": [
         {
           "option_id": "A",
-          "text_md": "Make the constraint an equation, representing unused resource",
-          "explanation_md": "Slack equals the unused part of the resource and makes the inequality an equation."
-        },
-        {
-          "option_id": "B",
           "text_md": "Make the profit larger",
           "explanation_md": "It does not change the objective coefficients (they are zero)."
         },
         {
-          "option_id": "C",
+          "option_id": "B",
           "text_md": "Allow negative decision variables",
           "explanation_md": "All variables stay non-negative."
         },
         {
-          "option_id": "D",
+          "option_id": "C",
           "text_md": "Remove the objective function",
           "explanation_md": "The objective remains."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Make the constraint an equation, representing unused resource",
+          "explanation_md": "Slack equals the unused part of the resource and makes the inequality an equation."
         }
       ],
-      "correct_option_id": "A",
+      "correct_option_id": "D",
       "correct_explanation_md": "A slack variable converts an inequality into an equation and measures the unused resource.",
       "item_type": "question",
       "question_type": "single_choice",
@@ -2925,18 +2925,18 @@
       "options": [
         {
           "option_id": "A",
-          "text_md": "When there is no negative number in the Z-row",
-          "explanation_md": "No entering variable can improve the objective."
-        },
-        {
-          "option_id": "B",
           "text_md": "When all solution values are equal",
           "explanation_md": "No such rule."
         },
         {
-          "option_id": "C",
+          "option_id": "B",
           "text_md": "After exactly two iterations",
           "explanation_md": "The number of iterations varies."
+        },
+        {
+          "option_id": "C",
+          "text_md": "When there is no negative number in the Z-row",
+          "explanation_md": "No entering variable can improve the objective."
         },
         {
           "option_id": "D",
@@ -2944,7 +2944,7 @@
           "explanation_md": "Z starts at zero."
         }
       ],
-      "correct_option_id": "A",
+      "correct_option_id": "C",
       "correct_explanation_md": "The optimum tableau for a maximisation has no negative entry in the Z-row.",
       "item_type": "question",
       "question_type": "single_choice",
@@ -2988,21 +2988,21 @@
         },
         {
           "option_id": "B",
-          "text_md": "The resource is abundant: 25 units are left unused",
-          "explanation_md": "A positive slack marks a resource that is not fully used."
-        },
-        {
-          "option_id": "C",
           "text_md": "The solution is not optimal",
           "explanation_md": "Slack values do not decide optimality."
         },
         {
-          "option_id": "D",
+          "option_id": "C",
           "text_md": "The profit is 25",
           "explanation_md": "Slack is not profit."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The resource is abundant: 25 units are left unused",
+          "explanation_md": "A positive slack marks a resource that is not fully used."
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "D",
       "correct_explanation_md": "A positive slack in the optimum tableau shows an abundant resource; a zero slack shows a scarce resource.",
       "item_type": "question",
       "question_type": "single_choice",
@@ -3041,13 +3041,13 @@
       "options": [
         {
           "option_id": "A",
-          "text_md": "The most negative entry",
-          "explanation_md": "That is the maximisation rule."
+          "text_md": "The largest positive entry",
+          "explanation_md": "In minimisation a positive entry signals potential improvement."
         },
         {
           "option_id": "B",
-          "text_md": "The largest positive entry",
-          "explanation_md": "In minimisation a positive entry signals potential improvement."
+          "text_md": "The most negative entry",
+          "explanation_md": "That is the maximisation rule."
         },
         {
           "option_id": "C",
@@ -3060,7 +3060,7 @@
           "explanation_md": "Not a criterion."
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "A",
       "correct_explanation_md": "For minimisation the entering variable has the largest positive Z-row entry.",
       "item_type": "question",
       "question_type": "single_choice",

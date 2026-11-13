@@ -680,26 +680,26 @@
         "options": [
           {
             "option_id": "A",
-            "text_md": "Complementary",
-            "explanation_md": "They cannot occur together and together cover all outcomes."
-          },
-          {
-            "option_id": "B",
             "text_md": "Independent",
             "explanation_md": "Knowing one happened settles the other entirely."
           },
           {
-            "option_id": "C",
+            "option_id": "B",
             "text_md": "Equal in probability",
             "explanation_md": "Nothing says they are equally likely."
           },
           {
-            "option_id": "D",
+            "option_id": "C",
             "text_md": "Impossible",
             "explanation_md": "Each can occur."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Complementary",
+            "explanation_md": "They cannot occur together and together cover all outcomes."
           }
         ],
-        "correct_option_id": "A",
+        "correct_option_id": "D",
         "correct_explanation_md": "Two events that are both mutually exclusive and exhaustive are complementary."
       }
     },
@@ -716,13 +716,13 @@
         "options": [
           {
             "option_id": "A",
-            "text_md": "A and B are mutually exclusive",
-            "explanation_md": "A loan of Rs 7 lakh is in both."
+            "text_md": "A and B are exhaustive but not mutually exclusive",
+            "explanation_md": "Every loan is in A or B (or both), but some loans are in both."
           },
           {
             "option_id": "B",
-            "text_md": "A and B are exhaustive but not mutually exclusive",
-            "explanation_md": "Every loan is in A or B (or both), but some loans are in both."
+            "text_md": "A and B are mutually exclusive",
+            "explanation_md": "A loan of Rs 7 lakh is in both."
           },
           {
             "option_id": "C",
@@ -735,7 +735,7 @@
             "explanation_md": "Both have loans in them."
           }
         ],
-        "correct_option_id": "B",
+        "correct_option_id": "A",
         "correct_explanation_md": "Every loan falls in at least one of A and B, so they are exhaustive; loans between Rs 5 and 10 lakh belong to both, so they are not mutually exclusive."
       }
     },
@@ -793,13 +793,13 @@
           },
           {
             "option_id": "B",
-            "text_md": "P(A and B) = P(A) x P(B)",
-            "explanation_md": "Independence means the occurrence of one does not affect the other, so the joint probability is the product."
+            "text_md": "P(A or B) = P(A) + P(B)",
+            "explanation_md": "That holds when the events are mutually exclusive."
           },
           {
             "option_id": "C",
-            "text_md": "P(A or B) = P(A) + P(B)",
-            "explanation_md": "That holds when the events are mutually exclusive."
+            "text_md": "P(A and B) = P(A) x P(B)",
+            "explanation_md": "Independence means the occurrence of one does not affect the other, so the joint probability is the product."
           },
           {
             "option_id": "D",
@@ -807,7 +807,7 @@
             "explanation_md": "Equal probabilities do not mean independence."
           }
         ],
-        "correct_option_id": "B",
+        "correct_option_id": "C",
         "correct_explanation_md": "Independent events satisfy P(A and B) = P(A) P(B)."
       }
     },
@@ -835,16 +835,16 @@
           },
           {
             "option_id": "C",
-            "text_md": "No: P(A and B) = 0 but P(A) x P(B) is positive",
-            "explanation_md": "If one occurs the other cannot, so they affect each other and cannot be independent."
+            "text_md": "Only if their union is the sample space",
+            "explanation_md": "That is a different condition."
           },
           {
             "option_id": "D",
-            "text_md": "Only if their union is the sample space",
-            "explanation_md": "That is a different condition."
+            "text_md": "No: P(A and B) = 0 but P(A) x P(B) is positive",
+            "explanation_md": "If one occurs the other cannot, so they affect each other and cannot be independent."
           }
         ],
-        "correct_option_id": "C",
+        "correct_option_id": "D",
         "correct_explanation_md": "For mutually exclusive events P(A and B) = 0, while independence would require it to equal P(A) P(B), which is positive."
       }
     },
@@ -861,13 +861,13 @@
         "options": [
           {
             "option_id": "A",
-            "text_md": "P(A) - 1",
-            "explanation_md": "This would be negative."
+            "text_md": "1 - P(A)",
+            "explanation_md": "The complement rule."
           },
           {
             "option_id": "B",
-            "text_md": "1 - P(A)",
-            "explanation_md": "The complement rule."
+            "text_md": "P(A) - 1",
+            "explanation_md": "This would be negative."
           },
           {
             "option_id": "C",
@@ -880,7 +880,7 @@
             "explanation_md": "Not a rule."
           }
         ],
-        "correct_option_id": "B",
+        "correct_option_id": "A",
         "correct_explanation_md": "The probability of the complement is 1 - P(A)."
       }
     },
@@ -902,13 +902,13 @@
           },
           {
             "option_id": "B",
-            "text_md": "The weight of a cash bag",
-            "explanation_md": "Weight is continuous."
+            "text_md": "The number of cheques returned in a day",
+            "explanation_md": "A count takes separate whole values: discrete."
           },
           {
             "option_id": "C",
-            "text_md": "The number of cheques returned in a day",
-            "explanation_md": "A count takes separate whole values: discrete."
+            "text_md": "The weight of a cash bag",
+            "explanation_md": "Weight is continuous."
           },
           {
             "option_id": "D",
@@ -916,7 +916,7 @@
             "explanation_md": "A percentage return can take any value in a range: continuous."
           }
         ],
-        "correct_option_id": "C",
+        "correct_option_id": "B",
         "correct_explanation_md": "A variable that takes a finite or countable set of values, such as a count, is discrete."
       }
     },
@@ -1005,13 +1005,13 @@
         "options": [
           {
             "option_id": "A",
-            "text_md": "Larger by 3",
-            "explanation_md": "Adding a constant does not change variance."
+            "text_md": "Four times as large",
+            "explanation_md": "Variance scales by the square of the multiplier: 2 squared = 4."
           },
           {
             "option_id": "B",
-            "text_md": "Four times as large",
-            "explanation_md": "Variance scales by the square of the multiplier: 2 squared = 4."
+            "text_md": "Larger by 3",
+            "explanation_md": "Adding a constant does not change variance."
           },
           {
             "option_id": "C",
@@ -1024,7 +1024,7 @@
             "explanation_md": "The multiplier 2 does change the spread."
           }
         ],
-        "correct_option_id": "B",
+        "correct_option_id": "A",
         "correct_explanation_md": "V(aX + b) = a squared V(X), so multiplying by 2 gives four times the variance and adding 3 has no effect."
       }
     },

@@ -455,18 +455,18 @@
         "options": [
           {
             "option_id": "A",
-            "text_md": "The relationship is curvilinear, so a straight-line correlation measure would understate it",
-            "explanation_md": "A relationship that needs a curve is curvilinear, and r measures only linear association."
-          },
-          {
-            "option_id": "B",
             "text_md": "The relationship is perfectly linear",
             "explanation_md": "A U shape cannot be fitted by one straight line."
           },
           {
-            "option_id": "C",
+            "option_id": "B",
             "text_md": "The relationship is direct throughout",
             "explanation_md": "It is inverse at first."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The relationship is curvilinear, so a straight-line correlation measure would understate it",
+            "explanation_md": "A relationship that needs a curve is curvilinear, and r measures only linear association."
           },
           {
             "option_id": "D",
@@ -474,7 +474,7 @@
             "explanation_md": "A clear pattern shows a relationship, just not a linear one."
           }
         ],
-        "correct_option_id": "A",
+        "correct_option_id": "C",
         "correct_explanation_md": "A U-shaped pattern is curvilinear; r, which measures linear association, can be near zero even though the relationship is strong."
       }
     },
@@ -527,13 +527,13 @@
         "options": [
           {
             "option_id": "A",
-            "text_md": "Pair B is more strongly related because its r is positive",
-            "explanation_md": "The sign gives direction only."
+            "text_md": "Pair A has a stronger relationship, and it is inverse",
+            "explanation_md": "Strength is the size of r: 0.90 is greater than 0.60, and the negative sign shows an inverse relationship."
           },
           {
             "option_id": "B",
-            "text_md": "Pair A has a stronger relationship, and it is inverse",
-            "explanation_md": "Strength is the size of r: 0.90 is greater than 0.60, and the negative sign shows an inverse relationship."
+            "text_md": "Pair B is more strongly related because its r is positive",
+            "explanation_md": "The sign gives direction only."
           },
           {
             "option_id": "C",
@@ -546,7 +546,7 @@
             "explanation_md": "0.90 is larger than 0.60."
           }
         ],
-        "correct_option_id": "B",
+        "correct_option_id": "A",
         "correct_explanation_md": "The size of r shows strength; the sign shows direction. -0.90 is stronger than +0.60 and is inverse."
       }
     },
@@ -600,18 +600,18 @@
         "options": [
           {
             "option_id": "A",
-            "text_md": "y tends to fall as x rises",
-            "explanation_md": "A negative slope runs downward from left to right."
-          },
-          {
-            "option_id": "B",
             "text_md": "y tends to rise as x rises",
             "explanation_md": "That is a positive slope."
           },
           {
-            "option_id": "C",
+            "option_id": "B",
             "text_md": "The intercept is negative",
             "explanation_md": "The sign of b does not decide the sign of a."
+          },
+          {
+            "option_id": "C",
+            "text_md": "y tends to fall as x rises",
+            "explanation_md": "A negative slope runs downward from left to right."
           },
           {
             "option_id": "D",
@@ -619,7 +619,7 @@
             "explanation_md": "A negative slope only means a negative r, not a perfect one."
           }
         ],
-        "correct_option_id": "A",
+        "correct_option_id": "C",
         "correct_explanation_md": "A negative slope means the line falls from left to right: y tends to fall as x rises."
       }
     },
@@ -641,21 +641,21 @@
           },
           {
             "option_id": "B",
-            "text_md": "(x-bar, y-bar), the point of the two means",
-            "explanation_md": "Since a = y-bar - b x-bar, substituting x = x-bar gives y-hat = y-bar."
-          },
-          {
-            "option_id": "C",
             "text_md": "The first data point",
             "explanation_md": "No data point need lie on the line."
           },
           {
-            "option_id": "D",
+            "option_id": "C",
             "text_md": "The point of the two medians",
             "explanation_md": "The line is built from means, not medians."
+          },
+          {
+            "option_id": "D",
+            "text_md": "(x-bar, y-bar), the point of the two means",
+            "explanation_md": "Since a = y-bar - b x-bar, substituting x = x-bar gives y-hat = y-bar."
           }
         ],
-        "correct_option_id": "B",
+        "correct_option_id": "D",
         "correct_explanation_md": "The intercept formula a = y-bar - b x-bar means the line passes through (x-bar, y-bar)."
       }
     },
@@ -713,13 +713,13 @@
           },
           {
             "option_id": "B",
-            "text_md": "Curvilinear correlation",
-            "explanation_md": "The problem is mixing groups, not curvature."
+            "text_md": "Spurious correlation, caused by non-homogeneous data",
+            "explanation_md": "A heterogeneous sample can give a high r although no correlation actually exists."
           },
           {
             "option_id": "C",
-            "text_md": "Spurious correlation, caused by non-homogeneous data",
-            "explanation_md": "A heterogeneous sample can give a high r although no correlation actually exists."
+            "text_md": "Curvilinear correlation",
+            "explanation_md": "The problem is mixing groups, not curvature."
           },
           {
             "option_id": "D",
@@ -727,7 +727,7 @@
             "explanation_md": "Inverse refers to direction, not to the problem."
           }
         ],
-        "correct_option_id": "C",
+        "correct_option_id": "B",
         "correct_explanation_md": "A non-homogeneous sample can show a high correlation where none really exists: spurious correlation."
       }
     },
@@ -785,21 +785,21 @@
           },
           {
             "option_id": "B",
-            "text_md": "The number of active customers, the basis of the prediction",
-            "explanation_md": "The independent variable is the one used to predict."
-          },
-          {
-            "option_id": "C",
             "text_md": "Neither, because both are measured together",
             "explanation_md": "One is the basis, the other is predicted."
           },
           {
-            "option_id": "D",
+            "option_id": "C",
             "text_md": "The regression line itself",
             "explanation_md": "The line is the fitted relationship, not a variable."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The number of active customers, the basis of the prediction",
+            "explanation_md": "The independent variable is the one used to predict."
           }
         ],
-        "correct_option_id": "B",
+        "correct_option_id": "D",
         "correct_explanation_md": "The independent variable is the basis of prediction; the dependent variable is the one predicted."
       }
     },

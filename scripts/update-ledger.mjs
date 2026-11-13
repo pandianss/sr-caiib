@@ -2,6 +2,8 @@
 // batch's import config, records lesson, worked-example and assessment item IDs, published item IDs and review evidence.
 // Adequacy is a minimum rule (a lesson card and two questions); gaps and caveats stay hand-edited and are preserved.
 // Usage: node scripts/update-ledger.mjs content/publish/<PACK>-v<n>.json [calc-test-path]
+// The calculation test of each item comes from the specification (calculation_ref); the optional argument adds one more reference.
+// To rebuild a paper's ledger from scratch (item IDs changed), delete content/ledger/<paper>.json first and re-apply hand-written caveats.
 import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -33,7 +35,8 @@ for (const batch of specBatches) {
       else if (item.card_type === 'worked_example') add(r.worked_example_item_ids, id);
       else add(r.lesson_item_ids, id);
       add(r.published_item_ids, id);
-      for (const ref of [`content/batches/${batch}/review.md`, specPath.replaceAll('\\', '/'), ...(calcTest ? [calcTest] : [])]) add(r.review.record_refs, ref);
+      const specItem = spec.items.find(i => i.batch === batch && i.draft_id === m.draft_id);
+      for (const ref of [`content/batches/${batch}/review.md`, specPath.replaceAll('\\', '/'), ...(calcTest ? [calcTest] : []), ...(specItem?.calculation_ref ? [specItem.calculation_ref] : [])]) add(r.review.record_refs, ref);
       if (item.question_type === 'numeric_input' || ['formula', 'worked_example'].includes(item.card_type)) r.review.calculations = 'passed';
     }
   }
