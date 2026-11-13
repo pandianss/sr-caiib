@@ -56,7 +56,7 @@ test('U02-B002 D009: two investment remittances at 20%', () => {
   if (q.question_type !== 'numeric_input') throw new Error('expected numeric');
   const parts = tcs(['1100000', '600000'], '0.20');
   assert.deepEqual(parts, ['20000.00', '120000.00']);
-  assert.equal(at(add(d(parts[0]), d(parts[1])), 2), '140000.00'); assert.equal(q.numeric_rule.expected_answer, '140000.00');
+  assert.equal(at(add(d(parts[0]!), d(parts[1]!)), 2), '140000.00'); assert.equal(q.numeric_rule.expected_answer, '140000.00');
   assert.deepEqual(gradeNumeric('140000', q.numeric_rule), { status: 'graded', is_correct: true, normalized_response: '140000.00' });
   for (const wrong of [at(mul(d('1700000'), d('0.2')), 2), at(mul(d('600000'), d('0.2')), 2), at(mul(sub(d('1700000'), d('700000')), d('0.2')), 2)]) {
     const g = gradeNumeric(wrong, q.numeric_rule); assert.equal(g.status === 'graded' && g.is_correct, false, wrong);
