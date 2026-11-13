@@ -1,0 +1,4360 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BFM-B-U04-B001",
+    "paper_id": "BFM",
+    "unit_label": "Module B unit 4: Market Risk",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S03"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "statement": "The courseware illustrates market risk with an investor who buys 100 shares at ₹100 with capital of ₹10,000: a 5 per cent fall cuts the capital to ₹9,500, and with borrowing of nine times capital (₹1,00,000 of shares) a 5 per cent fall would lose ₹5,000, half the capital, forcing liquidation of holdings at lower prices. The risks faced are price risk, asset liquidity risk (reduced liquidity in a specific security) and market liquidity risk (poor liquidity in the whole market). A bank's trading book holds proprietary positions in debt securities, equity, foreign exchange, commodities (not permitted in India at present, the courseware says) and derivatives held for trading, plus positions from matched principal brokering, market making and hedging. Its risks: market risk, liquidity risk (asset and market) and credit and counterparty risk. Market liquidity risk differs from the funding liquidity risk from asset-liability mismatch, which is for ALM.",
+        "source_id": "S03",
+        "locator": "Printed pp. 403-404, sections 14.1 and 14.2",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "F002",
+        "statement": "Market risk is the risk of adverse deviation of the mark-to-market value of the trading portfolio due to market movements during the period required to liquidate the transactions; the liquidation period varies by instrument (about one day for foreign exchange, much longer for exotic derivatives). Failure to monitor positions is an operational risk, not a market risk. Trading liquidity is the ability to transact freely at reasonable prices without affecting prices or attracting the attention of others; it shows up as adverse price changes, inability to liquidate at a fair price, large price changes caused by liquidation, or inability to liquidate at any price. Asset liquidity risk is lack of trading liquidity in a specific asset even when other assets trade well; market liquidity risk is a general liquidity crunch that makes the market shallow. Credit risk shows up in prices through ratings (a downgrade raises the required yield and lowers the price); for derivatives, counterparty risk arises when the mark-to-market value is positive, the exposure being the current liquidation value plus potential upward drift; settlement risk arises when one party fails to complete the settlement, and RTGS and central counterparties such as the Clearing Corporation of India mitigate it.",
+        "source_id": "S03",
+        "locator": "Printed pp. 405-407, section 14.2",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "F003",
+        "statement": "Market risk management answers four questions (what are the risks, how large could the price change and loss be, how to monitor and control price risk, how to reduce it) through four parts: risk identification, risk measurement, risk monitoring and control, and risk mitigation; there is no risk pricing process because financial instruments take their price from the market. The organisation consists of the Board of Directors (overall responsibility, policies, aggregate limits), the Risk Management Committee (guidelines, conformity to policy, prudential limits and periodic review, robust measurement models, staffing), the Asset-Liability Management Committee (product pricing for deposits and advances, net interest margin, maturity profile of incremental assets and liabilities, interest rate view, funding policy, liquidity monitoring, transfer pricing, balance sheet management), the ALM support group (analyses, monitors and reports risk profiles) and the Middle Office (independent market risk monitoring, measurement, analysis and reporting for the integrated treasury, and independent validation of prices of deals, particularly structured products). Risk identification: all products are analysed; standard products operate under an approved Product Programme with procedures, limits and controls; new or non-standard products may operate under a Product Transaction Memorandum temporarily while a full programme is prepared.",
+        "source_id": "S03",
+        "locator": "Printed pp. 407-409, sections 14.3 to 14.5",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "F004",
+        "statement": "Market risk measures are based on sensitivity and downside potential. Sensitivity is the change in market value for a unit change in one market parameter; it ignores other parameters and is not constant (for a bond the sensitivity changes as the yield changes). Basis point value (BPV) is the change in a bond's price for a one basis point (0.01 per cent) change in yield; the profit or loss for a given yield change equals the change in basis points times the BPV. BPV falls as the bond approaches maturity and is zero at maturity. Macaulay duration is the weighted average time to the cash flows, weighted by their present values (cumulative present value of time-weighted flows divided by the price); it is always shorter than the term to maturity except for zero-coupon securities, where it equals it. Modified duration equals Macaulay duration divided by (1 plus the yield per period) and measures the percentage change in price for a 1 per cent change in yield; the approximate percentage change in price is minus modified duration times the change in yield. The longer the duration, the greater the price sensitivity and the risk.",
+        "source_id": "S03",
+        "locator": "Printed pp. 409-411, section 14.6",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "F005",
+        "statement": "Value at risk (VaR) is the predicted worst-case loss at a specific confidence level over a certain period under normal trading conditions: a one-day 99 per cent VaR of ₹10 crore means a loss above ₹10 crore is expected on one day in 100 (about 2.5 days in a year of 250 working days). VaR depends on the holding period, the confidence level and the historical period used, and on the volatilities of and correlations between prices. For a single position, VaR = position value × daily volatility × the standard deviation multiple for the confidence level (z of 1.65 for 95 per cent, 2.326 for 99 per cent, 3 for 99.9 per cent); volatility over a longer horizon scales with the square root of time. The three methods are the correlation (variance-covariance) method, historical simulation (uses actual historical movements, needs no correlation assumption, but assumes the future behaves like the past) and Monte Carlo simulation (randomly generated price scenarios with assumed correlations and volatilities). Volatility may be estimated by an arithmetic moving average or an exponential moving average, which reacts faster to shocks. Limitations: VaR is not a worst-case scenario, says nothing about losses beyond the confidence level, does not capture event risk and cannot replace judgment; conditional VaR or expected shortfall averages the losses beyond VaR to capture tail risk.",
+        "source_id": "S03",
+        "locator": "Printed pp. 411-414 and 418, section 14.6 and 14.9",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "F006",
+        "statement": "Back testing compares model-based VaR with the actual performance of the portfolio to evaluate a new model or the accuracy of an existing one; banks should back test monthly or quarterly, observing whether trading results fall within the predicted confidence bands, and investigate causes if not; the BIS outlined back testing practice in its January 1996 supervisory framework for the use of back testing with internal models. Stress testing determines possible changes in portfolio value from non-normal movements in market parameters; techniques are a simple sensitivity test (isolated predefined shocks to one factor, for example exchange rate changes of 2, 4, 6 and 10 per cent), scenario analysis (shocks to several factors together, historical or hypothetical; the leading technique), maximum loss (the most damaging combination of factor moves) and extreme value theory (statistics of tail behaviour; the only technique that attaches a probability). A good stress test is relevant to the current position, considers all relevant market rates, regime shifts, market illiquidity and the interplay of market and credit risk. Stress tests help manage funding risk, check modelling assumptions, set trader limits and determine capital charges, but they attach no probabilities (except through extreme value theory) and are subject to many practitioner choices.",
+        "source_id": "S03",
+        "locator": "Printed pp. 414-416, sections 14.6 (5) and (6)",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "F007",
+        "statement": "Monitoring and control means keeping portfolio value within boundary values through limits: policy guidelines on roles and authority, a limit structure and approval process, systems to capture all risks, guidelines on portfolio size and mix, a system for estimating risk under normal and stressed conditions, a mark-to-market policy, limit monitoring and reporting, and performance measurement and resource allocation. Limits and triggers for sensitivity and VaR are set by the designated authority (usually the Risk Policy Committee), measured daily for trading portfolios, with management triggers or stop-loss limits for mark-to-market activities; the rates used for marking are independently verified; financial models are documented, validated at least annually (and by an external agency) and stress tests run preferably quarterly. Risk reports should be regular, timely, accurate, highlight concentrations and exceptions, carry written commentary and be concise. Trading liquidity risk is managed by avoiding a large market share in any asset type, infrequently traded instruments, instruments with unusual tenors and one-sided liquidity in the market.",
+        "source_id": "S03",
+        "locator": "Printed pp. 416-418, sections 14.7 to 14.9",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "F008",
+        "statement": "Risk mitigation in market risk reduces the volatility of the portfolio, which also lowers upside; strategies involving counterparties bring counterparty risk, which falls when an exchange or central counterparty is used. Using sensitivity measures: the BPV of a portfolio is the weighted average of the BPVs of its bonds, so adding a bond with a BPV below the portfolio's lowers it (the courseware adds a bond to a two-bond portfolio with BPVs 675 and 205, average 440, to bring it down); portfolio duration is raised by adding or lengthening long duration instruments and reduced by selling them. Using correlation: a long position in a stock hedged by a short position in the stock's future moves in opposite directions and reduces volatility; a fixed rate bond with a receive-floating swap offsets loss in bond price against higher floating receipts. Options give a right without obligation at the cost of an upfront premium: a long call hedges downside of a short position, a long put hedges downside of a long position. All mitigation trades risk for return.",
+        "source_id": "S03",
+        "locator": "Printed pp. 418-420, section 14.10",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      }
+    ],
+    "drafts": [
+      {
+        "draft_id": "D001",
+        "item_type": "card",
+        "variant": "concept",
+        "fact_ids": [
+          "F001",
+          "F002"
+        ],
+        "payload": {
+          "title": "Market risk, liquidity risk and credit risk in the trading book",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "**Trading book**: **proprietary positions in debt, equity, forex and derivatives held for trading** (commodities **not permitted** in India, per the courseware), plus **matched principal broking, market making and hedges**.\n\n**Market (price) risk**: **adverse change in the mark-to-market value** during **the period needed to liquidate**. The liquidation period is **short for forex (about a day)** and **long for exotic derivatives**. **Failing to watch positions is operational risk**, not market risk.\n\n| Risk | Meaning |\n| --- | --- |\n| **Asset liquidity** | **one security** cannot be sold well though others trade |\n| **Market liquidity** | a **general crunch**; the market is **shallow** |\n| **Credit** | a **downgrade raises the required yield and cuts the price** |\n| **Counterparty** | the **derivative's mark-to-market is positive** and the counterparty may default |\n| **Settlement** | one side **fails to complete**; **RTGS** and **central counterparties such as CCIL** reduce it |\n\n**Not the same** as **funding liquidity risk** from asset-liability mismatch (an ALM matter).",
+          "self_check": {
+            "mode": "question",
+            "question_id": "D012"
+          }
+        }
+      },
+      {
+        "draft_id": "D002",
+        "item_type": "card",
+        "variant": "concept",
+        "fact_ids": [
+          "F003"
+        ],
+        "payload": {
+          "title": "The market risk framework, organisation and risk identification",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "**Four questions**: **what are the risks; how much could the price move and what is the loss; how to monitor and control; how to reduce?** These give **four processes**: **identification, measurement, monitoring and control, mitigation**. **No risk pricing** because **the market sets the price**.\n\n| Body | Role |\n| --- | --- |\n| **Board** | **overall responsibility**, **policy**, **aggregate limits** |\n| **Risk Management Committee** | **guidelines**, **conformity**, **prudential limits**, **robust models**, **staffing** |\n| **ALCO** | **pricing of deposits and advances**, **NIM**, **maturity profile**, **interest rate view**, **funding**, **liquidity**, **transfer pricing**, **balance sheet management** |\n| **ALM support group** | **analyses, monitors and reports** risk profiles |\n| **Middle Office** | **independent monitoring, measurement and reporting** for the treasury; **independent validation of deal prices**, esp. **structured products** |\n\n**Identification**: **standard products** run under an approved **Product Programme**; **new or non-standard products** may run **temporarily** under a **Product Transaction Memorandum**.",
+          "self_check": {
+            "mode": "question",
+            "question_id": "D016"
+          }
+        }
+      },
+      {
+        "draft_id": "D003",
+        "item_type": "card",
+        "variant": "concept",
+        "fact_ids": [
+          "F004"
+        ],
+        "payload": {
+          "title": "Sensitivity measures: BPV, duration and modified duration",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "**Sensitivity** = change in value for a **unit move in one parameter**; it **ignores other parameters** and **is not constant**.\n\n- **BPV** (basis point value): **price change for a 1 bp (0.01%) change in yield**. **Profit or loss = bp move × BPV**. BPV **falls as the bond ages** and is **zero at maturity**.\n- **Macaulay duration**: the **present-value-weighted average time of the cash flows** = **Σ(t × PV of flow) ÷ price**. It is **shorter than the term** except for **zero coupon** bonds.\n- **Modified duration = Macaulay duration ÷ (1 + yield)**.\n- **Approximate % price change = − modified duration × change in yield**.\n\n**The longer the duration, the more price-sensitive the bond and the higher its risk.**",
+          "self_check": {
+            "mode": "question",
+            "question_id": "D019"
+          }
+        }
+      },
+      {
+        "draft_id": "D004",
+        "item_type": "card",
+        "variant": "concept",
+        "fact_ids": [
+          "F005"
+        ],
+        "payload": {
+          "title": "Value at risk: meaning, inputs and formula",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "**VaR** = the **predicted worst-case loss at a stated confidence level over a stated period under normal trading conditions**.\n\n**Example reading**: a **one-day 99% VaR of ₹10 crore** means a loss **above ₹10 crore** is expected on **about one day in 100 (2.5 days of 250)**.\n\n**Inputs**: **holding period, confidence level, history used, volatilities and correlations**.\n\n**One position**: **VaR = position × daily volatility × z**\n| Confidence | **z** |\n| --- | --- |\n| **84%** | **1** |\n| **95%** | **1.65** |\n| **97.5%** | **2** |\n| **99%** | **2.326** |\n| **99.9%** | **3** |\n\n**Longer horizon**: scale volatility by **√time**.",
+          "self_check": {
+            "mode": "question",
+            "question_id": "D024"
+          }
+        }
+      },
+      {
+        "draft_id": "D005",
+        "item_type": "card",
+        "variant": "concept",
+        "fact_ids": [
+          "F005"
+        ],
+        "payload": {
+          "title": "VaR methods and limitations",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "| Method | How | Strength | Weakness |\n| --- | --- | --- | --- |\n| **Correlation (variance-covariance)** | **sensitivities × volatility and correlation matrix** | **deterministic**, quick | needs **assumptions** |\n| **Historical simulation** | **replays actual past moves** | **no correlation assumption** | **assumes the future looks like the past**; window length matters |\n| **Monte Carlo** | **random scenarios** | flexible | **depends on assumed volatilities and correlations** |\n\n**Volatility estimates**: **arithmetic moving average** or **exponential moving average** (**reacts faster to shocks**).\n\n**Limits of VaR**: **not a worst case**; **silent on losses beyond the confidence level**; **misses event risk**; **cannot replace judgment**. **Conditional VaR / expected shortfall** **averages the losses beyond VaR** to capture the tail.",
+          "self_check": {
+            "mode": "question",
+            "question_id": "D026"
+          }
+        }
+      },
+      {
+        "draft_id": "D006",
+        "item_type": "card",
+        "variant": "concept",
+        "fact_ids": [
+          "F006"
+        ],
+        "payload": {
+          "title": "Back testing and stress testing",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "**Back testing**: compare **model VaR with actual results**, **monthly or quarterly**; if results **fall outside the predicted bands**, **investigate** (data, parameters, method). The BIS set out practice in **January 1996**.\n\n**Stress testing**: **non-normal moves** in market parameters.\n| Technique | What it does |\n| --- | --- |\n| **Simple sensitivity test** | **one factor, predefined shocks** (for example **±2, 4, 6, 10%** on the exchange rate) |\n| **Scenario analysis** | **several factors together**, **historical or hypothetical**; **the leading technique** |\n| **Maximum loss** | **the most damaging combination** of factor moves |\n| **Extreme value theory** | **statistics of the tail**; **the only one that attaches a probability** |\n\n**A good stress test**: **relevant to the current position**, covers **all relevant rates**, **regime shifts**, **illiquidity**, and **market-credit interplay**. **Uses**: **funding risk, check models, trader limits, capital charges**. **Limits**: **no probabilities** (apart from EVT) and **many subjective choices**.",
+          "self_check": {
+            "mode": "question",
+            "question_id": "D029"
+          }
+        }
+      },
+      {
+        "draft_id": "D007",
+        "item_type": "card",
+        "variant": "concept",
+        "fact_ids": [
+          "F007"
+        ],
+        "payload": {
+          "title": "Limits, monitoring, reporting and trading liquidity",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "**Control** = keep portfolio value **within boundaries** using **limits**: **roles and authority**, **limit structure and approvals**, **systems capturing all risks**, **portfolio size and mix rules**, **normal and stressed risk estimates**, **mark-to-market policy**, **limit monitoring**, **performance and resource allocation**.\n\n- **Limits and triggers** on **sensitivity and VaR**, set by the **Risk Policy Committee**, **measured daily**, with **stop-loss triggers**.\n- **Rates used for marking are independently verified**.\n- **Models**: **documented**, **validated at least yearly** (and by an **external agency**), **stress tests preferably quarterly**.\n- **Reports**: **regular, timely, accurate, concise**, with **concentrations, exceptions** and **written commentary**.\n\n**Trading liquidity risk is managed by avoiding**: **a large market share in an asset type**, **infrequently traded instruments**, **unusual tenors**, **one-sided markets**.",
+          "self_check": {
+            "mode": "question",
+            "question_id": "D032"
+          }
+        }
+      },
+      {
+        "draft_id": "D008",
+        "item_type": "card",
+        "variant": "concept",
+        "fact_ids": [
+          "F008"
+        ],
+        "payload": {
+          "title": "Mitigating market risk",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "**Mitigation lowers volatility** and **upside too**. Strategies using **counterparties add counterparty risk** (**less** with an **exchange or central counterparty**).\n\n- **Sensitivity**: **portfolio BPV = weighted average of the bonds' BPVs**; to **cut it**, **add a bond with a BPV below the portfolio's**. **Duration** is raised by adding, lowered by selling, **long duration** assets.\n- **Correlation**: **long stock + short stock future** (they **move together but oppositely in the position**); **fixed rate bond + receive-floating swap** (a **rate rise** hurts the bond but **raises swap receipts**).\n- **Options**: **upfront premium** buys a **right, not an obligation**; **long put protects a long position**, **long call protects a short position**.",
+          "self_check": {
+            "mode": "question",
+            "question_id": "D035"
+          }
+        }
+      },
+      {
+        "draft_id": "D009",
+        "item_type": "card",
+        "variant": "worked_example",
+        "fact_ids": [
+          "F004"
+        ],
+        "payload": {
+          "title": "Profit or loss from a yield move using BPV",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "Illustrative case: a bank holds government bonds of face value ₹25 crore. The bond's BPV is ₹1,850 per ₹1 crore of face value. Yields rise by 6 basis points. What is the loss? And what if yields fall 4 basis points?",
+          "worked_steps": [
+            {
+              "step_number": 1,
+              "description": "BPV of the holding.",
+              "formula_or_substitution": "1,850 × 25",
+              "intermediate_result": "₹46,250 per bp"
+            },
+            {
+              "step_number": 2,
+              "description": "Loss for a 6 bp rise.",
+              "formula_or_substitution": "46,250 × 6",
+              "intermediate_result": "₹2,77,500"
+            },
+            {
+              "step_number": 3,
+              "description": "Gain for a 4 bp fall.",
+              "formula_or_substitution": "46,250 × 4",
+              "intermediate_result": "₹1,85,000"
+            }
+          ],
+          "final_answer_with_unit": "A 6 bp rise costs ₹2,77,500; a 4 bp fall earns ₹1,85,000",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Why does the holding's BPV shrink as time passes?",
+            "expected_takeaway": "A shorter remaining maturity means less time for yield changes to affect the price, so the sensitivity falls and is zero at maturity."
+          }
+        }
+      },
+      {
+        "draft_id": "D010",
+        "item_type": "card",
+        "variant": "worked_example",
+        "fact_ids": [
+          "F004"
+        ],
+        "payload": {
+          "title": "Duration and modified duration of a three-year bond",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "Illustrative case: a three-year bond with face value 100 pays 9% annually and its yield is 9%. Find its price, Macaulay duration and modified duration, and estimate its price if the yield falls by 0.5 percentage point.",
+          "worked_steps": [
+            {
+              "step_number": 1,
+              "description": "Present values of the flows at 9%.",
+              "formula_or_substitution": "9/1.09; 9/1.09²; 109/1.09³",
+              "intermediate_result": "8.2569; 7.5751; 84.1680"
+            },
+            {
+              "step_number": 2,
+              "description": "Price.",
+              "formula_or_substitution": "8.2569 + 7.5751 + 84.1680",
+              "intermediate_result": "100.00"
+            },
+            {
+              "step_number": 3,
+              "description": "Time-weighted present values.",
+              "formula_or_substitution": "1×8.2569 + 2×7.5751 + 3×84.1680",
+              "intermediate_result": "275.911"
+            },
+            {
+              "step_number": 4,
+              "description": "Macaulay duration.",
+              "formula_or_substitution": "275.911 ÷ 100",
+              "intermediate_result": "2.7591 years"
+            },
+            {
+              "step_number": 5,
+              "description": "Modified duration.",
+              "formula_or_substitution": "2.7591 ÷ 1.09",
+              "intermediate_result": "2.5313"
+            },
+            {
+              "step_number": 6,
+              "description": "Approximate price change for −0.5 point.",
+              "formula_or_substitution": "−2.5313 × (−0.5%)",
+              "intermediate_result": "+1.2656%"
+            },
+            {
+              "step_number": 7,
+              "description": "Estimated price.",
+              "formula_or_substitution": "100 × 1.012656",
+              "intermediate_result": "101.27"
+            }
+          ],
+          "final_answer_with_unit": "Duration 2.7591 years, modified duration 2.5313, and a price of about 101.27 after a 0.5 point fall in yield",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Why is the Macaulay duration below three years?",
+            "expected_takeaway": "Coupons arrive before maturity, so the weighted average time of the cash flows is shorter than the term; only a zero coupon bond has duration equal to its term."
+          }
+        }
+      },
+      {
+        "draft_id": "D011",
+        "item_type": "card",
+        "variant": "worked_example",
+        "fact_ids": [
+          "F005"
+        ],
+        "payload": {
+          "title": "One-day and sixteen-day value at risk of a position",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "Illustrative case: a bank holds a position worth ₹2.5 crore in a stock with a daily volatility of 1.2%. Using the 99% multiple of 2.326, find the one-day VaR and the 16-day VaR (square root of time).",
+          "worked_steps": [
+            {
+              "step_number": 1,
+              "description": "One-day standard deviation.",
+              "formula_or_substitution": "2,50,00,000 × 1.2%",
+              "intermediate_result": "₹3,00,000"
+            },
+            {
+              "step_number": 2,
+              "description": "One-day 99% VaR.",
+              "formula_or_substitution": "3,00,000 × 2.326",
+              "intermediate_result": "₹6,97,800"
+            },
+            {
+              "step_number": 3,
+              "description": "Square root of 16.",
+              "formula_or_substitution": "√16",
+              "intermediate_result": "4"
+            },
+            {
+              "step_number": 4,
+              "description": "16-day VaR.",
+              "formula_or_substitution": "6,97,800 × 4",
+              "intermediate_result": "₹27,91,200"
+            }
+          ],
+          "final_answer_with_unit": "The one-day VaR is ₹6,97,800 and the 16-day VaR ₹27,91,200",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "What does the one-day figure tell the bank about the chance of losing more?",
+            "expected_takeaway": "That on about one day in a hundred under normal conditions the loss may exceed ₹6,97,800."
+          }
+        }
+      },
+      {
+        "draft_id": "D012",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "difficulty": "easy",
+          "stem_md": "Which of the following is NOT one of the risks identified for a trading book in the courseware?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Market risk",
+              "explanation_md": "Listed."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Funding risk from asset-liability mismatch",
+              "explanation_md": "That is an ALM matter, distinct from market liquidity risk."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Asset liquidity risk",
+              "explanation_md": "Listed."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Credit and counterparty risk",
+              "explanation_md": "Listed."
+            }
+          ],
+          "correct_option_id": "B",
+          "correct_explanation_md": "The trading book carries market risk, liquidity risk (asset and market) and credit and counterparty risks; funding liquidity from asset-liability mismatch is an ALM subject."
+        }
+      },
+      {
+        "draft_id": "D013",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F002"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Which statement distinguishes asset liquidity risk from market liquidity risk?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "They are the same",
+              "explanation_md": "Not so."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Asset liquidity risk concerns deposits",
+              "explanation_md": "Not so."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Asset liquidity risk concerns one security that is hard to trade, market liquidity risk a general crunch",
+              "explanation_md": "This is the distinction."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Market liquidity risk concerns only forex",
+              "explanation_md": "Not so."
+            }
+          ],
+          "correct_option_id": "C",
+          "correct_explanation_md": "Asset liquidity risk refers to a specific asset facing lack of trading liquidity; market liquidity risk to a general liquidity crunch in the market."
+        }
+      },
+      {
+        "draft_id": "D014",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F002"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A failure to monitor the market portfolio with due care results in which type of risk?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Market risk",
+              "explanation_md": "Market moves."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Credit risk",
+              "explanation_md": "Not so."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Liquidity risk",
+              "explanation_md": "Not so."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Operational risk",
+              "explanation_md": "Not a market risk."
+            }
+          ],
+          "correct_option_id": "D",
+          "correct_explanation_md": "The risk of not monitoring the market or not monitoring with due care is an operational risk, not a market risk."
+        }
+      },
+      {
+        "draft_id": "D015",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F002"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "When does counterparty credit risk arise on a derivative?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "When the mark-to-market value is positive, so the counterparty owes the bank",
+              "explanation_md": "Receivable from the counterparty."
+            },
+            {
+              "option_id": "B",
+              "text_md": "When the value is negative",
+              "explanation_md": "The bank owes."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Only at maturity",
+              "explanation_md": "Not so."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Never, as derivatives are exchange traded",
+              "explanation_md": "OTC derivatives carry it."
+            }
+          ],
+          "correct_option_id": "A",
+          "correct_explanation_md": "Credit risk on a derivative arises when the mark-to-market value is positive, implying a receivable from the counterparty."
+        }
+      },
+      {
+        "draft_id": "D016",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F003"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "How many processes make up market risk management in the courseware?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Five including pricing",
+              "explanation_md": "No pricing."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Four: identification, measurement, monitoring and control, mitigation",
+              "explanation_md": "These are the four."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Three",
+              "explanation_md": "Four."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Two",
+              "explanation_md": "Four."
+            }
+          ],
+          "correct_option_id": "B",
+          "correct_explanation_md": "The processes are risk identification, risk measurement, risk monitoring and control, and risk mitigation; there is no risk pricing process."
+        }
+      },
+      {
+        "draft_id": "D017",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F003"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Why does market risk management have no risk pricing process?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Because the Reserve Bank fixes prices",
+              "explanation_md": "Not so."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Because pricing is outsourced",
+              "explanation_md": "Not so."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Because financial instruments take their price from the market",
+              "explanation_md": "Reason."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Because banks do not trade",
+              "explanation_md": "Not so."
+            }
+          ],
+          "correct_option_id": "C",
+          "correct_explanation_md": "Financial instruments take their price from the market, so market risk management processes do not have a risk pricing process."
+        }
+      },
+      {
+        "draft_id": "D018",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F003"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "Which unit validates the prices of treasury deals, particularly structured products, independently of the dealers?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The Front Office",
+              "explanation_md": "Deals."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The Back Office",
+              "explanation_md": "Settles."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The Board",
+              "explanation_md": "Policy."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The Middle Office",
+              "explanation_md": "Role."
+            }
+          ],
+          "correct_option_id": "D",
+          "correct_explanation_md": "The Middle Office independently validates the prices of treasury deals, particularly structured products."
+        }
+      },
+      {
+        "draft_id": "D019",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F004"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "What is the basis point value of a bond?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The change in price for a one basis point change in yield",
+              "explanation_md": "Definition."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The yield in basis points",
+              "explanation_md": "Not so."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The coupon divided by price",
+              "explanation_md": "Not so."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The time to maturity",
+              "explanation_md": "Not so."
+            }
+          ],
+          "correct_option_id": "A",
+          "correct_explanation_md": "BPV is the change in value due to a 1 basis point (0.01 per cent) change in market yield."
+        }
+      },
+      {
+        "draft_id": "D020",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F004"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "What happens to a bond's BPV as it approaches maturity?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "It rises",
+              "explanation_md": "Falls."
+            },
+            {
+              "option_id": "B",
+              "text_md": "It falls and is zero at maturity",
+              "explanation_md": "Rule."
+            },
+            {
+              "option_id": "C",
+              "text_md": "It stays the same",
+              "explanation_md": "Falls."
+            },
+            {
+              "option_id": "D",
+              "text_md": "It doubles",
+              "explanation_md": "Not so."
+            }
+          ],
+          "correct_option_id": "B",
+          "correct_explanation_md": "BPV declines with the remaining maturity and on the day of maturity it is zero."
+        }
+      },
+      {
+        "draft_id": "D021",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F004"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "How is modified duration obtained from Macaulay duration?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "By multiplying by the yield",
+              "explanation_md": "Not so."
+            },
+            {
+              "option_id": "B",
+              "text_md": "By adding the yield",
+              "explanation_md": "Not so."
+            },
+            {
+              "option_id": "C",
+              "text_md": "By dividing by one plus the yield",
+              "explanation_md": "Formula."
+            },
+            {
+              "option_id": "D",
+              "text_md": "By dividing by the coupon",
+              "explanation_md": "Not so."
+            }
+          ],
+          "correct_option_id": "C",
+          "correct_explanation_md": "Modified duration equals Macaulay duration divided by (1 + yield)."
+        }
+      },
+      {
+        "draft_id": "D022",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F004"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A bond has a modified duration of 4. Roughly what happens to its price if the yield rises by 0.5 percentage point?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "It rises by 2 per cent",
+              "explanation_md": "Opposite."
+            },
+            {
+              "option_id": "B",
+              "text_md": "It falls by 4 per cent",
+              "explanation_md": "Not so."
+            },
+            {
+              "option_id": "C",
+              "text_md": "It falls by 0.5 per cent",
+              "explanation_md": "Not so."
+            },
+            {
+              "option_id": "D",
+              "text_md": "It falls by about 2 per cent",
+              "explanation_md": "4 × 0.5."
+            }
+          ],
+          "correct_option_id": "D",
+          "correct_explanation_md": "Approximate percentage change in price is minus modified duration times the change in yield: −4 × 0.5% = −2%."
+        }
+      },
+      {
+        "draft_id": "D023",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F004"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "For which security is Macaulay duration equal to the term to maturity?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "A zero-coupon security",
+              "explanation_md": "Rule."
+            },
+            {
+              "option_id": "B",
+              "text_md": "A high coupon bond",
+              "explanation_md": "Shorter."
+            },
+            {
+              "option_id": "C",
+              "text_md": "A floating rate bond",
+              "explanation_md": "Shorter."
+            },
+            {
+              "option_id": "D",
+              "text_md": "A perpetual bond",
+              "explanation_md": "Not so."
+            }
+          ],
+          "correct_option_id": "A",
+          "correct_explanation_md": "The duration of a fixed income security is always shorter than its term to maturity, except for zero coupon securities where they are the same."
+        }
+      },
+      {
+        "draft_id": "D024",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F005"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "What does a one-day 99 per cent VaR of ₹10 crore mean?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The maximum possible loss is ₹10 crore",
+              "explanation_md": "Not so."
+            },
+            {
+              "option_id": "B",
+              "text_md": "A loss above ₹10 crore is expected on about one day in 100 under normal conditions",
+              "explanation_md": "Meaning."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The bank loses ₹10 crore every day",
+              "explanation_md": "Not so."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The loss will never exceed ₹10 crore",
+              "explanation_md": "Not so."
+            }
+          ],
+          "correct_option_id": "B",
+          "correct_explanation_md": "There is a 1 per cent chance that the daily loss exceeds ₹10 crore, about 2.5 days a year, under normal trading conditions."
+        }
+      },
+      {
+        "draft_id": "D025",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F005"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Which VaR method replays actual past movements of the underlying assets?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Monte Carlo simulation",
+              "explanation_md": "Random scenarios."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Variance-covariance method",
+              "explanation_md": "Uses a matrix."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Historical simulation",
+              "explanation_md": "Method."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Sensitivity method",
+              "explanation_md": "Not a VaR method."
+            }
+          ],
+          "correct_option_id": "C",
+          "correct_explanation_md": "The historical simulation approach calculates the change in value using the actual historical movements of the underlying assets."
+        }
+      },
+      {
+        "draft_id": "D026",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F005"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "What is the main disadvantage of the historical simulation method?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "It needs a correlation matrix",
+              "explanation_md": "It does not."
+            },
+            {
+              "option_id": "B",
+              "text_md": "It ignores the past",
+              "explanation_md": "Not so."
+            },
+            {
+              "option_id": "C",
+              "text_md": "It cannot be computed",
+              "explanation_md": "Not so."
+            },
+            {
+              "option_id": "D",
+              "text_md": "It expects the market to behave as it did in the past",
+              "explanation_md": "Weakness."
+            }
+          ],
+          "correct_option_id": "D",
+          "correct_explanation_md": "The disadvantage is that it expects the market to behave in the same manner as in the past, which may not come true."
+        }
+      },
+      {
+        "draft_id": "D027",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F005"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "What does conditional VaR (expected shortfall) add to VaR?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "It averages the losses beyond VaR, capturing tail risk",
+              "explanation_md": "Definition."
+            },
+            {
+              "option_id": "B",
+              "text_md": "It ignores tail losses",
+              "explanation_md": "Opposite."
+            },
+            {
+              "option_id": "C",
+              "text_md": "It sets the confidence level",
+              "explanation_md": "Not so."
+            },
+            {
+              "option_id": "D",
+              "text_md": "It replaces volatility",
+              "explanation_md": "Not so."
+            }
+          ],
+          "correct_option_id": "A",
+          "correct_explanation_md": "Conditional VaR is the average of the values that fall beyond the regular VaR, capturing tail risk."
+        }
+      },
+      {
+        "draft_id": "D028",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F005"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "Which is a limitation of VaR?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "It cannot be computed daily",
+              "explanation_md": "Not so."
+            },
+            {
+              "option_id": "B",
+              "text_md": "It does not measure losses beyond its confidence level or under abnormal conditions",
+              "explanation_md": "Limitation."
+            },
+            {
+              "option_id": "C",
+              "text_md": "It uses no data",
+              "explanation_md": "Not so."
+            },
+            {
+              "option_id": "D",
+              "text_md": "It measures profits only",
+              "explanation_md": "Not so."
+            }
+          ],
+          "correct_option_id": "B",
+          "correct_explanation_md": "VaR is not a worst-case scenario and does not measure losses under abnormal conditions."
+        }
+      },
+      {
+        "draft_id": "D029",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F006"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "How often should banks back test their risk models, according to the courseware?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Every five years",
+              "explanation_md": "Not so."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Only when a loss occurs",
+              "explanation_md": "Not so."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Monthly or quarterly",
+              "explanation_md": "Rule."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Never",
+              "explanation_md": "Not so."
+            }
+          ],
+          "correct_option_id": "C",
+          "correct_explanation_md": "Banks should generally back test risk models on a monthly or quarterly basis."
+        }
+      },
+      {
+        "draft_id": "D030",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F006"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Which stress testing technique attaches a probability to the results?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Scenario analysis",
+              "explanation_md": "No probabilities."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Maximum loss",
+              "explanation_md": "No probabilities."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Simple sensitivity test",
+              "explanation_md": "No probabilities."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Extreme value theory",
+              "explanation_md": "The only one."
+            }
+          ],
+          "correct_option_id": "D",
+          "correct_explanation_md": "Extreme value theory is notable for being the only stress test technique that attempts to attach a probability to stress test results."
+        }
+      },
+      {
+        "draft_id": "D031",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F006"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Which stress test technique is currently the leading one?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Scenario analysis",
+              "explanation_md": "Leading."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Simple sensitivity test",
+              "explanation_md": "Simple."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Maximum loss",
+              "explanation_md": "Less used."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Extreme value theory",
+              "explanation_md": "Specialised."
+            }
+          ],
+          "correct_option_id": "A",
+          "correct_explanation_md": "Scenario analysis is currently the leading stress testing technique."
+        }
+      },
+      {
+        "draft_id": "D032",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F007"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Who usually sets approved market risk limits for sensitivities and VaR?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The dealers",
+              "explanation_md": "Not so."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The Risk Policy Committee as the designated authority",
+              "explanation_md": "Rule."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The customers",
+              "explanation_md": "Not so."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The auditors",
+              "explanation_md": "Not so."
+            }
+          ],
+          "correct_option_id": "B",
+          "correct_explanation_md": "Approved market risk limits for factor sensitivities and VaR are set by the designated authority, usually the Risk Policy Committee."
+        }
+      },
+      {
+        "draft_id": "D033",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F007"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "How often should financial models for market risk be validated, at the least?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Every five years",
+              "explanation_md": "Not so."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Never",
+              "explanation_md": "Not so."
+            },
+            {
+              "option_id": "C",
+              "text_md": "At least once a year, and also by an external agency",
+              "explanation_md": "Rule."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Daily",
+              "explanation_md": "Not so."
+            }
+          ],
+          "correct_option_id": "C",
+          "correct_explanation_md": "The model should be validated at least once in a year and also by a reputed external agency."
+        }
+      },
+      {
+        "draft_id": "D034",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F007"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Which is a way of managing trading liquidity risk?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Seeking infrequently traded instruments",
+              "explanation_md": "Avoid."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Preferring unusual tenors",
+              "explanation_md": "Avoid."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Relying on one-sided markets",
+              "explanation_md": "Avoid."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Avoiding a large market share in any type of asset",
+              "explanation_md": "Rule."
+            }
+          ],
+          "correct_option_id": "D",
+          "correct_explanation_md": "Trading liquidity risk is managed by avoiding large market share, infrequently traded instruments, unusual tenors and one-sided liquidity."
+        }
+      },
+      {
+        "draft_id": "D035",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F008"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "What is the effect of a hedge on the upside potential of a position?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "It reduces it along with the downside",
+              "explanation_md": "Trade-off."
+            },
+            {
+              "option_id": "B",
+              "text_md": "It increases it",
+              "explanation_md": "Not so."
+            },
+            {
+              "option_id": "C",
+              "text_md": "It has none",
+              "explanation_md": "Not so."
+            },
+            {
+              "option_id": "D",
+              "text_md": "It doubles it",
+              "explanation_md": "Not so."
+            }
+          ],
+          "correct_option_id": "A",
+          "correct_explanation_md": "Risk mitigation measures reduce downside variability but also reduce upside potential."
+        }
+      },
+      {
+        "draft_id": "D036",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F008"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "How is the BPV of a portfolio of two bonds, treated with equal weights, found in the courseware's example?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "As their product",
+              "explanation_md": "Not so."
+            },
+            {
+              "option_id": "B",
+              "text_md": "As the weighted average of the bonds' BPVs",
+              "explanation_md": "Rule."
+            },
+            {
+              "option_id": "C",
+              "text_md": "As the larger BPV",
+              "explanation_md": "Not so."
+            },
+            {
+              "option_id": "D",
+              "text_md": "As the sum divided by the yield",
+              "explanation_md": "Not so."
+            }
+          ],
+          "correct_option_id": "B",
+          "correct_explanation_md": "The BPV of the portfolio is the weighted average of the BPVs of all bonds, (675 + 205) ÷ 2 = 440."
+        }
+      },
+      {
+        "draft_id": "D037",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F008"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Which option position hedges the downside of a long position in the underlying?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "A long call",
+              "explanation_md": "Right to buy."
+            },
+            {
+              "option_id": "B",
+              "text_md": "A short put",
+              "explanation_md": "Adds risk."
+            },
+            {
+              "option_id": "C",
+              "text_md": "A long put",
+              "explanation_md": "Right to sell."
+            },
+            {
+              "option_id": "D",
+              "text_md": "A short call",
+              "explanation_md": "Adds risk."
+            }
+          ],
+          "correct_option_id": "C",
+          "correct_explanation_md": "A long position on a put option confers a right to sell the underlying at the strike, arresting downside movement of a long position."
+        }
+      },
+      {
+        "draft_id": "D038",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F004"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A holding of ₹40 crore face value has a BPV of ₹2,100 per ₹1 crore. Yields rise by 5 basis points. What is the loss, in rupees?",
+          "numeric_rule": {
+            "expected_answer": "420000",
+            "unit_label": "rupees",
+            "precision_decimals": 0,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Give a whole number.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "BPV of holding = 2,100 × 40 = ₹84,000 per basis point; loss = 84,000 × 5 = ₹4,20,000.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "BPV of holding",
+              "formula_or_substitution": "2,100 × 40",
+              "intermediate_result": "84,000"
+            },
+            {
+              "step_number": 2,
+              "description": "Loss",
+              "formula_or_substitution": "84,000 × 5",
+              "intermediate_result": "4,20,000"
+            }
+          ]
+        }
+      },
+      {
+        "draft_id": "D039",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F004"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A bond priced at 98 has a modified duration of 3.4. Estimate its price after the yield rises by 0.25 percentage point, to two decimals.",
+          "numeric_rule": {
+            "expected_answer": "97.17",
+            "unit_label": "price",
+            "precision_decimals": 2,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Give the answer to 2 decimal places.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "Percentage change = −3.4 × 0.25% = −0.85%. Change = 98 × 0.85% = 0.833; new price = 98 − 0.833 = 97.167, which rounds to 97.17.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "Percentage change",
+              "formula_or_substitution": "−3.4 × 0.25%",
+              "intermediate_result": "−0.85%"
+            },
+            {
+              "step_number": 2,
+              "description": "Price change",
+              "formula_or_substitution": "98 × 0.0085",
+              "intermediate_result": "0.833"
+            },
+            {
+              "step_number": 3,
+              "description": "New price",
+              "formula_or_substitution": "98 − 0.833",
+              "intermediate_result": "97.17"
+            }
+          ]
+        }
+      },
+      {
+        "draft_id": "D040",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F005"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A position of ₹80 lakh has a daily volatility of 2%. Using a 95% multiple of 1.65, what is the one-day VaR, in rupees?",
+          "numeric_rule": {
+            "expected_answer": "264000",
+            "unit_label": "rupees",
+            "precision_decimals": 0,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Give a whole number.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "Daily standard deviation = 80,00,000 × 2% = 1,60,000; VaR = 1,60,000 × 1.65 = ₹2,64,000.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "Standard deviation",
+              "formula_or_substitution": "80,00,000 × 2%",
+              "intermediate_result": "1,60,000"
+            },
+            {
+              "step_number": 2,
+              "description": "VaR",
+              "formula_or_substitution": "1,60,000 × 1.65",
+              "intermediate_result": "2,64,000"
+            }
+          ]
+        }
+      },
+      {
+        "draft_id": "D041",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F005"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "A portfolio has a one-day 99% VaR of ₹3.5 crore. Using the square root of time rule, what is its 9-day VaR, in ₹ crore, to one decimal?",
+          "numeric_rule": {
+            "expected_answer": "10.5",
+            "unit_label": "₹ crore",
+            "precision_decimals": 1,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Give the answer to 1 decimal places.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "√9 = 3, so 9-day VaR = 3.5 × 3 = ₹10.5 crore.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "Root of 9",
+              "formula_or_substitution": "√9",
+              "intermediate_result": "3"
+            },
+            {
+              "step_number": 2,
+              "description": "Scaled VaR",
+              "formula_or_substitution": "3.5 × 3",
+              "intermediate_result": "10.5"
+            }
+          ]
+        }
+      },
+      {
+        "draft_id": "D042",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F005"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A bank has a one-day 99% VaR model. About how many days in a year of 250 working days would you expect the loss to exceed VaR?",
+          "numeric_rule": {
+            "expected_answer": "2.5",
+            "unit_label": "days",
+            "precision_decimals": 1,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Give the answer to 1 decimal places.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "The exceedance probability is 1%, so 250 × 1% = 2.5 days.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "Expected exceedances",
+              "formula_or_substitution": "250 × 1%",
+              "intermediate_result": "2.5"
+            }
+          ]
+        }
+      }
+    ],
+    "unresolved": [
+      "The whole unit is the courseware's account of market risk management and standard finance concepts (basis point value, duration, value at risk and its methods, stress testing); no regulatory source was read for it. The Reserve Bank's guidance on market risk management (for example in its risk management guidelines and the capital charge rules in the Capital Adequacy Directions, taught in unit 3) was not checked against this unit.",
+      "The courseware states that commodities are not permitted in the trading book in India at present, and that RTGS and the Clearing Corporation of India mitigate settlement risk; neither statement was verified.",
+      "The courseware's own examples (shares of ABC Ltd., the three-year 8 per cent bond, the stock position of ₹6,00,000, the bonds with BPVs of 675 and 205) are not reproduced except the BPV averaging fact; all figures in the cards and items are new. The courseware's BPV example (a 5-year 6 per cent bond priced 92 to 92.10) was not recomputed and is not used. The z-values (1.65 for 95 per cent, 2.326 for 99 per cent) are standard normal values, rounded as in the courseware.",
+      "The courseware's statement that the BIS outlined back testing practice in January 1996 was not checked.",
+      "Reviewer for this batch is the authoring agent; no independent or human review."
+    ],
+    "next_batch_hint": "Unit 5: credit risk."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BFM-B-U04-B001",
+    "paper_id": "BFM",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 8, Compulsory Paper II, Module A: International Banking, External Commercial Borrowings and Foreign Investments in India"
+    },
+    "sources": [
+      {
+        "source_id": "S03",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BFM::MOD_B::U04",
+        "objective_ids": [
+          "BFM::MOD_B::U04::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BFM::MOD_B::U04",
+        "objective_ids": [
+          "BFM::MOD_B::U04::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BFM::MOD_B::U04",
+        "objective_ids": [
+          "BFM::MOD_B::U04::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BFM::MOD_B::U04",
+        "objective_ids": [
+          "BFM::MOD_B::U04::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "unit_id": "BFM::MOD_B::U04",
+        "objective_ids": [
+          "BFM::MOD_B::U04::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D006",
+        "unit_id": "BFM::MOD_B::U04",
+        "objective_ids": [
+          "BFM::MOD_B::U04::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D007",
+        "unit_id": "BFM::MOD_B::U04",
+        "objective_ids": [
+          "BFM::MOD_B::U04::LO_06"
+        ]
+      },
+      {
+        "draft_id": "D008",
+        "unit_id": "BFM::MOD_B::U04",
+        "objective_ids": [
+          "BFM::MOD_B::U04::LO_06"
+        ]
+      },
+      {
+        "draft_id": "D009",
+        "unit_id": "BFM::MOD_B::U04",
+        "objective_ids": [
+          "BFM::MOD_B::U04::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D010",
+        "unit_id": "BFM::MOD_B::U04",
+        "objective_ids": [
+          "BFM::MOD_B::U04::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D011",
+        "unit_id": "BFM::MOD_B::U04",
+        "objective_ids": [
+          "BFM::MOD_B::U04::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D012",
+        "unit_id": "BFM::MOD_B::U04",
+        "objective_ids": [
+          "BFM::MOD_B::U04::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D013",
+        "unit_id": "BFM::MOD_B::U04",
+        "objective_ids": [
+          "BFM::MOD_B::U04::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D014",
+        "unit_id": "BFM::MOD_B::U04",
+        "objective_ids": [
+          "BFM::MOD_B::U04::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D015",
+        "unit_id": "BFM::MOD_B::U04",
+        "objective_ids": [
+          "BFM::MOD_B::U04::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D016",
+        "unit_id": "BFM::MOD_B::U04",
+        "objective_ids": [
+          "BFM::MOD_B::U04::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D017",
+        "unit_id": "BFM::MOD_B::U04",
+        "objective_ids": [
+          "BFM::MOD_B::U04::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D018",
+        "unit_id": "BFM::MOD_B::U04",
+        "objective_ids": [
+          "BFM::MOD_B::U04::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D019",
+        "unit_id": "BFM::MOD_B::U04",
+        "objective_ids": [
+          "BFM::MOD_B::U04::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D020",
+        "unit_id": "BFM::MOD_B::U04",
+        "objective_ids": [
+          "BFM::MOD_B::U04::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D021",
+        "unit_id": "BFM::MOD_B::U04",
+        "objective_ids": [
+          "BFM::MOD_B::U04::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D022",
+        "unit_id": "BFM::MOD_B::U04",
+        "objective_ids": [
+          "BFM::MOD_B::U04::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D023",
+        "unit_id": "BFM::MOD_B::U04",
+        "objective_ids": [
+          "BFM::MOD_B::U04::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D024",
+        "unit_id": "BFM::MOD_B::U04",
+        "objective_ids": [
+          "BFM::MOD_B::U04::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D025",
+        "unit_id": "BFM::MOD_B::U04",
+        "objective_ids": [
+          "BFM::MOD_B::U04::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D026",
+        "unit_id": "BFM::MOD_B::U04",
+        "objective_ids": [
+          "BFM::MOD_B::U04::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D027",
+        "unit_id": "BFM::MOD_B::U04",
+        "objective_ids": [
+          "BFM::MOD_B::U04::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D028",
+        "unit_id": "BFM::MOD_B::U04",
+        "objective_ids": [
+          "BFM::MOD_B::U04::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D029",
+        "unit_id": "BFM::MOD_B::U04",
+        "objective_ids": [
+          "BFM::MOD_B::U04::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D030",
+        "unit_id": "BFM::MOD_B::U04",
+        "objective_ids": [
+          "BFM::MOD_B::U04::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D031",
+        "unit_id": "BFM::MOD_B::U04",
+        "objective_ids": [
+          "BFM::MOD_B::U04::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D032",
+        "unit_id": "BFM::MOD_B::U04",
+        "objective_ids": [
+          "BFM::MOD_B::U04::LO_06"
+        ]
+      },
+      {
+        "draft_id": "D033",
+        "unit_id": "BFM::MOD_B::U04",
+        "objective_ids": [
+          "BFM::MOD_B::U04::LO_06"
+        ]
+      },
+      {
+        "draft_id": "D034",
+        "unit_id": "BFM::MOD_B::U04",
+        "objective_ids": [
+          "BFM::MOD_B::U04::LO_06"
+        ]
+      },
+      {
+        "draft_id": "D035",
+        "unit_id": "BFM::MOD_B::U04",
+        "objective_ids": [
+          "BFM::MOD_B::U04::LO_06"
+        ]
+      },
+      {
+        "draft_id": "D036",
+        "unit_id": "BFM::MOD_B::U04",
+        "objective_ids": [
+          "BFM::MOD_B::U04::LO_06"
+        ]
+      },
+      {
+        "draft_id": "D037",
+        "unit_id": "BFM::MOD_B::U04",
+        "objective_ids": [
+          "BFM::MOD_B::U04::LO_06"
+        ]
+      },
+      {
+        "draft_id": "D038",
+        "unit_id": "BFM::MOD_B::U04",
+        "objective_ids": [
+          "BFM::MOD_B::U04::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D039",
+        "unit_id": "BFM::MOD_B::U04",
+        "objective_ids": [
+          "BFM::MOD_B::U04::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D040",
+        "unit_id": "BFM::MOD_B::U04",
+        "objective_ids": [
+          "BFM::MOD_B::U04::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D041",
+        "unit_id": "BFM::MOD_B::U04",
+        "objective_ids": [
+          "BFM::MOD_B::U04::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D042",
+        "unit_id": "BFM::MOD_B::U04",
+        "objective_ids": [
+          "BFM::MOD_B::U04::LO_04"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BFM-B-U04-B001",
+      "draft_id": "D001",
+      "item_id": "item_fdae7b294d4bbd94bb5dd8d613e44cc7958090967cafbeab3f77bfb87a5511eb"
+    },
+    {
+      "batch_id": "BFM-B-U04-B001",
+      "draft_id": "D002",
+      "item_id": "item_79f158f212dd282f10cef247728b3085a615e4e6f1d89c4ff011c0df6fb6856f"
+    },
+    {
+      "batch_id": "BFM-B-U04-B001",
+      "draft_id": "D003",
+      "item_id": "item_785b4d4576a50e96ca2b0fe2be3d778eda0c526c7928197ace5f58936c03172b"
+    },
+    {
+      "batch_id": "BFM-B-U04-B001",
+      "draft_id": "D004",
+      "item_id": "item_85e5cefc9e983a086292246b4057a42aa202871eeac0c77a04e9a4378437a7c5"
+    },
+    {
+      "batch_id": "BFM-B-U04-B001",
+      "draft_id": "D005",
+      "item_id": "item_acbec686346c8d2ab65fa7ea454738939d2fe0f75737b598d775bdd7f0941523"
+    },
+    {
+      "batch_id": "BFM-B-U04-B001",
+      "draft_id": "D006",
+      "item_id": "item_a7fe8718fbfd230b8c7daa8f30e768842cb86dca96beddf148919b320092f662"
+    },
+    {
+      "batch_id": "BFM-B-U04-B001",
+      "draft_id": "D007",
+      "item_id": "item_f60e4e4447b4fd44fe7cea864a8c57faec72eca4c6f2b94163b3a18b86dacf1a"
+    },
+    {
+      "batch_id": "BFM-B-U04-B001",
+      "draft_id": "D008",
+      "item_id": "item_97dab57070ad358e528c8bfb5de8f2e818224636159dfe43dfc2d2adcea41fc1"
+    },
+    {
+      "batch_id": "BFM-B-U04-B001",
+      "draft_id": "D009",
+      "item_id": "item_8d65d947f0a38ce25c410a6c0a5d49f7cbd127bedbf7ec56f3955c084c6c80ad"
+    },
+    {
+      "batch_id": "BFM-B-U04-B001",
+      "draft_id": "D010",
+      "item_id": "item_fbc94290727550a331a6593e31d109369ba4063448983f2ad4e36efaacd45468"
+    },
+    {
+      "batch_id": "BFM-B-U04-B001",
+      "draft_id": "D011",
+      "item_id": "item_697809aed0683299c650aa52e93d6357d5a0a7930685aa6bbc6197427495f639"
+    },
+    {
+      "batch_id": "BFM-B-U04-B001",
+      "draft_id": "D012",
+      "item_id": "item_5cbccd63df319253a090a1dbfbe5a3ecf8ab4802ba80fc15a41f6167456b2085"
+    },
+    {
+      "batch_id": "BFM-B-U04-B001",
+      "draft_id": "D013",
+      "item_id": "item_c3b3e05008a8fb6858c5d08bd6ccf37b9789cb89c99f5c7293dc7b4196337f09"
+    },
+    {
+      "batch_id": "BFM-B-U04-B001",
+      "draft_id": "D014",
+      "item_id": "item_5f171a69c36f91298d67ebd33c9987d5408a287d4f6bbdff0b89b8d232133db1"
+    },
+    {
+      "batch_id": "BFM-B-U04-B001",
+      "draft_id": "D015",
+      "item_id": "item_0d7a40036adde78578c9623725552297c2e8322cdd82439634be4464593a3e1e"
+    },
+    {
+      "batch_id": "BFM-B-U04-B001",
+      "draft_id": "D016",
+      "item_id": "item_9e1ba1d3fe88ace8a188259cc991045a117d7f245a7d28ffdaf35ae69705e2fb"
+    },
+    {
+      "batch_id": "BFM-B-U04-B001",
+      "draft_id": "D017",
+      "item_id": "item_a6d391b8e98009a36e997b8c11b82ffe31f5b2e948d8cfded03b20b153636235"
+    },
+    {
+      "batch_id": "BFM-B-U04-B001",
+      "draft_id": "D018",
+      "item_id": "item_f0c6ebebac9e4b45f314322d7396ba74abc4cbb13d56b0da856f8578d37b8707"
+    },
+    {
+      "batch_id": "BFM-B-U04-B001",
+      "draft_id": "D019",
+      "item_id": "item_371dd7939bf1cf34dcb9ed717ebc172a6bf5423f9d146fd0566a85376700d336"
+    },
+    {
+      "batch_id": "BFM-B-U04-B001",
+      "draft_id": "D020",
+      "item_id": "item_955a72414536837d15c2798a2d041c36857fb7b2338b7d027630bbb7439ba5ac"
+    },
+    {
+      "batch_id": "BFM-B-U04-B001",
+      "draft_id": "D021",
+      "item_id": "item_82533fcf21d8022325eb33f6918dd2b61e174b864ef929304c5ba3578b31a899"
+    },
+    {
+      "batch_id": "BFM-B-U04-B001",
+      "draft_id": "D022",
+      "item_id": "item_3c49e8a894910f59f1e01f65420f51f899eab03aa90ca0d29cde8f876aedb273"
+    },
+    {
+      "batch_id": "BFM-B-U04-B001",
+      "draft_id": "D023",
+      "item_id": "item_508fa6cb94aee95d283d5be5f6407c8cb81fd71423c7b94050d742d10276eb85"
+    },
+    {
+      "batch_id": "BFM-B-U04-B001",
+      "draft_id": "D024",
+      "item_id": "item_3ec8bea65636d585f1472a5de9d2cf38be8123b91677dffe4c2e66cd9054deed"
+    },
+    {
+      "batch_id": "BFM-B-U04-B001",
+      "draft_id": "D025",
+      "item_id": "item_9f9c12ebeae14320d27e5fea4d6b2c059af997c8f01a11b15cc687f03ff7e555"
+    },
+    {
+      "batch_id": "BFM-B-U04-B001",
+      "draft_id": "D026",
+      "item_id": "item_21f0197bc251ccc44f38ae5cf05c76b83fe5895caf2f89795928764753c967c9"
+    },
+    {
+      "batch_id": "BFM-B-U04-B001",
+      "draft_id": "D027",
+      "item_id": "item_95b70dc7638d435668e2d9132da20b9ca21adf8fe162a5b668c4e80f979e899f"
+    },
+    {
+      "batch_id": "BFM-B-U04-B001",
+      "draft_id": "D028",
+      "item_id": "item_48408414283ffdd46e89b96b23252e07f1e4465bb422a375f3a13674da10036f"
+    },
+    {
+      "batch_id": "BFM-B-U04-B001",
+      "draft_id": "D029",
+      "item_id": "item_f479c1697a6aa0c0f01406ec54ad1bd2c0b0d541292d8e0faec755d35b0c098f"
+    },
+    {
+      "batch_id": "BFM-B-U04-B001",
+      "draft_id": "D030",
+      "item_id": "item_cf6a7b661aa626118f0b5414f3c748b9ee28c3ef01d60b97e569ae7bb5390214"
+    },
+    {
+      "batch_id": "BFM-B-U04-B001",
+      "draft_id": "D031",
+      "item_id": "item_652be017dc2e2f1c3a8610d85ac247d9ad7897ccedb3b437f9e2cf79e3cf4368"
+    },
+    {
+      "batch_id": "BFM-B-U04-B001",
+      "draft_id": "D032",
+      "item_id": "item_1a5088856039219700c91fbd6f097546cfc74c9e4ef88be2df264d187b17c478"
+    },
+    {
+      "batch_id": "BFM-B-U04-B001",
+      "draft_id": "D033",
+      "item_id": "item_3e2562d04390807793918d1ad9ffefb3710c3e6ac42280a11514aab9e743d72d"
+    },
+    {
+      "batch_id": "BFM-B-U04-B001",
+      "draft_id": "D034",
+      "item_id": "item_bbb0202038ed4009f34bec5871302d7def3064203faf9e3e46217d31db909876"
+    },
+    {
+      "batch_id": "BFM-B-U04-B001",
+      "draft_id": "D035",
+      "item_id": "item_87ba5b9f5ee73e3bac10c04653fb77d44ca57c94e0d97f41b064edff40181def"
+    },
+    {
+      "batch_id": "BFM-B-U04-B001",
+      "draft_id": "D036",
+      "item_id": "item_861c481cf16fb811e8f0a911070ef3a3cbd86f728fbc40d73cafe9ca374e930f"
+    },
+    {
+      "batch_id": "BFM-B-U04-B001",
+      "draft_id": "D037",
+      "item_id": "item_2b52db8d650b0454ede13a839cedc666cae30a99c9413160dc5ca7d9f7cbf86b"
+    },
+    {
+      "batch_id": "BFM-B-U04-B001",
+      "draft_id": "D038",
+      "item_id": "item_cfd9f1dc7942f8dac9322e2efb671affb13645cef4fd4b9d6e39adf73d5a589e"
+    },
+    {
+      "batch_id": "BFM-B-U04-B001",
+      "draft_id": "D039",
+      "item_id": "item_15e7f9f3ffc461295f5741c4bae2cd47859358dc9799b45c580c01bfd2f4e23f"
+    },
+    {
+      "batch_id": "BFM-B-U04-B001",
+      "draft_id": "D040",
+      "item_id": "item_b3729d72ba6c49c92285225dc5b133b6168aab0d661589f03f4ac093369543e8"
+    },
+    {
+      "batch_id": "BFM-B-U04-B001",
+      "draft_id": "D041",
+      "item_id": "item_6cfc3c5113be56a2d511203d3a2f1ba995f5ff32517c0e8bbe7032ff6fb44ac8"
+    },
+    {
+      "batch_id": "BFM-B-U04-B001",
+      "draft_id": "D042",
+      "item_id": "item_1370081bd7417614bb63aa5775febfc9abdc97afefea4f37c9c3fbe624d3c977"
+    }
+  ],
+  "items": [
+    {
+      "title": "Market risk, liquidity risk and credit risk in the trading book",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "**Trading book**: **proprietary positions in debt, equity, forex and derivatives held for trading** (commodities **not permitted** in India, per the courseware), plus **matched principal broking, market making and hedges**.\n\n**Market (price) risk**: **adverse change in the mark-to-market value** during **the period needed to liquidate**. The liquidation period is **short for forex (about a day)** and **long for exotic derivatives**. **Failing to watch positions is operational risk**, not market risk.\n\n| Risk | Meaning |\n| --- | --- |\n| **Asset liquidity** | **one security** cannot be sold well though others trade |\n| **Market liquidity** | a **general crunch**; the market is **shallow** |\n| **Credit** | a **downgrade raises the required yield and cuts the price** |\n| **Counterparty** | the **derivative's mark-to-market is positive** and the counterparty may default |\n| **Settlement** | one side **fails to complete**; **RTGS** and **central counterparties such as CCIL** reduce it |\n\n**Not the same** as **funding liquidity risk** from asset-liability mismatch (an ALM matter).",
+      "self_check": {
+        "mode": "question",
+        "question_id": "item_5cbccd63df319253a090a1dbfbe5a3ecf8ab4802ba80fc15a41f6167456b2085"
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_fdae7b294d4bbd94bb5dd8d613e44cc7958090967cafbeab3f77bfb87a5511eb",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U04",
+      "objective_ids": [
+        "BFM::MOD_B::U04::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 403-404, sections 14.1 and 14.2"
+        },
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 405-407, section 14.2"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "The market risk framework, organisation and risk identification",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "**Four questions**: **what are the risks; how much could the price move and what is the loss; how to monitor and control; how to reduce?** These give **four processes**: **identification, measurement, monitoring and control, mitigation**. **No risk pricing** because **the market sets the price**.\n\n| Body | Role |\n| --- | --- |\n| **Board** | **overall responsibility**, **policy**, **aggregate limits** |\n| **Risk Management Committee** | **guidelines**, **conformity**, **prudential limits**, **robust models**, **staffing** |\n| **ALCO** | **pricing of deposits and advances**, **NIM**, **maturity profile**, **interest rate view**, **funding**, **liquidity**, **transfer pricing**, **balance sheet management** |\n| **ALM support group** | **analyses, monitors and reports** risk profiles |\n| **Middle Office** | **independent monitoring, measurement and reporting** for the treasury; **independent validation of deal prices**, esp. **structured products** |\n\n**Identification**: **standard products** run under an approved **Product Programme**; **new or non-standard products** may run **temporarily** under a **Product Transaction Memorandum**.",
+      "self_check": {
+        "mode": "question",
+        "question_id": "item_9e1ba1d3fe88ace8a188259cc991045a117d7f245a7d28ffdaf35ae69705e2fb"
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_79f158f212dd282f10cef247728b3085a615e4e6f1d89c4ff011c0df6fb6856f",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U04",
+      "objective_ids": [
+        "BFM::MOD_B::U04::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 407-409, sections 14.3 to 14.5"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Sensitivity measures: BPV, duration and modified duration",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "**Sensitivity** = change in value for a **unit move in one parameter**; it **ignores other parameters** and **is not constant**.\n\n- **BPV** (basis point value): **price change for a 1 bp (0.01%) change in yield**. **Profit or loss = bp move × BPV**. BPV **falls as the bond ages** and is **zero at maturity**.\n- **Macaulay duration**: the **present-value-weighted average time of the cash flows** = **Σ(t × PV of flow) ÷ price**. It is **shorter than the term** except for **zero coupon** bonds.\n- **Modified duration = Macaulay duration ÷ (1 + yield)**.\n- **Approximate % price change = − modified duration × change in yield**.\n\n**The longer the duration, the more price-sensitive the bond and the higher its risk.**",
+      "self_check": {
+        "mode": "question",
+        "question_id": "item_371dd7939bf1cf34dcb9ed717ebc172a6bf5423f9d146fd0566a85376700d336"
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_785b4d4576a50e96ca2b0fe2be3d778eda0c526c7928197ace5f58936c03172b",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U04",
+      "objective_ids": [
+        "BFM::MOD_B::U04::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 409-411, section 14.6"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Value at risk: meaning, inputs and formula",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "**VaR** = the **predicted worst-case loss at a stated confidence level over a stated period under normal trading conditions**.\n\n**Example reading**: a **one-day 99% VaR of ₹10 crore** means a loss **above ₹10 crore** is expected on **about one day in 100 (2.5 days of 250)**.\n\n**Inputs**: **holding period, confidence level, history used, volatilities and correlations**.\n\n**One position**: **VaR = position × daily volatility × z**\n| Confidence | **z** |\n| --- | --- |\n| **84%** | **1** |\n| **95%** | **1.65** |\n| **97.5%** | **2** |\n| **99%** | **2.326** |\n| **99.9%** | **3** |\n\n**Longer horizon**: scale volatility by **√time**.",
+      "self_check": {
+        "mode": "question",
+        "question_id": "item_3ec8bea65636d585f1472a5de9d2cf38be8123b91677dffe4c2e66cd9054deed"
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_85e5cefc9e983a086292246b4057a42aa202871eeac0c77a04e9a4378437a7c5",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U04",
+      "objective_ids": [
+        "BFM::MOD_B::U04::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 411-414 and 418, section 14.6 and 14.9"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "VaR methods and limitations",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "| Method | How | Strength | Weakness |\n| --- | --- | --- | --- |\n| **Correlation (variance-covariance)** | **sensitivities × volatility and correlation matrix** | **deterministic**, quick | needs **assumptions** |\n| **Historical simulation** | **replays actual past moves** | **no correlation assumption** | **assumes the future looks like the past**; window length matters |\n| **Monte Carlo** | **random scenarios** | flexible | **depends on assumed volatilities and correlations** |\n\n**Volatility estimates**: **arithmetic moving average** or **exponential moving average** (**reacts faster to shocks**).\n\n**Limits of VaR**: **not a worst case**; **silent on losses beyond the confidence level**; **misses event risk**; **cannot replace judgment**. **Conditional VaR / expected shortfall** **averages the losses beyond VaR** to capture the tail.",
+      "self_check": {
+        "mode": "question",
+        "question_id": "item_21f0197bc251ccc44f38ae5cf05c76b83fe5895caf2f89795928764753c967c9"
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_acbec686346c8d2ab65fa7ea454738939d2fe0f75737b598d775bdd7f0941523",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U04",
+      "objective_ids": [
+        "BFM::MOD_B::U04::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 411-414 and 418, section 14.6 and 14.9"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Back testing and stress testing",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "**Back testing**: compare **model VaR with actual results**, **monthly or quarterly**; if results **fall outside the predicted bands**, **investigate** (data, parameters, method). The BIS set out practice in **January 1996**.\n\n**Stress testing**: **non-normal moves** in market parameters.\n| Technique | What it does |\n| --- | --- |\n| **Simple sensitivity test** | **one factor, predefined shocks** (for example **±2, 4, 6, 10%** on the exchange rate) |\n| **Scenario analysis** | **several factors together**, **historical or hypothetical**; **the leading technique** |\n| **Maximum loss** | **the most damaging combination** of factor moves |\n| **Extreme value theory** | **statistics of the tail**; **the only one that attaches a probability** |\n\n**A good stress test**: **relevant to the current position**, covers **all relevant rates**, **regime shifts**, **illiquidity**, and **market-credit interplay**. **Uses**: **funding risk, check models, trader limits, capital charges**. **Limits**: **no probabilities** (apart from EVT) and **many subjective choices**.",
+      "self_check": {
+        "mode": "question",
+        "question_id": "item_f479c1697a6aa0c0f01406ec54ad1bd2c0b0d541292d8e0faec755d35b0c098f"
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_a7fe8718fbfd230b8c7daa8f30e768842cb86dca96beddf148919b320092f662",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U04",
+      "objective_ids": [
+        "BFM::MOD_B::U04::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 414-416, sections 14.6 (5) and (6)"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Limits, monitoring, reporting and trading liquidity",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "**Control** = keep portfolio value **within boundaries** using **limits**: **roles and authority**, **limit structure and approvals**, **systems capturing all risks**, **portfolio size and mix rules**, **normal and stressed risk estimates**, **mark-to-market policy**, **limit monitoring**, **performance and resource allocation**.\n\n- **Limits and triggers** on **sensitivity and VaR**, set by the **Risk Policy Committee**, **measured daily**, with **stop-loss triggers**.\n- **Rates used for marking are independently verified**.\n- **Models**: **documented**, **validated at least yearly** (and by an **external agency**), **stress tests preferably quarterly**.\n- **Reports**: **regular, timely, accurate, concise**, with **concentrations, exceptions** and **written commentary**.\n\n**Trading liquidity risk is managed by avoiding**: **a large market share in an asset type**, **infrequently traded instruments**, **unusual tenors**, **one-sided markets**.",
+      "self_check": {
+        "mode": "question",
+        "question_id": "item_1a5088856039219700c91fbd6f097546cfc74c9e4ef88be2df264d187b17c478"
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_f60e4e4447b4fd44fe7cea864a8c57faec72eca4c6f2b94163b3a18b86dacf1a",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U04",
+      "objective_ids": [
+        "BFM::MOD_B::U04::LO_06"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 416-418, sections 14.7 to 14.9"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Mitigating market risk",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "**Mitigation lowers volatility** and **upside too**. Strategies using **counterparties add counterparty risk** (**less** with an **exchange or central counterparty**).\n\n- **Sensitivity**: **portfolio BPV = weighted average of the bonds' BPVs**; to **cut it**, **add a bond with a BPV below the portfolio's**. **Duration** is raised by adding, lowered by selling, **long duration** assets.\n- **Correlation**: **long stock + short stock future** (they **move together but oppositely in the position**); **fixed rate bond + receive-floating swap** (a **rate rise** hurts the bond but **raises swap receipts**).\n- **Options**: **upfront premium** buys a **right, not an obligation**; **long put protects a long position**, **long call protects a short position**.",
+      "self_check": {
+        "mode": "question",
+        "question_id": "item_87ba5b9f5ee73e3bac10c04653fb77d44ca57c94e0d97f41b064edff40181def"
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_97dab57070ad358e528c8bfb5de8f2e818224636159dfe43dfc2d2adcea41fc1",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U04",
+      "objective_ids": [
+        "BFM::MOD_B::U04::LO_06"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 418-420, section 14.10"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Profit or loss from a yield move using BPV",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "Illustrative case: a bank holds government bonds of face value ₹25 crore. The bond's BPV is ₹1,850 per ₹1 crore of face value. Yields rise by 6 basis points. What is the loss? And what if yields fall 4 basis points?",
+      "worked_steps": [
+        {
+          "step_number": 1,
+          "description": "BPV of the holding.",
+          "formula_or_substitution": "1,850 × 25",
+          "intermediate_result": "₹46,250 per bp"
+        },
+        {
+          "step_number": 2,
+          "description": "Loss for a 6 bp rise.",
+          "formula_or_substitution": "46,250 × 6",
+          "intermediate_result": "₹2,77,500"
+        },
+        {
+          "step_number": 3,
+          "description": "Gain for a 4 bp fall.",
+          "formula_or_substitution": "46,250 × 4",
+          "intermediate_result": "₹1,85,000"
+        }
+      ],
+      "final_answer_with_unit": "A 6 bp rise costs ₹2,77,500; a 4 bp fall earns ₹1,85,000",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Why does the holding's BPV shrink as time passes?",
+        "expected_takeaway": "A shorter remaining maturity means less time for yield changes to affect the price, so the sensitivity falls and is zero at maturity."
+      },
+      "item_type": "card",
+      "card_type": "worked_example",
+      "id": "item_8d65d947f0a38ce25c410a6c0a5d49f7cbd127bedbf7ec56f3955c084c6c80ad",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U04",
+      "objective_ids": [
+        "BFM::MOD_B::U04::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 409-411, section 14.6"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Duration and modified duration of a three-year bond",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "Illustrative case: a three-year bond with face value 100 pays 9% annually and its yield is 9%. Find its price, Macaulay duration and modified duration, and estimate its price if the yield falls by 0.5 percentage point.",
+      "worked_steps": [
+        {
+          "step_number": 1,
+          "description": "Present values of the flows at 9%.",
+          "formula_or_substitution": "9/1.09; 9/1.09²; 109/1.09³",
+          "intermediate_result": "8.2569; 7.5751; 84.1680"
+        },
+        {
+          "step_number": 2,
+          "description": "Price.",
+          "formula_or_substitution": "8.2569 + 7.5751 + 84.1680",
+          "intermediate_result": "100.00"
+        },
+        {
+          "step_number": 3,
+          "description": "Time-weighted present values.",
+          "formula_or_substitution": "1×8.2569 + 2×7.5751 + 3×84.1680",
+          "intermediate_result": "275.911"
+        },
+        {
+          "step_number": 4,
+          "description": "Macaulay duration.",
+          "formula_or_substitution": "275.911 ÷ 100",
+          "intermediate_result": "2.7591 years"
+        },
+        {
+          "step_number": 5,
+          "description": "Modified duration.",
+          "formula_or_substitution": "2.7591 ÷ 1.09",
+          "intermediate_result": "2.5313"
+        },
+        {
+          "step_number": 6,
+          "description": "Approximate price change for −0.5 point.",
+          "formula_or_substitution": "−2.5313 × (−0.5%)",
+          "intermediate_result": "+1.2656%"
+        },
+        {
+          "step_number": 7,
+          "description": "Estimated price.",
+          "formula_or_substitution": "100 × 1.012656",
+          "intermediate_result": "101.27"
+        }
+      ],
+      "final_answer_with_unit": "Duration 2.7591 years, modified duration 2.5313, and a price of about 101.27 after a 0.5 point fall in yield",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Why is the Macaulay duration below three years?",
+        "expected_takeaway": "Coupons arrive before maturity, so the weighted average time of the cash flows is shorter than the term; only a zero coupon bond has duration equal to its term."
+      },
+      "item_type": "card",
+      "card_type": "worked_example",
+      "id": "item_fbc94290727550a331a6593e31d109369ba4063448983f2ad4e36efaacd45468",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U04",
+      "objective_ids": [
+        "BFM::MOD_B::U04::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 409-411, section 14.6"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "One-day and sixteen-day value at risk of a position",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "Illustrative case: a bank holds a position worth ₹2.5 crore in a stock with a daily volatility of 1.2%. Using the 99% multiple of 2.326, find the one-day VaR and the 16-day VaR (square root of time).",
+      "worked_steps": [
+        {
+          "step_number": 1,
+          "description": "One-day standard deviation.",
+          "formula_or_substitution": "2,50,00,000 × 1.2%",
+          "intermediate_result": "₹3,00,000"
+        },
+        {
+          "step_number": 2,
+          "description": "One-day 99% VaR.",
+          "formula_or_substitution": "3,00,000 × 2.326",
+          "intermediate_result": "₹6,97,800"
+        },
+        {
+          "step_number": 3,
+          "description": "Square root of 16.",
+          "formula_or_substitution": "√16",
+          "intermediate_result": "4"
+        },
+        {
+          "step_number": 4,
+          "description": "16-day VaR.",
+          "formula_or_substitution": "6,97,800 × 4",
+          "intermediate_result": "₹27,91,200"
+        }
+      ],
+      "final_answer_with_unit": "The one-day VaR is ₹6,97,800 and the 16-day VaR ₹27,91,200",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "What does the one-day figure tell the bank about the chance of losing more?",
+        "expected_takeaway": "That on about one day in a hundred under normal conditions the loss may exceed ₹6,97,800."
+      },
+      "item_type": "card",
+      "card_type": "worked_example",
+      "id": "item_697809aed0683299c650aa52e93d6357d5a0a7930685aa6bbc6197427495f639",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U04",
+      "objective_ids": [
+        "BFM::MOD_B::U04::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 411-414 and 418, section 14.6 and 14.9"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "easy",
+      "stem_md": "Which of the following is NOT one of the risks identified for a trading book in the courseware?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Market risk",
+          "explanation_md": "Listed."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Funding risk from asset-liability mismatch",
+          "explanation_md": "That is an ALM matter, distinct from market liquidity risk."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Asset liquidity risk",
+          "explanation_md": "Listed."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Credit and counterparty risk",
+          "explanation_md": "Listed."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_explanation_md": "The trading book carries market risk, liquidity risk (asset and market) and credit and counterparty risks; funding liquidity from asset-liability mismatch is an ALM subject.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_5cbccd63df319253a090a1dbfbe5a3ecf8ab4802ba80fc15a41f6167456b2085",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U04",
+      "objective_ids": [
+        "BFM::MOD_B::U04::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 403-404, sections 14.1 and 14.2"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Which statement distinguishes asset liquidity risk from market liquidity risk?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "They are the same",
+          "explanation_md": "Not so."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Asset liquidity risk concerns deposits",
+          "explanation_md": "Not so."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Asset liquidity risk concerns one security that is hard to trade, market liquidity risk a general crunch",
+          "explanation_md": "This is the distinction."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Market liquidity risk concerns only forex",
+          "explanation_md": "Not so."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_explanation_md": "Asset liquidity risk refers to a specific asset facing lack of trading liquidity; market liquidity risk to a general liquidity crunch in the market.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_c3b3e05008a8fb6858c5d08bd6ccf37b9789cb89c99f5c7293dc7b4196337f09",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U04",
+      "objective_ids": [
+        "BFM::MOD_B::U04::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 405-407, section 14.2"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A failure to monitor the market portfolio with due care results in which type of risk?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Market risk",
+          "explanation_md": "Market moves."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Credit risk",
+          "explanation_md": "Not so."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Liquidity risk",
+          "explanation_md": "Not so."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Operational risk",
+          "explanation_md": "Not a market risk."
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_explanation_md": "The risk of not monitoring the market or not monitoring with due care is an operational risk, not a market risk.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_5f171a69c36f91298d67ebd33c9987d5408a287d4f6bbdff0b89b8d232133db1",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U04",
+      "objective_ids": [
+        "BFM::MOD_B::U04::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 405-407, section 14.2"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "When does counterparty credit risk arise on a derivative?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "When the mark-to-market value is positive, so the counterparty owes the bank",
+          "explanation_md": "Receivable from the counterparty."
+        },
+        {
+          "option_id": "B",
+          "text_md": "When the value is negative",
+          "explanation_md": "The bank owes."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Only at maturity",
+          "explanation_md": "Not so."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Never, as derivatives are exchange traded",
+          "explanation_md": "OTC derivatives carry it."
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_explanation_md": "Credit risk on a derivative arises when the mark-to-market value is positive, implying a receivable from the counterparty.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_0d7a40036adde78578c9623725552297c2e8322cdd82439634be4464593a3e1e",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U04",
+      "objective_ids": [
+        "BFM::MOD_B::U04::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 405-407, section 14.2"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "How many processes make up market risk management in the courseware?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Five including pricing",
+          "explanation_md": "No pricing."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Four: identification, measurement, monitoring and control, mitigation",
+          "explanation_md": "These are the four."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Three",
+          "explanation_md": "Four."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Two",
+          "explanation_md": "Four."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_explanation_md": "The processes are risk identification, risk measurement, risk monitoring and control, and risk mitigation; there is no risk pricing process.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_9e1ba1d3fe88ace8a188259cc991045a117d7f245a7d28ffdaf35ae69705e2fb",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U04",
+      "objective_ids": [
+        "BFM::MOD_B::U04::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 407-409, sections 14.3 to 14.5"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Why does market risk management have no risk pricing process?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Because the Reserve Bank fixes prices",
+          "explanation_md": "Not so."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Because pricing is outsourced",
+          "explanation_md": "Not so."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Because financial instruments take their price from the market",
+          "explanation_md": "Reason."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Because banks do not trade",
+          "explanation_md": "Not so."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_explanation_md": "Financial instruments take their price from the market, so market risk management processes do not have a risk pricing process.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_a6d391b8e98009a36e997b8c11b82ffe31f5b2e948d8cfded03b20b153636235",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U04",
+      "objective_ids": [
+        "BFM::MOD_B::U04::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 407-409, sections 14.3 to 14.5"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "Which unit validates the prices of treasury deals, particularly structured products, independently of the dealers?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The Front Office",
+          "explanation_md": "Deals."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The Back Office",
+          "explanation_md": "Settles."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The Board",
+          "explanation_md": "Policy."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The Middle Office",
+          "explanation_md": "Role."
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_explanation_md": "The Middle Office independently validates the prices of treasury deals, particularly structured products.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_f0c6ebebac9e4b45f314322d7396ba74abc4cbb13d56b0da856f8578d37b8707",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U04",
+      "objective_ids": [
+        "BFM::MOD_B::U04::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 407-409, sections 14.3 to 14.5"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "What is the basis point value of a bond?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The change in price for a one basis point change in yield",
+          "explanation_md": "Definition."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The yield in basis points",
+          "explanation_md": "Not so."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The coupon divided by price",
+          "explanation_md": "Not so."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The time to maturity",
+          "explanation_md": "Not so."
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_explanation_md": "BPV is the change in value due to a 1 basis point (0.01 per cent) change in market yield.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_371dd7939bf1cf34dcb9ed717ebc172a6bf5423f9d146fd0566a85376700d336",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U04",
+      "objective_ids": [
+        "BFM::MOD_B::U04::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 409-411, section 14.6"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "What happens to a bond's BPV as it approaches maturity?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "It rises",
+          "explanation_md": "Falls."
+        },
+        {
+          "option_id": "B",
+          "text_md": "It falls and is zero at maturity",
+          "explanation_md": "Rule."
+        },
+        {
+          "option_id": "C",
+          "text_md": "It stays the same",
+          "explanation_md": "Falls."
+        },
+        {
+          "option_id": "D",
+          "text_md": "It doubles",
+          "explanation_md": "Not so."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_explanation_md": "BPV declines with the remaining maturity and on the day of maturity it is zero.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_955a72414536837d15c2798a2d041c36857fb7b2338b7d027630bbb7439ba5ac",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U04",
+      "objective_ids": [
+        "BFM::MOD_B::U04::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 409-411, section 14.6"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "How is modified duration obtained from Macaulay duration?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "By multiplying by the yield",
+          "explanation_md": "Not so."
+        },
+        {
+          "option_id": "B",
+          "text_md": "By adding the yield",
+          "explanation_md": "Not so."
+        },
+        {
+          "option_id": "C",
+          "text_md": "By dividing by one plus the yield",
+          "explanation_md": "Formula."
+        },
+        {
+          "option_id": "D",
+          "text_md": "By dividing by the coupon",
+          "explanation_md": "Not so."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_explanation_md": "Modified duration equals Macaulay duration divided by (1 + yield).",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_82533fcf21d8022325eb33f6918dd2b61e174b864ef929304c5ba3578b31a899",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U04",
+      "objective_ids": [
+        "BFM::MOD_B::U04::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 409-411, section 14.6"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A bond has a modified duration of 4. Roughly what happens to its price if the yield rises by 0.5 percentage point?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "It rises by 2 per cent",
+          "explanation_md": "Opposite."
+        },
+        {
+          "option_id": "B",
+          "text_md": "It falls by 4 per cent",
+          "explanation_md": "Not so."
+        },
+        {
+          "option_id": "C",
+          "text_md": "It falls by 0.5 per cent",
+          "explanation_md": "Not so."
+        },
+        {
+          "option_id": "D",
+          "text_md": "It falls by about 2 per cent",
+          "explanation_md": "4 × 0.5."
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_explanation_md": "Approximate percentage change in price is minus modified duration times the change in yield: −4 × 0.5% = −2%.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_3c49e8a894910f59f1e01f65420f51f899eab03aa90ca0d29cde8f876aedb273",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U04",
+      "objective_ids": [
+        "BFM::MOD_B::U04::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 409-411, section 14.6"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "For which security is Macaulay duration equal to the term to maturity?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "A zero-coupon security",
+          "explanation_md": "Rule."
+        },
+        {
+          "option_id": "B",
+          "text_md": "A high coupon bond",
+          "explanation_md": "Shorter."
+        },
+        {
+          "option_id": "C",
+          "text_md": "A floating rate bond",
+          "explanation_md": "Shorter."
+        },
+        {
+          "option_id": "D",
+          "text_md": "A perpetual bond",
+          "explanation_md": "Not so."
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_explanation_md": "The duration of a fixed income security is always shorter than its term to maturity, except for zero coupon securities where they are the same.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_508fa6cb94aee95d283d5be5f6407c8cb81fd71423c7b94050d742d10276eb85",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U04",
+      "objective_ids": [
+        "BFM::MOD_B::U04::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 409-411, section 14.6"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "What does a one-day 99 per cent VaR of ₹10 crore mean?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The maximum possible loss is ₹10 crore",
+          "explanation_md": "Not so."
+        },
+        {
+          "option_id": "B",
+          "text_md": "A loss above ₹10 crore is expected on about one day in 100 under normal conditions",
+          "explanation_md": "Meaning."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The bank loses ₹10 crore every day",
+          "explanation_md": "Not so."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The loss will never exceed ₹10 crore",
+          "explanation_md": "Not so."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_explanation_md": "There is a 1 per cent chance that the daily loss exceeds ₹10 crore, about 2.5 days a year, under normal trading conditions.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_3ec8bea65636d585f1472a5de9d2cf38be8123b91677dffe4c2e66cd9054deed",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U04",
+      "objective_ids": [
+        "BFM::MOD_B::U04::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 411-414 and 418, section 14.6 and 14.9"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Which VaR method replays actual past movements of the underlying assets?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Monte Carlo simulation",
+          "explanation_md": "Random scenarios."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Variance-covariance method",
+          "explanation_md": "Uses a matrix."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Historical simulation",
+          "explanation_md": "Method."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Sensitivity method",
+          "explanation_md": "Not a VaR method."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_explanation_md": "The historical simulation approach calculates the change in value using the actual historical movements of the underlying assets.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_9f9c12ebeae14320d27e5fea4d6b2c059af997c8f01a11b15cc687f03ff7e555",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U04",
+      "objective_ids": [
+        "BFM::MOD_B::U04::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 411-414 and 418, section 14.6 and 14.9"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "What is the main disadvantage of the historical simulation method?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "It needs a correlation matrix",
+          "explanation_md": "It does not."
+        },
+        {
+          "option_id": "B",
+          "text_md": "It ignores the past",
+          "explanation_md": "Not so."
+        },
+        {
+          "option_id": "C",
+          "text_md": "It cannot be computed",
+          "explanation_md": "Not so."
+        },
+        {
+          "option_id": "D",
+          "text_md": "It expects the market to behave as it did in the past",
+          "explanation_md": "Weakness."
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_explanation_md": "The disadvantage is that it expects the market to behave in the same manner as in the past, which may not come true.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_21f0197bc251ccc44f38ae5cf05c76b83fe5895caf2f89795928764753c967c9",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U04",
+      "objective_ids": [
+        "BFM::MOD_B::U04::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 411-414 and 418, section 14.6 and 14.9"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "What does conditional VaR (expected shortfall) add to VaR?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "It averages the losses beyond VaR, capturing tail risk",
+          "explanation_md": "Definition."
+        },
+        {
+          "option_id": "B",
+          "text_md": "It ignores tail losses",
+          "explanation_md": "Opposite."
+        },
+        {
+          "option_id": "C",
+          "text_md": "It sets the confidence level",
+          "explanation_md": "Not so."
+        },
+        {
+          "option_id": "D",
+          "text_md": "It replaces volatility",
+          "explanation_md": "Not so."
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_explanation_md": "Conditional VaR is the average of the values that fall beyond the regular VaR, capturing tail risk.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_95b70dc7638d435668e2d9132da20b9ca21adf8fe162a5b668c4e80f979e899f",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U04",
+      "objective_ids": [
+        "BFM::MOD_B::U04::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 411-414 and 418, section 14.6 and 14.9"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "Which is a limitation of VaR?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "It cannot be computed daily",
+          "explanation_md": "Not so."
+        },
+        {
+          "option_id": "B",
+          "text_md": "It does not measure losses beyond its confidence level or under abnormal conditions",
+          "explanation_md": "Limitation."
+        },
+        {
+          "option_id": "C",
+          "text_md": "It uses no data",
+          "explanation_md": "Not so."
+        },
+        {
+          "option_id": "D",
+          "text_md": "It measures profits only",
+          "explanation_md": "Not so."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_explanation_md": "VaR is not a worst-case scenario and does not measure losses under abnormal conditions.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_48408414283ffdd46e89b96b23252e07f1e4465bb422a375f3a13674da10036f",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U04",
+      "objective_ids": [
+        "BFM::MOD_B::U04::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 411-414 and 418, section 14.6 and 14.9"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "How often should banks back test their risk models, according to the courseware?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Every five years",
+          "explanation_md": "Not so."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Only when a loss occurs",
+          "explanation_md": "Not so."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Monthly or quarterly",
+          "explanation_md": "Rule."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Never",
+          "explanation_md": "Not so."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_explanation_md": "Banks should generally back test risk models on a monthly or quarterly basis.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_f479c1697a6aa0c0f01406ec54ad1bd2c0b0d541292d8e0faec755d35b0c098f",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U04",
+      "objective_ids": [
+        "BFM::MOD_B::U04::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 414-416, sections 14.6 (5) and (6)"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Which stress testing technique attaches a probability to the results?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Scenario analysis",
+          "explanation_md": "No probabilities."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Maximum loss",
+          "explanation_md": "No probabilities."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Simple sensitivity test",
+          "explanation_md": "No probabilities."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Extreme value theory",
+          "explanation_md": "The only one."
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_explanation_md": "Extreme value theory is notable for being the only stress test technique that attempts to attach a probability to stress test results.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_cf6a7b661aa626118f0b5414f3c748b9ee28c3ef01d60b97e569ae7bb5390214",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U04",
+      "objective_ids": [
+        "BFM::MOD_B::U04::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 414-416, sections 14.6 (5) and (6)"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Which stress test technique is currently the leading one?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Scenario analysis",
+          "explanation_md": "Leading."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Simple sensitivity test",
+          "explanation_md": "Simple."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Maximum loss",
+          "explanation_md": "Less used."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Extreme value theory",
+          "explanation_md": "Specialised."
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_explanation_md": "Scenario analysis is currently the leading stress testing technique.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_652be017dc2e2f1c3a8610d85ac247d9ad7897ccedb3b437f9e2cf79e3cf4368",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U04",
+      "objective_ids": [
+        "BFM::MOD_B::U04::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 414-416, sections 14.6 (5) and (6)"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Who usually sets approved market risk limits for sensitivities and VaR?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The dealers",
+          "explanation_md": "Not so."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The Risk Policy Committee as the designated authority",
+          "explanation_md": "Rule."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The customers",
+          "explanation_md": "Not so."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The auditors",
+          "explanation_md": "Not so."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_explanation_md": "Approved market risk limits for factor sensitivities and VaR are set by the designated authority, usually the Risk Policy Committee.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_1a5088856039219700c91fbd6f097546cfc74c9e4ef88be2df264d187b17c478",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U04",
+      "objective_ids": [
+        "BFM::MOD_B::U04::LO_06"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 416-418, sections 14.7 to 14.9"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "How often should financial models for market risk be validated, at the least?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Every five years",
+          "explanation_md": "Not so."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Never",
+          "explanation_md": "Not so."
+        },
+        {
+          "option_id": "C",
+          "text_md": "At least once a year, and also by an external agency",
+          "explanation_md": "Rule."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Daily",
+          "explanation_md": "Not so."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_explanation_md": "The model should be validated at least once in a year and also by a reputed external agency.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_3e2562d04390807793918d1ad9ffefb3710c3e6ac42280a11514aab9e743d72d",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U04",
+      "objective_ids": [
+        "BFM::MOD_B::U04::LO_06"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 416-418, sections 14.7 to 14.9"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Which is a way of managing trading liquidity risk?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Seeking infrequently traded instruments",
+          "explanation_md": "Avoid."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Preferring unusual tenors",
+          "explanation_md": "Avoid."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Relying on one-sided markets",
+          "explanation_md": "Avoid."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Avoiding a large market share in any type of asset",
+          "explanation_md": "Rule."
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_explanation_md": "Trading liquidity risk is managed by avoiding large market share, infrequently traded instruments, unusual tenors and one-sided liquidity.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_bbb0202038ed4009f34bec5871302d7def3064203faf9e3e46217d31db909876",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U04",
+      "objective_ids": [
+        "BFM::MOD_B::U04::LO_06"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 416-418, sections 14.7 to 14.9"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "What is the effect of a hedge on the upside potential of a position?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "It reduces it along with the downside",
+          "explanation_md": "Trade-off."
+        },
+        {
+          "option_id": "B",
+          "text_md": "It increases it",
+          "explanation_md": "Not so."
+        },
+        {
+          "option_id": "C",
+          "text_md": "It has none",
+          "explanation_md": "Not so."
+        },
+        {
+          "option_id": "D",
+          "text_md": "It doubles it",
+          "explanation_md": "Not so."
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_explanation_md": "Risk mitigation measures reduce downside variability but also reduce upside potential.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_87ba5b9f5ee73e3bac10c04653fb77d44ca57c94e0d97f41b064edff40181def",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U04",
+      "objective_ids": [
+        "BFM::MOD_B::U04::LO_06"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 418-420, section 14.10"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "How is the BPV of a portfolio of two bonds, treated with equal weights, found in the courseware's example?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "As their product",
+          "explanation_md": "Not so."
+        },
+        {
+          "option_id": "B",
+          "text_md": "As the weighted average of the bonds' BPVs",
+          "explanation_md": "Rule."
+        },
+        {
+          "option_id": "C",
+          "text_md": "As the larger BPV",
+          "explanation_md": "Not so."
+        },
+        {
+          "option_id": "D",
+          "text_md": "As the sum divided by the yield",
+          "explanation_md": "Not so."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_explanation_md": "The BPV of the portfolio is the weighted average of the BPVs of all bonds, (675 + 205) ÷ 2 = 440.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_861c481cf16fb811e8f0a911070ef3a3cbd86f728fbc40d73cafe9ca374e930f",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U04",
+      "objective_ids": [
+        "BFM::MOD_B::U04::LO_06"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 418-420, section 14.10"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Which option position hedges the downside of a long position in the underlying?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "A long call",
+          "explanation_md": "Right to buy."
+        },
+        {
+          "option_id": "B",
+          "text_md": "A short put",
+          "explanation_md": "Adds risk."
+        },
+        {
+          "option_id": "C",
+          "text_md": "A long put",
+          "explanation_md": "Right to sell."
+        },
+        {
+          "option_id": "D",
+          "text_md": "A short call",
+          "explanation_md": "Adds risk."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_explanation_md": "A long position on a put option confers a right to sell the underlying at the strike, arresting downside movement of a long position.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_2b52db8d650b0454ede13a839cedc666cae30a99c9413160dc5ca7d9f7cbf86b",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U04",
+      "objective_ids": [
+        "BFM::MOD_B::U04::LO_06"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 418-420, section 14.10"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A holding of ₹40 crore face value has a BPV of ₹2,100 per ₹1 crore. Yields rise by 5 basis points. What is the loss, in rupees?",
+      "numeric_rule": {
+        "expected_answer": "420000",
+        "unit_label": "rupees",
+        "precision_decimals": 0,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Give a whole number.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "BPV of holding = 2,100 × 40 = ₹84,000 per basis point; loss = 84,000 × 5 = ₹4,20,000.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "BPV of holding",
+          "formula_or_substitution": "2,100 × 40",
+          "intermediate_result": "84,000"
+        },
+        {
+          "step_number": 2,
+          "description": "Loss",
+          "formula_or_substitution": "84,000 × 5",
+          "intermediate_result": "4,20,000"
+        }
+      ],
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_cfd9f1dc7942f8dac9322e2efb671affb13645cef4fd4b9d6e39adf73d5a589e",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U04",
+      "objective_ids": [
+        "BFM::MOD_B::U04::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 409-411, section 14.6"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A bond priced at 98 has a modified duration of 3.4. Estimate its price after the yield rises by 0.25 percentage point, to two decimals.",
+      "numeric_rule": {
+        "expected_answer": "97.17",
+        "unit_label": "price",
+        "precision_decimals": 2,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Give the answer to 2 decimal places.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "Percentage change = −3.4 × 0.25% = −0.85%. Change = 98 × 0.85% = 0.833; new price = 98 − 0.833 = 97.167, which rounds to 97.17.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "Percentage change",
+          "formula_or_substitution": "−3.4 × 0.25%",
+          "intermediate_result": "−0.85%"
+        },
+        {
+          "step_number": 2,
+          "description": "Price change",
+          "formula_or_substitution": "98 × 0.0085",
+          "intermediate_result": "0.833"
+        },
+        {
+          "step_number": 3,
+          "description": "New price",
+          "formula_or_substitution": "98 − 0.833",
+          "intermediate_result": "97.17"
+        }
+      ],
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_15e7f9f3ffc461295f5741c4bae2cd47859358dc9799b45c580c01bfd2f4e23f",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U04",
+      "objective_ids": [
+        "BFM::MOD_B::U04::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 409-411, section 14.6"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A position of ₹80 lakh has a daily volatility of 2%. Using a 95% multiple of 1.65, what is the one-day VaR, in rupees?",
+      "numeric_rule": {
+        "expected_answer": "264000",
+        "unit_label": "rupees",
+        "precision_decimals": 0,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Give a whole number.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "Daily standard deviation = 80,00,000 × 2% = 1,60,000; VaR = 1,60,000 × 1.65 = ₹2,64,000.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "Standard deviation",
+          "formula_or_substitution": "80,00,000 × 2%",
+          "intermediate_result": "1,60,000"
+        },
+        {
+          "step_number": 2,
+          "description": "VaR",
+          "formula_or_substitution": "1,60,000 × 1.65",
+          "intermediate_result": "2,64,000"
+        }
+      ],
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_b3729d72ba6c49c92285225dc5b133b6168aab0d661589f03f4ac093369543e8",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U04",
+      "objective_ids": [
+        "BFM::MOD_B::U04::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 411-414 and 418, section 14.6 and 14.9"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "A portfolio has a one-day 99% VaR of ₹3.5 crore. Using the square root of time rule, what is its 9-day VaR, in ₹ crore, to one decimal?",
+      "numeric_rule": {
+        "expected_answer": "10.5",
+        "unit_label": "₹ crore",
+        "precision_decimals": 1,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Give the answer to 1 decimal places.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "√9 = 3, so 9-day VaR = 3.5 × 3 = ₹10.5 crore.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "Root of 9",
+          "formula_or_substitution": "√9",
+          "intermediate_result": "3"
+        },
+        {
+          "step_number": 2,
+          "description": "Scaled VaR",
+          "formula_or_substitution": "3.5 × 3",
+          "intermediate_result": "10.5"
+        }
+      ],
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_6cfc3c5113be56a2d511203d3a2f1ba995f5ff32517c0e8bbe7032ff6fb44ac8",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U04",
+      "objective_ids": [
+        "BFM::MOD_B::U04::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 411-414 and 418, section 14.6 and 14.9"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A bank has a one-day 99% VaR model. About how many days in a year of 250 working days would you expect the loss to exceed VaR?",
+      "numeric_rule": {
+        "expected_answer": "2.5",
+        "unit_label": "days",
+        "precision_decimals": 1,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Give the answer to 1 decimal places.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "The exceedance probability is 1%, so 250 × 1% = 2.5 days.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "Expected exceedances",
+          "formula_or_substitution": "250 × 1%",
+          "intermediate_result": "2.5"
+        }
+      ],
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_1370081bd7417614bb63aa5775febfc9abdc97afefea4f37c9c3fbe624d3c977",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_B",
+      "unit_id": "BFM::MOD_B::U04",
+      "objective_ids": [
+        "BFM::MOD_B::U04::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 411-414 and 418, section 14.6 and 14.9"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}
