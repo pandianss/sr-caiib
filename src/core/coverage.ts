@@ -18,6 +18,8 @@ export interface LedgerObjective {
   teaching_adequate: boolean; assessment_adequate: boolean;
   review: { source: ReviewState; originality: ReviewState; calculations: ReviewState | 'not_applicable'; record_refs: string[] };
   published_item_ids: string[]; gaps: string[];
+  /** Limits of the evidence behind published content (unretrieved or paid primary texts, differences from the courseware). They do not block publication but are shown to reviewers. */
+  source_caveats?: string[];
 }
 export type ReviewState = 'not_started' | 'pending' | 'changes_required' | 'passed';
 
