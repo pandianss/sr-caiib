@@ -1,0 +1,2091 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BFM-A-U04-B005",
+    "paper_id": "BFM",
+    "unit_label": "Module A: International Banking - Documentary Letters of Credit",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S03",
+      "TRADEGOV_INCOTERMS"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "statement": "The International Standard Banking Practice for the Examination of Documents under Documentary Credits (ISBP) is an ICC publication giving guidance on examining documents presented under credits. It cannot change UCP 600 but is a companion to it. It was first approved by the ICC in 2002 as a companion to UCP 500; after UCP 600 it was updated as ICC publication No. 681; a fully revised version, ICC publication No. 745, was published in July 2013 with new and reworded interpretations and additions from ICC official opinions. Its aims are uniformity of practice worldwide, to reduce the number of credits rejected for discrepancies, and practices that reduce discrepant presentations.",
+        "source_id": "S03",
+        "locator": "Printed p. 115, section 4.11",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "F002",
+        "statement": "Incoterms are ICC rules for the interpretation of trade terms in contracts of sale, not contracts of carriage. Incoterms 2020 took effect on 1 January 2020 and has eleven rules: seven for any mode of transport (EXW, FCA, CPT, CIP, DAP, DPU, DDP) and four for sea and inland waterway transport (FAS, FOB, CFR, CIF). DPU (Delivered at Place Unloaded) replaced DAT, and is the only rule under which the seller unloads the goods at destination.",
+        "source_id": "TRADEGOV_INCOTERMS",
+        "locator": "Overview of Incoterms 2020; S03 printed p. 116 on contract of sale and the DPU change",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "F003",
+        "statement": "Moving from EXW towards DDP the seller's obligations increase and the buyer's decrease: EXW puts the maximum responsibility on the buyer and DDP the maximum on the seller. In the courseware's matrix the seller bears warehouse services and export packing under every rule; loading at the port of origin and origin inland freight, port charges and forwarders' fees from FAS onward; ocean or air freight from CFR, CIF, CPT and CIP onward; destination port charges under DPU and DDP; and customs clearance and duties only under DDP.",
+        "source_id": "S03",
+        "locator": "Printed p. 117",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "F004",
+        "statement": "The courseware lists these changes from Incoterms 2010 to 2020: under FCA the buyer can instruct its carrier to issue a bill of lading with an on-board notation to the seller so the seller can use it for bank financing; the rules allow the parties' own transport rather than a third party's (FCA, DAP, DPU, DDP); CIP by default requires cover under the Institute Cargo Clauses (A), all risks, rather than the limited cover of Clauses (C); DPU replaces DAT; costs are clearer in relation to carrier charges; and security obligations, such as mandatory screening of containers, are addressed.",
+        "source_id": "S03",
+        "locator": "Printed pp. 117-118",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "F005",
+        "statement": "Case-study principles in the courseware: a credit is separate from the sale or other contract, and banks deal in documents, not goods; a document may be dated before the date of the credit but not after the expiry date for presentation, unless the credit says otherwise; a presentation of more than one set of transport documents covering the same means of transport and the same journey is not a partial shipment even if the shipment dates differ; notice of refusal and discrepancy must be given by the close of the fifth banking day after the day of receipt of documents, and weekends and holidays are not banking days; insurance must be at least 110% of the invoice value if the credit is silent and must not be dated after the transport document unless it shows cover from the date of shipment; a bank that cannot advise a credit must inform the issuing bank at once, and the issuing bank is not responsible for the advising bank's failure; if the last day for presentation falls on a day the bank is closed, it extends to the next banking day.",
+        "source_id": "S03",
+        "locator": "Printed pp. 118-122, case studies 1 to 9",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      }
+    ],
+    "drafts": [
+      {
+        "draft_id": "D001",
+        "item_type": "card",
+        "variant": "concept",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "title": "ISBP: the practice guide that sits beside UCP 600",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "**UCP 600** gives the rules. **ISBP** shows how bankers **apply** them when they check documents.\n\n- It is an **ICC publication**, a **companion** to UCP 600.\n- It **cannot change** UCP 600; it explains standard practice within it.\n- **History**: approved in **2002** as a companion to UCP 500; updated as **ICC publication 681** after UCP 600 (2007); fully revised as **ICC publication 745** in **July 2013**, adding new interpretations and points drawn from ICC official opinions.\n- **Aims**: **uniform practice worldwide**, **fewer credits rejected** for discrepancies, and practices that **reduce discrepant presentations**.\n\nA note on currency: the ICC has since issued a later edition, **ISBP 821 (July 2023)**. The syllabus names **ISBP 745**, so this course teaches that edition and flags the newer one.",
+          "self_check": {
+            "mode": "question",
+            "question_id": "D009"
+          }
+        }
+      },
+      {
+        "draft_id": "D002",
+        "item_type": "card",
+        "variant": "concept",
+        "fact_ids": [
+          "F002"
+        ],
+        "payload": {
+          "title": "Incoterms 2020: eleven rules in two families",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "**Incoterms** are ICC rules for the **contract of sale** (not the contract of carriage). They say who arranges and pays for carriage, insurance and customs, and **where risk passes**.\n\n**Seven rules for any mode of transport**\n- **EXW** Ex Works\n- **FCA** Free Carrier\n- **CPT** Carriage Paid To\n- **CIP** Carriage and Insurance Paid To\n- **DAP** Delivered at Place\n- **DPU** Delivered at Place **Unloaded**\n- **DDP** Delivered Duty Paid\n\n**Four rules for sea and inland waterway only**\n- **FAS** Free Alongside Ship\n- **FOB** Free on Board\n- **CFR** Cost and Freight\n- **CIF** Cost, Insurance and Freight\n\nIn force since **1 January 2020**. **DPU replaced DAT**, and under DPU the seller **unloads** the goods at destination (under DAP the seller does not).",
+          "self_check": {
+            "mode": "question",
+            "question_id": "D010"
+          }
+        }
+      },
+      {
+        "draft_id": "D003",
+        "item_type": "card",
+        "variant": "concept",
+        "fact_ids": [
+          "F003"
+        ],
+        "payload": {
+          "title": "Who carries what: the ladder from EXW to DDP",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "Read the rules as a ladder. **Each step towards DDP moves another job from buyer to seller.**\n\n- **EXW**: the buyer takes almost everything, even **loading** the goods.\n- **FAS, FCA, FOB**: the seller delivers to the **carrier or the ship**, so **loading at origin** and **origin charges** are the seller's.\n- **CFR, CIF, CPT, CIP**: the seller also pays the **main carriage** (ocean or air freight). (CIF and CIP add **insurance**.)\n- **DPU**: the seller also bears **destination port charges** and **unloads**.\n- **DDP**: the seller also does **customs clearance and pays duties**, the maximum responsibility.\n\nWherever you are on the ladder, **warehouse services and export packing** are the seller's. **Customs clearance and duties** are the buyer's except under **DDP**.",
+          "self_check": {
+            "mode": "question",
+            "question_id": "D011"
+          }
+        }
+      },
+      {
+        "draft_id": "D004",
+        "item_type": "card",
+        "variant": "concept",
+        "fact_ids": [
+          "F004"
+        ],
+        "payload": {
+          "title": "What changed between Incoterms 2010 and 2020",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "- **FCA**: the buyer can instruct its carrier to issue a **bill of lading with an on-board notation** to the seller, so the seller can present it to its bank for **financing**.\n- **Own transport**: FCA, DAP, DPU and DDP let buyer or seller use **its own vehicles**, not only a third-party carrier.\n- **CIP**: insurance by default is now **Institute Cargo Clauses (A)**, **all risks**, in place of the old limited cover (Clauses C).\n- **DPU** replaces **DAT**, and is the **only rule under which the seller unloads** at destination.\n- **Costs** tied to carrier charges are set out more clearly.\n- **Security** obligations (for example **screening of containers**) are addressed.\n\nCheck each term's year in a credit or contract: parties may agree to use an earlier edition if they name it.",
+          "self_check": {
+            "mode": "question",
+            "question_id": "D012"
+          }
+        }
+      },
+      {
+        "draft_id": "D005",
+        "item_type": "card",
+        "variant": "concept",
+        "fact_ids": [
+          "F005"
+        ],
+        "payload": {
+          "title": "Case file 1: the credit does not care about the contract",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "**Scenario.** An importer opens a credit for machinery. The invoice matches the credit, but the importer then says the goods are not what the sales contract promised, and asks the bank to refuse payment.\n\n**Answer.** The bank deals in **documents, not goods**, and the credit is **separate from the sale contract**. If the documents **comply**, the issuing bank must **honour** them. A dispute over the contract is for the buyer and seller, not a reason for the bank to refuse.\n\nTwo further points the courseware draws out:\n- A **court order** may stop the bank paying, and the bank must then wait; **recovering** money from the applicant is a separate matter of **credit risk**, and should not be linked to honouring the credit.\n- A bank must not itself **excuse a payment** by pointing to quality or contract disputes.",
+          "self_check": {
+            "mode": "question",
+            "question_id": "D013"
+          }
+        }
+      },
+      {
+        "draft_id": "D006",
+        "item_type": "card",
+        "variant": "concept",
+        "fact_ids": [
+          "F005"
+        ],
+        "payload": {
+          "title": "Case file 2: dates, partial shipments and insurance",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "**Dates on documents.** A document may be **dated before the credit** was issued, as long as it is **not dated after the expiry date for presentation**, unless the credit says otherwise. The bank should not reject a document merely for pre-dating the credit.\n\n**Partial shipment.** If the credit forbids it, but the goods go on **one vessel on one voyage** under **two bills of lading** with different dates, that is **not** a partial shipment. More than one set of transport documents for the **same means of transport and journey** is not partial even with different dates.\n\n**Insurance.** If the credit is silent, cover must be **at least 110%** of the invoice value. The policy must not be dated **after the transport document**, **unless** it shows cover **from the date of shipment**.",
+          "self_check": {
+            "mode": "question",
+            "question_id": "D014"
+          }
+        }
+      },
+      {
+        "draft_id": "D007",
+        "item_type": "card",
+        "variant": "concept",
+        "fact_ids": [
+          "F005"
+        ],
+        "payload": {
+          "title": "Case file 3: the refusal clock, banking days and the closed-bank rule",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "**Refusal clock.** The issuing bank must give notice of refusal and the discrepancies by the **close of the fifth banking day after the day it received the documents**. **Saturdays, Sundays and bank holidays are not banking days**, so a refusal sent on the next working Monday after a weekend may still be on time.\n\n**Closed-bank rule.** If the **last day for presentation** falls on a day the bank is **closed**, it is extended to the **next banking day**. If banks in that place are **open** that day, there is **no extension**.\n\n**Advising failure.** If an advising bank cannot advise a credit, it must tell the issuing bank **at once**. The issuing bank is **not responsible** for the advising bank's failure, even though it chose that bank.",
+          "self_check": {
+            "mode": "question",
+            "question_id": "D015"
+          }
+        }
+      },
+      {
+        "draft_id": "D008",
+        "item_type": "card",
+        "variant": "worked_example",
+        "fact_ids": [
+          "F005"
+        ],
+        "payload": {
+          "title": "Counting five banking days with a holiday",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "Illustrative case: an issuing bank receives documents on Wednesday 8 April 2026. Friday 10 April 2026 is a bank holiday in its city. Saturdays and Sundays are not banking days. By what date must it send notice of refusal?",
+          "worked_steps": [
+            {
+              "step_number": 1,
+              "description": "Day 1 is the first banking day after receipt: Thursday 9 April.",
+              "formula_or_substitution": "Thu 9 April",
+              "intermediate_result": "Day 1"
+            },
+            {
+              "step_number": 2,
+              "description": "Friday 10 April is a holiday and the weekend follows. Day 2 is Monday 13 April.",
+              "formula_or_substitution": "Mon 13 April",
+              "intermediate_result": "Day 2"
+            },
+            {
+              "step_number": 3,
+              "description": "Days 3, 4 and 5 are Tuesday 14, Wednesday 15 and Thursday 16 April.",
+              "formula_or_substitution": "14, 15, 16 April",
+              "intermediate_result": "Day 5: 16 April 2026"
+            }
+          ],
+          "final_answer_with_unit": "Notice of refusal must go out by the close of Thursday 16 April 2026",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Without the holiday on 10 April, what would the deadline have been?",
+            "expected_takeaway": "Wednesday 15 April 2026: Thursday 9, Friday 10, Monday 13, Tuesday 14 and Wednesday 15 are the five banking days."
+          }
+        }
+      },
+      {
+        "draft_id": "D009",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "difficulty": "easy",
+          "stem_md": "What is the status of the ISBP in relation to UCP 600?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "A replacement that overrides UCP 600",
+              "explanation_md": "It cannot change UCP 600."
+            },
+            {
+              "option_id": "B",
+              "text_md": "A companion that guides practice but cannot change UCP 600",
+              "explanation_md": "This is its status."
+            },
+            {
+              "option_id": "C",
+              "text_md": "A rule set that applies only to standby credits",
+              "explanation_md": "It applies to documentary credits generally."
+            },
+            {
+              "option_id": "D",
+              "text_md": "A set of RBI instructions for authorised dealers",
+              "explanation_md": "It is an ICC publication."
+            }
+          ],
+          "correct_option_id": "B",
+          "correct_explanation_md": "The ISBP is an ICC publication that cannot change UCP 600 but is a valuable companion in examining documents."
+        }
+      },
+      {
+        "draft_id": "D010",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Which ICC publication number did the courseware give for the fully revised ISBP published in July 2013?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "681",
+              "explanation_md": "This was the earlier edition aligned to UCP 600."
+            },
+            {
+              "option_id": "B",
+              "text_md": "600",
+              "explanation_md": "This is UCP 600."
+            },
+            {
+              "option_id": "C",
+              "text_md": "725",
+              "explanation_md": "This is URR 725."
+            },
+            {
+              "option_id": "D",
+              "text_md": "745",
+              "explanation_md": "This is the number given."
+            }
+          ],
+          "correct_option_id": "D",
+          "correct_explanation_md": "The fully revised ISBP of July 2013 is ICC publication No. 745; publication No. 681 was the earlier edition aligned to UCP 600."
+        }
+      },
+      {
+        "draft_id": "D011",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F002"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "To which contract do Incoterms apply?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The contract of carriage only",
+              "explanation_md": "They do not govern carriage contracts."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The credit between applicant and issuing bank",
+              "explanation_md": "The credit is governed by UCP 600."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The contract of sale, not the contract of carriage",
+              "explanation_md": "Incoterms deal with the seller-buyer relationship."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The reimbursement authorisation",
+              "explanation_md": "That is governed by URR 725."
+            }
+          ],
+          "correct_option_id": "C",
+          "correct_explanation_md": "Incoterms apply to the contract of sale, not the contract of carriage."
+        }
+      },
+      {
+        "draft_id": "D012",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F002"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Which Incoterms 2020 rule requires the seller to unload the goods from the arriving means of transport at the named destination?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "DPU",
+              "explanation_md": "DPU is delivered at place unloaded."
+            },
+            {
+              "option_id": "B",
+              "text_md": "DAP",
+              "explanation_md": "Under DAP the seller does not unload."
+            },
+            {
+              "option_id": "C",
+              "text_md": "CIP",
+              "explanation_md": "CIP is carriage and insurance paid to."
+            },
+            {
+              "option_id": "D",
+              "text_md": "FOB",
+              "explanation_md": "FOB is a sea rule that delivers on board the vessel."
+            }
+          ],
+          "correct_option_id": "A",
+          "correct_explanation_md": "Under DPU the seller unloads at destination; DPU replaced DAT and is the only rule under which the seller unloads."
+        }
+      },
+      {
+        "draft_id": "D013",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F002"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Which of the following Incoterms 2020 rules is for sea and inland waterway transport only?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "CPT",
+              "explanation_md": "CPT is for any mode of transport."
+            },
+            {
+              "option_id": "B",
+              "text_md": "FOB",
+              "explanation_md": "FOB, FAS, CFR and CIF are the sea and inland waterway rules."
+            },
+            {
+              "option_id": "C",
+              "text_md": "DAP",
+              "explanation_md": "DAP is for any mode of transport."
+            },
+            {
+              "option_id": "D",
+              "text_md": "FCA",
+              "explanation_md": "FCA is for any mode of transport."
+            }
+          ],
+          "correct_option_id": "B",
+          "correct_explanation_md": "FAS, FOB, CFR and CIF are for sea and inland waterway transport; the other seven rules are for any mode."
+        }
+      },
+      {
+        "draft_id": "D014",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F004"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "What is the default level of insurance cover under CIP in Incoterms 2020, as the courseware states it?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Institute Cargo Clauses (C), limited cover",
+              "explanation_md": "That was the earlier default."
+            },
+            {
+              "option_id": "B",
+              "text_md": "No insurance at all",
+              "explanation_md": "CIP includes insurance."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Whatever the carrier offers",
+              "explanation_md": "The rule sets a default level."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Institute Cargo Clauses (A), all risks",
+              "explanation_md": "CIP now requires all-risks cover by default."
+            }
+          ],
+          "correct_option_id": "D",
+          "correct_explanation_md": "Under CIP in Incoterms 2020 the default cover is Institute Cargo Clauses (A), all risks, in place of the earlier limited cover."
+        }
+      },
+      {
+        "draft_id": "D015",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F003"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Which Incoterms 2020 rule puts the maximum responsibility on the buyer, and which on the seller?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "DDP on the buyer, EXW on the seller",
+              "explanation_md": "The order is the other way round."
+            },
+            {
+              "option_id": "B",
+              "text_md": "FOB on the buyer, CIF on the seller",
+              "explanation_md": "Those are intermediate positions."
+            },
+            {
+              "option_id": "C",
+              "text_md": "EXW on the buyer, DDP on the seller",
+              "explanation_md": "EXW is minimum seller duty; DDP is maximum."
+            },
+            {
+              "option_id": "D",
+              "text_md": "FCA on the buyer, DAP on the seller",
+              "explanation_md": "Those are intermediate positions."
+            }
+          ],
+          "correct_option_id": "C",
+          "correct_explanation_md": "Obligations of the seller increase from EXW to DDP: EXW puts the maximum on the buyer and DDP the maximum on the seller."
+        }
+      },
+      {
+        "draft_id": "D016",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F003"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "Under which of the following does the seller, according to the courseware's matrix, also bear customs clearance and customs duties at destination?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "DDP",
+              "explanation_md": "DDP is the only rule where the seller bears customs clearance and duties at destination."
+            },
+            {
+              "option_id": "B",
+              "text_md": "DPU",
+              "explanation_md": "Under DPU the buyer still clears customs and pays duties."
+            },
+            {
+              "option_id": "C",
+              "text_md": "CIF",
+              "explanation_md": "The buyer clears imports under CIF."
+            },
+            {
+              "option_id": "D",
+              "text_md": "FOB",
+              "explanation_md": "The buyer clears imports under FOB."
+            }
+          ],
+          "correct_option_id": "A",
+          "correct_explanation_md": "Only under DDP does the seller carry customs clearance and duties at destination."
+        }
+      },
+      {
+        "draft_id": "D017",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F005"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A credit forbids partial shipments. The goods go on one vessel for one voyage but under two bills of lading with different shipment dates. Is this a partial shipment?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Yes, because the bills carry different dates",
+              "explanation_md": "Different dates do not make it partial."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Yes, because there is more than one bill of lading",
+              "explanation_md": "The number of bills does not decide it."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Only if the issuing bank agrees",
+              "explanation_md": "The rule does not depend on the bank's agreement."
+            },
+            {
+              "option_id": "D",
+              "text_md": "No: more than one set of transport documents for the same means of transport and journey is not a partial shipment",
+              "explanation_md": "This is the rule."
+            }
+          ],
+          "correct_option_id": "D",
+          "correct_explanation_md": "More than one set of transport documents covering the same means of transport on the same journey is not a partial shipment, even if the dates differ."
+        }
+      },
+      {
+        "draft_id": "D018",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F005"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "The invoice is dated before the date of the credit, and the credit is silent on dates of documents. Can the issuing bank refuse the documents for that reason?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Yes: every document must be dated after the credit",
+              "explanation_md": "The credit is silent, so no such requirement applies."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Yes: only the transport document can be pre-dated",
+              "explanation_md": "No such distinction is stated."
+            },
+            {
+              "option_id": "C",
+              "text_md": "No: a document may be dated before the credit, provided it is not dated after the expiry date for presentation",
+              "explanation_md": "This is the rule."
+            },
+            {
+              "option_id": "D",
+              "text_md": "No: a bank may never refuse for date reasons",
+              "explanation_md": "Documents dated after the expiry for presentation can be refused."
+            }
+          ],
+          "correct_option_id": "C",
+          "correct_explanation_md": "Documents may be dated before the credit as long as they are not dated after the expiry date for presentation, so refusal on that ground alone is wrong."
+        }
+      },
+      {
+        "draft_id": "D019",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F005"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "Insurance for goods invoiced at USD 41,600 is issued for USD 46,500 and is dated after the transport document, which shows no earlier cover. The credit is silent on cover. Which is the discrepancy?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The insured amount is more than 110% of the invoice",
+              "explanation_md": "More than 110% is acceptable."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The insurance is dated after the transport document without showing cover from the shipment date",
+              "explanation_md": "The amount exceeds the 110% minimum; the date is the problem."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The insurance is in a different currency",
+              "explanation_md": "Nothing indicates a different currency."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The insurance should be at least 150% of the invoice",
+              "explanation_md": "The default minimum is 110%."
+            }
+          ],
+          "correct_option_id": "B",
+          "correct_explanation_md": "Insurance above 110% of the invoice is acceptable; dating it after the transport document without showing cover from the date of shipment is a discrepancy."
+        }
+      },
+      {
+        "draft_id": "D020",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F005"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "The last day for presentation under a credit is a day on which the bank to which documents must be presented is closed. What is the effect?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The credit expires and the beneficiary must ask for an amendment",
+              "explanation_md": "The date is extended automatically."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The credit remains subject to the original date",
+              "explanation_md": "The date moves to the next banking day."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The bank may choose whether to extend",
+              "explanation_md": "The extension is automatic."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The last day is extended to the next banking day",
+              "explanation_md": "This is the rule for a closed bank."
+            }
+          ],
+          "correct_option_id": "D",
+          "correct_explanation_md": "If the last day for presentation falls on a day the bank is closed, it is extended to the next banking day."
+        }
+      },
+      {
+        "draft_id": "D021",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F005"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "An issuing bank receives documents on Wednesday 8 April 2026. Friday 10 April 2026 is a bank holiday there. Saturdays and Sundays are not banking days. By what date must it send notice of refusal, counting five banking days?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Thursday 16 April 2026",
+              "explanation_md": "Counting after the holiday and weekend, the fifth banking day is 16 April."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Wednesday 15 April 2026",
+              "explanation_md": "That would be the deadline without the holiday."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Friday 17 April 2026",
+              "explanation_md": "That is one day too late."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Monday 13 April 2026",
+              "explanation_md": "That is only the second banking day."
+            }
+          ],
+          "correct_option_id": "A",
+          "correct_explanation_md": "The five banking days are 9, 13, 14, 15 and 16 April 2026, so notice must go out by 16 April."
+        }
+      }
+    ],
+    "unresolved": [
+      "The courseware lists DAT among the eleven Incoterms and omits DAP (printed pp. 116-117), although it says DPU replaced DAT. The items follow Incoterms 2020 as the US trade administration page describes it: DAP in, DAT out. The courseware's matrix is used only for the cost allocations it shows, and does not include DAP.",
+      "ISBP 821 (July 2023) is the ICC's current edition; this was read from an ICC page through a fetch that is not saved. The syllabus names ISBP 745, so items teach ISBP 745 and the card flags the newer edition without testing it.",
+      "The courseware's four categories (departure, main carriage paid, main carriage unpaid, arrival) follow the earlier edition's grouping; items use the 2020 two-family grouping instead.",
+      "The ICC rule texts (Incoterms 2020, ISBP 745, UCP 600) were not retrieved; they are sold. Article numbers in the case studies are taught only where the courseware gives them and UCP 600's structure agrees.",
+      "The case studies are the courseware's; the scenarios and figures in the items are new.",
+      "Reviewer for this batch is the authoring agent; no independent or human review."
+    ],
+    "next_batch_hint": "BFM-A-U05: facilities for exporters and importers (courseware printed p. 125 onward); the RBI export and import directions of 16 January 2026 matter here."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BFM-A-U04-B005",
+    "paper_id": "BFM",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 7, Compulsory Paper II, Module A: International Banking, Documentary Letters of Credit"
+    },
+    "sources": [
+      {
+        "source_id": "S03",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "TRADEGOV_INCOTERMS",
+        "authority": "International Trade Administration, US Department of Commerce",
+        "title": "Know Your Incoterms",
+        "url": "https://www.trade.gov/know-your-incoterms",
+        "publication_date": null,
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BFM::MOD_A::U04",
+        "objective_ids": [
+          "BFM::MOD_A::U04::LO_09"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BFM::MOD_A::U04",
+        "objective_ids": [
+          "BFM::MOD_A::U04::LO_10"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BFM::MOD_A::U04",
+        "objective_ids": [
+          "BFM::MOD_A::U04::LO_10"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BFM::MOD_A::U04",
+        "objective_ids": [
+          "BFM::MOD_A::U04::LO_10"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "unit_id": "BFM::MOD_A::U04",
+        "objective_ids": [
+          "BFM::MOD_A::U04::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D006",
+        "unit_id": "BFM::MOD_A::U04",
+        "objective_ids": [
+          "BFM::MOD_A::U04::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D007",
+        "unit_id": "BFM::MOD_A::U04",
+        "objective_ids": [
+          "BFM::MOD_A::U04::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D008",
+        "unit_id": "BFM::MOD_A::U04",
+        "objective_ids": [
+          "BFM::MOD_A::U04::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D009",
+        "unit_id": "BFM::MOD_A::U04",
+        "objective_ids": [
+          "BFM::MOD_A::U04::LO_09"
+        ]
+      },
+      {
+        "draft_id": "D010",
+        "unit_id": "BFM::MOD_A::U04",
+        "objective_ids": [
+          "BFM::MOD_A::U04::LO_09"
+        ]
+      },
+      {
+        "draft_id": "D011",
+        "unit_id": "BFM::MOD_A::U04",
+        "objective_ids": [
+          "BFM::MOD_A::U04::LO_10"
+        ]
+      },
+      {
+        "draft_id": "D012",
+        "unit_id": "BFM::MOD_A::U04",
+        "objective_ids": [
+          "BFM::MOD_A::U04::LO_10"
+        ]
+      },
+      {
+        "draft_id": "D013",
+        "unit_id": "BFM::MOD_A::U04",
+        "objective_ids": [
+          "BFM::MOD_A::U04::LO_10"
+        ]
+      },
+      {
+        "draft_id": "D014",
+        "unit_id": "BFM::MOD_A::U04",
+        "objective_ids": [
+          "BFM::MOD_A::U04::LO_10"
+        ]
+      },
+      {
+        "draft_id": "D015",
+        "unit_id": "BFM::MOD_A::U04",
+        "objective_ids": [
+          "BFM::MOD_A::U04::LO_10"
+        ]
+      },
+      {
+        "draft_id": "D016",
+        "unit_id": "BFM::MOD_A::U04",
+        "objective_ids": [
+          "BFM::MOD_A::U04::LO_10"
+        ]
+      },
+      {
+        "draft_id": "D017",
+        "unit_id": "BFM::MOD_A::U04",
+        "objective_ids": [
+          "BFM::MOD_A::U04::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D018",
+        "unit_id": "BFM::MOD_A::U04",
+        "objective_ids": [
+          "BFM::MOD_A::U04::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D019",
+        "unit_id": "BFM::MOD_A::U04",
+        "objective_ids": [
+          "BFM::MOD_A::U04::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D020",
+        "unit_id": "BFM::MOD_A::U04",
+        "objective_ids": [
+          "BFM::MOD_A::U04::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D021",
+        "unit_id": "BFM::MOD_A::U04",
+        "objective_ids": [
+          "BFM::MOD_A::U04::LO_05"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BFM-A-U04-B005",
+      "draft_id": "D001",
+      "item_id": "item_5fba98b5e3ff9df5b3103302ea2fea2fe5bad116620202c3f72a9973338a6823"
+    },
+    {
+      "batch_id": "BFM-A-U04-B005",
+      "draft_id": "D002",
+      "item_id": "item_7ac64e463ad729a2ca2391408ac513ecc6e9cb98bd9baaed8c3234f028ce5b58"
+    },
+    {
+      "batch_id": "BFM-A-U04-B005",
+      "draft_id": "D003",
+      "item_id": "item_6bb9f150afd1245ed0589f3f90960b54fdccf4cf7601cf02d1de01188d80fd50"
+    },
+    {
+      "batch_id": "BFM-A-U04-B005",
+      "draft_id": "D004",
+      "item_id": "item_fb665730a11911ead778fd5bde4d69432bcc5e70a0d65a5795cf488bc4564da7"
+    },
+    {
+      "batch_id": "BFM-A-U04-B005",
+      "draft_id": "D005",
+      "item_id": "item_26cb3ef186621ea80846e670d458b3fa34fc41ff3c212d79d3e46c88384bdb40"
+    },
+    {
+      "batch_id": "BFM-A-U04-B005",
+      "draft_id": "D006",
+      "item_id": "item_e74b9372d29bd3261ce731f99672ba4a9c1679e49a7a901dc6e924a249872ce3"
+    },
+    {
+      "batch_id": "BFM-A-U04-B005",
+      "draft_id": "D007",
+      "item_id": "item_5704f3db03a09019a7481b467570bda9d96f35b26d924cc938a92ce1fa99b052"
+    },
+    {
+      "batch_id": "BFM-A-U04-B005",
+      "draft_id": "D008",
+      "item_id": "item_f8603ce192dad100ea3c930ae48e62ec72344207f2373a456c5e1a4ec3328c75"
+    },
+    {
+      "batch_id": "BFM-A-U04-B005",
+      "draft_id": "D009",
+      "item_id": "item_3adca43b93cf438d97a4e979c63f5e749c968336b1db54a9ac160ebb99272d10"
+    },
+    {
+      "batch_id": "BFM-A-U04-B005",
+      "draft_id": "D010",
+      "item_id": "item_29bda9ef5f83c5e978745a0977ec6aa5ac75f8b67ae61875b3e7ac8d42825c82"
+    },
+    {
+      "batch_id": "BFM-A-U04-B005",
+      "draft_id": "D011",
+      "item_id": "item_b7e26121065a98611ae1628fb341e336d6029f760c88f1a8769a7f505cc1ee00"
+    },
+    {
+      "batch_id": "BFM-A-U04-B005",
+      "draft_id": "D012",
+      "item_id": "item_8535eb2681c7d177d42e89ca341594025d5f3db3898736da7bcc6bfd74e09024"
+    },
+    {
+      "batch_id": "BFM-A-U04-B005",
+      "draft_id": "D013",
+      "item_id": "item_9a197fb1ce296c7fc72cbb8d8298ceeaa39d1dbb676418c8b5877681211a6c88"
+    },
+    {
+      "batch_id": "BFM-A-U04-B005",
+      "draft_id": "D014",
+      "item_id": "item_ce0639fce8c4f8ef7e3e524adc8ca6dd4adb31d17088460d65d2b11ec5865762"
+    },
+    {
+      "batch_id": "BFM-A-U04-B005",
+      "draft_id": "D015",
+      "item_id": "item_7b3a84ec1025b21e339fbb57289be054f546e80945a01d8b28cd237aa35f8cbd"
+    },
+    {
+      "batch_id": "BFM-A-U04-B005",
+      "draft_id": "D016",
+      "item_id": "item_c385e69a74fee7bda290782a443759bbc1211ae12d30f6b73e7ff4010add24dd"
+    },
+    {
+      "batch_id": "BFM-A-U04-B005",
+      "draft_id": "D017",
+      "item_id": "item_52f697e7506f65cacfc9482dc522111fd8253f95cd67cb3b20086346777edad0"
+    },
+    {
+      "batch_id": "BFM-A-U04-B005",
+      "draft_id": "D018",
+      "item_id": "item_efa170aacc9eec2816d7d24caa07a2a718e7f9f67b8a0e59900aa0aad8093af4"
+    },
+    {
+      "batch_id": "BFM-A-U04-B005",
+      "draft_id": "D019",
+      "item_id": "item_7c9df85467f148632d53fba26042a5ae261dd7856e0debd803676a140a083c1e"
+    },
+    {
+      "batch_id": "BFM-A-U04-B005",
+      "draft_id": "D020",
+      "item_id": "item_f5fad9dcb58343ad2495ab1a2fb391c58104664a80b3c4284c7d7dd10164a476"
+    },
+    {
+      "batch_id": "BFM-A-U04-B005",
+      "draft_id": "D021",
+      "item_id": "item_59052a95b8e34c2f81a7464d9c6b61d710bb553e8e6b6d558bb8185d4104d1b4"
+    }
+  ],
+  "items": [
+    {
+      "title": "ISBP: the practice guide that sits beside UCP 600",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "**UCP 600** gives the rules. **ISBP** shows how bankers **apply** them when they check documents.\n\n- It is an **ICC publication**, a **companion** to UCP 600.\n- It **cannot change** UCP 600; it explains standard practice within it.\n- **History**: approved in **2002** as a companion to UCP 500; updated as **ICC publication 681** after UCP 600 (2007); fully revised as **ICC publication 745** in **July 2013**, adding new interpretations and points drawn from ICC official opinions.\n- **Aims**: **uniform practice worldwide**, **fewer credits rejected** for discrepancies, and practices that **reduce discrepant presentations**.\n\nA note on currency: the ICC has since issued a later edition, **ISBP 821 (July 2023)**. The syllabus names **ISBP 745**, so this course teaches that edition and flags the newer one.",
+      "self_check": {
+        "mode": "question",
+        "question_id": "item_3adca43b93cf438d97a4e979c63f5e749c968336b1db54a9ac160ebb99272d10"
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_5fba98b5e3ff9df5b3103302ea2fea2fe5bad116620202c3f72a9973338a6823",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U04",
+      "objective_ids": [
+        "BFM::MOD_A::U04::LO_09"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed p. 115, section 4.11"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Incoterms 2020: eleven rules in two families",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "**Incoterms** are ICC rules for the **contract of sale** (not the contract of carriage). They say who arranges and pays for carriage, insurance and customs, and **where risk passes**.\n\n**Seven rules for any mode of transport**\n- **EXW** Ex Works\n- **FCA** Free Carrier\n- **CPT** Carriage Paid To\n- **CIP** Carriage and Insurance Paid To\n- **DAP** Delivered at Place\n- **DPU** Delivered at Place **Unloaded**\n- **DDP** Delivered Duty Paid\n\n**Four rules for sea and inland waterway only**\n- **FAS** Free Alongside Ship\n- **FOB** Free on Board\n- **CFR** Cost and Freight\n- **CIF** Cost, Insurance and Freight\n\nIn force since **1 January 2020**. **DPU replaced DAT**, and under DPU the seller **unloads** the goods at destination (under DAP the seller does not).",
+      "self_check": {
+        "mode": "question",
+        "question_id": "item_29bda9ef5f83c5e978745a0977ec6aa5ac75f8b67ae61875b3e7ac8d42825c82"
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_7ac64e463ad729a2ca2391408ac513ecc6e9cb98bd9baaed8c3234f028ce5b58",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U04",
+      "objective_ids": [
+        "BFM::MOD_A::U04::LO_10"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "TRADEGOV_INCOTERMS",
+          "authority": "International Trade Administration, US Department of Commerce",
+          "title": "Know Your Incoterms",
+          "url": "https://www.trade.gov/know-your-incoterms",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Overview of Incoterms 2020; S03 printed p. 116 on contract of sale and the DPU change"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Who carries what: the ladder from EXW to DDP",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "Read the rules as a ladder. **Each step towards DDP moves another job from buyer to seller.**\n\n- **EXW**: the buyer takes almost everything, even **loading** the goods.\n- **FAS, FCA, FOB**: the seller delivers to the **carrier or the ship**, so **loading at origin** and **origin charges** are the seller's.\n- **CFR, CIF, CPT, CIP**: the seller also pays the **main carriage** (ocean or air freight). (CIF and CIP add **insurance**.)\n- **DPU**: the seller also bears **destination port charges** and **unloads**.\n- **DDP**: the seller also does **customs clearance and pays duties**, the maximum responsibility.\n\nWherever you are on the ladder, **warehouse services and export packing** are the seller's. **Customs clearance and duties** are the buyer's except under **DDP**.",
+      "self_check": {
+        "mode": "question",
+        "question_id": "item_b7e26121065a98611ae1628fb341e336d6029f760c88f1a8769a7f505cc1ee00"
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_6bb9f150afd1245ed0589f3f90960b54fdccf4cf7601cf02d1de01188d80fd50",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U04",
+      "objective_ids": [
+        "BFM::MOD_A::U04::LO_10"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed p. 117"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "What changed between Incoterms 2010 and 2020",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "- **FCA**: the buyer can instruct its carrier to issue a **bill of lading with an on-board notation** to the seller, so the seller can present it to its bank for **financing**.\n- **Own transport**: FCA, DAP, DPU and DDP let buyer or seller use **its own vehicles**, not only a third-party carrier.\n- **CIP**: insurance by default is now **Institute Cargo Clauses (A)**, **all risks**, in place of the old limited cover (Clauses C).\n- **DPU** replaces **DAT**, and is the **only rule under which the seller unloads** at destination.\n- **Costs** tied to carrier charges are set out more clearly.\n- **Security** obligations (for example **screening of containers**) are addressed.\n\nCheck each term's year in a credit or contract: parties may agree to use an earlier edition if they name it.",
+      "self_check": {
+        "mode": "question",
+        "question_id": "item_8535eb2681c7d177d42e89ca341594025d5f3db3898736da7bcc6bfd74e09024"
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_fb665730a11911ead778fd5bde4d69432bcc5e70a0d65a5795cf488bc4564da7",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U04",
+      "objective_ids": [
+        "BFM::MOD_A::U04::LO_10"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 117-118"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Case file 1: the credit does not care about the contract",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "**Scenario.** An importer opens a credit for machinery. The invoice matches the credit, but the importer then says the goods are not what the sales contract promised, and asks the bank to refuse payment.\n\n**Answer.** The bank deals in **documents, not goods**, and the credit is **separate from the sale contract**. If the documents **comply**, the issuing bank must **honour** them. A dispute over the contract is for the buyer and seller, not a reason for the bank to refuse.\n\nTwo further points the courseware draws out:\n- A **court order** may stop the bank paying, and the bank must then wait; **recovering** money from the applicant is a separate matter of **credit risk**, and should not be linked to honouring the credit.\n- A bank must not itself **excuse a payment** by pointing to quality or contract disputes.",
+      "self_check": {
+        "mode": "question",
+        "question_id": "item_9a197fb1ce296c7fc72cbb8d8298ceeaa39d1dbb676418c8b5877681211a6c88"
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_26cb3ef186621ea80846e670d458b3fa34fc41ff3c212d79d3e46c88384bdb40",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U04",
+      "objective_ids": [
+        "BFM::MOD_A::U04::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 118-122, case studies 1 to 9"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Case file 2: dates, partial shipments and insurance",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "**Dates on documents.** A document may be **dated before the credit** was issued, as long as it is **not dated after the expiry date for presentation**, unless the credit says otherwise. The bank should not reject a document merely for pre-dating the credit.\n\n**Partial shipment.** If the credit forbids it, but the goods go on **one vessel on one voyage** under **two bills of lading** with different dates, that is **not** a partial shipment. More than one set of transport documents for the **same means of transport and journey** is not partial even with different dates.\n\n**Insurance.** If the credit is silent, cover must be **at least 110%** of the invoice value. The policy must not be dated **after the transport document**, **unless** it shows cover **from the date of shipment**.",
+      "self_check": {
+        "mode": "question",
+        "question_id": "item_ce0639fce8c4f8ef7e3e524adc8ca6dd4adb31d17088460d65d2b11ec5865762"
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_e74b9372d29bd3261ce731f99672ba4a9c1679e49a7a901dc6e924a249872ce3",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U04",
+      "objective_ids": [
+        "BFM::MOD_A::U04::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 118-122, case studies 1 to 9"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Case file 3: the refusal clock, banking days and the closed-bank rule",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "**Refusal clock.** The issuing bank must give notice of refusal and the discrepancies by the **close of the fifth banking day after the day it received the documents**. **Saturdays, Sundays and bank holidays are not banking days**, so a refusal sent on the next working Monday after a weekend may still be on time.\n\n**Closed-bank rule.** If the **last day for presentation** falls on a day the bank is **closed**, it is extended to the **next banking day**. If banks in that place are **open** that day, there is **no extension**.\n\n**Advising failure.** If an advising bank cannot advise a credit, it must tell the issuing bank **at once**. The issuing bank is **not responsible** for the advising bank's failure, even though it chose that bank.",
+      "self_check": {
+        "mode": "question",
+        "question_id": "item_7b3a84ec1025b21e339fbb57289be054f546e80945a01d8b28cd237aa35f8cbd"
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_5704f3db03a09019a7481b467570bda9d96f35b26d924cc938a92ce1fa99b052",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U04",
+      "objective_ids": [
+        "BFM::MOD_A::U04::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 118-122, case studies 1 to 9"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Counting five banking days with a holiday",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "Illustrative case: an issuing bank receives documents on Wednesday 8 April 2026. Friday 10 April 2026 is a bank holiday in its city. Saturdays and Sundays are not banking days. By what date must it send notice of refusal?",
+      "worked_steps": [
+        {
+          "step_number": 1,
+          "description": "Day 1 is the first banking day after receipt: Thursday 9 April.",
+          "formula_or_substitution": "Thu 9 April",
+          "intermediate_result": "Day 1"
+        },
+        {
+          "step_number": 2,
+          "description": "Friday 10 April is a holiday and the weekend follows. Day 2 is Monday 13 April.",
+          "formula_or_substitution": "Mon 13 April",
+          "intermediate_result": "Day 2"
+        },
+        {
+          "step_number": 3,
+          "description": "Days 3, 4 and 5 are Tuesday 14, Wednesday 15 and Thursday 16 April.",
+          "formula_or_substitution": "14, 15, 16 April",
+          "intermediate_result": "Day 5: 16 April 2026"
+        }
+      ],
+      "final_answer_with_unit": "Notice of refusal must go out by the close of Thursday 16 April 2026",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Without the holiday on 10 April, what would the deadline have been?",
+        "expected_takeaway": "Wednesday 15 April 2026: Thursday 9, Friday 10, Monday 13, Tuesday 14 and Wednesday 15 are the five banking days."
+      },
+      "item_type": "card",
+      "card_type": "worked_example",
+      "id": "item_f8603ce192dad100ea3c930ae48e62ec72344207f2373a456c5e1a4ec3328c75",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U04",
+      "objective_ids": [
+        "BFM::MOD_A::U04::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 118-122, case studies 1 to 9"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "easy",
+      "stem_md": "What is the status of the ISBP in relation to UCP 600?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "A replacement that overrides UCP 600",
+          "explanation_md": "It cannot change UCP 600."
+        },
+        {
+          "option_id": "B",
+          "text_md": "A companion that guides practice but cannot change UCP 600",
+          "explanation_md": "This is its status."
+        },
+        {
+          "option_id": "C",
+          "text_md": "A rule set that applies only to standby credits",
+          "explanation_md": "It applies to documentary credits generally."
+        },
+        {
+          "option_id": "D",
+          "text_md": "A set of RBI instructions for authorised dealers",
+          "explanation_md": "It is an ICC publication."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_explanation_md": "The ISBP is an ICC publication that cannot change UCP 600 but is a valuable companion in examining documents.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_3adca43b93cf438d97a4e979c63f5e749c968336b1db54a9ac160ebb99272d10",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U04",
+      "objective_ids": [
+        "BFM::MOD_A::U04::LO_09"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed p. 115, section 4.11"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Which ICC publication number did the courseware give for the fully revised ISBP published in July 2013?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "681",
+          "explanation_md": "This was the earlier edition aligned to UCP 600."
+        },
+        {
+          "option_id": "B",
+          "text_md": "600",
+          "explanation_md": "This is UCP 600."
+        },
+        {
+          "option_id": "C",
+          "text_md": "725",
+          "explanation_md": "This is URR 725."
+        },
+        {
+          "option_id": "D",
+          "text_md": "745",
+          "explanation_md": "This is the number given."
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_explanation_md": "The fully revised ISBP of July 2013 is ICC publication No. 745; publication No. 681 was the earlier edition aligned to UCP 600.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_29bda9ef5f83c5e978745a0977ec6aa5ac75f8b67ae61875b3e7ac8d42825c82",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U04",
+      "objective_ids": [
+        "BFM::MOD_A::U04::LO_09"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed p. 115, section 4.11"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "To which contract do Incoterms apply?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The contract of carriage only",
+          "explanation_md": "They do not govern carriage contracts."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The credit between applicant and issuing bank",
+          "explanation_md": "The credit is governed by UCP 600."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The contract of sale, not the contract of carriage",
+          "explanation_md": "Incoterms deal with the seller-buyer relationship."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The reimbursement authorisation",
+          "explanation_md": "That is governed by URR 725."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_explanation_md": "Incoterms apply to the contract of sale, not the contract of carriage.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_b7e26121065a98611ae1628fb341e336d6029f760c88f1a8769a7f505cc1ee00",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U04",
+      "objective_ids": [
+        "BFM::MOD_A::U04::LO_10"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "TRADEGOV_INCOTERMS",
+          "authority": "International Trade Administration, US Department of Commerce",
+          "title": "Know Your Incoterms",
+          "url": "https://www.trade.gov/know-your-incoterms",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Overview of Incoterms 2020; S03 printed p. 116 on contract of sale and the DPU change"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Which Incoterms 2020 rule requires the seller to unload the goods from the arriving means of transport at the named destination?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "DPU",
+          "explanation_md": "DPU is delivered at place unloaded."
+        },
+        {
+          "option_id": "B",
+          "text_md": "DAP",
+          "explanation_md": "Under DAP the seller does not unload."
+        },
+        {
+          "option_id": "C",
+          "text_md": "CIP",
+          "explanation_md": "CIP is carriage and insurance paid to."
+        },
+        {
+          "option_id": "D",
+          "text_md": "FOB",
+          "explanation_md": "FOB is a sea rule that delivers on board the vessel."
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_explanation_md": "Under DPU the seller unloads at destination; DPU replaced DAT and is the only rule under which the seller unloads.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_8535eb2681c7d177d42e89ca341594025d5f3db3898736da7bcc6bfd74e09024",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U04",
+      "objective_ids": [
+        "BFM::MOD_A::U04::LO_10"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "TRADEGOV_INCOTERMS",
+          "authority": "International Trade Administration, US Department of Commerce",
+          "title": "Know Your Incoterms",
+          "url": "https://www.trade.gov/know-your-incoterms",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Overview of Incoterms 2020; S03 printed p. 116 on contract of sale and the DPU change"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Which of the following Incoterms 2020 rules is for sea and inland waterway transport only?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "CPT",
+          "explanation_md": "CPT is for any mode of transport."
+        },
+        {
+          "option_id": "B",
+          "text_md": "FOB",
+          "explanation_md": "FOB, FAS, CFR and CIF are the sea and inland waterway rules."
+        },
+        {
+          "option_id": "C",
+          "text_md": "DAP",
+          "explanation_md": "DAP is for any mode of transport."
+        },
+        {
+          "option_id": "D",
+          "text_md": "FCA",
+          "explanation_md": "FCA is for any mode of transport."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_explanation_md": "FAS, FOB, CFR and CIF are for sea and inland waterway transport; the other seven rules are for any mode.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_9a197fb1ce296c7fc72cbb8d8298ceeaa39d1dbb676418c8b5877681211a6c88",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U04",
+      "objective_ids": [
+        "BFM::MOD_A::U04::LO_10"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "TRADEGOV_INCOTERMS",
+          "authority": "International Trade Administration, US Department of Commerce",
+          "title": "Know Your Incoterms",
+          "url": "https://www.trade.gov/know-your-incoterms",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Overview of Incoterms 2020; S03 printed p. 116 on contract of sale and the DPU change"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "What is the default level of insurance cover under CIP in Incoterms 2020, as the courseware states it?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Institute Cargo Clauses (C), limited cover",
+          "explanation_md": "That was the earlier default."
+        },
+        {
+          "option_id": "B",
+          "text_md": "No insurance at all",
+          "explanation_md": "CIP includes insurance."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Whatever the carrier offers",
+          "explanation_md": "The rule sets a default level."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Institute Cargo Clauses (A), all risks",
+          "explanation_md": "CIP now requires all-risks cover by default."
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_explanation_md": "Under CIP in Incoterms 2020 the default cover is Institute Cargo Clauses (A), all risks, in place of the earlier limited cover.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_ce0639fce8c4f8ef7e3e524adc8ca6dd4adb31d17088460d65d2b11ec5865762",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U04",
+      "objective_ids": [
+        "BFM::MOD_A::U04::LO_10"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 117-118"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Which Incoterms 2020 rule puts the maximum responsibility on the buyer, and which on the seller?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "DDP on the buyer, EXW on the seller",
+          "explanation_md": "The order is the other way round."
+        },
+        {
+          "option_id": "B",
+          "text_md": "FOB on the buyer, CIF on the seller",
+          "explanation_md": "Those are intermediate positions."
+        },
+        {
+          "option_id": "C",
+          "text_md": "EXW on the buyer, DDP on the seller",
+          "explanation_md": "EXW is minimum seller duty; DDP is maximum."
+        },
+        {
+          "option_id": "D",
+          "text_md": "FCA on the buyer, DAP on the seller",
+          "explanation_md": "Those are intermediate positions."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_explanation_md": "Obligations of the seller increase from EXW to DDP: EXW puts the maximum on the buyer and DDP the maximum on the seller.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_7b3a84ec1025b21e339fbb57289be054f546e80945a01d8b28cd237aa35f8cbd",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U04",
+      "objective_ids": [
+        "BFM::MOD_A::U04::LO_10"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed p. 117"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "Under which of the following does the seller, according to the courseware's matrix, also bear customs clearance and customs duties at destination?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "DDP",
+          "explanation_md": "DDP is the only rule where the seller bears customs clearance and duties at destination."
+        },
+        {
+          "option_id": "B",
+          "text_md": "DPU",
+          "explanation_md": "Under DPU the buyer still clears customs and pays duties."
+        },
+        {
+          "option_id": "C",
+          "text_md": "CIF",
+          "explanation_md": "The buyer clears imports under CIF."
+        },
+        {
+          "option_id": "D",
+          "text_md": "FOB",
+          "explanation_md": "The buyer clears imports under FOB."
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_explanation_md": "Only under DDP does the seller carry customs clearance and duties at destination.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_c385e69a74fee7bda290782a443759bbc1211ae12d30f6b73e7ff4010add24dd",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U04",
+      "objective_ids": [
+        "BFM::MOD_A::U04::LO_10"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed p. 117"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A credit forbids partial shipments. The goods go on one vessel for one voyage but under two bills of lading with different shipment dates. Is this a partial shipment?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Yes, because the bills carry different dates",
+          "explanation_md": "Different dates do not make it partial."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Yes, because there is more than one bill of lading",
+          "explanation_md": "The number of bills does not decide it."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Only if the issuing bank agrees",
+          "explanation_md": "The rule does not depend on the bank's agreement."
+        },
+        {
+          "option_id": "D",
+          "text_md": "No: more than one set of transport documents for the same means of transport and journey is not a partial shipment",
+          "explanation_md": "This is the rule."
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_explanation_md": "More than one set of transport documents covering the same means of transport on the same journey is not a partial shipment, even if the dates differ.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_52f697e7506f65cacfc9482dc522111fd8253f95cd67cb3b20086346777edad0",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U04",
+      "objective_ids": [
+        "BFM::MOD_A::U04::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 118-122, case studies 1 to 9"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "The invoice is dated before the date of the credit, and the credit is silent on dates of documents. Can the issuing bank refuse the documents for that reason?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Yes: every document must be dated after the credit",
+          "explanation_md": "The credit is silent, so no such requirement applies."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Yes: only the transport document can be pre-dated",
+          "explanation_md": "No such distinction is stated."
+        },
+        {
+          "option_id": "C",
+          "text_md": "No: a document may be dated before the credit, provided it is not dated after the expiry date for presentation",
+          "explanation_md": "This is the rule."
+        },
+        {
+          "option_id": "D",
+          "text_md": "No: a bank may never refuse for date reasons",
+          "explanation_md": "Documents dated after the expiry for presentation can be refused."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_explanation_md": "Documents may be dated before the credit as long as they are not dated after the expiry date for presentation, so refusal on that ground alone is wrong.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_efa170aacc9eec2816d7d24caa07a2a718e7f9f67b8a0e59900aa0aad8093af4",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U04",
+      "objective_ids": [
+        "BFM::MOD_A::U04::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 118-122, case studies 1 to 9"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "Insurance for goods invoiced at USD 41,600 is issued for USD 46,500 and is dated after the transport document, which shows no earlier cover. The credit is silent on cover. Which is the discrepancy?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The insured amount is more than 110% of the invoice",
+          "explanation_md": "More than 110% is acceptable."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The insurance is dated after the transport document without showing cover from the shipment date",
+          "explanation_md": "The amount exceeds the 110% minimum; the date is the problem."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The insurance is in a different currency",
+          "explanation_md": "Nothing indicates a different currency."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The insurance should be at least 150% of the invoice",
+          "explanation_md": "The default minimum is 110%."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_explanation_md": "Insurance above 110% of the invoice is acceptable; dating it after the transport document without showing cover from the date of shipment is a discrepancy.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_7c9df85467f148632d53fba26042a5ae261dd7856e0debd803676a140a083c1e",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U04",
+      "objective_ids": [
+        "BFM::MOD_A::U04::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 118-122, case studies 1 to 9"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "The last day for presentation under a credit is a day on which the bank to which documents must be presented is closed. What is the effect?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The credit expires and the beneficiary must ask for an amendment",
+          "explanation_md": "The date is extended automatically."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The credit remains subject to the original date",
+          "explanation_md": "The date moves to the next banking day."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The bank may choose whether to extend",
+          "explanation_md": "The extension is automatic."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The last day is extended to the next banking day",
+          "explanation_md": "This is the rule for a closed bank."
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_explanation_md": "If the last day for presentation falls on a day the bank is closed, it is extended to the next banking day.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_f5fad9dcb58343ad2495ab1a2fb391c58104664a80b3c4284c7d7dd10164a476",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U04",
+      "objective_ids": [
+        "BFM::MOD_A::U04::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 118-122, case studies 1 to 9"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "An issuing bank receives documents on Wednesday 8 April 2026. Friday 10 April 2026 is a bank holiday there. Saturdays and Sundays are not banking days. By what date must it send notice of refusal, counting five banking days?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Thursday 16 April 2026",
+          "explanation_md": "Counting after the holiday and weekend, the fifth banking day is 16 April."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Wednesday 15 April 2026",
+          "explanation_md": "That would be the deadline without the holiday."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Friday 17 April 2026",
+          "explanation_md": "That is one day too late."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Monday 13 April 2026",
+          "explanation_md": "That is only the second banking day."
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_explanation_md": "The five banking days are 9, 13, 14, 15 and 16 April 2026, so notice must go out by 16 April.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_59052a95b8e34c2f81a7464d9c6b61d710bb553e8e6b6d558bb8185d4104d1b4",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U04",
+      "objective_ids": [
+        "BFM::MOD_A::U04::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Printed pp. 118-122, case studies 1 to 9"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}
