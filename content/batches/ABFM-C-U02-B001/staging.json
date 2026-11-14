@@ -1,0 +1,1684 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "ABFM-C-U02-B001",
+  "paper_id": "ABFM",
+  "unit_label": "ABFM Module C unit 2 (courseware unit 14): discounted cash flow valuation",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S02"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "statement": "DCF principle (courseware): the value of an asset is the sum of its predicted future cash flows expressed as a present value; the cash flows differ by asset (dividends for stocks, coupons and face value for bonds, after-tax cash flows for real estate projects); the level of risk in the expected cash flows determines the discount rate, higher for riskier assets. Intrinsic value is the value a neutral analyst would attach with accurate cash flow estimates and the appropriate discount rate; even for young companies with uncertain futures it is worth making the best estimates, because markets sometimes err. DCF valuation is the foundation on which relative valuation and option pricing are built. Inputs needed: predicted cash flows, a discount rate suited to their risk, the estimated growth rate and the pattern of growth.",
+      "source_id": "S02",
+      "locator": "S02 printed pp. 295-296",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F002",
+      "statement": "Cash flows and discount rates (courseware): the dividend is the only cash flow an equity investor literally receives from a listed company; dividend discount models use it. A broader measure is free cash flow to equity (FCFE): cash left after payments to debt holders and preferred dividends and after the reinvestment needed to sustain growth. The total cash flow to all claim holders is the free cash flow to the firm (FCFF), found as the after-tax operating income less the net investment needed to maintain growth (or as FCFE plus cash flows to lenders and preferred holders). The discount rate must reflect the risk of the cash flows: for debt it reflects default risk, so the cost of debt is lower after tax because interest is deductible; for equity the expected return is the risk-free return plus a premium in proportion to non-diversifiable (market) risk. The cost of capital is the weighted average of the cost of equity and the after-tax cost of debt, with weights based on current market values rather than book values. The rate of inflation is an input to expected growth.",
+      "source_id": "S02",
+      "locator": "S02 printed pp. 297-298",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F003",
+      "statement": "Growth rate and pattern (courseware): growth can be estimated from the company's historical growth (a danger is that the past may not predict the future), from analysts' estimates (with the bias of management and followers) or from surveys of investor expectations. Patterns: stable growth (growth at or below the nominal growth rate of the economy), a two-stage model (a period of high growth and then a stable rate) and a three-stage or n-stage model (a transition period). Companies fall into stable growth (earnings and revenue growth equal to or below the economy's nominal growth), moderate growth (just slightly above, for example within 8 to 10 per cent of the economy's growth rate as a rule of thumb) and high growth (significantly faster). Steady state models give accurate values for stable growers; the two-stage model gives flexibility for moderate growth; high-growth firms may need three or more stages. High growth comes from broad competitive advantages (a brand, economies of scale), which erode gradually as competitors enter, or from specific advantages (a patent or licence), which end abruptly. Factors: competitive edge, management competence and entry barriers; stronger barriers slow the erosion.",
+      "source_id": "S02",
+      "locator": "S02 printed pp. 298-300",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F004",
+      "statement": "Choosing the approach (courseware): if cash flows can be estimated, use the free cash flow to equity model for a static leverage and the free cash flow to the firm for dynamic leverage; if they cannot, use the dividend discount model. For earnings: use current earnings if positive and normal; use normalised earnings if abnormal or negative and the firm will survive; if survival is in doubt, value equity as an option to liquidate or estimate liquidation value. By present growth rate: if less than the economy's growth rate use the stable growth model; if more and the competitive advantage is short-lived use the two-stage model; otherwise the three-stage or n-stage model.",
+      "source_id": "S02",
+      "locator": "S02 printed pp. 300-301",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F005",
+      "statement": "DCF models (courseware): (a) enterprise DCF applies a discount rate equal to the weighted average cost of capital to the free cash flow to the firm; (b) equity DCF discounts either dividends (dividend discount model) or free cash flow to equity at the cost of equity; (c) the adjusted present value (APV) model discounts the unlevered free cash flow at the unlevered cost of equity (the cost of equity if the firm had no debt) and adds the discounted value of the interest tax shield on debt; (d) the economic profit model discounts the economic profit stream at the weighted average cost of capital and adds the currently invested capital.",
+      "source_id": "S02",
+      "locator": "S02 printed pp. 301-302",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F006",
+      "statement": "Dividend discount models (courseware): the fair price of a share equals the present value of its future dividends. Constant growth: P0 = D1 / (r - g), with D1 the dividend expected a year hence, r the required return and g the constant growth rate (so D1 = D0 x (1 + g)); example D1 = Rs 3, g = 5 per cent and r = 12 per cent gives Rs 42.86. Zero growth: P0 = D / r (Rs 25 for Rs 3 at 12 per cent). Two-stage: dividends grow at an extraordinary rate g1 for n years and then at a stable rate g2 forever; P0 is the present value of the dividends in the first stage plus the present value of the price at the end of year n, where P_n = D_(n+1) / (r - g2) and D_(n+1) = D1 x (1 + g1)^(n-1) x (1 + g2). H model (Fuller and Hsia): growth starts high at g_a and declines linearly over 2H years to a stable rate g_n; P0 = [D0 x (1 + g_n) + D0 x H x (g_a - g_n)] / (r - g_n); the first term is the value on normal growth and the second is the premium for the abnormal growth; it assumes a constant payout and cost of equity and cannot be used for a firm paying little or no dividends. Three-stage: a high growth period, a transition period of linearly declining growth and a stable period, with payout ratio and cost of equity allowed to change; it is the most general. Example H model: D0 = Rs 1, g_a = 30 per cent, H = 5, g_n = 10 per cent, r = 15 per cent gives Rs 42.",
+      "source_id": "S02",
+      "locator": "S02 printed pp. 302-306",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F007",
+      "statement": "Applicability of the dividend discount model (courseware): advantages: it is easy to understand and the only cash flow shareholders actually receive is the dividend; forecasting dividends needs fewer assumptions than forecasting free cash flow (which needs net operating profit after tax, capital expenditure, depreciation and working capital); dividends are smoothed and reliable, so the valuation is more stable over time. Drawback: it treats dividends and cash flows as the same; companies that hold back cash and pay low dividends are undervalued by the model, while companies that pay dividends at a rate higher than cash flow supports (and must issue debt or stock to fill the gap) are overvalued. The most frequent forms are the zero growth, constant growth, H, two-stage and three-stage models.",
+      "source_id": "S02",
+      "locator": "S02 printed pp. 307-309",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    }
+  ],
+  "drafts": [
+    {
+      "draft_id": "D001",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "The idea behind DCF valuation",
+        "core_explanation_md": "The value of any asset is the **sum of its expected future cash flows, expressed as a present value**.\n\nThe **cash flows** differ by asset (dividends for shares, coupons and face value for bonds, after-tax cash flows for projects). The **discount rate** reflects the **risk** of those flows: **riskier assets get higher rates**.\n\n**Intrinsic value** is the value a neutral analyst would reach with **accurate cash flow estimates and the right discount rate**. Relative valuation and option pricing are **built on** DCF.",
+        "expanded_explanation_md": "Four inputs are needed: expected cash flows, a risk-suited discount rate, the growth rate and the pattern of growth.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "What determines the discount rate in DCF?",
+          "expected_takeaway": "The level of risk in the expected cash flows."
+        }
+      }
+    },
+    {
+      "draft_id": "D002",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F002"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "FCFE, FCFF and the discount rate",
+        "core_explanation_md": "**Dividend:** the only cash an equity holder actually receives. **FCFE:** cash left **after debt holders and preferred dividends are paid** and after the **reinvestment** needed for growth. **FCFF:** cash to **all** claim holders, = **after-tax operating income less net investment**.\n\n**Discount rates:** **cost of equity** = **risk-free rate plus a premium for non-diversifiable (market) risk**; **cost of debt** reflects **default risk** and is **lower after tax** because interest is deductible; **cost of capital** = the **weighted average** of the two at **market value weights** (not book values).",
+        "expanded_explanation_md": "Discount FCFE at the cost of equity and FCFF at the cost of capital.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Which weights are used in the cost of capital?",
+          "expected_takeaway": "Market value weights of debt and equity, not book values."
+        }
+      }
+    },
+    {
+      "draft_id": "D003",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F003"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "Growth: estimating it and choosing a pattern",
+        "core_explanation_md": "**Estimating growth:** from the **company's history** (the past may mislead), from **analysts** (watch for bias) or from **surveys** of investors. **Inflation** is an input.\n\n**Patterns:** **stable** growth, **two-stage** (high then stable) and **three-stage or n-stage** (with a transition).\n\n**Company types:** **stable** (growth at or below the economy's nominal growth), **moderate** (just above, within about 8 to 10 per cent of the economy's growth as a rule of thumb) and **high** (well above).\n\n**Competitive advantage:** **broad** advantages (brand, scale) **fade gradually**; **specific** ones (a patent) **end abruptly**. **Strong entry barriers, a competitive edge and capable management slow the fade.**",
+        "expanded_explanation_md": "A two-stage model fits a patent that expires; a three-stage model fits a firm whose edge erodes slowly.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Which advantage ends abruptly: a brand or a patent?",
+          "expected_takeaway": "A patent."
+        }
+      }
+    },
+    {
+      "draft_id": "D004",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "Choosing a DCF approach",
+        "core_explanation_md": "**Can cash flows be estimated?** If **yes**: **FCFE** for a firm with **stable leverage**, **FCFF** where **leverage changes**. If **no**: use the **dividend discount model**.\n\n**Current earnings:** **positive and normal**: use them. **Abnormal or negative but the firm survives**: use **normalised** earnings. **Survival in doubt**: value equity as an **option to liquidate** or estimate **liquidation value**.\n\n**Present growth:** **below the economy's rate**: **stable growth model**. **Above it with a short-lived edge**: **two-stage**. **Above it with a long-lived edge**: **three-stage or n-stage**.",
+        "expanded_explanation_md": "The three decision paths can be combined: choose the cash flow, the earnings base and the growth model.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Which model suits a firm growing above the economy whose edge will soon fade?",
+          "expected_takeaway": "The two-stage model."
+        }
+      }
+    },
+    {
+      "draft_id": "D005",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F005"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "Four DCF model families",
+        "core_explanation_md": "| Model | Cash flow discounted | Discount rate |\n| --- | --- | --- |\n| **Enterprise DCF** | **FCFF** | **Weighted average cost of capital** |\n| **Equity DCF** | **Dividends or FCFE** | **Cost of equity** |\n| **APV** | **Unlevered** free cash flow | **Unlevered** cost of equity, **plus the value of the interest tax shield** |\n| **Economic profit** | **Economic profit** stream | **WACC**, **plus the capital invested today** |",
+        "expanded_explanation_md": "In enterprise DCF the value of equity is the firm value less debt.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "What does the APV model add to the unlevered value?",
+          "expected_takeaway": "The discounted value of the interest tax shield on debt."
+        }
+      }
+    },
+    {
+      "draft_id": "D006",
+      "item_type": "card",
+      "variant": "formula",
+      "fact_ids": [
+        "F006"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "Constant growth and zero growth models",
+        "core_explanation_md": "**Constant growth:** **P0 = D1 / (r - g)**, where **D1 = D0 x (1 + g)**. It needs **r above g**.\n\n**Zero growth:** **P0 = D / r**, the same dividend forever.\n\nExample: **D1 = 3, r = 12 per cent, g = 5 per cent** gives **3 / 0.07 = Rs 42.86**; with **no growth**, **3 / 0.12 = Rs 25**.",
+        "formula_spec": {
+          "latex_expression": "P_0 = \\frac{D_1}{r - g}",
+          "variables": [
+            {
+              "symbol": "P0",
+              "name": "Fair price today",
+              "unit": "Rs"
+            },
+            {
+              "symbol": "D1",
+              "name": "Dividend expected one year from now",
+              "unit": "Rs"
+            },
+            {
+              "symbol": "r",
+              "name": "Required rate of return",
+              "unit": "proportion"
+            },
+            {
+              "symbol": "g",
+              "name": "Constant growth rate of dividends",
+              "unit": "proportion"
+            }
+          ],
+          "assumptions": [
+            "Dividends grow at a constant rate forever",
+            "r is greater than g"
+          ],
+          "common_errors": [
+            "Using the current dividend D0 as D1",
+            "Applying the formula when g is not below r"
+          ]
+        },
+        "expanded_explanation_md": "A higher growth rate or a lower required return raises the fair price.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Convert the last dividend D0 into the D1 used in the formula.",
+          "expected_takeaway": "D1 = D0 x (1 + g)."
+        }
+      }
+    },
+    {
+      "draft_id": "D007",
+      "item_type": "card",
+      "variant": "formula",
+      "fact_ids": [
+        "F006"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "Two-stage and H models",
+        "core_explanation_md": "**Two-stage:** high growth **g1 for n years**, then **g2 forever**. **P0 = present value of the dividends in stage 1 + P_n / (1 + r)^n**, where **P_n = D_(n+1) / (r - g2)**.\n\n**H model:** growth starts at **g_a** and **falls linearly** over **2H years** to **g_n**. **P0 = [D0 x (1 + g_n) + D0 x H x (g_a - g_n)] / (r - g_n)**: a **normal growth value** plus a **premium for abnormal growth**.\n\nThe H model assumes **constant payout and cost of equity** and **fails for firms paying little or no dividend**.",
+        "formula_spec": {
+          "latex_expression": "P_0 = \\frac{D_0 (1+g_n) + D_0 H (g_a - g_n)}{r - g_n}",
+          "variables": [
+            {
+              "symbol": "P0",
+              "name": "Intrinsic value per share",
+              "unit": "Rs"
+            },
+            {
+              "symbol": "D0",
+              "name": "Current dividend per share",
+              "unit": "Rs"
+            },
+            {
+              "symbol": "gn",
+              "name": "Long-term stable growth rate",
+              "unit": "proportion"
+            },
+            {
+              "symbol": "ga",
+              "name": "Current (initial) growth rate",
+              "unit": "proportion"
+            },
+            {
+              "symbol": "H",
+              "name": "Half the length of the declining growth period",
+              "unit": "years"
+            },
+            {
+              "symbol": "r",
+              "name": "Required rate of return",
+              "unit": "proportion"
+            }
+          ],
+          "assumptions": [
+            "Growth declines linearly",
+            "Payout and cost of equity stay constant"
+          ],
+          "common_errors": [
+            "Using H as the whole length of the decline instead of half",
+            "Using the formula for a firm that pays no dividend"
+          ]
+        },
+        "expanded_explanation_md": "The H model is more realistic than the two-stage model, in which growth drops suddenly after a set number of years.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "What does H stand for in the H model?",
+          "expected_takeaway": "Half the number of years over which growth declines to the stable rate."
+        }
+      }
+    },
+    {
+      "draft_id": "D008",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F006"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "Three-stage dividend model",
+        "core_explanation_md": "The **three-stage model** has a **high growth** period, a **transition** period in which growth **declines linearly**, and a **stable** period.\n\nIt lets the **payout ratio** and **cost of equity** change from stage to stage, so it is the **most general** of the dividend models. Its **terminal value** at the end of the transition is **dividend in the first stable year / (stable cost of equity - stable growth)**, discounted back.",
+        "expanded_explanation_md": "Because it needs many inputs, it is used for companies whose growth changes substantially.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "What may change between stages in the three-stage model?",
+          "expected_takeaway": "The growth rate, the payout ratio and the cost of equity."
+        }
+      }
+    },
+    {
+      "draft_id": "D009",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F007"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "Strengths and weaknesses of the dividend discount model",
+        "core_explanation_md": "**For:** **easy to understand**; dividends are the **only cash shareholders actually receive**; forecasting dividends needs **fewer assumptions** than forecasting free cash flow; dividends are **smoothed**, so values are **more stable**.\n\n**Against:** it treats **dividends as if they were cash flow**. A company that **hoards cash** and pays low dividends is **undervalued**; one that pays **more than its cash flow** supports, and issues debt or stock to do so, is **overvalued**.",
+        "expanded_explanation_md": "The five forms in common use are the zero growth, constant growth, H, two-stage and three-stage models.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Which kind of company does the DDM tend to undervalue?",
+          "expected_takeaway": "One that holds back cash and pays low dividends."
+        }
+      }
+    },
+    {
+      "draft_id": "D010",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "In DCF valuation the value of an asset is",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The sum of its past cash flows",
+            "explanation_md": "Past flows do not give value."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Its book value",
+            "explanation_md": "Book value is an accounting figure."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The present value of its expected future cash flows",
+            "explanation_md": "Cash flows are discounted at a rate suited to their risk."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Its original purchase price",
+            "explanation_md": "That is a sunk figure."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "PV of future flows."
+      }
+    },
+    {
+      "draft_id": "D011",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Which factor determines the discount rate applied to a set of cash flows?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The age of the asset",
+            "explanation_md": "Age does not set the rate."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The colour of the balance sheet",
+            "explanation_md": "The colour of a balance sheet has no bearing on the discount rate."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The number of shareholders",
+            "explanation_md": "It does not set the rate."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The level of risk in the cash flows",
+            "explanation_md": "Riskier flows get higher rates."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "Risk."
+      }
+    },
+    {
+      "draft_id": "D012",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "What does intrinsic value mean in the courseware?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The value a neutral analyst would place using accurate cash flow estimates and the appropriate discount rate",
+            "explanation_md": "It does not depend on market sentiment."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The current market price",
+            "explanation_md": "Markets can err, so price and intrinsic value can differ."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The book value of equity",
+            "explanation_md": "That is an accounting value."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The highest price a buyer ever paid",
+            "explanation_md": "That is not intrinsic value."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "Intrinsic value."
+      }
+    },
+    {
+      "draft_id": "D013",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F002"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Free cash flow to equity is the cash left after",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Paying only the equity dividends",
+            "explanation_md": "FCFE is before dividends."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Payments to debt holders and preferred dividends and the reinvestment needed for growth",
+            "explanation_md": "It is what remains for the equity investors."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Only paying tax",
+            "explanation_md": "It also deducts debt payments and reinvestment."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Adding back all debt",
+            "explanation_md": "Debt claims are paid first."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "FCFE."
+      }
+    },
+    {
+      "draft_id": "D014",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F002"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "The free cash flow to the firm (FCFF) is the cash flow available to",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Equity holders only",
+            "explanation_md": "Cash flow to equity holders only is FCFE, not FCFF."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Lenders only",
+            "explanation_md": "It covers all claim holders."
+          },
+          {
+            "option_id": "C",
+            "text_md": "All claim holders, including debt and preferred holders",
+            "explanation_md": "It is measured before financing payments."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The tax authorities",
+            "explanation_md": "FCFF is not what remains for the tax authorities."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "All claim holders."
+      }
+    },
+    {
+      "draft_id": "D015",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F002"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "FCFF can be obtained from",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Net profit plus dividends",
+            "explanation_md": "That mixes financing flows."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Sales less purchases",
+            "explanation_md": "That is gross margin."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Interest paid less tax",
+            "explanation_md": "Interest less tax is not a measure of cash flow to the firm."
+          },
+          {
+            "option_id": "D",
+            "text_md": "After-tax operating income less the net investment needed to maintain growth",
+            "explanation_md": "It is the operating cash left after reinvestment."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "After-tax operating income less net investment."
+      }
+    },
+    {
+      "draft_id": "D016",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F002"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Why is the cost of debt lower after tax?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Interest is deductible from taxable income",
+            "explanation_md": "The tax shield reduces the effective cost."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Debt has no risk",
+            "explanation_md": "Debt carries default risk."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Lenders do not expect repayment",
+            "explanation_md": "Lenders do expect repayment, and the tax shield is the reason."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Dividends are deductible",
+            "explanation_md": "Dividends are not deductible."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "Interest deductibility."
+      }
+    },
+    {
+      "draft_id": "D017",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F002"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "The weights used when computing the cost of capital for an existing company should be based on",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Book values only",
+            "explanation_md": "The courseware argues against book weights."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The current market values of debt and equity",
+            "explanation_md": "Fair value reflects what investors would pay today."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Face values only",
+            "explanation_md": "Face value is not market value."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Equal weights",
+            "explanation_md": "Weights follow the capital mix."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "Market weights."
+      }
+    },
+    {
+      "draft_id": "D018",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F002"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "In the courseware, the cost of equity is the risk-free return plus",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "A premium for all risk including diversifiable risk",
+            "explanation_md": "Diversifiable risk can be removed."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The dividend yield",
+            "explanation_md": "This is not the premium."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A premium in proportion to the non-diversifiable (market) risk of the investment",
+            "explanation_md": "Only market risk is priced."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The cost of debt",
+            "explanation_md": "That is a separate rate."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "Market risk premium."
+      }
+    },
+    {
+      "draft_id": "D019",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F003"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A company whose growth is equal to or below the nominal growth of the economy is",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "A high growth company",
+            "explanation_md": "High growth is well above the economy."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A moderate growth company",
+            "explanation_md": "Moderate growth is slightly above the economy."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A bankrupt company",
+            "explanation_md": "Slow growth does not imply bankruptcy."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A stable growth company",
+            "explanation_md": "Its growth is not above the economy's."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "Stable growth."
+      }
+    },
+    {
+      "draft_id": "D020",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F003"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Which is a weakness of using historical growth to forecast future growth?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Past growth may be a poor indicator of future growth",
+            "explanation_md": "Conditions change, so past growth may not repeat."
+          },
+          {
+            "option_id": "B",
+            "text_md": "It uses too little data",
+            "explanation_md": "The problem is relevance, not quantity."
+          },
+          {
+            "option_id": "C",
+            "text_md": "It cannot be computed",
+            "explanation_md": "Historical growth can be computed from past results."
+          },
+          {
+            "option_id": "D",
+            "text_md": "It ignores the company's own results",
+            "explanation_md": "It is based on the company's own results."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "Past may mislead."
+      }
+    },
+    {
+      "draft_id": "D021",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F003"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A patent that gives high growth until it expires is a",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Broad advantage that fades gradually",
+            "explanation_md": "A brand is more like this."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Specific advantage that ends abruptly, suiting a two-stage model",
+            "explanation_md": "Growth falls suddenly when the patent ends."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Weakness of the firm",
+            "explanation_md": "A patent is an advantage, not a weakness."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Source of stable growth forever",
+            "explanation_md": "Patents expire, so growth does not last for ever."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "Specific advantage."
+      }
+    },
+    {
+      "draft_id": "D022",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F003"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Why does strong entry barriers matter in choosing a growth pattern?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "They speed up the erosion of growth",
+            "explanation_md": "Strong barriers slow the erosion rather than speed it."
+          },
+          {
+            "option_id": "B",
+            "text_md": "They remove the need for discounting",
+            "explanation_md": "Discounting is still needed."
+          },
+          {
+            "option_id": "C",
+            "text_md": "They slow the rate at which competitors erode the firm's advantage",
+            "explanation_md": "Fewer entrants mean slower decline in growth."
+          },
+          {
+            "option_id": "D",
+            "text_md": "They guarantee profit",
+            "explanation_md": "Nothing guarantees profit."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "Barriers slow erosion."
+      }
+    },
+    {
+      "draft_id": "D023",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F003"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Which growth pattern uses a transition period between high and stable growth?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The stable growth model",
+            "explanation_md": "The stable growth model has a single stage and no transition."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The zero growth model",
+            "explanation_md": "The zero growth model has no growth and no transition."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The two-stage model",
+            "explanation_md": "Its change is abrupt."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The three-stage (or n-stage) model",
+            "explanation_md": "Growth declines gradually in the middle stage."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "Three-stage."
+      }
+    },
+    {
+      "draft_id": "D024",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "If cash flows cannot be estimated, which model is used?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The dividend discount model",
+            "explanation_md": "Dividends can still be forecast."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The FCFE model",
+            "explanation_md": "FCFE needs cash flow estimates."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The FCFF model",
+            "explanation_md": "FCFF needs cash flow estimates."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The APV model",
+            "explanation_md": "It needs cash flow estimates."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "DDM."
+      }
+    },
+    {
+      "draft_id": "D025",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A firm with abnormal earnings that will survive should be valued using",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Current abnormal earnings",
+            "explanation_md": "They would distort the value."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Normalised earnings in place of current earnings",
+            "explanation_md": "Normalisation removes the distortion."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Zero earnings",
+            "explanation_md": "That ignores the business."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Its liquidation value only",
+            "explanation_md": "The firm will survive, so liquidation value is not the basis."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "Normalised earnings."
+      }
+    },
+    {
+      "draft_id": "D026",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "For a firm growing at less than the growth of the economy, the right model is",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The three-stage model",
+            "explanation_md": "That suits long-lived advantage."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The two-stage model",
+            "explanation_md": "That suits a short-lived advantage."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The stable growth model",
+            "explanation_md": "The firm is a stable grower."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The liquidation approach",
+            "explanation_md": "The firm is not in doubt."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "Stable growth model."
+      }
+    },
+    {
+      "draft_id": "D027",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F005"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "The enterprise DCF model discounts",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Dividends at the cost of debt",
+            "explanation_md": "That mismatches flow and rate."
+          },
+          {
+            "option_id": "B",
+            "text_md": "FCFE at the WACC",
+            "explanation_md": "FCFE is discounted at the cost of equity."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Economic profit at the risk-free rate",
+            "explanation_md": "Economic profit is discounted at the WACC, not at the risk-free rate."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The free cash flow to the firm at the weighted average cost of capital",
+            "explanation_md": "It values the whole firm."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "Enterprise DCF."
+      }
+    },
+    {
+      "draft_id": "D028",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F005"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "The adjusted present value model adds to the value of the unlevered firm",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The discounted value of the interest tax shield on debt",
+            "explanation_md": "Debt gives a tax benefit."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The cost of equity",
+            "explanation_md": "The cost of equity is a rate, not an amount added to value."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The dividends paid",
+            "explanation_md": "That is not part of APV."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The depreciation charge",
+            "explanation_md": "That is not part of APV."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "Tax shield."
+      }
+    },
+    {
+      "draft_id": "D029",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F005"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "The economic profit model values a firm as the present value of economic profit plus",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The dividends of next year",
+            "explanation_md": "That is not the model."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The capital currently invested",
+            "explanation_md": "Value = invested capital + PV of economic profit."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The cost of debt",
+            "explanation_md": "The cost of debt is a rate, not an amount added to value."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Nothing",
+            "explanation_md": "Invested capital is added."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "Add invested capital."
+      }
+    },
+    {
+      "draft_id": "D030",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F006"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "In the constant growth model, the formula P0 = D1 / (r - g) requires that",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "g exceed r",
+            "explanation_md": "Then the formula fails."
+          },
+          {
+            "option_id": "B",
+            "text_md": "D1 be zero",
+            "explanation_md": "Zero dividend gives zero value."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The required return r exceed the growth rate g",
+            "explanation_md": "Otherwise the value is not finite."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The dividend be paid monthly",
+            "explanation_md": "The model uses annual dividends."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "r above g."
+      }
+    },
+    {
+      "draft_id": "D031",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F006"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "If the last dividend paid was D0 and it will grow at g, the D1 used in the constant growth model is",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "D0",
+            "explanation_md": "That would use the old dividend."
+          },
+          {
+            "option_id": "B",
+            "text_md": "D0 / (1 + g)",
+            "explanation_md": "That is the earlier dividend."
+          },
+          {
+            "option_id": "C",
+            "text_md": "D0 x g",
+            "explanation_md": "That is the increase only."
+          },
+          {
+            "option_id": "D",
+            "text_md": "D0 x (1 + g)",
+            "explanation_md": "It is the next dividend."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "D0 grown by g."
+      }
+    },
+    {
+      "draft_id": "D032",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F006"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "The zero growth model values a share as",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The dividend divided by the required rate of return",
+            "explanation_md": "A constant dividend forever is a perpetuity divided by the required return."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The dividend multiplied by the required rate",
+            "explanation_md": "That inverts the relationship."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The dividend divided by the growth rate",
+            "explanation_md": "Growth is zero, so there is no growth rate to divide by."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The book value per share",
+            "explanation_md": "A DCF model uses cash flows and not the book value."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "Perpetuity."
+      }
+    },
+    {
+      "draft_id": "D033",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F006"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "In the two-stage dividend model, the price at the end of the high growth stage is",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The first-stage dividend only",
+            "explanation_md": "It ignores later dividends."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The next dividend divided by (r - stable growth rate)",
+            "explanation_md": "It is the value of the stable stage."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Zero",
+            "explanation_md": "The share still has value."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The book value",
+            "explanation_md": "The price at that date is a DCF value and not the book value."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "Terminal price."
+      }
+    },
+    {
+      "draft_id": "D034",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F006"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "The H model assumes that the growth rate",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Drops suddenly after n years",
+            "explanation_md": "That is the two-stage model."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Stays high forever",
+            "explanation_md": "The H model has growth declining, not staying high."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Declines linearly from a high rate to a stable rate over 2H years",
+            "explanation_md": "The decline is gradual."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Is zero throughout",
+            "explanation_md": "There is growth initially."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "Linear decline."
+      }
+    },
+    {
+      "draft_id": "D035",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F006"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "Why can the H model not be used for a company that pays no dividend?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Because H is zero",
+            "explanation_md": "H is a parameter, not the reason."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Because growth is infinite",
+            "explanation_md": "That is not the reason."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Because the cost of equity is negative",
+            "explanation_md": "That is not the reason."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The model values dividends and assumes a constant payout, so it needs dividends to be paid",
+            "explanation_md": "Without dividends there is nothing to discount."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "Needs dividends."
+      }
+    },
+    {
+      "draft_id": "D036",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F006"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Which model allows the payout ratio and the cost of equity to change between stages?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The three-stage model",
+            "explanation_md": "It is the most general."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The constant growth model",
+            "explanation_md": "It has fixed inputs."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The zero growth model",
+            "explanation_md": "It has fixed inputs."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The H model",
+            "explanation_md": "It assumes constant payout and cost of equity."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "Three-stage."
+      }
+    },
+    {
+      "draft_id": "D037",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F007"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Which is an advantage of the dividend discount model?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "It captures all cash a company holds",
+            "explanation_md": "It ignores retained cash."
+          },
+          {
+            "option_id": "B",
+            "text_md": "It needs fewer assumptions than forecasting free cash flow",
+            "explanation_md": "Dividends are simpler to project."
+          },
+          {
+            "option_id": "C",
+            "text_md": "It never overvalues",
+            "explanation_md": "It can overvalue and undervalue."
+          },
+          {
+            "option_id": "D",
+            "text_md": "It needs no growth estimate",
+            "explanation_md": "It needs growth estimates."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "Fewer assumptions."
+      }
+    },
+    {
+      "draft_id": "D038",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F007"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "The dividend discount model tends to undervalue companies that",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Pay out more than their cash flow supports",
+            "explanation_md": "These tend to be overvalued."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Have no shareholders",
+            "explanation_md": "A company with no shareholders is not relevant here."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Hold back large cash balances and pay low dividends",
+            "explanation_md": "The retained cash is not reflected."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Have zero growth",
+            "explanation_md": "Zero growth is not the reason for undervaluation."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "Cash hoarders."
+      }
+    },
+    {
+      "draft_id": "D039",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F007"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "The dividend discount model tends to overvalue companies that",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Retain all earnings",
+            "explanation_md": "These tend to be undervalued."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Pay no dividend",
+            "explanation_md": "These are undervalued."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Have stable earnings",
+            "explanation_md": "Stable earnings are not the reason for overvaluation."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Pay dividends at a rate higher than their cash flows support and issue debt or stock to fill the gap",
+            "explanation_md": "Dividends exceed sustainable cash."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "Over-payers."
+      }
+    },
+    {
+      "draft_id": "D040",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F006"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A company is expected to pay a dividend of Rs 5 a share a year from now. Dividends will grow at 6 per cent a year for ever and the investor requires 14 per cent. What is the fair price (Rs, to 2 decimal places)?",
+        "numeric_rule": {
+          "expected_answer": "62.50",
+          "unit_label": "Rs",
+          "precision_decimals": 2,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Round to 2 decimal places.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "P0 = D1 / (r - g) = 5 / (0.14 - 0.06) = 5 / 0.08 = Rs 62.50.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Spread r - g.",
+            "formula_or_substitution": "0.14 - 0.06",
+            "intermediate_result": "0.08"
+          },
+          {
+            "step_number": 2,
+            "description": "Price.",
+            "formula_or_substitution": "5 / 0.08",
+            "intermediate_result": "62.50"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D041",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F006"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A company has just paid a dividend of Rs 4 a share, which will grow at 8 per cent a year for ever. The required return is 16 per cent. What is the fair price (Rs, to 2 decimal places)?",
+        "numeric_rule": {
+          "expected_answer": "54.00",
+          "unit_label": "Rs",
+          "precision_decimals": 2,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Round to 2 decimal places.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "D1 = 4 x 1.08 = 4.32. P0 = 4.32 / (0.16 - 0.08) = Rs 54.00.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Next dividend.",
+            "formula_or_substitution": "4 x 1.08",
+            "intermediate_result": "4.32"
+          },
+          {
+            "step_number": 2,
+            "description": "Price.",
+            "formula_or_substitution": "4.32 / 0.08",
+            "intermediate_result": "54.00"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D042",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F006"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A share pays a constant dividend of Rs 6 a year with no growth. The required return is 12 per cent. What is its fair price (Rs, to 2 decimal places)?",
+        "numeric_rule": {
+          "expected_answer": "50.00",
+          "unit_label": "Rs",
+          "precision_decimals": 2,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Round to 2 decimal places.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "P0 = D / r = 6 / 0.12 = Rs 50.00.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Price.",
+            "formula_or_substitution": "6 / 0.12",
+            "intermediate_result": "50.00"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D043",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F006"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "A share has D0 = Rs 2. Dividends grow at 20 per cent a year for 3 years and then at 8 per cent for ever. The required return is 15 per cent. What is the intrinsic value of the share (Rs, to 2 decimal places)?",
+        "numeric_rule": {
+          "expected_answer": "41.60",
+          "unit_label": "Rs",
+          "precision_decimals": 2,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Round to 2 decimal places.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "Dividends are 2.40, 2.88 and 3.456; their present value at 15 per cent is 6.54. D4 = 3.456 x 1.08 = 3.7325 and P3 = 3.7325 / (0.15 - 0.08) = 53.32, whose present value is 53.32 / 1.15^3 = 35.06. Total = 6.54 + 35.06 = Rs 41.60.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "PV of stage 1 dividends.",
+            "formula_or_substitution": "2.40/1.15 + 2.88/1.15^2 + 3.456/1.15^3",
+            "intermediate_result": "6.54"
+          },
+          {
+            "step_number": 2,
+            "description": "Price at end of year 3.",
+            "formula_or_substitution": "3.7325 / 0.07",
+            "intermediate_result": "53.32"
+          },
+          {
+            "step_number": 3,
+            "description": "Present value of P3.",
+            "formula_or_substitution": "53.32 / 1.15^3",
+            "intermediate_result": "35.06"
+          },
+          {
+            "step_number": 4,
+            "description": "Total.",
+            "formula_or_substitution": "6.54 + 35.06",
+            "intermediate_result": "41.60"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D044",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F006"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "A share has D0 = Rs 2. Its growth rate is 20 per cent now and falls linearly over 6 years to a stable 8 per cent (so H = 3). The required return is 14 per cent. What is the value by the H model (Rs, to 2 decimal places)?",
+        "numeric_rule": {
+          "expected_answer": "48.00",
+          "unit_label": "Rs",
+          "precision_decimals": 2,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Round to 2 decimal places.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "P0 = [2 x 1.08 + 2 x 3 x (0.20 - 0.08)] / (0.14 - 0.08) = (2.16 + 0.72) / 0.06 = 2.88 / 0.06 = Rs 48.00.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Normal growth term.",
+            "formula_or_substitution": "2 x 1.08",
+            "intermediate_result": "2.16"
+          },
+          {
+            "step_number": 2,
+            "description": "Abnormal growth premium.",
+            "formula_or_substitution": "2 x 3 x 0.12",
+            "intermediate_result": "0.72"
+          },
+          {
+            "step_number": 3,
+            "description": "Value.",
+            "formula_or_substitution": "(2.16 + 0.72) / 0.06",
+            "intermediate_result": "48.00"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D045",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F005"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A firm expects free cash flow to the firm of Rs 120 crore next year, growing at 4 per cent for ever. Its weighted average cost of capital is 12 per cent. What is the value of the firm (Rs crore)?",
+        "numeric_rule": {
+          "expected_answer": "1500",
+          "unit_label": "Rs crore",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "Firm value = FCFF1 / (WACC - g) = 120 / (0.12 - 0.04) = Rs 1,500 crore.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Firm value.",
+            "formula_or_substitution": "120 / 0.08",
+            "intermediate_result": "1,500"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D046",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F005"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "The firm above has debt of Rs 400 crore. What is the value of its equity by the enterprise DCF model (Rs crore)?",
+        "numeric_rule": {
+          "expected_answer": "1100",
+          "unit_label": "Rs crore",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "Equity value = firm value less debt = 1,500 - 400 = Rs 1,100 crore.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Equity value.",
+            "formula_or_substitution": "1,500 - 400",
+            "intermediate_result": "1,100"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D047",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F005"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An unlevered firm is worth Rs 800 crore and the present value of its interest tax shield on planned debt is Rs 90 crore. What is its value by the APV model (Rs crore)?",
+        "numeric_rule": {
+          "expected_answer": "890",
+          "unit_label": "Rs crore",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "APV = unlevered value + PV of interest tax shield = 800 + 90 = Rs 890 crore.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "APV.",
+            "formula_or_substitution": "800 + 90",
+            "intermediate_result": "890"
+          }
+        ]
+      }
+    }
+  ],
+  "unresolved": [
+    "This unit is the courseware's account of discounted cash flow valuation, standard corporate finance. No regulatory source applies and none was consulted.",
+    "The courseware's printed page range for this unit is 295 to 309; the courseware numbers it unit 14 and the syllabus catalogue lists it as Module C unit 2 (the earlier Corporate Valuations unit is catalogue unit 1).",
+    "The courseware's three-stage illustration (Alpha Limited) shows a cumulated cost of equity of 1.42 in year 2 where 1.20 squared is 1.44, and several rounded present values; it was not reproduced. New figures are used in every numerical item. The PML two-stage and ABC H model illustrations were checked and agree with their formulas, but are not reproduced.",
+    "The courseware states that the dividend discount model tends to undervalue companies that hold back cash and overvalue companies that pay out more than cash flow supports; this is the courseware's view and is taught as such.",
+    "The courseware's check-your-progress question 1 key (c) and others were not copied; questions are independently written.",
+    "The courseware's sum-up mentions the residual earnings and maintainable profits models without describing them; they are not taught here.",
+    "Numbers in the numerical items are invented and are checked in tests/content/batch-abfm-c-u02-b001.test.ts.",
+    "Reviewer for this batch is the authoring agent; no independent or human review.",
+    "Reviewer for this batch is the authoring agent; no independent or human review."
+  ],
+  "next_batch_hint": "ABFM Module C unit 1 (Corporate Valuations, courseware unit 13) is printed pp. 269-294 = PDF pp. 284-309 (PDF page = printed + 15); render with pymupdf into tmp/abfm. Then Module C unit 3 (Other Non-DCF valuation models) from printed p. 311."
+}
