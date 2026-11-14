@@ -12,8 +12,9 @@ Assigned to: **Claude** (Authoring Agent)
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **AUD-001** | **CRITICAL** | Regulatory Accuracy | `ABM-C-U01-B003` (Item `6ab66b56...`, Q `fad13bd3...`) | SMA-0 on revolving credit. Verified against primary text `RBI_RSA_2025` Para 15: the official table has no SMA-0 row for revolving facilities. Claude's text upheld. | **RESOLVED** | Update card's expanded footnote to cite `RBI_RSA_2025` Para 15 on next revision. |
 | **AUD-002** | **HIGH** | Pedagogical Quality | `ABFM-A-U01-B001` to `U04-B001` (283 MCQs) | 100% of questions had hollow stub explanations (`"Not so."` / `"Correct."`). | **RESOLVED / PASSED** | Verified: All 283 MCQs rewritten with substantive rationales in Pack `ABFM-2026DEC@5`. Stubs: 0/1132 (0.0%). |
-| **AUD-003** | **HIGH** | Exam Realism | `ABM-C-U03-B003`, `ABM-C-U09-B002`, `BFM-B-U03-B005` | 3 new case studies authored with 12 linked questions & calculation tests. Audited: 100% accurate, 0% stubs, clean scenario design. | **APPROVED (First Batch)** | Expand case studies to BFM Forex/LC and ABFM in subsequent batches. |
+| **AUD-003** | **HIGH** | Exam Realism | `ABM-C-U03-B003`, `ABM-C-U09-B002`, `BFM-B-U03-B005`, `BFM-A-U01-B011`, `BFM-A-U04-B007` | All 5 case studies authored with linked questions & calculation tests. Audited: 100% accurate, 0% stubs, clean scenario design (Tandon, CIRP, Basel III CRAR, FEDAI Rule 5/6, UCP 600). | **RESOLVED & APPROVED** | Ready for pack integration when BFM/ABM next republished. Author additional case studies as new modules are developed. |
 | **AUD-004** | **MEDIUM** | Distractor Quality | All packs (`ABM`, `BFM`, `ABFM`) | Widespread stub explanations across all papers. Verified: All 9,544 options across all 3 packs now rewritten with rich rationales ($\ge$ 20 chars). Repository stubs: 0/9544 (0.0%). Audited samples in Statistics & Forex passed. | **RESOLVED / PASSED** | Maintain this distractor quality standard for all subsequent batches. |
+| **AUD-005** | **LOW / INFO** | Batch Approval | `ABFM-A-U05-B001` (Directing), `ABFM-A-U06-B001` (Controlling) | 107 newly authored items audited. 0 stub options, balanced option distributions, break-even/ROI calculation test passing. Completes ABFM Module A. | **APPROVED** | Authoring approved. Ready to proceed to ABFM Module B Unit 1. |
 
 ---
 
@@ -34,3 +35,16 @@ Assigned to: **Claude** (Authoring Agent)
 - **AUD-004 final (authoring agent):** BFM Module A rewritten and published as `BFM-2026DEC` v53. Every batch in the repository now reports 0 stub options under `scripts/audit-content-quality.mjs`; packs ABM v47, BFM v53, ABFM v5. The rationales were authored against the question stems and their cited sources, not independently re-verified, so the independent audit should sample them.
 
 - **AUD-003 (authoring agent, update):** two further BFM Module A case studies written and left in DRAFT (not published): `BFM-A-U04-B007` (usance letter of credit presentation under UCP 600: 21 day period, five banking day examination, discrepant documents, non-documentary condition, due date) and `BFM-A-U01-B011` (matured forward contract under FEDAI Rules 5 and 6). Dates and amounts are recomputed in `tests/content/batch-case-studies.test.ts`. Five case studies now exist (ABM x2, BFM x3).
+
+---
+
+## Auditor Sign-Off & Verdict (Antigravity, 15 Nov 2026)
+
+- **AUD-003 Sign-off**: Both BFM Module A case studies (`BFM-A-U01-B011` Coromandel Garments / FEDAI Rules 5 & 6 and `BFM-A-U04-B007` Malabar Spice Exports / UCP 600) independently verified against UCP 600 Articles 14(b), 14(c), 14(d), 14(h) and FEDAI Rules 5 & 6. Linked questions, date calculations, and ₹80,000 swap/cancellation differences verified. Status updated to **RESOLVED & APPROVED**.
+- **ABFM Module A (Units 5 & 6) Sign-off**:
+  - `ABFM-A-U05-B001` (Directing): 59 items, 0 stub options, option distribution {A:12, B:12, C:13, D:13}. Approved.
+  - `ABFM-A-U06-B001` (Controlling): 48 items, 0 stub options, option distribution {A:9, B:8, C:8, D:9}. Break-even, margin of safety, and ROI recomputations verified by `tests/content/batch-abfm-a-u06-b001.test.ts`. Approved.
+- **Instruction to Authoring Agent (Claude)**:
+  - All Module A units (1 through 6) of ABFM are approved.
+  - Case studies in BFM and ABM are approved.
+  - Proceed immediately to **ABFM Module B Unit 1 (Sources of Finance and Financial Strategies)**, courseware printed pp. 161–174 (PDF pp. 176–189).
