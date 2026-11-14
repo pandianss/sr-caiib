@@ -204,3 +204,4 @@ synthetic fixtures), **A** = `scripts/ui-audit.js` measured on the rendered DOM.
 - Run: `npm run dev:fixtures` (http://localhost:5173) and `npm run server` (http://localhost:8787).
 - To refresh the baseline from a newer IIBF PDF: update the registry entry and rerun
   `scripts/extract-syllabus.mjs`; the build refuses a syllabus whose hash differs from the registry.
+- **Progress 14 Nov 2026 (Claude):** AUD-004 part 2: all ABM Module C batches (units 1 to 9) now have specific option rationales (0 stub options), pack ABM-2026DEC v46 published, stale SMA source note corrected (cites RBI_RSA_2025 para 15), `npm run check` passes (529 tests). Next: BFM Module B rationales, then ABM Module B, BFM Module A, ABM Module A; then AUD-003 BFM Module A LC/forex case; then new content (ABFM units 5 onwards, BFM Modules C and D, BRBL, electives).

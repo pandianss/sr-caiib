@@ -104,7 +104,7 @@
         "prerequisite_objective_ids": [],
         "title": "Special mention accounts: early warning before an NPA",
         "core_explanation_md": "RBI created a **special mention account (SMA)** class that sits **between standard and sub-standard** assets. The aim is **early identification of stress** so the bank can act (including rehabilitation or restructuring) before the account becomes an NPA.\n\n| Category | Term loans: amount overdue (principal, interest or any other amount) | Revolving facilities such as cash credit |\n| --- | --- | --- |\n| **SMA-0** | **1 to 30 days** | **None**: this category does not exist |\n| **SMA-1** | **31 to 60 days** | Balance **continuously above the limit or drawing power** (whichever is lower) for **31 to 60 days** |\n| **SMA-2** | **61 to 90 days** | The same excess for **61 to 90 days** |\n\nAn SMA is **not an NPA**, so **no provision** is needed for it, but irregularity and control reports must **state whether the account is an SMA and which category**.",
-        "expanded_explanation_md": "After 90 days the NPA tests in the next card apply, so SMA-2 is the last warning stage.\n\n*Source note:* this card follows the courseware; the 2025 asset classification Directions do not contain the SMA bands, so the card is held at needs_review.",
+        "expanded_explanation_md": "After 90 days the NPA tests in the next card apply, so SMA-2 is the last warning stage.\n\n*Source note:* the bands follow paragraph 15 of the RBI Resolution of Stressed Assets Directions, 2025, which sets SMA-0 for non-revolving loans only and SMA-1 and SMA-2 for revolving facilities.",
         "self_check": {
           "mode": "self_assessed",
           "prompt_text": "A term loan instalment has been overdue for 45 days. Which SMA category is it?",
@@ -429,26 +429,26 @@
           {
             "option_id": "A",
             "text_md": "SMA-1",
-            "explanation_md": "Exists."
+            "explanation_md": "SMA-1 does exist for cash credit, at more than 30 and up to 60 days."
           },
           {
             "option_id": "B",
             "text_md": "SMA-2",
-            "explanation_md": "Exists."
+            "explanation_md": "SMA-2 does exist for cash credit, at more than 60 and up to 90 days."
           },
           {
             "option_id": "C",
             "text_md": "SMA-0",
-            "explanation_md": "Only SMA-1 and SMA-2 are used for revolving credit."
+            "explanation_md": "For revolving facilities such as cash credit, the SMA bands start at SMA-1, so SMA-0 does not exist."
           },
           {
             "option_id": "D",
             "text_md": "All three exist",
-            "explanation_md": "SMA-0 does not apply."
+            "explanation_md": "Not all three exist, because SMA-0 applies only to non-revolving loans."
           }
         ],
         "correct_option_id": "C",
-        "correct_explanation_md": "There is no SMA-0 for revolving facilities."
+        "correct_explanation_md": "For revolving facilities such as cash credit, the SMA bands start at SMA-1, so SMA-0 does not exist."
       }
     },
     {
@@ -465,26 +465,26 @@
           {
             "option_id": "A",
             "text_md": "SMA-1",
-            "explanation_md": "31 to 60 days."
+            "explanation_md": "SMA-1 covers only more than 30 and up to 60 days."
           },
           {
             "option_id": "B",
             "text_md": "SMA-0",
-            "explanation_md": "Not used for cash credit."
+            "explanation_md": "SMA-0 does not exist for cash credit."
           },
           {
             "option_id": "C",
             "text_md": "The NPA category",
-            "explanation_md": "Needs 90 days."
+            "explanation_md": "NPA status needs more than 90 days."
           },
           {
             "option_id": "D",
             "text_md": "SMA-2",
-            "explanation_md": "61 to 90 days."
+            "explanation_md": "Over 60 and up to 90 days of continuous excess puts a cash credit account in SMA-2; 65 days falls in that band."
           }
         ],
         "correct_option_id": "D",
-        "correct_explanation_md": "An excess of 61 to 90 days over the lower of limit or drawing power is SMA-2."
+        "correct_explanation_md": "Over 60 and up to 90 days of continuous excess puts a cash credit account in SMA-2; 65 days falls in that band."
       }
     },
     {
@@ -501,26 +501,26 @@
           {
             "option_id": "A",
             "text_md": "Not NPAs and so do not need provisioning, but irregularity reports should say whether the account is an SMA",
-            "explanation_md": "Stated."
+            "explanation_md": "SMA accounts are not NPAs, so no NPA provision applies, but irregularity reports should state SMA status."
           },
           {
             "option_id": "B",
             "text_md": "NPAs requiring 15 per cent provision",
-            "explanation_md": "They are not NPAs."
+            "explanation_md": "The 15 per cent provision is for sub-standard assets."
           },
           {
             "option_id": "C",
             "text_md": "Loss assets",
-            "explanation_md": "They are not loss assets."
+            "explanation_md": "Loss assets are a separate NPA category."
           },
           {
             "option_id": "D",
             "text_md": "Accounts that must be written off",
-            "explanation_md": "Not required."
+            "explanation_md": "SMA accounts need not be written off."
           }
         ],
         "correct_option_id": "A",
-        "correct_explanation_md": "An SMA is an early warning category, not an NPA."
+        "correct_explanation_md": "SMA accounts are not NPAs, so no NPA provision applies, but irregularity reports should state SMA status."
       }
     },
     {
@@ -537,26 +537,26 @@
           {
             "option_id": "A",
             "text_md": "More than 30 days",
-            "explanation_md": "Too short."
+            "explanation_md": "Thirty days is the SMA-0 boundary."
           },
           {
             "option_id": "B",
             "text_md": "More than 90 days",
-            "explanation_md": "Stated."
+            "explanation_md": "A term loan becomes an NPA when interest or an instalment stays overdue for more than 90 days."
           },
           {
             "option_id": "C",
             "text_md": "More than 60 days",
-            "explanation_md": "Too short."
+            "explanation_md": "Sixty days is the SMA-1 boundary."
           },
           {
             "option_id": "D",
             "text_md": "More than 365 days",
-            "explanation_md": "Too long."
+            "explanation_md": "365 days is far beyond the 90 day rule."
           }
         ],
         "correct_option_id": "B",
-        "correct_explanation_md": "Overdue for more than 90 days."
+        "correct_explanation_md": "A term loan becomes an NPA when interest or an instalment stays overdue for more than 90 days."
       }
     },
     {
@@ -573,26 +573,26 @@
           {
             "option_id": "A",
             "text_md": "Non-submission of a stock statement for one week",
-            "explanation_md": "A temporary deficiency, not a ground by itself."
+            "explanation_md": "A one week delay in a stock statement is not a ground by itself."
           },
           {
             "option_id": "B",
             "text_md": "Temporary excess over the limit",
-            "explanation_md": "A temporary deficiency."
+            "explanation_md": "A temporary excess over the limit is not a ground by itself."
           },
           {
             "option_id": "C",
             "text_md": "Credit limits not reviewed or renewed within 180 days of the due date or ad hoc sanction",
-            "explanation_md": "Stated."
+            "explanation_md": "Limits not reviewed or renewed within 180 days of the due date or ad hoc sanction is a ground for NPA classification."
           },
           {
             "option_id": "D",
             "text_md": "Insufficient drawing power on the latest stock statement",
-            "explanation_md": "A temporary deficiency."
+            "explanation_md": "Insufficient drawing power on the latest statement is not a ground by itself."
           }
         ],
         "correct_option_id": "C",
-        "correct_explanation_md": "The 180-day review test is a trigger; temporary deficiencies are not."
+        "correct_explanation_md": "Limits not reviewed or renewed within 180 days of the due date or ad hoc sanction is a ground for NPA classification."
       }
     },
     {
@@ -609,26 +609,26 @@
           {
             "option_id": "A",
             "text_md": "One crop season",
-            "explanation_md": "That is for long duration crops."
+            "explanation_md": "One crop season is not yet enough."
           },
           {
             "option_id": "B",
             "text_md": "Three crop seasons",
-            "explanation_md": "Not stated."
+            "explanation_md": "Three seasons is longer than the rule."
           },
           {
             "option_id": "C",
             "text_md": "90 days only",
-            "explanation_md": "Crop loans follow crop seasons."
+            "explanation_md": "The 90 day rule applies to other loans."
           },
           {
             "option_id": "D",
             "text_md": "Two crop seasons",
-            "explanation_md": "Stated."
+            "explanation_md": "A short duration crop loan instalment overdue for two crop seasons becomes an NPA."
           }
         ],
         "correct_option_id": "D",
-        "correct_explanation_md": "Two crop seasons for short duration crops, one for long duration crops."
+        "correct_explanation_md": "A short duration crop loan instalment overdue for two crop seasons becomes an NPA."
       }
     },
     {
@@ -645,26 +645,26 @@
           {
             "option_id": "A",
             "text_md": "90 days from the payment due date in the statement",
-            "explanation_md": "Stated."
+            "explanation_md": "A credit card account becomes an NPA if the minimum due is not paid fully within 90 days of the due date."
           },
           {
             "option_id": "B",
             "text_md": "30 days",
-            "explanation_md": "Too short."
+            "explanation_md": "Thirty days is far shorter than the rule."
           },
           {
             "option_id": "C",
             "text_md": "180 days",
-            "explanation_md": "Too long."
+            "explanation_md": "180 days is longer than the rule."
           },
           {
             "option_id": "D",
             "text_md": "365 days",
-            "explanation_md": "Too long."
+            "explanation_md": "365 days is far longer than the rule."
           }
         ],
         "correct_option_id": "A",
-        "correct_explanation_md": "90 days from the payment due date."
+        "correct_explanation_md": "A credit card account becomes an NPA if the minimum due is not paid fully within 90 days of the due date."
       }
     },
     {
@@ -681,26 +681,26 @@
           {
             "option_id": "A",
             "text_md": "30 days",
-            "explanation_md": "Not stated."
+            "explanation_md": "Thirty days is shorter than the rule."
           },
           {
             "option_id": "B",
             "text_md": "90 days from the specified due date",
-            "explanation_md": "Stated."
+            "explanation_md": "Overdue positive mark-to-market receivables on derivatives become NPA after 90 days from the due date."
           },
           {
             "option_id": "C",
             "text_md": "180 days",
-            "explanation_md": "Not stated."
+            "explanation_md": "180 days is longer than the rule."
           },
           {
             "option_id": "D",
             "text_md": "One year",
-            "explanation_md": "Not stated."
+            "explanation_md": "One year is far longer than the rule."
           }
         ],
         "correct_option_id": "B",
-        "correct_explanation_md": "90 days from the specified due date."
+        "correct_explanation_md": "Overdue positive mark-to-market receivables on derivatives become NPA after 90 days from the due date."
       }
     },
     {
@@ -717,26 +717,26 @@
           {
             "option_id": "A",
             "text_md": "A single day above the limit",
-            "explanation_md": "Not 90 days."
+            "explanation_md": "One day above the limit is a temporary excess."
           },
           {
             "option_id": "B",
             "text_md": "Balance exactly at the limit",
-            "explanation_md": "Not a condition."
+            "explanation_md": "A balance exactly at the limit is not out of order."
           },
           {
             "option_id": "C",
             "text_md": "Balance below the limit but no credits continuously for 90 days",
-            "explanation_md": "Stated."
+            "explanation_md": "A cash credit account is out of order when there are no credits for 90 days even if the balance is below the limit."
           },
           {
             "option_id": "D",
             "text_md": "One late stock statement",
-            "explanation_md": "A temporary deficiency."
+            "explanation_md": "One late stock statement does not make the account out of order."
           }
         ],
         "correct_option_id": "C",
-        "correct_explanation_md": "No credits for 90 days, with a balance below the limit, is one of the three tests."
+        "correct_explanation_md": "A cash credit account is out of order when there are no credits for 90 days even if the balance is below the limit."
       }
     },
     {
@@ -753,26 +753,26 @@
           {
             "option_id": "A",
             "text_md": "Facility-wise: only the irregular facility is NPA",
-            "explanation_md": "It is not facility-wise."
+            "explanation_md": "Facility-wise classification is not the rule."
           },
           {
             "option_id": "B",
             "text_md": "Decided by the branch manager facility by facility",
-            "explanation_md": "Not the rule."
+            "explanation_md": "The branch manager has no discretion here."
           },
           {
             "option_id": "C",
             "text_md": "Based on the biggest facility only",
-            "explanation_md": "Not the rule."
+            "explanation_md": "The size of one facility does not decide the rest."
           },
           {
             "option_id": "D",
             "text_md": "Borrower-wise: all facilities are NPA when one becomes NPA",
-            "explanation_md": "Stated."
+            "explanation_md": "Classification is borrower-wise, so all facilities become NPA when one does."
           }
         ],
         "correct_option_id": "D",
-        "correct_explanation_md": "Asset classification is borrower-wise, not facility-wise."
+        "correct_explanation_md": "Classification is borrower-wise, so all facilities become NPA when one does."
       }
     },
     {
@@ -789,26 +789,26 @@
           {
             "option_id": "A",
             "text_md": "Is not to be taken into account in treating an advance as an NPA",
-            "explanation_md": "Stated."
+            "explanation_md": "Security and net worth are not considered in deciding NPA status, which depends on repayment conduct."
           },
           {
             "option_id": "B",
             "text_md": "Prevents classification as NPA",
-            "explanation_md": "Not allowed."
+            "explanation_md": "Security does not prevent classification."
           },
           {
             "option_id": "C",
             "text_md": "Is the main test",
-            "explanation_md": "Not the test."
+            "explanation_md": "Security is not the main test."
           },
           {
             "option_id": "D",
             "text_md": "Matters only for credit cards",
-            "explanation_md": "Not the rule."
+            "explanation_md": "It applies to all advances, not just credit cards."
           }
         ],
         "correct_option_id": "A",
-        "correct_explanation_md": "Classification follows the record of recovery, not security or net worth."
+        "correct_explanation_md": "Security and net worth are not considered in deciding NPA status, which depends on repayment conduct."
       }
     },
     {
@@ -825,26 +825,26 @@
           {
             "option_id": "A",
             "text_md": "Doubtful",
-            "explanation_md": "It needs more than 12 months as sub-standard."
+            "explanation_md": "Doubtful applies after twelve months in sub-standard."
           },
           {
             "option_id": "B",
             "text_md": "Sub-standard",
-            "explanation_md": "Stated."
+            "explanation_md": "An asset that has been an NPA for up to twelve months is sub-standard."
           },
           {
             "option_id": "C",
             "text_md": "Loss",
-            "explanation_md": "Needs identified loss."
+            "explanation_md": "Loss is a later category."
           },
           {
             "option_id": "D",
             "text_md": "Standard",
-            "explanation_md": "It is non-performing."
+            "explanation_md": "An NPA is no longer standard."
           }
         ],
         "correct_option_id": "B",
-        "correct_explanation_md": "Sub-standard: NPA for up to twelve months."
+        "correct_explanation_md": "An asset that has been an NPA for up to twelve months is sub-standard."
       }
     },
     {
@@ -861,26 +861,26 @@
           {
             "option_id": "A",
             "text_md": "Three months",
-            "explanation_md": "Too short."
+            "explanation_md": "Three months is too short."
           },
           {
             "option_id": "B",
             "text_md": "Six months",
-            "explanation_md": "Too short."
+            "explanation_md": "Six months is too short."
           },
           {
             "option_id": "C",
             "text_md": "Twelve months",
-            "explanation_md": "Stated."
+            "explanation_md": "A doubtful asset has remained sub-standard for twelve months."
           },
           {
             "option_id": "D",
             "text_md": "Five years",
-            "explanation_md": "Too long."
+            "explanation_md": "Five years is far longer than the rule."
           }
         ],
         "correct_option_id": "C",
-        "correct_explanation_md": "Twelve months in sub-standard."
+        "correct_explanation_md": "A doubtful asset has remained sub-standard for twelve months."
       }
     },
     {
@@ -897,26 +897,26 @@
           {
             "option_id": "A",
             "text_md": "Classified as sub-standard",
-            "explanation_md": "Not the rule."
+            "explanation_md": "Sub-standard is too mild for such weak security."
           },
           {
             "option_id": "B",
             "text_md": "Classified as standard",
-            "explanation_md": "Not the rule."
+            "explanation_md": "Standard would ignore the default."
           },
           {
             "option_id": "C",
             "text_md": "Classified as doubtful only",
-            "explanation_md": "It is loss."
+            "explanation_md": "Doubtful only would understate the loss."
           },
           {
             "option_id": "D",
             "text_md": "Straightaway classified as a loss asset",
-            "explanation_md": "Security is ignored."
+            "explanation_md": "Where realisable security is under 10 per cent of the outstanding, the asset is classed loss at once."
           }
         ],
         "correct_option_id": "D",
-        "correct_explanation_md": "Security is ignored and the asset is straightaway a loss asset."
+        "correct_explanation_md": "Where realisable security is under 10 per cent of the outstanding, the asset is classed loss at once."
       }
     },
     {
@@ -933,26 +933,26 @@
           {
             "option_id": "A",
             "text_md": "Only when the entire arrears of interest and principal are paid by the borrower",
-            "explanation_md": "Stated."
+            "explanation_md": "An NPA is upgraded only when all arrears of interest and principal are paid by the borrower."
           },
           {
             "option_id": "B",
             "text_md": "When a part of the interest is paid",
-            "explanation_md": "Not enough."
+            "explanation_md": "Part payment of interest is not enough."
           },
           {
             "option_id": "C",
             "text_md": "When the branch manager agrees",
-            "explanation_md": "Not the rule."
+            "explanation_md": "A manager's agreement cannot upgrade an account."
           },
           {
             "option_id": "D",
             "text_md": "After twelve months automatically",
-            "explanation_md": "Not the rule."
+            "explanation_md": "Automatic upgrade after twelve months does not exist."
           }
         ],
         "correct_option_id": "A",
-        "correct_explanation_md": "Entire arrears of interest and principal must be paid."
+        "correct_explanation_md": "An NPA is upgraded only when all arrears of interest and principal are paid by the borrower."
       }
     },
     {
@@ -969,26 +969,26 @@
           {
             "option_id": "A",
             "text_md": "The accrual basis",
-            "explanation_md": "Accrual is for standard assets."
+            "explanation_md": "Accrual would book unreceived income."
           },
           {
             "option_id": "B",
             "text_md": "The actual receipt (cash) basis",
-            "explanation_md": "Stated."
+            "explanation_md": "Income on non-standard accounts is recognised on a cash basis, when received."
           },
           {
             "option_id": "C",
             "text_md": "The due basis",
-            "explanation_md": "Not stated."
+            "explanation_md": "Due basis would book unreceived income."
           },
           {
             "option_id": "D",
             "text_md": "The estimated basis",
-            "explanation_md": "Not stated."
+            "explanation_md": "Estimated income is not a basis."
           }
         ],
         "correct_option_id": "B",
-        "correct_explanation_md": "Cash basis for facilities not classified as standard."
+        "correct_explanation_md": "Income on non-standard accounts is recognised on a cash basis, when received."
       }
     },
     {
@@ -1005,26 +1005,26 @@
           {
             "option_id": "A",
             "text_md": "Retained",
-            "explanation_md": "Not retained."
+            "explanation_md": "Retaining it would overstate income."
           },
           {
             "option_id": "B",
             "text_md": "Capitalised",
-            "explanation_md": "Not the treatment."
+            "explanation_md": "Capitalising it would hide the default."
           },
           {
             "option_id": "C",
             "text_md": "Reversed if it is not realised",
-            "explanation_md": "Stated."
+            "explanation_md": "When an advance turns NPA, accrued interest credited in past periods is reversed if not realised."
           },
           {
             "option_id": "D",
             "text_md": "Shown as standard income",
-            "explanation_md": "Not the treatment."
+            "explanation_md": "It cannot be shown as standard income."
           }
         ],
         "correct_option_id": "C",
-        "correct_explanation_md": "It is reversed if not realised."
+        "correct_explanation_md": "When an advance turns NPA, accrued interest credited in past periods is reversed if not realised."
       }
     },
     {
@@ -1041,26 +1041,26 @@
           {
             "option_id": "A",
             "text_md": "Paid from a new loan to the same borrower",
-            "explanation_md": "That is evergreening."
+            "explanation_md": "Payment out of a new loan to the same borrower is evergreening."
           },
           {
             "option_id": "B",
             "text_md": "Debited to another account",
-            "explanation_md": "Not stated."
+            "explanation_md": "A debit to another account is not genuine realisation."
           },
           {
             "option_id": "C",
             "text_md": "Capitalised",
-            "explanation_md": "Not stated."
+            "explanation_md": "Capitalised interest is not realised."
           },
           {
             "option_id": "D",
             "text_md": "Not out of fresh or additional credit facilities sanctioned to the same borrower",
-            "explanation_md": "Stated."
+            "explanation_md": "Interest realised on an NPA may be booked as income only if it is not out of fresh credit to the same borrower."
           }
         ],
         "correct_option_id": "D",
-        "correct_explanation_md": "Interest paid from fresh credit to the borrower cannot be taken to income."
+        "correct_explanation_md": "Interest realised on an NPA may be booked as income only if it is not out of fresh credit to the same borrower."
       }
     },
     {
@@ -1077,26 +1077,26 @@
           {
             "option_id": "A",
             "text_md": "1.00 per cent",
-            "explanation_md": "Stated."
+            "explanation_md": "Commercial Real Estate attracts a standard asset provision of 1.00 per cent."
           },
           {
             "option_id": "B",
             "text_md": "0.25 per cent",
-            "explanation_md": "That is for farm credit, housing and SMEs."
+            "explanation_md": "0.25 per cent is the rate for most standard assets."
           },
           {
             "option_id": "C",
             "text_md": "0.40 per cent",
-            "explanation_md": "That is for other loans."
+            "explanation_md": "0.40 per cent is the rate for certain other sectors."
           },
           {
             "option_id": "D",
             "text_md": "0.75 per cent",
-            "explanation_md": "That is for CRE-RH."
+            "explanation_md": "0.75 per cent is for CRE residential housing."
           }
         ],
         "correct_option_id": "A",
-        "correct_explanation_md": "CRE: 1.00 per cent."
+        "correct_explanation_md": "Commercial Real Estate attracts a standard asset provision of 1.00 per cent."
       }
     },
     {
@@ -1113,26 +1113,26 @@
           {
             "option_id": "A",
             "text_md": "1.00 per cent",
-            "explanation_md": "That is for CRE."
+            "explanation_md": "One per cent applies to general commercial real estate."
           },
           {
             "option_id": "B",
             "text_md": "0.75 per cent",
-            "explanation_md": "Stated."
+            "explanation_md": "CRE residential housing attracts 0.75 per cent."
           },
           {
             "option_id": "C",
             "text_md": "0.25 per cent",
-            "explanation_md": "Not that rate."
+            "explanation_md": "0.25 per cent applies to most standard assets."
           },
           {
             "option_id": "D",
             "text_md": "0.40 per cent",
-            "explanation_md": "That is for other loans."
+            "explanation_md": "0.40 per cent applies to some other sectors."
           }
         ],
         "correct_option_id": "B",
-        "correct_explanation_md": "CRE-RH: 0.75 per cent."
+        "correct_explanation_md": "CRE residential housing attracts 0.75 per cent."
       }
     },
     {
@@ -1149,26 +1149,26 @@
           {
             "option_id": "A",
             "text_md": "0.25 per cent",
-            "explanation_md": "That is for small and micro enterprises."
+            "explanation_md": "0.25 per cent applies to most standard assets."
           },
           {
             "option_id": "B",
             "text_md": "1.00 per cent",
-            "explanation_md": "Not the rate."
+            "explanation_md": "One per cent applies to commercial real estate."
           },
           {
             "option_id": "C",
             "text_md": "0.40 per cent",
-            "explanation_md": "Stated."
+            "explanation_md": "Loans to Medium Enterprises attract a standard asset provision of 0.40 per cent."
           },
           {
             "option_id": "D",
             "text_md": "Nil",
-            "explanation_md": "A provision is required."
+            "explanation_md": "Standard assets in this category do need a provision."
           }
         ],
         "correct_option_id": "C",
-        "correct_explanation_md": "Medium Enterprises: 0.40 per cent."
+        "correct_explanation_md": "Loans to Medium Enterprises attract a standard asset provision of 0.40 per cent."
       }
     },
     {
@@ -1185,26 +1185,26 @@
           {
             "option_id": "A",
             "text_md": "Netted from gross advances",
-            "explanation_md": "They are not netted."
+            "explanation_md": "They are not netted from gross advances."
           },
           {
             "option_id": "B",
             "text_md": "Used to reduce net NPAs",
-            "explanation_md": "They are not reckoned for net NPAs."
+            "explanation_md": "They do not reduce net NPAs."
           },
           {
             "option_id": "C",
             "text_md": "Shown as income",
-            "explanation_md": "Not stated."
+            "explanation_md": "They are not income."
           },
           {
             "option_id": "D",
             "text_md": "Not used to arrive at net NPAs and are shown separately as contingent provisions",
-            "explanation_md": "Stated."
+            "explanation_md": "Standard asset provisions are shown separately as contingent provisions and are not used to compute net NPAs."
           }
         ],
         "correct_option_id": "D",
-        "correct_explanation_md": "They are not reckoned for net NPAs and are not netted from advances."
+        "correct_explanation_md": "Standard asset provisions are shown separately as contingent provisions and are not used to compute net NPAs."
       }
     },
     {
@@ -1221,26 +1221,26 @@
           {
             "option_id": "A",
             "text_md": "15 per cent of the total outstanding",
-            "explanation_md": "Stated."
+            "explanation_md": "The general provision on sub-standard assets is 15 per cent of the outstanding."
           },
           {
             "option_id": "B",
             "text_md": "25 per cent",
-            "explanation_md": "That is for unsecured sub-standard assets."
+            "explanation_md": "Twenty-five per cent is the provision on unsecured sub-standard exposures in the case that follows."
           },
           {
             "option_id": "C",
             "text_md": "40 per cent",
-            "explanation_md": "Not the rate."
+            "explanation_md": "Forty per cent is a doubtful category rate."
           },
           {
             "option_id": "D",
             "text_md": "100 per cent",
-            "explanation_md": "Not the rate."
+            "explanation_md": "A hundred per cent applies to loss assets."
           }
         ],
         "correct_option_id": "A",
-        "correct_explanation_md": "15 per cent of total outstanding."
+        "correct_explanation_md": "The general provision on sub-standard assets is 15 per cent of the outstanding."
       }
     },
     {
@@ -1257,26 +1257,26 @@
           {
             "option_id": "A",
             "text_md": "15 per cent",
-            "explanation_md": "That is the secured rate."
+            "explanation_md": "Fifteen per cent is the general sub-standard provision."
           },
           {
             "option_id": "B",
             "text_md": "25 per cent",
-            "explanation_md": "15 plus an additional 10."
+            "explanation_md": "An unsecured exposure identified as sub-standard attracts 25 per cent in total."
           },
           {
             "option_id": "C",
             "text_md": "20 per cent",
-            "explanation_md": "That is for infrastructure loans."
+            "explanation_md": "Twenty per cent is not the prescribed rate."
           },
           {
             "option_id": "D",
             "text_md": "40 per cent",
-            "explanation_md": "Not the rate."
+            "explanation_md": "Forty per cent is a doubtful asset rate."
           }
         ],
         "correct_option_id": "B",
-        "correct_explanation_md": "15 per cent plus an additional 10 per cent."
+        "correct_explanation_md": "An unsecured exposure identified as sub-standard attracts 25 per cent in total."
       }
     },
     {
@@ -1293,26 +1293,26 @@
           {
             "option_id": "A",
             "text_md": "25 per cent",
-            "explanation_md": "That is up to one year."
+            "explanation_md": "Twenty-five per cent applies to the first year of doubtful."
           },
           {
             "option_id": "B",
             "text_md": "40 per cent",
-            "explanation_md": "That is for one to three years."
+            "explanation_md": "Forty per cent applies to the second year."
           },
           {
             "option_id": "C",
             "text_md": "100 per cent",
-            "explanation_md": "Stated."
+            "explanation_md": "The secured portion of an asset doubtful for over three years carries 100 per cent provision."
           },
           {
             "option_id": "D",
             "text_md": "15 per cent",
-            "explanation_md": "Not the rate."
+            "explanation_md": "Fifteen per cent is the sub-standard rate."
           }
         ],
         "correct_option_id": "C",
-        "correct_explanation_md": "100 per cent after three years."
+        "correct_explanation_md": "The secured portion of an asset doubtful for over three years carries 100 per cent provision."
       }
     },
     {
@@ -1329,26 +1329,26 @@
           {
             "option_id": "A",
             "text_md": "25 per cent",
-            "explanation_md": "That is for the secured portion in year one."
+            "explanation_md": "Twenty-five per cent applies to the secured portion in the first year."
           },
           {
             "option_id": "B",
             "text_md": "40 per cent",
-            "explanation_md": "Not stated."
+            "explanation_md": "Forty per cent applies to the secured portion in a later year."
           },
           {
             "option_id": "C",
             "text_md": "Nil",
-            "explanation_md": "Not stated."
+            "explanation_md": "Nil would leave the uncovered part unprovided."
           },
           {
             "option_id": "D",
             "text_md": "100 per cent",
-            "explanation_md": "Stated."
+            "explanation_md": "The unsecured part of a doubtful asset needs 100 per cent provision."
           }
         ],
         "correct_option_id": "D",
-        "correct_explanation_md": "100 per cent of the unsecured portion."
+        "correct_explanation_md": "The unsecured part of a doubtful asset needs 100 per cent provision."
       }
     },
     {
@@ -1365,26 +1365,26 @@
           {
             "option_id": "A",
             "text_md": "Tangible security properly charged to the bank",
-            "explanation_md": "Stated."
+            "explanation_md": "Only tangible security properly charged to the bank counts for provisioning."
           },
           {
             "option_id": "B",
             "text_md": "A comfort letter",
-            "explanation_md": "Intangible, not security."
+            "explanation_md": "A comfort letter is not security."
           },
           {
             "option_id": "C",
             "text_md": "A State government guarantee",
-            "explanation_md": "Guarantees are not security here."
+            "explanation_md": "A State government guarantee is not tangible security."
           },
           {
             "option_id": "D",
             "text_md": "A verbal assurance",
-            "explanation_md": "Not security."
+            "explanation_md": "A verbal assurance is not security."
           }
         ],
         "correct_option_id": "A",
-        "correct_explanation_md": "Only tangible security properly charged to the bank."
+        "correct_explanation_md": "Only tangible security properly charged to the bank counts for provisioning."
       }
     },
     {
@@ -1401,26 +1401,26 @@
           {
             "option_id": "A",
             "text_md": "0.40 per cent",
-            "explanation_md": "Not the rate."
+            "explanation_md": "0.40 per cent is too low for such an account."
           },
           {
             "option_id": "B",
             "text_md": "5 per cent",
-            "explanation_md": "Stated."
+            "explanation_md": "A standard account of a company with a director appearing more than once in the wilful defaulters list attracts 5 per cent."
           },
           {
             "option_id": "C",
             "text_md": "15 per cent",
-            "explanation_md": "Not the rate."
+            "explanation_md": "Fifteen per cent is the sub-standard rate."
           },
           {
             "option_id": "D",
             "text_md": "Nil",
-            "explanation_md": "A provision is required."
+            "explanation_md": "Nil would ignore the director risk."
           }
         ],
         "correct_option_id": "B",
-        "correct_explanation_md": "5 per cent."
+        "correct_explanation_md": "A standard account of a company with a director appearing more than once in the wilful defaulters list attracts 5 per cent."
       }
     },
     {
@@ -1437,26 +1437,26 @@
           {
             "option_id": "A",
             "text_md": "Total assets",
-            "explanation_md": "Not capital."
+            "explanation_md": "Total assets is not capital."
           },
           {
             "option_id": "B",
             "text_md": "Tier 1 plus Tier 2 capital",
-            "explanation_md": "It is Tier 1 only."
+            "explanation_md": "Tier 1 plus Tier 2 is not the base used."
           },
           {
             "option_id": "C",
             "text_md": "Tier 1 capital as per the last audited balance sheet",
-            "explanation_md": "Stated."
+            "explanation_md": "The eligible capital base is Tier 1 capital as per the last audited balance sheet."
           },
           {
             "option_id": "D",
             "text_md": "Deposits",
-            "explanation_md": "Not capital."
+            "explanation_md": "Deposits are not capital."
           }
         ],
         "correct_option_id": "C",
-        "correct_explanation_md": "Tier 1 capital from the last audited balance sheet."
+        "correct_explanation_md": "The eligible capital base is Tier 1 capital as per the last audited balance sheet."
       }
     },
     {
@@ -1473,26 +1473,26 @@
           {
             "option_id": "A",
             "text_md": "10 per cent",
-            "explanation_md": "That is the large exposure threshold."
+            "explanation_md": "Ten per cent is the large exposure threshold."
           },
           {
             "option_id": "B",
             "text_md": "40 per cent",
-            "explanation_md": "Not the limit."
+            "explanation_md": "Forty per cent is above the limit."
           },
           {
             "option_id": "C",
             "text_md": "15 per cent",
-            "explanation_md": "Not the limit."
+            "explanation_md": "Fifteen per cent is below the limit."
           },
           {
             "option_id": "D",
             "text_md": "20 per cent of the eligible capital base, with up to a further 5 per cent allowed by the Board in exceptional cases",
-            "explanation_md": "Stated."
+            "explanation_md": "A single counterparty limit is 20 per cent of the eligible capital base, with 5 per cent more allowed by the Board in exceptional cases."
           }
         ],
         "correct_option_id": "D",
-        "correct_explanation_md": "20 per cent, plus up to 5 per cent by Board policy."
+        "correct_explanation_md": "A single counterparty limit is 20 per cent of the eligible capital base, with 5 per cent more allowed by the Board in exceptional cases."
       }
     },
     {
@@ -1509,26 +1509,26 @@
           {
             "option_id": "A",
             "text_md": "25 per cent of the eligible capital base",
-            "explanation_md": "Stated."
+            "explanation_md": "The group limit is 25 per cent of the eligible capital base."
           },
           {
             "option_id": "B",
             "text_md": "20 per cent",
-            "explanation_md": "That is for a single counterparty."
+            "explanation_md": "Twenty per cent is the single counterparty limit."
           },
           {
             "option_id": "C",
             "text_md": "10 per cent",
-            "explanation_md": "That is the large exposure threshold."
+            "explanation_md": "Ten per cent is the large exposure threshold."
           },
           {
             "option_id": "D",
             "text_md": "50 per cent",
-            "explanation_md": "Not the limit."
+            "explanation_md": "Fifty per cent is above the limit."
           }
         ],
         "correct_option_id": "A",
-        "correct_explanation_md": "25 per cent of the eligible capital base."
+        "correct_explanation_md": "The group limit is 25 per cent of the eligible capital base."
       }
     },
     {
@@ -1545,26 +1545,26 @@
           {
             "option_id": "A",
             "text_md": "More than 50 per cent",
-            "explanation_md": "Not the threshold."
+            "explanation_md": "More than 50 per cent is far above the threshold."
           },
           {
             "option_id": "B",
             "text_md": "10 per cent or more of the eligible capital base",
-            "explanation_md": "Stated."
+            "explanation_md": "A large exposure is 10 per cent or more of the eligible capital base."
           },
           {
             "option_id": "C",
             "text_md": "Less than 1 per cent",
-            "explanation_md": "Not the threshold."
+            "explanation_md": "Less than 1 per cent is far below the threshold."
           },
           {
             "option_id": "D",
             "text_md": "More than 25 per cent only",
-            "explanation_md": "Not the threshold."
+            "explanation_md": "More than 25 per cent only would be the group limit."
           }
         ],
         "correct_option_id": "B",
-        "correct_explanation_md": "The threshold is 10 per cent or more."
+        "correct_explanation_md": "A large exposure is 10 per cent or more of the eligible capital base."
       }
     },
     {
@@ -1581,26 +1581,26 @@
           {
             "option_id": "A",
             "text_md": "Be reported at year end",
-            "explanation_md": "Not stated."
+            "explanation_md": "Reporting at year end is too late."
           },
           {
             "option_id": "B",
             "text_md": "Be ignored",
-            "explanation_md": "Not allowed."
+            "explanation_md": "Ignoring a breach is not allowed."
           },
           {
             "option_id": "C",
             "text_md": "Arise only from exceptional conditions beyond the bank's control, be reported to RBI immediately and be rapidly rectified",
-            "explanation_md": "Stated."
+            "explanation_md": "A breach must come from exceptional conditions outside the bank's control, be reported at once and be quickly rectified."
           },
           {
             "option_id": "D",
             "text_md": "Be reported only on request",
-            "explanation_md": "Not stated."
+            "explanation_md": "Reporting only on request is not enough."
           }
         ],
         "correct_option_id": "C",
-        "correct_explanation_md": "Immediate reporting and quick rectification."
+        "correct_explanation_md": "A breach must come from exceptional conditions outside the bank's control, be reported at once and be quickly rectified."
       }
     },
     {
@@ -1617,26 +1617,26 @@
           {
             "option_id": "A",
             "text_md": "10 per cent",
-            "explanation_md": "Not the limit."
+            "explanation_md": "Ten per cent is the large exposure threshold."
           },
           {
             "option_id": "B",
             "text_md": "40 per cent",
-            "explanation_md": "Not the limit."
+            "explanation_md": "Forty per cent is above the limit."
           },
           {
             "option_id": "C",
             "text_md": "5 per cent",
-            "explanation_md": "Not the limit."
+            "explanation_md": "Five per cent is below the limit."
           },
           {
             "option_id": "D",
             "text_md": "20 per cent of its eligible capital base",
-            "explanation_md": "Stated."
+            "explanation_md": "Exposure to a single NBFC other than a gold loan company is limited to 20 per cent of the eligible capital base."
           }
         ],
         "correct_option_id": "D",
-        "correct_explanation_md": "20 per cent of the eligible capital base."
+        "correct_explanation_md": "Exposure to a single NBFC other than a gold loan company is limited to 20 per cent of the eligible capital base."
       }
     },
     {
@@ -1653,26 +1653,26 @@
           {
             "option_id": "A",
             "text_md": "50 per cent or more of one's gross receipts or expenditures comes from transactions with the other",
-            "explanation_md": "One of the minimum tests."
+            "explanation_md": "Economic interdependence arises when 50 per cent or more of one party's receipts or expenditure is with the other."
           },
           {
             "option_id": "B",
             "text_md": "They share a bank",
-            "explanation_md": "Not a test."
+            "explanation_md": "Sharing a bank is not a link."
           },
           {
             "option_id": "C",
             "text_md": "They are in the same city",
-            "explanation_md": "Not a test."
+            "explanation_md": "Being in the same city is not a link."
           },
           {
             "option_id": "D",
             "text_md": "They have the same auditor",
-            "explanation_md": "Not a test."
+            "explanation_md": "Having the same auditor is not a link."
           }
         ],
         "correct_option_id": "A",
-        "correct_explanation_md": "A 50 per cent dependency on the other for receipts or expenditure is a minimum test."
+        "correct_explanation_md": "Economic interdependence arises when 50 per cent or more of one party's receipts or expenditure is with the other."
       }
     },
     {
@@ -1689,26 +1689,26 @@
           {
             "option_id": "A",
             "text_md": "Added in 2026",
-            "explanation_md": "Not stated."
+            "explanation_md": "It was not added in 2026."
           },
           {
             "option_id": "B",
             "text_md": "Deleted with effect from 1 January 2026",
-            "explanation_md": "Stated."
+            "explanation_md": "The chapter on enhancing credit supply to large borrowers through the market mechanism was deleted from 1 January 2026."
           },
           {
             "option_id": "C",
             "text_md": "Unchanged",
-            "explanation_md": "Not stated."
+            "explanation_md": "It was not left unchanged."
           },
           {
             "option_id": "D",
             "text_md": "Moved to the SEBI rules",
-            "explanation_md": "Not stated."
+            "explanation_md": "It was not moved to SEBI rules."
           }
         ],
         "correct_option_id": "B",
-        "correct_explanation_md": "The Directions record its deletion from 1 January 2026."
+        "correct_explanation_md": "The chapter on enhancing credit supply to large borrowers through the market mechanism was deleted from 1 January 2026."
       }
     },
     {
@@ -1963,7 +1963,7 @@
     }
   ],
   "unresolved": [
-    "Special mention accounts (SMA-0, SMA-1, SMA-2): the categories are taught from the courseware (printed pp. 415-416) and marked needs_review. The 2025 Income Recognition, Asset Classification and Provisioning Directions do not contain the SMA categories and no primary source for them was retrieved.",
+    "Special mention accounts (SMA-0, SMA-1, SMA-2): the categories are taught from the courseware (printed pp. 415-416) and marked needs_review. The SMA bands are set in paragraph 15 of the RBI Resolution of Stressed Assets Directions, 2025 (RBI_RSA_2025); the Income Recognition, Asset Classification and Provisioning Directions do not contain them.",
     "The 2025 Income Recognition, Asset Classification and Provisioning Directions (RBI/DOR/2025-26/164) were read for paragraphs 5, 42-46, 63-71, 80-96, 118 and 124-136. The copy is marked as updated on 1 October 2026 and includes amendments effective 1 July 2026 (after the 30 June 2026 cut-off): the deletion of item (6) of paragraph 80 and new paragraphs 84A to 84D on additional specific provision for implemented resolution plans. These amendments are NOT taught.",
     "The courseware lists the 0.25 per cent standard asset rate for farm credit and for small and micro enterprises; the 2025 Directions apply it to farm credit to agricultural activities, individual housing loans and Small and Micro Enterprises (SMEs). The Directions are followed.",
     "The courseware states that no provision is needed for the guaranteed portion of ECGC, CGTMSE or credit guaranteed accounts that turn non-performing; paragraph 85 of the Directions states that the 15 per cent provision on substandard assets is made without allowance for ECGC cover. This is unresolved and is NOT taught. The courseware's account of the Credit Guarantee Fund Scheme for Micro and Small Enterprises (printed pp. 418-419: ceilings, guarantee coverage table) was not checked against a primary source and is NOT taught.",
