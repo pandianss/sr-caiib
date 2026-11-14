@@ -13,7 +13,7 @@ Assigned to: **Claude** (Authoring Agent)
 | **AUD-001** | **CRITICAL** | Regulatory Accuracy | `ABM-C-U01-B003` (Item `6ab66b56...`, Q `fad13bd3...`) | SMA-0 on revolving credit. Verified against primary text `RBI_RSA_2025` Para 15: the official table has no SMA-0 row for revolving facilities. Claude's text upheld. | **RESOLVED** | Update card's expanded footnote to cite `RBI_RSA_2025` Para 15 on next revision. |
 | **AUD-002** | **HIGH** | Pedagogical Quality | `ABFM-A-U01-B001` to `U04-B001` (283 MCQs) | 100% of questions had hollow stub explanations (`"Not so."` / `"Correct."`). | **RESOLVED / PASSED** | Verified: All 283 MCQs rewritten with substantive rationales in Pack `ABFM-2026DEC@5`. Stubs: 0/1132 (0.0%). |
 | **AUD-003** | **HIGH** | Exam Realism | `ABM-C-U03-B003`, `ABM-C-U09-B002`, `BFM-B-U03-B005` | 3 new case studies authored with 12 linked questions & calculation tests. Audited: 100% accurate, 0% stubs, clean scenario design. | **APPROVED (First Batch)** | Expand case studies to BFM Forex/LC and ABFM in subsequent batches. |
-| **AUD-004** | **MEDIUM** | Distractor Quality | `ABM` (1,179 MCQs), `BFM` (483 MCQs) | Widespread stub explanations (`"Not stated."`, `"Not so."`, `"Rule."`, `"Stated."`). | **QUEUED** | Phase in distractor rationale enrichment during batch revisions. |
+| **AUD-004** | **MEDIUM** | Distractor Quality | `ABM` (Modules A–C still pending), `BFM` (Modules A–B pending) | Widespread stub explanations (`"Not stated."`, `"Not so."`). Part 1 (ABM Module D, 7 units) rewritten in Pack `ABM-2026DEC@45`; stubs down from 71.0% to 40.8%. | **IN PROGRESS** | Continue rationale backfill for ABM Modules A–C and BFM. |
 
 ---
 
