@@ -14,7 +14,7 @@ Assigned to: **Claude** (Authoring Agent)
 | **AUD-002** | **HIGH** | Pedagogical Quality | `ABFM-A-U01-B001` to `U04-B001` (283 MCQs) | 100% of questions had hollow stub explanations (`"Not so."` / `"Correct."`). | **RESOLVED / PASSED** | Verified: All 283 MCQs rewritten with substantive rationales in Pack `ABFM-2026DEC@5`. Stubs: 0/1132 (0.0%). |
 | **AUD-003** | **HIGH** | Exam Realism | `ABM-C-U03-B003`, `ABM-C-U09-B002`, `BFM-B-U03-B005`, `BFM-A-U01-B011`, `BFM-A-U04-B007` | All 5 case studies authored with linked questions & calculation tests. Audited: 100% accurate, 0% stubs, clean scenario design (Tandon, CIRP, Basel III CRAR, FEDAI Rule 5/6, UCP 600). | **RESOLVED & APPROVED** | Ready for pack integration when BFM/ABM next republished. Author additional case studies as new modules are developed. |
 | **AUD-004** | **MEDIUM** | Distractor Quality | All packs (`ABM`, `BFM`, `ABFM`) | Widespread stub explanations across all papers. Verified: All 9,544 options across all 3 packs now rewritten with rich rationales ($\ge$ 20 chars). Repository stubs: 0/9544 (0.0%). Audited samples in Statistics & Forex passed. | **RESOLVED / PASSED** | Maintain this distractor quality standard for all subsequent batches. |
-| **AUD-005** | **LOW / INFO** | Batch Approval | `ABFM-A-U05-B001` to `U06-B001`, `ABFM-B-U01-B001` to `U04-B001` | 291 newly authored items audited across 6 batches. 0 stub options, balanced option distributions, all calculation tests passing (operating/financial leverage, EBIT-EPS, payback, ARR, NPV, PI, IRR, MIRR, CAPM, APT, interest rate parity). | **APPROVED** | Authoring approved. Proceed to finalize Unit 5 & Unit 6 (Decision Making). |
+| **AUD-005** | **LOW / INFO** | Batch Approval | `ABFM-A-U05-B001` to `U06-B001`, `ABFM-B-U01-B001` to `U05-B001` | 348 newly authored items audited across 7 batches. 0 stub options, balanced option distributions, all calculation tests passing (operating/financial leverage, EBIT-EPS, payback, ARR, NPV, PI, IRR, MIRR, CAPM, APT, interest rate parity, sensitivity, scenario, Hillier, decision tree, RADR, certainty equivalent). | **APPROVED** | Authoring approved. Proceed to finalize Unit 6 (Decision Making) to complete Module B. |
 
 ---
 
@@ -49,7 +49,7 @@ Assigned to: **Claude** (Authoring Agent)
   - `ABFM-B-U02-B001` (Financial and Operating Leverages): 37 items (5 cards, 23 MCQs, 8 calc items). 0 stubs. Options: {A:6, B:6, C:5, D:6}. DOL, DFL, DCL, EBIT-EPS tests passing. Approved.
   - `ABFM-B-U03-B001` (Capital Investment Decisions): 54 items (10 cards, 36 MCQs, 9 calc items). 0 stubs. Options: {A:9, B:9, C:9, D:9}. Payback, CFAT, ARR, NPV, PI, IRR, MIRR tests passing. Approved.
   - `ABFM-B-U04-B001` (International Capital Budgeting): 40 items (7 cards, 23 MCQs, 10 calc items). 0 stubs. Options: {A:6, B:6, C:6, D:5}. CAPM, APT, parity, home/foreign currency NPV equivalence tests passing. Approved.
+  - `ABFM-B-U05-B001` (Risk & Uncertainty in Capital Budgeting): 57 items (12 cards, 33 MCQs, 12 calc items). 0 stubs. Options: {A:8, B:9, C:8, D:8}. Sensitivity, scenario, Hillier, decision tree, RADR, and certainty equivalent tests passing. Approved.
 - **Instruction to Authoring Agent (Claude)**:
-  - All audited batches in ABFM Module B (Units 1 through 4) are approved.
-  - Complete `ABFM-B-U05-B001` (Risk Analysis) and proceed to `ABFM-B-U06` (Decision Making).
-  - When Module B authoring finishes, prepare draft case studies for ABFM covering capital budgeting and financial leverage.
+  - All audited batches in ABFM Module B (Units 1 through 5) are approved.
+  - Complete `ABFM-B-U06` (Decision Making) to conclude ABFM Module B.
