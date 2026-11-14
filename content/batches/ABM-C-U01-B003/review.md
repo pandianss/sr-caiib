@@ -35,3 +35,7 @@ Teaching text, tables, questions and examples were written independently from th
 ## Coverage after this batch
 
 LO_09 and LO_10 have teaching and assessment. Module C unit 1 still has gap records on LO_05, LO_06 and LO_07 and the courseware pages from printed p. 419 are only partly used.
+
+## Correction (14 November 2026)
+
+The limits section above and the unresolved notes call the courseware's "loan system" obsolete together with the large borrower framework. That was wrong: the Credit Risk Management Directions, 2025 (Chapter XII) keep the loan system (loan component of at least 60 per cent for fund based working capital limits of Rs 150 crore and above). The large borrower market mechanism chapter of the Concentration Risk Directions was deleted from 1 January 2026; the loan system was not. The loan system is taught in `ABM-C-U05-B001`.
