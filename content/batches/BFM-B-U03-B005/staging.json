@@ -1,0 +1,191 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BFM-B-U03-B005",
+  "paper_id": "BFM",
+  "unit_label": "BFM Module B unit 3: case study on capital adequacy (CRAR, CET1 and the conservation buffer)",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S03",
+    "RBI_CAP_2025"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "statement": "Capital adequacy minima and conservation buffer (Capital Adequacy Directions 2025): minimum total capital of 9 per cent of risk-weighted assets, CET1 at least 5.5 per cent, Tier 1 at least 7 per cent (AT1 at most 1.5 per cent) and Tier 2 at most 2 per cent within the 9 per cent; a capital conservation buffer of 2.5 per cent in CET1, so CET1 plus buffer is 8 per cent and total capital plus buffer is 11.5 per cent. Minimum capital conservation ratios by CET1 ratio: 5.5 to 6.125 per cent: 100 per cent of earnings conserved; above 6.125 to 6.75: 80; above 6.75 to 7.375: 60; above 7.375 to 8.0: 40; above 8.0: 0. Constraints apply only to distributions (dividends, buybacks, discretionary payments on other Tier 1 instruments and discretionary bonuses), not to business operations.",
+      "source_id": "RBI_CAP_2025",
+      "locator": "RBI_CAP_2025 paragraphs 7, 11, 250 and 251; S03 printed pp. 324 and 344-346",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    }
+  ],
+  "drafts": [
+    {
+      "draft_id": "D001",
+      "item_type": "case_study",
+      "variant": "case_study",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "title": "Harbour Co-operative Commercial Bank: can it pay a dividend?",
+        "scenario_narrative_md": "Harbour Bank is a commercial bank preparing its year-end capital computation. Its board wants to declare a generous dividend and also pay staff bonuses, and has asked the head of risk to confirm the capital position first.\n\nThe bank reports risk-weighted assets of Rs 40,000 crore. Its capital is Rs 3,000 crore of Common Equity Tier 1, Rs 600 crore of Additional Tier 1 and Rs 800 crore of Tier 2. The head of risk notes that the AT1 and Tier 2 are at the maximum amounts the Directions admit, so no CET1 is needed to fill a shortfall in Tier 1 or total capital.\n\nThe board proposes to distribute part of the profit for the year as a dividend and to pay discretionary performance bonuses to senior staff, and the audit committee has asked that the conclusion be recorded in writing because the Reserve Bank reviews distribution decisions in its supervision. The bank has no capital raising planned this quarter, the figures are as at the balance sheet date, and the minimum ratios and buffer rules apply to the bank on a standalone basis.\n\nThe board asks whether the bank meets the minimum capital ratios, where its CET1 stands relative to the capital conservation buffer, what share of earnings it must retain, and how much more CET1 would free it from any constraint on distributions.",
+        "question_ids": [
+          "D002",
+          "D003",
+          "D004",
+          "D005"
+        ],
+        "reference_tables_md": [
+          "| Component | Rs crore |\n| --- | --- |\n| Risk-weighted assets | 40,000 |\n| Common Equity Tier 1 | 3,000 |\n| Additional Tier 1 | 600 |\n| Tier 2 | 800 |",
+          "| CET1 ratio (after meeting other minima) | Minimum share of earnings to conserve |\n| --- | --- |\n| 5.5 to 6.125 per cent | 100 per cent |\n| above 6.125 to 6.75 per cent | 80 per cent |\n| above 6.75 to 7.375 per cent | 60 per cent |\n| above 7.375 to 8.0 per cent | 40 per cent |\n| above 8.0 per cent | 0 per cent |"
+        ]
+      }
+    },
+    {
+      "draft_id": "D002",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "What is the bank's total capital ratio (CRAR) in per cent of risk-weighted assets?",
+        "numeric_rule": {
+          "expected_answer": "11.00",
+          "unit_label": "per cent",
+          "precision_decimals": 2,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Round to 2 decimal places.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "Total capital is 3,000 + 600 + 800 = 4,400 crore; 4,400 / 40,000 = 11.00 per cent, above the 9 per cent minimum.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Total capital.",
+            "formula_or_substitution": "3,000 + 600 + 800",
+            "intermediate_result": "4,400"
+          },
+          {
+            "step_number": 2,
+            "description": "CRAR.",
+            "formula_or_substitution": "4,400 / 40,000 x 100",
+            "intermediate_result": "11.00"
+          }
+        ],
+        "case_study_id": "D001"
+      }
+    },
+    {
+      "draft_id": "D003",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "What is the bank's CET1 ratio in per cent of risk-weighted assets?",
+        "numeric_rule": {
+          "expected_answer": "7.50",
+          "unit_label": "per cent",
+          "precision_decimals": 2,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Round to 2 decimal places.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "3,000 / 40,000 = 7.50 per cent, above the 5.5 per cent minimum.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "CET1 ratio.",
+            "formula_or_substitution": "3,000 / 40,000 x 100",
+            "intermediate_result": "7.50"
+          }
+        ],
+        "case_study_id": "D001"
+      }
+    },
+    {
+      "draft_id": "D004",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "What does the capital conservation table require of the bank?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "It must conserve at least 40 per cent of its earnings, because CET1 of 7.5 per cent is in the band above 7.375 to 8.0 per cent",
+            "explanation_md": "AT1 and Tier 2 already fill the Tier 1 and total capital minima, so all 7.5 per cent of CET1 counts and falls in the 40 per cent band."
+          },
+          {
+            "option_id": "B",
+            "text_md": "It has no constraint, because total capital of 11 per cent is above 9 per cent",
+            "explanation_md": "The buffer is tested on CET1, which must exceed 8 per cent for zero constraint; total capital above the minimum does not remove the constraint."
+          },
+          {
+            "option_id": "C",
+            "text_md": "It must conserve all earnings, because CET1 is below 8 per cent",
+            "explanation_md": "Only a CET1 ratio of 5.5 to 6.125 per cent requires 100 per cent conservation; at 7.5 per cent the requirement is 40 per cent."
+          },
+          {
+            "option_id": "D",
+            "text_md": "It must stop all lending until CET1 reaches 8 per cent",
+            "explanation_md": "The buffer restricts only distributions such as dividends and discretionary bonuses, not business operations."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "At 7.5 per cent CET1 the bank must conserve at least 40 per cent of earnings.",
+        "case_study_id": "D001"
+      }
+    },
+    {
+      "draft_id": "D005",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "How much additional CET1 (Rs crore) would lift the CET1 ratio to 8.0 per cent and remove the constraint, assuming risk-weighted assets stay at Rs 40,000 crore?",
+        "numeric_rule": {
+          "expected_answer": "200",
+          "unit_label": "Rs crore",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "CET1 needed at 8 per cent is 0.08 x 40,000 = 3,200 crore; the bank has 3,000, so it needs 200 crore more.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "CET1 needed at 8.0 per cent.",
+            "formula_or_substitution": "0.08 x 40,000",
+            "intermediate_result": "3,200"
+          },
+          {
+            "step_number": 2,
+            "description": "Shortfall.",
+            "formula_or_substitution": "3,200 - 3,000",
+            "intermediate_result": "200"
+          }
+        ],
+        "case_study_id": "D001"
+      }
+    }
+  ],
+  "unresolved": [
+    "The case is an original scenario with invented figures. The minimum ratios and the capital conservation table are those recorded in batches BFM-B-U03-B001 and BFM-B-U03-B003 from the Capital Adequacy Directions 2025 (RBI_CAP_2025).",
+    "Case study written in response to audit finding AUD-003. Reviewer is the authoring agent; no independent or human review.",
+    "Reviewer for this batch is the authoring agent; no independent or human review."
+  ],
+  "next_batch_hint": "Further case studies as required by audit finding AUD-003."
+}

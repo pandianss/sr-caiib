@@ -1,0 +1,590 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "ABM-C-U09-B002",
+    "paper_id": "ABM",
+    "unit_label": "ABM Module C unit 9: case study on a corporate insolvency resolution process (timeline and committee of creditors voting)",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S01",
+      "IBC_2016_CONSOLIDATED_2021"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "statement": "CIRP timing and committee of creditors voting: the process is completed within 180 days of admission; on a 66 per cent vote of the committee of creditors the Adjudicating Authority may extend it by up to 90 days, once only; the whole process must end within 330 days of the insolvency commencement date including legal proceedings. A financial creditor that is a related party of the corporate debtor has no right of representation, participation or voting in the committee. Voting shares are based on the financial debt owed to each creditor; the committee approves a resolution plan by not less than 66 per cent of voting shares.",
+        "source_id": "S01",
+        "locator": "IBC_2016_CONSOLIDATED_2021 sections 12, 21 and 30(4)",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      }
+    ],
+    "drafts": [
+      {
+        "draft_id": "D001",
+        "item_type": "case_study",
+        "variant": "case_study",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "title": "Meridian Textiles: the committee of creditors votes",
+          "scenario_narrative_md": "Meridian Textiles Limited was admitted into a corporate insolvency resolution process on 10 January 2027. The interim resolution professional has collated claims and the financial creditors are as follows: State Bank A with Rs 300 crore, Bank B with Rs 200 crore, Bank C with Rs 150 crore and NBFC D with Rs 100 crore. A fifth lender, Hartley Finance, is owed Rs 250 crore; it is a group company of the promoters and therefore a related party of Meridian.\n\nBy June 2027 the resolution professional has received two plans, but negotiations are not complete. Bank A and Bank C want to apply for an extension of the process and say their combined votes are enough. Bank B disagrees and says that with Hartley voting the numbers would be different anyway. The resolution professional must decide who may vote, whether the extension can be sought on this vote, and by what dates the process must end under the Code.",
+          "question_ids": [
+            "D002",
+            "D003",
+            "D004",
+            "D005"
+          ],
+          "reference_tables_md": [
+            "| Financial creditor | Debt (Rs crore) | Related party of the debtor |\n| --- | --- | --- |\n| Bank A | 300 | No |\n| Bank B | 200 | No |\n| Bank C | 150 | No |\n| NBFC D | 100 | No |\n| Hartley Finance | 250 | Yes |",
+            "| Rule | Figure |\n| --- | --- |\n| Normal CIRP period from admission | 180 days |\n| Maximum extension (once) | 90 days, on a 66 per cent vote |\n| Overall limit including litigation | 330 days |"
+          ]
+        }
+      },
+      {
+        "draft_id": "D002",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "What is Bank A's voting share (per cent) in the committee of creditors?",
+          "numeric_rule": {
+            "expected_answer": "40.00",
+            "unit_label": "per cent",
+            "precision_decimals": 2,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Round to 2 decimal places.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "Hartley Finance is a related party and has no vote, so the voting debt is 300 + 200 + 150 + 100 = 750 crore. Bank A holds 300 / 750 = 40.00 per cent.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "Voting debt excluding the related party.",
+              "formula_or_substitution": "300 + 200 + 150 + 100",
+              "intermediate_result": "750"
+            },
+            {
+              "step_number": 2,
+              "description": "Bank A's share.",
+              "formula_or_substitution": "300 / 750 x 100",
+              "intermediate_result": "40.00"
+            }
+          ],
+          "case_study_id": "D001"
+        }
+      },
+      {
+        "draft_id": "D003",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Can Bank A and Bank C alone carry the vote to seek an extension of the process?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Yes: together they hold 450 crore, a majority of the total debt of 1,000 crore",
+              "explanation_md": "Hartley's Rs 250 crore is excluded from voting, and a simple majority is not enough because 66 per cent is required."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Yes: any two banks may decide",
+              "explanation_md": "The Code requires a stated percentage of voting shares, not a number of creditors."
+            },
+            {
+              "option_id": "C",
+              "text_md": "No: an extension needs the vote of the related party",
+              "explanation_md": "A related party creditor has no right to participate or vote, so its vote can never be required."
+            },
+            {
+              "option_id": "D",
+              "text_md": "No: together they hold 60 per cent, which is below 66 per cent",
+              "explanation_md": "Bank A 40 per cent plus Bank C 20 per cent is 60 per cent of the 750 crore voting debt; the Code needs 66 per cent."
+            }
+          ],
+          "correct_option_id": "D",
+          "correct_explanation_md": "Bank A and Bank C hold 60 per cent of the voting shares, short of the 66 per cent needed.",
+          "case_study_id": "D001"
+        }
+      },
+      {
+        "draft_id": "D004",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "Which combination of creditors would carry the 66 per cent vote?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Bank A and Bank B together, holding about 66.7 per cent",
+              "explanation_md": "(300 + 200) / 750 = 66.67 per cent, which is above 66 per cent."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Bank A and NBFC D together, holding about 53.3 per cent",
+              "explanation_md": "(300 + 100) / 750 = 53.33 per cent, which is below 66 per cent."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Bank B, Bank C and NBFC D together, holding 60 per cent",
+              "explanation_md": "(200 + 150 + 100) / 750 = 60 per cent, which is below 66 per cent."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Bank C and NBFC D together, holding about 33.3 per cent",
+              "explanation_md": "(150 + 100) / 750 = 33.33 per cent, which is far below 66 per cent."
+            }
+          ],
+          "correct_option_id": "A",
+          "correct_explanation_md": "Only Bank A with Bank B reaches 66.67 per cent.",
+          "case_study_id": "D001"
+        }
+      },
+      {
+        "draft_id": "D005",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "The process was admitted on 10 January 2027. If the extension of 90 days is granted, how many days of the 330-day overall limit still remain after the extended period ends?",
+          "numeric_rule": {
+            "expected_answer": "60",
+            "unit_label": "days",
+            "precision_decimals": 0,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Give a whole number.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "180 + 90 = 270 days, so 330 - 270 = 60 days remain for any time taken in legal proceedings.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "Normal period plus the maximum extension.",
+              "formula_or_substitution": "180 + 90",
+              "intermediate_result": "270"
+            },
+            {
+              "step_number": 2,
+              "description": "Days left under the 330-day limit.",
+              "formula_or_substitution": "330 - 270",
+              "intermediate_result": "60"
+            }
+          ],
+          "case_study_id": "D001"
+        }
+      }
+    ],
+    "unresolved": [
+      "The case is an original scenario with invented figures. The 180, 90 and 330 day limits and the 66 per cent vote follow section 12 and section 30 of the IBC as recorded in the batch ABM-C-U09-B001 facts; the status of the IBC (Amendment) Act 2026 at 30 June 2026 is only partly verified (see that batch).",
+      "Case study written in response to audit finding AUD-003. Reviewer is the authoring agent; no independent or human review.",
+      "Reviewer for this batch is the authoring agent; no independent or human review."
+    ],
+    "next_batch_hint": "Further case studies as required by audit finding AUD-003."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "ABM-C-U09-B002",
+    "paper_id": "ABM",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 6, Compulsory Paper I, Module C: Credit Management, Resolution of Stressed Assets under the IBC 2016"
+    },
+    "sources": [
+      {
+        "source_id": "S01",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Advanced Bank Management (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "IBC_2016_CONSOLIDATED_2021",
+        "authority": "Government of India",
+        "title": "Insolvency and Bankruptcy Code, 2016 (as amended up to 12 August 2021)",
+        "publication_date": null,
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "ABM::MOD_C::U09",
+        "objective_ids": [
+          "ABM::MOD_C::U09::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "ABM::MOD_C::U09",
+        "objective_ids": [
+          "ABM::MOD_C::U09::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "ABM::MOD_C::U09",
+        "objective_ids": [
+          "ABM::MOD_C::U09::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "ABM::MOD_C::U09",
+        "objective_ids": [
+          "ABM::MOD_C::U09::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "unit_id": "ABM::MOD_C::U09",
+        "objective_ids": [
+          "ABM::MOD_C::U09::LO_02"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "ABM-C-U09-B002",
+      "draft_id": "D001",
+      "item_id": "item_c73b48a74ccf71f704e41d4fb359151b442397fe3ddde97dcde4279984a1dfba"
+    },
+    {
+      "batch_id": "ABM-C-U09-B002",
+      "draft_id": "D002",
+      "item_id": "item_2a4a0de29bd339a1ee4e271c2dc035b28eb265b5b88c2487b5043e6d2fa8495f"
+    },
+    {
+      "batch_id": "ABM-C-U09-B002",
+      "draft_id": "D003",
+      "item_id": "item_2ac4dce23ff32afbedd36574ba846065a2a7feb565b313db4011a943d492fdb9"
+    },
+    {
+      "batch_id": "ABM-C-U09-B002",
+      "draft_id": "D004",
+      "item_id": "item_f8bc1c6decc75b61e12feaf28dd101868364b1affd6ddf36d2d61e929a556245"
+    },
+    {
+      "batch_id": "ABM-C-U09-B002",
+      "draft_id": "D005",
+      "item_id": "item_42fbf73c5cd19138c21e5535e6dbcabf831e711f5259641f43e9bb038e918b7b"
+    }
+  ],
+  "items": [
+    {
+      "title": "Meridian Textiles: the committee of creditors votes",
+      "scenario_narrative_md": "Meridian Textiles Limited was admitted into a corporate insolvency resolution process on 10 January 2027. The interim resolution professional has collated claims and the financial creditors are as follows: State Bank A with Rs 300 crore, Bank B with Rs 200 crore, Bank C with Rs 150 crore and NBFC D with Rs 100 crore. A fifth lender, Hartley Finance, is owed Rs 250 crore; it is a group company of the promoters and therefore a related party of Meridian.\n\nBy June 2027 the resolution professional has received two plans, but negotiations are not complete. Bank A and Bank C want to apply for an extension of the process and say their combined votes are enough. Bank B disagrees and says that with Hartley voting the numbers would be different anyway. The resolution professional must decide who may vote, whether the extension can be sought on this vote, and by what dates the process must end under the Code.",
+      "question_ids": [
+        "item_2a4a0de29bd339a1ee4e271c2dc035b28eb265b5b88c2487b5043e6d2fa8495f",
+        "item_2ac4dce23ff32afbedd36574ba846065a2a7feb565b313db4011a943d492fdb9",
+        "item_f8bc1c6decc75b61e12feaf28dd101868364b1affd6ddf36d2d61e929a556245",
+        "item_42fbf73c5cd19138c21e5535e6dbcabf831e711f5259641f43e9bb038e918b7b"
+      ],
+      "reference_tables_md": [
+        "| Financial creditor | Debt (Rs crore) | Related party of the debtor |\n| --- | --- | --- |\n| Bank A | 300 | No |\n| Bank B | 200 | No |\n| Bank C | 150 | No |\n| NBFC D | 100 | No |\n| Hartley Finance | 250 | Yes |",
+        "| Rule | Figure |\n| --- | --- |\n| Normal CIRP period from admission | 180 days |\n| Maximum extension (once) | 90 days, on a 66 per cent vote |\n| Overall limit including litigation | 330 days |"
+      ],
+      "item_type": "case_study",
+      "id": "item_c73b48a74ccf71f704e41d4fb359151b442397fe3ddde97dcde4279984a1dfba",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABM",
+      "module_id": "ABM::MOD_C",
+      "unit_id": "ABM::MOD_C::U09",
+      "objective_ids": [
+        "ABM::MOD_C::U09::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "IBC_2016_CONSOLIDATED_2021 sections 12, 21 and 30(4)"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "What is Bank A's voting share (per cent) in the committee of creditors?",
+      "numeric_rule": {
+        "expected_answer": "40.00",
+        "unit_label": "per cent",
+        "precision_decimals": 2,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Round to 2 decimal places.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "Hartley Finance is a related party and has no vote, so the voting debt is 300 + 200 + 150 + 100 = 750 crore. Bank A holds 300 / 750 = 40.00 per cent.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "Voting debt excluding the related party.",
+          "formula_or_substitution": "300 + 200 + 150 + 100",
+          "intermediate_result": "750"
+        },
+        {
+          "step_number": 2,
+          "description": "Bank A's share.",
+          "formula_or_substitution": "300 / 750 x 100",
+          "intermediate_result": "40.00"
+        }
+      ],
+      "case_study_id": "item_c73b48a74ccf71f704e41d4fb359151b442397fe3ddde97dcde4279984a1dfba",
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_2a4a0de29bd339a1ee4e271c2dc035b28eb265b5b88c2487b5043e6d2fa8495f",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABM",
+      "module_id": "ABM::MOD_C",
+      "unit_id": "ABM::MOD_C::U09",
+      "objective_ids": [
+        "ABM::MOD_C::U09::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "IBC_2016_CONSOLIDATED_2021 sections 12, 21 and 30(4)"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Can Bank A and Bank C alone carry the vote to seek an extension of the process?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Yes: together they hold 450 crore, a majority of the total debt of 1,000 crore",
+          "explanation_md": "Hartley's Rs 250 crore is excluded from voting, and a simple majority is not enough because 66 per cent is required."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Yes: any two banks may decide",
+          "explanation_md": "The Code requires a stated percentage of voting shares, not a number of creditors."
+        },
+        {
+          "option_id": "C",
+          "text_md": "No: an extension needs the vote of the related party",
+          "explanation_md": "A related party creditor has no right to participate or vote, so its vote can never be required."
+        },
+        {
+          "option_id": "D",
+          "text_md": "No: together they hold 60 per cent, which is below 66 per cent",
+          "explanation_md": "Bank A 40 per cent plus Bank C 20 per cent is 60 per cent of the 750 crore voting debt; the Code needs 66 per cent."
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_explanation_md": "Bank A and Bank C hold 60 per cent of the voting shares, short of the 66 per cent needed.",
+      "case_study_id": "item_c73b48a74ccf71f704e41d4fb359151b442397fe3ddde97dcde4279984a1dfba",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_2ac4dce23ff32afbedd36574ba846065a2a7feb565b313db4011a943d492fdb9",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABM",
+      "module_id": "ABM::MOD_C",
+      "unit_id": "ABM::MOD_C::U09",
+      "objective_ids": [
+        "ABM::MOD_C::U09::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "IBC_2016_CONSOLIDATED_2021 sections 12, 21 and 30(4)"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "Which combination of creditors would carry the 66 per cent vote?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Bank A and Bank B together, holding about 66.7 per cent",
+          "explanation_md": "(300 + 200) / 750 = 66.67 per cent, which is above 66 per cent."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Bank A and NBFC D together, holding about 53.3 per cent",
+          "explanation_md": "(300 + 100) / 750 = 53.33 per cent, which is below 66 per cent."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Bank B, Bank C and NBFC D together, holding 60 per cent",
+          "explanation_md": "(200 + 150 + 100) / 750 = 60 per cent, which is below 66 per cent."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Bank C and NBFC D together, holding about 33.3 per cent",
+          "explanation_md": "(150 + 100) / 750 = 33.33 per cent, which is far below 66 per cent."
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_explanation_md": "Only Bank A with Bank B reaches 66.67 per cent.",
+      "case_study_id": "item_c73b48a74ccf71f704e41d4fb359151b442397fe3ddde97dcde4279984a1dfba",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_f8bc1c6decc75b61e12feaf28dd101868364b1affd6ddf36d2d61e929a556245",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABM",
+      "module_id": "ABM::MOD_C",
+      "unit_id": "ABM::MOD_C::U09",
+      "objective_ids": [
+        "ABM::MOD_C::U09::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "IBC_2016_CONSOLIDATED_2021 sections 12, 21 and 30(4)"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "The process was admitted on 10 January 2027. If the extension of 90 days is granted, how many days of the 330-day overall limit still remain after the extended period ends?",
+      "numeric_rule": {
+        "expected_answer": "60",
+        "unit_label": "days",
+        "precision_decimals": 0,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Give a whole number.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "180 + 90 = 270 days, so 330 - 270 = 60 days remain for any time taken in legal proceedings.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "Normal period plus the maximum extension.",
+          "formula_or_substitution": "180 + 90",
+          "intermediate_result": "270"
+        },
+        {
+          "step_number": 2,
+          "description": "Days left under the 330-day limit.",
+          "formula_or_substitution": "330 - 270",
+          "intermediate_result": "60"
+        }
+      ],
+      "case_study_id": "item_c73b48a74ccf71f704e41d4fb359151b442397fe3ddde97dcde4279984a1dfba",
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_42fbf73c5cd19138c21e5535e6dbcabf831e711f5259641f43e9bb038e918b7b",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABM",
+      "module_id": "ABM::MOD_C",
+      "unit_id": "ABM::MOD_C::U09",
+      "objective_ids": [
+        "ABM::MOD_C::U09::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "IBC_2016_CONSOLIDATED_2021 sections 12, 21 and 30(4)"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

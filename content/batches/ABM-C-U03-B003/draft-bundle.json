@@ -1,0 +1,580 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "ABM-C-U03-B003",
+    "paper_id": "ABM",
+    "unit_label": "ABM Module C unit 3: case study on assessing working capital finance (Tandon methods I and II)",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S01"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "statement": "Tandon committee methods of lending (courseware): in the first method the enterprise brings in net working capital of at least 25 per cent of the working capital gap (total current assets less current liabilities excluding bank finance); in the second method at least 25 per cent of total current assets; in the third, 100 per cent of core current assets and at least 25 per cent of the remaining current assets. The second method gives a current ratio of at least 1.33 and the first could give a lower figure. The working capital limit is the projected total current assets less the stipulated net working capital and the projected short-term liabilities.",
+        "source_id": "S01",
+        "locator": "S01 printed pp. 451-452",
+        "regulatory_sensitive": false,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "draft_id": "D001",
+        "item_type": "case_study",
+        "variant": "case_study",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "title": "Kaveri Auto Components: how much working capital finance?",
+          "scenario_narrative_md": "Kaveri Auto Components Limited makes brake parts for two-wheeler makers and has applied to its bank for a working capital limit for the coming year. The credit officer has built the projected balance sheet position from the company's own forecast and wants to compare two Tandon-style assessments before recommending a limit.\n\nThe company projects total current assets of Rs 1,200 lakh. Its projected current liabilities other than bank borrowing are Rs 330 lakh, made up of trade creditors and other short-term obligations. The bank has no other lending to the company, and the officer notes that the promoters are willing to keep net working capital at whatever level the method requires.\n\nThe branch manager asks four things: what limit results under the method that requires the borrower to bring in 25 per cent of total current assets (the second method), what limit results under the method that requires 25 per cent of the working capital gap (the first method), what current ratio the second method leaves the company with, and which method is more generous to the borrower and why.",
+          "question_ids": [
+            "D002",
+            "D003",
+            "D004",
+            "D005"
+          ],
+          "reference_tables_md": [
+            "| Projected item | Rs lakh |\n| --- | --- |\n| Raw materials | 400 |\n| Work in process | 150 |\n| Finished goods | 300 |\n| Receivables | 280 |\n| Other current assets | 70 |\n| **Total current assets** | **1,200** |\n| Current liabilities other than bank finance | 330 |",
+            "| Method | Net working capital the borrower brings in |\n| --- | --- |\n| First | 25 per cent of the working capital gap |\n| Second | 25 per cent of total current assets |"
+          ]
+        }
+      },
+      {
+        "draft_id": "D002",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Using the second method, what working capital limit (Rs lakh) should the bank assess for Kaveri?",
+          "numeric_rule": {
+            "expected_answer": "570",
+            "unit_label": "Rs lakh",
+            "precision_decimals": 0,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Give a whole number of Rs lakh.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "The borrower brings in 25 per cent of 1,200 = 300. The limit is 1,200 - 300 - 330 = 570 lakh.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "Net working capital the borrower brings in is 25 per cent of total current assets.",
+              "formula_or_substitution": "0.25 x 1,200",
+              "intermediate_result": "300"
+            },
+            {
+              "step_number": 2,
+              "description": "Limit = current assets less that net working capital less other current liabilities.",
+              "formula_or_substitution": "1,200 - 300 - 330",
+              "intermediate_result": "570"
+            }
+          ],
+          "case_study_id": "D001"
+        }
+      },
+      {
+        "draft_id": "D003",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Using the first method, what working capital limit (Rs lakh) results?",
+          "numeric_rule": {
+            "expected_answer": "652.5",
+            "unit_label": "Rs lakh",
+            "precision_decimals": 1,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Give the answer to 1 decimal place.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "The working capital gap is 1,200 - 330 = 870. The borrower brings in 25 per cent = 217.5, so the limit is 870 - 217.5 = 652.5 lakh, equal to 75 per cent of the gap.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "Working capital gap.",
+              "formula_or_substitution": "1,200 - 330",
+              "intermediate_result": "870"
+            },
+            {
+              "step_number": 2,
+              "description": "Bank finances 75 per cent of the gap.",
+              "formula_or_substitution": "0.75 x 870",
+              "intermediate_result": "652.5"
+            }
+          ],
+          "case_study_id": "D001"
+        }
+      },
+      {
+        "draft_id": "D004",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "What current ratio does Kaveri have under the second method (current assets divided by current liabilities including the bank limit)?",
+          "numeric_rule": {
+            "expected_answer": "1.33",
+            "unit_label": "times",
+            "precision_decimals": 2,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Round to 2 decimal places.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "Current liabilities including the bank limit are 330 + 570 = 900, so the ratio is 1,200 / 900 = 1.33.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "Total current liabilities including bank finance.",
+              "formula_or_substitution": "330 + 570",
+              "intermediate_result": "900"
+            },
+            {
+              "step_number": 2,
+              "description": "Current ratio.",
+              "formula_or_substitution": "1,200 / 900",
+              "intermediate_result": "1.33"
+            }
+          ],
+          "case_study_id": "D001"
+        }
+      },
+      {
+        "draft_id": "D005",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "Which method is more generous to Kaveri, and why?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The second method, because the bank finances more of the current assets",
+              "explanation_md": "The second method gives the smaller limit (570), so it asks the borrower to bring in more net working capital (300 against 217.5), not less."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The first method, because it leaves the company with a lower current ratio (about 1.22)",
+              "explanation_md": "The first method gives a limit of Rs 652.5 lakh against Rs 570 lakh, so the borrower needs less of its own net working capital and the ratio falls to 1,200 / 982.5, about 1.22."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Both give the same limit because current assets and liabilities are the same",
+              "explanation_md": "The two methods apply the 25 per cent to different bases (the gap versus total current assets), so the limits differ even with the same balance sheet."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The second method, because the current ratio is higher",
+              "explanation_md": "A higher current ratio means the borrower has contributed more of its own funds, which is stricter for the borrower, not more generous."
+            }
+          ],
+          "correct_option_id": "B",
+          "correct_explanation_md": "The first method yields the larger limit and the lower current ratio, so it is more generous to the borrower.",
+          "case_study_id": "D001"
+        }
+      }
+    ],
+    "unresolved": [
+      "The case is an original scenario with invented figures; the method rules come from the courseware (S01 printed pp. 451-452) and are needs_review because the courseware says some banks still use them and no primary RBI source applies.",
+      "Case study written in response to audit finding AUD-003. Reviewer is the authoring agent; no independent or human review.",
+      "Reviewer for this batch is the authoring agent; no independent or human review."
+    ],
+    "next_batch_hint": "Further case studies as required by audit finding AUD-003."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "ABM-C-U03-B003",
+    "paper_id": "ABM",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 6, Compulsory Paper I, Module C: Credit Management, Working Capital Finance"
+    },
+    "sources": [
+      {
+        "source_id": "S01",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Advanced Bank Management (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "ABM::MOD_C::U03",
+        "objective_ids": [
+          "ABM::MOD_C::U03::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "ABM::MOD_C::U03",
+        "objective_ids": [
+          "ABM::MOD_C::U03::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "ABM::MOD_C::U03",
+        "objective_ids": [
+          "ABM::MOD_C::U03::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "ABM::MOD_C::U03",
+        "objective_ids": [
+          "ABM::MOD_C::U03::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "unit_id": "ABM::MOD_C::U03",
+        "objective_ids": [
+          "ABM::MOD_C::U03::LO_02"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "ABM-C-U03-B003",
+      "draft_id": "D001",
+      "item_id": "item_3d5e5f306fbc2eb14bbde700219ec34229b35ebae0e58f7bf074648c29a71f76"
+    },
+    {
+      "batch_id": "ABM-C-U03-B003",
+      "draft_id": "D002",
+      "item_id": "item_1d65c686f295a8a098a86e0cfbd5825fec54b1f4188c3b114bf06d3148e51a20"
+    },
+    {
+      "batch_id": "ABM-C-U03-B003",
+      "draft_id": "D003",
+      "item_id": "item_c04eb5181e24cea6f600c7fc2dbc562d5629a743aa9ced1bf6f9c901082e02fe"
+    },
+    {
+      "batch_id": "ABM-C-U03-B003",
+      "draft_id": "D004",
+      "item_id": "item_a93aac482cf79ebd50f7081876b91967a535f9b41d0609a538dbf7473a3ce33c"
+    },
+    {
+      "batch_id": "ABM-C-U03-B003",
+      "draft_id": "D005",
+      "item_id": "item_6b3a424bffa5d081c96285b25bd43d3c2edf3da115f88d5842afc7a0abc1650a"
+    }
+  ],
+  "items": [
+    {
+      "title": "Kaveri Auto Components: how much working capital finance?",
+      "scenario_narrative_md": "Kaveri Auto Components Limited makes brake parts for two-wheeler makers and has applied to its bank for a working capital limit for the coming year. The credit officer has built the projected balance sheet position from the company's own forecast and wants to compare two Tandon-style assessments before recommending a limit.\n\nThe company projects total current assets of Rs 1,200 lakh. Its projected current liabilities other than bank borrowing are Rs 330 lakh, made up of trade creditors and other short-term obligations. The bank has no other lending to the company, and the officer notes that the promoters are willing to keep net working capital at whatever level the method requires.\n\nThe branch manager asks four things: what limit results under the method that requires the borrower to bring in 25 per cent of total current assets (the second method), what limit results under the method that requires 25 per cent of the working capital gap (the first method), what current ratio the second method leaves the company with, and which method is more generous to the borrower and why.",
+      "question_ids": [
+        "item_1d65c686f295a8a098a86e0cfbd5825fec54b1f4188c3b114bf06d3148e51a20",
+        "item_c04eb5181e24cea6f600c7fc2dbc562d5629a743aa9ced1bf6f9c901082e02fe",
+        "item_a93aac482cf79ebd50f7081876b91967a535f9b41d0609a538dbf7473a3ce33c",
+        "item_6b3a424bffa5d081c96285b25bd43d3c2edf3da115f88d5842afc7a0abc1650a"
+      ],
+      "reference_tables_md": [
+        "| Projected item | Rs lakh |\n| --- | --- |\n| Raw materials | 400 |\n| Work in process | 150 |\n| Finished goods | 300 |\n| Receivables | 280 |\n| Other current assets | 70 |\n| **Total current assets** | **1,200** |\n| Current liabilities other than bank finance | 330 |",
+        "| Method | Net working capital the borrower brings in |\n| --- | --- |\n| First | 25 per cent of the working capital gap |\n| Second | 25 per cent of total current assets |"
+      ],
+      "item_type": "case_study",
+      "id": "item_3d5e5f306fbc2eb14bbde700219ec34229b35ebae0e58f7bf074648c29a71f76",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABM",
+      "module_id": "ABM::MOD_C",
+      "unit_id": "ABM::MOD_C::U03",
+      "objective_ids": [
+        "ABM::MOD_C::U03::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S01 printed pp. 451-452"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Using the second method, what working capital limit (Rs lakh) should the bank assess for Kaveri?",
+      "numeric_rule": {
+        "expected_answer": "570",
+        "unit_label": "Rs lakh",
+        "precision_decimals": 0,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Give a whole number of Rs lakh.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "The borrower brings in 25 per cent of 1,200 = 300. The limit is 1,200 - 300 - 330 = 570 lakh.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "Net working capital the borrower brings in is 25 per cent of total current assets.",
+          "formula_or_substitution": "0.25 x 1,200",
+          "intermediate_result": "300"
+        },
+        {
+          "step_number": 2,
+          "description": "Limit = current assets less that net working capital less other current liabilities.",
+          "formula_or_substitution": "1,200 - 300 - 330",
+          "intermediate_result": "570"
+        }
+      ],
+      "case_study_id": "item_3d5e5f306fbc2eb14bbde700219ec34229b35ebae0e58f7bf074648c29a71f76",
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_1d65c686f295a8a098a86e0cfbd5825fec54b1f4188c3b114bf06d3148e51a20",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABM",
+      "module_id": "ABM::MOD_C",
+      "unit_id": "ABM::MOD_C::U03",
+      "objective_ids": [
+        "ABM::MOD_C::U03::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S01 printed pp. 451-452"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Using the first method, what working capital limit (Rs lakh) results?",
+      "numeric_rule": {
+        "expected_answer": "652.5",
+        "unit_label": "Rs lakh",
+        "precision_decimals": 1,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Give the answer to 1 decimal place.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "The working capital gap is 1,200 - 330 = 870. The borrower brings in 25 per cent = 217.5, so the limit is 870 - 217.5 = 652.5 lakh, equal to 75 per cent of the gap.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "Working capital gap.",
+          "formula_or_substitution": "1,200 - 330",
+          "intermediate_result": "870"
+        },
+        {
+          "step_number": 2,
+          "description": "Bank finances 75 per cent of the gap.",
+          "formula_or_substitution": "0.75 x 870",
+          "intermediate_result": "652.5"
+        }
+      ],
+      "case_study_id": "item_3d5e5f306fbc2eb14bbde700219ec34229b35ebae0e58f7bf074648c29a71f76",
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_c04eb5181e24cea6f600c7fc2dbc562d5629a743aa9ced1bf6f9c901082e02fe",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABM",
+      "module_id": "ABM::MOD_C",
+      "unit_id": "ABM::MOD_C::U03",
+      "objective_ids": [
+        "ABM::MOD_C::U03::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S01 printed pp. 451-452"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "What current ratio does Kaveri have under the second method (current assets divided by current liabilities including the bank limit)?",
+      "numeric_rule": {
+        "expected_answer": "1.33",
+        "unit_label": "times",
+        "precision_decimals": 2,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Round to 2 decimal places.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "Current liabilities including the bank limit are 330 + 570 = 900, so the ratio is 1,200 / 900 = 1.33.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "Total current liabilities including bank finance.",
+          "formula_or_substitution": "330 + 570",
+          "intermediate_result": "900"
+        },
+        {
+          "step_number": 2,
+          "description": "Current ratio.",
+          "formula_or_substitution": "1,200 / 900",
+          "intermediate_result": "1.33"
+        }
+      ],
+      "case_study_id": "item_3d5e5f306fbc2eb14bbde700219ec34229b35ebae0e58f7bf074648c29a71f76",
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_a93aac482cf79ebd50f7081876b91967a535f9b41d0609a538dbf7473a3ce33c",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABM",
+      "module_id": "ABM::MOD_C",
+      "unit_id": "ABM::MOD_C::U03",
+      "objective_ids": [
+        "ABM::MOD_C::U03::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S01 printed pp. 451-452"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "Which method is more generous to Kaveri, and why?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The second method, because the bank finances more of the current assets",
+          "explanation_md": "The second method gives the smaller limit (570), so it asks the borrower to bring in more net working capital (300 against 217.5), not less."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The first method, because it leaves the company with a lower current ratio (about 1.22)",
+          "explanation_md": "The first method gives a limit of Rs 652.5 lakh against Rs 570 lakh, so the borrower needs less of its own net working capital and the ratio falls to 1,200 / 982.5, about 1.22."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Both give the same limit because current assets and liabilities are the same",
+          "explanation_md": "The two methods apply the 25 per cent to different bases (the gap versus total current assets), so the limits differ even with the same balance sheet."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The second method, because the current ratio is higher",
+          "explanation_md": "A higher current ratio means the borrower has contributed more of its own funds, which is stricter for the borrower, not more generous."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_explanation_md": "The first method yields the larger limit and the lower current ratio, so it is more generous to the borrower.",
+      "case_study_id": "item_3d5e5f306fbc2eb14bbde700219ec34229b35ebae0e58f7bf074648c29a71f76",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_6b3a424bffa5d081c96285b25bd43d3c2edf3da115f88d5842afc7a0abc1650a",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABM",
+      "module_id": "ABM::MOD_C",
+      "unit_id": "ABM::MOD_C::U03",
+      "objective_ids": [
+        "ABM::MOD_C::U03::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S01",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Bank Management (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S01 printed pp. 451-452"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}
