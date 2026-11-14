@@ -34,10 +34,10 @@ function auditItems(items, sourceName) {
   const stemIssues = [];
 
   for (const item of items) {
-    if (item.item_type === 'case') {
+    if (item.item_type === 'case' || item.item_type === 'case_study') {
       caseCount++;
     }
-    if (item.case_id) {
+    if (item.case_id || item.case_study_id) {
       caseLinkedQuestions++;
     }
     if (item.item_type === 'question' && item.question_type === 'single_choice') {
