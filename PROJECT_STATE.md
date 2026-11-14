@@ -22,6 +22,8 @@ Last updated: 14 November 2026, session 7 (ABM: pack ABM-2026DEC v22, 828 items,
   (scans, no text layer; registry entries S01–S05). They are read by rendering pages to images with
   `scripts/render-page.mjs`. These PDFs, not the notebook, are now the working source.
 - Consequential decisions:
+  - Agent division of labour (14 Nov 2026): Claude is designated the **Authoring Agent** (source PDF reading, drafting lessons/questions, calculation tests, staging envelopes). Antigravity is designated the independent **Review & Quality Gate Agent** (pedagogical audit, distractor quality, case-study enforcement, publication approval). Batches remain as candidate drafts until approved by parallel review. Self-review (`reviewer_id = authoring agent`) is phased out.
+  - Quality auditor tool `scripts/audit-content-quality.mjs` added to detect stub explanations, courseware-dependent stems, cyclic answer keys and missing case studies.
   - Kit contents copied to the repo root and kept byte-identical; `caiib-agent-kit/` untouched and git-ignored.
   - UI components are hand-built on Material 3 token roles (`src/app/styles.css`); there is no maintained
     React Material 3 library. Static light/dark palettes; no dynamic colour.
@@ -181,20 +183,24 @@ synthetic fixtures), **A** = `scripts/ui-audit.js` measured on the rendered DOM.
 | Razorpay test keys + support/refund text | Provider sandbox verification | Adapter checked against current docs and a local stand-in | None | Put test keys and `SUPPORT_TEXT` in a local `.env` (not in chat or git) |
 | A person to proofread the syllabus extraction (recommended, not blocking) | Confidence in the 276-topic denominator | Automated cross-checks done | — | Compare `content/syllabus/caiib-2026.json` titles with the PDF, especially the 6 flagged headings |
 
+## Audit Findings and Correction Queue (Managed by Antigravity)
+
+- **Audit Handover Protocol active**: Independent review agent (Antigravity) generates periodic audit reports in `content/audit/`. Claude (authoring agent) reads findings and applies corrections as high-priority tasks in the authoring loop before or alongside new batches.
+- Active audit register: `content/audit/AUDIT_REGISTER.md`
+- Latest audit report: `content/audit/REPORT_001_REGULATORY_AND_DISTRACTOR_QUALITY.md`
+  - **Finding AUD-001 (CRITICAL)**: Fix SMA-0 rule for revolving facilities in `ABM-C-U01-B003` (Item `6ab66b56...`, Q `fad13bd3...`). Under RBI June 7, 2019 framework (`RBI_RSA_2025`), SMA-0 exists for cash credit/OD (1–30 days continuous excess).
+  - **Finding AUD-002 (HIGH)**: Eliminate stub explanations (`"Not so."` / `"Correct."`) across ABFM Module A (batches U01–U04) by adding substantive pedagogical rationales ($\ge$ 25 chars).
+  - **Finding AUD-003 (HIGH)**: Author realistic case studies (`case` items with linked questions) in analytical modules of BFM, ABM, and ABFM.
+  - **Finding AUD-004 (MEDIUM)**: Address high proportion of stub explanations in ABM and BFM batches.
+
 ## Resume instruction
 
-- Last completed logical unit: first pack published (11 items); encoding damage from earlier PowerShell bulk
-  edits repaired in five files; all checks green; committed.
-- Tooling caution: never rewrite source files with PowerShell `Get-Content -Raw` + `WriteAllText`; it corrupts
-  non-ASCII characters. Use the Edit tool or Python with explicit UTF-8.
-- Nothing is half-edited.
-- Exact next action: batch `BFM-A-U01-B004` (render printed pp. 14–29 of S03 = PDF 31–46). Earlier note: batch `BFM-A-U01-B003`, working from the PDF pages directly (S03, PDF page = printed + 17):
-  read printed pp. 7–8 and 14–29 for factors, dealing room, derivatives and RBI/FEDAI guidelines; write facts
-  with page locators, author, import, recompute, compare with the book's examples, update the ledger.
-  The notebook is no longer needed. Then LO_04–LO_07, then `BFM::MOD_A::U02`.
-- Scale reminder: one batch covered part of one of 276 topics. Finishing five papers is on the order of several
-  hundred batches.
-- Still possible without owner input: clean `npm ci` clone test; optional standalone coverage-map export.
+- **Progress 15 Nov 2026 (Claude):** AUD-001 disputed with primary-text evidence (RBI_RSA_2025 para 15: revolving facilities have only SMA-1 and SMA-2), see the register. AUD-002 fixed: ABFM Module A units 1-4 rewritten with specific option rationales, pack ABFM-2026DEC v5 (0 stub options). ABFM units 1-4 were also published (not left draft) before the new draft-only instruction; from now on new batches are left in draft for audit. Still open: AUD-003 case studies (note: the contract type is `case_study` with `case_study_id` on questions, not `case`/`case_id`), AUD-004 ABM/BFM rationale enrichment, then ABFM unit 5 onwards.
+- **Next Action for Authoring Agent (Claude)**:
+  1. Review `content/audit/AUDIT_REGISTER.md` and apply prescribed fix for **AUD-001** (SMA-0 in `ABM-C-U01-B003`).
+  2. For ongoing authoring in ABFM Module B and future batches: ban stub explanations (`"Not so."`, `"Correct."`, `"Not stated."`); provide authentic pedagogical distractor rationales.
+  3. Introduce multi-question Case Studies (`item_type: "case"`) in analytical modules.
+  4. Continue authoring ABFM Module B, C, D and unblock BRBL. Leave batches in draft status for parallel audit; Antigravity handles review sign-off and publication.
 - Run: `npm run dev:fixtures` (http://localhost:5173) and `npm run server` (http://localhost:8787).
 - To refresh the baseline from a newer IIBF PDF: update the registry entry and rerun
   `scripts/extract-syllabus.mjs`; the build refuses a syllabus whose hash differs from the registry.
