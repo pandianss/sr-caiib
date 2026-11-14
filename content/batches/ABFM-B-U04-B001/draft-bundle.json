@@ -1,0 +1,4248 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "ABFM-B-U04-B001",
+    "paper_id": "ABFM",
+    "unit_label": "ABFM Module B unit 4 (courseware unit 10): capital budgeting for international project investment decisions",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S02"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "statement": "Foreign investment analysis (courseware): international projects face differences in work culture, legal and currency systems, accounting standards, trade barriers and language; cash flows are in the foreign currency and must be converted, so exchange rate volatility is a problem over a long project; the choice of currency for analysis depends on which currency dominates the project; the spot rate applies to a current transaction and the forward rate to a future one, and the forward rate is adjusted for the interest rate difference and the time to expiry. International portfolio investment (IPI) is investment in foreign securities (treasury bills, mutual funds, listed equities and debt) through designated remittance channels in the local currency; benefits include diversification and a better risk-return trade-off; barriers include political or economic uncertainty, price controls and language; asset allocation and hedging (for example forward contracts) manage risk. Direct channels include ADRs and GDRs and foreign direct investment; indirect channels use intermediaries such as mutual funds and ETFs.",
+        "source_id": "S02",
+        "locator": "S02 printed pp. 211-214 and 217",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "F002",
+        "statement": "Exchange risk, country risk, return and risk (courseware): exchange risk is the fall in the value of an investment in terms of the home currency because of depreciation of the local currency or appreciation of the foreign currency; country risk covers political developments, restrictions, legal systems, social or political turbulence and change of government. The return from foreign investment depends on the type of asset (more liquid means lower return, secured assets give less return than unsecured) and on the stability of the exchange rate; reinvestment of dividends raises returns; foreign investment is exposed to exchange and country risk in addition to usual risks.",
+        "source_id": "S02",
+        "locator": "S02 printed p. 217",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "F003",
+        "statement": "CAPM and APT (courseware): the capital asset pricing model gives the expected return on equity as risk-free rate plus beta times the market risk premium: re = rf + beta x (rm - rf), where rm - rf is the market risk premium (the difference between the expected return on the market and the risk-free rate); beta measures a security's volatility against the market (systematic risk). The arbitrage pricing theory (APT) is an alternative that uses the linear relationship between an asset's expected return and several macroeconomic factors (such as GDP, inflation, gold prices, stock indices): expected return = risk-free rate + the sum of each factor's beta times its risk premium. Worked example: risk-free 3 per cent with factor betas and premiums of 0.6 and 4 per cent, 0.8 and 2 per cent, -0.7 and 5 per cent, and 1.3 and 9 per cent gives expected return of 15.2 per cent.",
+        "source_id": "S02",
+        "locator": "S02 printed pp. 217-218",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "F004",
+        "statement": "Issues in evaluating overseas projects (courseware): the methods are the same as for domestic projects, but two issues arise. First, the risk-adjusted discount rate for the foreign country: (1 + r_a) = (1 + r_f) x (1 + rp), where r_f is the risk-free rate and rp the risk premium; the risk premium the company requires is found from the home rate, (1 + rp) = (1 + home risk-adjusted rate) / (1 + home risk-free rate), and the foreign risk-adjusted rate is then (1 + foreign risk-free rate) x (1 + rp). Example: home risk-free 7 per cent, home required 12 per cent, foreign risk-free 4 per cent gives (1 + rp) = 1.0467 and a foreign rate of 8.88 per cent. Second, the expected future spot rate by interest rate parity: S_t = S_0 x [(1 + r_h) / (1 + r_f)]^t, where r_h is the home risk-free rate and r_f the foreign risk-free rate; example S_0 = Rs 80, 7 per cent and 4 per cent gives S_1 = Rs 82.31 and S_2 = Rs 84.68. In practice a higher premium may be needed for trade barriers, currency fluctuation and stringent laws.",
+        "source_id": "S02",
+        "locator": "S02 printed pp. 219-220",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "F005",
+        "statement": "Home and foreign currency approaches (courseware): under the home currency approach, the foreign currency cash flows are converted into the home currency at the expected spot rates and then discounted at the domestic risk-adjusted rate; under the foreign currency approach, the cash flows stay in the foreign currency, are discounted at the foreign risk-adjusted rate and the present value is converted at the current spot rate. Both approaches can be used with payback (home currency: convert flows at expected spot rates and find when cumulative inflow equals the converted initial investment; foreign currency: find when cumulative foreign currency inflow equals the foreign currency investment), NPV (present value less initial investment converted at the present spot rate), IRR (the rate that equates present value with the investment) and profitability index (present value divided by initial investment). With consistent interest rate parity inputs, the two approaches give the same NPV; the courseware's two answers differ only by rounding.",
+        "source_id": "S02",
+        "locator": "S02 printed pp. 220-225",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "F006",
+        "statement": "Transfer pricing (courseware): the prices charged between related parties in different countries can be manipulated to move profit to a tax haven; the OECD has recommended transfer pricing rules for all transactions between related parties, which many countries have incorporated into their tax laws; breaches attract financial burdens that can be prohibitive, so suitable study is needed when making international investments.",
+        "source_id": "S02",
+        "locator": "S02 printed pp. 225-226",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      }
+    ],
+    "drafts": [
+      {
+        "draft_id": "D001",
+        "item_type": "card",
+        "variant": "concept",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "prerequisite_objective_ids": [],
+          "title": "What is different about foreign investment",
+          "core_explanation_md": "**Differences:** work culture, **legal and currency systems**, accounting standards, trade barriers and language.\n\n**Cash flows** are in the **foreign currency**, so **exchange rate volatility** matters, especially over a long project. The currency used for analysis should be the one that **dominates** the project.\n\nThe **spot rate** applies to a **current** deal and the **forward rate** to a **future** one, adjusted for the **interest rate difference** and the **time**.",
+          "expanded_explanation_md": "Elaborate workings and several exchange rate scenarios may be needed for a long project.",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Which exchange rate applies to a future-dated currency contract?",
+            "expected_takeaway": "The forward rate."
+          }
+        }
+      },
+      {
+        "draft_id": "D002",
+        "item_type": "card",
+        "variant": "concept",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "prerequisite_objective_ids": [],
+          "title": "International portfolio investment and its channels",
+          "core_explanation_md": "**IPI** is investment in **foreign securities** (treasury bills, mutual funds, listed equities, debt) through **designated remittance channels**, in the **local currency** of the country invested in.\n\n**Benefits:** **diversification** and a **better risk-return trade-off**. **Barriers:** political or economic uncertainty, **price controls** and language. **Asset allocation** and **hedging** (for example a forward contract) manage risk.\n\n**Direct channels:** **ADRs, GDRs** and **FDI**. **Indirect channels:** intermediaries such as **mutual funds and ETFs**.",
+          "expanded_explanation_md": "Developed markets offer variety and stable exchange rates, which lower risk.",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Name one direct and one indirect channel for foreign portfolio investment.",
+            "expected_takeaway": "Direct: ADRs or GDRs. Indirect: mutual funds or ETFs."
+          }
+        }
+      },
+      {
+        "draft_id": "D003",
+        "item_type": "card",
+        "variant": "concept",
+        "fact_ids": [
+          "F002"
+        ],
+        "payload": {
+          "prerequisite_objective_ids": [],
+          "title": "Exchange risk, country risk and the return on foreign investment",
+          "core_explanation_md": "**Exchange risk:** the **home-currency value** of the investment falls because the **local currency depreciates** or the **home currency strengthens**.\n\n**Country risk:** **political developments, restrictions, legal system, turbulence and change of government**.\n\n**Return:** **more liquid** assets give a **lower return**, **secured** assets give less than **unsecured**; a country with a **stable exchange rate** gives better returns, and **reinvesting dividends** raises them.",
+          "expanded_explanation_md": "Foreign investment carries exchange and country risk on top of the usual risks.",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Give two examples of country risk.",
+            "expected_takeaway": "Political upheaval and restrictions on free trade or capital movement."
+          }
+        }
+      },
+      {
+        "draft_id": "D004",
+        "item_type": "card",
+        "variant": "formula",
+        "fact_ids": [
+          "F003"
+        ],
+        "payload": {
+          "prerequisite_objective_ids": [],
+          "title": "CAPM and APT expected return",
+          "core_explanation_md": "**CAPM:** **re = rf + beta x (rm - rf)**. Beta measures **systematic risk** against the market; **rm - rf** is the **market risk premium**.\n\n**APT:** the expected return is the **risk-free rate plus, for each macroeconomic factor, beta x risk premium**. It uses **several factors** (GDP, inflation, gold, stock index), not just the market.",
+          "formula_spec": {
+            "latex_expression": "r_e = r_f + \\beta (r_m - r_f)",
+            "variables": [
+              {
+                "symbol": "re",
+                "name": "Expected return on equity",
+                "unit": "per cent"
+              },
+              {
+                "symbol": "rf",
+                "name": "Risk-free rate",
+                "unit": "per cent"
+              },
+              {
+                "symbol": "beta",
+                "name": "Sensitivity of the security to the market",
+                "unit": "number"
+              },
+              {
+                "symbol": "rm - rf",
+                "name": "Market risk premium",
+                "unit": "per cent"
+              }
+            ],
+            "assumptions": [
+              "A single market factor drives systematic risk"
+            ],
+            "common_errors": [
+              "Applying beta to the market return instead of the premium",
+              "Adding the risk-free rate twice"
+            ]
+          },
+          "expanded_explanation_md": "Beta is the covariance of the security's return with the market return divided by the variance of the market return.",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "How does APT differ from CAPM?",
+            "expected_takeaway": "APT uses several macroeconomic factors with their own betas and premiums; CAPM uses only the market."
+          }
+        }
+      },
+      {
+        "draft_id": "D005",
+        "item_type": "card",
+        "variant": "formula",
+        "fact_ids": [
+          "F004"
+        ],
+        "payload": {
+          "prerequisite_objective_ids": [],
+          "title": "Risk-adjusted discount rate and expected spot rate",
+          "core_explanation_md": "**Foreign risk-adjusted rate:** first find the **risk premium** the company wants at home, **(1 + rp) = (1 + home required rate) / (1 + home risk-free rate)**; then **(1 + r_a) = (1 + foreign risk-free rate) x (1 + rp)**.\n\n**Expected spot rate (interest rate parity):** **S_t = S_0 x [(1 + home risk-free) / (1 + foreign risk-free)]^t**. The currency of the **higher interest rate** is expected to **depreciate**.",
+          "formula_spec": {
+            "latex_expression": "S_t = S_0 \\left(\\frac{1 + r_h}{1 + r_f}\\right)^t",
+            "variables": [
+              {
+                "symbol": "St",
+                "name": "Expected spot rate at time t (home currency per unit of foreign)",
+                "unit": "Rs per unit"
+              },
+              {
+                "symbol": "S0",
+                "name": "Current spot rate",
+                "unit": "Rs per unit"
+              },
+              {
+                "symbol": "rh",
+                "name": "Home risk-free rate",
+                "unit": "proportion"
+              },
+              {
+                "symbol": "rf",
+                "name": "Foreign risk-free rate",
+                "unit": "proportion"
+              }
+            ],
+            "assumptions": [
+              "Interest rate parity holds",
+              "Rates are annual and constant"
+            ],
+            "common_errors": [
+              "Inverting the ratio of interest rates",
+              "Using simple instead of compound growth over several years"
+            ]
+          },
+          "expanded_explanation_md": "With a higher home interest rate the foreign currency is expected to be dearer in rupees in later years.",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "If home interest rates exceed foreign rates, what is expected of the exchange rate (home per foreign)?",
+            "expected_takeaway": "It is expected to rise, so the home currency depreciates."
+          }
+        }
+      },
+      {
+        "draft_id": "D006",
+        "item_type": "card",
+        "variant": "concept",
+        "fact_ids": [
+          "F005"
+        ],
+        "payload": {
+          "prerequisite_objective_ids": [],
+          "title": "Home currency and foreign currency approaches",
+          "core_explanation_md": "| Step | Home currency approach | Foreign currency approach |\n| --- | --- | --- |\n| 1 | Forecast **spot rates** for each year | Find the **foreign risk-adjusted rate** |\n| 2 | **Convert** inflows to **rupees** | **Discount** inflows in the **foreign currency** |\n| 3 | **Discount** at the **home risk-adjusted rate** | **Convert** the present value at the **current spot rate** |\n| 4 | Subtract the investment (at current spot) | Subtract the investment (at current spot) |\n\nWith **consistent** inputs the two give the **same NPV**; small differences come from **rounding**.",
+          "expanded_explanation_md": "Payback, IRR and the profitability index are applied the same way once the cash flows are in one currency.",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Which approach converts each year's inflow at a different spot rate?",
+            "expected_takeaway": "The home currency approach."
+          }
+        }
+      },
+      {
+        "draft_id": "D007",
+        "item_type": "card",
+        "variant": "concept",
+        "fact_ids": [
+          "F006"
+        ],
+        "payload": {
+          "prerequisite_objective_ids": [],
+          "title": "Transfer pricing",
+          "core_explanation_md": "**Transfer prices** are charged between **related parties in different countries**. They can be set to **shift profit to a tax haven**, so the **OECD** recommends **transfer pricing rules** for related party transactions, now in many countries' tax laws.\n\nBreaches attract **financial burdens** that can be **prohibitive**, so **international investments** must be studied with these rules in mind.",
+          "expanded_explanation_md": "The principle is that related parties should price transactions as unrelated parties would.",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Why do countries impose transfer pricing rules?",
+            "expected_takeaway": "To stop related parties manipulating prices to move profits to low-tax jurisdictions."
+          }
+        }
+      },
+      {
+        "draft_id": "D008",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Why does capital budgeting for an overseas project need extra care compared with a domestic project?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Cash flows are in a foreign currency and the project faces different legal, cultural and currency conditions",
+              "explanation_md": "These factors add exchange and country uncertainty."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The discounting method is entirely different",
+              "explanation_md": "The methods are the same as for domestic projects."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Overseas projects have no risk",
+              "explanation_md": "They carry additional risks."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Foreign currency is always stable",
+              "explanation_md": "Exchange rates fluctuate."
+            }
+          ],
+          "correct_option_id": "A",
+          "correct_explanation_md": "Foreign conditions."
+        }
+      },
+      {
+        "draft_id": "D009",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Which exchange rate applies to a contract for currency to be delivered at a future date?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The spot rate",
+              "explanation_md": "The spot rate applies to current transactions."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The forward rate",
+              "explanation_md": "It is adjusted for the interest rate difference and time to expiry."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The cross rate only",
+              "explanation_md": "A cross rate is derived from two other rates."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The historical rate",
+              "explanation_md": "A past rate does not price a future contract."
+            }
+          ],
+          "correct_option_id": "B",
+          "correct_explanation_md": "Forward rate."
+        }
+      },
+      {
+        "draft_id": "D010",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "International portfolio investment is best described as",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Opening a factory abroad",
+              "explanation_md": "That is direct investment in a project."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Lending to a domestic company",
+              "explanation_md": "The investment is in foreign securities."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Investment in foreign securities through designated cross-country remittance channels",
+              "explanation_md": "It covers treasury bills, mutual funds, equities and debt abroad."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Buying domestic gold",
+              "explanation_md": "It is not foreign securities."
+            }
+          ],
+          "correct_option_id": "C",
+          "correct_explanation_md": "Foreign securities."
+        }
+      },
+      {
+        "draft_id": "D011",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "The main attraction of international diversification is that",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "It removes all risk",
+              "explanation_md": "Risk is reduced, not removed."
+            },
+            {
+              "option_id": "B",
+              "text_md": "It guarantees capital gains",
+              "explanation_md": "Returns are not guaranteed."
+            },
+            {
+              "option_id": "C",
+              "text_md": "It avoids all taxes",
+              "explanation_md": "Taxes still apply to foreign investment returns."
+            },
+            {
+              "option_id": "D",
+              "text_md": "A portfolio across national markets can achieve a better risk-return trade-off",
+              "explanation_md": "Different markets do not move together."
+            }
+          ],
+          "correct_option_id": "D",
+          "correct_explanation_md": "Better trade-off."
+        }
+      },
+      {
+        "draft_id": "D012",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Which of these is a direct channel for foreign portfolio investment mentioned in the courseware?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "American or Global Depository Receipts",
+              "explanation_md": "ADRs and GDRs let investors hold foreign company shares."
+            },
+            {
+              "option_id": "B",
+              "text_md": "A foreign-focused mutual fund",
+              "explanation_md": "That is an indirect channel."
+            },
+            {
+              "option_id": "C",
+              "text_md": "An exchange-traded fund",
+              "explanation_md": "That is an indirect channel."
+            },
+            {
+              "option_id": "D",
+              "text_md": "A bank fixed deposit at home",
+              "explanation_md": "That is a domestic investment."
+            }
+          ],
+          "correct_option_id": "A",
+          "correct_explanation_md": "ADR or GDR."
+        }
+      },
+      {
+        "draft_id": "D013",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A forward exchange contract is a way to",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Raise the interest rate abroad",
+              "explanation_md": "It does not change interest rates."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Hedge against exchange rate risk on a planned foreign investment or liquidation",
+              "explanation_md": "It fixes the rate in advance."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Increase barriers to capital flow",
+              "explanation_md": "It is not a barrier."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Avoid asset allocation",
+              "explanation_md": "It is a hedge, not an allocation."
+            }
+          ],
+          "correct_option_id": "B",
+          "correct_explanation_md": "Hedging."
+        }
+      },
+      {
+        "draft_id": "D014",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F002"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Exchange risk on an investment abroad is the risk that",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The foreign government changes",
+              "explanation_md": "That is country risk."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The investee company pays no dividend",
+              "explanation_md": "That is investment risk."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Its value in the home currency falls because of currency movements",
+              "explanation_md": "Depreciation of the local currency reduces home-currency value."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Interest rates are zero",
+              "explanation_md": "That is not exchange risk."
+            }
+          ],
+          "correct_option_id": "C",
+          "correct_explanation_md": "Currency movement."
+        }
+      },
+      {
+        "draft_id": "D015",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F002"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Which of these is a country risk?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "A fall in the rupee against the dollar",
+              "explanation_md": "That is exchange risk."
+            },
+            {
+              "option_id": "B",
+              "text_md": "A competitor cutting prices",
+              "explanation_md": "That is business risk."
+            },
+            {
+              "option_id": "C",
+              "text_md": "A change in the company's dividend policy",
+              "explanation_md": "That is company-specific risk."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Political turbulence or change of government in the investee country",
+              "explanation_md": "It can disrupt investments."
+            }
+          ],
+          "correct_option_id": "D",
+          "correct_explanation_md": "Political risk."
+        }
+      },
+      {
+        "draft_id": "D016",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F002"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Generally, a more liquid foreign investment gives",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "A lower return, because liquidity reduces risk",
+              "explanation_md": "Liquidity is paid for through a lower return."
+            },
+            {
+              "option_id": "B",
+              "text_md": "A higher return, because it is riskier",
+              "explanation_md": "Liquid assets carry less risk."
+            },
+            {
+              "option_id": "C",
+              "text_md": "No return",
+              "explanation_md": "It gives some return."
+            },
+            {
+              "option_id": "D",
+              "text_md": "A guaranteed return",
+              "explanation_md": "Returns are not guaranteed."
+            }
+          ],
+          "correct_option_id": "A",
+          "correct_explanation_md": "Liquidity lowers return."
+        }
+      },
+      {
+        "draft_id": "D017",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F003"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "In CAPM the market risk premium is",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The risk-free rate less the market return",
+              "explanation_md": "That reverses the sign."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The expected market return less the risk-free rate",
+              "explanation_md": "It is the extra return for bearing market risk."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The beta of the security",
+              "explanation_md": "Beta is a sensitivity, not the premium."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The dividend yield",
+              "explanation_md": "The premium is not the dividend yield."
+            }
+          ],
+          "correct_option_id": "B",
+          "correct_explanation_md": "rm - rf."
+        }
+      },
+      {
+        "draft_id": "D018",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F003"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A security with a beta of 1.5 is",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Less volatile than the market",
+              "explanation_md": "That would be a beta below 1."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Risk free",
+              "explanation_md": "A risk-free asset has a beta of zero."
+            },
+            {
+              "option_id": "C",
+              "text_md": "More volatile than the market",
+              "explanation_md": "Its return moves by more than the market's."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Independent of the market",
+              "explanation_md": "A beta of 1.5 shows strong dependence."
+            }
+          ],
+          "correct_option_id": "C",
+          "correct_explanation_md": "Beta above 1."
+        }
+      },
+      {
+        "draft_id": "D019",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F003"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Arbitrage pricing theory differs from CAPM because it",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Ignores the risk-free rate",
+              "explanation_md": "It uses the risk-free rate."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Uses only one factor",
+              "explanation_md": "It allows many factors."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Cannot be used for equities",
+              "explanation_md": "It can be used for securities."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Uses several macroeconomic factors rather than only the market return",
+              "explanation_md": "Each factor has its own beta and risk premium."
+            }
+          ],
+          "correct_option_id": "D",
+          "correct_explanation_md": "Multiple factors."
+        }
+      },
+      {
+        "draft_id": "D020",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F003"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Which of these is given by the courseware as a factor in APT?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Gross domestic product growth",
+              "explanation_md": "GDP growth is one macroeconomic factor."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The colour of the share certificate",
+              "explanation_md": "It is not an economic factor."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The size of the office",
+              "explanation_md": "It is not an economic factor."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The number of directors",
+              "explanation_md": "It is not an economic factor."
+            }
+          ],
+          "correct_option_id": "A",
+          "correct_explanation_md": "GDP."
+        }
+      },
+      {
+        "draft_id": "D021",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F004"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "The expected spot rate in the future, by interest rate parity, depends on",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The tax rate only",
+              "explanation_md": "Tax is not in the formula."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The current spot rate and the interest rates in the two countries",
+              "explanation_md": "It grows by the ratio of (1 + home rate) to (1 + foreign rate)."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The company's dividend",
+              "explanation_md": "Dividend is not in the formula."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The project's payback",
+              "explanation_md": "Payback is not in the formula."
+            }
+          ],
+          "correct_option_id": "B",
+          "correct_explanation_md": "Spot and interest rates."
+        }
+      },
+      {
+        "draft_id": "D022",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F004"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "If the home interest rate is higher than the foreign interest rate, the foreign currency is expected to",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Become cheaper in home currency terms",
+              "explanation_md": "That would be the case if the foreign rate were higher."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Stay unchanged",
+              "explanation_md": "Parity implies a change."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Become more expensive in home currency terms",
+              "explanation_md": "The home currency is expected to depreciate."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Disappear",
+              "explanation_md": "This does not follow."
+            }
+          ],
+          "correct_option_id": "C",
+          "correct_explanation_md": "Foreign currency appreciates."
+        }
+      },
+      {
+        "draft_id": "D023",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F004"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "How is the risk premium for the foreign project found in the courseware's method?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "From the foreign exchange rate alone",
+              "explanation_md": "Exchange rate is used for conversion."
+            },
+            {
+              "option_id": "B",
+              "text_md": "From the foreign inflation only",
+              "explanation_md": "The method uses interest rates."
+            },
+            {
+              "option_id": "C",
+              "text_md": "From the tax rate",
+              "explanation_md": "Tax is not the source."
+            },
+            {
+              "option_id": "D",
+              "text_md": "From the home risk-free rate and the home risk-adjusted rate the company requires",
+              "explanation_md": "It is (1 + home required rate) / (1 + home risk-free rate) minus one."
+            }
+          ],
+          "correct_option_id": "D",
+          "correct_explanation_md": "Home premium."
+        }
+      },
+      {
+        "draft_id": "D024",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F004"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "The courseware notes that in practice the risk premium for a foreign project may need to be higher because of",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Trade barriers, currency fluctuations and stringent laws",
+              "explanation_md": "These add risks beyond the home project."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Lower interest rates abroad",
+              "explanation_md": "This is not the reason given."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Higher dividends",
+              "explanation_md": "This is not the reason given."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Shorter project life",
+              "explanation_md": "This is not the reason given."
+            }
+          ],
+          "correct_option_id": "A",
+          "correct_explanation_md": "Additional risks."
+        }
+      },
+      {
+        "draft_id": "D025",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F005"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Under the home currency approach, foreign cash flows are",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Discounted at the foreign rate and then converted at spot",
+              "explanation_md": "That is the foreign currency approach."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Converted at expected spot rates and discounted at the domestic risk-adjusted rate",
+              "explanation_md": "All flows are in the home currency before discounting."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Ignored",
+              "explanation_md": "They are the basis of the analysis."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Converted at the forward rate for one year only",
+              "explanation_md": "Each year uses its own expected spot rate."
+            }
+          ],
+          "correct_option_id": "B",
+          "correct_explanation_md": "Convert then discount."
+        }
+      },
+      {
+        "draft_id": "D026",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F005"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Under the foreign currency approach, the present value is converted to home currency using",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The spot rate at the end of the project",
+              "explanation_md": "The discounted value is a present value."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The average of all future spot rates",
+              "explanation_md": "It uses the current rate."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The current spot rate",
+              "explanation_md": "The discounted value is today's value, so today's rate applies."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The forward rate in the final year",
+              "explanation_md": "It uses the current rate."
+            }
+          ],
+          "correct_option_id": "C",
+          "correct_explanation_md": "Current spot."
+        }
+      },
+      {
+        "draft_id": "D027",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F005"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "If interest rate parity is used consistently, the NPVs from the home currency approach and the foreign currency approach are",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Always different",
+              "explanation_md": "Consistent inputs give the same result."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Always negative",
+              "explanation_md": "The sign depends on the project."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Unrelated",
+              "explanation_md": "They are two routes to one value."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The same, apart from rounding",
+              "explanation_md": "The two methods are algebraically consistent."
+            }
+          ],
+          "correct_option_id": "D",
+          "correct_explanation_md": "Same NPV."
+        }
+      },
+      {
+        "draft_id": "D028",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F005"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "In the home currency approach the initial investment is converted using",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The actual present spot rate",
+              "explanation_md": "The outlay is made now."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The expected spot rate in the last year",
+              "explanation_md": "The outlay is not in the last year."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The forward rate",
+              "explanation_md": "The outlay is made now at spot."
+            },
+            {
+              "option_id": "D",
+              "text_md": "A rate of one",
+              "explanation_md": "No conversion would be wrong."
+            }
+          ],
+          "correct_option_id": "A",
+          "correct_explanation_md": "Present spot."
+        }
+      },
+      {
+        "draft_id": "D029",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F006"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Transfer pricing rules were recommended by the OECD to",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Fix exchange rates",
+              "explanation_md": "They do not fix exchange rates."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Prevent related parties from moving profit to low-tax jurisdictions through manipulated prices",
+              "explanation_md": "Prices between related parties must reflect fair value."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Set interest rates",
+              "explanation_md": "They do not set interest rates."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Ban foreign investment",
+              "explanation_md": "They do not ban investment."
+            }
+          ],
+          "correct_option_id": "B",
+          "correct_explanation_md": "Prevent profit shifting."
+        }
+      },
+      {
+        "draft_id": "D030",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F006"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Why must an investor study transfer pricing rules before investing abroad?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "They guarantee profits",
+              "explanation_md": "They do not guarantee profit."
+            },
+            {
+              "option_id": "B",
+              "text_md": "They remove tax",
+              "explanation_md": "They do not remove tax."
+            },
+            {
+              "option_id": "C",
+              "text_md": "A breach can bring financial burdens that can be prohibitive",
+              "explanation_md": "Penalties can erode returns."
+            },
+            {
+              "option_id": "D",
+              "text_md": "They apply only to banks",
+              "explanation_md": "They apply to related party transactions generally."
+            }
+          ],
+          "correct_option_id": "C",
+          "correct_explanation_md": "Penalty risk."
+        }
+      },
+      {
+        "draft_id": "D031",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F003"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "The risk-free rate is 7 per cent, the market is expected to return 13 per cent and a security has a beta of 1.2. What is the expected return on the security under CAPM (per cent, to 1 decimal place)?",
+          "numeric_rule": {
+            "expected_answer": "14.2",
+            "unit_label": "per cent",
+            "precision_decimals": 1,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Round to 1 decimal place.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "Market risk premium = 13 - 7 = 6 per cent. Expected return = 7 + 1.2 x 6 = 14.2 per cent.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "Market risk premium.",
+              "formula_or_substitution": "13 - 7",
+              "intermediate_result": "6"
+            },
+            {
+              "step_number": 2,
+              "description": "CAPM.",
+              "formula_or_substitution": "7 + 1.2 x 6",
+              "intermediate_result": "14.2"
+            }
+          ]
+        }
+      },
+      {
+        "draft_id": "D032",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F003"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Under arbitrage pricing theory a share has a risk-free rate of 4 per cent and three factors: GDP (beta 0.5, risk premium 3 per cent), inflation (beta -0.4, risk premium 2 per cent) and oil price (beta 0.8, risk premium 4 per cent). What is its expected return (per cent, to 1 decimal place)?",
+          "numeric_rule": {
+            "expected_answer": "7.9",
+            "unit_label": "per cent",
+            "precision_decimals": 1,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Round to 1 decimal place.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "Expected return = 4 + 0.5 x 3 + (-0.4) x 2 + 0.8 x 4 = 4 + 1.5 - 0.8 + 3.2 = 7.9 per cent.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "Factor contributions.",
+              "formula_or_substitution": "1.5 - 0.8 + 3.2",
+              "intermediate_result": "3.9"
+            },
+            {
+              "step_number": 2,
+              "description": "Add the risk-free rate.",
+              "formula_or_substitution": "4 + 3.9",
+              "intermediate_result": "7.9"
+            }
+          ]
+        }
+      },
+      {
+        "draft_id": "D033",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F004"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "The current spot rate is Rs 84 per unit of the foreign currency. The home risk-free rate is 6 per cent and the foreign risk-free rate is 3 per cent. What is the expected spot rate after one year by interest rate parity (Rs, to 2 decimal places)?",
+          "numeric_rule": {
+            "expected_answer": "86.45",
+            "unit_label": "Rs",
+            "precision_decimals": 2,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Round to 2 decimal places.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "S1 = 84 x (1.06 / 1.03) = 84 x 1.029126 = Rs 86.45.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "Ratio of interest factors.",
+              "formula_or_substitution": "1.06 / 1.03",
+              "intermediate_result": "1.029126"
+            },
+            {
+              "step_number": 2,
+              "description": "Expected spot rate.",
+              "formula_or_substitution": "84 x 1.029126",
+              "intermediate_result": "86.45"
+            }
+          ]
+        }
+      },
+      {
+        "draft_id": "D034",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F004"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "For the same data, what is the expected spot rate after two years (Rs, to 2 decimal places)?",
+          "numeric_rule": {
+            "expected_answer": "88.96",
+            "unit_label": "Rs",
+            "precision_decimals": 2,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Round to 2 decimal places.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "S2 = 84 x (1.06 / 1.03)^2 = 84 x 1.059101 = Rs 88.96.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "Two-year factor.",
+              "formula_or_substitution": "(1.06 / 1.03)^2",
+              "intermediate_result": "1.059101"
+            },
+            {
+              "step_number": 2,
+              "description": "Expected spot rate.",
+              "formula_or_substitution": "84 x 1.059101",
+              "intermediate_result": "88.96"
+            }
+          ]
+        }
+      },
+      {
+        "draft_id": "D035",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F004"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "A company requires 12 per cent on a similar home project where the risk-free rate is 6 per cent. The risk-free rate in the foreign country is 3 per cent. What is the risk-adjusted discount rate for the foreign project (per cent, to 2 decimal places)?",
+          "numeric_rule": {
+            "expected_answer": "8.83",
+            "unit_label": "per cent",
+            "precision_decimals": 2,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Round to 2 decimal places.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "(1 + rp) = 1.12 / 1.06 = 1.056604. (1 + r_a) = 1.03 x 1.056604 = 1.088302, so r_a = 8.83 per cent.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "Risk premium factor.",
+              "formula_or_substitution": "1.12 / 1.06",
+              "intermediate_result": "1.056604"
+            },
+            {
+              "step_number": 2,
+              "description": "Foreign rate.",
+              "formula_or_substitution": "1.03 x 1.056604 - 1",
+              "intermediate_result": "0.0883"
+            }
+          ]
+        }
+      },
+      {
+        "draft_id": "D036",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F005"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "A foreign project needs US$ 50 lakh now and returns US$ 20 lakh and US$ 40 lakh at the ends of years 1 and 2. Use the same rates as above (spot Rs 84, home risk-free 6 per cent, foreign risk-free 3 per cent) and a home risk-adjusted rate of 12 per cent. Using the home currency approach, what is the project's NPV (Rs lakh, to the nearest whole number)?",
+          "numeric_rule": {
+            "expected_answer": "181",
+            "unit_label": "Rs lakh",
+            "precision_decimals": 0,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Round to the nearest whole number.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "Expected spot rates are Rs 86.4466 and Rs 88.9645. Rupee inflows are 20 x 86.4466 = 1,728.93 and 40 x 88.9645 = 3,558.58 lakh. Discounted at 12 per cent: 1,728.93 / 1.12 = 1,543.69 and 3,558.58 / 1.2544 = 2,836.88, total 4,380.57. The investment is 50 x 84 = 4,200 lakh, so NPV = 180.57, about Rs 181 lakh.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "Rupee inflows.",
+              "formula_or_substitution": "20 x 86.4466; 40 x 88.9645",
+              "intermediate_result": "1,728.93; 3,558.58"
+            },
+            {
+              "step_number": 2,
+              "description": "Present value at 12 per cent.",
+              "formula_or_substitution": "1,728.93 / 1.12 + 3,558.58 / 1.2544",
+              "intermediate_result": "4,380.57"
+            },
+            {
+              "step_number": 3,
+              "description": "NPV.",
+              "formula_or_substitution": "4,380.57 - 4,200",
+              "intermediate_result": "180.57"
+            }
+          ]
+        }
+      },
+      {
+        "draft_id": "D037",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F005"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "For the same project, find the present value of the inflows in US$ lakh using the foreign currency approach, discounting at the foreign risk-adjusted rate of 8.83 per cent (use the unrounded rate 8.8302 per cent) (US$ lakh, to 2 decimal places).",
+          "numeric_rule": {
+            "expected_answer": "52.15",
+            "unit_label": "US$ lakh",
+            "precision_decimals": 2,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Round to 2 decimal places.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "PV = 20 / 1.088302 + 40 / 1.088302^2 = 18.38 + 33.77 = US$ 52.15 lakh. Converted at Rs 84 this is Rs 4,380.57 lakh, matching the home currency approach.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "Year 1.",
+              "formula_or_substitution": "20 / 1.088302",
+              "intermediate_result": "18.38"
+            },
+            {
+              "step_number": 2,
+              "description": "Year 2.",
+              "formula_or_substitution": "40 / 1.088302^2",
+              "intermediate_result": "33.77"
+            },
+            {
+              "step_number": 3,
+              "description": "Total.",
+              "formula_or_substitution": "18.38 + 33.77",
+              "intermediate_result": "52.15"
+            }
+          ]
+        }
+      },
+      {
+        "draft_id": "D038",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F005"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "For the same project, what is the profitability index by the home currency approach (to 2 decimal places)?",
+          "numeric_rule": {
+            "expected_answer": "1.04",
+            "unit_label": "times",
+            "precision_decimals": 2,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Round to 2 decimal places.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "PI = 4,380.57 / 4,200 = 1.043, which rounds to 1.04.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "PI.",
+              "formula_or_substitution": "4,380.57 / 4,200",
+              "intermediate_result": "1.04"
+            }
+          ]
+        }
+      },
+      {
+        "draft_id": "D039",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F005"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "For the same project, what is the payback period by the foreign currency approach (years, to 2 decimal places)?",
+          "numeric_rule": {
+            "expected_answer": "1.75",
+            "unit_label": "years",
+            "precision_decimals": 2,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Round to 2 decimal places.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "After year 1 the cumulative inflow is US$ 20 lakh, so US$ 30 lakh of the US$ 50 lakh is left; year 2 gives US$ 40 lakh. Payback = 1 + 30 / 40 = 1.75 years.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "Balance after year 1.",
+              "formula_or_substitution": "50 - 20",
+              "intermediate_result": "30"
+            },
+            {
+              "step_number": 2,
+              "description": "Payback.",
+              "formula_or_substitution": "1 + 30 / 40",
+              "intermediate_result": "1.75"
+            }
+          ]
+        }
+      },
+      {
+        "draft_id": "D040",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F005"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "For the same project, what is the payback period by the home currency approach (years, to 2 decimal places)?",
+          "numeric_rule": {
+            "expected_answer": "1.69",
+            "unit_label": "years",
+            "precision_decimals": 2,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Round to 2 decimal places.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "The investment is Rs 4,200 lakh. After year 1 the rupee inflow is 1,728.93, leaving 2,471.07; year 2 gives 3,558.58. Payback = 1 + 2,471.07 / 3,558.58 = 1.69 years. It is shorter than the foreign currency payback because the foreign currency is expected to appreciate.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "Balance after year 1.",
+              "formula_or_substitution": "4,200 - 1,728.93",
+              "intermediate_result": "2,471.07"
+            },
+            {
+              "step_number": 2,
+              "description": "Payback.",
+              "formula_or_substitution": "1 + 2,471.07 / 3,558.58",
+              "intermediate_result": "1.69"
+            }
+          ]
+        }
+      }
+    ],
+    "unresolved": [
+      "This unit is the courseware's account of international capital budgeting, standard financial management. No regulatory source applies for the techniques. The courseware mentions the Liberalised Remittance Scheme limit of USD 2,50,000 a financial year in passing; it is a regulatory figure and is not taught or tested here (the LRS is covered under BFM Module A against FEDAI and RBI sources).",
+      "The courseware's description of beta (a ratio of the product of the covariance of security and market returns over the variance of market returns) is garbled; the standard definition (covariance of the security's return with the market return divided by the variance of the market return) is taught. The S&P 500 stand-in for the market is the courseware's US example and is not taught as a rule.",
+      "The courseware's CCS Technologies illustration (a GDR financed project in China) mixes a cost of equity from the dividend growth model with Indian and Chinese interest rates and tax rules; it was not reproduced. The unit teaches the methods it shows (interest rate parity, risk-adjusted discount rates, home and foreign currency approaches) with new figures.",
+      "The courseware states IRRs of about 27 per cent (home currency approach) and about 35 per cent (foreign currency approach) for its example without showing the iterations; they are not taught or tested, and the unit notes that with consistent inputs the two approaches give the same NPV.",
+      "The courseware's rounding of the foreign currency discount rate (8.88 per cent rounded to 8.9) gives NPVs of 2,852 and 2,844 for the two approaches; these differ only by rounding and the unit uses unrounded rates.",
+      "Transfer pricing (OECD rules on related party transactions) is taught at the courseware's qualitative level; national transfer pricing rules were not consulted.",
+      "Numbers in the numerical items are invented and are checked in tests/content/batch-abfm-b-u04-b001.test.ts.",
+      "The courseware's check-your-progress questions were not copied; questions are independently written.",
+      "Reviewer for this batch is the authoring agent; no independent or human review.",
+      "Reviewer for this batch is the authoring agent; no independent or human review."
+    ],
+    "next_batch_hint": "ABFM Module B unit 5 (Adjustment of Risk and Uncertainty in Capital Budgeting Decision, courseware unit 11) from printed p. 229 (PDF p. 244; PDF page = printed + 15); render with pymupdf into tmp/abfm; quantitative."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "ABFM-B-U04-B001",
+    "paper_id": "ABFM",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 9, Compulsory Paper III, Module B: Financial Management, Capital Budgeting for International Project Investment Decisions"
+    },
+    "sources": [
+      {
+        "source_id": "S02",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "ABFM::MOD_B::U04",
+        "objective_ids": [
+          "ABFM::MOD_B::U04::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "ABFM::MOD_B::U04",
+        "objective_ids": [
+          "ABFM::MOD_B::U04::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "ABFM::MOD_B::U04",
+        "objective_ids": [
+          "ABFM::MOD_B::U04::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "ABFM::MOD_B::U04",
+        "objective_ids": [
+          "ABFM::MOD_B::U04::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "unit_id": "ABFM::MOD_B::U04",
+        "objective_ids": [
+          "ABFM::MOD_B::U04::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D006",
+        "unit_id": "ABFM::MOD_B::U04",
+        "objective_ids": [
+          "ABFM::MOD_B::U04::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D007",
+        "unit_id": "ABFM::MOD_B::U04",
+        "objective_ids": [
+          "ABFM::MOD_B::U04::LO_06"
+        ]
+      },
+      {
+        "draft_id": "D008",
+        "unit_id": "ABFM::MOD_B::U04",
+        "objective_ids": [
+          "ABFM::MOD_B::U04::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D009",
+        "unit_id": "ABFM::MOD_B::U04",
+        "objective_ids": [
+          "ABFM::MOD_B::U04::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D010",
+        "unit_id": "ABFM::MOD_B::U04",
+        "objective_ids": [
+          "ABFM::MOD_B::U04::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D011",
+        "unit_id": "ABFM::MOD_B::U04",
+        "objective_ids": [
+          "ABFM::MOD_B::U04::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D012",
+        "unit_id": "ABFM::MOD_B::U04",
+        "objective_ids": [
+          "ABFM::MOD_B::U04::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D013",
+        "unit_id": "ABFM::MOD_B::U04",
+        "objective_ids": [
+          "ABFM::MOD_B::U04::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D014",
+        "unit_id": "ABFM::MOD_B::U04",
+        "objective_ids": [
+          "ABFM::MOD_B::U04::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D015",
+        "unit_id": "ABFM::MOD_B::U04",
+        "objective_ids": [
+          "ABFM::MOD_B::U04::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D016",
+        "unit_id": "ABFM::MOD_B::U04",
+        "objective_ids": [
+          "ABFM::MOD_B::U04::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D017",
+        "unit_id": "ABFM::MOD_B::U04",
+        "objective_ids": [
+          "ABFM::MOD_B::U04::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D018",
+        "unit_id": "ABFM::MOD_B::U04",
+        "objective_ids": [
+          "ABFM::MOD_B::U04::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D019",
+        "unit_id": "ABFM::MOD_B::U04",
+        "objective_ids": [
+          "ABFM::MOD_B::U04::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D020",
+        "unit_id": "ABFM::MOD_B::U04",
+        "objective_ids": [
+          "ABFM::MOD_B::U04::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D021",
+        "unit_id": "ABFM::MOD_B::U04",
+        "objective_ids": [
+          "ABFM::MOD_B::U04::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D022",
+        "unit_id": "ABFM::MOD_B::U04",
+        "objective_ids": [
+          "ABFM::MOD_B::U04::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D023",
+        "unit_id": "ABFM::MOD_B::U04",
+        "objective_ids": [
+          "ABFM::MOD_B::U04::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D024",
+        "unit_id": "ABFM::MOD_B::U04",
+        "objective_ids": [
+          "ABFM::MOD_B::U04::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D025",
+        "unit_id": "ABFM::MOD_B::U04",
+        "objective_ids": [
+          "ABFM::MOD_B::U04::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D026",
+        "unit_id": "ABFM::MOD_B::U04",
+        "objective_ids": [
+          "ABFM::MOD_B::U04::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D027",
+        "unit_id": "ABFM::MOD_B::U04",
+        "objective_ids": [
+          "ABFM::MOD_B::U04::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D028",
+        "unit_id": "ABFM::MOD_B::U04",
+        "objective_ids": [
+          "ABFM::MOD_B::U04::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D029",
+        "unit_id": "ABFM::MOD_B::U04",
+        "objective_ids": [
+          "ABFM::MOD_B::U04::LO_06"
+        ]
+      },
+      {
+        "draft_id": "D030",
+        "unit_id": "ABFM::MOD_B::U04",
+        "objective_ids": [
+          "ABFM::MOD_B::U04::LO_06"
+        ]
+      },
+      {
+        "draft_id": "D031",
+        "unit_id": "ABFM::MOD_B::U04",
+        "objective_ids": [
+          "ABFM::MOD_B::U04::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D032",
+        "unit_id": "ABFM::MOD_B::U04",
+        "objective_ids": [
+          "ABFM::MOD_B::U04::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D033",
+        "unit_id": "ABFM::MOD_B::U04",
+        "objective_ids": [
+          "ABFM::MOD_B::U04::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D034",
+        "unit_id": "ABFM::MOD_B::U04",
+        "objective_ids": [
+          "ABFM::MOD_B::U04::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D035",
+        "unit_id": "ABFM::MOD_B::U04",
+        "objective_ids": [
+          "ABFM::MOD_B::U04::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D036",
+        "unit_id": "ABFM::MOD_B::U04",
+        "objective_ids": [
+          "ABFM::MOD_B::U04::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D037",
+        "unit_id": "ABFM::MOD_B::U04",
+        "objective_ids": [
+          "ABFM::MOD_B::U04::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D038",
+        "unit_id": "ABFM::MOD_B::U04",
+        "objective_ids": [
+          "ABFM::MOD_B::U04::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D039",
+        "unit_id": "ABFM::MOD_B::U04",
+        "objective_ids": [
+          "ABFM::MOD_B::U04::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D040",
+        "unit_id": "ABFM::MOD_B::U04",
+        "objective_ids": [
+          "ABFM::MOD_B::U04::LO_05"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "ABFM-B-U04-B001",
+      "draft_id": "D001",
+      "item_id": "item_5dbf80b3f0ee802226829d0c00af9b59d19d2ec5687858659bedaa9de996063b"
+    },
+    {
+      "batch_id": "ABFM-B-U04-B001",
+      "draft_id": "D002",
+      "item_id": "item_d65cb849f9092908a581047baa489453a2ad2f67d5c5fd12bb01e17867209a07"
+    },
+    {
+      "batch_id": "ABFM-B-U04-B001",
+      "draft_id": "D003",
+      "item_id": "item_0c37347b411bb2cc2876bdf743f091871acfa02cd50f396377bf874c77bd90d6"
+    },
+    {
+      "batch_id": "ABFM-B-U04-B001",
+      "draft_id": "D004",
+      "item_id": "item_47602916b392deed4e482fe2952fb2d8b85c8fb21a994f1c43f16658f6f48e69"
+    },
+    {
+      "batch_id": "ABFM-B-U04-B001",
+      "draft_id": "D005",
+      "item_id": "item_4bf60b074f72a5e9260bf1c4b58148de432a00f67de17a5d676c280c69f6e4b7"
+    },
+    {
+      "batch_id": "ABFM-B-U04-B001",
+      "draft_id": "D006",
+      "item_id": "item_2a676f6458122c555e338b01bded503f6719b7cf04a72944051c203ba1987df3"
+    },
+    {
+      "batch_id": "ABFM-B-U04-B001",
+      "draft_id": "D007",
+      "item_id": "item_eeb0e36b5f1c0576a9ebe383ee0658bcf14a3ec0fb9fe4b3bd521bd316736e5f"
+    },
+    {
+      "batch_id": "ABFM-B-U04-B001",
+      "draft_id": "D008",
+      "item_id": "item_3c3dae65ff1fe3039a661df94842e92bbf7a4b6b7b2f8c0ee5d0ed50a4487bb1"
+    },
+    {
+      "batch_id": "ABFM-B-U04-B001",
+      "draft_id": "D009",
+      "item_id": "item_b019a9cd9eb5bd6821d733f43d2db972dd85bfcee795a5ee597f769bcfab6c66"
+    },
+    {
+      "batch_id": "ABFM-B-U04-B001",
+      "draft_id": "D010",
+      "item_id": "item_0f0c642d27f3a7672755d783c31f45234dda6d0357a69c0140dbf0000a3ae14a"
+    },
+    {
+      "batch_id": "ABFM-B-U04-B001",
+      "draft_id": "D011",
+      "item_id": "item_9a2b3c5664530dc1a9be080b772e6e8c8962b47f7d5775cb878f60b2e08c562a"
+    },
+    {
+      "batch_id": "ABFM-B-U04-B001",
+      "draft_id": "D012",
+      "item_id": "item_cf38b88e1ddd8ba0943628993b2a885c8839927bc929830d8d687b4bdae675af"
+    },
+    {
+      "batch_id": "ABFM-B-U04-B001",
+      "draft_id": "D013",
+      "item_id": "item_8b28780a5d01c4d50ad892b481ad83b45ff7c40f3bb76a65de8894fcee05c322"
+    },
+    {
+      "batch_id": "ABFM-B-U04-B001",
+      "draft_id": "D014",
+      "item_id": "item_6827e231634cf1fd6e653363aa2c3ceca307c369343ddbe7266971405def3f3e"
+    },
+    {
+      "batch_id": "ABFM-B-U04-B001",
+      "draft_id": "D015",
+      "item_id": "item_d96c764956e281aedd87f93713c3a27d108ce7400c655e258fc1d7d54cee6da2"
+    },
+    {
+      "batch_id": "ABFM-B-U04-B001",
+      "draft_id": "D016",
+      "item_id": "item_35fec2ae58a153810806b9a68e087c1ea31e119ddc535dd4e0084bceb4c660f7"
+    },
+    {
+      "batch_id": "ABFM-B-U04-B001",
+      "draft_id": "D017",
+      "item_id": "item_2e35681eb3c58c208354c72fa0e20122f907f4440d952ec73c0b5d4b4bd6151e"
+    },
+    {
+      "batch_id": "ABFM-B-U04-B001",
+      "draft_id": "D018",
+      "item_id": "item_e568a76c1962507468ac637ffefd477d10b2ed09cd2b1c813c843c568939254c"
+    },
+    {
+      "batch_id": "ABFM-B-U04-B001",
+      "draft_id": "D019",
+      "item_id": "item_cf9217eff4c5839c1f9ca8af1ea32bf980ca59689423e1a4f72fd4b228b8285f"
+    },
+    {
+      "batch_id": "ABFM-B-U04-B001",
+      "draft_id": "D020",
+      "item_id": "item_ae30369f33d6f0fac7568c8c6609fedf8a04a692004dd493a7dfa22468ff1710"
+    },
+    {
+      "batch_id": "ABFM-B-U04-B001",
+      "draft_id": "D021",
+      "item_id": "item_afac5b266ea39da3bb8fa7dff0d0d6ac3b34eedb2d4177449d91829792d4ffab"
+    },
+    {
+      "batch_id": "ABFM-B-U04-B001",
+      "draft_id": "D022",
+      "item_id": "item_bb4edc125f0f01e7b2e5f0b078a95c5457ecfa6062ea0466e08a457375491d02"
+    },
+    {
+      "batch_id": "ABFM-B-U04-B001",
+      "draft_id": "D023",
+      "item_id": "item_1e59badd428015c7dbdfad05d3297f603fec8667253fc43b20f7719d1662e7ea"
+    },
+    {
+      "batch_id": "ABFM-B-U04-B001",
+      "draft_id": "D024",
+      "item_id": "item_5b8919fb753979418eae2490ba3aab4cab1aa2ad36a82c7bd5146c06b5a8d2ee"
+    },
+    {
+      "batch_id": "ABFM-B-U04-B001",
+      "draft_id": "D025",
+      "item_id": "item_2ea067d14f83c0fd91774b4c0e445212ae63ed113ee5a9f5d7fa3d0c1a9a193e"
+    },
+    {
+      "batch_id": "ABFM-B-U04-B001",
+      "draft_id": "D026",
+      "item_id": "item_28d65780f1a416faa331d93f51c31189305133436a3233bc7c96f6ac19ae2e99"
+    },
+    {
+      "batch_id": "ABFM-B-U04-B001",
+      "draft_id": "D027",
+      "item_id": "item_8e9ceccb053b84df7e4d554b58a8057d833c34c06bc610193b719ccba607faad"
+    },
+    {
+      "batch_id": "ABFM-B-U04-B001",
+      "draft_id": "D028",
+      "item_id": "item_d575ed46c6cb27ca9457d2723133ab2ae5028b78ad1833924e14fdf4b8b7aa0d"
+    },
+    {
+      "batch_id": "ABFM-B-U04-B001",
+      "draft_id": "D029",
+      "item_id": "item_7dd67f3bc2f9f6c86ca2edae67bf8a112e77040de79a0051ca82fd074c12f659"
+    },
+    {
+      "batch_id": "ABFM-B-U04-B001",
+      "draft_id": "D030",
+      "item_id": "item_7a64c84424cfc3aa0746fb7812653aecd47ac2385ae4181f0878ed49e7f8c020"
+    },
+    {
+      "batch_id": "ABFM-B-U04-B001",
+      "draft_id": "D031",
+      "item_id": "item_27bc16f5e07769b17b45199a249f3e746bbe6e5b14eb85a2cbc17b0faf4b20c0"
+    },
+    {
+      "batch_id": "ABFM-B-U04-B001",
+      "draft_id": "D032",
+      "item_id": "item_7054df422b153a0e2ab0c603c7343808c1a67cc5d6b04ba646bdc080b32ad118"
+    },
+    {
+      "batch_id": "ABFM-B-U04-B001",
+      "draft_id": "D033",
+      "item_id": "item_bd454f9b80d5015ee5d6fa151c11024a39fcffb6db4799579041de8eb7ffb88b"
+    },
+    {
+      "batch_id": "ABFM-B-U04-B001",
+      "draft_id": "D034",
+      "item_id": "item_ab90b0b73289f88ee327a8bc1e341a7e94c5ae4dd6b789022d3ada8621fd464c"
+    },
+    {
+      "batch_id": "ABFM-B-U04-B001",
+      "draft_id": "D035",
+      "item_id": "item_eb2a6a6f39c3c23e8ecd899b432cec0f713bedebfc03f452807816789b07b709"
+    },
+    {
+      "batch_id": "ABFM-B-U04-B001",
+      "draft_id": "D036",
+      "item_id": "item_3340752aa20ad4fe539eda7652b54b541c8ab6a4ed19bc976eea7f389bd02dd3"
+    },
+    {
+      "batch_id": "ABFM-B-U04-B001",
+      "draft_id": "D037",
+      "item_id": "item_fc1c1e0e203a9b058aedefe70b191537f678a166a4d81faaf53ec25c0368ec57"
+    },
+    {
+      "batch_id": "ABFM-B-U04-B001",
+      "draft_id": "D038",
+      "item_id": "item_79a3c39634349bab58dbdbaf7cefe0a0599dbb008106013dd90c63dc525e178c"
+    },
+    {
+      "batch_id": "ABFM-B-U04-B001",
+      "draft_id": "D039",
+      "item_id": "item_6988b3fa82f5031513549f27687b2d3a06841a58b3e1d656fd914cb2aee4a325"
+    },
+    {
+      "batch_id": "ABFM-B-U04-B001",
+      "draft_id": "D040",
+      "item_id": "item_e7f711da86e56c0454bd8d32e7bda1d53c1c15736cfe2ec18a62596a3443a8a6"
+    }
+  ],
+  "items": [
+    {
+      "prerequisite_objective_ids": [],
+      "title": "What is different about foreign investment",
+      "core_explanation_md": "**Differences:** work culture, **legal and currency systems**, accounting standards, trade barriers and language.\n\n**Cash flows** are in the **foreign currency**, so **exchange rate volatility** matters, especially over a long project. The currency used for analysis should be the one that **dominates** the project.\n\nThe **spot rate** applies to a **current** deal and the **forward rate** to a **future** one, adjusted for the **interest rate difference** and the **time**.",
+      "expanded_explanation_md": "Elaborate workings and several exchange rate scenarios may be needed for a long project.",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Which exchange rate applies to a future-dated currency contract?",
+        "expected_takeaway": "The forward rate."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_5dbf80b3f0ee802226829d0c00af9b59d19d2ec5687858659bedaa9de996063b",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U04",
+      "objective_ids": [
+        "ABFM::MOD_B::U04::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 211-214 and 217"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "prerequisite_objective_ids": [],
+      "title": "International portfolio investment and its channels",
+      "core_explanation_md": "**IPI** is investment in **foreign securities** (treasury bills, mutual funds, listed equities, debt) through **designated remittance channels**, in the **local currency** of the country invested in.\n\n**Benefits:** **diversification** and a **better risk-return trade-off**. **Barriers:** political or economic uncertainty, **price controls** and language. **Asset allocation** and **hedging** (for example a forward contract) manage risk.\n\n**Direct channels:** **ADRs, GDRs** and **FDI**. **Indirect channels:** intermediaries such as **mutual funds and ETFs**.",
+      "expanded_explanation_md": "Developed markets offer variety and stable exchange rates, which lower risk.",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Name one direct and one indirect channel for foreign portfolio investment.",
+        "expected_takeaway": "Direct: ADRs or GDRs. Indirect: mutual funds or ETFs."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_d65cb849f9092908a581047baa489453a2ad2f67d5c5fd12bb01e17867209a07",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U04",
+      "objective_ids": [
+        "ABFM::MOD_B::U04::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 211-214 and 217"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "prerequisite_objective_ids": [],
+      "title": "Exchange risk, country risk and the return on foreign investment",
+      "core_explanation_md": "**Exchange risk:** the **home-currency value** of the investment falls because the **local currency depreciates** or the **home currency strengthens**.\n\n**Country risk:** **political developments, restrictions, legal system, turbulence and change of government**.\n\n**Return:** **more liquid** assets give a **lower return**, **secured** assets give less than **unsecured**; a country with a **stable exchange rate** gives better returns, and **reinvesting dividends** raises them.",
+      "expanded_explanation_md": "Foreign investment carries exchange and country risk on top of the usual risks.",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Give two examples of country risk.",
+        "expected_takeaway": "Political upheaval and restrictions on free trade or capital movement."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_0c37347b411bb2cc2876bdf743f091871acfa02cd50f396377bf874c77bd90d6",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U04",
+      "objective_ids": [
+        "ABFM::MOD_B::U04::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed p. 217"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "prerequisite_objective_ids": [],
+      "title": "CAPM and APT expected return",
+      "core_explanation_md": "**CAPM:** **re = rf + beta x (rm - rf)**. Beta measures **systematic risk** against the market; **rm - rf** is the **market risk premium**.\n\n**APT:** the expected return is the **risk-free rate plus, for each macroeconomic factor, beta x risk premium**. It uses **several factors** (GDP, inflation, gold, stock index), not just the market.",
+      "formula_spec": {
+        "latex_expression": "r_e = r_f + \\beta (r_m - r_f)",
+        "variables": [
+          {
+            "symbol": "re",
+            "name": "Expected return on equity",
+            "unit": "per cent"
+          },
+          {
+            "symbol": "rf",
+            "name": "Risk-free rate",
+            "unit": "per cent"
+          },
+          {
+            "symbol": "beta",
+            "name": "Sensitivity of the security to the market",
+            "unit": "number"
+          },
+          {
+            "symbol": "rm - rf",
+            "name": "Market risk premium",
+            "unit": "per cent"
+          }
+        ],
+        "assumptions": [
+          "A single market factor drives systematic risk"
+        ],
+        "common_errors": [
+          "Applying beta to the market return instead of the premium",
+          "Adding the risk-free rate twice"
+        ]
+      },
+      "expanded_explanation_md": "Beta is the covariance of the security's return with the market return divided by the variance of the market return.",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "How does APT differ from CAPM?",
+        "expected_takeaway": "APT uses several macroeconomic factors with their own betas and premiums; CAPM uses only the market."
+      },
+      "item_type": "card",
+      "card_type": "formula",
+      "id": "item_47602916b392deed4e482fe2952fb2d8b85c8fb21a994f1c43f16658f6f48e69",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U04",
+      "objective_ids": [
+        "ABFM::MOD_B::U04::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 217-218"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "prerequisite_objective_ids": [],
+      "title": "Risk-adjusted discount rate and expected spot rate",
+      "core_explanation_md": "**Foreign risk-adjusted rate:** first find the **risk premium** the company wants at home, **(1 + rp) = (1 + home required rate) / (1 + home risk-free rate)**; then **(1 + r_a) = (1 + foreign risk-free rate) x (1 + rp)**.\n\n**Expected spot rate (interest rate parity):** **S_t = S_0 x [(1 + home risk-free) / (1 + foreign risk-free)]^t**. The currency of the **higher interest rate** is expected to **depreciate**.",
+      "formula_spec": {
+        "latex_expression": "S_t = S_0 \\left(\\frac{1 + r_h}{1 + r_f}\\right)^t",
+        "variables": [
+          {
+            "symbol": "St",
+            "name": "Expected spot rate at time t (home currency per unit of foreign)",
+            "unit": "Rs per unit"
+          },
+          {
+            "symbol": "S0",
+            "name": "Current spot rate",
+            "unit": "Rs per unit"
+          },
+          {
+            "symbol": "rh",
+            "name": "Home risk-free rate",
+            "unit": "proportion"
+          },
+          {
+            "symbol": "rf",
+            "name": "Foreign risk-free rate",
+            "unit": "proportion"
+          }
+        ],
+        "assumptions": [
+          "Interest rate parity holds",
+          "Rates are annual and constant"
+        ],
+        "common_errors": [
+          "Inverting the ratio of interest rates",
+          "Using simple instead of compound growth over several years"
+        ]
+      },
+      "expanded_explanation_md": "With a higher home interest rate the foreign currency is expected to be dearer in rupees in later years.",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "If home interest rates exceed foreign rates, what is expected of the exchange rate (home per foreign)?",
+        "expected_takeaway": "It is expected to rise, so the home currency depreciates."
+      },
+      "item_type": "card",
+      "card_type": "formula",
+      "id": "item_4bf60b074f72a5e9260bf1c4b58148de432a00f67de17a5d676c280c69f6e4b7",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U04",
+      "objective_ids": [
+        "ABFM::MOD_B::U04::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 219-220"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "prerequisite_objective_ids": [],
+      "title": "Home currency and foreign currency approaches",
+      "core_explanation_md": "| Step | Home currency approach | Foreign currency approach |\n| --- | --- | --- |\n| 1 | Forecast **spot rates** for each year | Find the **foreign risk-adjusted rate** |\n| 2 | **Convert** inflows to **rupees** | **Discount** inflows in the **foreign currency** |\n| 3 | **Discount** at the **home risk-adjusted rate** | **Convert** the present value at the **current spot rate** |\n| 4 | Subtract the investment (at current spot) | Subtract the investment (at current spot) |\n\nWith **consistent** inputs the two give the **same NPV**; small differences come from **rounding**.",
+      "expanded_explanation_md": "Payback, IRR and the profitability index are applied the same way once the cash flows are in one currency.",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Which approach converts each year's inflow at a different spot rate?",
+        "expected_takeaway": "The home currency approach."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_2a676f6458122c555e338b01bded503f6719b7cf04a72944051c203ba1987df3",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U04",
+      "objective_ids": [
+        "ABFM::MOD_B::U04::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 220-225"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "prerequisite_objective_ids": [],
+      "title": "Transfer pricing",
+      "core_explanation_md": "**Transfer prices** are charged between **related parties in different countries**. They can be set to **shift profit to a tax haven**, so the **OECD** recommends **transfer pricing rules** for related party transactions, now in many countries' tax laws.\n\nBreaches attract **financial burdens** that can be **prohibitive**, so **international investments** must be studied with these rules in mind.",
+      "expanded_explanation_md": "The principle is that related parties should price transactions as unrelated parties would.",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Why do countries impose transfer pricing rules?",
+        "expected_takeaway": "To stop related parties manipulating prices to move profits to low-tax jurisdictions."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_eeb0e36b5f1c0576a9ebe383ee0658bcf14a3ec0fb9fe4b3bd521bd316736e5f",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U04",
+      "objective_ids": [
+        "ABFM::MOD_B::U04::LO_06"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 225-226"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Why does capital budgeting for an overseas project need extra care compared with a domestic project?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Cash flows are in a foreign currency and the project faces different legal, cultural and currency conditions",
+          "explanation_md": "These factors add exchange and country uncertainty."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The discounting method is entirely different",
+          "explanation_md": "The methods are the same as for domestic projects."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Overseas projects have no risk",
+          "explanation_md": "They carry additional risks."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Foreign currency is always stable",
+          "explanation_md": "Exchange rates fluctuate."
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_explanation_md": "Foreign conditions.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_3c3dae65ff1fe3039a661df94842e92bbf7a4b6b7b2f8c0ee5d0ed50a4487bb1",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U04",
+      "objective_ids": [
+        "ABFM::MOD_B::U04::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 211-214 and 217"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Which exchange rate applies to a contract for currency to be delivered at a future date?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The spot rate",
+          "explanation_md": "The spot rate applies to current transactions."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The forward rate",
+          "explanation_md": "It is adjusted for the interest rate difference and time to expiry."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The cross rate only",
+          "explanation_md": "A cross rate is derived from two other rates."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The historical rate",
+          "explanation_md": "A past rate does not price a future contract."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_explanation_md": "Forward rate.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_b019a9cd9eb5bd6821d733f43d2db972dd85bfcee795a5ee597f769bcfab6c66",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U04",
+      "objective_ids": [
+        "ABFM::MOD_B::U04::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 211-214 and 217"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "International portfolio investment is best described as",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Opening a factory abroad",
+          "explanation_md": "That is direct investment in a project."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Lending to a domestic company",
+          "explanation_md": "The investment is in foreign securities."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Investment in foreign securities through designated cross-country remittance channels",
+          "explanation_md": "It covers treasury bills, mutual funds, equities and debt abroad."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Buying domestic gold",
+          "explanation_md": "It is not foreign securities."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_explanation_md": "Foreign securities.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_0f0c642d27f3a7672755d783c31f45234dda6d0357a69c0140dbf0000a3ae14a",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U04",
+      "objective_ids": [
+        "ABFM::MOD_B::U04::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 211-214 and 217"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "The main attraction of international diversification is that",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "It removes all risk",
+          "explanation_md": "Risk is reduced, not removed."
+        },
+        {
+          "option_id": "B",
+          "text_md": "It guarantees capital gains",
+          "explanation_md": "Returns are not guaranteed."
+        },
+        {
+          "option_id": "C",
+          "text_md": "It avoids all taxes",
+          "explanation_md": "Taxes still apply to foreign investment returns."
+        },
+        {
+          "option_id": "D",
+          "text_md": "A portfolio across national markets can achieve a better risk-return trade-off",
+          "explanation_md": "Different markets do not move together."
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_explanation_md": "Better trade-off.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_9a2b3c5664530dc1a9be080b772e6e8c8962b47f7d5775cb878f60b2e08c562a",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U04",
+      "objective_ids": [
+        "ABFM::MOD_B::U04::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 211-214 and 217"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Which of these is a direct channel for foreign portfolio investment mentioned in the courseware?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "American or Global Depository Receipts",
+          "explanation_md": "ADRs and GDRs let investors hold foreign company shares."
+        },
+        {
+          "option_id": "B",
+          "text_md": "A foreign-focused mutual fund",
+          "explanation_md": "That is an indirect channel."
+        },
+        {
+          "option_id": "C",
+          "text_md": "An exchange-traded fund",
+          "explanation_md": "That is an indirect channel."
+        },
+        {
+          "option_id": "D",
+          "text_md": "A bank fixed deposit at home",
+          "explanation_md": "That is a domestic investment."
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_explanation_md": "ADR or GDR.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_cf38b88e1ddd8ba0943628993b2a885c8839927bc929830d8d687b4bdae675af",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U04",
+      "objective_ids": [
+        "ABFM::MOD_B::U04::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 211-214 and 217"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A forward exchange contract is a way to",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Raise the interest rate abroad",
+          "explanation_md": "It does not change interest rates."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Hedge against exchange rate risk on a planned foreign investment or liquidation",
+          "explanation_md": "It fixes the rate in advance."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Increase barriers to capital flow",
+          "explanation_md": "It is not a barrier."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Avoid asset allocation",
+          "explanation_md": "It is a hedge, not an allocation."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_explanation_md": "Hedging.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_8b28780a5d01c4d50ad892b481ad83b45ff7c40f3bb76a65de8894fcee05c322",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U04",
+      "objective_ids": [
+        "ABFM::MOD_B::U04::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 211-214 and 217"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Exchange risk on an investment abroad is the risk that",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The foreign government changes",
+          "explanation_md": "That is country risk."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The investee company pays no dividend",
+          "explanation_md": "That is investment risk."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Its value in the home currency falls because of currency movements",
+          "explanation_md": "Depreciation of the local currency reduces home-currency value."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Interest rates are zero",
+          "explanation_md": "That is not exchange risk."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_explanation_md": "Currency movement.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_6827e231634cf1fd6e653363aa2c3ceca307c369343ddbe7266971405def3f3e",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U04",
+      "objective_ids": [
+        "ABFM::MOD_B::U04::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed p. 217"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Which of these is a country risk?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "A fall in the rupee against the dollar",
+          "explanation_md": "That is exchange risk."
+        },
+        {
+          "option_id": "B",
+          "text_md": "A competitor cutting prices",
+          "explanation_md": "That is business risk."
+        },
+        {
+          "option_id": "C",
+          "text_md": "A change in the company's dividend policy",
+          "explanation_md": "That is company-specific risk."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Political turbulence or change of government in the investee country",
+          "explanation_md": "It can disrupt investments."
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_explanation_md": "Political risk.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_d96c764956e281aedd87f93713c3a27d108ce7400c655e258fc1d7d54cee6da2",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U04",
+      "objective_ids": [
+        "ABFM::MOD_B::U04::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed p. 217"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Generally, a more liquid foreign investment gives",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "A lower return, because liquidity reduces risk",
+          "explanation_md": "Liquidity is paid for through a lower return."
+        },
+        {
+          "option_id": "B",
+          "text_md": "A higher return, because it is riskier",
+          "explanation_md": "Liquid assets carry less risk."
+        },
+        {
+          "option_id": "C",
+          "text_md": "No return",
+          "explanation_md": "It gives some return."
+        },
+        {
+          "option_id": "D",
+          "text_md": "A guaranteed return",
+          "explanation_md": "Returns are not guaranteed."
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_explanation_md": "Liquidity lowers return.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_35fec2ae58a153810806b9a68e087c1ea31e119ddc535dd4e0084bceb4c660f7",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U04",
+      "objective_ids": [
+        "ABFM::MOD_B::U04::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed p. 217"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "In CAPM the market risk premium is",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The risk-free rate less the market return",
+          "explanation_md": "That reverses the sign."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The expected market return less the risk-free rate",
+          "explanation_md": "It is the extra return for bearing market risk."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The beta of the security",
+          "explanation_md": "Beta is a sensitivity, not the premium."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The dividend yield",
+          "explanation_md": "The premium is not the dividend yield."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_explanation_md": "rm - rf.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_2e35681eb3c58c208354c72fa0e20122f907f4440d952ec73c0b5d4b4bd6151e",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U04",
+      "objective_ids": [
+        "ABFM::MOD_B::U04::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 217-218"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A security with a beta of 1.5 is",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Less volatile than the market",
+          "explanation_md": "That would be a beta below 1."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Risk free",
+          "explanation_md": "A risk-free asset has a beta of zero."
+        },
+        {
+          "option_id": "C",
+          "text_md": "More volatile than the market",
+          "explanation_md": "Its return moves by more than the market's."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Independent of the market",
+          "explanation_md": "A beta of 1.5 shows strong dependence."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_explanation_md": "Beta above 1.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_e568a76c1962507468ac637ffefd477d10b2ed09cd2b1c813c843c568939254c",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U04",
+      "objective_ids": [
+        "ABFM::MOD_B::U04::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 217-218"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Arbitrage pricing theory differs from CAPM because it",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Ignores the risk-free rate",
+          "explanation_md": "It uses the risk-free rate."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Uses only one factor",
+          "explanation_md": "It allows many factors."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Cannot be used for equities",
+          "explanation_md": "It can be used for securities."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Uses several macroeconomic factors rather than only the market return",
+          "explanation_md": "Each factor has its own beta and risk premium."
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_explanation_md": "Multiple factors.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_cf9217eff4c5839c1f9ca8af1ea32bf980ca59689423e1a4f72fd4b228b8285f",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U04",
+      "objective_ids": [
+        "ABFM::MOD_B::U04::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 217-218"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Which of these is given by the courseware as a factor in APT?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Gross domestic product growth",
+          "explanation_md": "GDP growth is one macroeconomic factor."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The colour of the share certificate",
+          "explanation_md": "It is not an economic factor."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The size of the office",
+          "explanation_md": "It is not an economic factor."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The number of directors",
+          "explanation_md": "It is not an economic factor."
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_explanation_md": "GDP.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_ae30369f33d6f0fac7568c8c6609fedf8a04a692004dd493a7dfa22468ff1710",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U04",
+      "objective_ids": [
+        "ABFM::MOD_B::U04::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 217-218"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "The expected spot rate in the future, by interest rate parity, depends on",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The tax rate only",
+          "explanation_md": "Tax is not in the formula."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The current spot rate and the interest rates in the two countries",
+          "explanation_md": "It grows by the ratio of (1 + home rate) to (1 + foreign rate)."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The company's dividend",
+          "explanation_md": "Dividend is not in the formula."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The project's payback",
+          "explanation_md": "Payback is not in the formula."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_explanation_md": "Spot and interest rates.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_afac5b266ea39da3bb8fa7dff0d0d6ac3b34eedb2d4177449d91829792d4ffab",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U04",
+      "objective_ids": [
+        "ABFM::MOD_B::U04::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 219-220"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "If the home interest rate is higher than the foreign interest rate, the foreign currency is expected to",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Become cheaper in home currency terms",
+          "explanation_md": "That would be the case if the foreign rate were higher."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Stay unchanged",
+          "explanation_md": "Parity implies a change."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Become more expensive in home currency terms",
+          "explanation_md": "The home currency is expected to depreciate."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Disappear",
+          "explanation_md": "This does not follow."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_explanation_md": "Foreign currency appreciates.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_bb4edc125f0f01e7b2e5f0b078a95c5457ecfa6062ea0466e08a457375491d02",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U04",
+      "objective_ids": [
+        "ABFM::MOD_B::U04::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 219-220"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "How is the risk premium for the foreign project found in the courseware's method?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "From the foreign exchange rate alone",
+          "explanation_md": "Exchange rate is used for conversion."
+        },
+        {
+          "option_id": "B",
+          "text_md": "From the foreign inflation only",
+          "explanation_md": "The method uses interest rates."
+        },
+        {
+          "option_id": "C",
+          "text_md": "From the tax rate",
+          "explanation_md": "Tax is not the source."
+        },
+        {
+          "option_id": "D",
+          "text_md": "From the home risk-free rate and the home risk-adjusted rate the company requires",
+          "explanation_md": "It is (1 + home required rate) / (1 + home risk-free rate) minus one."
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_explanation_md": "Home premium.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_1e59badd428015c7dbdfad05d3297f603fec8667253fc43b20f7719d1662e7ea",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U04",
+      "objective_ids": [
+        "ABFM::MOD_B::U04::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 219-220"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "The courseware notes that in practice the risk premium for a foreign project may need to be higher because of",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Trade barriers, currency fluctuations and stringent laws",
+          "explanation_md": "These add risks beyond the home project."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Lower interest rates abroad",
+          "explanation_md": "This is not the reason given."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Higher dividends",
+          "explanation_md": "This is not the reason given."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Shorter project life",
+          "explanation_md": "This is not the reason given."
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_explanation_md": "Additional risks.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_5b8919fb753979418eae2490ba3aab4cab1aa2ad36a82c7bd5146c06b5a8d2ee",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U04",
+      "objective_ids": [
+        "ABFM::MOD_B::U04::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 219-220"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Under the home currency approach, foreign cash flows are",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Discounted at the foreign rate and then converted at spot",
+          "explanation_md": "That is the foreign currency approach."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Converted at expected spot rates and discounted at the domestic risk-adjusted rate",
+          "explanation_md": "All flows are in the home currency before discounting."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Ignored",
+          "explanation_md": "They are the basis of the analysis."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Converted at the forward rate for one year only",
+          "explanation_md": "Each year uses its own expected spot rate."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_explanation_md": "Convert then discount.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_2ea067d14f83c0fd91774b4c0e445212ae63ed113ee5a9f5d7fa3d0c1a9a193e",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U04",
+      "objective_ids": [
+        "ABFM::MOD_B::U04::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 220-225"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Under the foreign currency approach, the present value is converted to home currency using",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The spot rate at the end of the project",
+          "explanation_md": "The discounted value is a present value."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The average of all future spot rates",
+          "explanation_md": "It uses the current rate."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The current spot rate",
+          "explanation_md": "The discounted value is today's value, so today's rate applies."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The forward rate in the final year",
+          "explanation_md": "It uses the current rate."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_explanation_md": "Current spot.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_28d65780f1a416faa331d93f51c31189305133436a3233bc7c96f6ac19ae2e99",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U04",
+      "objective_ids": [
+        "ABFM::MOD_B::U04::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 220-225"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "If interest rate parity is used consistently, the NPVs from the home currency approach and the foreign currency approach are",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Always different",
+          "explanation_md": "Consistent inputs give the same result."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Always negative",
+          "explanation_md": "The sign depends on the project."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Unrelated",
+          "explanation_md": "They are two routes to one value."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The same, apart from rounding",
+          "explanation_md": "The two methods are algebraically consistent."
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_explanation_md": "Same NPV.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_8e9ceccb053b84df7e4d554b58a8057d833c34c06bc610193b719ccba607faad",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U04",
+      "objective_ids": [
+        "ABFM::MOD_B::U04::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 220-225"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "In the home currency approach the initial investment is converted using",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The actual present spot rate",
+          "explanation_md": "The outlay is made now."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The expected spot rate in the last year",
+          "explanation_md": "The outlay is not in the last year."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The forward rate",
+          "explanation_md": "The outlay is made now at spot."
+        },
+        {
+          "option_id": "D",
+          "text_md": "A rate of one",
+          "explanation_md": "No conversion would be wrong."
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_explanation_md": "Present spot.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_d575ed46c6cb27ca9457d2723133ab2ae5028b78ad1833924e14fdf4b8b7aa0d",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U04",
+      "objective_ids": [
+        "ABFM::MOD_B::U04::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 220-225"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Transfer pricing rules were recommended by the OECD to",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Fix exchange rates",
+          "explanation_md": "They do not fix exchange rates."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Prevent related parties from moving profit to low-tax jurisdictions through manipulated prices",
+          "explanation_md": "Prices between related parties must reflect fair value."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Set interest rates",
+          "explanation_md": "They do not set interest rates."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Ban foreign investment",
+          "explanation_md": "They do not ban investment."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_explanation_md": "Prevent profit shifting.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_7dd67f3bc2f9f6c86ca2edae67bf8a112e77040de79a0051ca82fd074c12f659",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U04",
+      "objective_ids": [
+        "ABFM::MOD_B::U04::LO_06"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 225-226"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Why must an investor study transfer pricing rules before investing abroad?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "They guarantee profits",
+          "explanation_md": "They do not guarantee profit."
+        },
+        {
+          "option_id": "B",
+          "text_md": "They remove tax",
+          "explanation_md": "They do not remove tax."
+        },
+        {
+          "option_id": "C",
+          "text_md": "A breach can bring financial burdens that can be prohibitive",
+          "explanation_md": "Penalties can erode returns."
+        },
+        {
+          "option_id": "D",
+          "text_md": "They apply only to banks",
+          "explanation_md": "They apply to related party transactions generally."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_explanation_md": "Penalty risk.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_7a64c84424cfc3aa0746fb7812653aecd47ac2385ae4181f0878ed49e7f8c020",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U04",
+      "objective_ids": [
+        "ABFM::MOD_B::U04::LO_06"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 225-226"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "The risk-free rate is 7 per cent, the market is expected to return 13 per cent and a security has a beta of 1.2. What is the expected return on the security under CAPM (per cent, to 1 decimal place)?",
+      "numeric_rule": {
+        "expected_answer": "14.2",
+        "unit_label": "per cent",
+        "precision_decimals": 1,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Round to 1 decimal place.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "Market risk premium = 13 - 7 = 6 per cent. Expected return = 7 + 1.2 x 6 = 14.2 per cent.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "Market risk premium.",
+          "formula_or_substitution": "13 - 7",
+          "intermediate_result": "6"
+        },
+        {
+          "step_number": 2,
+          "description": "CAPM.",
+          "formula_or_substitution": "7 + 1.2 x 6",
+          "intermediate_result": "14.2"
+        }
+      ],
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_27bc16f5e07769b17b45199a249f3e746bbe6e5b14eb85a2cbc17b0faf4b20c0",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U04",
+      "objective_ids": [
+        "ABFM::MOD_B::U04::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 217-218"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Under arbitrage pricing theory a share has a risk-free rate of 4 per cent and three factors: GDP (beta 0.5, risk premium 3 per cent), inflation (beta -0.4, risk premium 2 per cent) and oil price (beta 0.8, risk premium 4 per cent). What is its expected return (per cent, to 1 decimal place)?",
+      "numeric_rule": {
+        "expected_answer": "7.9",
+        "unit_label": "per cent",
+        "precision_decimals": 1,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Round to 1 decimal place.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "Expected return = 4 + 0.5 x 3 + (-0.4) x 2 + 0.8 x 4 = 4 + 1.5 - 0.8 + 3.2 = 7.9 per cent.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "Factor contributions.",
+          "formula_or_substitution": "1.5 - 0.8 + 3.2",
+          "intermediate_result": "3.9"
+        },
+        {
+          "step_number": 2,
+          "description": "Add the risk-free rate.",
+          "formula_or_substitution": "4 + 3.9",
+          "intermediate_result": "7.9"
+        }
+      ],
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_7054df422b153a0e2ab0c603c7343808c1a67cc5d6b04ba646bdc080b32ad118",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U04",
+      "objective_ids": [
+        "ABFM::MOD_B::U04::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 217-218"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "The current spot rate is Rs 84 per unit of the foreign currency. The home risk-free rate is 6 per cent and the foreign risk-free rate is 3 per cent. What is the expected spot rate after one year by interest rate parity (Rs, to 2 decimal places)?",
+      "numeric_rule": {
+        "expected_answer": "86.45",
+        "unit_label": "Rs",
+        "precision_decimals": 2,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Round to 2 decimal places.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "S1 = 84 x (1.06 / 1.03) = 84 x 1.029126 = Rs 86.45.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "Ratio of interest factors.",
+          "formula_or_substitution": "1.06 / 1.03",
+          "intermediate_result": "1.029126"
+        },
+        {
+          "step_number": 2,
+          "description": "Expected spot rate.",
+          "formula_or_substitution": "84 x 1.029126",
+          "intermediate_result": "86.45"
+        }
+      ],
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_bd454f9b80d5015ee5d6fa151c11024a39fcffb6db4799579041de8eb7ffb88b",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U04",
+      "objective_ids": [
+        "ABFM::MOD_B::U04::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 219-220"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "For the same data, what is the expected spot rate after two years (Rs, to 2 decimal places)?",
+      "numeric_rule": {
+        "expected_answer": "88.96",
+        "unit_label": "Rs",
+        "precision_decimals": 2,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Round to 2 decimal places.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "S2 = 84 x (1.06 / 1.03)^2 = 84 x 1.059101 = Rs 88.96.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "Two-year factor.",
+          "formula_or_substitution": "(1.06 / 1.03)^2",
+          "intermediate_result": "1.059101"
+        },
+        {
+          "step_number": 2,
+          "description": "Expected spot rate.",
+          "formula_or_substitution": "84 x 1.059101",
+          "intermediate_result": "88.96"
+        }
+      ],
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_ab90b0b73289f88ee327a8bc1e341a7e94c5ae4dd6b789022d3ada8621fd464c",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U04",
+      "objective_ids": [
+        "ABFM::MOD_B::U04::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 219-220"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "A company requires 12 per cent on a similar home project where the risk-free rate is 6 per cent. The risk-free rate in the foreign country is 3 per cent. What is the risk-adjusted discount rate for the foreign project (per cent, to 2 decimal places)?",
+      "numeric_rule": {
+        "expected_answer": "8.83",
+        "unit_label": "per cent",
+        "precision_decimals": 2,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Round to 2 decimal places.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "(1 + rp) = 1.12 / 1.06 = 1.056604. (1 + r_a) = 1.03 x 1.056604 = 1.088302, so r_a = 8.83 per cent.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "Risk premium factor.",
+          "formula_or_substitution": "1.12 / 1.06",
+          "intermediate_result": "1.056604"
+        },
+        {
+          "step_number": 2,
+          "description": "Foreign rate.",
+          "formula_or_substitution": "1.03 x 1.056604 - 1",
+          "intermediate_result": "0.0883"
+        }
+      ],
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_eb2a6a6f39c3c23e8ecd899b432cec0f713bedebfc03f452807816789b07b709",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U04",
+      "objective_ids": [
+        "ABFM::MOD_B::U04::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 219-220"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "A foreign project needs US$ 50 lakh now and returns US$ 20 lakh and US$ 40 lakh at the ends of years 1 and 2. Use the same rates as above (spot Rs 84, home risk-free 6 per cent, foreign risk-free 3 per cent) and a home risk-adjusted rate of 12 per cent. Using the home currency approach, what is the project's NPV (Rs lakh, to the nearest whole number)?",
+      "numeric_rule": {
+        "expected_answer": "181",
+        "unit_label": "Rs lakh",
+        "precision_decimals": 0,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Round to the nearest whole number.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "Expected spot rates are Rs 86.4466 and Rs 88.9645. Rupee inflows are 20 x 86.4466 = 1,728.93 and 40 x 88.9645 = 3,558.58 lakh. Discounted at 12 per cent: 1,728.93 / 1.12 = 1,543.69 and 3,558.58 / 1.2544 = 2,836.88, total 4,380.57. The investment is 50 x 84 = 4,200 lakh, so NPV = 180.57, about Rs 181 lakh.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "Rupee inflows.",
+          "formula_or_substitution": "20 x 86.4466; 40 x 88.9645",
+          "intermediate_result": "1,728.93; 3,558.58"
+        },
+        {
+          "step_number": 2,
+          "description": "Present value at 12 per cent.",
+          "formula_or_substitution": "1,728.93 / 1.12 + 3,558.58 / 1.2544",
+          "intermediate_result": "4,380.57"
+        },
+        {
+          "step_number": 3,
+          "description": "NPV.",
+          "formula_or_substitution": "4,380.57 - 4,200",
+          "intermediate_result": "180.57"
+        }
+      ],
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_3340752aa20ad4fe539eda7652b54b541c8ab6a4ed19bc976eea7f389bd02dd3",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U04",
+      "objective_ids": [
+        "ABFM::MOD_B::U04::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 220-225"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "For the same project, find the present value of the inflows in US$ lakh using the foreign currency approach, discounting at the foreign risk-adjusted rate of 8.83 per cent (use the unrounded rate 8.8302 per cent) (US$ lakh, to 2 decimal places).",
+      "numeric_rule": {
+        "expected_answer": "52.15",
+        "unit_label": "US$ lakh",
+        "precision_decimals": 2,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Round to 2 decimal places.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "PV = 20 / 1.088302 + 40 / 1.088302^2 = 18.38 + 33.77 = US$ 52.15 lakh. Converted at Rs 84 this is Rs 4,380.57 lakh, matching the home currency approach.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "Year 1.",
+          "formula_or_substitution": "20 / 1.088302",
+          "intermediate_result": "18.38"
+        },
+        {
+          "step_number": 2,
+          "description": "Year 2.",
+          "formula_or_substitution": "40 / 1.088302^2",
+          "intermediate_result": "33.77"
+        },
+        {
+          "step_number": 3,
+          "description": "Total.",
+          "formula_or_substitution": "18.38 + 33.77",
+          "intermediate_result": "52.15"
+        }
+      ],
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_fc1c1e0e203a9b058aedefe70b191537f678a166a4d81faaf53ec25c0368ec57",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U04",
+      "objective_ids": [
+        "ABFM::MOD_B::U04::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 220-225"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "For the same project, what is the profitability index by the home currency approach (to 2 decimal places)?",
+      "numeric_rule": {
+        "expected_answer": "1.04",
+        "unit_label": "times",
+        "precision_decimals": 2,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Round to 2 decimal places.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "PI = 4,380.57 / 4,200 = 1.043, which rounds to 1.04.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "PI.",
+          "formula_or_substitution": "4,380.57 / 4,200",
+          "intermediate_result": "1.04"
+        }
+      ],
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_79a3c39634349bab58dbdbaf7cefe0a0599dbb008106013dd90c63dc525e178c",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U04",
+      "objective_ids": [
+        "ABFM::MOD_B::U04::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 220-225"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "For the same project, what is the payback period by the foreign currency approach (years, to 2 decimal places)?",
+      "numeric_rule": {
+        "expected_answer": "1.75",
+        "unit_label": "years",
+        "precision_decimals": 2,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Round to 2 decimal places.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "After year 1 the cumulative inflow is US$ 20 lakh, so US$ 30 lakh of the US$ 50 lakh is left; year 2 gives US$ 40 lakh. Payback = 1 + 30 / 40 = 1.75 years.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "Balance after year 1.",
+          "formula_or_substitution": "50 - 20",
+          "intermediate_result": "30"
+        },
+        {
+          "step_number": 2,
+          "description": "Payback.",
+          "formula_or_substitution": "1 + 30 / 40",
+          "intermediate_result": "1.75"
+        }
+      ],
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_6988b3fa82f5031513549f27687b2d3a06841a58b3e1d656fd914cb2aee4a325",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U04",
+      "objective_ids": [
+        "ABFM::MOD_B::U04::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 220-225"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "For the same project, what is the payback period by the home currency approach (years, to 2 decimal places)?",
+      "numeric_rule": {
+        "expected_answer": "1.69",
+        "unit_label": "years",
+        "precision_decimals": 2,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Round to 2 decimal places.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "The investment is Rs 4,200 lakh. After year 1 the rupee inflow is 1,728.93, leaving 2,471.07; year 2 gives 3,558.58. Payback = 1 + 2,471.07 / 3,558.58 = 1.69 years. It is shorter than the foreign currency payback because the foreign currency is expected to appreciate.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "Balance after year 1.",
+          "formula_or_substitution": "4,200 - 1,728.93",
+          "intermediate_result": "2,471.07"
+        },
+        {
+          "step_number": 2,
+          "description": "Payback.",
+          "formula_or_substitution": "1 + 2,471.07 / 3,558.58",
+          "intermediate_result": "1.69"
+        }
+      ],
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_e7f711da86e56c0454bd8d32e7bda1d53c1c15736cfe2ec18a62596a3443a8a6",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U04",
+      "objective_ids": [
+        "ABFM::MOD_B::U04::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 220-225"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}
