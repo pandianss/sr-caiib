@@ -1026,26 +1026,26 @@
           {
             "option_id": "A",
             "text_md": "Random errors only",
-            "explanation_md": "That is closer to the moving-average idea."
+            "explanation_md": "Random errors only would give no pattern to forecast from."
           },
           {
             "option_id": "B",
             "text_md": "A linear combination of the variable's own past values",
-            "explanation_md": "AR means regression of the variable on itself."
+            "explanation_md": "An AR model forecasts a variable from a linear combination of its own past values."
           },
           {
             "option_id": "C",
             "text_md": "The seasonal index alone",
-            "explanation_md": "AR is not about indices."
+            "explanation_md": "A seasonal index alone is a different method."
           },
           {
             "option_id": "D",
             "text_md": "The highest and lowest values of the series",
-            "explanation_md": "Not related."
+            "explanation_md": "Extreme values of the series do not drive an AR forecast."
           }
         ],
         "correct_option_id": "B",
-        "correct_explanation_md": "An autoregressive model forecasts a variable from a linear combination of its own past values."
+        "correct_explanation_md": "An AR model forecasts a variable from a linear combination of its own past values."
       }
     },
     {

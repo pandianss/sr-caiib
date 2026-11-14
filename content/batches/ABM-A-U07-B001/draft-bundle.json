@@ -814,26 +814,26 @@
             {
               "option_id": "A",
               "text_md": "n, giving an unbiased estimator",
-              "explanation_md": "Dividing by n gives a biased estimator."
+              "explanation_md": "Dividing by n underestimates the population variance, so it is biased."
             },
             {
               "option_id": "B",
               "text_md": "n + 1",
-              "explanation_md": "Not used."
+              "explanation_md": "Dividing by n plus 1 is not an unbiased estimator."
             },
             {
               "option_id": "C",
               "text_md": "n - 1, giving an unbiased estimator",
-              "explanation_md": "n - 1 removes the bias."
+              "explanation_md": "Dividing by n minus 1 corrects the bias from using the sample mean, giving an unbiased variance estimator."
             },
             {
               "option_id": "D",
               "text_md": "The population size N",
-              "explanation_md": "N is not known or used for the sample estimator."
+              "explanation_md": "The population size N is not the divisor in a sample estimate."
             }
           ],
           "correct_option_id": "C",
-          "correct_explanation_md": "The estimator of the population variance uses divisor n - 1, which is unbiased."
+          "correct_explanation_md": "Dividing by n minus 1 corrects the bias from using the sample mean, giving an unbiased variance estimator."
         }
       },
       {
@@ -959,26 +959,26 @@
             {
               "option_id": "A",
               "text_md": "The population must be normal if n exceeds 30",
-              "explanation_md": "The population need not be normal."
+              "explanation_md": "The population does not need to be normal when n exceeds 30."
             },
             {
               "option_id": "B",
               "text_md": "The standard error is then zero",
-              "explanation_md": "It is not zero."
+              "explanation_md": "The standard error is not zero for a sample."
             },
             {
               "option_id": "C",
               "text_md": "The central limit theorem applies for samples above 30",
-              "explanation_md": "The sampling distribution of the mean approaches normal as n grows."
+              "explanation_md": "The central limit theorem makes the sample mean approximately normal for large samples even if the population is not."
             },
             {
               "option_id": "D",
               "text_md": "Sample means are always exactly normal",
-              "explanation_md": "They are only approximately normal."
+              "explanation_md": "Sample means are approximately, not exactly, normal."
             }
           ],
           "correct_option_id": "C",
-          "correct_explanation_md": "For large samples the central limit theorem lets the normal distribution be used even when the population is not normal."
+          "correct_explanation_md": "The central limit theorem makes the sample mean approximately normal for large samples even if the population is not."
         }
       },
       {
@@ -995,26 +995,26 @@
             {
               "option_id": "A",
               "text_md": "Use sigma-hat over root n only",
-              "explanation_md": "The sample is above 5 per cent of the population."
+              "explanation_md": "Using sigma-hat over root n alone ignores the correction."
             },
             {
               "option_id": "B",
               "text_md": "Divide by n instead of n - 1 in sigma-hat",
-              "explanation_md": "The divisor for the estimate is n - 1."
+              "explanation_md": "The divisor in sigma-hat is n minus 1, not n."
             },
             {
               "option_id": "C",
               "text_md": "Use the proportion formula",
-              "explanation_md": "This is a mean."
+              "explanation_md": "The proportion formula applies to proportions, not means."
             },
             {
               "option_id": "D",
               "text_md": "Multiply sigma-hat over root n by the finite population multiplier",
-              "explanation_md": "When n/N is above 0.05 the multiplier is applied."
+              "explanation_md": "With a sample over 5 per cent of a finite population, the standard error is multiplied by the finite population multiplier."
             }
           ],
           "correct_option_id": "D",
-          "correct_explanation_md": "Above 5 per cent sampling fraction the standard error is multiplied by the finite population multiplier; the estimate of sigma uses divisor n - 1."
+          "correct_explanation_md": "With a sample over 5 per cent of a finite population, the standard error is multiplied by the finite population multiplier."
         }
       },
       {
@@ -1067,26 +1067,26 @@
             {
               "option_id": "A",
               "text_md": "The sample range",
-              "explanation_md": "The range is not used for the standard error."
+              "explanation_md": "The range is not a standard deviation."
             },
             {
               "option_id": "B",
               "text_md": "The sample standard deviation (divisor n - 1) in its place",
-              "explanation_md": "The sample standard deviation estimates sigma."
+              "explanation_md": "When sigma is unknown, a large-sample interval substitutes the sample standard deviation with divisor n minus 1."
             },
             {
               "option_id": "C",
               "text_md": "The population variance, estimated as zero",
-              "explanation_md": "Never."
+              "explanation_md": "A population variance of zero would give no interval width."
             },
             {
               "option_id": "D",
               "text_md": "Nothing: the interval cannot be built",
-              "explanation_md": "It can be built with the estimate."
+              "explanation_md": "The interval can be built using the sample estimate."
             }
           ],
           "correct_option_id": "B",
-          "correct_explanation_md": "The sample standard deviation with divisor n - 1 is used as the estimate of sigma."
+          "correct_explanation_md": "When sigma is unknown, a large-sample interval substitutes the sample standard deviation with divisor n minus 1."
         }
       },
       {
@@ -3072,26 +3072,26 @@
         {
           "option_id": "A",
           "text_md": "n, giving an unbiased estimator",
-          "explanation_md": "Dividing by n gives a biased estimator."
+          "explanation_md": "Dividing by n underestimates the population variance, so it is biased."
         },
         {
           "option_id": "B",
           "text_md": "n + 1",
-          "explanation_md": "Not used."
+          "explanation_md": "Dividing by n plus 1 is not an unbiased estimator."
         },
         {
           "option_id": "C",
           "text_md": "n - 1, giving an unbiased estimator",
-          "explanation_md": "n - 1 removes the bias."
+          "explanation_md": "Dividing by n minus 1 corrects the bias from using the sample mean, giving an unbiased variance estimator."
         },
         {
           "option_id": "D",
           "text_md": "The population size N",
-          "explanation_md": "N is not known or used for the sample estimator."
+          "explanation_md": "The population size N is not the divisor in a sample estimate."
         }
       ],
       "correct_option_id": "C",
-      "correct_explanation_md": "The estimator of the population variance uses divisor n - 1, which is unbiased.",
+      "correct_explanation_md": "Dividing by n minus 1 corrects the bias from using the sample mean, giving an unbiased variance estimator.",
       "item_type": "question",
       "question_type": "single_choice",
       "id": "item_ec9b9c6a3cf3d9ba0a71306da9200c244833c76c58cf1fe587229ec943f101ad",
@@ -3312,26 +3312,26 @@
         {
           "option_id": "A",
           "text_md": "The population must be normal if n exceeds 30",
-          "explanation_md": "The population need not be normal."
+          "explanation_md": "The population does not need to be normal when n exceeds 30."
         },
         {
           "option_id": "B",
           "text_md": "The standard error is then zero",
-          "explanation_md": "It is not zero."
+          "explanation_md": "The standard error is not zero for a sample."
         },
         {
           "option_id": "C",
           "text_md": "The central limit theorem applies for samples above 30",
-          "explanation_md": "The sampling distribution of the mean approaches normal as n grows."
+          "explanation_md": "The central limit theorem makes the sample mean approximately normal for large samples even if the population is not."
         },
         {
           "option_id": "D",
           "text_md": "Sample means are always exactly normal",
-          "explanation_md": "They are only approximately normal."
+          "explanation_md": "Sample means are approximately, not exactly, normal."
         }
       ],
       "correct_option_id": "C",
-      "correct_explanation_md": "For large samples the central limit theorem lets the normal distribution be used even when the population is not normal.",
+      "correct_explanation_md": "The central limit theorem makes the sample mean approximately normal for large samples even if the population is not.",
       "item_type": "question",
       "question_type": "single_choice",
       "id": "item_b11f4ea44dd614b754caf20d7ae481363737ab6809167feb337923f23bd61114",
@@ -3370,26 +3370,26 @@
         {
           "option_id": "A",
           "text_md": "Use sigma-hat over root n only",
-          "explanation_md": "The sample is above 5 per cent of the population."
+          "explanation_md": "Using sigma-hat over root n alone ignores the correction."
         },
         {
           "option_id": "B",
           "text_md": "Divide by n instead of n - 1 in sigma-hat",
-          "explanation_md": "The divisor for the estimate is n - 1."
+          "explanation_md": "The divisor in sigma-hat is n minus 1, not n."
         },
         {
           "option_id": "C",
           "text_md": "Use the proportion formula",
-          "explanation_md": "This is a mean."
+          "explanation_md": "The proportion formula applies to proportions, not means."
         },
         {
           "option_id": "D",
           "text_md": "Multiply sigma-hat over root n by the finite population multiplier",
-          "explanation_md": "When n/N is above 0.05 the multiplier is applied."
+          "explanation_md": "With a sample over 5 per cent of a finite population, the standard error is multiplied by the finite population multiplier."
         }
       ],
       "correct_option_id": "D",
-      "correct_explanation_md": "Above 5 per cent sampling fraction the standard error is multiplied by the finite population multiplier; the estimate of sigma uses divisor n - 1.",
+      "correct_explanation_md": "With a sample over 5 per cent of a finite population, the standard error is multiplied by the finite population multiplier.",
       "item_type": "question",
       "question_type": "single_choice",
       "id": "item_8afe174acc64b5ebfa4a51d3a13be8db1c05b1b4a8d12b531bcded8a85348a3b",
@@ -3486,26 +3486,26 @@
         {
           "option_id": "A",
           "text_md": "The sample range",
-          "explanation_md": "The range is not used for the standard error."
+          "explanation_md": "The range is not a standard deviation."
         },
         {
           "option_id": "B",
           "text_md": "The sample standard deviation (divisor n - 1) in its place",
-          "explanation_md": "The sample standard deviation estimates sigma."
+          "explanation_md": "When sigma is unknown, a large-sample interval substitutes the sample standard deviation with divisor n minus 1."
         },
         {
           "option_id": "C",
           "text_md": "The population variance, estimated as zero",
-          "explanation_md": "Never."
+          "explanation_md": "A population variance of zero would give no interval width."
         },
         {
           "option_id": "D",
           "text_md": "Nothing: the interval cannot be built",
-          "explanation_md": "It can be built with the estimate."
+          "explanation_md": "The interval can be built using the sample estimate."
         }
       ],
       "correct_option_id": "B",
-      "correct_explanation_md": "The sample standard deviation with divisor n - 1 is used as the estimate of sigma.",
+      "correct_explanation_md": "When sigma is unknown, a large-sample interval substitutes the sample standard deviation with divisor n minus 1.",
       "item_type": "question",
       "question_type": "single_choice",
       "id": "item_8d1250937733a70a0c88a64cf0eef9fed4d1d15bdd597b57b66bf89471b8ee3b",

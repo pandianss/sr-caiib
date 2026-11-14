@@ -609,26 +609,26 @@
             {
               "option_id": "A",
               "text_md": "A line joining combinations of the decision variables that give the same profit",
-              "explanation_md": "Every point on it earns the same profit."
+              "explanation_md": "An iso-profit line joins decision variable combinations that give the same profit."
             },
             {
               "option_id": "B",
               "text_md": "A constraint line",
-              "explanation_md": "It comes from the objective, not from a limit."
+              "explanation_md": "A constraint line bounds the feasible region."
             },
             {
               "option_id": "C",
               "text_md": "The line of maximum profit",
-              "explanation_md": "It is one line from a family of parallel lines."
+              "explanation_md": "The line of maximum profit is only one iso-profit line."
             },
             {
               "option_id": "D",
               "text_md": "A line that must pass through the origin",
-              "explanation_md": "It need not."
+              "explanation_md": "An iso-profit line need not pass through the origin."
             }
           ],
           "correct_option_id": "A",
-          "correct_explanation_md": "All points on an iso-profit line give the same value of the objective function."
+          "correct_explanation_md": "An iso-profit line joins decision variable combinations that give the same profit."
         }
       },
       {
@@ -681,26 +681,26 @@
             {
               "option_id": "A",
               "text_md": "There is no feasible solution",
-              "explanation_md": "The region exists."
+              "explanation_md": "A feasible region exists since the line touches it."
             },
             {
               "option_id": "B",
               "text_md": "The optimum is unique",
-              "explanation_md": "It is not unique here."
+              "explanation_md": "The optimum is not unique when an edge is optimal."
             },
             {
               "option_id": "C",
               "text_md": "There are many optimal solutions along that edge, all with the same profit",
-              "explanation_md": "When the slope of the objective equals that of the boundary, every point on the edge is optimal."
+              "explanation_md": "When the iso-profit line lies along an edge touched last, every point on that edge gives the same maximum profit, so there are many optima."
             },
             {
               "option_id": "D",
               "text_md": "The problem has no optimum",
-              "explanation_md": "It has optima."
+              "explanation_md": "The problem does have an optimum."
             }
           ],
           "correct_option_id": "C",
-          "correct_explanation_md": "When the iso-profit line coincides with a boundary line, there are many optimal solutions with the same profit."
+          "correct_explanation_md": "When the iso-profit line lies along an edge touched last, every point on that edge gives the same maximum profit, so there are many optima."
         }
       },
       {
@@ -753,26 +753,26 @@
             {
               "option_id": "A",
               "text_md": "The most negative coefficient in the Z-row",
-              "explanation_md": "It promises the largest gain in the objective per unit."
+              "explanation_md": "In a maximisation tableau the entering variable has the most negative coefficient in the Z-row, giving the greatest improvement."
             },
             {
               "option_id": "B",
               "text_md": "The largest positive coefficient in the Z-row",
-              "explanation_md": "That is the rule for minimisation."
+              "explanation_md": "A positive coefficient would not improve the objective."
             },
             {
               "option_id": "C",
               "text_md": "The smallest solution value",
-              "explanation_md": "The solution column picks the leaving row."
+              "explanation_md": "The smallest solution value is used for the leaving variable test."
             },
             {
               "option_id": "D",
               "text_md": "The largest slack value",
-              "explanation_md": "Not a criterion."
+              "explanation_md": "The slack value is not the entering test."
             }
           ],
           "correct_option_id": "A",
-          "correct_explanation_md": "For maximisation the entering variable has the most negative Z-row coefficient."
+          "correct_explanation_md": "In a maximisation tableau the entering variable has the most negative coefficient in the Z-row, giving the greatest improvement."
         }
       },
       {
@@ -789,26 +789,26 @@
             {
               "option_id": "A",
               "text_md": "The largest ratio of solution value to the entering-column entry",
-              "explanation_md": "The largest ratio could push another variable negative."
+              "explanation_md": "The largest ratio would make other variables negative."
             },
             {
               "option_id": "B",
               "text_md": "The smallest positive ratio of solution value to the entering-column entry",
-              "explanation_md": "This keeps every variable non-negative."
+              "explanation_md": "The leaving variable is chosen by the smallest positive ratio of solution value to the entering column entry."
             },
             {
               "option_id": "C",
               "text_md": "The most negative Z-row entry",
-              "explanation_md": "That picks the entering variable."
+              "explanation_md": "The Z-row entry selects the entering variable."
             },
             {
               "option_id": "D",
               "text_md": "The largest solution value",
-              "explanation_md": "Not a criterion."
+              "explanation_md": "The largest solution value is not the test."
             }
           ],
           "correct_option_id": "B",
-          "correct_explanation_md": "The row with the smallest positive ratio leaves, keeping all variables non-negative."
+          "correct_explanation_md": "The leaving variable is chosen by the smallest positive ratio of solution value to the entering column entry."
         }
       },
       {
@@ -825,26 +825,26 @@
             {
               "option_id": "A",
               "text_md": "When all solution values are equal",
-              "explanation_md": "No such rule."
+              "explanation_md": "Equal solution values are not the stopping rule."
             },
             {
               "option_id": "B",
               "text_md": "After exactly two iterations",
-              "explanation_md": "The number of iterations varies."
+              "explanation_md": "The number of iterations is not fixed."
             },
             {
               "option_id": "C",
               "text_md": "When there is no negative number in the Z-row",
-              "explanation_md": "No entering variable can improve the objective."
+              "explanation_md": "A maximisation stops when no negative number remains in the Z-row, because no variable can improve the objective."
             },
             {
               "option_id": "D",
               "text_md": "When Z is zero",
-              "explanation_md": "Z starts at zero."
+              "explanation_md": "Z being zero is not the rule."
             }
           ],
           "correct_option_id": "C",
-          "correct_explanation_md": "The optimum tableau for a maximisation has no negative entry in the Z-row."
+          "correct_explanation_md": "A maximisation stops when no negative number remains in the Z-row, because no variable can improve the objective."
         }
       },
       {
@@ -897,26 +897,26 @@
             {
               "option_id": "A",
               "text_md": "The largest positive entry",
-              "explanation_md": "In minimisation a positive entry signals potential improvement."
+              "explanation_md": "In cost minimisation the largest positive Z-row entry selects the entering variable."
             },
             {
               "option_id": "B",
               "text_md": "The most negative entry",
-              "explanation_md": "That is the maximisation rule."
+              "explanation_md": "The most negative entry is the maximisation rule."
             },
             {
               "option_id": "C",
               "text_md": "The entry nearest to zero",
-              "explanation_md": "Not a criterion."
+              "explanation_md": "The entry nearest to zero gives the smallest improvement."
             },
             {
               "option_id": "D",
               "text_md": "The first entry",
-              "explanation_md": "Not a criterion."
+              "explanation_md": "The first entry is not chosen by position."
             }
           ],
           "correct_option_id": "A",
-          "correct_explanation_md": "For minimisation the entering variable has the largest positive Z-row entry."
+          "correct_explanation_md": "In cost minimisation the largest positive Z-row entry selects the entering variable."
         }
       },
       {
@@ -2578,26 +2578,26 @@
         {
           "option_id": "A",
           "text_md": "A line joining combinations of the decision variables that give the same profit",
-          "explanation_md": "Every point on it earns the same profit."
+          "explanation_md": "An iso-profit line joins decision variable combinations that give the same profit."
         },
         {
           "option_id": "B",
           "text_md": "A constraint line",
-          "explanation_md": "It comes from the objective, not from a limit."
+          "explanation_md": "A constraint line bounds the feasible region."
         },
         {
           "option_id": "C",
           "text_md": "The line of maximum profit",
-          "explanation_md": "It is one line from a family of parallel lines."
+          "explanation_md": "The line of maximum profit is only one iso-profit line."
         },
         {
           "option_id": "D",
           "text_md": "A line that must pass through the origin",
-          "explanation_md": "It need not."
+          "explanation_md": "An iso-profit line need not pass through the origin."
         }
       ],
       "correct_option_id": "A",
-      "correct_explanation_md": "All points on an iso-profit line give the same value of the objective function.",
+      "correct_explanation_md": "An iso-profit line joins decision variable combinations that give the same profit.",
       "item_type": "question",
       "question_type": "single_choice",
       "id": "item_706939e13f721a89c922ec6ff9f343efb12a715f117092fcfa3cebd7dde03329",
@@ -2694,26 +2694,26 @@
         {
           "option_id": "A",
           "text_md": "There is no feasible solution",
-          "explanation_md": "The region exists."
+          "explanation_md": "A feasible region exists since the line touches it."
         },
         {
           "option_id": "B",
           "text_md": "The optimum is unique",
-          "explanation_md": "It is not unique here."
+          "explanation_md": "The optimum is not unique when an edge is optimal."
         },
         {
           "option_id": "C",
           "text_md": "There are many optimal solutions along that edge, all with the same profit",
-          "explanation_md": "When the slope of the objective equals that of the boundary, every point on the edge is optimal."
+          "explanation_md": "When the iso-profit line lies along an edge touched last, every point on that edge gives the same maximum profit, so there are many optima."
         },
         {
           "option_id": "D",
           "text_md": "The problem has no optimum",
-          "explanation_md": "It has optima."
+          "explanation_md": "The problem does have an optimum."
         }
       ],
       "correct_option_id": "C",
-      "correct_explanation_md": "When the iso-profit line coincides with a boundary line, there are many optimal solutions with the same profit.",
+      "correct_explanation_md": "When the iso-profit line lies along an edge touched last, every point on that edge gives the same maximum profit, so there are many optima.",
       "item_type": "question",
       "question_type": "single_choice",
       "id": "item_2cd4b7b2f92c745f424242b0ddfb0e3444fb9201a2f1ce0d98513a2eceb788b3",
@@ -2810,26 +2810,26 @@
         {
           "option_id": "A",
           "text_md": "The most negative coefficient in the Z-row",
-          "explanation_md": "It promises the largest gain in the objective per unit."
+          "explanation_md": "In a maximisation tableau the entering variable has the most negative coefficient in the Z-row, giving the greatest improvement."
         },
         {
           "option_id": "B",
           "text_md": "The largest positive coefficient in the Z-row",
-          "explanation_md": "That is the rule for minimisation."
+          "explanation_md": "A positive coefficient would not improve the objective."
         },
         {
           "option_id": "C",
           "text_md": "The smallest solution value",
-          "explanation_md": "The solution column picks the leaving row."
+          "explanation_md": "The smallest solution value is used for the leaving variable test."
         },
         {
           "option_id": "D",
           "text_md": "The largest slack value",
-          "explanation_md": "Not a criterion."
+          "explanation_md": "The slack value is not the entering test."
         }
       ],
       "correct_option_id": "A",
-      "correct_explanation_md": "For maximisation the entering variable has the most negative Z-row coefficient.",
+      "correct_explanation_md": "In a maximisation tableau the entering variable has the most negative coefficient in the Z-row, giving the greatest improvement.",
       "item_type": "question",
       "question_type": "single_choice",
       "id": "item_93ac942c6b6dc984e5ea30ab590d6f17386ec4d16ea7b63783f1ed4bee61fdc1",
@@ -2868,26 +2868,26 @@
         {
           "option_id": "A",
           "text_md": "The largest ratio of solution value to the entering-column entry",
-          "explanation_md": "The largest ratio could push another variable negative."
+          "explanation_md": "The largest ratio would make other variables negative."
         },
         {
           "option_id": "B",
           "text_md": "The smallest positive ratio of solution value to the entering-column entry",
-          "explanation_md": "This keeps every variable non-negative."
+          "explanation_md": "The leaving variable is chosen by the smallest positive ratio of solution value to the entering column entry."
         },
         {
           "option_id": "C",
           "text_md": "The most negative Z-row entry",
-          "explanation_md": "That picks the entering variable."
+          "explanation_md": "The Z-row entry selects the entering variable."
         },
         {
           "option_id": "D",
           "text_md": "The largest solution value",
-          "explanation_md": "Not a criterion."
+          "explanation_md": "The largest solution value is not the test."
         }
       ],
       "correct_option_id": "B",
-      "correct_explanation_md": "The row with the smallest positive ratio leaves, keeping all variables non-negative.",
+      "correct_explanation_md": "The leaving variable is chosen by the smallest positive ratio of solution value to the entering column entry.",
       "item_type": "question",
       "question_type": "single_choice",
       "id": "item_de3821faba6ab68482d5b3fc31b4addcc92e0d234ca95e832e33c7594b384df8",
@@ -2926,26 +2926,26 @@
         {
           "option_id": "A",
           "text_md": "When all solution values are equal",
-          "explanation_md": "No such rule."
+          "explanation_md": "Equal solution values are not the stopping rule."
         },
         {
           "option_id": "B",
           "text_md": "After exactly two iterations",
-          "explanation_md": "The number of iterations varies."
+          "explanation_md": "The number of iterations is not fixed."
         },
         {
           "option_id": "C",
           "text_md": "When there is no negative number in the Z-row",
-          "explanation_md": "No entering variable can improve the objective."
+          "explanation_md": "A maximisation stops when no negative number remains in the Z-row, because no variable can improve the objective."
         },
         {
           "option_id": "D",
           "text_md": "When Z is zero",
-          "explanation_md": "Z starts at zero."
+          "explanation_md": "Z being zero is not the rule."
         }
       ],
       "correct_option_id": "C",
-      "correct_explanation_md": "The optimum tableau for a maximisation has no negative entry in the Z-row.",
+      "correct_explanation_md": "A maximisation stops when no negative number remains in the Z-row, because no variable can improve the objective.",
       "item_type": "question",
       "question_type": "single_choice",
       "id": "item_c4ee555ebe1dee16a35ff45e07382ca176148ad17ca27809b41544a74ca15c68",
@@ -3042,26 +3042,26 @@
         {
           "option_id": "A",
           "text_md": "The largest positive entry",
-          "explanation_md": "In minimisation a positive entry signals potential improvement."
+          "explanation_md": "In cost minimisation the largest positive Z-row entry selects the entering variable."
         },
         {
           "option_id": "B",
           "text_md": "The most negative entry",
-          "explanation_md": "That is the maximisation rule."
+          "explanation_md": "The most negative entry is the maximisation rule."
         },
         {
           "option_id": "C",
           "text_md": "The entry nearest to zero",
-          "explanation_md": "Not a criterion."
+          "explanation_md": "The entry nearest to zero gives the smallest improvement."
         },
         {
           "option_id": "D",
           "text_md": "The first entry",
-          "explanation_md": "Not a criterion."
+          "explanation_md": "The first entry is not chosen by position."
         }
       ],
       "correct_option_id": "A",
-      "correct_explanation_md": "For minimisation the entering variable has the largest positive Z-row entry.",
+      "correct_explanation_md": "In cost minimisation the largest positive Z-row entry selects the entering variable.",
       "item_type": "question",
       "question_type": "single_choice",
       "id": "item_444e693ecba42004eb8e1bc76e5a4f52663554ce18b8325ca7d82328b9cae9a1",

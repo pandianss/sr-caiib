@@ -800,26 +800,26 @@
             {
               "option_id": "A",
               "text_md": "The weights of 20 randomly selected loan files",
-              "explanation_md": "Weights are measured on a continuous scale, not counted as successes."
+              "explanation_md": "The weights of loan files are continuous measurements, not counts of successes."
             },
             {
               "option_id": "B",
               "text_md": "The number of customers who arrive at a counter in an hour",
-              "explanation_md": "There is no fixed number of trials; this is a count in an interval, which suits the Poisson distribution."
+              "explanation_md": "Arrivals in an hour are counts with no fixed number of trials, which fits a Poisson model."
             },
             {
               "option_id": "C",
               "text_md": "The number of loans, out of 20 independent loans each with a 5 per cent chance of default, that default",
-              "explanation_md": "A fixed number of independent trials with a constant success probability."
+              "explanation_md": "The number of defaults among 20 independent loans with a fixed 5 per cent chance is a fixed-trial yes or no count, which is binomial."
             },
             {
               "option_id": "D",
               "text_md": "The time taken to approve a loan",
-              "explanation_md": "Time is continuous."
+              "explanation_md": "Time to approve is a continuous waiting time."
             }
           ],
           "correct_option_id": "C",
-          "correct_explanation_md": "Binomial counts successes in a fixed number of independent trials with constant probability of success."
+          "correct_explanation_md": "The number of defaults among 20 independent loans with a fixed 5 per cent chance is a fixed-trial yes or no count, which is binomial."
         }
       },
       {
@@ -908,26 +908,26 @@
             {
               "option_id": "A",
               "text_md": "2",
-              "explanation_md": "That would be the square root."
+              "explanation_md": "Two would be the square root of the mean."
             },
             {
               "option_id": "B",
               "text_md": "4",
-              "explanation_md": "For a Poisson distribution mean and variance are equal."
+              "explanation_md": "A Poisson variable has variance equal to its mean, so the variance is 4."
             },
             {
               "option_id": "C",
               "text_md": "16",
-              "explanation_md": "The variance is not the mean squared."
+              "explanation_md": "Sixteen would be the mean squared."
             },
             {
               "option_id": "D",
               "text_md": "It cannot be determined",
-              "explanation_md": "It equals the mean."
+              "explanation_md": "The variance is determined by the mean."
             }
           ],
           "correct_option_id": "B",
-          "correct_explanation_md": "The Poisson distribution has mean and variance both equal to lambda."
+          "correct_explanation_md": "A Poisson variable has variance equal to its mean, so the variance is 4."
         }
       },
       {
@@ -1124,26 +1124,26 @@
             {
               "option_id": "A",
               "text_md": "Buy the underlying at the strike price",
-              "explanation_md": "That is a call."
+              "explanation_md": "Buying at the strike price is a call."
             },
             {
               "option_id": "B",
               "text_md": "Force the writer to buy at any price",
-              "explanation_md": "The price is the strike price."
+              "explanation_md": "The put holder cannot force sale at any price, only at the strike."
             },
             {
               "option_id": "C",
               "text_md": "Receive the premium",
-              "explanation_md": "The holder pays the premium."
+              "explanation_md": "The premium is paid by the holder, not received."
             },
             {
               "option_id": "D",
               "text_md": "Sell the underlying at the strike price",
-              "explanation_md": "A put gives the right to sell at the strike price."
+              "explanation_md": "A put gives the right to sell the underlying at the strike price."
             }
           ],
           "correct_option_id": "D",
-          "correct_explanation_md": "A put gives its holder the right, but not the obligation, to sell at the strike price."
+          "correct_explanation_md": "A put gives the right to sell the underlying at the strike price."
         }
       },
       {
@@ -1268,26 +1268,26 @@
             {
               "option_id": "A",
               "text_md": "Both prices rise",
-              "explanation_md": "The effects differ."
+              "explanation_md": "Both prices do not rise."
             },
             {
               "option_id": "B",
               "text_md": "The call price falls and the put price rises",
-              "explanation_md": "This is the opposite."
+              "explanation_md": "The call falls and put rises when rates fall."
             },
             {
               "option_id": "C",
               "text_md": "Neither is affected",
-              "explanation_md": "The rate affects the present value of the strike."
+              "explanation_md": "Interest rates do affect option prices."
             },
             {
               "option_id": "D",
               "text_md": "The call price rises and the put price falls",
-              "explanation_md": "A higher rate lowers the present value of the strike, which helps the call and hurts the put."
+              "explanation_md": "A higher risk-free rate raises the call price and lowers the put price, other things equal."
             }
           ],
           "correct_option_id": "D",
-          "correct_explanation_md": "A higher interest rate raises the call price and lowers the put price."
+          "correct_explanation_md": "A higher risk-free rate raises the call price and lowers the put price, other things equal."
         }
       },
       {
@@ -3461,26 +3461,26 @@
         {
           "option_id": "A",
           "text_md": "The weights of 20 randomly selected loan files",
-          "explanation_md": "Weights are measured on a continuous scale, not counted as successes."
+          "explanation_md": "The weights of loan files are continuous measurements, not counts of successes."
         },
         {
           "option_id": "B",
           "text_md": "The number of customers who arrive at a counter in an hour",
-          "explanation_md": "There is no fixed number of trials; this is a count in an interval, which suits the Poisson distribution."
+          "explanation_md": "Arrivals in an hour are counts with no fixed number of trials, which fits a Poisson model."
         },
         {
           "option_id": "C",
           "text_md": "The number of loans, out of 20 independent loans each with a 5 per cent chance of default, that default",
-          "explanation_md": "A fixed number of independent trials with a constant success probability."
+          "explanation_md": "The number of defaults among 20 independent loans with a fixed 5 per cent chance is a fixed-trial yes or no count, which is binomial."
         },
         {
           "option_id": "D",
           "text_md": "The time taken to approve a loan",
-          "explanation_md": "Time is continuous."
+          "explanation_md": "Time to approve is a continuous waiting time."
         }
       ],
       "correct_option_id": "C",
-      "correct_explanation_md": "Binomial counts successes in a fixed number of independent trials with constant probability of success.",
+      "correct_explanation_md": "The number of defaults among 20 independent loans with a fixed 5 per cent chance is a fixed-trial yes or no count, which is binomial.",
       "item_type": "question",
       "question_type": "single_choice",
       "id": "item_c01bc6d6004ad9226cab812fe817b1d383ed5331fa0cc249e08a99890b675db7",
@@ -3635,26 +3635,26 @@
         {
           "option_id": "A",
           "text_md": "2",
-          "explanation_md": "That would be the square root."
+          "explanation_md": "Two would be the square root of the mean."
         },
         {
           "option_id": "B",
           "text_md": "4",
-          "explanation_md": "For a Poisson distribution mean and variance are equal."
+          "explanation_md": "A Poisson variable has variance equal to its mean, so the variance is 4."
         },
         {
           "option_id": "C",
           "text_md": "16",
-          "explanation_md": "The variance is not the mean squared."
+          "explanation_md": "Sixteen would be the mean squared."
         },
         {
           "option_id": "D",
           "text_md": "It cannot be determined",
-          "explanation_md": "It equals the mean."
+          "explanation_md": "The variance is determined by the mean."
         }
       ],
       "correct_option_id": "B",
-      "correct_explanation_md": "The Poisson distribution has mean and variance both equal to lambda.",
+      "correct_explanation_md": "A Poisson variable has variance equal to its mean, so the variance is 4.",
       "item_type": "question",
       "question_type": "single_choice",
       "id": "item_8bcb3a55b23928bf6155a2387f6f22266352cce202e6e056c35f1ef1722c06d8",
@@ -3983,26 +3983,26 @@
         {
           "option_id": "A",
           "text_md": "Buy the underlying at the strike price",
-          "explanation_md": "That is a call."
+          "explanation_md": "Buying at the strike price is a call."
         },
         {
           "option_id": "B",
           "text_md": "Force the writer to buy at any price",
-          "explanation_md": "The price is the strike price."
+          "explanation_md": "The put holder cannot force sale at any price, only at the strike."
         },
         {
           "option_id": "C",
           "text_md": "Receive the premium",
-          "explanation_md": "The holder pays the premium."
+          "explanation_md": "The premium is paid by the holder, not received."
         },
         {
           "option_id": "D",
           "text_md": "Sell the underlying at the strike price",
-          "explanation_md": "A put gives the right to sell at the strike price."
+          "explanation_md": "A put gives the right to sell the underlying at the strike price."
         }
       ],
       "correct_option_id": "D",
-      "correct_explanation_md": "A put gives its holder the right, but not the obligation, to sell at the strike price.",
+      "correct_explanation_md": "A put gives the right to sell the underlying at the strike price.",
       "item_type": "question",
       "question_type": "single_choice",
       "id": "item_6e38ad4c037a17dc85e43f4235bd08c6736c262cddff29c6f7095b704d4e4c2a",
@@ -4215,26 +4215,26 @@
         {
           "option_id": "A",
           "text_md": "Both prices rise",
-          "explanation_md": "The effects differ."
+          "explanation_md": "Both prices do not rise."
         },
         {
           "option_id": "B",
           "text_md": "The call price falls and the put price rises",
-          "explanation_md": "This is the opposite."
+          "explanation_md": "The call falls and put rises when rates fall."
         },
         {
           "option_id": "C",
           "text_md": "Neither is affected",
-          "explanation_md": "The rate affects the present value of the strike."
+          "explanation_md": "Interest rates do affect option prices."
         },
         {
           "option_id": "D",
           "text_md": "The call price rises and the put price falls",
-          "explanation_md": "A higher rate lowers the present value of the strike, which helps the call and hurts the put."
+          "explanation_md": "A higher risk-free rate raises the call price and lowers the put price, other things equal."
         }
       ],
       "correct_option_id": "D",
-      "correct_explanation_md": "A higher interest rate raises the call price and lowers the put price.",
+      "correct_explanation_md": "A higher risk-free rate raises the call price and lowers the put price, other things equal.",
       "item_type": "question",
       "question_type": "single_choice",
       "id": "item_3f1df0c8f0972a5dd796017acbc554ee2ab661a589eb3166f1e2c5ec50b65322",
