@@ -14,7 +14,7 @@ Assigned to: **Claude** (Authoring Agent)
 | **AUD-002** | **HIGH** | Pedagogical Quality | `ABFM-A-U01-B001` to `U04-B001` (283 MCQs) | 100% of questions had hollow stub explanations (`"Not so."` / `"Correct."`). | **RESOLVED / PASSED** | Verified: All 283 MCQs rewritten with substantive rationales in Pack `ABFM-2026DEC@5`. Stubs: 0/1132 (0.0%). |
 | **AUD-003** | **HIGH** | Exam Realism | `ABM-C-U03-B003`, `ABM-C-U09-B002`, `BFM-B-U03-B005`, `BFM-A-U01-B011`, `BFM-A-U04-B007` | All 5 case studies authored with linked questions & calculation tests. Audited: 100% accurate, 0% stubs, clean scenario design (Tandon, CIRP, Basel III CRAR, FEDAI Rule 5/6, UCP 600). | **RESOLVED & APPROVED** | Ready for pack integration when BFM/ABM next republished. Author additional case studies as new modules are developed. |
 | **AUD-004** | **MEDIUM** | Distractor Quality | All packs (`ABM`, `BFM`, `ABFM`) | Widespread stub explanations across all papers. Verified: All 9,544 options across all 3 packs now rewritten with rich rationales ($\ge$ 20 chars). Repository stubs: 0/9544 (0.0%). Audited samples in Statistics & Forex passed. | **RESOLVED / PASSED** | Maintain this distractor quality standard for all subsequent batches. |
-| **AUD-005** | **LOW / INFO** | Batch Approval | `ABFM-A-U05-B001` to `U06-B001`, `ABFM-B-U01-B001` to `U06-B001`, `ABFM-C-U01-B001` to `U02-B001` | 497 newly authored items audited across 10 batches. 0 stub options, balanced option distributions, all calculation tests passing (ABFM Module A complete, Module B complete, Module C Units 1-2 passing). | **APPROVED** | Authoring approved. Proceed with Module C Units 3 to 6. |
+| **AUD-005** | **LOW / INFO** | Batch Approval | `ABFM-A-U05-B001` to `U06-B001`, `ABFM-B-U01-B001` to `U06-B001`, `ABFM-C-U01-B001` to `U03-B001` | 554 newly authored items audited across 11 batches. 0 stub options, balanced option distributions, all calculation tests passing (ABFM Module A complete, Module B complete, Module C Units 1-3 passing). | **APPROVED** | Authoring approved. Proceed with Module C Units 4 to 6. |
 
 ---
 
@@ -51,9 +51,10 @@ Assigned to: **Claude** (Authoring Agent)
   - `ABFM-B-U04-B001` (International Capital Budgeting): 40 items (7 cards, 23 MCQs, 10 calc items). 0 stubs. Options: {A:6, B:6, C:6, D:5}. CAPM, APT, parity, home/foreign currency NPV equivalence tests passing. Approved.
   - `ABFM-B-U05-B001` (Risk & Uncertainty in Capital Budgeting): 57 items (12 cards, 33 MCQs, 12 calc items). 0 stubs. Options: {A:8, B:9, C:8, D:8}. Sensitivity, scenario, Hillier, decision tree, RADR, and certainty equivalent tests passing. Approved.
   - `ABFM-B-U06-B001` (Decision Making): 45 items (8 cards, 25 MCQs, 12 calc items). 0 stubs. Options: {A:6, B:7, C:6, D:6}. Activity-based CVP, relevant costs, make-or-buy, ABC tests passing. Approved. **ABFM Module B complete.**
-- **ABFM Module C (Units 1 & 2) Sign-off**:
+- **ABFM Module C (Units 1 to 3) Sign-off**:
   - `ABFM-C-U01-B001` (Corporate Valuation Overview & Multiples): 57 items (10 cards, 35 MCQs, 13 calc items). 0 stubs. Options: {A:9, B:8, C:9, D:9}. NOPLAT, ROIC, FCF, WACC, terminal value tests passing. Approved.
   - `ABFM-C-U02-B001` (DCF Valuation): 47 items (8 cards, 30 MCQs, 8 calc items). 0 stubs. Options: {A:7, B:7, C:8, D:8}. Dividend discount models (Gordon, two-stage, H-model), FCFF, APV tests passing. Approved.
+  - `ABFM-C-U03-B001` (Other Non-DCF Valuation Models): 57 items (7 cards, 37 MCQs, 13 calc items). 0 stubs. Options: {A:10, B:9, C:9, D:9}. P/E, P/B, P/S, PEG, EV multiples, NAV, stock-and-debt tests passing. Approved.
 - **Instruction to Authoring Agent (Claude)**:
-  - All audited batches in ABFM Module A (complete), Module B (complete), and Module C (Units 1-2) are approved.
-  - Proceed through the remaining units of **ABFM Module C (Units 3 to 6)**.
+  - All audited batches in ABFM Module A (complete), Module B (complete), and Module C (Units 1-3) are approved.
+  - Proceed through the remaining units of **ABFM Module C (Units 4 to 6)**, starting with Unit 4 (Special Cases of Valuation, courseware printed p. 333 = PDF p. 348).
