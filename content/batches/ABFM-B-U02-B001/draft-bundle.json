@@ -1,0 +1,4044 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "ABFM-B-U02-B001",
+    "paper_id": "ABFM",
+    "unit_label": "ABFM Module B unit 2 (courseware unit 8): financial and operating leverages",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S02"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "statement": "Financial leverage (courseware): financial leverage is the use of borrowed funds to enhance the return to equity shareholders (earnings per share) without bringing in more equity; the assumption is that the cost of borrowing is less than the value added by the assets bought with it. It is limited by two factors: as the debt to equity ratio rises the lender will lend at a higher rate or not at all, and the additional surplus may fall below the cost of borrowing, reducing EPS; owners therefore impose a prudential limit. It is a double-edged sword: it can enhance return on equity and, beyond an optimal level, harm it. Measures: debt to assets (total debt / total assets), debt to equity (total debt / total equity), debt to EBITDA, the equity multiplier (total assets / total equity) from Du Pont analysis, and interest coverage (EBIT / interest expense).",
+        "source_id": "S02",
+        "locator": "S02 printed pp. 176-177",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "F002",
+        "statement": "Degree of financial leverage (courseware): DFL is the ratio of the percentage change in EPS to the percentage change in EBIT; because tax rate and number of shares are constant, the percentage change in EPS equals the percentage change in EBT, and because interest is a fixed amount a change in EBIT equals the change in EBT, which gives DFL = EBIT / EBT (EBIT less interest is EBT). Worked example: EBIT 2,00,000 and interest 1,00,000 give EBT 1,00,000 and DFL of 2 times. A positive DFL greater than 1 means financial leverage is relevant: the firm operates above break-even and EBIT and EPS move in the same direction; with no fixed interest DFL is 1; at break-even (EBIT equals interest) EBT is nil and DFL is undefined; below break-even EBT is negative and DFL is negative. Illustration with interest of 20,000 on EBIT of 1,00,000 rising to 1,50,000: EPS rises from 4 to 6.5, a 62.5 per cent rise against a 50 per cent rise in EBIT, so DFL is 1.25.",
+        "source_id": "S02",
+        "locator": "S02 printed pp. 177-180",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "F003",
+        "statement": "Operating leverage and DOL (courseware): operating leverage arises from fixed operating costs (other than interest); a business with high fixed costs is sensitive to a drop in sales volume, whereas one with low fixed costs and low contribution is in profit even if sales are low. DOL is the percentage change in EBIT divided by the percentage change in sales, which simplifies to contribution divided by EBIT (contribution is sales less variable cost; EBIT is contribution less fixed cost). Worked examples: 1,000 units at Rs 50 with variable cost Rs 30 and fixed cost Rs 15,000 give contribution Rs 20,000, EBIT Rs 5,000 and DOL of 4; with no fixed cost DOL is 1 (a 50 per cent rise in sales raises EBIT 50 per cent); with fixed cost a 50 per cent rise in sales can raise EBIT 100 per cent (DOL 2); when EBIT is nil DOL is undefined; a negative DOL means the firm operates below break-even and EBIT is negative. DOL falls as sales rise above break-even (Z Ltd with break-even of 2,000 units: DOL is 5 at 2,500 units and 3 at 3,000 units).",
+        "source_id": "S02",
+        "locator": "S02 printed pp. 180-183 and 185",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      },
+      {
+        "fact_id": "F004",
+        "statement": "Break-even and leverage; combined leverage (courseware): break-even point (units) = fixed cost / contribution per unit; the firm with high operating leverage has a higher break-even point and higher fixed cost, and a firm with lower fixed cost has lower operating leverage and a lower break-even point. Combined (total) leverage combines operating and financial leverage: DTL is the percentage change in EBT (or EPS) divided by the percentage change in sales, DTL = DFL x DOL = (EBIT / EBT) x (contribution / EBIT) = contribution / EBT. Example: sales Rs 10,00,000, variable cost Rs 7,00,000, fixed cost Rs 2,00,000 and interest Rs 50,000: contribution 3,00,000, EBIT 1,00,000, EBT 50,000; DOL 3, DFL 2 and DTL 6. A 10 per cent change in sales then moves EBT by about 60 per cent. Fixed operating costs and fixed financial costs together act as the pivot that magnifies the sensitivity of owners' returns to a change in units sold.",
+        "source_id": "S02",
+        "locator": "S02 printed pp. 184-186",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      }
+    ],
+    "drafts": [
+      {
+        "draft_id": "D001",
+        "item_type": "card",
+        "variant": "concept",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "prerequisite_objective_ids": [],
+          "title": "Financial leverage: borrowing to lift earnings per share",
+          "core_explanation_md": "**Financial leverage** means using **borrowed funds** to raise **EPS** without raising more equity. It pays only if the **assets bought with the debt earn more than the debt costs**.\n\nIt is **limited** because as **debt rises** lenders charge **more** or refuse, and the extra surplus may drop **below** the cost of borrowing, so EPS can **fall**. It is a **double-edged sword**.\n\n**Measures:** **debt to assets**, **debt to equity**, **debt to EBITDA**, the **equity multiplier** (total assets over total equity) and **interest coverage** (EBIT over interest).",
+          "expanded_explanation_md": "There is no single standard measure; each shows leverage from a different angle.",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "When does financial leverage raise EPS?",
+            "expected_takeaway": "When the assets bought with borrowed money earn more than the cost of the borrowing."
+          }
+        }
+      },
+      {
+        "draft_id": "D002",
+        "item_type": "card",
+        "variant": "formula",
+        "fact_ids": [
+          "F002"
+        ],
+        "payload": {
+          "prerequisite_objective_ids": [],
+          "title": "Degree of financial leverage",
+          "core_explanation_md": "**DFL = % change in EPS / % change in EBIT**, which simplifies to **EBIT / EBT** because interest is a **fixed amount**.\n\n**Reading it:** DFL **above 1** means a **given % change in EBIT produces a larger % change in EPS**. With **no interest**, DFL is **1**. At **break-even** (EBIT equals interest) EBT is nil and DFL is **undefined**; **below** it DFL is **negative**.",
+          "formula_spec": {
+            "latex_expression": "DFL = \\frac{\\%\\Delta EPS}{\\%\\Delta EBIT} = \\frac{EBIT}{EBT}",
+            "variables": [
+              {
+                "symbol": "DFL",
+                "name": "Degree of financial leverage",
+                "unit": "times"
+              },
+              {
+                "symbol": "EBIT",
+                "name": "Earnings before interest and tax",
+                "unit": "Rs"
+              },
+              {
+                "symbol": "EBT",
+                "name": "Earnings before tax (EBIT less interest)",
+                "unit": "Rs"
+              }
+            ],
+            "assumptions": [
+              "Interest is a fixed amount",
+              "Tax rate and number of shares are constant",
+              "No preference dividend"
+            ],
+            "common_errors": [
+              "Using EBT over EBIT",
+              "Treating a company below break-even as having a meaningful positive DFL"
+            ]
+          },
+          "expanded_explanation_md": "A DFL of 1.5 means a 10 per cent rise in EBIT lifts EPS by about 15 per cent, and a 10 per cent fall cuts it by about 15 per cent.",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "What is DFL when a firm has no interest burden?",
+            "expected_takeaway": "One, because EBT equals EBIT."
+          }
+        }
+      },
+      {
+        "draft_id": "D003",
+        "item_type": "card",
+        "variant": "formula",
+        "fact_ids": [
+          "F003"
+        ],
+        "payload": {
+          "prerequisite_objective_ids": [],
+          "title": "Degree of operating leverage",
+          "core_explanation_md": "**Operating leverage** comes from **fixed operating costs** (other than interest).\n\n**DOL = % change in EBIT / % change in sales = contribution / EBIT**, where **contribution = sales less variable cost** and **EBIT = contribution less fixed cost**.\n\nWith **no fixed cost**, DOL is **1**. The **higher the fixed cost**, the **higher the DOL**, and DOL **falls** as sales move **further above break-even**. At **EBIT of nil** DOL is **undefined**.",
+          "formula_spec": {
+            "latex_expression": "DOL = \\frac{\\%\\Delta EBIT}{\\%\\Delta Sales} = \\frac{Contribution}{EBIT}",
+            "variables": [
+              {
+                "symbol": "DOL",
+                "name": "Degree of operating leverage",
+                "unit": "times"
+              },
+              {
+                "symbol": "Contribution",
+                "name": "Sales less variable cost",
+                "unit": "Rs"
+              },
+              {
+                "symbol": "EBIT",
+                "name": "Contribution less fixed operating cost",
+                "unit": "Rs"
+              }
+            ],
+            "assumptions": [
+              "Fixed cost and price and variable cost per unit are constant over the range"
+            ],
+            "common_errors": [
+              "Using sales instead of contribution in the numerator",
+              "Using EBT in the denominator"
+            ]
+          },
+          "expanded_explanation_md": "A firm with high fixed costs and low variable costs gains sharply when sales rise and loses sharply when they fall.",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "What happens to DOL as sales rise further above break-even?",
+            "expected_takeaway": "It falls towards 1."
+          }
+        }
+      },
+      {
+        "draft_id": "D004",
+        "item_type": "card",
+        "variant": "concept",
+        "fact_ids": [
+          "F004"
+        ],
+        "payload": {
+          "prerequisite_objective_ids": [],
+          "title": "Break-even, fixed cost and operating leverage",
+          "core_explanation_md": "**Break-even units = fixed cost / contribution per unit.**\n\n| Firm | Fixed cost | Break-even point | Operating leverage |\n| --- | --- | --- | --- |\n| **High leverage** | High | **Higher** | **Higher** |\n| **Low leverage** | Lower | **Lower** | **Lower** |",
+          "expanded_explanation_md": "In the courseware example Product A has the higher fixed cost and contribution per unit and a DOL of 4, while Product B has a lower DOL, about 2.67.",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Why does higher fixed cost raise the break-even point?",
+            "expected_takeaway": "Because more contribution is needed before fixed cost is covered."
+          }
+        }
+      },
+      {
+        "draft_id": "D005",
+        "item_type": "card",
+        "variant": "formula",
+        "fact_ids": [
+          "F004"
+        ],
+        "payload": {
+          "prerequisite_objective_ids": [],
+          "title": "Combined (total) leverage",
+          "core_explanation_md": "**DTL = DOL x DFL = contribution / EBT.**\n\nIt measures how a **% change in sales** is magnified into a **% change in EBT or EPS** by **both** the fixed operating costs and the fixed financial costs together.\n\nFor example, a DTL of **6** means a **10 per cent** change in sales changes EBT by about **60 per cent**.",
+          "formula_spec": {
+            "latex_expression": "DTL = DOL \\times DFL = \\frac{Contribution}{EBIT} \\times \\frac{EBIT}{EBT} = \\frac{Contribution}{EBT}",
+            "variables": [
+              {
+                "symbol": "DTL",
+                "name": "Degree of total (combined) leverage",
+                "unit": "times"
+              },
+              {
+                "symbol": "DOL",
+                "name": "Degree of operating leverage",
+                "unit": "times"
+              },
+              {
+                "symbol": "DFL",
+                "name": "Degree of financial leverage",
+                "unit": "times"
+              }
+            ],
+            "assumptions": [
+              "Fixed operating cost and fixed interest",
+              "No preference dividend"
+            ],
+            "common_errors": [
+              "Adding DOL and DFL instead of multiplying",
+              "Using EBIT in place of EBT in the denominator"
+            ]
+          },
+          "expanded_explanation_md": "EBIT cancels in the product, which is why contribution over EBT gives the combined leverage directly.",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "How is DTL related to DOL and DFL?",
+            "expected_takeaway": "It is their product."
+          }
+        }
+      },
+      {
+        "draft_id": "D006",
+        "item_type": "card",
+        "variant": "worked_example",
+        "fact_ids": [
+          "F002"
+        ],
+        "payload": {
+          "prerequisite_objective_ids": [],
+          "title": "Worked example: DOL, DFL and DTL for one firm",
+          "core_explanation_md": "A firm has sales of Rs 30,00,000, variable cost of 60 per cent of sales and fixed operating cost of Rs 6,00,000. It pays interest of Rs 2,00,000. Find its DOL, DFL and DTL.",
+          "worked_steps": [
+            {
+              "step_number": 1,
+              "description": "Contribution is sales less variable cost.",
+              "formula_or_substitution": "30,00,000 x (1 - 0.60)",
+              "intermediate_result": "Rs 12,00,000"
+            },
+            {
+              "step_number": 2,
+              "description": "EBIT is contribution less fixed cost.",
+              "formula_or_substitution": "12,00,000 - 6,00,000",
+              "intermediate_result": "Rs 6,00,000"
+            },
+            {
+              "step_number": 3,
+              "description": "EBT is EBIT less interest.",
+              "formula_or_substitution": "6,00,000 - 2,00,000",
+              "intermediate_result": "Rs 4,00,000"
+            },
+            {
+              "step_number": 4,
+              "description": "DOL = contribution / EBIT.",
+              "formula_or_substitution": "12,00,000 / 6,00,000",
+              "intermediate_result": "2"
+            },
+            {
+              "step_number": 5,
+              "description": "DFL = EBIT / EBT.",
+              "formula_or_substitution": "6,00,000 / 4,00,000",
+              "intermediate_result": "1.5"
+            },
+            {
+              "step_number": 6,
+              "description": "DTL = DOL x DFL = contribution / EBT.",
+              "formula_or_substitution": "2 x 1.5 = 12,00,000 / 4,00,000",
+              "intermediate_result": "3"
+            }
+          ],
+          "final_answer_with_unit": "DOL is 2, DFL is 1.5 and DTL is 3 (times)",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "By how much does EPS rise if sales rise 10 per cent?",
+            "expected_takeaway": "By about 30 per cent, since DTL is 3: EBIT rises 20 per cent and EBT 30 per cent."
+          }
+        }
+      },
+      {
+        "draft_id": "D007",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Financial leverage means",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Raising only equity capital",
+              "explanation_md": "That is not leverage through borrowing."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Reducing fixed operating costs",
+              "explanation_md": "That concerns operating leverage."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Increasing sales volume",
+              "explanation_md": "That is a revenue matter."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Using borrowed funds to enhance earnings per share without bringing in more equity",
+              "explanation_md": "The aim is to lift the return to equity holders through debt."
+            }
+          ],
+          "correct_option_id": "D",
+          "correct_explanation_md": "Borrowing to lift EPS."
+        }
+      },
+      {
+        "draft_id": "D008",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Financial leverage is described as a double-edged sword because",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "It can enhance return on equity and, beyond an optimal level, harm it",
+              "explanation_md": "Excess debt can push the surplus below the cost of borrowing."
+            },
+            {
+              "option_id": "B",
+              "text_md": "It always raises EPS",
+              "explanation_md": "It does not always raise EPS."
+            },
+            {
+              "option_id": "C",
+              "text_md": "It has no effect on risk",
+              "explanation_md": "It adds financial risk."
+            },
+            {
+              "option_id": "D",
+              "text_md": "It applies only to lenders",
+              "explanation_md": "It affects equity holders."
+            }
+          ],
+          "correct_option_id": "A",
+          "correct_explanation_md": "Gains and losses."
+        }
+      },
+      {
+        "draft_id": "D009",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Which of these constrains the use of more borrowing?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Lower tax rates",
+              "explanation_md": "Tax rates do not constrain borrowing in this way."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Lenders will charge higher interest or refuse as the debt equity ratio rises",
+              "explanation_md": "The cost and availability of debt worsen with leverage."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Higher sales",
+              "explanation_md": "Higher sales do not constrain borrowing."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Rising dividends",
+              "explanation_md": "Dividends are not the stated constraint."
+            }
+          ],
+          "correct_option_id": "B",
+          "correct_explanation_md": "Lender limits."
+        }
+      },
+      {
+        "draft_id": "D010",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "The equity multiplier used in Du Pont analysis as a measure of financial leverage is",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Total equity divided by total assets",
+              "explanation_md": "That inverts the multiplier."
+            },
+            {
+              "option_id": "B",
+              "text_md": "EBIT divided by interest",
+              "explanation_md": "That is the interest coverage ratio."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Total assets divided by total equity",
+              "explanation_md": "A higher multiplier means more assets are funded by non-equity sources."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Total debt divided by EBITDA",
+              "explanation_md": "That is the debt to EBITDA ratio."
+            }
+          ],
+          "correct_option_id": "C",
+          "correct_explanation_md": "Assets over equity."
+        }
+      },
+      {
+        "draft_id": "D011",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "The interest coverage ratio is calculated as",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Interest divided by EBIT",
+              "explanation_md": "That inverts the ratio."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Total debt divided by total assets",
+              "explanation_md": "That is the debt to assets ratio."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Total assets divided by total equity",
+              "explanation_md": "That is the equity multiplier."
+            },
+            {
+              "option_id": "D",
+              "text_md": "EBIT divided by interest expense",
+              "explanation_md": "It shows how many times operating profit covers interest."
+            }
+          ],
+          "correct_option_id": "D",
+          "correct_explanation_md": "EBIT over interest."
+        }
+      },
+      {
+        "draft_id": "D012",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F002"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "The degree of financial leverage is defined as",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The percentage change in EPS divided by the percentage change in EBIT",
+              "explanation_md": "It measures the sensitivity of EPS to EBIT."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The percentage change in EBIT divided by the percentage change in sales",
+              "explanation_md": "That is the degree of operating leverage."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Contribution divided by EBIT",
+              "explanation_md": "That is the operating leverage formula."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Interest divided by sales",
+              "explanation_md": "That is not a leverage degree."
+            }
+          ],
+          "correct_option_id": "A",
+          "correct_explanation_md": "DFL definition."
+        }
+      },
+      {
+        "draft_id": "D013",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F002"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A firm has no interest burden. What is its degree of financial leverage?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "0",
+              "explanation_md": "The ratio EBIT over EBT is one, not zero."
+            },
+            {
+              "option_id": "B",
+              "text_md": "1",
+              "explanation_md": "With no interest, EBT equals EBIT, so DFL is one."
+            },
+            {
+              "option_id": "C",
+              "text_md": "2",
+              "explanation_md": "There is no interest to magnify the change."
+            },
+            {
+              "option_id": "D",
+              "text_md": "It is undefined",
+              "explanation_md": "It is defined, since EBT is positive."
+            }
+          ],
+          "correct_option_id": "B",
+          "correct_explanation_md": "DFL is one."
+        }
+      },
+      {
+        "draft_id": "D014",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F002"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "When EBIT equals the fixed interest, so that EBT is nil, the degree of financial leverage is",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Zero",
+              "explanation_md": "EBIT over nil is not zero."
+            },
+            {
+              "option_id": "B",
+              "text_md": "One",
+              "explanation_md": "DFL is one only when interest is nil."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Undefined",
+              "explanation_md": "Division by zero EBT makes it undefined."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Negative",
+              "explanation_md": "Negative DFL arises when EBT is negative, below break-even."
+            }
+          ],
+          "correct_option_id": "C",
+          "correct_explanation_md": "Undefined at break-even."
+        }
+      },
+      {
+        "draft_id": "D015",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F002"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A DFL greater than 1 for a firm operating above break-even means that",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "EPS never changes",
+              "explanation_md": "EPS moves with EBIT."
+            },
+            {
+              "option_id": "B",
+              "text_md": "EBIT moves opposite to EPS",
+              "explanation_md": "They move in the same direction above break-even."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The firm has no debt",
+              "explanation_md": "No debt gives DFL of 1."
+            },
+            {
+              "option_id": "D",
+              "text_md": "A given percentage change in EBIT produces a larger percentage change in EPS",
+              "explanation_md": "Fixed interest magnifies the effect on EPS."
+            }
+          ],
+          "correct_option_id": "D",
+          "correct_explanation_md": "Magnification."
+        }
+      },
+      {
+        "draft_id": "D016",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F002"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "Why does the courseware equate the percentage change in EBIT with the percentage change in EBT when deriving DFL?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Interest is assumed to be a fixed amount, so a change in EBIT equals the change in EBT",
+              "explanation_md": "EBT is EBIT less a constant interest charge."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Tax is zero",
+              "explanation_md": "Tax rate being constant is a separate assumption."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Shares are redeemed",
+              "explanation_md": "The number of shares is assumed constant."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Interest varies with EBIT",
+              "explanation_md": "Interest is assumed fixed."
+            }
+          ],
+          "correct_option_id": "A",
+          "correct_explanation_md": "Fixed interest."
+        }
+      },
+      {
+        "draft_id": "D017",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F002"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A firm operating below break-even, with EBIT positive but less than interest, has a DFL that is",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Positive and above 1",
+              "explanation_md": "This applies above break-even."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Negative, because EBT is negative",
+              "explanation_md": "EBIT over a negative EBT is negative."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Exactly 1",
+              "explanation_md": "This applies when there is no interest."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Infinite and positive",
+              "explanation_md": "The value is negative, not infinite."
+            }
+          ],
+          "correct_option_id": "B",
+          "correct_explanation_md": "Below break-even."
+        }
+      },
+      {
+        "draft_id": "D018",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F003"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Operating leverage arises from",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Interest on borrowings",
+              "explanation_md": "That gives financial leverage."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Variable costs only",
+              "explanation_md": "Variable costs move with sales and give no leverage."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Fixed operating costs other than interest",
+              "explanation_md": "Fixed costs magnify the effect of sales changes on EBIT."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Dividend payments",
+              "explanation_md": "Dividends are not operating costs."
+            }
+          ],
+          "correct_option_id": "C",
+          "correct_explanation_md": "Fixed operating cost."
+        }
+      },
+      {
+        "draft_id": "D019",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F003"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "The degree of operating leverage equals",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "EBIT divided by EBT",
+              "explanation_md": "That is the financial leverage formula."
+            },
+            {
+              "option_id": "B",
+              "text_md": "EBT divided by sales",
+              "explanation_md": "That is not a leverage ratio."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Fixed cost divided by sales",
+              "explanation_md": "That is not the DOL formula."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Contribution divided by EBIT",
+              "explanation_md": "It simplifies the ratio of % change in EBIT to % change in sales."
+            }
+          ],
+          "correct_option_id": "D",
+          "correct_explanation_md": "Contribution over EBIT."
+        }
+      },
+      {
+        "draft_id": "D020",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F003"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A firm with no fixed operating cost has a degree of operating leverage of",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "1",
+              "explanation_md": "With no fixed cost, EBIT equals contribution."
+            },
+            {
+              "option_id": "B",
+              "text_md": "0",
+              "explanation_md": "The ratio of equal quantities is one."
+            },
+            {
+              "option_id": "C",
+              "text_md": "2",
+              "explanation_md": "There is no fixed cost to magnify the change."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Undefined",
+              "explanation_md": "EBIT is positive so DOL is defined."
+            }
+          ],
+          "correct_option_id": "A",
+          "correct_explanation_md": "DOL is one."
+        }
+      },
+      {
+        "draft_id": "D021",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F003"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "As sales rise further above the break-even level, the degree of operating leverage",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Rises without limit",
+              "explanation_md": "It falls as EBIT grows."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Falls",
+              "explanation_md": "Fixed cost becomes a smaller fraction of contribution."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Stays the same",
+              "explanation_md": "It changes with the sales level."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Becomes negative",
+              "explanation_md": "It is negative only below break-even."
+            }
+          ],
+          "correct_option_id": "B",
+          "correct_explanation_md": "DOL falls."
+        }
+      },
+      {
+        "draft_id": "D022",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F003"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Which type of business is more sensitive to a fall in sales?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "One with very low fixed costs",
+              "explanation_md": "It can remain in profit at low sales."
+            },
+            {
+              "option_id": "B",
+              "text_md": "One with no costs at all",
+              "explanation_md": "Every business has costs."
+            },
+            {
+              "option_id": "C",
+              "text_md": "One with high fixed costs, such as a hospital",
+              "explanation_md": "Fixed costs continue when sales fall."
+            },
+            {
+              "option_id": "D",
+              "text_md": "One with only variable costs",
+              "explanation_md": "Such a firm has operating leverage of one."
+            }
+          ],
+          "correct_option_id": "C",
+          "correct_explanation_md": "High fixed cost."
+        }
+      },
+      {
+        "draft_id": "D023",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F003"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A negative degree of operating leverage means that the firm",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Is operating above break-even",
+              "explanation_md": "Above break-even DOL is positive."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Has no fixed cost",
+              "explanation_md": "That gives DOL of one."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Has doubled its sales",
+              "explanation_md": "Sales growth does not make DOL negative."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Is operating below break-even and EBIT is negative",
+              "explanation_md": "Contribution is less than fixed cost."
+            }
+          ],
+          "correct_option_id": "D",
+          "correct_explanation_md": "Below break-even."
+        }
+      },
+      {
+        "draft_id": "D024",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F004"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Break-even point in units is",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Fixed cost divided by contribution per unit",
+              "explanation_md": "It is the volume at which contribution just covers fixed cost."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Contribution divided by fixed cost",
+              "explanation_md": "That inverts the formula."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Sales divided by variable cost",
+              "explanation_md": "That is not the break-even formula."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Variable cost divided by price",
+              "explanation_md": "That is not the break-even formula."
+            }
+          ],
+          "correct_option_id": "A",
+          "correct_explanation_md": "Fixed cost over contribution."
+        }
+      },
+      {
+        "draft_id": "D025",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F004"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A firm with high operating leverage typically has",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "A lower break-even point",
+              "explanation_md": "That fits a low leverage firm."
+            },
+            {
+              "option_id": "B",
+              "text_md": "A higher break-even point and higher fixed costs",
+              "explanation_md": "More contribution is needed to cover fixed cost."
+            },
+            {
+              "option_id": "C",
+              "text_md": "No fixed costs",
+              "explanation_md": "High leverage comes from fixed costs."
+            },
+            {
+              "option_id": "D",
+              "text_md": "A break-even point of zero",
+              "explanation_md": "There is always some break-even level where fixed cost exists."
+            }
+          ],
+          "correct_option_id": "B",
+          "correct_explanation_md": "High leverage, high break-even."
+        }
+      },
+      {
+        "draft_id": "D026",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F004"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Degree of total leverage equals",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Degree of operating leverage plus degree of financial leverage",
+              "explanation_md": "They are multiplied, not added."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Degree of financial leverage less degree of operating leverage",
+              "explanation_md": "They are multiplied, not subtracted."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Degree of operating leverage multiplied by degree of financial leverage",
+              "explanation_md": "The two multiply to give the combined effect."
+            },
+            {
+              "option_id": "D",
+              "text_md": "EBIT divided by sales",
+              "explanation_md": "That is not the total leverage."
+            }
+          ],
+          "correct_option_id": "C",
+          "correct_explanation_md": "Product."
+        }
+      },
+      {
+        "draft_id": "D027",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F004"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Degree of total leverage can also be written as",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Contribution divided by EBIT",
+              "explanation_md": "That ratio is the degree of operating leverage alone."
+            },
+            {
+              "option_id": "B",
+              "text_md": "EBIT divided by EBT",
+              "explanation_md": "That ratio is the degree of financial leverage alone."
+            },
+            {
+              "option_id": "C",
+              "text_md": "EBT divided by sales",
+              "explanation_md": "That ratio is not the degree of total leverage."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Contribution divided by EBT",
+              "explanation_md": "EBIT cancels in the product of DOL and DFL."
+            }
+          ],
+          "correct_option_id": "D",
+          "correct_explanation_md": "Contribution over EBT."
+        }
+      },
+      {
+        "draft_id": "D028",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F004"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "A firm has a DTL of 6. If sales rise by 10 per cent, EBT (and so EPS) rises by about",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "60 per cent",
+              "explanation_md": "DTL is the % change in EBT for a given % change in sales: 6 x 10."
+            },
+            {
+              "option_id": "B",
+              "text_md": "16 per cent",
+              "explanation_md": "That adds 6 and 10 rather than multiplying."
+            },
+            {
+              "option_id": "C",
+              "text_md": "10 per cent",
+              "explanation_md": "That ignores leverage."
+            },
+            {
+              "option_id": "D",
+              "text_md": "0.6 per cent",
+              "explanation_md": "That divides rather than multiplies."
+            }
+          ],
+          "correct_option_id": "A",
+          "correct_explanation_md": "Multiply."
+        }
+      },
+      {
+        "draft_id": "D029",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F004"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Why does combined leverage matter to financial managers?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "It removes business risk",
+              "explanation_md": "Combined leverage adds to risk rather than removing it."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Fixed operating and fixed financial costs together magnify the effect of sales changes on owners' returns",
+              "explanation_md": "Both pivots raise the risk to owners."
+            },
+            {
+              "option_id": "C",
+              "text_md": "It sets the price of goods",
+              "explanation_md": "It does not set prices."
+            },
+            {
+              "option_id": "D",
+              "text_md": "It replaces the break-even analysis",
+              "explanation_md": "It complements break-even analysis."
+            }
+          ],
+          "correct_option_id": "B",
+          "correct_explanation_md": "Magnified sensitivity."
+        }
+      },
+      {
+        "draft_id": "D030",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F003"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A firm sells 8,000 units at Rs 75 with variable cost of Rs 45 per unit and fixed cost of Rs 1,50,000. What is its contribution (Rs)?",
+          "numeric_rule": {
+            "expected_answer": "240000",
+            "unit_label": "Rs",
+            "precision_decimals": 0,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Give a whole number.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "Contribution per unit is 75 - 45 = Rs 30; for 8,000 units it is 30 x 8,000 = Rs 2,40,000.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "Contribution per unit.",
+              "formula_or_substitution": "75 - 45",
+              "intermediate_result": "30"
+            },
+            {
+              "step_number": 2,
+              "description": "Total contribution.",
+              "formula_or_substitution": "30 x 8,000",
+              "intermediate_result": "2,40,000"
+            }
+          ]
+        }
+      },
+      {
+        "draft_id": "D031",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F003"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "For the same firm (8,000 units, price Rs 75, variable cost Rs 45, fixed cost Rs 1,50,000), what is the degree of operating leverage (to 2 decimal places)?",
+          "numeric_rule": {
+            "expected_answer": "2.67",
+            "unit_label": "times",
+            "precision_decimals": 2,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Round to 2 decimal places.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "Contribution is Rs 2,40,000 and EBIT is 2,40,000 - 1,50,000 = Rs 90,000, so DOL = 2,40,000 / 90,000 = 2.67 times.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "EBIT.",
+              "formula_or_substitution": "2,40,000 - 1,50,000",
+              "intermediate_result": "90,000"
+            },
+            {
+              "step_number": 2,
+              "description": "DOL.",
+              "formula_or_substitution": "2,40,000 / 90,000",
+              "intermediate_result": "2.67"
+            }
+          ]
+        }
+      },
+      {
+        "draft_id": "D032",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F004"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "How many units must the same firm sell to break even?",
+          "numeric_rule": {
+            "expected_answer": "5000",
+            "unit_label": "units",
+            "precision_decimals": 0,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Give a whole number.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "Break-even = fixed cost / contribution per unit = 1,50,000 / 30 = 5,000 units.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "Break-even units.",
+              "formula_or_substitution": "1,50,000 / 30",
+              "intermediate_result": "5,000"
+            }
+          ]
+        }
+      },
+      {
+        "draft_id": "D033",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F003"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "Using the degree of operating leverage of 2.67, by about what percentage will the firm's EBIT fall if sales volume falls by 10 per cent (to 1 decimal place)?",
+          "numeric_rule": {
+            "expected_answer": "26.7",
+            "unit_label": "per cent",
+            "precision_decimals": 1,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Round to 1 decimal place.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "Percentage change in EBIT = DOL x percentage change in sales = 2.67 x 10 = 26.7 per cent. Direct check: 7,200 units give contribution 2,16,000 and EBIT 66,000, a fall of 24,000 on 90,000, which is 26.7 per cent.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "Apply DOL.",
+              "formula_or_substitution": "2.667 x 10",
+              "intermediate_result": "26.7"
+            }
+          ]
+        }
+      },
+      {
+        "draft_id": "D034",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F002"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A firm has EBIT of Rs 6,00,000 and interest of Rs 2,00,000. What is its degree of financial leverage (to 1 decimal place)?",
+          "numeric_rule": {
+            "expected_answer": "1.5",
+            "unit_label": "times",
+            "precision_decimals": 1,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Round to 1 decimal place.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "EBT = 6,00,000 - 2,00,000 = Rs 4,00,000, so DFL = 6,00,000 / 4,00,000 = 1.5.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "EBT.",
+              "formula_or_substitution": "6,00,000 - 2,00,000",
+              "intermediate_result": "4,00,000"
+            },
+            {
+              "step_number": 2,
+              "description": "DFL.",
+              "formula_or_substitution": "6,00,000 / 4,00,000",
+              "intermediate_result": "1.5"
+            }
+          ]
+        }
+      },
+      {
+        "draft_id": "D035",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F002"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "The same firm has 60,000 shares and pays tax at 40 per cent. EBIT rises by 20 per cent to Rs 7,20,000 with interest unchanged. What is the new EPS (Rs, to 1 decimal place)?",
+          "numeric_rule": {
+            "expected_answer": "5.2",
+            "unit_label": "Rs",
+            "precision_decimals": 1,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Round to 1 decimal place.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "EBT = 7,20,000 - 2,00,000 = 5,20,000; tax at 40 per cent leaves 3,12,000; EPS = 3,12,000 / 60,000 = Rs 5.2. Earlier EPS was 4, so EPS rose 30 per cent for a 20 per cent rise in EBIT, matching DFL of 1.5.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "New EBT.",
+              "formula_or_substitution": "7,20,000 - 2,00,000",
+              "intermediate_result": "5,20,000"
+            },
+            {
+              "step_number": 2,
+              "description": "Profit after tax.",
+              "formula_or_substitution": "5,20,000 x 0.60",
+              "intermediate_result": "3,12,000"
+            },
+            {
+              "step_number": 3,
+              "description": "EPS.",
+              "formula_or_substitution": "3,12,000 / 60,000",
+              "intermediate_result": "5.2"
+            }
+          ]
+        }
+      },
+      {
+        "draft_id": "D036",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F004"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A firm has contribution of Rs 15,00,000, fixed operating cost of Rs 9,00,000 and interest of Rs 1,00,000. What is its degree of total leverage (to 1 decimal place)?",
+          "numeric_rule": {
+            "expected_answer": "3.0",
+            "unit_label": "times",
+            "precision_decimals": 1,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Round to 1 decimal place.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "EBIT = 15,00,000 - 9,00,000 = 6,00,000; EBT = 6,00,000 - 1,00,000 = 5,00,000; DTL = contribution / EBT = 15,00,000 / 5,00,000 = 3.0 (DOL 2.5 x DFL 1.2).",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "EBIT.",
+              "formula_or_substitution": "15,00,000 - 9,00,000",
+              "intermediate_result": "6,00,000"
+            },
+            {
+              "step_number": 2,
+              "description": "EBT.",
+              "formula_or_substitution": "6,00,000 - 1,00,000",
+              "intermediate_result": "5,00,000"
+            },
+            {
+              "step_number": 3,
+              "description": "DTL.",
+              "formula_or_substitution": "15,00,000 / 5,00,000",
+              "intermediate_result": "3.0"
+            }
+          ]
+        }
+      },
+      {
+        "draft_id": "D037",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "For the same firm (EBIT Rs 6,00,000, interest Rs 1,00,000), what is the interest coverage ratio (times)?",
+          "numeric_rule": {
+            "expected_answer": "6",
+            "unit_label": "times",
+            "precision_decimals": 0,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Give a whole number.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "Interest coverage = EBIT / interest = 6,00,000 / 1,00,000 = 6 times.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "Interest coverage.",
+              "formula_or_substitution": "6,00,000 / 1,00,000",
+              "intermediate_result": "6"
+            }
+          ]
+        }
+      }
+    ],
+    "unresolved": [
+      "This unit is the courseware's account of leverage analysis, standard financial management. No regulatory source applies and none was consulted.",
+      "The courseware derives DFL = EBIT / EBT by assuming that interest is fixed and that a change in EBIT equals the change in EBT; it ignores preference dividends. The unit teaches this standard form and states the assumption.",
+      "The courseware's Illustration 2 for financial leverage uses a profit-volume ratio of 27.55 per cent and bonds \"of Rs 1,000 each\" in a way that does not affect the ratio; the illustration is not reproduced, and new figures are used in every numerical item.",
+      "The courseware's unit gives several measures of financial leverage (debt to assets, debt to equity, debt to EBITDA, equity multiplier, interest coverage) without stating a single standard; they are taught as alternative measures.",
+      "Numbers in the numerical items are invented and are checked in tests/content/batch-abfm-b-u02-b001.test.ts.",
+      "The courseware's check-your-progress questions were not copied; questions are independently written.",
+      "Reviewer for this batch is the authoring agent; no independent or human review.",
+      "Reviewer for this batch is the authoring agent; no independent or human review."
+    ],
+    "next_batch_hint": "ABFM Module B unit 3 (Capital Investment Decisions, courseware unit 9) from printed p. 189 (PDF p. 204; PDF page = printed + 15); render with pymupdf into tmp/abfm; quantitative, use calculation tests (NPV, IRR, payback)."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "ABFM-B-U02-B001",
+    "paper_id": "ABFM",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 9, Compulsory Paper III, Module B: Financial Management, Financial and Operating Leverages"
+    },
+    "sources": [
+      {
+        "source_id": "S02",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "ABFM::MOD_B::U02",
+        "objective_ids": [
+          "ABFM::MOD_B::U02::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "ABFM::MOD_B::U02",
+        "objective_ids": [
+          "ABFM::MOD_B::U02::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "ABFM::MOD_B::U02",
+        "objective_ids": [
+          "ABFM::MOD_B::U02::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "ABFM::MOD_B::U02",
+        "objective_ids": [
+          "ABFM::MOD_B::U02::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "unit_id": "ABFM::MOD_B::U02",
+        "objective_ids": [
+          "ABFM::MOD_B::U02::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D006",
+        "unit_id": "ABFM::MOD_B::U02",
+        "objective_ids": [
+          "ABFM::MOD_B::U02::LO_02",
+          "ABFM::MOD_B::U02::LO_03",
+          "ABFM::MOD_B::U02::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D007",
+        "unit_id": "ABFM::MOD_B::U02",
+        "objective_ids": [
+          "ABFM::MOD_B::U02::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D008",
+        "unit_id": "ABFM::MOD_B::U02",
+        "objective_ids": [
+          "ABFM::MOD_B::U02::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D009",
+        "unit_id": "ABFM::MOD_B::U02",
+        "objective_ids": [
+          "ABFM::MOD_B::U02::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D010",
+        "unit_id": "ABFM::MOD_B::U02",
+        "objective_ids": [
+          "ABFM::MOD_B::U02::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D011",
+        "unit_id": "ABFM::MOD_B::U02",
+        "objective_ids": [
+          "ABFM::MOD_B::U02::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D012",
+        "unit_id": "ABFM::MOD_B::U02",
+        "objective_ids": [
+          "ABFM::MOD_B::U02::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D013",
+        "unit_id": "ABFM::MOD_B::U02",
+        "objective_ids": [
+          "ABFM::MOD_B::U02::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D014",
+        "unit_id": "ABFM::MOD_B::U02",
+        "objective_ids": [
+          "ABFM::MOD_B::U02::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D015",
+        "unit_id": "ABFM::MOD_B::U02",
+        "objective_ids": [
+          "ABFM::MOD_B::U02::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D016",
+        "unit_id": "ABFM::MOD_B::U02",
+        "objective_ids": [
+          "ABFM::MOD_B::U02::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D017",
+        "unit_id": "ABFM::MOD_B::U02",
+        "objective_ids": [
+          "ABFM::MOD_B::U02::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D018",
+        "unit_id": "ABFM::MOD_B::U02",
+        "objective_ids": [
+          "ABFM::MOD_B::U02::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D019",
+        "unit_id": "ABFM::MOD_B::U02",
+        "objective_ids": [
+          "ABFM::MOD_B::U02::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D020",
+        "unit_id": "ABFM::MOD_B::U02",
+        "objective_ids": [
+          "ABFM::MOD_B::U02::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D021",
+        "unit_id": "ABFM::MOD_B::U02",
+        "objective_ids": [
+          "ABFM::MOD_B::U02::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D022",
+        "unit_id": "ABFM::MOD_B::U02",
+        "objective_ids": [
+          "ABFM::MOD_B::U02::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D023",
+        "unit_id": "ABFM::MOD_B::U02",
+        "objective_ids": [
+          "ABFM::MOD_B::U02::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D024",
+        "unit_id": "ABFM::MOD_B::U02",
+        "objective_ids": [
+          "ABFM::MOD_B::U02::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D025",
+        "unit_id": "ABFM::MOD_B::U02",
+        "objective_ids": [
+          "ABFM::MOD_B::U02::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D026",
+        "unit_id": "ABFM::MOD_B::U02",
+        "objective_ids": [
+          "ABFM::MOD_B::U02::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D027",
+        "unit_id": "ABFM::MOD_B::U02",
+        "objective_ids": [
+          "ABFM::MOD_B::U02::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D028",
+        "unit_id": "ABFM::MOD_B::U02",
+        "objective_ids": [
+          "ABFM::MOD_B::U02::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D029",
+        "unit_id": "ABFM::MOD_B::U02",
+        "objective_ids": [
+          "ABFM::MOD_B::U02::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D030",
+        "unit_id": "ABFM::MOD_B::U02",
+        "objective_ids": [
+          "ABFM::MOD_B::U02::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D031",
+        "unit_id": "ABFM::MOD_B::U02",
+        "objective_ids": [
+          "ABFM::MOD_B::U02::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D032",
+        "unit_id": "ABFM::MOD_B::U02",
+        "objective_ids": [
+          "ABFM::MOD_B::U02::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D033",
+        "unit_id": "ABFM::MOD_B::U02",
+        "objective_ids": [
+          "ABFM::MOD_B::U02::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D034",
+        "unit_id": "ABFM::MOD_B::U02",
+        "objective_ids": [
+          "ABFM::MOD_B::U02::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D035",
+        "unit_id": "ABFM::MOD_B::U02",
+        "objective_ids": [
+          "ABFM::MOD_B::U02::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D036",
+        "unit_id": "ABFM::MOD_B::U02",
+        "objective_ids": [
+          "ABFM::MOD_B::U02::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D037",
+        "unit_id": "ABFM::MOD_B::U02",
+        "objective_ids": [
+          "ABFM::MOD_B::U02::LO_01"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "ABFM-B-U02-B001",
+      "draft_id": "D001",
+      "item_id": "item_e960d2551e67404fa9e62f0e46bd88b9e290b2b8160e334062ed53bf300d7ae4"
+    },
+    {
+      "batch_id": "ABFM-B-U02-B001",
+      "draft_id": "D002",
+      "item_id": "item_a61b80a50c7ef1ed187a83f0c58a8cf7c59d856a7740405c7227809beeec2ce9"
+    },
+    {
+      "batch_id": "ABFM-B-U02-B001",
+      "draft_id": "D003",
+      "item_id": "item_43ea378fa5ec761a58c8bd73d45926a0f93a3877ec02593dad15fe3c31fe903b"
+    },
+    {
+      "batch_id": "ABFM-B-U02-B001",
+      "draft_id": "D004",
+      "item_id": "item_cfb6ca642e95f5043d865412fa2d017056438d198b258d208c06f8c38e6b25c4"
+    },
+    {
+      "batch_id": "ABFM-B-U02-B001",
+      "draft_id": "D005",
+      "item_id": "item_ea01196d5dbd81d2b9913e13393bfa87aa38dc1b542429d3dce4b7c7f3213e53"
+    },
+    {
+      "batch_id": "ABFM-B-U02-B001",
+      "draft_id": "D006",
+      "item_id": "item_ddff654244782b26bdf4bba790d3ef9421395d42704ff9525279114c7a774610"
+    },
+    {
+      "batch_id": "ABFM-B-U02-B001",
+      "draft_id": "D007",
+      "item_id": "item_104ae894b921d824fe649484115ef00e1f953be917eeebffcdbf3cfb5addd561"
+    },
+    {
+      "batch_id": "ABFM-B-U02-B001",
+      "draft_id": "D008",
+      "item_id": "item_cfb3189d61adf507b9e70967f867db92186ef2215d6b039c7b1eada52bc92d4a"
+    },
+    {
+      "batch_id": "ABFM-B-U02-B001",
+      "draft_id": "D009",
+      "item_id": "item_b5b9a720f906881222ad22884b5f5c472ed252da4c68c3ddd6ad381b6793fb78"
+    },
+    {
+      "batch_id": "ABFM-B-U02-B001",
+      "draft_id": "D010",
+      "item_id": "item_1579d3cb1cbafd40cb54f31c6f1ea0450ac0f80d732a4058d4b0177bb9600e23"
+    },
+    {
+      "batch_id": "ABFM-B-U02-B001",
+      "draft_id": "D011",
+      "item_id": "item_c25eb112e1faf589cfd02228a45480573138e60448d3a788fb5e0410ec6ffe85"
+    },
+    {
+      "batch_id": "ABFM-B-U02-B001",
+      "draft_id": "D012",
+      "item_id": "item_d5db422aa0e2944c3b0d6b06a68349fa32485f9c9798f06c506c5e8d8d93a098"
+    },
+    {
+      "batch_id": "ABFM-B-U02-B001",
+      "draft_id": "D013",
+      "item_id": "item_2eec54f0af5aa0b9f14764fe305d147764cd2184b18507e0795c53864309ed3d"
+    },
+    {
+      "batch_id": "ABFM-B-U02-B001",
+      "draft_id": "D014",
+      "item_id": "item_8e968725aa3e753c6d9bf380785a63f0f018534dc8ba693d21b2bb6dc4bb2cba"
+    },
+    {
+      "batch_id": "ABFM-B-U02-B001",
+      "draft_id": "D015",
+      "item_id": "item_a5430e84b1249658e63bee4602c910e574ded9428ab4dd094d490299a28e0d20"
+    },
+    {
+      "batch_id": "ABFM-B-U02-B001",
+      "draft_id": "D016",
+      "item_id": "item_1a10f9da4471272cbff31fcaa61c65419e8da42f8dfa69e32782643bc18b0668"
+    },
+    {
+      "batch_id": "ABFM-B-U02-B001",
+      "draft_id": "D017",
+      "item_id": "item_77d25b1900b84d94926230d241552ea41753e77a8165a57ebf0cfa4cac71aba7"
+    },
+    {
+      "batch_id": "ABFM-B-U02-B001",
+      "draft_id": "D018",
+      "item_id": "item_32d41e23343007cc5f16757011a5dcb9f5a0aca0395ac5a34830505ebaf288f8"
+    },
+    {
+      "batch_id": "ABFM-B-U02-B001",
+      "draft_id": "D019",
+      "item_id": "item_53828a0d82c30e4f68422f2d0231c3d6b952995b9ad5e014967769162249314b"
+    },
+    {
+      "batch_id": "ABFM-B-U02-B001",
+      "draft_id": "D020",
+      "item_id": "item_b6c884ae78303f1bd5cb0705d33241b0b6f3a5df77942d895bfff21bcb0bcd06"
+    },
+    {
+      "batch_id": "ABFM-B-U02-B001",
+      "draft_id": "D021",
+      "item_id": "item_3d005a5b13bee4d66677b1aacefea06c24e471599d5c58347ffa6a4c1744dc21"
+    },
+    {
+      "batch_id": "ABFM-B-U02-B001",
+      "draft_id": "D022",
+      "item_id": "item_4343243e77f4c267dd101a195c9ad6026fd24f57468cdbc87bea2206ada3d539"
+    },
+    {
+      "batch_id": "ABFM-B-U02-B001",
+      "draft_id": "D023",
+      "item_id": "item_40ff3430e7c63e019dcf4c659930134f1442c42c11a9a11ad49b2f7442db3842"
+    },
+    {
+      "batch_id": "ABFM-B-U02-B001",
+      "draft_id": "D024",
+      "item_id": "item_03983efc8b837433c6e6a011bce64d04d4b3faa66029e1fd546e9d9c63625655"
+    },
+    {
+      "batch_id": "ABFM-B-U02-B001",
+      "draft_id": "D025",
+      "item_id": "item_34903b1252a6ecd36f2c8ffd7db5d0499b9e3ca2bb44a00e545a37338a53fd30"
+    },
+    {
+      "batch_id": "ABFM-B-U02-B001",
+      "draft_id": "D026",
+      "item_id": "item_388cd097cc4d7fa299809f1df3e8abb2dcc04d4dc36db4e0d2f6a62e6753b179"
+    },
+    {
+      "batch_id": "ABFM-B-U02-B001",
+      "draft_id": "D027",
+      "item_id": "item_78c3621d90e8705fa50054652022f1c6bdd0675ba583476cee976525b6676976"
+    },
+    {
+      "batch_id": "ABFM-B-U02-B001",
+      "draft_id": "D028",
+      "item_id": "item_6c1645f0420f704a7c5ea3e21a8ea75a39d1eeff0e2b3e16ea463d139c4bf91b"
+    },
+    {
+      "batch_id": "ABFM-B-U02-B001",
+      "draft_id": "D029",
+      "item_id": "item_f5d0f89bb12447d9674e1d12afbd17f7b8e6767d086352f45de73fa2c6d6c055"
+    },
+    {
+      "batch_id": "ABFM-B-U02-B001",
+      "draft_id": "D030",
+      "item_id": "item_2d7db822d554c367cad40560991946dea1a8c3ea989b1d784fa1d40df0b62db9"
+    },
+    {
+      "batch_id": "ABFM-B-U02-B001",
+      "draft_id": "D031",
+      "item_id": "item_1ca7f25de21dcce2cc981912e13e203acc34dd6a67fd14e1fc7c70688e299a37"
+    },
+    {
+      "batch_id": "ABFM-B-U02-B001",
+      "draft_id": "D032",
+      "item_id": "item_a4e578d4389baf12f51587a638ee89f69ccdb7e2f71376c292392718447a006b"
+    },
+    {
+      "batch_id": "ABFM-B-U02-B001",
+      "draft_id": "D033",
+      "item_id": "item_a5cd5a441f5a0c0de8546a636355eb50bac0f8b5b9adf689936d0fee1eabfed6"
+    },
+    {
+      "batch_id": "ABFM-B-U02-B001",
+      "draft_id": "D034",
+      "item_id": "item_8faf485b6c401ff844ef3b660e08b932835e3ea3bebc0c19ae60696aeafbb1d1"
+    },
+    {
+      "batch_id": "ABFM-B-U02-B001",
+      "draft_id": "D035",
+      "item_id": "item_f659b8114836cd6b2652b9993379a74add0057bee7ea1776e8760e8286c9c368"
+    },
+    {
+      "batch_id": "ABFM-B-U02-B001",
+      "draft_id": "D036",
+      "item_id": "item_6fd6f6f38c3968ba92bd077c5753fdb14023401ec8d2c5e6db7575bf4832bda4"
+    },
+    {
+      "batch_id": "ABFM-B-U02-B001",
+      "draft_id": "D037",
+      "item_id": "item_2300580d4bf1bbe04f1af528c593762099a39a30938757c8799a0393d13d544e"
+    }
+  ],
+  "items": [
+    {
+      "prerequisite_objective_ids": [],
+      "title": "Financial leverage: borrowing to lift earnings per share",
+      "core_explanation_md": "**Financial leverage** means using **borrowed funds** to raise **EPS** without raising more equity. It pays only if the **assets bought with the debt earn more than the debt costs**.\n\nIt is **limited** because as **debt rises** lenders charge **more** or refuse, and the extra surplus may drop **below** the cost of borrowing, so EPS can **fall**. It is a **double-edged sword**.\n\n**Measures:** **debt to assets**, **debt to equity**, **debt to EBITDA**, the **equity multiplier** (total assets over total equity) and **interest coverage** (EBIT over interest).",
+      "expanded_explanation_md": "There is no single standard measure; each shows leverage from a different angle.",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "When does financial leverage raise EPS?",
+        "expected_takeaway": "When the assets bought with borrowed money earn more than the cost of the borrowing."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_e960d2551e67404fa9e62f0e46bd88b9e290b2b8160e334062ed53bf300d7ae4",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U02",
+      "objective_ids": [
+        "ABFM::MOD_B::U02::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 176-177"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "prerequisite_objective_ids": [],
+      "title": "Degree of financial leverage",
+      "core_explanation_md": "**DFL = % change in EPS / % change in EBIT**, which simplifies to **EBIT / EBT** because interest is a **fixed amount**.\n\n**Reading it:** DFL **above 1** means a **given % change in EBIT produces a larger % change in EPS**. With **no interest**, DFL is **1**. At **break-even** (EBIT equals interest) EBT is nil and DFL is **undefined**; **below** it DFL is **negative**.",
+      "formula_spec": {
+        "latex_expression": "DFL = \\frac{\\%\\Delta EPS}{\\%\\Delta EBIT} = \\frac{EBIT}{EBT}",
+        "variables": [
+          {
+            "symbol": "DFL",
+            "name": "Degree of financial leverage",
+            "unit": "times"
+          },
+          {
+            "symbol": "EBIT",
+            "name": "Earnings before interest and tax",
+            "unit": "Rs"
+          },
+          {
+            "symbol": "EBT",
+            "name": "Earnings before tax (EBIT less interest)",
+            "unit": "Rs"
+          }
+        ],
+        "assumptions": [
+          "Interest is a fixed amount",
+          "Tax rate and number of shares are constant",
+          "No preference dividend"
+        ],
+        "common_errors": [
+          "Using EBT over EBIT",
+          "Treating a company below break-even as having a meaningful positive DFL"
+        ]
+      },
+      "expanded_explanation_md": "A DFL of 1.5 means a 10 per cent rise in EBIT lifts EPS by about 15 per cent, and a 10 per cent fall cuts it by about 15 per cent.",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "What is DFL when a firm has no interest burden?",
+        "expected_takeaway": "One, because EBT equals EBIT."
+      },
+      "item_type": "card",
+      "card_type": "formula",
+      "id": "item_a61b80a50c7ef1ed187a83f0c58a8cf7c59d856a7740405c7227809beeec2ce9",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U02",
+      "objective_ids": [
+        "ABFM::MOD_B::U02::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 177-180"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "prerequisite_objective_ids": [],
+      "title": "Degree of operating leverage",
+      "core_explanation_md": "**Operating leverage** comes from **fixed operating costs** (other than interest).\n\n**DOL = % change in EBIT / % change in sales = contribution / EBIT**, where **contribution = sales less variable cost** and **EBIT = contribution less fixed cost**.\n\nWith **no fixed cost**, DOL is **1**. The **higher the fixed cost**, the **higher the DOL**, and DOL **falls** as sales move **further above break-even**. At **EBIT of nil** DOL is **undefined**.",
+      "formula_spec": {
+        "latex_expression": "DOL = \\frac{\\%\\Delta EBIT}{\\%\\Delta Sales} = \\frac{Contribution}{EBIT}",
+        "variables": [
+          {
+            "symbol": "DOL",
+            "name": "Degree of operating leverage",
+            "unit": "times"
+          },
+          {
+            "symbol": "Contribution",
+            "name": "Sales less variable cost",
+            "unit": "Rs"
+          },
+          {
+            "symbol": "EBIT",
+            "name": "Contribution less fixed operating cost",
+            "unit": "Rs"
+          }
+        ],
+        "assumptions": [
+          "Fixed cost and price and variable cost per unit are constant over the range"
+        ],
+        "common_errors": [
+          "Using sales instead of contribution in the numerator",
+          "Using EBT in the denominator"
+        ]
+      },
+      "expanded_explanation_md": "A firm with high fixed costs and low variable costs gains sharply when sales rise and loses sharply when they fall.",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "What happens to DOL as sales rise further above break-even?",
+        "expected_takeaway": "It falls towards 1."
+      },
+      "item_type": "card",
+      "card_type": "formula",
+      "id": "item_43ea378fa5ec761a58c8bd73d45926a0f93a3877ec02593dad15fe3c31fe903b",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U02",
+      "objective_ids": [
+        "ABFM::MOD_B::U02::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 180-183 and 185"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "prerequisite_objective_ids": [],
+      "title": "Break-even, fixed cost and operating leverage",
+      "core_explanation_md": "**Break-even units = fixed cost / contribution per unit.**\n\n| Firm | Fixed cost | Break-even point | Operating leverage |\n| --- | --- | --- | --- |\n| **High leverage** | High | **Higher** | **Higher** |\n| **Low leverage** | Lower | **Lower** | **Lower** |",
+      "expanded_explanation_md": "In the courseware example Product A has the higher fixed cost and contribution per unit and a DOL of 4, while Product B has a lower DOL, about 2.67.",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Why does higher fixed cost raise the break-even point?",
+        "expected_takeaway": "Because more contribution is needed before fixed cost is covered."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_cfb6ca642e95f5043d865412fa2d017056438d198b258d208c06f8c38e6b25c4",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U02",
+      "objective_ids": [
+        "ABFM::MOD_B::U02::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 184-186"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "prerequisite_objective_ids": [],
+      "title": "Combined (total) leverage",
+      "core_explanation_md": "**DTL = DOL x DFL = contribution / EBT.**\n\nIt measures how a **% change in sales** is magnified into a **% change in EBT or EPS** by **both** the fixed operating costs and the fixed financial costs together.\n\nFor example, a DTL of **6** means a **10 per cent** change in sales changes EBT by about **60 per cent**.",
+      "formula_spec": {
+        "latex_expression": "DTL = DOL \\times DFL = \\frac{Contribution}{EBIT} \\times \\frac{EBIT}{EBT} = \\frac{Contribution}{EBT}",
+        "variables": [
+          {
+            "symbol": "DTL",
+            "name": "Degree of total (combined) leverage",
+            "unit": "times"
+          },
+          {
+            "symbol": "DOL",
+            "name": "Degree of operating leverage",
+            "unit": "times"
+          },
+          {
+            "symbol": "DFL",
+            "name": "Degree of financial leverage",
+            "unit": "times"
+          }
+        ],
+        "assumptions": [
+          "Fixed operating cost and fixed interest",
+          "No preference dividend"
+        ],
+        "common_errors": [
+          "Adding DOL and DFL instead of multiplying",
+          "Using EBIT in place of EBT in the denominator"
+        ]
+      },
+      "expanded_explanation_md": "EBIT cancels in the product, which is why contribution over EBT gives the combined leverage directly.",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "How is DTL related to DOL and DFL?",
+        "expected_takeaway": "It is their product."
+      },
+      "item_type": "card",
+      "card_type": "formula",
+      "id": "item_ea01196d5dbd81d2b9913e13393bfa87aa38dc1b542429d3dce4b7c7f3213e53",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U02",
+      "objective_ids": [
+        "ABFM::MOD_B::U02::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 184-186"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "prerequisite_objective_ids": [],
+      "title": "Worked example: DOL, DFL and DTL for one firm",
+      "core_explanation_md": "A firm has sales of Rs 30,00,000, variable cost of 60 per cent of sales and fixed operating cost of Rs 6,00,000. It pays interest of Rs 2,00,000. Find its DOL, DFL and DTL.",
+      "worked_steps": [
+        {
+          "step_number": 1,
+          "description": "Contribution is sales less variable cost.",
+          "formula_or_substitution": "30,00,000 x (1 - 0.60)",
+          "intermediate_result": "Rs 12,00,000"
+        },
+        {
+          "step_number": 2,
+          "description": "EBIT is contribution less fixed cost.",
+          "formula_or_substitution": "12,00,000 - 6,00,000",
+          "intermediate_result": "Rs 6,00,000"
+        },
+        {
+          "step_number": 3,
+          "description": "EBT is EBIT less interest.",
+          "formula_or_substitution": "6,00,000 - 2,00,000",
+          "intermediate_result": "Rs 4,00,000"
+        },
+        {
+          "step_number": 4,
+          "description": "DOL = contribution / EBIT.",
+          "formula_or_substitution": "12,00,000 / 6,00,000",
+          "intermediate_result": "2"
+        },
+        {
+          "step_number": 5,
+          "description": "DFL = EBIT / EBT.",
+          "formula_or_substitution": "6,00,000 / 4,00,000",
+          "intermediate_result": "1.5"
+        },
+        {
+          "step_number": 6,
+          "description": "DTL = DOL x DFL = contribution / EBT.",
+          "formula_or_substitution": "2 x 1.5 = 12,00,000 / 4,00,000",
+          "intermediate_result": "3"
+        }
+      ],
+      "final_answer_with_unit": "DOL is 2, DFL is 1.5 and DTL is 3 (times)",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "By how much does EPS rise if sales rise 10 per cent?",
+        "expected_takeaway": "By about 30 per cent, since DTL is 3: EBIT rises 20 per cent and EBT 30 per cent."
+      },
+      "item_type": "card",
+      "card_type": "worked_example",
+      "id": "item_ddff654244782b26bdf4bba790d3ef9421395d42704ff9525279114c7a774610",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U02",
+      "objective_ids": [
+        "ABFM::MOD_B::U02::LO_02",
+        "ABFM::MOD_B::U02::LO_03",
+        "ABFM::MOD_B::U02::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 177-180"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Financial leverage means",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Raising only equity capital",
+          "explanation_md": "That is not leverage through borrowing."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Reducing fixed operating costs",
+          "explanation_md": "That concerns operating leverage."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Increasing sales volume",
+          "explanation_md": "That is a revenue matter."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Using borrowed funds to enhance earnings per share without bringing in more equity",
+          "explanation_md": "The aim is to lift the return to equity holders through debt."
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_explanation_md": "Borrowing to lift EPS.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_104ae894b921d824fe649484115ef00e1f953be917eeebffcdbf3cfb5addd561",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U02",
+      "objective_ids": [
+        "ABFM::MOD_B::U02::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 176-177"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Financial leverage is described as a double-edged sword because",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "It can enhance return on equity and, beyond an optimal level, harm it",
+          "explanation_md": "Excess debt can push the surplus below the cost of borrowing."
+        },
+        {
+          "option_id": "B",
+          "text_md": "It always raises EPS",
+          "explanation_md": "It does not always raise EPS."
+        },
+        {
+          "option_id": "C",
+          "text_md": "It has no effect on risk",
+          "explanation_md": "It adds financial risk."
+        },
+        {
+          "option_id": "D",
+          "text_md": "It applies only to lenders",
+          "explanation_md": "It affects equity holders."
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_explanation_md": "Gains and losses.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_cfb3189d61adf507b9e70967f867db92186ef2215d6b039c7b1eada52bc92d4a",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U02",
+      "objective_ids": [
+        "ABFM::MOD_B::U02::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 176-177"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Which of these constrains the use of more borrowing?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Lower tax rates",
+          "explanation_md": "Tax rates do not constrain borrowing in this way."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Lenders will charge higher interest or refuse as the debt equity ratio rises",
+          "explanation_md": "The cost and availability of debt worsen with leverage."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Higher sales",
+          "explanation_md": "Higher sales do not constrain borrowing."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Rising dividends",
+          "explanation_md": "Dividends are not the stated constraint."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_explanation_md": "Lender limits.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_b5b9a720f906881222ad22884b5f5c472ed252da4c68c3ddd6ad381b6793fb78",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U02",
+      "objective_ids": [
+        "ABFM::MOD_B::U02::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 176-177"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "The equity multiplier used in Du Pont analysis as a measure of financial leverage is",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Total equity divided by total assets",
+          "explanation_md": "That inverts the multiplier."
+        },
+        {
+          "option_id": "B",
+          "text_md": "EBIT divided by interest",
+          "explanation_md": "That is the interest coverage ratio."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Total assets divided by total equity",
+          "explanation_md": "A higher multiplier means more assets are funded by non-equity sources."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Total debt divided by EBITDA",
+          "explanation_md": "That is the debt to EBITDA ratio."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_explanation_md": "Assets over equity.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_1579d3cb1cbafd40cb54f31c6f1ea0450ac0f80d732a4058d4b0177bb9600e23",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U02",
+      "objective_ids": [
+        "ABFM::MOD_B::U02::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 176-177"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "The interest coverage ratio is calculated as",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Interest divided by EBIT",
+          "explanation_md": "That inverts the ratio."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Total debt divided by total assets",
+          "explanation_md": "That is the debt to assets ratio."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Total assets divided by total equity",
+          "explanation_md": "That is the equity multiplier."
+        },
+        {
+          "option_id": "D",
+          "text_md": "EBIT divided by interest expense",
+          "explanation_md": "It shows how many times operating profit covers interest."
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_explanation_md": "EBIT over interest.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_c25eb112e1faf589cfd02228a45480573138e60448d3a788fb5e0410ec6ffe85",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U02",
+      "objective_ids": [
+        "ABFM::MOD_B::U02::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 176-177"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "The degree of financial leverage is defined as",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The percentage change in EPS divided by the percentage change in EBIT",
+          "explanation_md": "It measures the sensitivity of EPS to EBIT."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The percentage change in EBIT divided by the percentage change in sales",
+          "explanation_md": "That is the degree of operating leverage."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Contribution divided by EBIT",
+          "explanation_md": "That is the operating leverage formula."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Interest divided by sales",
+          "explanation_md": "That is not a leverage degree."
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_explanation_md": "DFL definition.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_d5db422aa0e2944c3b0d6b06a68349fa32485f9c9798f06c506c5e8d8d93a098",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U02",
+      "objective_ids": [
+        "ABFM::MOD_B::U02::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 177-180"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A firm has no interest burden. What is its degree of financial leverage?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "0",
+          "explanation_md": "The ratio EBIT over EBT is one, not zero."
+        },
+        {
+          "option_id": "B",
+          "text_md": "1",
+          "explanation_md": "With no interest, EBT equals EBIT, so DFL is one."
+        },
+        {
+          "option_id": "C",
+          "text_md": "2",
+          "explanation_md": "There is no interest to magnify the change."
+        },
+        {
+          "option_id": "D",
+          "text_md": "It is undefined",
+          "explanation_md": "It is defined, since EBT is positive."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_explanation_md": "DFL is one.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_2eec54f0af5aa0b9f14764fe305d147764cd2184b18507e0795c53864309ed3d",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U02",
+      "objective_ids": [
+        "ABFM::MOD_B::U02::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 177-180"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "When EBIT equals the fixed interest, so that EBT is nil, the degree of financial leverage is",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Zero",
+          "explanation_md": "EBIT over nil is not zero."
+        },
+        {
+          "option_id": "B",
+          "text_md": "One",
+          "explanation_md": "DFL is one only when interest is nil."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Undefined",
+          "explanation_md": "Division by zero EBT makes it undefined."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Negative",
+          "explanation_md": "Negative DFL arises when EBT is negative, below break-even."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_explanation_md": "Undefined at break-even.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_8e968725aa3e753c6d9bf380785a63f0f018534dc8ba693d21b2bb6dc4bb2cba",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U02",
+      "objective_ids": [
+        "ABFM::MOD_B::U02::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 177-180"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A DFL greater than 1 for a firm operating above break-even means that",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "EPS never changes",
+          "explanation_md": "EPS moves with EBIT."
+        },
+        {
+          "option_id": "B",
+          "text_md": "EBIT moves opposite to EPS",
+          "explanation_md": "They move in the same direction above break-even."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The firm has no debt",
+          "explanation_md": "No debt gives DFL of 1."
+        },
+        {
+          "option_id": "D",
+          "text_md": "A given percentage change in EBIT produces a larger percentage change in EPS",
+          "explanation_md": "Fixed interest magnifies the effect on EPS."
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_explanation_md": "Magnification.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_a5430e84b1249658e63bee4602c910e574ded9428ab4dd094d490299a28e0d20",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U02",
+      "objective_ids": [
+        "ABFM::MOD_B::U02::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 177-180"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "Why does the courseware equate the percentage change in EBIT with the percentage change in EBT when deriving DFL?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Interest is assumed to be a fixed amount, so a change in EBIT equals the change in EBT",
+          "explanation_md": "EBT is EBIT less a constant interest charge."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Tax is zero",
+          "explanation_md": "Tax rate being constant is a separate assumption."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Shares are redeemed",
+          "explanation_md": "The number of shares is assumed constant."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Interest varies with EBIT",
+          "explanation_md": "Interest is assumed fixed."
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_explanation_md": "Fixed interest.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_1a10f9da4471272cbff31fcaa61c65419e8da42f8dfa69e32782643bc18b0668",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U02",
+      "objective_ids": [
+        "ABFM::MOD_B::U02::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 177-180"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A firm operating below break-even, with EBIT positive but less than interest, has a DFL that is",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Positive and above 1",
+          "explanation_md": "This applies above break-even."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Negative, because EBT is negative",
+          "explanation_md": "EBIT over a negative EBT is negative."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Exactly 1",
+          "explanation_md": "This applies when there is no interest."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Infinite and positive",
+          "explanation_md": "The value is negative, not infinite."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_explanation_md": "Below break-even.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_77d25b1900b84d94926230d241552ea41753e77a8165a57ebf0cfa4cac71aba7",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U02",
+      "objective_ids": [
+        "ABFM::MOD_B::U02::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 177-180"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Operating leverage arises from",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Interest on borrowings",
+          "explanation_md": "That gives financial leverage."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Variable costs only",
+          "explanation_md": "Variable costs move with sales and give no leverage."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Fixed operating costs other than interest",
+          "explanation_md": "Fixed costs magnify the effect of sales changes on EBIT."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Dividend payments",
+          "explanation_md": "Dividends are not operating costs."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_explanation_md": "Fixed operating cost.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_32d41e23343007cc5f16757011a5dcb9f5a0aca0395ac5a34830505ebaf288f8",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U02",
+      "objective_ids": [
+        "ABFM::MOD_B::U02::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 180-183 and 185"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "The degree of operating leverage equals",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "EBIT divided by EBT",
+          "explanation_md": "That is the financial leverage formula."
+        },
+        {
+          "option_id": "B",
+          "text_md": "EBT divided by sales",
+          "explanation_md": "That is not a leverage ratio."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Fixed cost divided by sales",
+          "explanation_md": "That is not the DOL formula."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Contribution divided by EBIT",
+          "explanation_md": "It simplifies the ratio of % change in EBIT to % change in sales."
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_explanation_md": "Contribution over EBIT.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_53828a0d82c30e4f68422f2d0231c3d6b952995b9ad5e014967769162249314b",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U02",
+      "objective_ids": [
+        "ABFM::MOD_B::U02::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 180-183 and 185"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A firm with no fixed operating cost has a degree of operating leverage of",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "1",
+          "explanation_md": "With no fixed cost, EBIT equals contribution."
+        },
+        {
+          "option_id": "B",
+          "text_md": "0",
+          "explanation_md": "The ratio of equal quantities is one."
+        },
+        {
+          "option_id": "C",
+          "text_md": "2",
+          "explanation_md": "There is no fixed cost to magnify the change."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Undefined",
+          "explanation_md": "EBIT is positive so DOL is defined."
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_explanation_md": "DOL is one.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_b6c884ae78303f1bd5cb0705d33241b0b6f3a5df77942d895bfff21bcb0bcd06",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U02",
+      "objective_ids": [
+        "ABFM::MOD_B::U02::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 180-183 and 185"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "As sales rise further above the break-even level, the degree of operating leverage",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Rises without limit",
+          "explanation_md": "It falls as EBIT grows."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Falls",
+          "explanation_md": "Fixed cost becomes a smaller fraction of contribution."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Stays the same",
+          "explanation_md": "It changes with the sales level."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Becomes negative",
+          "explanation_md": "It is negative only below break-even."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_explanation_md": "DOL falls.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_3d005a5b13bee4d66677b1aacefea06c24e471599d5c58347ffa6a4c1744dc21",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U02",
+      "objective_ids": [
+        "ABFM::MOD_B::U02::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 180-183 and 185"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Which type of business is more sensitive to a fall in sales?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "One with very low fixed costs",
+          "explanation_md": "It can remain in profit at low sales."
+        },
+        {
+          "option_id": "B",
+          "text_md": "One with no costs at all",
+          "explanation_md": "Every business has costs."
+        },
+        {
+          "option_id": "C",
+          "text_md": "One with high fixed costs, such as a hospital",
+          "explanation_md": "Fixed costs continue when sales fall."
+        },
+        {
+          "option_id": "D",
+          "text_md": "One with only variable costs",
+          "explanation_md": "Such a firm has operating leverage of one."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_explanation_md": "High fixed cost.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_4343243e77f4c267dd101a195c9ad6026fd24f57468cdbc87bea2206ada3d539",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U02",
+      "objective_ids": [
+        "ABFM::MOD_B::U02::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 180-183 and 185"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A negative degree of operating leverage means that the firm",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Is operating above break-even",
+          "explanation_md": "Above break-even DOL is positive."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Has no fixed cost",
+          "explanation_md": "That gives DOL of one."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Has doubled its sales",
+          "explanation_md": "Sales growth does not make DOL negative."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Is operating below break-even and EBIT is negative",
+          "explanation_md": "Contribution is less than fixed cost."
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_explanation_md": "Below break-even.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_40ff3430e7c63e019dcf4c659930134f1442c42c11a9a11ad49b2f7442db3842",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U02",
+      "objective_ids": [
+        "ABFM::MOD_B::U02::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 180-183 and 185"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Break-even point in units is",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Fixed cost divided by contribution per unit",
+          "explanation_md": "It is the volume at which contribution just covers fixed cost."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Contribution divided by fixed cost",
+          "explanation_md": "That inverts the formula."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Sales divided by variable cost",
+          "explanation_md": "That is not the break-even formula."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Variable cost divided by price",
+          "explanation_md": "That is not the break-even formula."
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_explanation_md": "Fixed cost over contribution.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_03983efc8b837433c6e6a011bce64d04d4b3faa66029e1fd546e9d9c63625655",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U02",
+      "objective_ids": [
+        "ABFM::MOD_B::U02::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 184-186"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A firm with high operating leverage typically has",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "A lower break-even point",
+          "explanation_md": "That fits a low leverage firm."
+        },
+        {
+          "option_id": "B",
+          "text_md": "A higher break-even point and higher fixed costs",
+          "explanation_md": "More contribution is needed to cover fixed cost."
+        },
+        {
+          "option_id": "C",
+          "text_md": "No fixed costs",
+          "explanation_md": "High leverage comes from fixed costs."
+        },
+        {
+          "option_id": "D",
+          "text_md": "A break-even point of zero",
+          "explanation_md": "There is always some break-even level where fixed cost exists."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_explanation_md": "High leverage, high break-even.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_34903b1252a6ecd36f2c8ffd7db5d0499b9e3ca2bb44a00e545a37338a53fd30",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U02",
+      "objective_ids": [
+        "ABFM::MOD_B::U02::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 184-186"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Degree of total leverage equals",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Degree of operating leverage plus degree of financial leverage",
+          "explanation_md": "They are multiplied, not added."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Degree of financial leverage less degree of operating leverage",
+          "explanation_md": "They are multiplied, not subtracted."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Degree of operating leverage multiplied by degree of financial leverage",
+          "explanation_md": "The two multiply to give the combined effect."
+        },
+        {
+          "option_id": "D",
+          "text_md": "EBIT divided by sales",
+          "explanation_md": "That is not the total leverage."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_explanation_md": "Product.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_388cd097cc4d7fa299809f1df3e8abb2dcc04d4dc36db4e0d2f6a62e6753b179",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U02",
+      "objective_ids": [
+        "ABFM::MOD_B::U02::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 184-186"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Degree of total leverage can also be written as",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Contribution divided by EBIT",
+          "explanation_md": "That ratio is the degree of operating leverage alone."
+        },
+        {
+          "option_id": "B",
+          "text_md": "EBIT divided by EBT",
+          "explanation_md": "That ratio is the degree of financial leverage alone."
+        },
+        {
+          "option_id": "C",
+          "text_md": "EBT divided by sales",
+          "explanation_md": "That ratio is not the degree of total leverage."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Contribution divided by EBT",
+          "explanation_md": "EBIT cancels in the product of DOL and DFL."
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_explanation_md": "Contribution over EBT.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_78c3621d90e8705fa50054652022f1c6bdd0675ba583476cee976525b6676976",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U02",
+      "objective_ids": [
+        "ABFM::MOD_B::U02::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 184-186"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "A firm has a DTL of 6. If sales rise by 10 per cent, EBT (and so EPS) rises by about",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "60 per cent",
+          "explanation_md": "DTL is the % change in EBT for a given % change in sales: 6 x 10."
+        },
+        {
+          "option_id": "B",
+          "text_md": "16 per cent",
+          "explanation_md": "That adds 6 and 10 rather than multiplying."
+        },
+        {
+          "option_id": "C",
+          "text_md": "10 per cent",
+          "explanation_md": "That ignores leverage."
+        },
+        {
+          "option_id": "D",
+          "text_md": "0.6 per cent",
+          "explanation_md": "That divides rather than multiplies."
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_explanation_md": "Multiply.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_6c1645f0420f704a7c5ea3e21a8ea75a39d1eeff0e2b3e16ea463d139c4bf91b",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U02",
+      "objective_ids": [
+        "ABFM::MOD_B::U02::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 184-186"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Why does combined leverage matter to financial managers?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "It removes business risk",
+          "explanation_md": "Combined leverage adds to risk rather than removing it."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Fixed operating and fixed financial costs together magnify the effect of sales changes on owners' returns",
+          "explanation_md": "Both pivots raise the risk to owners."
+        },
+        {
+          "option_id": "C",
+          "text_md": "It sets the price of goods",
+          "explanation_md": "It does not set prices."
+        },
+        {
+          "option_id": "D",
+          "text_md": "It replaces the break-even analysis",
+          "explanation_md": "It complements break-even analysis."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_explanation_md": "Magnified sensitivity.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_f5d0f89bb12447d9674e1d12afbd17f7b8e6767d086352f45de73fa2c6d6c055",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U02",
+      "objective_ids": [
+        "ABFM::MOD_B::U02::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 184-186"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A firm sells 8,000 units at Rs 75 with variable cost of Rs 45 per unit and fixed cost of Rs 1,50,000. What is its contribution (Rs)?",
+      "numeric_rule": {
+        "expected_answer": "240000",
+        "unit_label": "Rs",
+        "precision_decimals": 0,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Give a whole number.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "Contribution per unit is 75 - 45 = Rs 30; for 8,000 units it is 30 x 8,000 = Rs 2,40,000.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "Contribution per unit.",
+          "formula_or_substitution": "75 - 45",
+          "intermediate_result": "30"
+        },
+        {
+          "step_number": 2,
+          "description": "Total contribution.",
+          "formula_or_substitution": "30 x 8,000",
+          "intermediate_result": "2,40,000"
+        }
+      ],
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_2d7db822d554c367cad40560991946dea1a8c3ea989b1d784fa1d40df0b62db9",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U02",
+      "objective_ids": [
+        "ABFM::MOD_B::U02::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 180-183 and 185"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "For the same firm (8,000 units, price Rs 75, variable cost Rs 45, fixed cost Rs 1,50,000), what is the degree of operating leverage (to 2 decimal places)?",
+      "numeric_rule": {
+        "expected_answer": "2.67",
+        "unit_label": "times",
+        "precision_decimals": 2,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Round to 2 decimal places.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "Contribution is Rs 2,40,000 and EBIT is 2,40,000 - 1,50,000 = Rs 90,000, so DOL = 2,40,000 / 90,000 = 2.67 times.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "EBIT.",
+          "formula_or_substitution": "2,40,000 - 1,50,000",
+          "intermediate_result": "90,000"
+        },
+        {
+          "step_number": 2,
+          "description": "DOL.",
+          "formula_or_substitution": "2,40,000 / 90,000",
+          "intermediate_result": "2.67"
+        }
+      ],
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_1ca7f25de21dcce2cc981912e13e203acc34dd6a67fd14e1fc7c70688e299a37",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U02",
+      "objective_ids": [
+        "ABFM::MOD_B::U02::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 180-183 and 185"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "How many units must the same firm sell to break even?",
+      "numeric_rule": {
+        "expected_answer": "5000",
+        "unit_label": "units",
+        "precision_decimals": 0,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Give a whole number.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "Break-even = fixed cost / contribution per unit = 1,50,000 / 30 = 5,000 units.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "Break-even units.",
+          "formula_or_substitution": "1,50,000 / 30",
+          "intermediate_result": "5,000"
+        }
+      ],
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_a4e578d4389baf12f51587a638ee89f69ccdb7e2f71376c292392718447a006b",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U02",
+      "objective_ids": [
+        "ABFM::MOD_B::U02::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 184-186"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "Using the degree of operating leverage of 2.67, by about what percentage will the firm's EBIT fall if sales volume falls by 10 per cent (to 1 decimal place)?",
+      "numeric_rule": {
+        "expected_answer": "26.7",
+        "unit_label": "per cent",
+        "precision_decimals": 1,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Round to 1 decimal place.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "Percentage change in EBIT = DOL x percentage change in sales = 2.67 x 10 = 26.7 per cent. Direct check: 7,200 units give contribution 2,16,000 and EBIT 66,000, a fall of 24,000 on 90,000, which is 26.7 per cent.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "Apply DOL.",
+          "formula_or_substitution": "2.667 x 10",
+          "intermediate_result": "26.7"
+        }
+      ],
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_a5cd5a441f5a0c0de8546a636355eb50bac0f8b5b9adf689936d0fee1eabfed6",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U02",
+      "objective_ids": [
+        "ABFM::MOD_B::U02::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 180-183 and 185"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A firm has EBIT of Rs 6,00,000 and interest of Rs 2,00,000. What is its degree of financial leverage (to 1 decimal place)?",
+      "numeric_rule": {
+        "expected_answer": "1.5",
+        "unit_label": "times",
+        "precision_decimals": 1,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Round to 1 decimal place.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "EBT = 6,00,000 - 2,00,000 = Rs 4,00,000, so DFL = 6,00,000 / 4,00,000 = 1.5.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "EBT.",
+          "formula_or_substitution": "6,00,000 - 2,00,000",
+          "intermediate_result": "4,00,000"
+        },
+        {
+          "step_number": 2,
+          "description": "DFL.",
+          "formula_or_substitution": "6,00,000 / 4,00,000",
+          "intermediate_result": "1.5"
+        }
+      ],
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_8faf485b6c401ff844ef3b660e08b932835e3ea3bebc0c19ae60696aeafbb1d1",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U02",
+      "objective_ids": [
+        "ABFM::MOD_B::U02::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 177-180"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "The same firm has 60,000 shares and pays tax at 40 per cent. EBIT rises by 20 per cent to Rs 7,20,000 with interest unchanged. What is the new EPS (Rs, to 1 decimal place)?",
+      "numeric_rule": {
+        "expected_answer": "5.2",
+        "unit_label": "Rs",
+        "precision_decimals": 1,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Round to 1 decimal place.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "EBT = 7,20,000 - 2,00,000 = 5,20,000; tax at 40 per cent leaves 3,12,000; EPS = 3,12,000 / 60,000 = Rs 5.2. Earlier EPS was 4, so EPS rose 30 per cent for a 20 per cent rise in EBIT, matching DFL of 1.5.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "New EBT.",
+          "formula_or_substitution": "7,20,000 - 2,00,000",
+          "intermediate_result": "5,20,000"
+        },
+        {
+          "step_number": 2,
+          "description": "Profit after tax.",
+          "formula_or_substitution": "5,20,000 x 0.60",
+          "intermediate_result": "3,12,000"
+        },
+        {
+          "step_number": 3,
+          "description": "EPS.",
+          "formula_or_substitution": "3,12,000 / 60,000",
+          "intermediate_result": "5.2"
+        }
+      ],
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_f659b8114836cd6b2652b9993379a74add0057bee7ea1776e8760e8286c9c368",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U02",
+      "objective_ids": [
+        "ABFM::MOD_B::U02::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 177-180"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A firm has contribution of Rs 15,00,000, fixed operating cost of Rs 9,00,000 and interest of Rs 1,00,000. What is its degree of total leverage (to 1 decimal place)?",
+      "numeric_rule": {
+        "expected_answer": "3.0",
+        "unit_label": "times",
+        "precision_decimals": 1,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Round to 1 decimal place.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "EBIT = 15,00,000 - 9,00,000 = 6,00,000; EBT = 6,00,000 - 1,00,000 = 5,00,000; DTL = contribution / EBT = 15,00,000 / 5,00,000 = 3.0 (DOL 2.5 x DFL 1.2).",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "EBIT.",
+          "formula_or_substitution": "15,00,000 - 9,00,000",
+          "intermediate_result": "6,00,000"
+        },
+        {
+          "step_number": 2,
+          "description": "EBT.",
+          "formula_or_substitution": "6,00,000 - 1,00,000",
+          "intermediate_result": "5,00,000"
+        },
+        {
+          "step_number": 3,
+          "description": "DTL.",
+          "formula_or_substitution": "15,00,000 / 5,00,000",
+          "intermediate_result": "3.0"
+        }
+      ],
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_6fd6f6f38c3968ba92bd077c5753fdb14023401ec8d2c5e6db7575bf4832bda4",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U02",
+      "objective_ids": [
+        "ABFM::MOD_B::U02::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 184-186"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "For the same firm (EBIT Rs 6,00,000, interest Rs 1,00,000), what is the interest coverage ratio (times)?",
+      "numeric_rule": {
+        "expected_answer": "6",
+        "unit_label": "times",
+        "precision_decimals": 0,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Give a whole number.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "Interest coverage = EBIT / interest = 6,00,000 / 1,00,000 = 6 times.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "Interest coverage.",
+          "formula_or_substitution": "6,00,000 / 1,00,000",
+          "intermediate_result": "6"
+        }
+      ],
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_2300580d4bf1bbe04f1af528c593762099a39a30938757c8799a0393d13d544e",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "ABFM",
+      "module_id": "ABFM::MOD_B",
+      "unit_id": "ABFM::MOD_B::U02",
+      "objective_ids": [
+        "ABFM::MOD_B::U02::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S02",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Advanced Business & Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-774-0",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S02 printed pp. 176-177"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}
