@@ -318,26 +318,26 @@
           {
             "option_id": "A",
             "text_md": "A borrower of the best quality",
-            "explanation_md": "Opposite."
+            "explanation_md": "The best quality borrowers score above the upper cut-off."
           },
           {
             "option_id": "B",
             "text_md": "A high-risk borrower",
-            "explanation_md": "Rule."
+            "explanation_md": "A Z score below 1.81 signals a high-risk borrower in this version of the model."
           },
           {
             "option_id": "C",
             "text_md": "A borrower that has already defaulted",
-            "explanation_md": "Not so."
+            "explanation_md": "A score does not prove that default has already occurred."
           },
           {
             "option_id": "D",
             "text_md": "A borrower to be exempted from review",
-            "explanation_md": "Not so."
+            "explanation_md": "Low scorers need closer review, not exemption."
           }
         ],
         "correct_option_id": "B",
-        "correct_explanation_md": "A score below 1.81 means the firm should be classed as high-risk."
+        "correct_explanation_md": "A Z score below 1.81 signals a high-risk borrower in this version of the model."
       }
     },
     {
@@ -354,26 +354,26 @@
           {
             "option_id": "A",
             "text_md": "Sales to total assets",
-            "explanation_md": "X5."
+            "explanation_md": "Sales to total assets is the ratio X5."
           },
           {
             "option_id": "B",
             "text_md": "Retained earnings to total assets",
-            "explanation_md": "X2."
+            "explanation_md": "Retained earnings to total assets is the ratio X2."
           },
           {
             "option_id": "C",
             "text_md": "Earnings before interest and taxes to total assets",
-            "explanation_md": "Rule."
+            "explanation_md": "X3 is earnings before interest and taxes to total assets."
           },
           {
             "option_id": "D",
             "text_md": "Net working capital to total assets",
-            "explanation_md": "X1."
+            "explanation_md": "Net working capital to total assets is the ratio X1."
           }
         ],
         "correct_option_id": "C",
-        "correct_explanation_md": "X3 is EBIT divided by total assets."
+        "correct_explanation_md": "X3 is earnings before interest and taxes to total assets."
       }
     },
     {
@@ -390,26 +390,26 @@
           {
             "option_id": "A",
             "text_md": "X1",
-            "explanation_md": "Working capital."
+            "explanation_md": "X1 is based on balance sheet working capital."
           },
           {
             "option_id": "B",
             "text_md": "X3",
-            "explanation_md": "EBIT."
+            "explanation_md": "X3 is based on earnings and assets."
           },
           {
             "option_id": "C",
             "text_md": "X5",
-            "explanation_md": "Sales."
+            "explanation_md": "X5 is based on sales and assets."
           },
           {
             "option_id": "D",
             "text_md": "X4, market value of equity to the book value of long-term debt",
-            "explanation_md": "Rule."
+            "explanation_md": "X4 uses the market value of equity against the book value of long-term debt."
           }
         ],
         "correct_option_id": "D",
-        "correct_explanation_md": "X4 compares equity at market value with long-term debt at book value."
+        "correct_explanation_md": "X4 uses the market value of equity against the book value of long-term debt."
       }
     },
     {
@@ -426,26 +426,26 @@
           {
             "option_id": "A",
             "text_md": "EBIT to total assets, with 3.3",
-            "explanation_md": "Rule."
+            "explanation_md": "EBIT to total assets carries the largest weight, 3.3."
           },
           {
             "option_id": "B",
             "text_md": "Sales to total assets, with 1.0",
-            "explanation_md": "Smaller."
+            "explanation_md": "Sales to total assets has a weight of only 1.0."
           },
           {
             "option_id": "C",
             "text_md": "Retained earnings to total assets, with 1.4",
-            "explanation_md": "Smaller."
+            "explanation_md": "Retained earnings to total assets has a smaller weight, 1.4."
           },
           {
             "option_id": "D",
             "text_md": "Net working capital to total assets, with 1.2",
-            "explanation_md": "Smaller."
+            "explanation_md": "Net working capital to total assets has a smaller weight, 1.2."
           }
         ],
         "correct_option_id": "A",
-        "correct_explanation_md": "The weight on X3 is 3.3, larger than any other."
+        "correct_explanation_md": "EBIT to total assets carries the largest weight, 3.3."
       }
     },
     {
@@ -462,26 +462,26 @@
           {
             "option_id": "A",
             "text_md": "Has risen",
-            "explanation_md": "Opposite."
+            "explanation_md": "Default risk does not rise with a higher score."
           },
           {
             "option_id": "B",
             "text_md": "Has fallen",
-            "explanation_md": "Rule."
+            "explanation_md": "A higher Z score moves the borrower away from bankruptcy, so default risk has fallen."
           },
           {
             "option_id": "C",
             "text_md": "Is unchanged",
-            "explanation_md": "Not so."
+            "explanation_md": "The score does change the risk assessment."
           },
           {
             "option_id": "D",
             "text_md": "Cannot be judged without a rating",
-            "explanation_md": "Not so."
+            "explanation_md": "The score itself can be judged without a rating."
           }
         ],
         "correct_option_id": "B",
-        "correct_explanation_md": "The higher the Z score, the lower the default risk."
+        "correct_explanation_md": "A higher Z score moves the borrower away from bankruptcy, so default risk has fallen."
       }
     },
     {
@@ -498,26 +498,26 @@
           {
             "option_id": "A",
             "text_md": "Three",
-            "explanation_md": "Not so."
+            "explanation_md": "Three is fewer than the formula uses."
           },
           {
             "option_id": "B",
             "text_md": "Seven",
-            "explanation_md": "Not so."
+            "explanation_md": "Seven is more than the formula uses."
           },
           {
             "option_id": "C",
             "text_md": "Five",
-            "explanation_md": "Rule."
+            "explanation_md": "The Z score combines five financial ratios."
           },
           {
             "option_id": "D",
             "text_md": "Nine",
-            "explanation_md": "Not so."
+            "explanation_md": "Nine is more than the formula uses."
           }
         ],
         "correct_option_id": "C",
-        "correct_explanation_md": "It combines five ratios, X1 to X5."
+        "correct_explanation_md": "The Z score combines five financial ratios."
       }
     },
     {
@@ -534,26 +534,26 @@
           {
             "option_id": "A",
             "text_md": "(1 + i) ÷ (1 + k)",
-            "explanation_md": "This is the probability of no default."
+            "explanation_md": "The ratio alone is the survival probability."
           },
           {
             "option_id": "B",
             "text_md": "k − i",
-            "explanation_md": "Not exact."
+            "explanation_md": "The spread k minus i is only an approximation of the loss rate."
           },
           {
             "option_id": "C",
             "text_md": "1 − (1 + k) ÷ (1 + i)",
-            "explanation_md": "Inverted."
+            "explanation_md": "Inverting the ratio gives a negative figure."
           },
           {
             "option_id": "D",
             "text_md": "1 − (1 + i) ÷ (1 + k)",
-            "explanation_md": "Rule."
+            "explanation_md": "Equating expected returns on risk-free and risky loans gives probability of default as 1 minus (1 plus i) divided by (1 plus k)."
           }
         ],
         "correct_option_id": "D",
-        "correct_explanation_md": "The probability of default is one minus the ratio of the two growth factors."
+        "correct_explanation_md": "Equating expected returns on risk-free and risky loans gives probability of default as 1 minus (1 plus i) divided by (1 plus k)."
       }
     },
     {
@@ -570,26 +570,26 @@
           {
             "option_id": "A",
             "text_md": "Nothing is recovered",
-            "explanation_md": "Rule."
+            "explanation_md": "The interest rate based formula assumes zero recovery on default, so the whole loan is lost."
           },
           {
             "option_id": "B",
             "text_md": "The whole amount is recovered",
-            "explanation_md": "Not so."
+            "explanation_md": "Full recovery would make the spread zero."
           },
           {
             "option_id": "C",
             "text_md": "Half the amount is recovered",
-            "explanation_md": "Not so."
+            "explanation_md": "Half recovery is not assumed by the simple formula."
           },
           {
             "option_id": "D",
             "text_md": "Collateral is always sold at a premium",
-            "explanation_md": "Not so."
+            "explanation_md": "Collateral sold at a premium is not assumed."
           }
         ],
         "correct_option_id": "A",
-        "correct_explanation_md": "Equating the two expected payoffs with a zero payoff on default means no recovery is assumed."
+        "correct_explanation_md": "The interest rate based formula assumes zero recovery on default, so the whole loan is lost."
       }
     },
     {
@@ -606,26 +606,26 @@
           {
             "option_id": "A",
             "text_md": "Falls",
-            "explanation_md": "Opposite."
+            "explanation_md": "The probability does not fall when the spread widens."
           },
           {
             "option_id": "B",
             "text_md": "Rises",
-            "explanation_md": "Rule."
+            "explanation_md": "A higher corporate rate against an unchanged risk-free rate widens the spread, so implied default probability rises."
           },
           {
             "option_id": "C",
             "text_md": "Does not change",
-            "explanation_md": "Not so."
+            "explanation_md": "It does change with the spread."
           },
           {
             "option_id": "D",
             "text_md": "Becomes negative",
-            "explanation_md": "Not so."
+            "explanation_md": "A probability cannot be negative."
           }
         ],
         "correct_option_id": "B",
-        "correct_explanation_md": "A larger k reduces the ratio (1 + i) ÷ (1 + k), so p rises."
+        "correct_explanation_md": "A higher corporate rate against an unchanged risk-free rate widens the spread, so implied default probability rises."
       }
     },
     {
@@ -642,26 +642,26 @@
           {
             "option_id": "A",
             "text_md": "A premium equal to the collateral haircut",
-            "explanation_md": "Not so."
+            "explanation_md": "A premium equal to the collateral haircut is not stated for loans."
           },
           {
             "option_id": "B",
             "text_md": "8 per cent",
-            "explanation_md": "Currency mismatch only."
+            "explanation_md": "Eight per cent is the currency mismatch haircut for collateral."
           },
           {
             "option_id": "C",
             "text_md": "None, because the loan is not marked to market",
-            "explanation_md": "Rule."
+            "explanation_md": "A loan granted in the normal course of business is not marked to market, so no exposure haircut is applied."
           },
           {
             "option_id": "D",
             "text_md": "15 per cent",
-            "explanation_md": "Gold collateral."
+            "explanation_md": "Fifteen per cent is not the haircut for normal loans."
           }
         ],
         "correct_option_id": "C",
-        "correct_explanation_md": "Loans and investments acquired in banking operations are not volatile in this sense, so no exposure haircut applies."
+        "correct_explanation_md": "A loan granted in the normal course of business is not marked to market, so no exposure haircut is applied."
       }
     },
     {
@@ -678,26 +678,26 @@
           {
             "option_id": "A",
             "text_md": "A cash credit limit",
-            "explanation_md": "Loan."
+            "explanation_md": "A cash credit limit is an ordinary loan with no such adjustment."
           },
           {
             "option_id": "B",
             "text_md": "A term loan against property",
-            "explanation_md": "Loan."
+            "explanation_md": "A term loan against property is an ordinary loan."
           },
           {
             "option_id": "C",
             "text_md": "A deposit with the Reserve Bank",
-            "explanation_md": "Not so."
+            "explanation_md": "A deposit with the Reserve Bank has no volatility adjustment."
           },
           {
             "option_id": "D",
             "text_md": "An exposure from a repo-style transaction in which securities are sold, lent or pledged",
-            "explanation_md": "Rule."
+            "explanation_md": "Repo-style transactions where securities are sold, lent or pledged attract an upward volatility adjustment."
           }
         ],
         "correct_option_id": "D",
-        "correct_explanation_md": "The value of securities sold, lent or pledged in repo-style transactions is subject to market volatility, so the exposure takes a haircut."
+        "correct_explanation_md": "Repo-style transactions where securities are sold, lent or pledged attract an upward volatility adjustment."
       }
     },
     {
@@ -714,26 +714,26 @@
           {
             "option_id": "A",
             "text_md": "A discount that lowers the collateral's value",
-            "explanation_md": "Rule."
+            "explanation_md": "The collateral haircut lowers the value of collateral to allow for price swings."
           },
           {
             "option_id": "B",
             "text_md": "A premium that raises the collateral's value",
-            "explanation_md": "Opposite."
+            "explanation_md": "A premium would raise value and understate risk."
           },
           {
             "option_id": "C",
             "text_md": "A charge added to the exposure",
-            "explanation_md": "That is He."
+            "explanation_md": "It is applied to collateral, not added to the exposure."
           },
           {
             "option_id": "D",
             "text_md": "A tax on the borrower",
-            "explanation_md": "Not so."
+            "explanation_md": "It is not a tax on the borrower."
           }
         ],
         "correct_option_id": "A",
-        "correct_explanation_md": "The collateral is multiplied by (1 − Hc − Hfx), so the haircut reduces it."
+        "correct_explanation_md": "The collateral haircut lowers the value of collateral to allow for price swings."
       }
     },
     {
@@ -750,26 +750,26 @@
           {
             "option_id": "A",
             "text_md": "15 per cent",
-            "explanation_md": "Gold."
+            "explanation_md": "Fifteen per cent is not the currency mismatch haircut."
           },
           {
             "option_id": "B",
             "text_md": "8 per cent",
-            "explanation_md": "Rule."
+            "explanation_md": "The standard supervisory haircut for a currency mismatch is 8 per cent."
           },
           {
             "option_id": "C",
             "text_md": "4 per cent",
-            "explanation_md": "Not so."
+            "explanation_md": "Four per cent is below the stated haircut."
           },
           {
             "option_id": "D",
             "text_md": "25 per cent",
-            "explanation_md": "Not so."
+            "explanation_md": "Twenty-five per cent is above the stated haircut."
           }
         ],
         "correct_option_id": "B",
-        "correct_explanation_md": "The standard supervisory haircut for currency risk is 8 per cent."
+        "correct_explanation_md": "The standard supervisory haircut for a currency mismatch is 8 per cent."
       }
     },
     {
@@ -786,26 +786,26 @@
           {
             "option_id": "A",
             "text_md": "The bank must hold zero capital",
-            "explanation_md": "Not so."
+            "explanation_md": "It does not require zero capital."
           },
           {
             "option_id": "B",
             "text_md": "The collateral is ignored",
-            "explanation_md": "Not so."
+            "explanation_md": "The collateral is used in the formula, not ignored."
           },
           {
             "option_id": "C",
             "text_md": "Over-collateralisation cannot produce a negative exposure",
-            "explanation_md": "Rule."
+            "explanation_md": "The zero floor means that over-collateralisation cannot give a negative exposure."
           },
           {
             "option_id": "D",
             "text_md": "The exposure doubles",
-            "explanation_md": "Not so."
+            "explanation_md": "The floor does not double the exposure."
           }
         ],
         "correct_option_id": "C",
-        "correct_explanation_md": "If the adjusted collateral exceeds the adjusted exposure, E* is set at zero rather than a negative figure."
+        "correct_explanation_md": "The zero floor means that over-collateralisation cannot give a negative exposure."
       }
     },
     {
@@ -822,26 +822,26 @@
           {
             "option_id": "A",
             "text_md": "The number of accounts",
-            "explanation_md": "Not so."
+            "explanation_md": "Rows show probabilities and not account counts."
           },
           {
             "option_id": "B",
             "text_md": "The default rate",
-            "explanation_md": "Not so."
+            "explanation_md": "The default rate is one column, not the row total."
           },
           {
             "option_id": "C",
             "text_md": "Zero",
-            "explanation_md": "Not so."
+            "explanation_md": "A row total of zero would mean no outcomes."
           },
           {
             "option_id": "D",
             "text_md": "100 per cent",
-            "explanation_md": "Rule."
+            "explanation_md": "Each row of a transition matrix covers all possible outcomes, so it adds to 100 per cent."
           }
         ],
         "correct_option_id": "D",
-        "correct_explanation_md": "A row covers all possible outcomes for borrowers starting at that rating, so it adds to 100 per cent."
+        "correct_explanation_md": "Each row of a transition matrix covers all possible outcomes, so it adds to 100 per cent."
       }
     },
     {
@@ -858,26 +858,26 @@
           {
             "option_id": "A",
             "text_md": "Keep their rating",
-            "explanation_md": "Rule."
+            "explanation_md": "The diagonal entry gives the share of borrowers that keep their starting rating."
           },
           {
             "option_id": "B",
             "text_md": "Default",
-            "explanation_md": "Last column."
+            "explanation_md": "Defaults are shown in the default column."
           },
           {
             "option_id": "C",
             "text_md": "Are upgraded",
-            "explanation_md": "Off the diagonal."
+            "explanation_md": "Upgrades lie on one side of the diagonal."
           },
           {
             "option_id": "D",
             "text_md": "Were not rated",
-            "explanation_md": "Not so."
+            "explanation_md": "Unrated borrowers are not in the matrix."
           }
         ],
         "correct_option_id": "A",
-        "correct_explanation_md": "The diagonal compares each rating with itself, that is borrowers whose rating is unchanged."
+        "correct_explanation_md": "The diagonal entry gives the share of borrowers that keep their starting rating."
       }
     },
     {
@@ -894,26 +894,26 @@
           {
             "option_id": "A",
             "text_md": "The recovery rate",
-            "explanation_md": "Not so."
+            "explanation_md": "The recovery rate is a separate estimate."
           },
           {
             "option_id": "B",
             "text_md": "The one-year probability of default",
-            "explanation_md": "Rule."
+            "explanation_md": "The default column gives the one-year probability of default for each starting rating."
           },
           {
             "option_id": "C",
             "text_md": "The loss given default",
-            "explanation_md": "Not so."
+            "explanation_md": "Loss given default is a separate estimate."
           },
           {
             "option_id": "D",
             "text_md": "The number of accounts",
-            "explanation_md": "Not so."
+            "explanation_md": "The matrix shows percentages, not account counts."
           }
         ],
         "correct_option_id": "B",
-        "correct_explanation_md": "It is the share of borrowers at that rating that default within the year."
+        "correct_explanation_md": "The default column gives the one-year probability of default for each starting rating."
       }
     },
     {
@@ -930,26 +930,26 @@
           {
             "option_id": "A",
             "text_md": "BB, at 4 per cent",
-            "explanation_md": "Lower."
+            "explanation_md": "BB at 4 per cent is lower than B."
           },
           {
             "option_id": "B",
             "text_md": "BBB, at 1 per cent",
-            "explanation_md": "Lower."
+            "explanation_md": "BBB at 1 per cent is much lower than B."
           },
           {
             "option_id": "C",
             "text_md": "B, at 18 per cent",
-            "explanation_md": "Rule."
+            "explanation_md": "In the card's matrix, B has the highest one-year default probability at 18 per cent."
           },
           {
             "option_id": "D",
             "text_md": "A, at 0 per cent",
-            "explanation_md": "Lower."
+            "explanation_md": "A at 0 per cent is the lowest."
           }
         ],
         "correct_option_id": "C",
-        "correct_explanation_md": "Reading the default column, the B row shows 18 per cent, the highest."
+        "correct_explanation_md": "In the card's matrix, B has the highest one-year default probability at 18 per cent."
       }
     },
     {
