@@ -1,0 +1,198 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BFM-A-U01-B011",
+  "paper_id": "BFM",
+  "unit_label": "BFM Module A unit 1: case study on a forward contract and the FEDAI rules (option period, matured contract, delayed delivery)",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S03",
+    "FEDAI_RULES_10E"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "statement": "FEDAI Rules 5, 6 and 8: an option period of delivery chosen by the customer may not extend beyond one month; a matured forward contract with no instructions is cancelled by the bank within three working business days after maturity, the customer being liable for any exchange difference against him and not entitled to a gain (the bank may pass on a gain if the delay was beyond the client's control and this is recorded); on cancellation at the customer's request purchase contracts are cancelled at the TT selling rate and sale contracts at the TT buying rate; for late delivery of a currency the seller bank pays interest for the days of delay at 2 per cent over the overnight benchmark rate of the currency; a claim for delay must be made within 15 working business days of the due date, or interest is limited to 60 days.",
+      "source_id": "FEDAI_RULES_10E",
+      "locator": "FEDAI_RULES_10E Rules 5.1 to 5.8, 6.1 to 6.6 and 8.1 to 8.12",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    }
+  ],
+  "drafts": [
+    {
+      "draft_id": "D001",
+      "item_type": "case_study",
+      "variant": "case_study",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "title": "Coromandel Garments: a forward contract that was left to mature",
+        "scenario_narrative_md": "Coromandel Garments Limited of Tiruppur exports knitwear to the United States and receives its payments in US dollars. In October 2025 it booked a forward purchase contract with its authorised dealer bank for USD 100,000 at a contract rate of Rs 84.00 per US dollar, maturing on Friday 16 January 2026. When booking, the treasurer first asked for an option period of delivery of two months before the maturity date, but the bank explained that FEDAI Rules do not allow that, and the contract was booked with a shorter option period.\n\nThe buyer's remittance was delayed, and the company's finance team did not instruct the bank about the contract before it matured. On Friday 16 January 2026 no delivery was made and no request for extension or cancellation was received. The bank must now deal with the matured contract. On the day it acts, the bank's TT selling rate is Rs 84.80 per US dollar and its TT buying rate is Rs 84.60. The finance head asks what will happen, who bears any difference, and by when the bank has to act. The head also asks what would have happened if the rate had moved the other way.\n\nAssume that Monday to Friday are working business days at the bank and that there are no holidays between 16 and 21 January 2026.",
+        "question_ids": [
+          "D002",
+          "D003",
+          "D004",
+          "D005"
+        ],
+        "reference_tables_md": [
+          "| Item | Detail |\n| --- | --- |\n| Contract | Forward purchase of USD 100,000 |\n| Contract rate | Rs 84.00 per USD |\n| Maturity | Friday 16 January 2026 |\n| TT selling rate on the day of cancellation | Rs 84.80 |\n| TT buying rate on the day of cancellation | Rs 84.60 |",
+          "| Rule | Content |\n| --- | --- |\n| Option period of delivery | Not beyond one month |\n| Matured contract, no instructions | Bank cancels within three working business days after maturity |\n| Delayed delivery by a seller bank | 2 per cent over the overnight benchmark rate of the currency |\n| Claim for delay | Within 15 working business days of the due date |"
+        ]
+      }
+    },
+    {
+      "draft_id": "D002",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Why could the bank not accept the option period of two months that the treasurer first asked for?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The option period must always equal the full length of the contract",
+            "explanation_md": "The rule sets a ceiling of one month and does not tie the option period to the contract length."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Forward contracts cannot have an option period at all",
+            "explanation_md": "Forward merchant contracts may carry an option of delivery, within the one month limit."
+          },
+          {
+            "option_id": "C",
+            "text_md": "An option period of delivery chosen by the customer may not extend beyond one month",
+            "explanation_md": "Rule 5 limits the customer's option period of delivery to one month."
+          },
+          {
+            "option_id": "D",
+            "text_md": "An option period needs prior approval of the Reserve Bank every time",
+            "explanation_md": "The limit is a rule of the contract itself and does not call for a separate approval each time."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "FEDAI Rule 5 allows an option period of delivery of at most one month.",
+        "case_study_id": "D001"
+      }
+    },
+    {
+      "draft_id": "D003",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "The contract matured on Friday 16 January 2026 with no instructions. What is the latest day of January 2026 by which the bank must cancel it?",
+        "numeric_rule": {
+          "expected_answer": "21",
+          "unit_label": "day of January 2026",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give the day of the month as a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "The bank cancels within three working business days after maturity: Monday 19, Tuesday 20 and Wednesday 21 January 2026, so the latest day is 21 January.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Count three working business days after Friday 16 January.",
+            "formula_or_substitution": "19, 20, 21 January",
+            "intermediate_result": "21 January"
+          }
+        ],
+        "case_study_id": "D001"
+      }
+    },
+    {
+      "draft_id": "D004",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "The contract is cancelled at the rate given. What amount (Rs) must Coromandel pay the bank as the difference?",
+        "numeric_rule": {
+          "expected_answer": "80000",
+          "unit_label": "Rs",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number of rupees.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "A purchase contract is cancelled at the TT selling rate, Rs 84.80. The difference against the customer is (84.80 - 84.00) x 100,000 = Rs 80,000, which the customer must pay.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Rate used for cancelling a purchase contract.",
+            "formula_or_substitution": "TT selling rate",
+            "intermediate_result": "84.80"
+          },
+          {
+            "step_number": 2,
+            "description": "Difference per dollar.",
+            "formula_or_substitution": "84.80 - 84.00",
+            "intermediate_result": "0.80"
+          },
+          {
+            "step_number": 3,
+            "description": "Amount payable.",
+            "formula_or_substitution": "0.80 x 100,000",
+            "intermediate_result": "80,000"
+          }
+        ],
+        "case_study_id": "D001"
+      }
+    },
+    {
+      "draft_id": "D005",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "Suppose the TT selling rate on the day of cancellation had instead been Rs 83.60. What is the position of the customer under Rule 6?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "It must always receive the full gain of Rs 40,000",
+            "explanation_md": "The customer has no entitlement to a gain on an uninstructed matured contract."
+          },
+          {
+            "option_id": "B",
+            "text_md": "It is not entitled to the gain, although the bank may pass it on if the delay was beyond the client's control and this is recorded",
+            "explanation_md": "A customer who leaves a matured contract uninstructed bears any loss but has no right to a gain, subject to that recorded exception."
+          },
+          {
+            "option_id": "C",
+            "text_md": "It must pay Rs 40,000 as a penalty",
+            "explanation_md": "A rate movement in the customer's favour does not create a charge; the difference is a gain not payable by the customer."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The contract becomes void and nothing is settled",
+            "explanation_md": "A contract does not become void on maturity; the bank cancels it and the customer is liable for adverse differences."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "The customer bears losses but has no entitlement to gains, apart from the recorded exception.",
+        "case_study_id": "D001"
+      }
+    }
+  ],
+  "unresolved": [
+    "The case is an original scenario with invented parties, dates and rates. The rules applied are Rules 5, 6 and 8 of the FEDAI Rules, 10th edition updated to 5 April 2024 (FEDAI_RULES_10E), as recorded in batch BFM-A-U01-B009; the courseware (S03 printed pp. 28-32) states an earlier edition.",
+    "Case study written in response to audit finding AUD-003. Reviewer is the authoring agent; no independent or human review.",
+    "Reviewer for this batch is the authoring agent; no independent or human review."
+  ],
+  "next_batch_hint": "Further case studies as required by audit finding AUD-003."
+}

@@ -1,0 +1,596 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BFM-A-U01-B011",
+    "paper_id": "BFM",
+    "unit_label": "BFM Module A unit 1: case study on a forward contract and the FEDAI rules (option period, matured contract, delayed delivery)",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S03",
+      "FEDAI_RULES_10E"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "statement": "FEDAI Rules 5, 6 and 8: an option period of delivery chosen by the customer may not extend beyond one month; a matured forward contract with no instructions is cancelled by the bank within three working business days after maturity, the customer being liable for any exchange difference against him and not entitled to a gain (the bank may pass on a gain if the delay was beyond the client's control and this is recorded); on cancellation at the customer's request purchase contracts are cancelled at the TT selling rate and sale contracts at the TT buying rate; for late delivery of a currency the seller bank pays interest for the days of delay at 2 per cent over the overnight benchmark rate of the currency; a claim for delay must be made within 15 working business days of the due date, or interest is limited to 60 days.",
+        "source_id": "FEDAI_RULES_10E",
+        "locator": "FEDAI_RULES_10E Rules 5.1 to 5.8, 6.1 to 6.6 and 8.1 to 8.12",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      }
+    ],
+    "drafts": [
+      {
+        "draft_id": "D001",
+        "item_type": "case_study",
+        "variant": "case_study",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "title": "Coromandel Garments: a forward contract that was left to mature",
+          "scenario_narrative_md": "Coromandel Garments Limited of Tiruppur exports knitwear to the United States and receives its payments in US dollars. In October 2025 it booked a forward purchase contract with its authorised dealer bank for USD 100,000 at a contract rate of Rs 84.00 per US dollar, maturing on Friday 16 January 2026. When booking, the treasurer first asked for an option period of delivery of two months before the maturity date, but the bank explained that FEDAI Rules do not allow that, and the contract was booked with a shorter option period.\n\nThe buyer's remittance was delayed, and the company's finance team did not instruct the bank about the contract before it matured. On Friday 16 January 2026 no delivery was made and no request for extension or cancellation was received. The bank must now deal with the matured contract. On the day it acts, the bank's TT selling rate is Rs 84.80 per US dollar and its TT buying rate is Rs 84.60. The finance head asks what will happen, who bears any difference, and by when the bank has to act. The head also asks what would have happened if the rate had moved the other way.\n\nAssume that Monday to Friday are working business days at the bank and that there are no holidays between 16 and 21 January 2026.",
+          "question_ids": [
+            "D002",
+            "D003",
+            "D004",
+            "D005"
+          ],
+          "reference_tables_md": [
+            "| Item | Detail |\n| --- | --- |\n| Contract | Forward purchase of USD 100,000 |\n| Contract rate | Rs 84.00 per USD |\n| Maturity | Friday 16 January 2026 |\n| TT selling rate on the day of cancellation | Rs 84.80 |\n| TT buying rate on the day of cancellation | Rs 84.60 |",
+            "| Rule | Content |\n| --- | --- |\n| Option period of delivery | Not beyond one month |\n| Matured contract, no instructions | Bank cancels within three working business days after maturity |\n| Delayed delivery by a seller bank | 2 per cent over the overnight benchmark rate of the currency |\n| Claim for delay | Within 15 working business days of the due date |"
+          ]
+        }
+      },
+      {
+        "draft_id": "D002",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Why could the bank not accept the option period of two months that the treasurer first asked for?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The option period must always equal the full length of the contract",
+              "explanation_md": "The rule sets a ceiling of one month and does not tie the option period to the contract length."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Forward contracts cannot have an option period at all",
+              "explanation_md": "Forward merchant contracts may carry an option of delivery, within the one month limit."
+            },
+            {
+              "option_id": "C",
+              "text_md": "An option period of delivery chosen by the customer may not extend beyond one month",
+              "explanation_md": "Rule 5 limits the customer's option period of delivery to one month."
+            },
+            {
+              "option_id": "D",
+              "text_md": "An option period needs prior approval of the Reserve Bank every time",
+              "explanation_md": "The limit is a rule of the contract itself and does not call for a separate approval each time."
+            }
+          ],
+          "correct_option_id": "C",
+          "correct_explanation_md": "FEDAI Rule 5 allows an option period of delivery of at most one month.",
+          "case_study_id": "D001"
+        }
+      },
+      {
+        "draft_id": "D003",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "The contract matured on Friday 16 January 2026 with no instructions. What is the latest day of January 2026 by which the bank must cancel it?",
+          "numeric_rule": {
+            "expected_answer": "21",
+            "unit_label": "day of January 2026",
+            "precision_decimals": 0,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Give the day of the month as a whole number.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "The bank cancels within three working business days after maturity: Monday 19, Tuesday 20 and Wednesday 21 January 2026, so the latest day is 21 January.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "Count three working business days after Friday 16 January.",
+              "formula_or_substitution": "19, 20, 21 January",
+              "intermediate_result": "21 January"
+            }
+          ],
+          "case_study_id": "D001"
+        }
+      },
+      {
+        "draft_id": "D004",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "The contract is cancelled at the rate given. What amount (Rs) must Coromandel pay the bank as the difference?",
+          "numeric_rule": {
+            "expected_answer": "80000",
+            "unit_label": "Rs",
+            "precision_decimals": 0,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Give a whole number of rupees.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "A purchase contract is cancelled at the TT selling rate, Rs 84.80. The difference against the customer is (84.80 - 84.00) x 100,000 = Rs 80,000, which the customer must pay.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "Rate used for cancelling a purchase contract.",
+              "formula_or_substitution": "TT selling rate",
+              "intermediate_result": "84.80"
+            },
+            {
+              "step_number": 2,
+              "description": "Difference per dollar.",
+              "formula_or_substitution": "84.80 - 84.00",
+              "intermediate_result": "0.80"
+            },
+            {
+              "step_number": 3,
+              "description": "Amount payable.",
+              "formula_or_substitution": "0.80 x 100,000",
+              "intermediate_result": "80,000"
+            }
+          ],
+          "case_study_id": "D001"
+        }
+      },
+      {
+        "draft_id": "D005",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "Suppose the TT selling rate on the day of cancellation had instead been Rs 83.60. What is the position of the customer under Rule 6?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "It must always receive the full gain of Rs 40,000",
+              "explanation_md": "The customer has no entitlement to a gain on an uninstructed matured contract."
+            },
+            {
+              "option_id": "B",
+              "text_md": "It is not entitled to the gain, although the bank may pass it on if the delay was beyond the client's control and this is recorded",
+              "explanation_md": "A customer who leaves a matured contract uninstructed bears any loss but has no right to a gain, subject to that recorded exception."
+            },
+            {
+              "option_id": "C",
+              "text_md": "It must pay Rs 40,000 as a penalty",
+              "explanation_md": "A rate movement in the customer's favour does not create a charge; the difference is a gain not payable by the customer."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The contract becomes void and nothing is settled",
+              "explanation_md": "A contract does not become void on maturity; the bank cancels it and the customer is liable for adverse differences."
+            }
+          ],
+          "correct_option_id": "B",
+          "correct_explanation_md": "The customer bears losses but has no entitlement to gains, apart from the recorded exception.",
+          "case_study_id": "D001"
+        }
+      }
+    ],
+    "unresolved": [
+      "The case is an original scenario with invented parties, dates and rates. The rules applied are Rules 5, 6 and 8 of the FEDAI Rules, 10th edition updated to 5 April 2024 (FEDAI_RULES_10E), as recorded in batch BFM-A-U01-B009; the courseware (S03 printed pp. 28-32) states an earlier edition.",
+      "Case study written in response to audit finding AUD-003. Reviewer is the authoring agent; no independent or human review.",
+      "Reviewer for this batch is the authoring agent; no independent or human review."
+    ],
+    "next_batch_hint": "Further case studies as required by audit finding AUD-003."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BFM-A-U01-B011",
+    "paper_id": "BFM",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 7, Compulsory Paper II, Module A: International Banking, Foreign Exchange Business"
+    },
+    "sources": [
+      {
+        "source_id": "S03",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "FEDAI_RULES_10E",
+        "authority": "Foreign Exchange Dealers' Association of India",
+        "title": "FEDAI Rules, 10th Edition, updated up to 5 April 2024 (AR Circular No. 02/2024)",
+        "url": "https://www.fedai.org.in/DocumentUploadFiles/ARCircular/AR%20Circular%2002_2024%20Revision%20of%20FEDAI%20Rules.pdf",
+        "publication_date": "2024-04-05",
+        "effective_date": "2024-04-05"
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BFM::MOD_A::U01",
+        "objective_ids": [
+          "BFM::MOD_A::U01::LO_07"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BFM::MOD_A::U01",
+        "objective_ids": [
+          "BFM::MOD_A::U01::LO_07"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BFM::MOD_A::U01",
+        "objective_ids": [
+          "BFM::MOD_A::U01::LO_07"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BFM::MOD_A::U01",
+        "objective_ids": [
+          "BFM::MOD_A::U01::LO_07"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "unit_id": "BFM::MOD_A::U01",
+        "objective_ids": [
+          "BFM::MOD_A::U01::LO_07"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BFM-A-U01-B011",
+      "draft_id": "D001",
+      "item_id": "item_9f730facd1c31e0515f4607f02532285990c3457ce112a00b415fa5f43445941"
+    },
+    {
+      "batch_id": "BFM-A-U01-B011",
+      "draft_id": "D002",
+      "item_id": "item_bece4dcdbd3143db21a6a6feeab7ceb17f48591dc29a3faf747f22c6ecded668"
+    },
+    {
+      "batch_id": "BFM-A-U01-B011",
+      "draft_id": "D003",
+      "item_id": "item_12353c3ca06e74eebe1cdce353b1d5b9181ab8cedec6458c229d3ba873579115"
+    },
+    {
+      "batch_id": "BFM-A-U01-B011",
+      "draft_id": "D004",
+      "item_id": "item_75a8d4beff7a33412a94ce859d0f7a2a2a46e05278491f641fadec5f118b3432"
+    },
+    {
+      "batch_id": "BFM-A-U01-B011",
+      "draft_id": "D005",
+      "item_id": "item_41929930dea3595b0f65499a50bed911ac022ca984a5658f4afd1974c2d55b42"
+    }
+  ],
+  "items": [
+    {
+      "title": "Coromandel Garments: a forward contract that was left to mature",
+      "scenario_narrative_md": "Coromandel Garments Limited of Tiruppur exports knitwear to the United States and receives its payments in US dollars. In October 2025 it booked a forward purchase contract with its authorised dealer bank for USD 100,000 at a contract rate of Rs 84.00 per US dollar, maturing on Friday 16 January 2026. When booking, the treasurer first asked for an option period of delivery of two months before the maturity date, but the bank explained that FEDAI Rules do not allow that, and the contract was booked with a shorter option period.\n\nThe buyer's remittance was delayed, and the company's finance team did not instruct the bank about the contract before it matured. On Friday 16 January 2026 no delivery was made and no request for extension or cancellation was received. The bank must now deal with the matured contract. On the day it acts, the bank's TT selling rate is Rs 84.80 per US dollar and its TT buying rate is Rs 84.60. The finance head asks what will happen, who bears any difference, and by when the bank has to act. The head also asks what would have happened if the rate had moved the other way.\n\nAssume that Monday to Friday are working business days at the bank and that there are no holidays between 16 and 21 January 2026.",
+      "question_ids": [
+        "item_bece4dcdbd3143db21a6a6feeab7ceb17f48591dc29a3faf747f22c6ecded668",
+        "item_12353c3ca06e74eebe1cdce353b1d5b9181ab8cedec6458c229d3ba873579115",
+        "item_75a8d4beff7a33412a94ce859d0f7a2a2a46e05278491f641fadec5f118b3432",
+        "item_41929930dea3595b0f65499a50bed911ac022ca984a5658f4afd1974c2d55b42"
+      ],
+      "reference_tables_md": [
+        "| Item | Detail |\n| --- | --- |\n| Contract | Forward purchase of USD 100,000 |\n| Contract rate | Rs 84.00 per USD |\n| Maturity | Friday 16 January 2026 |\n| TT selling rate on the day of cancellation | Rs 84.80 |\n| TT buying rate on the day of cancellation | Rs 84.60 |",
+        "| Rule | Content |\n| --- | --- |\n| Option period of delivery | Not beyond one month |\n| Matured contract, no instructions | Bank cancels within three working business days after maturity |\n| Delayed delivery by a seller bank | 2 per cent over the overnight benchmark rate of the currency |\n| Claim for delay | Within 15 working business days of the due date |"
+      ],
+      "item_type": "case_study",
+      "id": "item_9f730facd1c31e0515f4607f02532285990c3457ce112a00b415fa5f43445941",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U01",
+      "objective_ids": [
+        "BFM::MOD_A::U01::LO_07"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "FEDAI_RULES_10E",
+          "authority": "Foreign Exchange Dealers' Association of India",
+          "title": "FEDAI Rules, 10th Edition, updated up to 5 April 2024 (AR Circular No. 02/2024)",
+          "url": "https://www.fedai.org.in/DocumentUploadFiles/ARCircular/AR%20Circular%2002_2024%20Revision%20of%20FEDAI%20Rules.pdf",
+          "publication_date": "2024-04-05",
+          "effective_date": "2024-04-05",
+          "locator": "FEDAI_RULES_10E Rules 5.1 to 5.8, 6.1 to 6.6 and 8.1 to 8.12"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Why could the bank not accept the option period of two months that the treasurer first asked for?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The option period must always equal the full length of the contract",
+          "explanation_md": "The rule sets a ceiling of one month and does not tie the option period to the contract length."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Forward contracts cannot have an option period at all",
+          "explanation_md": "Forward merchant contracts may carry an option of delivery, within the one month limit."
+        },
+        {
+          "option_id": "C",
+          "text_md": "An option period of delivery chosen by the customer may not extend beyond one month",
+          "explanation_md": "Rule 5 limits the customer's option period of delivery to one month."
+        },
+        {
+          "option_id": "D",
+          "text_md": "An option period needs prior approval of the Reserve Bank every time",
+          "explanation_md": "The limit is a rule of the contract itself and does not call for a separate approval each time."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_explanation_md": "FEDAI Rule 5 allows an option period of delivery of at most one month.",
+      "case_study_id": "item_9f730facd1c31e0515f4607f02532285990c3457ce112a00b415fa5f43445941",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_bece4dcdbd3143db21a6a6feeab7ceb17f48591dc29a3faf747f22c6ecded668",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U01",
+      "objective_ids": [
+        "BFM::MOD_A::U01::LO_07"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "FEDAI_RULES_10E",
+          "authority": "Foreign Exchange Dealers' Association of India",
+          "title": "FEDAI Rules, 10th Edition, updated up to 5 April 2024 (AR Circular No. 02/2024)",
+          "url": "https://www.fedai.org.in/DocumentUploadFiles/ARCircular/AR%20Circular%2002_2024%20Revision%20of%20FEDAI%20Rules.pdf",
+          "publication_date": "2024-04-05",
+          "effective_date": "2024-04-05",
+          "locator": "FEDAI_RULES_10E Rules 5.1 to 5.8, 6.1 to 6.6 and 8.1 to 8.12"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "The contract matured on Friday 16 January 2026 with no instructions. What is the latest day of January 2026 by which the bank must cancel it?",
+      "numeric_rule": {
+        "expected_answer": "21",
+        "unit_label": "day of January 2026",
+        "precision_decimals": 0,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Give the day of the month as a whole number.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "The bank cancels within three working business days after maturity: Monday 19, Tuesday 20 and Wednesday 21 January 2026, so the latest day is 21 January.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "Count three working business days after Friday 16 January.",
+          "formula_or_substitution": "19, 20, 21 January",
+          "intermediate_result": "21 January"
+        }
+      ],
+      "case_study_id": "item_9f730facd1c31e0515f4607f02532285990c3457ce112a00b415fa5f43445941",
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_12353c3ca06e74eebe1cdce353b1d5b9181ab8cedec6458c229d3ba873579115",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U01",
+      "objective_ids": [
+        "BFM::MOD_A::U01::LO_07"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "FEDAI_RULES_10E",
+          "authority": "Foreign Exchange Dealers' Association of India",
+          "title": "FEDAI Rules, 10th Edition, updated up to 5 April 2024 (AR Circular No. 02/2024)",
+          "url": "https://www.fedai.org.in/DocumentUploadFiles/ARCircular/AR%20Circular%2002_2024%20Revision%20of%20FEDAI%20Rules.pdf",
+          "publication_date": "2024-04-05",
+          "effective_date": "2024-04-05",
+          "locator": "FEDAI_RULES_10E Rules 5.1 to 5.8, 6.1 to 6.6 and 8.1 to 8.12"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "The contract is cancelled at the rate given. What amount (Rs) must Coromandel pay the bank as the difference?",
+      "numeric_rule": {
+        "expected_answer": "80000",
+        "unit_label": "Rs",
+        "precision_decimals": 0,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Give a whole number of rupees.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "A purchase contract is cancelled at the TT selling rate, Rs 84.80. The difference against the customer is (84.80 - 84.00) x 100,000 = Rs 80,000, which the customer must pay.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "Rate used for cancelling a purchase contract.",
+          "formula_or_substitution": "TT selling rate",
+          "intermediate_result": "84.80"
+        },
+        {
+          "step_number": 2,
+          "description": "Difference per dollar.",
+          "formula_or_substitution": "84.80 - 84.00",
+          "intermediate_result": "0.80"
+        },
+        {
+          "step_number": 3,
+          "description": "Amount payable.",
+          "formula_or_substitution": "0.80 x 100,000",
+          "intermediate_result": "80,000"
+        }
+      ],
+      "case_study_id": "item_9f730facd1c31e0515f4607f02532285990c3457ce112a00b415fa5f43445941",
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_75a8d4beff7a33412a94ce859d0f7a2a2a46e05278491f641fadec5f118b3432",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U01",
+      "objective_ids": [
+        "BFM::MOD_A::U01::LO_07"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "FEDAI_RULES_10E",
+          "authority": "Foreign Exchange Dealers' Association of India",
+          "title": "FEDAI Rules, 10th Edition, updated up to 5 April 2024 (AR Circular No. 02/2024)",
+          "url": "https://www.fedai.org.in/DocumentUploadFiles/ARCircular/AR%20Circular%2002_2024%20Revision%20of%20FEDAI%20Rules.pdf",
+          "publication_date": "2024-04-05",
+          "effective_date": "2024-04-05",
+          "locator": "FEDAI_RULES_10E Rules 5.1 to 5.8, 6.1 to 6.6 and 8.1 to 8.12"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "Suppose the TT selling rate on the day of cancellation had instead been Rs 83.60. What is the position of the customer under Rule 6?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "It must always receive the full gain of Rs 40,000",
+          "explanation_md": "The customer has no entitlement to a gain on an uninstructed matured contract."
+        },
+        {
+          "option_id": "B",
+          "text_md": "It is not entitled to the gain, although the bank may pass it on if the delay was beyond the client's control and this is recorded",
+          "explanation_md": "A customer who leaves a matured contract uninstructed bears any loss but has no right to a gain, subject to that recorded exception."
+        },
+        {
+          "option_id": "C",
+          "text_md": "It must pay Rs 40,000 as a penalty",
+          "explanation_md": "A rate movement in the customer's favour does not create a charge; the difference is a gain not payable by the customer."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The contract becomes void and nothing is settled",
+          "explanation_md": "A contract does not become void on maturity; the bank cancels it and the customer is liable for adverse differences."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_explanation_md": "The customer bears losses but has no entitlement to gains, apart from the recorded exception.",
+      "case_study_id": "item_9f730facd1c31e0515f4607f02532285990c3457ce112a00b415fa5f43445941",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_41929930dea3595b0f65499a50bed911ac022ca984a5658f4afd1974c2d55b42",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U01",
+      "objective_ids": [
+        "BFM::MOD_A::U01::LO_07"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "FEDAI_RULES_10E",
+          "authority": "Foreign Exchange Dealers' Association of India",
+          "title": "FEDAI Rules, 10th Edition, updated up to 5 April 2024 (AR Circular No. 02/2024)",
+          "url": "https://www.fedai.org.in/DocumentUploadFiles/ARCircular/AR%20Circular%2002_2024%20Revision%20of%20FEDAI%20Rules.pdf",
+          "publication_date": "2024-04-05",
+          "effective_date": "2024-04-05",
+          "locator": "FEDAI_RULES_10E Rules 5.1 to 5.8, 6.1 to 6.6 and 8.1 to 8.12"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

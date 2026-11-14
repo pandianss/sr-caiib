@@ -53,3 +53,25 @@ test('CRAR case (BFM-B-U03-B005): ratios, band and CET1 shortfall recompute', ()
   const ratio = cet1 / rwa * 100; assert.ok(ratio > 7.375 && ratio <= 8.0);
   numeric(b, 'D005', 0.08 * rwa - cet1, '200');
 });
+
+const addDays = (iso: string, n: number) => { const d = new Date(`${iso}T00:00:00Z`); d.setUTCDate(d.getUTCDate() + n); return d; };
+const nextBankingDays = (iso: string, n: number) => { let d = new Date(`${iso}T00:00:00Z`); let left = n; while (left > 0) { d = addDays(d.toISOString().slice(0, 10), 1); const w = d.getUTCDay(); if (w !== 0 && w !== 6) left -= 1; } return d; };
+
+test('Usance LC case (BFM-A-U04-B007): presentation period, examination deadline and due date recompute', () => {
+  const b = load('BFM-A-U04-B007'); linked(b, 5);
+  assert.equal(new Date('2026-02-12T00:00:00Z').getUTCDay(), 4); assert.equal(new Date('2026-03-02T00:00:00Z').getUTCDay(), 1);
+  assert.equal(addDays('2026-02-12', 21).toISOString().slice(0, 10), '2026-03-05');
+  assert.ok(new Date('2026-03-02T00:00:00Z') <= addDays('2026-02-12', 21));
+  assert.equal(addDays('2026-02-12', 90).toISOString().slice(0, 10), '2026-05-13');
+  numeric(b, 'D003', nextBankingDays('2026-03-02', 5).getUTCDate(), '9');
+  assert.equal(nextBankingDays('2026-03-02', 5).getUTCMonth(), 2);
+});
+
+test('Forward contract FEDAI case (BFM-A-U01-B011): matured contract deadline and cancellation difference recompute', () => {
+  const b = load('BFM-A-U01-B011'); linked(b, 4);
+  assert.equal(new Date('2026-01-16T00:00:00Z').getUTCDay(), 5);
+  numeric(b, 'D003', nextBankingDays('2026-01-16', 3).getUTCDate(), '21');
+  const contract = 84.0, ttSelling = 84.8, usd = 100000;
+  numeric(b, 'D004', Math.round((ttSelling - contract) * usd), '80000');
+  assert.ok((83.6 - contract) * usd < 0);
+});

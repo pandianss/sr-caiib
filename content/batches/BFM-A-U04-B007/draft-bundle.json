@@ -1,0 +1,696 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BFM-A-U04-B007",
+    "paper_id": "BFM",
+    "unit_label": "BFM Module A unit 4: case study on a usance letter of credit presentation (UCP 600 timing, discrepancies and due date)",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S03"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "statement": "UCP 600 presentation and examination (courseware account): a bank has a maximum of five banking days following the day of presentation to honour or refuse; the period for presentation, usually 21 days, applies to original transport documents; data in a document, read in context with the credit, the document and international standard banking practice, must not conflict with data in that document or any other stipulated document; conditions in the credit that are not part of a required document are non-documentary and are disregarded. For discrepant documents the bank may hold them pending instructions from the presenter, hold them until it receives a waiver from the applicant and agrees to accept it, return them, or act on instructions previously received; there is no provision for payment under reserve or indemnity. Under a usance credit the draft is payable at a future date that may run from the date of shipment or the date of the bill of exchange.",
+        "source_id": "S03",
+        "locator": "S03 printed pp. 101-102, points C7 to C12, and p. 91 (usance credits)",
+        "regulatory_sensitive": false,
+        "evidence_status": "explicit"
+      }
+    ],
+    "drafts": [
+      {
+        "draft_id": "D001",
+        "item_type": "case_study",
+        "variant": "case_study",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "title": "Malabar Spice Exports: a usance credit and a discrepant presentation",
+          "scenario_narrative_md": "Malabar Spice Exports Limited of Kochi has shipped 10,000 kg of black pepper to a buyer in Hamburg under an irrevocable documentary credit that is subject to UCP 600. The credit was issued by a bank in Germany, is advised through the exporter's own bank in Kochi, and calls for a commercial invoice, a full set of original clean on-board bills of lading, a packing list and an insurance certificate. The draft is to be drawn at 90 days from the date of shipment. The credit names Hamburg as the port of discharge, and one of its conditions says the goods \"must be of good quality\", although no document is required to certify quality.\n\nThe on-board bill of lading is dated Thursday 12 February 2026. The exporter presents the full set of documents to its bank in Kochi on Monday 2 March 2026. The exporter's officer then notices that the bill of lading shows Rotterdam as the port of discharge, while the credit and the invoice both say Hamburg. The exporter is anxious to be paid early because it has already ordered the next consignment, and it asks the bank whether the difference can be ignored or whether the bank can simply pay and recover from the buyer later.\n\nAssume that Monday to Friday are banking days at every place involved, that there are no bank holidays in March 2026, and that no other discrepancy exists. The bank must decide how long it has to examine the documents, whether the presentation is in time, what it may do with the discrepant set, and what the due date of the draft would be if the documents were accepted.",
+          "question_ids": [
+            "D002",
+            "D003",
+            "D004",
+            "D005",
+            "D006"
+          ],
+          "reference_tables_md": [
+            "| Fact | Detail |\n| --- | --- |\n| Credit terms | Irrevocable, subject to UCP 600, usance draft at 90 days from the date of shipment |\n| Bill of lading date | Thursday 12 February 2026 |\n| Presentation to the bank | Monday 2 March 2026 |\n| Port of discharge in the credit and invoice | Hamburg |\n| Port of discharge in the bill of lading | Rotterdam |",
+            "| Period | Length |\n| --- | --- |\n| Period for presentation after shipment | 21 days |\n| Time to honour or refuse | Five banking days following the day of presentation |\n| Usance of the draft | 90 days from the date of shipment |"
+          ]
+        }
+      },
+      {
+        "draft_id": "D002",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Is the presentation on 2 March 2026 within the period for presentation?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "No: the period ended on 26 February 2026",
+              "explanation_md": "That would be only 14 days after shipment, not 21."
+            },
+            {
+              "option_id": "B",
+              "text_md": "No: the period for presentation is the same as the 90 day usance, so it ends in May",
+              "explanation_md": "The usance of the draft and the period for presentation are different things; the latter is usually 21 days."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Yes: 2 March is 18 days after shipment, inside the 21 day period, which ends on 5 March 2026",
+              "explanation_md": "Counting 21 days from 12 February 2026 gives 5 March 2026, and 2 March falls before that date."
+            },
+            {
+              "option_id": "D",
+              "text_md": "It cannot be judged until the issuing bank has examined the documents",
+              "explanation_md": "The period is measured from the shipment date shown on the transport document, so it can be checked now."
+            }
+          ],
+          "correct_option_id": "C",
+          "correct_explanation_md": "The period ends 21 days after 12 February, on 5 March 2026, so the presentation on 2 March is in time.",
+          "case_study_id": "D001"
+        }
+      },
+      {
+        "draft_id": "D003",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "The presentation is made on Monday 2 March 2026. What is the latest day of March 2026 by which the bank must honour or refuse the presentation?",
+          "numeric_rule": {
+            "expected_answer": "9",
+            "unit_label": "day of March 2026",
+            "precision_decimals": 0,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Give the day of the month as a whole number.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "The bank has five banking days following the day of presentation. Counting Tuesday 3, Wednesday 4, Thursday 5, Friday 6 and Monday 9 March gives 9 March 2026.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "List the five banking days after Monday 2 March.",
+              "formula_or_substitution": "3, 4, 5, 6 and 9 March",
+              "intermediate_result": "9 March"
+            },
+            {
+              "step_number": 2,
+              "description": "Latest day to honour or refuse.",
+              "formula_or_substitution": "Fifth banking day",
+              "intermediate_result": "9"
+            }
+          ],
+          "case_study_id": "D001"
+        }
+      },
+      {
+        "draft_id": "D004",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "difficulty": "hard",
+          "stem_md": "The bill of lading shows Rotterdam while the credit and invoice show Hamburg. What may the bank do under the courseware account of UCP 600?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Treat the set as discrepant and hold it pending the exporter's instructions or an applicant's waiver that the bank agrees to accept, or return it",
+              "explanation_md": "These are the options the rules give for discrepant documents; the discrepancy is that the port of discharge conflicts across stipulated documents."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Pay under reserve against the exporter's indemnity and recover later if the buyer objects",
+              "explanation_md": "The courseware states there is no provision in UCP 600 for payment under reserve or indemnity."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Ignore the difference because the invoice and the credit agree",
+              "explanation_md": "Data in a document must not conflict with data in any other stipulated document, so agreement of two documents does not cure the third."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Pay at once because the exporter promises to correct the bill of lading later",
+              "explanation_md": "A promise to correct later is not a reason to treat a discrepant set as complying; settlement begins only when the bank determines the presentation complies."
+            }
+          ],
+          "correct_option_id": "A",
+          "correct_explanation_md": "The bank treats the set as discrepant and may hold it pending instructions or a waiver, or return it; it may not pay under reserve.",
+          "case_study_id": "D001"
+        }
+      },
+      {
+        "draft_id": "D005",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "The credit says the goods \"must be of good quality\", but requires no document to certify quality. How does the bank treat this condition?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "It demands an inspection certificate even though the credit does not call for one",
+              "explanation_md": "A bank cannot add a document requirement the credit does not contain."
+            },
+            {
+              "option_id": "B",
+              "text_md": "It disregards the condition, as a condition not tied to a required document is non-documentary",
+              "explanation_md": "Banks deal in documents; with no document specified to show quality, the condition cannot be tested and is disregarded."
+            },
+            {
+              "option_id": "C",
+              "text_md": "It refuses the presentation because quality cannot be proved",
+              "explanation_md": "Refusing on a non-documentary condition is not permitted, since such conditions are disregarded."
+            },
+            {
+              "option_id": "D",
+              "text_md": "It asks the applicant to decide the quality before paying",
+              "explanation_md": "Settlement does not depend on the applicant's view of the goods."
+            }
+          ],
+          "correct_option_id": "B",
+          "correct_explanation_md": "A condition that is not part of a required document is non-documentary and is disregarded.",
+          "case_study_id": "D001"
+        }
+      },
+      {
+        "draft_id": "D006",
+        "item_type": "question",
+        "variant": "single_choice",
+        "fact_ids": [
+          "F001"
+        ],
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "If the documents were accepted, on what date would the draft at 90 days from the date of shipment fall due?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "12 May 2026",
+              "explanation_md": "That counts the shipment date as day one and gives only 89 days after it."
+            },
+            {
+              "option_id": "B",
+              "text_md": "2 June 2026",
+              "explanation_md": "That counts 90 days from the presentation date of 2 March, but the usance runs from the shipment date."
+            },
+            {
+              "option_id": "C",
+              "text_md": "13 May 2026",
+              "explanation_md": "Ninety days counted from 12 February 2026, with the shipment date excluded, ends on 13 May 2026."
+            },
+            {
+              "option_id": "D",
+              "text_md": "14 May 2026",
+              "explanation_md": "That adds an extra day beyond 90 days from the shipment date."
+            }
+          ],
+          "correct_option_id": "C",
+          "correct_explanation_md": "Ninety days from 12 February 2026 ends on 13 May 2026.",
+          "case_study_id": "D001"
+        }
+      }
+    ],
+    "unresolved": [
+      "The case is an original scenario with invented parties, dates and figures. The UCP 600 rules applied (five banking days, 21 day presentation period, treatment of discrepant documents, non-documentary conditions, data not to conflict) are those recorded in batch BFM-A-U04-B002 from the courseware (S03 printed pp. 100-102); the ICC publication itself was not retrieved because it is copyright, so these remain courseware evidence.",
+      "Case study written in response to audit finding AUD-003. Reviewer is the authoring agent; no independent or human review.",
+      "Reviewer for this batch is the authoring agent; no independent or human review."
+    ],
+    "next_batch_hint": "Further case studies as required by audit finding AUD-003."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BFM-A-U04-B007",
+    "paper_id": "BFM",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 7, Compulsory Paper II, Module A: International Banking, Documentary Letters of Credit"
+    },
+    "sources": [
+      {
+        "source_id": "S03",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BFM::MOD_A::U04",
+        "objective_ids": [
+          "BFM::MOD_A::U04::LO_04",
+          "BFM::MOD_A::U04::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BFM::MOD_A::U04",
+        "objective_ids": [
+          "BFM::MOD_A::U04::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BFM::MOD_A::U04",
+        "objective_ids": [
+          "BFM::MOD_A::U04::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BFM::MOD_A::U04",
+        "objective_ids": [
+          "BFM::MOD_A::U04::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "unit_id": "BFM::MOD_A::U04",
+        "objective_ids": [
+          "BFM::MOD_A::U04::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D006",
+        "unit_id": "BFM::MOD_A::U04",
+        "objective_ids": [
+          "BFM::MOD_A::U04::LO_04"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BFM-A-U04-B007",
+      "draft_id": "D001",
+      "item_id": "item_7783c64ac203eb7f20e396dc2729f3e5306516d57f3d1612cdf8a17e0ee3752b"
+    },
+    {
+      "batch_id": "BFM-A-U04-B007",
+      "draft_id": "D002",
+      "item_id": "item_b5bdf2dec3e727476fcfe1d2fc664c9f1863a506ec51ba71beb5e56d5d0221f7"
+    },
+    {
+      "batch_id": "BFM-A-U04-B007",
+      "draft_id": "D003",
+      "item_id": "item_e1c6d9346410265aebc64b5a914c751d4e64d01dd70ba5180860a3a358025e92"
+    },
+    {
+      "batch_id": "BFM-A-U04-B007",
+      "draft_id": "D004",
+      "item_id": "item_dc018279918cfaa56022e725d67624c2f8b9483fd04a1d56d8c4e1b0f1714ba0"
+    },
+    {
+      "batch_id": "BFM-A-U04-B007",
+      "draft_id": "D005",
+      "item_id": "item_98a7f0bf42698ed3a7c408641c04f9f50c9170bae0a07bdd425a8ea2f8407494"
+    },
+    {
+      "batch_id": "BFM-A-U04-B007",
+      "draft_id": "D006",
+      "item_id": "item_7da31e45702505d956a578ade99836b8f594110eeba6ef898ff72e0cb0b6227c"
+    }
+  ],
+  "items": [
+    {
+      "title": "Malabar Spice Exports: a usance credit and a discrepant presentation",
+      "scenario_narrative_md": "Malabar Spice Exports Limited of Kochi has shipped 10,000 kg of black pepper to a buyer in Hamburg under an irrevocable documentary credit that is subject to UCP 600. The credit was issued by a bank in Germany, is advised through the exporter's own bank in Kochi, and calls for a commercial invoice, a full set of original clean on-board bills of lading, a packing list and an insurance certificate. The draft is to be drawn at 90 days from the date of shipment. The credit names Hamburg as the port of discharge, and one of its conditions says the goods \"must be of good quality\", although no document is required to certify quality.\n\nThe on-board bill of lading is dated Thursday 12 February 2026. The exporter presents the full set of documents to its bank in Kochi on Monday 2 March 2026. The exporter's officer then notices that the bill of lading shows Rotterdam as the port of discharge, while the credit and the invoice both say Hamburg. The exporter is anxious to be paid early because it has already ordered the next consignment, and it asks the bank whether the difference can be ignored or whether the bank can simply pay and recover from the buyer later.\n\nAssume that Monday to Friday are banking days at every place involved, that there are no bank holidays in March 2026, and that no other discrepancy exists. The bank must decide how long it has to examine the documents, whether the presentation is in time, what it may do with the discrepant set, and what the due date of the draft would be if the documents were accepted.",
+      "question_ids": [
+        "item_b5bdf2dec3e727476fcfe1d2fc664c9f1863a506ec51ba71beb5e56d5d0221f7",
+        "item_e1c6d9346410265aebc64b5a914c751d4e64d01dd70ba5180860a3a358025e92",
+        "item_dc018279918cfaa56022e725d67624c2f8b9483fd04a1d56d8c4e1b0f1714ba0",
+        "item_98a7f0bf42698ed3a7c408641c04f9f50c9170bae0a07bdd425a8ea2f8407494",
+        "item_7da31e45702505d956a578ade99836b8f594110eeba6ef898ff72e0cb0b6227c"
+      ],
+      "reference_tables_md": [
+        "| Fact | Detail |\n| --- | --- |\n| Credit terms | Irrevocable, subject to UCP 600, usance draft at 90 days from the date of shipment |\n| Bill of lading date | Thursday 12 February 2026 |\n| Presentation to the bank | Monday 2 March 2026 |\n| Port of discharge in the credit and invoice | Hamburg |\n| Port of discharge in the bill of lading | Rotterdam |",
+        "| Period | Length |\n| --- | --- |\n| Period for presentation after shipment | 21 days |\n| Time to honour or refuse | Five banking days following the day of presentation |\n| Usance of the draft | 90 days from the date of shipment |"
+      ],
+      "item_type": "case_study",
+      "id": "item_7783c64ac203eb7f20e396dc2729f3e5306516d57f3d1612cdf8a17e0ee3752b",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U04",
+      "objective_ids": [
+        "BFM::MOD_A::U04::LO_04",
+        "BFM::MOD_A::U04::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S03 printed pp. 101-102, points C7 to C12, and p. 91 (usance credits)"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Is the presentation on 2 March 2026 within the period for presentation?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "No: the period ended on 26 February 2026",
+          "explanation_md": "That would be only 14 days after shipment, not 21."
+        },
+        {
+          "option_id": "B",
+          "text_md": "No: the period for presentation is the same as the 90 day usance, so it ends in May",
+          "explanation_md": "The usance of the draft and the period for presentation are different things; the latter is usually 21 days."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Yes: 2 March is 18 days after shipment, inside the 21 day period, which ends on 5 March 2026",
+          "explanation_md": "Counting 21 days from 12 February 2026 gives 5 March 2026, and 2 March falls before that date."
+        },
+        {
+          "option_id": "D",
+          "text_md": "It cannot be judged until the issuing bank has examined the documents",
+          "explanation_md": "The period is measured from the shipment date shown on the transport document, so it can be checked now."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_explanation_md": "The period ends 21 days after 12 February, on 5 March 2026, so the presentation on 2 March is in time.",
+      "case_study_id": "item_7783c64ac203eb7f20e396dc2729f3e5306516d57f3d1612cdf8a17e0ee3752b",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_b5bdf2dec3e727476fcfe1d2fc664c9f1863a506ec51ba71beb5e56d5d0221f7",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U04",
+      "objective_ids": [
+        "BFM::MOD_A::U04::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S03 printed pp. 101-102, points C7 to C12, and p. 91 (usance credits)"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "The presentation is made on Monday 2 March 2026. What is the latest day of March 2026 by which the bank must honour or refuse the presentation?",
+      "numeric_rule": {
+        "expected_answer": "9",
+        "unit_label": "day of March 2026",
+        "precision_decimals": 0,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Give the day of the month as a whole number.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "The bank has five banking days following the day of presentation. Counting Tuesday 3, Wednesday 4, Thursday 5, Friday 6 and Monday 9 March gives 9 March 2026.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "List the five banking days after Monday 2 March.",
+          "formula_or_substitution": "3, 4, 5, 6 and 9 March",
+          "intermediate_result": "9 March"
+        },
+        {
+          "step_number": 2,
+          "description": "Latest day to honour or refuse.",
+          "formula_or_substitution": "Fifth banking day",
+          "intermediate_result": "9"
+        }
+      ],
+      "case_study_id": "item_7783c64ac203eb7f20e396dc2729f3e5306516d57f3d1612cdf8a17e0ee3752b",
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_e1c6d9346410265aebc64b5a914c751d4e64d01dd70ba5180860a3a358025e92",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U04",
+      "objective_ids": [
+        "BFM::MOD_A::U04::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S03 printed pp. 101-102, points C7 to C12, and p. 91 (usance credits)"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "hard",
+      "stem_md": "The bill of lading shows Rotterdam while the credit and invoice show Hamburg. What may the bank do under the courseware account of UCP 600?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Treat the set as discrepant and hold it pending the exporter's instructions or an applicant's waiver that the bank agrees to accept, or return it",
+          "explanation_md": "These are the options the rules give for discrepant documents; the discrepancy is that the port of discharge conflicts across stipulated documents."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Pay under reserve against the exporter's indemnity and recover later if the buyer objects",
+          "explanation_md": "The courseware states there is no provision in UCP 600 for payment under reserve or indemnity."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Ignore the difference because the invoice and the credit agree",
+          "explanation_md": "Data in a document must not conflict with data in any other stipulated document, so agreement of two documents does not cure the third."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Pay at once because the exporter promises to correct the bill of lading later",
+          "explanation_md": "A promise to correct later is not a reason to treat a discrepant set as complying; settlement begins only when the bank determines the presentation complies."
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_explanation_md": "The bank treats the set as discrepant and may hold it pending instructions or a waiver, or return it; it may not pay under reserve.",
+      "case_study_id": "item_7783c64ac203eb7f20e396dc2729f3e5306516d57f3d1612cdf8a17e0ee3752b",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_dc018279918cfaa56022e725d67624c2f8b9483fd04a1d56d8c4e1b0f1714ba0",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U04",
+      "objective_ids": [
+        "BFM::MOD_A::U04::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S03 printed pp. 101-102, points C7 to C12, and p. 91 (usance credits)"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "The credit says the goods \"must be of good quality\", but requires no document to certify quality. How does the bank treat this condition?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "It demands an inspection certificate even though the credit does not call for one",
+          "explanation_md": "A bank cannot add a document requirement the credit does not contain."
+        },
+        {
+          "option_id": "B",
+          "text_md": "It disregards the condition, as a condition not tied to a required document is non-documentary",
+          "explanation_md": "Banks deal in documents; with no document specified to show quality, the condition cannot be tested and is disregarded."
+        },
+        {
+          "option_id": "C",
+          "text_md": "It refuses the presentation because quality cannot be proved",
+          "explanation_md": "Refusing on a non-documentary condition is not permitted, since such conditions are disregarded."
+        },
+        {
+          "option_id": "D",
+          "text_md": "It asks the applicant to decide the quality before paying",
+          "explanation_md": "Settlement does not depend on the applicant's view of the goods."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_explanation_md": "A condition that is not part of a required document is non-documentary and is disregarded.",
+      "case_study_id": "item_7783c64ac203eb7f20e396dc2729f3e5306516d57f3d1612cdf8a17e0ee3752b",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_98a7f0bf42698ed3a7c408641c04f9f50c9170bae0a07bdd425a8ea2f8407494",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U04",
+      "objective_ids": [
+        "BFM::MOD_A::U04::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S03 printed pp. 101-102, points C7 to C12, and p. 91 (usance credits)"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "If the documents were accepted, on what date would the draft at 90 days from the date of shipment fall due?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "12 May 2026",
+          "explanation_md": "That counts the shipment date as day one and gives only 89 days after it."
+        },
+        {
+          "option_id": "B",
+          "text_md": "2 June 2026",
+          "explanation_md": "That counts 90 days from the presentation date of 2 March, but the usance runs from the shipment date."
+        },
+        {
+          "option_id": "C",
+          "text_md": "13 May 2026",
+          "explanation_md": "Ninety days counted from 12 February 2026, with the shipment date excluded, ends on 13 May 2026."
+        },
+        {
+          "option_id": "D",
+          "text_md": "14 May 2026",
+          "explanation_md": "That adds an extra day beyond 90 days from the shipment date."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_explanation_md": "Ninety days from 12 February 2026 ends on 13 May 2026.",
+      "case_study_id": "item_7783c64ac203eb7f20e396dc2729f3e5306516d57f3d1612cdf8a17e0ee3752b",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_7da31e45702505d956a578ade99836b8f594110eeba6ef898ff72e0cb0b6227c",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BFM",
+      "module_id": "BFM::MOD_A",
+      "unit_id": "BFM::MOD_A::U04",
+      "objective_ids": [
+        "BFM::MOD_A::U04::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S03",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Bank Financial Management (CAIIB courseware), updated edition 2026, ISBN 978-93-7537-222-6",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S03 printed pp. 101-102, points C7 to C12, and p. 91 (usance credits)"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

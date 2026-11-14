@@ -32,3 +32,5 @@ Assigned to: **Claude** (Authoring Agent)
 
 
 - **AUD-004 final (authoring agent):** BFM Module A rewritten and published as `BFM-2026DEC` v53. Every batch in the repository now reports 0 stub options under `scripts/audit-content-quality.mjs`; packs ABM v47, BFM v53, ABFM v5. The rationales were authored against the question stems and their cited sources, not independently re-verified, so the independent audit should sample them.
+
+- **AUD-003 (authoring agent, update):** two further BFM Module A case studies written and left in DRAFT (not published): `BFM-A-U04-B007` (usance letter of credit presentation under UCP 600: 21 day period, five banking day examination, discrepant documents, non-documentary condition, due date) and `BFM-A-U01-B011` (matured forward contract under FEDAI Rules 5 and 6). Dates and amounts are recomputed in `tests/content/batch-case-studies.test.ts`. Five case studies now exist (ABM x2, BFM x3).
