@@ -14,7 +14,7 @@ Assigned to: **Claude** (Authoring Agent)
 | **AUD-002** | **HIGH** | Pedagogical Quality | `ABFM-A-U01-B001` to `U04-B001` (283 MCQs) | 100% of questions had hollow stub explanations (`"Not so."` / `"Correct."`). | **RESOLVED / PASSED** | Verified: All 283 MCQs rewritten with substantive rationales in Pack `ABFM-2026DEC@5`. Stubs: 0/1132 (0.0%). |
 | **AUD-003** | **HIGH** | Exam Realism | `ABM-C-U03-B003`, `ABM-C-U09-B002`, `BFM-B-U03-B005`, `BFM-A-U01-B011`, `BFM-A-U04-B007` | All 5 case studies authored with linked questions & calculation tests. Audited: 100% accurate, 0% stubs, clean scenario design (Tandon, CIRP, Basel III CRAR, FEDAI Rule 5/6, UCP 600). | **RESOLVED & APPROVED** | Ready for pack integration when BFM/ABM next republished. Author additional case studies as new modules are developed. |
 | **AUD-004** | **MEDIUM** | Distractor Quality | All packs (`ABM`, `BFM`, `ABFM`) | Widespread stub explanations across all papers. Verified: All 9,544 options across all 3 packs now rewritten with rich rationales ($\ge$ 20 chars). Repository stubs: 0/9544 (0.0%). Audited samples in Statistics & Forex passed. | **RESOLVED / PASSED** | Maintain this distractor quality standard for all subsequent batches. |
-| **AUD-005** | **LOW / INFO** | Batch Approval | `ABFM` (Modules A..D, all 25 units complete), `BFM-C-U01` | 1,419 newly authored items audited across 22 batches. 0 stub options, balanced option distributions, all calculation tests passing (ABFM 100% syllabus complete; BFM Module C Unit 1 passing). | **APPROVED** | Authoring approved. ABFM syllabus complete. Proceed with BFM Module C Units 2 to 7. |
+| **AUD-005** | **LOW / INFO** | Batch Approval | `ABFM` (all 25 units complete), `BFM-C-U01`..`U05` | 1,700 newly authored items audited across 26 batches. 0 stub options, balanced option distributions, all calculation tests passing (ABFM 100% syllabus complete; BFM Module C Units 1-5 passing). | **APPROVED** | Authoring approved. Proceed with BFM Module C Units 6 and 7 to complete Module C. |
 
 ---
 
@@ -66,9 +66,13 @@ Assigned to: **Claude** (Authoring Agent)
   - `ABFM-D-U05-B001` (Business Analytics as Management Tool): 82 items (15 cards, 51 MCQs, 16 calc items). 0 stubs. Options: {A:13, B:13, C:13, D:12}. Association rule support/confidence, classifier accuracy, aggregation, moving average forecast error tests passing. Approved.
   - `ABFM-D-U06-B001` (Green & Sustainable Financing): 76 items (15 cards, 50 MCQs, 11 calc items). 0 stubs. Options: {A:13, B:13, C:12, D:12}. Coupon spread, basis point yield gap, emission intensity, ESG score weighting tests passing. Volatile circular dates quarantined. Approved.
   - `ABFM-D-U07-B001` (SPACs): 68 items (11 cards, 45 MCQs, 12 calc items). 0 stubs. Options: {A:12, B:11, C:11, D:11}. Founder shares, 37.5% approval, redemption trust, 80% target test, net-settled warrant tests passing. Approved. **ABFM Module D complete — ENTIRE ABFM SYLLABUS DRAFTED AND APPROVED!**
-- **BFM Module C (Unit 1) Sign-off**:
+- **BFM Module C (Units 1 to 5) Sign-off**:
   - `BFM-C-U01-B001` (Introduction to Treasury Management): 65 items (10 cards, 44 MCQs, 11 calc items). 0 stubs. Options: {A:11, B:11, C:11, D:11}. Swap arbitrage yield/spread profit, open position, transfer pricing spread tests passing. Primary source alignment verified. Approved.
+  - `BFM-C-U02-B001` (Treasury Products): 87 items (15 cards, 56 MCQs, 16 calc items). 0 stubs. Options: {A:14, B:14, C:14, D:14}. T-bill/CP yield, repo interest/cash, corridor width, SDF interest, forward rate/premium, MTM loss tests passing. Approved.
+  - `BFM-C-U03-B001` (International Equity and Debt Products): 61 items (9 cards, 40 MCQs, 12 calc items). 0 stubs. Options: {A:10, B:10, C:10, D:10}. GDR parity, diluted holding, ECB exchange loss/hedge, trade credit interest tests passing. Outdated FEMA/ECB limits quarantined. Approved.
+  - `BFM-C-U04-B001` (Funding and Regulatory Aspects): 63 items (10 cards, 40 MCQs, 13 calc items). 0 stubs. Options: {A:10, B:10, C:10, D:10}. CRR/SLR requirements, free funds, daily floor, penal interest, repo interest, net vs gross settlement tests passing. Approved.
+  - `BFM-C-U05-B001` (Treasury Risk Management): 70 items (11 cards, 45 MCQs, 14 calc items). 0 stubs. Options: {A:12, B:11, C:11, D:11}. VaR worst rates, horizon scaling, parametric VaR, YTM, bond price, Macaulay & modified duration, price sensitivity, portfolio duration, stop-loss and carry tests passing. Approved.
 - **Instruction to Authoring Agent (Claude)**:
-  - **Milestone Achieved**: ABFM is 100% complete across all 25 syllabus topics.
-  - Proceed through the remaining units of **BFM Module C (Units 2 to 7)**: Treasury Products (Unit 2, courseware p. 544+), Funding and Risk, etc.
-  - Note: Pages 540 to 649 of BFM courseware S03 are pre-rendered in `tmp/bfm2/`.
+  - All audited batches in BFM Module C (Units 1 through 5) are approved.
+  - Proceed with the final two units of **BFM Module C: Unit 6 (Derivative Products)** and **Unit 7 (Treasury and ALM)** to complete Module C.
+  - Note: All pages through the end of the BFM courseware (up to page 774) are fully pre-rendered in `tmp/bfm2/`.
