@@ -1,0 +1,31 @@
+# Review record: BFM-C-U01-B001
+
+Draft batch for BFM Module C unit 1 (courseware unit 19, Introduction to Treasury Management), printed pp. 513-525 (PDF pp. 530-542), covering the concept of Treasury, integrated Treasury, globalisation, Treasury as a profit centre, swap arbitrage and organisation of Treasury. Items: 65 (10 concept cards, 44 choice questions and 11 numerical questions). Record written 14 November 2026.
+
+## Evidence
+
+Courseware S03 printed pp. 514-525 read page by page. Each fact carries a page locator. The courseware swap arbitrage table was recomputed and agrees. Regulatory particulars and dated market claims are held back.
+
+## Limits and what was held back
+
+- Regulatory particulars (reserve and overseas borrowing limits, derivative guidelines and dates) were not taught or tested
+- Dated market claims and deal-size figures were not taught
+- Short selling rule and mid-office guideline text were not checked
+- Reviewer is the authoring agent only
+
+## Drafts and originality
+
+Tables and procedures are written afresh; any worked examples and numerical questions use new figures. Answer positions are spread across A to D by construction. Distractor explanations are brief.
+
+## Review status
+
+| Check | Status | Evidence and limits |
+| --- | --- | --- |
+| Structure and mapping | passed | `npm run validate:staging`, `npm run import:staging` |
+| Calculations | passed | `tests/content/batch-bfm-c-u01-b001.test.ts` recomputes the worked examples and numerical answers |
+| Source support | Courseware only; no primary regulatory source consulted | See limits |
+| Session applicability | see limits | Courseware statements are as at the courseware's date unless a primary source is cited |
+| Originality | passed | See above |
+| Question quality | partly checked | No human read-through |
+
+**Reviewer: the coding agent that also wrote the items** (automated, not independent), under the owner's decision of 11 November 2026.
