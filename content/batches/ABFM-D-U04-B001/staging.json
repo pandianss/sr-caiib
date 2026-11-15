@@ -1,0 +1,2407 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "ABFM-D-U04-B001",
+  "paper_id": "ABFM",
+  "unit_label": "ABFM Module D unit 4 (courseware unit 22): artificial intelligence",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S02"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "statement": "Meaning of artificial intelligence (courseware): artificial intelligence (AI) is the replication of human intelligence in computers trained to think like people and emulate human activities; it can refer to any computer that simulates mental processes common to humans, such as learning and problem solving. AI is applied across industries including banking, healthcare, surveillance and social media. Machine learning is a branch of AI, and neural networks and deep learning are in turn within machine learning. The technique of making machines perform tasks that previously needed human intelligence is AI; in its basic form, computer vision is used to conceptualise objects and a robotics process is used to control and move them. AI research studies how to create systems that respond to stimuli in a way consistent with human reflection, judgement and intention.",
+      "source_id": "S02",
+      "locator": "S02 printed p. 514",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F002",
+      "statement": "History of AI (courseware): the academic discipline of artificial intelligence was born in the 1950s when scientists began to investigate whether computers could process intellectual powers equal to those of humans. Alan Turing is credited with suggesting a test of machine intelligence, known as the Turing Test or imitation game, in which a machine tries to pass itself off as a human by responding to questions in a manner consistent with a person; if a person cannot tell, the machine could be judged to have the same level of intelligence. John McCarthy coined the term artificial intelligence in 1956 in preparation for a conference (the Dartmouth Conference), which helped establish AI as a separate field. Between 1956 and 1966 research was mostly theoretical.",
+      "source_id": "S02",
+      "locator": "S02 printed p. 515",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F003",
+      "statement": "Applicability of AI (courseware): AI has found applications in medical diagnosis, stock trading, robot control, law, remote sensing, scientific discovery and toy manufacturing. Many uses are not called AI: once something becomes valuable and common enough it is no longer thought of as AI (the courseware attributes this observation to Nick Bostrom). AI algorithms decide using real-time data, combining information from sensors, remote inputs, digital data and other sources. An intellectual difficulty can be broken into pieces with a solution for each, whether a person or a computer solves it. Intelligent computer-assisted instruction is a concept in which a computer acts as a tutor that observes a student problem-solving, recognises wrong assumptions and gives guidance fitted to that pupil; a second benefit is that the learner understands mechanical thinking.",
+      "source_id": "S02",
+      "locator": "S02 printed pp. 515-516",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F004",
+      "statement": "Google examples of AI (courseware, types only): RankBrain is a machine-learning search algorithm that helps process search queries, guessing the meaning of unfamiliar words by representing words as vectors that lie close together when their meaning is similar. AI Hub is a repository of plug-and-play machine learning content (pipelines, notebooks, modules) that companies can share privately and deploy. Kubeflow Pipelines orchestrate end-to-end machine learning workflows made of containerised components, so that workflows can be built, reused and deployed to production. Google Duplex uses speech recognition, a recurrent neural network and text-to-speech to hold phone conversations such as making reservations. The product details, dates and statistics are not taught.",
+      "source_id": "S02",
+      "locator": "S02 printed pp. 516-519",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F005",
+      "statement": "AI in banking and finance (courseware): AI-based systems increase productivity and lower cost and allow decisions using information unavailable to human decision makers; they detect fraud and anomalies. Examples: customer service and engagement through chatbots (a high return in cost savings; they handle routine tasks such as checking balances, viewing micro statements and making fund transfers, relieving call centres and internet banking); robo-advice (understands the client financial health from data and history and recommends investments in a product class); general-purpose predictive analytics (patterns and correlations that identify unmet sales prospects, cross-selling and operational measures); cybersecurity (learning from previous threats to forecast and block attacks and monitor internal breaches); and scoring credit and direct lending (analysing traditional and non-traditional data to assess creditworthiness, even for people with a thin credit history). Ten areas of use shown: cybersecurity and fraud detection, chatbots, loan and credit decisions, tracking market trends, data collection and analysis, customer experience, risk management, regulatory compliance, predictive analytics and process automation.",
+      "source_id": "S02",
+      "locator": "S02 printed pp. 519-520",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F006",
+      "statement": "Hybrid information systems (courseware): a hybrid information system (HIS) combines several AI methods, such as a fuzzy expert system, a neuro-fuzzy system and a genetic-fuzzy system. It gains the benefits of different learning approaches and overcomes the limits of each. Uses in finance: portfolio management (portfolio selection is a complicated task and an important part of the decision process) and stock market prediction (hybrid systems combine the skills of many systems and are used much more in financial prediction than single AI methods because the market is highly unpredictable).",
+      "source_id": "S02",
+      "locator": "S02 printed pp. 520-521",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F007",
+      "statement": "Future scope and building blocks of AI (courseware): in AI the computer performs natural language processing (communicating in natural language), knowledge representation (storing what it hears or knows), automated reasoning (using stored knowledge to answer questions and draw conclusions) and machine learning (adapting to new circumstances and detecting patterns). AI has many subfields from the broad (learning and perception) to the narrow (playing chess, proving theorems, diagnosing disease), and draws on computer science, philosophy, psychology, neuroscience, biology, mathematics and sociology. The courseware expects AI to affect transportation (autonomous cars), manufacturing (robots alongside humans and predictive sensors), education (tools that judge student emotion and tailor learning) and customer services (assistants that understand context and book appointments).",
+      "source_id": "S02",
+      "locator": "S02 printed pp. 521-522",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F008",
+      "statement": "Neural networks (courseware): artificial neural networks are highly adaptable algorithms used in supervised and unsupervised data mining. They can replace logistic regression or decision trees, or be used with them; their adaptability lets them handle continuous dependent variables as in regression. They are especially useful when there are many input variables with non-linear relationships to the target variable; the structure is stated simply by the number of nodes and hidden layers, so the analyst need not worry about non-linearities and interactions between predictors. A neural net learns from the input data without a pre-defined statistical model and with no assumptions about linearity or normality, which is why it is associated with machine learning. A flaw is that it can be hard to understand what the model is doing. To work well they need many observations, so that training, validation and test subsets can be built.",
+      "source_id": "S02",
+      "locator": "S02 printed pp. 522-523",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F009",
+      "statement": "Control theory, cybernetics and language (courseware, ideas only): self-regulating feedback systems are early examples of machine behaviour (the steam engine governor, the thermostat). Norbert Wiener is regarded as a founder of control theory and cybernetics; purposeful behaviour arises from a regulatory mechanism trying to reduce error, the gap between the existing and the desired state. Contemporary control theory (stochastic optimal control) designs systems to maximise an objective function, which is close to the AI view of creating systems that act in the best possible way. Artificial intelligence developed partly to go beyond the limits of calculus and matrix algebra, using logical inference and computing to address problems of language, vision and planning. Modern linguistics and AI developed together into computational linguistics (natural language processing); language comprehension needs knowledge of the subject and the context, and knowledge representation is the study of putting knowledge in a form a computer can reason with.",
+      "source_id": "S02",
+      "locator": "S02 printed pp. 523-524",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F010",
+      "statement": "Goals of AI: reasoning and knowledge (courseware): early algorithms mirrored step-by-step human reasoning; later methods handled uncertain or partial information with probability and economics. Most early algorithms suffered a combinatorial explosion: they became exponentially slower as the problem grew; humans mostly use quick intuitive judgements rather than step-by-step deduction. Knowledge representation lets programs answer questions and draw conclusions about the real world. An ontology is a set of objects, relations, concepts and attributes formally described so software agents can interpret them; upper ontologies are the broadest, and domain ontologies cover a specific area. Commonsense knowledge is the large body of facts the average person knows; it is hard to represent because it is vast and much of it is sub-symbolic and not expressed as facts. Uses of knowledge representation include content-based indexing and retrieval, scene interpretation, clinical decision support and knowledge discovery.",
+      "source_id": "S02",
+      "locator": "S02 printed pp. 524-525",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F011",
+      "statement": "Rational agents, planning and learning (courseware): a rational agent is anything that makes decisions (a person, firm, machine or software); on the basis of its previous and current perceptions it takes the action expected to give the best outcome. An AI system consists of an agent and the environment in which it operates; the environment is everything outside the agent that it can sense and act on. Planning: an intelligent agent builds a representation of the current state, predicts how actions will change it and decides what maximises the utility (value) of the available options; with other agents present it must reason under uncertainty and re-evaluate. Learning: machine learning is the study of computer systems that improve themselves through experience. Unsupervised learning looks for patterns in a stream of data; supervised learning has two main forms, classification (assigning an item to a category, such as spam or not spam) and regression (learning a function that maps inputs to a numerical output); in reinforcement learning the agent is rewarded for good responses and penalised for bad ones; transfer learning applies skills learned on one problem to a different one.",
+      "source_id": "S02",
+      "locator": "S02 printed pp. 525-526",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F012",
+      "statement": "Motion and manipulation (courseware): robotics uses AI for localisation (mapping the surroundings and finding where the robot is); this is simple in a contained space and harder in dynamic environments. Robots are sought after for accuracy and worker safety (hazardous environments such as aerospace, nuclear, defence and maintenance work); disadvantages include being unsuited to jobs needing creativity, adaptability or critical decision making. Motion planning reduces a movement to basic components such as joint movements; compliant motion is movement while keeping physical contact with an object.",
+      "source_id": "S02",
+      "locator": "S02 printed p. 527",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F013",
+      "statement": "Tools and techniques of AI (courseware): search and optimisation (many problems are solved by searching an enormous catalogue of possible answers; simple exhaustive searches become too slow, so heuristics, or rules of thumb, rank options by how likely they are to reach the goal and prune the search tree); logic (propositional logic with or and not, first-order logic with quantifiers; fuzzy logic gives a degree of truth between 0 and 1, so a vague statement such as being rich or tall can be partly true); probabilistic methods for uncertain reasoning (Bayesian networks, decision theory using utility, Markov decision processes, game theory); and classifiers and statistical learning methods (classifiers match a pattern to the closest class from labelled data; methods include decision trees, nearest neighbour, support vector machines, naive Bayes and neural networks; their success depends on the data, including its size, class distribution and noise).",
+      "source_id": "S02",
+      "locator": "S02 printed pp. 527-529",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F014",
+      "statement": "AI and morality (courseware): the courseware presents three schools of thought: one holds that, with many people in extreme poverty, there is no reason to build mechanical labourers that can think independently; another that human civilisation cannot advance without machines capable of at least some independent thought; and a third, representative of society at large, that has no interest. The courseware concludes that AI machines, like other machines, follow instructions provided by human programmers, that people need to understand AI to use it well, that expert systems can help but cannot do every task, and that AI must be used judiciously lest it prove a curse rather than a boon.",
+      "source_id": "S02",
+      "locator": "S02 printed p. 529",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    }
+  ],
+  "drafts": [
+    {
+      "draft_id": "D001",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "What artificial intelligence is, and how it relates to machine learning",
+        "core_explanation_md": "**Artificial intelligence (AI)** is the **replication of human intelligence in computers** trained to **think and act like people**: learning, problem solving and other mental processes. It is used in **banking, healthcare, surveillance and social media**.\n\n**Nesting:** **machine learning (ML)** is a branch of AI; **neural networks** and **deep learning** sit within ML.\n\nIn basic form, AI uses **computer vision** to **conceptualise objects** and **robotics** to **control and move** them. AI research builds systems that **respond to stimuli** in a way consistent with **human reflection, judgement and intention**.",
+        "expanded_explanation_md": "AI is the broad field; machine learning is the part in which systems learn from data.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "How is machine learning related to artificial intelligence?",
+          "expected_takeaway": "Machine learning is a branch of AI, and neural networks and deep learning lie within it."
+        }
+      }
+    },
+    {
+      "draft_id": "D002",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F002"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "A short history of AI",
+        "core_explanation_md": "AI was **born as an academic field in the 1950s**, when researchers asked whether computers could match human intellectual powers.\n\n- **Alan Turing** proposed a test of machine intelligence, the **Turing Test (imitation game)**: if a questioner **cannot tell a machine from a person** by its answers, the machine can be judged to have the same level of intelligence.\n- **John McCarthy** **coined the term artificial intelligence in 1956** for a conference (the **Dartmouth Conference**) that helped make AI a **separate field**.\n- **1956 to 1966:** research was **mostly theoretical**.",
+        "expanded_explanation_md": "The test judges behaviour, not how the machine works inside.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "What does the Turing Test judge?",
+          "expected_takeaway": "Whether a machine can respond in a way that a questioner cannot tell from a human."
+        }
+      }
+    },
+    {
+      "draft_id": "D003",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F003"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "Where AI is applied",
+        "core_explanation_md": "**Applications:** **medical diagnosis, stock trading, robot control, law, remote sensing, scientific discovery, even toy manufacturing**.\n\n**Many uses are not called AI**: once something is **useful and common enough** it is **no longer called AI**.\n\nAI algorithms **decide using real-time data** from **sensors, remote inputs and digital data**. A hard problem can be **broken into parts** with a solution for each.\n\n**Intelligent computer-assisted instruction:** a computer acts as a **tutor** that **watches a student solve a problem**, **spots wrong assumptions** and **gives guidance** fitted to that pupil; the learner also **learns mechanical thinking**.",
+        "expanded_explanation_md": "Widely adopted AI tends to be absorbed into ordinary software and then stops being labelled AI.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Why do many uses of AI go unlabelled as AI?",
+          "expected_takeaway": "Once a technique is useful and common enough it is no longer thought of as AI."
+        }
+      }
+    },
+    {
+      "draft_id": "D004",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "Examples of AI products from one technology company",
+        "core_explanation_md": "The courseware gives examples of AI building blocks; the **products and statistics are not taught**, only the **types**:\n\n| Type | Idea |\n| --- | --- |\n| **Machine-learning search algorithm (RankBrain)** | Guesses the meaning of **unfamiliar queries** by representing words as **vectors**; similar meanings lie **close together** |\n| **Repository of ML content (AI Hub)** | **Plug-and-play pipelines and modules**, shared **privately** within a company and **deployed** |\n| **Workflow orchestration (Kubeflow Pipelines)** | End-to-end ML workflows built from **containerised components**; **built, reused and deployed** to production |\n| **Voice assistant (Duplex)** | **Speech recognition, a recurrent neural network and text-to-speech** to hold **phone conversations** such as bookings |",
+        "expanded_explanation_md": "These are illustrations of how machine learning is packaged into services.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "How does a machine-learning search algorithm handle a query it has never seen?",
+          "expected_takeaway": "It represents words as vectors and guesses the meaning from words with similar vectors."
+        }
+      }
+    },
+    {
+      "draft_id": "D005",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F005"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "AI in banking and finance",
+        "core_explanation_md": "AI systems **raise productivity**, **cut costs**, allow decisions from **information humans cannot use** and **detect fraud and anomalies**.\n\n| Use | What it does |\n| --- | --- |\n| **Chatbots** | **Handle routine requests** (balances, mini statements, transfers); **cost savings**; relieve call centres |\n| **Robo-advice** | **Assesses client financial health** from data and history and **recommends a product class** |\n| **Predictive analytics** | Finds **patterns** pointing to **unmet sales, cross-selling, operational improvements** |\n| **Cybersecurity** | **Learns from past threats** to **forecast and block attacks** and **monitor internal breaches** |\n| **Credit scoring and direct lending** | Uses **traditional and non-traditional data** to judge **creditworthiness**, even for **thin credit histories** |\n\nOther areas: **loan and credit decisions, tracking market trends, risk management, regulatory compliance, process automation, customer experience**.",
+        "expanded_explanation_md": "Alternative data widens access to credit for people with no formal credit record.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "What data can AI use for credit scoring that older methods could not?",
+          "expected_takeaway": "Non-traditional data in addition to traditional data, which helps assess people with thin credit histories."
+        }
+      }
+    },
+    {
+      "draft_id": "D006",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F006"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "Hybrid information systems in finance",
+        "core_explanation_md": "A **hybrid information system (HIS)** **combines AI methods**, for example a **fuzzy expert system**, a **neuro-fuzzy system** and a **genetic-fuzzy system**.\n\nIt **gains the strengths** of each learning approach and **overcomes the limits** of each.\n\n**Uses in finance:**\n\n- **Portfolio management**: portfolio selection is **complex** and central to decision making.\n- **Stock market prediction**: markets are **highly unpredictable**, so **combined systems** are used **far more than single methods**.",
+        "expanded_explanation_md": "Combining methods spreads the weaknesses of any one technique.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Why are hybrid systems used in stock market prediction?",
+          "expected_takeaway": "Combining several AI methods copes better with the unpredictable market than any single method."
+        }
+      }
+    },
+    {
+      "draft_id": "D007",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F007"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "Building blocks of AI and where it is heading",
+        "core_explanation_md": "**What the computer must do:**\n\n- **Natural language processing**: communicate in everyday language.\n- **Knowledge representation**: **store** what it knows or hears.\n- **Automated reasoning**: use stored knowledge to **answer questions and draw conclusions**.\n- **Machine learning**: **adapt** to new circumstances and **detect patterns**.\n\nAI has **subfields** from the **broad** (learning, perception) to the **narrow** (chess, theorem proving, diagnosis) and draws on **computer science, philosophy, psychology, neuroscience, biology, mathematics and sociology**.\n\n**Expected effects:** **transport** (autonomous cars), **manufacturing** (robots working alongside people; predictive sensors), **education** (tools that read student emotion and tailor learning), **customer service** (assistants that understand context and book appointments).",
+        "expanded_explanation_md": "The four building blocks together make a system that can hear, remember, reason and improve.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Name the four things an AI computer must be able to do.",
+          "expected_takeaway": "Process natural language, represent knowledge, reason automatically and learn from data."
+        }
+      }
+    },
+    {
+      "draft_id": "D008",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F008"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "Neural networks",
+        "core_explanation_md": "**Artificial neural networks** are **highly adaptable** algorithms used in **supervised and unsupervised** data mining.\n\n- Can **replace or complement logistic regression and decision trees**; handle **continuous targets** like regression.\n- Excellent when there are **many inputs with non-linear relationships** to the target; the analyst need only state **nodes and hidden layers** and need not model **non-linearities or interactions**.\n- **Learn from the data** with **no assumption of linearity or normality**, which is why the term **machine learning** is used.\n- **Flaw:** hard to **understand what the model is doing**.\n- Need **many observations** to build **training, validation and test sets**.",
+        "expanded_explanation_md": "Flexibility is bought at the price of explainability.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "What is a main flaw of a neural network?",
+          "expected_takeaway": "It can be hard to understand what the model is doing."
+        }
+      }
+    },
+    {
+      "draft_id": "D009",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F009"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "Control theory, cybernetics and language",
+        "core_explanation_md": "**Self-regulating feedback systems** (the **steam engine governor**, the **thermostat**) are early examples of machine behaviour. **Norbert Wiener** is regarded as a founder of **control theory and cybernetics**: purposeful behaviour comes from a mechanism trying to **reduce error**, the **gap between existing and desired state**.\n\n**Contemporary control theory** designs systems to **maximise an objective function**, close to the AI aim of systems that **act in the best possible way**. AI grew partly to go beyond **calculus and matrix algebra**, using **logic and computing** for **language, vision and planning**.\n\n**Language:** modern linguistics and AI grew up together as **computational linguistics (natural language processing)**. Understanding language needs **knowledge of the subject and the context**; **knowledge representation** puts knowledge in a form a computer can reason with.",
+        "expanded_explanation_md": "A feedback loop compares the actual state with the target and acts to shrink the difference.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "In control theory, what is the error that a regulator tries to reduce?",
+          "expected_takeaway": "The gap between the existing state and the desired state."
+        }
+      }
+    },
+    {
+      "draft_id": "D010",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F010"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "Reasoning, problem solving and knowledge representation",
+        "core_explanation_md": "**Reasoning:** early algorithms copied **step-by-step human reasoning**; later methods handled **uncertain or partial information** using **probability and economics**.\n\n**Combinatorial explosion:** most early algorithms became **exponentially slower** as the problem grew; people mostly use **quick, intuitive judgements** instead.\n\n**Knowledge representation:** lets programs **answer questions and draw conclusions** about the real world.\n\n- **Ontology:** a set of **objects, relations, concepts and attributes** formally described so that software agents can interpret them. **Upper ontologies** are the broadest; **domain ontologies** cover a specific field.\n- **Commonsense knowledge:** the **vast body of facts** an average person knows; hard to represent because it is **huge** and much of it is **not stated as facts**.\n- **Uses:** **content-based indexing and retrieval, scene interpretation, clinical decision support, knowledge discovery**.",
+        "expanded_explanation_md": "Problems whose search space doubles with each step quickly outgrow any computer.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "What is a combinatorial explosion?",
+          "expected_takeaway": "Computing time that grows exponentially as the problem size increases."
+        }
+      }
+    },
+    {
+      "draft_id": "D011",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F011"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "Rational agents, planning and learning",
+        "core_explanation_md": "A **rational agent** is anything that **makes decisions** (person, firm, machine, software) and, from its **past and present perceptions**, takes the action expected to give the **best outcome**. An AI system = **agent + environment** (everything outside the agent that it can sense and act on).\n\n**Planning:** the agent represents the **current state**, predicts how actions **change** it and picks the action that **maximises utility**. With other agents present it must **reason under uncertainty** and **re-evaluate**.\n\n**Learning:** systems **improve with experience**.\n\n| Kind | Idea |\n| --- | --- |\n| **Unsupervised** | Finds **patterns** in data without labels |\n| **Supervised: classification** | Assigns an item to a **category** (spam or not spam) |\n| **Supervised: regression** | Learns a function mapping inputs to a **number** |\n| **Reinforcement** | **Rewards** good responses, **penalises** bad ones |\n| **Transfer** | Uses skills learned on **one problem** to solve **another** |",
+        "expanded_explanation_md": "Classification predicts a label; regression predicts a quantity.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "What is the difference between classification and regression?",
+          "expected_takeaway": "Classification assigns an item to a category; regression predicts a numerical output."
+        }
+      }
+    },
+    {
+      "draft_id": "D012",
+      "item_type": "card",
+      "variant": "formula",
+      "fact_ids": [
+        "F011"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "Choosing an action by expected utility, and measuring a classifier",
+        "core_explanation_md": "A planning agent chooses the action with the **highest expected utility**: **expected utility = sum of (probability of each outcome x utility of that outcome)**.\n\nA classifier can be summarised by:\n\n- **Accuracy = correct predictions / all predictions.**\n- **False alert rate = false alerts / all alerts raised.**\n\nThese measures apply the courseware idea of **maximising utility** and judging a **classifier** on how often it labels correctly; the courseware gives no worked figures.",
+        "formula_spec": {
+          "latex_expression": "EU(a) = \\sum_i p_i \\, u_i",
+          "variables": [
+            {
+              "symbol": "p_i",
+              "name": "Probability of outcome i",
+              "unit": "proportion"
+            },
+            {
+              "symbol": "u_i",
+              "name": "Utility of outcome i",
+              "unit": "units of value"
+            }
+          ],
+          "assumptions": [
+            "Probabilities of the outcomes sum to 1",
+            "Utilities are measured on one scale"
+          ],
+          "common_errors": [
+            "Choosing the outcome with the highest utility rather than the highest expected utility",
+            "Ignoring the probabilities"
+          ]
+        },
+        "expanded_explanation_md": "A rare but very valuable outcome can outweigh a likely but small one.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "How does a rational agent choose between actions?",
+          "expected_takeaway": "It picks the action with the highest expected utility."
+        }
+      }
+    },
+    {
+      "draft_id": "D013",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F012"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "Motion and manipulation in robotics",
+        "core_explanation_md": "**Localisation:** the robot **maps its surroundings** and **finds where it is**; easy in a **contained space**, hard in **dynamic** ones.\n\n**Why robots are used:** **accuracy** and **worker safety** in **hazardous** settings (aerospace, nuclear, defence, maintenance).\n\n**Limits:** poor at jobs needing **creativity, adaptability or critical decisions**.\n\n**Motion planning** reduces a movement to **basic components such as joint movements**; **compliant motion** is movement **while keeping physical contact** with an object.",
+        "expanded_explanation_md": "Robots shine at repeatable physical tasks but not at open-ended judgement.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "What is compliant motion?",
+          "expected_takeaway": "Movement made while keeping physical contact with an object."
+        }
+      }
+    },
+    {
+      "draft_id": "D014",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F013"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "Tools and techniques of AI",
+        "core_explanation_md": "| Technique | Idea |\n| --- | --- |\n| **Search and optimisation** | Search a huge set of possible answers; **heuristics (rules of thumb)** rank options and **prune the search tree** |\n| **Logic** | **Propositional** (or, and, not) and **first-order** (quantifiers); **fuzzy logic** gives a **degree of truth from 0 to 1**, so vague statements can be partly true |\n| **Probabilistic methods** | **Bayesian networks**, **decision theory with utility**, **Markov decision processes**, **game theory** for **uncertain reasoning** |\n| **Classifiers and statistical learning** | Match a pattern to the **closest class** from **labelled data**: **decision trees, nearest neighbour, support vector machines, naive Bayes, neural networks** |\n\nA classifier succeeds according to the **data**: its **size, class distribution and noise**.",
+        "expanded_explanation_md": "Heuristics trade a guarantee of the best answer for speed.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "What does a heuristic do in a search problem?",
+          "expected_takeaway": "It ranks options by how likely they are to reach the goal, pruning the search tree."
+        }
+      }
+    },
+    {
+      "draft_id": "D015",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F014"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "AI and morality",
+        "core_explanation_md": "The courseware sets out **three schools of thought** on building thinking machines:\n\n1. With **people in extreme poverty**, there is **no reason** to build **mechanical labourers that can think**.\n2. **Civilisation cannot advance** without machines capable of **some independent thought**.\n3. **Society at large** is **not interested**.\n\n**Conclusions:** AI machines **follow instructions given by human programmers**; people **must understand AI** to use it well; **expert systems cannot do every task**; AI must be used **judiciously**, or it may prove **a curse rather than a boon**.",
+        "expanded_explanation_md": "Responsibility for what an AI system does rests with the people who design and deploy it.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Who is responsible for the instructions an AI machine follows?",
+          "expected_takeaway": "The human programmers who provide them."
+        }
+      }
+    },
+    {
+      "draft_id": "D016",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "Artificial intelligence refers to",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Replicating human intelligence in computers that are trained to think and act like people",
+            "explanation_md": "This is the basic meaning."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A computer that only stores data",
+            "explanation_md": "Storage alone is not intelligence."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A printer that prints faster",
+            "explanation_md": "Speed of printing is unrelated."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A network cable standard",
+            "explanation_md": "Not related, so it does not answer this question."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "AI meaning."
+      }
+    },
+    {
+      "draft_id": "D017",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "Which statement about the relation of these terms is correct?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "AI is a branch of neural networks",
+            "explanation_md": "The nesting is the other way round."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Machine learning is a branch of AI, and neural networks and deep learning lie within machine learning",
+            "explanation_md": "This is the nesting described."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Deep learning is outside machine learning",
+            "explanation_md": "It lies within it, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Machine learning is unrelated to AI",
+            "explanation_md": "It is a branch of AI."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "Nesting."
+      }
+    },
+    {
+      "draft_id": "D018",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "In its basic form, AI uses computer vision to conceptualise objects and",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "A spreadsheet to total them",
+            "explanation_md": "Not the description."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A printing process to copy them",
+            "explanation_md": "Not the description."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A robotics process to control and move them",
+            "explanation_md": "Vision identifies, robotics acts."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A tax form to record them",
+            "explanation_md": "Not the description."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "Vision and robotics."
+      }
+    },
+    {
+      "draft_id": "D019",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F002"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "Who is credited with suggesting a test for judging whether a machine is intelligent?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "John McCarthy",
+            "explanation_md": "He coined the term AI."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Norbert Wiener",
+            "explanation_md": "He founded cybernetics and control theory."
+          },
+          {
+            "option_id": "C",
+            "text_md": "James Watt",
+            "explanation_md": "He is linked with the steam engine governor."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Alan Turing",
+            "explanation_md": "He proposed the imitation game."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "Turing test."
+      }
+    },
+    {
+      "draft_id": "D020",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F002"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "In the Turing Test a machine is judged intelligent if",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "A questioner cannot tell its answers from those of a person",
+            "explanation_md": "It passes itself off as human."
+          },
+          {
+            "option_id": "B",
+            "text_md": "It plays chess better than any person",
+            "explanation_md": "Chess skill is not the test."
+          },
+          {
+            "option_id": "C",
+            "text_md": "It stores more data than a person",
+            "explanation_md": "Storage is not the test."
+          },
+          {
+            "option_id": "D",
+            "text_md": "It runs faster than any person",
+            "explanation_md": "Speed is not the test."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "Test criterion."
+      }
+    },
+    {
+      "draft_id": "D021",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F002"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Who coined the term artificial intelligence, and when?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Alan Turing in 1936",
+            "explanation_md": "Turing proposed the test, not the term."
+          },
+          {
+            "option_id": "B",
+            "text_md": "John McCarthy, in 1956 for a conference",
+            "explanation_md": "The Dartmouth conference helped set up the field."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Norbert Wiener in 1948",
+            "explanation_md": "He wrote Cybernetics in 1948."
+          },
+          {
+            "option_id": "D",
+            "text_md": "B. F. Skinner in 1957",
+            "explanation_md": "He wrote on verbal behaviour."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "Origin of term."
+      }
+    },
+    {
+      "draft_id": "D022",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F002"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "Research in the first decade after the 1956 conference (to 1966) was mostly",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Commercial banking applications",
+            "explanation_md": "Not stated, so it does not answer this question."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Social media",
+            "explanation_md": "Not yet existent, so it does not answer this question."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Theoretical",
+            "explanation_md": "The courseware says research was mostly theoretical."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Regulatory compliance",
+            "explanation_md": "Not stated, so it does not answer this question."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "Early research."
+      }
+    },
+    {
+      "draft_id": "D023",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F003"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "The observation that useful AI techniques are no longer called AI once they become common means that",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "AI has never been used in practice",
+            "explanation_md": "The opposite is stated."
+          },
+          {
+            "option_id": "B",
+            "text_md": "AI is banned in industry",
+            "explanation_md": "No such ban is stated."
+          },
+          {
+            "option_id": "C",
+            "text_md": "AI stops working when common",
+            "explanation_md": "Nothing of the kind."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Many widely used AI applications go unlabelled as AI",
+            "explanation_md": "They are absorbed into ordinary software."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "AI effect."
+      }
+    },
+    {
+      "draft_id": "D024",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F003"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Intelligent computer-assisted instruction refers to a computer that",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Acts as a tutor, recognises a pupil wrong assumptions and gives guidance fitted to the pupil",
+            "explanation_md": "It observes and responds to the learner."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Replaces the school entirely",
+            "explanation_md": "Not stated, so it does not answer this question."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Prints textbooks",
+            "explanation_md": "Not stated, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Marks only multiple-choice papers",
+            "explanation_md": "Not stated, so it does not answer this question."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "Intelligent tutoring."
+      }
+    },
+    {
+      "draft_id": "D025",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F003"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "AI algorithms reach decisions by",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Ignoring all inputs",
+            "explanation_md": "They need inputs, so it does not answer this question."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Combining real-time data from sensors, remote inputs and digital sources",
+            "explanation_md": "They use many data sources."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Waiting for a human to decide each case",
+            "explanation_md": "They decide automatically."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Using only paper records",
+            "explanation_md": "They use digital data."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "Decision inputs."
+      }
+    },
+    {
+      "draft_id": "D026",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A machine-learning search algorithm can handle an unfamiliar query by",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Refusing to answer",
+            "explanation_md": "It tries to interpret."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Checking a printed dictionary",
+            "explanation_md": "Not the method described."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Representing words as vectors and guessing the meaning from words with similar vectors",
+            "explanation_md": "Words with similar meaning lie close together."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Asking a human editor each time",
+            "explanation_md": "Not the method described."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "Vector idea."
+      }
+    },
+    {
+      "draft_id": "D027",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A repository of plug-and-play machine learning content that companies can share privately and deploy is an example of",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "A tax return",
+            "explanation_md": "Not related, so it does not answer this question."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A hardware chip",
+            "explanation_md": "It is content and tools."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A voting machine",
+            "explanation_md": "Not related, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Making AI easier for companies to reuse",
+            "explanation_md": "It lowers the effort to adopt ML."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "AI repository."
+      }
+    },
+    {
+      "draft_id": "D028",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "A voice assistant that makes bookings by phone uses",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Speech recognition, a neural network and text-to-speech",
+            "explanation_md": "These are the components described."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Only a printed script",
+            "explanation_md": "It adapts to responses."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A fixed recorded message",
+            "explanation_md": "It must understand replies."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A fax machine",
+            "explanation_md": "Not related, so it does not answer this question."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "Voice assistant."
+      }
+    },
+    {
+      "draft_id": "D029",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F005"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "A chatbot in a bank typically",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Approves large loans without review",
+            "explanation_md": "Not what the courseware states."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Handles routine requests such as balance checks and transfers, saving cost",
+            "explanation_md": "Routine tasks are the main use."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Replaces the central bank",
+            "explanation_md": "Not related, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Prints currency",
+            "explanation_md": "Not related, so it does not answer this question."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "Chatbot use."
+      }
+    },
+    {
+      "draft_id": "D030",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F005"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A robo-advisor makes recommendations by",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Guessing at random",
+            "explanation_md": "It uses data, so it does not answer this question."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Copying a competitor list",
+            "explanation_md": "Not the method, so it does not answer this question."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Assessing the client financial health from the data and history provided",
+            "explanation_md": "It uses client data to select a product class."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Waiting for the client to decide",
+            "explanation_md": "It recommends, so it does not answer this question."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "Robo-advice."
+      }
+    },
+    {
+      "draft_id": "D031",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F005"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "In credit scoring, AI helps lenders by",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Ignoring all data about the borrower",
+            "explanation_md": "It uses data, so it does not answer this question."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Fixing the interest rate by law",
+            "explanation_md": "Not its role, so it does not answer this question."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Replacing the loan agreement",
+            "explanation_md": "Not its role, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Using non-traditional as well as traditional data to assess creditworthiness, even for thin credit histories",
+            "explanation_md": "More data widens access to credit."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "Credit scoring."
+      }
+    },
+    {
+      "draft_id": "D032",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F005"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "AI improves cybersecurity by",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Learning from earlier threats to forecast and block attacks and monitoring internal breaches",
+            "explanation_md": "Patterns from past events help detect new ones."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Turning off all networks",
+            "explanation_md": "Not a method, so it does not answer this question."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Deleting customer data",
+            "explanation_md": "Not a method, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Sending alerts by post",
+            "explanation_md": "Not a method, so it does not answer this question."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "AI cybersecurity."
+      }
+    },
+    {
+      "draft_id": "D033",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F005"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Predictive analytics in a bank can identify",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only past accounting errors",
+            "explanation_md": "It also predicts, so it does not answer this question."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Unmet sales prospects and cross-selling opportunities hidden in the data",
+            "explanation_md": "It finds patterns older tools missed."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The share price tomorrow with certainty",
+            "explanation_md": "No certainty, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Which staff to dismiss",
+            "explanation_md": "Not stated, so it does not answer this question."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "Predictive analytics."
+      }
+    },
+    {
+      "draft_id": "D034",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F006"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A hybrid information system is one that",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Uses only one AI method",
+            "explanation_md": "That is not hybrid, so it does not answer this question."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Is a mix of paper and digital files",
+            "explanation_md": "Not the meaning, so it does not answer this question."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Combines several AI methods such as fuzzy expert, neuro-fuzzy and genetic-fuzzy systems",
+            "explanation_md": "It merges the strengths of methods."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Is a bank branch with an ATM",
+            "explanation_md": "Not the meaning, so it does not answer this question."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "Hybrid system."
+      }
+    },
+    {
+      "draft_id": "D035",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F006"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Hybrid systems are used in stock market prediction because",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The market is perfectly predictable",
+            "explanation_md": "It is not, so it does not answer this question."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Single methods are banned",
+            "explanation_md": "No such ban, so it does not answer this question."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Hybrid systems need no data",
+            "explanation_md": "They need data, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The market is highly unpredictable and combined methods cope better than single ones",
+            "explanation_md": "Combining skills overcomes single-method limits."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "Hybrid prediction."
+      }
+    },
+    {
+      "draft_id": "D036",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F007"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Which is one of the four things an AI computer must do?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Machine learning, to adapt to new circumstances and detect patterns",
+            "explanation_md": "It is one of the four building blocks."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Printing documents",
+            "explanation_md": "Not one of them, so it does not answer this question."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Charging customers",
+            "explanation_md": "Not one of them, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Storing paper files",
+            "explanation_md": "Not one of them, so it does not answer this question."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "AI functions."
+      }
+    },
+    {
+      "draft_id": "D037",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F007"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Automated reasoning in AI means using",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Random guesses",
+            "explanation_md": "It is systematic, so it does not answer this question."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Stored knowledge to answer questions and draw conclusions",
+            "explanation_md": "It applies knowledge to new questions."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Printed manuals only",
+            "explanation_md": "It is automated, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Human committees only",
+            "explanation_md": "It is automated, so it does not answer this question."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "Automated reasoning."
+      }
+    },
+    {
+      "draft_id": "D038",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F007"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Which discipline is NOT named as contributing to AI?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Computer science",
+            "explanation_md": "It contributes, so it does not answer this question."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Psychology",
+            "explanation_md": "It contributes, so it does not answer this question."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Accountancy practice rules",
+            "explanation_md": "Not among the listed disciplines."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Mathematics",
+            "explanation_md": "It contributes, so it does not answer this question."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "Disciplines."
+      }
+    },
+    {
+      "draft_id": "D039",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F008"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Neural networks are especially useful when",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "There is a single linear input",
+            "explanation_md": "A simple regression would do."
+          },
+          {
+            "option_id": "B",
+            "text_md": "No data are available",
+            "explanation_md": "They need much data."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The model must be easy to explain",
+            "explanation_md": "They are hard to explain."
+          },
+          {
+            "option_id": "D",
+            "text_md": "There are many inputs with non-linear relationships to the target",
+            "explanation_md": "They model non-linearities automatically."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "Neural net use."
+      }
+    },
+    {
+      "draft_id": "D040",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F008"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A weakness of neural networks is that",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "It can be hard to understand what the model is doing",
+            "explanation_md": "They are often opaque."
+          },
+          {
+            "option_id": "B",
+            "text_md": "They cannot handle continuous targets",
+            "explanation_md": "They can, so it does not answer this question."
+          },
+          {
+            "option_id": "C",
+            "text_md": "They need an assumption of normality",
+            "explanation_md": "They need none, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "They never learn",
+            "explanation_md": "They learn from data."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "Neural net weakness."
+      }
+    },
+    {
+      "draft_id": "D041",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F008"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "To work well, a neural network requires",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only five observations",
+            "explanation_md": "Too few, so it does not answer this question."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A large number of observations to form training, validation and test sets",
+            "explanation_md": "Enough data is needed for all three sets."
+          },
+          {
+            "option_id": "C",
+            "text_md": "No data at all",
+            "explanation_md": "They learn from data."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A pre-defined linear equation",
+            "explanation_md": "They do not need one."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "Data need."
+      }
+    },
+    {
+      "draft_id": "D042",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F009"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "In control theory the error that a regulator tries to reduce is",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The price of the machine",
+            "explanation_md": "Not the error, so it does not answer this question."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The number of operators",
+            "explanation_md": "Not the error, so it does not answer this question."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The gap between the existing state and the desired state",
+            "explanation_md": "Feedback shrinks the gap."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The electricity bill",
+            "explanation_md": "Not the error, so it does not answer this question."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "Control error."
+      }
+    },
+    {
+      "draft_id": "D043",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F009"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "The thermostat and the steam engine governor are cited as examples of",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Neural networks",
+            "explanation_md": "They are older and simpler."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Expert systems",
+            "explanation_md": "Not the category, so it does not answer this question."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Chatbots",
+            "explanation_md": "Not the category, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Self-regulating feedback systems",
+            "explanation_md": "Both adjust themselves using feedback."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "Feedback systems."
+      }
+    },
+    {
+      "draft_id": "D044",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F009"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Natural language processing grew from",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The combination of linguistics and AI as computational linguistics",
+            "explanation_md": "The two fields developed together."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Banking regulation",
+            "explanation_md": "Not the origin, so it does not answer this question."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Accounting standards",
+            "explanation_md": "Not the origin, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Taxation law",
+            "explanation_md": "Not the origin, so it does not answer this question."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "NLP origin."
+      }
+    },
+    {
+      "draft_id": "D045",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F010"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A combinatorial explosion in early AI algorithms refers to",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "A sudden rise in memory prices",
+            "explanation_md": "Not the meaning, so it does not answer this question."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Running time growing exponentially as the problem becomes larger",
+            "explanation_md": "The method becomes unusable on large problems."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A fall in accuracy with more data",
+            "explanation_md": "Not the meaning, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The merging of two companies",
+            "explanation_md": "Not the meaning, so it does not answer this question."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "Combinatorial explosion."
+      }
+    },
+    {
+      "draft_id": "D046",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F010"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An ontology in AI is",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "A kind of robot arm",
+            "explanation_md": "Not the meaning, so it does not answer this question."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A bank licence",
+            "explanation_md": "Not the meaning, so it does not answer this question."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A formal description of objects, relations, concepts and attributes so that software agents can interpret them",
+            "explanation_md": "It describes what exists in a domain."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A voice recording",
+            "explanation_md": "Not the meaning, so it does not answer this question."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "Ontology."
+      }
+    },
+    {
+      "draft_id": "D047",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F010"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "Commonsense knowledge is hard to represent because",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "It is very small",
+            "explanation_md": "It is vast, so it does not answer this question."
+          },
+          {
+            "option_id": "B",
+            "text_md": "It is always written down",
+            "explanation_md": "Much is unstated, so it does not answer this question."
+          },
+          {
+            "option_id": "C",
+            "text_md": "It never changes",
+            "explanation_md": "Not the reason, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "It is vast and much of it is not expressed as explicit facts",
+            "explanation_md": "People know far more than they can state."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "Commonsense."
+      }
+    },
+    {
+      "draft_id": "D048",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F011"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "A rational agent is one that",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Takes the action expected to give the best outcome given what it perceives",
+            "explanation_md": "It makes decisions on the basis of perceptions."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Always takes the cheapest action",
+            "explanation_md": "Best outcome, not cheapest."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Never changes its action",
+            "explanation_md": "It adapts, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Acts at random",
+            "explanation_md": "It chooses the best."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "Rational agent."
+      }
+    },
+    {
+      "draft_id": "D049",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F011"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "In AI, the environment of an agent is",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The agent itself",
+            "explanation_md": "Excluded, so it does not answer this question."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Everything outside the agent that it can sense and act on",
+            "explanation_md": "It does not include the agent itself."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Only the computer room",
+            "explanation_md": "Not the meaning, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The software licence",
+            "explanation_md": "Not the meaning, so it does not answer this question."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "Environment."
+      }
+    },
+    {
+      "draft_id": "D050",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F011"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Classifying an email as spam or not spam is an example of",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Regression",
+            "explanation_md": "Regression gives a number."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Reinforcement learning",
+            "explanation_md": "Not described here, so it does not answer this question."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Supervised learning by classification",
+            "explanation_md": "The output is a category."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Motion planning",
+            "explanation_md": "Not related, so it does not answer this question."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "Classification."
+      }
+    },
+    {
+      "draft_id": "D051",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F011"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Predicting the numerical value of a house price from its features is",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Classification",
+            "explanation_md": "Classification gives a category."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Unsupervised clustering only",
+            "explanation_md": "It has a target, so it does not answer this question."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Compliant motion",
+            "explanation_md": "Not related, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Regression",
+            "explanation_md": "The output is a number."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "Regression."
+      }
+    },
+    {
+      "draft_id": "D052",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F011"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "In reinforcement learning the agent is",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Rewarded for appropriate responses and penalised for inappropriate ones",
+            "explanation_md": "The reward signal guides learning."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Told every answer in advance",
+            "explanation_md": "That is closer to supervised learning."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Given no feedback at all",
+            "explanation_md": "It gets rewards, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Replaced by a human",
+            "explanation_md": "Not described, so it does not answer this question."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "Reinforcement learning."
+      }
+    },
+    {
+      "draft_id": "D053",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F011"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "Transfer learning means",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Transferring money between accounts",
+            "explanation_md": "Not the meaning, so it does not answer this question."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Using skills learned on one problem to solve a different problem",
+            "explanation_md": "It carries learning across tasks."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Moving a robot between rooms",
+            "explanation_md": "Not the meaning, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Copying data to a backup",
+            "explanation_md": "Not the meaning, so it does not answer this question."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "Transfer learning."
+      }
+    },
+    {
+      "draft_id": "D054",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F011"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "A planning agent that is not the only agent in the world must",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Assume nothing will change",
+            "explanation_md": "That holds only if it is alone."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Stop acting",
+            "explanation_md": "It must act, so it does not answer this question."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Reason under uncertainty and re-evaluate as other agents act",
+            "explanation_md": "Other agents change the situation."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Ignore the other agents",
+            "explanation_md": "It must account for them."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "Multi-agent planning."
+      }
+    },
+    {
+      "draft_id": "D055",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F012"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Robots are valuable in hazardous settings mainly because they",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Are creative thinkers",
+            "explanation_md": "Creativity is a limit."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Never need maintenance",
+            "explanation_md": "Not stated, so it does not answer this question."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Decide ethical questions",
+            "explanation_md": "Not stated, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Improve accuracy and worker safety",
+            "explanation_md": "They keep people out of danger."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "Robot benefits."
+      }
+    },
+    {
+      "draft_id": "D056",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F012"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Jobs that robots are poorly suited to are those that need",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Creativity, adaptability or critical decision making",
+            "explanation_md": "These are listed limits."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Repeated identical movements",
+            "explanation_md": "Robots suit these, so it does not answer this question."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Working in hazardous places",
+            "explanation_md": "Robots suit these, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "High accuracy",
+            "explanation_md": "Robots suit these, so it does not answer this question."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "Robot limits."
+      }
+    },
+    {
+      "draft_id": "D057",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F013"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A heuristic in a search problem is",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "An exhaustive check of every option",
+            "explanation_md": "That is a thorough search."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A rule of thumb that ranks options and prunes the search tree",
+            "explanation_md": "It cuts the work by guessing which paths are best."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A random guess with no ranking",
+            "explanation_md": "It ranks options, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A legal document",
+            "explanation_md": "Not related, so it does not answer this question."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "Heuristic."
+      }
+    },
+    {
+      "draft_id": "D058",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F013"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Fuzzy logic assigns a statement such as the person is tall",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only true or false",
+            "explanation_md": "That is crisp logic."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A negative probability",
+            "explanation_md": "Not allowed, so it does not answer this question."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A degree of truth between 0 and 1",
+            "explanation_md": "Statements can be partly true."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A random word",
+            "explanation_md": "Not the meaning, so it does not answer this question."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "Fuzzy logic."
+      }
+    },
+    {
+      "draft_id": "D059",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F013"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Which of these is a classifier method named in the courseware?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "A thermostat",
+            "explanation_md": "It is a feedback controller."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A robot gripper",
+            "explanation_md": "It is hardware, so it does not answer this question."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A ledger",
+            "explanation_md": "It is an accounting record."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The decision tree",
+            "explanation_md": "It is the simplest and a most used method."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "Classifier method."
+      }
+    },
+    {
+      "draft_id": "D060",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F013"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "A classifier succeeds according to",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The nature of the data: its size, class distribution and noise",
+            "explanation_md": "Data properties drive performance."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The colour of the interface",
+            "explanation_md": "Not relevant, so it does not answer this question."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The price of the software only",
+            "explanation_md": "Not relevant, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The name of the algorithm only",
+            "explanation_md": "Not enough, so it does not answer this question."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "Classifier success."
+      }
+    },
+    {
+      "draft_id": "D061",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F014"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "The courseware concludes that AI should be used",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Without any thought",
+            "explanation_md": "It urges care, so it does not answer this question."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Judiciously, lest it prove a curse rather than a boon",
+            "explanation_md": "Care is needed in use."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Not at all",
+            "explanation_md": "It does not call for a ban."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Only by robots",
+            "explanation_md": "Not stated, so it does not answer this question."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "AI morality."
+      }
+    },
+    {
+      "draft_id": "D062",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F014"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "The courseware point that AI machines follow the instructions of human programmers implies that",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Machines are responsible for themselves",
+            "explanation_md": "They carry out instructions."
+          },
+          {
+            "option_id": "B",
+            "text_md": "No understanding of AI is needed",
+            "explanation_md": "Understanding is needed."
+          },
+          {
+            "option_id": "C",
+            "text_md": "People are responsible for what the machines are instructed to do and must understand AI",
+            "explanation_md": "Responsibility rests with those who design and use it."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Programmers are not involved",
+            "explanation_md": "They provide the instructions."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "Human responsibility."
+      }
+    },
+    {
+      "draft_id": "D063",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F011"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An action has two possible outcomes: a 70 per cent chance of a gain of 10 utility units and a 30 per cent chance of a loss of 4 utility units. What is the expected utility (units, to 1 decimal place)?",
+        "numeric_rule": {
+          "expected_answer": "5.8",
+          "unit_label": "units",
+          "precision_decimals": 1,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Round to 1 decimal place.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "Expected utility = 0.7 x 10 - 0.3 x 4 = 7 - 1.2 = 5.8 units.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Gain part.",
+            "formula_or_substitution": "0.7 x 10",
+            "intermediate_result": "7"
+          },
+          {
+            "step_number": 2,
+            "description": "Loss part.",
+            "formula_or_substitution": "0.3 x 4",
+            "intermediate_result": "1.2"
+          },
+          {
+            "step_number": 3,
+            "description": "Expected utility.",
+            "formula_or_substitution": "7 - 1.2",
+            "intermediate_result": "5.8"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D064",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F011"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Action A gives a 50 per cent chance of utility 20 and a 50 per cent chance of utility 0. Action B gives utility 8 for certain. What is the expected utility of action A (units)?",
+        "numeric_rule": {
+          "expected_answer": "10",
+          "unit_label": "units",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "Expected utility of A = 0.5 x 20 + 0.5 x 0 = 10, higher than the 8 of action B, so a rational agent chooses A.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Expected utility.",
+            "formula_or_substitution": "0.5 x 20 + 0.5 x 0",
+            "intermediate_result": "10"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D065",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F011"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A spam classifier labels 1,000 emails and gets 940 right. What is its accuracy (per cent)?",
+        "numeric_rule": {
+          "expected_answer": "94",
+          "unit_label": "per cent",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "Accuracy = 940 / 1,000 = 94 per cent.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Accuracy.",
+            "formula_or_substitution": "940 / 1,000 x 100",
+            "intermediate_result": "94"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D066",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F005"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A bank handles 200,000 routine customer queries a month. A chatbot handles 60 per cent of them and each query it handles saves Rs 25 of staff cost. What is the monthly saving (Rs lakh)?",
+        "numeric_rule": {
+          "expected_answer": "30",
+          "unit_label": "Rs lakh",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "Queries handled = 0.60 x 200,000 = 120,000. Saving = 120,000 x 25 = Rs 30,00,000 = Rs 30 lakh.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Handled.",
+            "formula_or_substitution": "0.60 x 200,000",
+            "intermediate_result": "120,000"
+          },
+          {
+            "step_number": 2,
+            "description": "Saving.",
+            "formula_or_substitution": "120,000 x 25",
+            "intermediate_result": "Rs 30 lakh"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D067",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F005"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A fraud model raises 500 alerts in a week and 400 of them are genuine frauds. What is the false alert rate (per cent of alerts)?",
+        "numeric_rule": {
+          "expected_answer": "20",
+          "unit_label": "per cent",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "False alerts = 500 - 400 = 100. Rate = 100 / 500 = 20 per cent.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "False alerts.",
+            "formula_or_substitution": "500 - 400",
+            "intermediate_result": "100"
+          },
+          {
+            "step_number": 2,
+            "description": "Rate.",
+            "formula_or_substitution": "100 / 500 x 100",
+            "intermediate_result": "20"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D068",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F005"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A chatbot project costs Rs 90 lakh a year to run and saves Rs 30 lakh a month in staff cost. What is the annual net saving (Rs lakh)?",
+        "numeric_rule": {
+          "expected_answer": "270",
+          "unit_label": "Rs lakh",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "Annual saving = 30 x 12 = 360. Net saving = 360 - 90 = Rs 270 lakh.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Annual saving.",
+            "formula_or_substitution": "30 x 12",
+            "intermediate_result": "360"
+          },
+          {
+            "step_number": 2,
+            "description": "Net.",
+            "formula_or_substitution": "360 - 90",
+            "intermediate_result": "270"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D069",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F013"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Fuzzy logic gives a statement the truth degree 0.7. What degree of truth does its negation have (to 1 decimal place)?",
+        "numeric_rule": {
+          "expected_answer": "0.3",
+          "unit_label": "degree",
+          "precision_decimals": 1,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Round to 1 decimal place.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "In standard fuzzy logic the negation is 1 - 0.7 = 0.3.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Negation.",
+            "formula_or_substitution": "1 - 0.7",
+            "intermediate_result": "0.3"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D070",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F008"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A data set of 12,000 observations is split 60 per cent for training, 20 per cent for validation and the rest for testing. How many observations are in the test set?",
+        "numeric_rule": {
+          "expected_answer": "2400",
+          "unit_label": "observations",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "Test share = 100 - 60 - 20 = 20 per cent. 0.20 x 12,000 = 2,400.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Test share.",
+            "formula_or_substitution": "100 - 60 - 20",
+            "intermediate_result": "20 per cent"
+          },
+          {
+            "step_number": 2,
+            "description": "Test set.",
+            "formula_or_substitution": "0.20 x 12,000",
+            "intermediate_result": "2,400"
+          }
+        ]
+      }
+    }
+  ],
+  "unresolved": [
+    "This unit is the courseware general account of artificial intelligence. No banking regulation or primary technical standard applies and none was consulted. Concepts are taught at the level the courseware states them, and the courseware describes several of them loosely (for example neural networks, ontologies and logic).",
+    "The courseware gives many historical and company-specific narratives (Ktesibios, Watt, Drebbel, the Heath Robinson machine, Wiener, Ashby, Skinner and Chomsky, Panini, the Dartmouth conference and its dates, Google RankBrain with its usage percentages, Google AI Hub, Kubeflow Pipelines, Google Duplex and Hold for Me, Affirm and GiniMachine). These are narrative, were not checked and are not taught or tested as facts, apart from the two historical points the courseware makes the foundation of the subject (the imitation-game test proposed by Turing and the coining of the term artificial intelligence by McCarthy for a conference in 1956).",
+    "The courseware makes dated claims about which classifier methods are popular (for example that the naive Bayes classifier is the most extensively used learner at one company, and that k-nearest neighbour became obsolete in the 1990s). These are not taught as facts; only the existence and general nature of the methods are taught.",
+    "The courseware figure of speech \"a robot that behaves like a human\" and the statement that machines with human labour and talent should behave with \"life, spirit and sensitivity\" are not taught as technical claims.",
+    "The courseware section on morality is a brief discussion of three schools of thought; it is taught as the courseware presents it and no ethical or regulatory framework for AI in banking (for example supervisory guidance on model risk or explainability) is taught here because none is in the courseware.",
+    "The calculation items (accuracy of a classifier, cost saving from automated queries, expected utility of an action, false alert rate, fuzzy negation as one minus the degree, test-set split) are generic arithmetic applied to the courseware uses of AI in banking (chatbots with cost savings, fraud detection, decisions that maximise utility). The courseware gives no worked examples. Numbers are invented and checked in tests/content/batch-abfm-d-u04-b001.test.ts.",
+    "The courseware check-your-progress questions were not copied; questions are independently written.",
+    "Reviewer for this batch is the authoring agent; no independent or human review.",
+    "Reviewer for this batch is the authoring agent; no independent or human review."
+  ],
+  "next_batch_hint": "ABFM Module D unit 5 (courseware unit 23, expected Business Analytics) from printed p. 532 or 533 (PDF p. 547 is blank; try PDF p. 548; PDF page = printed + 15); render with pymupdf into tmp/abfm (pages to PDF 559 already rendered) and confirm the unit title and boundary."
+}
