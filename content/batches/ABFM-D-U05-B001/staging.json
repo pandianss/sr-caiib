@@ -1,0 +1,2799 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "ABFM-D-U05-B001",
+  "paper_id": "ABFM",
+  "unit_label": "ABFM Module D unit 5 (courseware unit 23): business analytics as a management tool",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S02"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "statement": "Business analytics (courseware): business analytics (BA) is the combination of skills, technologies and practices used to analyse an organisation data and performance to gain insights and make data-driven decisions in the future, with statistical analysis a common method. Its objective is to find which datasets are valuable and can boost revenue, productivity and efficiency. It can be used to predict future events related to customer activity and market trends. Most commonly it is used to analyse data from many sources (cloud applications, marketing automation, customer relationship software); to find patterns with complex statistical methods and so predict trends and behaviour; to monitor key performance indicators (KPIs) in real time; and to back decisions with the most recent facts. There is no single most important approach; the choice depends on the final aim.",
+      "source_id": "S02",
+      "locator": "S02 printed pp. 534-535",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F002",
+      "statement": "Four types of analytics (courseware): applied in succession from the least to the most complicated. Descriptive analytics interprets historical data and KPIs to find patterns and trends, using data aggregation and data mining (what has happened). Diagnostic analytics focuses on past performance to understand which factors drive trends, using drill-down, data discovery, data mining and correlation, then classification and regression algorithms to find the likelihood of an event and the reasons (why it happened). Predictive analytics applies statistical models and machine learning techniques to estimate future outcomes (what is likely to happen); sales and marketing teams use it, for example, to forecast customer opinions from social media data. Prescriptive analytics uses data on previous performance to recommend how similar situations should be managed, not only forecasting results but suggesting the actions that lead to the best outcome, often using deep learning and sophisticated neural networks; it matches solutions to the immediate requirements of a customer.",
+      "source_id": "S02",
+      "locator": "S02 printed pp. 535-536",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F003",
+      "statement": "Elements of business analytics (courseware): five elements are data mining, text mining, data aggregation, forecasting and data visualisation. Data mining is the search through big data sets to find patterns and relationships; it is a step in knowledge discovery in databases (KDD), and the two terms are related but different. Its results feed business intelligence, advanced analytics and real-time analytics, and help marketing, advertising, sales, customer support, production, supply chain, finance and human resources, including fraud prevention, risk management and cybersecurity planning.",
+      "source_id": "S02",
+      "locator": "S02 printed p. 536",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F004",
+      "statement": "Data mining process and techniques (courseware): four steps. (1) Data collection: identify the relevant data and compile it from source systems, a data warehouse or a data lake (a repository for structured and unstructured data); external data may be used. (2) Data preparation: explore, profile and pre-process the data and cleanse it to correct errors and quality issues, and convert it to keep data sets consistent. (3) The mining: choose a technique and apply algorithms, often trained first on smaller samples. (4) Interpretation and analysis: findings are built into analytical models for decisions and explained to business users through data visualisation and storytelling. Techniques: association rules (if-then statements that show links between data elements, with support, the frequency with which related elements appear, and confidence, the number of times the if-then statement is accurate); classification (assign data to categories: decision trees, naive Bayes, k-nearest neighbour, logistic regression); clustering (group data with common characteristics: k-means, hierarchical, Gaussian mixture); regression (predict values from relationships among variables: linear and multivariate regression); sequence and path analysis (patterns in which one event leads to later ones); and neural networks (modelled on the human brain; deep learning is a more advanced subfield, helpful in pattern recognition). Pattern recognition and anomaly detection (finding outliers) are common use cases.",
+      "source_id": "S02",
+      "locator": "S02 printed pp. 536-538",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F005",
+      "statement": "Benefits and uses of data mining (courseware): benefits are more productivity in marketing and sales (better targeted campaigns and higher conversion), better customer service (spotting problems early), better supply chain management (demand projections and stock levels), higher production uptime (predictive maintenance from sensor data), stronger risk management and lower costs. Industry examples: retail (recommendation engines from clickstream data and inventory management), financial services (risk models, fraud detection, loan and credit application validation, upselling), insurance (pricing and risk modelling), manufacturing (uptime and operational efficiency), entertainment (personalised suggestions) and healthcare (diagnosis, treatment, medical imaging analysis).",
+      "source_id": "S02",
+      "locator": "S02 printed pp. 539-540",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F006",
+      "statement": "Text mining (courseware): text mining, or text data mining, converts unstructured text into a structured format to find patterns and insights using methods such as naive Bayes, support vector machines and deep learning. Data types: structured data (standardised tabular format, such as names, addresses, phone numbers), unstructured data (no standard format: social media, reviews, video and audio) and semi-structured data (partly organised but not fit for a relational database, such as XML, JSON and HTML). Most data in the world is unstructured, which makes text mining useful. Text pre-processing cleans the text first (language identification, tokenisation, part-of-speech tagging, chunking, syntax parsing). Information retrieval (IR) locates and delivers pertinent documents for queries: tokenisation separates text into tokens (words and sentences) used as bag-of-words in models; stemming strips prefixes and suffixes to the root form, reducing the space needed for indexing. Natural language processing (NLP) has subtasks: summarisation (condensing text), part-of-speech tagging (labelling each token as noun, verb and so on), text categorisation (classifying documents into predefined topics) and sentiment analysis (identifying positive or negative sentiment about brands, products and services). Information extraction (IE) has subtasks: feature selection (choosing the dimensions that contribute most to a predictive model), feature extraction (choosing a subset of features to improve a classification task) and named-entity recognition (finding and classifying entities such as names and places).",
+      "source_id": "S02",
+      "locator": "S02 printed pp. 540-542",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F007",
+      "statement": "Data aggregation (courseware): data aggregation is collecting raw data and presenting it in summary form (average, lowest, maximum, sum and count) over a period for statistical analysis. Time aggregation: all data points for a single resource over a time period. Spatial aggregation: all data points for a group of resources over a time period. Reporting terms: time frame for reports (daily, weekly, monthly, quarterly, yearly); granularity (the time period over which individual data points are gathered and aggregated; for example five-minute granularity averages the points over five minutes, from one minute to a month or more); and polling period (how often a resource is sampled for data). If the polling period equals the granularity, one value per resource is averaged; if the polling period is shorter, several samples are taken and averaged.",
+      "source_id": "S02",
+      "locator": "S02 printed pp. 542-543",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F008",
+      "statement": "Forecasting (courseware): forecasting is predicting what will happen by taking account of what has happened and what is happening; it is a decision-making tool for planning and budgeting. Qualitative (judging) methods rest on expert opinion and intuition and are subjective, so the forecast may contain errors; quantitative methods use mathematical procedures and large volumes of data, are consistent and objective, and are used by most firms for planning and budgeting. Features: forecasts involve future events, cover recent and historical occurrences and use various techniques. Process: establish a foundation for future projections (where the company stands); formulate projections for the company business (investigate and estimate the future conditions of the industry); make adjustments (compare earlier forecasts with actual results and analyse the differences); and look back at the steps, with a check after each and tweaks. The courseware notes that sales forecasting is an iterative process.",
+      "source_id": "S02",
+      "locator": "S02 printed pp. 543-545",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F009",
+      "statement": "Data visualisation (courseware): data visualisation represents data through charts, plots, infographics and animation so that complex relationships are easy to grasp. Four functions: idea generation (brainstorming), idea illustration (such as Gantt and waterfall charts to describe workflows), visual discovery (finding patterns in a dataset) and everyday dataviz (communicating data to colleagues). Common forms in dashboards: tables (a grid for comparing variables, which can overwhelm); pie and stacked bar charts (show proportions of a total); line graphs and area charts (change over time); histograms (distribution of numbers, bars with no gaps); scatter plots (relationship between two variables; bubble charts add a third variable as bubble size); heat maps (behaviour by location or range); and tree maps (hierarchical data as nested rectangles comparing proportions of categories).",
+      "source_id": "S02",
+      "locator": "S02 printed pp. 545-546",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F010",
+      "statement": "Excel proficiency (courseware): skills named are spreadsheets, workbooks, formulas, data linking, pivot tables, charts, data analytics, macros and automation, IF statements and data validation; proficiency means being able to create functions, pivot tables and charts.",
+      "source_id": "S02",
+      "locator": "S02 printed p. 546",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F011",
+      "statement": "Big data analytics (courseware): big data analytics applies advanced analytical methods to very large, diverse data sets (structured, semi-structured and unstructured, from many sources, from terabytes to zettabytes). Big data is described by high volume, velocity and variety (or diversity) at once; it is too large or complex for traditional relational databases to record, manage or process in a timely way. Sources include sensors, devices, video, networks, logs, transactional applications, the web and social media. Techniques: text analytics, machine learning, predictive analytics, data mining, statistics and natural language processing. Uses: improving customer integration (a complete view from many touch points), detecting and minimising fraud (real-time monitoring of transactions), and improving supply chain efficiency (tracking items and finding inefficiencies). Industry uses: manufacturing (predictive maintenance, operational effectiveness, production optimisation), retail (product development, customer experience, customer lifetime value, in-store experience, pricing), healthcare (genomic research, patient experience, claims fraud, billing), oil and gas (equipment maintenance, exploration, production optimisation), telecommunications (network capacity, customer churn, new offers) and financial services (fraud and compliance, innovation, anti-money laundering, regulatory reporting).",
+      "source_id": "S02",
+      "locator": "S02 printed pp. 547-552",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F012",
+      "statement": "Importance and workings of big data analytics (courseware): benefits are reducing cost (for example storing data in a cloud-based data lake), faster and better decisions (using in-memory analytics and streaming data from internet of things sensors) and developing new products and services. Workflow: collection (from cloud storage, mobile applications and in-store sensors; data warehouses for structured data and data lakes for data that is too diverse); processing (batch processing handles large blocks over a period when a longer turnaround is acceptable; stream processing handles small batches at once for quick results, more complex and costly); cleaning (correct formatting and removal of redundant or irrelevant data, since bad data misleads); and analysis (data mining finding patterns and clusters and outliers, predictive analytics forecasting from the past, and deep learning imitating human learning patterns).",
+      "source_id": "S02",
+      "locator": "S02 printed pp. 552-553",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F013",
+      "statement": "Big data tools and challenges (courseware): Hadoop is an open-source framework storing and analysing large datasets on clusters of commodity hardware, structured and unstructured; NoSQL databases are non-relational and do not require a fixed schema, suiting large volumes of raw unstructured data; MapReduce distributes data to different nodes in a cluster (mapping) and organises and condenses the results from each node (reducing); YARN manages job scheduling and resources in the cluster; Spark is an open-source cluster computing framework handling batch and stream processing quickly; Tableau is a self-service visual analytics platform. Challenges: making big data accessible; maintaining data quality (checking for mistakes, inconsistencies, conflicts and duplicates); data security and privacy (compliance and tightly established data processes); and identifying appropriate tools and platforms that are compatible with the existing ecosystem and flexible.",
+      "source_id": "S02",
+      "locator": "S02 printed pp. 553-554",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F014",
+      "statement": "Web and mobile analytics (courseware): web analytics studies visitor behaviour on websites; mobile web analytics collects data from customers who visit a website using mobile phones and helps determine which aspects work best for mobile traffic; mobile analytics data include page views, visits, users, countries and mobile-specific information (device model, manufacturer, screen resolution, capabilities, service provider and language). Tracking problems: visitor identification (the hardest; cookies and JavaScript are unreliable on mobile devices); JavaScript page tagging (assumes the browser runs JavaScript); HTTP cookies (can be disabled); image tags; and IP address (the gateway address may reveal the operator and country but not the user). Collection methods: packet sniffing (tagless data capture), image tags or beacons, link redirection (records clicks from marketing and clicks leaving a site), HTTP header analysis (with a device database), IP address analysis and gateway logs. Comparison: web analytics traditionally measured page views but has grown to new, repeat and unique users and cohorts; mobile analytics focuses on app use (length of visits, origin of visitors, in-app purchases) and adds the location of the user; sessions on mobile are shorter and more frequent; advertising and ad-blocking work differently; users move between devices, so a customised approach across platforms is needed.",
+      "source_id": "S02",
+      "locator": "S02 printed pp. 554-558",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    },
+    {
+      "fact_id": "F015",
+      "statement": "Importance, benefits, challenges and skills of business analytics (courseware): four reasons it matters: it boosts performance by showing what is working, enables quicker and more accurate choices, reduces the likelihood of negative outcomes and inspires change and creativity. Benefits: preparing for unforeseen circumstances by modelling and projecting trends in sales and earnings, testing new marketing initiatives, forecasting order volume and reducing waste, and finding customers unlikely to return. Challenges: need for full support from leadership and a clear strategy; buy-in from senior management; IT engagement and the right technology and tools; executive ownership and collaboration of business and IT; sustained dedication in the first months, as the cost may be high and returns slow; involvement of end-users and change management; difficulty integrating varied data; and a shortage of skilled staff and data storage limits for smaller organisations. Skills: critical thinking, problem solving, communication, curiosity and attention to detail.",
+      "source_id": "S02",
+      "locator": "S02 printed pp. 558-561",
+      "regulatory_sensitive": false,
+      "evidence_status": "explicit"
+    }
+  ],
+  "drafts": [
+    {
+      "draft_id": "D001",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "What business analytics is and what it is used for",
+        "core_explanation_md": "**Business analytics (BA)** is the mix of **skills, technologies and practices** used to **analyse an organisation data and performance**, gain **insights** and make **data-driven decisions**, often by **statistical analysis**.\n\n**Aim:** find which **datasets are valuable** and can raise **revenue, productivity and efficiency**; predict **customer activity** and **market trends**.\n\n**Typical uses:**\n\n- Analyse data from **many sources** (cloud applications, marketing automation, CRM).\n- Find **patterns** with complex statistical methods to **predict trends**.\n- Watch **key performance indicators (KPIs)** in real time.\n- Back decisions with the **most recent facts**.\n\nNo single approach is always best; the choice depends on the **final aim**.",
+        "expanded_explanation_md": "Analytics turns stored data into a basis for decisions.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "What is the objective of business analytics?",
+          "expected_takeaway": "To find which datasets are valuable and use them to improve revenue, productivity and efficiency."
+        }
+      }
+    },
+    {
+      "draft_id": "D002",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F002"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "The four types of analytics",
+        "core_explanation_md": "Applied **in succession** from the simplest to the most complex:\n\n| Type | Question | How |\n| --- | --- | --- |\n| **Descriptive** | **What happened?** | Interpret **historical data and KPIs**; **aggregation and data mining** |\n| **Diagnostic** | **Why did it happen?** | **Drill-down, data discovery, data mining, correlation**; then **classification and regression** to find likelihood and reasons |\n| **Predictive** | **What is likely to happen?** | **Statistical models and machine learning** to estimate future outcomes (for example forecasting client opinions from social media) |\n| **Prescriptive** | **What should we do?** | Recommend **actions** for the best outcome, often with **deep learning and neural networks**; matches solutions to a **customer immediate needs** |",
+        "expanded_explanation_md": "Each type builds on the one before it: describe, explain, predict, recommend.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Which type of analytics recommends the action to take?",
+          "expected_takeaway": "Prescriptive analytics."
+        }
+      }
+    },
+    {
+      "draft_id": "D003",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F003",
+        "F004"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "Data mining: process and techniques",
+        "core_explanation_md": "**Data mining** searches **big datasets** for **patterns and relationships**; it is a step in **knowledge discovery in databases (KDD)**. Its results feed **business intelligence, advanced and real-time analytics**, and help marketing, sales, support, production, supply chain, finance and HR, including **fraud prevention, risk management and cybersecurity planning**.\n\n**Four steps:** 1) **data collection** (source systems, **data warehouse** or **data lake**); 2) **data preparation** (explore, profile, **cleanse**, make consistent); 3) **the mining** (choose a technique; algorithms often **trained on small samples first**); 4) **interpretation** (build into models; explain through **visualisation and storytelling**).\n\n| Technique | Idea |\n| --- | --- |\n| **Association rules** | **If-then** links; **support** = how often the elements appear together; **confidence** = how often the if-then holds |\n| **Classification** | Assign data to **categories** (decision trees, naive Bayes, k-nearest neighbour, logistic regression) |\n| **Clustering** | Group data with **common characteristics** (k-means, hierarchical, Gaussian mixture) |\n| **Regression** | **Predict values** from relationships between variables |\n| **Sequence and path analysis** | Patterns where **one event leads to later ones** |\n| **Neural networks** | **Brain-like models**; **deep learning** is an advanced subfield for **pattern recognition** |\n\n**Anomaly detection** finds **outliers**.",
+        "expanded_explanation_md": "A data lake holds raw data of all kinds; a warehouse holds organised data.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "What do support and confidence measure for an association rule?",
+          "expected_takeaway": "Support is how often the elements appear together; confidence is how often the if-then statement is accurate."
+        }
+      }
+    },
+    {
+      "draft_id": "D004",
+      "item_type": "card",
+      "variant": "formula",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "Support and confidence of an association rule",
+        "core_explanation_md": "For a rule **if A then B**:\n\n**Support = transactions containing both A and B / all transactions.**\n\n**Confidence = transactions containing both A and B / transactions containing A.**\n\nExample pattern: of **200 transactions**, **40** contain A and **30** contain both; support = **30 / 200 = 15 per cent**, confidence = **30 / 40 = 75 per cent**.\n\nA rule with **high support** is common; one with **high confidence** is reliable when A occurs.",
+        "formula_spec": {
+          "latex_expression": "\\text{Confidence}(A \\Rightarrow B) = \\frac{N(A \\cap B)}{N(A)}",
+          "variables": [
+            {
+              "symbol": "N(A and B)",
+              "name": "Transactions containing both A and B",
+              "unit": "count"
+            },
+            {
+              "symbol": "N(A)",
+              "name": "Transactions containing A",
+              "unit": "count"
+            }
+          ],
+          "assumptions": [
+            "Each transaction is counted once",
+            "A is present in at least one transaction"
+          ],
+          "common_errors": [
+            "Dividing by all transactions for confidence",
+            "Dividing by transactions containing B"
+          ]
+        },
+        "expanded_explanation_md": "Support measures frequency; confidence measures how often the rule holds.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "What is the denominator of confidence?",
+          "expected_takeaway": "The number of transactions containing A, the if part of the rule."
+        }
+      }
+    },
+    {
+      "draft_id": "D005",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F005"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "Benefits and industry uses of data mining",
+        "core_explanation_md": "**Benefits:** **marketing and sales** (targeted campaigns, better **conversion**); **customer service** (problems spotted early); **supply chain** (demand projections, stock levels); **production uptime** (**predictive maintenance** from sensor data); **risk management**; **lower cost**.\n\n| Industry | Use |\n| --- | --- |\n| **Retail** | **Recommendation engines** from clickstream data; inventory |\n| **Financial services** | **Risk models, fraud detection, loan and credit validation, upselling** |\n| **Insurance** | **Pricing and risk modelling** |\n| **Manufacturing** | **Uptime and operational efficiency** |\n| **Entertainment** | **Personalised suggestions** |\n| **Healthcare** | **Diagnosis, treatment, image analysis** |",
+        "expanded_explanation_md": "The same techniques are reused across sectors with different data.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "How does data mining reduce unplanned downtime in a factory?",
+          "expected_takeaway": "It analyses sensor data to predict equipment problems before they occur."
+        }
+      }
+    },
+    {
+      "draft_id": "D006",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F006"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "Text mining and its techniques",
+        "core_explanation_md": "**Text mining** turns **unstructured text into structured form** to find patterns, using **naive Bayes, support vector machines and deep learning**.\n\n| Data type | Meaning |\n| --- | --- |\n| **Structured** | **Standard tabular** format (names, addresses, phone numbers) |\n| **Unstructured** | **No standard format** (social media, reviews, video, audio) |\n| **Semi-structured** | **Partly organised**, not fit for a relational database (XML, JSON, HTML) |\n\n**Pre-processing:** language identification, **tokenisation**, **part-of-speech tagging**, chunking, syntax parsing.\n\n**Information retrieval (IR):** find and deliver the pertinent documents. **Tokenisation** splits text into **tokens** (bag-of-words); **stemming** strips prefixes and suffixes to the **root**, saving index space.\n\n**Natural language processing (NLP):** **summarisation**, **part-of-speech tagging**, **text categorisation** (classify by topic) and **sentiment analysis** (positive or negative opinion).\n\n**Information extraction (IE):** **feature selection** (dimensions that matter most for a model), **feature extraction** (a subset of features to improve classification) and **named-entity recognition** (find names and places).",
+        "expanded_explanation_md": "Most data in the world is unstructured, which is why text mining matters.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "What does stemming do?",
+          "expected_takeaway": "It strips prefixes and suffixes from words to reach the root form, reducing index space."
+        }
+      }
+    },
+    {
+      "draft_id": "D007",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F007"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "Data aggregation: time, space, granularity and polling",
+        "core_explanation_md": "**Aggregation** collects raw data and **summarises** it (**average, minimum, maximum, sum, count**) for analysis.\n\n- **Time aggregation:** all data points for **one resource** over a period.\n- **Spatial aggregation:** all data points for a **group of resources** over a period.\n\n**Terms:** **time frame** of a report (daily, weekly, monthly, quarterly, yearly); **granularity** (the **period over which points are aggregated**, for example five minutes); **polling period** (**how often a resource is sampled**).\n\nIf the **polling period equals the granularity**, each resource gives **one value** per period. If the polling period is **shorter**, several samples are **averaged** within the granularity.",
+        "expanded_explanation_md": "Coarser granularity gives fewer, smoother data points.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "What is granularity in data aggregation?",
+          "expected_takeaway": "The time period over which individual data points are gathered and aggregated."
+        }
+      }
+    },
+    {
+      "draft_id": "D008",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F008"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "Forecasting: methods, features and process",
+        "core_explanation_md": "**Forecasting** predicts the future from **what has happened and is happening**, for **planning and budgeting**.\n\n| Qualitative (judging) | Quantitative |\n| --- | --- |\n| **Expert opinion and intuition** | **Mathematical procedures** and **large volumes of data** |\n| **Subjective**; error-prone | **Consistent and objective** |\n\n**Features:** involves **future events**; covers **recent and historical** occurrences; uses **various techniques**.\n\n**Process:** 1) set a **foundation** (where the firm stands); 2) **formulate projections** (study the industry and estimate the future); 3) **adjust** (compare earlier forecasts with actual results and analyse differences); 4) **look back**: check each step and tweak. Sales forecasting is an **iterative** process.",
+        "expanded_explanation_md": "Comparing forecasts with outcomes is how the method improves.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Why can qualitative forecasts be unreliable?",
+          "expected_takeaway": "They rest on personal judgement and intuition, which are subjective and may contain errors."
+        }
+      }
+    },
+    {
+      "draft_id": "D009",
+      "item_type": "card",
+      "variant": "formula",
+      "fact_ids": [
+        "F008"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "Simple forecasting arithmetic",
+        "core_explanation_md": "**Moving average forecast = average of the last n periods.** Example: sales of **100, 110, 120** give a three-period forecast of **(100 + 110 + 120) / 3 = 110**.\n\n**Forecast error = actual - forecast.**\n\n**Percentage change = (new - old) / old x 100.**\n\n**Simple growth forecast = last value x (1 + growth rate).**\n\nQuantitative methods like these are **objective and repeatable**, but they assume the **past pattern continues**.",
+        "formula_spec": {
+          "latex_expression": "\\hat{y}_{t+1} = \\frac{1}{n}\\sum_{i=0}^{n-1} y_{t-i}",
+          "variables": [
+            {
+              "symbol": "y",
+              "name": "Observed value in a period",
+              "unit": "units"
+            },
+            {
+              "symbol": "n",
+              "name": "Number of periods averaged",
+              "unit": "count"
+            }
+          ],
+          "assumptions": [
+            "The recent past predicts the near future",
+            "Periods are equally spaced"
+          ],
+          "common_errors": [
+            "Averaging the wrong number of periods",
+            "Treating the forecast as certain"
+          ]
+        },
+        "expanded_explanation_md": "A longer average smooths noise but responds more slowly to change.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "How is a three-period moving average forecast calculated?",
+          "expected_takeaway": "It is the average of the last three observed values."
+        }
+      }
+    },
+    {
+      "draft_id": "D010",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F009",
+        "F010"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "Data visualisation and Excel skills",
+        "core_explanation_md": "**Data visualisation** shows data as **charts, plots, infographics and animation** so complex relationships are easy to grasp.\n\n**Four functions:** **idea generation** (brainstorming), **idea illustration** (for example **Gantt and waterfall** charts), **visual discovery** (finding patterns) and **everyday dataviz** (sharing data with colleagues).\n\n| Form | Use |\n| --- | --- |\n| **Table** | Compare variables; can overwhelm |\n| **Pie, stacked bar** | **Proportions of a total** |\n| **Line, area chart** | **Change over time** |\n| **Histogram** | **Distribution** of numbers (bars with **no gaps**) |\n| **Scatter plot** | **Relationship between two variables**; **bubble chart** adds a **third (size)** |\n| **Heat map** | **Behaviour by location or range** |\n| **Tree map** | **Hierarchy as nested rectangles**, comparing proportions |\n\n**Excel skills named:** spreadsheets, workbooks, formulas, data linking, **pivot tables**, charts, data analytics, **macros**, **IF statements**, **data validation**.",
+        "expanded_explanation_md": "Choose the chart that matches the question: proportion, trend, distribution or relationship.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Which chart shows the relationship between two variables?",
+          "expected_takeaway": "A scatter plot."
+        }
+      }
+    },
+    {
+      "draft_id": "D011",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F011"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "Big data analytics: meaning, uses and industry examples",
+        "core_explanation_md": "**Big data** is data so **large or complex** that normal relational databases cannot **record, manage or process** it in time. It is described by high **volume, velocity and variety** together, and may be **structured, semi-structured or unstructured**, from **terabytes to zettabytes**. Sources: **sensors, devices, video, networks, logs, transactions, the web, social media**.\n\n**Techniques:** text analytics, machine learning, predictive analytics, data mining, statistics, NLP.\n\n**Uses:** a **complete view of customers**, **real-time fraud detection**, a **more efficient supply chain**.\n\n| Industry | Examples |\n| --- | --- |\n| **Manufacturing** | **Predictive maintenance**, operational effectiveness, **production optimisation** |\n| **Retail** | **Product development, customer experience, customer lifetime value, pricing** |\n| **Healthcare** | **Genomic research, patient outcomes, claims fraud, billing** |\n| **Oil and gas** | **Equipment maintenance, exploration, production** |\n| **Telecom** | **Network capacity, customer churn, new offers** |\n| **Financial services** | **Fraud and compliance, anti-money laundering, regulatory reporting, innovation** |",
+        "expanded_explanation_md": "Volume, velocity and variety are the three defining features.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Name the three features that describe big data.",
+          "expected_takeaway": "High volume, velocity and variety."
+        }
+      }
+    },
+    {
+      "draft_id": "D012",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F012"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "Why big data analytics matters and how it works",
+        "core_explanation_md": "**Benefits:** **lower cost** (for example a cloud-based **data lake**), **faster and better decisions** (**in-memory analytics**, streaming data from **internet of things** sensors) and **new products and services**.\n\n**Workflow:**\n\n1. **Collection**: cloud storage, apps, in-store sensors; **warehouses** for structured data, **data lakes** for diverse data.\n2. **Processing**: **batch** (large blocks over a period; longer turnaround) or **stream** (small batches at once; faster, **harder and costlier**).\n3. **Cleaning**: correct formats, **remove redundant or irrelevant data**; bad data misleads.\n4. **Analysis**: **data mining** (patterns, clusters, outliers), **predictive analytics** (forecast from the past), **deep learning** (imitates human learning).",
+        "expanded_explanation_md": "Choose stream processing only when decisions cannot wait for a batch.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "When is stream processing preferred to batch processing?",
+          "expected_takeaway": "When results are needed quickly, because it handles small batches as the data arrives."
+        }
+      }
+    },
+    {
+      "draft_id": "D013",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F013"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "Big data tools and challenges",
+        "core_explanation_md": "| Tool | Role |\n| --- | --- |\n| **Hadoop** | **Open-source** framework storing and analysing data on **clusters of commodity hardware** |\n| **NoSQL database** | **Non-relational**, **no fixed schema**; suits large **raw, unstructured** data |\n| **MapReduce** | **Map**: distribute data to nodes; **reduce**: organise and condense each node results |\n| **YARN** | **Job scheduling and resource management** in the cluster |\n| **Spark** | Open-source cluster computing; **batch and stream** processing, quick |\n| **Tableau** | **Self-service visual analytics** platform |\n\n**Challenges:** **making data accessible**; **data quality** (mistakes, inconsistencies, conflicts, duplicates); **security and privacy**; and **choosing tools** that fit the existing ecosystem and stay flexible.",
+        "expanded_explanation_md": "No single tool covers collection, processing, cleaning and analysis.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "What does MapReduce do?",
+          "expected_takeaway": "It splits work across cluster nodes (map) and then combines and condenses their results (reduce)."
+        }
+      }
+    },
+    {
+      "draft_id": "D014",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F014"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "Web and mobile analytics: tracking and comparison",
+        "core_explanation_md": "**Web analytics** studies visitor behaviour on websites; **mobile web analytics** collects data on visitors using **mobile phones** and shows what works best for **mobile traffic**.\n\n**Data:** page views, visits, users, countries and **mobile-specific information** (device model, maker, screen size, capabilities, provider, language).\n\n**Tracking problems:** **visitor identification** is the hardest (**cookies and JavaScript are unreliable** on mobile); **JavaScript tagging** assumes the browser runs it; **cookies** can be disabled; **IP address** reveals the operator or country, not the user.\n\n**Collection methods:** **packet sniffing** (tagless), **image beacons**, **link redirection** (records clicks, including those leaving a site), **HTTP header analysis**, **IP analysis**, **gateway logs**.\n\n| Web analytics | Mobile analytics |\n| --- | --- |\n| Page views, **new, repeat and unique users**, cohorts | **App use**: length of visit, origin, **in-app purchases**, **location** |\n| Longer sessions | **Shorter, more frequent** sessions |\n| Ads can be blocked in the browser | Ads handled **inside apps** |\n\nUsers **switch devices**, so a **cross-platform** approach is needed.",
+        "expanded_explanation_md": "A session is the period of one visit; defining it differs between websites and apps.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Why is visitor identification hard in mobile analytics?",
+          "expected_takeaway": "Cookies and JavaScript are unreliable on mobile devices, so visitors cannot always be recognised."
+        }
+      }
+    },
+    {
+      "draft_id": "D015",
+      "item_type": "card",
+      "variant": "concept",
+      "fact_ids": [
+        "F015"
+      ],
+      "payload": {
+        "prerequisite_objective_ids": [],
+        "title": "Importance, benefits, challenges and skills of business analytics",
+        "core_explanation_md": "**Why it matters:** it **boosts performance** (shows what works), enables **quicker, more accurate choices**, **reduces negative outcomes** and **inspires change and creativity**.\n\n**Benefits:** **model and project trends** to prepare for the unforeseen; **test new marketing**; **forecast orders and cut waste**; **find customers unlikely to return**.\n\n**Challenges:** **leadership support and a clear strategy**; **senior management buy-in**; **IT engagement and tools**; **executive ownership**; **sustained dedication** (cost may be high and returns slow early on); **end-user involvement and change management**; **integrating varied data**; **shortage of skilled staff** and **storage limits** in small firms.\n\n**Skills:** **critical thinking, problem solving, communication, curiosity, attention to detail**.",
+        "expanded_explanation_md": "Analytics succeeds only when the organisation is ready to act on what it learns.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Name two challenges of introducing business analytics.",
+          "expected_takeaway": "For example lack of leadership buy-in and a shortage of skilled staff."
+        }
+      }
+    },
+    {
+      "draft_id": "D016",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "Business analytics is best described as",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "A mix of skills, technologies and practices used to analyse data and performance to make data-driven decisions",
+            "explanation_md": "This is the core meaning."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A way to print financial statements",
+            "explanation_md": "Not its purpose, so it does not answer this question."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A type of bank deposit",
+            "explanation_md": "Not related, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A government licence",
+            "explanation_md": "Not related, so it does not answer this question."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "BA meaning."
+      }
+    },
+    {
+      "draft_id": "D017",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Which is a typical commercial use of business analytics?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Replacing all employees",
+            "explanation_md": "Not a use described."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Monitoring key performance indicators in real time",
+            "explanation_md": "KPIs are watched through analytics."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Printing share certificates",
+            "explanation_md": "Not a use described."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Setting interest rates by law",
+            "explanation_md": "Not a use described."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "BA uses."
+      }
+    },
+    {
+      "draft_id": "D018",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F001"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Which type of analytics answers the question of what has happened?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Diagnostic analytics",
+            "explanation_md": "It asks why it happened."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Predictive analytics",
+            "explanation_md": "It asks what is likely to happen."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Descriptive analytics",
+            "explanation_md": "It interprets historical data and KPIs."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Prescriptive analytics",
+            "explanation_md": "It recommends what to do."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "Descriptive."
+      }
+    },
+    {
+      "draft_id": "D019",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F002"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Drill-down, data discovery and correlation are most associated with",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Descriptive analytics only",
+            "explanation_md": "Descriptive summarises what happened."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Prescriptive analytics",
+            "explanation_md": "That recommends actions."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Data visualisation only",
+            "explanation_md": "Not the type, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Diagnostic analytics",
+            "explanation_md": "They help find why an event happened."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "Diagnostic."
+      }
+    },
+    {
+      "draft_id": "D020",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F002"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Forecasting the opinions of clients from social media data is an example of",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Predictive analytics",
+            "explanation_md": "It estimates a future outcome from data."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Descriptive analytics",
+            "explanation_md": "That summarises the past."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Diagnostic analytics",
+            "explanation_md": "That explains causes."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Prescriptive analytics",
+            "explanation_md": "That recommends actions."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "Predictive."
+      }
+    },
+    {
+      "draft_id": "D021",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F002"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Prescriptive analytics goes beyond forecasting by",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only listing past events",
+            "explanation_md": "That is descriptive."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Suggesting the actions that lead to the best outcome",
+            "explanation_md": "It recommends what to do."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Explaining past causes only",
+            "explanation_md": "That is diagnostic, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Storing raw data only",
+            "explanation_md": "That is storage, so it does not answer this question."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "Prescriptive."
+      }
+    },
+    {
+      "draft_id": "D022",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F002"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "The four types of analytics are applied in order from",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The most complicated to the least",
+            "explanation_md": "The reverse of the courseware."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Random order",
+            "explanation_md": "They are applied in succession."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The least complicated to the most complicated",
+            "explanation_md": "Each builds on the previous one."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Only one at a time for ever",
+            "explanation_md": "They are used in succession."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "Order of types."
+      }
+    },
+    {
+      "draft_id": "D023",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F003"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "Data mining is the process of",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Printing reports",
+            "explanation_md": "Not its meaning, so it does not answer this question."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Deleting old data",
+            "explanation_md": "Not its meaning, so it does not answer this question."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Encrypting files",
+            "explanation_md": "Not its meaning, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Searching big datasets for patterns and relationships",
+            "explanation_md": "This is its meaning."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "Data mining."
+      }
+    },
+    {
+      "draft_id": "D024",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "In the data mining process, data preparation includes",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Exploring, profiling and cleansing the data and making data sets consistent",
+            "explanation_md": "The data must be ready for mining."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Presenting final results to the board",
+            "explanation_md": "That is interpretation."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Collecting data from sources",
+            "explanation_md": "That is the first step."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Running the algorithm on all data at once",
+            "explanation_md": "That is mining, so it does not answer this question."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "Data preparation."
+      }
+    },
+    {
+      "draft_id": "D025",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A data lake is",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "A type of chart",
+            "explanation_md": "Not a chart, so it does not answer this question."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A repository that can hold structured and unstructured data",
+            "explanation_md": "It stores diverse data in raw form."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A rule for classification",
+            "explanation_md": "Not a rule, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A cleaning algorithm",
+            "explanation_md": "Not an algorithm, so it does not answer this question."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "Data lake."
+      }
+    },
+    {
+      "draft_id": "D026",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Support in an association rule measures",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "How often the if-then statement is accurate",
+            "explanation_md": "That is confidence, so it does not answer this question."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The number of clusters",
+            "explanation_md": "Not related, so it does not answer this question."
+          },
+          {
+            "option_id": "C",
+            "text_md": "How often the related elements appear together in the data",
+            "explanation_md": "It reflects frequency."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The size of the data lake",
+            "explanation_md": "Not related, so it does not answer this question."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "Support."
+      }
+    },
+    {
+      "draft_id": "D027",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Grouping customers into segments with common characteristics, for example with k-means, is",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Classification into predefined classes",
+            "explanation_md": "Clustering does not use predefined labels."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Regression",
+            "explanation_md": "Regression predicts values."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Association rule mining",
+            "explanation_md": "That finds if-then links."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Clustering",
+            "explanation_md": "It groups data that share characteristics."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "Clustering."
+      }
+    },
+    {
+      "draft_id": "D028",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Predicting a value from relationships among variables, for example by linear regression, is",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Regression",
+            "explanation_md": "It estimates a numerical value."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Clustering",
+            "explanation_md": "Clustering groups data."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Anomaly detection",
+            "explanation_md": "It finds outliers, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Text categorisation",
+            "explanation_md": "It classifies text, so it does not answer this question."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "Regression technique."
+      }
+    },
+    {
+      "draft_id": "D029",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "Anomaly detection seeks to identify",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The average value only",
+            "explanation_md": "Not its aim, so it does not answer this question."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Outlier values in a data set",
+            "explanation_md": "It finds data that differ from the rest."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Duplicate files only",
+            "explanation_md": "Not its aim, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The fastest server",
+            "explanation_md": "Not its aim, so it does not answer this question."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "Anomaly detection."
+      }
+    },
+    {
+      "draft_id": "D030",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F005"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Predictive maintenance in manufacturing uses data mining of",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Customer complaints only",
+            "explanation_md": "Not the data used, so it does not answer this question."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Tax returns",
+            "explanation_md": "Not the data used, so it does not answer this question."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Sensor data from machines to spot problems before they occur",
+            "explanation_md": "It reduces unscheduled downtime."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Advertisement copy",
+            "explanation_md": "Not the data used, so it does not answer this question."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "Predictive maintenance."
+      }
+    },
+    {
+      "draft_id": "D031",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F005"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Which is a use of data mining in financial services?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Printing currency",
+            "explanation_md": "Not a use, so it does not answer this question."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Setting the repo rate",
+            "explanation_md": "Not a use, so it does not answer this question."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Auditing the government",
+            "explanation_md": "Not a use, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Detecting fraudulent transactions and validating loan applications",
+            "explanation_md": "These are listed uses."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "Finance use."
+      }
+    },
+    {
+      "draft_id": "D032",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F006"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "Text mining converts",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Unstructured text into a structured format so patterns can be found",
+            "explanation_md": "It makes text analysable."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Structured tables into images",
+            "explanation_md": "Not its purpose, so it does not answer this question."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Audio into currency",
+            "explanation_md": "Not its purpose, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Paper into pulp",
+            "explanation_md": "Not its purpose, so it does not answer this question."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "Text mining."
+      }
+    },
+    {
+      "draft_id": "D033",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F006"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Which is an example of semi-structured data?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "A table of names and phone numbers",
+            "explanation_md": "That is structured data."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A file in XML or JSON format",
+            "explanation_md": "It is partly organised but not relational."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A video file",
+            "explanation_md": "That is unstructured."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A social media post of free text",
+            "explanation_md": "That is unstructured."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "Semi-structured."
+      }
+    },
+    {
+      "draft_id": "D034",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F006"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Stemming in information retrieval is",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Splitting text into sentences",
+            "explanation_md": "That is tokenisation."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Labelling each word as noun or verb",
+            "explanation_md": "That is part-of-speech tagging."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Removing prefixes and suffixes to reach the root of a word",
+            "explanation_md": "It reduces the space needed for indexing."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Summarising a document",
+            "explanation_md": "That is summarisation."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "Stemming."
+      }
+    },
+    {
+      "draft_id": "D035",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F006"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Tokenisation means",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Removing suffixes",
+            "explanation_md": "That is stemming, so it does not answer this question."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Finding names of places",
+            "explanation_md": "That is named-entity recognition."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Identifying positive opinions",
+            "explanation_md": "That is sentiment analysis."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Separating a long text into individual words and sentences called tokens",
+            "explanation_md": "Tokens are used in bag-of-words models."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "Tokenisation."
+      }
+    },
+    {
+      "draft_id": "D036",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F006"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Sentiment analysis is used to",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Identify positive or negative opinion about brands, products and services",
+            "explanation_md": "It tracks attitudes over time."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Assign grammar tags",
+            "explanation_md": "That is part-of-speech tagging."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Reduce words to roots",
+            "explanation_md": "That is stemming, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Locate named people",
+            "explanation_md": "That is entity recognition."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "Sentiment analysis."
+      }
+    },
+    {
+      "draft_id": "D037",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F006"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "Named-entity recognition finds and classifies",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Prefixes and suffixes",
+            "explanation_md": "That is stemming, so it does not answer this question."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Entities in text such as names and locations",
+            "explanation_md": "It identifies and labels them."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The opinion of the writer",
+            "explanation_md": "That is sentiment analysis."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The length of the text",
+            "explanation_md": "Not its task, so it does not answer this question."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "NER."
+      }
+    },
+    {
+      "draft_id": "D038",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F007"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Granularity in data aggregation is",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "How often a device is sampled",
+            "explanation_md": "That is the polling period."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The size of the data lake",
+            "explanation_md": "Not related, so it does not answer this question."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The period over which individual data points are gathered and aggregated",
+            "explanation_md": "It sets the time bucket of the summary."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The name of the report",
+            "explanation_md": "Not related, so it does not answer this question."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "Granularity."
+      }
+    },
+    {
+      "draft_id": "D039",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F007"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Spatial aggregation refers to",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Data points for a single resource over a period",
+            "explanation_md": "That is time aggregation."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Only the highest value",
+            "explanation_md": "Not the definition, so it does not answer this question."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Only the count",
+            "explanation_md": "Not the definition, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Data points for a group of resources over a period",
+            "explanation_md": "It combines across resources."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "Spatial aggregation."
+      }
+    },
+    {
+      "draft_id": "D040",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F007"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "If the polling period is shorter than the granularity, then within each granularity period",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Each resource is sampled several times and the samples are averaged",
+            "explanation_md": "More than one sample contributes to the value."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Each resource gives only one sample",
+            "explanation_md": "That is when they are equal."
+          },
+          {
+            "option_id": "C",
+            "text_md": "No data are recorded",
+            "explanation_md": "Data are recorded, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Only the first sample is kept",
+            "explanation_md": "All samples are used."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "Polling vs granularity."
+      }
+    },
+    {
+      "draft_id": "D041",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F008"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Why can qualitative forecasting methods contain errors?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "They use too much data",
+            "explanation_md": "They use little data."
+          },
+          {
+            "option_id": "B",
+            "text_md": "They rest on personal judgement and intuition, which are subjective",
+            "explanation_md": "Opinions can be biased."
+          },
+          {
+            "option_id": "C",
+            "text_md": "They are fully objective",
+            "explanation_md": "They are subjective."
+          },
+          {
+            "option_id": "D",
+            "text_md": "They need a computer",
+            "explanation_md": "Not the reason, so it does not answer this question."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "Qualitative limits."
+      }
+    },
+    {
+      "draft_id": "D042",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F008"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Quantitative forecasting is described as",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Based only on opinion",
+            "explanation_md": "That is qualitative."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Impossible for companies",
+            "explanation_md": "Most firms use it, so it does not answer this question."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Consistent and objective because it relies on mathematical procedures and data",
+            "explanation_md": "It avoids opinion and intuition."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Subjective by nature",
+            "explanation_md": "It is objective, so it does not answer this question."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "Quantitative."
+      }
+    },
+    {
+      "draft_id": "D043",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F008"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "In the forecasting process, making adjustments means",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Ignoring actual results",
+            "explanation_md": "They are compared, so it does not answer this question."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Stopping the process",
+            "explanation_md": "It is iterative, so it does not answer this question."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Choosing a new industry",
+            "explanation_md": "Not what it means, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Comparing earlier forecasts with actual results and analysing the differences",
+            "explanation_md": "Differences are used to improve the next forecast."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "Forecast adjustment."
+      }
+    },
+    {
+      "draft_id": "D044",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F008"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Forecasting is described as an iterative process because",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Each cycle checks results and tweaks the method for the next forecast",
+            "explanation_md": "It is repeated and improved."
+          },
+          {
+            "option_id": "B",
+            "text_md": "It is done only once",
+            "explanation_md": "It is repeated, so it does not answer this question."
+          },
+          {
+            "option_id": "C",
+            "text_md": "It needs no data",
+            "explanation_md": "It needs data, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "It is never changed",
+            "explanation_md": "It is improved, so it does not answer this question."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "Iterative."
+      }
+    },
+    {
+      "draft_id": "D045",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F009"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Which chart is best for showing the proportions of a total?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "A scatter plot",
+            "explanation_md": "It shows a relationship."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A pie chart or stacked bar chart",
+            "explanation_md": "They show parts of a whole."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A line graph",
+            "explanation_md": "It shows change over time."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A histogram",
+            "explanation_md": "It shows a distribution."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "Proportions chart."
+      }
+    },
+    {
+      "draft_id": "D046",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F009"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A histogram differs from an ordinary bar chart in that",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "It shows a path on a map",
+            "explanation_md": "That is a heat map or map."
+          },
+          {
+            "option_id": "B",
+            "text_md": "It uses only lines",
+            "explanation_md": "That is a line graph."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Its bars have no spaces between them and show a distribution of numbers",
+            "explanation_md": "It displays how values are distributed."
+          },
+          {
+            "option_id": "D",
+            "text_md": "It shows hierarchy as rectangles",
+            "explanation_md": "That is a tree map, so it does not answer this question."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "Histogram."
+      }
+    },
+    {
+      "draft_id": "D047",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F009"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A bubble chart differs from a scatter plot because it",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Shows only one variable",
+            "explanation_md": "It shows three, so it does not answer this question."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Has no axes",
+            "explanation_md": "It has axes, so it does not answer this question."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Shows time on a clock",
+            "explanation_md": "Not its feature, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Uses the size of the bubble to show a third variable",
+            "explanation_md": "Bubble size adds a dimension."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "Bubble chart."
+      }
+    },
+    {
+      "draft_id": "D048",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F009"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A tree map is used to",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Show hierarchical data as nested rectangles and compare proportions of categories",
+            "explanation_md": "Size of each rectangle shows proportion."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Show change over time with lines",
+            "explanation_md": "That is a line graph."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Show a relationship between two variables",
+            "explanation_md": "That is a scatter plot."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Show a distribution without gaps",
+            "explanation_md": "That is a histogram."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "Tree map."
+      }
+    },
+    {
+      "draft_id": "D049",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F010"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Which Excel skill lets a user summarise large tables by dragging fields?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Macros only",
+            "explanation_md": "They automate tasks."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Pivot tables",
+            "explanation_md": "They summarise data interactively."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Data validation",
+            "explanation_md": "It restricts entries."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Workbook protection",
+            "explanation_md": "Not a summarising tool."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "Pivot tables."
+      }
+    },
+    {
+      "draft_id": "D050",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F011"
+      ],
+      "payload": {
+        "difficulty": "easy",
+        "stem_md": "Big data is typically described by",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Low volume and low variety",
+            "explanation_md": "Not big data, so it does not answer this question."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Only structured data",
+            "explanation_md": "It includes unstructured data."
+          },
+          {
+            "option_id": "C",
+            "text_md": "High volume, high velocity and high variety",
+            "explanation_md": "These three features define it."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Only small data sets",
+            "explanation_md": "It is large, so it does not answer this question."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "Big data features."
+      }
+    },
+    {
+      "draft_id": "D051",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F011"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Which is a use of big data analytics in financial services?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Making coins",
+            "explanation_md": "Not a use, so it does not answer this question."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Drilling for oil",
+            "explanation_md": "That is oil and gas."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Growing crops",
+            "explanation_md": "Not a use, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Detecting fraud and supporting anti-money laundering and regulatory reporting",
+            "explanation_md": "These are listed uses."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "Finance big data."
+      }
+    },
+    {
+      "draft_id": "D052",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F011"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Customer churn analysis in telecommunications means",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Forecasting which customers are likely to leave so retention offers can be made",
+            "explanation_md": "It warns of customers about to leave."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Counting new towers",
+            "explanation_md": "Not churn, so it does not answer this question."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Printing bills",
+            "explanation_md": "Not churn, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Designing phones",
+            "explanation_md": "Not churn, so it does not answer this question."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "Churn."
+      }
+    },
+    {
+      "draft_id": "D053",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F011"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "Customer lifetime value analysis helps a retailer",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Treat all customers alike",
+            "explanation_md": "It differentiates them."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Identify which customers are most valuable and focus its marketing on them",
+            "explanation_md": "It ranks customers by value."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Reduce all prices",
+            "explanation_md": "Not its purpose, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Close the stores",
+            "explanation_md": "Not its purpose, so it does not answer this question."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "Lifetime value."
+      }
+    },
+    {
+      "draft_id": "D054",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F012"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Batch processing differs from stream processing in that batch",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Handles one record instantly",
+            "explanation_md": "That describes stream processing."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Needs no storage",
+            "explanation_md": "It needs storage, so it does not answer this question."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Handles large blocks of data over a period and suits longer turnaround times",
+            "explanation_md": "Stream handles data as it arrives."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Is always more costly",
+            "explanation_md": "Stream is more costly."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "Batch vs stream."
+      }
+    },
+    {
+      "draft_id": "D055",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F012"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Data cleaning in big data work means",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Deleting all data",
+            "explanation_md": "Not the meaning, so it does not answer this question."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Making charts",
+            "explanation_md": "Not the meaning, so it does not answer this question."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Encrypting servers",
+            "explanation_md": "Not the meaning, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Correcting formats and removing redundant or irrelevant information",
+            "explanation_md": "Bad data leads to wrong insights."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "Data cleaning."
+      }
+    },
+    {
+      "draft_id": "D056",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F012"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Deep learning in the analysis stage",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Imitates human learning patterns to find complex, abstract patterns",
+            "explanation_md": "It uses layered algorithms."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Counts rows only",
+            "explanation_md": "Not what it does, so it does not answer this question."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Deletes outliers only",
+            "explanation_md": "Not what it does, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Draws pie charts",
+            "explanation_md": "Not what it does, so it does not answer this question."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "Deep learning."
+      }
+    },
+    {
+      "draft_id": "D057",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F013"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Hadoop is",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "A chart type",
+            "explanation_md": "Not a chart, so it does not answer this question."
+          },
+          {
+            "option_id": "B",
+            "text_md": "An open-source framework that stores and analyses large datasets on clusters of commodity hardware",
+            "explanation_md": "It is a core big data platform."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A tax rule",
+            "explanation_md": "Not a rule, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A mobile network",
+            "explanation_md": "Not a network, so it does not answer this question."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "Hadoop."
+      }
+    },
+    {
+      "draft_id": "D058",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F013"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A NoSQL database is suited to big data because it",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Requires every record to have the same fields",
+            "explanation_md": "That is relational, so it does not answer this question."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Cannot store text",
+            "explanation_md": "It can, so it does not answer this question."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Does not require a fixed schema and handles raw unstructured data",
+            "explanation_md": "It is flexible in structure."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Is limited to small data",
+            "explanation_md": "It scales, so it does not answer this question."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "NoSQL."
+      }
+    },
+    {
+      "draft_id": "D059",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F013"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Which is a challenge of big data named in the courseware?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Too few data sources",
+            "explanation_md": "Too many is the issue."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A lack of any data",
+            "explanation_md": "Volume is the issue."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The data are too small",
+            "explanation_md": "Volume is large, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Maintaining data quality and security and privacy",
+            "explanation_md": "Both are named challenges."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "Big data challenge."
+      }
+    },
+    {
+      "draft_id": "D060",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F014"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "The hardest tracking problem in mobile web analytics is",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Visitor identification, because cookies and JavaScript are unreliable on mobile devices",
+            "explanation_md": "Identifying visitors accurately is difficult."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Choosing a colour scheme",
+            "explanation_md": "Not a tracking problem."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Printing pages",
+            "explanation_md": "Not a tracking problem."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Paying for bandwidth",
+            "explanation_md": "Not a tracking problem."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "Visitor identification."
+      }
+    },
+    {
+      "draft_id": "D061",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F014"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Link redirection helps mobile analytics by",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Blocking all clicks",
+            "explanation_md": "Not its purpose, so it does not answer this question."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Recording clicks from marketing and clicks leaving a site",
+            "explanation_md": "It records activity that other methods miss."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Deleting cookies",
+            "explanation_md": "Not its purpose, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Reading the device battery",
+            "explanation_md": "Not its purpose, so it does not answer this question."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "Link redirection."
+      }
+    },
+    {
+      "draft_id": "D062",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F014"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Compared with web analytics, mobile analytics gives greater emphasis to",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Desktop page views only",
+            "explanation_md": "That is traditional web analytics."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Printed pages",
+            "explanation_md": "Not relevant, so it does not answer this question."
+          },
+          {
+            "option_id": "C",
+            "text_md": "App usage such as visit length, in-app purchases and the location of the user",
+            "explanation_md": "Apps and location are distinctive."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Telephone calls only",
+            "explanation_md": "Not relevant, so it does not answer this question."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "Mobile focus."
+      }
+    },
+    {
+      "draft_id": "D063",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F014"
+      ],
+      "payload": {
+        "difficulty": "hard",
+        "stem_md": "Why is a single analytics approach not enough when customers use several devices?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Devices never share data",
+            "explanation_md": "Not the reason, so it does not answer this question."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Web and mobile are identical",
+            "explanation_md": "They differ, so it does not answer this question."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Mobile users never buy",
+            "explanation_md": "Not true, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Customers switch between devices, so a cross-platform approach is needed",
+            "explanation_md": "Behaviour is spread across platforms."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "Cross-platform."
+      }
+    },
+    {
+      "draft_id": "D064",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F015"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Which is a stated challenge of introducing business analytics?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Obtaining leadership buy-in and a clear strategy",
+            "explanation_md": "Support from the top is needed."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Too many skilled staff",
+            "explanation_md": "A shortage is the issue."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Free software always",
+            "explanation_md": "Cost can be high, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "No data available ever",
+            "explanation_md": "Integration is the issue."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "BA challenge."
+      }
+    },
+    {
+      "draft_id": "D065",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F015"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Which skill is listed for a successful business analyst?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Avoiding detail",
+            "explanation_md": "Attention to detail is named."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Critical thinking and communication",
+            "explanation_md": "Both are named, so it does not answer this question."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Lack of curiosity",
+            "explanation_md": "Curiosity is named, so it does not answer this question."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Working alone only",
+            "explanation_md": "Communication is named."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "Analyst skills."
+      }
+    },
+    {
+      "draft_id": "D066",
+      "item_type": "question",
+      "variant": "single_choice",
+      "fact_ids": [
+        "F015"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Smaller organisations may find business analytics difficult because of",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Too much money",
+            "explanation_md": "Not the issue, so it does not answer this question."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Too little competition",
+            "explanation_md": "Not the issue, so it does not answer this question."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A shortage of suitable personnel and data storage limits",
+            "explanation_md": "These constraints are named."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Mandatory regulation of analytics",
+            "explanation_md": "Not stated, so it does not answer this question."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "Small firm limits."
+      }
+    },
+    {
+      "draft_id": "D067",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Of 200 transactions, 40 contain item A and 30 contain both A and B. What is the support of the rule A then B (per cent)?",
+        "numeric_rule": {
+          "expected_answer": "15",
+          "unit_label": "per cent",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "Support = 30 / 200 = 15 per cent.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Support.",
+            "formula_or_substitution": "30 / 200 x 100",
+            "intermediate_result": "15"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D068",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "For the same data, what is the confidence of the rule A then B (per cent)?",
+        "numeric_rule": {
+          "expected_answer": "75",
+          "unit_label": "per cent",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "Confidence = 30 / 40 = 75 per cent.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Confidence.",
+            "formula_or_substitution": "30 / 40 x 100",
+            "intermediate_result": "75"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D069",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Of 500 baskets, 100 contain bread and 60 of those also contain butter. What is the confidence of the rule bread then butter (per cent)?",
+        "numeric_rule": {
+          "expected_answer": "60",
+          "unit_label": "per cent",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "Confidence = 60 / 100 = 60 per cent.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Confidence.",
+            "formula_or_substitution": "60 / 100 x 100",
+            "intermediate_result": "60"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D070",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "For the same baskets, what is the support of the rule bread then butter (per cent)?",
+        "numeric_rule": {
+          "expected_answer": "12",
+          "unit_label": "per cent",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "Support = 60 / 500 = 12 per cent.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Support.",
+            "formula_or_substitution": "60 / 500 x 100",
+            "intermediate_result": "12"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D071",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F004"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A classifier labels 800 loan applications and 728 labels are correct. What is its accuracy (per cent)?",
+        "numeric_rule": {
+          "expected_answer": "91",
+          "unit_label": "per cent",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "Accuracy = 728 / 800 = 91 per cent.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Accuracy.",
+            "formula_or_substitution": "728 / 800 x 100",
+            "intermediate_result": "91"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D072",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F007"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A network device reports the following traffic readings over five minutes: 40, 55, 50, 45 and 60 Mbps. What is the five-minute average (Mbps)?",
+        "numeric_rule": {
+          "expected_answer": "50",
+          "unit_label": "Mbps",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "Average = (40 + 55 + 50 + 45 + 60) / 5 = 250 / 5 = 50 Mbps.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Total.",
+            "formula_or_substitution": "40 + 55 + 50 + 45 + 60",
+            "intermediate_result": "250"
+          },
+          {
+            "step_number": 2,
+            "description": "Average.",
+            "formula_or_substitution": "250 / 5",
+            "intermediate_result": "50"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D073",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F007"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Four devices each report an average load of 30, 50, 40 and 80 units over a ten-minute granularity. What is the spatial aggregate by average (units)?",
+        "numeric_rule": {
+          "expected_answer": "50",
+          "unit_label": "units",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "Average = (30 + 50 + 40 + 80) / 4 = 200 / 4 = 50 units.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Total.",
+            "formula_or_substitution": "30 + 50 + 40 + 80",
+            "intermediate_result": "200"
+          },
+          {
+            "step_number": 2,
+            "description": "Average.",
+            "formula_or_substitution": "200 / 4",
+            "intermediate_result": "50"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D074",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F007"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A resource is polled once every 2 minutes. How many samples fall in one 10-minute granularity period?",
+        "numeric_rule": {
+          "expected_answer": "5",
+          "unit_label": "samples",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "Samples = 10 / 2 = 5.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Samples.",
+            "formula_or_substitution": "10 / 2",
+            "intermediate_result": "5"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D075",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F008"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Monthly sales were Rs 100 lakh, Rs 110 lakh and Rs 120 lakh in the last three months. What is the three-month moving average forecast for next month (Rs lakh)?",
+        "numeric_rule": {
+          "expected_answer": "110",
+          "unit_label": "Rs lakh",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "Forecast = (100 + 110 + 120) / 3 = 110.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Forecast.",
+            "formula_or_substitution": "(100 + 110 + 120) / 3",
+            "intermediate_result": "110"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D076",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F008"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Forecast sales were Rs 110 lakh and actual sales were Rs 98 lakh. What is the forecast error, actual minus forecast, expressed as a shortfall (Rs lakh)?",
+        "numeric_rule": {
+          "expected_answer": "12",
+          "unit_label": "Rs lakh",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give the size of the shortfall as a positive number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "The actual figure is below the forecast by 110 - 98 = Rs 12 lakh.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Shortfall.",
+            "formula_or_substitution": "110 - 98",
+            "intermediate_result": "12"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D077",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F008"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Sales rose from Rs 80 lakh to Rs 92 lakh. What is the percentage change (per cent)?",
+        "numeric_rule": {
+          "expected_answer": "15",
+          "unit_label": "per cent",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "Change = (92 - 80) / 80 = 15 per cent.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Change.",
+            "formula_or_substitution": "(92 - 80) / 80 x 100",
+            "intermediate_result": "15"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D078",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F008"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Sales are Rs 200 lakh and the expected growth is 8 per cent. What is the simple growth forecast for next year (Rs lakh)?",
+        "numeric_rule": {
+          "expected_answer": "216",
+          "unit_label": "Rs lakh",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "Forecast = 200 x 1.08 = Rs 216 lakh.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Forecast.",
+            "formula_or_substitution": "200 x 1.08",
+            "intermediate_result": "216"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D079",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F011"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A bank has 8 lakh transactions in a day. A fraud model flags 0.05 per cent of them. How many transactions are flagged?",
+        "numeric_rule": {
+          "expected_answer": "400",
+          "unit_label": "transactions",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "Flagged = 0.0005 x 800,000 = 400.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Flagged.",
+            "formula_or_substitution": "0.0005 x 800,000",
+            "intermediate_result": "400"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D080",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F012"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A data lake holds 2.5 petabytes. Convert this to terabytes (1 petabyte = 1,000 terabytes).",
+        "numeric_rule": {
+          "expected_answer": "2500",
+          "unit_label": "terabytes",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "Terabytes = 2.5 x 1,000 = 2,500.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Terabytes.",
+            "formula_or_substitution": "2.5 x 1,000",
+            "intermediate_result": "2,500"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D081",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F012"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Storing data in the cloud lowers a firm yearly storage cost from Rs 80 lakh to Rs 56 lakh. What is the percentage saving (per cent)?",
+        "numeric_rule": {
+          "expected_answer": "30",
+          "unit_label": "per cent",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "Saving = (80 - 56) / 80 = 30 per cent.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Saving.",
+            "formula_or_substitution": "(80 - 56) / 80 x 100",
+            "intermediate_result": "30"
+          }
+        ]
+      }
+    },
+    {
+      "draft_id": "D082",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "fact_ids": [
+        "F015"
+      ],
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An analytics project costs Rs 60 lakh in the first year and brings extra profit of Rs 75 lakh. What is the return on the investment (per cent)?",
+        "numeric_rule": {
+          "expected_answer": "25",
+          "unit_label": "per cent",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "Net gain = 75 - 60 = 15. Return = 15 / 60 = 25 per cent.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Net gain.",
+            "formula_or_substitution": "75 - 60",
+            "intermediate_result": "15"
+          },
+          {
+            "step_number": 2,
+            "description": "Return.",
+            "formula_or_substitution": "15 / 60 x 100",
+            "intermediate_result": "25"
+          }
+        ]
+      }
+    }
+  ],
+  "unresolved": [
+    "This unit is the courseware general account of business analytics, data mining, text mining, forecasting, data visualisation, big data and web and mobile analytics. No banking regulation or primary technical standard applies and none was consulted. Concepts are taught at the level the courseware states them.",
+    "The courseware gives vendor lists (data mining software and big data tools), platform lists for mobile analytics, conference and journal history for data mining (a 1995 conference, a 1997 journal), the Egyptian origin of data visualisation, industry anecdotes (meal kit companies, a drive-through, a company chief executive quotation), and named regulatory laws and frameworks in financial services (a United States act, Basel III). These are narrative, were not checked and are not taught or tested as facts.",
+    "The courseware describes the mobile analytics tracking methods in detail (JavaScript page tagging, cookies, image tags, IP address analysis, packet sniffing, link redirection, header analysis, gateway logs) for older mobile technology; they are dated, and only the general problems (visitor identification, session definition, differences from web analytics) are taught.",
+    "The courseware states the Hadoop component roles briefly and the YARN description is loose; the courseware text on Spark and Tableau is marketing-style. Only the role of each tool is taught.",
+    "The courseware text on Excel proficiency is a list of skills only; no spreadsheet functions are taught beyond naming them.",
+    "The courseware check-your-progress question about assets, liabilities and equity concerns the accounting equation and is not part of this unit; it was not used.",
+    "The calculation items (support and confidence of an association rule, accuracy, aggregation by average, moving average forecast, percentage change, share of total) are generic arithmetic applied to the courseware definitions; the courseware gives no worked figures. Numbers are invented and checked in tests/content/batch-abfm-d-u05-b001.test.ts.",
+    "The courseware check-your-progress questions were not copied; questions are independently written.",
+    "Reviewer for this batch is the authoring agent; no independent or human review.",
+    "Reviewer for this batch is the authoring agent; no independent or human review."
+  ],
+  "next_batch_hint": "ABFM Module D unit 6 (courseware unit 24, Green and Sustainable Financing) from printed p. 563 (title page, PDF p. 578; text from PDF p. 579; PDF page = printed + 15); pages to PDF 584 already rendered in tmp/abfm; confirm the boundary of unit 7 (SPAC) later."
+}
