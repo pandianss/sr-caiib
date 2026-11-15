@@ -22,6 +22,11 @@
     "validate:staging": "node scripts/validate-staging.mjs",
     "import:staging": "node scripts/import-staging.mjs"
   },
+  "overrides": {
+    "@typescript-eslint/typescript-estree": {
+      "minimatch": "11.0.1"
+    }
+  },
   "dependencies": {
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
