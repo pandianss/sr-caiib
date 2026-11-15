@@ -19,11 +19,11 @@ test('BFM D U02 B001: capital adequacy figures recompute', () => {
   const rwa = 8000 + 12.5 * 40 + 12.5 * 60;
   check('A bank has credit RWA of Rs 8,000 crore', rwa, '9250');
   check('With regulatory capital of Rs 925 crore', 925 / rwa * 100, '10');
-  check('Assume a minimum capital ratio of 9 per cent', 0.09 * rwa, '832.5');
-  check('With capital of Rs 925 crore and the same requirement', 925 - 0.09 * rwa, '92.5');
+  check('Assume a minimum capital ratio of 9 per cent', 0.09 * rwa, '832.50');
+  check('With capital of Rs 925 crore and the same requirement', 925 - 0.09 * rwa, '92.50');
   check('Tier I capital is Rs 600 crore and Tier II is Rs 450', Math.min(450, 600), '450');
   check('Tier I capital is Rs 400 crore and Tier II is Rs 700', 400 + Math.min(700, 400), '800');
-  check('A bank holds capital of Rs 1,100 crore', 1100 / (10000 + 12.5 * 80 + 12.5 * 120) * 100, '8.8');
+  check('A bank holds capital of Rs 1,100 crore', 1100 / (10000 + 12.5 * 80 + 12.5 * 120) * 100, '8.80');
   check('A bank has total RWA of Rs 12,500 crore and a market', 12.5 * 80 / 12500 * 100, '8');
   check('Pillar 2 adds an assumed buffer', 0.105 * 10000, '1050');
   check('Under a stress scenario, losses of Rs 300 crore', (1200 - 300) / 10000 * 100, '9');
