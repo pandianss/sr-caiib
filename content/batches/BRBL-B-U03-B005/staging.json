@@ -1,0 +1,188 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-B-U03-B005",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL Module B unit 3: FEMA — Apply overseas-asset and repatriation provisions with their permissions, exceptions and defined meaning",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04",
+    "FEMA_ACT_1999"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "statement": "Courseware defines repatriation, reproduces broad restrictions on dealing and holding overseas assets, and describes exporter declaration and repatriation duties. Its general no-overseas-holding statement is simplified.",
+      "source_id": "S04",
+      "locator": "S04 printed pp. 171–172; PDF page = printed page + 19",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F002",
+      "statement": "Sections 4 and 8 are expressly qualified; section 6(4) permits specified foreign assets acquired while non-resident or inherited from a non-resident, and section 9 contains exemptions. Repatriation includes the specified sale to an authorised person, notified holding and use to discharge a foreign-currency debt. Section 7 addresses export declarations and section 8 reasonable steps within RBI-specified period/manner.",
+      "source_id": "FEMA_ACT_1999",
+      "locator": "sections 2(y), 4–9, PDF pp. 5–8",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "draft_id": "D001",
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Start with the restriction, then check its statutory qualifications",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "Section 4 restricts resident holding and dealing in the specified foreign exchange, foreign securities and overseas immovable property **except as otherwise provided**. Those opening words matter. For example, Section 6(4) addresses specified assets acquired while the person was non-resident or inherited from a non-resident.\n\nThe correct bank workflow is to establish residence, acquisition history and the applicable permission or exception. Neither “all overseas assets are forbidden” nor “anything inherited is unrestricted for every purpose” is a sound substitute. The asset's later use and transaction-specific rules still need analysis.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Why should an overseas-asset file retain the history of acquisition and prior residence?",
+          "expected_takeaway": "Those facts can be relevant to statutory qualifications such as Section 6(4), beyond the general holding restriction."
+        }
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D002",
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Repatriation is a defined outcome with regulated methods",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "Repatriation is not simply a synonym for handing over foreign cash at a counter. Section 2(y) addresses bringing realised foreign exchange into India and the specified sale to an authorised person or notified account holding; it also includes use to discharge a foreign-currency debt or liability. Conditions and applicable permissions must still be checked.\n\nSections 7–8 separately address export declarations and reasonable steps to realise and repatriate amounts due or accrued, within the period and manner specified by RBI, subject to statutory qualifications. Do not infer one universal deadline from the bare Act or ignore an applicable exemption. The relevant dated RBI direction belongs with the transaction file.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does the bare Act supply a single fixed realisation period for every export request?",
+          "expected_takeaway": "No. It refers to RBI-specified period and manner, with applicable qualifications and exemptions."
+        }
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D003",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A returning resident holds a foreign asset acquired while non-resident. A branch cites only Section 4 and concludes that acquisition history is irrelevant. Which additional statutory provision should be examined?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only the general restriction, without examining any statutory qualifications",
+            "explanation_md": "The general restriction must be read with the Act provisions that permit the specified prior-acquired or inherited holdings."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Section 6(4), dealing with the specified prior-non-resident acquisition and inheritance cases",
+            "explanation_md": "The asset history can engage a statutory qualification; the general restriction must not be read in isolation."
+          },
+          {
+            "option_id": "C",
+            "text_md": "An unconditional permission arising from any historic overseas connection",
+            "explanation_md": "The Act provides defined qualifications, not an unlimited exemption for every overseas connection."
+          },
+          {
+            "option_id": "D",
+            "text_md": "An automatic exemption for every foreign asset held by an Indian citizen",
+            "explanation_md": "Citizenship alone does not establish the residence and acquisition-history conditions of Section 6(4)."
+          }
+        ],
+        "correct_explanation_md": "The asset history can engage a statutory qualification; the general restriction must not be read in isolation."
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D004",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A team proposes one permanent export-realisation deadline based only on Section 8, without checking the applicable RBI direction. What is the main problem?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Section 8 never concerns foreign exchange due to residents",
+            "explanation_md": "It expressly addresses foreign exchange due or accrued to persons resident in India."
+          },
+          {
+            "option_id": "B",
+            "text_md": "All exporter declarations are optional in every case",
+            "explanation_md": "The Act contains export declaration duties; the proposed blanket exemption is unsupported."
+          },
+          {
+            "option_id": "C",
+            "text_md": "An exporter may choose any deadline by writing it on an invoice",
+            "explanation_md": "A commercial invoice cannot replace the applicable legal period and conditions."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The section relies on RBI-specified period and manner, which need a dated source check",
+            "explanation_md": "The bare Act alone does not establish one fixed operational period for every case."
+          }
+        ],
+        "correct_explanation_md": "The bare Act alone does not establish one fixed operational period for every case."
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D005",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A training note defines repatriation exclusively as conversion of physical foreign notes to rupees and excludes every other route. Which correction follows Section 2(y)?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Remove every authorised-person condition from the definition",
+            "explanation_md": "The statutory methods include authorised-person involvement and notified-account conditions."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Treat any private offshore account as sufficient in every case",
+            "explanation_md": "The definition does not authorise unrestricted offshore retention."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Include the specified notified holding and foreign-currency liability discharge routes, subject to conditions",
+            "explanation_md": "The definition is broader than physical-cash conversion, but its qualifications remain essential."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Apply only the customer's nationality to decide repatriation",
+            "explanation_md": "Nationality alone does not define the permitted method of realisation and repatriation."
+          }
+        ],
+        "correct_explanation_md": "The definition is broader than physical-cash conversion, but its qualifications remain essential."
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Codex authoring only. Independent source/session, originality and pedagogical review pending; canonical review must remain null and items must remain draft.",
+    "The local Enforcement Directorate statutory copy was read directly for the cited provisions. It has footnotes with 2019 commencement dates; its consolidation through 30 June 2026 has not been established. Current subordinate rules, directions, notifications and relevant judgments must be checked before publication.",
+    "Courseware printed pp. 169–176 / PDF pp. 188–195, including end questions, inspected as images. Teaching and questions designed independently from factual briefs; no source passage, comparison table, named case or source-question number-swap reused. Independent originality review remains pending.",
+    "Current export-realisation periods, LRS limits, overseas investment conditions, current/capital rules and any post-cutoff 2026 directions are deliberately not taught as verified values. Existing BFM primary-source batches are separate evidence, not automatic approval of this BRBL batch."
+  ],
+  "next_batch_hint": "Continue BRBL-B-U03-B006; retain the independent review gate."
+}

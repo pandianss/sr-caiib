@@ -1,0 +1,690 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-B-U04-B001",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL Module B unit 4: Payment and Settlement Systems Act — Distinguish payment systems, instructions, obligations, operators, participants and systemic risk",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04",
+      "PSS_ACT_DFS"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "statement": "Courseware defines bank, derivative, electronic funds transfer, gross settlement, LEI/issuer, netting, instruction, obligation, system, settlement, participant and trade repository.",
+        "source_id": "S04",
+        "locator": "S04 printed pp. 178–179; PDF page = printed page + 19",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "statement": "A payment system enables payer-to-beneficiary payment involving clearing, payment or settlement services and excludes a stock exchange in its definition. Instruction is the payment order; obligation is inter-participant indebtedness from the specified processes; settlement discharges the relevant instructions. System participant includes the provider, which operates an authorised system. Systemic risk involves disruption/default transmission and likely system-stability impact. Derivative, LEI/issuer and trade-repository definitions address distinct functions.",
+        "source_id": "PSS_ACT_DFS",
+        "locator": "section 2, PDF pp. 3–5",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "draft_id": "D001",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Read the instruction, the obligation and the service separately",
+          "core_explanation_md": "A customer's **payment instruction** is an order or authorisation to effect payment. It can generate a **payment obligation** between system participants through clearing or settlement. **Settlement** addresses the payment instructions and can involve funds, securities, foreign exchange or derivatives. Treating these as synonyms makes it hard to see what has actually happened in a payment file.\n\nThe **payment system** supplies clearing, payment or settlement services between payer and beneficiary; it need not perform all three services to fit the definition. The definition excludes a stock exchange. A service's commercial name or digital appearance alone does not determine its classification.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does receipt of an instruction prove that the resulting obligation has already been settled?",
+            "expected_takeaway": "No. Instruction, obligation and settlement describe different parts of the process."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "An operator is also included among participants",
+          "core_explanation_md": "A **system provider** operates an authorised payment system. A **system participant** can be a bank or another participating person and includes the provider. The provider and participant labels therefore are not mutually exclusive.\n\nWhen investigating disruption, identify each role and its actual obligations. **Systemic risk** goes beyond an isolated inconvenience: one participant's inability to pay or a disruption may prevent others from meeting their obligations and threaten system stability. The definition focuses on the transmission and stability consequences, rather than the number of customer complaints alone.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Why can the same entity appear under both provider and participant labels?",
+            "expected_takeaway": "The participant definition expressly includes the system provider."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Separate valuation, identification and recordkeeping functions",
+          "core_explanation_md": "A **derivative** derives its value from the specified underlying changes and is settled at a future date. A **legal entity identifier** identifies a person for the specified transactions; the **issuer** supplies that identifier. A **trade repository** handles electronic transaction records or data through functions such as collection, storage and dissemination.\n\nThese functions should not be conflated. Recording a derivative transaction is different from operating its settlement or bearing its payment obligation. Nor does an identifier itself authorise a provider to operate a payment system. Start with the activity actually carried out, then inspect the applicable legal requirements.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does issuing an LEI by itself establish authorisation to operate a payment system?",
+            "expected_takeaway": "No. Identification and payment-system operation are different functions with their own requirements."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A bank receives a customer instruction and immediately records every resulting inter-participant obligation as settled, without checking the settlement process. Which distinction has it lost?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "An electronic instruction can never be a payment instruction",
+              "explanation_md": "The definition expressly includes instructions in electronic form."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Only physical cash can create payment obligations",
+              "explanation_md": "Payment obligations can arise from the specified clearing and settlement processes beyond cash."
+            },
+            {
+              "option_id": "C",
+              "text_md": "An instruction, the resulting obligation and its settlement are separate events",
+              "explanation_md": "Receipt of the order alone does not establish completion of the settlement process."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Every instruction automatically makes the customer a system provider",
+              "explanation_md": "Giving an instruction does not make the customer the operator of an authorised payment system."
+            }
+          ],
+          "correct_explanation_md": "Receipt of the order alone does not establish completion of the settlement process."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A policy classifies providers and participants as entirely disjoint groups. What statutory definition requires correction of that policy?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "System participant includes the system provider",
+              "explanation_md": "The definition expressly includes the operator, so the groups are not necessarily disjoint."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Only customers can ever be participants",
+              "explanation_md": "A participant can be a bank or another participating person and includes the provider."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Every provider is necessarily a stock exchange",
+              "explanation_md": "The payment-system definition does not equate a provider with a stock exchange."
+            },
+            {
+              "option_id": "D",
+              "text_md": "A payment obligation is an LEI",
+              "explanation_md": "An obligation is indebtedness, while an LEI identifies a person; these definitions perform different jobs."
+            }
+          ],
+          "correct_explanation_md": "The definition expressly includes the operator, so the groups are not necessarily disjoint."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D006",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A participant's failure to meet its obligations is likely to prevent several others from paying when due and affect system stability. Which feature distinguishes this from a complaint about one slow screen?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The original complaint was made online",
+              "explanation_md": "The communication channel does not establish the transmission and stability consequences of systemic risk."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The affected customer used a credit card",
+              "explanation_md": "Instrument choice alone does not establish the statutory system-stability implications."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The operator printed a paper report",
+              "explanation_md": "A reporting medium does not determine whether disruption transmits to other participants."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The inability to pay can transmit to other participants and threaten stability",
+              "explanation_md": "That propagation and likely stability impact is central to the systemic-risk definition."
+            }
+          ],
+          "correct_explanation_md": "That propagation and likely stability impact is central to the systemic-risk definition."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Codex authored these candidates. All source/session, originality and pedagogy reviews remain pending independent review; keep canonical review null and publication state draft.",
+      "Full courseware unit inspected, including end questions (S04 printed pp. 177–186 / PDF pp. 196–205). Statutory provisions cited were read directly from the DFS copy. Comprehensive consolidation and all subordinate directions through 30 June 2026 remain to be verified.",
+      "Learner passages, applied scenarios and all option rationales independently designed from factual briefs. Source questions, distinctive source tables and named cases were not reused; author comparison is not independent originality approval."
+    ],
+    "next_batch_hint": "Continue BRBL-B-U04-B002."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-B-U04-B001",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 12, Compulsory Paper IV, Module B: Payment & Settlement Systems Act, 2007"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "PSS_ACT_DFS",
+        "authority": "Government of India, Department of Financial Services",
+        "title": "The Payment and Settlement Systems Act, 2007 (Act 51 of 2007), statutory copy",
+        "url": "https://financialservices.gov.in/sites/default/files/Act-Policies/2026-01/Payment-and-Settlement-Systems-Act_2007.pdf",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "RBI_PSS_FAQ_2025",
+        "authority": "Reserve Bank of India",
+        "title": "Payment and Settlement Systems Act, 2007 — Frequently Asked Questions (updated 20 October 2025)",
+        "url": "https://www.rbi.org.in/commonman/Upload/English/FAQs/PDFs/FAQ20102025FUL.pdf",
+        "publication_date": "2025-10-20",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_B::U04",
+        "objective_ids": [
+          "BRBL::MOD_B::U04::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_B::U04",
+        "objective_ids": [
+          "BRBL::MOD_B::U04::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_B::U04",
+        "objective_ids": [
+          "BRBL::MOD_B::U04::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BRBL::MOD_B::U04",
+        "objective_ids": [
+          "BRBL::MOD_B::U04::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "unit_id": "BRBL::MOD_B::U04",
+        "objective_ids": [
+          "BRBL::MOD_B::U04::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D006",
+        "unit_id": "BRBL::MOD_B::U04",
+        "objective_ids": [
+          "BRBL::MOD_B::U04::LO_01"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-B-U04-B001",
+      "draft_id": "D001",
+      "item_id": "item_db705aeb588d4299a16bbd08258a5523d53a96f4ccd54399be9bc48cdfdbec25"
+    },
+    {
+      "batch_id": "BRBL-B-U04-B001",
+      "draft_id": "D002",
+      "item_id": "item_1f2450f075237d6210d62c0d36291ce6f63cdb04c7c3029696900e494d0a39c4"
+    },
+    {
+      "batch_id": "BRBL-B-U04-B001",
+      "draft_id": "D003",
+      "item_id": "item_bcd8eb0ce080dadba9e2c17988516eae09d9b291de1d1507b49e7338a4f5b8e2"
+    },
+    {
+      "batch_id": "BRBL-B-U04-B001",
+      "draft_id": "D004",
+      "item_id": "item_121e86c0a0dc2ef085f8f8ede220bacfab576a93deaf8351e4b5cebf1c17627e"
+    },
+    {
+      "batch_id": "BRBL-B-U04-B001",
+      "draft_id": "D005",
+      "item_id": "item_586c539141b8d6ebcd6add04473813ac5b1c54bd65d9687fd8fba462cb03e20b"
+    },
+    {
+      "batch_id": "BRBL-B-U04-B001",
+      "draft_id": "D006",
+      "item_id": "item_a9638e72d222f79b3ffb744be0af7bf01ca7ceb9f1f296cda6c480fbda2ab251"
+    }
+  ],
+  "items": [
+    {
+      "title": "Read the instruction, the obligation and the service separately",
+      "core_explanation_md": "A customer's **payment instruction** is an order or authorisation to effect payment. It can generate a **payment obligation** between system participants through clearing or settlement. **Settlement** addresses the payment instructions and can involve funds, securities, foreign exchange or derivatives. Treating these as synonyms makes it hard to see what has actually happened in a payment file.\n\nThe **payment system** supplies clearing, payment or settlement services between payer and beneficiary; it need not perform all three services to fit the definition. The definition excludes a stock exchange. A service's commercial name or digital appearance alone does not determine its classification.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does receipt of an instruction prove that the resulting obligation has already been settled?",
+        "expected_takeaway": "No. Instruction, obligation and settlement describe different parts of the process."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_db705aeb588d4299a16bbd08258a5523d53a96f4ccd54399be9bc48cdfdbec25",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U04",
+      "objective_ids": [
+        "BRBL::MOD_B::U04::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 178–179; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "PSS_ACT_DFS",
+          "authority": "Government of India, Department of Financial Services",
+          "title": "The Payment and Settlement Systems Act, 2007 (Act 51 of 2007), statutory copy",
+          "url": "https://financialservices.gov.in/sites/default/files/Act-Policies/2026-01/Payment-and-Settlement-Systems-Act_2007.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section 2, PDF pp. 3–5"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "An operator is also included among participants",
+      "core_explanation_md": "A **system provider** operates an authorised payment system. A **system participant** can be a bank or another participating person and includes the provider. The provider and participant labels therefore are not mutually exclusive.\n\nWhen investigating disruption, identify each role and its actual obligations. **Systemic risk** goes beyond an isolated inconvenience: one participant's inability to pay or a disruption may prevent others from meeting their obligations and threaten system stability. The definition focuses on the transmission and stability consequences, rather than the number of customer complaints alone.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Why can the same entity appear under both provider and participant labels?",
+        "expected_takeaway": "The participant definition expressly includes the system provider."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_1f2450f075237d6210d62c0d36291ce6f63cdb04c7c3029696900e494d0a39c4",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U04",
+      "objective_ids": [
+        "BRBL::MOD_B::U04::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 178–179; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "PSS_ACT_DFS",
+          "authority": "Government of India, Department of Financial Services",
+          "title": "The Payment and Settlement Systems Act, 2007 (Act 51 of 2007), statutory copy",
+          "url": "https://financialservices.gov.in/sites/default/files/Act-Policies/2026-01/Payment-and-Settlement-Systems-Act_2007.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section 2, PDF pp. 3–5"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Separate valuation, identification and recordkeeping functions",
+      "core_explanation_md": "A **derivative** derives its value from the specified underlying changes and is settled at a future date. A **legal entity identifier** identifies a person for the specified transactions; the **issuer** supplies that identifier. A **trade repository** handles electronic transaction records or data through functions such as collection, storage and dissemination.\n\nThese functions should not be conflated. Recording a derivative transaction is different from operating its settlement or bearing its payment obligation. Nor does an identifier itself authorise a provider to operate a payment system. Start with the activity actually carried out, then inspect the applicable legal requirements.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does issuing an LEI by itself establish authorisation to operate a payment system?",
+        "expected_takeaway": "No. Identification and payment-system operation are different functions with their own requirements."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_bcd8eb0ce080dadba9e2c17988516eae09d9b291de1d1507b49e7338a4f5b8e2",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U04",
+      "objective_ids": [
+        "BRBL::MOD_B::U04::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 178–179; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "PSS_ACT_DFS",
+          "authority": "Government of India, Department of Financial Services",
+          "title": "The Payment and Settlement Systems Act, 2007 (Act 51 of 2007), statutory copy",
+          "url": "https://financialservices.gov.in/sites/default/files/Act-Policies/2026-01/Payment-and-Settlement-Systems-Act_2007.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section 2, PDF pp. 3–5"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A bank receives a customer instruction and immediately records every resulting inter-participant obligation as settled, without checking the settlement process. Which distinction has it lost?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "An electronic instruction can never be a payment instruction",
+          "explanation_md": "The definition expressly includes instructions in electronic form."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Only physical cash can create payment obligations",
+          "explanation_md": "Payment obligations can arise from the specified clearing and settlement processes beyond cash."
+        },
+        {
+          "option_id": "C",
+          "text_md": "An instruction, the resulting obligation and its settlement are separate events",
+          "explanation_md": "Receipt of the order alone does not establish completion of the settlement process."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Every instruction automatically makes the customer a system provider",
+          "explanation_md": "Giving an instruction does not make the customer the operator of an authorised payment system."
+        }
+      ],
+      "correct_explanation_md": "Receipt of the order alone does not establish completion of the settlement process.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_121e86c0a0dc2ef085f8f8ede220bacfab576a93deaf8351e4b5cebf1c17627e",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U04",
+      "objective_ids": [
+        "BRBL::MOD_B::U04::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 178–179; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "PSS_ACT_DFS",
+          "authority": "Government of India, Department of Financial Services",
+          "title": "The Payment and Settlement Systems Act, 2007 (Act 51 of 2007), statutory copy",
+          "url": "https://financialservices.gov.in/sites/default/files/Act-Policies/2026-01/Payment-and-Settlement-Systems-Act_2007.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section 2, PDF pp. 3–5"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A policy classifies providers and participants as entirely disjoint groups. What statutory definition requires correction of that policy?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "System participant includes the system provider",
+          "explanation_md": "The definition expressly includes the operator, so the groups are not necessarily disjoint."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Only customers can ever be participants",
+          "explanation_md": "A participant can be a bank or another participating person and includes the provider."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Every provider is necessarily a stock exchange",
+          "explanation_md": "The payment-system definition does not equate a provider with a stock exchange."
+        },
+        {
+          "option_id": "D",
+          "text_md": "A payment obligation is an LEI",
+          "explanation_md": "An obligation is indebtedness, while an LEI identifies a person; these definitions perform different jobs."
+        }
+      ],
+      "correct_explanation_md": "The definition expressly includes the operator, so the groups are not necessarily disjoint.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_586c539141b8d6ebcd6add04473813ac5b1c54bd65d9687fd8fba462cb03e20b",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U04",
+      "objective_ids": [
+        "BRBL::MOD_B::U04::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 178–179; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "PSS_ACT_DFS",
+          "authority": "Government of India, Department of Financial Services",
+          "title": "The Payment and Settlement Systems Act, 2007 (Act 51 of 2007), statutory copy",
+          "url": "https://financialservices.gov.in/sites/default/files/Act-Policies/2026-01/Payment-and-Settlement-Systems-Act_2007.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section 2, PDF pp. 3–5"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A participant's failure to meet its obligations is likely to prevent several others from paying when due and affect system stability. Which feature distinguishes this from a complaint about one slow screen?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The original complaint was made online",
+          "explanation_md": "The communication channel does not establish the transmission and stability consequences of systemic risk."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The affected customer used a credit card",
+          "explanation_md": "Instrument choice alone does not establish the statutory system-stability implications."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The operator printed a paper report",
+          "explanation_md": "A reporting medium does not determine whether disruption transmits to other participants."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The inability to pay can transmit to other participants and threaten stability",
+          "explanation_md": "That propagation and likely stability impact is central to the systemic-risk definition."
+        }
+      ],
+      "correct_explanation_md": "That propagation and likely stability impact is central to the systemic-risk definition.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_a9638e72d222f79b3ffb744be0af7bf01ca7ceb9f1f296cda6c480fbda2ab251",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U04",
+      "objective_ids": [
+        "BRBL::MOD_B::U04::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 178–179; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "PSS_ACT_DFS",
+          "authority": "Government of India, Department of Financial Services",
+          "title": "The Payment and Settlement Systems Act, 2007 (Act 51 of 2007), statutory copy",
+          "url": "https://financialservices.gov.in/sites/default/files/Act-Policies/2026-01/Payment-and-Settlement-Systems-Act_2007.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section 2, PDF pp. 3–5"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

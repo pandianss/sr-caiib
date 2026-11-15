@@ -1,0 +1,602 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-B-U03-B001",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL Module B unit 3: FEMA — Identify the FEMA framework, its overseas reach and the distinct definitions of currency, exchange and security",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04",
+      "FEMA_ACT_1999"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "statement": "Courseware describes facilitation of external trade/payments, orderly development of the foreign-exchange market, application to controlled/owned overseas branches, and definitions of authorised person, foreign currency, foreign exchange, person, security and foreign security.",
+        "source_id": "S04",
+        "locator": "S04 printed pp. 170–171; PDF page = printed page + 19",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "statement": "FEMA applies throughout India and to specified overseas branches, offices, agencies and contraventions. Section 2 foreign exchange includes more than foreign cash: foreign-currency deposits/credits/balances and the specified instruments. Foreign security may remain within the definition despite rupee redemption or return. The Act is supplemented by rules, regulations, directions and authorisations.",
+        "source_id": "FEMA_ACT_1999",
+        "locator": "preamble and sections 1–2, PDF pp. 3–5",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "draft_id": "D001",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Find the applicable layer before deciding a forex request",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "**FEMA** supplies the legal framework for foreign exchange; it does not put every transaction limit or processing condition in one place. A bank needs the Act, the applicable rules or regulations, RBI directions and the conditions of its own authorisation to decide a request. Knowing the purpose of the Act is not the same as establishing permission for a particular transaction.\n\nIts purpose includes facilitating external trade and payments and orderly development of the foreign-exchange market. Its reach is also wider than a transaction physically performed at an Indian counter: specified overseas branches, offices and agencies owned or controlled by residents, and contraventions abroad by persons to whom the Act applies, are within Section 1.\n\nFor a transaction file, identify the parties, location, instrument, purpose and rule version before concluding that an overseas connection puts it outside FEMA.",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Can the Act's broad trade-facilitation purpose alone authorise a particular remittance?",
+            "expected_takeaway": "No. The applicable transaction rules, directions and authorisation conditions still need to be checked."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Do not use foreign cash as a shortcut for foreign exchange",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "**Foreign currency** means currency other than Indian currency. **Foreign exchange** is broader: it includes foreign-currency deposits, credits and balances and the additional instrument categories specified in Section 2. A file can therefore involve foreign exchange without containing any physical foreign notes.\n\nThe definition also captures specified instruments drawn abroad but payable in rupees. **Foreign security** has its own denomination test; rupee redemption or rupee interest/dividends do not automatically remove a foreign-currency-denominated security from the definition. Classify the actual asset and payment terms rather than using settlement currency or the presence of cash as the only test.",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Can rupee payment alone prove that an instrument falls outside all FEMA foreign-exchange definitions?",
+            "expected_takeaway": "No. The definitions include specified rupee-payable instruments drawn abroad, and foreign security may have rupee redemption or returns."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "An operations note excludes a foreign-currency deposit from foreign exchange because no banknotes are delivered. Which definition-based correction is needed?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "All deposits must instead be called Indian currency",
+              "explanation_md": "Deposit form does not determine currency; a foreign-currency deposit cannot be reclassified solely because it is not cash."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Foreign exchange includes deposits and balances payable in foreign currency",
+              "explanation_md": "The definition extends beyond cash, so the absence of notes does not justify the exclusion."
+            },
+            {
+              "option_id": "C",
+              "text_md": "FEMA concerns only the physical movement of goods",
+              "explanation_md": "FEMA also governs foreign-exchange dealings and payments; it is not limited to goods movement."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Only the account holder's nationality determines the asset definition",
+              "explanation_md": "Nationality alone does not replace the statutory definition of the financial asset."
+            }
+          ],
+          "correct_explanation_md": "The definition extends beyond cash, so the absence of notes does not justify the exclusion."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A security is denominated in foreign currency but its terms provide rupee redemption. A reviewer rejects foreign-security classification solely because redemption is in rupees. What has been overlooked?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Classification depends solely on the currency in which redemption is paid",
+              "explanation_md": "The definition includes the specified foreign-currency security even where redemption or returns are payable in rupees."
+            },
+            {
+              "option_id": "B",
+              "text_md": "A security must be settled in physical currency to enter FEMA",
+              "explanation_md": "The definition does not require physical-cash settlement."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Only securities whose interest and redemption must both be paid abroad can qualify",
+              "explanation_md": "The statutory definition does not impose this combined overseas-payment requirement."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The foreign-security definition includes the specified rupee-redemption situation",
+              "explanation_md": "Foreign-currency denomination can remain decisive despite rupee redemption or return."
+            }
+          ],
+          "correct_explanation_md": "Foreign-currency denomination can remain decisive despite rupee redemption or return."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A resident-controlled overseas branch asks whether conducting a transaction outside India necessarily removes it from FEMA. Which response best follows Section 1?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "No; the Act expressly reaches specified resident-owned or controlled overseas branches and conduct abroad",
+              "explanation_md": "Location alone does not remove the specified entities or contraventions from the Act's reach."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Yes; FEMA can never apply beyond an Indian branch counter",
+              "explanation_md": "This disregards the express overseas application in Section 1."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The branch is outside scope because it has no separate Indian incorporation",
+              "explanation_md": "The overseas-branch application concerns the specified ownership/control relationship, not a requirement of separate Indian incorporation."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Only the foreign postal address determines application",
+              "explanation_md": "The statutory ownership, control and personal application tests cannot be replaced by the address alone."
+            }
+          ],
+          "correct_explanation_md": "Location alone does not remove the specified entities or contraventions from the Act's reach."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Codex authoring only. Independent source/session, originality and pedagogical review pending; canonical review must remain null and items must remain draft.",
+      "The local Enforcement Directorate statutory copy was read directly for the cited provisions. It has footnotes with 2019 commencement dates; its consolidation through 30 June 2026 has not been established. Current subordinate rules, directions, notifications and relevant judgments must be checked before publication.",
+      "Courseware printed pp. 169–176 / PDF pp. 188–195, including end questions, inspected as images. Teaching and questions designed independently from factual briefs; no source passage, comparison table, named case or source-question number-swap reused. Independent originality review remains pending."
+    ],
+    "next_batch_hint": "Continue BRBL-B-U03-B002; retain the independent review gate."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-B-U03-B001",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 12, Compulsory Paper IV, Module B: Foreign Exchange Management Act, 1999"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "FEMA_ACT_1999",
+        "authority": "Government of India (copy published by the Directorate of Enforcement)",
+        "title": "The Foreign Exchange Management Act, 1999 (Act No. 42 of 1999), as amended",
+        "url": "https://www.enforcementdirectorate.gov.in/media/fema/c24cce9a-6765-4b22-a41a-cde7ec7af79c_FEMA_ACT_1999.pdf",
+        "publication_date": null,
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_B::U03",
+        "objective_ids": [
+          "BRBL::MOD_B::U03::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_B::U03",
+        "objective_ids": [
+          "BRBL::MOD_B::U03::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_B::U03",
+        "objective_ids": [
+          "BRBL::MOD_B::U03::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BRBL::MOD_B::U03",
+        "objective_ids": [
+          "BRBL::MOD_B::U03::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "unit_id": "BRBL::MOD_B::U03",
+        "objective_ids": [
+          "BRBL::MOD_B::U03::LO_01"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-B-U03-B001",
+      "draft_id": "D001",
+      "item_id": "item_4fa3470d899565af10aa8448261bbfe3784aafcee0ed8b861eb7fa5552890eb8"
+    },
+    {
+      "batch_id": "BRBL-B-U03-B001",
+      "draft_id": "D002",
+      "item_id": "item_21dc944ac93a45fd58ac3beb309f4a03424323681cf2ce7c2dc7172c81fea1da"
+    },
+    {
+      "batch_id": "BRBL-B-U03-B001",
+      "draft_id": "D003",
+      "item_id": "item_79dd29b6d6772a5f1f8d04036b3f72cb5b281bdff7580d13dcab47a06ac0d42b"
+    },
+    {
+      "batch_id": "BRBL-B-U03-B001",
+      "draft_id": "D004",
+      "item_id": "item_2bce67acec30f54a0e65ed2e54f02869227785eaba28cf0a3fdcdbd1d3b81924"
+    },
+    {
+      "batch_id": "BRBL-B-U03-B001",
+      "draft_id": "D005",
+      "item_id": "item_27cd9662daddb6e46d9778776b6a00f620af1f29a003b2f0c8dc88c348cffb95"
+    }
+  ],
+  "items": [
+    {
+      "title": "Find the applicable layer before deciding a forex request",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "**FEMA** supplies the legal framework for foreign exchange; it does not put every transaction limit or processing condition in one place. A bank needs the Act, the applicable rules or regulations, RBI directions and the conditions of its own authorisation to decide a request. Knowing the purpose of the Act is not the same as establishing permission for a particular transaction.\n\nIts purpose includes facilitating external trade and payments and orderly development of the foreign-exchange market. Its reach is also wider than a transaction physically performed at an Indian counter: specified overseas branches, offices and agencies owned or controlled by residents, and contraventions abroad by persons to whom the Act applies, are within Section 1.\n\nFor a transaction file, identify the parties, location, instrument, purpose and rule version before concluding that an overseas connection puts it outside FEMA.",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Can the Act's broad trade-facilitation purpose alone authorise a particular remittance?",
+        "expected_takeaway": "No. The applicable transaction rules, directions and authorisation conditions still need to be checked."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_4fa3470d899565af10aa8448261bbfe3784aafcee0ed8b861eb7fa5552890eb8",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U03",
+      "objective_ids": [
+        "BRBL::MOD_B::U03::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 170–171; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "FEMA_ACT_1999",
+          "authority": "Government of India (copy published by the Directorate of Enforcement)",
+          "title": "The Foreign Exchange Management Act, 1999 (Act No. 42 of 1999), as amended",
+          "url": "https://www.enforcementdirectorate.gov.in/media/fema/c24cce9a-6765-4b22-a41a-cde7ec7af79c_FEMA_ACT_1999.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "preamble and sections 1–2, PDF pp. 3–5"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Do not use foreign cash as a shortcut for foreign exchange",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "**Foreign currency** means currency other than Indian currency. **Foreign exchange** is broader: it includes foreign-currency deposits, credits and balances and the additional instrument categories specified in Section 2. A file can therefore involve foreign exchange without containing any physical foreign notes.\n\nThe definition also captures specified instruments drawn abroad but payable in rupees. **Foreign security** has its own denomination test; rupee redemption or rupee interest/dividends do not automatically remove a foreign-currency-denominated security from the definition. Classify the actual asset and payment terms rather than using settlement currency or the presence of cash as the only test.",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Can rupee payment alone prove that an instrument falls outside all FEMA foreign-exchange definitions?",
+        "expected_takeaway": "No. The definitions include specified rupee-payable instruments drawn abroad, and foreign security may have rupee redemption or returns."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_21dc944ac93a45fd58ac3beb309f4a03424323681cf2ce7c2dc7172c81fea1da",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U03",
+      "objective_ids": [
+        "BRBL::MOD_B::U03::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 170–171; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "FEMA_ACT_1999",
+          "authority": "Government of India (copy published by the Directorate of Enforcement)",
+          "title": "The Foreign Exchange Management Act, 1999 (Act No. 42 of 1999), as amended",
+          "url": "https://www.enforcementdirectorate.gov.in/media/fema/c24cce9a-6765-4b22-a41a-cde7ec7af79c_FEMA_ACT_1999.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "preamble and sections 1–2, PDF pp. 3–5"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "An operations note excludes a foreign-currency deposit from foreign exchange because no banknotes are delivered. Which definition-based correction is needed?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "All deposits must instead be called Indian currency",
+          "explanation_md": "Deposit form does not determine currency; a foreign-currency deposit cannot be reclassified solely because it is not cash."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Foreign exchange includes deposits and balances payable in foreign currency",
+          "explanation_md": "The definition extends beyond cash, so the absence of notes does not justify the exclusion."
+        },
+        {
+          "option_id": "C",
+          "text_md": "FEMA concerns only the physical movement of goods",
+          "explanation_md": "FEMA also governs foreign-exchange dealings and payments; it is not limited to goods movement."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Only the account holder's nationality determines the asset definition",
+          "explanation_md": "Nationality alone does not replace the statutory definition of the financial asset."
+        }
+      ],
+      "correct_explanation_md": "The definition extends beyond cash, so the absence of notes does not justify the exclusion.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_79dd29b6d6772a5f1f8d04036b3f72cb5b281bdff7580d13dcab47a06ac0d42b",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U03",
+      "objective_ids": [
+        "BRBL::MOD_B::U03::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 170–171; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "FEMA_ACT_1999",
+          "authority": "Government of India (copy published by the Directorate of Enforcement)",
+          "title": "The Foreign Exchange Management Act, 1999 (Act No. 42 of 1999), as amended",
+          "url": "https://www.enforcementdirectorate.gov.in/media/fema/c24cce9a-6765-4b22-a41a-cde7ec7af79c_FEMA_ACT_1999.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "preamble and sections 1–2, PDF pp. 3–5"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A security is denominated in foreign currency but its terms provide rupee redemption. A reviewer rejects foreign-security classification solely because redemption is in rupees. What has been overlooked?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Classification depends solely on the currency in which redemption is paid",
+          "explanation_md": "The definition includes the specified foreign-currency security even where redemption or returns are payable in rupees."
+        },
+        {
+          "option_id": "B",
+          "text_md": "A security must be settled in physical currency to enter FEMA",
+          "explanation_md": "The definition does not require physical-cash settlement."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Only securities whose interest and redemption must both be paid abroad can qualify",
+          "explanation_md": "The statutory definition does not impose this combined overseas-payment requirement."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The foreign-security definition includes the specified rupee-redemption situation",
+          "explanation_md": "Foreign-currency denomination can remain decisive despite rupee redemption or return."
+        }
+      ],
+      "correct_explanation_md": "Foreign-currency denomination can remain decisive despite rupee redemption or return.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_2bce67acec30f54a0e65ed2e54f02869227785eaba28cf0a3fdcdbd1d3b81924",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U03",
+      "objective_ids": [
+        "BRBL::MOD_B::U03::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 170–171; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "FEMA_ACT_1999",
+          "authority": "Government of India (copy published by the Directorate of Enforcement)",
+          "title": "The Foreign Exchange Management Act, 1999 (Act No. 42 of 1999), as amended",
+          "url": "https://www.enforcementdirectorate.gov.in/media/fema/c24cce9a-6765-4b22-a41a-cde7ec7af79c_FEMA_ACT_1999.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "preamble and sections 1–2, PDF pp. 3–5"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A resident-controlled overseas branch asks whether conducting a transaction outside India necessarily removes it from FEMA. Which response best follows Section 1?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "No; the Act expressly reaches specified resident-owned or controlled overseas branches and conduct abroad",
+          "explanation_md": "Location alone does not remove the specified entities or contraventions from the Act's reach."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Yes; FEMA can never apply beyond an Indian branch counter",
+          "explanation_md": "This disregards the express overseas application in Section 1."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The branch is outside scope because it has no separate Indian incorporation",
+          "explanation_md": "The overseas-branch application concerns the specified ownership/control relationship, not a requirement of separate Indian incorporation."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Only the foreign postal address determines application",
+          "explanation_md": "The statutory ownership, control and personal application tests cannot be replaced by the address alone."
+        }
+      ],
+      "correct_explanation_md": "Location alone does not remove the specified entities or contraventions from the Act's reach.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_27cd9662daddb6e46d9778776b6a00f620af1f29a003b2f0c8dc88c348cffb95",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U03",
+      "objective_ids": [
+        "BRBL::MOD_B::U03::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 170–171; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "FEMA_ACT_1999",
+          "authority": "Government of India (copy published by the Directorate of Enforcement)",
+          "title": "The Foreign Exchange Management Act, 1999 (Act No. 42 of 1999), as amended",
+          "url": "https://www.enforcementdirectorate.gov.in/media/fema/c24cce9a-6765-4b22-a41a-cde7ec7af79c_FEMA_ACT_1999.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "preamble and sections 1–2, PDF pp. 3–5"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

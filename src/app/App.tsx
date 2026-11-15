@@ -1,7 +1,7 @@
 import { useEffect, useState, type ReactNode } from 'react';
 import type { ElectivePaperId, PaperId } from '../types/contracts.ts';
 import { ELECTIVE_PAPERS, PAPER_NAMES, isElective } from '../core/catalogue.ts';
-import { FIXTURE_MODE, model } from './model.ts';
+import { FIXTURE_MODE, model, PAPER_ORDER } from './model.ts';
 import { go, paperAvailability, useApp, useRoute } from './hooks.ts';
 import { Banner, Button, Chip, Empty, Icon, IconButton, Sheet, Tag } from './ui.tsx';
 import { Today, Performance } from './screens/Home.tsx';
@@ -12,23 +12,24 @@ import { Library } from './screens/Library.tsx';
 import { Coverage } from './screens/Coverage.tsx';
 import { Account } from './screens/Account.tsx';
 
-function PaperSheet({ onClose }: { onClose: () => void }) {
-  const s = useApp(); const papers = model.studyPapers();
+function PaperSheet({ onClose, coveragePaper }: { onClose: () => void; coveragePaper?: PaperId }) {
+  const s = useApp(); const papers = coveragePaper ? PAPER_ORDER : model.studyPapers();
+  const selected = coveragePaper ?? s.prefs.active_paper;
   const others = ELECTIVE_PAPERS.filter(p => p !== s.prefs.selected_elective);
   return (
     <Sheet title="Choose a paper" onClose={onClose}>
-      <ul className="list" aria-label="Your papers">
+      <ul className="list" aria-label={coveragePaper ? 'All syllabus papers' : 'Your papers'}>
         {papers.map(p => { const a = paperAvailability(s, p); return (
-          <li key={p}><button type="button" className="item" aria-current={p === s.prefs.active_paper ? 'true' : undefined} onClick={() => { void model.setPaper(p); onClose(); }}>
-            <span className="grow"><span className="title">{PAPER_NAMES[p]} <span className="meta">({p})</span></span><span className="meta" style={{ display: 'block' }}>{isElective(p) ? 'Your elective' : 'Compulsory'}</span></span>
-            <Tag kind={a.kind}>{a.label}</Tag>{p === s.prefs.active_paper && <Icon name="check" />}
+          <li key={p}><button type="button" className="item" aria-current={p === selected ? 'true' : undefined} onClick={() => { if (coveragePaper) go(`coverage/${p}`); else void model.setPaper(p); onClose(); }}>
+            <span className="grow"><span className="title">{PAPER_NAMES[p]} <span className="meta">({p})</span></span><span className="meta" style={{ display: 'block' }}>{isElective(p) ? p === s.prefs.selected_elective ? 'Your elective' : 'Elective' : 'Compulsory'}</span></span>
+            <Tag kind={a.kind}>{a.label}</Tag>{p === selected && <Icon name="check" />}
           </button></li>); })}
       </ul>
-      <div className="section">
+      {!coveragePaper && <div className="section">
         <h2>Change elective</h2>
         <p className="support">You study four compulsory papers and one elective. Changing elective keeps the history of your previous elective.</p>
         <div className="chips">{others.map(p => <Chip key={p} selected={false} onClick={() => { void model.setElective(p as ElectivePaperId); }}>{PAPER_NAMES[p]}</Chip>)}</div>
-      </div>
+      </div>}
     </Sheet>
   );
 }
@@ -84,6 +85,9 @@ const NAV = [{ id: 'today', label: 'Today', icon: 'today' }, { id: 'learn', labe
 function Shell({ route, children }: { route: string[]; children: ReactNode }) {
   const s = useApp(); const [sheet, setSheet] = useState(false);
   const top = route[0] ?? 'today'; const section = NAV.some(n => n.id === top) ? top : null; const secondary = !section || route.length > 1;
+  const coveragePaper = top === 'coverage' ? (PAPER_ORDER.includes(route[1] as PaperId) ? route[1] as PaperId : s.prefs.active_paper) : undefined;
+  const displayedPaper = coveragePaper ?? s.prefs.active_paper;
+  const paperLabel = coveragePaper ? 'Coverage paper' : 'Paper';
   const nav = (cls: string) => <nav className={cls} aria-label="Primary">{NAV.map(n => <a key={n.id} href={`#/${n.id}`} aria-current={section === n.id ? 'page' : undefined}><span className="pill"><Icon name={n.icon} /></span>{n.label}</a>)}</nav>;
   return (
     <div className="app with-nav">
@@ -92,8 +96,8 @@ function Shell({ route, children }: { route: string[]; children: ReactNode }) {
       {nav('rail')}
       <header className="appbar">
         {secondary && <IconButton icon="back" label="Back" onClick={() => window.history.length > 1 ? window.history.back() : go('today')} />}
-        <div className="grow"><button type="button" className="paper-select" onClick={() => setSheet(true)} aria-haspopup="dialog" aria-label={`Paper: ${PAPER_NAMES[s.prefs.active_paper]}. Change paper`}>
-          <span><small>Paper</small><strong>{PAPER_NAMES[s.prefs.active_paper]}</strong></span><Icon name="expand" /></button></div>
+        <div className="grow"><button type="button" className="paper-select" onClick={() => setSheet(true)} aria-haspopup="dialog" aria-label={`${paperLabel}: ${PAPER_NAMES[displayedPaper]}. Change paper`}>
+          <span><small>{paperLabel}</small><strong>{PAPER_NAMES[displayedPaper]}</strong></span><Icon name="expand" /></button></div>
         {!s.online && <Tag kind="warn"><Icon name="offline" size={16} /> Offline</Tag>}
         <IconButton icon="account" label="Account and pass" href="#/account" />
         <IconButton icon="settings" label="Settings" href="#/settings" />
@@ -103,7 +107,7 @@ function Shell({ route, children }: { route: string[]; children: ReactNode }) {
         {children}
       </main>
       {nav('navbar')}
-      {sheet && <PaperSheet onClose={() => setSheet(false)} />}
+      {sheet && <PaperSheet onClose={() => setSheet(false)} coveragePaper={coveragePaper} />}
     </div>
   );
 }

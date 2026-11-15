@@ -1,0 +1,187 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-B-U03-B003",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL Module B unit 3: FEMA — Apply FEMA residence tests separately from nationality, tax residence and a bare day count",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04",
+    "FEMA_ACT_1999"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "statement": "Courseware describes the preceding-financial-year day test, employment/business/uncertain-stay qualifications, Indian incorporation and the specified branch/agency residence categories.",
+      "source_id": "S04",
+      "locator": "S04 printed pp. 171; PDF page = printed page + 19",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F002",
+      "statement": "Section 2(v) uses more than 182 days in the preceding financial year with stated purpose/stay exclusions, and separately includes Indian-registered/incorporated persons/body corporates, foreign-owned branches in India and resident-owned branches outside India. Outside-India residence is the residual definition; citizenship alone is not the test.",
+      "source_id": "FEMA_ACT_1999",
+      "locator": "section 2(u)–(w), PDF pp. 4–5",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "draft_id": "D001",
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Residence is a statutory classification, not a passport label",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "For an individual, Section 2(v) starts with **more than 182 days in the preceding financial year**, then includes purpose and stay qualifications concerning employment, business/vocation and intention to stay for an uncertain period. Do not stop after counting days or substitute a tax-residence rule.\n\nA bank's evidence should cover the relevant year, the reason for departure or arrival and the circumstances of the intended stay. Nationality may be part of identification, but it does not by itself answer FEMA residence. An Indian citizen leaving for overseas employment cannot be classified solely by having an Indian passport or by an earlier day total.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Which additional evidence should accompany the day count for an individual?",
+          "expected_takeaway": "Purpose and circumstances of departure/arrival and stay, including the statutory employment, business and uncertain-period qualifications."
+        }
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D002",
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "An entity and its branches require their own residence analysis",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "Section 2 treats **person** broadly, including companies, firms, HUFs and specified bodies and agencies. Residence also has entity-specific limbs: Indian registration/incorporation, an India branch owned or controlled by a non-resident, and an overseas branch owned or controlled by a resident are expressly addressed.\n\nDo not apply the individual's day count to a company or assume a branch has the same classification as its physical address suggests. Equally, do not extend a branch rule automatically to every separately incorporated subsidiary. First identify the legal form, then apply the matching statutory limb.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Why is an individual's 182-day calculation not the right starting test for an Indian-incorporated company?",
+          "expected_takeaway": "The statute has a separate Indian registration/incorporation limb for persons and body corporates."
+        }
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D003",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A customer's prior-year presence exceeds 182 days, but the file records departure to take employment abroad. An officer decides residence using the count alone. What should be corrected?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Use nationality instead of the departure-purpose qualification",
+            "explanation_md": "Citizenship is not a substitute for the statutory employment, business and stay qualifications."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The employment-related statutory qualification must also be examined",
+            "explanation_md": "The day count is not a standalone test once the relevant departure and purpose circumstances are present."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Prior-year presence is never mentioned in FEMA",
+            "explanation_md": "Section 2(v) does include preceding-year presence; the error is treating it as the entire test."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The customer must be treated as a company for residence",
+            "explanation_md": "An individual does not become a company because of overseas employment."
+          }
+        ],
+        "correct_explanation_md": "The day count is not a standalone test once the relevant departure and purpose circumstances are present."
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D004",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An overseas parent owns a branch operating in India. A checklist applies only the parent's foreign address and ignores the branch limb in Section 2(v). Which review step is needed?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Count the branch's staff attendance as if the branch were an individual",
+            "explanation_md": "The individual day test is not the appropriate entity-specific branch test."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Assume every foreign-owned operation is outside FEMA",
+            "explanation_md": "The statute expressly addresses an India branch owned or controlled by a non-resident."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Identify the India branch and apply the specific residence limb for it",
+            "explanation_md": "Legal form and location/control in the specified statutory combination matter separately from the parent's address."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Ignore the legal form because all offices are independent companies",
+            "explanation_md": "An office or branch is not automatically a separately incorporated company."
+          }
+        ],
+        "correct_explanation_md": "Legal form and location/control in the specified statutory combination matter separately from the parent's address."
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D005",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A banker is asked to use an income-tax residence result as conclusive proof of FEMA residence without examining FEMA's own definition. Which response is most appropriate?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Apply FEMA's definition and supporting facts separately",
+            "explanation_md": "A classification under another statute cannot replace the residence definition used for this FEMA decision."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Use only citizenship because every statute uses the same test",
+            "explanation_md": "The premise is wrong: the statutory tests must be checked rather than assumed identical."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Treat every account holder as resident for convenience",
+            "explanation_md": "Operational convenience cannot override the legal classification."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Remove residence from the transaction file entirely",
+            "explanation_md": "Residence is material to the definitions and transaction analysis and should be evidenced, not omitted."
+          }
+        ],
+        "correct_explanation_md": "A classification under another statute cannot replace the residence definition used for this FEMA decision."
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Codex authoring only. Independent source/session, originality and pedagogical review pending; canonical review must remain null and items must remain draft.",
+    "The local Enforcement Directorate statutory copy was read directly for the cited provisions. It has footnotes with 2019 commencement dates; its consolidation through 30 June 2026 has not been established. Current subordinate rules, directions, notifications and relevant judgments must be checked before publication.",
+    "Courseware printed pp. 169–176 / PDF pp. 188–195, including end questions, inspected as images. Teaching and questions designed independently from factual briefs; no source passage, comparison table, named case or source-question number-swap reused. Independent originality review remains pending."
+  ],
+  "next_batch_hint": "Continue BRBL-B-U03-B004; retain the independent review gate."
+}

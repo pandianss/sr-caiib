@@ -1,0 +1,617 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-B-U03-B006",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL Module B unit 3: FEMA — Calculate Section 13 penalty ceilings and distinguish adjudication, continuing days and conditional enforcement",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04",
+      "FEMA_ACT_1999"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "statement": "Courseware describes section 13 quantifiable and non-quantifiable ceilings, continuing-day amounts, confiscation and the special overseas-asset prosecution provisions. Its general introduction broadly mentions arrest/detention for violations.",
+        "source_id": "S04",
+        "locator": "S04 printed pp. 173; PDF page = printed page + 19",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "statement": "Section 13(1) provides adjudicated ceilings of three times the quantifiable amount or two lakh rupees when not quantifiable, plus up to five thousand rupees for each continuing day after the first. Special section 13(1A)–(1D) provisions and section 14 civil-enforcement conditions must not be collapsed into automatic arrest for every breach.",
+        "source_id": "FEMA_ACT_1999",
+        "locator": "sections 13–14, PDF pp. 9–11",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "draft_id": "D001",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Separate the breach, adjudication and enforcement stages",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "The retrieved Section 13(1) text describes a penalty **upon adjudication**. Its ceiling is up to three times the amount where quantifiable, or up to Rs 2 lakh where not quantifiable. A continuing contravention can attract an additional ceiling of Rs 5,000 for each day **after the first day**. These are ceilings, not automatic fixed charges.\n\nThe Act also contains special provisions concerning certain overseas assets and conditional enforcement provisions. Section 14 addresses non-payment and civil-enforcement safeguards; it does not justify the shortcut “every FEMA violation causes immediate arrest”. Identify the particular provision, required authority and procedural conditions before describing the consequence. Current law and operative notifications remain to be verified for release.",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "What is wrong with treating a Section 13 ceiling as an automatic debit?",
+            "expected_takeaway": "A penalty follows adjudication and the statutory ceiling does not itself determine the amount actually imposed."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "item_type": "card",
+        "variant": "worked_example",
+        "payload": {
+          "title": "A ceiling is not the penalty actually imposed",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "For a training illustration under the retrieved Section 13(1) text, assume a quantifiable contravention involving **Rs 2,40,000** and continuation on **five days after the first day**. The base ceiling is three times the amount: **Rs 7,20,000**. At the stated maximum additional daily amount, five further days add **Rs 25,000**, giving an illustrative combined ceiling of **Rs 7,45,000**.\n\nThis is arithmetic under explicit assumptions, not a prediction of the authority's actual order. The text says “up to”; a maximum is not automatically imposed. The first day is excluded from the additional-day calculation, and a non-quantifiable contravention uses a different base ceiling. Adjudication and applicability checks remain necessary.",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Why must a reviewer distinguish five total days from five days after the first day?",
+            "expected_takeaway": "The additional daily ceiling under this text applies to days after the first day, so those descriptions lead to different counts."
+          },
+          "worked_steps": [
+            {
+              "step_number": 1,
+              "description": "Base ceiling for the stated quantifiable amount.",
+              "formula_or_substitution": "240000 × 3",
+              "intermediate_result": "720000 rupees"
+            },
+            {
+              "step_number": 2,
+              "description": "Additional ceiling for the five stated days after the first.",
+              "formula_or_substitution": "5000 × 5",
+              "intermediate_result": "25000 rupees"
+            },
+            {
+              "step_number": 3,
+              "description": "Illustrative combined ceiling, not an automatic order.",
+              "formula_or_substitution": "720000 + 25000",
+              "intermediate_result": "745000 rupees"
+            }
+          ],
+          "final_answer_with_unit": "745000 rupees illustrative maximum under the stated assumptions."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "An internal training note says every suspected FEMA breach automatically causes the maximum monetary penalty and immediate arrest. Which correction is required?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "FEMA has no adjudication or enforcement provisions",
+              "explanation_md": "The Act does contain those provisions; the error is collapsing their distinct conditions into an automatic consequence."
+            },
+            {
+              "option_id": "B",
+              "text_md": "A customer may choose whether any legal provision applies",
+              "explanation_md": "Customer preference does not determine statutory application or the authority's powers."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Distinguish adjudicated ceilings and the conditions of the particular enforcement or special provision",
+              "explanation_md": "The amounts are ceilings and enforcement depends on the specified grounds and procedures."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Replace the penalty calculation with the current exchange rate alone",
+              "explanation_md": "An exchange rate cannot replace the statutory basis, adjudication or enforcement conditions."
+            }
+          ],
+          "correct_explanation_md": "The amounts are ceilings and enforcement depends on the specified grounds and procedures."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "For a Section 13(1) statutory-text arithmetic exercise, assume the amount is quantifiable at Rs 175000 and the contravention continues for four days after the first day. Calculate the combined ceiling using three times the amount plus Rs 5000 per stated additional day. This is not the actual penalty order.",
+          "numeric_rule": {
+            "expected_answer": "545000",
+            "unit_label": "rupees",
+            "precision_decimals": 0,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Answer in whole rupees without commas; all calculations are exact.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "Base ceiling 175000 × 3 = 525000 rupees; four additional days × 5000 = 20000 rupees; combined ceiling 545000 rupees.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "Compute the stated statutory-text ceiling with the stated number of continuing days.",
+              "formula_or_substitution": "175000 × 3 + 4 × 5000",
+              "intermediate_result": "545000 rupees"
+            }
+          ]
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "For a Section 13(1) statutory-text arithmetic exercise, assume the amount cannot be quantified and the contravention continues for six days in total, including the first day. Use the Rs 200000 base ceiling and Rs 5000 for each day after the first. What is the combined ceiling in rupees?",
+          "numeric_rule": {
+            "expected_answer": "225000",
+            "unit_label": "rupees",
+            "precision_decimals": 0,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Answer in whole rupees without commas; all calculations are exact.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "There are five days after the first. The combined ceiling is 200000 + (6 − 1) × 5000 = 225000 rupees.",
+          "worked_solution_steps": [
+            {
+              "step_number": 1,
+              "description": "Compute the stated statutory-text ceiling with the stated number of continuing days.",
+              "formula_or_substitution": "200000 + (6 − 1) × 5000",
+              "intermediate_result": "225000 rupees"
+            }
+          ]
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Codex authoring only. Independent source/session, originality and pedagogical review pending; canonical review must remain null and items must remain draft.",
+      "The local Enforcement Directorate statutory copy was read directly for the cited provisions. It has footnotes with 2019 commencement dates; its consolidation through 30 June 2026 has not been established. Current subordinate rules, directions, notifications and relevant judgments must be checked before publication.",
+      "Courseware printed pp. 169–176 / PDF pp. 188–195, including end questions, inspected as images. Teaching and questions designed independently from factual briefs; no source passage, comparison table, named case or source-question number-swap reused. Independent originality review remains pending.",
+      "Section 13 values are from the inspected statutory copy, not certified as amended through the cutoff. Notification-dependent overseas-asset thresholds, current enforcement procedures and the commencement status of section 14A are not asserted. The courseware statement implying arrest for every violation is not adopted."
+    ],
+    "next_batch_hint": "Continue BRBL-B-U03-B007; retain the independent review gate."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-B-U03-B006",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 12, Compulsory Paper IV, Module B: Foreign Exchange Management Act, 1999"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "FEMA_ACT_1999",
+        "authority": "Government of India (copy published by the Directorate of Enforcement)",
+        "title": "The Foreign Exchange Management Act, 1999 (Act No. 42 of 1999), as amended",
+        "url": "https://www.enforcementdirectorate.gov.in/media/fema/c24cce9a-6765-4b22-a41a-cde7ec7af79c_FEMA_ACT_1999.pdf",
+        "publication_date": null,
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_B::U03",
+        "objective_ids": [
+          "BRBL::MOD_B::U03::LO_06"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_B::U03",
+        "objective_ids": [
+          "BRBL::MOD_B::U03::LO_06"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_B::U03",
+        "objective_ids": [
+          "BRBL::MOD_B::U03::LO_06"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BRBL::MOD_B::U03",
+        "objective_ids": [
+          "BRBL::MOD_B::U03::LO_06"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "unit_id": "BRBL::MOD_B::U03",
+        "objective_ids": [
+          "BRBL::MOD_B::U03::LO_06"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-B-U03-B006",
+      "draft_id": "D001",
+      "item_id": "item_9a9e776e20b3e69120db26f240a8ea306dccf538931f294c937ac314f610ad26"
+    },
+    {
+      "batch_id": "BRBL-B-U03-B006",
+      "draft_id": "D002",
+      "item_id": "item_cb96c4fd0fd05e3a336e165ceacdcfe4b88a9fe6376b84f0d1b6387932bc7d81"
+    },
+    {
+      "batch_id": "BRBL-B-U03-B006",
+      "draft_id": "D003",
+      "item_id": "item_af748ed2c6fdd261577f29dbb96082c2ab3d06b1acd980ef113a9b412904552a"
+    },
+    {
+      "batch_id": "BRBL-B-U03-B006",
+      "draft_id": "D004",
+      "item_id": "item_366aedb1b7a02538a160e98dc43b3260a23abbfa84dbff4ed674ddd05a4dfa36"
+    },
+    {
+      "batch_id": "BRBL-B-U03-B006",
+      "draft_id": "D005",
+      "item_id": "item_c783c59791a852930c151bd7d895c3c6e7708aab67aacb793ba3edd74a7a4979"
+    }
+  ],
+  "items": [
+    {
+      "title": "Separate the breach, adjudication and enforcement stages",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "The retrieved Section 13(1) text describes a penalty **upon adjudication**. Its ceiling is up to three times the amount where quantifiable, or up to Rs 2 lakh where not quantifiable. A continuing contravention can attract an additional ceiling of Rs 5,000 for each day **after the first day**. These are ceilings, not automatic fixed charges.\n\nThe Act also contains special provisions concerning certain overseas assets and conditional enforcement provisions. Section 14 addresses non-payment and civil-enforcement safeguards; it does not justify the shortcut “every FEMA violation causes immediate arrest”. Identify the particular provision, required authority and procedural conditions before describing the consequence. Current law and operative notifications remain to be verified for release.",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "What is wrong with treating a Section 13 ceiling as an automatic debit?",
+        "expected_takeaway": "A penalty follows adjudication and the statutory ceiling does not itself determine the amount actually imposed."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_9a9e776e20b3e69120db26f240a8ea306dccf538931f294c937ac314f610ad26",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U03",
+      "objective_ids": [
+        "BRBL::MOD_B::U03::LO_06"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 173; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "FEMA_ACT_1999",
+          "authority": "Government of India (copy published by the Directorate of Enforcement)",
+          "title": "The Foreign Exchange Management Act, 1999 (Act No. 42 of 1999), as amended",
+          "url": "https://www.enforcementdirectorate.gov.in/media/fema/c24cce9a-6765-4b22-a41a-cde7ec7af79c_FEMA_ACT_1999.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 13–14, PDF pp. 9–11"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "A ceiling is not the penalty actually imposed",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "For a training illustration under the retrieved Section 13(1) text, assume a quantifiable contravention involving **Rs 2,40,000** and continuation on **five days after the first day**. The base ceiling is three times the amount: **Rs 7,20,000**. At the stated maximum additional daily amount, five further days add **Rs 25,000**, giving an illustrative combined ceiling of **Rs 7,45,000**.\n\nThis is arithmetic under explicit assumptions, not a prediction of the authority's actual order. The text says “up to”; a maximum is not automatically imposed. The first day is excluded from the additional-day calculation, and a non-quantifiable contravention uses a different base ceiling. Adjudication and applicability checks remain necessary.",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Why must a reviewer distinguish five total days from five days after the first day?",
+        "expected_takeaway": "The additional daily ceiling under this text applies to days after the first day, so those descriptions lead to different counts."
+      },
+      "worked_steps": [
+        {
+          "step_number": 1,
+          "description": "Base ceiling for the stated quantifiable amount.",
+          "formula_or_substitution": "240000 × 3",
+          "intermediate_result": "720000 rupees"
+        },
+        {
+          "step_number": 2,
+          "description": "Additional ceiling for the five stated days after the first.",
+          "formula_or_substitution": "5000 × 5",
+          "intermediate_result": "25000 rupees"
+        },
+        {
+          "step_number": 3,
+          "description": "Illustrative combined ceiling, not an automatic order.",
+          "formula_or_substitution": "720000 + 25000",
+          "intermediate_result": "745000 rupees"
+        }
+      ],
+      "final_answer_with_unit": "745000 rupees illustrative maximum under the stated assumptions.",
+      "item_type": "card",
+      "card_type": "worked_example",
+      "id": "item_cb96c4fd0fd05e3a336e165ceacdcfe4b88a9fe6376b84f0d1b6387932bc7d81",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U03",
+      "objective_ids": [
+        "BRBL::MOD_B::U03::LO_06"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 173; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "FEMA_ACT_1999",
+          "authority": "Government of India (copy published by the Directorate of Enforcement)",
+          "title": "The Foreign Exchange Management Act, 1999 (Act No. 42 of 1999), as amended",
+          "url": "https://www.enforcementdirectorate.gov.in/media/fema/c24cce9a-6765-4b22-a41a-cde7ec7af79c_FEMA_ACT_1999.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 13–14, PDF pp. 9–11"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "An internal training note says every suspected FEMA breach automatically causes the maximum monetary penalty and immediate arrest. Which correction is required?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "FEMA has no adjudication or enforcement provisions",
+          "explanation_md": "The Act does contain those provisions; the error is collapsing their distinct conditions into an automatic consequence."
+        },
+        {
+          "option_id": "B",
+          "text_md": "A customer may choose whether any legal provision applies",
+          "explanation_md": "Customer preference does not determine statutory application or the authority's powers."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Distinguish adjudicated ceilings and the conditions of the particular enforcement or special provision",
+          "explanation_md": "The amounts are ceilings and enforcement depends on the specified grounds and procedures."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Replace the penalty calculation with the current exchange rate alone",
+          "explanation_md": "An exchange rate cannot replace the statutory basis, adjudication or enforcement conditions."
+        }
+      ],
+      "correct_explanation_md": "The amounts are ceilings and enforcement depends on the specified grounds and procedures.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_af748ed2c6fdd261577f29dbb96082c2ab3d06b1acd980ef113a9b412904552a",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U03",
+      "objective_ids": [
+        "BRBL::MOD_B::U03::LO_06"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 173; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "FEMA_ACT_1999",
+          "authority": "Government of India (copy published by the Directorate of Enforcement)",
+          "title": "The Foreign Exchange Management Act, 1999 (Act No. 42 of 1999), as amended",
+          "url": "https://www.enforcementdirectorate.gov.in/media/fema/c24cce9a-6765-4b22-a41a-cde7ec7af79c_FEMA_ACT_1999.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 13–14, PDF pp. 9–11"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "For a Section 13(1) statutory-text arithmetic exercise, assume the amount is quantifiable at Rs 175000 and the contravention continues for four days after the first day. Calculate the combined ceiling using three times the amount plus Rs 5000 per stated additional day. This is not the actual penalty order.",
+      "numeric_rule": {
+        "expected_answer": "545000",
+        "unit_label": "rupees",
+        "precision_decimals": 0,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Answer in whole rupees without commas; all calculations are exact.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "Base ceiling 175000 × 3 = 525000 rupees; four additional days × 5000 = 20000 rupees; combined ceiling 545000 rupees.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "Compute the stated statutory-text ceiling with the stated number of continuing days.",
+          "formula_or_substitution": "175000 × 3 + 4 × 5000",
+          "intermediate_result": "545000 rupees"
+        }
+      ],
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_366aedb1b7a02538a160e98dc43b3260a23abbfa84dbff4ed674ddd05a4dfa36",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U03",
+      "objective_ids": [
+        "BRBL::MOD_B::U03::LO_06"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 173; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "FEMA_ACT_1999",
+          "authority": "Government of India (copy published by the Directorate of Enforcement)",
+          "title": "The Foreign Exchange Management Act, 1999 (Act No. 42 of 1999), as amended",
+          "url": "https://www.enforcementdirectorate.gov.in/media/fema/c24cce9a-6765-4b22-a41a-cde7ec7af79c_FEMA_ACT_1999.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 13–14, PDF pp. 9–11"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "For a Section 13(1) statutory-text arithmetic exercise, assume the amount cannot be quantified and the contravention continues for six days in total, including the first day. Use the Rs 200000 base ceiling and Rs 5000 for each day after the first. What is the combined ceiling in rupees?",
+      "numeric_rule": {
+        "expected_answer": "225000",
+        "unit_label": "rupees",
+        "precision_decimals": 0,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Answer in whole rupees without commas; all calculations are exact.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "There are five days after the first. The combined ceiling is 200000 + (6 − 1) × 5000 = 225000 rupees.",
+      "worked_solution_steps": [
+        {
+          "step_number": 1,
+          "description": "Compute the stated statutory-text ceiling with the stated number of continuing days.",
+          "formula_or_substitution": "200000 + (6 − 1) × 5000",
+          "intermediate_result": "225000 rupees"
+        }
+      ],
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_c783c59791a852930c151bd7d895c3c6e7708aab67aacb793ba3edd74a7a4979",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U03",
+      "objective_ids": [
+        "BRBL::MOD_B::U03::LO_06"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 173; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "FEMA_ACT_1999",
+          "authority": "Government of India (copy published by the Directorate of Enforcement)",
+          "title": "The Foreign Exchange Management Act, 1999 (Act No. 42 of 1999), as amended",
+          "url": "https://www.enforcementdirectorate.gov.in/media/fema/c24cce9a-6765-4b22-a41a-cde7ec7af79c_FEMA_ACT_1999.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 13–14, PDF pp. 9–11"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

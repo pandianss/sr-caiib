@@ -1,5 +1,32 @@
 # Project execution state
 
+## Active takeover checkpoint — Codex, 15 November 2026
+
+- Owner authorized Codex to take over until Claude is available after **19:30 Asia/Kolkata** today. Codex is acting as the temporary authoring/engineering agent; Antigravity remains the review/publication gate. New content stays draft with null canonical review metadata.
+- Entry checkpoint: BRBL Module B unit 2, Negotiable Instruments Act, 1881 (courseware unit 9, printed pp. 149–167 / PDF pp. 168–186). Existing BRBL batches end at `BRBL-B-U01-B001`; do not redo them.
+- Baseline verified in this session: `npm run check` passed typecheck, lint and **614/614 tests** (15 November). No project files had pending Git changes at entry; Git commands use command-scoped `-c safe.directory=D:/projects/sr-caiib` because the checkout owner SID differs from this Windows account.
+- Completed authoring units: NI Act `BRBL-B-U02-B001`–`B013` (65 items / 13 objectives); FEMA `BRBL-B-U03-B001`–`B008` (40 / 8); PSS Act `BRBL-B-U04-B001`–`B007` (37 / 7); Securities/Modes of Charge I `BRBL-B-U05-B001`–`B007` (29 / 7). Total **171 new draft items / 35 objectives**. All canonical reviews remain null; all legal facts retain needs_review. No release pack changed. Full product acceptance remains outstanding.
+- Current authoring cursor: **BRBL B U06, Securities and Modes of Charge II**, S04 printed p. 197 / PDF p. 216 onward (next unit starts printed p. 213 / PDF p. 232). Read the full unit and end questions before authoring. U05 courseware and cited statutory provisions were inspected; Supreme Court Singh Ram v Sheo Ram (2014), paragraph 15, was read directly and the automatic ownership-after-30-years claim was rejected in its stated context. Central Limitation Act retrieval remains unavailable; no exact filing dates or blanket limitation conclusions were assessed. Registration/state amendments, title-copy conditions and remedies retain explicit review gaps.
+- Draft corrections now use explicit revision history: `scripts/revise-draft.mjs` retains prior envelopes in numbered `draft-history/` and advances only changed canonical revisions. The ledger replays the chain and rejects missing/stale history. Applied to 54 distractors in 28 questions across 19 batches, preserving correct keys and prior payloads; evidence in `distractor-revisions.json`. Draft review remains pending.
+- Detailed takeover evidence and reviewer queue: `content/audit/CODEX_TAKEOVER_2026-11-15.md`; full check/build output and screening results under `content/audit/evidence/codex-2026-11-15/`.
+- Source access: courseware PDF available. India Code PDF retrieval timed out through both browser fetch and direct HTTP; government-hosted Tripura High Court statutory PDF retrieved successfully (32 pages, SHA-256 `50fe22a157a24641c8682d34565b36b5f446016d8b55ca53691e293b9bbaa1c9`). It contains the 2018 amendments but is not itself proof of consolidation through the exam cutoff.
+- The older status tables and appended authoring notes below are historical and need reconciliation; their early zero-content/count claims are not a current inventory. This active checkpoint takes precedence for takeover work. No unattended worker or automatic handoff has been started.
+
+| Takeover acceptance task | Status | Evidence / remaining work |
+| --- | --- | --- |
+| Baseline build/type/lint/behaviour checks | passed | Baseline 614; latest full check passed **637/637** plus typecheck/lint. Production build passed with 3 published packs, 0 fixtures. |
+| BRBL B U02 teaching and assessment drafts | passed | 13 bounded batches, 65 imported draft items; independent source/applicability/originality/pedagogy review remains pending |
+| BRBL B U03 teaching and assessment drafts | passed | 8 bounded batches, 40 imported draft items; exact penalty-ceiling arithmetic tested; independent legal/editorial review pending |
+| BRBL B U04 teaching and assessment drafts | passed | 7 bounded batches, 37 imported draft items; exact netting arithmetic tested; statutory copy, dated RBI FAQ and Gazette retained; independent review pending |
+| Source, originality and session review | pending | Authoring checks are not Antigravity or human approval |
+| Draft ledger / visual-map reconciliation | passed | BRBL ledger records all 35 new objectives as draft, with zero published IDs. Map rebuilt after each unit. Browser observed NI and FEMA as 2 of 64 topics drafted/assessed, zero reviewed/published; PSS and securities I add the third and fourth draft topics. |
+| Single coverage paper selector / context preservation | passed | Removed duplicate map chips; app-bar label follows coverage paper. Browser switched BRBL → RM, returned to Today with ABM still active; unfinished ABM lesson still offered Resume. All nine papers available in coverage sheet; registered elective preserved. |
+| BRBL B U05 draft authoring | passed | 7 batches / 29 draft items. Primary TPA text, Registration Act sections 47–50 and Singh Ram judgment retained; independent legal review and stated source gaps remain pending |
+| Content screening correctness | passed | Missing/empty inputs fail closed; five synthetic adverse/pattern/link tests pass. 171 drafts screened: 92 MCQs, zero stub options, courseware stems or broken case links. Screening is not calculation or editorial approval |
+| Claude handoff | in_progress | This section and batch evidence will hold exact resume instructions |
+
+Current delivery dimensions: implementation **in_progress** (broader acceptance remains), full-syllabus content **in_progress**, release readiness **blocked**, live launch **pending**. The takeover's draft counts and passing checks do not establish any full-product completion status. Four elective books/105 topics, provider sandbox keys, independent content review, screen-reader/device evidence and clean-setup reproduction remain in the wider queue.
+
 Last updated: 14 November 2026, session 7 (ABM: pack ABM-2026DEC v22, 828 items, Modules A and B complete, Module C unit 1 partly). Earlier: 12 November 2026, session 6. Authoring model switched from Fable 5.2 to Sonnet 5.5 at the owner's request (batch 4 onward); nothing in the process depends on the model. Content authoring is **unblocked for five papers** (171 topics); the other four electives (105 topics) have no courseware. Completion remains blocked on those books, provider sandbox keys and the sheer volume of authoring still to do.
 
 ## Scope and decisions

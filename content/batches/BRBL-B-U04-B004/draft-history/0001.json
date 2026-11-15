@@ -1,0 +1,611 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-B-U04-B004",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL Module B unit 4: Payment and Settlement Systems Act — Apply change-control notice and electronic-mode charge rules within their actual statutory scope",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04",
+      "PSS_ACT_DFS"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "statement": "Courseware gives the prior-approval/participant-notice change process and section 10A prescribed electronic-mode charge prohibition. Its summary on p. 185 broadens the charge statement without repeating the prescribed-mode qualification.",
+        "source_id": "S04",
+        "locator": "S04 printed pp. 181–182, 185; PDF page = printed page + 19",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "statement": "Section 11 ordinarily requires prior RBI approval and at least 30 days participant notice after approval for changes affecting structure/operation, with the stated RBI public-interest/monetary-policy proviso. Objection/comment steps do not replace approval. Section 10A concerns direct/indirect charges for modes prescribed under section 269SU, not all services regardless of scope.",
+        "source_id": "PSS_ACT_DFS",
+        "locator": "sections 10A–11, PDF p. 8",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "draft_id": "D001",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Build approval and notice into the change sequence",
+          "core_explanation_md": "A change affecting a payment system's structure or operation ordinarily needs **prior RBI approval**, followed by at least 30 days' notice to participants under Section 11. The provision also has a specific RBI power to permit the stated notice variation in monetary-policy or public-interest circumstances.\n\nDo not reverse the sequence by counting advance days before approval as though they necessarily satisfy post-approval notice. Nor should internal sign-off or a response to RBI objections be treated as the final approval itself. A release checklist should identify the applicable change, approval and notice evidence.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Which event precedes the ordinary participant-notice period under Section 11?",
+            "expected_takeaway": "RBI approval precedes the specified notice to system participants."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "A scoped charge prohibition should not become an all-services rule",
+          "core_explanation_md": "Section 10A prohibits direct or indirect charges on persons making or receiving payments using the electronic modes prescribed under **Section 269SU** of the referenced tax legislation. Its scope depends on those prescribed modes.\n\nA compliance review must identify the actual mode and the governing prescription. The courseware summary omits that scope qualification when broadly discussing charges; do not repeat it as a rule that every banking or payment service is free. Equally, relabelling a prohibited charge as indirect does not avoid the provision. Current mode prescriptions and any legislative cross-reference changes need verification before release.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "What must be established before applying this particular charge prohibition?",
+            "expected_takeaway": "Whether the payment uses a mode within the operative prescribed scope; indirect labels do not remove a covered charge."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A provider gives participants notice before requesting RBI approval for a structural change and assumes the pre-approval notice necessarily satisfies Section 11. What sequence needs checking?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Participant notice always replaces prior RBI approval",
+              "explanation_md": "The section ordinarily requires both approval and the specified notice."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Internal project approval is identical to RBI approval",
+              "explanation_md": "Internal governance cannot substitute for the statutory prior approval."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The provider may choose any notice exception without RBI involvement",
+              "explanation_md": "The proviso concerns the specified RBI permission, not an exception invented by the provider."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Prior RBI approval followed by the ordinary post-approval participant notice",
+              "explanation_md": "The statutory sequence and any valid variation must be established, not assumed from an earlier announcement."
+            }
+          ],
+          "correct_explanation_md": "The statutory sequence and any valid variation must be established, not assumed from an earlier announcement."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A training summary turns Section 10A into “all banking services must be free”. Which qualification is missing?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The rule applies only when a payer uses foreign banknotes",
+              "explanation_md": "The provision concerns prescribed electronic payment modes, not a general foreign-cash condition."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Its scope is tied to the electronic modes prescribed under the referenced provision",
+              "explanation_md": "A scoped electronic-mode rule cannot be expanded to every bank service without further authority."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Only charges with the word fee are covered",
+              "explanation_md": "The text includes direct and indirect charges; the label alone is not decisive."
+            },
+            {
+              "option_id": "D",
+              "text_md": "A bank may disregard the provision whenever a customer agrees",
+              "explanation_md": "Customer agreement does not itself override the statutory prohibition where it applies."
+            }
+          ],
+          "correct_explanation_md": "A scoped electronic-mode rule cannot be expanded to every bank service without further authority."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "RBI has objected to a proposed structural change. The provider sends comments and treats that reply as approval to launch. Which requirement remains?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only a competing provider's written endorsement",
+              "explanation_md": "A competitor's endorsement does not satisfy the RBI approval requirement."
+            },
+            {
+              "option_id": "B",
+              "text_md": "A press release by the customer",
+              "explanation_md": "Customer publicity does not complete the statutory change-control process."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Receipt of RBI approval before effecting the proposed change",
+              "explanation_md": "The objection/comment exchange does not itself replace the approval required under Section 11."
+            },
+            {
+              "option_id": "D",
+              "text_md": "No further requirement because sending any reply overrides objections",
+              "explanation_md": "A reply does not confer the authority to disregard RBI's decision."
+            }
+          ],
+          "correct_explanation_md": "The objection/comment exchange does not itself replace the approval required under Section 11."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Codex authored these candidates. All source/session, originality and pedagogy reviews remain pending independent review; keep canonical review null and publication state draft.",
+      "Full courseware unit inspected, including end questions (S04 printed pp. 177–186 / PDF pp. 196–205). Statutory provisions cited were read directly from the DFS copy. Comprehensive consolidation and all subordinate directions through 30 June 2026 remain to be verified.",
+      "Learner passages, applied scenarios and all option rationales independently designed from factual briefs. Source questions, distinctive source tables and named cases were not reused; author comparison is not independent originality approval.",
+      "Prescribed-mode notifications and the 1961/2025 income-tax legislative transition have not been audited. The scope rule is taught from the retrieved section text, not a claim that the cross-reference is current in every later context."
+    ],
+    "next_batch_hint": "Continue BRBL-B-U04-B005."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-B-U04-B004",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 12, Compulsory Paper IV, Module B: Payment & Settlement Systems Act, 2007"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "PSS_ACT_DFS",
+        "authority": "Government of India, Department of Financial Services",
+        "title": "The Payment and Settlement Systems Act, 2007 (Act 51 of 2007), statutory copy",
+        "url": "https://financialservices.gov.in/sites/default/files/Act-Policies/2026-01/Payment-and-Settlement-Systems-Act_2007.pdf",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "RBI_PSS_FAQ_2025",
+        "authority": "Reserve Bank of India",
+        "title": "Payment and Settlement Systems Act, 2007 — Frequently Asked Questions (updated 20 October 2025)",
+        "url": "https://www.rbi.org.in/commonman/Upload/English/FAQs/PDFs/FAQ20102025FUL.pdf",
+        "publication_date": "2025-10-20",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_B::U04",
+        "objective_ids": [
+          "BRBL::MOD_B::U04::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_B::U04",
+        "objective_ids": [
+          "BRBL::MOD_B::U04::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_B::U04",
+        "objective_ids": [
+          "BRBL::MOD_B::U04::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BRBL::MOD_B::U04",
+        "objective_ids": [
+          "BRBL::MOD_B::U04::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "unit_id": "BRBL::MOD_B::U04",
+        "objective_ids": [
+          "BRBL::MOD_B::U04::LO_04"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-B-U04-B004",
+      "draft_id": "D001",
+      "item_id": "item_1b9e95d0a237e86698f907de123a9bbdafc63bd93819418d4b4ce557f8e528b3"
+    },
+    {
+      "batch_id": "BRBL-B-U04-B004",
+      "draft_id": "D002",
+      "item_id": "item_a8c53424c3d6e04cfcaed423cb0257d9d86640b533c546e404e582c6efcdecfb"
+    },
+    {
+      "batch_id": "BRBL-B-U04-B004",
+      "draft_id": "D003",
+      "item_id": "item_e518ffe2e62ff381f95802b450defca97a5812b995567a7a3770aff5e8fc9162"
+    },
+    {
+      "batch_id": "BRBL-B-U04-B004",
+      "draft_id": "D004",
+      "item_id": "item_88e3e6ab206e855b97737cec72826ed14994d01b650bb5c9a518230209231484"
+    },
+    {
+      "batch_id": "BRBL-B-U04-B004",
+      "draft_id": "D005",
+      "item_id": "item_4aff1aed63bbc483cc1789204decd954d21b598fb99e3b00c383968e62a9183c"
+    }
+  ],
+  "items": [
+    {
+      "title": "Build approval and notice into the change sequence",
+      "core_explanation_md": "A change affecting a payment system's structure or operation ordinarily needs **prior RBI approval**, followed by at least 30 days' notice to participants under Section 11. The provision also has a specific RBI power to permit the stated notice variation in monetary-policy or public-interest circumstances.\n\nDo not reverse the sequence by counting advance days before approval as though they necessarily satisfy post-approval notice. Nor should internal sign-off or a response to RBI objections be treated as the final approval itself. A release checklist should identify the applicable change, approval and notice evidence.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Which event precedes the ordinary participant-notice period under Section 11?",
+        "expected_takeaway": "RBI approval precedes the specified notice to system participants."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_1b9e95d0a237e86698f907de123a9bbdafc63bd93819418d4b4ce557f8e528b3",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U04",
+      "objective_ids": [
+        "BRBL::MOD_B::U04::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 181–182, 185; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "PSS_ACT_DFS",
+          "authority": "Government of India, Department of Financial Services",
+          "title": "The Payment and Settlement Systems Act, 2007 (Act 51 of 2007), statutory copy",
+          "url": "https://financialservices.gov.in/sites/default/files/Act-Policies/2026-01/Payment-and-Settlement-Systems-Act_2007.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 10A–11, PDF p. 8"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "A scoped charge prohibition should not become an all-services rule",
+      "core_explanation_md": "Section 10A prohibits direct or indirect charges on persons making or receiving payments using the electronic modes prescribed under **Section 269SU** of the referenced tax legislation. Its scope depends on those prescribed modes.\n\nA compliance review must identify the actual mode and the governing prescription. The courseware summary omits that scope qualification when broadly discussing charges; do not repeat it as a rule that every banking or payment service is free. Equally, relabelling a prohibited charge as indirect does not avoid the provision. Current mode prescriptions and any legislative cross-reference changes need verification before release.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "What must be established before applying this particular charge prohibition?",
+        "expected_takeaway": "Whether the payment uses a mode within the operative prescribed scope; indirect labels do not remove a covered charge."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_a8c53424c3d6e04cfcaed423cb0257d9d86640b533c546e404e582c6efcdecfb",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U04",
+      "objective_ids": [
+        "BRBL::MOD_B::U04::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 181–182, 185; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "PSS_ACT_DFS",
+          "authority": "Government of India, Department of Financial Services",
+          "title": "The Payment and Settlement Systems Act, 2007 (Act 51 of 2007), statutory copy",
+          "url": "https://financialservices.gov.in/sites/default/files/Act-Policies/2026-01/Payment-and-Settlement-Systems-Act_2007.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 10A–11, PDF p. 8"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A provider gives participants notice before requesting RBI approval for a structural change and assumes the pre-approval notice necessarily satisfies Section 11. What sequence needs checking?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Participant notice always replaces prior RBI approval",
+          "explanation_md": "The section ordinarily requires both approval and the specified notice."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Internal project approval is identical to RBI approval",
+          "explanation_md": "Internal governance cannot substitute for the statutory prior approval."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The provider may choose any notice exception without RBI involvement",
+          "explanation_md": "The proviso concerns the specified RBI permission, not an exception invented by the provider."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Prior RBI approval followed by the ordinary post-approval participant notice",
+          "explanation_md": "The statutory sequence and any valid variation must be established, not assumed from an earlier announcement."
+        }
+      ],
+      "correct_explanation_md": "The statutory sequence and any valid variation must be established, not assumed from an earlier announcement.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_e518ffe2e62ff381f95802b450defca97a5812b995567a7a3770aff5e8fc9162",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U04",
+      "objective_ids": [
+        "BRBL::MOD_B::U04::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 181–182, 185; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "PSS_ACT_DFS",
+          "authority": "Government of India, Department of Financial Services",
+          "title": "The Payment and Settlement Systems Act, 2007 (Act 51 of 2007), statutory copy",
+          "url": "https://financialservices.gov.in/sites/default/files/Act-Policies/2026-01/Payment-and-Settlement-Systems-Act_2007.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 10A–11, PDF p. 8"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A training summary turns Section 10A into “all banking services must be free”. Which qualification is missing?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The rule applies only when a payer uses foreign banknotes",
+          "explanation_md": "The provision concerns prescribed electronic payment modes, not a general foreign-cash condition."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Its scope is tied to the electronic modes prescribed under the referenced provision",
+          "explanation_md": "A scoped electronic-mode rule cannot be expanded to every bank service without further authority."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Only charges with the word fee are covered",
+          "explanation_md": "The text includes direct and indirect charges; the label alone is not decisive."
+        },
+        {
+          "option_id": "D",
+          "text_md": "A bank may disregard the provision whenever a customer agrees",
+          "explanation_md": "Customer agreement does not itself override the statutory prohibition where it applies."
+        }
+      ],
+      "correct_explanation_md": "A scoped electronic-mode rule cannot be expanded to every bank service without further authority.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_88e3e6ab206e855b97737cec72826ed14994d01b650bb5c9a518230209231484",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U04",
+      "objective_ids": [
+        "BRBL::MOD_B::U04::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 181–182, 185; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "PSS_ACT_DFS",
+          "authority": "Government of India, Department of Financial Services",
+          "title": "The Payment and Settlement Systems Act, 2007 (Act 51 of 2007), statutory copy",
+          "url": "https://financialservices.gov.in/sites/default/files/Act-Policies/2026-01/Payment-and-Settlement-Systems-Act_2007.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 10A–11, PDF p. 8"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "RBI has objected to a proposed structural change. The provider sends comments and treats that reply as approval to launch. Which requirement remains?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only a competing provider's written endorsement",
+          "explanation_md": "A competitor's endorsement does not satisfy the RBI approval requirement."
+        },
+        {
+          "option_id": "B",
+          "text_md": "A press release by the customer",
+          "explanation_md": "Customer publicity does not complete the statutory change-control process."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Receipt of RBI approval before effecting the proposed change",
+          "explanation_md": "The objection/comment exchange does not itself replace the approval required under Section 11."
+        },
+        {
+          "option_id": "D",
+          "text_md": "No further requirement because sending any reply overrides objections",
+          "explanation_md": "A reply does not confer the authority to disregard RBI's decision."
+        }
+      ],
+      "correct_explanation_md": "The objection/comment exchange does not itself replace the approval required under Section 11.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_4aff1aed63bbc483cc1789204decd954d21b598fb99e3b00c383968e62a9183c",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U04",
+      "objective_ids": [
+        "BRBL::MOD_B::U04::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 181–182, 185; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "PSS_ACT_DFS",
+          "authority": "Government of India, Department of Financial Services",
+          "title": "The Payment and Settlement Systems Act, 2007 (Act 51 of 2007), statutory copy",
+          "url": "https://financialservices.gov.in/sites/default/files/Act-Policies/2026-01/Payment-and-Settlement-Systems-Act_2007.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 10A–11, PDF p. 8"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

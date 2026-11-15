@@ -1,0 +1,188 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-B-U03-B004",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL Module B unit 3: FEMA — Assess authorised-person scope and RBI control using the duties to enquire, refuse and report where specified",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04",
+    "FEMA_ACT_1999"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "statement": "Courseware defines authorised person and describes RBI authorisation and inspection powers. It sets out the broad section 3 restrictions subject to statutory permissions.",
+      "source_id": "S04",
+      "locator": "S04 printed pp. 170, 172; PDF page = printed page + 19",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F002",
+      "statement": "RBI grants written conditional authorisation under section 10. Authorised persons must comply with applicable directions/authorisation terms and seek declarations/information reasonably satisfying lawful purpose. Refusal or unsatisfactory compliance requires written refusal, with reporting where the specified reason-to-believe condition exists. RBI can direct information and inspect records under sections 11–12; section 10(3)(b) revocation includes a representation safeguard.",
+      "source_id": "FEMA_ACT_1999",
+      "locator": "sections 2(c), 3 and 10–12, PDF pp. 3, 6, 8–9",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "draft_id": "D001",
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Authorisation gives defined scope, not unrestricted permission",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "An **authorised person** is someone with the relevant Section 10 authorisation, such as an authorised dealer, money changer or other specified person. It is not restricted to a natural person. The authorisation is written and conditional.\n\nA forex file needs two permission checks: whether the transaction itself has a lawful route and whether this provider's authorisation covers the proposed service. A customer declaration cannot enlarge the bank's authorised scope. RBI directions and the terms of authorisation remain relevant even when the customer supplies a commercial explanation.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Can a customer's instruction expand a provider's authorisation?",
+          "expected_takeaway": "No. The transaction must fit the provider's authorisation and the applicable legal permissions."
+        }
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D002",
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Record the enquiry and the reason for the decision",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "Section 10(5) requires declarations and information that reasonably satisfy the authorised person about avoiding contravention or evasion. If the customer refuses the requirement or compliance is unsatisfactory, the authorised person must **refuse in writing**. A reason to believe the specified contravention or evasion is contemplated also engages reporting to RBI.\n\nThe file should distinguish incomplete evidence from the further reporting condition; do not claim every missing document proves wrongdoing. Sections 11–12 separately support RBI directions, information requests and inspection. The authorisation regime also has specific revocation grounds and safeguards, including the representation opportunity for the non-compliance ground in Section 10(3)(b).",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Why should the written refusal and any reporting decision be separately reasoned?",
+          "expected_takeaway": "Unsatisfactory compliance and the statutory reason-to-believe reporting condition are distinct parts of Section 10(5)."
+        }
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D003",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A money changer receives a transaction request outside the terms of its written authorisation. The customer offers a signed declaration accepting responsibility. Which response best follows the authorisation framework?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The declaration automatically enlarges the authorisation",
+            "explanation_md": "A customer cannot expand the scope RBI authorised by accepting responsibility."
+          },
+          {
+            "option_id": "B",
+            "text_md": "All authorised persons may conduct every forex service",
+            "explanation_md": "Authorisations are conditional; the specific permitted scope must be checked."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A commercial invoice replaces the authorisation requirement",
+            "explanation_md": "Purpose documentation does not replace the provider's need for the appropriate authorisation."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Check the lawful route and the provider's authorised scope before undertaking it",
+            "explanation_md": "The customer's declaration cannot substitute for either permission check."
+          }
+        ],
+        "correct_explanation_md": "The customer's declaration cannot substitute for either permission check."
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D004",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A customer refuses information reasonably required under Section 10(5). What should the authorised person do under the text, while separately assessing the reporting condition?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Refuse in writing to undertake the transaction",
+            "explanation_md": "The section requires written refusal on refusal or unsatisfactory compliance, with reporting where the further condition is met."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Proceed immediately because only RBI may ask questions",
+            "explanation_md": "Section 10(5) places an enquiry duty on the authorised person itself."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Treat missing information alone as a final criminal conviction",
+            "explanation_md": "The enquiry and reporting duties do not authorise the bank to pronounce a criminal conviction."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Record no reason so that the transaction cannot be audited",
+            "explanation_md": "Avoiding a record conflicts with the written-refusal requirement and undermines the decision evidence."
+          }
+        ],
+        "correct_explanation_md": "The section requires written refusal on refusal or unsatisfactory compliance, with reporting where the further condition is met."
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D005",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "During a valid RBI inspection of an authorised person, relevant account records are requested within the inspector statutory authority. A manager says the records are confidential and need never be produced. Which statutory power is being overlooked?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The power of the inspected entity to replace the statutory request with its own confidentiality policy",
+            "explanation_md": "An internal confidentiality policy does not displace a valid statutory inspection and records requirement."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A blanket exemption for every company director",
+            "explanation_md": "Section 12 expressly addresses duties of directors, partners and officers in the specified circumstances."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Section 12 powers to inspect and require the specified books, accounts, documents and information",
+            "explanation_md": "The inspection power is not confined to public promotional material."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A requirement that every statutory inspection first obtain a separate court decree",
+            "explanation_md": "Section 12 gives the specified inspection powers; the described request is not subject to this invented universal court-decree prerequisite."
+          }
+        ],
+        "correct_explanation_md": "The inspection power is not confined to public promotional material."
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Codex authoring only. Independent source/session, originality and pedagogical review pending; canonical review must remain null and items must remain draft.",
+    "The local Enforcement Directorate statutory copy was read directly for the cited provisions. It has footnotes with 2019 commencement dates; its consolidation through 30 June 2026 has not been established. Current subordinate rules, directions, notifications and relevant judgments must be checked before publication.",
+    "Courseware printed pp. 169–176 / PDF pp. 188–195, including end questions, inspected as images. Teaching and questions designed independently from factual briefs; no source passage, comparison table, named case or source-question number-swap reused. Independent originality review remains pending.",
+    "The detailed enquiry/refusal/reporting, inspection-record and revocation-safeguard rules are supplemental Act evidence; the courseware treatment is shorter. No current authorised-dealer category permissions or live transaction limits have been certified."
+  ],
+  "next_batch_hint": "Continue BRBL-B-U03-B005; retain the independent review gate."
+}

@@ -54,11 +54,26 @@ A working draft importer is included at `src/import/staging.mjs`, with CLI `scri
 
 ## Question and calculation checks
 
+`node scripts/audit-content-quality.mjs [batch-directory-or-pack-json]` performs automated screening of canonical items. A batch directory resolves to `draft-bundle.json`; missing, empty or malformed screening inputs fail with a nonzero exit status. Findings include short/generic option explanations, courseware-dependent stems, answer-key cycles/skew, reciprocal case links and a quantitative-item inventory. Answer patterns are order-dependent review prompts, never grounds to change a correct answer. Numerical correctness and test coverage are explicitly **not checked** by this command; use independent deterministic calculations and retained review evidence. A zero-findings report does not authorize publication or establish source support, originality or legal accuracy.
+
 Use independently designed scenarios, reasoning tasks, explanations and plausible distractors. Do not copy source question banks, make cosmetic variants of source questions, or call generated questions actual IIBF questions. A book may establish a formula; independently recompute new example values using deterministic arithmetic. Store the stated rounding instruction and the resulting decimal-string answer. Preserve numerical conventions, valuation dates and units.
 
 The canonical expected answer is already rounded to the question's precision. When implementing grading, define input parsing explicitly: reject extra nonzero precision, commas/exponents unless the UI intentionally normalises them, NaN/infinity and incompatible units. Harmless formatting differences such as a trailing zero can be normalised under a documented rule. Do not round an incorrect learner answer into correctness through a broad tolerance. Handle negative zero deliberately. This kit validates stored answer specifications; it does not implement the numerical grader.
 
 For legal or regulatory content, compare with relevant primary updates and the selected exam cutoff. Native NotebookLM citations and a second LLM audit are evidence aids; neither is independent verification. Record review method honestly. A content item cannot be published merely because it says `source_verified: true`.
+
+## Recording draft coverage before publication
+
+After explicit objective registration and a successful structural import, run:
+
+```sh
+node scripts/register-draft-ledger.mjs content/batches/BATCH_ID [content/batches/ANOTHER_BATCH_ID ...]
+npm run content:build
+```
+
+Register one paper per invocation. The command rebuilds each bundle from its saved staging/config against the catalogue and replays any numbered draft history. It rejects stale payloads, missing or invalid revision history, broken mappings, fixture origin, absent authoring evidence and attempts to re-register a published identity as draft. All bundles are validated before the single paper-ledger write. Existing published IDs, gaps, caveats and review references are retained; adding draft material reopens source/originality review and applicable calculation review. This command never publishes, grants approval or creates a passed review. Use the explicit unreviewed-draft correction command documented in [staging-import.md](staging-import.md); do not delete and recreate a retained bundle to hide a correction.
+
+Draft teaching/assessment flags use a mechanical floor (one teaching item and two questions); they indicate authored material awaiting editorial review, not demonstrated depth or complete syllabus coverage. Source support is conservatively partial until applicability and support are reviewed. The visual map must retain pending review, unresolved issues and zero published IDs for new drafts. Its generated narrative must derive review/publication counts from the ledger rather than a fixed zero-content message.
 
 ## Publication controls
 

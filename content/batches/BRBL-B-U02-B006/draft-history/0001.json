@@ -1,0 +1,602 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-B-U02-B006",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL Module B unit 2: Negotiable Instruments Act, 1881 — Assess payment in due course using apparent tenor, good faith, care and entitlement warning signs",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04",
+      "NI_ACT_THC_2018_TEXT"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "statement": "Payment in due course requires payment according to apparent tenor, in good faith and without negligence, to a person in possession where circumstances supply no reasonable ground to believe that person lacks entitlement to payment.",
+        "source_id": "S04",
+        "locator": "S04 printed pp. 156–157; PDF page = printed page + 19",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "statement": "Payment in due course requires payment according to apparent tenor, in good faith and without negligence, to a person in possession where circumstances supply no reasonable ground to believe that person lacks entitlement to payment.",
+        "source_id": "NI_ACT_THC_2018_TEXT",
+        "locator": "section 10, PDF p. 10",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "draft_id": "D001",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Payment in due course is a combined test",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "A bank should not reduce **payment in due course** to one successful check. Section 10 combines the instrument's apparent terms, good faith, absence of negligence and circumstances that do not reasonably suggest the recipient is not entitled. Possession is relevant, but it is not the entire test.\n\nConsider a payment file with a clean-looking image but an unresolved warning about the presenter's entitlement. The clean image addresses only part of the decision. The bank still needs to deal with the warning; a favourable result on one condition cannot substitute for the others.",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Can good faith alone establish payment in due course?",
+            "expected_takeaway": "No. Apparent tenor, care and the circumstances of entitlement also matter."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Investigate warning signs before relying on a payment defence",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "The practical question is what a careful payment decision should have noticed from the instrument and surrounding circumstances. A mismatch with the visible payment date, an unresolved instruction affecting payment or a reasonable concern about entitlement needs attention before release.\n\nThis is not a promise that a banker must discover every concealed fraud. The learning task is to distinguish a hidden problem despite ordinary care from a warning that was available and ignored. The available evidence and the checks actually performed belong in the file.",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Why does an ignored entitlement warning matter even where the presenter physically holds the cheque?",
+            "expected_takeaway": "Section 10 requires circumstances without reasonable grounds to doubt entitlement; possession alone cannot satisfy that requirement."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A payment officer says, “The presenter has the original cheque, so payment in due course is established.” Which response correctly applies Section 10?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Possession is irrelevant in every payment",
+              "explanation_md": "The definition does refer to possession, but combines it with several other conditions."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Only the date printed on the cheque matters",
+              "explanation_md": "Apparent tenor matters, but so do good faith, absence of negligence and the entitlement circumstances."
+            },
+            {
+              "option_id": "C",
+              "text_md": "A clean signature eliminates every possible payment issue",
+              "explanation_md": "A signature check alone does not resolve other terms or reasonable grounds to doubt entitlement."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Possession must be considered alongside tenor, good faith, care and entitlement circumstances",
+              "explanation_md": "The statutory conditions work together; possession does not replace the remaining checks."
+            }
+          ],
+          "correct_option_id": "D",
+          "correct_explanation_md": "The statutory conditions work together; possession does not replace the remaining checks."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A branch intends to pay before the future date visible on a post-dated cheque. Which part of payment in due course is directly put in issue?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only the recipient's occupation",
+              "explanation_md": "Occupation does not answer whether payment follows the instrument's visible terms."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Payment according to the apparent tenor of the instrument",
+              "explanation_md": "The visible payment date forms part of the terms the bank must respect."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Whether every indorsement was signed at the same branch",
+              "explanation_md": "Branch location of signatures does not cure payment contrary to the cheque's visible date."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Whether the bank has a general policy of encouraging digital payments",
+              "explanation_md": "A general digital-payment policy does not change the cheque's apparent terms."
+            }
+          ],
+          "correct_option_id": "B",
+          "correct_explanation_md": "The visible payment date forms part of the terms the bank must respect."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A bank pays honestly but ignores a readily visible defect that ordinary care would have addressed. Why is honesty alone insufficient for Section 10?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The definition requires the bank to guarantee discovery of all hidden fraud",
+              "explanation_md": "Section 10 requires absence of negligence; that does not amount to a guarantee of discovering every concealed fraud."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Every payment must be personally approved by the drawer at the counter",
+              "explanation_md": "The definition does not impose this universal counter-approval requirement."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Good faith and absence of negligence are separate requirements",
+              "explanation_md": "An honest decision can still be negligent when available warning signs are ignored."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The recipient must always be the original payee in person",
+              "explanation_md": "The definition is not confined to personal attendance by the original payee; entitlement circumstances must be assessed."
+            }
+          ],
+          "correct_option_id": "C",
+          "correct_explanation_md": "An honest decision can still be negligent when available warning signs are ignored."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Draft only. Codex authored this batch; Antigravity and human review have not occurred. No publication approval is claimed.",
+      "Courseware pages were inspected as rendered images. Statutory wording was cross-checked against the government-hosted High Court copy. Its consolidation date is not established; amendments and applicable judgments through 30 June 2026 remain to be checked before publication.",
+      "Independent teaching and assessment scenarios were designed from a factual brief. Author compared them with the inspected courseware, including its end-of-unit questions; independent originality and pedagogy review remain pending."
+    ],
+    "next_batch_hint": "Continue BRBL-B-U02-B007; preserve draft-only review gate."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-B-U02-B006",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 12, Compulsory Paper IV, Module B: Negotiable Instruments Act, 1881"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "NI_ACT_THC_2018_TEXT",
+        "authority": "Government of India statute, copy hosted by the High Court of Tripura",
+        "title": "The Negotiable Instruments Act, 1881 (Act 26 of 1881), statutory text including 2018 amendments",
+        "url": "https://thc.nic.in/Central%20Governmental%20Acts/Negotiable%20Instruments%20Act%2C%201881.pdf",
+        "publication_date": null,
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_B::U02",
+        "objective_ids": [
+          "BRBL::MOD_B::U02::LO_06"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_B::U02",
+        "objective_ids": [
+          "BRBL::MOD_B::U02::LO_06"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_B::U02",
+        "objective_ids": [
+          "BRBL::MOD_B::U02::LO_06"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BRBL::MOD_B::U02",
+        "objective_ids": [
+          "BRBL::MOD_B::U02::LO_06"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "unit_id": "BRBL::MOD_B::U02",
+        "objective_ids": [
+          "BRBL::MOD_B::U02::LO_06"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-B-U02-B006",
+      "draft_id": "D001",
+      "item_id": "item_43f3499a5a0f0f25906087f964c24c4471a987305a2af2e988ab10b8e760481b"
+    },
+    {
+      "batch_id": "BRBL-B-U02-B006",
+      "draft_id": "D002",
+      "item_id": "item_9965a98034d941385a47c68dd0beb5a9ac96245a68425a368fd097c4a2bbd1b7"
+    },
+    {
+      "batch_id": "BRBL-B-U02-B006",
+      "draft_id": "D003",
+      "item_id": "item_21eb73cdcc3ed92335abfd7d55afe6dc3d6f06011c7904f00a3b58891503a522"
+    },
+    {
+      "batch_id": "BRBL-B-U02-B006",
+      "draft_id": "D004",
+      "item_id": "item_bae4b99b4ffbd50f507825399f8c0105c1c9fc4fcc196af482673892a489e405"
+    },
+    {
+      "batch_id": "BRBL-B-U02-B006",
+      "draft_id": "D005",
+      "item_id": "item_fcc6c9f838c24b1760d65a93b084f0886a29e0e56de0ab8cf2e499b58cbb1502"
+    }
+  ],
+  "items": [
+    {
+      "title": "Payment in due course is a combined test",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "A bank should not reduce **payment in due course** to one successful check. Section 10 combines the instrument's apparent terms, good faith, absence of negligence and circumstances that do not reasonably suggest the recipient is not entitled. Possession is relevant, but it is not the entire test.\n\nConsider a payment file with a clean-looking image but an unresolved warning about the presenter's entitlement. The clean image addresses only part of the decision. The bank still needs to deal with the warning; a favourable result on one condition cannot substitute for the others.",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Can good faith alone establish payment in due course?",
+        "expected_takeaway": "No. Apparent tenor, care and the circumstances of entitlement also matter."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_43f3499a5a0f0f25906087f964c24c4471a987305a2af2e988ab10b8e760481b",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U02",
+      "objective_ids": [
+        "BRBL::MOD_B::U02::LO_06"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 156–157; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "NI_ACT_THC_2018_TEXT",
+          "authority": "Government of India statute, copy hosted by the High Court of Tripura",
+          "title": "The Negotiable Instruments Act, 1881 (Act 26 of 1881), statutory text including 2018 amendments",
+          "url": "https://thc.nic.in/Central%20Governmental%20Acts/Negotiable%20Instruments%20Act%2C%201881.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section 10, PDF p. 10"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Investigate warning signs before relying on a payment defence",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "The practical question is what a careful payment decision should have noticed from the instrument and surrounding circumstances. A mismatch with the visible payment date, an unresolved instruction affecting payment or a reasonable concern about entitlement needs attention before release.\n\nThis is not a promise that a banker must discover every concealed fraud. The learning task is to distinguish a hidden problem despite ordinary care from a warning that was available and ignored. The available evidence and the checks actually performed belong in the file.",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Why does an ignored entitlement warning matter even where the presenter physically holds the cheque?",
+        "expected_takeaway": "Section 10 requires circumstances without reasonable grounds to doubt entitlement; possession alone cannot satisfy that requirement."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_9965a98034d941385a47c68dd0beb5a9ac96245a68425a368fd097c4a2bbd1b7",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U02",
+      "objective_ids": [
+        "BRBL::MOD_B::U02::LO_06"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 156–157; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "NI_ACT_THC_2018_TEXT",
+          "authority": "Government of India statute, copy hosted by the High Court of Tripura",
+          "title": "The Negotiable Instruments Act, 1881 (Act 26 of 1881), statutory text including 2018 amendments",
+          "url": "https://thc.nic.in/Central%20Governmental%20Acts/Negotiable%20Instruments%20Act%2C%201881.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section 10, PDF p. 10"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A payment officer says, “The presenter has the original cheque, so payment in due course is established.” Which response correctly applies Section 10?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Possession is irrelevant in every payment",
+          "explanation_md": "The definition does refer to possession, but combines it with several other conditions."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Only the date printed on the cheque matters",
+          "explanation_md": "Apparent tenor matters, but so do good faith, absence of negligence and the entitlement circumstances."
+        },
+        {
+          "option_id": "C",
+          "text_md": "A clean signature eliminates every possible payment issue",
+          "explanation_md": "A signature check alone does not resolve other terms or reasonable grounds to doubt entitlement."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Possession must be considered alongside tenor, good faith, care and entitlement circumstances",
+          "explanation_md": "The statutory conditions work together; possession does not replace the remaining checks."
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_explanation_md": "The statutory conditions work together; possession does not replace the remaining checks.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_21eb73cdcc3ed92335abfd7d55afe6dc3d6f06011c7904f00a3b58891503a522",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U02",
+      "objective_ids": [
+        "BRBL::MOD_B::U02::LO_06"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 156–157; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "NI_ACT_THC_2018_TEXT",
+          "authority": "Government of India statute, copy hosted by the High Court of Tripura",
+          "title": "The Negotiable Instruments Act, 1881 (Act 26 of 1881), statutory text including 2018 amendments",
+          "url": "https://thc.nic.in/Central%20Governmental%20Acts/Negotiable%20Instruments%20Act%2C%201881.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section 10, PDF p. 10"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A branch intends to pay before the future date visible on a post-dated cheque. Which part of payment in due course is directly put in issue?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only the recipient's occupation",
+          "explanation_md": "Occupation does not answer whether payment follows the instrument's visible terms."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Payment according to the apparent tenor of the instrument",
+          "explanation_md": "The visible payment date forms part of the terms the bank must respect."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Whether every indorsement was signed at the same branch",
+          "explanation_md": "Branch location of signatures does not cure payment contrary to the cheque's visible date."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Whether the bank has a general policy of encouraging digital payments",
+          "explanation_md": "A general digital-payment policy does not change the cheque's apparent terms."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_explanation_md": "The visible payment date forms part of the terms the bank must respect.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_bae4b99b4ffbd50f507825399f8c0105c1c9fc4fcc196af482673892a489e405",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U02",
+      "objective_ids": [
+        "BRBL::MOD_B::U02::LO_06"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 156–157; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "NI_ACT_THC_2018_TEXT",
+          "authority": "Government of India statute, copy hosted by the High Court of Tripura",
+          "title": "The Negotiable Instruments Act, 1881 (Act 26 of 1881), statutory text including 2018 amendments",
+          "url": "https://thc.nic.in/Central%20Governmental%20Acts/Negotiable%20Instruments%20Act%2C%201881.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section 10, PDF p. 10"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A bank pays honestly but ignores a readily visible defect that ordinary care would have addressed. Why is honesty alone insufficient for Section 10?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The definition requires the bank to guarantee discovery of all hidden fraud",
+          "explanation_md": "Section 10 requires absence of negligence; that does not amount to a guarantee of discovering every concealed fraud."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Every payment must be personally approved by the drawer at the counter",
+          "explanation_md": "The definition does not impose this universal counter-approval requirement."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Good faith and absence of negligence are separate requirements",
+          "explanation_md": "An honest decision can still be negligent when available warning signs are ignored."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The recipient must always be the original payee in person",
+          "explanation_md": "The definition is not confined to personal attendance by the original payee; entitlement circumstances must be assessed."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_explanation_md": "An honest decision can still be negligent when available warning signs are ignored.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_fcc6c9f838c24b1760d65a93b084f0886a29e0e56de0ab8cf2e499b58cbb1502",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U02",
+      "objective_ids": [
+        "BRBL::MOD_B::U02::LO_06"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 156–157; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "NI_ACT_THC_2018_TEXT",
+          "authority": "Government of India statute, copy hosted by the High Court of Tripura",
+          "title": "The Negotiable Instruments Act, 1881 (Act 26 of 1881), statutory text including 2018 amendments",
+          "url": "https://thc.nic.in/Central%20Governmental%20Acts/Negotiable%20Instruments%20Act%2C%201881.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section 10, PDF p. 10"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-B-U02-B002",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL Module B unit 2: Negotiable Instruments Act, 1881 — Apply order/bearer transfer rules and distinguish blank, full and restrictive indorsements",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04",
+    "NI_ACT_THC_2018_TEXT"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "statement": "Courseware distinguishes order and bearer instruments and states that order transfer uses indorsement and delivery while bearer transfer uses delivery. Its section 13 discussion covers blank indorsement; its holder discussion mentions conversion of a blank indorsement into a full one. Restrictive-indorsement rules in this batch are supplemental statutory evidence, not attributed to these courseware pages.",
+      "source_id": "S04",
+      "locator": "S04 printed pp. 151–152, 160; PDF page = printed page + 19",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F002",
+      "statement": "Section 13 covers notes, bills and cheques payable to order or bearer; an order instrument can name a person without the words or order unless transfer is prohibited. Subject to statutory exceptions, bearer negotiation uses delivery and order negotiation uses indorsement plus delivery. A blank indorsement signs only; a full indorsement directs payment to an identified indorsee; express restrictions can limit further negotiation.",
+      "source_id": "NI_ACT_THC_2018_TEXT",
+      "locator": "sections 13–16 and 47–50, PDF pp. 10–11, 15",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "draft_id": "D001",
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Read the transfer instruction before handling delivery",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "A named recipient and a bearer do not follow identical transfer routes. An instrument payable to a named person can be **order paper** even when it omits the words “or order”, provided its wording does not prohibit transfer. Subject to statutory exceptions, order paper is negotiated by the holder's **indorsement and delivery**. Bearer paper is negotiated by **delivery**.\n\nA bank handling an order instrument should therefore distinguish custody from negotiation. Passing an unsigned order instrument to a courier does not supply the missing indorsement. The courier's possession also does not establish an entitlement to the proceeds.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "For order paper, which two steps are ordinarily needed for negotiation?",
+          "expected_takeaway": "Indorsement by the holder and delivery, subject to the statutory qualifications."
+        }
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D002",
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "An indorsement can identify the next person or restrict the next use",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "A **blank indorsement** contains the indorser's signature alone. A **full indorsement** adds a direction naming the indorsee. The difference concerns the instruction attached to the signature, rather than the physical space used.\n\nRead any limiting words as well. An indorsement can appoint a collecting agent or exclude further negotiation. An operational review should record both who may receive the instrument and what authority the wording gives that person. Treating every signature on the back as an unrestricted transfer would miss these limits.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Why should a reviewer read words beside an indorsement rather than check the signature alone?",
+          "expected_takeaway": "The words may identify an indorsee, restrict further negotiation or create an agency."
+        }
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D003",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A company holds an order bill. Its employee proposes to send it unsigned to a finance company as a completed negotiation. What should the operations reviewer identify?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Delivery alone always negotiates order paper",
+            "explanation_md": "Delivery alone is the ordinary bearer route; order negotiation requires the holder's indorsement as well."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The proposed process omits the holder's indorsement",
+            "explanation_md": "For order paper, indorsement and delivery are the ordinary statutory steps; dispatch alone does not supply both."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Only the drawee may transfer the bill",
+            "explanation_md": "The relevant transferor is the holder; a drawee is the person directed to pay and need not be the holder."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A company can never hold order paper",
+            "explanation_md": "Corporate status does not create this prohibition; the issue described is the missing transfer step."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "For order paper, indorsement and delivery are the ordinary statutory steps; dispatch alone does not supply both."
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D004",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A transfer-review checklist treats “signature alone” and “signature with a direction naming the next recipient” as the same kind of indorsement. Which correction is appropriate?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Both must be classified as full indorsements",
+            "explanation_md": "A full indorsement identifies an indorsee; the signature-only version is blank."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The signature-only version cannot be an indorsement",
+            "explanation_md": "A signature alone for negotiation can be a blank indorsement."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Naming the next recipient makes the instrument a new cheque",
+            "explanation_md": "The added direction changes the indorsement, not the underlying instrument type."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Distinguish blank from full, then inspect any express restrictions",
+            "explanation_md": "The classification depends on the direction accompanying the signature; limiting words can separately restrict authority."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "The classification depends on the direction accompanying the signature; limiting words can separately restrict authority."
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D005",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An instrument names a particular payee, does not say “or order”, and contains no words barring transfer. A trainee rejects it as non-transferable solely because “or order” is absent. What has the trainee overlooked?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Section 13 can treat a named-payee instrument as payable to order without those words",
+            "explanation_md": "The absence of transfer-prohibiting wording matters; the specific phrase “or order” is not always necessary."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Every named-payee instrument is automatically bearer paper",
+            "explanation_md": "Naming a payee does not by itself make the instrument payable to bearer."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Only blank indorsements can ever transfer instruments",
+            "explanation_md": "Full indorsements also provide a negotiation route; the trainee's error arises before that step."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Any courier may decide to remove transfer restrictions",
+            "explanation_md": "A courier cannot override the instrument's legal wording or obtain transfer authority merely from custody."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "The absence of transfer-prohibiting wording matters; the specific phrase “or order” is not always necessary."
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Draft only. Codex authored this batch; Antigravity and human review have not occurred. No publication approval is claimed.",
+    "Courseware pages were inspected as rendered images. Statutory wording was cross-checked against the government-hosted High Court copy. Its consolidation date is not established; amendments and applicable judgments through 30 June 2026 remain to be checked before publication.",
+    "Independent teaching and assessment scenarios were designed from a factual brief. Author compared them with the inspected courseware, including its end-of-unit questions; independent originality and pedagogy review remain pending."
+  ],
+  "next_batch_hint": "Continue BRBL-B-U02-B003; preserve draft-only review gate."
+}

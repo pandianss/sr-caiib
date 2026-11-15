@@ -1,0 +1,188 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-B-U02-B008",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL Module B unit 2: Negotiable Instruments Act, 1881 — Apply material-alteration consequences with consent, common intention and timing qualifications",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04",
+    "NI_ACT_THC_2018_TEXT"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "statement": "Courseware describes alteration that changes the instrument legal/business effect and identifies changes to date, payee, amount and order/bearer terms as examples. It stresses drawer authority or confirmation. The precise sections 87–88 consent, common-intention, timing and statutory-qualification rules in this batch come from the statutory copy; they correct the scope of the courseware simplified null-and-void wording.",
+      "source_id": "S04",
+      "locator": "S04 printed pp. 158; PDF page = printed page + 19",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F002",
+      "statement": "Section 87 makes a materially altered instrument void against an existing party who did not consent unless the alteration carries out the original parties' common intention; it is subject to sections 20, 49, 86 and 125. An indorsee's material alteration discharges the indorser's liability to that indorsee for the consideration. Section 88 binds a later acceptor or indorser notwithstanding a previous alteration.",
+      "source_id": "NI_ACT_THC_2018_TEXT",
+      "locator": "sections 87–88, PDF p. 21",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "draft_id": "D001",
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Identify the changed obligation and the party affected",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "A material alteration changes the instrument's legal or commercial effect: changing the amount, the payment timing or the beneficiary can change what a party agreed to. The consequence is not accurately described by saying that every altered document is void against everyone.\n\nUnder Section 87, focus on a person who was already a party when the material change was made and did not consent. The section also recognises the original parties' common intention and is subject to specified statutory provisions. A careful file records the original terms, the change, who was a party at that time and what consent or authority is evidenced.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Why is party timing relevant when an instrument has been materially altered?",
+          "expected_takeaway": "Section 87 concerns a non-consenting party already on the instrument when the alteration was made; later acceptance or indorsement has a separate rule."
+        }
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D002",
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Later acceptance and permitted completion need separate treatment",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "Section 88 provides that an **acceptor or indorser is bound despite an earlier alteration**. Compare that with a person whose existing obligation was changed without consent: the sequence of events can lead to different results.\n\nAlso avoid classifying every permitted addition as an unauthorised material alteration. Section 87 is expressly subject to provisions including completion of inchoate stamped instruments, conversion of a blank indorsement into a full one, qualified acceptance and crossing. Whether an addition falls within one of those provisions must be established from its facts, rather than guessed from the presence of new handwriting.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does Section 87 justify treating every later annotation as invalid?",
+          "expected_takeaway": "No. Consent, common intention, the statutory qualifications and later-party rules must be considered."
+        }
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D003",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A review note says, “An amount was materially changed, so every person connected with the instrument is necessarily discharged.” What important qualification does this omit?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only the colour of the altered ink can matter",
+            "explanation_md": "Ink colour alone does not determine the legal effect, consent or the timing of a party's obligation."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Material alterations never affect any party",
+            "explanation_md": "Section 87 can avoid the instrument against a non-consenting existing party; denying all effect is equally wrong."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Consent, common intention, party timing and statutory qualifications must be examined",
+            "explanation_md": "The effect is qualified and party-specific; the blanket conclusion exceeds Sections 87 and 88."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A collecting bank can approve every change for all parties",
+            "explanation_md": "A collecting bank does not acquire unlimited authority to consent on behalf of every affected party."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "The effect is qualified and party-specific; the blanket conclusion exceeds Sections 87 and 88."
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D004",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A person accepts a bill after an earlier alteration. Which provision prevents treating the earlier alteration alone as an automatic release from that acceptance?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Section 88, concerning an acceptor or indorser despite previous alteration",
+            "explanation_md": "The provision addresses later acceptance or indorsement notwithstanding an earlier alteration."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Section 119, because protest conclusively validates the bill",
+            "explanation_md": "Section 119 concerns a rebuttable presumption of dishonour, not the effect of previous alteration on acceptance."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Section 31, because every bill is a cheque",
+            "explanation_md": "Section 31 concerns a cheque drawee's duty; an ordinary bill is not automatically a cheque."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Section 13, because all altered bills become bearer paper",
+            "explanation_md": "Section 13 does not create this conversion or resolve the later acceptor's liability."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "The provision addresses later acceptance or indorsement notwithstanding an earlier alteration."
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D005",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A holder converts a blank indorsement into a full one in the manner authorised by Section 49. A trainee treats the extra words alone as proof of invalidity under Section 87. What should the reviewer explain?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Section 87 overrides every other provision without exception",
+            "explanation_md": "Section 87 is expressly subject to specified provisions, including Section 49."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Any holder can rewrite the amount while naming an indorsee",
+            "explanation_md": "The authorised conversion of an indorsement does not give a general power to alter the amount."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A blank indorsement can never become a full indorsement",
+            "explanation_md": "Section 49 expressly provides the specified conversion route."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Section 87 must be read with its express Section 49 qualification",
+            "explanation_md": "A permitted conversion must be distinguished from an unauthorised change merely because both add writing."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "A permitted conversion must be distinguished from an unauthorised change merely because both add writing."
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Draft only. Codex authored this batch; Antigravity and human review have not occurred. No publication approval is claimed.",
+    "Courseware pages were inspected as rendered images. Statutory wording was cross-checked against the government-hosted High Court copy. Its consolidation date is not established; amendments and applicable judgments through 30 June 2026 remain to be checked before publication.",
+    "Independent teaching and assessment scenarios were designed from a factual brief. Author compared them with the inspected courseware, including its end-of-unit questions; independent originality and pedagogy review remain pending.",
+    "The old courseware's case summaries were read for comparison but are not used as independent authority. No categorical rule about every alteration being null and void has been adopted."
+  ],
+  "next_batch_hint": "Continue BRBL-B-U02-B009; preserve draft-only review gate."
+}

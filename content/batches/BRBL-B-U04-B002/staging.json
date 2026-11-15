@@ -1,0 +1,202 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-B-U04-B002",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL Module B unit 4: Payment and Settlement Systems Act — Identify RBI and the Payments Regulatory Board while distinguishing authority, commencement and operating permission",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04",
+    "PSS_ACT_DFS",
+    "RBI_PSS_FAQ_2025"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "statement": "Courseware p. 178 uses older BPSS language; pp. 179–180 reproduce PRB wording and membership. It identifies RBI authorisation as the ordinary prerequisite for operating a system.",
+      "source_id": "S04",
+      "locator": "S04 printed pp. 178–180; PDF page = printed page + 19",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F002",
+      "statement": "Section 3 names RBI as designated authority acting through the Payments Regulatory Board and specifies its membership. Section 4 requires RBI authorisation for non-RBI operation, subject to specified exceptions; the commencement transition is not a rolling grace period for new entrants.",
+      "source_id": "PSS_ACT_DFS",
+      "locator": "sections 1, 3–4, PDF pp. 3, 5–6; RBI FAQ 2025 Q1–4, PDF p. 1; PRB Regulations 2025, regulations 1–3, PDF p. 5",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F003",
+      "statement": "RBI FAQ dated 20 October 2025 identifies RBI exercising PSS Act functions through the Payments Regulatory Board, names the PSS Regulations 2008 and PRB Regulations 2025, and explains their roles.",
+      "source_id": "RBI_PSS_FAQ_2025",
+      "locator": "Q1–4, PDF p. 1; Gazette PRB Regulations 2025 separately retained in registry and review record",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "draft_id": "D001",
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Use the operative Board framework rather than mixing old and new names",
+        "core_explanation_md": "**RBI** is the designated authority under Section 3. The provision describes exercise of its powers through the **Payments Regulatory Board (PRB)**. Its statutory membership combines the RBI Governor as chairperson, the responsible Deputy Governor, one RBI officer nominated by the Central Board and three Central Government nominees. These are statutory roles, not a list of names to assume unchanged indefinitely.\n\nThe courseware retains an older BPSS description in one paragraph while later printing PRB provisions. The dated RBI FAQ and 2025 Gazette regulations support using the PRB framework. Keep the old name as historical context where needed; do not combine the former committee's composition with the new Board's provisions.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Why should the older BPSS paragraph not be combined with the PRB membership list as if both described one current body?",
+          "expected_takeaway": "They describe different stages of the governance framework; the operative version must be established."
+        }
+      },
+      "fact_ids": [
+        "F001",
+        "F002",
+        "F003"
+      ]
+    },
+    {
+      "draft_id": "D002",
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Authority over a system is different from permission to operate it",
+        "core_explanation_md": "RBI's statutory authority does not give every bank or technology company a right to operate a payment system. Section 4 ordinarily requires a person other than RBI to obtain and follow RBI authorisation. Its exceptions must be checked on their actual terms, including specified agency and group-company situations and notified exemptions.\n\nThe Act's temporary transition for systems existing at commencement is tied to that event. It is not an automatic six-month test period granted whenever a new operator launches. Before a launch decision, identify whether the activity is a payment system and establish authorisation or the exact applicable exemption.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Can a new operator claim a fresh commencement-transition grace period whenever it launches?",
+          "expected_takeaway": "No. The statutory transition was tied to existing systems at the Act's commencement."
+        }
+      },
+      "fact_ids": [
+        "F001",
+        "F002",
+        "F003"
+      ]
+    },
+    {
+      "draft_id": "D003",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A training slide combines the former BPSS committee name with the PRB statutory membership as one current description. What should a reviewer do?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Assume that similar subject matter makes both descriptions interchangeable",
+            "explanation_md": "The source versions need reconciliation; similar functions do not make different governance provisions identical."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Use dated primary evidence to distinguish the historical body from the operative PRB framework",
+            "explanation_md": "The statute, dated RBI FAQ and Gazette regulations support resolving the version mismatch explicitly."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Treat the Board change as removing RBI designation as the authority",
+            "explanation_md": "The PRB framework concerns RBI exercising its functions through the Board; it does not remove RBI designation."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Treat PDF folder dates as the sole source of commencement",
+            "explanation_md": "Storage or upload dates do not by themselves establish legal commencement."
+          }
+        ],
+        "correct_explanation_md": "The statute, dated RBI FAQ and Gazette regulations support resolving the version mismatch explicitly."
+      },
+      "fact_ids": [
+        "F001",
+        "F002",
+        "F003"
+      ]
+    },
+    {
+      "draft_id": "D004",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A new payment-system operator proposes to launch without authorisation and apply within six months, relying on the Act's commencement transition. Why is that reasoning unsafe?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Every new entrant is permanently exempt from the Act",
+            "explanation_md": "The Act does not give new entrants this blanket exemption."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A company registration certificate is always identical to RBI authorisation",
+            "explanation_md": "Corporate registration does not itself establish authorisation under Section 4."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The transition restarts each financial year",
+            "explanation_md": "The transition is tied to commencement, not a recurring financial-year event."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The transition concerned existing systems at commencement, not a rolling launch grace period",
+            "explanation_md": "A new operator must establish its actual authorisation or applicable exemption before operating."
+          }
+        ],
+        "correct_explanation_md": "A new operator must establish its actual authorisation or applicable exemption before operating."
+      },
+      "fact_ids": [
+        "F001",
+        "F002",
+        "F003"
+      ]
+    },
+    {
+      "draft_id": "D005",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A system designer says that being a bank automatically proves authority to operate every payment system. Which check is required?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The activity's specific authorisation or an applicable statutory/notified exemption",
+            "explanation_md": "Bank status alone is not a substitute for the Section 4 operating-permission analysis."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Only the designer's internal launch approval",
+            "explanation_md": "Internal approval cannot replace the required legal permission."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Whether the incorporation documents permit payment-related business",
+            "explanation_md": "Corporate objects alone do not establish the required PSS authorisation or exemption for operating the system."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Whether the first transaction is small",
+            "explanation_md": "A small transaction amount alone does not establish an exemption."
+          }
+        ],
+        "correct_explanation_md": "Bank status alone is not a substitute for the Section 4 operating-permission analysis."
+      },
+      "fact_ids": [
+        "F001",
+        "F002",
+        "F003"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Codex authored these candidates. All source/session, originality and pedagogy reviews remain pending independent review; keep canonical review null and publication state draft.",
+    "Full courseware unit inspected, including end questions (S04 printed pp. 177–186 / PDF pp. 196–205). Statutory provisions cited were read directly from the DFS copy. Comprehensive consolidation and all subordinate directions through 30 June 2026 remain to be verified.",
+    "Learner passages, applied scenarios and all option rationales independently designed from factual briefs. Source questions, distinctive source tables and named cases were not reused; author comparison is not independent originality approval.",
+    "Board nomenclature checked using pre-cutoff dated RBI/Gazette evidence. Office-holder names, detailed tenure/quorum eligibility and notification-dependent exemptions are not certified here. Exact commencement dates must be taken from the notification, not the DFS PDF's folder or metadata."
+  ],
+  "next_batch_hint": "Continue BRBL-B-U04-B003."
+}

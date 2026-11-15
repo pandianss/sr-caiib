@@ -1,0 +1,488 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-B-U05-B001",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL Module B unit 5: Securities and modes of charge I — Identify the secured obligation, specific immovable property and transferred interest without equating every security with a mortgage",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04",
+      "TPA_DELHI_TEXT"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "statement": "Courseware introduces security/charge in lending and section 58(a) mortgage definitions, including money to be advanced, future debt and pecuniary liability.",
+        "source_id": "S04",
+        "locator": "S04 printed pp. 188; PDF page = printed page + 19",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "statement": "Section 58(a) defines a mortgage as transfer of an interest in specific immovable property for the stated secured monetary purposes, with mortgagor/mortgagee/mortgage-money/deed terminology. Section 100 concerns immovable property made security where the transaction does not amount to a mortgage; the general banking use of charge is broader than this statutory distinction.",
+        "source_id": "TPA_DELHI_TEXT",
+        "locator": "sections 58(a) and 100, official Delhi text headings",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "draft_id": "D001",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Build a security file around the obligation and the property",
+          "core_explanation_md": "For a mortgage analysis, identify **whose interest is being offered, which specific immovable property it concerns, and what obligation it secures**. Section 58(a) is not limited to a loan already disbursed. It also addresses money to be advanced, existing or future debt and an engagement that may create a monetary liability.\n\nThe person transferring the interest is the **mortgagor**; the recipient is the **mortgagee**. The secured principal and interest are the mortgage-money. The instrument, if any, effecting the transfer is the mortgage-deed. These roles should be traced to the documents rather than assumed from who visits the branch.\n\nAn outright sale for an independent purchase price and a transfer structured to secure a debt have different purposes. Inspect the operative arrangement; a document label or the word security alone does not finish the classification.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Must the advance already have been disbursed for section 58(a) to be relevant?",
+            "expected_takeaway": "No. The definition includes money to be advanced and the stated future-debt or monetary-liability purposes."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Separate the lending shorthand from the statutory category",
+          "core_explanation_md": "Banking files often use **charge** broadly for a security interest. Section 100 uses a more particular immovable-property category: property is made security for payment, but the transaction does **not amount to a mortgage**. That statutory distinction should be preserved when a question asks which legal arrangement was created.\n\nDo not infer a mortgage merely because a sanction letter calls something collateral. Equally, do not treat every reference to a charge as proof that no mortgage exists. The underlying transaction, property and transfer of interest must be examined. A valid secured transaction also needs the applicable formalities and authority; classification is not a substitute for those checks.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Why is the word charge in a sanction letter insufficient to settle the statutory classification?",
+            "expected_takeaway": "The underlying transaction may be a mortgage or another security arrangement; section 100 has a specific scope."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A bank proposes property security for an undrawn facility. A reviewer rejects mortgage analysis solely because no money has yet been disbursed. Which point in section 58(a) needs attention?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "A mortgage can secure only principal already paid out",
+              "explanation_md": "The definition expressly extends beyond money already advanced."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The definition can cover money to be advanced and the stated future monetary obligations",
+              "explanation_md": "An undrawn facility is not excluded solely by the absence of an earlier disbursement; the remaining creation requirements still need examination."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Any proposed future facility automatically transfers ownership without documents",
+              "explanation_md": "The future-advance purpose does not itself create a valid mortgage or remove its formalities."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Future obligations can be secured only by movable assets",
+              "explanation_md": "Section 58(a) expressly concerns the stated purposes secured through specific immovable property."
+            }
+          ],
+          "correct_explanation_md": "An undrawn facility is not excluded solely by the absence of an earlier disbursement; the remaining creation requirements still need examination."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A legal note distinguishes an immovable-property charge under section 100 from a mortgage. Which fact is central to that distinction?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Whether the lender calls the property collateral",
+              "explanation_md": "Commercial terminology alone does not decide which statutory security arrangement exists."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Whether the borrower has already defaulted",
+              "explanation_md": "Default affects remedies; it does not alone determine whether the transaction amounted to a mortgage at creation."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Whether interest is payable on the underlying loan",
+              "explanation_md": "Interest alone is not the distinction between section 100 security and a mortgage."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Whether the transaction amounts to a mortgage rather than merely making the property security for payment",
+              "explanation_md": "Section 100 expressly addresses security that does not amount to a mortgage; the operative transaction must be examined."
+            }
+          ],
+          "correct_explanation_md": "Section 100 expressly addresses security that does not amount to a mortgage; the operative transaction must be examined."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Codex authoring only. Independent legal/session applicability, original expression/task design and pedagogical review pending. All canonical items must remain draft with null review.",
+      "S04 entire unit inspected including end questions (printed pp. 187–195 / PDF pp. 206–214; PDF p. 215 blank). The cited statutory headings were read directly from the official Delhi text; only expressly identified additional sources support the supplemental facts.",
+      "State amendments, territorial application, stamp/registration requirements, notified towns and later controlling law through 30 June 2026 require review. Source availability is not a certification of the offered security or current legal applicability.",
+      "Teaching and file-review questions were independently designed from factual briefs. No source question, source table or named-case narrative was copied or made into a number/name swap. Author comparison is not independent originality approval.",
+      "Section 100 is supplemental statutory evidence. Territorial application, capacity/title and creation formalities remain transaction-specific; this batch does not certify any live security."
+    ],
+    "next_batch_hint": "Continue BRBL-B-U05-B002; retain source-blocked details in the ledger."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-B-U05-B001",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 12, Compulsory Paper IV, Module B: Law Relating to Securities and Modes of Charge I"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "TPA_DELHI_TEXT",
+        "authority": "Government of NCT of Delhi, Department of District and Sessions Judge",
+        "title": "Transfer of Property Act, 1882 — official statutory text page",
+        "url": "https://session.delhi.gov.in/session/transfer-property-act",
+        "publication_date": null,
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_B::U05",
+        "objective_ids": [
+          "BRBL::MOD_B::U05::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_B::U05",
+        "objective_ids": [
+          "BRBL::MOD_B::U05::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_B::U05",
+        "objective_ids": [
+          "BRBL::MOD_B::U05::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BRBL::MOD_B::U05",
+        "objective_ids": [
+          "BRBL::MOD_B::U05::LO_01"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-B-U05-B001",
+      "draft_id": "D001",
+      "item_id": "item_49421c9ef9158da167109d9c9e7416b2b62ba17d062e8182d2d899a3bdd416db"
+    },
+    {
+      "batch_id": "BRBL-B-U05-B001",
+      "draft_id": "D002",
+      "item_id": "item_57a55caa99181a92212b0646c47fc7470444127d105ab691895b397102629c07"
+    },
+    {
+      "batch_id": "BRBL-B-U05-B001",
+      "draft_id": "D003",
+      "item_id": "item_ebef9db07db1a97136b6bd28df7bdd4f4732386521d88b5ed68b9aba348a6ad7"
+    },
+    {
+      "batch_id": "BRBL-B-U05-B001",
+      "draft_id": "D004",
+      "item_id": "item_fc14d2c2d7f0d08b54f3d25b9d1154ef5b0430dce87f978d707ae6a35749a1f6"
+    }
+  ],
+  "items": [
+    {
+      "title": "Build a security file around the obligation and the property",
+      "core_explanation_md": "For a mortgage analysis, identify **whose interest is being offered, which specific immovable property it concerns, and what obligation it secures**. Section 58(a) is not limited to a loan already disbursed. It also addresses money to be advanced, existing or future debt and an engagement that may create a monetary liability.\n\nThe person transferring the interest is the **mortgagor**; the recipient is the **mortgagee**. The secured principal and interest are the mortgage-money. The instrument, if any, effecting the transfer is the mortgage-deed. These roles should be traced to the documents rather than assumed from who visits the branch.\n\nAn outright sale for an independent purchase price and a transfer structured to secure a debt have different purposes. Inspect the operative arrangement; a document label or the word security alone does not finish the classification.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Must the advance already have been disbursed for section 58(a) to be relevant?",
+        "expected_takeaway": "No. The definition includes money to be advanced and the stated future-debt or monetary-liability purposes."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_49421c9ef9158da167109d9c9e7416b2b62ba17d062e8182d2d899a3bdd416db",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U05",
+      "objective_ids": [
+        "BRBL::MOD_B::U05::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 188; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "TPA_DELHI_TEXT",
+          "authority": "Government of NCT of Delhi, Department of District and Sessions Judge",
+          "title": "Transfer of Property Act, 1882 — official statutory text page",
+          "url": "https://session.delhi.gov.in/session/transfer-property-act",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 58(a) and 100, official Delhi text headings"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Separate the lending shorthand from the statutory category",
+      "core_explanation_md": "Banking files often use **charge** broadly for a security interest. Section 100 uses a more particular immovable-property category: property is made security for payment, but the transaction does **not amount to a mortgage**. That statutory distinction should be preserved when a question asks which legal arrangement was created.\n\nDo not infer a mortgage merely because a sanction letter calls something collateral. Equally, do not treat every reference to a charge as proof that no mortgage exists. The underlying transaction, property and transfer of interest must be examined. A valid secured transaction also needs the applicable formalities and authority; classification is not a substitute for those checks.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Why is the word charge in a sanction letter insufficient to settle the statutory classification?",
+        "expected_takeaway": "The underlying transaction may be a mortgage or another security arrangement; section 100 has a specific scope."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_57a55caa99181a92212b0646c47fc7470444127d105ab691895b397102629c07",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U05",
+      "objective_ids": [
+        "BRBL::MOD_B::U05::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 188; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "TPA_DELHI_TEXT",
+          "authority": "Government of NCT of Delhi, Department of District and Sessions Judge",
+          "title": "Transfer of Property Act, 1882 — official statutory text page",
+          "url": "https://session.delhi.gov.in/session/transfer-property-act",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 58(a) and 100, official Delhi text headings"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A bank proposes property security for an undrawn facility. A reviewer rejects mortgage analysis solely because no money has yet been disbursed. Which point in section 58(a) needs attention?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "A mortgage can secure only principal already paid out",
+          "explanation_md": "The definition expressly extends beyond money already advanced."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The definition can cover money to be advanced and the stated future monetary obligations",
+          "explanation_md": "An undrawn facility is not excluded solely by the absence of an earlier disbursement; the remaining creation requirements still need examination."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Any proposed future facility automatically transfers ownership without documents",
+          "explanation_md": "The future-advance purpose does not itself create a valid mortgage or remove its formalities."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Future obligations can be secured only by movable assets",
+          "explanation_md": "Section 58(a) expressly concerns the stated purposes secured through specific immovable property."
+        }
+      ],
+      "correct_explanation_md": "An undrawn facility is not excluded solely by the absence of an earlier disbursement; the remaining creation requirements still need examination.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_ebef9db07db1a97136b6bd28df7bdd4f4732386521d88b5ed68b9aba348a6ad7",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U05",
+      "objective_ids": [
+        "BRBL::MOD_B::U05::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 188; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "TPA_DELHI_TEXT",
+          "authority": "Government of NCT of Delhi, Department of District and Sessions Judge",
+          "title": "Transfer of Property Act, 1882 — official statutory text page",
+          "url": "https://session.delhi.gov.in/session/transfer-property-act",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 58(a) and 100, official Delhi text headings"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A legal note distinguishes an immovable-property charge under section 100 from a mortgage. Which fact is central to that distinction?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Whether the lender calls the property collateral",
+          "explanation_md": "Commercial terminology alone does not decide which statutory security arrangement exists."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Whether the borrower has already defaulted",
+          "explanation_md": "Default affects remedies; it does not alone determine whether the transaction amounted to a mortgage at creation."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Whether interest is payable on the underlying loan",
+          "explanation_md": "Interest alone is not the distinction between section 100 security and a mortgage."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Whether the transaction amounts to a mortgage rather than merely making the property security for payment",
+          "explanation_md": "Section 100 expressly addresses security that does not amount to a mortgage; the operative transaction must be examined."
+        }
+      ],
+      "correct_explanation_md": "Section 100 expressly addresses security that does not amount to a mortgage; the operative transaction must be examined.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_fc14d2c2d7f0d08b54f3d25b9d1154ef5b0430dce87f978d707ae6a35749a1f6",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U05",
+      "objective_ids": [
+        "BRBL::MOD_B::U05::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 188; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "TPA_DELHI_TEXT",
+          "authority": "Government of NCT of Delhi, Department of District and Sessions Judge",
+          "title": "Transfer of Property Act, 1882 — official statutory text page",
+          "url": "https://session.delhi.gov.in/session/transfer-property-act",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 58(a) and 100, official Delhi text headings"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

@@ -1,0 +1,545 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-B-U05-B005",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL Module B unit 5: Securities and modes of charge I — Analyse usufructuary possession and redemption without inferring ownership merely from elapsed years",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04",
+      "TPA_DELHI_TEXT",
+      "SC_SINGH_RAM_2014"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "statement": "Courseware describes possession and rent/profit appropriation in usufructuary mortgages, but its statement that the mortgagee becomes absolute owner after 30 years is conflicting and not adopted.",
+        "source_id": "S04",
+        "locator": "S04 printed pp. 189–190, 192; PDF page = printed page + 19",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "statement": "Section 58(d) concerns possession and specified income appropriation; section 60 addresses the qualified right to redeem, and section 62 the usufructuary mortgagor recovery-of-possession conditions. Accrual and discharge cannot be replaced by an unqualified date-of-mortgage countdown.",
+        "source_id": "TPA_DELHI_TEXT",
+        "locator": "sections 58(d), 60 and 62, official Delhi text headings",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F003",
+        "source_id": "SC_SINGH_RAM_2014",
+        "locator": "paragraphs 14–17, PDF pp. 36–38; deciding holding paragraph 15, PDF p. 37",
+        "statement": "The Supreme Court holds that the special usufructuary right under section 62 commences in the specified manner of discharge; until then Article 61 limitation does not start for that right. The mortgagee cannot claim ownership merely by expiry of 30 years from the mortgage date. Paragraphs quoting earlier contrary decisions must not be treated as the deciding holding.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "draft_id": "D001",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Reconcile income and the debt before treating possession as title",
+          "core_explanation_md": "In a usufructuary arrangement, the mortgagee may retain the specified possession and appropriate rents or profits as the arrangement permits. A bank examining the property must therefore distinguish **possession held as security** from a later claimed ownership right. The receipts and their agreed application to interest or principal matter.\n\nSection 62 addresses the mortgagor's recovery of possession when its conditions are met. An underwriting file should obtain the mortgage terms, account of receipts, payments or deposits and the legal basis for any asserted change in title. Length of possession alone is not that complete evidence.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Why can years of possession be an incomplete answer to a title enquiry?",
+            "expected_takeaway": "Possession may continue as part of the security arrangement; discharge, accrual and any valid title-changing event need examination."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002",
+          "F003"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Read the deciding holding, not an isolated time-period summary",
+          "core_explanation_md": "In **Singh Ram v. Sheo Ram (21 August 2014)**, the Supreme Court's paragraph 15 addresses the special section 62 usufructuary recovery right. It links its commencement to discharge through the specified rents/profits and payment/deposit routes and rejects ownership claimed merely because 30 years have passed from the mortgage date.\n\nThis contradicts the courseware's automatic-ownership sentence. It does not justify a new blanket claim that every mortgage dispute has no limitation. Identify the mortgage form, the right and accrual event, the applicable law and the case's scope. Later authorities through the exam cutoff still require review. A lender should not accept a mortgagee's unsupported elapsed-time ownership statement as a verified chain of title.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does the 2014 holding justify saying that no mortgage-related claim can ever be time-barred?",
+            "expected_takeaway": "No. It concerns the specified usufructuary right and its accrual; other mortgage rights and limitation questions need their own analysis."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002",
+          "F003"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A prospective security provider supplies no conveyance or decree, only an old usufructuary mortgage and a statement that 40 years of possession made it absolute owner. What should a credit reviewer do in light of the cited 2014 holding?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Accept the claimed ownership once 30 years from the mortgage date are counted",
+              "explanation_md": "The cited holding rejects ownership merely through that elapsed-time reasoning in the specified usufructuary context."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Treat every mortgage of every type as having no possible limitation issue",
+              "explanation_md": "That would extend the holding beyond the special right and facts it addresses."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Substitute the current property valuation for proof of title",
+              "explanation_md": "A valuation does not establish the legal event changing security possession into ownership."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Require legal scrutiny of the arrangement, discharge/accounting and actual basis of title rather than accept elapsed time alone",
+              "explanation_md": "The title file must address the relevant rights and facts; long possession alone does not establish the claimed ownership."
+            }
+          ],
+          "correct_explanation_md": "The title file must address the relevant rights and facts; long possession alone does not establish the claimed ownership."
+        },
+        "fact_ids": [
+          "F001",
+          "F002",
+          "F003"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A review team applies the 2014 usufructuary holding to conclude that limitation for every mortgage remedy starts only when all debt is repaid. Which correction is required?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Use the same start date for every mortgage without identifying the remedy",
+              "explanation_md": "That repeats the error of treating distinct statutory rights as one universal rule."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Identify the particular mortgage, right and accrual provision before applying a limitation rule",
+              "explanation_md": "The cited special section 62 analysis cannot replace separate analysis of every other mortgage remedy."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Ignore the distinction between sale, foreclosure and recovery of possession",
+              "explanation_md": "Those are distinct remedies/rights and the distinctions can matter to limitation and procedure."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Determine limitation solely by how long the bank kept the original deeds",
+              "explanation_md": "Custody duration is not a universal statutory accrual test."
+            }
+          ],
+          "correct_explanation_md": "The cited special section 62 analysis cannot replace separate analysis of every other mortgage remedy."
+        },
+        "fact_ids": [
+          "F001",
+          "F002",
+          "F003"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Codex authoring only. Independent legal/session applicability, original expression/task design and pedagogical review pending. All canonical items must remain draft with null review.",
+      "S04 entire unit inspected including end questions (printed pp. 187–195 / PDF pp. 206–214; PDF p. 215 blank). The cited statutory headings were read directly from the official Delhi text; only expressly identified additional sources support the supplemental facts.",
+      "State amendments, territorial application, stamp/registration requirements, notified towns and later controlling law through 30 June 2026 require review. Source availability is not a certification of the offered security or current legal applicability.",
+      "Teaching and file-review questions were independently designed from factual briefs. No source question, source table or named-case narrative was copied or made into a number/name swap. Author comparison is not independent originality approval.",
+      "Courseware automatic-ownership statement is conflicting. The independent review must check later controlling authorities through 30 June 2026 and the jurisdiction/terms; no exact litigation filing date is assessed. Central Limitation Act PDF retrieval failed (401/timeout) and Articles 62/63 have not been independently verified in this takeover."
+    ],
+    "next_batch_hint": "Continue BRBL-B-U05-B006; retain source-blocked details in the ledger."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-B-U05-B005",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 12, Compulsory Paper IV, Module B: Law Relating to Securities and Modes of Charge I"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "TPA_DELHI_TEXT",
+        "authority": "Government of NCT of Delhi, Department of District and Sessions Judge",
+        "title": "Transfer of Property Act, 1882 — official statutory text page",
+        "url": "https://session.delhi.gov.in/session/transfer-property-act",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "SC_SINGH_RAM_2014",
+        "authority": "Supreme Court of India",
+        "title": "Singh Ram (D) through LRs v. Sheo Ram and others, Civil Appeal 5198 of 2008 and connected matters, judgment dated 21 August 2014",
+        "url": "https://api.sci.gov.in/jonew/judis/41839.pdf",
+        "publication_date": "2014-08-21",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_B::U05",
+        "objective_ids": [
+          "BRBL::MOD_B::U05::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_B::U05",
+        "objective_ids": [
+          "BRBL::MOD_B::U05::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_B::U05",
+        "objective_ids": [
+          "BRBL::MOD_B::U05::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BRBL::MOD_B::U05",
+        "objective_ids": [
+          "BRBL::MOD_B::U05::LO_05"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-B-U05-B005",
+      "draft_id": "D001",
+      "item_id": "item_4fbe1d9d051b4316a5e602b54d5feaae21197a3be721dc168d88764e8241fa23"
+    },
+    {
+      "batch_id": "BRBL-B-U05-B005",
+      "draft_id": "D002",
+      "item_id": "item_158a5fa5d55dd5ec262d3b1f8cf7dc2f44eeaff78a5b5b624d5f9dde46dbbad8"
+    },
+    {
+      "batch_id": "BRBL-B-U05-B005",
+      "draft_id": "D003",
+      "item_id": "item_46d15e8f95dfb457768437cac250ad82fba697f05b45c6c64bc5a01132715f8e"
+    },
+    {
+      "batch_id": "BRBL-B-U05-B005",
+      "draft_id": "D004",
+      "item_id": "item_6af9be07fc80a5182422e46aa89708c4633dd5279f24971adbc1d0537fffed10"
+    }
+  ],
+  "items": [
+    {
+      "title": "Reconcile income and the debt before treating possession as title",
+      "core_explanation_md": "In a usufructuary arrangement, the mortgagee may retain the specified possession and appropriate rents or profits as the arrangement permits. A bank examining the property must therefore distinguish **possession held as security** from a later claimed ownership right. The receipts and their agreed application to interest or principal matter.\n\nSection 62 addresses the mortgagor's recovery of possession when its conditions are met. An underwriting file should obtain the mortgage terms, account of receipts, payments or deposits and the legal basis for any asserted change in title. Length of possession alone is not that complete evidence.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Why can years of possession be an incomplete answer to a title enquiry?",
+        "expected_takeaway": "Possession may continue as part of the security arrangement; discharge, accrual and any valid title-changing event need examination."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_4fbe1d9d051b4316a5e602b54d5feaae21197a3be721dc168d88764e8241fa23",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U05",
+      "objective_ids": [
+        "BRBL::MOD_B::U05::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 189–190, 192; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "TPA_DELHI_TEXT",
+          "authority": "Government of NCT of Delhi, Department of District and Sessions Judge",
+          "title": "Transfer of Property Act, 1882 — official statutory text page",
+          "url": "https://session.delhi.gov.in/session/transfer-property-act",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 58(d), 60 and 62, official Delhi text headings"
+        },
+        {
+          "source_id": "SC_SINGH_RAM_2014",
+          "authority": "Supreme Court of India",
+          "title": "Singh Ram (D) through LRs v. Sheo Ram and others, Civil Appeal 5198 of 2008 and connected matters, judgment dated 21 August 2014",
+          "url": "https://api.sci.gov.in/jonew/judis/41839.pdf",
+          "publication_date": "2014-08-21",
+          "effective_date": null,
+          "locator": "paragraphs 14–17, PDF pp. 36–38; deciding holding paragraph 15, PDF p. 37"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Read the deciding holding, not an isolated time-period summary",
+      "core_explanation_md": "In **Singh Ram v. Sheo Ram (21 August 2014)**, the Supreme Court's paragraph 15 addresses the special section 62 usufructuary recovery right. It links its commencement to discharge through the specified rents/profits and payment/deposit routes and rejects ownership claimed merely because 30 years have passed from the mortgage date.\n\nThis contradicts the courseware's automatic-ownership sentence. It does not justify a new blanket claim that every mortgage dispute has no limitation. Identify the mortgage form, the right and accrual event, the applicable law and the case's scope. Later authorities through the exam cutoff still require review. A lender should not accept a mortgagee's unsupported elapsed-time ownership statement as a verified chain of title.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does the 2014 holding justify saying that no mortgage-related claim can ever be time-barred?",
+        "expected_takeaway": "No. It concerns the specified usufructuary right and its accrual; other mortgage rights and limitation questions need their own analysis."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_158a5fa5d55dd5ec262d3b1f8cf7dc2f44eeaff78a5b5b624d5f9dde46dbbad8",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U05",
+      "objective_ids": [
+        "BRBL::MOD_B::U05::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 189–190, 192; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "TPA_DELHI_TEXT",
+          "authority": "Government of NCT of Delhi, Department of District and Sessions Judge",
+          "title": "Transfer of Property Act, 1882 — official statutory text page",
+          "url": "https://session.delhi.gov.in/session/transfer-property-act",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 58(d), 60 and 62, official Delhi text headings"
+        },
+        {
+          "source_id": "SC_SINGH_RAM_2014",
+          "authority": "Supreme Court of India",
+          "title": "Singh Ram (D) through LRs v. Sheo Ram and others, Civil Appeal 5198 of 2008 and connected matters, judgment dated 21 August 2014",
+          "url": "https://api.sci.gov.in/jonew/judis/41839.pdf",
+          "publication_date": "2014-08-21",
+          "effective_date": null,
+          "locator": "paragraphs 14–17, PDF pp. 36–38; deciding holding paragraph 15, PDF p. 37"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A prospective security provider supplies no conveyance or decree, only an old usufructuary mortgage and a statement that 40 years of possession made it absolute owner. What should a credit reviewer do in light of the cited 2014 holding?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Accept the claimed ownership once 30 years from the mortgage date are counted",
+          "explanation_md": "The cited holding rejects ownership merely through that elapsed-time reasoning in the specified usufructuary context."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Treat every mortgage of every type as having no possible limitation issue",
+          "explanation_md": "That would extend the holding beyond the special right and facts it addresses."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Substitute the current property valuation for proof of title",
+          "explanation_md": "A valuation does not establish the legal event changing security possession into ownership."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Require legal scrutiny of the arrangement, discharge/accounting and actual basis of title rather than accept elapsed time alone",
+          "explanation_md": "The title file must address the relevant rights and facts; long possession alone does not establish the claimed ownership."
+        }
+      ],
+      "correct_explanation_md": "The title file must address the relevant rights and facts; long possession alone does not establish the claimed ownership.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_46d15e8f95dfb457768437cac250ad82fba697f05b45c6c64bc5a01132715f8e",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U05",
+      "objective_ids": [
+        "BRBL::MOD_B::U05::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 189–190, 192; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "TPA_DELHI_TEXT",
+          "authority": "Government of NCT of Delhi, Department of District and Sessions Judge",
+          "title": "Transfer of Property Act, 1882 — official statutory text page",
+          "url": "https://session.delhi.gov.in/session/transfer-property-act",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 58(d), 60 and 62, official Delhi text headings"
+        },
+        {
+          "source_id": "SC_SINGH_RAM_2014",
+          "authority": "Supreme Court of India",
+          "title": "Singh Ram (D) through LRs v. Sheo Ram and others, Civil Appeal 5198 of 2008 and connected matters, judgment dated 21 August 2014",
+          "url": "https://api.sci.gov.in/jonew/judis/41839.pdf",
+          "publication_date": "2014-08-21",
+          "effective_date": null,
+          "locator": "paragraphs 14–17, PDF pp. 36–38; deciding holding paragraph 15, PDF p. 37"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A review team applies the 2014 usufructuary holding to conclude that limitation for every mortgage remedy starts only when all debt is repaid. Which correction is required?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Use the same start date for every mortgage without identifying the remedy",
+          "explanation_md": "That repeats the error of treating distinct statutory rights as one universal rule."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Identify the particular mortgage, right and accrual provision before applying a limitation rule",
+          "explanation_md": "The cited special section 62 analysis cannot replace separate analysis of every other mortgage remedy."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Ignore the distinction between sale, foreclosure and recovery of possession",
+          "explanation_md": "Those are distinct remedies/rights and the distinctions can matter to limitation and procedure."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Determine limitation solely by how long the bank kept the original deeds",
+          "explanation_md": "Custody duration is not a universal statutory accrual test."
+        }
+      ],
+      "correct_explanation_md": "The cited special section 62 analysis cannot replace separate analysis of every other mortgage remedy.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_6af9be07fc80a5182422e46aa89708c4633dd5279f24971adbc1d0537fffed10",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U05",
+      "objective_ids": [
+        "BRBL::MOD_B::U05::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 189–190, 192; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "TPA_DELHI_TEXT",
+          "authority": "Government of NCT of Delhi, Department of District and Sessions Judge",
+          "title": "Transfer of Property Act, 1882 — official statutory text page",
+          "url": "https://session.delhi.gov.in/session/transfer-property-act",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 58(d), 60 and 62, official Delhi text headings"
+        },
+        {
+          "source_id": "SC_SINGH_RAM_2014",
+          "authority": "Supreme Court of India",
+          "title": "Singh Ram (D) through LRs v. Sheo Ram and others, Civil Appeal 5198 of 2008 and connected matters, judgment dated 21 August 2014",
+          "url": "https://api.sci.gov.in/jonew/judis/41839.pdf",
+          "publication_date": "2014-08-21",
+          "effective_date": null,
+          "locator": "paragraphs 14–17, PDF pp. 36–38; deciding holding paragraph 15, PDF p. 37"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

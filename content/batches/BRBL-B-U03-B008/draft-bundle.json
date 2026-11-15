@@ -1,0 +1,603 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-B-U03-B008",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL Module B unit 3: FEMA — Distinguish ED investigation from Section 37A equivalent-value seizure, review and appeal",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04",
+      "FEMA_ACT_1999"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "statement": "Courseware describes the Directorate, specified investigation ranks and authorisation of other officers. It reproduces section 37A equivalent-value seizure in India, Competent Authority review, hearing, return of assets, Tribunal appeal and non-application of section 15.",
+        "source_id": "S04",
+        "locator": "S04 printed pp. 174–175; PDF page = printed page + 19",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "statement": "Sections 36–38 create the Directorate and specified conditional investigation/authorisation powers. Under section 37A, the Authorised Officer records reasons for suspected section 4 overseas holding and may seize equivalent value in India subject to prescribed threshold. The order/material goes to the Competent Authority within 30 days; review within 180 days has hearing and stay qualifications. Return of foreign assets requires an application and appropriate order, not automatic release; appeal lies to the Tribunal and section 15 does not apply.",
+        "source_id": "FEMA_ACT_1999",
+        "locator": "sections 36–38, PDF pp. 16–17",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "draft_id": "D001",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Identify the investigating authority and the power invoked",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "Section 36 establishes the **Directorate of Enforcement**. Section 37 identifies investigation by the Director and other Enforcement officers not below Assistant Director, and the specified notification route for other officers. Section 38 provides a further order-based empowerment route subject to its conditions.\n\nThe useful operational task is to identify the officer, authorisation and particular power invoked when records are requested or an order is received. Do not infer unlimited authority from an official title alone, or confuse an investigation with the Adjudicating Authority's penalty decision. These are separate statutory functions with their own conditions.",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Why should the bank retain the authority or notification details with an enforcement request?",
+            "expected_takeaway": "The statute allocates specific powers and conditional empowerment routes; a title alone does not establish the complete scope."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Equivalent value in India is different from seizure of the foreign asset",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "**Section 37A** addresses suspected foreign assets held contrary to Section 4. The specified Authorised Officer records reasons and may order seizure of **equivalent value situated in India**, subject to the prescribed threshold. The foreign asset and the Indian equivalent-value asset are different objects in this process.\n\nThe text requires the seizure order and material to reach the Competent Authority within 30 days and provides for confirmation or setting aside within 180 days, with hearing and court-stay qualifications. Disclosure and bringing the foreign asset back lead to an application and an appropriate order after hearing; seizure does not vanish automatically. An aggrieved person has the specified Tribunal appeal, and the text excludes Section 15 compounding from this section. The threshold amount is not supplied by this batch.",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does bringing the foreign asset back automatically cancel the Indian seizure order?",
+            "expected_takeaway": "No. The text provides for an application, hearing and appropriate order, which can include setting aside seizure."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A Section 37A file concerns suspected overseas assets, but its seizure order identifies equivalent-value assets situated in India. A trainee calls that a contradiction. Which explanation follows the text?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Section 37A can never concern an overseas holding",
+              "explanation_md": "The provision expressly addresses specified assets outside India suspected to be held contrary to Section 4."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The Indian asset is automatically the original foreign asset",
+              "explanation_md": "The provision distinguishes the overseas asset from the equivalent value situated in India."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The provision specifically contemplates equivalent-value seizure within India",
+              "explanation_md": "The different locations are part of the statutory mechanism, subject to its grounds, threshold and procedure."
+            },
+            {
+              "option_id": "D",
+              "text_md": "A bank may replace the statutory threshold by any internal amount",
+              "explanation_md": "The threshold is prescribed under the statutory scheme; an internal amount cannot substitute for it."
+            }
+          ],
+          "correct_explanation_md": "The different locations are part of the statutory mechanism, subject to its grounds, threshold and procedure."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "After a Section 37A seizure, the affected person discloses and brings back the foreign asset and asks the bank to treat the order as automatically cancelled. Which procedural step does the text require instead?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Application to the relevant authority and an appropriate order after the specified hearing",
+              "explanation_md": "Return can support relief, but the statute provides a decision process rather than automatic cancellation."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Release solely on the bank receipt of a repatriation statement, without an authority order",
+              "explanation_md": "A bank receipt is not a substitute for the application, hearing and appropriate authority order described in Section 37A."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Permanent refusal to consider any relief even after return",
+              "explanation_md": "The text expressly contemplates an appropriate order, including setting aside seizure, after the required process."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Automatic cancellation once equivalent value is deposited with a bank",
+              "explanation_md": "The statutory process is not automatically completed by making a deposit; the relevant authority must make the appropriate order."
+            }
+          ],
+          "correct_explanation_md": "Return can support relief, but the statute provides a decision process rather than automatic cancellation."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A person aggrieved by the Competent Authority's Section 37A order asks which appeal forum that section identifies. Which answer follows the retrieved text?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "An ordinary civil court exercising original jurisdiction over the seizure",
+              "explanation_md": "The specific appeal route named by Section 37A(5) is to the Appellate Tribunal, not an ordinary original civil proceeding."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The Special Director (Appeals) in every case",
+              "explanation_md": "The specific Section 37A(5) route names the Tribunal rather than a universal Special Director step."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Only the Adjudicating Authority, by treating the appeal as a fresh penalty enquiry",
+              "explanation_md": "Section 37A(5) identifies an appellate forum; a new penalty enquiry does not replace that appeal."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The Appellate Tribunal",
+              "explanation_md": "This is the forum identified by Section 37A(5) for an aggrieved person's appeal."
+            }
+          ],
+          "correct_explanation_md": "This is the forum identified by Section 37A(5) for an aggrieved person's appeal."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Codex authoring only. Independent source/session, originality and pedagogical review pending; canonical review must remain null and items must remain draft.",
+      "The local Enforcement Directorate statutory copy was read directly for the cited provisions. It has footnotes with 2019 commencement dates; its consolidation through 30 June 2026 has not been established. Current subordinate rules, directions, notifications and relevant judgments must be checked before publication.",
+      "Courseware printed pp. 169–176 / PDF pp. 188–195, including end questions, inspected as images. Teaching and questions designed independently from factual briefs; no source passage, comparison table, named case or source-question number-swap reused. Independent originality review remains pending.",
+      "The prescribed aggregate-value threshold and current officer/Competent Authority notifications are not verified. No exact procedural deadline date is graded; court-stay exclusions and the post-stay qualification must not be lost in future examples."
+    ],
+    "next_batch_hint": "Reconcile FEMA drafts; next is BRBL B U04 Payment and Settlement Systems Act, printed p. 177 / PDF p. 196."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-B-U03-B008",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 12, Compulsory Paper IV, Module B: Foreign Exchange Management Act, 1999"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "FEMA_ACT_1999",
+        "authority": "Government of India (copy published by the Directorate of Enforcement)",
+        "title": "The Foreign Exchange Management Act, 1999 (Act No. 42 of 1999), as amended",
+        "url": "https://www.enforcementdirectorate.gov.in/media/fema/c24cce9a-6765-4b22-a41a-cde7ec7af79c_FEMA_ACT_1999.pdf",
+        "publication_date": null,
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_B::U03",
+        "objective_ids": [
+          "BRBL::MOD_B::U03::LO_08"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_B::U03",
+        "objective_ids": [
+          "BRBL::MOD_B::U03::LO_08"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_B::U03",
+        "objective_ids": [
+          "BRBL::MOD_B::U03::LO_08"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BRBL::MOD_B::U03",
+        "objective_ids": [
+          "BRBL::MOD_B::U03::LO_08"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "unit_id": "BRBL::MOD_B::U03",
+        "objective_ids": [
+          "BRBL::MOD_B::U03::LO_08"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-B-U03-B008",
+      "draft_id": "D001",
+      "item_id": "item_d685cd20f6bb6116706959648a75e0f5dbc5d757d002b3f2b9c61f49d3352d6a"
+    },
+    {
+      "batch_id": "BRBL-B-U03-B008",
+      "draft_id": "D002",
+      "item_id": "item_5da476e3d21f12620ed6611e1d924b649794be8de8f942023c0b2d2bcc6c4e1d"
+    },
+    {
+      "batch_id": "BRBL-B-U03-B008",
+      "draft_id": "D003",
+      "item_id": "item_f2c43846d9725b45bfbc851f24b5a9732a8d2d98bda8c6291195b1c11703cde1"
+    },
+    {
+      "batch_id": "BRBL-B-U03-B008",
+      "draft_id": "D004",
+      "item_id": "item_5c3e7a6189bdbf4c2d0a1ddd084537cefde2ec967a0db472a0cbafacc4bb0620"
+    },
+    {
+      "batch_id": "BRBL-B-U03-B008",
+      "draft_id": "D005",
+      "item_id": "item_f644e4fa0b943a6d2ab13e984f804b46ad877983fd74c87ee550fa9348b9b643"
+    }
+  ],
+  "items": [
+    {
+      "title": "Identify the investigating authority and the power invoked",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "Section 36 establishes the **Directorate of Enforcement**. Section 37 identifies investigation by the Director and other Enforcement officers not below Assistant Director, and the specified notification route for other officers. Section 38 provides a further order-based empowerment route subject to its conditions.\n\nThe useful operational task is to identify the officer, authorisation and particular power invoked when records are requested or an order is received. Do not infer unlimited authority from an official title alone, or confuse an investigation with the Adjudicating Authority's penalty decision. These are separate statutory functions with their own conditions.",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Why should the bank retain the authority or notification details with an enforcement request?",
+        "expected_takeaway": "The statute allocates specific powers and conditional empowerment routes; a title alone does not establish the complete scope."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_d685cd20f6bb6116706959648a75e0f5dbc5d757d002b3f2b9c61f49d3352d6a",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U03",
+      "objective_ids": [
+        "BRBL::MOD_B::U03::LO_08"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 174–175; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "FEMA_ACT_1999",
+          "authority": "Government of India (copy published by the Directorate of Enforcement)",
+          "title": "The Foreign Exchange Management Act, 1999 (Act No. 42 of 1999), as amended",
+          "url": "https://www.enforcementdirectorate.gov.in/media/fema/c24cce9a-6765-4b22-a41a-cde7ec7af79c_FEMA_ACT_1999.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 36–38, PDF pp. 16–17"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Equivalent value in India is different from seizure of the foreign asset",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "**Section 37A** addresses suspected foreign assets held contrary to Section 4. The specified Authorised Officer records reasons and may order seizure of **equivalent value situated in India**, subject to the prescribed threshold. The foreign asset and the Indian equivalent-value asset are different objects in this process.\n\nThe text requires the seizure order and material to reach the Competent Authority within 30 days and provides for confirmation or setting aside within 180 days, with hearing and court-stay qualifications. Disclosure and bringing the foreign asset back lead to an application and an appropriate order after hearing; seizure does not vanish automatically. An aggrieved person has the specified Tribunal appeal, and the text excludes Section 15 compounding from this section. The threshold amount is not supplied by this batch.",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does bringing the foreign asset back automatically cancel the Indian seizure order?",
+        "expected_takeaway": "No. The text provides for an application, hearing and appropriate order, which can include setting aside seizure."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_5da476e3d21f12620ed6611e1d924b649794be8de8f942023c0b2d2bcc6c4e1d",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U03",
+      "objective_ids": [
+        "BRBL::MOD_B::U03::LO_08"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 174–175; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "FEMA_ACT_1999",
+          "authority": "Government of India (copy published by the Directorate of Enforcement)",
+          "title": "The Foreign Exchange Management Act, 1999 (Act No. 42 of 1999), as amended",
+          "url": "https://www.enforcementdirectorate.gov.in/media/fema/c24cce9a-6765-4b22-a41a-cde7ec7af79c_FEMA_ACT_1999.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 36–38, PDF pp. 16–17"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A Section 37A file concerns suspected overseas assets, but its seizure order identifies equivalent-value assets situated in India. A trainee calls that a contradiction. Which explanation follows the text?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Section 37A can never concern an overseas holding",
+          "explanation_md": "The provision expressly addresses specified assets outside India suspected to be held contrary to Section 4."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The Indian asset is automatically the original foreign asset",
+          "explanation_md": "The provision distinguishes the overseas asset from the equivalent value situated in India."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The provision specifically contemplates equivalent-value seizure within India",
+          "explanation_md": "The different locations are part of the statutory mechanism, subject to its grounds, threshold and procedure."
+        },
+        {
+          "option_id": "D",
+          "text_md": "A bank may replace the statutory threshold by any internal amount",
+          "explanation_md": "The threshold is prescribed under the statutory scheme; an internal amount cannot substitute for it."
+        }
+      ],
+      "correct_explanation_md": "The different locations are part of the statutory mechanism, subject to its grounds, threshold and procedure.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_f2c43846d9725b45bfbc851f24b5a9732a8d2d98bda8c6291195b1c11703cde1",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U03",
+      "objective_ids": [
+        "BRBL::MOD_B::U03::LO_08"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 174–175; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "FEMA_ACT_1999",
+          "authority": "Government of India (copy published by the Directorate of Enforcement)",
+          "title": "The Foreign Exchange Management Act, 1999 (Act No. 42 of 1999), as amended",
+          "url": "https://www.enforcementdirectorate.gov.in/media/fema/c24cce9a-6765-4b22-a41a-cde7ec7af79c_FEMA_ACT_1999.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 36–38, PDF pp. 16–17"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "After a Section 37A seizure, the affected person discloses and brings back the foreign asset and asks the bank to treat the order as automatically cancelled. Which procedural step does the text require instead?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Application to the relevant authority and an appropriate order after the specified hearing",
+          "explanation_md": "Return can support relief, but the statute provides a decision process rather than automatic cancellation."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Release solely on the bank receipt of a repatriation statement, without an authority order",
+          "explanation_md": "A bank receipt is not a substitute for the application, hearing and appropriate authority order described in Section 37A."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Permanent refusal to consider any relief even after return",
+          "explanation_md": "The text expressly contemplates an appropriate order, including setting aside seizure, after the required process."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Automatic cancellation once equivalent value is deposited with a bank",
+          "explanation_md": "The statutory process is not automatically completed by making a deposit; the relevant authority must make the appropriate order."
+        }
+      ],
+      "correct_explanation_md": "Return can support relief, but the statute provides a decision process rather than automatic cancellation.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_5c3e7a6189bdbf4c2d0a1ddd084537cefde2ec967a0db472a0cbafacc4bb0620",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U03",
+      "objective_ids": [
+        "BRBL::MOD_B::U03::LO_08"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 174–175; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "FEMA_ACT_1999",
+          "authority": "Government of India (copy published by the Directorate of Enforcement)",
+          "title": "The Foreign Exchange Management Act, 1999 (Act No. 42 of 1999), as amended",
+          "url": "https://www.enforcementdirectorate.gov.in/media/fema/c24cce9a-6765-4b22-a41a-cde7ec7af79c_FEMA_ACT_1999.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 36–38, PDF pp. 16–17"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A person aggrieved by the Competent Authority's Section 37A order asks which appeal forum that section identifies. Which answer follows the retrieved text?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "An ordinary civil court exercising original jurisdiction over the seizure",
+          "explanation_md": "The specific appeal route named by Section 37A(5) is to the Appellate Tribunal, not an ordinary original civil proceeding."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The Special Director (Appeals) in every case",
+          "explanation_md": "The specific Section 37A(5) route names the Tribunal rather than a universal Special Director step."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Only the Adjudicating Authority, by treating the appeal as a fresh penalty enquiry",
+          "explanation_md": "Section 37A(5) identifies an appellate forum; a new penalty enquiry does not replace that appeal."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The Appellate Tribunal",
+          "explanation_md": "This is the forum identified by Section 37A(5) for an aggrieved person's appeal."
+        }
+      ],
+      "correct_explanation_md": "This is the forum identified by Section 37A(5) for an aggrieved person's appeal.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_f644e4fa0b943a6d2ab13e984f804b46ad877983fd74c87ee550fa9348b9b643",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U03",
+      "objective_ids": [
+        "BRBL::MOD_B::U03::LO_08"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 174–175; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "FEMA_ACT_1999",
+          "authority": "Government of India (copy published by the Directorate of Enforcement)",
+          "title": "The Foreign Exchange Management Act, 1999 (Act No. 42 of 1999), as amended",
+          "url": "https://www.enforcementdirectorate.gov.in/media/fema/c24cce9a-6765-4b22-a41a-cde7ec7af79c_FEMA_ACT_1999.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 36–38, PDF pp. 16–17"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

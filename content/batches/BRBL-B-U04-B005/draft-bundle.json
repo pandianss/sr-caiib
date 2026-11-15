@@ -1,0 +1,691 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-B-U04-B005",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL Module B unit 4: Payment and Settlement Systems Act — Apply RBI information, inspection, audit and direction powers with their distinct duties and confidentiality qualifications",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04",
+      "PSS_ACT_DFS"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "statement": "Courseware describes returns, access to information, written-authority inspection, audit, systemic-risk directions, general policy directions and compliance reporting.",
+        "source_id": "S04",
+        "locator": "S04 printed pp. 182–183; PDF page = printed page + 19",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "statement": "RBI can prescribe standards, call for information, access records and inspect through written-authorised officers; section 16 requires provider/participant assistance with audits. Sections 17–19 address specified risk-remedy directions, general written directions and timely compliance reporting. Sections 15 and 22 impose distinct confidentiality rules with exceptions; sections 20–21 address operation, participant disclosure and standards.",
+        "source_id": "PSS_ACT_DFS",
+        "locator": "sections 10, 12–22, PDF pp. 8–10",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "draft_id": "D001",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Match the request to the power and the person who must respond",
+          "core_explanation_md": "A return request, access to information, entry to inspect equipment and an audit are related oversight tools with different statutory provisions. Sections 12–14 address information and inspection, including an officer authorised in writing for the entry/inspection power. Section 16 requires the provider and participants to assist RBI's audit or inspection.\n\nA bank should record the authority, scope, documents requested, response owner and deadline. It should not assume that outsourcing the equipment to a vendor removes all participant responsibilities, or that a duty to provide information permits unrestricted disclosure to everyone.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Why should a bank distinguish access to information from entry and inspection?",
+            "expected_takeaway": "The provisions identify different powers and conditions, including written authorisation for the specified inspecting officer."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Directions can require prevention and remedy, not just a report after loss",
+          "core_explanation_md": "Section 17 addresses specified conduct that creates or is likely to create inadequately controlled systemic risk or the stated wider effects. A written direction can require stopping the conduct or taking remedial action. Section 18 supports broader policy and written directions for payment-system regulation.\n\nUnder Section 19, the recipient complies without delay and reports compliance within the time allowed. The operational response therefore needs both the required action and the reporting evidence. A provider cannot treat the direction as optional merely because no loss has yet occurred, and filing a report does not replace actually carrying out the required remedy.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does a compliance report alone satisfy a direction requiring a system change?",
+            "expected_takeaway": "No. The action required by the direction and the reporting duty must both be addressed."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Protect information while making the disclosures the framework requires",
+          "core_explanation_md": "Section 15 concerns information RBI obtains under the specified provisions and contains qualified disclosure powers. Section 22 separately governs documents and information a provider receives from participants, with exceptions such as statutory requirements, consent and competent orders. Neither rule is accurately reduced to “disclose everything” or “never disclose anything”.\n\nProviders also have duties under Sections 20–21 to operate within the Act, rules, authorisation and directions, and disclose relevant operating terms, charges, liability limits and netting documents to existing or potential participants. Make the required participant disclosure without assuming it grants a right to publish confidential participant records generally.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does a duty to disclose operating terms to participants permit public disclosure of every participant record?",
+            "expected_takeaway": "No. Operating-term disclosure and the qualified confidentiality duties concern different information and purposes."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A provider receives a valid written RBI direction requiring a remedy before a risk crystallises. It postpones action because no loss has occurred. Which point is missing?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "RBI directions can never concern future risk",
+              "explanation_md": "Section 17 expressly addresses conduct that results or is likely to result in the specified risk conditions."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The statutory direction can require preventive or remedial action within its terms",
+              "explanation_md": "An absence of realised loss does not itself turn the valid direction into an optional suggestion."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Only a vendor can decide whether an RBI direction matters",
+              "explanation_md": "Vendor preference does not replace the statutory recipient's obligations."
+            },
+            {
+              "option_id": "D",
+              "text_md": "A direction is automatically void if sent electronically",
+              "explanation_md": "The scenario establishes a valid written direction; transmission medium alone does not justify ignoring it."
+            }
+          ],
+          "correct_explanation_md": "An absence of realised loss does not itself turn the valid direction into an optional suggestion."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A participant files a report saying that a required remedy is complete, but the remedy has not been implemented. Which response correctly separates the Section 19 obligations?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The report always replaces the required action",
+              "explanation_md": "Reporting compliance cannot substitute for carrying out the direction."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Only internal risk-committee approval of a remediation plan",
+              "explanation_md": "Approving a plan does not itself carry out the valid direction or satisfy the compliance-reporting duty."
+            },
+            {
+              "option_id": "C",
+              "text_md": "No duty arises until every participant suffers a loss",
+              "explanation_md": "The valid direction and its terms create the relevant compliance duty."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Carry out the direction and furnish the required compliance report within the allowed time",
+              "explanation_md": "The substantive action and the reporting evidence are distinct requirements."
+            }
+          ],
+          "correct_explanation_md": "The substantive action and the reporting evidence are distinct requirements."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D006",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A provider says participant disclosure under Section 21 lets it publish all confidential participant records. What distinction should the reviewer restore?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Disclosure of operating terms is separate from Section 22's qualified protection of participant information",
+              "explanation_md": "A duty to share relevant rules and terms does not create unrestricted permission to publish all records."
+            },
+            {
+              "option_id": "B",
+              "text_md": "No participant may ever see the system rules",
+              "explanation_md": "Section 21 includes disclosure of relevant operating and netting documents."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Confidentiality means the provider can ignore every statutory request",
+              "explanation_md": "The confidentiality rule includes specified legal disclosure exceptions."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Every record becomes public whenever a computer system is inspected",
+              "explanation_md": "Inspection does not automatically remove confidentiality protection or its statutory limits."
+            }
+          ],
+          "correct_explanation_md": "A duty to share relevant rules and terms does not create unrestricted permission to publish all records."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Codex authored these candidates. All source/session, originality and pedagogy reviews remain pending independent review; keep canonical review null and publication state draft.",
+      "Full courseware unit inspected, including end questions (S04 printed pp. 177–186 / PDF pp. 196–205). Statutory provisions cited were read directly from the DFS copy. Comprehensive consolidation and all subordinate directions through 30 June 2026 remain to be verified.",
+      "Learner passages, applied scenarios and all option rationales independently designed from factual briefs. Source questions, distinctive source tables and named cases were not reused; author comparison is not independent originality approval.",
+      "Sections 15 and 20–22 are supplemental statutory teaching beyond the courseware's short oversight summary. Actual requests, notices, safeguards and current operational directions require case-specific review."
+    ],
+    "next_batch_hint": "Continue BRBL-B-U04-B006."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-B-U04-B005",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 12, Compulsory Paper IV, Module B: Payment & Settlement Systems Act, 2007"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "PSS_ACT_DFS",
+        "authority": "Government of India, Department of Financial Services",
+        "title": "The Payment and Settlement Systems Act, 2007 (Act 51 of 2007), statutory copy",
+        "url": "https://financialservices.gov.in/sites/default/files/Act-Policies/2026-01/Payment-and-Settlement-Systems-Act_2007.pdf",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "RBI_PSS_FAQ_2025",
+        "authority": "Reserve Bank of India",
+        "title": "Payment and Settlement Systems Act, 2007 — Frequently Asked Questions (updated 20 October 2025)",
+        "url": "https://www.rbi.org.in/commonman/Upload/English/FAQs/PDFs/FAQ20102025FUL.pdf",
+        "publication_date": "2025-10-20",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_B::U04",
+        "objective_ids": [
+          "BRBL::MOD_B::U04::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_B::U04",
+        "objective_ids": [
+          "BRBL::MOD_B::U04::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_B::U04",
+        "objective_ids": [
+          "BRBL::MOD_B::U04::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BRBL::MOD_B::U04",
+        "objective_ids": [
+          "BRBL::MOD_B::U04::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "unit_id": "BRBL::MOD_B::U04",
+        "objective_ids": [
+          "BRBL::MOD_B::U04::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D006",
+        "unit_id": "BRBL::MOD_B::U04",
+        "objective_ids": [
+          "BRBL::MOD_B::U04::LO_05"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-B-U04-B005",
+      "draft_id": "D001",
+      "item_id": "item_74ed35850c132a00b5e82e8c0f346f4accb01f2095eb52673f2dd910b1367d50"
+    },
+    {
+      "batch_id": "BRBL-B-U04-B005",
+      "draft_id": "D002",
+      "item_id": "item_53a57baaa911d15a3f416f2583ccfb3f8739553077762088d15ec4ed5287cfda"
+    },
+    {
+      "batch_id": "BRBL-B-U04-B005",
+      "draft_id": "D003",
+      "item_id": "item_f3f91283953dc74f2a3badf929a84525fe8c23eb4b899da853fcc9946ce3588a"
+    },
+    {
+      "batch_id": "BRBL-B-U04-B005",
+      "draft_id": "D004",
+      "item_id": "item_a9f501c5d32a674dc394c3fb25f6ec8e50138d71e6bf5ead74ea9d5ec6627411"
+    },
+    {
+      "batch_id": "BRBL-B-U04-B005",
+      "draft_id": "D005",
+      "item_id": "item_c9072588afef326095ff565d8c230d43a750a68c333fb2d162b90a1fc5ae4390"
+    },
+    {
+      "batch_id": "BRBL-B-U04-B005",
+      "draft_id": "D006",
+      "item_id": "item_655581c5dec1cec1c64e276b1a069c6d38d396f6b87c89e22b86ebd99886b8d6"
+    }
+  ],
+  "items": [
+    {
+      "title": "Match the request to the power and the person who must respond",
+      "core_explanation_md": "A return request, access to information, entry to inspect equipment and an audit are related oversight tools with different statutory provisions. Sections 12–14 address information and inspection, including an officer authorised in writing for the entry/inspection power. Section 16 requires the provider and participants to assist RBI's audit or inspection.\n\nA bank should record the authority, scope, documents requested, response owner and deadline. It should not assume that outsourcing the equipment to a vendor removes all participant responsibilities, or that a duty to provide information permits unrestricted disclosure to everyone.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Why should a bank distinguish access to information from entry and inspection?",
+        "expected_takeaway": "The provisions identify different powers and conditions, including written authorisation for the specified inspecting officer."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_74ed35850c132a00b5e82e8c0f346f4accb01f2095eb52673f2dd910b1367d50",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U04",
+      "objective_ids": [
+        "BRBL::MOD_B::U04::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 182–183; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "PSS_ACT_DFS",
+          "authority": "Government of India, Department of Financial Services",
+          "title": "The Payment and Settlement Systems Act, 2007 (Act 51 of 2007), statutory copy",
+          "url": "https://financialservices.gov.in/sites/default/files/Act-Policies/2026-01/Payment-and-Settlement-Systems-Act_2007.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 10, 12–22, PDF pp. 8–10"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Directions can require prevention and remedy, not just a report after loss",
+      "core_explanation_md": "Section 17 addresses specified conduct that creates or is likely to create inadequately controlled systemic risk or the stated wider effects. A written direction can require stopping the conduct or taking remedial action. Section 18 supports broader policy and written directions for payment-system regulation.\n\nUnder Section 19, the recipient complies without delay and reports compliance within the time allowed. The operational response therefore needs both the required action and the reporting evidence. A provider cannot treat the direction as optional merely because no loss has yet occurred, and filing a report does not replace actually carrying out the required remedy.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does a compliance report alone satisfy a direction requiring a system change?",
+        "expected_takeaway": "No. The action required by the direction and the reporting duty must both be addressed."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_53a57baaa911d15a3f416f2583ccfb3f8739553077762088d15ec4ed5287cfda",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U04",
+      "objective_ids": [
+        "BRBL::MOD_B::U04::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 182–183; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "PSS_ACT_DFS",
+          "authority": "Government of India, Department of Financial Services",
+          "title": "The Payment and Settlement Systems Act, 2007 (Act 51 of 2007), statutory copy",
+          "url": "https://financialservices.gov.in/sites/default/files/Act-Policies/2026-01/Payment-and-Settlement-Systems-Act_2007.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 10, 12–22, PDF pp. 8–10"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Protect information while making the disclosures the framework requires",
+      "core_explanation_md": "Section 15 concerns information RBI obtains under the specified provisions and contains qualified disclosure powers. Section 22 separately governs documents and information a provider receives from participants, with exceptions such as statutory requirements, consent and competent orders. Neither rule is accurately reduced to “disclose everything” or “never disclose anything”.\n\nProviders also have duties under Sections 20–21 to operate within the Act, rules, authorisation and directions, and disclose relevant operating terms, charges, liability limits and netting documents to existing or potential participants. Make the required participant disclosure without assuming it grants a right to publish confidential participant records generally.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does a duty to disclose operating terms to participants permit public disclosure of every participant record?",
+        "expected_takeaway": "No. Operating-term disclosure and the qualified confidentiality duties concern different information and purposes."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_f3f91283953dc74f2a3badf929a84525fe8c23eb4b899da853fcc9946ce3588a",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U04",
+      "objective_ids": [
+        "BRBL::MOD_B::U04::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 182–183; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "PSS_ACT_DFS",
+          "authority": "Government of India, Department of Financial Services",
+          "title": "The Payment and Settlement Systems Act, 2007 (Act 51 of 2007), statutory copy",
+          "url": "https://financialservices.gov.in/sites/default/files/Act-Policies/2026-01/Payment-and-Settlement-Systems-Act_2007.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 10, 12–22, PDF pp. 8–10"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A provider receives a valid written RBI direction requiring a remedy before a risk crystallises. It postpones action because no loss has occurred. Which point is missing?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "RBI directions can never concern future risk",
+          "explanation_md": "Section 17 expressly addresses conduct that results or is likely to result in the specified risk conditions."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The statutory direction can require preventive or remedial action within its terms",
+          "explanation_md": "An absence of realised loss does not itself turn the valid direction into an optional suggestion."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Only a vendor can decide whether an RBI direction matters",
+          "explanation_md": "Vendor preference does not replace the statutory recipient's obligations."
+        },
+        {
+          "option_id": "D",
+          "text_md": "A direction is automatically void if sent electronically",
+          "explanation_md": "The scenario establishes a valid written direction; transmission medium alone does not justify ignoring it."
+        }
+      ],
+      "correct_explanation_md": "An absence of realised loss does not itself turn the valid direction into an optional suggestion.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_a9f501c5d32a674dc394c3fb25f6ec8e50138d71e6bf5ead74ea9d5ec6627411",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U04",
+      "objective_ids": [
+        "BRBL::MOD_B::U04::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 182–183; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "PSS_ACT_DFS",
+          "authority": "Government of India, Department of Financial Services",
+          "title": "The Payment and Settlement Systems Act, 2007 (Act 51 of 2007), statutory copy",
+          "url": "https://financialservices.gov.in/sites/default/files/Act-Policies/2026-01/Payment-and-Settlement-Systems-Act_2007.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 10, 12–22, PDF pp. 8–10"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A participant files a report saying that a required remedy is complete, but the remedy has not been implemented. Which response correctly separates the Section 19 obligations?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The report always replaces the required action",
+          "explanation_md": "Reporting compliance cannot substitute for carrying out the direction."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Only internal risk-committee approval of a remediation plan",
+          "explanation_md": "Approving a plan does not itself carry out the valid direction or satisfy the compliance-reporting duty."
+        },
+        {
+          "option_id": "C",
+          "text_md": "No duty arises until every participant suffers a loss",
+          "explanation_md": "The valid direction and its terms create the relevant compliance duty."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Carry out the direction and furnish the required compliance report within the allowed time",
+          "explanation_md": "The substantive action and the reporting evidence are distinct requirements."
+        }
+      ],
+      "correct_explanation_md": "The substantive action and the reporting evidence are distinct requirements.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_c9072588afef326095ff565d8c230d43a750a68c333fb2d162b90a1fc5ae4390",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U04",
+      "objective_ids": [
+        "BRBL::MOD_B::U04::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 182–183; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "PSS_ACT_DFS",
+          "authority": "Government of India, Department of Financial Services",
+          "title": "The Payment and Settlement Systems Act, 2007 (Act 51 of 2007), statutory copy",
+          "url": "https://financialservices.gov.in/sites/default/files/Act-Policies/2026-01/Payment-and-Settlement-Systems-Act_2007.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 10, 12–22, PDF pp. 8–10"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A provider says participant disclosure under Section 21 lets it publish all confidential participant records. What distinction should the reviewer restore?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Disclosure of operating terms is separate from Section 22's qualified protection of participant information",
+          "explanation_md": "A duty to share relevant rules and terms does not create unrestricted permission to publish all records."
+        },
+        {
+          "option_id": "B",
+          "text_md": "No participant may ever see the system rules",
+          "explanation_md": "Section 21 includes disclosure of relevant operating and netting documents."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Confidentiality means the provider can ignore every statutory request",
+          "explanation_md": "The confidentiality rule includes specified legal disclosure exceptions."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Every record becomes public whenever a computer system is inspected",
+          "explanation_md": "Inspection does not automatically remove confidentiality protection or its statutory limits."
+        }
+      ],
+      "correct_explanation_md": "A duty to share relevant rules and terms does not create unrestricted permission to publish all records.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_655581c5dec1cec1c64e276b1a069c6d38d396f6b87c89e22b86ebd99886b8d6",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U04",
+      "objective_ids": [
+        "BRBL::MOD_B::U04::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 182–183; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "PSS_ACT_DFS",
+          "authority": "Government of India, Department of Financial Services",
+          "title": "The Payment and Settlement Systems Act, 2007 (Act 51 of 2007), statutory copy",
+          "url": "https://financialservices.gov.in/sites/default/files/Act-Policies/2026-01/Payment-and-Settlement-Systems-Act_2007.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 10, 12–22, PDF pp. 8–10"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

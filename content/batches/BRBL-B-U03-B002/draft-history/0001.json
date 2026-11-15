@@ -1,0 +1,603 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-B-U03-B002",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL Module B unit 3: FEMA — Classify current and capital account transactions without confusing classification with permission",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04",
+      "FEMA_ACT_1999"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "statement": "Courseware distinguishes capital changes in the specified cross-border assets/liabilities from current-account payments and gives trade, services, interest, family maintenance, education and medical expenses as current examples.",
+        "source_id": "S04",
+        "locator": "S04 printed pp. 170; PDF page = printed page + 19",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "statement": "Capital-account definition includes contingent liabilities and the specified resident/non-resident asset-liability changes; current account excludes capital account and includes the named ordinary-business payments. Section 5 permits current-account forex through an authorised person subject to prescribed restrictions. Section 6 separates RBI debt-instrument specification from Central Government non-debt prescription, with consultation and conditions.",
+        "source_id": "FEMA_ACT_1999",
+        "locator": "sections 2(e), 2(j), 5–6, PDF pp. 3–4, 6–7",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "draft_id": "D001",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Classify the economic effect, then check permission",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "For a **capital account transaction**, inspect whether the transaction changes the specified cross-border assets or liabilities, including contingent liabilities. For a **current account transaction**, the Act gives examples such as ordinary foreign-trade/service payments, loan interest, family maintenance and education or medical expenses.\n\nClassification is only the first step. “Current” does not mean that the bank may ignore applicable restrictions, and “capital” does not mean that every such transaction is absolutely prohibited. The bank must identify the permitted route, conditions and documentary requirements after classifying the transaction. Keep the classification note and the permission check separate in the file.",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Why does calling a transaction current account not finish the compliance decision?",
+            "expected_takeaway": "Applicable restrictions, authorised-person requirements and documentation still need to be satisfied."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Contingent obligations matter; authority also depends on the instrument",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "The capital-account definition expressly includes **contingent liabilities**. A reviewer must therefore look beyond an immediate cash movement or a balance-sheet cash entry. A new cross-border obligation can require analysis even before any payment occurs.\n\nThe statutory copy also distinguishes the regulatory roles for capital transactions involving debt instruments and those not involving debt instruments: Section 6 assigns specification/prescription roles to RBI and the Central Government respectively, with consultation. The current instrument classification and operative rules still need verification; do not assume one authority or one old rule governs every capital request.",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Can absence of an immediate cash payment by itself rule out capital-account analysis?",
+            "expected_takeaway": "No. The definition includes contingent liabilities, so the obligation and statutory conditions must be examined."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A branch labels an ordinary overseas service-invoice payment current account, then omits the applicable restrictions check. Which conclusion is correct?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Every service payment is a capital transaction because money leaves India",
+              "explanation_md": "Cross-border movement alone does not turn an ordinary service payment into a capital transaction."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Current-account classification removes the authorised-person requirement",
+              "explanation_md": "The statutory route and any applicable restrictions remain relevant."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The classification can be appropriate, but it does not establish that every permission condition is met",
+              "explanation_md": "The economic classification and the transaction-specific compliance decision are separate steps."
+            },
+            {
+              "option_id": "D",
+              "text_md": "An invoice supplied by the customer overrides all FEMA rules",
+              "explanation_md": "A commercial document supports purpose evidence; it cannot override the governing legal requirements."
+            }
+          ],
+          "correct_explanation_md": "The economic classification and the transaction-specific compliance decision are separate steps."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A proposed cross-border arrangement creates a contingent liability but no immediate payment. Why should the reviewer avoid ruling out capital-account implications solely on cash movement?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The capital-account definition expressly includes contingent liabilities",
+              "explanation_md": "The liability effect can matter before cash is paid; no immediate payment is not a sufficient exclusion test."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Every transaction without cash is outside FEMA",
+              "explanation_md": "FEMA definitions and transaction rules are not confined to immediate cash transfers."
+            },
+            {
+              "option_id": "C",
+              "text_md": "All contingent liabilities are automatically permitted with no conditions",
+              "explanation_md": "Inclusion in the definition does not establish permission or remove conditions."
+            },
+            {
+              "option_id": "D",
+              "text_md": "A contingent liability can exist only in Indian rupees",
+              "explanation_md": "The currency assertion is unsupported and does not address the statutory inclusion of contingent liabilities."
+            }
+          ],
+          "correct_explanation_md": "The liability effect can matter before cash is paid; no immediate payment is not a sufficient exclusion test."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "An internal manual says all capital-account instrument rules are made by the same authority under an identical statutory power. Which distinction in the retrieved Section 6 text should the reviewer check?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The colour of the remittance application determines the authority",
+              "explanation_md": "Form colour has no role in the statutory debt/non-debt allocation."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The bank may replace the Act by its own capital definition",
+              "explanation_md": "An internal definition cannot override the statutory allocation of powers."
+            },
+            {
+              "option_id": "C",
+              "text_md": "All non-debt transactions fall outside FEMA",
+              "explanation_md": "The text expressly includes a Central Government role for non-debt capital transactions."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The debt-instrument and non-debt-instrument provisions allocate distinct roles",
+              "explanation_md": "The copy distinguishes RBI specification and Central Government prescription, with consultation and conditions."
+            }
+          ],
+          "correct_explanation_md": "The copy distinguishes RBI specification and Central Government prescription, with consultation and conditions."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Codex authoring only. Independent source/session, originality and pedagogical review pending; canonical review must remain null and items must remain draft.",
+      "The local Enforcement Directorate statutory copy was read directly for the cited provisions. It has footnotes with 2019 commencement dates; its consolidation through 30 June 2026 has not been established. Current subordinate rules, directions, notifications and relevant judgments must be checked before publication.",
+      "Courseware printed pp. 169–176 / PDF pp. 188–195, including end questions, inspected as images. Teaching and questions designed independently from factual briefs; no source passage, comparison table, named case or source-question number-swap reused. Independent originality review remains pending.",
+      "The courseware does not fully explain the current debt/non-debt regulatory split. Section 6 detail is supplemental statutory evidence. No current monetary limit, FDI sector condition, ODI permission or instrument-classification notification is asserted as verified."
+    ],
+    "next_batch_hint": "Continue BRBL-B-U03-B003; retain the independent review gate."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-B-U03-B002",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 12, Compulsory Paper IV, Module B: Foreign Exchange Management Act, 1999"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "FEMA_ACT_1999",
+        "authority": "Government of India (copy published by the Directorate of Enforcement)",
+        "title": "The Foreign Exchange Management Act, 1999 (Act No. 42 of 1999), as amended",
+        "url": "https://www.enforcementdirectorate.gov.in/media/fema/c24cce9a-6765-4b22-a41a-cde7ec7af79c_FEMA_ACT_1999.pdf",
+        "publication_date": null,
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_B::U03",
+        "objective_ids": [
+          "BRBL::MOD_B::U03::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_B::U03",
+        "objective_ids": [
+          "BRBL::MOD_B::U03::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_B::U03",
+        "objective_ids": [
+          "BRBL::MOD_B::U03::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BRBL::MOD_B::U03",
+        "objective_ids": [
+          "BRBL::MOD_B::U03::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "unit_id": "BRBL::MOD_B::U03",
+        "objective_ids": [
+          "BRBL::MOD_B::U03::LO_02"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-B-U03-B002",
+      "draft_id": "D001",
+      "item_id": "item_39f4c522f1847870df66c563d57bb42ea0981773dc9e0ea4196bd12f55ab6998"
+    },
+    {
+      "batch_id": "BRBL-B-U03-B002",
+      "draft_id": "D002",
+      "item_id": "item_e60ddd37572e9f9b7d3f9771384eac2f954580e344ad50d44cd6dd2359c3fb30"
+    },
+    {
+      "batch_id": "BRBL-B-U03-B002",
+      "draft_id": "D003",
+      "item_id": "item_9454907e8e602417c620b9caa9eaaafa068af5e0ac512b216757991b61aa39fd"
+    },
+    {
+      "batch_id": "BRBL-B-U03-B002",
+      "draft_id": "D004",
+      "item_id": "item_0da4b52af9d3dfcef37382dd84c7b91d37d2bbc3ffdb8871c7ac1b0ce4521d1e"
+    },
+    {
+      "batch_id": "BRBL-B-U03-B002",
+      "draft_id": "D005",
+      "item_id": "item_32e3dd844f12babaaa841f9c643dc80f1790c5af6e728a8ec20bf8ea6a4a0d2b"
+    }
+  ],
+  "items": [
+    {
+      "title": "Classify the economic effect, then check permission",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "For a **capital account transaction**, inspect whether the transaction changes the specified cross-border assets or liabilities, including contingent liabilities. For a **current account transaction**, the Act gives examples such as ordinary foreign-trade/service payments, loan interest, family maintenance and education or medical expenses.\n\nClassification is only the first step. “Current” does not mean that the bank may ignore applicable restrictions, and “capital” does not mean that every such transaction is absolutely prohibited. The bank must identify the permitted route, conditions and documentary requirements after classifying the transaction. Keep the classification note and the permission check separate in the file.",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Why does calling a transaction current account not finish the compliance decision?",
+        "expected_takeaway": "Applicable restrictions, authorised-person requirements and documentation still need to be satisfied."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_39f4c522f1847870df66c563d57bb42ea0981773dc9e0ea4196bd12f55ab6998",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U03",
+      "objective_ids": [
+        "BRBL::MOD_B::U03::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 170; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "FEMA_ACT_1999",
+          "authority": "Government of India (copy published by the Directorate of Enforcement)",
+          "title": "The Foreign Exchange Management Act, 1999 (Act No. 42 of 1999), as amended",
+          "url": "https://www.enforcementdirectorate.gov.in/media/fema/c24cce9a-6765-4b22-a41a-cde7ec7af79c_FEMA_ACT_1999.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 2(e), 2(j), 5–6, PDF pp. 3–4, 6–7"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Contingent obligations matter; authority also depends on the instrument",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "The capital-account definition expressly includes **contingent liabilities**. A reviewer must therefore look beyond an immediate cash movement or a balance-sheet cash entry. A new cross-border obligation can require analysis even before any payment occurs.\n\nThe statutory copy also distinguishes the regulatory roles for capital transactions involving debt instruments and those not involving debt instruments: Section 6 assigns specification/prescription roles to RBI and the Central Government respectively, with consultation. The current instrument classification and operative rules still need verification; do not assume one authority or one old rule governs every capital request.",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Can absence of an immediate cash payment by itself rule out capital-account analysis?",
+        "expected_takeaway": "No. The definition includes contingent liabilities, so the obligation and statutory conditions must be examined."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_e60ddd37572e9f9b7d3f9771384eac2f954580e344ad50d44cd6dd2359c3fb30",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U03",
+      "objective_ids": [
+        "BRBL::MOD_B::U03::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 170; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "FEMA_ACT_1999",
+          "authority": "Government of India (copy published by the Directorate of Enforcement)",
+          "title": "The Foreign Exchange Management Act, 1999 (Act No. 42 of 1999), as amended",
+          "url": "https://www.enforcementdirectorate.gov.in/media/fema/c24cce9a-6765-4b22-a41a-cde7ec7af79c_FEMA_ACT_1999.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 2(e), 2(j), 5–6, PDF pp. 3–4, 6–7"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A branch labels an ordinary overseas service-invoice payment current account, then omits the applicable restrictions check. Which conclusion is correct?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Every service payment is a capital transaction because money leaves India",
+          "explanation_md": "Cross-border movement alone does not turn an ordinary service payment into a capital transaction."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Current-account classification removes the authorised-person requirement",
+          "explanation_md": "The statutory route and any applicable restrictions remain relevant."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The classification can be appropriate, but it does not establish that every permission condition is met",
+          "explanation_md": "The economic classification and the transaction-specific compliance decision are separate steps."
+        },
+        {
+          "option_id": "D",
+          "text_md": "An invoice supplied by the customer overrides all FEMA rules",
+          "explanation_md": "A commercial document supports purpose evidence; it cannot override the governing legal requirements."
+        }
+      ],
+      "correct_explanation_md": "The economic classification and the transaction-specific compliance decision are separate steps.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_9454907e8e602417c620b9caa9eaaafa068af5e0ac512b216757991b61aa39fd",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U03",
+      "objective_ids": [
+        "BRBL::MOD_B::U03::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 170; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "FEMA_ACT_1999",
+          "authority": "Government of India (copy published by the Directorate of Enforcement)",
+          "title": "The Foreign Exchange Management Act, 1999 (Act No. 42 of 1999), as amended",
+          "url": "https://www.enforcementdirectorate.gov.in/media/fema/c24cce9a-6765-4b22-a41a-cde7ec7af79c_FEMA_ACT_1999.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 2(e), 2(j), 5–6, PDF pp. 3–4, 6–7"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A proposed cross-border arrangement creates a contingent liability but no immediate payment. Why should the reviewer avoid ruling out capital-account implications solely on cash movement?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The capital-account definition expressly includes contingent liabilities",
+          "explanation_md": "The liability effect can matter before cash is paid; no immediate payment is not a sufficient exclusion test."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Every transaction without cash is outside FEMA",
+          "explanation_md": "FEMA definitions and transaction rules are not confined to immediate cash transfers."
+        },
+        {
+          "option_id": "C",
+          "text_md": "All contingent liabilities are automatically permitted with no conditions",
+          "explanation_md": "Inclusion in the definition does not establish permission or remove conditions."
+        },
+        {
+          "option_id": "D",
+          "text_md": "A contingent liability can exist only in Indian rupees",
+          "explanation_md": "The currency assertion is unsupported and does not address the statutory inclusion of contingent liabilities."
+        }
+      ],
+      "correct_explanation_md": "The liability effect can matter before cash is paid; no immediate payment is not a sufficient exclusion test.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_0da4b52af9d3dfcef37382dd84c7b91d37d2bbc3ffdb8871c7ac1b0ce4521d1e",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U03",
+      "objective_ids": [
+        "BRBL::MOD_B::U03::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 170; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "FEMA_ACT_1999",
+          "authority": "Government of India (copy published by the Directorate of Enforcement)",
+          "title": "The Foreign Exchange Management Act, 1999 (Act No. 42 of 1999), as amended",
+          "url": "https://www.enforcementdirectorate.gov.in/media/fema/c24cce9a-6765-4b22-a41a-cde7ec7af79c_FEMA_ACT_1999.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 2(e), 2(j), 5–6, PDF pp. 3–4, 6–7"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "An internal manual says all capital-account instrument rules are made by the same authority under an identical statutory power. Which distinction in the retrieved Section 6 text should the reviewer check?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The colour of the remittance application determines the authority",
+          "explanation_md": "Form colour has no role in the statutory debt/non-debt allocation."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The bank may replace the Act by its own capital definition",
+          "explanation_md": "An internal definition cannot override the statutory allocation of powers."
+        },
+        {
+          "option_id": "C",
+          "text_md": "All non-debt transactions fall outside FEMA",
+          "explanation_md": "The text expressly includes a Central Government role for non-debt capital transactions."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The debt-instrument and non-debt-instrument provisions allocate distinct roles",
+          "explanation_md": "The copy distinguishes RBI specification and Central Government prescription, with consultation and conditions."
+        }
+      ],
+      "correct_explanation_md": "The copy distinguishes RBI specification and Central Government prescription, with consultation and conditions.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_32e3dd844f12babaaa841f9c643dc80f1790c5af6e728a8ec20bf8ea6a4a0d2b",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U03",
+      "objective_ids": [
+        "BRBL::MOD_B::U03::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 170; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "FEMA_ACT_1999",
+          "authority": "Government of India (copy published by the Directorate of Enforcement)",
+          "title": "The Foreign Exchange Management Act, 1999 (Act No. 42 of 1999), as amended",
+          "url": "https://www.enforcementdirectorate.gov.in/media/fema/c24cce9a-6765-4b22-a41a-cde7ec7af79c_FEMA_ACT_1999.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 2(e), 2(j), 5–6, PDF pp. 3–4, 6–7"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

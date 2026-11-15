@@ -1,0 +1,195 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-B-U04-B006",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL Module B unit 4: Payment and Settlement Systems Act — Compute a net position and distinguish approved netting, finality, cash movement and CCP insolvency protections",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04",
+    "PSS_ACT_DFS"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "statement": "Courseware distinguishes gross individual settlement from netting, describes approved procedures/loss allocation and reproduces section 23 finality and CCP provisions.",
+      "source_id": "S04",
+      "locator": "S04 printed pp. 183–184; PDF page = printed page + 19",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F002",
+      "statement": "Gross settlement uses individual instructions; netting offsets specified obligations under the approved procedure. Section 23 supplies settlement/loss-allocation and insolvency protections, including determination-based finality whether or not actual payment has occurred. CCP novation interposes a buyer to each seller/seller to each buyer; final determinations cannot be reopened by the specified liquidator and excess collateral is returned after permitted appropriation.",
+      "source_id": "PSS_ACT_DFS",
+      "locator": "sections 2(d)–(e) and 23, PDF pp. 3–4, 10–11",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "draft_id": "D001",
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Finality is a legal rule about an approved determination",
+        "core_explanation_md": "Gross settlement processes separate instructions. Netting offsets obligations according to the approved arrangement to determine net positions. Neither label lets a participant select its own method contrary to the system's approved procedure.\n\nSection 23 supports the prescribed finality and loss-allocation framework. Its explanation makes the determination final and irrevocable under the section whether or not the resulting money or other assets have actually been paid. That does not mean the unpaid obligation disappears. It means finality and cash completion are different facts.\n\nA **central counterparty** interposes through novation. The section includes specific protections when insolvency affects a participant or the CCP, and requires return of excess collateral after permitted appropriation. Do not replace those conditions with a universal statement that insolvency cancels final settlements or allows all collateral to be retained.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Can a final net determination coexist with money still to be paid?",
+          "expected_takeaway": "Yes. The statutory finality explanation distinguishes determination from actual payment; the payment obligation still needs to be met."
+        }
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D002",
+      "item_type": "card",
+      "variant": "worked_example",
+      "payload": {
+        "title": "Reconcile a net position before discussing its funding",
+        "core_explanation_md": "In an illustrative approved netting arrangement, participant Alder owes Birch **Rs 1,80,000** and Cedar **Rs 70,000**. Birch owes Alder **Rs 90,000**, and Cedar owes Alder **Rs 40,000**. Alder's outgoing total is **Rs 2,50,000** and incoming total is **Rs 1,30,000**, leaving a **Rs 1,20,000 net debit**.\n\nThis arithmetic identifies the net payment obligation under the stated arrangement. It does not prove that every system uses multilateral netting, that the money has already been paid, or that collateral and loss-allocation rules can be ignored. Those questions require the authorised system's approved procedures.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does the computed net debit prove that the settlement cash has already moved?",
+          "expected_takeaway": "No. The position calculation and the actual payment are separate facts."
+        },
+        "worked_steps": [
+          {
+            "step_number": 1,
+            "description": "Outgoing obligations.",
+            "formula_or_substitution": "180000 + 70000",
+            "intermediate_result": "250000 rupees"
+          },
+          {
+            "step_number": 2,
+            "description": "Incoming obligations.",
+            "formula_or_substitution": "90000 + 40000",
+            "intermediate_result": "130000 rupees"
+          },
+          {
+            "step_number": 3,
+            "description": "Net debit: outgoing less incoming.",
+            "formula_or_substitution": "250000 − 130000",
+            "intermediate_result": "120000 rupees net debit"
+          }
+        ],
+        "final_answer_with_unit": "120000 rupees net debit for Alder under the stated netting arrangement."
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D003",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A participant argues that a Section 23 determination cannot be final until every resulting rupee is actually transferred. Which statutory distinction addresses that argument?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Every unpaid obligation is automatically forgiven",
+            "explanation_md": "Finality does not erase the amount that remains payable."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Gross settlement always means no legal obligations exist",
+            "explanation_md": "Gross settlement still involves obligations processed on an individual-instruction basis."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Finality under the section can attach to the determination whether or not actual payment has occurred",
+            "explanation_md": "The explanation separates legal finality from completion of the cash or asset movement."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A participant may reopen a final determination whenever it dislikes the net position",
+            "explanation_md": "The section's finality framework does not provide this unilateral reopening option."
+          }
+        ],
+        "correct_explanation_md": "The explanation separates legal finality from completion of the cash or asset movement."
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D004",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Under an illustrative approved netting arrangement, a participant owes Rs 210000 and Rs 65000, and is owed Rs 95000 and Rs 55000. Define a net debit as total outgoing minus total incoming. What is the participant's net debit in rupees?",
+        "numeric_rule": {
+          "expected_answer": "125000",
+          "unit_label": "rupees",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number of rupees without commas. Figures are exact.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "Outgoing 210000 + 65000 = 275000; incoming 95000 + 55000 = 150000; net debit 125000 rupees.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Subtract total receipts from total outgoing obligations using the stated net-debit convention.",
+            "formula_or_substitution": "(210000 + 65000) − (95000 + 55000)",
+            "intermediate_result": "125000 rupees net debit"
+          }
+        ]
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D005",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Under an illustrative approved netting arrangement, a participant owes Rs 480000 in total and is owed Rs 315000. Define net debit as outgoing minus incoming. What net debit in rupees must be reconciled before discussing funding?",
+        "numeric_rule": {
+          "expected_answer": "165000",
+          "unit_label": "rupees",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number of rupees without commas. Figures are exact.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "480000 − 315000 = 165000 rupees net debit. This identifies the obligation, not proof that payment has occurred.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Subtract total receipts from total outgoing obligations using the stated net-debit convention.",
+            "formula_or_substitution": "480000 − 315000",
+            "intermediate_result": "165000 rupees net debit"
+          }
+        ]
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Codex authored these candidates. All source/session, originality and pedagogy reviews remain pending independent review; keep canonical review null and publication state draft.",
+    "Full courseware unit inspected, including end questions (S04 printed pp. 177–186 / PDF pp. 196–205). Statutory provisions cited were read directly from the DFS copy. Comprehensive consolidation and all subordinate directions through 30 June 2026 remain to be verified.",
+    "Learner passages, applied scenarios and all option rationales independently designed from factual briefs. Source questions, distinctive source tables and named cases were not reused; author comparison is not independent originality approval.",
+    "Worked and assessed positions use an explicitly assumed approved netting arrangement; they are not claims about a named live payment system. Section 23 legal application, insolvency interaction and actual CCP rules require independent review. The courseware/FAQ blanket assertion about all non-RTGS systems is not taught."
+  ],
+  "next_batch_hint": "Continue BRBL-B-U04-B007."
+}

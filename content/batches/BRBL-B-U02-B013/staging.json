@@ -1,0 +1,196 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-B-U02-B013",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL Module B unit 2: Negotiable Instruments Act, 1881 — Calculate interim-compensation and appeal-deposit amounts using the correct statutory base and conditional wording",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04",
+    "NI_ACT_THC_2018_TEXT"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "statement": "Statutory section 143A permits the court to order interim compensation with a ceiling of 20 percent of the cheque amount at its stated procedural stages. Section 148 permits an appeal deposit with a floor of 20 percent of the trial-court fine or compensation, additional to interim compensation. Text gives 60 days with a court-directed extension up to 30 days on sufficient cause and repayment with specified interest on acquittal. Application and case law require separate verification.",
+      "source_id": "S04",
+      "locator": "S04 printed pp. 150–151, 164–165; PDF page = printed page + 19",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F002",
+      "statement": "Statutory section 143A permits the court to order interim compensation with a ceiling of 20 percent of the cheque amount at its stated procedural stages. Section 148 permits an appeal deposit with a floor of 20 percent of the trial-court fine or compensation, additional to interim compensation. Text gives 60 days with a court-directed extension up to 30 days on sufficient cause and repayment with specified interest on acquittal. Application and case law require separate verification.",
+      "source_id": "NI_ACT_THC_2018_TEXT",
+      "locator": "section 143A, PDF pp. 30–31; section 148, PDF p. 31",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "draft_id": "D001",
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "A shared percentage can conceal a different legal base",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "**Section 143A** concerns interim compensation during trial. In the statutory text, the court may order it at the specified stage, and the amount must not exceed **20% of the cheque amount**. This is a ceiling on the amount of such an order.\n\n**Section 148** concerns a deposit on appeal against conviction. Its stated minimum is **20% of the fine or compensation awarded by the trial court**, and the deposit is additional to interim compensation. This is a floor with a different base.\n\nThe text also supplies payment periods, possible court-directed extensions for sufficient cause and repayment provisions after acquittal. These are conditional court processes. Do not describe the two percentages as automatic deductions made by a bank, or infer a mandatory order in every case. Current judicial interpretation and exam-cutoff applicability remain under review.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Which quantity is the base for each percentage?",
+          "expected_takeaway": "Section 143A uses the cheque amount; Section 148 uses the trial-court fine or compensation."
+        }
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D002",
+      "item_type": "card",
+      "variant": "worked_example",
+      "payload": {
+        "title": "Compare the two percentage bases before calculating",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "A training file has a cheque amount of **Rs 7,50,000** and a trial-court compensation award of **Rs 9,00,000**. For the arithmetic illustration, assume a Section 143A order at its 20% ceiling and a Section 148 order at its 20% floor.\n\nThe first base is the cheque amount: 20% gives **Rs 1,50,000**. The second base is the trial-court award: 20% gives **Rs 1,80,000**. If both stated amounts are payable, the appeal deposit is additional, giving **Rs 3,30,000** in this illustration.\n\nDo not swap the two bases, assume every court makes an order, or present the floor and ceiling as a single fixed tariff. This example teaches arithmetic under the stated statutory-text assumptions; judicial application remains subject to review.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Why are the two 20% amounts different?",
+          "expected_takeaway": "They use different bases: cheque amount for Section 143A and trial-court fine or compensation for Section 148."
+        },
+        "worked_steps": [
+          {
+            "step_number": 1,
+            "description": "Interim-compensation ceiling on the cheque amount.",
+            "formula_or_substitution": "750000 × 20 / 100",
+            "intermediate_result": "150000 rupees"
+          },
+          {
+            "step_number": 2,
+            "description": "Appeal-deposit floor on the trial-court award.",
+            "formula_or_substitution": "900000 × 20 / 100",
+            "intermediate_result": "180000 rupees"
+          },
+          {
+            "step_number": 3,
+            "description": "Add the two assumed orders; the appeal deposit is additional.",
+            "formula_or_substitution": "150000 + 180000",
+            "intermediate_result": "330000 rupees"
+          }
+        ],
+        "final_answer_with_unit": "Interim ceiling Rs 150000; appeal floor Rs 180000; combined assumed orders Rs 330000."
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D003",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A training worksheet uses the cheque amount to calculate both the Section 143A ceiling and the Section 148 floor, although the trial-court award differs. Which correction is required?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Use the cheque amount for 143A and the trial-court fine or compensation for 148",
+            "explanation_md": "The statutory percentages have different bases; equal percentages do not justify using the same amount."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Use the account balance as the base for both",
+            "explanation_md": "Neither stated percentage is based on the drawer's current account balance."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Treat both percentages as compulsory bank service charges",
+            "explanation_md": "They concern conditional court orders, not bank charges automatically debited on dishonour."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Subtract interim compensation from the appeal base before applying the floor",
+            "explanation_md": "Section 148 describes the deposit as additional to interim compensation; the worksheet cannot invent this base reduction."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "The statutory percentages have different bases; equal percentages do not justify using the same amount."
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D004",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "For this statutory-text arithmetic exercise, a court makes a Section 143A order at the stated 20% ceiling on a cheque for Rs 465000. What is that ceiling in rupees? This does not assume that an order is automatic in every case.",
+        "numeric_rule": {
+          "expected_answer": "93000",
+          "unit_label": "rupees",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number of rupees without commas. All figures are exact; no rounding is needed.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "The stated ceiling uses the cheque amount: 465000 × 20 / 100 = 93000 rupees.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Apply the stated proportion to the correct statutory base.",
+            "formula_or_substitution": "465000 × 20 / 100",
+            "intermediate_result": "93000 rupees"
+          }
+        ]
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D005",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "For this statutory-text arithmetic exercise, the trial court awards compensation of Rs 680000. An appeal order under Section 148 directs a deposit at the stated 20% minimum. Interim compensation of Rs 70000 has already been paid. What is the additional appeal deposit in rupees?",
+        "numeric_rule": {
+          "expected_answer": "136000",
+          "unit_label": "rupees",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Give a whole number of rupees without commas. All figures are exact; no rounding is needed.",
+          "allow_negative": false
+        },
+        "correct_explanation_md": "The appeal floor uses the trial-court award: 680000 × 20 / 100 = 136000 rupees. The earlier 70000 rupees is not deducted from that base; the deposit is additional.",
+        "worked_solution_steps": [
+          {
+            "step_number": 1,
+            "description": "Apply the stated proportion to the correct statutory base.",
+            "formula_or_substitution": "680000 × 20 / 100",
+            "intermediate_result": "136000 rupees"
+          }
+        ]
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Draft only. Codex authored this batch; Antigravity and human review have not occurred. No publication approval is claimed.",
+    "Courseware pages were inspected as rendered images. Statutory wording was cross-checked against the government-hosted High Court copy. Its consolidation date is not established; amendments and applicable judgments through 30 June 2026 remain to be checked before publication.",
+    "Independent teaching and assessment scenarios were designed from a factual brief. Author compared them with the inspected courseware, including its end-of-unit questions; independent originality and pedagogy review remain pending.",
+    "Percentages are checked against the retrieved statutory text, not certified as the complete law at cutoff. Current Supreme Court decisions on discretionary orders, special reasons, prospective operation and the CrPC/BNSS transition must be reviewed before publication.",
+    "The worked example and both numeric assessments are new scenarios; no courseware numerical or named case has been modified into a question. Tests independently recompute exact integer-rupee results; passing arithmetic does not verify the legal premise."
+  ],
+  "next_batch_hint": "Reconcile all BRBL B U02 drafts; Antigravity review remains required. Next courseware unit: BRBL B U03 FEMA, printed p. 169 / PDF p. 188."
+}

@@ -1,0 +1,603 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-B-U02-B009",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL Module B unit 2: Negotiable Instruments Act, 1881 — Analyse hidden alteration and the separate sender/receiver duties for truncated cheque images",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04",
+      "NI_ACT_THC_2018_TEXT"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "statement": "Section 89(1) protects the specified payer when a material alteration is not apparent and payment follows apparent tenor and is otherwise in due course. Subsections (2)–(3) impose image/original exactness on truncation/transmission and verification of image sameness with the transmitting party on receipt. Section 131 Explanation II requires the collecting banker's ordinary-care check of apparent genuineness of the cheque held for truncation.",
+        "source_id": "S04",
+        "locator": "S04 printed pp. 158–159, 161; PDF page = printed page + 19",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "statement": "Section 89(1) protects the specified payer when a material alteration is not apparent and payment follows apparent tenor and is otherwise in due course. Subsections (2)–(3) impose image/original exactness on truncation/transmission and verification of image sameness with the transmitting party on receipt. Section 131 Explanation II requires the collecting banker's ordinary-care check of apparent genuineness of the cheque held for truncation.",
+        "source_id": "NI_ACT_THC_2018_TEXT",
+        "locator": "section 89, PDF p. 21; section 131 Explanation II, PDF p. 27",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "draft_id": "D001",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Hidden alteration does not remove the due-course conditions",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "Section 89 addresses an alteration that does **not appear on presentation**, including the specified crossing situations. Its protection requires payment according to the apparent terms and otherwise in due course. The section does not excuse ignoring an alteration that is visible or other circumstances that defeat the due-course test.\n\nSeparate the questions in a disputed payment: what change was made, whether it was apparent at payment, what ordinary checks were performed and whether the rest of the payment met the required conditions. Later forensic discovery of a change does not by itself answer all of them.",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does discovering an alteration later prove that Section 89 protection was unavailable?",
+            "expected_takeaway": "No. Apparency at payment and the remaining statutory conditions must be examined."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Check both links in the cheque-image chain",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "Truncation creates more than one integrity task. Under Section 89(2), the bank or clearing house must ensure the image's apparent terms match the paper cheque when truncating and transmitting it. Under Section 89(3), a receiving bank or clearing house verifies with the transmitting party that the image received is exactly the image sent.\n\nThese checks answer different questions. A perfectly transmitted image can still misrepresent the paper cheque. Separately, Section 131 Explanation II requires the collecting banker holding the cheque for truncation to check its apparent genuineness with ordinary care. Passing a transmission check does not replace that original-instrument check.",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Can proof that received and transmitted images match establish that the image matches the paper original?",
+            "expected_takeaway": "No. Image-to-image transmission integrity and image-to-original exactness are different checks."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A bank confirms that its received cheque image is identical to the sender's transmitted image. The image nevertheless shows an amount different from the paper original. Which failure remains possible?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "No failure is possible once the network transmission is accurate",
+              "explanation_md": "Transmission accuracy does not prove that the image accurately represents the paper cheque."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Failure to ensure image-to-original exactness at truncation or transmission",
+              "explanation_md": "Section 89(2) addresses this distinct link; Section 89(3) verification alone does not establish it."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Automatic conversion of the cheque into a bearer note",
+              "explanation_md": "An image mismatch concerns integrity and possible alteration, not conversion to a different instrument type."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Failure by the payee to become the cheque's drawer",
+              "explanation_md": "A payee need not become the drawer, and this does not address the mismatch."
+            }
+          ],
+          "correct_option_id": "B",
+          "correct_explanation_md": "Section 89(2) addresses this distinct link; Section 89(3) verification alone does not establish it."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A visible unauthenticated change to a cheque amount is ignored at payment. A manager later invokes Section 89 solely because the change was fraudulent. What is the central flaw?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Section 89 applies only where no fraud could ever exist",
+              "explanation_md": "The section can address concealed alteration; fraud in itself is not the disqualifying feature described here."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Every amount alteration is automatically accepted by the drawer",
+              "explanation_md": "Consent or authority cannot be assumed merely because an amount has been changed."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Any later discovery makes all earlier checks irrelevant",
+              "explanation_md": "What was apparent at payment and the checks made remain central to the analysis."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The change was apparent and ignored; concealment and due-course conditions cannot simply be assumed",
+              "explanation_md": "Section 89 does not supply blanket protection for a visible defect or negligent payment."
+            }
+          ],
+          "correct_option_id": "D",
+          "correct_explanation_md": "Section 89 does not supply blanket protection for a visible defect or negligent payment."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A bank holds the paper cheque for truncation. It proposes to verify only that the image file opens successfully and omit ordinary-care checks for apparent tampering on the paper. Which response best identifies the missing duty?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Image usability does not replace the collecting banker's apparent-genuineness check",
+              "explanation_md": "Section 131 Explanation II separately addresses ordinary-care checks of the cheque held for truncation."
+            },
+            {
+              "option_id": "B",
+              "text_md": "A readable image conclusively proves a genuine drawer signature",
+              "explanation_md": "File readability supplies no conclusive proof of signature genuineness."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The receiving bank alone bears every duty in truncation",
+              "explanation_md": "The statutory duties also concern the truncating and transmitting parties and the collecting banker holding the cheque."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Paper checks are prohibited once imaging equipment is installed",
+              "explanation_md": "Truncation starts from paper; imaging does not prohibit the required examination of that paper."
+            }
+          ],
+          "correct_option_id": "A",
+          "correct_explanation_md": "Section 131 Explanation II separately addresses ordinary-care checks of the cheque held for truncation."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Draft only. Codex authored this batch; Antigravity and human review have not occurred. No publication approval is claimed.",
+      "Courseware pages were inspected as rendered images. Statutory wording was cross-checked against the government-hosted High Court copy. Its consolidation date is not established; amendments and applicable judgments through 30 June 2026 remain to be checked before publication.",
+      "Independent teaching and assessment scenarios were designed from a factual brief. Author compared them with the inspected courseware, including its end-of-unit questions; independent originality and pedagogy review remain pending.",
+      "No court-case outcome or universal ultraviolet-inspection rule is taught. Relevant judgments, operational CTS directions and their exam-cutoff applicability remain for review."
+    ],
+    "next_batch_hint": "Continue BRBL-B-U02-B010; preserve draft-only review gate."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-B-U02-B009",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 12, Compulsory Paper IV, Module B: Negotiable Instruments Act, 1881"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "NI_ACT_THC_2018_TEXT",
+        "authority": "Government of India statute, copy hosted by the High Court of Tripura",
+        "title": "The Negotiable Instruments Act, 1881 (Act 26 of 1881), statutory text including 2018 amendments",
+        "url": "https://thc.nic.in/Central%20Governmental%20Acts/Negotiable%20Instruments%20Act%2C%201881.pdf",
+        "publication_date": null,
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_B::U02",
+        "objective_ids": [
+          "BRBL::MOD_B::U02::LO_09"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_B::U02",
+        "objective_ids": [
+          "BRBL::MOD_B::U02::LO_09"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_B::U02",
+        "objective_ids": [
+          "BRBL::MOD_B::U02::LO_09"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BRBL::MOD_B::U02",
+        "objective_ids": [
+          "BRBL::MOD_B::U02::LO_09"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "unit_id": "BRBL::MOD_B::U02",
+        "objective_ids": [
+          "BRBL::MOD_B::U02::LO_09"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-B-U02-B009",
+      "draft_id": "D001",
+      "item_id": "item_c1043b0baa28ae73c800bd10b1b8c9c5cab845422b0e0aca9e8becc6684b5e5c"
+    },
+    {
+      "batch_id": "BRBL-B-U02-B009",
+      "draft_id": "D002",
+      "item_id": "item_5ee11893c2d3c46169ca92700ab9423a830393e47072ae2ebbf0d0a1893f24de"
+    },
+    {
+      "batch_id": "BRBL-B-U02-B009",
+      "draft_id": "D003",
+      "item_id": "item_d49ff98a84d00503093a9b416848a7fa01848ed8ee6b54f2b196e2d8b5ee1d7a"
+    },
+    {
+      "batch_id": "BRBL-B-U02-B009",
+      "draft_id": "D004",
+      "item_id": "item_0178915f450b03a7cfac5257922349c38d80ab185d85c4c2ffef4e37b8b4ab68"
+    },
+    {
+      "batch_id": "BRBL-B-U02-B009",
+      "draft_id": "D005",
+      "item_id": "item_c7e29b18caca1f8601767e919ea55c7278b0bba281a7c5204c1db5a980fff646"
+    }
+  ],
+  "items": [
+    {
+      "title": "Hidden alteration does not remove the due-course conditions",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "Section 89 addresses an alteration that does **not appear on presentation**, including the specified crossing situations. Its protection requires payment according to the apparent terms and otherwise in due course. The section does not excuse ignoring an alteration that is visible or other circumstances that defeat the due-course test.\n\nSeparate the questions in a disputed payment: what change was made, whether it was apparent at payment, what ordinary checks were performed and whether the rest of the payment met the required conditions. Later forensic discovery of a change does not by itself answer all of them.",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does discovering an alteration later prove that Section 89 protection was unavailable?",
+        "expected_takeaway": "No. Apparency at payment and the remaining statutory conditions must be examined."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_c1043b0baa28ae73c800bd10b1b8c9c5cab845422b0e0aca9e8becc6684b5e5c",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U02",
+      "objective_ids": [
+        "BRBL::MOD_B::U02::LO_09"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 158–159, 161; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "NI_ACT_THC_2018_TEXT",
+          "authority": "Government of India statute, copy hosted by the High Court of Tripura",
+          "title": "The Negotiable Instruments Act, 1881 (Act 26 of 1881), statutory text including 2018 amendments",
+          "url": "https://thc.nic.in/Central%20Governmental%20Acts/Negotiable%20Instruments%20Act%2C%201881.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section 89, PDF p. 21; section 131 Explanation II, PDF p. 27"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Check both links in the cheque-image chain",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "Truncation creates more than one integrity task. Under Section 89(2), the bank or clearing house must ensure the image's apparent terms match the paper cheque when truncating and transmitting it. Under Section 89(3), a receiving bank or clearing house verifies with the transmitting party that the image received is exactly the image sent.\n\nThese checks answer different questions. A perfectly transmitted image can still misrepresent the paper cheque. Separately, Section 131 Explanation II requires the collecting banker holding the cheque for truncation to check its apparent genuineness with ordinary care. Passing a transmission check does not replace that original-instrument check.",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Can proof that received and transmitted images match establish that the image matches the paper original?",
+        "expected_takeaway": "No. Image-to-image transmission integrity and image-to-original exactness are different checks."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_5ee11893c2d3c46169ca92700ab9423a830393e47072ae2ebbf0d0a1893f24de",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U02",
+      "objective_ids": [
+        "BRBL::MOD_B::U02::LO_09"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 158–159, 161; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "NI_ACT_THC_2018_TEXT",
+          "authority": "Government of India statute, copy hosted by the High Court of Tripura",
+          "title": "The Negotiable Instruments Act, 1881 (Act 26 of 1881), statutory text including 2018 amendments",
+          "url": "https://thc.nic.in/Central%20Governmental%20Acts/Negotiable%20Instruments%20Act%2C%201881.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section 89, PDF p. 21; section 131 Explanation II, PDF p. 27"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A bank confirms that its received cheque image is identical to the sender's transmitted image. The image nevertheless shows an amount different from the paper original. Which failure remains possible?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "No failure is possible once the network transmission is accurate",
+          "explanation_md": "Transmission accuracy does not prove that the image accurately represents the paper cheque."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Failure to ensure image-to-original exactness at truncation or transmission",
+          "explanation_md": "Section 89(2) addresses this distinct link; Section 89(3) verification alone does not establish it."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Automatic conversion of the cheque into a bearer note",
+          "explanation_md": "An image mismatch concerns integrity and possible alteration, not conversion to a different instrument type."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Failure by the payee to become the cheque's drawer",
+          "explanation_md": "A payee need not become the drawer, and this does not address the mismatch."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_explanation_md": "Section 89(2) addresses this distinct link; Section 89(3) verification alone does not establish it.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_d49ff98a84d00503093a9b416848a7fa01848ed8ee6b54f2b196e2d8b5ee1d7a",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U02",
+      "objective_ids": [
+        "BRBL::MOD_B::U02::LO_09"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 158–159, 161; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "NI_ACT_THC_2018_TEXT",
+          "authority": "Government of India statute, copy hosted by the High Court of Tripura",
+          "title": "The Negotiable Instruments Act, 1881 (Act 26 of 1881), statutory text including 2018 amendments",
+          "url": "https://thc.nic.in/Central%20Governmental%20Acts/Negotiable%20Instruments%20Act%2C%201881.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section 89, PDF p. 21; section 131 Explanation II, PDF p. 27"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A visible unauthenticated change to a cheque amount is ignored at payment. A manager later invokes Section 89 solely because the change was fraudulent. What is the central flaw?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Section 89 applies only where no fraud could ever exist",
+          "explanation_md": "The section can address concealed alteration; fraud in itself is not the disqualifying feature described here."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Every amount alteration is automatically accepted by the drawer",
+          "explanation_md": "Consent or authority cannot be assumed merely because an amount has been changed."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Any later discovery makes all earlier checks irrelevant",
+          "explanation_md": "What was apparent at payment and the checks made remain central to the analysis."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The change was apparent and ignored; concealment and due-course conditions cannot simply be assumed",
+          "explanation_md": "Section 89 does not supply blanket protection for a visible defect or negligent payment."
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_explanation_md": "Section 89 does not supply blanket protection for a visible defect or negligent payment.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_0178915f450b03a7cfac5257922349c38d80ab185d85c4c2ffef4e37b8b4ab68",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U02",
+      "objective_ids": [
+        "BRBL::MOD_B::U02::LO_09"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 158–159, 161; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "NI_ACT_THC_2018_TEXT",
+          "authority": "Government of India statute, copy hosted by the High Court of Tripura",
+          "title": "The Negotiable Instruments Act, 1881 (Act 26 of 1881), statutory text including 2018 amendments",
+          "url": "https://thc.nic.in/Central%20Governmental%20Acts/Negotiable%20Instruments%20Act%2C%201881.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section 89, PDF p. 21; section 131 Explanation II, PDF p. 27"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A bank holds the paper cheque for truncation. It proposes to verify only that the image file opens successfully and omit ordinary-care checks for apparent tampering on the paper. Which response best identifies the missing duty?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Image usability does not replace the collecting banker's apparent-genuineness check",
+          "explanation_md": "Section 131 Explanation II separately addresses ordinary-care checks of the cheque held for truncation."
+        },
+        {
+          "option_id": "B",
+          "text_md": "A readable image conclusively proves a genuine drawer signature",
+          "explanation_md": "File readability supplies no conclusive proof of signature genuineness."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The receiving bank alone bears every duty in truncation",
+          "explanation_md": "The statutory duties also concern the truncating and transmitting parties and the collecting banker holding the cheque."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Paper checks are prohibited once imaging equipment is installed",
+          "explanation_md": "Truncation starts from paper; imaging does not prohibit the required examination of that paper."
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_explanation_md": "Section 131 Explanation II separately addresses ordinary-care checks of the cheque held for truncation.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_c7e29b18caca1f8601767e919ea55c7278b0bba281a7c5204c1db5a980fff646",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U02",
+      "objective_ids": [
+        "BRBL::MOD_B::U02::LO_09"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 158–159, 161; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "NI_ACT_THC_2018_TEXT",
+          "authority": "Government of India statute, copy hosted by the High Court of Tripura",
+          "title": "The Negotiable Instruments Act, 1881 (Act 26 of 1881), statutory text including 2018 amendments",
+          "url": "https://thc.nic.in/Central%20Governmental%20Acts/Negotiable%20Instruments%20Act%2C%201881.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section 89, PDF p. 21; section 131 Explanation II, PDF p. 27"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

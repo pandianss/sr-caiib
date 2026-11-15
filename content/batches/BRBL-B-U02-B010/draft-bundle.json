@@ -1,0 +1,603 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-B-U02-B010",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL Module B unit 2: Negotiable Instruments Act, 1881 — Distinguish entitlement as holder from the additional conditions for holder in due course",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04",
+      "NI_ACT_THC_2018_TEXT"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "statement": "A holder is entitled in own name to possession and receipt or recovery; physical custody alone is not enough and loss does not itself extinguish holder status. A holder in due course must satisfy the consideration, acquisition timing, instrument-status and absence-of-sufficient-cause-to-doubt-title requirements of section 9. Early credit to a collecting customer does not by itself exclude section 131 under Explanation I.",
+        "source_id": "S04",
+        "locator": "S04 printed pp. 160–161; PDF page = printed page + 19",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "statement": "A holder is entitled in own name to possession and receipt or recovery; physical custody alone is not enough and loss does not itself extinguish holder status. A holder in due course must satisfy the consideration, acquisition timing, instrument-status and absence-of-sufficient-cause-to-doubt-title requirements of section 9. Early credit to a collecting customer does not by itself exclude section 131 under Explanation I.",
+        "source_id": "NI_ACT_THC_2018_TEXT",
+        "locator": "sections 8–9, PDF p. 10; section 131 Explanation I, PDF p. 26",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "draft_id": "D001",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Separate custody, entitlement and due-course acquisition",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "A payment file may name the person carrying an instrument, the person entitled to recover on it and a later acquirer claiming special status. These are not interchangeable descriptions. Under Section 8, **holder** concerns entitlement in one's own name to possession and to receive or recover the amount. Physical custody can belong to an agent while entitlement remains elsewhere.\n\nFor **holder in due course**, Section 9 adds acquisition for consideration, the required bearer/order status, acquisition before the amount becomes payable, and no sufficient cause to believe the transferor's title defective. Check the acquisition file rather than inferring all of this from the label “holder”.",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Why does physical custody alone not decide holder-in-due-course status?",
+            "expected_takeaway": "Entitlement and the consideration, timing, instrument-status and title conditions must also be established."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Early credit does not settle the bank's legal capacity",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "A collecting bank may credit a customer before receiving the cheque proceeds. That timing alone does not decide whether the bank acts as collecting agent or takes the instrument in another capacity. **Section 131 Explanation I** expressly allows receipt for a customer within the section despite credit before receipt.\n\nIf the bank claims holder-for-value or holder-in-due-course rights, examine the actual transaction and the applicable conditions. Equally, do not deny every collecting-bank defence solely because an advance credit exists. Preserve the capacity analysis separately from the accounting timestamp.",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does a credit entry before collection automatically remove Section 131 protection?",
+            "expected_takeaway": "No. Explanation I addresses early credit; the actual capacity and remaining conditions still need analysis."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A courier delivers a bill for its employer and claims that physical custody makes it the person entitled to recover the money in its own name. Which question should the bank resolve first?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Whether the bill has a fixed future payment date",
+              "explanation_md": "A payment date does not establish that the courier is entitled to recover in its own name."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Whether delivery used a recognised collection channel",
+              "explanation_md": "A recognised delivery channel does not turn an agent into the person entitled to recover on the bill."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Whether the courier has its own entitlement rather than custody as an agent",
+              "explanation_md": "Holder status requires entitlement in one's own name; acting as a messenger does not establish it."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Whether the employer recorded the bill in its receivables ledger",
+              "explanation_md": "The employer accounting entry does not establish entitlement in the courier own name."
+            }
+          ],
+          "correct_option_id": "C",
+          "correct_explanation_md": "Holder status requires entitlement in one's own name; acting as a messenger does not establish it."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "An acquirer paid consideration for a bill before it became payable, but the acquisition file shows sufficient cause to believe the transferor's title defective. Which conclusion correctly identifies the unresolved due-course condition?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Consideration and timing do not cure the title-warning problem",
+              "explanation_md": "Section 9 separately requires absence of sufficient cause to believe the transferor's title defective."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Any payment of consideration guarantees due-course status",
+              "explanation_md": "Consideration is only one condition; the title-warning facts remain material."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Early acquisition eliminates the need to inspect title circumstances",
+              "explanation_md": "Acquisition before payment becomes due does not replace the separate title requirement."
+            },
+            {
+              "option_id": "D",
+              "text_md": "A bill must be crossed before anyone can be a holder in due course",
+              "explanation_md": "Section 9 does not impose a general crossing requirement on every bill."
+            }
+          ],
+          "correct_option_id": "A",
+          "correct_explanation_md": "Section 9 separately requires absence of sufficient cause to believe the transferor's title defective."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A bank credits a customer's account before receiving proceeds of a crossed cheque. An audit note says that timing alone makes Section 131 unavailable. Which statutory point requires the note to be reconsidered?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Section 131 dispenses with good faith whenever credit is early",
+              "explanation_md": "Explanation I does not remove the good-faith or absence-of-negligence conditions."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The bank must receive proceeds before any credit can qualify as collection for a customer",
+              "explanation_md": "Explanation I expressly addresses credit before receipt, so this absolute timing requirement is incorrect."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Every early credit conclusively makes the bank a holder in due course",
+              "explanation_md": "Timing of credit alone cannot establish consideration, acquisition capacity and every Section 9 condition."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Explanation I preserves the possibility of receipt for a customer despite early credit",
+              "explanation_md": "The statute expressly addresses this timing; capacity and the other conditions require their own analysis."
+            }
+          ],
+          "correct_option_id": "D",
+          "correct_explanation_md": "The statute expressly addresses this timing; capacity and the other conditions require their own analysis."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Draft only. Codex authored this batch; Antigravity and human review have not occurred. No publication approval is claimed.",
+      "Courseware pages were inspected as rendered images. Statutory wording was cross-checked against the government-hosted High Court copy. Its consolidation date is not established; amendments and applicable judgments through 30 June 2026 remain to be checked before publication.",
+      "Independent teaching and assessment scenarios were designed from a factual brief. Author compared them with the inspected courseware, including its end-of-unit questions; independent originality and pedagogy review remain pending.",
+      "Courseware printed p. 162 draws a broad agent/holder-for-value distinction. Do not infer that every advance credit automatically defeats section 131: statutory Explanation I expressly addresses credit before collection. Capacity and any case-law implications need independent review."
+    ],
+    "next_batch_hint": "Continue BRBL-B-U02-B011; preserve draft-only review gate."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-B-U02-B010",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 12, Compulsory Paper IV, Module B: Negotiable Instruments Act, 1881"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "NI_ACT_THC_2018_TEXT",
+        "authority": "Government of India statute, copy hosted by the High Court of Tripura",
+        "title": "The Negotiable Instruments Act, 1881 (Act 26 of 1881), statutory text including 2018 amendments",
+        "url": "https://thc.nic.in/Central%20Governmental%20Acts/Negotiable%20Instruments%20Act%2C%201881.pdf",
+        "publication_date": null,
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_B::U02",
+        "objective_ids": [
+          "BRBL::MOD_B::U02::LO_10"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_B::U02",
+        "objective_ids": [
+          "BRBL::MOD_B::U02::LO_10"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_B::U02",
+        "objective_ids": [
+          "BRBL::MOD_B::U02::LO_10"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BRBL::MOD_B::U02",
+        "objective_ids": [
+          "BRBL::MOD_B::U02::LO_10"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "unit_id": "BRBL::MOD_B::U02",
+        "objective_ids": [
+          "BRBL::MOD_B::U02::LO_10"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-B-U02-B010",
+      "draft_id": "D001",
+      "item_id": "item_524fa1794615fe4286f395e0f0251bcadd86d69b8c949a2e831ddf369ec37cc8"
+    },
+    {
+      "batch_id": "BRBL-B-U02-B010",
+      "draft_id": "D002",
+      "item_id": "item_33a5f9ec4210d5b9598840e82e16892a85f291cb41db86f1a2aec9eb34717d89"
+    },
+    {
+      "batch_id": "BRBL-B-U02-B010",
+      "draft_id": "D003",
+      "item_id": "item_7c4f263a8ecf11bc89edd9f0049637c240eb796ab158d397e0206a910b6e4267"
+    },
+    {
+      "batch_id": "BRBL-B-U02-B010",
+      "draft_id": "D004",
+      "item_id": "item_2bb4997853b019cf1245725a370bfb1641920ea0ea4f652e11ff84d012e9c474"
+    },
+    {
+      "batch_id": "BRBL-B-U02-B010",
+      "draft_id": "D005",
+      "item_id": "item_d78e5dbdb33dace9a7ba33881a154c4baa370706eebd97f77b97983a4f74563d"
+    }
+  ],
+  "items": [
+    {
+      "title": "Separate custody, entitlement and due-course acquisition",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "A payment file may name the person carrying an instrument, the person entitled to recover on it and a later acquirer claiming special status. These are not interchangeable descriptions. Under Section 8, **holder** concerns entitlement in one's own name to possession and to receive or recover the amount. Physical custody can belong to an agent while entitlement remains elsewhere.\n\nFor **holder in due course**, Section 9 adds acquisition for consideration, the required bearer/order status, acquisition before the amount becomes payable, and no sufficient cause to believe the transferor's title defective. Check the acquisition file rather than inferring all of this from the label “holder”.",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Why does physical custody alone not decide holder-in-due-course status?",
+        "expected_takeaway": "Entitlement and the consideration, timing, instrument-status and title conditions must also be established."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_524fa1794615fe4286f395e0f0251bcadd86d69b8c949a2e831ddf369ec37cc8",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U02",
+      "objective_ids": [
+        "BRBL::MOD_B::U02::LO_10"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 160–161; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "NI_ACT_THC_2018_TEXT",
+          "authority": "Government of India statute, copy hosted by the High Court of Tripura",
+          "title": "The Negotiable Instruments Act, 1881 (Act 26 of 1881), statutory text including 2018 amendments",
+          "url": "https://thc.nic.in/Central%20Governmental%20Acts/Negotiable%20Instruments%20Act%2C%201881.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 8–9, PDF p. 10; section 131 Explanation I, PDF p. 26"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Early credit does not settle the bank's legal capacity",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "A collecting bank may credit a customer before receiving the cheque proceeds. That timing alone does not decide whether the bank acts as collecting agent or takes the instrument in another capacity. **Section 131 Explanation I** expressly allows receipt for a customer within the section despite credit before receipt.\n\nIf the bank claims holder-for-value or holder-in-due-course rights, examine the actual transaction and the applicable conditions. Equally, do not deny every collecting-bank defence solely because an advance credit exists. Preserve the capacity analysis separately from the accounting timestamp.",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does a credit entry before collection automatically remove Section 131 protection?",
+        "expected_takeaway": "No. Explanation I addresses early credit; the actual capacity and remaining conditions still need analysis."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_33a5f9ec4210d5b9598840e82e16892a85f291cb41db86f1a2aec9eb34717d89",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U02",
+      "objective_ids": [
+        "BRBL::MOD_B::U02::LO_10"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 160–161; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "NI_ACT_THC_2018_TEXT",
+          "authority": "Government of India statute, copy hosted by the High Court of Tripura",
+          "title": "The Negotiable Instruments Act, 1881 (Act 26 of 1881), statutory text including 2018 amendments",
+          "url": "https://thc.nic.in/Central%20Governmental%20Acts/Negotiable%20Instruments%20Act%2C%201881.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 8–9, PDF p. 10; section 131 Explanation I, PDF p. 26"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A courier delivers a bill for its employer and claims that physical custody makes it the person entitled to recover the money in its own name. Which question should the bank resolve first?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Whether the bill has a fixed future payment date",
+          "explanation_md": "A payment date does not establish that the courier is entitled to recover in its own name."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Whether delivery used a recognised collection channel",
+          "explanation_md": "A recognised delivery channel does not turn an agent into the person entitled to recover on the bill."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Whether the courier has its own entitlement rather than custody as an agent",
+          "explanation_md": "Holder status requires entitlement in one's own name; acting as a messenger does not establish it."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Whether the employer recorded the bill in its receivables ledger",
+          "explanation_md": "The employer accounting entry does not establish entitlement in the courier own name."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_explanation_md": "Holder status requires entitlement in one's own name; acting as a messenger does not establish it.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_7c4f263a8ecf11bc89edd9f0049637c240eb796ab158d397e0206a910b6e4267",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U02",
+      "objective_ids": [
+        "BRBL::MOD_B::U02::LO_10"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 160–161; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "NI_ACT_THC_2018_TEXT",
+          "authority": "Government of India statute, copy hosted by the High Court of Tripura",
+          "title": "The Negotiable Instruments Act, 1881 (Act 26 of 1881), statutory text including 2018 amendments",
+          "url": "https://thc.nic.in/Central%20Governmental%20Acts/Negotiable%20Instruments%20Act%2C%201881.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 8–9, PDF p. 10; section 131 Explanation I, PDF p. 26"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "An acquirer paid consideration for a bill before it became payable, but the acquisition file shows sufficient cause to believe the transferor's title defective. Which conclusion correctly identifies the unresolved due-course condition?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Consideration and timing do not cure the title-warning problem",
+          "explanation_md": "Section 9 separately requires absence of sufficient cause to believe the transferor's title defective."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Any payment of consideration guarantees due-course status",
+          "explanation_md": "Consideration is only one condition; the title-warning facts remain material."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Early acquisition eliminates the need to inspect title circumstances",
+          "explanation_md": "Acquisition before payment becomes due does not replace the separate title requirement."
+        },
+        {
+          "option_id": "D",
+          "text_md": "A bill must be crossed before anyone can be a holder in due course",
+          "explanation_md": "Section 9 does not impose a general crossing requirement on every bill."
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_explanation_md": "Section 9 separately requires absence of sufficient cause to believe the transferor's title defective.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_2bb4997853b019cf1245725a370bfb1641920ea0ea4f652e11ff84d012e9c474",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U02",
+      "objective_ids": [
+        "BRBL::MOD_B::U02::LO_10"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 160–161; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "NI_ACT_THC_2018_TEXT",
+          "authority": "Government of India statute, copy hosted by the High Court of Tripura",
+          "title": "The Negotiable Instruments Act, 1881 (Act 26 of 1881), statutory text including 2018 amendments",
+          "url": "https://thc.nic.in/Central%20Governmental%20Acts/Negotiable%20Instruments%20Act%2C%201881.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 8–9, PDF p. 10; section 131 Explanation I, PDF p. 26"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A bank credits a customer's account before receiving proceeds of a crossed cheque. An audit note says that timing alone makes Section 131 unavailable. Which statutory point requires the note to be reconsidered?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Section 131 dispenses with good faith whenever credit is early",
+          "explanation_md": "Explanation I does not remove the good-faith or absence-of-negligence conditions."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The bank must receive proceeds before any credit can qualify as collection for a customer",
+          "explanation_md": "Explanation I expressly addresses credit before receipt, so this absolute timing requirement is incorrect."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Every early credit conclusively makes the bank a holder in due course",
+          "explanation_md": "Timing of credit alone cannot establish consideration, acquisition capacity and every Section 9 condition."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Explanation I preserves the possibility of receipt for a customer despite early credit",
+          "explanation_md": "The statute expressly addresses this timing; capacity and the other conditions require their own analysis."
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_explanation_md": "The statute expressly addresses this timing; capacity and the other conditions require their own analysis.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_d78e5dbdb33dace9a7ba33881a154c4baa370706eebd97f77b97983a4f74563d",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U02",
+      "objective_ids": [
+        "BRBL::MOD_B::U02::LO_10"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 160–161; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "NI_ACT_THC_2018_TEXT",
+          "authority": "Government of India statute, copy hosted by the High Court of Tripura",
+          "title": "The Negotiable Instruments Act, 1881 (Act 26 of 1881), statutory text including 2018 amendments",
+          "url": "https://thc.nic.in/Central%20Governmental%20Acts/Negotiable%20Instruments%20Act%2C%201881.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 8–9, PDF p. 10; section 131 Explanation I, PDF p. 26"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

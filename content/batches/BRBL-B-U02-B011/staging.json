@@ -1,0 +1,188 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-B-U02-B011",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL Module B unit 2: Negotiable Instruments Act, 1881 — Assess collecting-bank protection and crossed-cheque routing without confusing it with paying-bank discharge",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04",
+    "NI_ACT_THC_2018_TEXT"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "statement": "Courseware describes section 131 collecting-banker protection for a customer crossed cheque, good faith, absence of negligence, the truncated-cheque check and section 131A application to drafts. The detailed crossing routes and section 130 title limitation are supplemental statutory evidence, not claimed to be fully explained on these courseware pages.",
+      "source_id": "S04",
+      "locator": "S04 printed pp. 161–163; PDF page = printed page + 19",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F002",
+      "statement": "Section 131 addresses good-faith, non-negligent receipt for a customer of a cheque crossed generally or specially to the collecting bank, where title proves defective. A general crossing directs payment through a banker; a special crossing directs it through the named banker or its banker-agent for collection. Section 130 limits better title on a not-negotiable crossing; section 131A applies the chapter to section 85A drafts.",
+      "source_id": "NI_ACT_THC_2018_TEXT",
+      "locator": "sections 123–131A, PDF pp. 26–27",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "draft_id": "D001",
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Identify the collecting service and its conditions",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "A collecting bank receives payment for its customer; the paying bank honours the drawer's instruction. **Section 131** addresses the collecting side where title proves defective. It requires the specified crossed cheque, collection for a customer, good faith and absence of negligence. It does not declare every collection safe or provide a substitute for the paying bank's separate duties.\n\nA reviewer should record the crossing, the customer relationship, the bank's capacity and the reasonable checks performed. A customer relationship helps establish one condition; it does not excuse ignored inconsistencies or apparent tampering.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Can collection for an existing customer alone establish Section 131 protection?",
+          "expected_takeaway": "No. Crossing, good faith and absence of negligence also matter."
+        }
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D002",
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "A crossing controls the route; not negotiable controls title",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "A **general crossing** requires payment to a banker. A **special crossing** identifies the banker through whom payment must pass, allowing the specified banker-agent collection route. Section 129 addresses the paying banker's liability for loss caused by payment outside those routes.\n\nAdding **not negotiable** concerns title: a taker cannot obtain or pass a better title than the transferor had. It does not simply mean that no transfer can take place. Section 131A extends this chapter to the particular inter-office drafts defined by Section 85A. Keep routing, title quality and collecting-bank protection as separate questions in a dispute.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "What does a not-negotiable crossing limit?",
+          "expected_takeaway": "The quality of title a taker can obtain or pass, rather than prohibiting every transfer."
+        }
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D003",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A collecting branch receives a crossed cheque for an established customer but ignores obvious inconsistencies requiring enquiry. Why does the customer relationship alone not establish Section 131 protection?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The section never applies to existing customers",
+            "explanation_md": "Receipt for a customer is one of the stated conditions, rather than a reason for exclusion."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Good faith and absence of negligence must also be established",
+            "explanation_md": "A customer relationship does not replace the separate care and good-faith conditions."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Every crossed cheque gives the bank unconditional immunity",
+            "explanation_md": "Section 131 is conditional; the crossing alone cannot excuse negligent collection."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The bank becomes the drawer as soon as it receives the cheque",
+            "explanation_md": "Receiving for collection does not make the bank the person who issued the payment order."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "A customer relationship does not replace the separate care and good-faith conditions."
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D004",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A cheque is specially crossed to Cedar Bank. Apart from payment to Cedar itself, which described route is contemplated by Section 126?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Payment directly to the named payee over the counter once identity is verified",
+            "explanation_md": "Verifying the payee identity does not remove the special-crossing route through the named banker or qualifying banker-agent."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Cash payment to any bearer because the cheque is negotiable",
+            "explanation_md": "Bearer possession does not remove the special crossing requirement."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Payment to Cedar's agent for collection, being a banker",
+            "explanation_md": "The special-crossing rule permits the named banker or its banker-agent for collection."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Payment to an unrelated finance company solely because it has an account",
+            "explanation_md": "Holding an account does not make that company the named banker or its qualifying collection agent."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "The special-crossing rule permits the named banker or its banker-agent for collection."
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D005",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A transferee takes a cheque crossed “not negotiable” from someone with defective title. It argues that paying full value necessarily gives it a better title. Which provision addresses that argument?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Section 130 limits the taker to the transferor's title quality",
+            "explanation_md": "The not-negotiable crossing prevents obtaining or passing a better title than the transferor possessed."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Section 130 prohibits every physical delivery of the cheque",
+            "explanation_md": "The rule concerns title quality; it is not a blanket physical-transfer prohibition."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Section 85A automatically cures every defective title",
+            "explanation_md": "The specified paying-bank draft discharge does not override the not-negotiable title restriction."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Section 119 conclusively proves that the transferor owned the cheque",
+            "explanation_md": "Section 119 concerns dishonour on proof of protest, not conclusive proof of ownership."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "The not-negotiable crossing prevents obtaining or passing a better title than the transferor possessed."
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Draft only. Codex authored this batch; Antigravity and human review have not occurred. No publication approval is claimed.",
+    "Courseware pages were inspected as rendered images. Statutory wording was cross-checked against the government-hosted High Court copy. Its consolidation date is not established; amendments and applicable judgments through 30 June 2026 remain to be checked before publication.",
+    "Independent teaching and assessment scenarios were designed from a factual brief. Author compared them with the inspected courseware, including its end-of-unit questions; independent originality and pedagogy review remain pending.",
+    "Courseware named-case summaries were inspected but no judgment outcome is taught as independently verified. The blanket courseware statement about forged drawer signatures and collecting-bank protection is held back for case-law review. Crossing rules are drawn directly from the statutory copy."
+  ],
+  "next_batch_hint": "Continue BRBL-B-U02-B012; preserve draft-only review gate."
+}

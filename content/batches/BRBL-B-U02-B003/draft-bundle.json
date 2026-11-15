@@ -1,0 +1,602 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-B-U02-B003",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL Module B unit 2: Negotiable Instruments Act, 1881 — Identify drawer, drawee, payee, acceptor and the special roles of need and honour",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04",
+      "NI_ACT_THC_2018_TEXT"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "statement": "The drawer makes a bill or cheque; the drawee is directed to pay; the payee is the named recipient. A drawee becomes acceptor after signing assent and delivery or notice of that signature. A drawee in case of need is a named additional recourse. Acceptance for honour concerns an acceptance supra protest for a drawer or indorser after the specified noting/protest circumstances.",
+        "source_id": "S04",
+        "locator": "S04 printed pp. 155; PDF page = printed page + 19",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "statement": "The drawer makes a bill or cheque; the drawee is directed to pay; the payee is the named recipient. A drawee becomes acceptor after signing assent and delivery or notice of that signature. A drawee in case of need is a named additional recourse. Acceptance for honour concerns an acceptance supra protest for a drawer or indorser after the specified noting/protest circumstances.",
+        "source_id": "NI_ACT_THC_2018_TEXT",
+        "locator": "section 7, PDF pp. 9–10; sections 30–33, PDF pp. 12–13",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "draft_id": "D001",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Map the instruction before mapping liability",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "Use a three-part reading of a bill: **who gives the order, who must act on it, and who should receive the money**. These roles are drawer, drawee and payee respectively. They describe functions; the document must still be read to see whether one person occupies more than one role.\n\nThe drawee becomes an **acceptor** through signed assent followed by delivery of the bill or notice of the signing to the holder or someone acting for the holder. A private mental decision to pay is not the statutory act of acceptance. The maker of a note undertakes payment directly rather than waiting to become a bill's acceptor.",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "What additional event is needed beyond the drawee merely signing assent?",
+            "expected_takeaway": "Delivery of the bill or notice of the signing to the holder or a person on the holder's behalf."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Need and honour address different problems",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "A **drawee in case of need** is an additional person identified on the bill or an indorsement to be approached if needed. **Acceptance for honour** instead follows the specified noting or protest circumstances and is made for the honour of the drawer or an indorser.\n\nWhen a file mentions a substitute payer, ask how the role arose. A name written in advance as an additional recourse is not the same as an intervention after protest. Keeping that distinction prevents a branch from assigning powers or liabilities from a label that does not fit the instrument's history.",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does naming an additional recourse automatically make that person an acceptor for honour?",
+            "expected_takeaway": "No. A drawee in case of need and an acceptor for honour arise in different ways."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "On a trade bill, Hillcrest Components directs Baylink Assembly to pay Northgate Factors. Baylink signs assent and delivers the accepted bill to Northgate. Which role has Baylink now taken?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Drawer, because it signed after issue",
+              "explanation_md": "Hillcrest gave the payment order; Baylink's later signature does not make it the drawer."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Payee, because it delivered the instrument",
+              "explanation_md": "Northgate is the named recipient; delivery does not turn the party directed to pay into the payee."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Acceptor, having signed assent and delivered the bill",
+              "explanation_md": "Baylink was the drawee and completed the specified acceptance acts by signing assent and delivery."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Indorsee, solely because it agreed to payment",
+              "explanation_md": "An indorsee receives through an indorsement; acceptance of the payment obligation is a different function."
+            }
+          ],
+          "correct_option_id": "C",
+          "correct_explanation_md": "Baylink was the drawee and completed the specified acceptance acts by signing assent and delivery."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A bill names an additional firm to be approached if the original drawee does not respond. There has been no noting, protest or later intervention. Which description best fits that additional firm?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Acceptor for honour in every case",
+              "explanation_md": "That status involves acceptance supra protest in the specified circumstances, not merely an additional name on issue."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Drawee in case of need",
+              "explanation_md": "An additional person named as a recourse in need fits this role; no later acceptance for honour is described."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Paying banker under Section 85",
+              "explanation_md": "Nothing says this is a cheque on a bank or that the additional firm is the paying banker."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Holder in due course automatically",
+              "explanation_md": "Being named as a fallback payer does not establish acquisition, consideration, timing or title conditions."
+            }
+          ],
+          "correct_option_id": "B",
+          "correct_explanation_md": "An additional person named as a recourse in need fits this role; no later acceptance for honour is described."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A drawee signs assent to a bill, keeps it in a private file and gives no notice to the holder or anyone acting for the holder. Which missing fact prevents treating the described acts alone as completed statutory acceptance?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Delivery or notice of the signing",
+              "explanation_md": "Section 7 combines signed assent with delivery or notice; a signature retained privately does not establish that further step."
+            },
+            {
+              "option_id": "B",
+              "text_md": "An instruction changing every bill into bearer paper",
+              "explanation_md": "Bearer status is unrelated to the delivery or notice needed to complete acceptance."
+            },
+            {
+              "option_id": "C",
+              "text_md": "A second signature by every former holder",
+              "explanation_md": "The definition does not require this; it concerns the drawee's assent and its communication or delivery."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Proof that the payee is also the drawer",
+              "explanation_md": "The payee and drawer need not be the same person for a bill to be accepted."
+            }
+          ],
+          "correct_option_id": "A",
+          "correct_explanation_md": "Section 7 combines signed assent with delivery or notice; a signature retained privately does not establish that further step."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Draft only. Codex authored this batch; Antigravity and human review have not occurred. No publication approval is claimed.",
+      "Courseware pages were inspected as rendered images. Statutory wording was cross-checked against the government-hosted High Court copy. Its consolidation date is not established; amendments and applicable judgments through 30 June 2026 remain to be checked before publication.",
+      "Independent teaching and assessment scenarios were designed from a factual brief. Author compared them with the inspected courseware, including its end-of-unit questions; independent originality and pedagogy review remain pending."
+    ],
+    "next_batch_hint": "Continue BRBL-B-U02-B004; preserve draft-only review gate."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-B-U02-B003",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 12, Compulsory Paper IV, Module B: Negotiable Instruments Act, 1881"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "NI_ACT_THC_2018_TEXT",
+        "authority": "Government of India statute, copy hosted by the High Court of Tripura",
+        "title": "The Negotiable Instruments Act, 1881 (Act 26 of 1881), statutory text including 2018 amendments",
+        "url": "https://thc.nic.in/Central%20Governmental%20Acts/Negotiable%20Instruments%20Act%2C%201881.pdf",
+        "publication_date": null,
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_B::U02",
+        "objective_ids": [
+          "BRBL::MOD_B::U02::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_B::U02",
+        "objective_ids": [
+          "BRBL::MOD_B::U02::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_B::U02",
+        "objective_ids": [
+          "BRBL::MOD_B::U02::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BRBL::MOD_B::U02",
+        "objective_ids": [
+          "BRBL::MOD_B::U02::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "unit_id": "BRBL::MOD_B::U02",
+        "objective_ids": [
+          "BRBL::MOD_B::U02::LO_03"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-B-U02-B003",
+      "draft_id": "D001",
+      "item_id": "item_b7c58a315e5ec9d1e1c6d01c129e1b6a3252403bfbe2dc7a8cedd9222ee23d39"
+    },
+    {
+      "batch_id": "BRBL-B-U02-B003",
+      "draft_id": "D002",
+      "item_id": "item_93c66ca26f66643488c0cdab2645cc1c117781b253ba1d98ac8b9e27c23b57ca"
+    },
+    {
+      "batch_id": "BRBL-B-U02-B003",
+      "draft_id": "D003",
+      "item_id": "item_a3ed29f0f5c4fb926169c00ec69f5bf4c0b6bd9d5583f41d89b88d623f49b9a8"
+    },
+    {
+      "batch_id": "BRBL-B-U02-B003",
+      "draft_id": "D004",
+      "item_id": "item_dcfb100b8ca5760a4b71a879e77b3db9bc3fd747a6f0f032d8480f5144a4ab5d"
+    },
+    {
+      "batch_id": "BRBL-B-U02-B003",
+      "draft_id": "D005",
+      "item_id": "item_fb0aef4f946b831a70bc27fe85d799d33acf762f181c8db987d3339320ad44cc"
+    }
+  ],
+  "items": [
+    {
+      "title": "Map the instruction before mapping liability",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "Use a three-part reading of a bill: **who gives the order, who must act on it, and who should receive the money**. These roles are drawer, drawee and payee respectively. They describe functions; the document must still be read to see whether one person occupies more than one role.\n\nThe drawee becomes an **acceptor** through signed assent followed by delivery of the bill or notice of the signing to the holder or someone acting for the holder. A private mental decision to pay is not the statutory act of acceptance. The maker of a note undertakes payment directly rather than waiting to become a bill's acceptor.",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "What additional event is needed beyond the drawee merely signing assent?",
+        "expected_takeaway": "Delivery of the bill or notice of the signing to the holder or a person on the holder's behalf."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_b7c58a315e5ec9d1e1c6d01c129e1b6a3252403bfbe2dc7a8cedd9222ee23d39",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U02",
+      "objective_ids": [
+        "BRBL::MOD_B::U02::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 155; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "NI_ACT_THC_2018_TEXT",
+          "authority": "Government of India statute, copy hosted by the High Court of Tripura",
+          "title": "The Negotiable Instruments Act, 1881 (Act 26 of 1881), statutory text including 2018 amendments",
+          "url": "https://thc.nic.in/Central%20Governmental%20Acts/Negotiable%20Instruments%20Act%2C%201881.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section 7, PDF pp. 9–10; sections 30–33, PDF pp. 12–13"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Need and honour address different problems",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "A **drawee in case of need** is an additional person identified on the bill or an indorsement to be approached if needed. **Acceptance for honour** instead follows the specified noting or protest circumstances and is made for the honour of the drawer or an indorser.\n\nWhen a file mentions a substitute payer, ask how the role arose. A name written in advance as an additional recourse is not the same as an intervention after protest. Keeping that distinction prevents a branch from assigning powers or liabilities from a label that does not fit the instrument's history.",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does naming an additional recourse automatically make that person an acceptor for honour?",
+        "expected_takeaway": "No. A drawee in case of need and an acceptor for honour arise in different ways."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_93c66ca26f66643488c0cdab2645cc1c117781b253ba1d98ac8b9e27c23b57ca",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U02",
+      "objective_ids": [
+        "BRBL::MOD_B::U02::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 155; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "NI_ACT_THC_2018_TEXT",
+          "authority": "Government of India statute, copy hosted by the High Court of Tripura",
+          "title": "The Negotiable Instruments Act, 1881 (Act 26 of 1881), statutory text including 2018 amendments",
+          "url": "https://thc.nic.in/Central%20Governmental%20Acts/Negotiable%20Instruments%20Act%2C%201881.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section 7, PDF pp. 9–10; sections 30–33, PDF pp. 12–13"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "On a trade bill, Hillcrest Components directs Baylink Assembly to pay Northgate Factors. Baylink signs assent and delivers the accepted bill to Northgate. Which role has Baylink now taken?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Drawer, because it signed after issue",
+          "explanation_md": "Hillcrest gave the payment order; Baylink's later signature does not make it the drawer."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Payee, because it delivered the instrument",
+          "explanation_md": "Northgate is the named recipient; delivery does not turn the party directed to pay into the payee."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Acceptor, having signed assent and delivered the bill",
+          "explanation_md": "Baylink was the drawee and completed the specified acceptance acts by signing assent and delivery."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Indorsee, solely because it agreed to payment",
+          "explanation_md": "An indorsee receives through an indorsement; acceptance of the payment obligation is a different function."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_explanation_md": "Baylink was the drawee and completed the specified acceptance acts by signing assent and delivery.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_a3ed29f0f5c4fb926169c00ec69f5bf4c0b6bd9d5583f41d89b88d623f49b9a8",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U02",
+      "objective_ids": [
+        "BRBL::MOD_B::U02::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 155; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "NI_ACT_THC_2018_TEXT",
+          "authority": "Government of India statute, copy hosted by the High Court of Tripura",
+          "title": "The Negotiable Instruments Act, 1881 (Act 26 of 1881), statutory text including 2018 amendments",
+          "url": "https://thc.nic.in/Central%20Governmental%20Acts/Negotiable%20Instruments%20Act%2C%201881.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section 7, PDF pp. 9–10; sections 30–33, PDF pp. 12–13"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A bill names an additional firm to be approached if the original drawee does not respond. There has been no noting, protest or later intervention. Which description best fits that additional firm?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Acceptor for honour in every case",
+          "explanation_md": "That status involves acceptance supra protest in the specified circumstances, not merely an additional name on issue."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Drawee in case of need",
+          "explanation_md": "An additional person named as a recourse in need fits this role; no later acceptance for honour is described."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Paying banker under Section 85",
+          "explanation_md": "Nothing says this is a cheque on a bank or that the additional firm is the paying banker."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Holder in due course automatically",
+          "explanation_md": "Being named as a fallback payer does not establish acquisition, consideration, timing or title conditions."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_explanation_md": "An additional person named as a recourse in need fits this role; no later acceptance for honour is described.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_dcfb100b8ca5760a4b71a879e77b3db9bc3fd747a6f0f032d8480f5144a4ab5d",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U02",
+      "objective_ids": [
+        "BRBL::MOD_B::U02::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 155; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "NI_ACT_THC_2018_TEXT",
+          "authority": "Government of India statute, copy hosted by the High Court of Tripura",
+          "title": "The Negotiable Instruments Act, 1881 (Act 26 of 1881), statutory text including 2018 amendments",
+          "url": "https://thc.nic.in/Central%20Governmental%20Acts/Negotiable%20Instruments%20Act%2C%201881.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section 7, PDF pp. 9–10; sections 30–33, PDF pp. 12–13"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A drawee signs assent to a bill, keeps it in a private file and gives no notice to the holder or anyone acting for the holder. Which missing fact prevents treating the described acts alone as completed statutory acceptance?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Delivery or notice of the signing",
+          "explanation_md": "Section 7 combines signed assent with delivery or notice; a signature retained privately does not establish that further step."
+        },
+        {
+          "option_id": "B",
+          "text_md": "An instruction changing every bill into bearer paper",
+          "explanation_md": "Bearer status is unrelated to the delivery or notice needed to complete acceptance."
+        },
+        {
+          "option_id": "C",
+          "text_md": "A second signature by every former holder",
+          "explanation_md": "The definition does not require this; it concerns the drawee's assent and its communication or delivery."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Proof that the payee is also the drawer",
+          "explanation_md": "The payee and drawer need not be the same person for a bill to be accepted."
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_explanation_md": "Section 7 combines signed assent with delivery or notice; a signature retained privately does not establish that further step.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_fb0aef4f946b831a70bc27fe85d799d33acf762f181c8db987d3339320ad44cc",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U02",
+      "objective_ids": [
+        "BRBL::MOD_B::U02::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 155; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "NI_ACT_THC_2018_TEXT",
+          "authority": "Government of India statute, copy hosted by the High Court of Tripura",
+          "title": "The Negotiable Instruments Act, 1881 (Act 26 of 1881), statutory text including 2018 amendments",
+          "url": "https://thc.nic.in/Central%20Governmental%20Acts/Negotiable%20Instruments%20Act%2C%201881.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section 7, PDF pp. 9–10; sections 30–33, PDF pp. 12–13"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

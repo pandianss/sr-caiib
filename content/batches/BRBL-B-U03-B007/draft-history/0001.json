@@ -1,0 +1,603 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-B-U03-B007",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL Module B unit 3: FEMA — Identify adjudication and appeal routes from the authority and order rather than a universal appeal ladder",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04",
+      "FEMA_ACT_1999"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "statement": "Courseware introduces adjudication, Special Director (Appeals), the statutory Appellate Tribunal and High Court questions of law, but simplifies first-appeal routing.",
+        "source_id": "S04",
+        "locator": "S04 printed pp. 173–174; PDF page = printed page + 19",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "statement": "Section 16 provides adjudication with opportunity of hearing. Section 17(2) identifies appeals from Assistant/Deputy Director adjudication to Special Director (Appeals); section 19 addresses the specified other adjudication and Special Director orders before the Tribunal, with deposit/undue-hardship provisions. Section 35 addresses High Court appeal on a question of law. Section 34 bars civil-court jurisdiction over matters the specified authorities are empowered to determine.",
+        "source_id": "FEMA_ACT_1999",
+        "locator": "sections 16–19, 34–35, PDF pp. 12–13, 15–16",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "draft_id": "D001",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Find the officer who made the order before choosing the appeal",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "A universal “Special Director first, Tribunal second” diagram would lose an important qualification. **Section 17(2)** identifies the Special Director (Appeals) route for orders of an Adjudicating Authority who is an Assistant Director or Deputy Director of Enforcement. **Section 19** provides the Tribunal route for the specified other adjudication orders and Special Director (Appeals) orders.\n\nStart an appeal checklist with the order, the capacity and rank of the deciding authority, receipt details, and the applicable route. Adjudication under Section 16 includes the opportunity of being heard. The route and procedural conditions need the operative statutory text, rather than a general course summary alone.",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Why should the rank and capacity of the adjudicating officer be recorded?",
+            "expected_takeaway": "They help determine whether the Section 17 route or the Section 19 route applies."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "A review route has its own scope and procedural conditions",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "The retrieved Section 19 text includes deposit of the penalty with an undue-hardship dispensation power subject to protective conditions. Do not turn that into either an unconditional waiver or a claim that relief is never possible.\n\n**Section 35** concerns a High Court appeal on a question of law arising from the Tribunal's decision or order; it is not a general restart of every factual dispute. **Section 34** bars the ordinary civil court for matters assigned to the specified authorities. Each route has its own conditions and time provisions; this batch does not grade filing dates or claim that a general summary resolves a live appeal.",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does a possible hardship dispensation make the statutory deposit provision disappear in every case?",
+            "expected_takeaway": "No. It is a conditional power requiring the Tribunal's assessment, not a universal automatic waiver."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A FEMA appeal checklist sends every adjudication order to the Special Director (Appeals) without identifying who made it. Which missing distinction should be restored?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The Section 17 route for Assistant/Deputy Director adjudication versus the specified Section 19 routes",
+              "explanation_md": "The authority and order determine the route; a universal first rung omits the statutory distinction."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Whether the order was printed on bank stationery",
+              "explanation_md": "Paper branding does not determine the statutory appeal forum."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Whether the appellant prefers a shorter journey",
+              "explanation_md": "Travel convenience does not substitute for the jurisdiction and route provisions."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Whether the remittance was originally requested online",
+              "explanation_md": "The request channel does not determine the appeal route from the adjudication order."
+            }
+          ],
+          "correct_explanation_md": "The authority and order determine the route; a universal first rung omits the statutory distinction."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "An appellant reads the undue-hardship provision in Section 19 as automatic exemption from depositing any penalty in every appeal. What is the correct qualification?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The statute contains no deposit provision",
+              "explanation_md": "The retrieved text includes a deposit provision and a separate hardship dispensation power."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Only the customer's bank manager may dispense with deposit",
+              "explanation_md": "The statutory dispensation power belongs to the Tribunal, not the bank manager."
+            },
+            {
+              "option_id": "C",
+              "text_md": "An internal bank complaint substitutes for the appeal",
+              "explanation_md": "An internal complaint does not replace the statutory appeal process."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Dispensation depends on the Tribunal's assessment and may carry protective conditions",
+              "explanation_md": "The hardship provision is conditional, not a blanket waiver elected by the appellant."
+            }
+          ],
+          "correct_explanation_md": "The hardship provision is conditional, not a blanket waiver elected by the appellant."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A training file presents Section 35 as an unrestricted High Court rehearing of every factual issue after a Tribunal decision. Which limitation in the text needs to be restored?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "It applies only to the paper colour used by the Tribunal",
+              "explanation_md": "The statutory scope concerns a question of law, not document appearance."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The appeal concerns a question of law arising from the Tribunal decision or order",
+              "explanation_md": "The provision is not an unrestricted restart of every factual disagreement."
+            },
+            {
+              "option_id": "C",
+              "text_md": "It permits appeal only to the customer's bank ombudsman",
+              "explanation_md": "Section 35 specifies a High Court appeal, not a bank-complaint route."
+            },
+            {
+              "option_id": "D",
+              "text_md": "It makes every Tribunal order unenforceable automatically",
+              "explanation_md": "The existence of an appeal route does not establish an automatic blanket loss of effect."
+            }
+          ],
+          "correct_explanation_md": "The provision is not an unrestricted restart of every factual disagreement."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Codex authoring only. Independent source/session, originality and pedagogical review pending; canonical review must remain null and items must remain draft.",
+      "The local Enforcement Directorate statutory copy was read directly for the cited provisions. It has footnotes with 2019 commencement dates; its consolidation through 30 June 2026 has not been established. Current subordinate rules, directions, notifications and relevant judgments must be checked before publication.",
+      "Courseware printed pp. 169–176 / PDF pp. 188–195, including end questions, inspected as images. Teaching and questions designed independently from factual briefs; no source passage, comparison table, named case or source-question number-swap reused. Independent originality review remains pending.",
+      "The Act gives 45-day and 60-day provisions in different appeal contexts with specific triggers and qualifications. Exact deadlines and present tribunal/rules notifications are held back pending legal review. The courseware universal first-appeal ladder is not used."
+    ],
+    "next_batch_hint": "Continue BRBL-B-U03-B008; retain the independent review gate."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-B-U03-B007",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 12, Compulsory Paper IV, Module B: Foreign Exchange Management Act, 1999"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "FEMA_ACT_1999",
+        "authority": "Government of India (copy published by the Directorate of Enforcement)",
+        "title": "The Foreign Exchange Management Act, 1999 (Act No. 42 of 1999), as amended",
+        "url": "https://www.enforcementdirectorate.gov.in/media/fema/c24cce9a-6765-4b22-a41a-cde7ec7af79c_FEMA_ACT_1999.pdf",
+        "publication_date": null,
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_B::U03",
+        "objective_ids": [
+          "BRBL::MOD_B::U03::LO_07"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_B::U03",
+        "objective_ids": [
+          "BRBL::MOD_B::U03::LO_07"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_B::U03",
+        "objective_ids": [
+          "BRBL::MOD_B::U03::LO_07"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BRBL::MOD_B::U03",
+        "objective_ids": [
+          "BRBL::MOD_B::U03::LO_07"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "unit_id": "BRBL::MOD_B::U03",
+        "objective_ids": [
+          "BRBL::MOD_B::U03::LO_07"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-B-U03-B007",
+      "draft_id": "D001",
+      "item_id": "item_2e74ac5ae394ae72d0675009ff0f77426eaf92320aa62b00a47cdcd949aa1b4d"
+    },
+    {
+      "batch_id": "BRBL-B-U03-B007",
+      "draft_id": "D002",
+      "item_id": "item_43aea9b16e6748c757486aafd5ecb3f441ee58f6ba53b4f850a0a40d2e647b26"
+    },
+    {
+      "batch_id": "BRBL-B-U03-B007",
+      "draft_id": "D003",
+      "item_id": "item_8a5fce5a46caaa16383237162cbc44b7ef669e2cc03022120d0cfbb2a3857c5a"
+    },
+    {
+      "batch_id": "BRBL-B-U03-B007",
+      "draft_id": "D004",
+      "item_id": "item_0787e700c8fe73d659eebea3d09d83800a36b71d6e3f4520a3cafd6cee41ed12"
+    },
+    {
+      "batch_id": "BRBL-B-U03-B007",
+      "draft_id": "D005",
+      "item_id": "item_8a24923e2e884aeb30b79b63a10b072a321be7e7052fb723bd7416208f28fe5b"
+    }
+  ],
+  "items": [
+    {
+      "title": "Find the officer who made the order before choosing the appeal",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "A universal “Special Director first, Tribunal second” diagram would lose an important qualification. **Section 17(2)** identifies the Special Director (Appeals) route for orders of an Adjudicating Authority who is an Assistant Director or Deputy Director of Enforcement. **Section 19** provides the Tribunal route for the specified other adjudication orders and Special Director (Appeals) orders.\n\nStart an appeal checklist with the order, the capacity and rank of the deciding authority, receipt details, and the applicable route. Adjudication under Section 16 includes the opportunity of being heard. The route and procedural conditions need the operative statutory text, rather than a general course summary alone.",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Why should the rank and capacity of the adjudicating officer be recorded?",
+        "expected_takeaway": "They help determine whether the Section 17 route or the Section 19 route applies."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_2e74ac5ae394ae72d0675009ff0f77426eaf92320aa62b00a47cdcd949aa1b4d",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U03",
+      "objective_ids": [
+        "BRBL::MOD_B::U03::LO_07"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 173–174; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "FEMA_ACT_1999",
+          "authority": "Government of India (copy published by the Directorate of Enforcement)",
+          "title": "The Foreign Exchange Management Act, 1999 (Act No. 42 of 1999), as amended",
+          "url": "https://www.enforcementdirectorate.gov.in/media/fema/c24cce9a-6765-4b22-a41a-cde7ec7af79c_FEMA_ACT_1999.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 16–19, 34–35, PDF pp. 12–13, 15–16"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "A review route has its own scope and procedural conditions",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "The retrieved Section 19 text includes deposit of the penalty with an undue-hardship dispensation power subject to protective conditions. Do not turn that into either an unconditional waiver or a claim that relief is never possible.\n\n**Section 35** concerns a High Court appeal on a question of law arising from the Tribunal's decision or order; it is not a general restart of every factual dispute. **Section 34** bars the ordinary civil court for matters assigned to the specified authorities. Each route has its own conditions and time provisions; this batch does not grade filing dates or claim that a general summary resolves a live appeal.",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does a possible hardship dispensation make the statutory deposit provision disappear in every case?",
+        "expected_takeaway": "No. It is a conditional power requiring the Tribunal's assessment, not a universal automatic waiver."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_43aea9b16e6748c757486aafd5ecb3f441ee58f6ba53b4f850a0a40d2e647b26",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U03",
+      "objective_ids": [
+        "BRBL::MOD_B::U03::LO_07"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 173–174; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "FEMA_ACT_1999",
+          "authority": "Government of India (copy published by the Directorate of Enforcement)",
+          "title": "The Foreign Exchange Management Act, 1999 (Act No. 42 of 1999), as amended",
+          "url": "https://www.enforcementdirectorate.gov.in/media/fema/c24cce9a-6765-4b22-a41a-cde7ec7af79c_FEMA_ACT_1999.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 16–19, 34–35, PDF pp. 12–13, 15–16"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A FEMA appeal checklist sends every adjudication order to the Special Director (Appeals) without identifying who made it. Which missing distinction should be restored?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The Section 17 route for Assistant/Deputy Director adjudication versus the specified Section 19 routes",
+          "explanation_md": "The authority and order determine the route; a universal first rung omits the statutory distinction."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Whether the order was printed on bank stationery",
+          "explanation_md": "Paper branding does not determine the statutory appeal forum."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Whether the appellant prefers a shorter journey",
+          "explanation_md": "Travel convenience does not substitute for the jurisdiction and route provisions."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Whether the remittance was originally requested online",
+          "explanation_md": "The request channel does not determine the appeal route from the adjudication order."
+        }
+      ],
+      "correct_explanation_md": "The authority and order determine the route; a universal first rung omits the statutory distinction.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_8a5fce5a46caaa16383237162cbc44b7ef669e2cc03022120d0cfbb2a3857c5a",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U03",
+      "objective_ids": [
+        "BRBL::MOD_B::U03::LO_07"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 173–174; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "FEMA_ACT_1999",
+          "authority": "Government of India (copy published by the Directorate of Enforcement)",
+          "title": "The Foreign Exchange Management Act, 1999 (Act No. 42 of 1999), as amended",
+          "url": "https://www.enforcementdirectorate.gov.in/media/fema/c24cce9a-6765-4b22-a41a-cde7ec7af79c_FEMA_ACT_1999.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 16–19, 34–35, PDF pp. 12–13, 15–16"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "An appellant reads the undue-hardship provision in Section 19 as automatic exemption from depositing any penalty in every appeal. What is the correct qualification?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The statute contains no deposit provision",
+          "explanation_md": "The retrieved text includes a deposit provision and a separate hardship dispensation power."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Only the customer's bank manager may dispense with deposit",
+          "explanation_md": "The statutory dispensation power belongs to the Tribunal, not the bank manager."
+        },
+        {
+          "option_id": "C",
+          "text_md": "An internal bank complaint substitutes for the appeal",
+          "explanation_md": "An internal complaint does not replace the statutory appeal process."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Dispensation depends on the Tribunal's assessment and may carry protective conditions",
+          "explanation_md": "The hardship provision is conditional, not a blanket waiver elected by the appellant."
+        }
+      ],
+      "correct_explanation_md": "The hardship provision is conditional, not a blanket waiver elected by the appellant.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_0787e700c8fe73d659eebea3d09d83800a36b71d6e3f4520a3cafd6cee41ed12",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U03",
+      "objective_ids": [
+        "BRBL::MOD_B::U03::LO_07"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 173–174; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "FEMA_ACT_1999",
+          "authority": "Government of India (copy published by the Directorate of Enforcement)",
+          "title": "The Foreign Exchange Management Act, 1999 (Act No. 42 of 1999), as amended",
+          "url": "https://www.enforcementdirectorate.gov.in/media/fema/c24cce9a-6765-4b22-a41a-cde7ec7af79c_FEMA_ACT_1999.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 16–19, 34–35, PDF pp. 12–13, 15–16"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A training file presents Section 35 as an unrestricted High Court rehearing of every factual issue after a Tribunal decision. Which limitation in the text needs to be restored?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "It applies only to the paper colour used by the Tribunal",
+          "explanation_md": "The statutory scope concerns a question of law, not document appearance."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The appeal concerns a question of law arising from the Tribunal decision or order",
+          "explanation_md": "The provision is not an unrestricted restart of every factual disagreement."
+        },
+        {
+          "option_id": "C",
+          "text_md": "It permits appeal only to the customer's bank ombudsman",
+          "explanation_md": "Section 35 specifies a High Court appeal, not a bank-complaint route."
+        },
+        {
+          "option_id": "D",
+          "text_md": "It makes every Tribunal order unenforceable automatically",
+          "explanation_md": "The existence of an appeal route does not establish an automatic blanket loss of effect."
+        }
+      ],
+      "correct_explanation_md": "The provision is not an unrestricted restart of every factual disagreement.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_8a24923e2e884aeb30b79b63a10b072a321be7e7052fb723bd7416208f28fe5b",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U03",
+      "objective_ids": [
+        "BRBL::MOD_B::U03::LO_07"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 173–174; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "FEMA_ACT_1999",
+          "authority": "Government of India (copy published by the Directorate of Enforcement)",
+          "title": "The Foreign Exchange Management Act, 1999 (Act No. 42 of 1999), as amended",
+          "url": "https://www.enforcementdirectorate.gov.in/media/fema/c24cce9a-6765-4b22-a41a-cde7ec7af79c_FEMA_ACT_1999.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 16–19, 34–35, PDF pp. 12–13, 15–16"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

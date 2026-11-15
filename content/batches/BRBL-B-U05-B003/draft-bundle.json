@@ -1,0 +1,488 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-B-U05-B003",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL Module B unit 5: Securities and modes of charge I — Assess delivery, title documents, intention and notified-place evidence for a mortgage by deposit of title deeds",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04",
+      "TPA_DELHI_TEXT"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "statement": "Courseware identifies debt, deposit of title deeds and intention to secure; it distinguishes the place of deposit from the property location and notes practical custody risks.",
+        "source_id": "S04",
+        "locator": "S04 printed pp. 190–192; PDF page = printed page + 19",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "statement": "Section 58(f) concerns delivery to a creditor or agent of title documents to immovable property with intention to create security in the specified towns or duly notified places. Mere custody for another purpose does not establish that intention. The text locates the described delivery in the specified place; notification and state-law evidence must be checked.",
+        "source_id": "TPA_DELHI_TEXT",
+        "locator": "section 58(f), official Delhi text heading",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "draft_id": "D001",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Do not confuse custody for inspection with creation of security",
+          "core_explanation_md": "A bank may hold property documents for valuation, legal examination, safe custody or security creation. These are different purposes. Section 58(f) requires title-document delivery to the creditor or agent **with intention to create security**. The file should therefore explain why the documents were delivered and how that intention is evidenced.\n\nA receipt saying documents were taken for scrutiny should not be silently rewritten as a concluded mortgage. Conversely, the absence of a conventional mortgage-deed label does not answer whether a valid title-deed deposit occurred. Assess debt, documents, delivery, intention and the relevant legal conditions together.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Why should the purpose of delivery be recorded with the custody receipt?",
+            "expected_takeaway": "Possession of papers alone does not establish the required intention to create security."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Check the place of delivery and the governing notification",
+          "core_explanation_md": "The specified-place requirement in section 58(f) concerns the described delivery of documents. The courseware distinguishes this from the location of the mortgaged property. A bank should identify the actual delivery place and the applicable town notification rather than assume any branch location qualifies.\n\nThis also does not settle the mortgage's entire legal validity. Title, capacity, intention, documentation, applicable state law and other registration or filing requirements still need review. Do not present a historic list of towns as a complete current national list; the source of any additional notified place belongs in the file.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Should a branch invent notified-town status from its own address or banking licence?",
+            "expected_takeaway": "No. The relevant notification and delivery facts must be established."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "An owner hands title papers to a bank solely for pre-sanction legal scrutiny and expressly declines to create security at that stage. The file records possession but no later security intention. What is the principal missing element in treating that custody as a section 58(f) mortgage?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "A change in the property's market value after delivery",
+              "explanation_md": "Valuation movement does not supply the missing intention at the relevant security-creation stage."
+            },
+            {
+              "option_id": "B",
+              "text_md": "A general personal repayment promise, which alone proves every section 58(f) condition",
+              "explanation_md": "A repayment promise cannot replace the required title-document delivery with security intention."
+            },
+            {
+              "option_id": "C",
+              "text_md": "An agreement that every original document held by any bank is automatically mortgaged",
+              "explanation_md": "That blanket presumption would erase the distinction between custody and intended security creation."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Intention that the delivered title documents create security",
+              "explanation_md": "The express scrutiny-only purpose does not establish the required intention to secure a debt."
+            }
+          ],
+          "correct_explanation_md": "The express scrutiny-only purpose does not establish the required intention to secure a debt."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A reviewer rejects a proposed title-deed deposit solely because the property is outside the town where the papers are delivered. Which enquiry better fits the stated section 58(f) framework?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Assume every place is notified once a bank opens a branch",
+              "explanation_md": "Branch presence alone is not notification evidence."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Check the delivery place, applicable notification and remaining creation conditions",
+              "explanation_md": "The specified place concerns delivery in the provision; property location alone is not a complete rejection test."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Treat the property address as proof of security intention",
+              "explanation_md": "Location does not establish why the owner delivered the title documents."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Ignore all place requirements whenever originals are delivered",
+              "explanation_md": "Original custody does not remove the statutory place and other conditions."
+            }
+          ],
+          "correct_explanation_md": "The specified place concerns delivery in the provision; property location alone is not a complete rejection test."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Codex authoring only. Independent legal/session applicability, original expression/task design and pedagogical review pending. All canonical items must remain draft with null review.",
+      "S04 entire unit inspected including end questions (printed pp. 187–195 / PDF pp. 206–214; PDF p. 215 blank). The cited statutory headings were read directly from the official Delhi text; only expressly identified additional sources support the supplemental facts.",
+      "State amendments, territorial application, stamp/registration requirements, notified towns and later controlling law through 30 June 2026 require review. Source availability is not a certification of the offered security or current legal applicability.",
+      "Teaching and file-review questions were independently designed from factual briefs. No source question, source table or named-case narrative was copied or made into a number/name swap. Author comparison is not independent originality approval.",
+      "Current notified-town lists, agent-delivery arrangements and all state amendments require independent verification. No particular real branch or location is certified as eligible."
+    ],
+    "next_batch_hint": "Continue BRBL-B-U05-B004; retain source-blocked details in the ledger."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-B-U05-B003",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 12, Compulsory Paper IV, Module B: Law Relating to Securities and Modes of Charge I"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "TPA_DELHI_TEXT",
+        "authority": "Government of NCT of Delhi, Department of District and Sessions Judge",
+        "title": "Transfer of Property Act, 1882 — official statutory text page",
+        "url": "https://session.delhi.gov.in/session/transfer-property-act",
+        "publication_date": null,
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_B::U05",
+        "objective_ids": [
+          "BRBL::MOD_B::U05::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_B::U05",
+        "objective_ids": [
+          "BRBL::MOD_B::U05::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_B::U05",
+        "objective_ids": [
+          "BRBL::MOD_B::U05::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BRBL::MOD_B::U05",
+        "objective_ids": [
+          "BRBL::MOD_B::U05::LO_03"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-B-U05-B003",
+      "draft_id": "D001",
+      "item_id": "item_e12f213ade94b2e68f181bafec854328c0ea3107db9102d83a0aaad8024d2773"
+    },
+    {
+      "batch_id": "BRBL-B-U05-B003",
+      "draft_id": "D002",
+      "item_id": "item_45c84ca6b97b9ac41311da25b8062efbe3d21bac56fa64cd97d00dca8abc83d5"
+    },
+    {
+      "batch_id": "BRBL-B-U05-B003",
+      "draft_id": "D003",
+      "item_id": "item_36c5419563bcd6426bcb991e42360231b7a542ab5aa3a6ce835c2fd4da249a75"
+    },
+    {
+      "batch_id": "BRBL-B-U05-B003",
+      "draft_id": "D004",
+      "item_id": "item_ab2a53e049ca0626e25af4cd6d673278d3c76287106d85926422e3c405e89013"
+    }
+  ],
+  "items": [
+    {
+      "title": "Do not confuse custody for inspection with creation of security",
+      "core_explanation_md": "A bank may hold property documents for valuation, legal examination, safe custody or security creation. These are different purposes. Section 58(f) requires title-document delivery to the creditor or agent **with intention to create security**. The file should therefore explain why the documents were delivered and how that intention is evidenced.\n\nA receipt saying documents were taken for scrutiny should not be silently rewritten as a concluded mortgage. Conversely, the absence of a conventional mortgage-deed label does not answer whether a valid title-deed deposit occurred. Assess debt, documents, delivery, intention and the relevant legal conditions together.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Why should the purpose of delivery be recorded with the custody receipt?",
+        "expected_takeaway": "Possession of papers alone does not establish the required intention to create security."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_e12f213ade94b2e68f181bafec854328c0ea3107db9102d83a0aaad8024d2773",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U05",
+      "objective_ids": [
+        "BRBL::MOD_B::U05::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 190–192; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "TPA_DELHI_TEXT",
+          "authority": "Government of NCT of Delhi, Department of District and Sessions Judge",
+          "title": "Transfer of Property Act, 1882 — official statutory text page",
+          "url": "https://session.delhi.gov.in/session/transfer-property-act",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section 58(f), official Delhi text heading"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Check the place of delivery and the governing notification",
+      "core_explanation_md": "The specified-place requirement in section 58(f) concerns the described delivery of documents. The courseware distinguishes this from the location of the mortgaged property. A bank should identify the actual delivery place and the applicable town notification rather than assume any branch location qualifies.\n\nThis also does not settle the mortgage's entire legal validity. Title, capacity, intention, documentation, applicable state law and other registration or filing requirements still need review. Do not present a historic list of towns as a complete current national list; the source of any additional notified place belongs in the file.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Should a branch invent notified-town status from its own address or banking licence?",
+        "expected_takeaway": "No. The relevant notification and delivery facts must be established."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_45c84ca6b97b9ac41311da25b8062efbe3d21bac56fa64cd97d00dca8abc83d5",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U05",
+      "objective_ids": [
+        "BRBL::MOD_B::U05::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 190–192; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "TPA_DELHI_TEXT",
+          "authority": "Government of NCT of Delhi, Department of District and Sessions Judge",
+          "title": "Transfer of Property Act, 1882 — official statutory text page",
+          "url": "https://session.delhi.gov.in/session/transfer-property-act",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section 58(f), official Delhi text heading"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "An owner hands title papers to a bank solely for pre-sanction legal scrutiny and expressly declines to create security at that stage. The file records possession but no later security intention. What is the principal missing element in treating that custody as a section 58(f) mortgage?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "A change in the property's market value after delivery",
+          "explanation_md": "Valuation movement does not supply the missing intention at the relevant security-creation stage."
+        },
+        {
+          "option_id": "B",
+          "text_md": "A general personal repayment promise, which alone proves every section 58(f) condition",
+          "explanation_md": "A repayment promise cannot replace the required title-document delivery with security intention."
+        },
+        {
+          "option_id": "C",
+          "text_md": "An agreement that every original document held by any bank is automatically mortgaged",
+          "explanation_md": "That blanket presumption would erase the distinction between custody and intended security creation."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Intention that the delivered title documents create security",
+          "explanation_md": "The express scrutiny-only purpose does not establish the required intention to secure a debt."
+        }
+      ],
+      "correct_explanation_md": "The express scrutiny-only purpose does not establish the required intention to secure a debt.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_36c5419563bcd6426bcb991e42360231b7a542ab5aa3a6ce835c2fd4da249a75",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U05",
+      "objective_ids": [
+        "BRBL::MOD_B::U05::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 190–192; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "TPA_DELHI_TEXT",
+          "authority": "Government of NCT of Delhi, Department of District and Sessions Judge",
+          "title": "Transfer of Property Act, 1882 — official statutory text page",
+          "url": "https://session.delhi.gov.in/session/transfer-property-act",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section 58(f), official Delhi text heading"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A reviewer rejects a proposed title-deed deposit solely because the property is outside the town where the papers are delivered. Which enquiry better fits the stated section 58(f) framework?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Assume every place is notified once a bank opens a branch",
+          "explanation_md": "Branch presence alone is not notification evidence."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Check the delivery place, applicable notification and remaining creation conditions",
+          "explanation_md": "The specified place concerns delivery in the provision; property location alone is not a complete rejection test."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Treat the property address as proof of security intention",
+          "explanation_md": "Location does not establish why the owner delivered the title documents."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Ignore all place requirements whenever originals are delivered",
+          "explanation_md": "Original custody does not remove the statutory place and other conditions."
+        }
+      ],
+      "correct_explanation_md": "The specified place concerns delivery in the provision; property location alone is not a complete rejection test.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_ab2a53e049ca0626e25af4cd6d673278d3c76287106d85926422e3c405e89013",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U05",
+      "objective_ids": [
+        "BRBL::MOD_B::U05::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 190–192; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "TPA_DELHI_TEXT",
+          "authority": "Government of NCT of Delhi, Department of District and Sessions Judge",
+          "title": "Transfer of Property Act, 1882 — official statutory text page",
+          "url": "https://session.delhi.gov.in/session/transfer-property-act",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section 58(f), official Delhi text heading"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

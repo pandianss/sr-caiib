@@ -1,0 +1,187 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-B-U02-B003",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL Module B unit 2: Negotiable Instruments Act, 1881 — Identify drawer, drawee, payee, acceptor and the special roles of need and honour",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04",
+    "NI_ACT_THC_2018_TEXT"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "statement": "The drawer makes a bill or cheque; the drawee is directed to pay; the payee is the named recipient. A drawee becomes acceptor after signing assent and delivery or notice of that signature. A drawee in case of need is a named additional recourse. Acceptance for honour concerns an acceptance supra protest for a drawer or indorser after the specified noting/protest circumstances.",
+      "source_id": "S04",
+      "locator": "S04 printed pp. 155; PDF page = printed page + 19",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F002",
+      "statement": "The drawer makes a bill or cheque; the drawee is directed to pay; the payee is the named recipient. A drawee becomes acceptor after signing assent and delivery or notice of that signature. A drawee in case of need is a named additional recourse. Acceptance for honour concerns an acceptance supra protest for a drawer or indorser after the specified noting/protest circumstances.",
+      "source_id": "NI_ACT_THC_2018_TEXT",
+      "locator": "section 7, PDF pp. 9–10; sections 30–33, PDF pp. 12–13",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "draft_id": "D001",
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Map the instruction before mapping liability",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "Use a three-part reading of a bill: **who gives the order, who must act on it, and who should receive the money**. These roles are drawer, drawee and payee respectively. They describe functions; the document must still be read to see whether one person occupies more than one role.\n\nThe drawee becomes an **acceptor** through signed assent followed by delivery of the bill or notice of the signing to the holder or someone acting for the holder. A private mental decision to pay is not the statutory act of acceptance. The maker of a note undertakes payment directly rather than waiting to become a bill's acceptor.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "What additional event is needed beyond the drawee merely signing assent?",
+          "expected_takeaway": "Delivery of the bill or notice of the signing to the holder or a person on the holder's behalf."
+        }
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D002",
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Need and honour address different problems",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "A **drawee in case of need** is an additional person identified on the bill or an indorsement to be approached if needed. **Acceptance for honour** instead follows the specified noting or protest circumstances and is made for the honour of the drawer or an indorser.\n\nWhen a file mentions a substitute payer, ask how the role arose. A name written in advance as an additional recourse is not the same as an intervention after protest. Keeping that distinction prevents a branch from assigning powers or liabilities from a label that does not fit the instrument's history.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does naming an additional recourse automatically make that person an acceptor for honour?",
+          "expected_takeaway": "No. A drawee in case of need and an acceptor for honour arise in different ways."
+        }
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D003",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "On a trade bill, Hillcrest Components directs Baylink Assembly to pay Northgate Factors. Baylink signs assent and delivers the accepted bill to Northgate. Which role has Baylink now taken?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Drawer, because it signed after issue",
+            "explanation_md": "Hillcrest gave the payment order; Baylink's later signature does not make it the drawer."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Payee, because it delivered the instrument",
+            "explanation_md": "Northgate is the named recipient; delivery does not turn the party directed to pay into the payee."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Acceptor, having signed assent and delivered the bill",
+            "explanation_md": "Baylink was the drawee and completed the specified acceptance acts by signing assent and delivery."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Indorsee, solely because it agreed to payment",
+            "explanation_md": "An indorsee receives through an indorsement; acceptance of the payment obligation is a different function."
+          }
+        ],
+        "correct_option_id": "C",
+        "correct_explanation_md": "Baylink was the drawee and completed the specified acceptance acts by signing assent and delivery."
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D004",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A bill names an additional firm to be approached if the original drawee does not respond. There has been no noting, protest or later intervention. Which description best fits that additional firm?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Acceptor for honour in every case",
+            "explanation_md": "That status involves acceptance supra protest in the specified circumstances, not merely an additional name on issue."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Drawee in case of need",
+            "explanation_md": "An additional person named as a recourse in need fits this role; no later acceptance for honour is described."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Paying banker under Section 85",
+            "explanation_md": "Nothing says this is a cheque on a bank or that the additional firm is the paying banker."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Holder in due course automatically",
+            "explanation_md": "Being named as a fallback payer does not establish acquisition, consideration, timing or title conditions."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "An additional person named as a recourse in need fits this role; no later acceptance for honour is described."
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D005",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A drawee signs assent to a bill, keeps it in a private file and gives no notice to the holder or anyone acting for the holder. Which missing fact prevents treating the described acts alone as completed statutory acceptance?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Delivery or notice of the signing",
+            "explanation_md": "Section 7 combines signed assent with delivery or notice; a signature retained privately does not establish that further step."
+          },
+          {
+            "option_id": "B",
+            "text_md": "An instruction changing every bill into bearer paper",
+            "explanation_md": "Bearer status is unrelated to the delivery or notice needed to complete acceptance."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A second signature by every former holder",
+            "explanation_md": "The definition does not require this; it concerns the drawee's assent and its communication or delivery."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Proof that the payee is also the drawer",
+            "explanation_md": "The payee and drawer need not be the same person for a bill to be accepted."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "Section 7 combines signed assent with delivery or notice; a signature retained privately does not establish that further step."
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Draft only. Codex authored this batch; Antigravity and human review have not occurred. No publication approval is claimed.",
+    "Courseware pages were inspected as rendered images. Statutory wording was cross-checked against the government-hosted High Court copy. Its consolidation date is not established; amendments and applicable judgments through 30 June 2026 remain to be checked before publication.",
+    "Independent teaching and assessment scenarios were designed from a factual brief. Author compared them with the inspected courseware, including its end-of-unit questions; independent originality and pedagogy review remain pending."
+  ],
+  "next_batch_hint": "Continue BRBL-B-U02-B004; preserve draft-only review gate."
+}

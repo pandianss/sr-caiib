@@ -1,0 +1,188 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-B-U04-B004",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL Module B unit 4: Payment and Settlement Systems Act — Apply change-control notice and electronic-mode charge rules within their actual statutory scope",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04",
+    "PSS_ACT_DFS"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "statement": "Courseware gives the prior-approval/participant-notice change process and section 10A prescribed electronic-mode charge prohibition. Its summary on p. 185 broadens the charge statement without repeating the prescribed-mode qualification.",
+      "source_id": "S04",
+      "locator": "S04 printed pp. 181–182, 185; PDF page = printed page + 19",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F002",
+      "statement": "Section 11 ordinarily requires prior RBI approval and at least 30 days participant notice after approval for changes affecting structure/operation, with the stated RBI public-interest/monetary-policy proviso. Objection/comment steps do not replace approval. Section 10A concerns direct/indirect charges for modes prescribed under section 269SU, not all services regardless of scope.",
+      "source_id": "PSS_ACT_DFS",
+      "locator": "sections 10A–11, PDF p. 8",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "draft_id": "D001",
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Build approval and notice into the change sequence",
+        "core_explanation_md": "A change affecting a payment system's structure or operation ordinarily needs **prior RBI approval**, followed by at least 30 days' notice to participants under Section 11. The provision also has a specific RBI power to permit the stated notice variation in monetary-policy or public-interest circumstances.\n\nDo not reverse the sequence by counting advance days before approval as though they necessarily satisfy post-approval notice. Nor should internal sign-off or a response to RBI objections be treated as the final approval itself. A release checklist should identify the applicable change, approval and notice evidence.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Which event precedes the ordinary participant-notice period under Section 11?",
+          "expected_takeaway": "RBI approval precedes the specified notice to system participants."
+        }
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D002",
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "A scoped charge prohibition should not become an all-services rule",
+        "core_explanation_md": "Section 10A prohibits direct or indirect charges on persons making or receiving payments using the electronic modes prescribed under **Section 269SU** of the referenced tax legislation. Its scope depends on those prescribed modes.\n\nA compliance review must identify the actual mode and the governing prescription. The courseware summary omits that scope qualification when broadly discussing charges; do not repeat it as a rule that every banking or payment service is free. Equally, relabelling a prohibited charge as indirect does not avoid the provision. Current mode prescriptions and any legislative cross-reference changes need verification before release.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "What must be established before applying this particular charge prohibition?",
+          "expected_takeaway": "Whether the payment uses a mode within the operative prescribed scope; indirect labels do not remove a covered charge."
+        }
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D003",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A provider gives participants notice before requesting RBI approval for a structural change and assumes the pre-approval notice necessarily satisfies Section 11. What sequence needs checking?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Participant notice always replaces prior RBI approval",
+            "explanation_md": "The section ordinarily requires both approval and the specified notice."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Internal project approval is identical to RBI approval",
+            "explanation_md": "Internal governance cannot substitute for the statutory prior approval."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The provider may choose any notice exception without RBI involvement",
+            "explanation_md": "The proviso concerns the specified RBI permission, not an exception invented by the provider."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Prior RBI approval followed by the ordinary post-approval participant notice",
+            "explanation_md": "The statutory sequence and any valid variation must be established, not assumed from an earlier announcement."
+          }
+        ],
+        "correct_explanation_md": "The statutory sequence and any valid variation must be established, not assumed from an earlier announcement."
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D004",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A training summary turns Section 10A into “all banking services must be free”. Which qualification is missing?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The rule applies only when a payer uses foreign banknotes",
+            "explanation_md": "The provision concerns prescribed electronic payment modes, not a general foreign-cash condition."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Its scope is tied to the electronic modes prescribed under the referenced provision",
+            "explanation_md": "A scoped electronic-mode rule cannot be expanded to every bank service without further authority."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Only charges with the word fee are covered",
+            "explanation_md": "The text includes direct and indirect charges; the label alone is not decisive."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A bank may disregard the provision whenever a customer agrees",
+            "explanation_md": "Customer agreement does not itself override the statutory prohibition where it applies."
+          }
+        ],
+        "correct_explanation_md": "A scoped electronic-mode rule cannot be expanded to every bank service without further authority."
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D005",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "RBI has objected to a proposed structural change. The provider sends comments and treats that reply as approval to launch. Which requirement remains?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Expiry of two weeks after sending comments, treated as automatic approval",
+            "explanation_md": "The objection/comment periods do not create an automatic grant; the section still requires receipt of approval."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Approval by a majority of participants in place of RBI approval",
+            "explanation_md": "Participant agreement does not replace the prior RBI approval required for the specified change."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Receipt of RBI approval before effecting the proposed change",
+            "explanation_md": "The objection/comment exchange does not itself replace the approval required under Section 11."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Only evidence that the change improves customer convenience",
+            "explanation_md": "A beneficial objective alone does not complete the approval process or override outstanding objections."
+          }
+        ],
+        "correct_explanation_md": "The objection/comment exchange does not itself replace the approval required under Section 11."
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Codex authored these candidates. All source/session, originality and pedagogy reviews remain pending independent review; keep canonical review null and publication state draft.",
+    "Full courseware unit inspected, including end questions (S04 printed pp. 177–186 / PDF pp. 196–205). Statutory provisions cited were read directly from the DFS copy. Comprehensive consolidation and all subordinate directions through 30 June 2026 remain to be verified.",
+    "Learner passages, applied scenarios and all option rationales independently designed from factual briefs. Source questions, distinctive source tables and named cases were not reused; author comparison is not independent originality approval.",
+    "Prescribed-mode notifications and the 1961/2025 income-tax legislative transition have not been audited. The scope rule is taught from the retrieved section text, not a claim that the cross-reference is current in every later context."
+  ],
+  "next_batch_hint": "Continue BRBL-B-U04-B005."
+}

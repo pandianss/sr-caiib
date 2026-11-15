@@ -1,0 +1,603 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-B-U03-B004",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL Module B unit 3: FEMA — Assess authorised-person scope and RBI control using the duties to enquire, refuse and report where specified",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04",
+      "FEMA_ACT_1999"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "statement": "Courseware defines authorised person and describes RBI authorisation and inspection powers. It sets out the broad section 3 restrictions subject to statutory permissions.",
+        "source_id": "S04",
+        "locator": "S04 printed pp. 170, 172; PDF page = printed page + 19",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "statement": "RBI grants written conditional authorisation under section 10. Authorised persons must comply with applicable directions/authorisation terms and seek declarations/information reasonably satisfying lawful purpose. Refusal or unsatisfactory compliance requires written refusal, with reporting where the specified reason-to-believe condition exists. RBI can direct information and inspect records under sections 11–12; section 10(3)(b) revocation includes a representation safeguard.",
+        "source_id": "FEMA_ACT_1999",
+        "locator": "sections 2(c), 3 and 10–12, PDF pp. 3, 6, 8–9",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "draft_id": "D001",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Authorisation gives defined scope, not unrestricted permission",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "An **authorised person** is someone with the relevant Section 10 authorisation, such as an authorised dealer, money changer or other specified person. It is not restricted to a natural person. The authorisation is written and conditional.\n\nA forex file needs two permission checks: whether the transaction itself has a lawful route and whether this provider's authorisation covers the proposed service. A customer declaration cannot enlarge the bank's authorised scope. RBI directions and the terms of authorisation remain relevant even when the customer supplies a commercial explanation.",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Can a customer's instruction expand a provider's authorisation?",
+            "expected_takeaway": "No. The transaction must fit the provider's authorisation and the applicable legal permissions."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Record the enquiry and the reason for the decision",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "Section 10(5) requires declarations and information that reasonably satisfy the authorised person about avoiding contravention or evasion. If the customer refuses the requirement or compliance is unsatisfactory, the authorised person must **refuse in writing**. A reason to believe the specified contravention or evasion is contemplated also engages reporting to RBI.\n\nThe file should distinguish incomplete evidence from the further reporting condition; do not claim every missing document proves wrongdoing. Sections 11–12 separately support RBI directions, information requests and inspection. The authorisation regime also has specific revocation grounds and safeguards, including the representation opportunity for the non-compliance ground in Section 10(3)(b).",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Why should the written refusal and any reporting decision be separately reasoned?",
+            "expected_takeaway": "Unsatisfactory compliance and the statutory reason-to-believe reporting condition are distinct parts of Section 10(5)."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A money changer receives a transaction request outside the terms of its written authorisation. The customer offers a signed declaration accepting responsibility. Which response best follows the authorisation framework?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The declaration automatically enlarges the authorisation",
+              "explanation_md": "A customer cannot expand the scope RBI authorised by accepting responsibility."
+            },
+            {
+              "option_id": "B",
+              "text_md": "All authorised persons may conduct every forex service",
+              "explanation_md": "Authorisations are conditional; the specific permitted scope must be checked."
+            },
+            {
+              "option_id": "C",
+              "text_md": "A commercial invoice replaces the authorisation requirement",
+              "explanation_md": "Purpose documentation does not replace the provider's need for the appropriate authorisation."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Check the lawful route and the provider's authorised scope before undertaking it",
+              "explanation_md": "The customer's declaration cannot substitute for either permission check."
+            }
+          ],
+          "correct_explanation_md": "The customer's declaration cannot substitute for either permission check."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A customer refuses information reasonably required under Section 10(5). What should the authorised person do under the text, while separately assessing the reporting condition?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Refuse in writing to undertake the transaction",
+              "explanation_md": "The section requires written refusal on refusal or unsatisfactory compliance, with reporting where the further condition is met."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Proceed immediately because only RBI may ask questions",
+              "explanation_md": "Section 10(5) places an enquiry duty on the authorised person itself."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Treat missing information alone as a final criminal conviction",
+              "explanation_md": "The enquiry and reporting duties do not authorise the bank to pronounce a criminal conviction."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Record no reason so that the transaction cannot be audited",
+              "explanation_md": "Avoiding a record conflicts with the written-refusal requirement and undermines the decision evidence."
+            }
+          ],
+          "correct_explanation_md": "The section requires written refusal on refusal or unsatisfactory compliance, with reporting where the further condition is met."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "During a valid RBI inspection of an authorised person, relevant account records are requested within the inspector's statutory authority. A manager says only public advertisements can be inspected. Which statutory power is being overlooked?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "A power letting customers rewrite RBI inspection terms",
+              "explanation_md": "Customers do not determine or replace the statutory scope of an RBI inspection."
+            },
+            {
+              "option_id": "B",
+              "text_md": "A blanket exemption for every company director",
+              "explanation_md": "Section 12 expressly addresses duties of directors, partners and officers in the specified circumstances."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Section 12 powers to inspect and require the specified books, accounts, documents and information",
+              "explanation_md": "The inspection power is not confined to public promotional material."
+            },
+            {
+              "option_id": "D",
+              "text_md": "A rule that any authorisation expires whenever records are requested",
+              "explanation_md": "An inspection request does not itself create this automatic expiry rule."
+            }
+          ],
+          "correct_explanation_md": "The inspection power is not confined to public promotional material."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Codex authoring only. Independent source/session, originality and pedagogical review pending; canonical review must remain null and items must remain draft.",
+      "The local Enforcement Directorate statutory copy was read directly for the cited provisions. It has footnotes with 2019 commencement dates; its consolidation through 30 June 2026 has not been established. Current subordinate rules, directions, notifications and relevant judgments must be checked before publication.",
+      "Courseware printed pp. 169–176 / PDF pp. 188–195, including end questions, inspected as images. Teaching and questions designed independently from factual briefs; no source passage, comparison table, named case or source-question number-swap reused. Independent originality review remains pending.",
+      "The detailed enquiry/refusal/reporting, inspection-record and revocation-safeguard rules are supplemental Act evidence; the courseware treatment is shorter. No current authorised-dealer category permissions or live transaction limits have been certified."
+    ],
+    "next_batch_hint": "Continue BRBL-B-U03-B005; retain the independent review gate."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-B-U03-B004",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 12, Compulsory Paper IV, Module B: Foreign Exchange Management Act, 1999"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "FEMA_ACT_1999",
+        "authority": "Government of India (copy published by the Directorate of Enforcement)",
+        "title": "The Foreign Exchange Management Act, 1999 (Act No. 42 of 1999), as amended",
+        "url": "https://www.enforcementdirectorate.gov.in/media/fema/c24cce9a-6765-4b22-a41a-cde7ec7af79c_FEMA_ACT_1999.pdf",
+        "publication_date": null,
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_B::U03",
+        "objective_ids": [
+          "BRBL::MOD_B::U03::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_B::U03",
+        "objective_ids": [
+          "BRBL::MOD_B::U03::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_B::U03",
+        "objective_ids": [
+          "BRBL::MOD_B::U03::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BRBL::MOD_B::U03",
+        "objective_ids": [
+          "BRBL::MOD_B::U03::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "unit_id": "BRBL::MOD_B::U03",
+        "objective_ids": [
+          "BRBL::MOD_B::U03::LO_04"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-B-U03-B004",
+      "draft_id": "D001",
+      "item_id": "item_64715b56b8bacbc16f3388cb45d0633ed7da28639dad16db52350a1fb24e64e0"
+    },
+    {
+      "batch_id": "BRBL-B-U03-B004",
+      "draft_id": "D002",
+      "item_id": "item_2dcb337fa9813b3ddf70fcf80ab787109ee434f161ffd1c4c779f89b666f29c7"
+    },
+    {
+      "batch_id": "BRBL-B-U03-B004",
+      "draft_id": "D003",
+      "item_id": "item_735c781a5998b6faf91c4a8c5251617e8330cf8a0ea417539f8404894e47b008"
+    },
+    {
+      "batch_id": "BRBL-B-U03-B004",
+      "draft_id": "D004",
+      "item_id": "item_a5fcc1e82c569affed95d95241e90d8ffc17e96159522adc07bdd2d4dad27fba"
+    },
+    {
+      "batch_id": "BRBL-B-U03-B004",
+      "draft_id": "D005",
+      "item_id": "item_19b0474f983fa1e0c8802d01db024ade6fd846e2dbd146ac2235520d13609bf5"
+    }
+  ],
+  "items": [
+    {
+      "title": "Authorisation gives defined scope, not unrestricted permission",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "An **authorised person** is someone with the relevant Section 10 authorisation, such as an authorised dealer, money changer or other specified person. It is not restricted to a natural person. The authorisation is written and conditional.\n\nA forex file needs two permission checks: whether the transaction itself has a lawful route and whether this provider's authorisation covers the proposed service. A customer declaration cannot enlarge the bank's authorised scope. RBI directions and the terms of authorisation remain relevant even when the customer supplies a commercial explanation.",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Can a customer's instruction expand a provider's authorisation?",
+        "expected_takeaway": "No. The transaction must fit the provider's authorisation and the applicable legal permissions."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_64715b56b8bacbc16f3388cb45d0633ed7da28639dad16db52350a1fb24e64e0",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U03",
+      "objective_ids": [
+        "BRBL::MOD_B::U03::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 170, 172; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "FEMA_ACT_1999",
+          "authority": "Government of India (copy published by the Directorate of Enforcement)",
+          "title": "The Foreign Exchange Management Act, 1999 (Act No. 42 of 1999), as amended",
+          "url": "https://www.enforcementdirectorate.gov.in/media/fema/c24cce9a-6765-4b22-a41a-cde7ec7af79c_FEMA_ACT_1999.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 2(c), 3 and 10–12, PDF pp. 3, 6, 8–9"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Record the enquiry and the reason for the decision",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "Section 10(5) requires declarations and information that reasonably satisfy the authorised person about avoiding contravention or evasion. If the customer refuses the requirement or compliance is unsatisfactory, the authorised person must **refuse in writing**. A reason to believe the specified contravention or evasion is contemplated also engages reporting to RBI.\n\nThe file should distinguish incomplete evidence from the further reporting condition; do not claim every missing document proves wrongdoing. Sections 11–12 separately support RBI directions, information requests and inspection. The authorisation regime also has specific revocation grounds and safeguards, including the representation opportunity for the non-compliance ground in Section 10(3)(b).",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Why should the written refusal and any reporting decision be separately reasoned?",
+        "expected_takeaway": "Unsatisfactory compliance and the statutory reason-to-believe reporting condition are distinct parts of Section 10(5)."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_2dcb337fa9813b3ddf70fcf80ab787109ee434f161ffd1c4c779f89b666f29c7",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U03",
+      "objective_ids": [
+        "BRBL::MOD_B::U03::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 170, 172; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "FEMA_ACT_1999",
+          "authority": "Government of India (copy published by the Directorate of Enforcement)",
+          "title": "The Foreign Exchange Management Act, 1999 (Act No. 42 of 1999), as amended",
+          "url": "https://www.enforcementdirectorate.gov.in/media/fema/c24cce9a-6765-4b22-a41a-cde7ec7af79c_FEMA_ACT_1999.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 2(c), 3 and 10–12, PDF pp. 3, 6, 8–9"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A money changer receives a transaction request outside the terms of its written authorisation. The customer offers a signed declaration accepting responsibility. Which response best follows the authorisation framework?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The declaration automatically enlarges the authorisation",
+          "explanation_md": "A customer cannot expand the scope RBI authorised by accepting responsibility."
+        },
+        {
+          "option_id": "B",
+          "text_md": "All authorised persons may conduct every forex service",
+          "explanation_md": "Authorisations are conditional; the specific permitted scope must be checked."
+        },
+        {
+          "option_id": "C",
+          "text_md": "A commercial invoice replaces the authorisation requirement",
+          "explanation_md": "Purpose documentation does not replace the provider's need for the appropriate authorisation."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Check the lawful route and the provider's authorised scope before undertaking it",
+          "explanation_md": "The customer's declaration cannot substitute for either permission check."
+        }
+      ],
+      "correct_explanation_md": "The customer's declaration cannot substitute for either permission check.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_735c781a5998b6faf91c4a8c5251617e8330cf8a0ea417539f8404894e47b008",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U03",
+      "objective_ids": [
+        "BRBL::MOD_B::U03::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 170, 172; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "FEMA_ACT_1999",
+          "authority": "Government of India (copy published by the Directorate of Enforcement)",
+          "title": "The Foreign Exchange Management Act, 1999 (Act No. 42 of 1999), as amended",
+          "url": "https://www.enforcementdirectorate.gov.in/media/fema/c24cce9a-6765-4b22-a41a-cde7ec7af79c_FEMA_ACT_1999.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 2(c), 3 and 10–12, PDF pp. 3, 6, 8–9"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A customer refuses information reasonably required under Section 10(5). What should the authorised person do under the text, while separately assessing the reporting condition?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Refuse in writing to undertake the transaction",
+          "explanation_md": "The section requires written refusal on refusal or unsatisfactory compliance, with reporting where the further condition is met."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Proceed immediately because only RBI may ask questions",
+          "explanation_md": "Section 10(5) places an enquiry duty on the authorised person itself."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Treat missing information alone as a final criminal conviction",
+          "explanation_md": "The enquiry and reporting duties do not authorise the bank to pronounce a criminal conviction."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Record no reason so that the transaction cannot be audited",
+          "explanation_md": "Avoiding a record conflicts with the written-refusal requirement and undermines the decision evidence."
+        }
+      ],
+      "correct_explanation_md": "The section requires written refusal on refusal or unsatisfactory compliance, with reporting where the further condition is met.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_a5fcc1e82c569affed95d95241e90d8ffc17e96159522adc07bdd2d4dad27fba",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U03",
+      "objective_ids": [
+        "BRBL::MOD_B::U03::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 170, 172; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "FEMA_ACT_1999",
+          "authority": "Government of India (copy published by the Directorate of Enforcement)",
+          "title": "The Foreign Exchange Management Act, 1999 (Act No. 42 of 1999), as amended",
+          "url": "https://www.enforcementdirectorate.gov.in/media/fema/c24cce9a-6765-4b22-a41a-cde7ec7af79c_FEMA_ACT_1999.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 2(c), 3 and 10–12, PDF pp. 3, 6, 8–9"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "During a valid RBI inspection of an authorised person, relevant account records are requested within the inspector's statutory authority. A manager says only public advertisements can be inspected. Which statutory power is being overlooked?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "A power letting customers rewrite RBI inspection terms",
+          "explanation_md": "Customers do not determine or replace the statutory scope of an RBI inspection."
+        },
+        {
+          "option_id": "B",
+          "text_md": "A blanket exemption for every company director",
+          "explanation_md": "Section 12 expressly addresses duties of directors, partners and officers in the specified circumstances."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Section 12 powers to inspect and require the specified books, accounts, documents and information",
+          "explanation_md": "The inspection power is not confined to public promotional material."
+        },
+        {
+          "option_id": "D",
+          "text_md": "A rule that any authorisation expires whenever records are requested",
+          "explanation_md": "An inspection request does not itself create this automatic expiry rule."
+        }
+      ],
+      "correct_explanation_md": "The inspection power is not confined to public promotional material.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_19b0474f983fa1e0c8802d01db024ade6fd846e2dbd146ac2235520d13609bf5",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U03",
+      "objective_ids": [
+        "BRBL::MOD_B::U03::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 170, 172; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "FEMA_ACT_1999",
+          "authority": "Government of India (copy published by the Directorate of Enforcement)",
+          "title": "The Foreign Exchange Management Act, 1999 (Act No. 42 of 1999), as amended",
+          "url": "https://www.enforcementdirectorate.gov.in/media/fema/c24cce9a-6765-4b22-a41a-cde7ec7af79c_FEMA_ACT_1999.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 2(c), 3 and 10–12, PDF pp. 3, 6, 8–9"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-B-U05-B002",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL Module B unit 5: Securities and modes of charge I — Distinguish mortgage types by personal covenant, possession, income rights and transfer/retransfer terms",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04",
+    "TPA_DELHI_TEXT"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "statement": "Courseware describes the six section 58 types: simple, conditional sale, usufructuary, English, deposit of title deeds and anomalous. Its blanket limitation and automatic-ownership statement is not used.",
+      "source_id": "S04",
+      "locator": "S04 printed pp. 188–191; PDF page = printed page + 19",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F002",
+      "statement": "Section 58 distinguishes simple mortgage by no possession delivery plus personal covenant and sale recourse; conditional sale by ostensible sale with the condition in the sale-effecting document; usufructuary by possession/income appropriation; English by personal repayment on a date plus transfer subject to retransfer; title-deed deposit by the specified delivery/intent; anomalous is the residual category. Section 67 qualifies sale/foreclosure rights by type.",
+      "source_id": "TPA_DELHI_TEXT",
+      "locator": "section 58(b)–(g) and section 67 qualifications, official Delhi text headings",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "draft_id": "D001",
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Compare simple and English mortgages using the operative promises",
+        "core_explanation_md": "A **simple mortgage** combines a personal repayment undertaking with a right to cause sale of the property on default, without delivery of possession. The mortgagee is not made the person entitled to take the property's income merely by that classification.\n\nAn **English mortgage** combines personal repayment on a specified date with transfer of the property subject to retransfer on the agreed repayment. Its name does not mean that the document is governed by English law or concerns property in England. Inspect both the repayment covenant and retransfer terms. The classification itself does not establish an unrestricted power to sell without court; remedies have separate statutory conditions.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does the label English mortgage alone establish an unconditional out-of-court sale power?",
+          "expected_takeaway": "No. Classification and the conditions of the applicable remedy must be checked separately."
+        }
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D002",
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Distinguish a conditional sale structure from an income-based security",
+        "core_explanation_md": "A **mortgage by conditional sale** uses an ostensible sale subject to the specified repayment/default condition. Section 58(c) requires that condition to appear in the document that effects or purports to effect the sale. A separate promise does not automatically satisfy that same-document requirement.\n\nA **usufructuary mortgage** instead centres on possession, or the undertaking to deliver it, and authority to receive rents and profits toward interest, principal or the stated combination. The accounting for those receipts matters to the secured obligation and recovery of possession. Avoid adding an automatic ownership rule based solely on the number of years in possession. Different covenants and hybrid arrangements require their own analysis.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "What document-location qualification matters for the conditional-sale classification?",
+          "expected_takeaway": "The relevant condition must be embodied in the document effecting or purporting to effect the sale."
+        }
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D003",
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Use the residual type only after reading the full arrangement",
+        "core_explanation_md": "A **mortgage by deposit of title deeds** has its own requirements concerning delivery to the creditor or agent, title documents, intention to create security and the specified place. It should not be inferred from possession of any property paper.\n\nAn **anomalous mortgage** is a mortgage outside the other defined forms. It may combine features, but residual classification does not mean the arrangement is invalid or free of rules. Read the actual terms, applicable custom and governing law. A useful comparison file records personal covenant, possession, treatment of income and transfer/retransfer terms rather than selecting a type from one familiar word.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does an arrangement become invalid merely because it does not fit one of the first five forms?",
+          "expected_takeaway": "No. Section 58(g) provides the anomalous-mortgage category, subject to the governing law and terms."
+        }
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D004",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A draft security deed leaves possession with the owner, includes a personal repayment covenant and provides sale recourse on default. Which statutory pattern is most directly described, without yet deciding every formality or remedy?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Simple mortgage",
+            "explanation_md": "The described combination of no possession delivery, personal covenant and sale recourse matches the simple-mortgage pattern."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Usufructuary mortgage solely because the property may earn rent",
+            "explanation_md": "Potential rent income does not replace the possession/income-authority features needed for that classification."
+          },
+          {
+            "option_id": "C",
+            "text_md": "English mortgage solely because repayment is personal",
+            "explanation_md": "A personal covenant alone does not establish the specified transfer and retransfer structure."
+          },
+          {
+            "option_id": "D",
+            "text_md": "An outright sale because sale may be sought on default",
+            "explanation_md": "A default remedy supporting a secured obligation is not the same as an independent outright sale."
+          }
+        ],
+        "correct_explanation_md": "The described combination of no possession delivery, personal covenant and sale recourse matches the simple-mortgage pattern."
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D005",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A file contains a sale-effecting document and a separate side letter promising retransfer. The reviewer proposes to classify it under section 58(c) without checking where the condition is embodied. Which issue needs examination?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Any promise of retransfer in any document conclusively satisfies section 58(c)",
+            "explanation_md": "The proviso has a same-document requirement; a side letter alone cannot be assumed to satisfy it."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A conditional-sale mortgage always transfers possession to the bank immediately",
+            "explanation_md": "The question turns on the statutory documentation condition, not an assumed universal possession rule."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Whether the relevant condition is in the document effecting or purporting to effect the sale",
+            "explanation_md": "Section 58(c) expressly qualifies the classification by the location of that condition."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Whether a personal covenant alone makes every sale a simple mortgage",
+            "explanation_md": "A personal covenant alone does not settle the full transaction structure or the conditional-sale proviso."
+          }
+        ],
+        "correct_explanation_md": "Section 58(c) expressly qualifies the classification by the location of that condition."
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Codex authoring only. Independent legal/session applicability, original expression/task design and pedagogical review pending. All canonical items must remain draft with null review.",
+    "S04 entire unit inspected including end questions (printed pp. 187–195 / PDF pp. 206–214; PDF p. 215 blank). The cited statutory headings were read directly from the official Delhi text; only expressly identified additional sources support the supplemental facts.",
+    "State amendments, territorial application, stamp/registration requirements, notified towns and later controlling law through 30 June 2026 require review. Source availability is not a certification of the offered security or current legal applicability.",
+    "Teaching and file-review questions were independently designed from factual briefs. No source question, source table or named-case narrative was copied or made into a number/name swap. Author comparison is not independent originality approval.",
+    "No blanket statement that every usufructuary arrangement lacks every possible personal covenant is adopted. Mortgagor redemption, statutory remedy exclusions and state rules require separate reading."
+  ],
+  "next_batch_hint": "Continue BRBL-B-U05-B003; retain source-blocked details in the ledger."
+}

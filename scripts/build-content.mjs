@@ -7,7 +7,7 @@ import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { validateCatalogue, validateExamConfig, validatePack } from '../src/validation/contracts.ts';
-import { reconcileLedger, summariseOverall } from '../src/core/coverage.ts';
+import { objectiveStages, reconcileLedger, summariseOverall } from '../src/core/coverage.ts';
 import { PAPER_NAMES, COMPULSORY_PAPERS } from '../src/core/catalogue.ts';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -121,10 +121,13 @@ if (fixtures) {
 }
 
 // ---- coverage ledger -------------------------------------------------------------------------------------------
+const recordedObjectives = [...ledgerRecords.values()];
+const recordedStages = recordedObjectives.map(objectiveStages);
+const draftedEvidence = recordedObjectives.filter(r => r.lesson_item_ids.length + r.worked_example_item_ids.length + r.assessment_item_ids.length > 0).length;
 const ledger = {
   ledger_version: '2', generated_at: manifest.generated_at, baseline_version: SYLLABUS_VERSION,
   exam_session: contexts.filter(c => c.kind !== 'fixture').map(c => c.label).join(', '),
-  verdict: `Baseline established from the official 2026 syllabus (${inferred} plain-type headings inferred and flagged). ${catalogue.objectives.length} editorial objectives derived; drafts exist for ${[...ledgerRecords.values()].filter(r => r.lesson_item_ids.length + r.worked_example_item_ids.length + r.assessment_item_ids.length > 0).length} of them and none is reviewed or published. Courseware is available for ${papers.filter(x => x.topics.some(t => !t.blocked_reason)).map(x => x.paper_id).join(', ') || 'no paper'}; ${papers.reduce((n, x) => n + x.topics.filter(t => t.blocked_reason).length, 0)} topics have no source.`,
+  verdict: `Baseline established from the official 2026 syllabus (${inferred} plain-type headings inferred and flagged). ${catalogue.objectives.length} editorial objectives derived; draft item evidence is recorded for ${draftedEvidence}. The ledger marks ${recordedStages.filter(s => s.reviewed).length} objectives reviewed and ${recordedStages.filter(s => s.published).length} published with sufficient teaching and assessment. These counts reflect recorded review evidence, not independent certification. Courseware is available for ${papers.filter(x => x.topics.some(t => !t.blocked_reason)).map(x => x.paper_id).join(', ') || 'no paper'}; ${papers.reduce((n, x) => n + x.topics.filter(t => t.blocked_reason).length, 0)} topics have no source.`,
   sources: registry.sources.map(x => ({ source_id: x.source_id, title: x.title, authority: x.authority, fingerprint_sha256: x.sha256, session_applicability: x.session_applicability, note: `${x.url} · retrieved ${x.retrieved_on}. ${x.note}` })),
   papers,
 };

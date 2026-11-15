@@ -1,0 +1,602 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-B-U02-B004",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL Module B unit 2: Negotiable Instruments Act, 1881 — Use rebuttable presumptions without treating them as conclusive proof of title or dishonour",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04",
+      "NI_ACT_THC_2018_TEXT"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "statement": "Section 118 creates rebuttable presumptions concerning consideration, date, acceptance and transfer timing, indorsement order, stamp on lost instruments and holder-in-due-course status. Its fraud/offence/unlawful-consideration proviso shifts the burden of proving due-course status to the holder. Under section 119, proved protest supports a rebuttable presumption of dishonour.",
+        "source_id": "S04",
+        "locator": "S04 printed pp. 152; PDF page = printed page + 19",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "statement": "Section 118 creates rebuttable presumptions concerning consideration, date, acceptance and transfer timing, indorsement order, stamp on lost instruments and holder-in-due-course status. Its fraud/offence/unlawful-consideration proviso shifts the burden of proving due-course status to the holder. Under section 119, proved protest supports a rebuttable presumption of dishonour.",
+        "source_id": "NI_ACT_THC_2018_TEXT",
+        "locator": "sections 118–119, PDF p. 25",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "draft_id": "D001",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "A presumption supplies a starting point, not an unchangeable verdict",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "Negotiable-instrument disputes do not begin with every fact unproved. **Section 118** supplies presumptions about matters such as consideration, the stated date, timing of acceptance and transfer, and the sequence of indorsements. These operate until contrary evidence is proved.\n\nFor a bank preparing a disputed-instrument file, the useful distinction is between a presumption and a conclusion immune from challenge. Preserve documents and transaction evidence even when a statutory presumption initially assists the bank. Do not convert “presumed” into “cannot be disputed”.",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Why should supporting records be preserved even when Section 118 supplies a presumption?",
+            "expected_takeaway": "The presumptions can be rebutted by evidence; they are not conclusive proof."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Title problems can change who must prove due-course status",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "The presumption that a holder is a holder in due course has a qualification. Where the instrument was obtained through the offence, fraud or unlawful-consideration circumstances specified in **Section 118(g)**, the holder bears the burden of proving that status. This requires examining the acquisition rather than simply pointing to possession.\n\n**Section 119** deals with a different evidential route: once protest is proved in a suit on a dishonoured instrument, dishonour is presumed unless disproved. It does not turn protest into an answer to every disputed issue, such as title or consideration.",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does proved protest conclusively settle title to an instrument?",
+            "expected_takeaway": "No. Section 119 concerns a rebuttable presumption of dishonour, not a general determination of title."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A recovery memo says, “The stated date is presumed correct, so no opposing evidence can be considered.” Which revision correctly describes Section 118?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The stated date has no evidential relevance at all",
+              "explanation_md": "Section 118 supplies a date presumption; removing all evidential relevance goes too far."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Only consideration is ever presumed under the Act",
+              "explanation_md": "Section 118 covers several matters, including the date and timing-related presumptions."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Once consideration is admitted, contrary evidence about the stated date must be ignored",
+              "explanation_md": "Admission of consideration does not make the separate date presumption conclusive or bar contrary date evidence."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The date is a statutory starting presumption that contrary proof can rebut",
+              "explanation_md": "The presumptions apply until the contrary is proved, so the file must allow contrary evidence to be evaluated."
+            }
+          ],
+          "correct_option_id": "D",
+          "correct_explanation_md": "The presumptions apply until the contrary is proved, so the file must allow contrary evidence to be evaluated."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "In an instrument dispute, the statutory circumstances involving acquisition through fraud under Section 118(g) are established. The holder claims due-course status. Who must prove that status under the proviso?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Nobody, because possession makes the status conclusive",
+              "explanation_md": "The proviso specifically requires proof by the holder in the described circumstances."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The holder claiming to be a holder in due course",
+              "explanation_md": "The fraud/offence/unlawful-consideration proviso places the due-course burden on the holder."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Only the paying banker, regardless of who claims title",
+              "explanation_md": "The proviso identifies the holder, not automatically the paying banker, as bearing this burden."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The person alleging a defect must disprove every element of due-course status in these circumstances",
+              "explanation_md": "The described Section 118(g) proviso shifts the burden of proving due-course status to the holder."
+            }
+          ],
+          "correct_option_id": "B",
+          "correct_explanation_md": "The fraud/offence/unlawful-consideration proviso places the due-course burden on the holder."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A bank proves protest in a suit on a dishonoured instrument. What is the specific evidential effect under Section 119?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Every prior indorsement becomes genuine beyond challenge",
+              "explanation_md": "Section 119 addresses dishonour; it does not conclusively authenticate every indorsement."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The instrument becomes transferable despite an express prohibition",
+              "explanation_md": "Proof of protest does not override the instrument's transfer restrictions."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Dishonour is presumed unless disproved",
+              "explanation_md": "Section 119 creates this rebuttable presumption once protest is proved."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The holder is awarded the amount without considering any defence",
+              "explanation_md": "A rebuttable presumption is not an automatic final award and does not eliminate all defences."
+            }
+          ],
+          "correct_option_id": "C",
+          "correct_explanation_md": "Section 119 creates this rebuttable presumption once protest is proved."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Draft only. Codex authored this batch; Antigravity and human review have not occurred. No publication approval is claimed.",
+      "Courseware pages were inspected as rendered images. Statutory wording was cross-checked against the government-hosted High Court copy. Its consolidation date is not established; amendments and applicable judgments through 30 June 2026 remain to be checked before publication.",
+      "Independent teaching and assessment scenarios were designed from a factual brief. Author compared them with the inspected courseware, including its end-of-unit questions; independent originality and pedagogy review remain pending."
+    ],
+    "next_batch_hint": "Continue BRBL-B-U02-B005; preserve draft-only review gate."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-B-U02-B004",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 12, Compulsory Paper IV, Module B: Negotiable Instruments Act, 1881"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "NI_ACT_THC_2018_TEXT",
+        "authority": "Government of India statute, copy hosted by the High Court of Tripura",
+        "title": "The Negotiable Instruments Act, 1881 (Act 26 of 1881), statutory text including 2018 amendments",
+        "url": "https://thc.nic.in/Central%20Governmental%20Acts/Negotiable%20Instruments%20Act%2C%201881.pdf",
+        "publication_date": null,
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_B::U02",
+        "objective_ids": [
+          "BRBL::MOD_B::U02::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_B::U02",
+        "objective_ids": [
+          "BRBL::MOD_B::U02::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_B::U02",
+        "objective_ids": [
+          "BRBL::MOD_B::U02::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BRBL::MOD_B::U02",
+        "objective_ids": [
+          "BRBL::MOD_B::U02::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "unit_id": "BRBL::MOD_B::U02",
+        "objective_ids": [
+          "BRBL::MOD_B::U02::LO_04"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-B-U02-B004",
+      "draft_id": "D001",
+      "item_id": "item_0543e759c1b645b6e426986eb694061792f55633a9f91488c1525f2a65290c77"
+    },
+    {
+      "batch_id": "BRBL-B-U02-B004",
+      "draft_id": "D002",
+      "item_id": "item_aec2f13d08bcdb01e3c6524440cca3538d7b2e863b873c6683b5860a6aed3af1"
+    },
+    {
+      "batch_id": "BRBL-B-U02-B004",
+      "draft_id": "D003",
+      "item_id": "item_5f6975dce2ec35e6092a624fa870c34bb1ec8640cd7686da72433ddeeee746f0"
+    },
+    {
+      "batch_id": "BRBL-B-U02-B004",
+      "draft_id": "D004",
+      "item_id": "item_f327470f7c6a49785d785a8899807f2dd53b2d5acc43253b2e68ac1d4a427610"
+    },
+    {
+      "batch_id": "BRBL-B-U02-B004",
+      "draft_id": "D005",
+      "item_id": "item_7cd7e2d1b76c4dc32d3801a9345558043ea8c4f3a214415e252902b5dcd800ae"
+    }
+  ],
+  "items": [
+    {
+      "title": "A presumption supplies a starting point, not an unchangeable verdict",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "Negotiable-instrument disputes do not begin with every fact unproved. **Section 118** supplies presumptions about matters such as consideration, the stated date, timing of acceptance and transfer, and the sequence of indorsements. These operate until contrary evidence is proved.\n\nFor a bank preparing a disputed-instrument file, the useful distinction is between a presumption and a conclusion immune from challenge. Preserve documents and transaction evidence even when a statutory presumption initially assists the bank. Do not convert “presumed” into “cannot be disputed”.",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Why should supporting records be preserved even when Section 118 supplies a presumption?",
+        "expected_takeaway": "The presumptions can be rebutted by evidence; they are not conclusive proof."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_0543e759c1b645b6e426986eb694061792f55633a9f91488c1525f2a65290c77",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U02",
+      "objective_ids": [
+        "BRBL::MOD_B::U02::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 152; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "NI_ACT_THC_2018_TEXT",
+          "authority": "Government of India statute, copy hosted by the High Court of Tripura",
+          "title": "The Negotiable Instruments Act, 1881 (Act 26 of 1881), statutory text including 2018 amendments",
+          "url": "https://thc.nic.in/Central%20Governmental%20Acts/Negotiable%20Instruments%20Act%2C%201881.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 118–119, PDF p. 25"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Title problems can change who must prove due-course status",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "The presumption that a holder is a holder in due course has a qualification. Where the instrument was obtained through the offence, fraud or unlawful-consideration circumstances specified in **Section 118(g)**, the holder bears the burden of proving that status. This requires examining the acquisition rather than simply pointing to possession.\n\n**Section 119** deals with a different evidential route: once protest is proved in a suit on a dishonoured instrument, dishonour is presumed unless disproved. It does not turn protest into an answer to every disputed issue, such as title or consideration.",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does proved protest conclusively settle title to an instrument?",
+        "expected_takeaway": "No. Section 119 concerns a rebuttable presumption of dishonour, not a general determination of title."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_aec2f13d08bcdb01e3c6524440cca3538d7b2e863b873c6683b5860a6aed3af1",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U02",
+      "objective_ids": [
+        "BRBL::MOD_B::U02::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 152; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "NI_ACT_THC_2018_TEXT",
+          "authority": "Government of India statute, copy hosted by the High Court of Tripura",
+          "title": "The Negotiable Instruments Act, 1881 (Act 26 of 1881), statutory text including 2018 amendments",
+          "url": "https://thc.nic.in/Central%20Governmental%20Acts/Negotiable%20Instruments%20Act%2C%201881.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 118–119, PDF p. 25"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A recovery memo says, “The stated date is presumed correct, so no opposing evidence can be considered.” Which revision correctly describes Section 118?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The stated date has no evidential relevance at all",
+          "explanation_md": "Section 118 supplies a date presumption; removing all evidential relevance goes too far."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Only consideration is ever presumed under the Act",
+          "explanation_md": "Section 118 covers several matters, including the date and timing-related presumptions."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Once consideration is admitted, contrary evidence about the stated date must be ignored",
+          "explanation_md": "Admission of consideration does not make the separate date presumption conclusive or bar contrary date evidence."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The date is a statutory starting presumption that contrary proof can rebut",
+          "explanation_md": "The presumptions apply until the contrary is proved, so the file must allow contrary evidence to be evaluated."
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_explanation_md": "The presumptions apply until the contrary is proved, so the file must allow contrary evidence to be evaluated.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_5f6975dce2ec35e6092a624fa870c34bb1ec8640cd7686da72433ddeeee746f0",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U02",
+      "objective_ids": [
+        "BRBL::MOD_B::U02::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 152; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "NI_ACT_THC_2018_TEXT",
+          "authority": "Government of India statute, copy hosted by the High Court of Tripura",
+          "title": "The Negotiable Instruments Act, 1881 (Act 26 of 1881), statutory text including 2018 amendments",
+          "url": "https://thc.nic.in/Central%20Governmental%20Acts/Negotiable%20Instruments%20Act%2C%201881.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 118–119, PDF p. 25"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "In an instrument dispute, the statutory circumstances involving acquisition through fraud under Section 118(g) are established. The holder claims due-course status. Who must prove that status under the proviso?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Nobody, because possession makes the status conclusive",
+          "explanation_md": "The proviso specifically requires proof by the holder in the described circumstances."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The holder claiming to be a holder in due course",
+          "explanation_md": "The fraud/offence/unlawful-consideration proviso places the due-course burden on the holder."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Only the paying banker, regardless of who claims title",
+          "explanation_md": "The proviso identifies the holder, not automatically the paying banker, as bearing this burden."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The person alleging a defect must disprove every element of due-course status in these circumstances",
+          "explanation_md": "The described Section 118(g) proviso shifts the burden of proving due-course status to the holder."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_explanation_md": "The fraud/offence/unlawful-consideration proviso places the due-course burden on the holder.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_f327470f7c6a49785d785a8899807f2dd53b2d5acc43253b2e68ac1d4a427610",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U02",
+      "objective_ids": [
+        "BRBL::MOD_B::U02::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 152; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "NI_ACT_THC_2018_TEXT",
+          "authority": "Government of India statute, copy hosted by the High Court of Tripura",
+          "title": "The Negotiable Instruments Act, 1881 (Act 26 of 1881), statutory text including 2018 amendments",
+          "url": "https://thc.nic.in/Central%20Governmental%20Acts/Negotiable%20Instruments%20Act%2C%201881.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 118–119, PDF p. 25"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A bank proves protest in a suit on a dishonoured instrument. What is the specific evidential effect under Section 119?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Every prior indorsement becomes genuine beyond challenge",
+          "explanation_md": "Section 119 addresses dishonour; it does not conclusively authenticate every indorsement."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The instrument becomes transferable despite an express prohibition",
+          "explanation_md": "Proof of protest does not override the instrument's transfer restrictions."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Dishonour is presumed unless disproved",
+          "explanation_md": "Section 119 creates this rebuttable presumption once protest is proved."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The holder is awarded the amount without considering any defence",
+          "explanation_md": "A rebuttable presumption is not an automatic final award and does not eliminate all defences."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_explanation_md": "Section 119 creates this rebuttable presumption once protest is proved.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_7cd7e2d1b76c4dc32d3801a9345558043ea8c4f3a214415e252902b5dcd800ae",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U02",
+      "objective_ids": [
+        "BRBL::MOD_B::U02::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 152; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "NI_ACT_THC_2018_TEXT",
+          "authority": "Government of India statute, copy hosted by the High Court of Tripura",
+          "title": "The Negotiable Instruments Act, 1881 (Act 26 of 1881), statutory text including 2018 amendments",
+          "url": "https://thc.nic.in/Central%20Governmental%20Acts/Negotiable%20Instruments%20Act%2C%201881.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 118–119, PDF p. 25"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

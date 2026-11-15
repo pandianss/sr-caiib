@@ -1,0 +1,188 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-B-U04-B003",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL Module B unit 4: Payment and Settlement Systems Act — Distinguish application, inquiry, authorisation conditions, refusal, revocation and statutory appeal",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04",
+    "PSS_ACT_DFS"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "statement": "Courseware describes application/inquiry, approval factors, conditions and refusal hearing, six-month disposal endeavour, revocation and Central Government appeal.",
+      "source_id": "S04",
+      "locator": "S04 printed pp. 180–181; PDF page = printed page + 19",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F002",
+      "statement": "Sections 5–7 require application and permit inquiry, with specified authorisation considerations/conditions; refusal involves written reasons and hearing. Six months is a disposal endeavour, not deemed approval. Section 8 revocation has specified grounds and qualifications; section 9 permits the specified refusal/revocation appeal within 30 days of communication and endeavours disposal within three months.",
+      "source_id": "PSS_ACT_DFS",
+      "locator": "sections 5–9, PDF pp. 6–8",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "draft_id": "D001",
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "An application clock is not an operating licence",
+        "core_explanation_md": "Applying under Section 5 starts a process. Section 6 permits RBI to enquire into the particulars, operating capacity and other relevant matters. Section 7 addresses authorisation using considerations such as design, security, settlement, management, financial status and consumer interests.\n\nThe resulting authorisation states its effective date and conditions and can include fees and security. The six-month language is an **endeavour to dispose of the application**, not a rule that silence grants a licence. A project plan should therefore separate submission, enquiry responses, grant, effective date and compliance with conditions.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does expiry of the six-month disposal endeavour itself establish permission to operate?",
+          "expected_takeaway": "No. It is not a deemed-authorisation rule."
+        }
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D002",
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Read the order and its route before advising on a challenge",
+        "core_explanation_md": "Refusal under Section 7 involves written reasons and a reasonable opportunity of being heard. Section 8 addresses revocation, including specified grounds and qualifications; the normal hearing provision is not the entire section because it has an additional exception. An order can also need safeguards for affected persons.\n\nSection 9 gives the specified applicant or provider an appeal to the **Central Government**, covering refusal under Section 7(3) as well as revocation under Section 8. Its text uses communication of the order as the appeal-period trigger. Record the order and receipt evidence, then obtain the appropriate legal review; this batch does not grade an exact filing date.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Is the Section 9 route limited to revocation alone?",
+          "expected_takeaway": "No. It also covers the specified refusal of an authorisation application."
+        }
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D003",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Six months have elapsed after a complete application, but no authorisation has been issued. A project memo treats the statutory disposal endeavour as approval by silence. Which correction is needed?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Treat elapsed time as a grant and select the effective date internally",
+            "explanation_md": "A disposal endeavour is not deemed authorisation; an internal effective date cannot replace the statutory grant."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The Act contains no application process",
+            "explanation_md": "Sections 5–7 address the application, inquiry and decision process."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A disposal endeavour does not itself create deemed authorisation",
+            "explanation_md": "Operating permission must be established from the grant or an actual exemption, not elapsed time alone."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Obtain only an auditor operating-capacity certificate instead of authorisation",
+            "explanation_md": "Capacity evidence can support an application, but an auditor certificate does not substitute for RBI operating permission."
+          }
+        ],
+        "correct_explanation_md": "Operating permission must be established from the grant or an actual exemption, not elapsed time alone."
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D004",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An applicant is refused authorisation under Section 7(3). A handbook says Section 9 provides a route only when an existing provider's authorisation is revoked. What should be restored?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The specified refusal as well as revocation can be appealed to the Central Government",
+            "explanation_md": "Section 9 addresses both described types of order."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A statutory appeal to the RBI inspection team that examined the application",
+            "explanation_md": "The inspection or enquiry team is not the appellate forum identified in Section 9."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A vote by system participants that reverses the refusal under their contract",
+            "explanation_md": "Participant agreement does not replace or reverse the statutory authorisation decision through the Section 9 route."
+          },
+          {
+            "option_id": "D",
+            "text_md": "An appeal under FEMA solely because the activity involves payments",
+            "explanation_md": "A different statute appeal route does not replace the specific PSS refusal/revocation appeal to the Central Government."
+          }
+        ],
+        "correct_explanation_md": "Section 9 addresses both described types of order."
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D005",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An authorisation is issued with an effective date and specific operating conditions. What should a launch-readiness checklist verify?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only whether the application fee was paid",
+            "explanation_md": "Fee payment alone does not show that the grant is effective or that its conditions are satisfied."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The grant's effective date and compliance with the stated conditions",
+            "explanation_md": "The authorisation carries operative terms that must be checked, not merely the fact that a document exists."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Only that the technical system passed a successful pilot",
+            "explanation_md": "A technical pilot does not establish that the statutory grant is effective or that all operating conditions are met."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Only that the existing financial-services licence has not expired",
+            "explanation_md": "A separate financial-services licence is not proof of the specific PSS authorisation and its conditions."
+          }
+        ],
+        "correct_explanation_md": "The authorisation carries operative terms that must be checked, not merely the fact that a document exists."
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Codex authored these candidates. All source/session, originality and pedagogy reviews remain pending independent review; keep canonical review null and publication state draft.",
+    "Full courseware unit inspected, including end questions (S04 printed pp. 177–186 / PDF pp. 196–205). Statutory provisions cited were read directly from the DFS copy. Comprehensive consolidation and all subordinate directions through 30 June 2026 remain to be verified.",
+    "Learner passages, applied scenarios and all option rationales independently designed from factual briefs. Source questions, distinctive source tables and named cases were not reused; author comparison is not independent originality approval.",
+    "Current application forms, fee amounts, detailed revocation facts and later notifications require review. No exact appeal deadline date is graded."
+  ],
+  "next_batch_hint": "Continue BRBL-B-U04-B004."
+}

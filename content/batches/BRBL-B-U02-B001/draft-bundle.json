@@ -1,0 +1,602 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-B-U02-B001",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL Module B unit 2: Negotiable Instruments Act, 1881 — Classify a payment document as a note, bill or cheque using its operative promise or order",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04",
+      "NI_ACT_THC_2018_TEXT"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "statement": "A note contains the maker's unconditional undertaking to pay a certain money sum; a bill contains an unconditional direction to another identified person to pay. A cheque is a bill on a specified banker, payable on demand, and includes qualifying electronic cheques and truncated cheque images.",
+        "source_id": "S04",
+        "locator": "S04 printed pp. 153–154; PDF page = printed page + 19",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "statement": "A note contains the maker's unconditional undertaking to pay a certain money sum; a bill contains an unconditional direction to another identified person to pay. A cheque is a bill on a specified banker, payable on demand, and includes qualifying electronic cheques and truncated cheque images.",
+        "source_id": "NI_ACT_THC_2018_TEXT",
+        "locator": "sections 4–6, PDF pp. 8–9",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "draft_id": "D001",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Start with the obligation, then identify the instrument",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "When checking a payment document, ask who undertakes to pay. A **promissory note** records the maker's own unconditional payment undertaking. A **bill of exchange** directs another identified person to pay. Both require writing, the relevant signature, a certain money sum and an identifiable recipient. A document that only records an unpaid balance does not establish the payment undertaking required for a note.\n\nA **cheque** belongs to the bill family, with two extra defining features: the drawee is a specified banker and payment is on demand. Classifying every bank-related document as a cheque would miss these conditions.",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "What separates the obligation in a note from the obligation in a bill?",
+            "expected_takeaway": "A note is the maker's undertaking; a bill directs another person to pay."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Electronic form and truncation describe different routes",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "A cheque created electronically under the statutory signature requirements is different from an image made from an existing paper cheque. **Truncation** starts with the paper cheque: an electronic image replaces its further physical movement during clearing.\n\nFor a branch reviewer, the first task is to identify which route produced the record. A scanned document is not automatically an electronically drawn cheque. Nor does digitisation remove the need to check the underlying instrument and the duties attached to its processing.",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does imaging an existing paper cheque make it an electronically drawn cheque?",
+            "expected_takeaway": "No. It produces the image of a truncated paper cheque; electronic drawing is a separate statutory category."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A supplier asks a bank to classify three documents: a signed undertaking by its customer, a signed direction to a trade buyer, and a demand-payment direction to a specified bank. Which classification follows the obligation in each?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Bill, note, cheque",
+              "explanation_md": "This reverses the first two: the customer's own undertaking is a note; a direction to the trade buyer is a bill."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Note, cheque, bill other than cheque",
+              "explanation_md": "The trade buyer is not identified as a banker, while the final demand direction has the defining cheque features."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Note, bill, cheque",
+              "explanation_md": "The first promises payment, the second orders another person to pay, and the third is a demand bill on a specified banker."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Cheque, bill, note",
+              "explanation_md": "The first does not direct a banker to pay, and the third directs payment rather than recording the maker's own promise."
+            }
+          ],
+          "correct_option_id": "C",
+          "correct_explanation_md": "The first promises payment, the second orders another person to pay, and the third is a demand bill on a specified banker."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A branch receives an image generated while a paper cheque is being cleared. The paper will remain at the presenting end. Which description best identifies this arrangement?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Truncation substitutes the image for further physical movement",
+              "explanation_md": "The process begins with a paper cheque and replaces its onward physical movement with an electronic image."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The original cheque was necessarily drawn electronically",
+              "explanation_md": "An image generated from paper does not show that the cheque was originally drawn in electronic form."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The image converts the cheque into a promissory note",
+              "explanation_md": "Changing the clearing medium does not replace the drawer's order with a maker's payment undertaking."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The bank may omit all checks because no paper travels",
+              "explanation_md": "Truncation changes transmission; it does not remove instrument verification or statutory duties."
+            }
+          ],
+          "correct_option_id": "A",
+          "correct_explanation_md": "The process begins with a paper cheque and replaces its onward physical movement with an electronic image."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A credit officer sees a signed ledger confirmation admitting an outstanding balance. It contains no payment undertaking. Why is classifying it immediately as a promissory note unsafe?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only a bank may make a promissory note",
+              "explanation_md": "The definition does not reserve the role of maker to banks; the operative undertaking is the missing feature here."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Every promissory note must direct a third party to pay",
+              "explanation_md": "A direction to another person describes a bill; a note instead contains the maker's undertaking."
+            },
+            {
+              "option_id": "C",
+              "text_md": "A note must include a promise to supply goods",
+              "explanation_md": "The statutory subject is payment of money only; a goods obligation does not supply the missing payment undertaking."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Acknowledging a balance does not by itself supply the required undertaking",
+              "explanation_md": "The officer must inspect the operative words; evidence of debt alone cannot replace the unconditional payment undertaking."
+            }
+          ],
+          "correct_option_id": "D",
+          "correct_explanation_md": "The officer must inspect the operative words; evidence of debt alone cannot replace the unconditional payment undertaking."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Draft only. Codex authored this batch; Antigravity and human review have not occurred. No publication approval is claimed.",
+      "Courseware pages were inspected as rendered images. Statutory wording was cross-checked against the government-hosted High Court copy. Its consolidation date is not established; amendments and applicable judgments through 30 June 2026 remain to be checked before publication.",
+      "Independent teaching and assessment scenarios were designed from a factual brief. Author compared them with the inspected courseware, including its end-of-unit questions; independent originality and pedagogy review remain pending."
+    ],
+    "next_batch_hint": "Continue BRBL-B-U02-B002; preserve draft-only review gate."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-B-U02-B001",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 12, Compulsory Paper IV, Module B: Negotiable Instruments Act, 1881"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "NI_ACT_THC_2018_TEXT",
+        "authority": "Government of India statute, copy hosted by the High Court of Tripura",
+        "title": "The Negotiable Instruments Act, 1881 (Act 26 of 1881), statutory text including 2018 amendments",
+        "url": "https://thc.nic.in/Central%20Governmental%20Acts/Negotiable%20Instruments%20Act%2C%201881.pdf",
+        "publication_date": null,
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_B::U02",
+        "objective_ids": [
+          "BRBL::MOD_B::U02::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_B::U02",
+        "objective_ids": [
+          "BRBL::MOD_B::U02::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_B::U02",
+        "objective_ids": [
+          "BRBL::MOD_B::U02::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BRBL::MOD_B::U02",
+        "objective_ids": [
+          "BRBL::MOD_B::U02::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "unit_id": "BRBL::MOD_B::U02",
+        "objective_ids": [
+          "BRBL::MOD_B::U02::LO_01"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-B-U02-B001",
+      "draft_id": "D001",
+      "item_id": "item_c7181563faeefb2052ecf173823288751cf8e2b63577573d1c04b87748a7eae1"
+    },
+    {
+      "batch_id": "BRBL-B-U02-B001",
+      "draft_id": "D002",
+      "item_id": "item_d875a46dd8ec6c320b1867fb12fff7b1fe0915f60c454286d815050a011ba579"
+    },
+    {
+      "batch_id": "BRBL-B-U02-B001",
+      "draft_id": "D003",
+      "item_id": "item_59b1f334b36bf620bb1b667ab97bf1067897a30b7e672c5810cbb1e3cb165f28"
+    },
+    {
+      "batch_id": "BRBL-B-U02-B001",
+      "draft_id": "D004",
+      "item_id": "item_c00966aa19e8ee5f83d9f8a7768326108467c66845356121b89d7f8ff92a1561"
+    },
+    {
+      "batch_id": "BRBL-B-U02-B001",
+      "draft_id": "D005",
+      "item_id": "item_18d39f3cf5077b344d8a21d57e3df96401b8a567feee5cb1fd0183d22448bf0a"
+    }
+  ],
+  "items": [
+    {
+      "title": "Start with the obligation, then identify the instrument",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "When checking a payment document, ask who undertakes to pay. A **promissory note** records the maker's own unconditional payment undertaking. A **bill of exchange** directs another identified person to pay. Both require writing, the relevant signature, a certain money sum and an identifiable recipient. A document that only records an unpaid balance does not establish the payment undertaking required for a note.\n\nA **cheque** belongs to the bill family, with two extra defining features: the drawee is a specified banker and payment is on demand. Classifying every bank-related document as a cheque would miss these conditions.",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "What separates the obligation in a note from the obligation in a bill?",
+        "expected_takeaway": "A note is the maker's undertaking; a bill directs another person to pay."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_c7181563faeefb2052ecf173823288751cf8e2b63577573d1c04b87748a7eae1",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U02",
+      "objective_ids": [
+        "BRBL::MOD_B::U02::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 153–154; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "NI_ACT_THC_2018_TEXT",
+          "authority": "Government of India statute, copy hosted by the High Court of Tripura",
+          "title": "The Negotiable Instruments Act, 1881 (Act 26 of 1881), statutory text including 2018 amendments",
+          "url": "https://thc.nic.in/Central%20Governmental%20Acts/Negotiable%20Instruments%20Act%2C%201881.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 4–6, PDF pp. 8–9"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Electronic form and truncation describe different routes",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "A cheque created electronically under the statutory signature requirements is different from an image made from an existing paper cheque. **Truncation** starts with the paper cheque: an electronic image replaces its further physical movement during clearing.\n\nFor a branch reviewer, the first task is to identify which route produced the record. A scanned document is not automatically an electronically drawn cheque. Nor does digitisation remove the need to check the underlying instrument and the duties attached to its processing.",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does imaging an existing paper cheque make it an electronically drawn cheque?",
+        "expected_takeaway": "No. It produces the image of a truncated paper cheque; electronic drawing is a separate statutory category."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_d875a46dd8ec6c320b1867fb12fff7b1fe0915f60c454286d815050a011ba579",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U02",
+      "objective_ids": [
+        "BRBL::MOD_B::U02::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 153–154; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "NI_ACT_THC_2018_TEXT",
+          "authority": "Government of India statute, copy hosted by the High Court of Tripura",
+          "title": "The Negotiable Instruments Act, 1881 (Act 26 of 1881), statutory text including 2018 amendments",
+          "url": "https://thc.nic.in/Central%20Governmental%20Acts/Negotiable%20Instruments%20Act%2C%201881.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 4–6, PDF pp. 8–9"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A supplier asks a bank to classify three documents: a signed undertaking by its customer, a signed direction to a trade buyer, and a demand-payment direction to a specified bank. Which classification follows the obligation in each?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Bill, note, cheque",
+          "explanation_md": "This reverses the first two: the customer's own undertaking is a note; a direction to the trade buyer is a bill."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Note, cheque, bill other than cheque",
+          "explanation_md": "The trade buyer is not identified as a banker, while the final demand direction has the defining cheque features."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Note, bill, cheque",
+          "explanation_md": "The first promises payment, the second orders another person to pay, and the third is a demand bill on a specified banker."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Cheque, bill, note",
+          "explanation_md": "The first does not direct a banker to pay, and the third directs payment rather than recording the maker's own promise."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_explanation_md": "The first promises payment, the second orders another person to pay, and the third is a demand bill on a specified banker.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_59b1f334b36bf620bb1b667ab97bf1067897a30b7e672c5810cbb1e3cb165f28",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U02",
+      "objective_ids": [
+        "BRBL::MOD_B::U02::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 153–154; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "NI_ACT_THC_2018_TEXT",
+          "authority": "Government of India statute, copy hosted by the High Court of Tripura",
+          "title": "The Negotiable Instruments Act, 1881 (Act 26 of 1881), statutory text including 2018 amendments",
+          "url": "https://thc.nic.in/Central%20Governmental%20Acts/Negotiable%20Instruments%20Act%2C%201881.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 4–6, PDF pp. 8–9"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A branch receives an image generated while a paper cheque is being cleared. The paper will remain at the presenting end. Which description best identifies this arrangement?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Truncation substitutes the image for further physical movement",
+          "explanation_md": "The process begins with a paper cheque and replaces its onward physical movement with an electronic image."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The original cheque was necessarily drawn electronically",
+          "explanation_md": "An image generated from paper does not show that the cheque was originally drawn in electronic form."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The image converts the cheque into a promissory note",
+          "explanation_md": "Changing the clearing medium does not replace the drawer's order with a maker's payment undertaking."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The bank may omit all checks because no paper travels",
+          "explanation_md": "Truncation changes transmission; it does not remove instrument verification or statutory duties."
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_explanation_md": "The process begins with a paper cheque and replaces its onward physical movement with an electronic image.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_c00966aa19e8ee5f83d9f8a7768326108467c66845356121b89d7f8ff92a1561",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U02",
+      "objective_ids": [
+        "BRBL::MOD_B::U02::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 153–154; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "NI_ACT_THC_2018_TEXT",
+          "authority": "Government of India statute, copy hosted by the High Court of Tripura",
+          "title": "The Negotiable Instruments Act, 1881 (Act 26 of 1881), statutory text including 2018 amendments",
+          "url": "https://thc.nic.in/Central%20Governmental%20Acts/Negotiable%20Instruments%20Act%2C%201881.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 4–6, PDF pp. 8–9"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A credit officer sees a signed ledger confirmation admitting an outstanding balance. It contains no payment undertaking. Why is classifying it immediately as a promissory note unsafe?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only a bank may make a promissory note",
+          "explanation_md": "The definition does not reserve the role of maker to banks; the operative undertaking is the missing feature here."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Every promissory note must direct a third party to pay",
+          "explanation_md": "A direction to another person describes a bill; a note instead contains the maker's undertaking."
+        },
+        {
+          "option_id": "C",
+          "text_md": "A note must include a promise to supply goods",
+          "explanation_md": "The statutory subject is payment of money only; a goods obligation does not supply the missing payment undertaking."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Acknowledging a balance does not by itself supply the required undertaking",
+          "explanation_md": "The officer must inspect the operative words; evidence of debt alone cannot replace the unconditional payment undertaking."
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_explanation_md": "The officer must inspect the operative words; evidence of debt alone cannot replace the unconditional payment undertaking.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_18d39f3cf5077b344d8a21d57e3df96401b8a567feee5cb1fd0183d22448bf0a",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U02",
+      "objective_ids": [
+        "BRBL::MOD_B::U02::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 153–154; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "NI_ACT_THC_2018_TEXT",
+          "authority": "Government of India statute, copy hosted by the High Court of Tripura",
+          "title": "The Negotiable Instruments Act, 1881 (Act 26 of 1881), statutory text including 2018 amendments",
+          "url": "https://thc.nic.in/Central%20Governmental%20Acts/Negotiable%20Instruments%20Act%2C%201881.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 4–6, PDF pp. 8–9"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

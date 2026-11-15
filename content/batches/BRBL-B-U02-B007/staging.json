@@ -1,0 +1,187 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-B-U02-B007",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL Module B unit 2: Negotiable Instruments Act, 1881 — Distinguish conditional paying-banker discharge under Sections 85 and 85A from a blanket fraud guarantee",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04",
+    "NI_ACT_THC_2018_TEXT"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "statement": "Courseware describes paying-banker protection under section 85 for purported payee indorsements on order cheques and for cheques originally payable to bearer, conditional on payment in due course. The fuller section 85A inter-office-draft definition is supplemental statutory evidence.",
+      "source_id": "S04",
+      "locator": "S04 printed pp. 157; PDF page = printed page + 19",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F002",
+      "statement": "Section 85(1) provides discharge for an order cheque purporting to be indorsed by/on behalf of the payee when paid in due course. Section 85(2) concerns cheques originally expressed payable to bearer despite subsequent indorsements. Section 85A addresses an order-on-demand draft of one bank office on another of the same bank, purporting to bear the payee indorsement, paid in due course.",
+      "source_id": "NI_ACT_THC_2018_TEXT",
+      "locator": "sections 85 and 85A, PDF p. 20",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "draft_id": "D001",
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Ask what kind of defect the paying-bank protection addresses",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "Section 85 addresses the paying drawee's discharge in defined cheque situations. For an **order cheque** that purports to carry the payee's indorsement, payment must still be in due course. The provision is therefore not permission to ignore irregularities or reasonable doubts.\n\nThe difference between an indorsement and the drawer's mandate is crucial. A defence addressing a purported payee indorsement must not be treated as a general validation of a forged drawer signature. A bank should first identify the instrument and the alleged defect, then test the conditions of the particular protection.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Why is “all forgeries are covered by Section 85” an unsafe shortcut?",
+          "expected_takeaway": "Its conditions concern specified cheque payment and indorsement situations; they do not validate every defect or forged mandate."
+        }
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D002",
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Original bearer wording and inter-office drafts have specific rules",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "For a cheque **originally payable to bearer**, Section 85(2) allows discharge through payment in due course to the bearer despite later full, blank or restrictive indorsements of the kind described there. The word **originally** matters when selecting the provision. This rule does not abolish separate crossing duties.\n\nSection 85A applies to the specified **order-on-demand draft drawn by one office on another office of the same bank**. A document called a “draft” in conversation does not automatically meet that definition. Check the offices, the bank identity, the demand terms and the purported payee indorsement.",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Which bank-identity condition matters under Section 85A?",
+          "expected_takeaway": "The draft must be drawn by one office of a bank on another office of the same bank."
+        }
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D003",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A branch proposes to rely on Section 85(1) for an order cheque purporting to bear the payee's indorsement. Which condition cannot be omitted from its analysis?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The payment must be in due course",
+            "explanation_md": "The discharge expressly depends on payment in due course; the purported indorsement alone does not complete the defence."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The payee must maintain an account with the drawee bank",
+            "explanation_md": "Section 85(1) does not specify this universal payee-account condition."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The cheque must originally have been bearer paper",
+            "explanation_md": "That feature relates to Section 85(2); the question concerns an order cheque under subsection (1)."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Every indorser must be personally known to the branch manager",
+            "explanation_md": "Personal knowledge of every indorser is not the stated statutory condition; due-course payment remains required."
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_explanation_md": "The discharge expressly depends on payment in due course; the purported indorsement alone does not complete the defence."
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D004",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A cheque was originally expressed payable to bearer and later received an indorsement naming a person. A reviewer selects Section 85(2). Which feature supports that selection?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Any later name converts the cheque into a note",
+            "explanation_md": "An indorsement does not replace the underlying payment order with a promissory undertaking."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Bearer status automatically removes crossing restrictions",
+            "explanation_md": "The bearer rule does not erase separate statutory requirements for crossed-cheque payment."
+          },
+          {
+            "option_id": "C",
+            "text_md": "No due-course test applies once bearer wording appears",
+            "explanation_md": "Section 85(2) still requires payment in due course."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The cheque's original bearer wording is the specified starting condition",
+            "explanation_md": "Section 85(2) expressly addresses original bearer paper despite the later indorsements it describes."
+          }
+        ],
+        "correct_option_id": "D",
+        "correct_explanation_md": "Section 85(2) expressly addresses original bearer paper despite the later indorsements it describes."
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D005",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An order-on-demand instrument is drawn by an office of Alder Bank on an office of Birch Bank. Why should a reviewer avoid assuming Section 85A applies simply because the form is labelled “draft”?",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Section 85A applies only to instruments payable after a fixed term",
+            "explanation_md": "The section addresses the specified demand draft, not a fixed-term instrument."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The section specifies offices of the same bank, which these facts do not show",
+            "explanation_md": "Alder and Birch are different banks in the scenario, so the same-bank condition is absent."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The two offices are located in different cities",
+            "explanation_md": "Different cities do not themselves defeat the provision; the relevant missing condition here is offices of the same bank."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The instrument is payable to order rather than bearer",
+            "explanation_md": "The specified draft under Section 85A is payable to order; order wording is not the defect in these facts."
+          }
+        ],
+        "correct_option_id": "B",
+        "correct_explanation_md": "Alder and Birch are different banks in the scenario, so the same-bank condition is absent."
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Draft only. Codex authored this batch; Antigravity and human review have not occurred. No publication approval is claimed.",
+    "Courseware pages were inspected as rendered images. Statutory wording was cross-checked against the government-hosted High Court copy. Its consolidation date is not established; amendments and applicable judgments through 30 June 2026 remain to be checked before publication.",
+    "Independent teaching and assessment scenarios were designed from a factual brief. Author compared them with the inspected courseware, including its end-of-unit questions; independent originality and pedagogy review remain pending."
+  ],
+  "next_batch_hint": "Continue BRBL-B-U02-B008; preserve draft-only review gate."
+}

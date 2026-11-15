@@ -121,7 +121,11 @@ export function topicGap(t: LedgerTopic): string {
   if (t.blocked_reason) return t.blocked_reason;
   if (!t.objectives.length) return 'Assessable objectives have not been derived for this topic yet, so no lesson or assessment exists.';
   const s = topicStages(t);
-  if (!s.source_supported) return 'Source evidence is not yet available for every objective in this topic.';
+  if (!s.source_supported) {
+    if (t.objectives.some(o => o.source_support === 'missing' || o.source_support === 'unreadable')) return 'Source evidence is missing or unreadable for one or more objectives in this topic.';
+    if (t.objectives.some(o => o.source_support === 'conflicting')) return 'Conflicting source evidence needs to be resolved for one or more objectives in this topic.';
+    return 'Source support or session applicability is not yet fully verified for every objective in this topic.';
+  }
   if (!s.drafted) return 'Original lessons have not been drafted for every objective.';
   if (!s.assessed) return 'Assessments have not been drafted for every objective.';
   if (!s.reviewed) return 'Source, originality or calculation review is not complete.';

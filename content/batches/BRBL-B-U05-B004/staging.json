@@ -1,0 +1,165 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-B-U05-B004",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL Module B unit 5: Securities and modes of charge I — Separate mortgage formalities, document operating time and general priority from assumptions based only on registration date",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04",
+    "TPA_DELHI_TEXT",
+    "REGISTRATION_PART_X_DELHI"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "statement": "Courseware gives section 59 formality, general earlier-right priority, registration operating-time discussion and the title-deed-mortgage exception; blanket cost/registration claims are held back.",
+      "source_id": "S04",
+      "locator": "S04 printed pp. 189, 191–192; PDF page = printed page + 19",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F002",
+      "statement": "Section 59 describes registered, signed and two-witness-attested formality for the specified principal amount and non-title-deed-deposit mortgages, with stated smaller-amount rules. Section 48 sets the general earlier-created-right priority subject to its special-contract/reservation qualification. These provisions do not certify every state stamp requirement or every memorandum of deposit.",
+      "source_id": "TPA_DELHI_TEXT",
+      "locator": "sections 48 and 59, official Delhi text headings",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F003",
+      "source_id": "REGISTRATION_PART_X_DELHI",
+      "locator": "sections 47–50, PDF pp. 1–2; section 47 page visually inspected",
+      "statement": "Section 47 gives the operating-time rule; section 48 includes a proviso for a title-deed mortgage against a later executed/registered mortgage-deed. Section 49 gives qualified consequences and evidential exceptions; section 50 also has qualifications. State-amendment commentary must be scoped separately.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "draft_id": "D001",
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Read the formality rule together with its limits",
+        "core_explanation_md": "Section 59 sets a central-text rule for mortgages securing principal of Rs 100 or more, other than a mortgage by deposit of title deeds: the specified registered instrument, mortgagor signature and at least two attesting witnesses are required. Its smaller-amount rules also have qualifications.\n\nThe exception for title-deed deposit must not become “every paper recording that deposit is always exempt from registration and stamp duty”. The function of a memorandum, applicable state amendments, stamp law and separate filing obligations need their own sources. Classification under section 58(f) and the formalities of a particular instrument are connected questions, but they are not interchangeable.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does the section 59 exception by itself establish that every deposit memorandum is free of all registration and stamp requirements?",
+          "expected_takeaway": "No. The instrument's function and applicable legal requirements need separate review."
+        }
+      },
+      "fact_ids": [
+        "F001",
+        "F002",
+        "F003"
+      ]
+    },
+    {
+      "draft_id": "D002",
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Do not decide competing rights from the registry timestamps alone",
+        "core_explanation_md": "Section 48 of the Transfer of Property Act gives a general earlier-created-right rule where competing rights cannot all operate fully together, subject to the stated special-contract or reservation qualification. Section 47 of the Registration Act concerns when a registered document operates: it does not simply choose the day registration occurred.\n\nFor a hypothetical pair of valid instruments stipulated to operate from execution, a later registration timestamp alone does not prove later priority. Record creation, operative effect, registration, validity and any binding priority arrangement. The title-deed-mortgage proviso in Registration Act section 48 is another reason not to apply an unqualified “registered always defeats unregistered” shortcut.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Which dates and terms belong in a competing-security file besides registration dates?",
+          "expected_takeaway": "Creation and operative dates, validity and any binding priority arrangement or statutory qualification."
+        }
+      },
+      "fact_ids": [
+        "F001",
+        "F002",
+        "F003"
+      ]
+    },
+    {
+      "draft_id": "D003",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Two valid mortgage instruments are stipulated to operate from execution, with no special priority agreement or other exception. A was executed on 10 June and registered on 20 June; B was executed on 14 June and registered on 18 June. What should be corrected in a note awarding B priority solely for earlier registration?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The two instruments necessarily have equal priority because both are registered",
+            "explanation_md": "Registration of both does not erase the difference in when their competing rights were created and operate."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Whichever lender first demands payment must always rank first",
+            "explanation_md": "Demand timing is not the stipulated basis of the general earlier-right and operating-time analysis."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Registration timestamps alone do not defeat A's earlier operative creation on these stated assumptions",
+            "explanation_md": "The general priority and operating-time rules require the stipulated creation/effect facts, not registry completion order alone."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A cannot have any legal effect because its registration followed its execution",
+            "explanation_md": "Registration after execution is not itself the defect asserted here; both instruments are stipulated valid."
+          }
+        ],
+        "correct_explanation_md": "The general priority and operating-time rules require the stipulated creation/effect facts, not registry completion order alone."
+      },
+      "fact_ids": [
+        "F001",
+        "F002",
+        "F003"
+      ]
+    },
+    {
+      "draft_id": "D004",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A bank policy says a title-deed deposit means every related memorandum is automatically exempt from every registration and stamp requirement. Which review response is justified by the evidence?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Check the instrument's operative function and applicable state/formality law rather than extend the section 59 exception universally",
+            "explanation_md": "A mortgage-category exception does not by itself answer every document, state amendment and stamp-law question."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Treat the policy as a substitute for the statutory formality analysis",
+            "explanation_md": "An internal policy cannot replace the governing legal requirements."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Assume a notarised copy cures every registration defect",
+            "explanation_md": "Notarisation cannot be assumed to satisfy a separate registration requirement."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Conclude that title-deed mortgages can never be created at all",
+            "explanation_md": "The statute expressly recognises that mortgage form; rejecting it universally is the opposite unsupported blanket rule."
+          }
+        ],
+        "correct_explanation_md": "A mortgage-category exception does not by itself answer every document, state amendment and stamp-law question."
+      },
+      "fact_ids": [
+        "F001",
+        "F002",
+        "F003"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Codex authoring only. Independent legal/session applicability, original expression/task design and pedagogical review pending. All canonical items must remain draft with null review.",
+    "S04 entire unit inspected including end questions (printed pp. 187–195 / PDF pp. 206–214; PDF p. 215 blank). The cited statutory headings were read directly from the official Delhi text; only expressly identified additional sources support the supplemental facts.",
+    "State amendments, territorial application, stamp/registration requirements, notified towns and later controlling law through 30 June 2026 require review. Source availability is not a certification of the offered security or current legal applicability.",
+    "Teaching and file-review questions were independently designed from factual briefs. No source question, source table or named-case narrative was copied or made into a number/name swap. Author comparison is not independent originality approval.",
+    "No state stamp schedule, operative memorandum test, notified-town list, CERSAI/company-charge registration rule or particular priority dispute is certified. The India Code copy incorporating Rajasthan amendments is retained only as a jurisdiction-scoped comparison reference."
+  ],
+  "next_batch_hint": "Continue BRBL-B-U05-B005; retain source-blocked details in the ledger."
+}

@@ -1,0 +1,602 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-B-U02-B005",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL Module B unit 2: Negotiable Instruments Act, 1881 — Apply the paying bank duty under Section 31 to funds, mandate and wrongful dishonour",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04",
+      "NI_ACT_THC_2018_TEXT"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "statement": "Section 31 requires the drawee to pay when duly required if sufficient drawer funds are held and properly applicable to the cheque; on default it compensates the drawer for resulting loss or damage. Courseware distinguishes gross balances from funds properly available for that payment.",
+        "source_id": "S04",
+        "locator": "S04 printed pp. 155–156; PDF page = printed page + 19",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "statement": "Section 31 requires the drawee to pay when duly required if sufficient drawer funds are held and properly applicable to the cheque; on default it compensates the drawer for resulting loss or damage. Courseware distinguishes gross balances from funds properly available for that payment.",
+        "source_id": "NI_ACT_THC_2018_TEXT",
+        "locator": "section 31, PDF p. 12",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "draft_id": "D001",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "A balance enquiry is only part of the payment decision",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "A cheque-payment decision needs both **funds** and **authority**. Under Section 31, the drawee must have enough of the drawer's money properly available for the cheque and must be duly required to pay it. An apparent credit balance does not answer whether a court restraint, earmarking or other lawful restriction prevents its use.\n\nThe operational sequence is to inspect the payment instruction, establish the funds available for that instruction, and resolve any restriction before deciding. Checking only the balance can produce both a wrongful refusal and a payment the bank had no authority to make.",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Why can sufficient gross balance still fail the Section 31 funds test?",
+            "expected_takeaway": "The funds must also be properly applicable to that cheque; a lawful restriction can prevent their use."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Wrongful dishonour concerns the drawer's resulting loss",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "Section 31 links the drawee's default to compensation of the **drawer** for loss or damage caused by it. The relevant investigation records the cheque, the usable funds, the mandate, the reason for refusal and the loss attributed to that refusal.\n\nDo not treat the cheque amount as an automatic fixed compensation award. Nor should the file assume that the named payee is the statutory claimant under this particular section. Other causes of action need their own legal analysis; the immediate task is to apply Section 31 to the correct relationship and consequences.",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Is compensation under Section 31 automatically equal to the cheque amount?",
+            "expected_takeaway": "No. The section addresses the drawer's loss or damage caused by the default."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A customer has a credit balance sufficient for a cheque, but the bank has a binding court restraint covering those funds. Which fact is missing from a trainee's instruction to pay solely because the balance is adequate?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Whether the funds are properly applicable to this payment",
+              "explanation_md": "Section 31 requires usable funds for the cheque, not merely a sufficient gross account balance."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Whether the gross credit balance exceeds the cheque amount by a large margin",
+              "explanation_md": "A larger gross balance does not make funds properly applicable while the binding restraint remains."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Whether the cheque has travelled by paper rather than image",
+              "explanation_md": "The transmission route does not remove the lawful restraint on the funds."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Whether the customer will indemnify the bank for ignoring the restraint",
+              "explanation_md": "A customer indemnity does not itself permit the bank to disregard a binding court restraint."
+            }
+          ],
+          "correct_option_id": "A",
+          "correct_explanation_md": "Section 31 requires usable funds for the cheque, not merely a sufficient gross account balance."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A bank wrongfully refuses a duly payable cheque and the drawer proves loss caused by the refusal. Which statement describes Section 31's compensation relationship?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The payee automatically receives twice the cheque amount",
+              "explanation_md": "Section 31 does not create this automatic payee award; it addresses the drawer's resulting loss."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The clearing house must compensate every former holder",
+              "explanation_md": "The section places the relevant duty on the drawee toward the drawer, not on the clearing house toward all holders."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The drawee must compensate the drawer for the resulting loss or damage",
+              "explanation_md": "That is the relationship and causal loss specified by Section 31."
+            },
+            {
+              "option_id": "D",
+              "text_md": "No compensation is possible once the bank later apologises",
+              "explanation_md": "A later apology does not eliminate loss or damage caused by the bank's default."
+            }
+          ],
+          "correct_option_id": "C",
+          "correct_explanation_md": "That is the relationship and causal loss specified by Section 31."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "An internal review finds sufficient usable drawer funds, a duly issued payment instruction and no lawful reason for refusal. Which proposed conclusion needs correction?",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The refusal should be investigated against the duty to pay",
+              "explanation_md": "Those facts engage Section 31; investigation of the refusal against that duty is appropriate."
+            },
+            {
+              "option_id": "B",
+              "text_md": "A cheque may always be refused at the bank's unrestricted discretion",
+              "explanation_md": "Section 31 imposes a duty when its conditions are satisfied; it is not an unrestricted choice."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The file should preserve evidence of any loss caused to the drawer",
+              "explanation_md": "Resulting loss or damage matters to the compensation required on default."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The bank should record the actual reason the cheque was refused",
+              "explanation_md": "Recording the reason helps determine whether the refusal was justified and supports the causal investigation."
+            }
+          ],
+          "correct_option_id": "B",
+          "correct_explanation_md": "Section 31 imposes a duty when its conditions are satisfied; it is not an unrestricted choice."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Draft only. Codex authored this batch; Antigravity and human review have not occurred. No publication approval is claimed.",
+      "Courseware pages were inspected as rendered images. Statutory wording was cross-checked against the government-hosted High Court copy. Its consolidation date is not established; amendments and applicable judgments through 30 June 2026 remain to be checked before publication.",
+      "Independent teaching and assessment scenarios were designed from a factual brief. Author compared them with the inspected courseware, including its end-of-unit questions; independent originality and pedagogy review remain pending."
+    ],
+    "next_batch_hint": "Continue BRBL-B-U02-B006; preserve draft-only review gate."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-B-U02-B005",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 12, Compulsory Paper IV, Module B: Negotiable Instruments Act, 1881"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "NI_ACT_THC_2018_TEXT",
+        "authority": "Government of India statute, copy hosted by the High Court of Tripura",
+        "title": "The Negotiable Instruments Act, 1881 (Act 26 of 1881), statutory text including 2018 amendments",
+        "url": "https://thc.nic.in/Central%20Governmental%20Acts/Negotiable%20Instruments%20Act%2C%201881.pdf",
+        "publication_date": null,
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_B::U02",
+        "objective_ids": [
+          "BRBL::MOD_B::U02::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_B::U02",
+        "objective_ids": [
+          "BRBL::MOD_B::U02::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_B::U02",
+        "objective_ids": [
+          "BRBL::MOD_B::U02::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BRBL::MOD_B::U02",
+        "objective_ids": [
+          "BRBL::MOD_B::U02::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "unit_id": "BRBL::MOD_B::U02",
+        "objective_ids": [
+          "BRBL::MOD_B::U02::LO_05"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-B-U02-B005",
+      "draft_id": "D001",
+      "item_id": "item_495213a6da54d8537e5eb95ac1e7b996f46e9c3996861c18c88d7c70611b1748"
+    },
+    {
+      "batch_id": "BRBL-B-U02-B005",
+      "draft_id": "D002",
+      "item_id": "item_935d7cbf1201b654759691d9790ec6ff3d90a0af2bbca1e3f89142a4d1aea2fa"
+    },
+    {
+      "batch_id": "BRBL-B-U02-B005",
+      "draft_id": "D003",
+      "item_id": "item_2cb496c7320a72fd5f3b42deb52f6dd2534b12de802d6d5db6b6f46f724ac553"
+    },
+    {
+      "batch_id": "BRBL-B-U02-B005",
+      "draft_id": "D004",
+      "item_id": "item_ece97d9a89d50d8deab545545b69626acce643f868bc490e3ec71e3633c53001"
+    },
+    {
+      "batch_id": "BRBL-B-U02-B005",
+      "draft_id": "D005",
+      "item_id": "item_fb8a5294cdf98b1801de1e2f2105f0379ba48ebeb6872fa43a54dfc28304ef3e"
+    }
+  ],
+  "items": [
+    {
+      "title": "A balance enquiry is only part of the payment decision",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "A cheque-payment decision needs both **funds** and **authority**. Under Section 31, the drawee must have enough of the drawer's money properly available for the cheque and must be duly required to pay it. An apparent credit balance does not answer whether a court restraint, earmarking or other lawful restriction prevents its use.\n\nThe operational sequence is to inspect the payment instruction, establish the funds available for that instruction, and resolve any restriction before deciding. Checking only the balance can produce both a wrongful refusal and a payment the bank had no authority to make.",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Why can sufficient gross balance still fail the Section 31 funds test?",
+        "expected_takeaway": "The funds must also be properly applicable to that cheque; a lawful restriction can prevent their use."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_495213a6da54d8537e5eb95ac1e7b996f46e9c3996861c18c88d7c70611b1748",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U02",
+      "objective_ids": [
+        "BRBL::MOD_B::U02::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 155–156; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "NI_ACT_THC_2018_TEXT",
+          "authority": "Government of India statute, copy hosted by the High Court of Tripura",
+          "title": "The Negotiable Instruments Act, 1881 (Act 26 of 1881), statutory text including 2018 amendments",
+          "url": "https://thc.nic.in/Central%20Governmental%20Acts/Negotiable%20Instruments%20Act%2C%201881.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section 31, PDF p. 12"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Wrongful dishonour concerns the drawer's resulting loss",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "Section 31 links the drawee's default to compensation of the **drawer** for loss or damage caused by it. The relevant investigation records the cheque, the usable funds, the mandate, the reason for refusal and the loss attributed to that refusal.\n\nDo not treat the cheque amount as an automatic fixed compensation award. Nor should the file assume that the named payee is the statutory claimant under this particular section. Other causes of action need their own legal analysis; the immediate task is to apply Section 31 to the correct relationship and consequences.",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Is compensation under Section 31 automatically equal to the cheque amount?",
+        "expected_takeaway": "No. The section addresses the drawer's loss or damage caused by the default."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_935d7cbf1201b654759691d9790ec6ff3d90a0af2bbca1e3f89142a4d1aea2fa",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U02",
+      "objective_ids": [
+        "BRBL::MOD_B::U02::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 155–156; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "NI_ACT_THC_2018_TEXT",
+          "authority": "Government of India statute, copy hosted by the High Court of Tripura",
+          "title": "The Negotiable Instruments Act, 1881 (Act 26 of 1881), statutory text including 2018 amendments",
+          "url": "https://thc.nic.in/Central%20Governmental%20Acts/Negotiable%20Instruments%20Act%2C%201881.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section 31, PDF p. 12"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A customer has a credit balance sufficient for a cheque, but the bank has a binding court restraint covering those funds. Which fact is missing from a trainee's instruction to pay solely because the balance is adequate?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Whether the funds are properly applicable to this payment",
+          "explanation_md": "Section 31 requires usable funds for the cheque, not merely a sufficient gross account balance."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Whether the gross credit balance exceeds the cheque amount by a large margin",
+          "explanation_md": "A larger gross balance does not make funds properly applicable while the binding restraint remains."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Whether the cheque has travelled by paper rather than image",
+          "explanation_md": "The transmission route does not remove the lawful restraint on the funds."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Whether the customer will indemnify the bank for ignoring the restraint",
+          "explanation_md": "A customer indemnity does not itself permit the bank to disregard a binding court restraint."
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_explanation_md": "Section 31 requires usable funds for the cheque, not merely a sufficient gross account balance.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_2cb496c7320a72fd5f3b42deb52f6dd2534b12de802d6d5db6b6f46f724ac553",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U02",
+      "objective_ids": [
+        "BRBL::MOD_B::U02::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 155–156; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "NI_ACT_THC_2018_TEXT",
+          "authority": "Government of India statute, copy hosted by the High Court of Tripura",
+          "title": "The Negotiable Instruments Act, 1881 (Act 26 of 1881), statutory text including 2018 amendments",
+          "url": "https://thc.nic.in/Central%20Governmental%20Acts/Negotiable%20Instruments%20Act%2C%201881.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section 31, PDF p. 12"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A bank wrongfully refuses a duly payable cheque and the drawer proves loss caused by the refusal. Which statement describes Section 31's compensation relationship?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The payee automatically receives twice the cheque amount",
+          "explanation_md": "Section 31 does not create this automatic payee award; it addresses the drawer's resulting loss."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The clearing house must compensate every former holder",
+          "explanation_md": "The section places the relevant duty on the drawee toward the drawer, not on the clearing house toward all holders."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The drawee must compensate the drawer for the resulting loss or damage",
+          "explanation_md": "That is the relationship and causal loss specified by Section 31."
+        },
+        {
+          "option_id": "D",
+          "text_md": "No compensation is possible once the bank later apologises",
+          "explanation_md": "A later apology does not eliminate loss or damage caused by the bank's default."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_explanation_md": "That is the relationship and causal loss specified by Section 31.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_ece97d9a89d50d8deab545545b69626acce643f868bc490e3ec71e3633c53001",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U02",
+      "objective_ids": [
+        "BRBL::MOD_B::U02::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 155–156; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "NI_ACT_THC_2018_TEXT",
+          "authority": "Government of India statute, copy hosted by the High Court of Tripura",
+          "title": "The Negotiable Instruments Act, 1881 (Act 26 of 1881), statutory text including 2018 amendments",
+          "url": "https://thc.nic.in/Central%20Governmental%20Acts/Negotiable%20Instruments%20Act%2C%201881.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section 31, PDF p. 12"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "An internal review finds sufficient usable drawer funds, a duly issued payment instruction and no lawful reason for refusal. Which proposed conclusion needs correction?",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The refusal should be investigated against the duty to pay",
+          "explanation_md": "Those facts engage Section 31; investigation of the refusal against that duty is appropriate."
+        },
+        {
+          "option_id": "B",
+          "text_md": "A cheque may always be refused at the bank's unrestricted discretion",
+          "explanation_md": "Section 31 imposes a duty when its conditions are satisfied; it is not an unrestricted choice."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The file should preserve evidence of any loss caused to the drawer",
+          "explanation_md": "Resulting loss or damage matters to the compensation required on default."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The bank should record the actual reason the cheque was refused",
+          "explanation_md": "Recording the reason helps determine whether the refusal was justified and supports the causal investigation."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_explanation_md": "Section 31 imposes a duty when its conditions are satisfied; it is not an unrestricted choice.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_fb8a5294cdf98b1801de1e2f2105f0379ba48ebeb6872fa43a54dfc28304ef3e",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U02",
+      "objective_ids": [
+        "BRBL::MOD_B::U02::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 155–156; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "NI_ACT_THC_2018_TEXT",
+          "authority": "Government of India statute, copy hosted by the High Court of Tripura",
+          "title": "The Negotiable Instruments Act, 1881 (Act 26 of 1881), statutory text including 2018 amendments",
+          "url": "https://thc.nic.in/Central%20Governmental%20Acts/Negotiable%20Instruments%20Act%2C%201881.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section 31, PDF p. 12"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

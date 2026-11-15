@@ -1,0 +1,670 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-B-U04-B007",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL Module B unit 4: Payment and Settlement Systems Act — Identify delegated regulation-making and keep dated regulations separate from the Act and operating authorisation",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04",
+      "PSS_ACT_DFS",
+      "RBI_PSS_FAQ_2025"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "statement": "Courseware describes section 38 regulations, parliamentary laying, the PSS Regulations 2008 and amendments through 2022; it mentions sanctions but does not develop their detailed current operation.",
+        "source_id": "S04",
+        "locator": "S04 printed pp. 184–186; PDF page = printed page + 19",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "statement": "Section 38 permits RBI notification of regulations consistent with the Act, covering specified governance, application, authorisation, standards and reporting matters, and provides effective-date and parliamentary-laying arrangements. Dated RBI FAQ identifies the 2008 PSS Regulations and 2025 PRB Regulations as separate instruments with distinct subject matter.",
+        "source_id": "PSS_ACT_DFS",
+        "locator": "section 38, PDF p. 17; RBI FAQ 2025 Q3–4, PDF p. 1; PRB Regulations 2025 regulations 1–3, PDF p. 5",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F003",
+        "statement": "RBI FAQ dated 20 October 2025 identifies RBI exercising PSS Act functions through the Payments Regulatory Board, names the PSS Regulations 2008 and PRB Regulations 2025, and explains their roles.",
+        "source_id": "RBI_PSS_FAQ_2025",
+        "locator": "Q1–4, PDF p. 1; Gazette PRB Regulations 2025 separately retained in registry and review record",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "draft_id": "D001",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "The Act, regulations and an operator's permission do different jobs",
+          "core_explanation_md": "**Section 38** authorises RBI to make regulations consistent with the Act. The listed matters include governance procedure, application/authorisation forms, payment-instruction standards and information returns. A regulation develops the statutory framework; it is not the same document as an individual operator's authorisation.\n\nFor a compliance file, retain the relevant Act provision, the regulation version and the operator's actual permission and conditions. Reading only an old summary of an application form cannot establish that a new service is authorised or that all current reporting requirements have been met.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Can a published application-form regulation itself prove that a particular operator has authorisation?",
+            "expected_takeaway": "No. A general regulation and an individual operating authorisation are different instruments."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002",
+          "F003"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Use the regulation's own version and commencement evidence",
+          "core_explanation_md": "The dated RBI FAQ distinguishes the **Payment and Settlement Systems Regulations, 2008** from the **Payments Regulatory Board Regulations, 2025**. Their subjects differ: system application/authorisation, standards and returns on one side, and Board governance on the other. A courseware note ending at a 2022 amendment does not show that the regulation set stops there.\n\nSection 38 includes effective-date and parliamentary-laying provisions. Use the operative text and notification evidence for the relevant exam cutoff; do not infer commencement from a website folder, a PDF creation timestamp or a document identifier. Sanctions also need their own provisions and review rather than a generic penalty number copied into every situation.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Why is an old courseware amendment date insufficient to identify all applicable regulations?",
+            "expected_takeaway": "It describes the courseware's coverage, not proof that no later instrument or amendment exists."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002",
+          "F003"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "An operator presents the general regulation containing an application form as proof that its own new service has been authorised. What distinction should the reviewer restore?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "General regulation-making is separate from the operator's individual authorisation and conditions",
+              "explanation_md": "A standard form describes a process; it does not establish that this operator obtained the required grant."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Any publicly available PDF is automatically an operator licence",
+              "explanation_md": "Publication does not convert a general legal instrument into a particular authorisation."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Only the document's file size determines its legal function",
+              "explanation_md": "File size is not evidence of the instrument's statutory role or grant."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Every operator is exempt once it downloads the form",
+              "explanation_md": "Downloading an application form does not establish an exemption."
+            }
+          ],
+          "correct_explanation_md": "A standard form describes a process; it does not establish that this operator obtained the required grant."
+        },
+        "fact_ids": [
+          "F001",
+          "F002",
+          "F003"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A compliance inventory lists only a 2022-amended courseware link and omits the separately identified 2025 PRB regulations. Which approach is appropriate?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Assume the courseware link proves that no later regulations exist",
+              "explanation_md": "A courseware cutoff does not establish the absence of later legal instruments."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Replace all primary texts with the latest search-result snippet",
+              "explanation_md": "A snippet is not a substitute for inspecting the operative instrument and its applicability."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Treat Board governance regulations and every transaction rule as identical",
+              "explanation_md": "Their subjects and functions differ and should be identified separately."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Reconcile the dated primary instruments and their subjects against the exam cutoff",
+              "explanation_md": "The inventory must account for the later instrument while preserving version and scope distinctions."
+            }
+          ],
+          "correct_explanation_md": "The inventory must account for the later instrument while preserving version and scope distinctions."
+        },
+        "fact_ids": [
+          "F001",
+          "F002",
+          "F003"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Two stored PDFs have different creation timestamps. A reviewer proposes selecting the newer timestamp as the sole test of legal commencement. What should replace that shortcut?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The shorter filename as the only legal test",
+              "explanation_md": "A filename does not establish when a provision became operative."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The instrument's commencement wording and authoritative notification/publication evidence",
+              "explanation_md": "Legal commencement depends on the governing instrument, not file metadata alone."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The local download time as the effective date",
+              "explanation_md": "Retrieval records access, not necessarily commencement."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The date the bank first discussed the rule internally",
+              "explanation_md": "Internal discussion does not bring a statutory provision into force."
+            }
+          ],
+          "correct_explanation_md": "Legal commencement depends on the governing instrument, not file metadata alone."
+        },
+        "fact_ids": [
+          "F001",
+          "F002",
+          "F003"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Codex authored these candidates. All source/session, originality and pedagogy reviews remain pending independent review; keep canonical review null and publication state draft.",
+      "Full courseware unit inspected, including end questions (S04 printed pp. 177–186 / PDF pp. 196–205). Statutory provisions cited were read directly from the DFS copy. Comprehensive consolidation and all subordinate directions through 30 June 2026 remain to be verified.",
+      "Learner passages, applied scenarios and all option rationales independently designed from factual briefs. Source questions, distinctive source tables and named cases were not reused; author comparison is not independent originality approval.",
+      "Full current PSS Regulations 2008 amendment history and all sanctions/compounding provisions remain outside this reviewed evidence set. No current fee, penalty or notification-dependent operational requirement is certified."
+    ],
+    "next_batch_hint": "Reconcile BRBL B U04; next is B U05, Law Relating to Securities and Modes of Charge I, printed p. 187 / PDF p. 206."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-B-U04-B007",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 12, Compulsory Paper IV, Module B: Payment & Settlement Systems Act, 2007"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "PSS_ACT_DFS",
+        "authority": "Government of India, Department of Financial Services",
+        "title": "The Payment and Settlement Systems Act, 2007 (Act 51 of 2007), statutory copy",
+        "url": "https://financialservices.gov.in/sites/default/files/Act-Policies/2026-01/Payment-and-Settlement-Systems-Act_2007.pdf",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "RBI_PSS_FAQ_2025",
+        "authority": "Reserve Bank of India",
+        "title": "Payment and Settlement Systems Act, 2007 — Frequently Asked Questions (updated 20 October 2025)",
+        "url": "https://www.rbi.org.in/commonman/Upload/English/FAQs/PDFs/FAQ20102025FUL.pdf",
+        "publication_date": "2025-10-20",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_B::U04",
+        "objective_ids": [
+          "BRBL::MOD_B::U04::LO_07"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_B::U04",
+        "objective_ids": [
+          "BRBL::MOD_B::U04::LO_07"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_B::U04",
+        "objective_ids": [
+          "BRBL::MOD_B::U04::LO_07"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BRBL::MOD_B::U04",
+        "objective_ids": [
+          "BRBL::MOD_B::U04::LO_07"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "unit_id": "BRBL::MOD_B::U04",
+        "objective_ids": [
+          "BRBL::MOD_B::U04::LO_07"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-B-U04-B007",
+      "draft_id": "D001",
+      "item_id": "item_5d761bd96a06e228c4909c5415d865644cf02afe884332bde274b20aefc4f4fb"
+    },
+    {
+      "batch_id": "BRBL-B-U04-B007",
+      "draft_id": "D002",
+      "item_id": "item_f39ab22d1a9db225baa6d7f6e701a0b33a43b8853071d2f4ccfb7e9c0fa530dd"
+    },
+    {
+      "batch_id": "BRBL-B-U04-B007",
+      "draft_id": "D003",
+      "item_id": "item_94e2daa0d5d504071656fcb4c5f707f2e4561b9a1c852d32ba2e8ad44f6a992e"
+    },
+    {
+      "batch_id": "BRBL-B-U04-B007",
+      "draft_id": "D004",
+      "item_id": "item_4070e7b3292e0540c66f09fea8654ac6f525cd307d8ec153988c56fd4a83233a"
+    },
+    {
+      "batch_id": "BRBL-B-U04-B007",
+      "draft_id": "D005",
+      "item_id": "item_ff34e5d6cefd1a6746926e9b77474d0527abeb232e20bf4779a41fc4cc7f285f"
+    }
+  ],
+  "items": [
+    {
+      "title": "The Act, regulations and an operator's permission do different jobs",
+      "core_explanation_md": "**Section 38** authorises RBI to make regulations consistent with the Act. The listed matters include governance procedure, application/authorisation forms, payment-instruction standards and information returns. A regulation develops the statutory framework; it is not the same document as an individual operator's authorisation.\n\nFor a compliance file, retain the relevant Act provision, the regulation version and the operator's actual permission and conditions. Reading only an old summary of an application form cannot establish that a new service is authorised or that all current reporting requirements have been met.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Can a published application-form regulation itself prove that a particular operator has authorisation?",
+        "expected_takeaway": "No. A general regulation and an individual operating authorisation are different instruments."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_5d761bd96a06e228c4909c5415d865644cf02afe884332bde274b20aefc4f4fb",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U04",
+      "objective_ids": [
+        "BRBL::MOD_B::U04::LO_07"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 184–186; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "PSS_ACT_DFS",
+          "authority": "Government of India, Department of Financial Services",
+          "title": "The Payment and Settlement Systems Act, 2007 (Act 51 of 2007), statutory copy",
+          "url": "https://financialservices.gov.in/sites/default/files/Act-Policies/2026-01/Payment-and-Settlement-Systems-Act_2007.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section 38, PDF p. 17; RBI FAQ 2025 Q3–4, PDF p. 1; PRB Regulations 2025 regulations 1–3, PDF p. 5"
+        },
+        {
+          "source_id": "RBI_PSS_FAQ_2025",
+          "authority": "Reserve Bank of India",
+          "title": "Payment and Settlement Systems Act, 2007 — Frequently Asked Questions (updated 20 October 2025)",
+          "url": "https://www.rbi.org.in/commonman/Upload/English/FAQs/PDFs/FAQ20102025FUL.pdf",
+          "publication_date": "2025-10-20",
+          "effective_date": null,
+          "locator": "Q1–4, PDF p. 1; Gazette PRB Regulations 2025 separately retained in registry and review record"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Use the regulation's own version and commencement evidence",
+      "core_explanation_md": "The dated RBI FAQ distinguishes the **Payment and Settlement Systems Regulations, 2008** from the **Payments Regulatory Board Regulations, 2025**. Their subjects differ: system application/authorisation, standards and returns on one side, and Board governance on the other. A courseware note ending at a 2022 amendment does not show that the regulation set stops there.\n\nSection 38 includes effective-date and parliamentary-laying provisions. Use the operative text and notification evidence for the relevant exam cutoff; do not infer commencement from a website folder, a PDF creation timestamp or a document identifier. Sanctions also need their own provisions and review rather than a generic penalty number copied into every situation.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Why is an old courseware amendment date insufficient to identify all applicable regulations?",
+        "expected_takeaway": "It describes the courseware's coverage, not proof that no later instrument or amendment exists."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_f39ab22d1a9db225baa6d7f6e701a0b33a43b8853071d2f4ccfb7e9c0fa530dd",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U04",
+      "objective_ids": [
+        "BRBL::MOD_B::U04::LO_07"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 184–186; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "PSS_ACT_DFS",
+          "authority": "Government of India, Department of Financial Services",
+          "title": "The Payment and Settlement Systems Act, 2007 (Act 51 of 2007), statutory copy",
+          "url": "https://financialservices.gov.in/sites/default/files/Act-Policies/2026-01/Payment-and-Settlement-Systems-Act_2007.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section 38, PDF p. 17; RBI FAQ 2025 Q3–4, PDF p. 1; PRB Regulations 2025 regulations 1–3, PDF p. 5"
+        },
+        {
+          "source_id": "RBI_PSS_FAQ_2025",
+          "authority": "Reserve Bank of India",
+          "title": "Payment and Settlement Systems Act, 2007 — Frequently Asked Questions (updated 20 October 2025)",
+          "url": "https://www.rbi.org.in/commonman/Upload/English/FAQs/PDFs/FAQ20102025FUL.pdf",
+          "publication_date": "2025-10-20",
+          "effective_date": null,
+          "locator": "Q1–4, PDF p. 1; Gazette PRB Regulations 2025 separately retained in registry and review record"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "An operator presents the general regulation containing an application form as proof that its own new service has been authorised. What distinction should the reviewer restore?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "General regulation-making is separate from the operator's individual authorisation and conditions",
+          "explanation_md": "A standard form describes a process; it does not establish that this operator obtained the required grant."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Any publicly available PDF is automatically an operator licence",
+          "explanation_md": "Publication does not convert a general legal instrument into a particular authorisation."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Only the document's file size determines its legal function",
+          "explanation_md": "File size is not evidence of the instrument's statutory role or grant."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Every operator is exempt once it downloads the form",
+          "explanation_md": "Downloading an application form does not establish an exemption."
+        }
+      ],
+      "correct_explanation_md": "A standard form describes a process; it does not establish that this operator obtained the required grant.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_94e2daa0d5d504071656fcb4c5f707f2e4561b9a1c852d32ba2e8ad44f6a992e",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U04",
+      "objective_ids": [
+        "BRBL::MOD_B::U04::LO_07"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 184–186; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "PSS_ACT_DFS",
+          "authority": "Government of India, Department of Financial Services",
+          "title": "The Payment and Settlement Systems Act, 2007 (Act 51 of 2007), statutory copy",
+          "url": "https://financialservices.gov.in/sites/default/files/Act-Policies/2026-01/Payment-and-Settlement-Systems-Act_2007.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section 38, PDF p. 17; RBI FAQ 2025 Q3–4, PDF p. 1; PRB Regulations 2025 regulations 1–3, PDF p. 5"
+        },
+        {
+          "source_id": "RBI_PSS_FAQ_2025",
+          "authority": "Reserve Bank of India",
+          "title": "Payment and Settlement Systems Act, 2007 — Frequently Asked Questions (updated 20 October 2025)",
+          "url": "https://www.rbi.org.in/commonman/Upload/English/FAQs/PDFs/FAQ20102025FUL.pdf",
+          "publication_date": "2025-10-20",
+          "effective_date": null,
+          "locator": "Q1–4, PDF p. 1; Gazette PRB Regulations 2025 separately retained in registry and review record"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A compliance inventory lists only a 2022-amended courseware link and omits the separately identified 2025 PRB regulations. Which approach is appropriate?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Assume the courseware link proves that no later regulations exist",
+          "explanation_md": "A courseware cutoff does not establish the absence of later legal instruments."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Replace all primary texts with the latest search-result snippet",
+          "explanation_md": "A snippet is not a substitute for inspecting the operative instrument and its applicability."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Treat Board governance regulations and every transaction rule as identical",
+          "explanation_md": "Their subjects and functions differ and should be identified separately."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Reconcile the dated primary instruments and their subjects against the exam cutoff",
+          "explanation_md": "The inventory must account for the later instrument while preserving version and scope distinctions."
+        }
+      ],
+      "correct_explanation_md": "The inventory must account for the later instrument while preserving version and scope distinctions.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_4070e7b3292e0540c66f09fea8654ac6f525cd307d8ec153988c56fd4a83233a",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U04",
+      "objective_ids": [
+        "BRBL::MOD_B::U04::LO_07"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 184–186; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "PSS_ACT_DFS",
+          "authority": "Government of India, Department of Financial Services",
+          "title": "The Payment and Settlement Systems Act, 2007 (Act 51 of 2007), statutory copy",
+          "url": "https://financialservices.gov.in/sites/default/files/Act-Policies/2026-01/Payment-and-Settlement-Systems-Act_2007.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section 38, PDF p. 17; RBI FAQ 2025 Q3–4, PDF p. 1; PRB Regulations 2025 regulations 1–3, PDF p. 5"
+        },
+        {
+          "source_id": "RBI_PSS_FAQ_2025",
+          "authority": "Reserve Bank of India",
+          "title": "Payment and Settlement Systems Act, 2007 — Frequently Asked Questions (updated 20 October 2025)",
+          "url": "https://www.rbi.org.in/commonman/Upload/English/FAQs/PDFs/FAQ20102025FUL.pdf",
+          "publication_date": "2025-10-20",
+          "effective_date": null,
+          "locator": "Q1–4, PDF p. 1; Gazette PRB Regulations 2025 separately retained in registry and review record"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Two stored PDFs have different creation timestamps. A reviewer proposes selecting the newer timestamp as the sole test of legal commencement. What should replace that shortcut?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The shorter filename as the only legal test",
+          "explanation_md": "A filename does not establish when a provision became operative."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The instrument's commencement wording and authoritative notification/publication evidence",
+          "explanation_md": "Legal commencement depends on the governing instrument, not file metadata alone."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The local download time as the effective date",
+          "explanation_md": "Retrieval records access, not necessarily commencement."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The date the bank first discussed the rule internally",
+          "explanation_md": "Internal discussion does not bring a statutory provision into force."
+        }
+      ],
+      "correct_explanation_md": "Legal commencement depends on the governing instrument, not file metadata alone.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_ff34e5d6cefd1a6746926e9b77474d0527abeb232e20bf4779a41fc4cc7f285f",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U04",
+      "objective_ids": [
+        "BRBL::MOD_B::U04::LO_07"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "S04 printed pp. 184–186; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "PSS_ACT_DFS",
+          "authority": "Government of India, Department of Financial Services",
+          "title": "The Payment and Settlement Systems Act, 2007 (Act 51 of 2007), statutory copy",
+          "url": "https://financialservices.gov.in/sites/default/files/Act-Policies/2026-01/Payment-and-Settlement-Systems-Act_2007.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section 38, PDF p. 17; RBI FAQ 2025 Q3–4, PDF p. 1; PRB Regulations 2025 regulations 1–3, PDF p. 5"
+        },
+        {
+          "source_id": "RBI_PSS_FAQ_2025",
+          "authority": "Reserve Bank of India",
+          "title": "Payment and Settlement Systems Act, 2007 — Frequently Asked Questions (updated 20 October 2025)",
+          "url": "https://www.rbi.org.in/commonman/Upload/English/FAQs/PDFs/FAQ20102025FUL.pdf",
+          "publication_date": "2025-10-20",
+          "effective_date": null,
+          "locator": "Q1–4, PDF p. 1; Gazette PRB Regulations 2025 separately retained in registry and review record"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

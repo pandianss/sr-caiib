@@ -9,7 +9,7 @@ import { PAPER_NAMES } from '../../core/catalogue.ts';
 import { STAGES, STAGE_LABELS, objectiveStages, summariseOverall, topicGap, topicStages, type LedgerTopic, type PaperSummary, type Stage } from '../../core/coverage.ts';
 import { go, useApp } from '../hooks.ts';
 import { model, PAPER_ORDER } from '../model.ts';
-import { Banner, Button, Chip, Empty, More, Tag } from '../ui.tsx';
+import { Banner, Button, Empty, More, Tag } from '../ui.tsx';
 
 const SHORT: Record<Stage, string> = { source_supported: 'Source', drafted: 'Lesson', assessed: 'Questions', reviewed: 'Reviewed', published: 'Published' };
 
@@ -67,9 +67,6 @@ export function Coverage({ paper: routePaper }: { paper?: PaperId }) {
         {overall.denominator === null ? <Banner kind="warn"><strong>Baseline incomplete: total number of syllabus topics unknown.</strong> No overall completion percentage is shown. {overall.papers_missing_baseline.length > 0 && `Official syllabus not yet obtained for: ${overall.papers_missing_baseline.map(p => PAPER_NAMES[p]).join(', ')}. `}{overall.papers_provisional.length > 0 && `Outline not yet confirmed for the session: ${overall.papers_provisional.map(p => PAPER_NAMES[p]).join(', ')}.`}</Banner>
           : <p><strong>{overall.topic_counts.published} of {overall.denominator}</strong> official topics are reviewed and published.</p>}
         <dl className="kv"><dt>Topics listed so far</dt><dd>{overall.topics_listed}</dd><dt>Published</dt><dd>{overall.topic_counts.published}</dd><dt>Reviewed</dt><dd>{overall.topic_counts.reviewed}</dd><dt>Lesson drafted</dt><dd>{overall.topic_counts.drafted}</dd></dl>
-      </section>
-      <section className="section" aria-labelledby="pp"><h2 id="pp">Paper</h2>
-        <div className="chips" role="group" aria-label="Paper">{PAPER_ORDER.map(p => <Chip key={p} selected={p === paper} onClick={() => { setOpenTopic(null); go(`coverage/${p}`); }}>{p}</Chip>)}</div>
       </section>
       {lp && ps && (
         <section className="section" aria-labelledby="pt">
