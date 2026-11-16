@@ -1,0 +1,143 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-C-U16-B002",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_C::U16: Apply financial-creditor initiation, default evidence and admission under the 2026 amendment",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04",
+    "IBC_AMENDMENT_ACT_2026",
+    "IBC_COMMENCEMENT_SO2625_2026"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.339-341 / PDF pp.358-360",
+      "statement": "Section7 financialcreditor filing and evidence;application admission startsCIRP;class/allotteethresholdlower100or10%.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F002",
+      "source_id": "IBC_AMENDMENT_ACT_2026",
+      "locator": "AmendmentAct2026 section4,PDFpp.2-3",
+      "statement": "Replaces7(5):14dayorder,admitifconditions,norejectionotherground;specifiedIUrecord sufficient;defect7days anddelayreasons.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F003",
+      "source_id": "IBC_COMMENCEMENT_SO2625_2026",
+      "locator": "PDFp2,notification item1",
+      "statement": "Amendmentsections2-6 commence26May2026.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "A default allegation needs the filing record and decision",
+        "core_explanation_md": "For the described financial-creditor route, the application must supply the applicable default evidence and proposed professional information. CIRP begins on admission, not on the bank first sending a demand. The 2026 amendment to section 7(5), read with the retrieved commencement notification, requires the stated order within fourteen days and identifies admission/rejection conditions, defect-cure notice and reasons for delay. It also clarifies the evidential role of the specified information-utility record.\n\nClass-creditor and real-estate-allottee applications have their own joint-filing condition. Do not transfer a numerical threshold from the corporate-default rule into the separate number-of-applicants rule. Each application still needs the correct entity, date and statutory scope.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Is a demand letter itself the CIRP commencement order?",
+          "expected_takeaway": "No. Commencement follows admission under the statutory route."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001",
+        "F002",
+        "F003"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A bank counts the first demand date as CIRP commencement although no admission order exists. What is the proper distinction?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Every demand starts liquidation automatically",
+            "explanation_md": "Demand, admission and liquidation are distinct events."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The claim amount alone establishes the admission date",
+            "explanation_md": "An amount is not an order."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The applicant may select any convenient commencement date",
+            "explanation_md": "Commencement is not privately chosen."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The statutory process commences on admission, supported by the actual order",
+            "explanation_md": "Filing or demand alone does not establish admission."
+          }
+        ],
+        "correct_explanation_md": "Filing or demand alone does not establish admission."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001",
+        "F002",
+        "F003"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A legal note assumes all2026 amendments commenced solely because assent occurred. What evidence corrects that assumption?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only the textbook publication year",
+            "explanation_md": "It does not establish amendment commencement."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The amendment commencement clause and enumerated notification",
+            "explanation_md": "Different provisions can have different commencement dates."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The bank internal update email alone",
+            "explanation_md": "An internal email is not the operative notification."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A later-looking URL filename",
+            "explanation_md": "A filename is not legal commencement evidence."
+          }
+        ],
+        "correct_explanation_md": "Different provisions can have different commencement dates."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001",
+        "F002",
+        "F003"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Independent Antigravity review remains required for later amendments, commencement, applicable regulations and judgments. Draft authoring is not a publication or legal-accuracy approval."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

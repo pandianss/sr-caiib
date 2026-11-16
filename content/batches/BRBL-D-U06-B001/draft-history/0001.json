@@ -1,0 +1,360 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-D-U06-B001",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_D::U06: Distinguish principal capacity,agent responsibility and creation of authority",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.432-433 / PDF pp.451-452",
+        "statement": "182agencythirdpartyrepresentation,183competentprincipal,184anypersonasbetweenthirdpartiesbutagentresponsibilitycapacitydistinction;185noconsideration;express/impliedauthority.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Agency capacity has two different relationships",
+          "core_explanation_md": "The principal appoints the agent to act or represent the principal in dealings with third parties. The principal capacity rule and the agent responsibility to the principal must be separated. Section184 wording permits any person to act as agent as between principal and third persons,while qualifying who is responsible to the principal. The textbook contradictory answer about minors should not override that distinction.\n\nNo consideration is necessary merely to create agency. Authority can be express or inferred from the relevant circumstances,but inference requires evidence. A person calling themselves agent does not establish every power they claim. Identify principal,third party,act and source of authority.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does absence of an agency fee necessarily mean no agency can exist?",
+            "expected_takeaway": "No. Creation of agency does not require consideration."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "An agency is rejected solely because no fee was promised for the appointment. What does the creation rule require?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "No consideration is necessary merely to create agency",
+              "explanation_md": "Remuneration and creation are separate questions."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Every agent must receive a cash advance",
+              "explanation_md": "The source does not impose that universal condition."
+            },
+            {
+              "option_id": "C",
+              "text_md": "All unpaid representatives lack authority",
+              "explanation_md": "Authority can exist without a fee."
+            },
+            {
+              "option_id": "D",
+              "text_md": "A fee alone establishes unlimited authority",
+              "explanation_md": "Payment does not define the whole scope."
+            }
+          ],
+          "correct_explanation_md": "Remuneration and creation are separate questions."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A note treats agent capacity toward the principal as identical to capacity to represent the principal toward third parties. What is needed?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Ignore the statutory distinction",
+              "explanation_md": "The different relationships matter."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Assume every agent is personally liable for every transaction",
+              "explanation_md": "Liability depends on the applicable rules."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Apply the separate section184 relationships and responsibility conditions",
+              "explanation_md": "One blanket statement misstates the source wording."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Use only the agent job title",
+              "explanation_md": "Title is not the whole legal test."
+            }
+          ],
+          "correct_explanation_md": "One blanket statement misstates the source wording."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Drafts for Antigravity review. Consolidated statute,exceptions and later case law require independent reconciliation;no publication approval.",
+      "Book agent-capacity summary conflicts with its quotedsection184;the statutory distinction is retained. Secret-profit section-number attribution requires primary checking."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-D-U06-B001",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_D::U06"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_D::U06",
+        "objective_ids": [
+          "BRBL::MOD_D::U06::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_D::U06",
+        "objective_ids": [
+          "BRBL::MOD_D::U06::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_D::U06",
+        "objective_ids": [
+          "BRBL::MOD_D::U06::LO_01"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-D-U06-B001",
+      "draft_id": "D001",
+      "item_id": "item_ddebfef3b45430122334b4126614e59b7dbb7706d4a45877b66ce2a09d04d40b"
+    },
+    {
+      "batch_id": "BRBL-D-U06-B001",
+      "draft_id": "D002",
+      "item_id": "item_fc4e590f82f131069867fb8b5281fccfd4129f10c7c7f8923d691ab023573063"
+    },
+    {
+      "batch_id": "BRBL-D-U06-B001",
+      "draft_id": "D003",
+      "item_id": "item_f76aafebbbc57dccfb3d5718fffc1b86cae62656ef024fde665db51450b68753"
+    }
+  ],
+  "items": [
+    {
+      "title": "Agency capacity has two different relationships",
+      "core_explanation_md": "The principal appoints the agent to act or represent the principal in dealings with third parties. The principal capacity rule and the agent responsibility to the principal must be separated. Section184 wording permits any person to act as agent as between principal and third persons,while qualifying who is responsible to the principal. The textbook contradictory answer about minors should not override that distinction.\n\nNo consideration is necessary merely to create agency. Authority can be express or inferred from the relevant circumstances,but inference requires evidence. A person calling themselves agent does not establish every power they claim. Identify principal,third party,act and source of authority.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does absence of an agency fee necessarily mean no agency can exist?",
+        "expected_takeaway": "No. Creation of agency does not require consideration."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_ddebfef3b45430122334b4126614e59b7dbb7706d4a45877b66ce2a09d04d40b",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U06",
+      "objective_ids": [
+        "BRBL::MOD_D::U06::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.432-433 / PDF pp.451-452"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "An agency is rejected solely because no fee was promised for the appointment. What does the creation rule require?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "No consideration is necessary merely to create agency",
+          "explanation_md": "Remuneration and creation are separate questions."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Every agent must receive a cash advance",
+          "explanation_md": "The source does not impose that universal condition."
+        },
+        {
+          "option_id": "C",
+          "text_md": "All unpaid representatives lack authority",
+          "explanation_md": "Authority can exist without a fee."
+        },
+        {
+          "option_id": "D",
+          "text_md": "A fee alone establishes unlimited authority",
+          "explanation_md": "Payment does not define the whole scope."
+        }
+      ],
+      "correct_explanation_md": "Remuneration and creation are separate questions.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_fc4e590f82f131069867fb8b5281fccfd4129f10c7c7f8923d691ab023573063",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U06",
+      "objective_ids": [
+        "BRBL::MOD_D::U06::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.432-433 / PDF pp.451-452"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A note treats agent capacity toward the principal as identical to capacity to represent the principal toward third parties. What is needed?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Ignore the statutory distinction",
+          "explanation_md": "The different relationships matter."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Assume every agent is personally liable for every transaction",
+          "explanation_md": "Liability depends on the applicable rules."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Apply the separate section184 relationships and responsibility conditions",
+          "explanation_md": "One blanket statement misstates the source wording."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Use only the agent job title",
+          "explanation_md": "Title is not the whole legal test."
+        }
+      ],
+      "correct_explanation_md": "One blanket statement misstates the source wording.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_f76aafebbbc57dccfb3d5718fffc1b86cae62656ef024fde665db51450b68753",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U06",
+      "objective_ids": [
+        "BRBL::MOD_D::U06::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.432-433 / PDF pp.451-452"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

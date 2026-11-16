@@ -1,0 +1,360 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-D-U22-B003",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_D::U22: Distinguish disqualification,vacation,directorship limits and whole-time roles",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.524-525 / PDF pp.543-544",
+        "statement": "20total10publicqualifiedcount;12monthsallboardabsence;164167different;WTDemployment5yeartermreappointmentwindow.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Eligibility,continuing office and employment are separate",
+          "core_explanation_md": "A director must meet the relevant eligibility rules and avoid statutory disqualification. Vacation of office has specified triggers,such as the described absence from all board meetings over twelve months; a leave request does not automatically remove that trigger. Judicial orders,conviction and appeal qualifications require the exact current text rather than the textbook blanket immediate-vacation statement.\n\nThe described directorship limits are twenty overall and ten public-company positions,subject to statutory counting rules and any lower member-imposed limit. Count alternate positions and the relevant private-company group relationships correctly. A whole-time director is in whole-time employment; managerial appointment terms and reappointment timing are distinct from mere share ownership. Do not treat qualification-share wording as a universal current statutory requirement.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does leave automatically erase the twelve-month all-meetings absence trigger?",
+            "expected_takeaway": "No. The described rule includes absence with or without leave."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A director misses every board meeting for the stated twelve-month period and relies solely on leave approvals. Which issue remains?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Leave necessarily preserves office in every case",
+              "explanation_md": "That ignores the stated trigger."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Only the number of emails sent",
+              "explanation_md": "Emails do not replace the statutory test."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The applicable vacation-of-office rule",
+              "explanation_md": "The source includes absence with or without leave."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Automatic conversion into a shareholder",
+              "explanation_md": "Directorship and membership differ."
+            }
+          ],
+          "correct_explanation_md": "The source includes absence with or without leave."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A director counts only ordinary appointments and ignores alternate directorships when testing the overall limit. What must be reconciled?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The statutory counting rules,including the relevant alternate positions",
+              "explanation_md": "A label does not remove a counted position."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Only the travel calendar",
+              "explanation_md": "Travel does not count offices."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The total number of shares",
+              "explanation_md": "Share count is not directorship count."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Every company customer account",
+              "explanation_md": "Accounts are not directorships."
+            }
+          ],
+          "correct_explanation_md": "A label does not remove a counted position."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Antigravity must independently review law,exceptions,originality and exam cutoff before publication.",
+      "POST-CUTOFF primary consolidation: cited amendments/footnotes require cutoff reconciliation; class exemptions,current forms,qualification shares,section167 appeal and section188 exceptions remain reviewer checks."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-D-U22-B003",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_D::U22"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_D::U22",
+        "objective_ids": [
+          "BRBL::MOD_D::U22::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_D::U22",
+        "objective_ids": [
+          "BRBL::MOD_D::U22::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_D::U22",
+        "objective_ids": [
+          "BRBL::MOD_D::U22::LO_03"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-D-U22-B003",
+      "draft_id": "D001",
+      "item_id": "item_898655d74a5e1b5075e1e22a5e1fe7bf1eb832a8412c5a89837e76a48a1e037a"
+    },
+    {
+      "batch_id": "BRBL-D-U22-B003",
+      "draft_id": "D002",
+      "item_id": "item_d8a94d0a4a1f50f6c365f255357d29be260ab88e1c605a14fa44b8c93d19038b"
+    },
+    {
+      "batch_id": "BRBL-D-U22-B003",
+      "draft_id": "D003",
+      "item_id": "item_ead4d93623589d399d8444821884c8b831799bcc9cb80c20855fe60aab36010b"
+    }
+  ],
+  "items": [
+    {
+      "title": "Eligibility,continuing office and employment are separate",
+      "core_explanation_md": "A director must meet the relevant eligibility rules and avoid statutory disqualification. Vacation of office has specified triggers,such as the described absence from all board meetings over twelve months; a leave request does not automatically remove that trigger. Judicial orders,conviction and appeal qualifications require the exact current text rather than the textbook blanket immediate-vacation statement.\n\nThe described directorship limits are twenty overall and ten public-company positions,subject to statutory counting rules and any lower member-imposed limit. Count alternate positions and the relevant private-company group relationships correctly. A whole-time director is in whole-time employment; managerial appointment terms and reappointment timing are distinct from mere share ownership. Do not treat qualification-share wording as a universal current statutory requirement.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does leave automatically erase the twelve-month all-meetings absence trigger?",
+        "expected_takeaway": "No. The described rule includes absence with or without leave."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_898655d74a5e1b5075e1e22a5e1fe7bf1eb832a8412c5a89837e76a48a1e037a",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U22",
+      "objective_ids": [
+        "BRBL::MOD_D::U22::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.524-525 / PDF pp.543-544"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A director misses every board meeting for the stated twelve-month period and relies solely on leave approvals. Which issue remains?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Leave necessarily preserves office in every case",
+          "explanation_md": "That ignores the stated trigger."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Only the number of emails sent",
+          "explanation_md": "Emails do not replace the statutory test."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The applicable vacation-of-office rule",
+          "explanation_md": "The source includes absence with or without leave."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Automatic conversion into a shareholder",
+          "explanation_md": "Directorship and membership differ."
+        }
+      ],
+      "correct_explanation_md": "The source includes absence with or without leave.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_d8a94d0a4a1f50f6c365f255357d29be260ab88e1c605a14fa44b8c93d19038b",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U22",
+      "objective_ids": [
+        "BRBL::MOD_D::U22::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.524-525 / PDF pp.543-544"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A director counts only ordinary appointments and ignores alternate directorships when testing the overall limit. What must be reconciled?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The statutory counting rules,including the relevant alternate positions",
+          "explanation_md": "A label does not remove a counted position."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Only the travel calendar",
+          "explanation_md": "Travel does not count offices."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The total number of shares",
+          "explanation_md": "Share count is not directorship count."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Every company customer account",
+          "explanation_md": "Accounts are not directorships."
+        }
+      ],
+      "correct_explanation_md": "A label does not remove a counted position.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_ead4d93623589d399d8444821884c8b831799bcc9cb80c20855fe60aab36010b",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U22",
+      "objective_ids": [
+        "BRBL::MOD_D::U22::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.524-525 / PDF pp.543-544"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

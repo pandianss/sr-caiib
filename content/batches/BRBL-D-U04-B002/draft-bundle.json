@@ -1,0 +1,360 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-D-U04-B002",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_D::U04: Apply disclosure,prudent care,authorised use and mixing consequences",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.423-424 / PDF pp.442-443",
+        "statement": "150faultdisclosure/hirestricter;151ordinaryprudentcarecomparablegoods;152qualifieddefence;unauthoriseduse/conduct;consentedmixturesproportion,unconsentedseparablecosts/damage,inseparablecompensation.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "The care standard does not depend on a careless custodian habits",
+          "core_explanation_md": "A bailee must apply the statutory prudent-person care standard for comparable goods; the phrase own goods should not be used to excuse a person who routinely neglects their own property. The source also separates fault disclosure by the bailor, including the stated hired-goods rule, from the bailee care and authorised-use duties.\n\nMixing goods has different consequences depending on consent and separability. Consented mixing preserves the stated proportional interests; unconsented separable mixing brings separation-cost and damage consequences; inseparable mixing raises compensation. Do not infer that all mixtures transfer ownership to the person who did the mixing.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Can a bailee lower the legal standard by proving personal carelessness with their own goods?",
+            "expected_takeaway": "No. Apply the statutory prudent-care standard."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A custodian defends neglect by saying its own goods are equally neglected. Which standard matters?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Its usual poor habits alone",
+              "explanation_md": "Personal neglect cannot define the statutory standard."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Only the owner wealth",
+              "explanation_md": "Wealth does not establish care."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Whether a loss happened determines fault automatically",
+              "explanation_md": "The circumstances and care need examination."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Prudent care for comparable goods under the applicable rule",
+              "explanation_md": "The standard is not whatever this custodian happens to do."
+            }
+          ],
+          "correct_explanation_md": "The standard is not whatever this custodian happens to do."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Without consent, a bailee mixes identifiable goods that remain separable. What should the file distinguish?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "All property automatically becomes the bailee own",
+              "explanation_md": "Mixing does not give that result."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Continuing ownership and the separation-cost/damage consequences",
+              "explanation_md": "The source distinguishes separable from inseparable mixtures."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The bailor must waive every claim",
+              "explanation_md": "No waiver follows merely from mixing."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The goods are legally destroyed even though identifiable",
+              "explanation_md": "That ignores the stipulated separability."
+            }
+          ],
+          "correct_explanation_md": "The source distinguishes separable from inseparable mixtures."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Drafts for Antigravity review. Consolidated statute,exceptions and later case law require independent reconciliation;no publication approval.",
+      "Locker-liability and finder/court-custody situations require current-law analysis;old true/false shorthand is not reused."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-D-U04-B002",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_D::U04"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_D::U04",
+        "objective_ids": [
+          "BRBL::MOD_D::U04::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_D::U04",
+        "objective_ids": [
+          "BRBL::MOD_D::U04::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_D::U04",
+        "objective_ids": [
+          "BRBL::MOD_D::U04::LO_02"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-D-U04-B002",
+      "draft_id": "D001",
+      "item_id": "item_23d00931bc257c2cc5aa4390f9170b54d67f54c05e714485fef3efc138ffe671"
+    },
+    {
+      "batch_id": "BRBL-D-U04-B002",
+      "draft_id": "D002",
+      "item_id": "item_e3880d8b55a37b2f3536756c83c2e220241dabb6a569eed920c04ea963a62f23"
+    },
+    {
+      "batch_id": "BRBL-D-U04-B002",
+      "draft_id": "D003",
+      "item_id": "item_7ddef8f0d1c28744e6c349e2315eddda50d5ade4fcda18da09d424577c4de099"
+    }
+  ],
+  "items": [
+    {
+      "title": "The care standard does not depend on a careless custodian habits",
+      "core_explanation_md": "A bailee must apply the statutory prudent-person care standard for comparable goods; the phrase own goods should not be used to excuse a person who routinely neglects their own property. The source also separates fault disclosure by the bailor, including the stated hired-goods rule, from the bailee care and authorised-use duties.\n\nMixing goods has different consequences depending on consent and separability. Consented mixing preserves the stated proportional interests; unconsented separable mixing brings separation-cost and damage consequences; inseparable mixing raises compensation. Do not infer that all mixtures transfer ownership to the person who did the mixing.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Can a bailee lower the legal standard by proving personal carelessness with their own goods?",
+        "expected_takeaway": "No. Apply the statutory prudent-care standard."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_23d00931bc257c2cc5aa4390f9170b54d67f54c05e714485fef3efc138ffe671",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U04",
+      "objective_ids": [
+        "BRBL::MOD_D::U04::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.423-424 / PDF pp.442-443"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A custodian defends neglect by saying its own goods are equally neglected. Which standard matters?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Its usual poor habits alone",
+          "explanation_md": "Personal neglect cannot define the statutory standard."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Only the owner wealth",
+          "explanation_md": "Wealth does not establish care."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Whether a loss happened determines fault automatically",
+          "explanation_md": "The circumstances and care need examination."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Prudent care for comparable goods under the applicable rule",
+          "explanation_md": "The standard is not whatever this custodian happens to do."
+        }
+      ],
+      "correct_explanation_md": "The standard is not whatever this custodian happens to do.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_e3880d8b55a37b2f3536756c83c2e220241dabb6a569eed920c04ea963a62f23",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U04",
+      "objective_ids": [
+        "BRBL::MOD_D::U04::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.423-424 / PDF pp.442-443"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Without consent, a bailee mixes identifiable goods that remain separable. What should the file distinguish?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "All property automatically becomes the bailee own",
+          "explanation_md": "Mixing does not give that result."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Continuing ownership and the separation-cost/damage consequences",
+          "explanation_md": "The source distinguishes separable from inseparable mixtures."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The bailor must waive every claim",
+          "explanation_md": "No waiver follows merely from mixing."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The goods are legally destroyed even though identifiable",
+          "explanation_md": "That ignores the stipulated separability."
+        }
+      ],
+      "correct_explanation_md": "The source distinguishes separable from inseparable mixtures.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_7ddef8f0d1c28744e6c349e2315eddda50d5ade4fcda18da09d424577c4de099",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U04",
+      "objective_ids": [
+        "BRBL::MOD_D::U04::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.423-424 / PDF pp.442-443"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

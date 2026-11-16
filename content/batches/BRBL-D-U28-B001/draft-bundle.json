@@ -1,0 +1,360 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-D-U28-B001",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_D::U28: Identify public duty,public servant and non-cash undue advantage",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.576-577 / PDF pp.595-596",
+        "statement": "2publicdutypublicinterestpublicservantbroadcategoriesappointmentnotsole;undueadvantagegratificationnotlimitedmoneyexceptlegalremuneration.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "An improper benefit need not be cash",
+          "core_explanation_md": "The Prevention of Corruption Act uses defined public-duty and public-servant categories extending beyond a simple payroll label. The described categories include qualifying public bodies and persons performing the specified public functions. Government appointment is not the sole test. Establish the actual role and statutory category before concluding coverage.\n\nUndue advantage concerns gratification other than legal remuneration and is not confined to money or a benefit that can readily be priced. A favour, service or other non-cash benefit cannot be dismissed solely because no cash changed hands. Equally, an authorised remuneration payment must be distinguished from an improper benefit. Analyse the benefit, purpose, recipient and duty rather than relying on a gift label.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Can a non-cash benefit fall within undue advantage?",
+            "expected_takeaway": "Yes. The definition is not restricted to monetary gratification."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "An official accepts a valuable service connected to an improper official favour and argues no undue advantage can exist because no money was paid. Which point matters?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only banknotes can be gratification",
+              "explanation_md": "The definition is broader."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The benefit need not be monetary",
+              "explanation_md": "The act, purpose and statutory elements still need proof."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Every authorised salary payment is corruption",
+              "explanation_md": "Legal remuneration is distinguished."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The service cannot be examined because it has no invoice",
+              "explanation_md": "Invoice absence does not exclude the benefit."
+            }
+          ],
+          "correct_explanation_md": "The act, purpose and statutory elements still need proof."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A person performs a function within a specified public-servant category but was not appointed through a government recruitment process. What should be assessed?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only the recruitment portal used",
+              "explanation_md": "Appointment mode is not the sole test."
+            },
+            {
+              "option_id": "B",
+              "text_md": "A universal exclusion for anyone not government-appointed",
+              "explanation_md": "That ignores the definition."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Only the person private bank account",
+              "explanation_md": "It does not settle the role."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The statutory public-servant category and actual function",
+              "explanation_md": "Coverage depends on the legal definition and facts."
+            }
+          ],
+          "correct_explanation_md": "Coverage depends on the legal definition and facts."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Antigravity independent review pending for source accuracy,originality,question quality and session applicability. No publication approval.",
+      "Primary PC Act/SOP and post2024 procedural-code transition require review; source trial answer is overabsolute and was not reproduced."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-D-U28-B001",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_D::U28"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_D::U28",
+        "objective_ids": [
+          "BRBL::MOD_D::U28::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_D::U28",
+        "objective_ids": [
+          "BRBL::MOD_D::U28::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_D::U28",
+        "objective_ids": [
+          "BRBL::MOD_D::U28::LO_01"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-D-U28-B001",
+      "draft_id": "D001",
+      "item_id": "item_44856dd543b026a88a52d6f77f2930c8e117f3f83c300f51a0401bbe91ddf434"
+    },
+    {
+      "batch_id": "BRBL-D-U28-B001",
+      "draft_id": "D002",
+      "item_id": "item_bb7f5fefa627efb3fe067f8aaa19be862cb17ec6143c8fa3406b024a47b8c49c"
+    },
+    {
+      "batch_id": "BRBL-D-U28-B001",
+      "draft_id": "D003",
+      "item_id": "item_45f7bb04e84f22e3dbca9e5c14f0c6ef719d4f53ba87dc0b2de4b9489853a0e4"
+    }
+  ],
+  "items": [
+    {
+      "title": "An improper benefit need not be cash",
+      "core_explanation_md": "The Prevention of Corruption Act uses defined public-duty and public-servant categories extending beyond a simple payroll label. The described categories include qualifying public bodies and persons performing the specified public functions. Government appointment is not the sole test. Establish the actual role and statutory category before concluding coverage.\n\nUndue advantage concerns gratification other than legal remuneration and is not confined to money or a benefit that can readily be priced. A favour, service or other non-cash benefit cannot be dismissed solely because no cash changed hands. Equally, an authorised remuneration payment must be distinguished from an improper benefit. Analyse the benefit, purpose, recipient and duty rather than relying on a gift label.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Can a non-cash benefit fall within undue advantage?",
+        "expected_takeaway": "Yes. The definition is not restricted to monetary gratification."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_44856dd543b026a88a52d6f77f2930c8e117f3f83c300f51a0401bbe91ddf434",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U28",
+      "objective_ids": [
+        "BRBL::MOD_D::U28::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.576-577 / PDF pp.595-596"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "An official accepts a valuable service connected to an improper official favour and argues no undue advantage can exist because no money was paid. Which point matters?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only banknotes can be gratification",
+          "explanation_md": "The definition is broader."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The benefit need not be monetary",
+          "explanation_md": "The act, purpose and statutory elements still need proof."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Every authorised salary payment is corruption",
+          "explanation_md": "Legal remuneration is distinguished."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The service cannot be examined because it has no invoice",
+          "explanation_md": "Invoice absence does not exclude the benefit."
+        }
+      ],
+      "correct_explanation_md": "The act, purpose and statutory elements still need proof.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_bb7f5fefa627efb3fe067f8aaa19be862cb17ec6143c8fa3406b024a47b8c49c",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U28",
+      "objective_ids": [
+        "BRBL::MOD_D::U28::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.576-577 / PDF pp.595-596"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A person performs a function within a specified public-servant category but was not appointed through a government recruitment process. What should be assessed?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only the recruitment portal used",
+          "explanation_md": "Appointment mode is not the sole test."
+        },
+        {
+          "option_id": "B",
+          "text_md": "A universal exclusion for anyone not government-appointed",
+          "explanation_md": "That ignores the definition."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Only the person private bank account",
+          "explanation_md": "It does not settle the role."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The statutory public-servant category and actual function",
+          "explanation_md": "Coverage depends on the legal definition and facts."
+        }
+      ],
+      "correct_explanation_md": "Coverage depends on the legal definition and facts.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_45f7bb04e84f22e3dbca9e5c14f0c6ef719d4f53ba87dc0b2de4b9489853a0e4",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U28",
+      "objective_ids": [
+        "BRBL::MOD_D::U28::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.576-577 / PDF pp.595-596"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

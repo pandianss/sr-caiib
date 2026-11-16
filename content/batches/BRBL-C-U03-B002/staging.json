@@ -1,0 +1,132 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-C-U03-B002",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL C U03: Explain the historical Mardia pre-deposit ruling without transferring it to other proceedings",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04",
+    "SC_HINDON_FORGE_2018"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed p.245 / PDF p.264",
+      "statement": "Courseware describes Mardia Chemicals upholding the Act apart from the former section17(2) 75% deposit condition. Hindon Forge paragraph8 reproduces this history and paragraph17 discusses the struck-down deposit; its conclusion permits section17 approach at the specified possession-notice stage.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F002",
+      "source_id": "SC_HINDON_FORGE_2018",
+      "locator": "paragraph8, PDF pp.36-43; paragraphs9-11 pp.43-45; paragraph17 pp.51-52; deciding conclusion PDF p.69",
+      "statement": "The Supreme Court distinguishes the earlier deposit ruling and demand stage; concluding decision recognises section17 remedy at rule8(1)/(2) possession-notice stage. Quoted contrary High Court position is rejected, not adopted.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Attach a judgment to the provision and stage it decided",
+        "core_explanation_md": "The historical Mardia Chemicals ruling did not strike down the whole SARFAESI framework. The courseware identifies the invalidated former section 17(2) condition requiring a seventy-five per cent deposit. The Supreme Court later recounts this distinction in Hindon Forge. Keep the provision and procedural stage attached to the holding.\n\nThis is not authority for saying that every deposit requirement in every banking statute disappeared. A first challenge to security-enforcement measures, an appeal from a Tribunal order, and a challenge to an MSMED award are different proceedings. Check each applicable statute and version. Historical section numbers must not be read as if their former text remained the current text.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does the historical ruling automatically invalidate the MSMED section 19 deposit?",
+          "expected_takeaway": "No. It addressed a specified SARFAESI provision, not every deposit in other legislation."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A learner uses the historical Mardia ruling to claim that all banking-law deposit requirements are void. Which revision is accurate?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Retain the claim because every statutory deposit is the same provision",
+            "explanation_md": "Different statutes and procedural stages require separate analysis."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Say the entire SARFAESI Act was struck down",
+            "explanation_md": "The described holding upheld the framework apart from the identified condition."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Apply the former section number without examining its later text",
+            "explanation_md": "An amended provision must be read in its applicable version."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Identify the former section 17(2) condition and distinguish other statutes and appeal stages",
+            "explanation_md": "The scope of the holding cannot be enlarged by dropping its statutory context."
+          }
+        ],
+        "correct_explanation_md": "The scope of the holding cannot be enlarged by dropping its statutory context."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A case summary reproduces a High Court view inside a Supreme Court judgment and treats the quoted view as the final holding. What review step is essential?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Count the quotation pages and accept the longer passage",
+            "explanation_md": "Passage length does not identify the deciding court conclusion."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Read the deciding analysis and conclusion to establish whether that view was accepted or rejected",
+            "explanation_md": "Hindon Forge sets out the lower-court view before rejecting the relevant restriction."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Ignore all judgments because only textbooks contain holdings",
+            "explanation_md": "The primary judgment is the source needed to identify its own holding."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Treat every argument of counsel as a binding order",
+            "explanation_md": "Counsel submissions are not automatically the court decision."
+          }
+        ],
+        "correct_explanation_md": "Hindon Forge sets out the lower-court view before rejecting the relevant restriction."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Codex original draft, 16 November 2026. Independent source/session applicability, originality and pedagogy review pending. No publication approval.",
+    "Courseware units 17A and 17B read in full including end questions (printed pp.243-256 / PDF pp.262-275). End questions and distinctive source expression were not reused.",
+    "Historical Bombay High Court compilation omits later amendments; retained as comparison only, not evidence of June2026 consolidation. Current capital floors, later definition additions, registry rules, eligibility notifications and remedy conditions require independent primary verification.",
+    "Judgment review is limited to identified holdings; later authorities and live proceedings are not certified."
+  ],
+  "next_batch_hint": "Continue BRBL C U05, S04 printed p.257 / PDF p.276"
+}

@@ -1,0 +1,120 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U17-B002",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U17: Distinguish private,public and one-person companies",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.491-493 / PDF pp.510-512",
+      "statement": "Privatearticlestransferrestriction200membersqualifications,nopublicinvitation;public7formationprivate2OPC1;oldOPCthresholdsandcommencementclaimsoutdated.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Private does not mean unincorporated",
+        "core_explanation_md": "Private-company articles restrict share transfer, limit membership under the stated two-hundred-member rule with its statutory counting qualifications, and prohibit public invitations for securities. The ordinary formation minimum is two members; the one-person company is the recognised single-member form. A public company has the stated seven-person formation minimum. A public company is not necessarily listed on an exchange.\n\nAn OPC includes the prescribed nominee arrangement for death or incapacity of its member. Do not reuse the textbook compulsory-conversion capital/turnover figures or its obsolete private/public commencement comparison as current law. Verify current rules for eligibility, conversion and commencement separately. The legal form, listing status and particular compliance obligation are distinct questions.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Is every public company necessarily exchange-listed?",
+          "expected_takeaway": "No. Public-company status and listing differ."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A company is public but its securities are not exchange-listed. Is that classification inherently inconsistent?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Yes, every public company must already be listed",
+            "explanation_md": "The categories are distinct."
+          },
+          {
+            "option_id": "B",
+            "text_md": "No, public status alone does not establish listing",
+            "explanation_md": "Check the separate listing position."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Yes, it must be an ordinary partnership",
+            "explanation_md": "No such inference follows."
+          },
+          {
+            "option_id": "D",
+            "text_md": "No, because every private company may invite public subscriptions",
+            "explanation_md": "Private-company restrictions remain relevant."
+          }
+        ],
+        "correct_explanation_md": "Check the separate listing position."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A single-member incorporated company has the prescribed nominee arrangement. Which form is being described?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "An unregistered ordinary firm",
+            "explanation_md": "That is a different form."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A public company formed by seven members",
+            "explanation_md": "The facts describe one member."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A statutory corporation created only by special legislation",
+            "explanation_md": "That route is not stated."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A one-person company",
+            "explanation_md": "The single-member form and nominee arrangement fit the described framework."
+          }
+        ],
+        "correct_explanation_md": "The single-member form and nominee arrangement fit the described framework."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Antigravity must independently review law,exceptions,originality and exam cutoff before publication.",
+    "Primary 2025 small-company amendment retrieval pending; no stale numerical limit taught. Old statutory-meeting,deposit,OPC conversion and commencement claims excluded pending reconciliation."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

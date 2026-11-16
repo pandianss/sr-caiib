@@ -1,0 +1,120 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-C-U15-B004",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_C::U15: Distinguish transferred proceedings, existing decrees and institutional protections",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.331-334 / PDF pp.350-353",
+      "statement": "Sections31/31A transferqualifyingpendingsuits/proceedingswithappeal/otherexceptions,records/stage;existingdecree certificate route.32publicservants;33goodfaith;34override/addition;36rulemaking. Bookcourt-overrulingsummaryunreconciled.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Transfer the legal record, not just the case label",
+        "core_explanation_md": "The statutory transfer provision concerns proceedings that satisfy its conditions at Tribunal establishment, with the stated exceptions; it is not a command to move every pending appeal. The records and stage already reached remain important. The separate route for an existing unexecuted decree seeks a recovery certificate on that decree rather than assuming that all original liability questions must be retried.\n\nThe framework also identifies the protected institutional officers, their public-function status, good-faith protection and rulemaking powers. Overriding and additional-remedy clauses need to be read together with applicable insolvency law. The source contradictory case-overruling summary is preserved for review rather than taught as a settled current priority rule.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does every pending appeal automatically transfer under the general suit-transfer rule?",
+          "expected_takeaway": "No. The stated exceptions and actual proceeding must be checked."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A migration list includes all pending appeals without checking the statutory exception. Which correction is required?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Transfer every item solely because the claimant is a bank",
+            "explanation_md": "The proceeding type and conditions still matter."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Classify each proceeding and apply the stated transfer conditions and exceptions",
+            "explanation_md": "The general rule does not eliminate its exceptions."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Discard the original records after transfer",
+            "explanation_md": "The record and stage are needed for lawful continuation."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Treat transfer as satisfaction of every decree",
+            "explanation_md": "Transfer and payment are different events."
+          }
+        ],
+        "correct_explanation_md": "The general rule does not eliminate its exceptions."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An unexecuted qualifying civil decree is taken to the Tribunal under the described certificate route. What is the central distinction?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The old decree necessarily becomes void merely from the application",
+            "explanation_md": "The certificate route recognises the decree rather than proving it void."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A new applicant can privately choose a different decretal amount",
+            "explanation_md": "Amount changes need lawful authority."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Every fact must automatically be tried again as a fresh loan suit",
+            "explanation_md": "The source describes a certificate based on the existing decree."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Execution through the statutory certificate route differs from a fresh merits trial",
+            "explanation_md": "Identify the existing decree and applicable recovery mechanism."
+          }
+        ],
+        "correct_explanation_md": "Identify the existing decree and applicable recovery mechanism."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "RDB courseware snapshot only. Current consolidated statute, notifications, Tribunal Reforms law, procedural rules and later judgments require Antigravity verification. Historical institutional names and court summaries are not current operational instructions.",
+    "Contradictory textbook appellate/priority summaries and obsolete SICA references require primary reconciliation; they are not used as correct-answer propositions."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

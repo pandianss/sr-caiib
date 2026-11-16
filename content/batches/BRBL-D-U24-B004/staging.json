@@ -1,0 +1,120 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U24-B004",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U24: Assess leases,notice defaults and leasehold collateral",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.545-547 / PDF pp.564-566",
+      "statement": "105rightenjoymentpremiumrent;106defaultyearagri/manufacturing6monthsothersmonth15dayssubjectcontractlawusage;107registeredyearlyover1yearannualrentprimarycheck;leaseholdtermpermissions.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Read the lease before applying a notice default",
+        "core_explanation_md": "A lease gives the right to enjoy property for the stated duration and consideration, while ownership and possession remain distinct. The source section 106 defaults apply in the absence of a contrary contract, local law or usage: agricultural/manufacturing leases are year-to-year with six-month notice, and the other described category is month-to-month with fifteen-day notice. Notice receipt, form and statutory qualifications matter. These are not universal periods overriding every lease.\n\nRegistration requirements and State law need checking. For leasehold security, examine remaining term, mortgage permission, lessor consent, forfeiture risk and any appropriate tripartite arrangement. A long-lived structure or an heirs clause alone does not settle permanent-tenure status; interpret the complete lease.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Can a lender ignore a shorter unexpired lease because the asset valuation is high?",
+          "expected_takeaway": "No. Duration and enforceability affect the collateral interest."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A lease contains express termination provisions, but the reviewer automatically substitutes the section 106 default without reading them. What is wrong?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The default is subject to the relevant contract, local law or usage",
+            "explanation_md": "Its conditions must be established."
+          },
+          {
+            "option_id": "B",
+            "text_md": "No lease can contain termination terms",
+            "explanation_md": "A lease can contain relevant termination terms; the section 106 default expressly requires checking for a contrary contract."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Every lease is permanent",
+            "explanation_md": "That is unsupported."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Only the rent payment method matters",
+            "explanation_md": "It does not settle duration."
+          }
+        ],
+        "correct_explanation_md": "Its conditions must be established."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A proposed secured loan runs beyond the borrower remaining lease term. Which issue requires attention?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only whether the borrower has a current account",
+            "explanation_md": "That does not solve tenure risk."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The building paint condition alone",
+            "explanation_md": "Physical condition is not the only risk."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The duration, transfer permission and enforcement value of the leasehold interest",
+            "explanation_md": "The bank must assess the interest that can actually secure repayment."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A presumption that every lease automatically renews forever",
+            "explanation_md": "No such presumption is established."
+          }
+        ],
+        "correct_explanation_md": "The bank must assess the interest that can actually secure repayment."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Antigravity independent legal,originality and session review pending; no publication approval.",
+    "Current primary TPA and State rules must reconcile registration,section69 and actionable-claim exceptions; source case facts/table expression not reused."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

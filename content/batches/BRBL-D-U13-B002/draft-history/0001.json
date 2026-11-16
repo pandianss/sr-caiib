@@ -1,0 +1,359 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-D-U13-B002",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_D::U13: Distinguish retirement,expulsion and insolvency effects",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.473-474 / PDF pp.492-493",
+        "statement": "32retirementagreementconsentatwillnotice;publicnoticeprospectiveliabilityqualified;pastreleasecreditoragreement;33expulsioncontractgoodfaith;34insolvencyorder.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Record both internal exit and external liability",
+          "core_explanation_md": "Retirement may follow consent,an express agreement or the described at-will written-notice route. An internal exit date does not alone settle a third party claim. Public notice and the specified exceptions matter for later acts; release from existing obligations needs the applicable creditor agreement rather than a private promise between partners.\n\nExpulsion requires a contractual power exercised in good faith; a bare majority is not a universal expulsion power. Insolvency has its own statutory cessation point at the adjudication order and rules for subsequent firm/estate liability. Keep retirement,expulsion,death and insolvency as distinct events rather than recording all of them simply as account-signatory changes.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does removing a bank signatory automatically release earlier firm debt?",
+            "expected_takeaway": "No. Existing liability and creditor discharge require separate analysis."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Partners privately promise a retiree that the bank will no longer claim an existing loan,but no creditor release is established. What remains?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The private promise necessarily binds the bank",
+              "explanation_md": "An internal allocation does not itself prove creditor discharge."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The existing-debt liability and any creditor release must be examined separately",
+              "explanation_md": "Internal retirement does not automatically erase earlier obligations."
+            },
+            {
+              "option_id": "C",
+              "text_md": "All firm debts become void on retirement",
+              "explanation_md": "The source does not support that result."
+            },
+            {
+              "option_id": "D",
+              "text_md": "A change in signature alone replaces the borrower",
+              "explanation_md": "Mandate and liability differ."
+            }
+          ],
+          "correct_explanation_md": "Internal retirement does not automatically erase earlier obligations."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A majority expels a partner without checking the agreement or good faith. Which requirement was missed?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only the current account balance",
+              "explanation_md": "Balance does not create expulsion power."
+            },
+            {
+              "option_id": "B",
+              "text_md": "A universal right of any majority to expel",
+              "explanation_md": "The provision is qualified."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The expelled person consent to every ordinary purchase",
+              "explanation_md": "That is unrelated."
+            },
+            {
+              "option_id": "D",
+              "text_md": "A contractual expulsion power exercised in good faith",
+              "explanation_md": "Both elements matter in the described framework."
+            }
+          ],
+          "correct_explanation_md": "Both elements matter in the described framework."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Primary law, State amendments, session applicability and independent editorial review remain with Antigravity. No publication approval."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-D-U13-B002",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_D::U13"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_D::U13",
+        "objective_ids": [
+          "BRBL::MOD_D::U13::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_D::U13",
+        "objective_ids": [
+          "BRBL::MOD_D::U13::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_D::U13",
+        "objective_ids": [
+          "BRBL::MOD_D::U13::LO_02"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-D-U13-B002",
+      "draft_id": "D001",
+      "item_id": "item_facf2d771aa2f6b748dcf29343ac38eb9024462fd683474f6fd8b01d119c1bd2"
+    },
+    {
+      "batch_id": "BRBL-D-U13-B002",
+      "draft_id": "D002",
+      "item_id": "item_712989aed723dd07ca0a4c3f5b3215c539e5276522e607df10705757ec34fe5d"
+    },
+    {
+      "batch_id": "BRBL-D-U13-B002",
+      "draft_id": "D003",
+      "item_id": "item_3fc3bda21384a3fcd474b947088b902194632a73801b7f0ee2e5a69fc0bd81c6"
+    }
+  ],
+  "items": [
+    {
+      "title": "Record both internal exit and external liability",
+      "core_explanation_md": "Retirement may follow consent,an express agreement or the described at-will written-notice route. An internal exit date does not alone settle a third party claim. Public notice and the specified exceptions matter for later acts; release from existing obligations needs the applicable creditor agreement rather than a private promise between partners.\n\nExpulsion requires a contractual power exercised in good faith; a bare majority is not a universal expulsion power. Insolvency has its own statutory cessation point at the adjudication order and rules for subsequent firm/estate liability. Keep retirement,expulsion,death and insolvency as distinct events rather than recording all of them simply as account-signatory changes.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does removing a bank signatory automatically release earlier firm debt?",
+        "expected_takeaway": "No. Existing liability and creditor discharge require separate analysis."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_facf2d771aa2f6b748dcf29343ac38eb9024462fd683474f6fd8b01d119c1bd2",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U13",
+      "objective_ids": [
+        "BRBL::MOD_D::U13::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.473-474 / PDF pp.492-493"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Partners privately promise a retiree that the bank will no longer claim an existing loan,but no creditor release is established. What remains?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The private promise necessarily binds the bank",
+          "explanation_md": "An internal allocation does not itself prove creditor discharge."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The existing-debt liability and any creditor release must be examined separately",
+          "explanation_md": "Internal retirement does not automatically erase earlier obligations."
+        },
+        {
+          "option_id": "C",
+          "text_md": "All firm debts become void on retirement",
+          "explanation_md": "The source does not support that result."
+        },
+        {
+          "option_id": "D",
+          "text_md": "A change in signature alone replaces the borrower",
+          "explanation_md": "Mandate and liability differ."
+        }
+      ],
+      "correct_explanation_md": "Internal retirement does not automatically erase earlier obligations.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_712989aed723dd07ca0a4c3f5b3215c539e5276522e607df10705757ec34fe5d",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U13",
+      "objective_ids": [
+        "BRBL::MOD_D::U13::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.473-474 / PDF pp.492-493"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A majority expels a partner without checking the agreement or good faith. Which requirement was missed?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only the current account balance",
+          "explanation_md": "Balance does not create expulsion power."
+        },
+        {
+          "option_id": "B",
+          "text_md": "A universal right of any majority to expel",
+          "explanation_md": "The provision is qualified."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The expelled person consent to every ordinary purchase",
+          "explanation_md": "That is unrelated."
+        },
+        {
+          "option_id": "D",
+          "text_md": "A contractual expulsion power exercised in good faith",
+          "explanation_md": "Both elements matter in the described framework."
+        }
+      ],
+      "correct_explanation_md": "Both elements matter in the described framework.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_3fc3bda21384a3fcd474b947088b902194632a73801b7f0ee2e5a69fc0bd81c6",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U13",
+      "objective_ids": [
+        "BRBL::MOD_D::U13::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.473-474 / PDF pp.492-493"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

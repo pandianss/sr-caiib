@@ -1,0 +1,360 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-D-U24-B005",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_D::U24: Distinguish actionable-claim assignment from secured-debt transfer",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed p.547 / PDF p.566",
+        "statement": "Actionableclaimexcludesmortgagehypothecationpledgesecureddebt;130writingtransferor signature;noticeprotectsdebtorpaymentbeforeknowledge;assigneesueownname.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Identify the claim and protect the payment trail",
+          "core_explanation_md": "The described actionable-claim definition concerns the qualifying unsecured debt or beneficial movable-property interest outside possession,and excludes the specified mortgage,hypothecation or pledge-secured debts. Do not treat every banking receivable as identical merely because it involves money.\n\nThe assignment route requires the prescribed signed written instrument. Notice to the debtor is not the sole event creating the transfer,but lack of notice can affect the treatment of payments or dealings before the debtor knows of it. The transferee has the described ability to sue in their own name,subject to the applicable law. Keep the instrument,claim identification,notice and payment history together; assignment is not proved by an internal spreadsheet entry.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does absence of debtor notice automatically mean no assignment could occur?",
+            "expected_takeaway": "No. Transfer formalities and debtor-protection consequences differ."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A portfolio includes debts secured by pledge,and a note assumes every debt is an actionable claim under the stated definition. What is missing?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only the portfolio total",
+              "explanation_md": "The legal categories still matter."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The exclusion for the specified secured debts",
+              "explanation_md": "The definition is not every receivable."
+            },
+            {
+              "option_id": "C",
+              "text_md": "A rule that money claims cannot be transferred",
+              "explanation_md": "That is too broad."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The bank branch code",
+              "explanation_md": "It does not classify the claim."
+            }
+          ],
+          "correct_explanation_md": "The definition is not every receivable."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "An assignee relies only on an internal spreadsheet and cannot produce the required signed assignment instrument. Which issue remains?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only the spreadsheet colour",
+              "explanation_md": "It is irrelevant."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Debtor silence necessarily cures all transfer defects",
+              "explanation_md": "That is unsupported."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Every assignment needs no documentation",
+              "explanation_md": "The source states a written-instrument route."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The prescribed transfer formalities and identification evidence",
+              "explanation_md": "An internal entry is not sufficient proof of the legal transfer."
+            }
+          ],
+          "correct_explanation_md": "An internal entry is not sufficient proof of the legal transfer."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Antigravity independent legal,originality and session review pending; no publication approval.",
+      "Current primary TPA and State rules must reconcile registration,section69 and actionable-claim exceptions; source case facts/table expression not reused."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-D-U24-B005",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_D::U24"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_D::U24",
+        "objective_ids": [
+          "BRBL::MOD_D::U24::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_D::U24",
+        "objective_ids": [
+          "BRBL::MOD_D::U24::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_D::U24",
+        "objective_ids": [
+          "BRBL::MOD_D::U24::LO_05"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-D-U24-B005",
+      "draft_id": "D001",
+      "item_id": "item_4c28eb25a874a909a82d31800a1c93ac2c5f3620ea7ce9a9828d2b5c94cc6b1e"
+    },
+    {
+      "batch_id": "BRBL-D-U24-B005",
+      "draft_id": "D002",
+      "item_id": "item_5ce947c9428d570233f3a59cb541fe87c507836fe7fa10b33c9189b9372f713b"
+    },
+    {
+      "batch_id": "BRBL-D-U24-B005",
+      "draft_id": "D003",
+      "item_id": "item_32408cd69546adbb4597debdef733d85a45cf866492523a4976101ab6b7d93c8"
+    }
+  ],
+  "items": [
+    {
+      "title": "Identify the claim and protect the payment trail",
+      "core_explanation_md": "The described actionable-claim definition concerns the qualifying unsecured debt or beneficial movable-property interest outside possession,and excludes the specified mortgage,hypothecation or pledge-secured debts. Do not treat every banking receivable as identical merely because it involves money.\n\nThe assignment route requires the prescribed signed written instrument. Notice to the debtor is not the sole event creating the transfer,but lack of notice can affect the treatment of payments or dealings before the debtor knows of it. The transferee has the described ability to sue in their own name,subject to the applicable law. Keep the instrument,claim identification,notice and payment history together; assignment is not proved by an internal spreadsheet entry.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does absence of debtor notice automatically mean no assignment could occur?",
+        "expected_takeaway": "No. Transfer formalities and debtor-protection consequences differ."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_4c28eb25a874a909a82d31800a1c93ac2c5f3620ea7ce9a9828d2b5c94cc6b1e",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U24",
+      "objective_ids": [
+        "BRBL::MOD_D::U24::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed p.547 / PDF p.566"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A portfolio includes debts secured by pledge,and a note assumes every debt is an actionable claim under the stated definition. What is missing?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only the portfolio total",
+          "explanation_md": "The legal categories still matter."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The exclusion for the specified secured debts",
+          "explanation_md": "The definition is not every receivable."
+        },
+        {
+          "option_id": "C",
+          "text_md": "A rule that money claims cannot be transferred",
+          "explanation_md": "That is too broad."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The bank branch code",
+          "explanation_md": "It does not classify the claim."
+        }
+      ],
+      "correct_explanation_md": "The definition is not every receivable.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_5ce947c9428d570233f3a59cb541fe87c507836fe7fa10b33c9189b9372f713b",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U24",
+      "objective_ids": [
+        "BRBL::MOD_D::U24::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed p.547 / PDF p.566"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "An assignee relies only on an internal spreadsheet and cannot produce the required signed assignment instrument. Which issue remains?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only the spreadsheet colour",
+          "explanation_md": "It is irrelevant."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Debtor silence necessarily cures all transfer defects",
+          "explanation_md": "That is unsupported."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Every assignment needs no documentation",
+          "explanation_md": "The source states a written-instrument route."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The prescribed transfer formalities and identification evidence",
+          "explanation_md": "An internal entry is not sufficient proof of the legal transfer."
+        }
+      ],
+      "correct_explanation_md": "An internal entry is not sufficient proof of the legal transfer.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_32408cd69546adbb4597debdef733d85a45cf866492523a4976101ab6b7d93c8",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U24",
+      "objective_ids": [
+        "BRBL::MOD_D::U24::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed p.547 / PDF p.566"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

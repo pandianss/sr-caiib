@@ -1,0 +1,132 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-C-U06-B005",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL C U06: Distinguish first DRT application, tenancy review and appellate procedure",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "SARFAESI_GUJARAT_COMPILATION",
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "SARFAESI_GUJARAT_COMPILATION",
+      "locator": "sections17-18, PDF pp.23-25; Hindon Forge conclusion separately retained",
+      "statement": "Section17 application any aggrieved person including borrower within45days from measure; jurisdiction alternatives and remedial powers. Tenancy grounds under17(4A); disposal60days with recorded extension/fourmonths and expedition route. Section18 appeal30days from receipt; borrower deposit50% of lower claim/DRT determination, reducible not below25%.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F002",
+      "source_id": "S04",
+      "locator": "printed pp.269-279 / PDF pp.288-298, whole unit and end questions visually inspected",
+      "statement": "Courseware outlines enforcement; older redemption wording and placement of management restrictions reconciled against amended primary text rather than repeated.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Record the decision, forum and event before calculating a period",
+        "core_explanation_md": "The section 17 application concerns the identified measures and is open to an aggrieved person including the borrower, with the stated forty-five-day period from the measure. The statutory jurisdiction alternatives and DRT powers matter; the Tribunal can examine compliance and order the stated restoration or other relief. Tenancy or lease claims require the section 17(4A) grounds and evidence, not an automatic conclusion from the word tenant.\n\nAn appeal under section 18 is different: its stated thirty days run from receipt of the DRT order. The borrower deposit uses fifty per cent of the lower of the creditor claim and DRT-determined debt; reduction for recorded reasons cannot go below twenty-five per cent of that base. A possible reduction is not an order already granted.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Should forty-five days from a measure be substituted for thirty days from receipt of the DRT order?",
+          "expected_takeaway": "No. They belong to distinct proceedings and triggering events."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A borrower calculates the ordinary section18 deposit solely on the higher creditor claim even though the DRT-determined debt is lower. Which correction follows the text?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Always use the higher amount because the lender selected it",
+            "explanation_md": "The second proviso expressly uses whichever is less."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Use the lower of the creditor claim and DRT-determined debt for the stated base",
+            "explanation_md": "The ordinary percentage applies to the specified lower amount."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Always use the collateral market value instead",
+            "explanation_md": "The text describes the debt base, not a universal collateral-value base."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Assume a full waiver whenever a reduction is requested",
+            "explanation_md": "A request is not a granted reduction and the statutory minimum matters."
+          }
+        ],
+        "correct_explanation_md": "The ordinary percentage applies to the specified lower amount."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A file contains a tenancy claim over the secured asset. The review marks it automatically conclusive against enforcement without examining expiry, mortgage terms or demand timing. What is missing?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "A rule that all tenancy claims are necessarily false",
+            "explanation_md": "The statutory review requires evidence, not the opposite automatic assumption."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Only the rent receipt colour",
+            "explanation_md": "Appearance of a receipt does not determine the statutory grounds."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A requirement to avoid examining any tenancy evidence",
+            "explanation_md": "Section17(4A) expressly provides an examination framework."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The section17(4A) factual and legal tests for the claimed tenancy or lease",
+            "explanation_md": "The claim must be examined against the specified statutory grounds."
+          }
+        ],
+        "correct_explanation_md": "The claim must be examined against the specified statutory grounds."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Codex original draft,16November2026; independent legal/session, originality, calculation and pedagogy review pending; no publication approval.",
+    "Primary compilation includes later amendments but is not certified complete through30June2026; URL date not used as edition evidence. Later judgments, statutory instruments and entity-specific eligibility still need review.",
+    "Remaining unit-depth gaps: current Rules8-9 sale procedure, valuation/reserve/publication/bid payment details, section19 compensation, section13(7)proceeds worked assessment, section13(9)value calculation and liquidation/IBC interplay. These batches do not establish complete unit coverage.",
+    "Source end questions were inspected and not reused. New teaching and assessment scenarios were designed from a factual brief; author comparison is not independent review."
+  ],
+  "next_batch_hint": "Finish C U06 depth/source gaps, then C U07 Central Registry, printed p.281 / PDF p.300"
+}

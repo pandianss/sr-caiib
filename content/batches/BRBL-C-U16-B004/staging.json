@@ -1,0 +1,150 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-C-U16-B004",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_C::U16: Apply CoC composition and distinguish voting share from creditor headcount",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04",
+    "IBC_AMENDMENT_ACT_2026"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.343-345 / PDF pp.362-364",
+      "statement": "CoCfinancialcreditorssubjectrelatedpartyexclusionandstatedregulatedcreditorexception;dualclaimsplit,assignmentpreservesoperationalcharacter;general51%,specific66%RPdecision;votingsharefinancialdebt.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F002",
+      "source_id": "IBC_AMENDMENT_ACT_2026",
+      "locator": "Amendmentsection13,PDFpp.5-6",
+      "statement": "CoCsupervisionextends specifiedliquidations withtransitionalconditions.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Eligibility, claim amount and decision threshold are separate",
+        "core_explanation_md": "Construct the CoC from the applicable eligible financial-creditor claims, with related-party exclusions and the stated regulated-creditor conversion exception checked carefully. A person can hold financial and operational claims; the character and voting treatment of each part must be separated. Representation by an authorised person does not multiply the underlying voting share.\n\nThe source ordinary decision threshold differs from specific decisions such as the sixty-six-per-cent RP appointment/replacement vote. Use eligible financial-debt voting share rather than lender headcount. The 2026 amendment also extends CoC supervision to the specified liquidation situations; it does not make every creditor an eligible voter.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Can a majority of creditor names prove a required voting-share majority?",
+          "expected_takeaway": "No. Use eligible voting value and the threshold for the actual decision."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "item_type": "card",
+      "variant": "worked_example",
+      "payload": {
+        "title": "Calculate a stipulated eligible voting share",
+        "core_explanation_md": "Assume eligible financial claims total INR 12,000,000 and two approving creditors hold INR 4,000,000 each. No exclusions or other claims apply. Find their combined voting share.",
+        "prerequisite_objective_ids": [],
+        "worked_steps": [
+          {
+            "step_number": 1,
+            "description": "Combine approving claims",
+            "formula_or_substitution": "4000000+4000000",
+            "intermediate_result": "8000000 INR"
+          },
+          {
+            "step_number": 2,
+            "description": "Divide by eligible total",
+            "formula_or_substitution": "8000000/12000000*100",
+            "intermediate_result": "66.67% rounded HALF_UP"
+          }
+        ],
+        "final_answer_with_unit": "66.67%",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Which rule and stipulated facts determine this result?",
+          "expected_takeaway": "Use the sourced rule and stated scenario assumptions; the arithmetic does not establish a live legal entitlement."
+        }
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "numeric_input",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "In a bounded CoC exercise, eligible financial claims total INR 10,000,000 and approving creditors hold INR 6,800,000. Calculate their combined voting share in percent to two decimals. Eligibility and claim values are stipulated.",
+        "correct_explanation_md": "6800000/10000000*100=68.00%.",
+        "numeric_rule": {
+          "expected_answer": "68.00",
+          "unit_label": "%",
+          "precision_decimals": 2,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Retain exact intermediate amounts and round only the final answer HALF_UP to the stated decimal places.",
+          "allow_negative": false
+        }
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Most creditor names support a decision, but their eligible voting share is below its stipulated threshold. What follows?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Names always outweigh voting share",
+            "explanation_md": "The prescribed measure is voting share."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The largest single claim may privately choose the threshold",
+            "explanation_md": "A creditor cannot rewrite the statutory test."
+          },
+          {
+            "option_id": "C",
+            "text_md": "All operational invoices become financial votes automatically",
+            "explanation_md": "Claim category is separately determined."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Headcount support alone does not meet the voting-share condition",
+            "explanation_md": "The actual decision must satisfy its applicable value-based threshold."
+          }
+        ],
+        "correct_explanation_md": "The actual decision must satisfy its applicable value-based threshold."
+      },
+      "draft_id": "D004",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Independent Antigravity review remains required for later amendments, commencement, applicable regulations and judgments. Draft authoring is not a publication or legal-accuracy approval."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

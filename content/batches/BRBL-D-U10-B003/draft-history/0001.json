@@ -1,0 +1,417 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-D-U10-B003",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_D::U10: Distinguish the prescribed partner ceiling from the statutory delegation maximum",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "MCA_MISC_RULE10_INDEXED",
+      "COMPANIES_ACT_INDIACODE_20260901"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "MCA_MISC_RULE10_INDEXED",
+        "locator": "Rule10,official MCA PDF search-index excerpt retrieved16November2026",
+        "statement": "Prescribedassociation/partnershipceilingfifty,companyorotherlawqualification;fullPDFnotretrieved.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+        "locator": "section464,PDF p.235",
+        "statement": "Prescribednumberdelegationmaximum100;specifiedHUFandprofessionexceptionsmustbeconsidered.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "A power to prescribe a limit is not the prescribed limit",
+          "core_explanation_md": "Section464 allows the relevant number to be prescribed within its statutory maximum of100. The official MCA indexed Rule10 text identifies the prescribed ceiling of50for the described gain-seeking association/partnership,unless registered as a company or formed under another applicable law. The textbook treats100as the operative prescribed number; those two numbers answer different questions.\n\nCheck the statutory exceptions,including the specified HUF and professionally governed association categories,and the legal form before applying a ceiling. An LLP is formed under a different statute and must not be treated as an ordinary unincorporated firm for this purpose. Full current-rule consolidation and exemption review remain pending because direct MCA PDF retrieval failed; this draft records the evidence limitation explicitly.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does a statutory authority to prescribe up to100prove that100is the actual prescribed limit?",
+            "expected_takeaway": "No. Read the operative rule and its exceptions separately."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "An ordinary gain-seeking association has55persons and is stipulated not to be a company,an LLP or within any exception. A note accepts it solely because55is below the section464delegation maximum of100. What is the issue?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The delegation maximum always replaces the rule",
+              "explanation_md": "The prescribed number must be checked separately."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Every group of55must be a company automatically",
+              "explanation_md": "Legal formation is not inferred solely from headcount."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The operative Rule10ceiling is distinct from the maximum delegation power",
+              "explanation_md": "Under the stated evidence,the prescribed50ceiling must be considered."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The number of bank accounts determines the limit",
+              "explanation_md": "Accounts do not determine membership compliance."
+            }
+          ],
+          "correct_explanation_md": "Under the stated evidence,the prescribed50ceiling must be considered."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "An LLP is assumed to violate an ordinary-firm ceiling solely because its partner count is higher. Which qualification needs analysis?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Its formation under the LLP statute and the applicable statutory/rule scope",
+              "explanation_md": "The legal form and exception wording matter."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The ordinary-firm rule automatically overrides every other formation law",
+              "explanation_md": "That ignores the stated qualification."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Every partner must therefore be a minor",
+              "explanation_md": "That inference is unsupported."
+            },
+            {
+              "option_id": "D",
+              "text_md": "A larger office automatically removes all statutory requirements",
+              "explanation_md": "Office size is not the legal test."
+            }
+          ],
+          "correct_explanation_md": "The legal form and exception wording matter."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Explicit authoring supplement to earlierB001sourcebook100-person conflict. Official fullRule10PDF returned403/timeouts; indexed excerpt is partial evidence,not a certified consolidated rule. Antigravity must verify current rule and exceptions before publication."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-D-U10-B003",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_D::U10"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "MCA_MISC_RULE10_INDEXED",
+        "authority": "Ministry of Corporate Affairs,Government of India",
+        "title": "Companies (Miscellaneous) Rules,2014,Rule10 — official PDF indexed excerpt",
+        "url": "https://www.mca.gov.in/Ministry/pdf/NCARules_Chapter29II.pdf",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+        "authority": "India Code, Government of India",
+        "title": "Companies Act, 2013 — as on 1 September 2026",
+        "url": "https://indiacode.gov.in/server/api/core/bitstreams/95902c38-5947-4457-a431-5062e234cab0/content",
+        "publication_date": "2026-09-01",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_D::U10",
+        "objective_ids": [
+          "BRBL::MOD_D::U10::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_D::U10",
+        "objective_ids": [
+          "BRBL::MOD_D::U10::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_D::U10",
+        "objective_ids": [
+          "BRBL::MOD_D::U10::LO_03"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-D-U10-B003",
+      "draft_id": "D001",
+      "item_id": "item_f15550c314f79b7ab5119a2f00faffd46f190a0c93599f446f8adcb5362f269d"
+    },
+    {
+      "batch_id": "BRBL-D-U10-B003",
+      "draft_id": "D002",
+      "item_id": "item_c3080d157ee9879edef85ba65b39e8454b6b34eca46f7b745cb7689a6e1d2291"
+    },
+    {
+      "batch_id": "BRBL-D-U10-B003",
+      "draft_id": "D003",
+      "item_id": "item_bc9e4df8eb657daaf6bafbe579d52e70b2896ff7df481ac54f4344950afb7c80"
+    }
+  ],
+  "items": [
+    {
+      "title": "A power to prescribe a limit is not the prescribed limit",
+      "core_explanation_md": "Section464 allows the relevant number to be prescribed within its statutory maximum of100. The official MCA indexed Rule10 text identifies the prescribed ceiling of50for the described gain-seeking association/partnership,unless registered as a company or formed under another applicable law. The textbook treats100as the operative prescribed number; those two numbers answer different questions.\n\nCheck the statutory exceptions,including the specified HUF and professionally governed association categories,and the legal form before applying a ceiling. An LLP is formed under a different statute and must not be treated as an ordinary unincorporated firm for this purpose. Full current-rule consolidation and exemption review remain pending because direct MCA PDF retrieval failed; this draft records the evidence limitation explicitly.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does a statutory authority to prescribe up to100prove that100is the actual prescribed limit?",
+        "expected_takeaway": "No. Read the operative rule and its exceptions separately."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_f15550c314f79b7ab5119a2f00faffd46f190a0c93599f446f8adcb5362f269d",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U10",
+      "objective_ids": [
+        "BRBL::MOD_D::U10::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "MCA_MISC_RULE10_INDEXED",
+          "authority": "Ministry of Corporate Affairs,Government of India",
+          "title": "Companies (Miscellaneous) Rules,2014,Rule10 — official PDF indexed excerpt",
+          "url": "https://www.mca.gov.in/Ministry/pdf/NCARules_Chapter29II.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Rule10,official MCA PDF search-index excerpt retrieved16November2026"
+        },
+        {
+          "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+          "authority": "India Code, Government of India",
+          "title": "Companies Act, 2013 — as on 1 September 2026",
+          "url": "https://indiacode.gov.in/server/api/core/bitstreams/95902c38-5947-4457-a431-5062e234cab0/content",
+          "publication_date": "2026-09-01",
+          "effective_date": null,
+          "locator": "section464,PDF p.235"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "An ordinary gain-seeking association has55persons and is stipulated not to be a company,an LLP or within any exception. A note accepts it solely because55is below the section464delegation maximum of100. What is the issue?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The delegation maximum always replaces the rule",
+          "explanation_md": "The prescribed number must be checked separately."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Every group of55must be a company automatically",
+          "explanation_md": "Legal formation is not inferred solely from headcount."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The operative Rule10ceiling is distinct from the maximum delegation power",
+          "explanation_md": "Under the stated evidence,the prescribed50ceiling must be considered."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The number of bank accounts determines the limit",
+          "explanation_md": "Accounts do not determine membership compliance."
+        }
+      ],
+      "correct_explanation_md": "Under the stated evidence,the prescribed50ceiling must be considered.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_c3080d157ee9879edef85ba65b39e8454b6b34eca46f7b745cb7689a6e1d2291",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U10",
+      "objective_ids": [
+        "BRBL::MOD_D::U10::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "MCA_MISC_RULE10_INDEXED",
+          "authority": "Ministry of Corporate Affairs,Government of India",
+          "title": "Companies (Miscellaneous) Rules,2014,Rule10 — official PDF indexed excerpt",
+          "url": "https://www.mca.gov.in/Ministry/pdf/NCARules_Chapter29II.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Rule10,official MCA PDF search-index excerpt retrieved16November2026"
+        },
+        {
+          "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+          "authority": "India Code, Government of India",
+          "title": "Companies Act, 2013 — as on 1 September 2026",
+          "url": "https://indiacode.gov.in/server/api/core/bitstreams/95902c38-5947-4457-a431-5062e234cab0/content",
+          "publication_date": "2026-09-01",
+          "effective_date": null,
+          "locator": "section464,PDF p.235"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "An LLP is assumed to violate an ordinary-firm ceiling solely because its partner count is higher. Which qualification needs analysis?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Its formation under the LLP statute and the applicable statutory/rule scope",
+          "explanation_md": "The legal form and exception wording matter."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The ordinary-firm rule automatically overrides every other formation law",
+          "explanation_md": "That ignores the stated qualification."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Every partner must therefore be a minor",
+          "explanation_md": "That inference is unsupported."
+        },
+        {
+          "option_id": "D",
+          "text_md": "A larger office automatically removes all statutory requirements",
+          "explanation_md": "Office size is not the legal test."
+        }
+      ],
+      "correct_explanation_md": "The legal form and exception wording matter.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_bc9e4df8eb657daaf6bafbe579d52e70b2896ff7df481ac54f4344950afb7c80",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U10",
+      "objective_ids": [
+        "BRBL::MOD_D::U10::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "MCA_MISC_RULE10_INDEXED",
+          "authority": "Ministry of Corporate Affairs,Government of India",
+          "title": "Companies (Miscellaneous) Rules,2014,Rule10 — official PDF indexed excerpt",
+          "url": "https://www.mca.gov.in/Ministry/pdf/NCARules_Chapter29II.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Rule10,official MCA PDF search-index excerpt retrieved16November2026"
+        },
+        {
+          "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+          "authority": "India Code, Government of India",
+          "title": "Companies Act, 2013 — as on 1 September 2026",
+          "url": "https://indiacode.gov.in/server/api/core/bitstreams/95902c38-5947-4457-a431-5062e234cab0/content",
+          "publication_date": "2026-09-01",
+          "effective_date": null,
+          "locator": "section464,PDF p.235"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

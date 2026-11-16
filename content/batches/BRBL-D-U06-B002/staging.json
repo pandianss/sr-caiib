@@ -1,0 +1,120 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U06-B002",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U06: Determine authority extent,agent type,notice of restrictions and delegation limits",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.433-435 / PDF pp.452-454",
+      "statement": "226authorisedactsprincipalconsequences;special/general/universalscopeandpersonalactexceptions;workclassifications;subagentqualifiednotuniversaldelegation;noticeofcurtailmentmaterial.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Authority is a scope question, not a confidence rating",
+        "core_explanation_md": "A special agent has a defined task; general authority concerns the relevant business or employment; the universal description still does not authorise unlawful acts. Examine the actual authority and the third-party position rather than assuming a trusted representative can bind the principal on every matter. Personal or official acts can also have restrictions on representation.\n\nChanges to authority need the relevant notice analysis. An internal restriction not communicated where required may not determine the third-party result. Delegation likewise has conditions:an agent cannot simply subcontract every personal undertaking, but the law recognises the specified sub-agent situations. Banking collection agency should be identified transaction by transaction rather than applied to all deposits.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does general authority mean authority to perform every possible act?",
+          "expected_takeaway": "No. Scope and applicable legal limits remain."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A representative has authority for one defined transaction and signs an unrelated facility for the principal. What must the bank verify?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only whether the signature is neat",
+            "explanation_md": "Appearance does not establish authority."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A rule that any representative has universal power",
+            "explanation_md": "Special authority has a defined scope."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The representative personal credit score alone",
+            "explanation_md": "That does not establish agency scope."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The actual authority for the particular act and relevant third-party rules",
+            "explanation_md": "The mandate must cover the transaction or another legal basis must be established."
+          }
+        ],
+        "correct_explanation_md": "The mandate must cover the transaction or another legal basis must be established."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An agent delegates a task personally undertaken without examining any legal permission or customary exception. Which issue arises?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Every delegation is automatically valid",
+            "explanation_md": "The source describes qualified limits."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Whether the applicable delegation or sub-agent conditions are met",
+            "explanation_md": "The task and legal basis must be identified."
+          },
+          {
+            "option_id": "C",
+            "text_md": "All agencies terminate when a third party is contacted",
+            "explanation_md": "Third-party dealing is central to agency."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A higher fee automatically cures missing authority",
+            "explanation_md": "Remuneration cannot itself supply authority."
+          }
+        ],
+        "correct_explanation_md": "The task and legal basis must be identified."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Drafts for Antigravity review. Consolidated statute,exceptions and later case law require independent reconciliation;no publication approval.",
+    "Book agent-capacity summary conflicts with its quotedsection184;the statutory distinction is retained. Secret-profit section-number attribution requires primary checking."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

@@ -1,0 +1,360 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-C-U20-B003",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_C::U20: Distinguish timely signed acknowledgement,qualifying payment and revival of an expired claim",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.381-383 / PDF pp.400-402",
+        "statement": "Sections18/19freshperiodonqualifyingpreexpirysignedacknowledgement/paymentbyauthorisedperson;paymentrequirementsanddecreedebtexception;notalllatelettersreviveclaims.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "A fresh period needs the qualifying act before expiry",
+          "core_explanation_md": "The acknowledgement route described in the source requires the relevant liability acknowledgement in writing, signed by the proper party, before the prescribed period expires. The qualifying payment route also depends on the payment, authority, timing and statutory record requirements. A casual unsigned conversation cannot simply be entered as a fresh limitation start.\n\nDo not assume a later letter revives an already expired claim under these provisions. A different legal promise or remedy, if available, needs its own legal basis and evidence. Keep the existing deadline, act date, signer capacity, contents and supporting record together; a new ledger-entry date does not prove a qualifying acknowledgement or payment.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does a post-expiry entry automatically restart limitation under the timely-acknowledgement provision?",
+            "expected_takeaway": "No. Timing and all statutory conditions must be met."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Staff add an unsigned internal note after expiry and call it the debtor acknowledgement. What is missing?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only the bank account nickname",
+              "explanation_md": "A nickname does not establish the debtor act."
+            },
+            {
+              "option_id": "B",
+              "text_md": "A presumption that every note is signed by the debtor",
+              "explanation_md": "Authorship and signature require evidence."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The current collateral value",
+              "explanation_md": "Value does not establish acknowledgement conditions."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The timely qualifying signed act by the proper party",
+              "explanation_md": "An internal late note does not supply those facts."
+            }
+          ],
+          "correct_explanation_md": "An internal late note does not supply those facts."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A payment is made by a person whose authority to act for the debtor is not established. What should the limitation review examine?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Any payment always has identical legal effect",
+              "explanation_md": "The relevant statutory conditions matter."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The payer authority,timing and required evidentiary conditions",
+              "explanation_md": "A transaction amount alone does not prove a fresh period."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Whether the bank uses online statements",
+              "explanation_md": "Statement format does not establish payer authority."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Only whether the payment is a round number",
+              "explanation_md": "Rounding is unrelated to the legal test."
+            }
+          ],
+          "correct_explanation_md": "A transaction amount alone does not prove a fresh period."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Original drafts for later Antigravity review; source/current applicability, case law and originality review remain pending. No publication approval.",
+      "Exact Schedule articles,periods and computation require primary checking;source table is not copied. No unsupported calendar or universal current-account conclusion is graded."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-C-U20-B003",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_C::U20"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_C::U20",
+        "objective_ids": [
+          "BRBL::MOD_C::U20::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_C::U20",
+        "objective_ids": [
+          "BRBL::MOD_C::U20::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_C::U20",
+        "objective_ids": [
+          "BRBL::MOD_C::U20::LO_03"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-C-U20-B003",
+      "draft_id": "D001",
+      "item_id": "item_8fa89415afdbb0c397354bd67bbfdca1b4446c5c4291cf1592e720fb0ca674dd"
+    },
+    {
+      "batch_id": "BRBL-C-U20-B003",
+      "draft_id": "D002",
+      "item_id": "item_f628c4428a412dd64471abab9ff5f1a6c85bfb65f5d1d929f9f5c79ee8ddb5c6"
+    },
+    {
+      "batch_id": "BRBL-C-U20-B003",
+      "draft_id": "D003",
+      "item_id": "item_b7d055b1b9af55fcffea696d867a71e70d20271c6f8dac8b1a63a18bcb8a342e"
+    }
+  ],
+  "items": [
+    {
+      "title": "A fresh period needs the qualifying act before expiry",
+      "core_explanation_md": "The acknowledgement route described in the source requires the relevant liability acknowledgement in writing, signed by the proper party, before the prescribed period expires. The qualifying payment route also depends on the payment, authority, timing and statutory record requirements. A casual unsigned conversation cannot simply be entered as a fresh limitation start.\n\nDo not assume a later letter revives an already expired claim under these provisions. A different legal promise or remedy, if available, needs its own legal basis and evidence. Keep the existing deadline, act date, signer capacity, contents and supporting record together; a new ledger-entry date does not prove a qualifying acknowledgement or payment.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does a post-expiry entry automatically restart limitation under the timely-acknowledgement provision?",
+        "expected_takeaway": "No. Timing and all statutory conditions must be met."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_8fa89415afdbb0c397354bd67bbfdca1b4446c5c4291cf1592e720fb0ca674dd",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U20",
+      "objective_ids": [
+        "BRBL::MOD_C::U20::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.381-383 / PDF pp.400-402"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Staff add an unsigned internal note after expiry and call it the debtor acknowledgement. What is missing?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only the bank account nickname",
+          "explanation_md": "A nickname does not establish the debtor act."
+        },
+        {
+          "option_id": "B",
+          "text_md": "A presumption that every note is signed by the debtor",
+          "explanation_md": "Authorship and signature require evidence."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The current collateral value",
+          "explanation_md": "Value does not establish acknowledgement conditions."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The timely qualifying signed act by the proper party",
+          "explanation_md": "An internal late note does not supply those facts."
+        }
+      ],
+      "correct_explanation_md": "An internal late note does not supply those facts.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_f628c4428a412dd64471abab9ff5f1a6c85bfb65f5d1d929f9f5c79ee8ddb5c6",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U20",
+      "objective_ids": [
+        "BRBL::MOD_C::U20::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.381-383 / PDF pp.400-402"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A payment is made by a person whose authority to act for the debtor is not established. What should the limitation review examine?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Any payment always has identical legal effect",
+          "explanation_md": "The relevant statutory conditions matter."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The payer authority,timing and required evidentiary conditions",
+          "explanation_md": "A transaction amount alone does not prove a fresh period."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Whether the bank uses online statements",
+          "explanation_md": "Statement format does not establish payer authority."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Only whether the payment is a round number",
+          "explanation_md": "Rounding is unrelated to the legal test."
+        }
+      ],
+      "correct_explanation_md": "A transaction amount alone does not prove a fresh period.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_b7d055b1b9af55fcffea696d867a71e70d20271c6f8dac8b1a63a18bcb8a342e",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U20",
+      "objective_ids": [
+        "BRBL::MOD_C::U20::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.381-383 / PDF pp.400-402"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-C-U08-B002",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_C::U08: Calculate a bounded section30A ceiling and distinguish penalty from enforcement",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.289-290 / PDF pp.308-309",
+      "statement": "Section30A initial maximum is higher of1crore or twice quantifiable failure amount; continuing increment up to1lakh/day after first. Notice/hearing, repayment/cancellation and non-duplication protections.30B/30C appeal, qualified condonation/stay;30D recovery route.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "A ceiling is not an automatic imposed amount",
+        "core_explanation_md": "For the stated section 30A failure, first identify whether the amount involved is quantifiable. The initial ceiling uses the higher of INR 1 crore and twice that amount; the stated continuing increment may extend to INR 1 lakh for each day after the first. These are upper powers, not a promise that a maximum is imposed in every file. Notice and a reasonable opportunity to be heard remain part of the process.\n\nAppeal, stay, cancellation and recovery are separate statutory acts under sections30A-30D. A stay can have conditions, and the appeal route must use the order actually covered. Non-duplication provisions also require the existing complaint/penalty history. Independent review must reconcile the detailed payment and appeal wording before operational use.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does calculating the maximum establish the actual penalty imposed?",
+          "expected_takeaway": "No. The authority and procedural decision remain separate."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "card",
+      "variant": "worked_example",
+      "payload": {
+        "title": "Bound the initial power and stated continuing component",
+        "core_explanation_md": "Assume for this exercise a quantifiable failure amount of INR 6,500,000 and a failure continuing for four days in total. Calculate the upper amount using the stated maximum additional INR 100,000 per day after the first. This is not an imposed penalty.",
+        "prerequisite_objective_ids": [],
+        "worked_steps": [
+          {
+            "step_number": 1,
+            "description": "Initial ceiling",
+            "formula_or_substitution": "max(10000000,2*6500000)",
+            "intermediate_result": "13000000 INR"
+          },
+          {
+            "step_number": 2,
+            "description": "Continuing component",
+            "formula_or_substitution": "(4-1)*100000",
+            "intermediate_result": "300000 INR"
+          },
+          {
+            "step_number": 3,
+            "description": "Combined exercise ceiling",
+            "formula_or_substitution": "13000000+300000",
+            "intermediate_result": "13300000 INR"
+          }
+        ],
+        "final_answer_with_unit": "13300000 INR",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Which rule and stipulated facts determine this result?",
+          "expected_takeaway": "Use the sourced rule and stated scenario assumptions; the arithmetic does not establish a live legal entitlement."
+        }
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "numeric_input",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Under the stated section 30A ceiling exercise, assume a quantifiable failure amount of INR 4,000,000 and three total days of continuing failure. Use the maximum INR 100,000 increment for each day after the first. What upper amount results, in exact INR? Do not treat it as an actual penalty.",
+        "correct_explanation_md": "max(10000000,2*4000000)+(3-1)*100000=10200000 INR.",
+        "numeric_rule": {
+          "expected_answer": "10200000",
+          "unit_label": "INR",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Use exact whole units; do not round intermediate values.",
+          "allow_negative": false
+        }
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An appeal file assumes that requesting a stay has already suspended recovery. Which record is required?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The actual stay order and its terms, with compliance evidence",
+            "explanation_md": "Requesting relief is not equivalent to an order granting it."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Only the appeal document title",
+            "explanation_md": "A document label does not prove a granted stay."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A private promise that all penalties will be waived",
+            "explanation_md": "Private expectation does not establish the statutory decision."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A copy of an omitted penalty provision",
+            "explanation_md": "Historical text is not a current stay order."
+          }
+        ],
+        "correct_explanation_md": "Requesting relief is not equivalent to an order granting it."
+      },
+      "draft_id": "D004",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Authoring is based on the stated source framework; independent June2026 consolidation, notifications, State/UT scope and later case-law review are deferred to Antigravity. No source gap is resolved by import validity."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

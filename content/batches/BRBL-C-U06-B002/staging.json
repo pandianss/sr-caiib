@@ -1,0 +1,132 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-C-U06-B002",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL C U06: Select measures and management powers within their statutory boundaries",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "SARFAESI_GUJARAT_COMPILATION",
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "SARFAESI_GUJARAT_COMPILATION",
+      "locator": "section13(4)-(6),(10)-(13), PDF pp.17-20",
+      "statement": "Measures include possession, qualified takeover of business management, manager and specified third-party payment direction. Substantial-business/severability provisos attach to13(4)(b), not general13(4)(a). Balance recovery, guarantor/pledge routes and ordinary-course transfer exception are distinct.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F002",
+      "source_id": "S04",
+      "locator": "printed pp.269-279 / PDF pp.288-298, whole unit and end questions visually inspected",
+      "statement": "Courseware outlines enforcement; older redemption wording and placement of management restrictions reconciled against amended primary text rather than repeated.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Identify which power carries which restriction",
+        "core_explanation_md": "Section 13(4) separates possession of secured assets, the qualified takeover of business management, appointing a manager and directing the specified third-party payments. The substantial-business and severability provisos belong to the management-takeover clause 13(4)(b). Moving them into the ordinary possession clause changes the legal test.\n\nSection 13 also distinguishes recovery of a balance after realisation and the separate guarantor/pledge routes. After the demand notice, the restriction on transferring the identified secured assets includes an ordinary-course-of-business exception and otherwise requires prior written creditor consent. Neither possession nor default should be presented as automatic creditor ownership of every borrower property. Detailed sale-rule compliance remains a separate step.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Should the management-takeover provisos be mechanically applied as the wording of every possession measure?",
+          "expected_takeaway": "No. Attach each proviso to the clause it qualifies."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A checklist moves the substantial-business and severability provisos from section13(4)(b) into every use of section13(4)(a). What should the editor do?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Restore the provisos to the management-takeover clause they qualify",
+            "explanation_md": "Clause placement matters to the scope of the legal condition."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Delete every proviso because possession is mentioned elsewhere",
+            "explanation_md": "Relevant management restrictions cannot simply be removed."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Replace them with a universal borrower-ownership transfer rule",
+            "explanation_md": "Taking a measure does not automatically transfer all borrower property to the creditor."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Use the same wording for guarantor recovery without examining its route",
+            "explanation_md": "Separate routes need their own applicable conditions."
+          }
+        ],
+        "correct_explanation_md": "Clause placement matters to the scope of the legal condition."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "After a demand notice, a business proposes a transaction involving an identified secured asset. Which section13(13) distinction must be examined?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Every transaction is automatically permitted once the asset is valued",
+            "explanation_md": "Valuation does not establish compliance with the transfer restriction."
+          },
+          {
+            "option_id": "B",
+            "text_md": "No business transaction can ever fall within an exception",
+            "explanation_md": "The text contains an ordinary-course exception."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Whether it is in the ordinary course and, otherwise, whether prior written consent exists",
+            "explanation_md": "The statutory restriction is qualified, rather than an absolute label."
+          },
+          {
+            "option_id": "D",
+            "text_md": "An oral internal approval always equals creditor written consent",
+            "explanation_md": "The required consent cannot be assumed from an internal oral decision."
+          }
+        ],
+        "correct_explanation_md": "The statutory restriction is qualified, rather than an absolute label."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Codex original draft,16November2026; independent legal/session, originality, calculation and pedagogy review pending; no publication approval.",
+    "Primary compilation includes later amendments but is not certified complete through30June2026; URL date not used as edition evidence. Later judgments, statutory instruments and entity-specific eligibility still need review.",
+    "Remaining unit-depth gaps: current Rules8-9 sale procedure, valuation/reserve/publication/bid payment details, section19 compensation, section13(7)proceeds worked assessment, section13(9)value calculation and liquidation/IBC interplay. These batches do not establish complete unit coverage.",
+    "Source end questions were inspected and not reused. New teaching and assessment scenarios were designed from a factual brief; author comparison is not independent review."
+  ],
+  "next_batch_hint": "Finish C U06 depth/source gaps, then C U07 Central Registry, printed p.281 / PDF p.300"
+}

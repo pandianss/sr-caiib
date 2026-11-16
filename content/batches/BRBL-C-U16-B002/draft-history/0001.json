@@ -1,0 +1,453 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-C-U16-B002",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_C::U16: Apply financial-creditor initiation, default evidence and admission under the 2026 amendment",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04",
+      "IBC_AMENDMENT_ACT_2026",
+      "IBC_COMMENCEMENT_SO2625_2026"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.339-341 / PDF pp.358-360",
+        "statement": "Section7 financialcreditor filing and evidence;application admission startsCIRP;class/allotteethresholdlower100or10%.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "source_id": "IBC_AMENDMENT_ACT_2026",
+        "locator": "AmendmentAct2026 section4,PDFpp.2-3",
+        "statement": "Replaces7(5):14dayorder,admitifconditions,norejectionotherground;specifiedIUrecord sufficient;defect7days anddelayreasons.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F003",
+        "source_id": "IBC_COMMENCEMENT_SO2625_2026",
+        "locator": "PDFp2,notification item1",
+        "statement": "Amendmentsections2-6 commence26May2026.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "A default allegation needs the filing record and decision",
+          "core_explanation_md": "For the described financial-creditor route, the application must supply the applicable default evidence and proposed professional information. CIRP begins on admission, not on the bank first sending a demand. The 2026 amendment to section7(5), read with the retrieved commencement notification, requires the stated order within fourteen days and identifies admission/rejection conditions, defect-cure notice and reasons for delay. It also clarifies the evidential role of the specified information-utility record.\n\nClass-creditor and real-estate-allottee applications have their own joint-filing condition. Do not transfer a numerical threshold from the corporate-default rule into the separate number-of-applicants rule. Each application still needs the correct entity, date and statutory scope.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Is a demand letter itself the CIRP commencement order?",
+            "expected_takeaway": "No. Commencement follows admission under the statutory route."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001",
+          "F002",
+          "F003"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A bank counts the first demand date as CIRP commencement although no admission order exists. What is the proper distinction?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Every demand starts liquidation automatically",
+              "explanation_md": "Demand, admission and liquidation are distinct events."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The claim amount alone establishes the admission date",
+              "explanation_md": "An amount is not an order."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The applicant may select any convenient commencement date",
+              "explanation_md": "Commencement is not privately chosen."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The statutory process commences on admission, supported by the actual order",
+              "explanation_md": "Filing or demand alone does not establish admission."
+            }
+          ],
+          "correct_explanation_md": "Filing or demand alone does not establish admission."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001",
+          "F002",
+          "F003"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A legal note assumes all2026 amendments commenced solely because assent occurred. What evidence corrects that assumption?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only the textbook publication year",
+              "explanation_md": "It does not establish amendment commencement."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The amendment commencement clause and enumerated notification",
+              "explanation_md": "Different provisions can have different commencement dates."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The bank internal update email alone",
+              "explanation_md": "An internal email is not the operative notification."
+            },
+            {
+              "option_id": "D",
+              "text_md": "A later-looking URL filename",
+              "explanation_md": "A filename is not legal commencement evidence."
+            }
+          ],
+          "correct_explanation_md": "Different provisions can have different commencement dates."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001",
+          "F002",
+          "F003"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Independent Antigravity review remains required for later amendments, commencement, applicable regulations and judgments. Draft authoring is not a publication or legal-accuracy approval."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-C-U16-B002",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_C::U16"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "IBC_AMENDMENT_ACT_2026",
+        "authority": "Government of India (Gazette of India Extraordinary)",
+        "title": "The Insolvency and Bankruptcy Code (Amendment) Act, 2026 (No. 6 of 2026), assent 6 April 2026",
+        "url": "https://ibbi.gov.in/uploads/legalframwork/2026-04-07-115842-i5nsk-7ed69ef2a4d23a8b0d472cc0fcd55e79.pdf",
+        "publication_date": "2026-04-06",
+        "effective_date": null
+      },
+      {
+        "source_id": "IBC_COMMENCEMENT_SO2625_2026",
+        "authority": "Ministry of Corporate Affairs, Gazette of India",
+        "title": "S.O.2625(E),22May2026, commencement of specified IBC Amendment Act2026 provisions from26May2026",
+        "url": "https://egazette.gov.in/WriteReadData/2026/272855.pdf",
+        "publication_date": "2026-05-22",
+        "effective_date": "2026-05-26"
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_C::U16",
+        "objective_ids": [
+          "BRBL::MOD_C::U16::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_C::U16",
+        "objective_ids": [
+          "BRBL::MOD_C::U16::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_C::U16",
+        "objective_ids": [
+          "BRBL::MOD_C::U16::LO_02"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-C-U16-B002",
+      "draft_id": "D001",
+      "item_id": "item_8c376a0318dd1b54b170e4fcea7d56ef3a4b74e669cef673346655542b077315"
+    },
+    {
+      "batch_id": "BRBL-C-U16-B002",
+      "draft_id": "D002",
+      "item_id": "item_d2fcaa8cfb2ceb4d05038df40858378f66715ef7065fbd757d2062955b71df66"
+    },
+    {
+      "batch_id": "BRBL-C-U16-B002",
+      "draft_id": "D003",
+      "item_id": "item_f0460bed61d1625a82c01b3160214a3b99cc0aa53afc52bd86ac6878eba9674b"
+    }
+  ],
+  "items": [
+    {
+      "title": "A default allegation needs the filing record and decision",
+      "core_explanation_md": "For the described financial-creditor route, the application must supply the applicable default evidence and proposed professional information. CIRP begins on admission, not on the bank first sending a demand. The 2026 amendment to section7(5), read with the retrieved commencement notification, requires the stated order within fourteen days and identifies admission/rejection conditions, defect-cure notice and reasons for delay. It also clarifies the evidential role of the specified information-utility record.\n\nClass-creditor and real-estate-allottee applications have their own joint-filing condition. Do not transfer a numerical threshold from the corporate-default rule into the separate number-of-applicants rule. Each application still needs the correct entity, date and statutory scope.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Is a demand letter itself the CIRP commencement order?",
+        "expected_takeaway": "No. Commencement follows admission under the statutory route."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_8c376a0318dd1b54b170e4fcea7d56ef3a4b74e669cef673346655542b077315",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U16",
+      "objective_ids": [
+        "BRBL::MOD_C::U16::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.339-341 / PDF pp.358-360"
+        },
+        {
+          "source_id": "IBC_AMENDMENT_ACT_2026",
+          "authority": "Government of India (Gazette of India Extraordinary)",
+          "title": "The Insolvency and Bankruptcy Code (Amendment) Act, 2026 (No. 6 of 2026), assent 6 April 2026",
+          "url": "https://ibbi.gov.in/uploads/legalframwork/2026-04-07-115842-i5nsk-7ed69ef2a4d23a8b0d472cc0fcd55e79.pdf",
+          "publication_date": "2026-04-06",
+          "effective_date": null,
+          "locator": "AmendmentAct2026 section4,PDFpp.2-3"
+        },
+        {
+          "source_id": "IBC_COMMENCEMENT_SO2625_2026",
+          "authority": "Ministry of Corporate Affairs, Gazette of India",
+          "title": "S.O.2625(E),22May2026, commencement of specified IBC Amendment Act2026 provisions from26May2026",
+          "url": "https://egazette.gov.in/WriteReadData/2026/272855.pdf",
+          "publication_date": "2026-05-22",
+          "effective_date": "2026-05-26",
+          "locator": "PDFp2,notification item1"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A bank counts the first demand date as CIRP commencement although no admission order exists. What is the proper distinction?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Every demand starts liquidation automatically",
+          "explanation_md": "Demand, admission and liquidation are distinct events."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The claim amount alone establishes the admission date",
+          "explanation_md": "An amount is not an order."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The applicant may select any convenient commencement date",
+          "explanation_md": "Commencement is not privately chosen."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The statutory process commences on admission, supported by the actual order",
+          "explanation_md": "Filing or demand alone does not establish admission."
+        }
+      ],
+      "correct_explanation_md": "Filing or demand alone does not establish admission.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_d2fcaa8cfb2ceb4d05038df40858378f66715ef7065fbd757d2062955b71df66",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U16",
+      "objective_ids": [
+        "BRBL::MOD_C::U16::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.339-341 / PDF pp.358-360"
+        },
+        {
+          "source_id": "IBC_AMENDMENT_ACT_2026",
+          "authority": "Government of India (Gazette of India Extraordinary)",
+          "title": "The Insolvency and Bankruptcy Code (Amendment) Act, 2026 (No. 6 of 2026), assent 6 April 2026",
+          "url": "https://ibbi.gov.in/uploads/legalframwork/2026-04-07-115842-i5nsk-7ed69ef2a4d23a8b0d472cc0fcd55e79.pdf",
+          "publication_date": "2026-04-06",
+          "effective_date": null,
+          "locator": "AmendmentAct2026 section4,PDFpp.2-3"
+        },
+        {
+          "source_id": "IBC_COMMENCEMENT_SO2625_2026",
+          "authority": "Ministry of Corporate Affairs, Gazette of India",
+          "title": "S.O.2625(E),22May2026, commencement of specified IBC Amendment Act2026 provisions from26May2026",
+          "url": "https://egazette.gov.in/WriteReadData/2026/272855.pdf",
+          "publication_date": "2026-05-22",
+          "effective_date": "2026-05-26",
+          "locator": "PDFp2,notification item1"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A legal note assumes all2026 amendments commenced solely because assent occurred. What evidence corrects that assumption?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only the textbook publication year",
+          "explanation_md": "It does not establish amendment commencement."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The amendment commencement clause and enumerated notification",
+          "explanation_md": "Different provisions can have different commencement dates."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The bank internal update email alone",
+          "explanation_md": "An internal email is not the operative notification."
+        },
+        {
+          "option_id": "D",
+          "text_md": "A later-looking URL filename",
+          "explanation_md": "A filename is not legal commencement evidence."
+        }
+      ],
+      "correct_explanation_md": "Different provisions can have different commencement dates.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_f0460bed61d1625a82c01b3160214a3b99cc0aa53afc52bd86ac6878eba9674b",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U16",
+      "objective_ids": [
+        "BRBL::MOD_C::U16::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.339-341 / PDF pp.358-360"
+        },
+        {
+          "source_id": "IBC_AMENDMENT_ACT_2026",
+          "authority": "Government of India (Gazette of India Extraordinary)",
+          "title": "The Insolvency and Bankruptcy Code (Amendment) Act, 2026 (No. 6 of 2026), assent 6 April 2026",
+          "url": "https://ibbi.gov.in/uploads/legalframwork/2026-04-07-115842-i5nsk-7ed69ef2a4d23a8b0d472cc0fcd55e79.pdf",
+          "publication_date": "2026-04-06",
+          "effective_date": null,
+          "locator": "AmendmentAct2026 section4,PDFpp.2-3"
+        },
+        {
+          "source_id": "IBC_COMMENCEMENT_SO2625_2026",
+          "authority": "Ministry of Corporate Affairs, Gazette of India",
+          "title": "S.O.2625(E),22May2026, commencement of specified IBC Amendment Act2026 provisions from26May2026",
+          "url": "https://egazette.gov.in/WriteReadData/2026/272855.pdf",
+          "publication_date": "2026-05-22",
+          "effective_date": "2026-05-26",
+          "locator": "PDFp2,notification item1"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

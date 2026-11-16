@@ -1,0 +1,407 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-D-U22-B001",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_D::U22: Apply board composition and independence requirements",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04",
+      "COMPANIES_ACT_INDIACODE_20260901"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.520-521 / PDF pp.539-540",
+        "statement": "Individualsasdirectors,minimum3public2private1OPC,max15specialresolution;independentnotnominee;sourcecalendarresidencestale.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+        "locator": "section149,PDF pp.106-108",
+        "statement": "Residence182daysfinancialyear,listedpublicone-thirdfractionup;independencequalifications.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Board composition is a legal test, not a job-title count",
+          "core_explanation_md": "Directors are individuals. The described minimum is three for a public company, two for a private company and one for an OPC. Fifteen is the ordinary maximum, with a special-resolution route to exceed it. Prescribed woman-director requirements and independence requirements must be checked for the relevant company class.\n\nFor a listed public company, the described one-third independent-director requirement rounds a fraction upward. Independence involves substantive relationships and qualifications: a nominee or whole-time director is not simply relabelled independent. The primary text uses a financial-year residence test of at least182 days, with a proportionate rule for a newly incorporated company; the textbook previous-calendar-year wording is stale.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Can an employee director be made independent merely by changing the title?",
+            "expected_takeaway": "No. The statutory independence conditions govern."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A company wants a sixteenth director and assumes fifteen is an absolute prohibition. Which route does the described framework provide?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Appointment beyond fifteen after the required special resolution",
+              "explanation_md": "The ordinary maximum has an express qualified route."
+            },
+            {
+              "option_id": "B",
+              "text_md": "No company can ever exceed fifteen",
+              "explanation_md": "That omits the proviso."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Any clerk can approve it informally",
+              "explanation_md": "The prescribed company action is required."
+            },
+            {
+              "option_id": "D",
+              "text_md": "A nominee director is not counted because of the label",
+              "explanation_md": "The label does not create that exclusion."
+            }
+          ],
+          "correct_explanation_md": "The ordinary maximum has an express qualified route."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A listed public company labels its nominee as independent without testing relationships or statutory qualifications. What is missing?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only the nominee photograph",
+              "explanation_md": "It does not determine independence."
+            },
+            {
+              "option_id": "B",
+              "text_md": "A rule that all nominees are independent",
+              "explanation_md": "The definition distinguishes them."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The substantive independence test",
+              "explanation_md": "Titles do not replace the legal conditions."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The branch business hours",
+              "explanation_md": "Branch operating times do not establish whether the individual meets the director-independence conditions."
+            }
+          ],
+          "correct_explanation_md": "Titles do not replace the legal conditions."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Antigravity must independently review law,exceptions,originality and exam cutoff before publication.",
+      "POST-CUTOFF primary consolidation: cited amendments/footnotes require cutoff reconciliation; class exemptions,current forms,qualification shares,section167 appeal and section188 exceptions remain reviewer checks."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-D-U22-B001",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_D::U22"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+        "authority": "India Code, Government of India",
+        "title": "Companies Act, 2013 — as on 1 September 2026",
+        "url": "https://indiacode.gov.in/server/api/core/bitstreams/95902c38-5947-4457-a431-5062e234cab0/content",
+        "publication_date": "2026-09-01",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_D::U22",
+        "objective_ids": [
+          "BRBL::MOD_D::U22::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_D::U22",
+        "objective_ids": [
+          "BRBL::MOD_D::U22::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_D::U22",
+        "objective_ids": [
+          "BRBL::MOD_D::U22::LO_01"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-D-U22-B001",
+      "draft_id": "D001",
+      "item_id": "item_19acdc06df9c16f4194f0f1e7a9f85a33b9d1af00098e340aedd6c7f3e6c6f41"
+    },
+    {
+      "batch_id": "BRBL-D-U22-B001",
+      "draft_id": "D002",
+      "item_id": "item_edf486f59877742d637195e3abdd1f3da48e3d1dfccbeabcf0c60cee42ff14d3"
+    },
+    {
+      "batch_id": "BRBL-D-U22-B001",
+      "draft_id": "D003",
+      "item_id": "item_b25aa8523efadf4529d15683bd2fd41cd7d338bdb1b80fa34acb5660ee38293b"
+    }
+  ],
+  "items": [
+    {
+      "title": "Board composition is a legal test, not a job-title count",
+      "core_explanation_md": "Directors are individuals. The described minimum is three for a public company, two for a private company and one for an OPC. Fifteen is the ordinary maximum, with a special-resolution route to exceed it. Prescribed woman-director requirements and independence requirements must be checked for the relevant company class.\n\nFor a listed public company, the described one-third independent-director requirement rounds a fraction upward. Independence involves substantive relationships and qualifications: a nominee or whole-time director is not simply relabelled independent. The primary text uses a financial-year residence test of at least182 days, with a proportionate rule for a newly incorporated company; the textbook previous-calendar-year wording is stale.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Can an employee director be made independent merely by changing the title?",
+        "expected_takeaway": "No. The statutory independence conditions govern."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_19acdc06df9c16f4194f0f1e7a9f85a33b9d1af00098e340aedd6c7f3e6c6f41",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U22",
+      "objective_ids": [
+        "BRBL::MOD_D::U22::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.520-521 / PDF pp.539-540"
+        },
+        {
+          "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+          "authority": "India Code, Government of India",
+          "title": "Companies Act, 2013 — as on 1 September 2026",
+          "url": "https://indiacode.gov.in/server/api/core/bitstreams/95902c38-5947-4457-a431-5062e234cab0/content",
+          "publication_date": "2026-09-01",
+          "effective_date": null,
+          "locator": "section149,PDF pp.106-108"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A company wants a sixteenth director and assumes fifteen is an absolute prohibition. Which route does the described framework provide?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Appointment beyond fifteen after the required special resolution",
+          "explanation_md": "The ordinary maximum has an express qualified route."
+        },
+        {
+          "option_id": "B",
+          "text_md": "No company can ever exceed fifteen",
+          "explanation_md": "That omits the proviso."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Any clerk can approve it informally",
+          "explanation_md": "The prescribed company action is required."
+        },
+        {
+          "option_id": "D",
+          "text_md": "A nominee director is not counted because of the label",
+          "explanation_md": "The label does not create that exclusion."
+        }
+      ],
+      "correct_explanation_md": "The ordinary maximum has an express qualified route.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_edf486f59877742d637195e3abdd1f3da48e3d1dfccbeabcf0c60cee42ff14d3",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U22",
+      "objective_ids": [
+        "BRBL::MOD_D::U22::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.520-521 / PDF pp.539-540"
+        },
+        {
+          "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+          "authority": "India Code, Government of India",
+          "title": "Companies Act, 2013 — as on 1 September 2026",
+          "url": "https://indiacode.gov.in/server/api/core/bitstreams/95902c38-5947-4457-a431-5062e234cab0/content",
+          "publication_date": "2026-09-01",
+          "effective_date": null,
+          "locator": "section149,PDF pp.106-108"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A listed public company labels its nominee as independent without testing relationships or statutory qualifications. What is missing?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only the nominee photograph",
+          "explanation_md": "It does not determine independence."
+        },
+        {
+          "option_id": "B",
+          "text_md": "A rule that all nominees are independent",
+          "explanation_md": "The definition distinguishes them."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The substantive independence test",
+          "explanation_md": "Titles do not replace the legal conditions."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The branch business hours",
+          "explanation_md": "Branch operating times do not establish whether the individual meets the director-independence conditions."
+        }
+      ],
+      "correct_explanation_md": "Titles do not replace the legal conditions.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_b25aa8523efadf4529d15683bd2fd41cd7d338bdb1b80fa34acb5660ee38293b",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U22",
+      "objective_ids": [
+        "BRBL::MOD_D::U22::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.520-521 / PDF pp.539-540"
+        },
+        {
+          "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+          "authority": "India Code, Government of India",
+          "title": "Companies Act, 2013 — as on 1 September 2026",
+          "url": "https://indiacode.gov.in/server/api/core/bitstreams/95902c38-5947-4457-a431-5062e234cab0/content",
+          "publication_date": "2026-09-01",
+          "effective_date": null,
+          "locator": "section149,PDF pp.106-108"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

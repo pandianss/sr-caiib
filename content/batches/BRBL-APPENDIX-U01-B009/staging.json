@@ -1,0 +1,120 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-APPENDIX-U01-B009",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_APPENDIX::U01: Separate debt adjudication,appeals and recovery-certificate execution",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "Appendix9,printed pp.619-620 / PDF pp.638-639",
+      "statement": "RDBoriginalDRTappellateDRAT19application20appeal21deposit25recovery30ROappeal30Adeposit31Bpriority.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Identify the order before selecting an appeal",
+        "core_explanation_md": "The RDB framework separates the original adjudication of debt, the appellate tribunal route and execution through the Recovery Officer. An appeal from the original tribunal and a challenge to a Recovery Officer order have different provisions and deposit analysis. Do not use one percentage or forum merely because both are called appeals.\n\nJurisdiction, limitation, procedure, certificate corrections, recovery modes and priority also need their own text. Keep the exact order, the decision-maker, the receipt date and the relief sought. The same loan can generate several stages without making their procedural requirements interchangeable.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Why identify who made the order?",
+          "expected_takeaway": "The challenge route and conditions depend on the decision and stage."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A file challenges a Recovery Officer order but automatically uses the tribunal-to-DRAT appeal provision. What is needed?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only the debt account nickname",
+            "explanation_md": "It does not establish the route."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The specific Recovery Officer challenge provision and its conditions",
+            "explanation_md": "The decision-maker and stage matter."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A rule that no recovery order can ever be challenged",
+            "explanation_md": "The index identifies a route."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The company share-transfer form",
+            "explanation_md": "A share-transfer form does not identify the remedy for a Recovery Officer order."
+          }
+        ],
+        "correct_explanation_md": "The decision-maker and stage matter."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A debt has been adjudicated and a certificate issued. Why distinguish recovery execution from deciding the original claim again?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Every stage is legally identical",
+            "explanation_md": "They have different functions."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A certificate automatically authorises every possible act",
+            "explanation_md": "Execution still has rules."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The borrower name no longer matters",
+            "explanation_md": "Identity remains relevant."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The Recovery Officer operates within the execution framework and powers",
+            "explanation_md": "Adjudication and execution have distinct provisions."
+          }
+        ],
+        "correct_explanation_md": "Adjudication and execution have distinct provisions."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Navigation drafts are original study aids,not a current consolidated bare Act. Substantive lessons remain in their exact units. Antigravity review pending for the dated legal text,judicial status and section references.",
+    "Legacy source indexes contain omitted,amended and State-specific provisions; every operational legal conclusion requires its full applicable text."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

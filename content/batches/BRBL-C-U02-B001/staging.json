@@ -1,0 +1,132 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-C-U02-B001",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL C U02 MSMED Act: Separate MSME classification from eligibility as a delayed-payment supplier",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "MSMED_ACT_2006_GAZETTE",
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "MSMED_ACT_2006_GAZETTE",
+      "locator": "sections 2(e), 2(f), 2(n), PDF pp.2-3",
+      "statement": "Enterprise includes the specified manufacturing and service activities; goods exclude actionable claims and money. The supplier definition identifies micro/small enterprises filing the memorandum and expressly included bodies; medium status alone is not supplier eligibility.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F002",
+      "source_id": "S04",
+      "locator": "printed pp.233-242 / PDF pp.252-261, whole unit and end questions visually inspected",
+      "statement": "The chapter covers this objective, but its older classification values and historical memorandum treatment must be read with the retained notifications.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "A label does not establish every statutory benefit",
+        "core_explanation_md": "Start a supplier file with two separate questions: what is the enterprise category, and does the party meet the definition needed for the particular protection? The Act recognises manufacturing and service enterprises. Its delayed-payment chapter concerns eligible micro and small suppliers; a medium classification does not by itself establish that eligibility.\n\nSection 2(n) also includes specified bodies such as NSIC and State Small Industries Development Corporations, and the described bodies selling MSE goods or rendering their services. Check the actual statutory route rather than assuming every business using an MSME logo qualifies. Registration timing and later case law need their own review.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Can a medium classification alone establish delayed-payment supplier status?",
+          "expected_takeaway": "No. Classification and the relevant supplier definition are distinct checks."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A loan file contains a medium-enterprise certificate. The analyst immediately marks the customer eligible for Chapter V solely because it is an MSME. Which correction is needed?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Treat every medium enterprise as a micro enterprise for recovery",
+            "explanation_md": "The statutory categories cannot be relabelled to create eligibility."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Check the relevant supplier definition; medium status alone does not establish Chapter V protection",
+            "explanation_md": "The chapter and section 2(n) require a separate eligibility analysis."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Ignore the certificate because service enterprises cannot be MSMEs",
+            "explanation_md": "The Act includes service enterprises, so this exclusion is unsupported."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Assume only bank borrowers may be statutory suppliers",
+            "explanation_md": "Borrowing from a bank is not the definition used in section 2(n)."
+          }
+        ],
+        "correct_explanation_md": "The chapter and section 2(n) require a separate eligibility analysis."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A banker lists money, a movable machine and an actionable claim as goods under section 2(f). Which entry survives that definition?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Money and the actionable claim only",
+            "explanation_md": "Both money and actionable claims are expressly excluded."
+          },
+          {
+            "option_id": "B",
+            "text_md": "All three because each has economic value",
+            "explanation_md": "Economic value does not override the express exclusions."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The actionable claim only",
+            "explanation_md": "The definition expressly excludes actionable claims."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The movable machine, assuming it is ordinary movable property",
+            "explanation_md": "The exclusions remove money and actionable claims, not ordinary movable machinery."
+          }
+        ],
+        "correct_explanation_md": "The exclusions remove money and actionable claims, not ordinary movable machinery."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex drafts, 16 November 2026; independent legal/session applicability, originality and pedagogy review pending. No approval or publication claimed.",
+    "Original Gazette is not a certified June 2026 consolidation. Later amendments, commencement changes, State rules and applicable judgments require independent verification.",
+    "Source questions and textbook table structure were inspected and not reused. Teaching and scenarios were designed from a factual brief; author comparison is not independent editorial review.",
+    "Original notification transition dates and partial-month/live-rate interest conventions are not certified here. Udyam registration timing and legal eligibility disputes need applicable primary evidence."
+  ],
+  "next_batch_hint": "Continue BRBL-C-U02-B002"
+}

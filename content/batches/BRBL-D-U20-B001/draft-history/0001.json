@@ -1,0 +1,360 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-D-U20-B001",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_D::U20: Identify membership,allotment,transfer,transmission and depository records",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.508-510 / PDF pp.527-529",
+        "statement": "2(55)subscriber,writingandregister,beneficialownerdepository;allotmenttransfertransmissiondistinct;membershipvsshareholding;capacityFEMA.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Membership needs the correct legal route and record",
+          "core_explanation_md": "The statutory definition recognises the memorandum subscriber,the person agreeing in writing and entered in the member register,and the shareholding beneficial owner recorded by a depository. A company without share capital can have members without shareholders. Do not use a certificate-delivery event as the only possible membership test.\n\nAllotment allocates shares; transfer and transmission arise through different routes. Death,nomination,legal representation and joint holdings require the relevant succession and record analysis rather than assuming that possession of a certificate settles beneficial ownership. Capacity,body-corporate powers and FEMA compliance can also matter. The textbook broad minor prohibition and insolvency summaries need specialist reconciliation before being used to decide a live holding.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Can a depository beneficial-owner record matter to membership?",
+            "expected_takeaway": "Yes. It is expressly recognised in the described definition."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A person holds shares and is entered as beneficial owner in depository records. A note rejects membership solely because no paper certificate was delivered. What was omitted?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The statutory depository-record route",
+              "explanation_md": "Membership is not confined to paper delivery."
+            },
+            {
+              "option_id": "B",
+              "text_md": "A requirement that all companies have no share capital",
+              "explanation_md": "That is incorrect."
+            },
+            {
+              "option_id": "C",
+              "text_md": "A rule that certificates always determine succession",
+              "explanation_md": "Succession requires separate analysis."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Only the holder branch location",
+              "explanation_md": "It is not the membership test."
+            }
+          ],
+          "correct_explanation_md": "Membership is not confined to paper delivery."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A holding changes after a member death. Why should the file distinguish transmission from an ordinary sale transfer?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Both always require an identical sale contract",
+              "explanation_md": "They arise through different routes."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Death automatically cancels all shares",
+              "explanation_md": "That is unsupported."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The legal basis and required evidence differ",
+              "explanation_md": "Succession and record requirements must be established."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Only the market price matters",
+              "explanation_md": "Price does not establish entitlement."
+            }
+          ],
+          "correct_explanation_md": "Succession and record requirements must be established."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Antigravity must independently review law,exceptions,originality and exam cutoff before publication.",
+      "Register-location rule,penalties,minor holdings,insolvency and succession conflicts require current primary review; old numbers not assessed."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-D-U20-B001",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_D::U20"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_D::U20",
+        "objective_ids": [
+          "BRBL::MOD_D::U20::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_D::U20",
+        "objective_ids": [
+          "BRBL::MOD_D::U20::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_D::U20",
+        "objective_ids": [
+          "BRBL::MOD_D::U20::LO_01"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-D-U20-B001",
+      "draft_id": "D001",
+      "item_id": "item_353d2154bb84c72850f80cc39ca11b0cc86cbaefc0985c6bf12f96d544b0dcf7"
+    },
+    {
+      "batch_id": "BRBL-D-U20-B001",
+      "draft_id": "D002",
+      "item_id": "item_cbb166d5a999c19091dfa7a83e7d6195d9406f904324d58dfdfba754d24eb7ac"
+    },
+    {
+      "batch_id": "BRBL-D-U20-B001",
+      "draft_id": "D003",
+      "item_id": "item_f001997cd9167219c141db9e17cb5f01fdaf6e50133fefbc0c55c2ed2dc21ede"
+    }
+  ],
+  "items": [
+    {
+      "title": "Membership needs the correct legal route and record",
+      "core_explanation_md": "The statutory definition recognises the memorandum subscriber,the person agreeing in writing and entered in the member register,and the shareholding beneficial owner recorded by a depository. A company without share capital can have members without shareholders. Do not use a certificate-delivery event as the only possible membership test.\n\nAllotment allocates shares; transfer and transmission arise through different routes. Death,nomination,legal representation and joint holdings require the relevant succession and record analysis rather than assuming that possession of a certificate settles beneficial ownership. Capacity,body-corporate powers and FEMA compliance can also matter. The textbook broad minor prohibition and insolvency summaries need specialist reconciliation before being used to decide a live holding.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Can a depository beneficial-owner record matter to membership?",
+        "expected_takeaway": "Yes. It is expressly recognised in the described definition."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_353d2154bb84c72850f80cc39ca11b0cc86cbaefc0985c6bf12f96d544b0dcf7",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U20",
+      "objective_ids": [
+        "BRBL::MOD_D::U20::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.508-510 / PDF pp.527-529"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A person holds shares and is entered as beneficial owner in depository records. A note rejects membership solely because no paper certificate was delivered. What was omitted?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The statutory depository-record route",
+          "explanation_md": "Membership is not confined to paper delivery."
+        },
+        {
+          "option_id": "B",
+          "text_md": "A requirement that all companies have no share capital",
+          "explanation_md": "That is incorrect."
+        },
+        {
+          "option_id": "C",
+          "text_md": "A rule that certificates always determine succession",
+          "explanation_md": "Succession requires separate analysis."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Only the holder branch location",
+          "explanation_md": "It is not the membership test."
+        }
+      ],
+      "correct_explanation_md": "Membership is not confined to paper delivery.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_cbb166d5a999c19091dfa7a83e7d6195d9406f904324d58dfdfba754d24eb7ac",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U20",
+      "objective_ids": [
+        "BRBL::MOD_D::U20::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.508-510 / PDF pp.527-529"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A holding changes after a member death. Why should the file distinguish transmission from an ordinary sale transfer?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Both always require an identical sale contract",
+          "explanation_md": "They arise through different routes."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Death automatically cancels all shares",
+          "explanation_md": "That is unsupported."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The legal basis and required evidence differ",
+          "explanation_md": "Succession and record requirements must be established."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Only the market price matters",
+          "explanation_md": "Price does not establish entitlement."
+        }
+      ],
+      "correct_explanation_md": "Succession and record requirements must be established.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_f001997cd9167219c141db9e17cb5f01fdaf6e50133fefbc0c55c2ed2dc21ede",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U20",
+      "objective_ids": [
+        "BRBL::MOD_D::U20::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.508-510 / PDF pp.527-529"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

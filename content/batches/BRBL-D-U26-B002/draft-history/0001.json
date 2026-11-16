@@ -1,0 +1,360 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-D-U26-B002",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_D::U26: Apply response clocks,reasoned refusal and partial access",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.557-559 / PDF pp.576-578",
+        "statement": "Ordinary30dayslife liberty48hours,feesintimationexclusion,deemedrefusal;reasonsappealparticulars;severanceformaccessqualified.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Track the request clock and explain the decision",
+          "core_explanation_md": "The ordinary described response limit is thirty days; a life-or-liberty request has the stated forty-eight-hour rule. Special routes,fee-intimation exclusion and applicable receipt events require their own calculation rather than assuming every request uses one unqualified deadline. Failure to decide in time is deemed refusal,not a grant of unlimited permission to disclose anything.\n\nA rejection communicates reasons,the appeal period and appellate particulars. Where exempt and non-exempt parts can be separated,the severance route requires a reasoned partial-access notice. The requested form is the starting point,subject to the stated disproportionate-resource and preservation qualifications. Do not use resource diversion as an unexplained blanket substitute for the statutory exemption analysis.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "What should a refusal communicate besides the result?",
+            "expected_takeaway": "Reasons and the relevant appeal information."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A PIO rejects a request with only the word rejected and no reasons or appeal details. Which requirement is missing?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only an official stamp colour",
+              "explanation_md": "It is not the substantive requirement."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The reasoned refusal and appellate information",
+              "explanation_md": "The applicant needs the statutory decision information."
+            },
+            {
+              "option_id": "C",
+              "text_md": "A promise to disclose all customer data",
+              "explanation_md": "That would ignore safeguards."
+            },
+            {
+              "option_id": "D",
+              "text_md": "An invitation to pay an unofficial fee",
+              "explanation_md": "That is not a lawful response requirement."
+            }
+          ],
+          "correct_explanation_md": "The applicant needs the statutory decision information."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A record contains both disclosable and exempt material. The officer assumes the presence of any exempt line always requires withholding the whole record. What must be considered?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Automatic release of every line",
+              "explanation_md": "That ignores the exemption."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Destruction of the original",
+              "explanation_md": "That is not the remedy."
+            },
+            {
+              "option_id": "C",
+              "text_md": "No decision until the applicant withdraws",
+              "explanation_md": "That does not meet the framework."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The applicable severance and reasoned partial-access procedure",
+              "explanation_md": "The non-exempt portion needs separate consideration."
+            }
+          ],
+          "correct_explanation_md": "The non-exempt portion needs separate consideration."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Antigravity independent legal,originality and session review pending; no publication approval.",
+      "Central/State fee rules,current procedural amendments and section11 total-response clock need primary reconciliation; no stale fee table copied."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-D-U26-B002",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_D::U26"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_D::U26",
+        "objective_ids": [
+          "BRBL::MOD_D::U26::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_D::U26",
+        "objective_ids": [
+          "BRBL::MOD_D::U26::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_D::U26",
+        "objective_ids": [
+          "BRBL::MOD_D::U26::LO_02"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-D-U26-B002",
+      "draft_id": "D001",
+      "item_id": "item_357631128be2d973e62d6fa2a2bb7a39a8aff5fa9cdfd68465ad212a6ec99750"
+    },
+    {
+      "batch_id": "BRBL-D-U26-B002",
+      "draft_id": "D002",
+      "item_id": "item_5988cf7fb3ae33aeacca83eab69a4aecd402c2a0a62f08bc985acaa485c733d6"
+    },
+    {
+      "batch_id": "BRBL-D-U26-B002",
+      "draft_id": "D003",
+      "item_id": "item_400bc5253339a456a269afdbbb3086ea4e2944c26d091077b512489cae78d524"
+    }
+  ],
+  "items": [
+    {
+      "title": "Track the request clock and explain the decision",
+      "core_explanation_md": "The ordinary described response limit is thirty days; a life-or-liberty request has the stated forty-eight-hour rule. Special routes,fee-intimation exclusion and applicable receipt events require their own calculation rather than assuming every request uses one unqualified deadline. Failure to decide in time is deemed refusal,not a grant of unlimited permission to disclose anything.\n\nA rejection communicates reasons,the appeal period and appellate particulars. Where exempt and non-exempt parts can be separated,the severance route requires a reasoned partial-access notice. The requested form is the starting point,subject to the stated disproportionate-resource and preservation qualifications. Do not use resource diversion as an unexplained blanket substitute for the statutory exemption analysis.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "What should a refusal communicate besides the result?",
+        "expected_takeaway": "Reasons and the relevant appeal information."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_357631128be2d973e62d6fa2a2bb7a39a8aff5fa9cdfd68465ad212a6ec99750",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U26",
+      "objective_ids": [
+        "BRBL::MOD_D::U26::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.557-559 / PDF pp.576-578"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A PIO rejects a request with only the word rejected and no reasons or appeal details. Which requirement is missing?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only an official stamp colour",
+          "explanation_md": "It is not the substantive requirement."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The reasoned refusal and appellate information",
+          "explanation_md": "The applicant needs the statutory decision information."
+        },
+        {
+          "option_id": "C",
+          "text_md": "A promise to disclose all customer data",
+          "explanation_md": "That would ignore safeguards."
+        },
+        {
+          "option_id": "D",
+          "text_md": "An invitation to pay an unofficial fee",
+          "explanation_md": "That is not a lawful response requirement."
+        }
+      ],
+      "correct_explanation_md": "The applicant needs the statutory decision information.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_5988cf7fb3ae33aeacca83eab69a4aecd402c2a0a62f08bc985acaa485c733d6",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U26",
+      "objective_ids": [
+        "BRBL::MOD_D::U26::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.557-559 / PDF pp.576-578"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A record contains both disclosable and exempt material. The officer assumes the presence of any exempt line always requires withholding the whole record. What must be considered?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Automatic release of every line",
+          "explanation_md": "That ignores the exemption."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Destruction of the original",
+          "explanation_md": "That is not the remedy."
+        },
+        {
+          "option_id": "C",
+          "text_md": "No decision until the applicant withdraws",
+          "explanation_md": "That does not meet the framework."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The applicable severance and reasoned partial-access procedure",
+          "explanation_md": "The non-exempt portion needs separate consideration."
+        }
+      ],
+      "correct_explanation_md": "The non-exempt portion needs separate consideration.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_400bc5253339a456a269afdbbb3086ea4e2944c26d091077b512489cae78d524",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U26",
+      "objective_ids": [
+        "BRBL::MOD_D::U26::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.557-559 / PDF pp.576-578"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

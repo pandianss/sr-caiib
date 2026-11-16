@@ -1,0 +1,360 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-APPENDIX-U01-B010",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_APPENDIX::U01: Navigate IBC by debtor,process stage and commenced provisions",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "Appendix10,printed pp.620-629 / PDF pp.639-648",
+        "statement": "IndexCIRPliquidationindividualpartnershipIBBIprofessionalsutilitiesmisc;listingnotcommencementcertificate.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "A listed process may not be generally commenced",
+          "core_explanation_md": "For IBC research,identify the debtor category and the process: corporate resolution,liquidation or the relevant individual/partnership route. Then locate commencement,admission,moratorium,control,creditor decision and distribution provisions for that process. The existence of a Part or section in the index does not establish that it applies generally to every debtor.\n\nThe2026 amendment and commencement evidence must be reconciled with the June2026 exam cutoff. Rules,regulations and judicial treatment can add material conditions. Do not transplant a corporate voting rule into a different process or teach an old withdrawal provision as unchanged merely because the section number remains.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does inclusion of an individual-insolvency chapter prove general commencement for all individuals?",
+            "expected_takeaway": "No. Commencement and debtor-category applicability need evidence."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "An author sees individual-insolvency headings and assumes every listed provision applies to every individual debtor. Which evidence is missing?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only a larger index",
+              "explanation_md": "Length is not commencement evidence."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The debtor preferred outcome",
+              "explanation_md": "It does not establish applicability."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The relevant commencement and debtor-category instruments",
+              "explanation_md": "Listing alone is insufficient."
+            },
+            {
+              "option_id": "D",
+              "text_md": "An assumption that all laws commence on assent",
+              "explanation_md": "The actual commencement provision governs."
+            }
+          ],
+          "correct_explanation_md": "Listing alone is insufficient."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A section number survives an amendment but its operative conditions change. Which version should a pinned exam item use?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The applicable text established by cutoff and commencement evidence",
+              "explanation_md": "A stable number does not imply unchanged wording."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Always the oldest textbook text",
+              "explanation_md": "That ignores amendments."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Whichever version makes the answer shorter",
+              "explanation_md": "Convenience is irrelevant."
+            },
+            {
+              "option_id": "D",
+              "text_md": "A mixture without qualification",
+              "explanation_md": "That creates an unreliable rule."
+            }
+          ],
+          "correct_explanation_md": "A stable number does not imply unchanged wording."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Navigation drafts are original study aids,not a current consolidated bare Act. Substantive lessons remain in their exact units. Antigravity review pending for the dated legal text,judicial status and section references.",
+      "Legacy source indexes contain omitted,amended and State-specific provisions; every operational legal conclusion requires its full applicable text."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-APPENDIX-U01-B010",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_APPENDIX::U01"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_APPENDIX::U01",
+        "objective_ids": [
+          "BRBL::MOD_APPENDIX::U01::LO_10"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_APPENDIX::U01",
+        "objective_ids": [
+          "BRBL::MOD_APPENDIX::U01::LO_10"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_APPENDIX::U01",
+        "objective_ids": [
+          "BRBL::MOD_APPENDIX::U01::LO_10"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-APPENDIX-U01-B010",
+      "draft_id": "D001",
+      "item_id": "item_f8e535a54940403e4ce3f8d4f47309984d2bc218aa7bfb81c9d899248a44e3f2"
+    },
+    {
+      "batch_id": "BRBL-APPENDIX-U01-B010",
+      "draft_id": "D002",
+      "item_id": "item_e03c2553e4765435dd8f84e77f94baff4cf452fa6ab1e12bffed0aed54168ea6"
+    },
+    {
+      "batch_id": "BRBL-APPENDIX-U01-B010",
+      "draft_id": "D003",
+      "item_id": "item_893258543ae9f9c6e70e53a186465d81dc5bda73d3da979bf3496b85fe1589b0"
+    }
+  ],
+  "items": [
+    {
+      "title": "A listed process may not be generally commenced",
+      "core_explanation_md": "For IBC research,identify the debtor category and the process: corporate resolution,liquidation or the relevant individual/partnership route. Then locate commencement,admission,moratorium,control,creditor decision and distribution provisions for that process. The existence of a Part or section in the index does not establish that it applies generally to every debtor.\n\nThe2026 amendment and commencement evidence must be reconciled with the June2026 exam cutoff. Rules,regulations and judicial treatment can add material conditions. Do not transplant a corporate voting rule into a different process or teach an old withdrawal provision as unchanged merely because the section number remains.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does inclusion of an individual-insolvency chapter prove general commencement for all individuals?",
+        "expected_takeaway": "No. Commencement and debtor-category applicability need evidence."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_f8e535a54940403e4ce3f8d4f47309984d2bc218aa7bfb81c9d899248a44e3f2",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_APPENDIX",
+      "unit_id": "BRBL::MOD_APPENDIX::U01",
+      "objective_ids": [
+        "BRBL::MOD_APPENDIX::U01::LO_10"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Appendix10,printed pp.620-629 / PDF pp.639-648"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "An author sees individual-insolvency headings and assumes every listed provision applies to every individual debtor. Which evidence is missing?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only a larger index",
+          "explanation_md": "Length is not commencement evidence."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The debtor preferred outcome",
+          "explanation_md": "It does not establish applicability."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The relevant commencement and debtor-category instruments",
+          "explanation_md": "Listing alone is insufficient."
+        },
+        {
+          "option_id": "D",
+          "text_md": "An assumption that all laws commence on assent",
+          "explanation_md": "The actual commencement provision governs."
+        }
+      ],
+      "correct_explanation_md": "Listing alone is insufficient.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_e03c2553e4765435dd8f84e77f94baff4cf452fa6ab1e12bffed0aed54168ea6",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_APPENDIX",
+      "unit_id": "BRBL::MOD_APPENDIX::U01",
+      "objective_ids": [
+        "BRBL::MOD_APPENDIX::U01::LO_10"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Appendix10,printed pp.620-629 / PDF pp.639-648"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A section number survives an amendment but its operative conditions change. Which version should a pinned exam item use?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The applicable text established by cutoff and commencement evidence",
+          "explanation_md": "A stable number does not imply unchanged wording."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Always the oldest textbook text",
+          "explanation_md": "That ignores amendments."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Whichever version makes the answer shorter",
+          "explanation_md": "Convenience is irrelevant."
+        },
+        {
+          "option_id": "D",
+          "text_md": "A mixture without qualification",
+          "explanation_md": "That creates an unreliable rule."
+        }
+      ],
+      "correct_explanation_md": "A stable number does not imply unchanged wording.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_893258543ae9f9c6e70e53a186465d81dc5bda73d3da979bf3496b85fe1589b0",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_APPENDIX",
+      "unit_id": "BRBL::MOD_APPENDIX::U01",
+      "objective_ids": [
+        "BRBL::MOD_APPENDIX::U01::LO_10"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Appendix10,printed pp.620-629 / PDF pp.639-648"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

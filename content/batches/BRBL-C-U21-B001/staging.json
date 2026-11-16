@@ -1,0 +1,132 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-C-U21-B001",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_C::U21: Select the income-tax law and period before applying historical terminology",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04",
+    "ITD_INCOME_TAX_2025_TRANSITION"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.386-389 / PDF pp.405-408",
+      "statement": "Bookuses1961Actpreviousyear/assessmentyear,residence/sourceandfiveheads;oldfinancialyearcontextneedsversioning.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F002",
+      "source_id": "ITD_INCOME_TAX_2025_TRANSITION",
+      "locator": "FAQ commencement,taxyear andsection536saving",
+      "statement": "2025Actfrom1April2026,taxyearfor2026-27onwards;earlier-periodproceedingssavedunder1961framework.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "The filing date alone does not identify the governing tax law",
+        "core_explanation_md": "The textbook explains the 1961 Act using previous year and assessment year. The Income Tax Department transition FAQ identifies the 2025 Act from1April2026 and the Tax Year terminology for income of2026-27 onwards, while preserving the described earlier-period proceedings. A return filed after commencement can still concern an earlier income period.\n\nBefore using an old section number or form, record the income period, governing Act and applicable saving. Residence and source remain separate analytical questions; citizenship, account label and tax residence must not be treated as interchangeable. The textbook legacy rates and section references are research context, not an unqualified current filing guide.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does a filing after1April2026 automatically mean every matter uses only the new Act?",
+          "expected_takeaway": "No. The income period and statutory savings matter."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A return is filed after the new Act commencement but relates entirely to an earlier income period covered by the saving. What selects the law?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only the date the PDF was uploaded",
+            "explanation_md": "Upload timing alone does not determine substantive transition."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The latest-looking form label regardless of period",
+            "explanation_md": "Labels do not override savings."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The income period and applicable transition provision",
+            "explanation_md": "The old and new frameworks must be separated correctly."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The bank account opening year alone",
+            "explanation_md": "That is not the tax-period test."
+          }
+        ],
+        "correct_explanation_md": "The old and new frameworks must be separated correctly."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A tax memo infers residence only from citizenship. What is the missing step?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Apply the statutory residence/source rules to the actual person and period",
+            "explanation_md": "Citizenship and tax residence are not identical tests."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Use the address font size",
+            "explanation_md": "Presentation is irrelevant."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Assume every foreign receipt is exempt for every category",
+            "explanation_md": "The source contains category-specific qualifications."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Treat account balance as the residence definition",
+            "explanation_md": "Wealth does not alone establish residence."
+          }
+        ],
+        "correct_explanation_md": "Citizenship and tax residence are not identical tests."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Original drafts for later Antigravity review; source/current applicability, case law and originality review remain pending. No publication approval.",
+    "Tax chapter contains stale statutory regime,datedrates/thresholds,advance-tax typo,overbroadRNOR/cooperativeTDS/disallowance claims and conflictingGSTcommencement. These are not used as current correct-answer propositions. Numeric rates/eligibility are expressly hypothetical stipulations;currentregulatory publication needs Antigravity reconciliation."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

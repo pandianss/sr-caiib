@@ -1,0 +1,407 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-C-U02-B001",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL C U02 MSMED Act: Separate MSME classification from eligibility as a delayed-payment supplier",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "MSMED_ACT_2006_GAZETTE",
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "MSMED_ACT_2006_GAZETTE",
+        "locator": "sections 2(e), 2(f), 2(n), PDF pp.2-3",
+        "statement": "Enterprise includes the specified manufacturing and service activities; goods exclude actionable claims and money. The supplier definition identifies micro/small enterprises filing the memorandum and expressly included bodies; medium status alone is not supplier eligibility.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "source_id": "S04",
+        "locator": "printed pp.233-242 / PDF pp.252-261, whole unit and end questions visually inspected",
+        "statement": "The chapter covers this objective, but its older classification values and historical memorandum treatment must be read with the retained notifications.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "A label does not establish every statutory benefit",
+          "core_explanation_md": "Start a supplier file with two separate questions: what is the enterprise category, and does the party meet the definition needed for the particular protection? The Act recognises manufacturing and service enterprises. Its delayed-payment chapter concerns eligible micro and small suppliers; a medium classification does not by itself establish that eligibility.\n\nSection 2(n) also includes specified bodies such as NSIC and State Small Industries Development Corporations, and the described bodies selling MSE goods or rendering their services. Check the actual statutory route rather than assuming every business using an MSME logo qualifies. Registration timing and later case law need their own review.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Can a medium classification alone establish delayed-payment supplier status?",
+            "expected_takeaway": "No. Classification and the relevant supplier definition are distinct checks."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A loan file contains a medium-enterprise certificate. The analyst immediately marks the customer eligible for Chapter V solely because it is an MSME. Which correction is needed?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Treat every medium enterprise as a micro enterprise for recovery",
+              "explanation_md": "The statutory categories cannot be relabelled to create eligibility."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Check the relevant supplier definition; medium status alone does not establish Chapter V protection",
+              "explanation_md": "The chapter and section 2(n) require a separate eligibility analysis."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Ignore the certificate because service enterprises cannot be MSMEs",
+              "explanation_md": "The Act includes service enterprises, so this exclusion is unsupported."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Assume only bank borrowers may be statutory suppliers",
+              "explanation_md": "Borrowing from a bank is not the definition used in section 2(n)."
+            }
+          ],
+          "correct_explanation_md": "The chapter and section 2(n) require a separate eligibility analysis."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A banker lists money, a movable machine and an actionable claim as goods under section 2(f). Which entry survives that definition?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Money and the actionable claim only",
+              "explanation_md": "Both money and actionable claims are expressly excluded."
+            },
+            {
+              "option_id": "B",
+              "text_md": "All three because each has economic value",
+              "explanation_md": "Economic value does not override the express exclusions."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The actionable claim only",
+              "explanation_md": "The definition expressly excludes actionable claims."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The movable machine, assuming it is ordinary movable property",
+              "explanation_md": "The exclusions remove money and actionable claims, not ordinary movable machinery."
+            }
+          ],
+          "correct_explanation_md": "The exclusions remove money and actionable claims, not ordinary movable machinery."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex drafts, 16 November 2026; independent legal/session applicability, originality and pedagogy review pending. No approval or publication claimed.",
+      "Original Gazette is not a certified June 2026 consolidation. Later amendments, commencement changes, State rules and applicable judgments require independent verification.",
+      "Source questions and textbook table structure were inspected and not reused. Teaching and scenarios were designed from a factual brief; author comparison is not independent editorial review.",
+      "Original notification transition dates and partial-month/live-rate interest conventions are not certified here. Udyam registration timing and legal eligibility disputes need applicable primary evidence."
+    ],
+    "next_batch_hint": "Continue BRBL-C-U02-B002"
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-C-U02-B001",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p.12, Compulsory Paper IV Module C, MSMED Act 2006"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "MSMED_ACT_2006_GAZETTE",
+        "authority": "Ministry of Law and Justice; hosted by Development Commissioner (MSME)",
+        "title": "The Micro, Small and Medium Enterprises Development Act, 2006, No.27 of 2006 (original Gazette enactment)",
+        "url": "https://www.dcmsme.gov.in/msmed2006.pdf",
+        "publication_date": "2006-06-16",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_C::U02",
+        "objective_ids": [
+          "BRBL::MOD_C::U02::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_C::U02",
+        "objective_ids": [
+          "BRBL::MOD_C::U02::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_C::U02",
+        "objective_ids": [
+          "BRBL::MOD_C::U02::LO_01"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-C-U02-B001",
+      "draft_id": "D001",
+      "item_id": "item_3769a9f3d6be63ca17520c8a8a6e672253609c20950afdc9bdee147773a7c67e"
+    },
+    {
+      "batch_id": "BRBL-C-U02-B001",
+      "draft_id": "D002",
+      "item_id": "item_5b7c230e92775ec0ef9aa7a7820039e399b85e05a646023da0d9fc9886dfc9d7"
+    },
+    {
+      "batch_id": "BRBL-C-U02-B001",
+      "draft_id": "D003",
+      "item_id": "item_1b3283f985a070b1859625f58aa08fcc0694ec1f82e9638eeb0d0d1d1280368c"
+    }
+  ],
+  "items": [
+    {
+      "title": "A label does not establish every statutory benefit",
+      "core_explanation_md": "Start a supplier file with two separate questions: what is the enterprise category, and does the party meet the definition needed for the particular protection? The Act recognises manufacturing and service enterprises. Its delayed-payment chapter concerns eligible micro and small suppliers; a medium classification does not by itself establish that eligibility.\n\nSection 2(n) also includes specified bodies such as NSIC and State Small Industries Development Corporations, and the described bodies selling MSE goods or rendering their services. Check the actual statutory route rather than assuming every business using an MSME logo qualifies. Registration timing and later case law need their own review.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Can a medium classification alone establish delayed-payment supplier status?",
+        "expected_takeaway": "No. Classification and the relevant supplier definition are distinct checks."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_3769a9f3d6be63ca17520c8a8a6e672253609c20950afdc9bdee147773a7c67e",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U02",
+      "objective_ids": [
+        "BRBL::MOD_C::U02::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "MSMED_ACT_2006_GAZETTE",
+          "authority": "Ministry of Law and Justice; hosted by Development Commissioner (MSME)",
+          "title": "The Micro, Small and Medium Enterprises Development Act, 2006, No.27 of 2006 (original Gazette enactment)",
+          "url": "https://www.dcmsme.gov.in/msmed2006.pdf",
+          "publication_date": "2006-06-16",
+          "effective_date": null,
+          "locator": "sections 2(e), 2(f), 2(n), PDF pp.2-3"
+        },
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.233-242 / PDF pp.252-261, whole unit and end questions visually inspected"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A loan file contains a medium-enterprise certificate. The analyst immediately marks the customer eligible for Chapter V solely because it is an MSME. Which correction is needed?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Treat every medium enterprise as a micro enterprise for recovery",
+          "explanation_md": "The statutory categories cannot be relabelled to create eligibility."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Check the relevant supplier definition; medium status alone does not establish Chapter V protection",
+          "explanation_md": "The chapter and section 2(n) require a separate eligibility analysis."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Ignore the certificate because service enterprises cannot be MSMEs",
+          "explanation_md": "The Act includes service enterprises, so this exclusion is unsupported."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Assume only bank borrowers may be statutory suppliers",
+          "explanation_md": "Borrowing from a bank is not the definition used in section 2(n)."
+        }
+      ],
+      "correct_explanation_md": "The chapter and section 2(n) require a separate eligibility analysis.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_5b7c230e92775ec0ef9aa7a7820039e399b85e05a646023da0d9fc9886dfc9d7",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U02",
+      "objective_ids": [
+        "BRBL::MOD_C::U02::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "MSMED_ACT_2006_GAZETTE",
+          "authority": "Ministry of Law and Justice; hosted by Development Commissioner (MSME)",
+          "title": "The Micro, Small and Medium Enterprises Development Act, 2006, No.27 of 2006 (original Gazette enactment)",
+          "url": "https://www.dcmsme.gov.in/msmed2006.pdf",
+          "publication_date": "2006-06-16",
+          "effective_date": null,
+          "locator": "sections 2(e), 2(f), 2(n), PDF pp.2-3"
+        },
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.233-242 / PDF pp.252-261, whole unit and end questions visually inspected"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A banker lists money, a movable machine and an actionable claim as goods under section 2(f). Which entry survives that definition?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Money and the actionable claim only",
+          "explanation_md": "Both money and actionable claims are expressly excluded."
+        },
+        {
+          "option_id": "B",
+          "text_md": "All three because each has economic value",
+          "explanation_md": "Economic value does not override the express exclusions."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The actionable claim only",
+          "explanation_md": "The definition expressly excludes actionable claims."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The movable machine, assuming it is ordinary movable property",
+          "explanation_md": "The exclusions remove money and actionable claims, not ordinary movable machinery."
+        }
+      ],
+      "correct_explanation_md": "The exclusions remove money and actionable claims, not ordinary movable machinery.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_1b3283f985a070b1859625f58aa08fcc0694ec1f82e9638eeb0d0d1d1280368c",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U02",
+      "objective_ids": [
+        "BRBL::MOD_C::U02::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "MSMED_ACT_2006_GAZETTE",
+          "authority": "Ministry of Law and Justice; hosted by Development Commissioner (MSME)",
+          "title": "The Micro, Small and Medium Enterprises Development Act, 2006, No.27 of 2006 (original Gazette enactment)",
+          "url": "https://www.dcmsme.gov.in/msmed2006.pdf",
+          "publication_date": "2006-06-16",
+          "effective_date": null,
+          "locator": "sections 2(e), 2(f), 2(n), PDF pp.2-3"
+        },
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.233-242 / PDF pp.252-261, whole unit and end questions visually inspected"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

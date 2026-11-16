@@ -1,0 +1,360 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-D-U25-B001",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_D::U25: Identify RTI public authorities,citizens and information held or controlled",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.552-553 / PDF pp.571-572",
+        "statement": "Citizensrightpublicauthoritiesconstitutionlawnotificationownershipcontrolsubstantialfinance;informationmaterialinclprivatebodyaccessibleunderlaw;rightsinspectioncopies electronic.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Public authority is a legal category",
+          "core_explanation_md": "RTI gives citizens the described access right to information held by or under the control of public authorities. The definition includes the specified constitutional,statutory,government-established and ownership/control/substantial-financing categories,including qualifying non-government organisations. Do not assume every private business is directly a public authority merely because it serves customers.\n\nInformation includes material held in different forms and qualifying private-body information accessible to a public authority under law. The right can involve inspection,notes,certified copies,samples and electronic access. Identify the actual record and custodian rather than demanding an officer invent a new opinion as if it were an existing record. Public-sector banking coverage does not eliminate the applicable exemption and third-party analysis.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does every customer-facing private business automatically become a public authority?",
+            "expected_takeaway": "No. Apply the statutory definition."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A request is sent directly to a private business solely because it serves the public,without any statutory public-authority basis. What must be established?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only the number of customers",
+              "explanation_md": "That is not the statutory category."
+            },
+            {
+              "option_id": "B",
+              "text_md": "A rule that every business is a public authority",
+              "explanation_md": "The definition is qualified."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The applicable public-authority or lawful public-authority-access route",
+              "explanation_md": "The legal basis and record custodian matter."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The applicant preferred bank",
+              "explanation_md": "That does not establish coverage."
+            }
+          ],
+          "correct_explanation_md": "The legal basis and record custodian matter."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A public authority holds the requested inspection report electronically and refuses solely because no paper original exists. Which principle is relevant?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Information can be held in electronic form",
+              "explanation_md": "The right is not confined to paper records."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Electronic records can never be information",
+              "explanation_md": "That contradicts the definition."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Every electronic record must be published without exemptions",
+              "explanation_md": "Exemptions still require analysis."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Only handwritten records can be inspected",
+              "explanation_md": "The described right is broader."
+            }
+          ],
+          "correct_explanation_md": "The right is not confined to paper records."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Antigravity independent legal,originality and session review pending; no publication approval.",
+      "Exact publication/commencement date and any intervening court orders require independent review; no claim all DPDP duties commenced."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-D-U25-B001",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_D::U25"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_D::U25",
+        "objective_ids": [
+          "BRBL::MOD_D::U25::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_D::U25",
+        "objective_ids": [
+          "BRBL::MOD_D::U25::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_D::U25",
+        "objective_ids": [
+          "BRBL::MOD_D::U25::LO_01"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-D-U25-B001",
+      "draft_id": "D001",
+      "item_id": "item_4384d624ec8953721bd752ad8c207ec1e13f86804d7f213986568b6b71c87fa6"
+    },
+    {
+      "batch_id": "BRBL-D-U25-B001",
+      "draft_id": "D002",
+      "item_id": "item_9ff6285ce97480c35543e0cbf9fe98edafea07aea7873914af5b986d25627ec8"
+    },
+    {
+      "batch_id": "BRBL-D-U25-B001",
+      "draft_id": "D003",
+      "item_id": "item_9fb278f6c50073650af8c6af6368356c96797b9fe6b25d69d865c3a5872fd73e"
+    }
+  ],
+  "items": [
+    {
+      "title": "Public authority is a legal category",
+      "core_explanation_md": "RTI gives citizens the described access right to information held by or under the control of public authorities. The definition includes the specified constitutional,statutory,government-established and ownership/control/substantial-financing categories,including qualifying non-government organisations. Do not assume every private business is directly a public authority merely because it serves customers.\n\nInformation includes material held in different forms and qualifying private-body information accessible to a public authority under law. The right can involve inspection,notes,certified copies,samples and electronic access. Identify the actual record and custodian rather than demanding an officer invent a new opinion as if it were an existing record. Public-sector banking coverage does not eliminate the applicable exemption and third-party analysis.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does every customer-facing private business automatically become a public authority?",
+        "expected_takeaway": "No. Apply the statutory definition."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_4384d624ec8953721bd752ad8c207ec1e13f86804d7f213986568b6b71c87fa6",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U25",
+      "objective_ids": [
+        "BRBL::MOD_D::U25::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.552-553 / PDF pp.571-572"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A request is sent directly to a private business solely because it serves the public,without any statutory public-authority basis. What must be established?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only the number of customers",
+          "explanation_md": "That is not the statutory category."
+        },
+        {
+          "option_id": "B",
+          "text_md": "A rule that every business is a public authority",
+          "explanation_md": "The definition is qualified."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The applicable public-authority or lawful public-authority-access route",
+          "explanation_md": "The legal basis and record custodian matter."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The applicant preferred bank",
+          "explanation_md": "That does not establish coverage."
+        }
+      ],
+      "correct_explanation_md": "The legal basis and record custodian matter.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_9ff6285ce97480c35543e0cbf9fe98edafea07aea7873914af5b986d25627ec8",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U25",
+      "objective_ids": [
+        "BRBL::MOD_D::U25::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.552-553 / PDF pp.571-572"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A public authority holds the requested inspection report electronically and refuses solely because no paper original exists. Which principle is relevant?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Information can be held in electronic form",
+          "explanation_md": "The right is not confined to paper records."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Electronic records can never be information",
+          "explanation_md": "That contradicts the definition."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Every electronic record must be published without exemptions",
+          "explanation_md": "Exemptions still require analysis."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Only handwritten records can be inspected",
+          "explanation_md": "The described right is broader."
+        }
+      ],
+      "correct_explanation_md": "The right is not confined to paper records.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_9fb278f6c50073650af8c6af6368356c96797b9fe6b25d69d865c3a5872fd73e",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U25",
+      "objective_ids": [
+        "BRBL::MOD_D::U25::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.552-553 / PDF pp.571-572"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

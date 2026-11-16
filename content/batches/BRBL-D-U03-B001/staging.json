@@ -1,0 +1,120 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U03-B001",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U03: Map guarantee parties,consideration,coextensive liability and contractual limits",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.414-416 / PDF pp.433-435",
+      "statement": "126surety/PD/creditor;127benefitPDconsideration;128coextensiveunlesscontractotherwise;noautomaticexhaustPDfirst;bankdemandguaranteetermsandinjunctionnarrowfacts.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Read the surety promise before choosing the recovery sequence",
+        "core_explanation_md": "A guarantee addresses the principal debtor default through the surety promise to the creditor. Consideration can be the relevant benefit to the principal debtor rather than a separate payment to the surety. The default rule is coextensive liability unless the contract provides otherwise; the undertaking can set limits and conditions.\n\nDo not assume the creditor must always exhaust every remedy against the principal debtor before proceeding against a liable surety. Conversely, a guarantee label does not erase its demand, expiry or scope requirements. An independent bank demand guarantee and an ordinary loan surety file require their actual wording and applicable law; injunction outcomes cannot be predicted from a label alone.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Must a creditor always exhaust the principal debtor assets first?",
+          "expected_takeaway": "No. Apply the undertaking and applicable liability rule."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A valid surety undertaking is invoked, but the defence relies only on the bank not exhausting every principal-debtor remedy first. What must be examined?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only the debtor current address",
+            "explanation_md": "That does not determine the guarantee sequence."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The guarantee terms and applicable coextensive-liability rule",
+            "explanation_md": "A universal exhaustion requirement cannot be assumed."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A rule that every guarantor is a borrower shareholder",
+            "explanation_md": "That status is not required by the given definition."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Whether the surety received the loan cash personally",
+            "explanation_md": "Principal-debtor benefit can supply consideration."
+          }
+        ],
+        "correct_explanation_md": "A universal exhaustion requirement cannot be assumed."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An undertaking expressly caps the surety covered liability. The recovery sheet ignores the cap solely because liability is coextensive by default. What is wrong?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The default rule eliminates every contractual qualification",
+            "explanation_md": "The source expressly recognises contrary provision."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Every cap cancels the guarantee altogether",
+            "explanation_md": "A limit is not necessarily cancellation."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The bank may privately raise the cap after default",
+            "explanation_md": "The actual undertaking controls."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The default rule must be read with the contractual limitation",
+            "explanation_md": "Coextensiveness is qualified by the contract."
+          }
+        ],
+        "correct_explanation_md": "Coextensiveness is qualified by the contract."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Drafts for Antigravity review. Consolidated statute,exceptions and later case law require independent reconciliation;no publication approval.",
+    "Book guarantee examples contain party-name reversal and overbroad underlying-invalidity assertions;not reused. Demand-guarantee injunction and limitation issues require primary review."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

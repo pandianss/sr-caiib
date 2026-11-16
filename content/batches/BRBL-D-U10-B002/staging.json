@@ -1,0 +1,120 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U10-B002",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U10: Distinguish at-will,particular and fixed-term partnerships from an LLP",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.456-457 / PDF pp.475-476",
+      "statement": "Atwillnodurationordetermination;particularadventure,fixedtermcontinuationdefaults;LLPbodycorporateperpetualsuccessionanddistinctagency.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Identify the duration and the legal form",
+        "core_explanation_md": "A partnership at will has neither an agreed duration nor a provision determining its termination in the described statutory sense. A partnership for a particular undertaking and one for a fixed period require attention to that agreed purpose or period. Continuing business after an expired term can engage the described at-will/default-continuity rules; do not assume the original expiry date still explains every later transaction.\n\nAn LLP is a different statutory vehicle: incorporation gives it a separate legal personality and continuing existence. Its partner-agency structure should not be replaced by the ordinary firm rule. Check the incorporation record and governing agreement before describing all arrangements called partnerships as identical.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "What should be checked before treating a firm as at will?",
+          "expected_takeaway": "The agreement for duration and determination, not merely its title."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "The agreement fixes a single construction undertaking and contains termination terms. A file calls it at will only because no calendar end date appears. What matters?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The undertaking and determination provisions in the agreement",
+            "explanation_md": "An absence of a calendar date alone is not conclusive."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Only the partners preferred label",
+            "explanation_md": "A label cannot replace the agreement."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The amount of the first deposit",
+            "explanation_md": "Deposit size does not determine duration."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Whether the business uses online banking",
+            "explanation_md": "The banking channel is irrelevant."
+          }
+        ],
+        "correct_explanation_md": "An absence of a calendar date alone is not conclusive."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A registered LLP continues despite a partner change. Why should ordinary-firm assumptions be avoided?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "LLPs cannot enter contracts",
+            "explanation_md": "The separate entity can act under its law."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Every partner change must destroy every entity",
+            "explanation_md": "The LLP has continuing existence."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The LLP has a distinct incorporated identity and statutory agency rules",
+            "explanation_md": "Legal form determines the analysis."
+          },
+          {
+            "option_id": "D",
+            "text_md": "LLP registration removes every wrongdoing liability",
+            "explanation_md": "Separate personality does not provide that unlimited protection."
+          }
+        ],
+        "correct_explanation_md": "Legal form determines the analysis."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Primary law, State amendments, session applicability and independent editorial review remain with Antigravity. No publication approval.",
+    "Book asserts a 100-person partnership maximum and misattributes the prescribed rule; do not publish that number. Verify section464 and applicable Rule10 ceiling/exemptions from primary rules."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

@@ -1,0 +1,120 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U21-B001",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U21: Distinguish prospectus,red-herring and shelf disclosure routes",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.516-517 / PDF pp.535-536",
+      "statement": "Publicsecuritiesinvitationbroaddefinition;redherringincompletequantum/pricebutobligations;three-dayfiling; shelfmultipleissuesperiodandupdates;privatepublicinvitationprohibition.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Look at the invitation substance",
+        "core_explanation_md": "The prospectus concept extends beyond a document carrying that heading to the described public securities invitation. A red-herring prospectus omits complete particulars of quantum or price; that does not remove disclosure obligations. The source states filing at least three days before the offer/subscription opening and later disclosure of the completed offer particulars.\n\nA shelf prospectus supports the specified multiple-issue route over a period; it is not permanent permission to omit material changes. Private-company restrictions on public invitations remain relevant. Rights issues, underwriting, private placement and public offers must be classified under their own provisions rather than using the textbook exception list as a universal disclosure waiver.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does missing final price mean a red-herring document has no prospectus obligations?",
+          "expected_takeaway": "No. The source expressly preserves the applicable obligations."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An issuer calls a public securities invitation a newsletter and assumes prospectus rules cannot apply. What matters?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only the title newsletter",
+            "explanation_md": "The concept is broader than a heading."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The number of photographs",
+            "explanation_md": "That does not decide the invitation nature."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The substance of the invitation and applicable securities route",
+            "explanation_md": "A label alone does not avoid the framework."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Whether a bank printed it",
+            "explanation_md": "Printing source does not settle classification."
+          }
+        ],
+        "correct_explanation_md": "A label alone does not avoid the framework."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A red-herring document omits final price and the issuer therefore omits all material disclosure. What is wrong?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Incomplete price particulars do not remove the applicable prospectus obligations",
+            "explanation_md": "The special form retains obligations."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Red-herring documents must contain no information",
+            "explanation_md": "The incomplete price or quantum feature does not remove the document applicable disclosure obligations."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Every offer is automatically private placement",
+            "explanation_md": "The actual route matters."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A later price always cures every misleading omission",
+            "explanation_md": "That blanket cure is unsupported."
+          }
+        ],
+        "correct_explanation_md": "The special form retains obligations."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Antigravity must independently review law,exceptions,originality and exam cutoff before publication.",
+    "Current section26/33 and SEBI disclosure requirements must replace any legacy full-prospectus-with-every-form shorthand before publication."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

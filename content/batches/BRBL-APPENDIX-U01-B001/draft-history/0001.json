@@ -1,0 +1,360 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-APPENDIX-U01-B001",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_APPENDIX::U01: Navigate negotiable-instrument issues by stage and legal version",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "Appendix1,printed pp.587-592 / PDF pp.606-611",
+        "statement": "Indexgroupsnegotiation,presentment,dishonour,crossings,presumptionsand138-148proceedings;headingsnotfullconditions.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Build an instrument timeline before opening the statute",
+          "core_explanation_md": "For an instrument problem,separate creation and parties,transfer or negotiation,presentment,dishonour and the particular remedy. Then consult the relevant provision in the version applicable to the facts. A bank collection-protection question is different from a drawer-prosecution question even when both concern the same cheque.\n\nUse the appendix as a route into the full text,not as proof that the heading contains every condition. Record dates,holder status,crossing,payment or collection role,and the alleged defect. Presumptions and statutory protections need their own conditions; dishonour does not establish every civil and criminal consequence at once.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Why separate collection protection from drawer prosecution?",
+            "expected_takeaway": "They concern different actors,conditions and remedies."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A case asks whether a collecting banker has statutory protection,but the researcher reads only the cheque-prosecution headings. Which research route is needed?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only criminal sentencing provisions",
+              "explanation_md": "They do not establish collection protection."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The collection/crossing protection provision and its conditions",
+              "explanation_md": "Match the actor and issue to the relevant text."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Only company director appointment rules",
+              "explanation_md": "They concern another issue."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The instrument paper size",
+              "explanation_md": "That does not identify the protection."
+            }
+          ],
+          "correct_explanation_md": "Match the actor and issue to the relevant text."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "An index lists a presumption and a researcher treats it as conclusive proof of every disputed fact. What should happen next?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Stop because every heading is a complete rule",
+              "explanation_md": "The heading is not the full provision."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Assume every presumption is irrelevant",
+              "explanation_md": "That opposite shortcut is also wrong."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Replace the statute with a guessed answer",
+              "explanation_md": "No evidence supports guessing."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Read the operative text,conditions and rebuttal framework",
+              "explanation_md": "An index locates the law; it does not complete its application."
+            }
+          ],
+          "correct_explanation_md": "An index locates the law; it does not complete its application."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Navigation drafts are original study aids,not a current consolidated bare Act. Substantive lessons remain in their exact units. Antigravity review pending for the dated legal text,judicial status and section references.",
+      "Legacy source indexes contain omitted,amended and State-specific provisions; every operational legal conclusion requires its full applicable text."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-APPENDIX-U01-B001",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_APPENDIX::U01"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_APPENDIX::U01",
+        "objective_ids": [
+          "BRBL::MOD_APPENDIX::U01::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_APPENDIX::U01",
+        "objective_ids": [
+          "BRBL::MOD_APPENDIX::U01::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_APPENDIX::U01",
+        "objective_ids": [
+          "BRBL::MOD_APPENDIX::U01::LO_01"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-APPENDIX-U01-B001",
+      "draft_id": "D001",
+      "item_id": "item_a76823f5938183c4a1a2b1ca5bc32cea07dba2f07065fe9276eba0e4486c9ae2"
+    },
+    {
+      "batch_id": "BRBL-APPENDIX-U01-B001",
+      "draft_id": "D002",
+      "item_id": "item_39a37422b7462e3373aa4b9cba1d86db2ccbe19a772330000e53308cce38977b"
+    },
+    {
+      "batch_id": "BRBL-APPENDIX-U01-B001",
+      "draft_id": "D003",
+      "item_id": "item_a7b993665bb076f2b6f08fc05561777b94b9fecb6c7e71e63d00663569498bc8"
+    }
+  ],
+  "items": [
+    {
+      "title": "Build an instrument timeline before opening the statute",
+      "core_explanation_md": "For an instrument problem,separate creation and parties,transfer or negotiation,presentment,dishonour and the particular remedy. Then consult the relevant provision in the version applicable to the facts. A bank collection-protection question is different from a drawer-prosecution question even when both concern the same cheque.\n\nUse the appendix as a route into the full text,not as proof that the heading contains every condition. Record dates,holder status,crossing,payment or collection role,and the alleged defect. Presumptions and statutory protections need their own conditions; dishonour does not establish every civil and criminal consequence at once.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Why separate collection protection from drawer prosecution?",
+        "expected_takeaway": "They concern different actors,conditions and remedies."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_a76823f5938183c4a1a2b1ca5bc32cea07dba2f07065fe9276eba0e4486c9ae2",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_APPENDIX",
+      "unit_id": "BRBL::MOD_APPENDIX::U01",
+      "objective_ids": [
+        "BRBL::MOD_APPENDIX::U01::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Appendix1,printed pp.587-592 / PDF pp.606-611"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A case asks whether a collecting banker has statutory protection,but the researcher reads only the cheque-prosecution headings. Which research route is needed?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only criminal sentencing provisions",
+          "explanation_md": "They do not establish collection protection."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The collection/crossing protection provision and its conditions",
+          "explanation_md": "Match the actor and issue to the relevant text."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Only company director appointment rules",
+          "explanation_md": "They concern another issue."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The instrument paper size",
+          "explanation_md": "That does not identify the protection."
+        }
+      ],
+      "correct_explanation_md": "Match the actor and issue to the relevant text.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_39a37422b7462e3373aa4b9cba1d86db2ccbe19a772330000e53308cce38977b",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_APPENDIX",
+      "unit_id": "BRBL::MOD_APPENDIX::U01",
+      "objective_ids": [
+        "BRBL::MOD_APPENDIX::U01::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Appendix1,printed pp.587-592 / PDF pp.606-611"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "An index lists a presumption and a researcher treats it as conclusive proof of every disputed fact. What should happen next?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Stop because every heading is a complete rule",
+          "explanation_md": "The heading is not the full provision."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Assume every presumption is irrelevant",
+          "explanation_md": "That opposite shortcut is also wrong."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Replace the statute with a guessed answer",
+          "explanation_md": "No evidence supports guessing."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Read the operative text,conditions and rebuttal framework",
+          "explanation_md": "An index locates the law; it does not complete its application."
+        }
+      ],
+      "correct_explanation_md": "An index locates the law; it does not complete its application.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_a7b993665bb076f2b6f08fc05561777b94b9fecb6c7e71e63d00663569498bc8",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_APPENDIX",
+      "unit_id": "BRBL::MOD_APPENDIX::U01",
+      "objective_ids": [
+        "BRBL::MOD_APPENDIX::U01::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Appendix1,printed pp.587-592 / PDF pp.606-611"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

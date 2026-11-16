@@ -1,0 +1,360 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-D-U26-B004",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_D::U26: Distinguish first appeal,second appeal,complaint and commission remedies",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.560-562 / PDF pp.579-581",
+        "statement": "Firstseniorofficer30daysqualifiedcondonation;secondcommission90days;firstdisposal30or45reasons;complaintdistinctcommissionaccesscompensationpenalty.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Choose the route for the stage and relief",
+          "core_explanation_md": "The first appeal lies to the designated officer senior to the PIO under the described thirty-day filing rule, with the applicable delay-condonation power. The second appeal goes to the relevant Information Commission under the stated ninety-day rule. The thirty-day disposal period, extendable to a total forty-five days with reasons, belongs to the applicable first-appeal framework; do not promise that every commission second appeal has that same fixed statutory disposal limit.\n\nA complaint concerning inability to submit, refusal, unreasonable fee or misleading/incomplete response is a distinct route requiring the appropriate relief analysis. Commission powers include compliance directions and the specified compensation/penalty consequences. Record the receipt, decision and filing dates and the relief sought before selecting a route.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Can the first-appeal disposal clock be automatically assigned to every second appeal?",
+            "expected_takeaway": "No. Distinguish the statutory stages."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "After the first appeal, a requester seeks the next appellate route. Which institution is relevant under the described framework?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The borrower chosen arbitrator",
+              "explanation_md": "That is not the RTI second-appeal route."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Any commercial bank manager",
+              "explanation_md": "The statutory jurisdiction matters."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Only the original PIO again",
+              "explanation_md": "That is not the stated next appeal."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The appropriate Information Commission",
+              "explanation_md": "The second appeal has a distinct statutory forum."
+            }
+          ],
+          "correct_explanation_md": "The second appeal has a distinct statutory forum."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A guide promises every second appeal must be disposed of within forty-five days by copying the first-appeal rule. What should change?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Delete all appeal rights",
+              "explanation_md": "That is not the correction."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Attribute the disposal rule to the correct statutory stage",
+              "explanation_md": "The stages have different provisions."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Treat ninety days as the ordinary initial response time",
+              "explanation_md": "That confuses filing and response rules."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Assume no dates matter",
+              "explanation_md": "They remain essential."
+            }
+          ],
+          "correct_explanation_md": "The stages have different provisions."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Antigravity independent legal,originality and session review pending; no publication approval.",
+      "Central/State fee rules,current procedural amendments and section11 total-response clock need primary reconciliation; no stale fee table copied."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-D-U26-B004",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_D::U26"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_D::U26",
+        "objective_ids": [
+          "BRBL::MOD_D::U26::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_D::U26",
+        "objective_ids": [
+          "BRBL::MOD_D::U26::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_D::U26",
+        "objective_ids": [
+          "BRBL::MOD_D::U26::LO_04"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-D-U26-B004",
+      "draft_id": "D001",
+      "item_id": "item_e6c6984b0801a0eefc7d26d5c0de34444cbdace792b5122643c4ec0807165a16"
+    },
+    {
+      "batch_id": "BRBL-D-U26-B004",
+      "draft_id": "D002",
+      "item_id": "item_9b7fdc2ebef42026a37cc103bce32935c1aa7bf070bcd333a61ce40ca07469e6"
+    },
+    {
+      "batch_id": "BRBL-D-U26-B004",
+      "draft_id": "D003",
+      "item_id": "item_705b5e45b29c44eab0303d36ee1bd4111e2b24b7ab5ac8bd5864efa60ea796a3"
+    }
+  ],
+  "items": [
+    {
+      "title": "Choose the route for the stage and relief",
+      "core_explanation_md": "The first appeal lies to the designated officer senior to the PIO under the described thirty-day filing rule, with the applicable delay-condonation power. The second appeal goes to the relevant Information Commission under the stated ninety-day rule. The thirty-day disposal period, extendable to a total forty-five days with reasons, belongs to the applicable first-appeal framework; do not promise that every commission second appeal has that same fixed statutory disposal limit.\n\nA complaint concerning inability to submit, refusal, unreasonable fee or misleading/incomplete response is a distinct route requiring the appropriate relief analysis. Commission powers include compliance directions and the specified compensation/penalty consequences. Record the receipt, decision and filing dates and the relief sought before selecting a route.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Can the first-appeal disposal clock be automatically assigned to every second appeal?",
+        "expected_takeaway": "No. Distinguish the statutory stages."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_e6c6984b0801a0eefc7d26d5c0de34444cbdace792b5122643c4ec0807165a16",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U26",
+      "objective_ids": [
+        "BRBL::MOD_D::U26::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.560-562 / PDF pp.579-581"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "After the first appeal, a requester seeks the next appellate route. Which institution is relevant under the described framework?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The borrower chosen arbitrator",
+          "explanation_md": "That is not the RTI second-appeal route."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Any commercial bank manager",
+          "explanation_md": "The statutory jurisdiction matters."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Only the original PIO again",
+          "explanation_md": "That is not the stated next appeal."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The appropriate Information Commission",
+          "explanation_md": "The second appeal has a distinct statutory forum."
+        }
+      ],
+      "correct_explanation_md": "The second appeal has a distinct statutory forum.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_9b7fdc2ebef42026a37cc103bce32935c1aa7bf070bcd333a61ce40ca07469e6",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U26",
+      "objective_ids": [
+        "BRBL::MOD_D::U26::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.560-562 / PDF pp.579-581"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A guide promises every second appeal must be disposed of within forty-five days by copying the first-appeal rule. What should change?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Delete all appeal rights",
+          "explanation_md": "That is not the correction."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Attribute the disposal rule to the correct statutory stage",
+          "explanation_md": "The stages have different provisions."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Treat ninety days as the ordinary initial response time",
+          "explanation_md": "That confuses filing and response rules."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Assume no dates matter",
+          "explanation_md": "They remain essential."
+        }
+      ],
+      "correct_explanation_md": "The stages have different provisions.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_705b5e45b29c44eab0303d36ee1bd4111e2b24b7ab5ac8bd5864efa60ea796a3",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U26",
+      "objective_ids": [
+        "BRBL::MOD_D::U26::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.560-562 / PDF pp.579-581"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-C-U02-B003",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL C U02 MSMED Act: Distinguish the National Board, Advisory Committee and policy-support powers",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "MSMED_ACT_2006_GAZETTE",
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "MSMED_ACT_2006_GAZETTE",
+      "locator": "sections 3-7 and 9-14, PDF pp.3-8",
+      "statement": "Board examines development factors, reviews policies and recommends; meets at least quarterly and associates advisers without a vote. Advisory Committee has specified expert/government/association representation and recommends on classification and related matters. Sections 9-14 address development, RBI credit directions, procurement policies and funds.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F002",
+      "source_id": "S04",
+      "locator": "printed pp.233-242 / PDF pp.252-261, whole unit and end questions visually inspected",
+      "statement": "The chapter covers this objective, but its older classification values and historical memorandum treatment must be read with the retained notifications.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Send each issue to the institution with the relevant function",
+        "core_explanation_md": "The National Board is a policy and development forum: it examines sector conditions, reviews programmes, recommends improvements and advises on the statutory funds. It is not the dispute-resolution Council. Its head office is Delhi and it must meet at least once every three months. A person associated to advise it can join the relevant discussion without a vote.\n\nThe Advisory Committee supports the classification and advisory work under section 7, chaired by the Ministry Secretary with the specified official and association representation. Sections 9-14 separately enable development measures, RBI-guided credit policy, procurement preferences and funding. None of these makes every MSME application an automatic loan sanction.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does the National Board decide an unpaid supplier invoice through arbitration?",
+          "expected_takeaway": "No. That dispute route belongs to the Facilitation Council framework."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A branch wants to explain why an MSME development provision does not guarantee sanction of every requested loan. Which explanation fits sections 9-14?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The Board must approve every branch credit proposal",
+            "explanation_md": "The Board has policy functions, not individual branch sanction powers here."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Procurement preference and a bank loan are the same legal decision",
+            "explanation_md": "Procurement policy and credit appraisal are distinct mechanisms."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The Advisory Committee replaces the RBI for credit instructions",
+            "explanation_md": "Section 10 identifies RBI guidelines for credit policies and practices."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The Act provides development and credit-policy mechanisms; these are not an unconditional sanction promise",
+            "explanation_md": "The enabling framework must be distinguished from approval of an individual application."
+          }
+        ],
+        "correct_explanation_md": "The enabling framework must be distinguished from approval of an individual application."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An invited technical adviser says participation at a Board discussion gives an automatic vote. What does section 3(7) indicate?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Participation always carries a vote regardless of membership",
+            "explanation_md": "The provision separates discussion participation from voting."
+          },
+          {
+            "option_id": "B",
+            "text_md": "An associated adviser may discuss the relevant matter but has no vote by that association",
+            "explanation_md": "The statutory association power does not confer voting rights."
+          },
+          {
+            "option_id": "C",
+            "text_md": "No outside adviser may ever join a Board discussion",
+            "explanation_md": "The Board may associate persons for assistance or advice."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The adviser becomes Chairperson for that agenda item",
+            "explanation_md": "Association does not replace the statutory Chairperson."
+          }
+        ],
+        "correct_explanation_md": "The statutory association power does not confer voting rights."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex drafts, 16 November 2026; independent legal/session applicability, originality and pedagogy review pending. No approval or publication claimed.",
+    "Original Gazette is not a certified June 2026 consolidation. Later amendments, commencement changes, State rules and applicable judgments require independent verification.",
+    "Source questions and textbook table structure were inspected and not reused. Teaching and scenarios were designed from a factual brief; author comparison is not independent editorial review.",
+    "Original notification transition dates and partial-month/live-rate interest conventions are not certified here. Udyam registration timing and legal eligibility disputes need applicable primary evidence."
+  ],
+  "next_batch_hint": "Continue BRBL-C-U02-B004"
+}

@@ -1,0 +1,407 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-C-U21-B001",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_C::U21: Select the income-tax law and period before applying historical terminology",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04",
+      "ITD_INCOME_TAX_2025_TRANSITION"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.386-389 / PDF pp.405-408",
+        "statement": "Bookuses1961Actpreviousyear/assessmentyear,residence/sourceandfiveheads;oldfinancialyearcontextneedsversioning.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "source_id": "ITD_INCOME_TAX_2025_TRANSITION",
+        "locator": "FAQ commencement,taxyear andsection536saving",
+        "statement": "2025Actfrom1April2026,taxyearfor2026-27onwards;earlier-periodproceedingssavedunder1961framework.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "The filing date alone does not identify the governing tax law",
+          "core_explanation_md": "The textbook explains the1961 Act using previous year and assessment year. The Income Tax Department transition FAQ identifies the2025 Act from1April2026 and the Tax Year terminology for income of2026-27 onwards, while preserving the described earlier-period proceedings. A return filed after commencement can still concern an earlier income period.\n\nBefore using an old section number or form, record the income period, governing Act and applicable saving. Residence and source remain separate analytical questions; citizenship, account label and tax residence must not be treated as interchangeable. The textbook legacy rates and section references are research context,not an unqualified current filing guide.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does a filing after1April2026 automatically mean every matter uses only the new Act?",
+            "expected_takeaway": "No. The income period and statutory savings matter."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A return is filed after the new Act commencement but relates entirely to an earlier income period covered by the saving. What selects the law?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only the date the PDF was uploaded",
+              "explanation_md": "Upload timing alone does not determine substantive transition."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The latest-looking form label regardless of period",
+              "explanation_md": "Labels do not override savings."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The income period and applicable transition provision",
+              "explanation_md": "The old and new frameworks must be separated correctly."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The bank account opening year alone",
+              "explanation_md": "That is not the tax-period test."
+            }
+          ],
+          "correct_explanation_md": "The old and new frameworks must be separated correctly."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A tax memo infers residence only from citizenship. What is the missing step?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Apply the statutory residence/source rules to the actual person and period",
+              "explanation_md": "Citizenship and tax residence are not identical tests."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Use the address font size",
+              "explanation_md": "Presentation is irrelevant."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Assume every foreign receipt is exempt for every category",
+              "explanation_md": "The source contains category-specific qualifications."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Treat account balance as the residence definition",
+              "explanation_md": "Wealth does not alone establish residence."
+            }
+          ],
+          "correct_explanation_md": "Citizenship and tax residence are not identical tests."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Original drafts for later Antigravity review; source/current applicability, case law and originality review remain pending. No publication approval.",
+      "Tax chapter contains stale statutory regime,datedrates/thresholds,advance-tax typo,overbroadRNOR/cooperativeTDS/disallowance claims and conflictingGSTcommencement. These are not used as current correct-answer propositions. Numeric rates/eligibility are expressly hypothetical stipulations;currentregulatory publication needs Antigravity reconciliation."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-C-U21-B001",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_C::U21"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "ITD_INCOME_TAX_2025_TRANSITION",
+        "authority": "Income Tax Department, Government of India",
+        "title": "Objective and scope of the New Act FAQs: Income-tax Act2025 transition",
+        "url": "https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/objective-and-scope-new-act-faq",
+        "publication_date": null,
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_C::U21",
+        "objective_ids": [
+          "BRBL::MOD_C::U21::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_C::U21",
+        "objective_ids": [
+          "BRBL::MOD_C::U21::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_C::U21",
+        "objective_ids": [
+          "BRBL::MOD_C::U21::LO_01"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-C-U21-B001",
+      "draft_id": "D001",
+      "item_id": "item_6271a29f0690ced8222da65eab98018c0c7af88b2b2a528e2aa8be4ab71e8545"
+    },
+    {
+      "batch_id": "BRBL-C-U21-B001",
+      "draft_id": "D002",
+      "item_id": "item_69fd8ec8a9c855f89963dd8ea44c7ab9cdd6b5d1ed6cab177faadec635f83238"
+    },
+    {
+      "batch_id": "BRBL-C-U21-B001",
+      "draft_id": "D003",
+      "item_id": "item_84023cccd0f3a771a935dc4bb694c82a15fd4d502a08c7d9a30246c97082e036"
+    }
+  ],
+  "items": [
+    {
+      "title": "The filing date alone does not identify the governing tax law",
+      "core_explanation_md": "The textbook explains the1961 Act using previous year and assessment year. The Income Tax Department transition FAQ identifies the2025 Act from1April2026 and the Tax Year terminology for income of2026-27 onwards, while preserving the described earlier-period proceedings. A return filed after commencement can still concern an earlier income period.\n\nBefore using an old section number or form, record the income period, governing Act and applicable saving. Residence and source remain separate analytical questions; citizenship, account label and tax residence must not be treated as interchangeable. The textbook legacy rates and section references are research context,not an unqualified current filing guide.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does a filing after1April2026 automatically mean every matter uses only the new Act?",
+        "expected_takeaway": "No. The income period and statutory savings matter."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_6271a29f0690ced8222da65eab98018c0c7af88b2b2a528e2aa8be4ab71e8545",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U21",
+      "objective_ids": [
+        "BRBL::MOD_C::U21::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.386-389 / PDF pp.405-408"
+        },
+        {
+          "source_id": "ITD_INCOME_TAX_2025_TRANSITION",
+          "authority": "Income Tax Department, Government of India",
+          "title": "Objective and scope of the New Act FAQs: Income-tax Act2025 transition",
+          "url": "https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/objective-and-scope-new-act-faq",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "FAQ commencement,taxyear andsection536saving"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A return is filed after the new Act commencement but relates entirely to an earlier income period covered by the saving. What selects the law?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only the date the PDF was uploaded",
+          "explanation_md": "Upload timing alone does not determine substantive transition."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The latest-looking form label regardless of period",
+          "explanation_md": "Labels do not override savings."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The income period and applicable transition provision",
+          "explanation_md": "The old and new frameworks must be separated correctly."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The bank account opening year alone",
+          "explanation_md": "That is not the tax-period test."
+        }
+      ],
+      "correct_explanation_md": "The old and new frameworks must be separated correctly.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_69fd8ec8a9c855f89963dd8ea44c7ab9cdd6b5d1ed6cab177faadec635f83238",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U21",
+      "objective_ids": [
+        "BRBL::MOD_C::U21::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.386-389 / PDF pp.405-408"
+        },
+        {
+          "source_id": "ITD_INCOME_TAX_2025_TRANSITION",
+          "authority": "Income Tax Department, Government of India",
+          "title": "Objective and scope of the New Act FAQs: Income-tax Act2025 transition",
+          "url": "https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/objective-and-scope-new-act-faq",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "FAQ commencement,taxyear andsection536saving"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A tax memo infers residence only from citizenship. What is the missing step?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Apply the statutory residence/source rules to the actual person and period",
+          "explanation_md": "Citizenship and tax residence are not identical tests."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Use the address font size",
+          "explanation_md": "Presentation is irrelevant."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Assume every foreign receipt is exempt for every category",
+          "explanation_md": "The source contains category-specific qualifications."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Treat account balance as the residence definition",
+          "explanation_md": "Wealth does not alone establish residence."
+        }
+      ],
+      "correct_explanation_md": "Citizenship and tax residence are not identical tests.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_84023cccd0f3a771a935dc4bb694c82a15fd4d502a08c7d9a30246c97082e036",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U21",
+      "objective_ids": [
+        "BRBL::MOD_C::U21::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.386-389 / PDF pp.405-408"
+        },
+        {
+          "source_id": "ITD_INCOME_TAX_2025_TRANSITION",
+          "authority": "Income Tax Department, Government of India",
+          "title": "Objective and scope of the New Act FAQs: Income-tax Act2025 transition",
+          "url": "https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/objective-and-scope-new-act-faq",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "FAQ commencement,taxyear andsection536saving"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

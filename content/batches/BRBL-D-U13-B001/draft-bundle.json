@@ -1,0 +1,359 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-D-U13-B001",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_D::U13: Explain minor benefits and the election on attaining majority",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.472-473 / PDF pp.491-492",
+        "statement": "Section30allpartnersconsentminorbenefits,shareliablepersonalnot;laterofmajorityorknowledgesixmonthsnotice;failurepartner;retroactiveliabilityifadmittedpartner;non-electionrights.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Admission to benefits is not full partnership",
+          "core_explanation_md": "With all partners consent, a minor may be admitted to the benefits of partnership under the described provision. The minor share is exposed to the firm obligations, but the minor is not personally liable in the same way as a full partner. The minor has the specified account access and a qualified right to sue for a share when severing the connection. Do not call this ordinary admission as a partner.\n\nOn majority, the election and public-notice clock runs for six months from the later of attaining majority or obtaining knowledge of the benefits admission. Failure to give the required notice can result in becoming a partner. Electing partnership can bring the described liability for firm acts since benefits admission; electing otherwise has different prospective consequences. Keep the events and notice evidence on a timeline.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Why is the knowledge date relevant?",
+            "expected_takeaway": "The statutory six-month election period uses the later relevant event."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A minor admitted to benefits is asked to sign as if already a full personally liable partner. Which distinction is required?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Every beneficiary is automatically a full partner",
+              "explanation_md": "The provision distinguishes the statuses."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The minor share can never be affected by firm debts",
+              "explanation_md": "The share has the described exposure."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Benefits admission exposes the share but does not itself create full personal partnership liability",
+              "explanation_md": "Do not replace the special rule with adult partnership assumptions."
+            },
+            {
+              "option_id": "D",
+              "text_md": "No minor can receive any partnership benefit",
+              "explanation_md": "The provision permits qualified admission."
+            }
+          ],
+          "correct_explanation_md": "Do not replace the special rule with adult partnership assumptions."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A person learns of their benefits admission only after attaining majority. Which event starts the described election period?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The later of majority and knowledge of the admission",
+              "explanation_md": "The source specifies that later-event rule."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Always the original firm formation date",
+              "explanation_md": "That disregards the election rule."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Always the birth date",
+              "explanation_md": "That is not the statutory trigger."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The next bank audit date",
+              "explanation_md": "An audit date does not replace the trigger."
+            }
+          ],
+          "correct_explanation_md": "The source specifies that later-event rule."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Primary law, State amendments, session applicability and independent editorial review remain with Antigravity. No publication approval."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-D-U13-B001",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_D::U13"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_D::U13",
+        "objective_ids": [
+          "BRBL::MOD_D::U13::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_D::U13",
+        "objective_ids": [
+          "BRBL::MOD_D::U13::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_D::U13",
+        "objective_ids": [
+          "BRBL::MOD_D::U13::LO_01"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-D-U13-B001",
+      "draft_id": "D001",
+      "item_id": "item_2303655d7c9b4c4e7e7d56e48e9a897075830eb80788cf0fe28638edb497cff4"
+    },
+    {
+      "batch_id": "BRBL-D-U13-B001",
+      "draft_id": "D002",
+      "item_id": "item_2ec030d742506ff364c64b6fd41c48cdd11e1a7668f6d8d37dedf9c8a5298a45"
+    },
+    {
+      "batch_id": "BRBL-D-U13-B001",
+      "draft_id": "D003",
+      "item_id": "item_350201b45d4c27658b6025625399c4af5fd0c26ecfdf5fcbbdd4aa38ae808439"
+    }
+  ],
+  "items": [
+    {
+      "title": "Admission to benefits is not full partnership",
+      "core_explanation_md": "With all partners consent, a minor may be admitted to the benefits of partnership under the described provision. The minor share is exposed to the firm obligations, but the minor is not personally liable in the same way as a full partner. The minor has the specified account access and a qualified right to sue for a share when severing the connection. Do not call this ordinary admission as a partner.\n\nOn majority, the election and public-notice clock runs for six months from the later of attaining majority or obtaining knowledge of the benefits admission. Failure to give the required notice can result in becoming a partner. Electing partnership can bring the described liability for firm acts since benefits admission; electing otherwise has different prospective consequences. Keep the events and notice evidence on a timeline.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Why is the knowledge date relevant?",
+        "expected_takeaway": "The statutory six-month election period uses the later relevant event."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_2303655d7c9b4c4e7e7d56e48e9a897075830eb80788cf0fe28638edb497cff4",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U13",
+      "objective_ids": [
+        "BRBL::MOD_D::U13::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.472-473 / PDF pp.491-492"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A minor admitted to benefits is asked to sign as if already a full personally liable partner. Which distinction is required?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Every beneficiary is automatically a full partner",
+          "explanation_md": "The provision distinguishes the statuses."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The minor share can never be affected by firm debts",
+          "explanation_md": "The share has the described exposure."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Benefits admission exposes the share but does not itself create full personal partnership liability",
+          "explanation_md": "Do not replace the special rule with adult partnership assumptions."
+        },
+        {
+          "option_id": "D",
+          "text_md": "No minor can receive any partnership benefit",
+          "explanation_md": "The provision permits qualified admission."
+        }
+      ],
+      "correct_explanation_md": "Do not replace the special rule with adult partnership assumptions.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_2ec030d742506ff364c64b6fd41c48cdd11e1a7668f6d8d37dedf9c8a5298a45",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U13",
+      "objective_ids": [
+        "BRBL::MOD_D::U13::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.472-473 / PDF pp.491-492"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A person learns of their benefits admission only after attaining majority. Which event starts the described election period?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The later of majority and knowledge of the admission",
+          "explanation_md": "The source specifies that later-event rule."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Always the original firm formation date",
+          "explanation_md": "That disregards the election rule."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Always the birth date",
+          "explanation_md": "That is not the statutory trigger."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The next bank audit date",
+          "explanation_md": "An audit date does not replace the trigger."
+        }
+      ],
+      "correct_explanation_md": "The source specifies that later-event rule.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_350201b45d4c27658b6025625399c4af5fd0c26ecfdf5fcbbdd4aa38ae808439",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U13",
+      "objective_ids": [
+        "BRBL::MOD_D::U13::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.472-473 / PDF pp.491-492"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

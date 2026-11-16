@@ -1,0 +1,360 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-C-U04-B003",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL C U04: Identify security agreement, secured asset, secured debt and excluded interests separately",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.254-255 / PDF pp.273-274",
+        "statement": "Security agreement creates the interest, secured asset is charged property, secured debt is debt secured by interest. Security interest definition is read with section31 exclusions; secured creditor includes specified banks/FIs, ARCs and trustees.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Draw the security relationship before taking action",
+          "core_explanation_md": "The security agreement is the arrangement creating the relevant interest; it can include the described mortgage by deposit of title deeds. The secured asset is the property carrying that interest. Secured debt is the debt protected by it. The secured creditor is the qualifying holder under the statutory definition, which extends to the specified ARC and trustee situations. These are related terms with different jobs.\n\nThe security-interest definition must be read with the section 31 exclusions. A party can hold a financial claim without having a statutory enforcement right over every borrower asset. Check what interest was actually created, for whose benefit, over what property and whether an exclusion applies.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does an unsecured balance become secured merely because the creditor is a bank?",
+            "expected_takeaway": "No. A qualifying creditor does not replace the need for the actual security relationship."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A banker identifies a valid security agreement over one warehouse and labels all company assets secured assets. What mapping is needed?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Every company asset becomes charged whenever any warehouse is charged",
+              "explanation_md": "A specific security relationship does not automatically extend to all property."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Identify the actual property on which the relevant security interest was created",
+              "explanation_md": "Secured asset refers to the property carrying that interest."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Treat the agreement document itself as every asset in the company",
+              "explanation_md": "The document creates or records the relationship; it is not all collateral."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Delete the secured-debt amount because an agreement exists",
+              "explanation_md": "Security does not itself discharge the debt."
+            }
+          ],
+          "correct_explanation_md": "Secured asset refers to the property carrying that interest."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A file contains a financial claim and a proposed collateral description but no established security creation. Which statement is justified?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "A proposed description proves completed security creation",
+              "explanation_md": "A proposal is not proof that the interest was created."
+            },
+            {
+              "option_id": "B",
+              "text_md": "All bank financial claims are secured by definition",
+              "explanation_md": "The financial-asset definition includes unsecured claims."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Creditor status alone proves section 31 can never matter",
+              "explanation_md": "The statutory exclusions must still be examined."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The claim and the established security relationship must be tested separately",
+              "explanation_md": "The definitions answer different legal questions."
+            }
+          ],
+          "correct_explanation_md": "The definitions answer different legal questions."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Codex original draft, 16 November 2026. Independent source/session applicability, originality and pedagogy review pending. No publication approval.",
+      "Courseware units 17A and 17B read in full including end questions (printed pp.243-256 / PDF pp.262-275). End questions and distinctive source expression were not reused.",
+      "Historical Bombay High Court compilation omits later amendments; retained as comparison only, not evidence of June2026 consolidation. Current capital floors, later definition additions, registry rules, eligibility notifications and remedy conditions require independent primary verification.",
+      "Judgment review is limited to identified holdings; later authorities and live proceedings are not certified."
+    ],
+    "next_batch_hint": "Continue BRBL C U05, S04 printed p.257 / PDF p.276"
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-C-U04-B003",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p.12, Compulsory Paper IV Module C, SARFAESI introduction and definitions"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_C::U04",
+        "objective_ids": [
+          "BRBL::MOD_C::U04::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_C::U04",
+        "objective_ids": [
+          "BRBL::MOD_C::U04::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_C::U04",
+        "objective_ids": [
+          "BRBL::MOD_C::U04::LO_03"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-C-U04-B003",
+      "draft_id": "D001",
+      "item_id": "item_c807370d873e31b9ae59ad8b23fc10260ac443bf147c27d6bfbed2e82588ed79"
+    },
+    {
+      "batch_id": "BRBL-C-U04-B003",
+      "draft_id": "D002",
+      "item_id": "item_4377492a495571dbbe3d86046f1c2fc64f3a8ea0c296e78f5338a6122f6d7885"
+    },
+    {
+      "batch_id": "BRBL-C-U04-B003",
+      "draft_id": "D003",
+      "item_id": "item_86c259d30e3b58edb88ee1d54fb832ed506e0f190ea6bb08e8dbf961a5bb76f0"
+    }
+  ],
+  "items": [
+    {
+      "title": "Draw the security relationship before taking action",
+      "core_explanation_md": "The security agreement is the arrangement creating the relevant interest; it can include the described mortgage by deposit of title deeds. The secured asset is the property carrying that interest. Secured debt is the debt protected by it. The secured creditor is the qualifying holder under the statutory definition, which extends to the specified ARC and trustee situations. These are related terms with different jobs.\n\nThe security-interest definition must be read with the section 31 exclusions. A party can hold a financial claim without having a statutory enforcement right over every borrower asset. Check what interest was actually created, for whose benefit, over what property and whether an exclusion applies.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does an unsecured balance become secured merely because the creditor is a bank?",
+        "expected_takeaway": "No. A qualifying creditor does not replace the need for the actual security relationship."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_c807370d873e31b9ae59ad8b23fc10260ac443bf147c27d6bfbed2e82588ed79",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U04",
+      "objective_ids": [
+        "BRBL::MOD_C::U04::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.254-255 / PDF pp.273-274"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A banker identifies a valid security agreement over one warehouse and labels all company assets secured assets. What mapping is needed?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Every company asset becomes charged whenever any warehouse is charged",
+          "explanation_md": "A specific security relationship does not automatically extend to all property."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Identify the actual property on which the relevant security interest was created",
+          "explanation_md": "Secured asset refers to the property carrying that interest."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Treat the agreement document itself as every asset in the company",
+          "explanation_md": "The document creates or records the relationship; it is not all collateral."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Delete the secured-debt amount because an agreement exists",
+          "explanation_md": "Security does not itself discharge the debt."
+        }
+      ],
+      "correct_explanation_md": "Secured asset refers to the property carrying that interest.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_4377492a495571dbbe3d86046f1c2fc64f3a8ea0c296e78f5338a6122f6d7885",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U04",
+      "objective_ids": [
+        "BRBL::MOD_C::U04::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.254-255 / PDF pp.273-274"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A file contains a financial claim and a proposed collateral description but no established security creation. Which statement is justified?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "A proposed description proves completed security creation",
+          "explanation_md": "A proposal is not proof that the interest was created."
+        },
+        {
+          "option_id": "B",
+          "text_md": "All bank financial claims are secured by definition",
+          "explanation_md": "The financial-asset definition includes unsecured claims."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Creditor status alone proves section 31 can never matter",
+          "explanation_md": "The statutory exclusions must still be examined."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The claim and the established security relationship must be tested separately",
+          "explanation_md": "The definitions answer different legal questions."
+        }
+      ],
+      "correct_explanation_md": "The definitions answer different legal questions.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_86c259d30e3b58edb88ee1d54fb832ed506e0f190ea6bb08e8dbf961a5bb76f0",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U04",
+      "objective_ids": [
+        "BRBL::MOD_C::U04::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.254-255 / PDF pp.273-274"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

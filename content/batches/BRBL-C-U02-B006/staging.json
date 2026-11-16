@@ -1,0 +1,132 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-C-U02-B006",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL C U02 MSMED Act: Apply the payment deadline and distinguish the 15-day default from the 45-day written-agreement ceiling",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "MSMED_ACT_2006_GAZETTE",
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "MSMED_ACT_2006_GAZETTE",
+      "locator": "sections 15-17, PDF p.8",
+      "statement": "Payment is due by the written agreed date or, absent agreement, before appointed day. Written period cannot exceed 45 days from acceptance/deemed acceptance. Section 16 interest begins from appointed day or day immediately after agreed date.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F002",
+      "source_id": "S04",
+      "locator": "printed pp.233-242 / PDF pp.252-261, whole unit and end questions visually inspected",
+      "statement": "The chapter covers this objective, but its older classification values and historical memorandum treatment must be read with the retained notifications.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Forty-five days is a ceiling, not a universal grace period",
+        "core_explanation_md": "For an eligible supplier transaction, section 15 requires payment by the written agreed date; without such agreement, payment must occur before the appointed day. Even a written agreement cannot set a period beyond forty-five days from acceptance or deemed acceptance. A shorter valid agreed period remains meaningful: the maximum does not automatically replace it.\n\nFor delay under section 16, identify the proper start: the appointed day for the default route, or immediately after the agreed payment date for the agreement route. First establish the applicable acceptance facts. Do not calculate interest from invoice entry, loan sanction or financial-year closing simply because those dates are easier to find.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does a ten-day written term become forty-five days automatically?",
+          "expected_takeaway": "No. Forty-five days is the outer permitted period, not a replacement for every shorter agreement."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A qualifying supply has a valid written payment date twenty days after acceptance. The buyer proposes to wait until day forty-five without interest solely because the Act mentions forty-five days. Which answer is sound?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The proposal is sound because every buyer gets forty-five interest-free days",
+            "explanation_md": "The ceiling does not erase the shorter valid agreed date."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The supplier must agree to extend because it is an MSME",
+            "explanation_md": "Supplier status does not create an automatic extension right for the buyer."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The shorter valid agreed date governs; delay interest starts immediately after it",
+            "explanation_md": "Sections 15-16 distinguish the agreed date from the maximum period."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Interest always starts on the original purchase-order date",
+            "explanation_md": "The statute identifies acceptance/payment-date rules, not this universal start."
+          }
+        ],
+        "correct_explanation_md": "Sections 15-16 distinguish the agreed date from the maximum period."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A purchase contract proposes payment seventy days after deemed acceptance for an eligible supplier. What should a compliance reviewer flag?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The proposed written period exceeds the forty-five-day statutory ceiling",
+            "explanation_md": "A private written agreement cannot enlarge the stated outer period."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A written contract always overrides section 15",
+            "explanation_md": "The section expressly limits even written agreements."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Only oral terms have any statutory ceiling",
+            "explanation_md": "The forty-five-day restriction explicitly concerns the written agreed period."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The period becomes valid if the buyer records a provision",
+            "explanation_md": "An accounting provision does not cure the prohibited payment term."
+          }
+        ],
+        "correct_explanation_md": "A private written agreement cannot enlarge the stated outer period."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex drafts, 16 November 2026; independent legal/session applicability, originality and pedagogy review pending. No approval or publication claimed.",
+    "Original Gazette is not a certified June 2026 consolidation. Later amendments, commencement changes, State rules and applicable judgments require independent verification.",
+    "Source questions and textbook table structure were inspected and not reused. Teaching and scenarios were designed from a factual brief; author comparison is not independent editorial review.",
+    "Original notification transition dates and partial-month/live-rate interest conventions are not certified here. Udyam registration timing and legal eligibility disputes need applicable primary evidence."
+  ],
+  "next_batch_hint": "Continue BRBL-C-U02-B007"
+}

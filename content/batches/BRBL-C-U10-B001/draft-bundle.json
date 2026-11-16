@@ -1,0 +1,359 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-C-U10-B001",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_C::U10: Separate registration, public notice, enforcement entitlement and priority",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.300-302 / PDF pp.319-321",
+        "statement": "Sections26B-C permit specified other-creditor/attachment filings with notifications and public-notice effect; non-secured-creditor filing confers noSARFAESI enforcement.26D registration condition;26E priority read subjectIBC qualification in primary.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "One filing can have several effects without changing creditor status",
+          "core_explanation_md": "Section26B extends the described filing framework to other creditors and attachment orders through its applicable notification conditions. A creditor outside the defined secured-creditor class does not acquire ChapterIII enforcement powers merely by making such a filing. Section26C separately gives the stated public-notice effect from filing date and time and addresses later transactions, with its ordinary-course qualification.\n\nSection26D makes the required Central Registry registration a condition for the secured creditor enforcement right. Section26E addresses priority after registration, with the statutory insolvency/bankruptcy qualification. Keep status, filing, notice, enforcement and priority as five distinct checks; none can be replaced by a single green registration flag.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does an other-creditor filing by itself make its holder a SARFAESI secured creditor?",
+            "expected_takeaway": "No. Filing does not override the creditor-status and enforcement provisions."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A creditor outside the defined secured-creditor class files particulars under the permitted other-creditor framework and claims ChapterIII powers solely on that basis. What is the error?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "All other-creditor records must be deleted regardless of notification",
+              "explanation_md": "The framework permits the stated filings subject to its conditions."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Filing is being confused with the separate statutory entitlement to enforce",
+              "explanation_md": "Section26B preserves the distinction for creditors outside the defined class."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Public notice automatically cancels the debt",
+              "explanation_md": "The filing gives notice effects, not discharge."
+            },
+            {
+              "option_id": "D",
+              "text_md": "An attachment necessarily proves final payment",
+              "explanation_md": "An attachment order is not proof of satisfaction."
+            }
+          ],
+          "correct_explanation_md": "Section26B preserves the distinction for creditors outside the defined class."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A priority memo invokes section 26E but ignores pending insolvency proceedings. Which refinement is necessary?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Registration overrides the IBC without qualification",
+              "explanation_md": "The provision contains an insolvency/bankruptcy qualification."
+            },
+            {
+              "option_id": "B",
+              "text_md": "All registered securities become unsecured automatically",
+              "explanation_md": "Pending proceedings do not justify that blanket conclusion."
+            },
+            {
+              "option_id": "C",
+              "text_md": "A filing timestamp decides every insolvency distribution alone",
+              "explanation_md": "The applicable insolvency framework must also be examined."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Read the priority claim with the statutory IBC qualification and proceeding facts",
+              "explanation_md": "Priority cannot be asserted without its applicable legal context."
+            }
+          ],
+          "correct_explanation_md": "Priority cannot be asserted without its applicable legal context."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Authoring is based on the stated source framework; independent June2026 consolidation, notifications, State/UT scope and later case-law review are deferred to Antigravity. No source gap is resolved by import validity."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-C-U10-B001",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_C::U10"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_C::U10",
+        "objective_ids": [
+          "BRBL::MOD_C::U10::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_C::U10",
+        "objective_ids": [
+          "BRBL::MOD_C::U10::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_C::U10",
+        "objective_ids": [
+          "BRBL::MOD_C::U10::LO_01"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-C-U10-B001",
+      "draft_id": "D001",
+      "item_id": "item_89728b5a07b03f8b777044bc07e42d9421ed287fd6d723093546d8e990e9a0f0"
+    },
+    {
+      "batch_id": "BRBL-C-U10-B001",
+      "draft_id": "D002",
+      "item_id": "item_bea87b259191db981df6d43398f013a9ead23df0b3e81f02fbd0d9010c0de554"
+    },
+    {
+      "batch_id": "BRBL-C-U10-B001",
+      "draft_id": "D003",
+      "item_id": "item_c8da444612dbd9a5d71a1ab68da316d29faca30a252353503598dcd13f0d434a"
+    }
+  ],
+  "items": [
+    {
+      "title": "One filing can have several effects without changing creditor status",
+      "core_explanation_md": "Section26B extends the described filing framework to other creditors and attachment orders through its applicable notification conditions. A creditor outside the defined secured-creditor class does not acquire ChapterIII enforcement powers merely by making such a filing. Section26C separately gives the stated public-notice effect from filing date and time and addresses later transactions, with its ordinary-course qualification.\n\nSection26D makes the required Central Registry registration a condition for the secured creditor enforcement right. Section26E addresses priority after registration, with the statutory insolvency/bankruptcy qualification. Keep status, filing, notice, enforcement and priority as five distinct checks; none can be replaced by a single green registration flag.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does an other-creditor filing by itself make its holder a SARFAESI secured creditor?",
+        "expected_takeaway": "No. Filing does not override the creditor-status and enforcement provisions."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_89728b5a07b03f8b777044bc07e42d9421ed287fd6d723093546d8e990e9a0f0",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U10",
+      "objective_ids": [
+        "BRBL::MOD_C::U10::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.300-302 / PDF pp.319-321"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A creditor outside the defined secured-creditor class files particulars under the permitted other-creditor framework and claims ChapterIII powers solely on that basis. What is the error?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "All other-creditor records must be deleted regardless of notification",
+          "explanation_md": "The framework permits the stated filings subject to its conditions."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Filing is being confused with the separate statutory entitlement to enforce",
+          "explanation_md": "Section26B preserves the distinction for creditors outside the defined class."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Public notice automatically cancels the debt",
+          "explanation_md": "The filing gives notice effects, not discharge."
+        },
+        {
+          "option_id": "D",
+          "text_md": "An attachment necessarily proves final payment",
+          "explanation_md": "An attachment order is not proof of satisfaction."
+        }
+      ],
+      "correct_explanation_md": "Section26B preserves the distinction for creditors outside the defined class.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_bea87b259191db981df6d43398f013a9ead23df0b3e81f02fbd0d9010c0de554",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U10",
+      "objective_ids": [
+        "BRBL::MOD_C::U10::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.300-302 / PDF pp.319-321"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A priority memo invokes section 26E but ignores pending insolvency proceedings. Which refinement is necessary?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Registration overrides the IBC without qualification",
+          "explanation_md": "The provision contains an insolvency/bankruptcy qualification."
+        },
+        {
+          "option_id": "B",
+          "text_md": "All registered securities become unsecured automatically",
+          "explanation_md": "Pending proceedings do not justify that blanket conclusion."
+        },
+        {
+          "option_id": "C",
+          "text_md": "A filing timestamp decides every insolvency distribution alone",
+          "explanation_md": "The applicable insolvency framework must also be examined."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Read the priority claim with the statutory IBC qualification and proceeding facts",
+          "explanation_md": "Priority cannot be asserted without its applicable legal context."
+        }
+      ],
+      "correct_explanation_md": "Priority cannot be asserted without its applicable legal context.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_c8da444612dbd9a5d71a1ab68da316d29faca30a252353503598dcd13f0d434a",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U10",
+      "objective_ids": [
+        "BRBL::MOD_C::U10::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.300-302 / PDF pp.319-321"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

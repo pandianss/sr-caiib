@@ -1,0 +1,143 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-C-U16-B005",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_C::U16: Distinguish liquidation choices, waterfall categories and the amended security-value limitation",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04",
+    "IBC_AMENDMENT_ACT_2026",
+    "IBC_COMMENCEMENT_SO2625_2026"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.345-348 / PDF pp.364-367",
+      "statement": "Resolutionfailure/liquidationroute,securedcreditorrelinquishmentorrealisation,surplus/shortfall,estateexclusions,section53waterfall,fasttrack/prepack/voluntaryliquidationdistinct.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F002",
+      "source_id": "IBC_AMENDMENT_ACT_2026",
+      "locator": "Amendmentsection32,PDFpp.15-16",
+      "statement": "Relinquishing creditor secured only tovaluedsecurityextent;remainderunsecured;governmentduesclarification;intercreditorarrangementsvsworkmenillustrations.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F003",
+      "source_id": "IBC_COMMENCEMENT_SO2625_2026",
+      "locator": "PDFp2,item2",
+      "statement": "Section32commenced26May2026.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "A security election changes the distribution analysis",
+        "core_explanation_md": "A secured creditor liquidation file must distinguish relinquishing security to the estate from separately realising it under the applicable route. Surplus, shortfall, costs and distribution are not the same amount. The 2026 section 53 clarification limits the relinquishing creditor secured treatment to the determined security value where that value is below the debt; the remainder is treated as unsecured. Do not teach that relinquishment guarantees full-debt priority.\n\nThe waterfall also separates insolvency/liquidation costs, the specified workmen/secured-creditor tier, employee dues, financial unsecured debts and later categories. Excluded provident/pension/gratuity funds are not simply another distributable tier. Fast-track resolution, MSME pre-pack and solvent voluntary liquidation are distinct routes with their own conditions.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does relinquishing security necessarily give the whole debt secured-tier treatment?",
+          "expected_takeaway": "No. Apply the amended valuation limitation and other distribution conditions."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001",
+        "F002",
+        "F003"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Debt exceeds the stipulated value of relinquished security. A note gives secured-tier treatment to the whole debt without examining the 2026 clarification. What is required?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Treat security value as always equal to the debt",
+            "explanation_md": "The two figures can differ."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Separate the secured extent and unsecured remainder under the amended provision",
+            "explanation_md": "The clarification makes valuation material to classification."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Ignore the waterfall whenever a bank is involved",
+            "explanation_md": "Bank status does not remove distribution law."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Count excluded employee funds as free estate cash",
+            "explanation_md": "Estate exclusions must be respected."
+          }
+        ],
+        "correct_explanation_md": "The clarification makes valuation material to classification."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001",
+        "F002",
+        "F003"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A distressed entity selects voluntary liquidation solely because it wants a faster process, without checking the no-default and solvency conditions. What is missing?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The route-specific eligibility, declarations and approval conditions",
+            "explanation_md": "A desired speed does not establish voluntary-liquidation eligibility."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Only a shorter document title",
+            "explanation_md": "A title change does not satisfy the legal route."
+          },
+          {
+            "option_id": "C",
+            "text_md": "An assumption that fast-track, pre-pack and liquidation are identical",
+            "explanation_md": "They are distinct processes."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A promise that every creditor receives full payment automatically",
+            "explanation_md": "The legal and financial facts must support the claim."
+          }
+        ],
+        "correct_explanation_md": "A desired speed does not establish voluntary-liquidation eligibility."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001",
+        "F002",
+        "F003"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Independent Antigravity review remains required for later amendments, commencement, applicable regulations and judgments. Draft authoring is not a publication or legal-accuracy approval."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

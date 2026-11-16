@@ -1,0 +1,360 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-C-U19-B001",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_C::U19: Identify consumer standing, service deficiency and complaint grounds",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.362-364 / PDF pp.381-383",
+        "statement": "Consumerconsiderationandapprovedbeneficiaries,commercialpurposeexclusionandgoods/selfemploymentqualification;bankingserviceincluded,free/personalserviceexcluded;defectvsdeficiency,complainantcategories,consumerdispute.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Start with the person, transaction and alleged failure",
+          "core_explanation_md": "A consumer complaint needs the relevant complainant standing and transaction. Consideration can be paid, promised or deferred, and the definition includes the described approved users or beneficiaries. Banking is among the service categories, but commercial-purpose and other exclusions need the actual facts. The goods/self-employment explanation must not be treated as an unlimited exception for every commercial banking service.\n\nDefect concerns the relevant goods or product standard; deficiency concerns the quality, nature or performance of a service, including the described negligence or withholding of relevant information. A written allegation, its denial and a proved breach are separate stages. Identify the contracted obligation, conduct and evidence instead of equating dissatisfaction with automatic liability.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Is every disappointed banking customer automatically a successful complainant?",
+            "expected_takeaway": "No. Standing,scope,obligation and the alleged deficiency need evidence."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A complaint alleges that a paid banking service was not performed as undertaken. Which assessment is needed first?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only the amount the complainant wishes to receive",
+              "explanation_md": "A requested remedy does not establish standing or breach."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Consumer standing,service scope and evidence of the alleged deficiency",
+              "explanation_md": "The legal relationship and failure must be established."
+            },
+            {
+              "option_id": "C",
+              "text_md": "A rule that banking can never be a service",
+              "explanation_md": "The source includes banking services."
+            },
+            {
+              "option_id": "D",
+              "text_md": "A presumption that every denial proves the bank case",
+              "explanation_md": "A denial creates a dispute rather than proving either side."
+            }
+          ],
+          "correct_explanation_md": "The legal relationship and failure must be established."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "An analyst extends the goods/self-employment explanation to every commercial service without checking wording. What is the defect?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "All commercial transactions are necessarily identical",
+              "explanation_md": "The statutory categories and explanations differ."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Consideration is irrelevant in every case",
+              "explanation_md": "It is material to the consumer/service framework."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Every beneficiary is excluded automatically",
+              "explanation_md": "The definition includes the specified approved beneficiaries."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The exception is being enlarged beyond its stated scope",
+              "explanation_md": "Apply the relevant clause to the actual transaction."
+            }
+          ],
+          "correct_explanation_md": "Apply the relevant clause to the actual transaction."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Original drafts for later Antigravity review; source/current applicability, case law and originality review remain pending. No publication approval.",
+      "Appointment/service rules and later consumer notifications require current primary review. Numeric jurisdiction questions expressly stipulate the2021 ordinary-complaint framework;special unfair-contract routes are separate."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-C-U19-B001",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_C::U19"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_C::U19",
+        "objective_ids": [
+          "BRBL::MOD_C::U19::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_C::U19",
+        "objective_ids": [
+          "BRBL::MOD_C::U19::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_C::U19",
+        "objective_ids": [
+          "BRBL::MOD_C::U19::LO_01"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-C-U19-B001",
+      "draft_id": "D001",
+      "item_id": "item_162e5206a1e8463cae0813f72b6d0acaf4b1001fc73d8960193ed1701a85c5a8"
+    },
+    {
+      "batch_id": "BRBL-C-U19-B001",
+      "draft_id": "D002",
+      "item_id": "item_a6338a4b73d1f9a51965885c74028e85ea8553e9185d83dae617ed7113312b00"
+    },
+    {
+      "batch_id": "BRBL-C-U19-B001",
+      "draft_id": "D003",
+      "item_id": "item_2d092f8933a07f933e25aeb92d61dfdbc74c145d4429a5691a0575502ff85835"
+    }
+  ],
+  "items": [
+    {
+      "title": "Start with the person, transaction and alleged failure",
+      "core_explanation_md": "A consumer complaint needs the relevant complainant standing and transaction. Consideration can be paid, promised or deferred, and the definition includes the described approved users or beneficiaries. Banking is among the service categories, but commercial-purpose and other exclusions need the actual facts. The goods/self-employment explanation must not be treated as an unlimited exception for every commercial banking service.\n\nDefect concerns the relevant goods or product standard; deficiency concerns the quality, nature or performance of a service, including the described negligence or withholding of relevant information. A written allegation, its denial and a proved breach are separate stages. Identify the contracted obligation, conduct and evidence instead of equating dissatisfaction with automatic liability.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Is every disappointed banking customer automatically a successful complainant?",
+        "expected_takeaway": "No. Standing,scope,obligation and the alleged deficiency need evidence."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_162e5206a1e8463cae0813f72b6d0acaf4b1001fc73d8960193ed1701a85c5a8",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U19",
+      "objective_ids": [
+        "BRBL::MOD_C::U19::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.362-364 / PDF pp.381-383"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A complaint alleges that a paid banking service was not performed as undertaken. Which assessment is needed first?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only the amount the complainant wishes to receive",
+          "explanation_md": "A requested remedy does not establish standing or breach."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Consumer standing,service scope and evidence of the alleged deficiency",
+          "explanation_md": "The legal relationship and failure must be established."
+        },
+        {
+          "option_id": "C",
+          "text_md": "A rule that banking can never be a service",
+          "explanation_md": "The source includes banking services."
+        },
+        {
+          "option_id": "D",
+          "text_md": "A presumption that every denial proves the bank case",
+          "explanation_md": "A denial creates a dispute rather than proving either side."
+        }
+      ],
+      "correct_explanation_md": "The legal relationship and failure must be established.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_a6338a4b73d1f9a51965885c74028e85ea8553e9185d83dae617ed7113312b00",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U19",
+      "objective_ids": [
+        "BRBL::MOD_C::U19::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.362-364 / PDF pp.381-383"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "An analyst extends the goods/self-employment explanation to every commercial service without checking wording. What is the defect?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "All commercial transactions are necessarily identical",
+          "explanation_md": "The statutory categories and explanations differ."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Consideration is irrelevant in every case",
+          "explanation_md": "It is material to the consumer/service framework."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Every beneficiary is excluded automatically",
+          "explanation_md": "The definition includes the specified approved beneficiaries."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The exception is being enlarged beyond its stated scope",
+          "explanation_md": "Apply the relevant clause to the actual transaction."
+        }
+      ],
+      "correct_explanation_md": "Apply the relevant clause to the actual transaction.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_2d092f8933a07f933e25aeb92d61dfdbc74c145d4429a5691a0575502ff85835",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U19",
+      "objective_ids": [
+        "BRBL::MOD_C::U19::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.362-364 / PDF pp.381-383"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

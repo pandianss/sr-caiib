@@ -1,0 +1,120 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-C-U05-B007",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL C U05: Distinguish specified section11 disputes from borrower remedies and RBI supervisory powers",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.264-265 / PDF pp.283-284",
+      "statement": "Section11 conciliation/arbitration covers stated bank/FI/ARC/qualified-buyer disputes, not automatic borrower inclusion. Sections12,12A,12B cover policy/directions, information, audit/inspection and specified intervention with procedural safeguards.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Match the dispute and the regulator power to the provision",
+        "core_explanation_md": "Section 11 addresses the stated disputes between the identified banks/financial institutions, ARCs and qualified buyers. It does not follow that every borrower dispute is automatically sent to that same statutory arbitration route. Identify the parties, subject and applicable remedy rather than using securitisation as a label that resolves jurisdiction.\n\nRBI supervision is also wider than capital figures. Section 12 concerns policy and directions, section 12A information, and section 12B audit/inspection and specified interventions. Cooperation and production of records are substantive duties. A supervisory power must still be exercised with its stated conditions and safeguards; an inspection finding is not itself every possible final sanction.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does section11 automatically arbitrate every dispute brought by a borrower?",
+          "expected_takeaway": "No. Its specified parties and subject must be distinguished from other remedies."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A team routes an ordinary borrower challenge into section11 solely because its loan was acquired by an ARC. What must be checked?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Whether the parties and dispute fall within the specified section11 category, and the actual applicable remedy",
+            "explanation_md": "Acquisition alone does not make every borrower dispute that statutory arbitration."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Only whether the file name contains securitisation",
+            "explanation_md": "A label does not establish jurisdiction."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Whether the borrower is also an ARC employee",
+            "explanation_md": "Employment is not the stated statutory dispute criterion."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Whether the debt has a round numerical amount",
+            "explanation_md": "The amount format does not determine the legal forum."
+          }
+        ],
+        "correct_explanation_md": "Acquisition alone does not make every borrower dispute that statutory arbitration."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A compliance chart lists only section12 policy power and omits information and inspection duties. Which addition is needed?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "A statement that internal accounts can never be requested",
+            "explanation_md": "The statutory supervisory framework includes information and record powers."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A rule that inspection automatically proves every allegation",
+            "explanation_md": "Inspection findings and final statutory actions are separate."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Sections12A and12B information, audit/inspection and applicable intervention safeguards",
+            "explanation_md": "The supervision framework goes beyond issuing policy directions."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A promise that an ARC may refuse all assistance because it is a company",
+            "explanation_md": "Company status does not remove the described statutory cooperation duties."
+          }
+        ],
+        "correct_explanation_md": "The supervision framework goes beyond issuing policy directions."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Codex original drafts,16November2026; independent legal/session, originality and pedagogy review pending. No publication approval.",
+    "Whole courseware unit/end questions visually read: printed pp.257-267 / PDF pp.276-286. Source questions and distinctive structure were not reused.",
+    "Book cancellation/hearing shorthand, arbitration applicability, stamp scope and trust/insolvency conclusions require current primary statute and case-law verification. Do not infer June2026 consolidation from the historical BHC copy.",
+    "RBI displayed March2026 snapshot read for registration/NOF/activity conditions; later pre-cutoff amendments remain to be reconciled. June2026 draft directions are not treated as final law."
+  ],
+  "next_batch_hint": "Continue BRBL C U06 Enforcement of Security Interest, printed p.269 / PDF p.288"
+}

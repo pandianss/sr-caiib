@@ -1,0 +1,120 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U04-B003",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U04: Apply timely return,accretions,necessary expenses and qualified liens",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.425-426 / PDF pp.444-445",
+      "statement": "160returnonpurpose/time,161wrongfuldelayloss,163accretionsabsentcontrary;titleindemnity/goodfaithreturn;necessaryexpensesgratuitous;170particularlabour/skilllienqualified,171specifiedgeneralbalancesubjectcontraryandpurpose.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Return duties and retention rights must be read together",
+        "core_explanation_md": "When the agreed time expires or purpose is accomplished, the bailee must follow the return/disposal obligation. Wrongful delay and the treatment of any increase or profit from the goods require separate reconciliation. A gratuitous custody arrangement also has the stated necessary-expense rule; free service does not mean every properly incurred cost is personally absorbed.\n\nA particular lien for qualifying labour or skill differs from the specified general-lien categories. Contract terms, credit arrangements and the purpose of delivery can qualify retention. A right to retain is not automatically an unrestricted right to sell; do not use a banker label to bypass the actual custody terms.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does every retention right automatically include sale?",
+          "expected_takeaway": "No. Establish the relevant lien or security power and its limits."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A service provider agreed to deliver on credit but later assumes an unconditional right to retain the goods for immediate cash. What is relevant?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only whether labour was performed",
+            "explanation_md": "The contractual qualification still matters."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A rule that every bailee may sell immediately",
+            "explanation_md": "Retention and sale are distinct."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The agreed credit/delivery terms and the applicable lien conditions",
+            "explanation_md": "The source recognises that contract can qualify retention."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The provider desired profit margin",
+            "explanation_md": "Margin does not determine the right."
+          }
+        ],
+        "correct_explanation_md": "The source recognises that contract can qualify retention."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An additional benefit arises from the bailed goods and no contrary contract is stipulated. What should the return reconciliation consider?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The source rule for accretions or profit along with the goods",
+            "explanation_md": "The benefit cannot simply be ignored."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The bailee automatically owns every increase",
+            "explanation_md": "That is not the stated default."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Return of the original goods cancels every other duty",
+            "explanation_md": "Separate obligations may remain."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The goods become a bank deposit",
+            "explanation_md": "The custody relationship has not changed into that debt."
+          }
+        ],
+        "correct_explanation_md": "The benefit cannot simply be ignored."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Drafts for Antigravity review. Consolidated statute,exceptions and later case law require independent reconciliation;no publication approval.",
+    "Locker-liability and finder/court-custody situations require current-law analysis;old true/false shorthand is not reused."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

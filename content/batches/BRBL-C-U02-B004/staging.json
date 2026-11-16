@@ -1,0 +1,144 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-C-U02-B004",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL C U02 MSMED Act: Separate the original memorandum provisions from the later Udyam filing framework",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "MSMED_ACT_2006_GAZETTE",
+    "S04",
+    "MSME_SO_1364E_2025"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "MSMED_ACT_2006_GAZETTE",
+      "locator": "section 8, PDF pp.6-7; principal notification paragraphs 2, 6-8 separately cited",
+      "statement": "Section 8 distinguishes original filing categories and delegates form/procedure. The principal 2020 notification establishes Udyam registration, no filing fee and one registration that may contain multiple activities. Historical EM/UAM transition dates in its original text are not certified as current.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F002",
+      "source_id": "S04",
+      "locator": "printed pp.233-242 / PDF pp.252-261, whole unit and end questions visually inspected",
+      "statement": "The chapter covers this objective, but its older classification values and historical memorandum treatment must be read with the retained notifications.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F003",
+      "source_id": "MSME_SO_1364E_2025",
+      "locator": "PDF pp.7-9, principal notification paragraphs 2 and 6-8",
+      "statement": "Principal notification establishes Udyam filing, no filing fee and one registration with multiple activities; original transition dates are historical, not a certified current deadline.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Read the filing framework with its notification",
+        "core_explanation_md": "The original section 8 describes discretionary memorandum filing for micro/small enterprises and medium service enterprises, and mandatory filing for the specified medium manufacturing enterprises. It delegates the form and procedure to notification. This statutory history should not be presented as instructions to use an obsolete form today.\n\nThe later Udyam framework in the retained 2020 notification provides online registration, no filing fee and a single registration that may contain multiple manufacturing or service activities. Its original historical EM/UAM transition dates are not taught here as current deadlines. Identity, tax-data and later amendment details must be checked for the date and entity involved.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Should a book extract on the original memorandum be used as a current portal filing guide?",
+          "expected_takeaway": "No. Read the statute with the applicable later notifications and date."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001",
+        "F002",
+        "F003"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An enterprise adds a service activity to an existing manufacturing activity. Under the retained principal Udyam notification, what is the sound registration approach?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Multiple activities may be specified or added within one Udyam Registration",
+            "explanation_md": "The notification permits multiple activities within a single registration."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A second registration is mandatory for every activity",
+            "explanation_md": "The notification says no enterprise shall file more than one registration."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Service activity must be omitted because only manufacturing is recognised",
+            "explanation_md": "The framework includes manufacturing and service activities."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Pay the statutory Udyam filing fee for each added activity",
+            "explanation_md": "The retained notification provides no fee for filing Udyam Registration."
+          }
+        ],
+        "correct_explanation_md": "The notification permits multiple activities within a single registration."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001",
+        "F002",
+        "F003"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An analyst copies an original EM/UAM transition date from a 2020 notification into a current client checklist. What is missing?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only the bank logo on the checklist",
+            "explanation_md": "Branding does not establish continued validity of the deadline."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A new amount substituted into the old date",
+            "explanation_md": "A cosmetic numerical change is not evidence of an amended rule."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A check of later amendments and the applicable date before giving current filing instructions",
+            "explanation_md": "Historical transition dates cannot be assumed to remain current."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Permission to ignore notifications once the Act is known",
+            "explanation_md": "The Act delegates procedural detail, so the notifications matter."
+          }
+        ],
+        "correct_explanation_md": "Historical transition dates cannot be assumed to remain current."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001",
+        "F002",
+        "F003"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex drafts, 16 November 2026; independent legal/session applicability, originality and pedagogy review pending. No approval or publication claimed.",
+    "Original Gazette is not a certified June 2026 consolidation. Later amendments, commencement changes, State rules and applicable judgments require independent verification.",
+    "Source questions and textbook table structure were inspected and not reused. Teaching and scenarios were designed from a factual brief; author comparison is not independent editorial review.",
+    "Original notification transition dates and partial-month/live-rate interest conventions are not certified here. Udyam registration timing and legal eligibility disputes need applicable primary evidence."
+  ],
+  "next_batch_hint": "Continue BRBL-C-U02-B005"
+}

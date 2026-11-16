@@ -1,0 +1,132 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U22-B004",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U22: Distinguish board powers,shareholder restrictions and borrowing authority",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04",
+    "COMPANIES_ACT_INDIACODE_20260901"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.525-526 / PDF pp.544-545",
+      "statement": "Boardmeetingpowersandmemberrestrictionsdifferent;legacysection293figuresnotcurrent.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F002",
+      "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+      "locator": "sections179-181,PDF pp.121-123",
+      "statement": "180specialresolutionborrowingpaidupfree reserves securitiespremium,temporaryordinarybankloansqualification;undertakingdisposalthresholds;charity5percent.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "A signature mandate is not the whole borrowing approval",
+        "core_explanation_md": "Board powers must be read with the Act, constitution, reserved meeting matters and permitted delegation. Where section 180 applies, borrowing beyond the specified aggregate requires the company special resolution with a total borrowing limit. The primary text includes paid-up share capital, free reserves and securities premium, and a qualified exclusion for temporary ordinary-course banker loans. A short repayment period alone does not make capital-expenditure borrowing an excluded temporary loan.\n\nDisposal of an undertaking and other reserved matters have their own tests. Company-class exemptions must be verified before applying them. Charitable contributions belong to the separate section 181 rule, not a copied legacy section 293 monetary floor. Preserve the resolution scope, existing borrowings, proposed borrowing and classification evidence.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does a short tenor alone establish the temporary-loan exclusion?",
+          "expected_takeaway": "No. Purpose and the full statutory definition matter."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A short-term bank loan finances capital expenditure, and a note excludes it solely because it matures within six months. Which fact matters?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only the loan title",
+            "explanation_md": "The title does not settle the exception."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The capital-expenditure exclusion from the temporary-loan definition",
+            "explanation_md": "Tenor alone is insufficient."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Whether the bank uses digital signatures",
+            "explanation_md": "That is unrelated to the borrowing threshold."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The borrower logo",
+            "explanation_md": "It has no effect on classification."
+          }
+        ],
+        "correct_explanation_md": "Tenor alone is insufficient."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An authorised signatory can sign cheques, and the bank assumes this proves every required borrowing approval. What is missing?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only a larger signature specimen",
+            "explanation_md": "Size does not establish power."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A rule that all cheque mandates include unlimited borrowing",
+            "explanation_md": "That is unsupported."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The branch holiday list",
+            "explanation_md": "It does not establish company approval."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The applicable capacity, board/member approval and delegation trail",
+            "explanation_md": "Signing authority does not replace all transaction approvals."
+          }
+        ],
+        "correct_explanation_md": "Signing authority does not replace all transaction approvals."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Antigravity must independently review law,exceptions,originality and exam cutoff before publication.",
+    "POST-CUTOFF primary consolidation: cited amendments/footnotes require cutoff reconciliation; class exemptions,current forms,qualification shares,section167 appeal and section188 exceptions remain reviewer checks."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

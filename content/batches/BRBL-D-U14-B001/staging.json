@@ -1,0 +1,119 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U14-B001",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U14: Identify dissolution routes and distinguish reconstitution",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.476-477 / PDF pp.495-496",
+      "statement": "39dissolutionallpartners;40agreement41compulsory42contingent43atwillnotice44courtgrounds;contractqualifications.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Identify what ends and under which route",
+        "core_explanation_md": "Dissolution of the firm ends the partnership relationship among all the partners; a change in constitution need not do so. The source distinguishes agreement, compulsory dissolution, contingent events, the at-will notice route and court-ordered dissolution. Expiry of a term, completion of an undertaking, death and insolvency must be read with the applicable contract qualifications.\n\nCourt grounds include the described incapacity, misconduct, persistent breach, transfer, continuing-loss and just-and-equitable situations. A lender should record the actual event, agreement and order rather than assume every partner departure ends the firm or that every continuing signature proves the old authority remains unchanged. A multi-business unlawfulness case also requires the statutory qualification instead of a blanket conclusion about all activities.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does every partner change necessarily dissolve the firm?",
+          "expected_takeaway": "No. Distinguish reconstitution from ending all partnership relations."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "One partner retires and the remaining partners validly continue the firm under the agreement. Which distinction matters?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Reconstitution need not be dissolution of the firm",
+            "explanation_md": "A change among partners differs from ending the whole relationship."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Any departure necessarily destroys all firm contracts",
+            "explanation_md": "The stipulated continuation distinguishes a change in constitution from dissolution of the whole firm."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Continuation proves no legal event occurred",
+            "explanation_md": "The constitution has still changed."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The bank can ignore the partnership agreement",
+            "explanation_md": "It is relevant to continuity and authority."
+          }
+        ],
+        "correct_explanation_md": "A change among partners differs from ending the whole relationship."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "The agreement has a continuation clause, but a file treats a partner death as automatically ending the firm without reading it. What was omitted?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only the cheque serial number",
+            "explanation_md": "That does not establish dissolution."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A rule that death is never relevant",
+            "explanation_md": "Death is relevant subject to applicable provisions."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The contractual qualification to the contingent-event dissolution rule",
+            "explanation_md": "The agreement and law must be read together."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The deceased partner preferred branch",
+            "explanation_md": "Branch preference does not settle continuation."
+          }
+        ],
+        "correct_explanation_md": "The agreement and law must be read together."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Primary law, State amendments, session applicability and independent editorial review remain with Antigravity. No publication approval."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

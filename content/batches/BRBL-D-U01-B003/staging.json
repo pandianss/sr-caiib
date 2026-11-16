@@ -1,0 +1,120 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U01-B003",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U01: Distinguish free consent,void/voidable effects and banking relationships",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.404-407 / PDF pp.423-426",
+      "statement": "Consentcoercion/undueinfluence/fraud/misrepresentation/mistakeeffects;voidvsvoidable;ordinarydepositdebtorcreditor,lendingreverse,collectionagent,safecustodybailment;lockerblanketlabelsunsafe.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "The remedy depends on the defect and the transaction",
+        "core_explanation_md": "Free consent requires more than a signature. Coercion, undue influence, fraud, misrepresentation and the relevant mistake rules can have different legal effects. Void and voidable should not be used interchangeably:the latter involves the stated party option and applicable relief, not automatic enforceability for everyone.\n\nBank-customer roles also depend on the transaction. An ordinary deposit creates a debtor-creditor relationship with the bank as debtor; an advance reverses the basic debt positions. Collection work can involve agency, and delivered safe-custody goods can involve bailment. Do not classify every bank service as a trust or decide locker liability from an old shorthand label alone.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does every bank-customer interaction create the same legal relationship?",
+          "expected_takeaway": "No. Identify the particular service and its legal incidents."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An ordinary account deposit is described as requiring return of the same physical currency notes as a bailment. What distinction matters?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Ordinary deposit debt differs from bailment of identified goods",
+            "explanation_md": "The transaction determines the relationship."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Every deposit is a sale of the customer property to a third party",
+            "explanation_md": "That is not the stated ordinary relationship."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Bank custody always creates identical duties for every service",
+            "explanation_md": "Different services have different legal incidents."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A bank can ignore the deposit obligation",
+            "explanation_md": "The debt relationship still carries obligations."
+          }
+        ],
+        "correct_explanation_md": "The transaction determines the relationship."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A consent defect is identified, but a note calls void and voidable identical without checking the remedy. What is required?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Treat every defect as automatic full enforcement",
+            "explanation_md": "Effects depend on the applicable rule."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Ignore the affected party option",
+            "explanation_md": "That option can define voidability."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Apply the particular consent rule and its legal consequences",
+            "explanation_md": "The labels describe different enforceability effects."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Replace the original facts with a new signature",
+            "explanation_md": "A later act does not automatically resolve the prior defect."
+          }
+        ],
+        "correct_explanation_md": "The labels describe different enforceability effects."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Drafts for Antigravity review. Consolidated statute,exceptions and later case law require independent reconciliation;no publication approval.",
+    "Book guardian,locker and blanket insurance descriptions are not adopted as universal rules."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

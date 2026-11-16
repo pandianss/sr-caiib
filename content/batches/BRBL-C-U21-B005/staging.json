@@ -1,0 +1,138 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-C-U21-B005",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_C::U21: Apply GST supply,place-of-supply and input-credit concepts using stipulated calculation rates",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.394-396 / PDF pp.413-415",
+      "statement": "GSTindirectsupplytax,inputcreditmechanism;intraCGST+SGST/UTGST,interIGSTsubjectplaceofsupply;importservicesrequiresoutsideprovider,IndiarecipientandplaceIndia;specifiedrelatedimportswithoutconsideration;oldcommencementtypo conflicts.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "A cross-border payment is not a complete GST analysis",
+        "core_explanation_md": "GST concerns the taxable supply and its applicable classification, valuation and place-of-supply rules. The source distinguishes the intra-State dual structure from the inter-State IGST structure. Input tax credit reduces eligible output liability subject to the actual statutory conditions; possession of any invoice is not an unlimited credit entitlement.\n\nAn import-of-services analysis needs the provider location, recipient location and place of supply, plus the relevant consideration or specified related/distinct-person rules. Paying in foreign currency alone does not establish every element. Exercises below stipulate a rate and eligible credit to teach arithmetic, not to certify a current banking-service tax treatment.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does foreign-currency payment alone prove an import of services?",
+          "expected_takeaway": "No. The location, place-of-supply and applicable scope conditions matter."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "card",
+      "variant": "worked_example",
+      "payload": {
+        "title": "Separate output tax from stipulated eligible credit",
+        "core_explanation_md": "For a hypothetical taxable fee of INR 24,000, use a stipulated total GST rate18% and eligible usable input credit INR 1,200. Assume no other adjustments. Calculate net tax for this exercise only.",
+        "prerequisite_objective_ids": [],
+        "worked_steps": [
+          {
+            "step_number": 1,
+            "description": "Output tax",
+            "formula_or_substitution": "24000*18/100",
+            "intermediate_result": "4320 INR"
+          },
+          {
+            "step_number": 2,
+            "description": "Apply stipulated eligible credit",
+            "formula_or_substitution": "4320-1200",
+            "intermediate_result": "3120 INR"
+          }
+        ],
+        "final_answer_with_unit": "3120 INR",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Which rule and stipulated facts determine this result?",
+          "expected_takeaway": "Use the sourced rule and stated scenario assumptions; the arithmetic does not establish a live legal entitlement."
+        }
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "numeric_input",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "For a hypothetical fee INR 36,000, use stipulated total GST18% and eligible usable credit INR 1,800. No other adjustments apply. Compute net tax in exact INR. This does not determine a live service tax rate or credit eligibility.",
+        "correct_explanation_md": "36000*18/100-1800=4680 INR.",
+        "numeric_rule": {
+          "expected_answer": "4680",
+          "unit_label": "INR",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Use exact whole units; do not round intermediate values.",
+          "allow_negative": false
+        }
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A service is paid in foreign currency, but supplier/recipient locations and place of supply are not established. What remains to be checked?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only the currency conversion rounding",
+            "explanation_md": "Currency alone does not establish import scope."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Whether the invoice has a large value",
+            "explanation_md": "Value alone is not the location test."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The statutory service-import and place-of-supply conditions",
+            "explanation_md": "The required geographical and scope facts must be established."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A rule that every foreign-currency receipt is exempt",
+            "explanation_md": "Currency does not itself create exemption."
+          }
+        ],
+        "correct_explanation_md": "The required geographical and scope facts must be established."
+      },
+      "draft_id": "D004",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Original drafts for later Antigravity review; source/current applicability, case law and originality review remain pending. No publication approval.",
+    "Tax chapter contains stale statutory regime,datedrates/thresholds,advance-tax typo,overbroadRNOR/cooperativeTDS/disallowance claims and conflictingGSTcommencement. These are not used as current correct-answer propositions. Numeric rates/eligibility are expressly hypothetical stipulations;currentregulatory publication needs Antigravity reconciliation."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

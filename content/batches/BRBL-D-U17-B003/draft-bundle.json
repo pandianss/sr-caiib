@@ -1,0 +1,360 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-D-U17-B003",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_D::U17: Identify government,foreign,holding and subsidiary relationships",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.492-493 / PDF pp.511-512",
+        "statement": "Government51percentpaidupandincludes subsidiary;foreignincorporationplusIndiabusinesspresence;holdingcontrolboardsorvotingpowerrequirescurrentwording.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Control, location and government ownership answer different questions",
+          "core_explanation_md": "The government-company definition uses not less than fifty-one per cent of paid-up share capital held by the described Central/State government combination and includes a subsidiary of such a government company. Do not replace paid-up capital with revenue or the number of government-appointed employees.\n\nA foreign-company analysis considers foreign incorporation together with the statutory Indian place-of-business and business-activity requirements, including the described electronic presence. Holding/subsidiary relationships require the relevant board-composition or voting-power control test and can extend down a subsidiary chain. Common branding or a minority investment alone does not establish the relationship. Use the current statutory control wording rather than the textbook shorthand of majority shares for every capital structure.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Can common branding alone prove a subsidiary relationship?",
+            "expected_takeaway": "No. Establish the applicable control test."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "The Central and State Governments together hold the required fifty-one per cent of paid-up capital. A note tests government-company status by annual sales instead. What is wrong?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Sales must always equal share capital",
+              "explanation_md": "They are different measures."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Only one government may hold any shares",
+              "explanation_md": "The definition permits the described combination."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The statutory ownership measure is paid-up share capital",
+              "explanation_md": "Revenue is not the stated test."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Government ownership prevents incorporation",
+              "explanation_md": "The source recognises government companies."
+            }
+          ],
+          "correct_explanation_md": "Revenue is not the stated test."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A lender sees a group logo and assumes a subsidiary guarantee is automatically a holding-company guarantee. What must be checked?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Separate entity identity, control relationship and the actual undertaking",
+              "explanation_md": "Group relationship does not merge obligations."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Only the logo colour",
+              "explanation_md": "It does not establish liability."
+            },
+            {
+              "option_id": "C",
+              "text_md": "A rule that all group debts are automatically joint",
+              "explanation_md": "That is unsupported."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Only the parent company address",
+              "explanation_md": "Address alone is insufficient."
+            }
+          ],
+          "correct_explanation_md": "Group relationship does not merge obligations."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Antigravity must independently review law,exceptions,originality and exam cutoff before publication.",
+      "Primary 2025 small-company amendment retrieval pending; no stale numerical limit taught. Old statutory-meeting,deposit,OPC conversion and commencement claims excluded pending reconciliation."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-D-U17-B003",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_D::U17"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_D::U17",
+        "objective_ids": [
+          "BRBL::MOD_D::U17::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_D::U17",
+        "objective_ids": [
+          "BRBL::MOD_D::U17::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_D::U17",
+        "objective_ids": [
+          "BRBL::MOD_D::U17::LO_03"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-D-U17-B003",
+      "draft_id": "D001",
+      "item_id": "item_0c02e84d9d87db0703d00772e760a06d08f322813e2179ed474ef96790d6c1d3"
+    },
+    {
+      "batch_id": "BRBL-D-U17-B003",
+      "draft_id": "D002",
+      "item_id": "item_8553d3f63f104e6017e0132188ac1850c86a5310a94ccd19a29dffef5a7c144d"
+    },
+    {
+      "batch_id": "BRBL-D-U17-B003",
+      "draft_id": "D003",
+      "item_id": "item_d7a245e63501dcb11a8df743262a428cb1794542d0dd0895585250ef9b3c176f"
+    }
+  ],
+  "items": [
+    {
+      "title": "Control, location and government ownership answer different questions",
+      "core_explanation_md": "The government-company definition uses not less than fifty-one per cent of paid-up share capital held by the described Central/State government combination and includes a subsidiary of such a government company. Do not replace paid-up capital with revenue or the number of government-appointed employees.\n\nA foreign-company analysis considers foreign incorporation together with the statutory Indian place-of-business and business-activity requirements, including the described electronic presence. Holding/subsidiary relationships require the relevant board-composition or voting-power control test and can extend down a subsidiary chain. Common branding or a minority investment alone does not establish the relationship. Use the current statutory control wording rather than the textbook shorthand of majority shares for every capital structure.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Can common branding alone prove a subsidiary relationship?",
+        "expected_takeaway": "No. Establish the applicable control test."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_0c02e84d9d87db0703d00772e760a06d08f322813e2179ed474ef96790d6c1d3",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U17",
+      "objective_ids": [
+        "BRBL::MOD_D::U17::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.492-493 / PDF pp.511-512"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "The Central and State Governments together hold the required fifty-one per cent of paid-up capital. A note tests government-company status by annual sales instead. What is wrong?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Sales must always equal share capital",
+          "explanation_md": "They are different measures."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Only one government may hold any shares",
+          "explanation_md": "The definition permits the described combination."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The statutory ownership measure is paid-up share capital",
+          "explanation_md": "Revenue is not the stated test."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Government ownership prevents incorporation",
+          "explanation_md": "The source recognises government companies."
+        }
+      ],
+      "correct_explanation_md": "Revenue is not the stated test.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_8553d3f63f104e6017e0132188ac1850c86a5310a94ccd19a29dffef5a7c144d",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U17",
+      "objective_ids": [
+        "BRBL::MOD_D::U17::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.492-493 / PDF pp.511-512"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A lender sees a group logo and assumes a subsidiary guarantee is automatically a holding-company guarantee. What must be checked?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Separate entity identity, control relationship and the actual undertaking",
+          "explanation_md": "Group relationship does not merge obligations."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Only the logo colour",
+          "explanation_md": "It does not establish liability."
+        },
+        {
+          "option_id": "C",
+          "text_md": "A rule that all group debts are automatically joint",
+          "explanation_md": "That is unsupported."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Only the parent company address",
+          "explanation_md": "Address alone is insufficient."
+        }
+      ],
+      "correct_explanation_md": "Group relationship does not merge obligations.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_d7a245e63501dcb11a8df743262a428cb1794542d0dd0895585250ef9b3c176f",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U17",
+      "objective_ids": [
+        "BRBL::MOD_D::U17::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.492-493 / PDF pp.511-512"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

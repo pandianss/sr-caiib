@@ -1,0 +1,359 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-D-U08-B003",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_D::U08: Apply fitness,merchantable-quality and examination exceptions to caveat emptor",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.445-447 / PDF pp.464-466",
+        "statement": "Purpose communicated/reliance/sellerbusinessfitnessconditions;descriptionmerchantablequality/examinationdiscoverabledefects;tradeusage;expressandimpliedconsistency;caveatemptornotabsolutedefence.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Buyer beware is not a universal seller defence",
+          "core_explanation_md": "A buyer choosing goods solely by their own judgment presents a different case from a buyer communicating a purpose and relying on a seller skill in the relevant supply business. The source identifies a fitness condition for the described reliance situation. Sale by description and merchantable quality have their own requirements.\n\nExamination can affect defects that the examination ought to reveal;it does not automatically excuse every hidden defect. Trade usage and compatible express terms also matter. Record the stated purpose,reliance,seller business,inspection scope and defect before invoking caveat emptor as if the phrase alone decided the dispute.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does any inspection automatically remove every implied protection?",
+            "expected_takeaway": "No. The relevant discoverability and other conditions must be examined."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "The buyer disclosed a specific purpose and relied on the supplier skill,but the defence invokes buyer beware without analysing those facts. What is missing?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The applicable purpose,reliance and supply-business exception",
+              "explanation_md": "The doctrine has conditions and exceptions."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Only the buyer handwriting",
+              "explanation_md": "That does not resolve reliance."
+            },
+            {
+              "option_id": "C",
+              "text_md": "A rule that every buyer choice is fully guaranteed",
+              "explanation_md": "That overstates the opposite position."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The bank account currency",
+              "explanation_md": "Currency does not decide fitness."
+            }
+          ],
+          "correct_explanation_md": "The doctrine has conditions and exceptions."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A superficial inspection occurred,but a stipulated hidden defect was not reasonably discoverable from it. What must the review distinguish?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Any inspection proves every defect was known",
+              "explanation_md": "That ignores the stipulated discoverability."
+            },
+            {
+              "option_id": "B",
+              "text_md": "No examination can ever affect any implied term",
+              "explanation_md": "The source identifies a qualified examination rule."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Discoverable defects from those not revealed by the relevant reasonable examination",
+              "explanation_md": "The scope and facts of the exception matter."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The seller may privately label every defect visible",
+              "explanation_md": "A label cannot replace evidence."
+            }
+          ],
+          "correct_explanation_md": "The scope and facts of the exception matter."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Antigravity review pending for primary law,exceptions,originality and current applicability. No publication approval."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-D-U08-B003",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_D::U08"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_D::U08",
+        "objective_ids": [
+          "BRBL::MOD_D::U08::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_D::U08",
+        "objective_ids": [
+          "BRBL::MOD_D::U08::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_D::U08",
+        "objective_ids": [
+          "BRBL::MOD_D::U08::LO_03"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-D-U08-B003",
+      "draft_id": "D001",
+      "item_id": "item_2dad7d4251e798f3ec90d5b2c7a25c1f8cda978998794dea16f6eacd34e2d10f"
+    },
+    {
+      "batch_id": "BRBL-D-U08-B003",
+      "draft_id": "D002",
+      "item_id": "item_fa6a5edad3d9291fc9519b72cb73c3fd0e5288eb7ca963b17df2c947bfc06efd"
+    },
+    {
+      "batch_id": "BRBL-D-U08-B003",
+      "draft_id": "D003",
+      "item_id": "item_ca4f432b060129a301a8cb30fa7cdac6e18825ff88fe051573a90f798b61788c"
+    }
+  ],
+  "items": [
+    {
+      "title": "Buyer beware is not a universal seller defence",
+      "core_explanation_md": "A buyer choosing goods solely by their own judgment presents a different case from a buyer communicating a purpose and relying on a seller skill in the relevant supply business. The source identifies a fitness condition for the described reliance situation. Sale by description and merchantable quality have their own requirements.\n\nExamination can affect defects that the examination ought to reveal;it does not automatically excuse every hidden defect. Trade usage and compatible express terms also matter. Record the stated purpose,reliance,seller business,inspection scope and defect before invoking caveat emptor as if the phrase alone decided the dispute.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does any inspection automatically remove every implied protection?",
+        "expected_takeaway": "No. The relevant discoverability and other conditions must be examined."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_2dad7d4251e798f3ec90d5b2c7a25c1f8cda978998794dea16f6eacd34e2d10f",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U08",
+      "objective_ids": [
+        "BRBL::MOD_D::U08::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.445-447 / PDF pp.464-466"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "The buyer disclosed a specific purpose and relied on the supplier skill,but the defence invokes buyer beware without analysing those facts. What is missing?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The applicable purpose,reliance and supply-business exception",
+          "explanation_md": "The doctrine has conditions and exceptions."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Only the buyer handwriting",
+          "explanation_md": "That does not resolve reliance."
+        },
+        {
+          "option_id": "C",
+          "text_md": "A rule that every buyer choice is fully guaranteed",
+          "explanation_md": "That overstates the opposite position."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The bank account currency",
+          "explanation_md": "Currency does not decide fitness."
+        }
+      ],
+      "correct_explanation_md": "The doctrine has conditions and exceptions.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_fa6a5edad3d9291fc9519b72cb73c3fd0e5288eb7ca963b17df2c947bfc06efd",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U08",
+      "objective_ids": [
+        "BRBL::MOD_D::U08::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.445-447 / PDF pp.464-466"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A superficial inspection occurred,but a stipulated hidden defect was not reasonably discoverable from it. What must the review distinguish?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Any inspection proves every defect was known",
+          "explanation_md": "That ignores the stipulated discoverability."
+        },
+        {
+          "option_id": "B",
+          "text_md": "No examination can ever affect any implied term",
+          "explanation_md": "The source identifies a qualified examination rule."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Discoverable defects from those not revealed by the relevant reasonable examination",
+          "explanation_md": "The scope and facts of the exception matter."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The seller may privately label every defect visible",
+          "explanation_md": "A label cannot replace evidence."
+        }
+      ],
+      "correct_explanation_md": "The scope and facts of the exception matter.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_ca4f432b060129a301a8cb30fa7cdac6e18825ff88fe051573a90f798b61788c",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U08",
+      "objective_ids": [
+        "BRBL::MOD_D::U08::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.445-447 / PDF pp.464-466"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

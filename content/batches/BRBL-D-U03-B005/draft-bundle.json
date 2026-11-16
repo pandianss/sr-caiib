@@ -1,0 +1,360 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-D-U03-B005",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_D::U03: Apply co-surety contribution without enlarging the loss",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.418-419 / PDF pp.437-438",
+        "statement": "Co-suretycontributionequalabsentcontrarycontractsubjectlimits;netunrecoveredamountandrecourse distinct.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "For a stipulated equal-contribution exercise, the creditor has recovered part of the guaranteed loss from the principal debtor. One co-surety proposes dividing the original gross loss without crediting that recovery. What is required?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Ignore every recovery from the principal debtor",
+              "explanation_md": "That risks overstating the net amount."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Allocate the gross loss twice",
+              "explanation_md": "That creates double recovery."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Reconcile the net unrecovered amount before the stipulated contribution allocation",
+              "explanation_md": "The exercise must credit the stated recovery once."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Treat every co-surety as liable beyond all agreed limits",
+              "explanation_md": "The applicable limits remain relevant."
+            }
+          ],
+          "correct_explanation_md": "The exercise must credit the stated recovery once.",
+          "case_study_id": "D003"
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "The exercise stipulates equal contribution subject to each undertaking limit. A draft says equal sharing automatically overrides a smaller legal limit. Which principle is relevant?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The applicable undertaking limits still require analysis",
+              "explanation_md": "Equality is not permission to enlarge a surety undertaking."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Every limit becomes void when another surety pays",
+              "explanation_md": "That is unsupported."
+            },
+            {
+              "option_id": "C",
+              "text_md": "No co-surety can ever seek contribution",
+              "explanation_md": "The source recognises the qualified right."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Only the bank loan number determines the share",
+              "explanation_md": "It does not establish the allocation."
+            }
+          ],
+          "correct_explanation_md": "Equality is not permission to enlarge a surety undertaking.",
+          "case_study_id": "D003"
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "item_type": "case_study",
+        "variant": "case_study",
+        "payload": {
+          "title": "Contribution after partial recovery",
+          "scenario_narrative_md": "A surety has paid the creditor and now seeks co-surety contribution. The exercise stipulates equal sharing in the absence of a contrary contract, but preserves undertaking limits. A principal-debtor recovery must be credited before any net allocation. Identify the two controls needed to avoid an overstated claim.",
+          "reference_tables_md": [],
+          "question_ids": [
+            "D001",
+            "D002"
+          ]
+        },
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Antigravity independent legal/calculation/originality review pending."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-D-U03-B005",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_D::U03"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_D::U03",
+        "objective_ids": [
+          "BRBL::MOD_D::U03::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_D::U03",
+        "objective_ids": [
+          "BRBL::MOD_D::U03::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_D::U03",
+        "objective_ids": [
+          "BRBL::MOD_D::U03::LO_04"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-D-U03-B005",
+      "draft_id": "D001",
+      "item_id": "item_6b8c33fc282e949680f323d0214ae9be4a4b4274a7bed7c792828113d88d0d6a"
+    },
+    {
+      "batch_id": "BRBL-D-U03-B005",
+      "draft_id": "D002",
+      "item_id": "item_eb0e12c60c42c712a13e5a062ab6b559b83d6fa64f36f728233a3989573a81c8"
+    },
+    {
+      "batch_id": "BRBL-D-U03-B005",
+      "draft_id": "D003",
+      "item_id": "item_4d0b25ba584c5200e630b0ebb402c40cf31cdb8692d2890d46c32294dc2f9210"
+    }
+  ],
+  "items": [
+    {
+      "difficulty": "medium",
+      "stem_md": "For a stipulated equal-contribution exercise, the creditor has recovered part of the guaranteed loss from the principal debtor. One co-surety proposes dividing the original gross loss without crediting that recovery. What is required?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Ignore every recovery from the principal debtor",
+          "explanation_md": "That risks overstating the net amount."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Allocate the gross loss twice",
+          "explanation_md": "That creates double recovery."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Reconcile the net unrecovered amount before the stipulated contribution allocation",
+          "explanation_md": "The exercise must credit the stated recovery once."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Treat every co-surety as liable beyond all agreed limits",
+          "explanation_md": "The applicable limits remain relevant."
+        }
+      ],
+      "correct_explanation_md": "The exercise must credit the stated recovery once.",
+      "case_study_id": "item_4d0b25ba584c5200e630b0ebb402c40cf31cdb8692d2890d46c32294dc2f9210",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_6b8c33fc282e949680f323d0214ae9be4a4b4274a7bed7c792828113d88d0d6a",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U03",
+      "objective_ids": [
+        "BRBL::MOD_D::U03::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.418-419 / PDF pp.437-438"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "The exercise stipulates equal contribution subject to each undertaking limit. A draft says equal sharing automatically overrides a smaller legal limit. Which principle is relevant?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The applicable undertaking limits still require analysis",
+          "explanation_md": "Equality is not permission to enlarge a surety undertaking."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Every limit becomes void when another surety pays",
+          "explanation_md": "That is unsupported."
+        },
+        {
+          "option_id": "C",
+          "text_md": "No co-surety can ever seek contribution",
+          "explanation_md": "The source recognises the qualified right."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Only the bank loan number determines the share",
+          "explanation_md": "It does not establish the allocation."
+        }
+      ],
+      "correct_explanation_md": "Equality is not permission to enlarge a surety undertaking.",
+      "case_study_id": "item_4d0b25ba584c5200e630b0ebb402c40cf31cdb8692d2890d46c32294dc2f9210",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_eb0e12c60c42c712a13e5a062ab6b559b83d6fa64f36f728233a3989573a81c8",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U03",
+      "objective_ids": [
+        "BRBL::MOD_D::U03::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.418-419 / PDF pp.437-438"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Contribution after partial recovery",
+      "scenario_narrative_md": "A surety has paid the creditor and now seeks co-surety contribution. The exercise stipulates equal sharing in the absence of a contrary contract, but preserves undertaking limits. A principal-debtor recovery must be credited before any net allocation. Identify the two controls needed to avoid an overstated claim.",
+      "reference_tables_md": [],
+      "question_ids": [
+        "item_6b8c33fc282e949680f323d0214ae9be4a4b4274a7bed7c792828113d88d0d6a",
+        "item_eb0e12c60c42c712a13e5a062ab6b559b83d6fa64f36f728233a3989573a81c8"
+      ],
+      "item_type": "case_study",
+      "id": "item_4d0b25ba584c5200e630b0ebb402c40cf31cdb8692d2890d46c32294dc2f9210",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U03",
+      "objective_ids": [
+        "BRBL::MOD_D::U03::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.418-419 / PDF pp.437-438"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

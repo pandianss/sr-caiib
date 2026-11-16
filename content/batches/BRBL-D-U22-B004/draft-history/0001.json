@@ -1,0 +1,407 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-D-U22-B004",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_D::U22: Distinguish board powers,shareholder restrictions and borrowing authority",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04",
+      "COMPANIES_ACT_INDIACODE_20260901"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.525-526 / PDF pp.544-545",
+        "statement": "Boardmeetingpowersandmemberrestrictionsdifferent;legacysection293figuresnotcurrent.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+        "locator": "sections179-181,PDF pp.121-123",
+        "statement": "180specialresolutionborrowingpaidupfree reserves securitiespremium,temporaryordinarybankloansqualification;undertakingdisposalthresholds;charity5percent.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "A signature mandate is not the whole borrowing approval",
+          "core_explanation_md": "Board powers must be read with the Act,constitution,reserved meeting matters and permitted delegation. Where section180 applies,borrowing beyond the specified aggregate requires the company special resolution with a total borrowing limit. The primary text includes paid-up share capital,free reserves and securities premium,and a qualified exclusion for temporary ordinary-course banker loans. A short repayment period alone does not make capital-expenditure borrowing an excluded temporary loan.\n\nDisposal of an undertaking and other reserved matters have their own tests. Company-class exemptions must be verified before applying them. Charitable contributions belong to the separate section181 rule,not a copied legacy section293 monetary floor. Preserve the resolution scope,existing borrowings,proposed borrowing and classification evidence.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does a short tenor alone establish the temporary-loan exclusion?",
+            "expected_takeaway": "No. Purpose and the full statutory definition matter."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A short-term bank loan finances capital expenditure,and a note excludes it solely because it matures within six months. Which fact matters?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only the loan title",
+              "explanation_md": "The title does not settle the exception."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The capital-expenditure exclusion from the temporary-loan definition",
+              "explanation_md": "Tenor alone is insufficient."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Whether the bank uses digital signatures",
+              "explanation_md": "That is unrelated to the borrowing threshold."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The borrower logo",
+              "explanation_md": "It has no effect on classification."
+            }
+          ],
+          "correct_explanation_md": "Tenor alone is insufficient."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "An authorised signatory can sign cheques,and the bank assumes this proves every required borrowing approval. What is missing?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only a larger signature specimen",
+              "explanation_md": "Size does not establish power."
+            },
+            {
+              "option_id": "B",
+              "text_md": "A rule that all cheque mandates include unlimited borrowing",
+              "explanation_md": "That is unsupported."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The branch holiday list",
+              "explanation_md": "It does not establish company approval."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The applicable capacity,board/member approval and delegation trail",
+              "explanation_md": "Signing authority does not replace all transaction approvals."
+            }
+          ],
+          "correct_explanation_md": "Signing authority does not replace all transaction approvals."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Antigravity must independently review law,exceptions,originality and exam cutoff before publication.",
+      "POST-CUTOFF primary consolidation: cited amendments/footnotes require cutoff reconciliation; class exemptions,current forms,qualification shares,section167 appeal and section188 exceptions remain reviewer checks."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-D-U22-B004",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_D::U22"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+        "authority": "India Code, Government of India",
+        "title": "Companies Act, 2013 — as on 1 September 2026",
+        "url": "https://indiacode.gov.in/server/api/core/bitstreams/95902c38-5947-4457-a431-5062e234cab0/content",
+        "publication_date": "2026-09-01",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_D::U22",
+        "objective_ids": [
+          "BRBL::MOD_D::U22::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_D::U22",
+        "objective_ids": [
+          "BRBL::MOD_D::U22::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_D::U22",
+        "objective_ids": [
+          "BRBL::MOD_D::U22::LO_04"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-D-U22-B004",
+      "draft_id": "D001",
+      "item_id": "item_d602a228504c53a9c04c957db66d8ed8629802d4592385f894b910d1ead455d0"
+    },
+    {
+      "batch_id": "BRBL-D-U22-B004",
+      "draft_id": "D002",
+      "item_id": "item_603deab9995a0629d4c10da412dd296b0e0d22d35080f83c91ced1c204fa522f"
+    },
+    {
+      "batch_id": "BRBL-D-U22-B004",
+      "draft_id": "D003",
+      "item_id": "item_64f593385a934d050ac026207657998a4d02d9d04cff673eb4ba9d71ef0e85e5"
+    }
+  ],
+  "items": [
+    {
+      "title": "A signature mandate is not the whole borrowing approval",
+      "core_explanation_md": "Board powers must be read with the Act,constitution,reserved meeting matters and permitted delegation. Where section180 applies,borrowing beyond the specified aggregate requires the company special resolution with a total borrowing limit. The primary text includes paid-up share capital,free reserves and securities premium,and a qualified exclusion for temporary ordinary-course banker loans. A short repayment period alone does not make capital-expenditure borrowing an excluded temporary loan.\n\nDisposal of an undertaking and other reserved matters have their own tests. Company-class exemptions must be verified before applying them. Charitable contributions belong to the separate section181 rule,not a copied legacy section293 monetary floor. Preserve the resolution scope,existing borrowings,proposed borrowing and classification evidence.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does a short tenor alone establish the temporary-loan exclusion?",
+        "expected_takeaway": "No. Purpose and the full statutory definition matter."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_d602a228504c53a9c04c957db66d8ed8629802d4592385f894b910d1ead455d0",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U22",
+      "objective_ids": [
+        "BRBL::MOD_D::U22::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.525-526 / PDF pp.544-545"
+        },
+        {
+          "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+          "authority": "India Code, Government of India",
+          "title": "Companies Act, 2013 — as on 1 September 2026",
+          "url": "https://indiacode.gov.in/server/api/core/bitstreams/95902c38-5947-4457-a431-5062e234cab0/content",
+          "publication_date": "2026-09-01",
+          "effective_date": null,
+          "locator": "sections179-181,PDF pp.121-123"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A short-term bank loan finances capital expenditure,and a note excludes it solely because it matures within six months. Which fact matters?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only the loan title",
+          "explanation_md": "The title does not settle the exception."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The capital-expenditure exclusion from the temporary-loan definition",
+          "explanation_md": "Tenor alone is insufficient."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Whether the bank uses digital signatures",
+          "explanation_md": "That is unrelated to the borrowing threshold."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The borrower logo",
+          "explanation_md": "It has no effect on classification."
+        }
+      ],
+      "correct_explanation_md": "Tenor alone is insufficient.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_603deab9995a0629d4c10da412dd296b0e0d22d35080f83c91ced1c204fa522f",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U22",
+      "objective_ids": [
+        "BRBL::MOD_D::U22::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.525-526 / PDF pp.544-545"
+        },
+        {
+          "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+          "authority": "India Code, Government of India",
+          "title": "Companies Act, 2013 — as on 1 September 2026",
+          "url": "https://indiacode.gov.in/server/api/core/bitstreams/95902c38-5947-4457-a431-5062e234cab0/content",
+          "publication_date": "2026-09-01",
+          "effective_date": null,
+          "locator": "sections179-181,PDF pp.121-123"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "An authorised signatory can sign cheques,and the bank assumes this proves every required borrowing approval. What is missing?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only a larger signature specimen",
+          "explanation_md": "Size does not establish power."
+        },
+        {
+          "option_id": "B",
+          "text_md": "A rule that all cheque mandates include unlimited borrowing",
+          "explanation_md": "That is unsupported."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The branch holiday list",
+          "explanation_md": "It does not establish company approval."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The applicable capacity,board/member approval and delegation trail",
+          "explanation_md": "Signing authority does not replace all transaction approvals."
+        }
+      ],
+      "correct_explanation_md": "Signing authority does not replace all transaction approvals.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_64f593385a934d050ac026207657998a4d02d9d04cff673eb4ba9d71ef0e85e5",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U22",
+      "objective_ids": [
+        "BRBL::MOD_D::U22::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.525-526 / PDF pp.544-545"
+        },
+        {
+          "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+          "authority": "India Code, Government of India",
+          "title": "Companies Act, 2013 — as on 1 September 2026",
+          "url": "https://indiacode.gov.in/server/api/core/bitstreams/95902c38-5947-4457-a431-5062e234cab0/content",
+          "publication_date": "2026-09-01",
+          "effective_date": null,
+          "locator": "sections179-181,PDF pp.121-123"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U27-B003",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U27: Distinguish unauthorised computer acts,adjudication and appeal",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.570-572 / PDF pp.589-591",
+      "statement": "43unauthorisedaccesscopyingdamagevirusdisruptiontampercompensation;adjudicatingofficer;TDSAT57appeal45daysreceiptcondonationno consentorderappeal;policeInspector.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Access permission and the particular act both matter",
+        "core_explanation_md": "The source identifies unauthorised access, copying, extraction, disruption, damage and other specified computer acts within the section 43 compensation framework. Permission to perform one task is not necessarily permission to extract all data or alter another account. Distinguish a contravention remedy from the separate offence and mental-element requirements; do not classify every incident through a single penalty label.\n\nThe described appeal from the Controller/adjudicating-officer order goes to TDSAT within45 days from receipt of the copy, with the stated sufficient-cause extension and consent-order exception. Criminal investigation has its own authorised-officer rule. Preserve permissions, logs, record versions and order-receipt evidence rather than relying only on an allegation that the system was hacked.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does permission for a routine task automatically permit copying every database?",
+          "expected_takeaway": "No. The scope of permission and the particular act matter."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An employee has permission to view one customer file but copies a separate restricted database. Which fact is material to the IT-law analysis?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The scope of permission for the actual copying act",
+            "explanation_md": "Some access permission is not unlimited authorisation."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Only whether the employee has an identity card",
+            "explanation_md": "Employment alone does not authorise every act."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The database file extension alone",
+            "explanation_md": "That does not establish permission."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Whether the copied data was interesting",
+            "explanation_md": "Interest does not establish authority."
+          }
+        ],
+        "correct_explanation_md": "Some access permission is not unlimited authorisation."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An aggrieved party challenges a qualifying adjudicating-officer order under the described appeal route. Which forum and ordinary filing period apply?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Consumer Commission, one year",
+            "explanation_md": "That is not the described statutory appeal."
+          },
+          {
+            "option_id": "B",
+            "text_md": "NCLT,180 days",
+            "explanation_md": "That is not this route."
+          },
+          {
+            "option_id": "C",
+            "text_md": "TDSAT,45 days from receipt of the order copy",
+            "explanation_md": "The source states that forum and trigger, subject to qualifications."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Any bank branch, seven days",
+            "explanation_md": "A branch is not the statutory tribunal."
+          }
+        ],
+        "correct_explanation_md": "The source states that forum and trigger, subject to qualifications."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Antigravity independent review pending for source accuracy,originality,question quality and session applicability. No publication approval.",
+    "Primary2022SO4720,currentJanVishwas amendments,section43A timing and struck-down66A listing must be reconciled before publication. No obsolete penalty table taught."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

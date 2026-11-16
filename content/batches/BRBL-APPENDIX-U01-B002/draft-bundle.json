@@ -1,0 +1,360 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-APPENDIX-U01-B002",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_APPENDIX::U01: Locate guarantee questions without confusing separate contract relationships",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "Appendix2,printed p.592 / PDF p.611",
+        "statement": "ContractActindex124125indemnity126guarantee128liability129continuing133variance137forbearance141security145146recoursecontribution.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Name the relationship and the event",
+          "core_explanation_md": "A guarantee problem can involve creditor against surety, surety against principal debtor, or contribution between co-sureties. Start by identifying which relationship is in dispute. Then locate the relevant liability, continuing-guarantee, discharge, security or recourse provision. The fact one surety pays does not make every later claim the same cause of action.\n\nA variation, release, forbearance, revocation or impairment of security can engage different rules. Keep the agreement, consent, transaction dates and amounts available while reading the full text. The appendix section route is a memory aid; the substantive contract unit supplies the independently authored explanation and application work.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Is co-surety contribution the same relationship as creditor recovery?",
+            "expected_takeaway": "No. Identify the parties and the right being enforced."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A surety has paid and seeks reimbursement from the principal debtor. Which issue should the researcher distinguish from the original creditor claim?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The surety recourse against the principal debtor",
+              "explanation_md": "Payment gives rise to a different relationship for analysis."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Only the bank branch mandate",
+              "explanation_md": "That does not identify the recourse right."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The company prospectus definition",
+              "explanation_md": "It concerns another subject."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The creditor trademark",
+              "explanation_md": "It does not determine reimbursement."
+            }
+          ],
+          "correct_explanation_md": "Payment gives rise to a different relationship for analysis."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A guarantee is challenged after a contract change. Why read the specific variation/discharge provision instead of only the liability heading?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Every change has identical consequences",
+              "explanation_md": "The conditions differ."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The guarantee title resolves consent",
+              "explanation_md": "Consent must be established."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The event may engage a separate qualified discharge rule",
+              "explanation_md": "Liability and subsequent discharge require separate analysis."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The index automatically rewrites the guarantee",
+              "explanation_md": "It only directs research."
+            }
+          ],
+          "correct_explanation_md": "Liability and subsequent discharge require separate analysis."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Navigation drafts are original study aids,not a current consolidated bare Act. Substantive lessons remain in their exact units. Antigravity review pending for the dated legal text,judicial status and section references.",
+      "Legacy source indexes contain omitted,amended and State-specific provisions; every operational legal conclusion requires its full applicable text."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-APPENDIX-U01-B002",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_APPENDIX::U01"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_APPENDIX::U01",
+        "objective_ids": [
+          "BRBL::MOD_APPENDIX::U01::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_APPENDIX::U01",
+        "objective_ids": [
+          "BRBL::MOD_APPENDIX::U01::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_APPENDIX::U01",
+        "objective_ids": [
+          "BRBL::MOD_APPENDIX::U01::LO_02"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-APPENDIX-U01-B002",
+      "draft_id": "D001",
+      "item_id": "item_499a1d7d14e0246eb1c25cdb8d0f50dee6cd9a9c0ed0cdc4a0a11efd96f30baa"
+    },
+    {
+      "batch_id": "BRBL-APPENDIX-U01-B002",
+      "draft_id": "D002",
+      "item_id": "item_fa8f5f39843503e0f2de70eee07d046ed384d53d0790b8013823c2de18b98d9f"
+    },
+    {
+      "batch_id": "BRBL-APPENDIX-U01-B002",
+      "draft_id": "D003",
+      "item_id": "item_ab5b45d29e7e9374966368515995b3ec179aa9ad381c8b673753572484a11031"
+    }
+  ],
+  "items": [
+    {
+      "title": "Name the relationship and the event",
+      "core_explanation_md": "A guarantee problem can involve creditor against surety, surety against principal debtor, or contribution between co-sureties. Start by identifying which relationship is in dispute. Then locate the relevant liability, continuing-guarantee, discharge, security or recourse provision. The fact one surety pays does not make every later claim the same cause of action.\n\nA variation, release, forbearance, revocation or impairment of security can engage different rules. Keep the agreement, consent, transaction dates and amounts available while reading the full text. The appendix section route is a memory aid; the substantive contract unit supplies the independently authored explanation and application work.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Is co-surety contribution the same relationship as creditor recovery?",
+        "expected_takeaway": "No. Identify the parties and the right being enforced."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_499a1d7d14e0246eb1c25cdb8d0f50dee6cd9a9c0ed0cdc4a0a11efd96f30baa",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_APPENDIX",
+      "unit_id": "BRBL::MOD_APPENDIX::U01",
+      "objective_ids": [
+        "BRBL::MOD_APPENDIX::U01::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Appendix2,printed p.592 / PDF p.611"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A surety has paid and seeks reimbursement from the principal debtor. Which issue should the researcher distinguish from the original creditor claim?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The surety recourse against the principal debtor",
+          "explanation_md": "Payment gives rise to a different relationship for analysis."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Only the bank branch mandate",
+          "explanation_md": "That does not identify the recourse right."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The company prospectus definition",
+          "explanation_md": "It concerns another subject."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The creditor trademark",
+          "explanation_md": "It does not determine reimbursement."
+        }
+      ],
+      "correct_explanation_md": "Payment gives rise to a different relationship for analysis.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_fa8f5f39843503e0f2de70eee07d046ed384d53d0790b8013823c2de18b98d9f",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_APPENDIX",
+      "unit_id": "BRBL::MOD_APPENDIX::U01",
+      "objective_ids": [
+        "BRBL::MOD_APPENDIX::U01::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Appendix2,printed p.592 / PDF p.611"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A guarantee is challenged after a contract change. Why read the specific variation/discharge provision instead of only the liability heading?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Every change has identical consequences",
+          "explanation_md": "The conditions differ."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The guarantee title resolves consent",
+          "explanation_md": "Consent must be established."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The event may engage a separate qualified discharge rule",
+          "explanation_md": "Liability and subsequent discharge require separate analysis."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The index automatically rewrites the guarantee",
+          "explanation_md": "It only directs research."
+        }
+      ],
+      "correct_explanation_md": "Liability and subsequent discharge require separate analysis.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_ab5b45d29e7e9374966368515995b3ec179aa9ad381c8b673753572484a11031",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_APPENDIX",
+      "unit_id": "BRBL::MOD_APPENDIX::U01",
+      "objective_ids": [
+        "BRBL::MOD_APPENDIX::U01::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Appendix2,printed p.592 / PDF p.611"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

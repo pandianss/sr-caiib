@@ -1,0 +1,148 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-C-U02-B007",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL C U02 MSMED Act: Calculate bounded monthly-rest interest using a stipulated bank rate and exact rounding",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "MSMED_ACT_2006_GAZETTE",
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "MSMED_ACT_2006_GAZETTE",
+      "locator": "section 16, PDF p.8",
+      "statement": "Section 16 specifies compound interest with monthly rests at three times RBI bank rate, notwithstanding contrary agreement. A constant stipulated rate and exact full monthly periods permit a bounded calculation; partial-month/live-rate conventions are not certified.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F002",
+      "source_id": "S04",
+      "locator": "printed pp.233-242 / PDF pp.252-261, whole unit and end questions visually inspected",
+      "statement": "The chapter covers this objective, but its older classification values and historical memorandum treatment must be read with the retained notifications.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "The reference is bank rate; the mechanism is monthly compounding",
+        "core_explanation_md": "Section 16 links the delayed-payment rate to three times the RBI-notified bank rate and requires compound interest with monthly rests. Do not substitute a loan rate, repo rate or a simple-interest convention merely because it is familiar. A private lower-rate term does not displace this statutory rule.\n\nFor a training problem with a constant stipulated annual bank rate and complete monthly periods, multiply that annual rate by three, divide by twelve for the assumed monthly rate, compound the outstanding amount and subtract principal to obtain interest. Live claims need actual rate changes, dates and applicable conventions; this exercise does not certify partial-month computation.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does monthly rests mean charging the annual rate every month?",
+          "expected_takeaway": "No. Convert the annual rate to the stated monthly rate; then compound monthly."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "item_type": "card",
+      "variant": "worked_example",
+      "payload": {
+        "title": "Two full monthly rests on a stipulated overdue amount",
+        "core_explanation_md": "Assume an eligible overdue principal of INR 40,000, no payments, exactly two full monthly periods and a constant stipulated RBI bank rate of 6% per annum throughout. Use annual rate / 12 per month for this bounded exercise. Find interest alone.",
+        "prerequisite_objective_ids": [],
+        "worked_steps": [
+          {
+            "step_number": 1,
+            "description": "Triple the stipulated annual bank rate",
+            "formula_or_substitution": "3 * 6%",
+            "intermediate_result": "18% per annum"
+          },
+          {
+            "step_number": 2,
+            "description": "Convert the stipulated annual rate to a monthly rate",
+            "formula_or_substitution": "18% / 12",
+            "intermediate_result": "1.5% per month"
+          },
+          {
+            "step_number": 3,
+            "description": "Compound through two complete rests",
+            "formula_or_substitution": "40000 * 1.015 * 1.015",
+            "intermediate_result": "41209.00 INR"
+          },
+          {
+            "step_number": 4,
+            "description": "Remove principal to find interest",
+            "formula_or_substitution": "41209.00 - 40000",
+            "intermediate_result": "1209.00 INR"
+          }
+        ],
+        "final_answer_with_unit": "1209.00 INR",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Which assumptions make this a bounded calculation rather than a live claim?",
+          "expected_takeaway": "Eligibility and dates are stipulated; the stated rate and complete monthly periods are assumptions, not current reference data."
+        }
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "numeric_input",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Assume an eligible overdue principal of INR 80,000, no payments, exactly two full monthly rests and a constant stipulated RBI bank rate of 6% per annum. For this exercise use the statutory triple annual rate divided by 12 each month. Find interest alone in INR, rounded only at the end to two decimals.",
+        "correct_explanation_md": "The assumed monthly rate is 3 * 6% / 12 = 1.5%. Interest = 80000 * (1.015^2 - 1) = 2418.00 INR.",
+        "numeric_rule": {
+          "expected_answer": "2418.00",
+          "unit_label": "INR",
+          "precision_decimals": 2,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Retain exact intermediate values; round only the final rupee amount to two decimal places using HALF_UP.",
+          "allow_negative": false
+        }
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "numeric_input",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Assume an eligible overdue principal of INR 125,000, no payments, three full monthly rests and a constant stipulated RBI bank rate of 8% per annum. Use triple annual rate / 12 each month for this exercise. Find interest alone in INR to two decimals, rounding only at the end.",
+        "correct_explanation_md": "The monthly rate is 3 * 8% / 12 = 2%. Interest = 125000 * (1.02^3 - 1) = 7651.00 INR.",
+        "numeric_rule": {
+          "expected_answer": "7651.00",
+          "unit_label": "INR",
+          "precision_decimals": 2,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Retain exact intermediate values; round only the final rupee amount to two decimal places using HALF_UP.",
+          "allow_negative": false
+        }
+      },
+      "draft_id": "D004",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex drafts, 16 November 2026; independent legal/session applicability, originality and pedagogy review pending. No approval or publication claimed.",
+    "Original Gazette is not a certified June 2026 consolidation. Later amendments, commencement changes, State rules and applicable judgments require independent verification.",
+    "Source questions and textbook table structure were inspected and not reused. Teaching and scenarios were designed from a factual brief; author comparison is not independent editorial review.",
+    "Original notification transition dates and partial-month/live-rate interest conventions are not certified here. Udyam registration timing and legal eligibility disputes need applicable primary evidence."
+  ],
+  "next_batch_hint": "Continue BRBL-C-U02-B008"
+}

@@ -1,0 +1,119 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U13-B002",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U13: Distinguish retirement,expulsion and insolvency effects",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.473-474 / PDF pp.492-493",
+      "statement": "32retirementagreementconsentatwillnotice;publicnoticeprospectiveliabilityqualified;pastreleasecreditoragreement;33expulsioncontractgoodfaith;34insolvencyorder.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Record both internal exit and external liability",
+        "core_explanation_md": "Retirement may follow consent, an express agreement or the described at-will written-notice route. An internal exit date does not alone settle a third party claim. Public notice and the specified exceptions matter for later acts; release from existing obligations needs the applicable creditor agreement rather than a private promise between partners.\n\nExpulsion requires a contractual power exercised in good faith; a bare majority is not a universal expulsion power. Insolvency has its own statutory cessation point at the adjudication order and rules for subsequent firm/estate liability. Keep retirement, expulsion, death and insolvency as distinct events rather than recording all of them simply as account-signatory changes.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does removing a bank signatory automatically release earlier firm debt?",
+          "expected_takeaway": "No. Existing liability and creditor discharge require separate analysis."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Partners privately promise a retiree that the bank will no longer claim an existing loan, but no creditor release is established. What remains?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The private promise necessarily binds the bank",
+            "explanation_md": "An internal allocation does not itself prove creditor discharge."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The existing-debt liability and any creditor release must be examined separately",
+            "explanation_md": "Internal retirement does not automatically erase earlier obligations."
+          },
+          {
+            "option_id": "C",
+            "text_md": "All firm debts become void on retirement",
+            "explanation_md": "The source does not support that result."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A change in signature alone replaces the borrower",
+            "explanation_md": "Mandate and liability differ."
+          }
+        ],
+        "correct_explanation_md": "Internal retirement does not automatically erase earlier obligations."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A majority expels a partner without checking the agreement or good faith. Which requirement was missed?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only the current account balance",
+            "explanation_md": "Balance does not create expulsion power."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A universal right of any majority to expel",
+            "explanation_md": "The provision is qualified."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The expelled person consent to every ordinary purchase",
+            "explanation_md": "Consent for ordinary purchasing does not establish a contractual power of expulsion exercised in good faith."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A contractual expulsion power exercised in good faith",
+            "explanation_md": "Both elements matter in the described framework."
+          }
+        ],
+        "correct_explanation_md": "Both elements matter in the described framework."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Primary law, State amendments, session applicability and independent editorial review remain with Antigravity. No publication approval."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

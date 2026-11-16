@@ -1,0 +1,371 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-C-U06-B012",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_C::U06: Reconcile liquidation,workmen dues and IBC before distributing secured proceeds",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "SARFAESI_GUJARAT_COMPILATION"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "SARFAESI_GUJARAT_COMPILATION",
+        "locator": "section13(9)provisos,PDF p.19",
+        "statement": "SubjectIBC;liquidationdistributionandworkmenduesdepositestimateadjustmentundertaking;nofree-standingpriorityoverrideIBC.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Identify the insolvency regime before the distribution",
+          "core_explanation_md": "The retained section 13(9) is expressly subject to the IBC and contains liquidation/workmen-dues provisos using their stated statutory references. The described mechanism includes a liquidator estimate where dues are not yet ascertainable, a deposit and later adjustment, with the required undertaking. An estimate is not automatically the final discharge of the workmen component.\n\nDo not copy an older Companies Act reference into an IBC liquidation waterfall without reconciling the governing regime, commencement, savings and the secured creditor election. A section 13(7) arithmetic exercise that expressly excludes other priorities does not decide an actual insolvency distribution. Preserve the liquidator communication, security realisation choice and applicable order before allocating money.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does paying an estimated workmen amount automatically end every later adjustment duty?",
+            "expected_takeaway": "No. The retained provisos contemplate reconciliation of the final amount."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A creditor deposits the liquidator estimated workmen dues and refuses any final reconciliation solely because an estimate was paid. What does the retained provision require considering?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only whether the estimate was convenient",
+              "explanation_md": "Convenience is not final liability."
+            },
+            {
+              "option_id": "B",
+              "text_md": "A rule that every estimate is permanently conclusive",
+              "explanation_md": "The provisos provide adjustment."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The creditor office location",
+              "explanation_md": "It does not determine the balance."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The final dues, balance/excess adjustment and undertaking",
+              "explanation_md": "The estimate does not erase reconciliation."
+            }
+          ],
+          "correct_explanation_md": "The estimate does not erase reconciliation."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A distribution memo says SARFAESI automatically overrides every IBC rule. What source qualification was missed?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The express subject-to-IBC qualification and applicable regime",
+              "explanation_md": "The statutes cannot be combined through that blanket claim."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Only the document page count",
+              "explanation_md": "It does not establish priority."
+            },
+            {
+              "option_id": "C",
+              "text_md": "A rule that security can never have priority",
+              "explanation_md": "That opposite extreme is unsupported."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The borrower preferred allocation",
+              "explanation_md": "Preference does not set statutory priority."
+            }
+          ],
+          "correct_explanation_md": "The statutes cannot be combined through that blanket claim."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "NewB007-B013address earlier authoring-depth omissions inB001-B006. Historical envelopes remain unchanged as evidence. Antigravity must reconcile current consolidatedRules8-9,latercase law and cutoff applicability before publication.",
+      "No independent review approval; all legal factsneeds_review and canonicalreviewnull."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-C-U06-B012",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_C::U06"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "SARFAESI_GUJARAT_COMPILATION",
+        "authority": "Government of India statute hosted by Gujarat Revenue Department",
+        "title": "SARFAESI Act2002, 38-page compilation including 2016 and 2021 amendments",
+        "url": "https://revenuedepartment.gujarat.gov.in/downloads/4_11_GHRQ_01022026.pdf",
+        "publication_date": null,
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_C::U06",
+        "objective_ids": [
+          "BRBL::MOD_C::U06::LO_12"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_C::U06",
+        "objective_ids": [
+          "BRBL::MOD_C::U06::LO_12"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_C::U06",
+        "objective_ids": [
+          "BRBL::MOD_C::U06::LO_12"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-C-U06-B012",
+      "draft_id": "D001",
+      "item_id": "item_04b046980c0c6be8bb495e8ab51e04c7d64e98ffdb7d10ecb9eba350746bb967"
+    },
+    {
+      "batch_id": "BRBL-C-U06-B012",
+      "draft_id": "D002",
+      "item_id": "item_c9caca483ad2b9abeba68cc04b6715f180f261f2fc07152b54f82460ea7edf53"
+    },
+    {
+      "batch_id": "BRBL-C-U06-B012",
+      "draft_id": "D003",
+      "item_id": "item_f364d0156929b6829e25b3182261a1817bcb9bb5dd4a88b8b11437565bf0456a"
+    }
+  ],
+  "items": [
+    {
+      "title": "Identify the insolvency regime before the distribution",
+      "core_explanation_md": "The retained section 13(9) is expressly subject to the IBC and contains liquidation/workmen-dues provisos using their stated statutory references. The described mechanism includes a liquidator estimate where dues are not yet ascertainable, a deposit and later adjustment, with the required undertaking. An estimate is not automatically the final discharge of the workmen component.\n\nDo not copy an older Companies Act reference into an IBC liquidation waterfall without reconciling the governing regime, commencement, savings and the secured creditor election. A section 13(7) arithmetic exercise that expressly excludes other priorities does not decide an actual insolvency distribution. Preserve the liquidator communication, security realisation choice and applicable order before allocating money.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does paying an estimated workmen amount automatically end every later adjustment duty?",
+        "expected_takeaway": "No. The retained provisos contemplate reconciliation of the final amount."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_04b046980c0c6be8bb495e8ab51e04c7d64e98ffdb7d10ecb9eba350746bb967",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U06",
+      "objective_ids": [
+        "BRBL::MOD_C::U06::LO_12"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "SARFAESI_GUJARAT_COMPILATION",
+          "authority": "Government of India statute hosted by Gujarat Revenue Department",
+          "title": "SARFAESI Act2002, 38-page compilation including 2016 and 2021 amendments",
+          "url": "https://revenuedepartment.gujarat.gov.in/downloads/4_11_GHRQ_01022026.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section13(9)provisos,PDF p.19"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A creditor deposits the liquidator estimated workmen dues and refuses any final reconciliation solely because an estimate was paid. What does the retained provision require considering?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only whether the estimate was convenient",
+          "explanation_md": "Convenience is not final liability."
+        },
+        {
+          "option_id": "B",
+          "text_md": "A rule that every estimate is permanently conclusive",
+          "explanation_md": "The provisos provide adjustment."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The creditor office location",
+          "explanation_md": "It does not determine the balance."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The final dues, balance/excess adjustment and undertaking",
+          "explanation_md": "The estimate does not erase reconciliation."
+        }
+      ],
+      "correct_explanation_md": "The estimate does not erase reconciliation.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_c9caca483ad2b9abeba68cc04b6715f180f261f2fc07152b54f82460ea7edf53",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U06",
+      "objective_ids": [
+        "BRBL::MOD_C::U06::LO_12"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "SARFAESI_GUJARAT_COMPILATION",
+          "authority": "Government of India statute hosted by Gujarat Revenue Department",
+          "title": "SARFAESI Act2002, 38-page compilation including 2016 and 2021 amendments",
+          "url": "https://revenuedepartment.gujarat.gov.in/downloads/4_11_GHRQ_01022026.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section13(9)provisos,PDF p.19"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A distribution memo says SARFAESI automatically overrides every IBC rule. What source qualification was missed?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The express subject-to-IBC qualification and applicable regime",
+          "explanation_md": "The statutes cannot be combined through that blanket claim."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Only the document page count",
+          "explanation_md": "It does not establish priority."
+        },
+        {
+          "option_id": "C",
+          "text_md": "A rule that security can never have priority",
+          "explanation_md": "That opposite extreme is unsupported."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The borrower preferred allocation",
+          "explanation_md": "Preference does not set statutory priority."
+        }
+      ],
+      "correct_explanation_md": "The statutes cannot be combined through that blanket claim.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_f364d0156929b6829e25b3182261a1817bcb9bb5dd4a88b8b11437565bf0456a",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U06",
+      "objective_ids": [
+        "BRBL::MOD_C::U06::LO_12"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "SARFAESI_GUJARAT_COMPILATION",
+          "authority": "Government of India statute hosted by Gujarat Revenue Department",
+          "title": "SARFAESI Act2002, 38-page compilation including 2016 and 2021 amendments",
+          "url": "https://revenuedepartment.gujarat.gov.in/downloads/4_11_GHRQ_01022026.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section13(9)provisos,PDF p.19"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

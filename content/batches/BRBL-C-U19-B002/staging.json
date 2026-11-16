@@ -1,0 +1,120 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-C-U19-B002",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_C::U19: Distinguish unfair contract,unfair trade practice and consumer information rights",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.365-368 / PDF pp.384-387",
+      "statement": "Unfaircontractexcesssecurity/disproportionatepenalty/unjustifiedtermination/assignment/charges;UTPmisleadingrepresentations,falsebargains,giftpromises,noreceipts,defectivewithdrawal,confidentialdisclosure;rightsafetyinformationchoicehearingredressawareness.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Separate a harmful term from a misleading sales practice",
+        "core_explanation_md": "An unfair-contract concern focuses on the terms and their effect on the consumer, such as manifestly excessive security, a disproportionate penalty or an unjustified one-sided power. An unfair-trade-practice concern can arise from misleading claims, false bargains, unfulfilled promotional promises, the described receipt/refund failures or improper disclosure of confidential information. The same file may require more than one analysis.\n\nConsumer rights include information, safety, hearing and redress; a signed standard form does not automatically prove every term is fair. Preserve what was promised, the actual terms, what was charged and the information supplied. Do not infer statutory approval or affiliation from an advertising claim alone.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does a signed form by itself prove that all its terms are fair?",
+          "expected_takeaway": "No. The statutory unfair-term analysis remains separate."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A sales message claims a product has official approval with no supporting evidence. Which concern is directly raised?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only whether the paper is stapled correctly",
+            "explanation_md": "That does not address the representation."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The customer must disprove every imaginable approval",
+            "explanation_md": "The actual claim needs a factual basis."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A potentially misleading representation of approval or affiliation",
+            "explanation_md": "The source identifies such deceptive claims as relevant."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Every product with an advertisement is automatically unlawful",
+            "explanation_md": "Advertising alone is not the identified defect."
+          }
+        ],
+        "correct_explanation_md": "The source identifies such deceptive claims as relevant."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A penalty clause bears no reasonable relationship to the stated breach loss. The reviewer considers only whether the customer signed. What is missing?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The statutory unfair-contract analysis of the term effect",
+            "explanation_md": "Signature alone does not settle fairness."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Only the bank profit target",
+            "explanation_md": "Profit preference does not determine the legal test."
+          },
+          {
+            "option_id": "C",
+            "text_md": "An assumption that every penalty is prohibited regardless of facts",
+            "explanation_md": "The actual term and statutory criteria matter."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A claim that every fee is a tax",
+            "explanation_md": "Contract charges and taxes are distinct."
+          }
+        ],
+        "correct_explanation_md": "Signature alone does not settle fairness."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Original drafts for later Antigravity review; source/current applicability, case law and originality review remain pending. No publication approval.",
+    "Appointment/service rules and later consumer notifications require current primary review. Numeric jurisdiction questions expressly stipulate the2021 ordinary-complaint framework;special unfair-contract routes are separate."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

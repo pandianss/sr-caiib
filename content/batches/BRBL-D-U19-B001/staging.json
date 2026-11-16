@@ -1,0 +1,120 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U19-B001",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U19: Separate company capacity from officer authority and internal procedure",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.502-503 / PDF pp.521-522",
+      "statement": "Ultravirescompanyobjectsnotcuredbymemberratification;authoritybreachdifferent;tracingrestitutiondirectorliabilityqualified.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Ask which boundary was crossed",
+        "core_explanation_md": "An act beyond the company constitutional capacity differs from an act within that capacity but outside a director authority. Under the described ultra vires doctrine, a company-capacity defect is not cured merely by all members ratifying the transaction. An internal authorisation defect needs its own analysis and cannot automatically be described as the same defect.\n\nThe source discusses tracing, recovery of property and personal consequences for misuse or breach of authority. These are remedy questions requiring facts and legal conditions, not a promise that every invalid borrowing becomes recoverable as an ordinary contract debt. Preserve the use and traceability of funds and the representation of authority rather than announcing that ultra vires means no remedy of any kind.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Can unanimous member approval alone cure an act beyond company capacity?",
+          "expected_takeaway": "Not under the described company ultra vires rule."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A transaction is stipulated to be beyond company constitutional capacity. Members unanimously approve it afterwards. Which proposition follows from the described doctrine?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Approval necessarily makes it intra vires",
+            "explanation_md": "That is the rejected shortcut."
+          },
+          {
+            "option_id": "B",
+            "text_md": "No restitution or property question can ever arise",
+            "explanation_md": "Remedies require separate analysis."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Member ratification alone does not cure the capacity defect",
+            "explanation_md": "Capacity and internal approval differ."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Every director necessarily committed a crime",
+            "explanation_md": "The required facts are not established."
+          }
+        ],
+        "correct_explanation_md": "Capacity and internal approval differ."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A borrowing is within company objects, but the officer lacked the required authority. Why identify the defect precisely?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Officer authority and company capacity have different legal consequences",
+            "explanation_md": "Do not treat all irregularities as identical."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Every internal defect destroys company existence",
+            "explanation_md": "That does not follow."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Objects never matter to a borrowing",
+            "explanation_md": "They remain part of capacity analysis."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The officer title alone proves every power",
+            "explanation_md": "Authority must be established."
+          }
+        ],
+        "correct_explanation_md": "Do not treat all irregularities as identical."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Antigravity must independently review law,exceptions,originality and exam cutoff before publication.",
+    "Textbook tracing and personal-liability statements require qualified primary/case-law review; no source case facts reused."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

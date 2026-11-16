@@ -1,0 +1,359 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-C-U14-B001",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_C::U14: Prepare jurisdiction, pleadings, affidavits and related-party recovery applications",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.318-321 / PDF pp.337-340",
+        "statement": "Section19 jurisdiction alternatives,other-bank joinder beforefinalorder,prescribed evidence/fees;transferred suit fee distinction. Summons30days,exceptional additional15 for defence;verified pleadings/affidavits;setoff/counterclaim have cross-suit function.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "A filing package connects the remedy to admissible facts",
+          "core_explanation_md": "Select a section19 forum using the applicable account-office, defendant or cause-of-action jurisdiction facts. The package needs the prescribed form, fee and evidence; a statutory transfer from a civil court has a different fee position from a fresh application. Another qualifying lender claim against the same defendant can use the stated joinder route before final order.\n\nThe defence, set-off and counterclaim also require proper pleadings and verification. The source describes thirty days after service for the written statement with only a qualified additional fifteen days in exceptional circumstances. A potential extension is not one already granted. Unsupported facts cannot be turned into evidence simply by including them in an unverified pleading.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does an expected extension automatically change the response deadline?",
+            "expected_takeaway": "No. The applicable order and statutory conditions must be established."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A defendant plans to rely on a qualified extension but has no order granting one. What should the response calendar show?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The latest possible date as automatically granted",
+              "explanation_md": "Possibility and actual grant are distinct."
+            },
+            {
+              "option_id": "B",
+              "text_md": "No deadline until the next hearing",
+              "explanation_md": "The source links the initial period to service."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Only the date the bank opened the account",
+              "explanation_md": "That is not the summons-response trigger."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The operative response deadline, with any extension tracked separately",
+              "explanation_md": "The calendar should reflect actual authority, not expectation."
+            }
+          ],
+          "correct_explanation_md": "The calendar should reflect actual authority, not expectation."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A counterclaim is supported only by unverified assertions despite the applicable affidavit requirement. What is the evidential issue?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Counterclaims never need factual support",
+              "explanation_md": "The verification framework applies to the stated pleadings."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The facts must satisfy the prescribed verification/evidence requirements",
+              "explanation_md": "Inclusion in a pleading alone does not establish admissible support."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The counterclaim necessarily pays off every bank claim",
+              "explanation_md": "A pleaded claim is not an adjudicated set-off or payment."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The bank can delete the counterclaim from the court record privately",
+              "explanation_md": "The issue belongs to the Tribunal process."
+            }
+          ],
+          "correct_explanation_md": "Inclusion in a pleading alone does not establish admissible support."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "RDB courseware snapshot only. Current consolidated statute, notifications, Tribunal Reforms law, procedural rules and later judgments require Antigravity verification. Historical institutional names and court summaries are not current operational instructions."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-C-U14-B001",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_C::U14"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_C::U14",
+        "objective_ids": [
+          "BRBL::MOD_C::U14::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_C::U14",
+        "objective_ids": [
+          "BRBL::MOD_C::U14::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_C::U14",
+        "objective_ids": [
+          "BRBL::MOD_C::U14::LO_01"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-C-U14-B001",
+      "draft_id": "D001",
+      "item_id": "item_91e898fbe64bffd3441749b82a2c3093583cd4d1b29a2db17fd01b0990c0c638"
+    },
+    {
+      "batch_id": "BRBL-C-U14-B001",
+      "draft_id": "D002",
+      "item_id": "item_f35ccf1db04a56f647681b1ee3ac37e0b85fe2e10e7a01e054068608a0d60ff3"
+    },
+    {
+      "batch_id": "BRBL-C-U14-B001",
+      "draft_id": "D003",
+      "item_id": "item_705875474bb253fc880456fa3cb66465892f7b99244bde72a128b5d1534a7401"
+    }
+  ],
+  "items": [
+    {
+      "title": "A filing package connects the remedy to admissible facts",
+      "core_explanation_md": "Select a section19 forum using the applicable account-office, defendant or cause-of-action jurisdiction facts. The package needs the prescribed form, fee and evidence; a statutory transfer from a civil court has a different fee position from a fresh application. Another qualifying lender claim against the same defendant can use the stated joinder route before final order.\n\nThe defence, set-off and counterclaim also require proper pleadings and verification. The source describes thirty days after service for the written statement with only a qualified additional fifteen days in exceptional circumstances. A potential extension is not one already granted. Unsupported facts cannot be turned into evidence simply by including them in an unverified pleading.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does an expected extension automatically change the response deadline?",
+        "expected_takeaway": "No. The applicable order and statutory conditions must be established."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_91e898fbe64bffd3441749b82a2c3093583cd4d1b29a2db17fd01b0990c0c638",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U14",
+      "objective_ids": [
+        "BRBL::MOD_C::U14::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.318-321 / PDF pp.337-340"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A defendant plans to rely on a qualified extension but has no order granting one. What should the response calendar show?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The latest possible date as automatically granted",
+          "explanation_md": "Possibility and actual grant are distinct."
+        },
+        {
+          "option_id": "B",
+          "text_md": "No deadline until the next hearing",
+          "explanation_md": "The source links the initial period to service."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Only the date the bank opened the account",
+          "explanation_md": "That is not the summons-response trigger."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The operative response deadline, with any extension tracked separately",
+          "explanation_md": "The calendar should reflect actual authority, not expectation."
+        }
+      ],
+      "correct_explanation_md": "The calendar should reflect actual authority, not expectation.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_f35ccf1db04a56f647681b1ee3ac37e0b85fe2e10e7a01e054068608a0d60ff3",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U14",
+      "objective_ids": [
+        "BRBL::MOD_C::U14::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.318-321 / PDF pp.337-340"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A counterclaim is supported only by unverified assertions despite the applicable affidavit requirement. What is the evidential issue?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Counterclaims never need factual support",
+          "explanation_md": "The verification framework applies to the stated pleadings."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The facts must satisfy the prescribed verification/evidence requirements",
+          "explanation_md": "Inclusion in a pleading alone does not establish admissible support."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The counterclaim necessarily pays off every bank claim",
+          "explanation_md": "A pleaded claim is not an adjudicated set-off or payment."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The bank can delete the counterclaim from the court record privately",
+          "explanation_md": "The issue belongs to the Tribunal process."
+        }
+      ],
+      "correct_explanation_md": "Inclusion in a pleading alone does not establish admissible support.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_705875474bb253fc880456fa3cb66465892f7b99244bde72a128b5d1534a7401",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U14",
+      "objective_ids": [
+        "BRBL::MOD_C::U14::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.318-321 / PDF pp.337-340"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

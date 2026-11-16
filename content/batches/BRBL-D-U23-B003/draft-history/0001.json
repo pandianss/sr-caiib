@@ -1,0 +1,360 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-D-U23-B003",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_D::U23: Apply the LLP agreement,defaults and partner-cessation consequences",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.534-536 / PDF pp.553-555",
+        "statement": "23agreementfilingFirstScheduledefaults,preincorporationratificationall;24cessationnotice30daysabsentagreement,thirdpartynoticeRegistrar,accruedobligationcontinues,settlementnotmanagement.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Partner exit does not erase accrued obligations",
+          "core_explanation_md": "The LLP agreement governs the described mutual rights and duties; the First Schedule supplies the applicable defaults where it is silent. Changes require the prescribed filing. A pre-incorporation agreement needs the described all-partner ratification to impose its obligations on the incorporated LLP. Do not import an ordinary-firm deed rule without checking the LLP statute.\n\nCessation follows the agreement or the specified default written-notice route. The third party notice/Registrar notice rule matters to how a former partner is regarded in dealings. Cessation does not itself discharge obligations already incurred. The default capital/profit settlement entitlement does not give the former partner continuing management rights. Distinguish the exit date,the notice evidence,the settlement calculation and any separate guarantee.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does resignation itself extinguish an earlier obligation?",
+            "expected_takeaway": "No. Accrued obligations require their own discharge analysis."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A former partner demands management access solely because a capital settlement remains unpaid. What is the relevant distinction?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Unpaid settlement automatically restores all management power",
+              "explanation_md": "That does not follow."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Every exit extinguishes all financial rights",
+              "explanation_md": "The source preserves a qualified entitlement."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The LLP ceases to exist when anyone resigns",
+              "explanation_md": "It has continuing existence."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Settlement entitlement and continuing management rights are different",
+              "explanation_md": "The default exit framework does not confer interference rights."
+            }
+          ],
+          "correct_explanation_md": "The default exit framework does not confer interference rights."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "The agreement is silent on a mutual-rights issue. A reviewer automatically applies ordinary Partnership Act defaults. Which source should be examined first?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "An unrelated firm deed",
+              "explanation_md": "It does not govern this LLP."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The LLP Act First Schedule for the relevant default",
+              "explanation_md": "The LLP has its own statutory default framework."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Only the bank tariff",
+              "explanation_md": "That is not the internal-rights source."
+            },
+            {
+              "option_id": "D",
+              "text_md": "A partner private preference",
+              "explanation_md": "Preference does not replace the legal rule."
+            }
+          ],
+          "correct_explanation_md": "The LLP has its own statutory default framework."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Antigravity independent legal,originality and session review pending; no publication approval.",
+      "Commencement Gazette and later rules/current small-LLP concessions require Antigravity reconciliation."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-D-U23-B003",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_D::U23"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_D::U23",
+        "objective_ids": [
+          "BRBL::MOD_D::U23::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_D::U23",
+        "objective_ids": [
+          "BRBL::MOD_D::U23::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_D::U23",
+        "objective_ids": [
+          "BRBL::MOD_D::U23::LO_03"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-D-U23-B003",
+      "draft_id": "D001",
+      "item_id": "item_336c25eb404b049dbe8dddb07bd288f6fe1299f7e218ca9d378d0c250249964a"
+    },
+    {
+      "batch_id": "BRBL-D-U23-B003",
+      "draft_id": "D002",
+      "item_id": "item_0a7e16c4fb1e781c63b6aa7dcd000d18098e06f7ec5c235756bc0a9e555ebe7c"
+    },
+    {
+      "batch_id": "BRBL-D-U23-B003",
+      "draft_id": "D003",
+      "item_id": "item_b6d0fb86b43e280e63de0c97178e69ae97f2b363315e4bb6348de21e4d986644"
+    }
+  ],
+  "items": [
+    {
+      "title": "Partner exit does not erase accrued obligations",
+      "core_explanation_md": "The LLP agreement governs the described mutual rights and duties; the First Schedule supplies the applicable defaults where it is silent. Changes require the prescribed filing. A pre-incorporation agreement needs the described all-partner ratification to impose its obligations on the incorporated LLP. Do not import an ordinary-firm deed rule without checking the LLP statute.\n\nCessation follows the agreement or the specified default written-notice route. The third party notice/Registrar notice rule matters to how a former partner is regarded in dealings. Cessation does not itself discharge obligations already incurred. The default capital/profit settlement entitlement does not give the former partner continuing management rights. Distinguish the exit date,the notice evidence,the settlement calculation and any separate guarantee.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does resignation itself extinguish an earlier obligation?",
+        "expected_takeaway": "No. Accrued obligations require their own discharge analysis."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_336c25eb404b049dbe8dddb07bd288f6fe1299f7e218ca9d378d0c250249964a",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U23",
+      "objective_ids": [
+        "BRBL::MOD_D::U23::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.534-536 / PDF pp.553-555"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A former partner demands management access solely because a capital settlement remains unpaid. What is the relevant distinction?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Unpaid settlement automatically restores all management power",
+          "explanation_md": "That does not follow."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Every exit extinguishes all financial rights",
+          "explanation_md": "The source preserves a qualified entitlement."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The LLP ceases to exist when anyone resigns",
+          "explanation_md": "It has continuing existence."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Settlement entitlement and continuing management rights are different",
+          "explanation_md": "The default exit framework does not confer interference rights."
+        }
+      ],
+      "correct_explanation_md": "The default exit framework does not confer interference rights.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_0a7e16c4fb1e781c63b6aa7dcd000d18098e06f7ec5c235756bc0a9e555ebe7c",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U23",
+      "objective_ids": [
+        "BRBL::MOD_D::U23::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.534-536 / PDF pp.553-555"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "The agreement is silent on a mutual-rights issue. A reviewer automatically applies ordinary Partnership Act defaults. Which source should be examined first?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "An unrelated firm deed",
+          "explanation_md": "It does not govern this LLP."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The LLP Act First Schedule for the relevant default",
+          "explanation_md": "The LLP has its own statutory default framework."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Only the bank tariff",
+          "explanation_md": "That is not the internal-rights source."
+        },
+        {
+          "option_id": "D",
+          "text_md": "A partner private preference",
+          "explanation_md": "Preference does not replace the legal rule."
+        }
+      ],
+      "correct_explanation_md": "The LLP has its own statutory default framework.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_b6d0fb86b43e280e63de0c97178e69ae97f2b363315e4bb6348de21e4d986644",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U23",
+      "objective_ids": [
+        "BRBL::MOD_D::U23::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.534-536 / PDF pp.553-555"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

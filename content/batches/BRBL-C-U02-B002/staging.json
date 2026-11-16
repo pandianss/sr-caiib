@@ -1,0 +1,144 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-C-U02-B002",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL C U02 MSMED Act: Apply the 2025 composite classification boundaries and identify aggregation and export adjustments",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "MSMED_ACT_2006_GAZETTE",
+    "S04",
+    "MSME_SO_1364E_2025"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "MSMED_ACT_2006_GAZETTE",
+      "locator": "sections 7-8, PDF pp.5-7; notification evidence separately mapped",
+      "statement": "The original Act classification powers are supplemented by the registered 2020 notification as amended in 2025. The 2025 ceilings are micro 2.5/10 crore investment/turnover, small 25/100 and medium 125/500, effective 1 April 2025.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F002",
+      "source_id": "S04",
+      "locator": "printed pp.233-242 / PDF pp.252-261, whole unit and end questions visually inspected",
+      "statement": "The chapter covers this objective, but its older classification values and historical memorandum treatment must be read with the retained notifications.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F003",
+      "source_id": "MSME_SO_1364E_2025",
+      "locator": "PDF p.2, 2025 amending notification; PDF pp.7-8, principal notification paragraphs 3-5",
+      "statement": "Revised category ceilings apply from 1 April 2025. Principal paragraphs 3 and 5 address composite criteria, common-PAN aggregation and export turnover exclusion.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Test both dimensions against the dated ceiling",
+        "core_explanation_md": "For the 2025 classification framework effective from 1 April 2025, micro requires investment no more than INR 2.5 crore and turnover no more than INR 10 crore. The corresponding small limits are INR 25 crore and INR 100 crore; medium limits are INR 125 crore and INR 500 crore. A category needs both tests, so one low figure cannot cancel the other figure exceeding its ceiling.\n\nThese replace the older classification values printed in the book. Use the classification date stated in the question. The principal notification also provides common-PAN aggregation and exclusion of export turnover for this classification; do not confuse gross sales with the required turnover measure. Transition benefits are a separate question.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "If investment fits micro but turnover exceeds its ceiling, is micro established?",
+          "expected_takeaway": "No. Both criteria must fit the same category."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001",
+        "F002",
+        "F003"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "At a stipulated classification date after 1 April 2025, an enterprise has qualifying investment of INR 2.40 crore and qualifying turnover of INR 10.10 crore. Ignore transition concessions. What is its category under the stated ceilings?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Micro, because investment is below INR 2.5 crore",
+            "explanation_md": "Micro also needs turnover within INR 10 crore."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Outside MSME classification because it fails micro",
+            "explanation_md": "The small ceilings still accommodate both supplied figures."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Small, because it exceeds micro turnover but fits both small ceilings",
+            "explanation_md": "Investment and turnover both fit small, while micro fails one test."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Medium, because any crossed ceiling requires two category jumps",
+            "explanation_md": "Crossing micro does not skip the qualifying small category."
+          }
+        ],
+        "correct_explanation_md": "Investment and turnover both fit small, while micro fails one test."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001",
+        "F002",
+        "F003"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Two GST registrations share a PAN. The proposed analysis tests each separately and includes export turnover. Which correction follows the principal notification rules used here?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Aggregate the common-PAN units and exclude export turnover for classification",
+            "explanation_md": "The notification requires common-PAN aggregation and excludes exports from classification turnover."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Keep them separate whenever they have different GSTINs",
+            "explanation_md": "Different GSTINs do not defeat the common-PAN aggregation rule."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Aggregate investment but count exports twice",
+            "explanation_md": "There is no basis for counting exports twice; exports are excluded for this purpose."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Use only the unit with the lower turnover",
+            "explanation_md": "Selecting the smaller unit defeats the required aggregation."
+          }
+        ],
+        "correct_explanation_md": "The notification requires common-PAN aggregation and excludes exports from classification turnover."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001",
+        "F002",
+        "F003"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex drafts, 16 November 2026; independent legal/session applicability, originality and pedagogy review pending. No approval or publication claimed.",
+    "Original Gazette is not a certified June 2026 consolidation. Later amendments, commencement changes, State rules and applicable judgments require independent verification.",
+    "Source questions and textbook table structure were inspected and not reused. Teaching and scenarios were designed from a factual brief; author comparison is not independent editorial review.",
+    "Original notification transition dates and partial-month/live-rate interest conventions are not certified here. Udyam registration timing and legal eligibility disputes need applicable primary evidence."
+  ],
+  "next_batch_hint": "Continue BRBL-C-U02-B003"
+}

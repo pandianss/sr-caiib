@@ -1,0 +1,119 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U09-B001",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U09: Identify unpaid-seller status and separate possession-based lien from stoppage in transit",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.450-451 / PDF pp.469-470",
+      "statement": "45priceunpaid/tenderorconditionalinstrumentdishonour;46goods/personalrights;47lienpossessionnocredit/expiredcredit/insolvency;lossliencarrierwithoutreservation,buyerpossession,waiver;stoppagebuyerinsolvencyandtransit.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "The location of goods determines which remedy to examine",
+        "core_explanation_md": "Unpaid-seller status concerns the price and the legal payment arrangement. A dishonoured instrument accepted conditionally differs from an instrument taken as absolute payment. Once status is established, the remedy still depends on the transaction:retention while in possession is not the same as stopping goods already with a carrier.\n\nThe lien route has the described credit/insolvency conditions and can end through the specified delivery or waiver events. Stoppage requires the stated buyer-insolvency and transit facts. Obtaining a price decree does not by itself prove that the possession-based lien was waived. Trace price, payment terms, ownership, possession, carrier stage and insolvency separately.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does every unpaid invoice automatically permit stoppage after the buyer already obtained delivery?",
+          "expected_takeaway": "No. The transit and other conditions must still exist."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A seller calls a completed buyer delivery goods in transit solely because the price is unpaid. What fact is missing?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only the invoice tax amount",
+            "explanation_md": "That does not determine transit."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The seller preferred carrier",
+            "explanation_md": "Preference does not undo completed delivery."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A rule that nonpayment permanently preserves transit",
+            "explanation_md": "The source defines transit by actual events."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Whether the goods remain in the legally relevant transit stage",
+            "explanation_md": "Unpaid status alone does not establish the remedy."
+          }
+        ],
+        "correct_explanation_md": "Unpaid status alone does not establish the remedy."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A credit sale term is still running and no other lien ground is established. The seller assumes nonpayment before maturity alone proves the stated lien right. What is required?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "All credit terms can be ignored",
+            "explanation_md": "The source makes them relevant."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Check the applicable lien ground, including credit expiry or insolvency",
+            "explanation_md": "The remedy is conditional."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Every seller must surrender all rights permanently",
+            "explanation_md": "That blanket conclusion is unsupported."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A decree is automatically full payment",
+            "explanation_md": "A judgment and satisfaction are different events."
+          }
+        ],
+        "correct_explanation_md": "The remedy is conditional."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Antigravity review pending for primary law,exceptions,originality and current applicability. No publication approval."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

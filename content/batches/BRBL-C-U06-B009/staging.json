@@ -1,0 +1,157 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-C-U06-B009",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_C::U06: Reconcile section13(7) costs,secured dues and residue",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "SARFAESI_GUJARAT_COMPILATION"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "SARFAESI_GUJARAT_COMPILATION",
+      "locator": "section13(7),PDF p.18",
+      "statement": "Absentcontrarycontractmoneyheldtrustpropercostsfirstsecuredduessecondresidueentitledperson.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Reconcile realisations before allocating the residue",
+        "core_explanation_md": "The retained section 13(7) describes the treatment of money received after the relevant measure: absent a contrary contract, it is held in trust and applied first to properly incurred costs, charges and expenses, then to secured-creditor dues, with the residue paid to the person entitled under their rights and interests. The legal qualification and competing claims must be checked before applying this as a live distribution instruction.\n\nFor a stipulated exercise, show gross proceeds, qualifying costs, the amount available for debt, the amount applied and the remaining residue or shortfall. Do not count the same cost twice or call a surplus additional bank interest. The arithmetic does not settle a disputed cost entitlement or insolvency priority.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does a positive residue automatically become lender income?",
+          "expected_takeaway": "No. Identify the person entitled under the applicable rights."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "card",
+      "variant": "worked_example",
+      "payload": {
+        "title": "Separate gross proceeds from residue",
+        "core_explanation_md": "For this exercise, no contrary contract, other priority or competing entitlement applies. Realisation is INR 3,260,000, proper costs INR 110,000 and secured dues INR 2,870,000.",
+        "prerequisite_objective_ids": [],
+        "worked_steps": [
+          {
+            "step_number": 1,
+            "description": "Deduct proper costs",
+            "formula_or_substitution": "3,260,000 − 110,000",
+            "intermediate_result": "3,150,000"
+          },
+          {
+            "step_number": 2,
+            "description": "Discharge the stipulated secured dues",
+            "formula_or_substitution": "3,150,000 − 2,870,000",
+            "intermediate_result": "280,000"
+          }
+        ],
+        "final_answer_with_unit": "Residue INR 280,000",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Which rule and stipulated facts determine this result?",
+          "expected_takeaway": "Use the sourced rule and stated scenario assumptions; the arithmetic does not establish a live legal entitlement."
+        }
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "numeric_input",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A stipulated section 13(7) exercise has INR 4,120,000 proceeds, INR 145,000 proper costs and INR 3,640,000 secured dues. No contrary contract or other priority applies. What residue remains in INR?",
+        "correct_explanation_md": "4,120,000−145,000−3,640,000=INR 335,000. Legal entitlement to the residue is a separate issue.",
+        "numeric_rule": {
+          "expected_answer": "335000",
+          "unit_label": "INR",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Use exact whole units; do not round intermediate values.",
+          "allow_negative": false
+        },
+        "case_study_id": "D005"
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "The reconciliation credits all gross proceeds to debt and separately asks the borrower to pay costs already retained from those proceeds. What is the problem?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Gross and net proceeds must always be identical",
+            "explanation_md": "Costs can make them differ."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Costs never need a legal basis",
+            "explanation_md": "They must qualify under the applicable rule."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The lender may keep any excess automatically",
+            "explanation_md": "The residue has a separate entitlement."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The accounting must avoid double recovery of the same costs",
+            "explanation_md": "Reconcile the actual application of each amount."
+          }
+        ],
+        "correct_explanation_md": "Reconcile the actual application of each amount.",
+        "case_study_id": "D005"
+      },
+      "draft_id": "D004",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "draft_id": "D005",
+      "item_type": "case_study",
+      "variant": "case_study",
+      "payload": {
+        "title": "Recovery reconciliation file",
+        "scenario_narrative_md": "A valid measure is stipulated for an arithmetic-only exercise. The sale team supplies gross proceeds and a documented list of proper costs. The loan team supplies the secured dues. No contrary contract or competing priority applies. Reconcile the amounts and identify whether a repeated cost demand duplicates an amount already retained.",
+        "reference_tables_md": [],
+        "question_ids": [
+          "D003",
+          "D004"
+        ]
+      },
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "NewB007-B013address earlier authoring-depth omissions inB001-B006. Historical envelopes remain unchanged as evidence. Antigravity must reconcile current consolidatedRules8-9,latercase law and cutoff applicability before publication.",
+    "No independent review approval; all legal factsneeds_review and canonicalreviewnull."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

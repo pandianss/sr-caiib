@@ -1,0 +1,360 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-D-U19-B002",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_D::U19: Apply constructive notice and qualified indoor-management protection",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.503-505 / PDF pp.522-524",
+        "statement": "Publicconstitutionalconstructivenotice;indoormanagementinternalregularity,actualknowledge/suspicion/apparentauthorityqualifications.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Public powers and internal regularity are different checks",
+          "core_explanation_md": "Constructive notice treats a person dealing with the company as knowing the relevant public constitutional documents and their proper meaning. It prevents an outsider simply relying on not having read an express public limit. Indoor management addresses internal regularity where the transaction is otherwise within the relevant capacity and apparent authority.\n\nThe protection is qualified. Actual knowledge of irregularity and acts outside the officer apparent authority defeat the shortcut described in the source; suspicious circumstances also call for inquiry. A lender should read the public constitution and respond to warning signs, while avoiding a blanket assertion that every unseen internal formality always invalidates an otherwise qualifying transaction.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does indoor management authorise ignoring a known internal defect?",
+            "expected_takeaway": "No. Actual knowledge is a material exception."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "The lender knows the required approval was refused, but relies on indoor management to assume it exists. What defeats that reasoning?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only the loan currency",
+              "explanation_md": "Currency does not settle protection."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Actual knowledge of the irregularity",
+              "explanation_md": "The doctrine is not a licence to ignore known facts."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The fact the borrower is incorporated",
+              "explanation_md": "Incorporation alone does not remove the exception."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The lender never needs to examine any public document",
+              "explanation_md": "Constructive notice remains relevant."
+            }
+          ],
+          "correct_explanation_md": "The doctrine is not a licence to ignore known facts."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "An officer acts outside apparent authority and invokes indoor management as a universal cure. Which boundary matters?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only whether the officer has a business card",
+              "explanation_md": "A card is not unlimited authority."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Every internal act is automatically protected",
+              "explanation_md": "The doctrine is qualified."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The outsider can disregard the company objects",
+              "explanation_md": "Capacity still matters."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The officer apparent-authority limit",
+              "explanation_md": "Internal regularity protection does not create unlimited authority."
+            }
+          ],
+          "correct_explanation_md": "Internal regularity protection does not create unlimited authority."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Antigravity must independently review law,exceptions,originality and exam cutoff before publication.",
+      "Textbook tracing and personal-liability statements require qualified primary/case-law review; no source case facts reused."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-D-U19-B002",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_D::U19"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_D::U19",
+        "objective_ids": [
+          "BRBL::MOD_D::U19::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_D::U19",
+        "objective_ids": [
+          "BRBL::MOD_D::U19::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_D::U19",
+        "objective_ids": [
+          "BRBL::MOD_D::U19::LO_02"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-D-U19-B002",
+      "draft_id": "D001",
+      "item_id": "item_4eb8e0f4f2b356a9db87925f6fa2a0d71191d92d6020426ae605cee08ce4da75"
+    },
+    {
+      "batch_id": "BRBL-D-U19-B002",
+      "draft_id": "D002",
+      "item_id": "item_f9832869499726af64145a2afb74218c6244267d84420fe2cfad575e6ab6e1c6"
+    },
+    {
+      "batch_id": "BRBL-D-U19-B002",
+      "draft_id": "D003",
+      "item_id": "item_903291f1c39a43c9c59cbd59c2d96670afae088c9a51ae14c531b0491514951e"
+    }
+  ],
+  "items": [
+    {
+      "title": "Public powers and internal regularity are different checks",
+      "core_explanation_md": "Constructive notice treats a person dealing with the company as knowing the relevant public constitutional documents and their proper meaning. It prevents an outsider simply relying on not having read an express public limit. Indoor management addresses internal regularity where the transaction is otherwise within the relevant capacity and apparent authority.\n\nThe protection is qualified. Actual knowledge of irregularity and acts outside the officer apparent authority defeat the shortcut described in the source; suspicious circumstances also call for inquiry. A lender should read the public constitution and respond to warning signs, while avoiding a blanket assertion that every unseen internal formality always invalidates an otherwise qualifying transaction.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does indoor management authorise ignoring a known internal defect?",
+        "expected_takeaway": "No. Actual knowledge is a material exception."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_4eb8e0f4f2b356a9db87925f6fa2a0d71191d92d6020426ae605cee08ce4da75",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U19",
+      "objective_ids": [
+        "BRBL::MOD_D::U19::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.503-505 / PDF pp.522-524"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "The lender knows the required approval was refused, but relies on indoor management to assume it exists. What defeats that reasoning?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only the loan currency",
+          "explanation_md": "Currency does not settle protection."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Actual knowledge of the irregularity",
+          "explanation_md": "The doctrine is not a licence to ignore known facts."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The fact the borrower is incorporated",
+          "explanation_md": "Incorporation alone does not remove the exception."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The lender never needs to examine any public document",
+          "explanation_md": "Constructive notice remains relevant."
+        }
+      ],
+      "correct_explanation_md": "The doctrine is not a licence to ignore known facts.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_f9832869499726af64145a2afb74218c6244267d84420fe2cfad575e6ab6e1c6",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U19",
+      "objective_ids": [
+        "BRBL::MOD_D::U19::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.503-505 / PDF pp.522-524"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "An officer acts outside apparent authority and invokes indoor management as a universal cure. Which boundary matters?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only whether the officer has a business card",
+          "explanation_md": "A card is not unlimited authority."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Every internal act is automatically protected",
+          "explanation_md": "The doctrine is qualified."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The outsider can disregard the company objects",
+          "explanation_md": "Capacity still matters."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The officer apparent-authority limit",
+          "explanation_md": "Internal regularity protection does not create unlimited authority."
+        }
+      ],
+      "correct_explanation_md": "Internal regularity protection does not create unlimited authority.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_903291f1c39a43c9c59cbd59c2d96670afae088c9a51ae14c531b0491514951e",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U19",
+      "objective_ids": [
+        "BRBL::MOD_D::U19::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.503-505 / PDF pp.522-524"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

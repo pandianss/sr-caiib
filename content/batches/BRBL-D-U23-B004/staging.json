@@ -1,0 +1,120 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U23-B004",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U23: Distinguish conversion,vesting and continuing reporting obligations",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.536-537 / PDF pp.555-556",
+      "statement": "55-58SecondfirmThirdprivateFourthunlistedpublicSchedules;registrationdatevestingliabilitiesdissolutionoldrecord;34accounts35annualreturn60days;auditrulesqualified.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Conversion transfers obligations as well as assets",
+        "core_explanation_md": "The statute has separate conversion routes and schedules for an ordinary firm, a private company and an unlisted public company. The registration certificate date determines the described conversion effect. Assets, rights and liabilities vest under the applicable route, and the predecessor record is removed as provided. Do not describe conversion as a way to retain assets while abandoning the old debt.\n\nCheck the schedule eligibility, registration and required notice to the predecessor Registrar. Existing security, guarantees, contracts and registry entries need their own reconciliation rather than treating a new suffix as the whole transaction. The LLP also has accounting, solvency-statement and annual-return responsibilities. The source states the annual return within60 days of financial-year closure; audit applicability and filing forms require the relevant rules rather than the blanket claim that every LLP statement is always audited.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does conversion allow liabilities to be left behind automatically?",
+          "expected_takeaway": "No. The described vesting expressly includes obligations."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A converted LLP claims it received the predecessor assets but none of its liabilities merely because the old record was removed. What is wrong?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The old and new names must always be identical",
+            "explanation_md": "That is not the relevant issue."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Conversion can never occur",
+            "explanation_md": "The statute provides routes."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The applicable conversion vesting includes liabilities and obligations",
+            "explanation_md": "Record removal does not erase the transferred debt."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A bank can ignore all conversion evidence",
+            "explanation_md": "The evidence remains essential."
+          }
+        ],
+        "correct_explanation_md": "Record removal does not erase the transferred debt."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A listed public company invokes the same conversion route described for an unlisted public company without checking eligibility. What must be examined?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The exact statutory route and schedule eligibility",
+            "explanation_md": "The categories cannot simply be interchanged."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Only the number of bank accounts",
+            "explanation_md": "That does not establish eligibility."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The partners preferred date",
+            "explanation_md": "Preference is insufficient."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Whether a new logo was adopted",
+            "explanation_md": "Branding is not conversion compliance."
+          }
+        ],
+        "correct_explanation_md": "The categories cannot simply be interchanged."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Antigravity independent legal,originality and session review pending; no publication approval.",
+    "Commencement Gazette and later rules/current small-LLP concessions require Antigravity reconciliation."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

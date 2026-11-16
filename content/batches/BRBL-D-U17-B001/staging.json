@@ -1,0 +1,120 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U17-B001",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U17: Classify incorporation and member-liability forms",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.490-491 / PDF pp.509-510",
+      "statement": "Statutorycreationvsregisteredcompany;sharesunpaidcapital,guaranteewindingup,unlimitedform.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Use more than one classification axis",
+        "core_explanation_md": "A statutory corporation derives its constitution and powers from its special law; a registered company is incorporated through the company-law framework. Check the special-law applicability provisions instead of assuming every statutory body follows every Companies Act provision identically.\n\nLiability is a separate axis. In a company limited by shares, the member exposure is the unpaid amount on the shares under the described rule. A guarantee company has the undertaking to contribute on winding up; where it also has share capital, the relevant capital obligation is additional. An unlimited company cannot be analysed through a limited-by-shares shortcut. These categories concern member liability, not whether the entity must honour its own contracts.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does a guarantee company necessarily have no share capital?",
+          "expected_takeaway": "No. The source recognises both possibilities."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A constitution provides a winding-up guarantee and also unpaid subscribed share capital. A note counts only the guarantee. What is missing?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The separate applicable share-capital obligation",
+            "explanation_md": "The source distinguishes the two components."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A rule that guarantee companies cannot have capital",
+            "explanation_md": "The described guarantee-company form can also have share capital, creating a separate applicable capital obligation."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The personal assets of every customer",
+            "explanation_md": "They are not company-member obligations."
+          },
+          {
+            "option_id": "D",
+            "text_md": "An assumption that the company owes no debt",
+            "explanation_md": "Member form does not erase company debt."
+          }
+        ],
+        "correct_explanation_md": "The source distinguishes the two components."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A statutory body borrower is analysed only from standard company articles without checking its constituting law. Which source is essential?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "A shareholder social-media profile",
+            "explanation_md": "It does not establish powers."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Any unrelated company memorandum",
+            "explanation_md": "That is not this borrower constitution."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The special statute and its applicability provisions",
+            "explanation_md": "The body powers and legal framework derive from it."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Only its logo",
+            "explanation_md": "Branding is not legal constitution."
+          }
+        ],
+        "correct_explanation_md": "The body powers and legal framework derive from it."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Antigravity must independently review law,exceptions,originality and exam cutoff before publication.",
+    "Primary 2025 small-company amendment retrieval pending; no stale numerical limit taught. Old statutory-meeting,deposit,OPC conversion and commencement claims excluded pending reconciliation."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

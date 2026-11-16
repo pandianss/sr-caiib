@@ -1,0 +1,330 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-D-U26-B005",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_D::U26: Calculate a stipulated RTI daily penalty and distinguish disciplinary action",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.561-562 / PDF pp.580-581",
+        "statement": "20commission250perdaycap25000opportunityreasonablecauseanddisciplinaryrecommendationdistinct.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "A penalty ceiling does not establish guilt",
+          "core_explanation_md": "The described commission penalty is250rupees per qualifying day,capped at25,000rupees,with an opportunity to be heard and the relevant statutory grounds. Count only the days found qualifying; do not assume every late response automatically attracts the maximum. A disciplinary recommendation is a separate consequence under its conditions.\n\nFor arithmetic,use the lesser of qualifying days multiplied by250 and25,000. The numerical exercise stipulates the qualifying finding; it does not decide reasonable cause or an actual officer liability. Keep the legal finding and the arithmetic distinct.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "What must be established before multiplying days?",
+            "expected_takeaway": "The applicable grounds and qualifying delay,with the required process."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "numeric_input",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "For this exercise,the commission has found124qualifying penalty days and all legal conditions are stipulated satisfied. Apply INR250per day capped at INR25,000. Enter the penalty in INR.",
+          "correct_explanation_md": "124×250=31,000; min(31,000,25,000)=INR25,000.",
+          "numeric_rule": {
+            "expected_answer": "25000",
+            "unit_label": "INR",
+            "precision_decimals": 0,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Use exact whole units; do not round intermediate values.",
+            "allow_negative": false
+          }
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A late response is observed and an internal note declares the maximum personal penalty without considering grounds or hearing. What is missing?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The statutory finding and required opportunity/process",
+              "explanation_md": "The arithmetic ceiling alone does not establish liability."
+            },
+            {
+              "option_id": "B",
+              "text_md": "A rule that no penalty can ever be imposed",
+              "explanation_md": "The source permits a qualified penalty."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The customer account balance",
+              "explanation_md": "It does not determine this sanction."
+            },
+            {
+              "option_id": "D",
+              "text_md": "An automatic transfer to criminal court for every delay",
+              "explanation_md": "That is not the stated penalty route."
+            }
+          ],
+          "correct_explanation_md": "The arithmetic ceiling alone does not establish liability."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Antigravity independent legal,originality and session review pending; no publication approval.",
+      "Central/State fee rules,current procedural amendments and section11 total-response clock need primary reconciliation; no stale fee table copied."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-D-U26-B005",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_D::U26"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_D::U26",
+        "objective_ids": [
+          "BRBL::MOD_D::U26::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_D::U26",
+        "objective_ids": [
+          "BRBL::MOD_D::U26::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_D::U26",
+        "objective_ids": [
+          "BRBL::MOD_D::U26::LO_05"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-D-U26-B005",
+      "draft_id": "D001",
+      "item_id": "item_604eb6aea8ee1be0efad5bad7878eb0fcc354dbe1961c5cd6396e517be478205"
+    },
+    {
+      "batch_id": "BRBL-D-U26-B005",
+      "draft_id": "D002",
+      "item_id": "item_e5a3ec32bf83223578f780b5e297e6a957f71d2d318a49d954de07d53ddbe347"
+    },
+    {
+      "batch_id": "BRBL-D-U26-B005",
+      "draft_id": "D003",
+      "item_id": "item_f74fcfb6e264d7e11ac3c5452fb8910c0095e9db41156f722ed204c5796285da"
+    }
+  ],
+  "items": [
+    {
+      "title": "A penalty ceiling does not establish guilt",
+      "core_explanation_md": "The described commission penalty is250rupees per qualifying day,capped at25,000rupees,with an opportunity to be heard and the relevant statutory grounds. Count only the days found qualifying; do not assume every late response automatically attracts the maximum. A disciplinary recommendation is a separate consequence under its conditions.\n\nFor arithmetic,use the lesser of qualifying days multiplied by250 and25,000. The numerical exercise stipulates the qualifying finding; it does not decide reasonable cause or an actual officer liability. Keep the legal finding and the arithmetic distinct.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "What must be established before multiplying days?",
+        "expected_takeaway": "The applicable grounds and qualifying delay,with the required process."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_604eb6aea8ee1be0efad5bad7878eb0fcc354dbe1961c5cd6396e517be478205",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U26",
+      "objective_ids": [
+        "BRBL::MOD_D::U26::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.561-562 / PDF pp.580-581"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "For this exercise,the commission has found124qualifying penalty days and all legal conditions are stipulated satisfied. Apply INR250per day capped at INR25,000. Enter the penalty in INR.",
+      "correct_explanation_md": "124×250=31,000; min(31,000,25,000)=INR25,000.",
+      "numeric_rule": {
+        "expected_answer": "25000",
+        "unit_label": "INR",
+        "precision_decimals": 0,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Use exact whole units; do not round intermediate values.",
+        "allow_negative": false
+      },
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_e5a3ec32bf83223578f780b5e297e6a957f71d2d318a49d954de07d53ddbe347",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U26",
+      "objective_ids": [
+        "BRBL::MOD_D::U26::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.561-562 / PDF pp.580-581"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A late response is observed and an internal note declares the maximum personal penalty without considering grounds or hearing. What is missing?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The statutory finding and required opportunity/process",
+          "explanation_md": "The arithmetic ceiling alone does not establish liability."
+        },
+        {
+          "option_id": "B",
+          "text_md": "A rule that no penalty can ever be imposed",
+          "explanation_md": "The source permits a qualified penalty."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The customer account balance",
+          "explanation_md": "It does not determine this sanction."
+        },
+        {
+          "option_id": "D",
+          "text_md": "An automatic transfer to criminal court for every delay",
+          "explanation_md": "That is not the stated penalty route."
+        }
+      ],
+      "correct_explanation_md": "The arithmetic ceiling alone does not establish liability.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_f74fcfb6e264d7e11ac3c5452fb8910c0095e9db41156f722ed204c5796285da",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U26",
+      "objective_ids": [
+        "BRBL::MOD_D::U26::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.561-562 / PDF pp.580-581"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

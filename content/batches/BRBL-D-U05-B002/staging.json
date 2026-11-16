@@ -1,0 +1,102 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U05-B002",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U05: Distinguish default remedies,notice,surplus/shortfall and preservation expenses",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.428-430 / PDF pp.447-449",
+      "statement": "Defaultsuitretainorsaleafterrequirednotice;surplusreturn/shortfalldebt;173retentiondebtinterestnecessaryexpenses,extraordinaryexpensesrecoverable;thirdpartyinjuryremediesandproportionalrights.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "A sale remedy still requires process and an account",
+        "core_explanation_md": "On default, the source separates a suit while retaining the security from sale after the required notice. The actual legal notice standard and any other applicable conditions must be met before treating a sale as authorised. Sale proceeds then need reconciliation:an excess is not a windfall for the pawnee, and a shortfall is not automatically written off.\n\nDebt, interest, ordinary preservation costs and extraordinary expenses have distinct statutory treatment. A third party injury to the goods can also generate remedies held for the respective interests. Keep the security account separate from an assumption that possession grants permission to use or dispose of the goods at will.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "May the pawnee simply keep all surplus sale proceeds?",
+          "expected_takeaway": "No. The surplus must be accounted for to the entitled party."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "card",
+      "variant": "worked_example",
+      "payload": {
+        "title": "Reconcile a stipulated pledge-sale surplus",
+        "core_explanation_md": "Assume a lawful sale with required notice, proceeds INR 186,000, covered debt and interest INR 148,000 and recoverable sale/preservation costs INR 8,000. No other claims apply. Calculate the surplus due back.",
+        "prerequisite_objective_ids": [],
+        "worked_steps": [
+          {
+            "step_number": 1,
+            "description": "Covered deductions",
+            "formula_or_substitution": "148000+8000",
+            "intermediate_result": "156000 INR"
+          },
+          {
+            "step_number": 2,
+            "description": "Surplus",
+            "formula_or_substitution": "186000-156000",
+            "intermediate_result": "30000 INR"
+          }
+        ],
+        "final_answer_with_unit": "30000 INR",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Which rule and stipulated facts determine this result?",
+          "expected_takeaway": "Use the sourced rule and stated scenario assumptions; the arithmetic does not establish a live legal entitlement."
+        }
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "numeric_input",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Assume a lawful pledge sale yields INR 224,000. Covered debt and interest total INR 179,000 and stipulated recoverable costs are INR 11,000. No other claims apply. Calculate the surplus to return in exact INR.",
+        "correct_explanation_md": "224000-179000-11000=34000 INR.",
+        "numeric_rule": {
+          "expected_answer": "34000",
+          "unit_label": "INR",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Use exact whole units; do not round intermediate values.",
+          "allow_negative": false
+        }
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Drafts for Antigravity review. Consolidated statute,exceptions and later case law require independent reconciliation;no publication approval.",
+    "Pledge-sale notice must use the applicable reasonable-notice law;not an arbitrary invented number of days."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

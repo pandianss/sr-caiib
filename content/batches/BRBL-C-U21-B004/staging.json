@@ -1,0 +1,120 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-C-U21-B004",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_C::U21: Identify CTT transaction type,liable party and collection responsibility",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.393-394 / PDF pp.412-413",
+      "statement": "CTTFinanceAct2013taxablecommodityderivative/optionscategories,agriculturalexclusion,rate/base/sellerpurchaservaries,recognisedexchangecollection/remittancedutyincludingfailuretocollect.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Read the transaction before choosing a commodity-tax rate",
+        "core_explanation_md": "CTT is a transaction tax under the described Finance Act framework. The source distinguishes derivative sales and option events, including exercise and delivery/settlement differences, with agricultural-commodity exclusions. A single rate and payer cannot safely be copied to every commodity event. Identify instrument, event, taxable base, liable side and applicable dated provision.\n\nThe recognised exchange collection/remittance role is another obligation; failure to collect is not automatically cancellation of the statutory remittance liability. Do not confuse CTT with income tax on trading profit or with GST on a separate service fee. Current rates need primary verification and are not represented by the old table as a live calculator.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does one CTT rate necessarily cover every option sale and exercise event?",
+          "expected_takeaway": "No. The transaction, event, base and liable party differ."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An options worksheet uses the same taxpayer and rate for sale and every form of exercise without classifying the event. What is missing?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only the trader screen colour",
+            "explanation_md": "Visual layout does not determine tax."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The instrument/event/base and liable-party mapping",
+            "explanation_md": "The source distinguishes these taxable categories."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A rule that all commodities are agricultural",
+            "explanation_md": "The exclusion needs the actual commodity."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The assumption that trading profit equals transaction value",
+            "explanation_md": "Profit and transaction-tax base are distinct."
+          }
+        ],
+        "correct_explanation_md": "The source distinguishes these taxable categories."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An exchange fails to collect a covered CTT amount and records that failure as automatic cancellation of its remittance duty. What does the source require?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Failure always creates an exemption",
+            "explanation_md": "The statutory duty is not erased by noncollection."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The buyer may privately repeal the tax",
+            "explanation_md": "Private agreement cannot create that exemption."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The amount must become GST instead",
+            "explanation_md": "Distinct taxes do not change identity by default."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Examine the continuing statutory payment obligation despite collection failure",
+            "explanation_md": "Collection and remittance obligations must be tracked separately."
+          }
+        ],
+        "correct_explanation_md": "Collection and remittance obligations must be tracked separately."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Original drafts for later Antigravity review; source/current applicability, case law and originality review remain pending. No publication approval.",
+    "Tax chapter contains stale statutory regime,datedrates/thresholds,advance-tax typo,overbroadRNOR/cooperativeTDS/disallowance claims and conflictingGSTcommencement. These are not used as current correct-answer propositions. Numeric rates/eligibility are expressly hypothetical stipulations;currentregulatory publication needs Antigravity reconciliation."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

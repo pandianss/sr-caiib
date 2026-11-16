@@ -1,0 +1,453 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-C-U16-B003",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_C::U16: Separate process clocks, moratorium, withdrawal and professional appointment",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04",
+      "IBC_AMENDMENT_ACT_2026",
+      "IBC_COMMENCEMENT_SO2625_2026"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.341-345 / PDF pp.360-364",
+        "statement": "Sections10Adefaultwindow,12timeframework,13/14moratorium,16IRP,22RP;historical12Aapplicantwordingchanged.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "source_id": "IBC_AMENDMENT_ACT_2026",
+        "locator": "Amendmentsections8-10,PDFpp.4-5;section14,PDFp6",
+        "statement": "New12A RPapplication90%CoCapproval,notbeforeCoC/notafterfirstplaninvitation;14suretyrecourseclarification;16distinguishesFCandcorporateapplicantIRProute;22continuationdeemedappointment.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F003",
+        "source_id": "IBC_COMMENCEMENT_SO2625_2026",
+        "locator": "PDFp2,item2",
+        "statement": "Amendmentsections8-33 commence26May2026.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "A process pause and a withdrawal need different authority",
+          "core_explanation_md": "A CIRP moratorium is a statutory protection linked to its order and scope; it is not a general statement that all guarantees or every third-party asset are extinguished. The 2026 amendment expressly addresses the described surety recourse against the corporate debtor. Historic section 10A relief also depends on the date the relevant default arose, not simply when someone later applies.\n\nThe amended withdrawal route uses the RP application with ninety-per-cent CoC voting approval, and bars withdrawal before CoC constitution or after the first invitation for resolution plans. A creditor agreement alone is not the complete withdrawal order. IRP/RP appointment and continuation likewise require the applicable route and records; an extension or replacement proposal is not already granted.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does a private settlement alone complete statutory withdrawal?",
+            "expected_takeaway": "No. Apply the operative application, voting, timing and order requirements."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001",
+          "F002",
+          "F003"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A creditor asks for withdrawal after the first resolution-plan invitation and relies only on the old applicant wording. What must be reconciled?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Any private agreement overrides all statutory timing rules",
+              "explanation_md": "Settlement cannot simply remove the amended conditions."
+            },
+            {
+              "option_id": "B",
+              "text_md": "A demand notice automatically restores the old wording",
+              "explanation_md": "Notice does not revive superseded text."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The amended12A applicant, CoC approval and timing restrictions",
+              "explanation_md": "The operative version is material to the decision."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Only the original loan interest rate",
+              "explanation_md": "Pricing does not determine withdrawal eligibility."
+            }
+          ],
+          "correct_explanation_md": "The operative version is material to the decision."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001",
+          "F002",
+          "F003"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A default arises outside the protected historical section 10A window, but the application is filed during a later year. Which date distinction matters?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The default-arising date and actual protected period",
+              "explanation_md": "Application timing alone does not place a default in the protected window."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Only the app installation date",
+              "explanation_md": "Software installation is not the statutory trigger."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Any date selected by the debtor",
+              "explanation_md": "The legal event must be established by evidence."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The first year the bank used email",
+              "explanation_md": "That event does not determine section 10A scope."
+            }
+          ],
+          "correct_explanation_md": "Application timing alone does not place a default in the protected window."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001",
+          "F002",
+          "F003"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Independent Antigravity review remains required for later amendments, commencement, applicable regulations and judgments. Draft authoring is not a publication or legal-accuracy approval."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-C-U16-B003",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_C::U16"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "IBC_AMENDMENT_ACT_2026",
+        "authority": "Government of India (Gazette of India Extraordinary)",
+        "title": "The Insolvency and Bankruptcy Code (Amendment) Act, 2026 (No. 6 of 2026), assent 6 April 2026",
+        "url": "https://ibbi.gov.in/uploads/legalframwork/2026-04-07-115842-i5nsk-7ed69ef2a4d23a8b0d472cc0fcd55e79.pdf",
+        "publication_date": "2026-04-06",
+        "effective_date": null
+      },
+      {
+        "source_id": "IBC_COMMENCEMENT_SO2625_2026",
+        "authority": "Ministry of Corporate Affairs, Gazette of India",
+        "title": "S.O.2625(E),22May2026, commencement of specified IBC Amendment Act2026 provisions from26May2026",
+        "url": "https://egazette.gov.in/WriteReadData/2026/272855.pdf",
+        "publication_date": "2026-05-22",
+        "effective_date": "2026-05-26"
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_C::U16",
+        "objective_ids": [
+          "BRBL::MOD_C::U16::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_C::U16",
+        "objective_ids": [
+          "BRBL::MOD_C::U16::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_C::U16",
+        "objective_ids": [
+          "BRBL::MOD_C::U16::LO_03"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-C-U16-B003",
+      "draft_id": "D001",
+      "item_id": "item_0df75ae86811f7374482c8901db10ed03539f99edbbe600c0c55aae4c39ea220"
+    },
+    {
+      "batch_id": "BRBL-C-U16-B003",
+      "draft_id": "D002",
+      "item_id": "item_71d14818fea56678cc11b58e3fc996d5fc61566fea0a589f4b9881c6e7d99ab7"
+    },
+    {
+      "batch_id": "BRBL-C-U16-B003",
+      "draft_id": "D003",
+      "item_id": "item_af08179f15a7bf55fc99c9f8f07daeabf4577cbe6678a6f2a9ca96adb8bd81bf"
+    }
+  ],
+  "items": [
+    {
+      "title": "A process pause and a withdrawal need different authority",
+      "core_explanation_md": "A CIRP moratorium is a statutory protection linked to its order and scope; it is not a general statement that all guarantees or every third-party asset are extinguished. The 2026 amendment expressly addresses the described surety recourse against the corporate debtor. Historic section 10A relief also depends on the date the relevant default arose, not simply when someone later applies.\n\nThe amended withdrawal route uses the RP application with ninety-per-cent CoC voting approval, and bars withdrawal before CoC constitution or after the first invitation for resolution plans. A creditor agreement alone is not the complete withdrawal order. IRP/RP appointment and continuation likewise require the applicable route and records; an extension or replacement proposal is not already granted.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does a private settlement alone complete statutory withdrawal?",
+        "expected_takeaway": "No. Apply the operative application, voting, timing and order requirements."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_0df75ae86811f7374482c8901db10ed03539f99edbbe600c0c55aae4c39ea220",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U16",
+      "objective_ids": [
+        "BRBL::MOD_C::U16::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.341-345 / PDF pp.360-364"
+        },
+        {
+          "source_id": "IBC_AMENDMENT_ACT_2026",
+          "authority": "Government of India (Gazette of India Extraordinary)",
+          "title": "The Insolvency and Bankruptcy Code (Amendment) Act, 2026 (No. 6 of 2026), assent 6 April 2026",
+          "url": "https://ibbi.gov.in/uploads/legalframwork/2026-04-07-115842-i5nsk-7ed69ef2a4d23a8b0d472cc0fcd55e79.pdf",
+          "publication_date": "2026-04-06",
+          "effective_date": null,
+          "locator": "Amendmentsections8-10,PDFpp.4-5;section14,PDFp6"
+        },
+        {
+          "source_id": "IBC_COMMENCEMENT_SO2625_2026",
+          "authority": "Ministry of Corporate Affairs, Gazette of India",
+          "title": "S.O.2625(E),22May2026, commencement of specified IBC Amendment Act2026 provisions from26May2026",
+          "url": "https://egazette.gov.in/WriteReadData/2026/272855.pdf",
+          "publication_date": "2026-05-22",
+          "effective_date": "2026-05-26",
+          "locator": "PDFp2,item2"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A creditor asks for withdrawal after the first resolution-plan invitation and relies only on the old applicant wording. What must be reconciled?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Any private agreement overrides all statutory timing rules",
+          "explanation_md": "Settlement cannot simply remove the amended conditions."
+        },
+        {
+          "option_id": "B",
+          "text_md": "A demand notice automatically restores the old wording",
+          "explanation_md": "Notice does not revive superseded text."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The amended12A applicant, CoC approval and timing restrictions",
+          "explanation_md": "The operative version is material to the decision."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Only the original loan interest rate",
+          "explanation_md": "Pricing does not determine withdrawal eligibility."
+        }
+      ],
+      "correct_explanation_md": "The operative version is material to the decision.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_71d14818fea56678cc11b58e3fc996d5fc61566fea0a589f4b9881c6e7d99ab7",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U16",
+      "objective_ids": [
+        "BRBL::MOD_C::U16::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.341-345 / PDF pp.360-364"
+        },
+        {
+          "source_id": "IBC_AMENDMENT_ACT_2026",
+          "authority": "Government of India (Gazette of India Extraordinary)",
+          "title": "The Insolvency and Bankruptcy Code (Amendment) Act, 2026 (No. 6 of 2026), assent 6 April 2026",
+          "url": "https://ibbi.gov.in/uploads/legalframwork/2026-04-07-115842-i5nsk-7ed69ef2a4d23a8b0d472cc0fcd55e79.pdf",
+          "publication_date": "2026-04-06",
+          "effective_date": null,
+          "locator": "Amendmentsections8-10,PDFpp.4-5;section14,PDFp6"
+        },
+        {
+          "source_id": "IBC_COMMENCEMENT_SO2625_2026",
+          "authority": "Ministry of Corporate Affairs, Gazette of India",
+          "title": "S.O.2625(E),22May2026, commencement of specified IBC Amendment Act2026 provisions from26May2026",
+          "url": "https://egazette.gov.in/WriteReadData/2026/272855.pdf",
+          "publication_date": "2026-05-22",
+          "effective_date": "2026-05-26",
+          "locator": "PDFp2,item2"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A default arises outside the protected historical section 10A window, but the application is filed during a later year. Which date distinction matters?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The default-arising date and actual protected period",
+          "explanation_md": "Application timing alone does not place a default in the protected window."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Only the app installation date",
+          "explanation_md": "Software installation is not the statutory trigger."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Any date selected by the debtor",
+          "explanation_md": "The legal event must be established by evidence."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The first year the bank used email",
+          "explanation_md": "That event does not determine section 10A scope."
+        }
+      ],
+      "correct_explanation_md": "Application timing alone does not place a default in the protected window.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_af08179f15a7bf55fc99c9f8f07daeabf4577cbe6678a6f2a9ca96adb8bd81bf",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U16",
+      "objective_ids": [
+        "BRBL::MOD_C::U16::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.341-345 / PDF pp.360-364"
+        },
+        {
+          "source_id": "IBC_AMENDMENT_ACT_2026",
+          "authority": "Government of India (Gazette of India Extraordinary)",
+          "title": "The Insolvency and Bankruptcy Code (Amendment) Act, 2026 (No. 6 of 2026), assent 6 April 2026",
+          "url": "https://ibbi.gov.in/uploads/legalframwork/2026-04-07-115842-i5nsk-7ed69ef2a4d23a8b0d472cc0fcd55e79.pdf",
+          "publication_date": "2026-04-06",
+          "effective_date": null,
+          "locator": "Amendmentsections8-10,PDFpp.4-5;section14,PDFp6"
+        },
+        {
+          "source_id": "IBC_COMMENCEMENT_SO2625_2026",
+          "authority": "Ministry of Corporate Affairs, Gazette of India",
+          "title": "S.O.2625(E),22May2026, commencement of specified IBC Amendment Act2026 provisions from26May2026",
+          "url": "https://egazette.gov.in/WriteReadData/2026/272855.pdf",
+          "publication_date": "2026-05-22",
+          "effective_date": "2026-05-26",
+          "locator": "PDFp2,item2"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

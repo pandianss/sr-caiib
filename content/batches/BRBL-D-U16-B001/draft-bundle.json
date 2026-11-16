@@ -1,0 +1,360 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-D-U16-B001",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_D::U16: Explain corporate personality,property and continuing existence",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.484-486 / PDF pp.503-505",
+        "statement": "Incorporationseparatepersonpropertyperpetualsuccession,membersnotagents;commonsealoptional2015;limitedliabilityformdependent.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "The company owns its assets",
+          "core_explanation_md": "Incorporation creates a legal person distinct from its members. A shareholder owns the membership interest, not a chosen fraction of each company asset. A change or death among members does not by itself end the company. Members also do not become company agents merely by owning shares; company authority must be established through the appropriate organs and delegations.\n\nLimited liability describes the relevant member exposure in the applicable form of company. It does not mean the company owes only part of its own debt, and unlimited companies require a different member-liability analysis. A common seal is optional under the stated amended framework; execution still needs the applicable authorisation and statutory formalities. A seal alone cannot cure lack of authority.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Can a shareholder personally pledge a company machine solely because they own shares?",
+            "expected_takeaway": "No. Company property and the member shareholding are distinct."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A majority shareholder offers a machine owned by the company as personal collateral without establishing company authority. What is the central problem?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Majority ownership always transfers company assets personally",
+              "explanation_md": "Shareholding does not have that effect."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Machines cannot belong to companies",
+              "explanation_md": "They can be company property."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The company asset is distinct from the shareholder personal property",
+              "explanation_md": "A valid company act and authority must be established."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Only the share certificate colour matters",
+              "explanation_md": "That does not convey the machine."
+            }
+          ],
+          "correct_explanation_md": "A valid company act and authority must be established."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A file treats limited member liability as proof that the company itself need repay only unpaid share capital. What should be corrected?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Member liability limits differ from the company own debt obligations",
+              "explanation_md": "The borrower company remains the distinct obligor."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Every company debt is a member personal debt",
+              "explanation_md": "That erases separate personality."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Companies cannot borrow",
+              "explanation_md": "They can borrow within the applicable framework."
+            },
+            {
+              "option_id": "D",
+              "text_md": "A shareholder death cancels the loan",
+              "explanation_md": "Continuing existence prevents that shortcut."
+            }
+          ],
+          "correct_explanation_md": "The borrower company remains the distinct obligor."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Primary law, State amendments, session applicability and independent editorial review remain with Antigravity. No publication approval.",
+      "Do not publish the book blanket citizenship/constitutional-rights assertion or 100-partner comparison."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-D-U16-B001",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_D::U16"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_D::U16",
+        "objective_ids": [
+          "BRBL::MOD_D::U16::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_D::U16",
+        "objective_ids": [
+          "BRBL::MOD_D::U16::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_D::U16",
+        "objective_ids": [
+          "BRBL::MOD_D::U16::LO_01"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-D-U16-B001",
+      "draft_id": "D001",
+      "item_id": "item_128ff1b626e11092795fb900bac1bde8d257ff9e6a3dab2cca5128a8ec6aa00e"
+    },
+    {
+      "batch_id": "BRBL-D-U16-B001",
+      "draft_id": "D002",
+      "item_id": "item_30579eecf9f4f36d1fb53d67523cef7eb1119099d997e75583883812dd57636f"
+    },
+    {
+      "batch_id": "BRBL-D-U16-B001",
+      "draft_id": "D003",
+      "item_id": "item_eda65711941940aeaacdfa71f34a9ee37081ad25bfcfa2e4fb8a1b7117754e12"
+    }
+  ],
+  "items": [
+    {
+      "title": "The company owns its assets",
+      "core_explanation_md": "Incorporation creates a legal person distinct from its members. A shareholder owns the membership interest, not a chosen fraction of each company asset. A change or death among members does not by itself end the company. Members also do not become company agents merely by owning shares; company authority must be established through the appropriate organs and delegations.\n\nLimited liability describes the relevant member exposure in the applicable form of company. It does not mean the company owes only part of its own debt, and unlimited companies require a different member-liability analysis. A common seal is optional under the stated amended framework; execution still needs the applicable authorisation and statutory formalities. A seal alone cannot cure lack of authority.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Can a shareholder personally pledge a company machine solely because they own shares?",
+        "expected_takeaway": "No. Company property and the member shareholding are distinct."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_128ff1b626e11092795fb900bac1bde8d257ff9e6a3dab2cca5128a8ec6aa00e",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U16",
+      "objective_ids": [
+        "BRBL::MOD_D::U16::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.484-486 / PDF pp.503-505"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A majority shareholder offers a machine owned by the company as personal collateral without establishing company authority. What is the central problem?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Majority ownership always transfers company assets personally",
+          "explanation_md": "Shareholding does not have that effect."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Machines cannot belong to companies",
+          "explanation_md": "They can be company property."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The company asset is distinct from the shareholder personal property",
+          "explanation_md": "A valid company act and authority must be established."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Only the share certificate colour matters",
+          "explanation_md": "That does not convey the machine."
+        }
+      ],
+      "correct_explanation_md": "A valid company act and authority must be established.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_30579eecf9f4f36d1fb53d67523cef7eb1119099d997e75583883812dd57636f",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U16",
+      "objective_ids": [
+        "BRBL::MOD_D::U16::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.484-486 / PDF pp.503-505"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A file treats limited member liability as proof that the company itself need repay only unpaid share capital. What should be corrected?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Member liability limits differ from the company own debt obligations",
+          "explanation_md": "The borrower company remains the distinct obligor."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Every company debt is a member personal debt",
+          "explanation_md": "That erases separate personality."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Companies cannot borrow",
+          "explanation_md": "They can borrow within the applicable framework."
+        },
+        {
+          "option_id": "D",
+          "text_md": "A shareholder death cancels the loan",
+          "explanation_md": "Continuing existence prevents that shortcut."
+        }
+      ],
+      "correct_explanation_md": "The borrower company remains the distinct obligor.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_eda65711941940aeaacdfa71f34a9ee37081ad25bfcfa2e4fb8a1b7117754e12",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U16",
+      "objective_ids": [
+        "BRBL::MOD_D::U16::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.484-486 / PDF pp.503-505"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

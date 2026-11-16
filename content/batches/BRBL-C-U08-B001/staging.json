@@ -1,0 +1,119 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-C-U08-B001",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_C::U08: Separate omitted penalty provisions from criminal offence and cognizance rules",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.288-289 / PDF pp.307-308",
+      "statement": "Book expressly identifies former section27/28 fine rules as omitted in2016. Section29 contravention/attempt/abetment up to1year or fine/both. Section30 written authorised complaint and specified Magistrate rank.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Identify the provision in force before choosing a penalty",
+        "core_explanation_md": "The book discusses earlier daily-default and RBI-direction fine provisions but expressly marks them as omitted by the 2016 amendments. They belong in the history of the law, not an unqualified current penalty calculator. Section29 separately addresses contravention, attempts and abetment with its stated imprisonment/fine alternatives.\n\nCognizance under section 30 is also a distinct gate: the required written complaint and authorised officer matter, as does the specified Magistrate jurisdiction. An alleged breach, an administrative penalty and a criminal conviction are different events. Record the allegation, authority, applicable version and process rather than converting every compliance finding into an automatic criminal sentence.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Can an omitted daily fine be applied merely because it appears in an older chapter?",
+          "expected_takeaway": "No. Check the applicable provision and amendment status."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A compliance sheet applies the former section 28 fine without mentioning that the source marks the provision omitted. What correction is required?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Apply both old and new penalties automatically",
+            "explanation_md": "Repealed or omitted provisions cannot simply be accumulated."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Separate historical text from the applicable offence/penalty route",
+            "explanation_md": "The version and operative provision determine the legal analysis."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Convert every alleged breach directly into imprisonment",
+            "explanation_md": "An allegation is not a conviction and the process matters."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Treat an RBI information request as a court sentence",
+            "explanation_md": "A supervisory request and criminal adjudication are different."
+          }
+        ],
+        "correct_explanation_md": "The version and operative provision determine the legal analysis."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A criminal intake note records only an informal accusation and omits the written authorised-complaint requirement. Which section 30 issue is missing?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only the loan pricing terms",
+            "explanation_md": "Pricing does not establish the statutory cognizance gate."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The amount of collateral insurance",
+            "explanation_md": "Insurance is not the prescribed complaint authority."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A rule that any private email is always an authorised statutory complaint",
+            "explanation_md": "The complainant authority and written authorisation must be established."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Whether cognizance is supported by the required complaint and competent forum",
+            "explanation_md": "The procedural gate must be checked separately from the allegation."
+          }
+        ],
+        "correct_explanation_md": "The procedural gate must be checked separately from the allegation."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Authoring is based on the stated source framework; independent June2026 consolidation, notifications, State/UT scope and later case-law review are deferred to Antigravity. No source gap is resolved by import validity."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

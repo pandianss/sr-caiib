@@ -1,0 +1,132 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U27-B005",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U27: Apply the amended First Schedule and separate recognition from execution formalities",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04",
+    "DPDP_COMMENCEMENT_GSR843_2025"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.573-574 / PDF pp.592-593",
+      "statement": "2022SO4720qualifiedDPNbillregulatedentityandPOAexceptions,immovablecontractentryomitted;trustswillsremain;separateformalities.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F002",
+      "source_id": "DPDP_COMMENCEMENT_GSR843_2025",
+      "locator": "GSR843(E),PDF p.2 clauses(a)-(c)",
+      "statement": "44(2)ITamendmentstaggered18months;44(3)RTIpublicationnotallDPDPcommencement.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Read the exceptions to the exclusions",
+        "core_explanation_md": "The First Schedule excludes specified documents/transactions, but the 2022 amendment changes the negotiable-instrument and power-of-attorney entries and omits the immovable-property contract/conveyance entry. The described qualifying demand-promissory-note/bill route depends on the specified regulated-entity relationship; it is not every negotiable instrument. The power-of-attorney exception likewise depends on the specified regulated entity and scope. Trusts and wills remain distinct excluded categories in the source.\n\nRemoving an IT Act exclusion does not itself waive registration, stamping, attestation or other execution rules. Also distinguish DPDP staggered commencement: the RTI amendment and the IT Act amendments do not all share one start date. Pin the legal version before assessing a document intended for a particular exam session.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does removal from an IT Act exclusion automatically remove registration requirements?",
+          "expected_takeaway": "No. Other applicable formalities remain separate."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An immovable-property transaction falls outside the amended IT Act exclusion entry, and a note says registration and stamp law no longer apply. What is wrong?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Electronic recognition necessarily removes every other statute",
+            "explanation_md": "Electronic recognition does not waive independently applicable registration, stamp or execution requirements."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The old exclusion list can never change",
+            "explanation_md": "The source records an amendment."
+          },
+          {
+            "option_id": "C",
+            "text_md": "IT recognition and other execution/registration formalities are separate",
+            "explanation_md": "Each applicable law still needs compliance."
+          },
+          {
+            "option_id": "D",
+            "text_md": "All immovable transactions must be treated as cheques",
+            "explanation_md": "Those are different categories."
+          }
+        ],
+        "correct_explanation_md": "Each applicable law still needs compliance."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A demand promissory note is assumed to qualify for the 2022 exception merely because it is electronic. Which fact must be checked?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The specified regulated-entity and instrument conditions",
+            "explanation_md": "The exception is qualified."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Only the file size",
+            "explanation_md": "It does not establish the exception."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A rule that all instruments are automatically included",
+            "explanation_md": "That erases the schedule conditions."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The borrower preferred screen size",
+            "explanation_md": "A display preference does not establish the specified regulated-entity and instrument conditions."
+          }
+        ],
+        "correct_explanation_md": "The exception is qualified."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Antigravity independent review pending for source accuracy,originality,question quality and session applicability. No publication approval.",
+    "Primary2022SO4720,currentJanVishwas amendments,section43A timing and struck-down66A listing must be reconciled before publication. No obsolete penalty table taught."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

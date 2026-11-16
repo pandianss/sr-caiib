@@ -1,0 +1,144 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U25-B002",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U25: Distinguish information institutions,PIO designation and disclosure safeguards",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04",
+    "DPDP_COMMENCEMENT_GSR843_2025",
+    "DPDP_ACT_2023_PRIMARY"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.552-554 / PDF pp.571-573",
+      "statement": "PublicauthoritydesignatesPIO,CentreStatecommissionsappropriateGovernment;commercialconfidenceharmpublicinterest;personaloldwordingnotcurrent.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F002",
+      "source_id": "DPDP_COMMENCEMENT_GSR843_2025",
+      "locator": "GSR843(E) PDF p.2 clause(a)",
+      "statement": "Section44(3)commenced on Gazette publication.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F003",
+      "source_id": "DPDP_ACT_2023_PRIMARY",
+      "locator": "section44(3),PDF p.20",
+      "statement": "RTI8(1)(j)substitutedwithpersonal-informationexemption.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Use the correct institution and dated exemption text",
+        "core_explanation_md": "The public authority designates its information officers; the Central and State Information Commissions are distinct institutions with the relevant jurisdiction. Appropriate Government depends on the statutory relationship to the authority. A commission does not replace the authority own initial request process.\n\nDisclosure is not a universal release of all banking records. Commercial confidence, fiduciary material and personal information require the relevant exemption, public-interest and procedural analysis. For the June2026 cutoff, the DPDP commencement notification brings section 44(3) into force on publication, and that provision replaces RTI8(1)(j) with the personal-information clause. The textbook earlier wording must not be taught as the unchanged current clause. This does not eliminate the separate section 8(2) public-interest analysis or permit an unexplained blanket refusal.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Who designates the PIO for a public authority?",
+          "expected_takeaway": "The public authority under the applicable statutory framework."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001",
+        "F002",
+        "F003"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A bank says all RTI requests can be rejected merely by writing confidential, without identifying a provision or reasons. What is required?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "A confidentiality stamp alone settles every case",
+            "explanation_md": "It does not replace legal analysis."
+          },
+          {
+            "option_id": "B",
+            "text_md": "All banking information must always be released",
+            "explanation_md": "That ignores exemptions."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The requester must prove a commercial benefit",
+            "explanation_md": "No such universal test is stated."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The applicable dated exemption, public-interest and procedural reasoning",
+            "explanation_md": "The decision must have a statutory basis."
+          }
+        ],
+        "correct_explanation_md": "The decision must have a statutory basis."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001",
+        "F002",
+        "F003"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An exam draft uses the old personal-information clause after the applicable section 44(3) commencement. What must the author do?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Average old and new wording",
+            "explanation_md": "Legal text is not averaged."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Apply the amended clause with the commencement evidence and separate safeguards",
+            "explanation_md": "Versioned law determines the relevant framework."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Assume every DPDP provision commenced simultaneously",
+            "explanation_md": "The notification is staggered."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Ignore RTI entirely",
+            "explanation_md": "The amendment changes a clause, not the existence of the framework."
+          }
+        ],
+        "correct_explanation_md": "Versioned law determines the relevant framework."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001",
+        "F002",
+        "F003"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Antigravity independent legal,originality and session review pending; no publication approval.",
+    "Exact publication/commencement date and any intervening court orders require independent review; no claim all DPDP duties commenced."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

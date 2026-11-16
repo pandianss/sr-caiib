@@ -1,0 +1,368 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-C-U21-B003",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_C::U21: Map withholding,remittance,reporting and identity compliance without converting thresholds to caps",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.391-393 / PDF pp.410-412",
+        "statement": "TDS/TCSrole,credit/paymenttriggerasapplicable,TAN/PANdifferent,remit/statement/certificate obligations,nonresident/treatyconditions;sourceoldrates/deadlines/disallowance/cashlimitwordingnotreliablecurrent.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Withholding is a compliance chain",
+          "core_explanation_md": "For a covered payment, identify its character, recipient status, applicable law, trigger and rate. Deduction, depositing tax, reporting the transaction and issuing the required certificate are separate tasks. A deduction in the bank ledger is not evidence that Government remittance and statement reconciliation occurred. PAN identifies the taxpayer; TAN concerns the deductor framework described in the source.\n\nNon-resident and treaty treatment needs the relevant eligibility and documentary conditions rather than an automatic lowest-number rule. Likewise, a reporting or identification threshold is not necessarily a prohibition on receiving a larger deposit. The book contains dated and overbroad shorthand; current rates, deadlines and disallowance proportions must be checked before publication.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does recording TDS automatically prove timely Government remittance?",
+            "expected_takeaway": "No. Deduction,deposit and reporting need separate evidence."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Tax is deducted in the accounts,but no remittance or statement record exists. Which conclusion is justified?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only deduction is evidenced;the remaining compliance steps need reconciliation",
+              "explanation_md": "One step does not prove the whole chain."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Every reporting obligation is automatically complete",
+              "explanation_md": "The required records are missing."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The customer income becomes exempt",
+              "explanation_md": "Withholding does not itself establish exemption."
+            },
+            {
+              "option_id": "D",
+              "text_md": "A reporting threshold forbids all larger transactions",
+              "explanation_md": "Threshold purpose must be identified."
+            }
+          ],
+          "correct_explanation_md": "One step does not prove the whole chain."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "An account policy calls a tax-reporting threshold a universal legal deposit ceiling without evidence. What is required?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Keep the cap because it is a round amount",
+              "explanation_md": "Rounding is not a legal basis."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Assume identification and prohibition always mean the same",
+              "explanation_md": "They impose different kinds of duties."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Identify whether the rule concerns reporting,identity,withholding or an actual prohibition",
+              "explanation_md": "The operative obligation must be characterised accurately."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Ignore all tax rules for electronic deposits",
+              "explanation_md": "Channel alone does not remove statutory duties."
+            }
+          ],
+          "correct_explanation_md": "The operative obligation must be characterised accurately."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Original drafts for later Antigravity review; source/current applicability, case law and originality review remain pending. No publication approval.",
+      "Tax chapter contains stale statutory regime,datedrates/thresholds,advance-tax typo,overbroadRNOR/cooperativeTDS/disallowance claims and conflictingGSTcommencement. These are not used as current correct-answer propositions. Numeric rates/eligibility are expressly hypothetical stipulations;currentregulatory publication needs Antigravity reconciliation."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-C-U21-B003",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_C::U21"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "ITD_INCOME_TAX_2025_TRANSITION",
+        "authority": "Income Tax Department, Government of India",
+        "title": "Objective and scope of the New Act FAQs: Income-tax Act2025 transition",
+        "url": "https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/objective-and-scope-new-act-faq",
+        "publication_date": null,
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_C::U21",
+        "objective_ids": [
+          "BRBL::MOD_C::U21::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_C::U21",
+        "objective_ids": [
+          "BRBL::MOD_C::U21::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_C::U21",
+        "objective_ids": [
+          "BRBL::MOD_C::U21::LO_03"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-C-U21-B003",
+      "draft_id": "D001",
+      "item_id": "item_f34ef5152307d28dbc5bc1c902e7c3415d10ade67c1406fd4949fb7aa6ec3d0d"
+    },
+    {
+      "batch_id": "BRBL-C-U21-B003",
+      "draft_id": "D002",
+      "item_id": "item_a9636546093af3fd635b9f70b362ee0b1c8e92f0a78c4d14e5649f30e87f9508"
+    },
+    {
+      "batch_id": "BRBL-C-U21-B003",
+      "draft_id": "D003",
+      "item_id": "item_1510bd59d0cfbc0088c2d71142189956ff475d38ab3885dc082c326aa8810004"
+    }
+  ],
+  "items": [
+    {
+      "title": "Withholding is a compliance chain",
+      "core_explanation_md": "For a covered payment, identify its character, recipient status, applicable law, trigger and rate. Deduction, depositing tax, reporting the transaction and issuing the required certificate are separate tasks. A deduction in the bank ledger is not evidence that Government remittance and statement reconciliation occurred. PAN identifies the taxpayer; TAN concerns the deductor framework described in the source.\n\nNon-resident and treaty treatment needs the relevant eligibility and documentary conditions rather than an automatic lowest-number rule. Likewise, a reporting or identification threshold is not necessarily a prohibition on receiving a larger deposit. The book contains dated and overbroad shorthand; current rates, deadlines and disallowance proportions must be checked before publication.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does recording TDS automatically prove timely Government remittance?",
+        "expected_takeaway": "No. Deduction,deposit and reporting need separate evidence."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_f34ef5152307d28dbc5bc1c902e7c3415d10ade67c1406fd4949fb7aa6ec3d0d",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U21",
+      "objective_ids": [
+        "BRBL::MOD_C::U21::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.391-393 / PDF pp.410-412"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Tax is deducted in the accounts,but no remittance or statement record exists. Which conclusion is justified?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only deduction is evidenced;the remaining compliance steps need reconciliation",
+          "explanation_md": "One step does not prove the whole chain."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Every reporting obligation is automatically complete",
+          "explanation_md": "The required records are missing."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The customer income becomes exempt",
+          "explanation_md": "Withholding does not itself establish exemption."
+        },
+        {
+          "option_id": "D",
+          "text_md": "A reporting threshold forbids all larger transactions",
+          "explanation_md": "Threshold purpose must be identified."
+        }
+      ],
+      "correct_explanation_md": "One step does not prove the whole chain.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_a9636546093af3fd635b9f70b362ee0b1c8e92f0a78c4d14e5649f30e87f9508",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U21",
+      "objective_ids": [
+        "BRBL::MOD_C::U21::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.391-393 / PDF pp.410-412"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "An account policy calls a tax-reporting threshold a universal legal deposit ceiling without evidence. What is required?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Keep the cap because it is a round amount",
+          "explanation_md": "Rounding is not a legal basis."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Assume identification and prohibition always mean the same",
+          "explanation_md": "They impose different kinds of duties."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Identify whether the rule concerns reporting,identity,withholding or an actual prohibition",
+          "explanation_md": "The operative obligation must be characterised accurately."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Ignore all tax rules for electronic deposits",
+          "explanation_md": "Channel alone does not remove statutory duties."
+        }
+      ],
+      "correct_explanation_md": "The operative obligation must be characterised accurately.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_1510bd59d0cfbc0088c2d71142189956ff475d38ab3885dc082c326aa8810004",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U21",
+      "objective_ids": [
+        "BRBL::MOD_C::U21::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.391-393 / PDF pp.410-412"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

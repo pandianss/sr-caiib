@@ -1,0 +1,119 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U08-B002",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U08: Apply title,description,sample,quiet possession and encumbrance rules",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.444-445 / PDF pp.463-464",
+      "statement": "Impliedsellertitle,sale description,samplequality/comparison/latentdefect,sample+descriptionboth;quietpossession/undisclosedencumbrancewarranties.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Conformity has more than one dimension",
+        "core_explanation_md": "A transaction can require conformity to description, to sample, or to both. Matching a sample alone does not necessarily satisfy a separate description. The sample route also addresses the opportunity to compare and the described latent defect issue. Identify which representations and terms form part of the contract.\n\nTitle, quiet possession and undisclosed encumbrance protections address different risks from quality. Goods that perform well can still have a title problem. A lender should therefore examine seller rights and competing interests as well as inspection results. The precise implied terms and any permitted contractual qualifications require the applicable statutory analysis.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Can quality conformity alone establish clean title?",
+          "expected_takeaway": "No. Quality and title are separate checks."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Goods match the inspected sample but fail a separately agreed contractual description. Which analysis is appropriate?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Sample conformity automatically defeats every other term",
+            "explanation_md": "The description can remain a separate requirement."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Examine compliance with both applicable sample and description terms",
+            "explanation_md": "The source distinguishes the combined transaction."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Only the packaging invoice number matters",
+            "explanation_md": "It does not establish conformity."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The buyer necessarily owns all seller goods",
+            "explanation_md": "The breach does not create that consequence."
+          }
+        ],
+        "correct_explanation_md": "The source distinguishes the combined transaction."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Financed equipment works correctly, but an undisclosed third-party charge is alleged. Which issue remains?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "None, because physical performance cures every title issue",
+            "explanation_md": "Performance and encumbrances are distinct."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Only whether the buyer likes the colour",
+            "explanation_md": "Preference does not resolve legal interests."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The complaint is automatically a minor quality warranty",
+            "explanation_md": "The claim concerns a separate legal risk."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The title, quiet-possession and encumbrance framework",
+            "explanation_md": "Good operation does not prove an unencumbered interest."
+          }
+        ],
+        "correct_explanation_md": "Good operation does not prove an unencumbered interest."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Antigravity review pending for primary law,exceptions,originality and current applicability. No publication approval."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

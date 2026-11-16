@@ -1,0 +1,132 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-C-U02-B005",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL C U02 MSMED Act: Identify acceptance, deemed acceptance and the appointed day from objection evidence",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "MSMED_ACT_2006_GAZETTE",
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "MSMED_ACT_2006_GAZETTE",
+      "locator": "section 2(b), PDF p.2",
+      "statement": "Timely written objection within fifteen days moves acceptance to removal of that objection; absent such objection deemed acceptance is actual delivery/rendering. Appointed day follows the fifteen-day period from acceptance/deemed acceptance.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F002",
+      "source_id": "S04",
+      "locator": "printed pp.233-242 / PDF pp.252-261, whole unit and end questions visually inspected",
+      "statement": "The chapter covers this objective, but its older classification values and historical memorandum treatment must be read with the retained notifications.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Build the payment clock from the delivery record",
+        "core_explanation_md": "A delivery date, an objection date and an objection-removal date serve different purposes. Under section 2(b), a written acceptance objection made within fifteen days of delivery or service changes the relevant acceptance day to the day the supplier removes it. Without a written objection within that window, deemed acceptance uses the actual delivery or service date.\n\nThe appointed day is the day immediately after the fifteen-day period from acceptance or deemed acceptance. Preserve the correspondence: a buyer cannot simply invent a later internal approval date and use it as a substitute for the statutory facts. Actual disputes about dates and eligibility still require evidence.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does an internal approval delay automatically reset deemed acceptance?",
+          "expected_takeaway": "No. The statutory objection conditions and actual dates control."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Goods arrive on 3 March. A qualifying written acceptance objection is sent on 10 March and removed by the supplier on 18 March. Assume those facts are proved. Which date supplies acceptance under section 2(b)?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The buyer later chooses 31 March for its accounting close",
+            "explanation_md": "An accounting date does not replace the objection-removal event."
+          },
+          {
+            "option_id": "B",
+            "text_md": "10 March because every objection date is acceptance",
+            "explanation_md": "A timely written objection moves acceptance to removal, not its issue date."
+          },
+          {
+            "option_id": "C",
+            "text_md": "3 March irrespective of every timely written objection",
+            "explanation_md": "The definition expressly recognises the stated objection/removal situation."
+          },
+          {
+            "option_id": "D",
+            "text_md": "18 March, when the timely written objection was removed",
+            "explanation_md": "On the stipulated facts, removal supplies the relevant acceptance day."
+          }
+        ],
+        "correct_explanation_md": "On the stipulated facts, removal supplies the relevant acceptance day."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A buyer makes no written acceptance objection within fifteen days of actual service. Its internal committee signs off much later. What is the relevant deemed-acceptance basis?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The committee can select any later date",
+            "explanation_md": "Internal processing does not displace the statutory definition."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The actual service date under the stated no-objection facts",
+            "explanation_md": "The definition uses actual delivery or service where no timely written objection exists."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The last day of the financial year in every case",
+            "explanation_md": "Financial-year closure is not the deemed-acceptance test."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The date the supplier obtains a bank loan",
+            "explanation_md": "Financing date does not determine acceptance of the service."
+          }
+        ],
+        "correct_explanation_md": "The definition uses actual delivery or service where no timely written objection exists."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex drafts, 16 November 2026; independent legal/session applicability, originality and pedagogy review pending. No approval or publication claimed.",
+    "Original Gazette is not a certified June 2026 consolidation. Later amendments, commencement changes, State rules and applicable judgments require independent verification.",
+    "Source questions and textbook table structure were inspected and not reused. Teaching and scenarios were designed from a factual brief; author comparison is not independent editorial review.",
+    "Original notification transition dates and partial-month/live-rate interest conventions are not certified here. Udyam registration timing and legal eligibility disputes need applicable primary evidence."
+  ],
+  "next_batch_hint": "Continue BRBL-C-U02-B006"
+}

@@ -1,0 +1,407 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-D-U26-B003",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_D::U26: Apply exemption,public-interest and third-party consultation distinctions",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04",
+      "DPDP_ACT_2023_PRIMARY"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.559-560 / PDF pp.578-579",
+        "statement": "8commercialfiduciarysecurityinvestigationetc8(2)publicinterest8(3)qualified20years;11thirdpartynotice5representation10consultationnotveto.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "source_id": "DPDP_ACT_2023_PRIMARY",
+        "locator": "section44(3),PDF p.20",
+        "statement": "Amendedpersonal-informationclausemustreplacebooktext.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Consultation is neither automatic disclosure nor a veto",
+          "core_explanation_md": "The statutory exemptions cover different protected interests, including the described security, commercial, fiduciary, investigation and personal-information categories. Identify the actual harm/test and the applicable dated provision. Section8(2) preserves its separate public-interest weighing, and the twenty-year rule has stated exceptions; age alone is not a universal release rule.\n\nWhere the qualifying confidential third-party process applies, the source describes notice within five days and an opportunity for representation within ten days. The representation is considered by the decision-maker; the third party objection is not automatically a conclusive veto. Equally, consultation is not permission to disclose without exemption analysis. Preserve the notice, representation, reasons and appeal information.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does a third party objection automatically decide the request?",
+            "expected_takeaway": "No. The authority must make the applicable reasoned statutory decision."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A third party objects to release of its confidential material, and the PIO treats the objection as a final legal veto without analysis. What is missing?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only a larger envelope",
+              "explanation_md": "That does not decide access."
+            },
+            {
+              "option_id": "B",
+              "text_md": "A rule that consultation can never occur",
+              "explanation_md": "The framework provides it."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The PIO reasoned exemption/public-interest decision after considering the representation",
+              "explanation_md": "Consultation does not transfer the decision entirely to the third party."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Automatic release because any objection is irrelevant",
+              "explanation_md": "The representation must be considered."
+            }
+          ],
+          "correct_explanation_md": "Consultation does not transfer the decision entirely to the third party."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "An officer says every record older than twenty years must be released regardless of category. Which qualification matters?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The stated exceptions to the twenty-year rule",
+              "explanation_md": "The rule is qualified."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The rule has no exceptions",
+              "explanation_md": "The described twenty-year access rule expressly preserves specified exemption categories."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Old records cease to be information",
+              "explanation_md": "Age does not erase information status."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Only records written in ink count",
+              "explanation_md": "Medium does not establish the exception."
+            }
+          ],
+          "correct_explanation_md": "The rule is qualified."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Antigravity independent legal,originality and session review pending; no publication approval.",
+      "Central/State fee rules,current procedural amendments and section11 total-response clock need primary reconciliation; no stale fee table copied."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-D-U26-B003",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_D::U26"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "DPDP_ACT_2023_PRIMARY",
+        "authority": "Government of India",
+        "title": "Digital Personal Data Protection Act,2023",
+        "url": "https://www.indiacode.nic.in/bitstream/123456789/22037/1/a2023-22.pdf",
+        "publication_date": null,
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_D::U26",
+        "objective_ids": [
+          "BRBL::MOD_D::U26::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_D::U26",
+        "objective_ids": [
+          "BRBL::MOD_D::U26::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_D::U26",
+        "objective_ids": [
+          "BRBL::MOD_D::U26::LO_03"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-D-U26-B003",
+      "draft_id": "D001",
+      "item_id": "item_3de899c88d5eee3dd7283ffdfa8981a9870624cc6c3c67979fa24ff41c9ea79e"
+    },
+    {
+      "batch_id": "BRBL-D-U26-B003",
+      "draft_id": "D002",
+      "item_id": "item_33c42debe56371c76ec345877390386324475bffc1d01f1f672828f81adb2c73"
+    },
+    {
+      "batch_id": "BRBL-D-U26-B003",
+      "draft_id": "D003",
+      "item_id": "item_4557757cff4e6d2e1fc30676252fd0c828ea95169135b33153c32525aa40c72d"
+    }
+  ],
+  "items": [
+    {
+      "title": "Consultation is neither automatic disclosure nor a veto",
+      "core_explanation_md": "The statutory exemptions cover different protected interests, including the described security, commercial, fiduciary, investigation and personal-information categories. Identify the actual harm/test and the applicable dated provision. Section8(2) preserves its separate public-interest weighing, and the twenty-year rule has stated exceptions; age alone is not a universal release rule.\n\nWhere the qualifying confidential third-party process applies, the source describes notice within five days and an opportunity for representation within ten days. The representation is considered by the decision-maker; the third party objection is not automatically a conclusive veto. Equally, consultation is not permission to disclose without exemption analysis. Preserve the notice, representation, reasons and appeal information.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does a third party objection automatically decide the request?",
+        "expected_takeaway": "No. The authority must make the applicable reasoned statutory decision."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_3de899c88d5eee3dd7283ffdfa8981a9870624cc6c3c67979fa24ff41c9ea79e",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U26",
+      "objective_ids": [
+        "BRBL::MOD_D::U26::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.559-560 / PDF pp.578-579"
+        },
+        {
+          "source_id": "DPDP_ACT_2023_PRIMARY",
+          "authority": "Government of India",
+          "title": "Digital Personal Data Protection Act,2023",
+          "url": "https://www.indiacode.nic.in/bitstream/123456789/22037/1/a2023-22.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section44(3),PDF p.20"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A third party objects to release of its confidential material, and the PIO treats the objection as a final legal veto without analysis. What is missing?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only a larger envelope",
+          "explanation_md": "That does not decide access."
+        },
+        {
+          "option_id": "B",
+          "text_md": "A rule that consultation can never occur",
+          "explanation_md": "The framework provides it."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The PIO reasoned exemption/public-interest decision after considering the representation",
+          "explanation_md": "Consultation does not transfer the decision entirely to the third party."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Automatic release because any objection is irrelevant",
+          "explanation_md": "The representation must be considered."
+        }
+      ],
+      "correct_explanation_md": "Consultation does not transfer the decision entirely to the third party.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_33c42debe56371c76ec345877390386324475bffc1d01f1f672828f81adb2c73",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U26",
+      "objective_ids": [
+        "BRBL::MOD_D::U26::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.559-560 / PDF pp.578-579"
+        },
+        {
+          "source_id": "DPDP_ACT_2023_PRIMARY",
+          "authority": "Government of India",
+          "title": "Digital Personal Data Protection Act,2023",
+          "url": "https://www.indiacode.nic.in/bitstream/123456789/22037/1/a2023-22.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section44(3),PDF p.20"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "An officer says every record older than twenty years must be released regardless of category. Which qualification matters?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The stated exceptions to the twenty-year rule",
+          "explanation_md": "The rule is qualified."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The rule has no exceptions",
+          "explanation_md": "The described twenty-year access rule expressly preserves specified exemption categories."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Old records cease to be information",
+          "explanation_md": "Age does not erase information status."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Only records written in ink count",
+          "explanation_md": "Medium does not establish the exception."
+        }
+      ],
+      "correct_explanation_md": "The rule is qualified.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_4557757cff4e6d2e1fc30676252fd0c828ea95169135b33153c32525aa40c72d",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U26",
+      "objective_ids": [
+        "BRBL::MOD_D::U26::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.559-560 / PDF pp.578-579"
+        },
+        {
+          "source_id": "DPDP_ACT_2023_PRIMARY",
+          "authority": "Government of India",
+          "title": "Digital Personal Data Protection Act,2023",
+          "url": "https://www.indiacode.nic.in/bitstream/123456789/22037/1/a2023-22.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section44(3),PDF p.20"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

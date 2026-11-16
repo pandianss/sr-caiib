@@ -1,0 +1,120 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-C-U04-B007",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL C U04: Relate scheme, qualified buyer, security receipt and sponsor to their distinct roles",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.253-255 / PDF pp.272-274",
+      "statement": "Scheme invites subscription to receipts; security receipt evidences undivided interest in financial asset under scheme issued to qualified buyer. Qualified buyer is statutory/notified category, not any investor. Sponsor has at least10% paid-up equity holding.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Investor evidence is not the same as full ownership of each collateral item",
+        "core_explanation_md": "A scheme invites subscription to security receipts. The receipt evidences the described undivided right, title or interest in the financial asset involved in securitisation. It should not be described as automatic personal ownership of every underlying collateral item, a bank deposit, or a guarantee that the claim will be collected.\n\nQualified buyer is a defined category, read with applicable notifications rather than an assumption that every retail investor qualifies. Sponsor is a different role, based on holding not less than ten per cent of the ARC paid-up equity. A person holding a security receipt is not automatically a sponsor: an interest in the financial asset and an equity holding in the company are different interests.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does holding a security receipt automatically establish sponsor status?",
+          "expected_takeaway": "No. Sponsor status uses the specified paid-up equity holding, not mere receipt ownership."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An investor owns a security receipt but no stipulated ARC equity. The register labels the investor sponsor solely because of the receipt. Which distinction is needed?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Every receipt holder must hold all ARC equity",
+            "explanation_md": "Receipt ownership does not establish a company equity holding."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The receipt interest and the sponsor equity-holding test are separate",
+            "explanation_md": "Sponsor status depends on the specified paid-up equity threshold."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A receipt is automatically a demand deposit with the ARC",
+            "explanation_md": "The receipt evidences the defined financial-asset interest."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Every debtor is a qualified buyer by default",
+            "explanation_md": "Qualified-buyer status requires the relevant defined/notified category."
+          }
+        ],
+        "correct_explanation_md": "Sponsor status depends on the specified paid-up equity threshold."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A sales note promises that a security receipt gives its holder exclusive ownership of each underlying building and guarantees recovery. Which correction follows the definition?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The promise is correct whenever the receipt has a serial number",
+            "explanation_md": "A serial number does not change the legal interest or guarantee recovery."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The receipt cancels all remaining borrower obligations",
+            "explanation_md": "A receipt issue does not establish discharge of the financial asset."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The receipt automatically becomes a bank fixed deposit",
+            "explanation_md": "The defined instrument is not a bank-deposit promise."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The receipt evidences the stated undivided financial-asset interest; recovery and individual-property title are different matters",
+            "explanation_md": "The instrument should be described according to its legal interest, without unsupported guarantees."
+          }
+        ],
+        "correct_explanation_md": "The instrument should be described according to its legal interest, without unsupported guarantees."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Codex original draft, 16 November 2026. Independent source/session applicability, originality and pedagogy review pending. No publication approval.",
+    "Courseware units 17A and 17B read in full including end questions (printed pp.243-256 / PDF pp.262-275). End questions and distinctive source expression were not reused.",
+    "Historical Bombay High Court compilation omits later amendments; retained as comparison only, not evidence of June2026 consolidation. Current capital floors, later definition additions, registry rules, eligibility notifications and remedy conditions require independent primary verification.",
+    "Judgment review is limited to identified holdings; later authorities and live proceedings are not certified."
+  ],
+  "next_batch_hint": "Continue BRBL C U05, S04 printed p.257 / PDF p.276"
+}

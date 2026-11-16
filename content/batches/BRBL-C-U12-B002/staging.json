@@ -1,0 +1,120 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-C-U12-B002",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_C::U12: Separate legacy appointment qualifications from later overriding service-law regimes",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.310-312 / PDF pp.329-331",
+      "statement": "Book states legacy DistrictJudge/HighCourt/other chairperson routes and tenure;section6A expressly refers later TribunalReforms2021 regime and pre2017 saving. Source text not evidence of current constitutional/service-law position.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "An appointment rule needs a version and a relevant date",
+        "core_explanation_md": "The chapter describes legacy qualifications for the Presiding Officer and alternative qualifications for the appellate Chairperson, alongside earlier term and age provisions. It also reproduces an overriding service-law provision referring to the Tribunal Reforms framework and a saving for specified earlier appointments. These texts cannot safely be flattened into one universal age-and-tenure rule.\n\nFor a real eligibility question, establish the appointment date, applicable statutory regime, notified rules and relevant judicial treatment. Resignation and removal also require their prescribed process; an allegation of incapacity is not itself a completed removal. The draft teaches how to select the rule while current numerical tenure claims remain for primary verification.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Can a legacy tenure sentence be applied without checking the later overriding regime?",
+          "expected_takeaway": "No. Date, saving and applicable service law must be reconciled."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An appointment checklist copies the legacy tenure while ignoring the chapter express later-law override. What is missing?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The appointment-date and applicable-regime analysis, including savings and later authority",
+            "explanation_md": "The source itself signals that more than one regime exists."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Only a candidate photograph",
+            "explanation_md": "Identification does not determine the legal regime."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A rule that every later appointment is governed forever by the earliest text",
+            "explanation_md": "The override and savings cannot be ignored."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A choice of whichever age permits the preferred candidate",
+            "explanation_md": "Preference does not establish lawful eligibility."
+          }
+        ],
+        "correct_explanation_md": "The source itself signals that more than one regime exists."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A complaint alleges misbehaviour by an office-holder. The file treats the allegation as a completed statutory removal. What distinction is needed?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Every allegation is a final removal order",
+            "explanation_md": "An allegation does not establish the prescribed process or result."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Removal and resignation always use identical factual triggers",
+            "explanation_md": "Different processes require their own conditions."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Allegation, inquiry and the competent removal decision are separate stages",
+            "explanation_md": "The applicable process and authority must be established."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A party may remove the adjudicator by changing its pleadings",
+            "explanation_md": "A private pleading is not the statutory removal order."
+          }
+        ],
+        "correct_explanation_md": "The applicable process and authority must be established."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "RDB courseware snapshot only. Current consolidated statute, notifications, Tribunal Reforms law, procedural rules and later judgments require Antigravity verification. Historical institutional names and court summaries are not current operational instructions.",
+    "Current appointment ages/terms are intentionally not graded from the legacy chapter; obtain current law and judicial reconciliation during review."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

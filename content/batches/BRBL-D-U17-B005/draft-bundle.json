@@ -1,0 +1,417 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-D-U17-B005",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_D::U17: Apply the December2025 small-company limits with the statutory exclusions",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "MCA_SMALL_COMPANY_GSR880_2025",
+      "COMPANIES_ACT_INDIACODE_20260901"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "MCA_SMALL_COMPANY_GSR880_2025",
+        "locator": "GSR880(E),PDF p.2,rule2",
+        "statement": "Frompublication1December2025prescribedcapital10croreandturnover100crore.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+        "locator": "section2(85),PDF pp.27-28",
+        "statement": "Bothcriteria,nonpublic,excludesholding/subsidiarysection8specialAct;precedingfinancialyearturnover.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Both financial tests and the exclusions matter",
+          "core_explanation_md": "The official1December2025 prescription sets small-company limits at paid-up capital not exceeding INR 10 crore and turnover not exceeding INR 100 crore. The Act requires both tests and uses the relevant immediately preceding financial-year turnover. The applicable statutory exclusions still matter: a public company, a holding/subsidiary company, a section 8company or the described special-Act entity does not become eligible merely by having low figures.\n\nFor the June2026 exam cutoff, use the dated amendment alongside the statutory definition rather than the textbook old thresholds or either/or shortcut. Keep Companies Act small-company status separate from MSME small-enterprise classification. This objective supplies the financial prescription left open in the earlier draftB004; its historical caveat remains retained.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Can one passing financial criterion compensate for the other failing?",
+            "expected_takeaway": "No. Both criteria and the exclusions must be satisfied."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "For the stated December2025 rule, a non-public company has paid-up capital INR 8 crore and preceding-year turnover INR 108 crore. No exclusion is otherwise assumed. Does it pass both financial tests?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Yes, because capital alone passes",
+              "explanation_md": "Both criteria are required."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Yes, because either test is enough",
+              "explanation_md": "The statutory conjunction is not either/or."
+            },
+            {
+              "option_id": "C",
+              "text_md": "No, the turnover exceeds the INR 100 crore limit",
+              "explanation_md": "Passing capital does not cure the failing turnover."
+            },
+            {
+              "option_id": "D",
+              "text_md": "No, because every non-public company is excluded",
+              "explanation_md": "That is not the definition."
+            }
+          ],
+          "correct_explanation_md": "Passing capital does not cure the failing turnover."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A subsidiary has capital and turnover below both prescribed limits. Why is that alone insufficient for small-company status?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The numerical limits never apply",
+              "explanation_md": "They apply alongside other conditions."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The statutory subsidiary exclusion must also be applied",
+              "explanation_md": "Low figures do not remove an express exclusion."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Every subsidiary is automatically an LLP",
+              "explanation_md": "That is a different legal form."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Only employee count decides the status",
+              "explanation_md": "That is not the stated test."
+            }
+          ],
+          "correct_explanation_md": "Low figures do not remove an express exclusion."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "EarlierB004numerical-sourcegap now addressed byB005; post-cutoff consolidated Act still needs date reconciliation by Antigravity."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-D-U17-B005",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_D::U17"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "MCA_SMALL_COMPANY_GSR880_2025",
+        "authority": "Ministry of Corporate Affairs,Government of India",
+        "title": "Companies (Specification of definition details) Amendment Rules,2025",
+        "url": "https://egazette.gov.in/WriteReadData/2025/268124.pdf",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+        "authority": "India Code, Government of India",
+        "title": "Companies Act, 2013 — as on 1 September 2026",
+        "url": "https://indiacode.gov.in/server/api/core/bitstreams/95902c38-5947-4457-a431-5062e234cab0/content",
+        "publication_date": "2026-09-01",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_D::U17",
+        "objective_ids": [
+          "BRBL::MOD_D::U17::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_D::U17",
+        "objective_ids": [
+          "BRBL::MOD_D::U17::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_D::U17",
+        "objective_ids": [
+          "BRBL::MOD_D::U17::LO_05"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-D-U17-B005",
+      "draft_id": "D001",
+      "item_id": "item_534b547fe23a2a6dde829b24f65278db5150c4d1ab8d59aefbfc978823e5f68c"
+    },
+    {
+      "batch_id": "BRBL-D-U17-B005",
+      "draft_id": "D002",
+      "item_id": "item_eb09cdc510bd972928032273a9b6dda4c6ed82f276289a1145a9a52f757a5dff"
+    },
+    {
+      "batch_id": "BRBL-D-U17-B005",
+      "draft_id": "D003",
+      "item_id": "item_5b57b953b116a2648b434985085ea89c259ee891167ed07f71118f90951311a0"
+    }
+  ],
+  "items": [
+    {
+      "title": "Both financial tests and the exclusions matter",
+      "core_explanation_md": "The official1December2025 prescription sets small-company limits at paid-up capital not exceeding INR 10 crore and turnover not exceeding INR 100 crore. The Act requires both tests and uses the relevant immediately preceding financial-year turnover. The applicable statutory exclusions still matter: a public company, a holding/subsidiary company, a section 8company or the described special-Act entity does not become eligible merely by having low figures.\n\nFor the June2026 exam cutoff, use the dated amendment alongside the statutory definition rather than the textbook old thresholds or either/or shortcut. Keep Companies Act small-company status separate from MSME small-enterprise classification. This objective supplies the financial prescription left open in the earlier draftB004; its historical caveat remains retained.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Can one passing financial criterion compensate for the other failing?",
+        "expected_takeaway": "No. Both criteria and the exclusions must be satisfied."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_534b547fe23a2a6dde829b24f65278db5150c4d1ab8d59aefbfc978823e5f68c",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U17",
+      "objective_ids": [
+        "BRBL::MOD_D::U17::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "MCA_SMALL_COMPANY_GSR880_2025",
+          "authority": "Ministry of Corporate Affairs,Government of India",
+          "title": "Companies (Specification of definition details) Amendment Rules,2025",
+          "url": "https://egazette.gov.in/WriteReadData/2025/268124.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "GSR880(E),PDF p.2,rule2"
+        },
+        {
+          "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+          "authority": "India Code, Government of India",
+          "title": "Companies Act, 2013 — as on 1 September 2026",
+          "url": "https://indiacode.gov.in/server/api/core/bitstreams/95902c38-5947-4457-a431-5062e234cab0/content",
+          "publication_date": "2026-09-01",
+          "effective_date": null,
+          "locator": "section2(85),PDF pp.27-28"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "For the stated December2025 rule, a non-public company has paid-up capital INR 8 crore and preceding-year turnover INR 108 crore. No exclusion is otherwise assumed. Does it pass both financial tests?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Yes, because capital alone passes",
+          "explanation_md": "Both criteria are required."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Yes, because either test is enough",
+          "explanation_md": "The statutory conjunction is not either/or."
+        },
+        {
+          "option_id": "C",
+          "text_md": "No, the turnover exceeds the INR 100 crore limit",
+          "explanation_md": "Passing capital does not cure the failing turnover."
+        },
+        {
+          "option_id": "D",
+          "text_md": "No, because every non-public company is excluded",
+          "explanation_md": "That is not the definition."
+        }
+      ],
+      "correct_explanation_md": "Passing capital does not cure the failing turnover.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_eb09cdc510bd972928032273a9b6dda4c6ed82f276289a1145a9a52f757a5dff",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U17",
+      "objective_ids": [
+        "BRBL::MOD_D::U17::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "MCA_SMALL_COMPANY_GSR880_2025",
+          "authority": "Ministry of Corporate Affairs,Government of India",
+          "title": "Companies (Specification of definition details) Amendment Rules,2025",
+          "url": "https://egazette.gov.in/WriteReadData/2025/268124.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "GSR880(E),PDF p.2,rule2"
+        },
+        {
+          "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+          "authority": "India Code, Government of India",
+          "title": "Companies Act, 2013 — as on 1 September 2026",
+          "url": "https://indiacode.gov.in/server/api/core/bitstreams/95902c38-5947-4457-a431-5062e234cab0/content",
+          "publication_date": "2026-09-01",
+          "effective_date": null,
+          "locator": "section2(85),PDF pp.27-28"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A subsidiary has capital and turnover below both prescribed limits. Why is that alone insufficient for small-company status?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The numerical limits never apply",
+          "explanation_md": "They apply alongside other conditions."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The statutory subsidiary exclusion must also be applied",
+          "explanation_md": "Low figures do not remove an express exclusion."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Every subsidiary is automatically an LLP",
+          "explanation_md": "That is a different legal form."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Only employee count decides the status",
+          "explanation_md": "That is not the stated test."
+        }
+      ],
+      "correct_explanation_md": "Low figures do not remove an express exclusion.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_5b57b953b116a2648b434985085ea89c259ee891167ed07f71118f90951311a0",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U17",
+      "objective_ids": [
+        "BRBL::MOD_D::U17::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "MCA_SMALL_COMPANY_GSR880_2025",
+          "authority": "Ministry of Corporate Affairs,Government of India",
+          "title": "Companies (Specification of definition details) Amendment Rules,2025",
+          "url": "https://egazette.gov.in/WriteReadData/2025/268124.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "GSR880(E),PDF p.2,rule2"
+        },
+        {
+          "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+          "authority": "India Code, Government of India",
+          "title": "Companies Act, 2013 — as on 1 September 2026",
+          "url": "https://indiacode.gov.in/server/api/core/bitstreams/95902c38-5947-4457-a431-5062e234cab0/content",
+          "publication_date": "2026-09-01",
+          "effective_date": null,
+          "locator": "section2(85),PDF pp.27-28"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

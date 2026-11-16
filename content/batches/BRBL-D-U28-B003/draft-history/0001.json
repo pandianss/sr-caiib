@@ -1,0 +1,360 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-D-U28-B003",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_D::U28: Distinguish offence-specific punishment,fine factors and special-court procedure",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.578-580 / PDF pp.597-599",
+        "statement": "3-4specialjudgesqualificationsjurisdictionendeavour2yearsextensions6monthordinarily4;punishmentsdifferent7and12three-seven13four-ten;16valuefinefactor.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "A punishment range belongs to a particular offence",
+          "core_explanation_md": "The source gives different imprisonment ranges and fine consequences for different offences. For example,the described section7 and abetment routes use three-to-seven-year ranges,while criminal misconduct has its own four-to-ten-year range. Do not use a single maximum for all conduct or confuse an attempt with the completed offence. Fine determination considers the described obtained-property/value or unexplained-resource factors under the applicable provision.\n\nSpecial Judges try the specified offences. The source describes a two-year trial endeavour,reasoned extensions in six-month periods and an ordinary aggregate four-year formulation. This is not a promise that every case automatically terminates at an absolute stopwatch deadline. The special forum and lawful transfer/appellate rules must be distinguished; the fact a forum is special does not mean no transfer can ever occur.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Is the described trial-duration formulation an automatic acquittal rule?",
+            "expected_takeaway": "No. Do not replace its qualified language with an absolute outcome."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A revision sheet assigns the same imprisonment range to bribery,misconduct and every attempt. What is the correct method?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Use whichever maximum is largest",
+              "explanation_md": "That does not identify the applicable provision."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Ignore the offence classification",
+              "explanation_md": "It determines the relevant sanction."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Treat a fine as the only possible consequence in all cases",
+              "explanation_md": "That contradicts the source."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Match each alleged offence and version to its own punishment provision",
+              "explanation_md": "Different routes have different ranges and conditions."
+            }
+          ],
+          "correct_explanation_md": "Different routes have different ranges and conditions."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A note says a pending trial automatically ends after two years without considering the statutory extension formulation. What must be corrected?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "No trial-time provision exists",
+              "explanation_md": "The source describes one."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The endeavour and reasoned-extension language must be preserved",
+              "explanation_md": "The text is qualified."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Every case must instead last exactly ten years",
+              "explanation_md": "That is unsupported."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Only the bank may choose the trial end",
+              "explanation_md": "Trial procedure is statutory."
+            }
+          ],
+          "correct_explanation_md": "The text is qualified."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Antigravity independent review pending for source accuracy,originality,question quality and session applicability. No publication approval.",
+      "Primary PC Act/SOP and post2024 procedural-code transition require review; source trial answer is overabsolute and was not reproduced."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-D-U28-B003",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_D::U28"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_D::U28",
+        "objective_ids": [
+          "BRBL::MOD_D::U28::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_D::U28",
+        "objective_ids": [
+          "BRBL::MOD_D::U28::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_D::U28",
+        "objective_ids": [
+          "BRBL::MOD_D::U28::LO_03"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-D-U28-B003",
+      "draft_id": "D001",
+      "item_id": "item_843bf3670a4c2dd64ab0980c473ead57be3c867f4991715cdffd300c59682de0"
+    },
+    {
+      "batch_id": "BRBL-D-U28-B003",
+      "draft_id": "D002",
+      "item_id": "item_d6eafacc6f997cbda131d291afb5052d5160cdf1452f25f7b6381e36ac773e42"
+    },
+    {
+      "batch_id": "BRBL-D-U28-B003",
+      "draft_id": "D003",
+      "item_id": "item_f074c6b93361e98bfbcfb0d12ef2d339ff15989b9f4f787480c544c129baa118"
+    }
+  ],
+  "items": [
+    {
+      "title": "A punishment range belongs to a particular offence",
+      "core_explanation_md": "The source gives different imprisonment ranges and fine consequences for different offences. For example,the described section7 and abetment routes use three-to-seven-year ranges,while criminal misconduct has its own four-to-ten-year range. Do not use a single maximum for all conduct or confuse an attempt with the completed offence. Fine determination considers the described obtained-property/value or unexplained-resource factors under the applicable provision.\n\nSpecial Judges try the specified offences. The source describes a two-year trial endeavour,reasoned extensions in six-month periods and an ordinary aggregate four-year formulation. This is not a promise that every case automatically terminates at an absolute stopwatch deadline. The special forum and lawful transfer/appellate rules must be distinguished; the fact a forum is special does not mean no transfer can ever occur.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Is the described trial-duration formulation an automatic acquittal rule?",
+        "expected_takeaway": "No. Do not replace its qualified language with an absolute outcome."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_843bf3670a4c2dd64ab0980c473ead57be3c867f4991715cdffd300c59682de0",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U28",
+      "objective_ids": [
+        "BRBL::MOD_D::U28::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.578-580 / PDF pp.597-599"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A revision sheet assigns the same imprisonment range to bribery,misconduct and every attempt. What is the correct method?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Use whichever maximum is largest",
+          "explanation_md": "That does not identify the applicable provision."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Ignore the offence classification",
+          "explanation_md": "It determines the relevant sanction."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Treat a fine as the only possible consequence in all cases",
+          "explanation_md": "That contradicts the source."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Match each alleged offence and version to its own punishment provision",
+          "explanation_md": "Different routes have different ranges and conditions."
+        }
+      ],
+      "correct_explanation_md": "Different routes have different ranges and conditions.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_d6eafacc6f997cbda131d291afb5052d5160cdf1452f25f7b6381e36ac773e42",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U28",
+      "objective_ids": [
+        "BRBL::MOD_D::U28::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.578-580 / PDF pp.597-599"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A note says a pending trial automatically ends after two years without considering the statutory extension formulation. What must be corrected?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "No trial-time provision exists",
+          "explanation_md": "The source describes one."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The endeavour and reasoned-extension language must be preserved",
+          "explanation_md": "The text is qualified."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Every case must instead last exactly ten years",
+          "explanation_md": "That is unsupported."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Only the bank may choose the trial end",
+          "explanation_md": "Trial procedure is statutory."
+        }
+      ],
+      "correct_explanation_md": "The text is qualified.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_f074c6b93361e98bfbcfb0d12ef2d339ff15989b9f4f787480c544c129baa118",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U28",
+      "objective_ids": [
+        "BRBL::MOD_D::U28::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.578-580 / PDF pp.597-599"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U28-B005",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U28: Handle bankers-book inspection,prosecution sanction and appellate safeguards",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.582-584 / PDF pp.601-603",
+      "statement": "18necessarysuspectaccountsornomineeholdercertifiedcopiesSPorspecialauthorisation;19cognizancesanctionqualifiedformerpublicservantprocessfailurejustice;27HCappealrevision.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Verify the power and preserve the relevant record",
+        "core_explanation_md": "The section 18 inspection route concerns the described investigation/inquiry necessity and the suspected person accounts or accounts of someone suspected of holding money for them. The bank supplies the relevant certified entries as required. The power has the stated Superintendent-of-Police rank or special-authorisation qualification; it is not unrestricted access for every person who presents a police identity card.\n\nSection19 prosecution sanction concerns court cognizance for the specified offences and its own authority/procedure, including the described former-office cases. It differs from section 17A prior-investigation approval. The source preserves failure-of-justice qualifications concerning sanction defects rather than automatic invalidity for every irregularity. High Court appeal/revision powers also require the applicable procedural framework. Preserve authority, scope, certification and disclosure logs.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Are section 17A approval and section 19 prosecution sanction interchangeable?",
+          "expected_takeaway": "No. They govern different stages and conditions."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An officer below the stated inspection rank seeks records without the required special authorisation. What must the bank verify?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only whether the officer has a phone",
+            "explanation_md": "That does not establish the statutory power."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The section 18 rank/authorisation and relevant scope",
+            "explanation_md": "The request must rest on the applicable legal authority."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A universal right to every customer record",
+            "explanation_md": "The power is qualified."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Whether the bank likes the investigation",
+            "explanation_md": "Preference does not decide lawful compliance."
+          }
+        ],
+        "correct_explanation_md": "The request must rest on the applicable legal authority."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A note treats prior-investigation approval as the same event as sanction for court cognizance. Which correction is required?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Delete both requirements",
+            "explanation_md": "That is not supported."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Assume sanction automatically proves guilt",
+            "explanation_md": "A procedural sanction permits the relevant stage under its conditions; it does not determine the offence merits."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Use whichever form is shorter",
+            "explanation_md": "Convenience does not establish compliance."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Separate section 17A and section 19 stages, authorities and conditions",
+            "explanation_md": "They address different legal gates."
+          }
+        ],
+        "correct_explanation_md": "They address different legal gates."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Antigravity independent review pending for source accuracy,originality,question quality and session applicability. No publication approval.",
+    "Primary PC Act/SOP and post2024 procedural-code transition require review; source trial answer is overabsolute and was not reproduced."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

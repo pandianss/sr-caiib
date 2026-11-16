@@ -1,0 +1,368 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-C-U18-B002",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_C::U18: Identify settlement-award effect, consent and failed-negotiation outcomes",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.359-360 / PDF pp.378-379",
+        "statement": "Section21ordinarysettlementawarddeemedcivildecree,final/binding,noordinaryappeal,courtfeerefundasprovided;failuredoesnotproduceaward. Sourcepecuniaryclaimnotcertified.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Record the agreement that supports the award",
+          "core_explanation_md": "An ordinary Lok Adalat award rests on the actual compromise or settlement. The stated statutory effect treats it as a civil decree, final and binding on the parties, with no ordinary appeal under that framework. A draft offer or bank-only approval is not the same as an agreed award. Preserve the parties consent and the exact recorded terms.\n\nThe applicable court-fee refund is another consequence with its own conditions. Do not promise unrestricted reopening merely because a party later regrets the terms, or confuse absence of an ordinary appeal with a conclusion about every exceptional constitutional or fraud-related remedy. Those issues need independent legal review.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Is a bank-only approved offer already a binding settlement award?",
+            "expected_takeaway": "No. The actual compromise and award record must be established."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "The bank approves a proposal internally, but the other party has not agreed and no award exists. What is the correct status?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Final binding award automatically issued",
+              "explanation_md": "Internal approval is not the parties compromise or an award."
+            },
+            {
+              "option_id": "B",
+              "text_md": "A proposal awaiting the required agreement and award process",
+              "explanation_md": "Each legal event needs its own evidence."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The debt has been repaid",
+              "explanation_md": "An offer is not payment."
+            },
+            {
+              "option_id": "D",
+              "text_md": "An ordinary appeal has already been dismissed",
+              "explanation_md": "No such proceeding is established."
+            }
+          ],
+          "correct_explanation_md": "Each legal event needs its own evidence."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A signed settlement award is described as merely an informal meeting note with no statutory effect. Which feature should be checked?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only the meeting room location",
+              "explanation_md": "Location alone does not establish award effect."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Whether the bank printed it in colour",
+              "explanation_md": "Print style is irrelevant to statutory status."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The borrower future preferences alone",
+              "explanation_md": "Later preference does not define the recorded award."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The statutory decree/finality effect of the actual award",
+              "explanation_md": "The legal framework gives a qualifying award more than informal-note status."
+            }
+          ],
+          "correct_explanation_md": "The legal framework gives a qualifying award more than informal-note status."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Independent Antigravity review remains required for later amendments, commencement, applicable regulations and judgments. Draft authoring is not a publication or legal-accuracy approval.",
+      "Book excludes compoundable offences in one sentence,contradicted by primary exclusion of non-compoundable matters. Book20lakhclaim and NALSAlegacyPermanentlimit are not assessed as universal limits. Exceptional award challenges require independent review."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-C-U18-B002",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_C::U18"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "NALSA_LOK_ADALATS_2026",
+        "authority": "National Legal Services Authority",
+        "title": "Lok Adalats: nature, referral, settlement and award",
+        "url": "https://nalsa.gov.in/lok-adalats/",
+        "publication_date": null,
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_C::U18",
+        "objective_ids": [
+          "BRBL::MOD_C::U18::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_C::U18",
+        "objective_ids": [
+          "BRBL::MOD_C::U18::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_C::U18",
+        "objective_ids": [
+          "BRBL::MOD_C::U18::LO_02"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-C-U18-B002",
+      "draft_id": "D001",
+      "item_id": "item_8f4e8d2ec93df2510cb4c302ee4befb8a25443474c11554d756d24e63712c721"
+    },
+    {
+      "batch_id": "BRBL-C-U18-B002",
+      "draft_id": "D002",
+      "item_id": "item_878eebbc91b400b235ff4ad66608dc8f36064ddcbfaf441fd5fb20d9e511f153"
+    },
+    {
+      "batch_id": "BRBL-C-U18-B002",
+      "draft_id": "D003",
+      "item_id": "item_f80e9a97c10f093eaa0212184c95427e11edfe8e41385dc438a7c72968a00cd1"
+    }
+  ],
+  "items": [
+    {
+      "title": "Record the agreement that supports the award",
+      "core_explanation_md": "An ordinary Lok Adalat award rests on the actual compromise or settlement. The stated statutory effect treats it as a civil decree, final and binding on the parties, with no ordinary appeal under that framework. A draft offer or bank-only approval is not the same as an agreed award. Preserve the parties consent and the exact recorded terms.\n\nThe applicable court-fee refund is another consequence with its own conditions. Do not promise unrestricted reopening merely because a party later regrets the terms, or confuse absence of an ordinary appeal with a conclusion about every exceptional constitutional or fraud-related remedy. Those issues need independent legal review.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Is a bank-only approved offer already a binding settlement award?",
+        "expected_takeaway": "No. The actual compromise and award record must be established."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_8f4e8d2ec93df2510cb4c302ee4befb8a25443474c11554d756d24e63712c721",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U18",
+      "objective_ids": [
+        "BRBL::MOD_C::U18::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.359-360 / PDF pp.378-379"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "The bank approves a proposal internally, but the other party has not agreed and no award exists. What is the correct status?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Final binding award automatically issued",
+          "explanation_md": "Internal approval is not the parties compromise or an award."
+        },
+        {
+          "option_id": "B",
+          "text_md": "A proposal awaiting the required agreement and award process",
+          "explanation_md": "Each legal event needs its own evidence."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The debt has been repaid",
+          "explanation_md": "An offer is not payment."
+        },
+        {
+          "option_id": "D",
+          "text_md": "An ordinary appeal has already been dismissed",
+          "explanation_md": "No such proceeding is established."
+        }
+      ],
+      "correct_explanation_md": "Each legal event needs its own evidence.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_878eebbc91b400b235ff4ad66608dc8f36064ddcbfaf441fd5fb20d9e511f153",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U18",
+      "objective_ids": [
+        "BRBL::MOD_C::U18::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.359-360 / PDF pp.378-379"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A signed settlement award is described as merely an informal meeting note with no statutory effect. Which feature should be checked?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only the meeting room location",
+          "explanation_md": "Location alone does not establish award effect."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Whether the bank printed it in colour",
+          "explanation_md": "Print style is irrelevant to statutory status."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The borrower future preferences alone",
+          "explanation_md": "Later preference does not define the recorded award."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The statutory decree/finality effect of the actual award",
+          "explanation_md": "The legal framework gives a qualifying award more than informal-note status."
+        }
+      ],
+      "correct_explanation_md": "The legal framework gives a qualifying award more than informal-note status.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_f80e9a97c10f093eaa0212184c95427e11edfe8e41385dc438a7c72968a00cd1",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U18",
+      "objective_ids": [
+        "BRBL::MOD_C::U18::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.359-360 / PDF pp.378-379"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

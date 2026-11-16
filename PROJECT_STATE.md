@@ -1,5 +1,27 @@
 # Project execution state
 
+## Current scope — BRBL authoring only; Antigravity handles review
+
+User explicitly directed complete authoring and defer review to Antigravity. New content remains unreviewed draft; review/publication are not tasks to perform in this authoring lane. Authoring itself still requires sourced facts, original teaching/tasks, explicit mappings and deterministic calculation checks.
+
+**Authoring handoff complete for this requested lane:** BRBL has **1,430 retained draft items / 254 batches / 312 editorial objectives across all 64 catalogue units**, including all Module D units and the appendix. C U06's retained sale/proceeds/consortium/compensation/case-depth tasks are addressed by B007-B013. Contribution and pledge supplements now meet the ledger's assessment-presence threshold; that threshold is not a finding of pedagogical sufficiency.
+
+**Next lane: Antigravity review**, as explicitly assigned by the user. No routine approval request or external message is needed from Codex. All canonical items remain draft with null review; zero BRBL items are published. Independent source/session, originality, depth, pedagogy and calculation approval remain pending. Full-product completion, release readiness and live launch are not claimed.
+
+Evidence: `content/audit/BRBL_AUTHORING_HANDOFF_2026-11-16.md`, refreshed `BRBL_COMPLETION_QUEUE.md`, and complete per-unit/batch/item/source inventory under `content/audit/evidence/brbl-authoring-handoff-2026-11-16/`. Automated screening finds zero short/stub rationales, courseware-dependent stems or broken case links; eight inherited cyclic answer-position batches remain explicit reviewer findings. Author corrections preserve complete draft history. `npm run check` passes typecheck/lint and 692 tests; `npm run build` passes with 3 published packs and 0 fixtures. These checks are not legal/editorial approval.
+
+Source work includes the actual IBC commencement notification, official small-company Gazette and DPDP Act/commencement; LLP amendment and State-qualified partnership evidence; SARFAESI 2016 Gazette reproduction through a disclosed mirror. Partial-source and post-cutoff limitations remain visible. `stitch/` was untouched. Earlier checkpoints below are historical and superseded by this handoff.
+
+## Historical BRBL checkpoint before authoring completion — 16 November 2026
+
+- Latest user scope: **Complete BRBL**. Full BRBL completion is **not achieved**. All 64 catalogue units remain in scope; see `content/audit/BRBL_COMPLETION_QUEUE.md` and `content/audit/BRBL_COMPLETION_2026-11-16.md`.
+- Added C U02-U05 and initial C U06: **35 batches / 107 original draft items / 34 objectives**. C U02 has two worked examples, three numerical assessments and a linked case; C U06 adds one worked example and two numerical assessments. Every new canonical item remains draft with null review. No BRBL delivery pack or independent approval was created.
+- Reconciled eight existing A/PMLA draft bundles into the ledger. Current retained BRBL inventory: **102 batches / 964 draft items across 20 of 64 units; 163 objective ledger rows**. These are inventory counts, not verified syllabus-depth, review or publication completion. The other 44 units remain unstarted in retained drafts.
+- Primary sources retained with fingerprints: original MSMED Gazette, historical SARFAESI BHC comparison (28 pages), Supreme Court Hindon Forge judgment, RBI ARC Directions March2026 snapshot, and newer Gujarat-hosted SARFAESI compilation (38 pages). The latter includes later amendments missing from BHC; no full June2026 consolidation certification is claimed. Audit-register handoff incorrectly labels 2020 MSME thresholds as 2025; new drafts use retained S.O.1364(E).
+- **Exact next action:** finish C U06 enforcement depth/source gaps before C U07. C U06 courseware printed pp.269-279 / PDF pp.288-298 has been read including end questions. Existing C U06 batches end B006; do not redo them. Remaining: current Rules8-9 sale procedure and valuation/reserve/publication/payment conditions; section 19 compensation; original proceeds-allocation and joint-creditor-value worked/numeric assessments; linked application case; liquidation/IBC qualifications. Then C U07 Central Registry starts printed p.281 / PDF p.300; rendered source pages through306 exist. Follow with C U08-U21, all 28 Module D units and appendix. Drafts in all earlier units still need primary-gap, sufficiency and independent editorial reconciliation before publication.
+- Check evidence under `content/audit/evidence/brbl-completion-2026-11-16/`. Screening individually checks all 35 new batches:107 items, zero stub explanations, courseware-dependent stems or broken case links; this is not legal/originality/calculation approval. Targeted exact arithmetic tests passed. Full verification results are in `check.txt` and `build.txt`.
+- Delivery dimensions: implementation unchanged/in_progress; BRBL content in_progress; release_ready blocked by unfinished content and review; live_launched pending. Untracked `stitch/` assets were left untouched. No unattended worker was started.
+
 ## Active takeover checkpoint — Codex, updated 16 November 2026
 
 - Owner initially authorized Codex takeover until **19:30 Asia/Kolkata on 15 November** and explicitly asked to continue on **16 November**. Claude is now authoring Central Banking separately; the saved work split assigns Codex **BRBL B U06 onward**. Antigravity remains the review/publication gate. New content stays draft with null canonical review metadata.
@@ -95,11 +117,11 @@ synthetic fixtures), **A** = `scripts/ui-audit.js` measured on the rendered DOM.
 | --- | --- | --- | --- |
 | Paper isolation | passed | T `storage-session` "paper isolation"; B paper switch BFM/CB | — |
 | Elective changes | passed (logic) | B elective chips keep history; unfinished session in another paper shown on Today with Resume | Not re-tested with real packs |
-| Coverage ledger | in_progress | `npm run content:build` reconciles ledger ↔ catalogue (276 official topics in 44 modules/appendices, 0 objectives) and fails on mismatch or on a source-fingerprint mismatch | No objectives or published items yet |
+| Coverage ledger | passed for current inventory | Build reconciles 276 official topics in 44 modules/appendices; BRBL 64 units have 312 editorial objectives and 1,430 draft items, with exact batch/item mappings | Mechanical presence is not independent depth approval; BRBL unpublished |
 | Visual coverage map | passed for current data | B `#/coverage`: "0 of 276 official topics are reviewed and published", each paper "Syllabus verified" with its own denominator (BRBL 64), drill-down shows official scope, the exact gap and plain-type-heading notes; learner state separate. The earlier "baseline incomplete" state was observed before the syllabus was loaded | Standalone HTML export not regenerated |
-| Syllabus completion | blocked | — | Sources |
-| Original authorship | blocked | — | No content yet |
-| Source trust | passed (mechanism) | T pack verification rejects unpublished/synthetic as published; build rejects invalid packs | No real items |
+| Syllabus completion | pending independent review | BRBL authoring handoff covers all 64 catalogue units; detailed queue and source caveats retained | Antigravity depth/source review and publication; whole-product scope remains |
+| Original authorship | pending independent review | BRBL original draft teaching/tasks and evidence retained; author screening is not independent originality approval | Antigravity review |
+| Source trust | passed (mechanism) | T pack verification rejects unpublished/synthetic as published; build rejects invalid packs | BRBL partial primary evidence and cutoff conflicts remain reviewer gates |
 | Exam context pinning | passed (logic) | T attempts pin pack/config version; old pack retained while pinned | — |
 | Navigation | passed | B start short session, find formula, change paper, resume after reload | — |
 | Answer behaviour | passed | T grading suite; B empty/comma/unit input rejected with messages, explicit Submit, feedback after | — |
@@ -117,7 +139,7 @@ synthetic fixtures), **A** = `scripts/ui-audit.js` measured on the rendered DOM.
 | Commerce: ledger | passed (LOCAL SIMULATION) | T `tests/server/commerce.test.ts` (14 tests); B fail, cancel, pending, app closed + server restart, verified, refund → relocked | Simulation is not provider evidence |
 | Commerce: offline entitlement | passed | T counterfeit, wrong account, lease, expiry, rollback, bounded finish; B real WebCrypto verification unlocked the unit | — |
 | Commerce: provider sandbox | **blocked** | — | Owner's Razorpay test keys; then run the checklist in `docs/operations.md` |
-| Build, type, lint, tests | passed | `npm run check` → 163 tests pass, 0 lint problems; `npm run build` ok; `npm audit --omit=dev` 0 vulnerabilities | — |
+| Build, type, lint, tests | passed | 16 November: `npm run check` passes type/lint and 692 tests; production build passes. Logs under BRBL authoring handoff evidence | Historical dependency audit is not a new vulnerability check |
 | Clean setup reproduction | not_run | — | `npm ci` on a fresh clone not yet tried |
 
 ## Source and content checkpoint

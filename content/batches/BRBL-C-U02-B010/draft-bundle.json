@@ -1,0 +1,407 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-C-U02-B010",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL C U02 MSMED Act: Apply audited-buyer disclosures, interest disallowance and offence-specific penalties",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "MSMED_ACT_2006_GAZETTE",
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "MSMED_ACT_2006_GAZETTE",
+        "locator": "sections 22-24 and 26-28, PDF pp.9-10",
+        "statement": "Audited buyers disclose specified principal and interest amounts, including unpaid and further interest. Section 23 disallows the Act interest deduction; section 24 overrides inconsistent laws for sections 15-23. Intentional section 8(1)/26(2) offences differ from buyer section 22 contravention fine (at least 10000).",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "source_id": "S04",
+        "locator": "printed pp.233-242 / PDF pp.252-261, whole unit and end questions visually inspected",
+        "statement": "The chapter covers this objective, but its older classification values and historical memorandum treatment must be read with the retained notifications.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Paying principal does not make the interest trail disappear",
+          "core_explanation_md": "For a buyer whose annual accounts must be audited under a law, section 22 requires the specified principal and interest disclosures, including separate year-end unpaid amounts and delayed-payment/further-interest information. A nil principal balance is not enough to conclude that no MSMED disclosure or unpaid interest remains.\n\nSection 23 disallows deduction of interest payable or paid under the Act for income-tax computation. This card does not determine every tax consequence of the purchase principal. Section 24 gives sections 15-23 overriding effect over inconsistent laws. The penalty route also matters: section 27 distinguishes intentional section 8(1)/26(2) contraventions from an audited buyer breach of section 22, for which the stated fine is at least INR 10,000. Do not transpose the first-offence INR 1,000 ceiling to that separate buyer offence.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does clearing principal necessarily clear statutory interest and all disclosure obligations?",
+            "expected_takeaway": "No. Reconcile the interest and the statutory disclosure categories separately."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "An audited buyer pays the invoice principal after delay but leaves statutory interest unpaid. Which year-end approach fits section 22?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Reconcile and disclose the applicable unpaid interest and other specified delay information",
+              "explanation_md": "Payment of principal does not erase the distinct interest disclosure requirements."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Delete the supplier record because principal is nil",
+              "explanation_md": "The interest trail may remain even when principal has been paid."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Deduct every statutory interest charge because all business interest is deductible",
+              "explanation_md": "Section 23 specifically disallows the interest under this Act."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Treat unpaid interest as an automatic waiver by the supplier",
+              "explanation_md": "Nonpayment is not evidence of an agreed or legally effective waiver."
+            }
+          ],
+          "correct_explanation_md": "Payment of principal does not erase the distinct interest disclosure requirements."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A training note applies the INR 1,000 first-conviction ceiling to a buyer contravention of section 22. What is wrong with that comparison?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "All offences under the Act carry the same ceiling",
+              "explanation_md": "Section 27 distinguishes the types of contravention."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Section 22 concerns only voluntary unaudited accounts",
+              "explanation_md": "It addresses buyers whose annual accounts must be audited by law."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The statutory interest is a payment to the Government",
+              "explanation_md": "The delayed-payment interest is owed to the supplier, not a tax payment."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Buyer contravention of section 22 has a separate fine of at least INR 10,000",
+              "explanation_md": "The first-conviction ceiling belongs to the specified intentional section 8/26 offence, not this offence."
+            }
+          ],
+          "correct_explanation_md": "The first-conviction ceiling belongs to the specified intentional section 8/26 offence, not this offence."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex drafts, 16 November 2026; independent legal/session applicability, originality and pedagogy review pending. No approval or publication claimed.",
+      "Original Gazette is not a certified June 2026 consolidation. Later amendments, commencement changes, State rules and applicable judgments require independent verification.",
+      "Source questions and textbook table structure were inspected and not reused. Teaching and scenarios were designed from a factual brief; author comparison is not independent editorial review.",
+      "Original notification transition dates and partial-month/live-rate interest conventions are not certified here. Udyam registration timing and legal eligibility disputes need applicable primary evidence."
+    ],
+    "next_batch_hint": "Continue BRBL C U03 SARFAESI introduction, S04 printed p.243 / PDF p.262"
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-C-U02-B010",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p.12, Compulsory Paper IV Module C, MSMED Act 2006"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "MSMED_ACT_2006_GAZETTE",
+        "authority": "Ministry of Law and Justice; hosted by Development Commissioner (MSME)",
+        "title": "The Micro, Small and Medium Enterprises Development Act, 2006, No.27 of 2006 (original Gazette enactment)",
+        "url": "https://www.dcmsme.gov.in/msmed2006.pdf",
+        "publication_date": "2006-06-16",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_C::U02",
+        "objective_ids": [
+          "BRBL::MOD_C::U02::LO_10"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_C::U02",
+        "objective_ids": [
+          "BRBL::MOD_C::U02::LO_10"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_C::U02",
+        "objective_ids": [
+          "BRBL::MOD_C::U02::LO_10"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-C-U02-B010",
+      "draft_id": "D001",
+      "item_id": "item_1fb6248eed637fb303db385b47ff724cb948f4796a1d1490e3c2007f7419e02a"
+    },
+    {
+      "batch_id": "BRBL-C-U02-B010",
+      "draft_id": "D002",
+      "item_id": "item_45cf22ec001cebba3ee35c22e344344777402b0c851dc74da2958de76956a665"
+    },
+    {
+      "batch_id": "BRBL-C-U02-B010",
+      "draft_id": "D003",
+      "item_id": "item_173e8133b1ca4409c45142c7b7bdfc09bf30ba84d9df4aaba6d51ea088874f0a"
+    }
+  ],
+  "items": [
+    {
+      "title": "Paying principal does not make the interest trail disappear",
+      "core_explanation_md": "For a buyer whose annual accounts must be audited under a law, section 22 requires the specified principal and interest disclosures, including separate year-end unpaid amounts and delayed-payment/further-interest information. A nil principal balance is not enough to conclude that no MSMED disclosure or unpaid interest remains.\n\nSection 23 disallows deduction of interest payable or paid under the Act for income-tax computation. This card does not determine every tax consequence of the purchase principal. Section 24 gives sections 15-23 overriding effect over inconsistent laws. The penalty route also matters: section 27 distinguishes intentional section 8(1)/26(2) contraventions from an audited buyer breach of section 22, for which the stated fine is at least INR 10,000. Do not transpose the first-offence INR 1,000 ceiling to that separate buyer offence.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does clearing principal necessarily clear statutory interest and all disclosure obligations?",
+        "expected_takeaway": "No. Reconcile the interest and the statutory disclosure categories separately."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_1fb6248eed637fb303db385b47ff724cb948f4796a1d1490e3c2007f7419e02a",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U02",
+      "objective_ids": [
+        "BRBL::MOD_C::U02::LO_10"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "MSMED_ACT_2006_GAZETTE",
+          "authority": "Ministry of Law and Justice; hosted by Development Commissioner (MSME)",
+          "title": "The Micro, Small and Medium Enterprises Development Act, 2006, No.27 of 2006 (original Gazette enactment)",
+          "url": "https://www.dcmsme.gov.in/msmed2006.pdf",
+          "publication_date": "2006-06-16",
+          "effective_date": null,
+          "locator": "sections 22-24 and 26-28, PDF pp.9-10"
+        },
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.233-242 / PDF pp.252-261, whole unit and end questions visually inspected"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "An audited buyer pays the invoice principal after delay but leaves statutory interest unpaid. Which year-end approach fits section 22?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Reconcile and disclose the applicable unpaid interest and other specified delay information",
+          "explanation_md": "Payment of principal does not erase the distinct interest disclosure requirements."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Delete the supplier record because principal is nil",
+          "explanation_md": "The interest trail may remain even when principal has been paid."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Deduct every statutory interest charge because all business interest is deductible",
+          "explanation_md": "Section 23 specifically disallows the interest under this Act."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Treat unpaid interest as an automatic waiver by the supplier",
+          "explanation_md": "Nonpayment is not evidence of an agreed or legally effective waiver."
+        }
+      ],
+      "correct_explanation_md": "Payment of principal does not erase the distinct interest disclosure requirements.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_45cf22ec001cebba3ee35c22e344344777402b0c851dc74da2958de76956a665",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U02",
+      "objective_ids": [
+        "BRBL::MOD_C::U02::LO_10"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "MSMED_ACT_2006_GAZETTE",
+          "authority": "Ministry of Law and Justice; hosted by Development Commissioner (MSME)",
+          "title": "The Micro, Small and Medium Enterprises Development Act, 2006, No.27 of 2006 (original Gazette enactment)",
+          "url": "https://www.dcmsme.gov.in/msmed2006.pdf",
+          "publication_date": "2006-06-16",
+          "effective_date": null,
+          "locator": "sections 22-24 and 26-28, PDF pp.9-10"
+        },
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.233-242 / PDF pp.252-261, whole unit and end questions visually inspected"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A training note applies the INR 1,000 first-conviction ceiling to a buyer contravention of section 22. What is wrong with that comparison?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "All offences under the Act carry the same ceiling",
+          "explanation_md": "Section 27 distinguishes the types of contravention."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Section 22 concerns only voluntary unaudited accounts",
+          "explanation_md": "It addresses buyers whose annual accounts must be audited by law."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The statutory interest is a payment to the Government",
+          "explanation_md": "The delayed-payment interest is owed to the supplier, not a tax payment."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Buyer contravention of section 22 has a separate fine of at least INR 10,000",
+          "explanation_md": "The first-conviction ceiling belongs to the specified intentional section 8/26 offence, not this offence."
+        }
+      ],
+      "correct_explanation_md": "The first-conviction ceiling belongs to the specified intentional section 8/26 offence, not this offence.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_173e8133b1ca4409c45142c7b7bdfc09bf30ba84d9df4aaba6d51ea088874f0a",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U02",
+      "objective_ids": [
+        "BRBL::MOD_C::U02::LO_10"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "MSMED_ACT_2006_GAZETTE",
+          "authority": "Ministry of Law and Justice; hosted by Development Commissioner (MSME)",
+          "title": "The Micro, Small and Medium Enterprises Development Act, 2006, No.27 of 2006 (original Gazette enactment)",
+          "url": "https://www.dcmsme.gov.in/msmed2006.pdf",
+          "publication_date": "2006-06-16",
+          "effective_date": null,
+          "locator": "sections 22-24 and 26-28, PDF pp.9-10"
+        },
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.233-242 / PDF pp.252-261, whole unit and end questions visually inspected"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

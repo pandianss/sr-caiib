@@ -1,0 +1,359 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-D-U14-B001",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_D::U14: Identify dissolution routes and distinguish reconstitution",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.476-477 / PDF pp.495-496",
+        "statement": "39dissolutionallpartners;40agreement41compulsory42contingent43atwillnotice44courtgrounds;contractqualifications.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Identify what ends and under which route",
+          "core_explanation_md": "Dissolution of the firm ends the partnership relationship among all the partners; a change in constitution need not do so. The source distinguishes agreement, compulsory dissolution, contingent events, the at-will notice route and court-ordered dissolution. Expiry of a term, completion of an undertaking, death and insolvency must be read with the applicable contract qualifications.\n\nCourt grounds include the described incapacity, misconduct, persistent breach, transfer, continuing-loss and just-and-equitable situations. A lender should record the actual event, agreement and order rather than assume every partner departure ends the firm or that every continuing signature proves the old authority remains unchanged. A multi-business unlawfulness case also requires the statutory qualification instead of a blanket conclusion about all activities.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does every partner change necessarily dissolve the firm?",
+            "expected_takeaway": "No. Distinguish reconstitution from ending all partnership relations."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "One partner retires and the remaining partners validly continue the firm under the agreement. Which distinction matters?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Reconstitution need not be dissolution of the firm",
+              "explanation_md": "A change among partners differs from ending the whole relationship."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Any departure necessarily destroys all firm contracts",
+              "explanation_md": "The stipulated continuation distinguishes a change in constitution from dissolution of the whole firm."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Continuation proves no legal event occurred",
+              "explanation_md": "The constitution has still changed."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The bank can ignore the partnership agreement",
+              "explanation_md": "It is relevant to continuity and authority."
+            }
+          ],
+          "correct_explanation_md": "A change among partners differs from ending the whole relationship."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "The agreement has a continuation clause, but a file treats a partner death as automatically ending the firm without reading it. What was omitted?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only the cheque serial number",
+              "explanation_md": "That does not establish dissolution."
+            },
+            {
+              "option_id": "B",
+              "text_md": "A rule that death is never relevant",
+              "explanation_md": "Death is relevant subject to applicable provisions."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The contractual qualification to the contingent-event dissolution rule",
+              "explanation_md": "The agreement and law must be read together."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The deceased partner preferred branch",
+              "explanation_md": "Branch preference does not settle continuation."
+            }
+          ],
+          "correct_explanation_md": "The agreement and law must be read together."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Primary law, State amendments, session applicability and independent editorial review remain with Antigravity. No publication approval."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-D-U14-B001",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_D::U14"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_D::U14",
+        "objective_ids": [
+          "BRBL::MOD_D::U14::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_D::U14",
+        "objective_ids": [
+          "BRBL::MOD_D::U14::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_D::U14",
+        "objective_ids": [
+          "BRBL::MOD_D::U14::LO_01"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-D-U14-B001",
+      "draft_id": "D001",
+      "item_id": "item_4942932380a05c45b17c725787d8bdddaf67efe85c1568631a464f2c6d3a0aa0"
+    },
+    {
+      "batch_id": "BRBL-D-U14-B001",
+      "draft_id": "D002",
+      "item_id": "item_22c7fe991cf77aa74edf4c7b8ddcd44bb313a196a906849a2b24a5d7740dc9e9"
+    },
+    {
+      "batch_id": "BRBL-D-U14-B001",
+      "draft_id": "D003",
+      "item_id": "item_b0c82e7819f133da006227eed1f82253bcbbe69e90b4a98bdda52b2d291b4e60"
+    }
+  ],
+  "items": [
+    {
+      "title": "Identify what ends and under which route",
+      "core_explanation_md": "Dissolution of the firm ends the partnership relationship among all the partners; a change in constitution need not do so. The source distinguishes agreement, compulsory dissolution, contingent events, the at-will notice route and court-ordered dissolution. Expiry of a term, completion of an undertaking, death and insolvency must be read with the applicable contract qualifications.\n\nCourt grounds include the described incapacity, misconduct, persistent breach, transfer, continuing-loss and just-and-equitable situations. A lender should record the actual event, agreement and order rather than assume every partner departure ends the firm or that every continuing signature proves the old authority remains unchanged. A multi-business unlawfulness case also requires the statutory qualification instead of a blanket conclusion about all activities.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does every partner change necessarily dissolve the firm?",
+        "expected_takeaway": "No. Distinguish reconstitution from ending all partnership relations."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_4942932380a05c45b17c725787d8bdddaf67efe85c1568631a464f2c6d3a0aa0",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U14",
+      "objective_ids": [
+        "BRBL::MOD_D::U14::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.476-477 / PDF pp.495-496"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "One partner retires and the remaining partners validly continue the firm under the agreement. Which distinction matters?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Reconstitution need not be dissolution of the firm",
+          "explanation_md": "A change among partners differs from ending the whole relationship."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Any departure necessarily destroys all firm contracts",
+          "explanation_md": "The stipulated continuation distinguishes a change in constitution from dissolution of the whole firm."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Continuation proves no legal event occurred",
+          "explanation_md": "The constitution has still changed."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The bank can ignore the partnership agreement",
+          "explanation_md": "It is relevant to continuity and authority."
+        }
+      ],
+      "correct_explanation_md": "A change among partners differs from ending the whole relationship.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_22c7fe991cf77aa74edf4c7b8ddcd44bb313a196a906849a2b24a5d7740dc9e9",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U14",
+      "objective_ids": [
+        "BRBL::MOD_D::U14::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.476-477 / PDF pp.495-496"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "The agreement has a continuation clause, but a file treats a partner death as automatically ending the firm without reading it. What was omitted?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only the cheque serial number",
+          "explanation_md": "That does not establish dissolution."
+        },
+        {
+          "option_id": "B",
+          "text_md": "A rule that death is never relevant",
+          "explanation_md": "Death is relevant subject to applicable provisions."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The contractual qualification to the contingent-event dissolution rule",
+          "explanation_md": "The agreement and law must be read together."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The deceased partner preferred branch",
+          "explanation_md": "Branch preference does not settle continuation."
+        }
+      ],
+      "correct_explanation_md": "The agreement and law must be read together.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_b0c82e7819f133da006227eed1f82253bcbbe69e90b4a98bdda52b2d291b4e60",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U14",
+      "objective_ids": [
+        "BRBL::MOD_D::U14::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.476-477 / PDF pp.495-496"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

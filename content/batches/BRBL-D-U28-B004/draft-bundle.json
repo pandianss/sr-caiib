@@ -1,0 +1,360 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-D-U28-B004",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_D::U28: Distinguish investigator rank,section17A approval and its exception",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.581-582 / PDF pp.600-601",
+        "statement": "17ranksDSPEInspectornotifiedmetroACPelseDSPqualifiedStateInspectorand13bSPorder;17AofficialrecommendationdecisionpriorapprovalUnionStatecompetentremove;spotarrestexception;3plus1reasons;2021SOPnotActamendment.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Rank, prior approval and sanction answer different questions",
+          "core_explanation_md": "Section17 specifies authorised investigator ranks and qualifications: the source distinguishes DSPE, the stated metropolitan category and other areas, with the specified State-authorisation route and additional illicit-enrichment investigation requirement. Establish the actual jurisdiction and authorisation rather than applying one rank everywhere.\n\nSection17A concerns prior approval for the described inquiry/investigation into offences relatable to an official recommendation or decision. The appropriate approval authority depends on the employment/removal relationship. The on-the-spot arrest for accepting or attempting to accept undue advantage has the stated exception. The decision period is three months with the described reasoned one-month extension. The2021 SOP concerns processing; do not call it a fresh statutory amendment.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does section 17A mean every on-the-spot bribery arrest first needs that approval?",
+            "expected_takeaway": "No. The source specifies an exception for that situation."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "An investigator invokes section 17A to insist on prior approval for the stipulated on-the-spot arrest while accepting an undue advantage. Which qualification matters?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The provision has no exceptions",
+              "explanation_md": "The source states one."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The bank may grant any police power",
+              "explanation_md": "The authority is statutory."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The stated on-the-spot arrest exception",
+              "explanation_md": "It must be distinguished from the official-decision approval route."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The amount must be cash",
+              "explanation_md": "Undue advantage is not confined to cash."
+            }
+          ],
+          "correct_explanation_md": "It must be distinguished from the official-decision approval route."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A file has section 17A approval but no evidence that the investigating officer meets the section 17 rank/authorisation requirements. What remains?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The separate investigator-authority check",
+              "explanation_md": "Approval does not erase the rank and authorisation provisions."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Nothing; any person may investigate after any approval",
+              "explanation_md": "Prior approval does not replace the separate statutory investigator-rank and authorisation requirements."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Only the stationery letterhead",
+              "explanation_md": "It does not prove statutory power."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Automatic proof of guilt",
+              "explanation_md": "Investigative authority does not decide guilt."
+            }
+          ],
+          "correct_explanation_md": "Approval does not erase the rank and authorisation provisions."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Antigravity independent review pending for source accuracy,originality,question quality and session applicability. No publication approval.",
+      "Primary PC Act/SOP and post2024 procedural-code transition require review; source trial answer is overabsolute and was not reproduced."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-D-U28-B004",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_D::U28"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_D::U28",
+        "objective_ids": [
+          "BRBL::MOD_D::U28::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_D::U28",
+        "objective_ids": [
+          "BRBL::MOD_D::U28::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_D::U28",
+        "objective_ids": [
+          "BRBL::MOD_D::U28::LO_04"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-D-U28-B004",
+      "draft_id": "D001",
+      "item_id": "item_261c551b9d3b1a98aa96f929613d5d2ec5657bdfabc4b6572bfc6c69b5b36f57"
+    },
+    {
+      "batch_id": "BRBL-D-U28-B004",
+      "draft_id": "D002",
+      "item_id": "item_98a0995a65c45be3462f2b944cee73e1d403ce8d402a648d80a50ccf30446c2d"
+    },
+    {
+      "batch_id": "BRBL-D-U28-B004",
+      "draft_id": "D003",
+      "item_id": "item_8b46ae8eb3cb3e90fc8e4dd3143de98e91cfc8ee68acbb7cd5d16b871f8b3506"
+    }
+  ],
+  "items": [
+    {
+      "title": "Rank, prior approval and sanction answer different questions",
+      "core_explanation_md": "Section17 specifies authorised investigator ranks and qualifications: the source distinguishes DSPE, the stated metropolitan category and other areas, with the specified State-authorisation route and additional illicit-enrichment investigation requirement. Establish the actual jurisdiction and authorisation rather than applying one rank everywhere.\n\nSection17A concerns prior approval for the described inquiry/investigation into offences relatable to an official recommendation or decision. The appropriate approval authority depends on the employment/removal relationship. The on-the-spot arrest for accepting or attempting to accept undue advantage has the stated exception. The decision period is three months with the described reasoned one-month extension. The2021 SOP concerns processing; do not call it a fresh statutory amendment.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does section 17A mean every on-the-spot bribery arrest first needs that approval?",
+        "expected_takeaway": "No. The source specifies an exception for that situation."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_261c551b9d3b1a98aa96f929613d5d2ec5657bdfabc4b6572bfc6c69b5b36f57",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U28",
+      "objective_ids": [
+        "BRBL::MOD_D::U28::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.581-582 / PDF pp.600-601"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "An investigator invokes section 17A to insist on prior approval for the stipulated on-the-spot arrest while accepting an undue advantage. Which qualification matters?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The provision has no exceptions",
+          "explanation_md": "The source states one."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The bank may grant any police power",
+          "explanation_md": "The authority is statutory."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The stated on-the-spot arrest exception",
+          "explanation_md": "It must be distinguished from the official-decision approval route."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The amount must be cash",
+          "explanation_md": "Undue advantage is not confined to cash."
+        }
+      ],
+      "correct_explanation_md": "It must be distinguished from the official-decision approval route.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_98a0995a65c45be3462f2b944cee73e1d403ce8d402a648d80a50ccf30446c2d",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U28",
+      "objective_ids": [
+        "BRBL::MOD_D::U28::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.581-582 / PDF pp.600-601"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A file has section 17A approval but no evidence that the investigating officer meets the section 17 rank/authorisation requirements. What remains?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The separate investigator-authority check",
+          "explanation_md": "Approval does not erase the rank and authorisation provisions."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Nothing; any person may investigate after any approval",
+          "explanation_md": "Prior approval does not replace the separate statutory investigator-rank and authorisation requirements."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Only the stationery letterhead",
+          "explanation_md": "It does not prove statutory power."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Automatic proof of guilt",
+          "explanation_md": "Investigative authority does not decide guilt."
+        }
+      ],
+      "correct_explanation_md": "Approval does not erase the rank and authorisation provisions.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_8b46ae8eb3cb3e90fc8e4dd3143de98e91cfc8ee68acbb7cd5d16b871f8b3506",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U28",
+      "objective_ids": [
+        "BRBL::MOD_D::U28::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.581-582 / PDF pp.600-601"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

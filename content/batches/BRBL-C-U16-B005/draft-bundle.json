@@ -1,0 +1,453 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-C-U16-B005",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_C::U16: Distinguish liquidation choices, waterfall categories and the amended security-value limitation",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04",
+      "IBC_AMENDMENT_ACT_2026",
+      "IBC_COMMENCEMENT_SO2625_2026"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.345-348 / PDF pp.364-367",
+        "statement": "Resolutionfailure/liquidationroute,securedcreditorrelinquishmentorrealisation,surplus/shortfall,estateexclusions,section53waterfall,fasttrack/prepack/voluntaryliquidationdistinct.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "source_id": "IBC_AMENDMENT_ACT_2026",
+        "locator": "Amendmentsection32,PDFpp.15-16",
+        "statement": "Relinquishing creditor secured only tovaluedsecurityextent;remainderunsecured;governmentduesclarification;intercreditorarrangementsvsworkmenillustrations.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F003",
+        "source_id": "IBC_COMMENCEMENT_SO2625_2026",
+        "locator": "PDFp2,item2",
+        "statement": "Section32commenced26May2026.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "A security election changes the distribution analysis",
+          "core_explanation_md": "A secured creditor liquidation file must distinguish relinquishing security to the estate from separately realising it under the applicable route. Surplus, shortfall, costs and distribution are not the same amount. The 2026 section 53 clarification limits the relinquishing creditor secured treatment to the determined security value where that value is below the debt; the remainder is treated as unsecured. Do not teach that relinquishment guarantees full-debt priority.\n\nThe waterfall also separates insolvency/liquidation costs, the specified workmen/secured-creditor tier, employee dues, financial unsecured debts and later categories. Excluded provident/pension/gratuity funds are not simply another distributable tier. Fast-track resolution, MSME pre-pack and solvent voluntary liquidation are distinct routes with their own conditions.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does relinquishing security necessarily give the whole debt secured-tier treatment?",
+            "expected_takeaway": "No. Apply the amended valuation limitation and other distribution conditions."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001",
+          "F002",
+          "F003"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Debt exceeds the stipulated value of relinquished security. A note gives secured-tier treatment to the whole debt without examining the 2026 clarification. What is required?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Treat security value as always equal to the debt",
+              "explanation_md": "The two figures can differ."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Separate the secured extent and unsecured remainder under the amended provision",
+              "explanation_md": "The clarification makes valuation material to classification."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Ignore the waterfall whenever a bank is involved",
+              "explanation_md": "Bank status does not remove distribution law."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Count excluded employee funds as free estate cash",
+              "explanation_md": "Estate exclusions must be respected."
+            }
+          ],
+          "correct_explanation_md": "The clarification makes valuation material to classification."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001",
+          "F002",
+          "F003"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A distressed entity selects voluntary liquidation solely because it wants a faster process, without checking the no-default and solvency conditions. What is missing?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The route-specific eligibility, declarations and approval conditions",
+              "explanation_md": "A desired speed does not establish voluntary-liquidation eligibility."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Only a shorter document title",
+              "explanation_md": "A title change does not satisfy the legal route."
+            },
+            {
+              "option_id": "C",
+              "text_md": "An assumption that fast-track, pre-pack and liquidation are identical",
+              "explanation_md": "They are distinct processes."
+            },
+            {
+              "option_id": "D",
+              "text_md": "A promise that every creditor receives full payment automatically",
+              "explanation_md": "The legal and financial facts must support the claim."
+            }
+          ],
+          "correct_explanation_md": "A desired speed does not establish voluntary-liquidation eligibility."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001",
+          "F002",
+          "F003"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Independent Antigravity review remains required for later amendments, commencement, applicable regulations and judgments. Draft authoring is not a publication or legal-accuracy approval."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-C-U16-B005",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_C::U16"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "IBC_AMENDMENT_ACT_2026",
+        "authority": "Government of India (Gazette of India Extraordinary)",
+        "title": "The Insolvency and Bankruptcy Code (Amendment) Act, 2026 (No. 6 of 2026), assent 6 April 2026",
+        "url": "https://ibbi.gov.in/uploads/legalframwork/2026-04-07-115842-i5nsk-7ed69ef2a4d23a8b0d472cc0fcd55e79.pdf",
+        "publication_date": "2026-04-06",
+        "effective_date": null
+      },
+      {
+        "source_id": "IBC_COMMENCEMENT_SO2625_2026",
+        "authority": "Ministry of Corporate Affairs, Gazette of India",
+        "title": "S.O.2625(E),22May2026, commencement of specified IBC Amendment Act2026 provisions from26May2026",
+        "url": "https://egazette.gov.in/WriteReadData/2026/272855.pdf",
+        "publication_date": "2026-05-22",
+        "effective_date": "2026-05-26"
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_C::U16",
+        "objective_ids": [
+          "BRBL::MOD_C::U16::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_C::U16",
+        "objective_ids": [
+          "BRBL::MOD_C::U16::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_C::U16",
+        "objective_ids": [
+          "BRBL::MOD_C::U16::LO_05"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-C-U16-B005",
+      "draft_id": "D001",
+      "item_id": "item_ad9b52151216d8a642b1fb2c40fed29c5c60ee1eec1c9d3c60dea68cd407f896"
+    },
+    {
+      "batch_id": "BRBL-C-U16-B005",
+      "draft_id": "D002",
+      "item_id": "item_b11202de43db7bab8aa6fe7bf7f8513c9055be29df5f7f8c9a3fe989aeb6f4a4"
+    },
+    {
+      "batch_id": "BRBL-C-U16-B005",
+      "draft_id": "D003",
+      "item_id": "item_04c9e65efef5ba76787ae761b253b7813744693277c8246e665dfe6b013fd9b6"
+    }
+  ],
+  "items": [
+    {
+      "title": "A security election changes the distribution analysis",
+      "core_explanation_md": "A secured creditor liquidation file must distinguish relinquishing security to the estate from separately realising it under the applicable route. Surplus, shortfall, costs and distribution are not the same amount. The 2026 section 53 clarification limits the relinquishing creditor secured treatment to the determined security value where that value is below the debt; the remainder is treated as unsecured. Do not teach that relinquishment guarantees full-debt priority.\n\nThe waterfall also separates insolvency/liquidation costs, the specified workmen/secured-creditor tier, employee dues, financial unsecured debts and later categories. Excluded provident/pension/gratuity funds are not simply another distributable tier. Fast-track resolution, MSME pre-pack and solvent voluntary liquidation are distinct routes with their own conditions.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does relinquishing security necessarily give the whole debt secured-tier treatment?",
+        "expected_takeaway": "No. Apply the amended valuation limitation and other distribution conditions."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_ad9b52151216d8a642b1fb2c40fed29c5c60ee1eec1c9d3c60dea68cd407f896",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U16",
+      "objective_ids": [
+        "BRBL::MOD_C::U16::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.345-348 / PDF pp.364-367"
+        },
+        {
+          "source_id": "IBC_AMENDMENT_ACT_2026",
+          "authority": "Government of India (Gazette of India Extraordinary)",
+          "title": "The Insolvency and Bankruptcy Code (Amendment) Act, 2026 (No. 6 of 2026), assent 6 April 2026",
+          "url": "https://ibbi.gov.in/uploads/legalframwork/2026-04-07-115842-i5nsk-7ed69ef2a4d23a8b0d472cc0fcd55e79.pdf",
+          "publication_date": "2026-04-06",
+          "effective_date": null,
+          "locator": "Amendmentsection32,PDFpp.15-16"
+        },
+        {
+          "source_id": "IBC_COMMENCEMENT_SO2625_2026",
+          "authority": "Ministry of Corporate Affairs, Gazette of India",
+          "title": "S.O.2625(E),22May2026, commencement of specified IBC Amendment Act2026 provisions from26May2026",
+          "url": "https://egazette.gov.in/WriteReadData/2026/272855.pdf",
+          "publication_date": "2026-05-22",
+          "effective_date": "2026-05-26",
+          "locator": "PDFp2,item2"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Debt exceeds the stipulated value of relinquished security. A note gives secured-tier treatment to the whole debt without examining the 2026 clarification. What is required?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Treat security value as always equal to the debt",
+          "explanation_md": "The two figures can differ."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Separate the secured extent and unsecured remainder under the amended provision",
+          "explanation_md": "The clarification makes valuation material to classification."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Ignore the waterfall whenever a bank is involved",
+          "explanation_md": "Bank status does not remove distribution law."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Count excluded employee funds as free estate cash",
+          "explanation_md": "Estate exclusions must be respected."
+        }
+      ],
+      "correct_explanation_md": "The clarification makes valuation material to classification.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_b11202de43db7bab8aa6fe7bf7f8513c9055be29df5f7f8c9a3fe989aeb6f4a4",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U16",
+      "objective_ids": [
+        "BRBL::MOD_C::U16::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.345-348 / PDF pp.364-367"
+        },
+        {
+          "source_id": "IBC_AMENDMENT_ACT_2026",
+          "authority": "Government of India (Gazette of India Extraordinary)",
+          "title": "The Insolvency and Bankruptcy Code (Amendment) Act, 2026 (No. 6 of 2026), assent 6 April 2026",
+          "url": "https://ibbi.gov.in/uploads/legalframwork/2026-04-07-115842-i5nsk-7ed69ef2a4d23a8b0d472cc0fcd55e79.pdf",
+          "publication_date": "2026-04-06",
+          "effective_date": null,
+          "locator": "Amendmentsection32,PDFpp.15-16"
+        },
+        {
+          "source_id": "IBC_COMMENCEMENT_SO2625_2026",
+          "authority": "Ministry of Corporate Affairs, Gazette of India",
+          "title": "S.O.2625(E),22May2026, commencement of specified IBC Amendment Act2026 provisions from26May2026",
+          "url": "https://egazette.gov.in/WriteReadData/2026/272855.pdf",
+          "publication_date": "2026-05-22",
+          "effective_date": "2026-05-26",
+          "locator": "PDFp2,item2"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A distressed entity selects voluntary liquidation solely because it wants a faster process, without checking the no-default and solvency conditions. What is missing?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The route-specific eligibility, declarations and approval conditions",
+          "explanation_md": "A desired speed does not establish voluntary-liquidation eligibility."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Only a shorter document title",
+          "explanation_md": "A title change does not satisfy the legal route."
+        },
+        {
+          "option_id": "C",
+          "text_md": "An assumption that fast-track, pre-pack and liquidation are identical",
+          "explanation_md": "They are distinct processes."
+        },
+        {
+          "option_id": "D",
+          "text_md": "A promise that every creditor receives full payment automatically",
+          "explanation_md": "The legal and financial facts must support the claim."
+        }
+      ],
+      "correct_explanation_md": "A desired speed does not establish voluntary-liquidation eligibility.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_04c9e65efef5ba76787ae761b253b7813744693277c8246e665dfe6b013fd9b6",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U16",
+      "objective_ids": [
+        "BRBL::MOD_C::U16::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.345-348 / PDF pp.364-367"
+        },
+        {
+          "source_id": "IBC_AMENDMENT_ACT_2026",
+          "authority": "Government of India (Gazette of India Extraordinary)",
+          "title": "The Insolvency and Bankruptcy Code (Amendment) Act, 2026 (No. 6 of 2026), assent 6 April 2026",
+          "url": "https://ibbi.gov.in/uploads/legalframwork/2026-04-07-115842-i5nsk-7ed69ef2a4d23a8b0d472cc0fcd55e79.pdf",
+          "publication_date": "2026-04-06",
+          "effective_date": null,
+          "locator": "Amendmentsection32,PDFpp.15-16"
+        },
+        {
+          "source_id": "IBC_COMMENCEMENT_SO2625_2026",
+          "authority": "Ministry of Corporate Affairs, Gazette of India",
+          "title": "S.O.2625(E),22May2026, commencement of specified IBC Amendment Act2026 provisions from26May2026",
+          "url": "https://egazette.gov.in/WriteReadData/2026/272855.pdf",
+          "publication_date": "2026-05-22",
+          "effective_date": "2026-05-26",
+          "locator": "PDFp2,item2"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

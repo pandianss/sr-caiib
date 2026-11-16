@@ -1,0 +1,132 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-C-U06-B004",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL C U06: Prepare magistrate assistance and distinguish management consequences from loss-of-office compensation",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "SARFAESI_GUJARAT_COMPILATION",
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "SARFAESI_GUJARAT_COMPILATION",
+      "locator": "sections14-16, PDF pp.20-22",
+      "statement": "Section14 requires written request and stated authorised-officer affidavit;30-day order period and qualified recorded-reason extension up to60aggregate. Section15 management effects/restoration with controlling-equity proviso;16 excludes loss-office compensation but preserves other recoverables.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F002",
+      "source_id": "S04",
+      "locator": "printed pp.269-279 / PDF pp.288-298, whole unit and end questions visually inspected",
+      "statement": "Courseware outlines enforcement; older redemption wording and placement of management restrictions reconciled against amended primary text rather than repeated.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Assistance and takeover require their own records",
+        "core_explanation_md": "A section 14 request is supported by the authorised officer affidavit addressing the specified claim, valid security, limitation, default, classification, notice, objection treatment and compliance facts. The authority must satisfy itself on that record. The thirty-day order period has a qualified extension, for recorded reasons beyond control, within sixty days in aggregate; this does not certify the outcome of a real proceeding.\n\nManagement takeover under section 15 has statutory publication and governance effects. Restoration after full realisation has the stated controlling-equity conversion exception. Section 16 bars the specified loss-of-office compensation but preserves other recoverable money claims. Do not turn one compensation exclusion into extinction of every amount owed to a displaced director or manager.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does the loss-of-office compensation bar erase every other recoverable money claim?",
+          "expected_takeaway": "No. Section16 separately preserves other recoverables."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A section14 application supplies only the loan balance and omits the statutory affidavit compliance facts. Which improvement is required?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Treat the balance figure as proof of every required fact",
+            "explanation_md": "The statutory declaration covers more than the outstanding amount."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Replace the affidavit with an undated internal collection target",
+            "explanation_md": "An internal target does not satisfy the described affidavit requirements."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Provide the authorised-officer affidavit addressing the specified security, limitation, notice and compliance facts",
+            "explanation_md": "The authority must consider the required statutory record."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Assume the authority has already taken possession merely because the request was sent",
+            "explanation_md": "Request and completed possession are different events."
+          }
+        ],
+        "correct_explanation_md": "The authority must consider the required statutory record."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A displaced manager has one claim for loss of office and a separate otherwise recoverable money claim. Which section16 distinction matters?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The compensation exclusion does not itself extinguish the distinct otherwise recoverable amount",
+            "explanation_md": "Section16(2) preserves that separate category."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Every sum owed to a manager is automatically cancelled",
+            "explanation_md": "This enlarges the exclusion beyond its stated scope."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The compensation exclusion guarantees a fresh management appointment",
+            "explanation_md": "No such appointment right follows from the distinction."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A separate debt becomes compensation merely because its holder was a manager",
+            "explanation_md": "The character of the claim must be assessed rather than assumed."
+          }
+        ],
+        "correct_explanation_md": "Section16(2) preserves that separate category."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Codex original draft,16November2026; independent legal/session, originality, calculation and pedagogy review pending; no publication approval.",
+    "Primary compilation includes later amendments but is not certified complete through30June2026; URL date not used as edition evidence. Later judgments, statutory instruments and entity-specific eligibility still need review.",
+    "Remaining unit-depth gaps: current Rules8-9 sale procedure, valuation/reserve/publication/bid payment details, section19 compensation, section13(7)proceeds worked assessment, section13(9)value calculation and liquidation/IBC interplay. These batches do not establish complete unit coverage.",
+    "Source end questions were inspected and not reused. New teaching and assessment scenarios were designed from a factual brief; author comparison is not independent review."
+  ],
+  "next_batch_hint": "Finish C U06 depth/source gaps, then C U07 Central Registry, printed p.281 / PDF p.300"
+}

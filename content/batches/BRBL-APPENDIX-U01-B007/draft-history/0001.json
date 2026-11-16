@@ -1,0 +1,360 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-APPENDIX-U01-B007",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_APPENDIX::U01: Separate payment-system authorisation,settlement and disputes",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "Appendix7,printed pp.613-616 / PDF pp.632-635",
+        "statement": "3RBIauthority4authorisation23settlementfinality24disputes25dishonourelectronictransfer26penalties.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Identify the system event and the responsible participant",
+          "core_explanation_md": "The payment-system statute addresses authorisation and supervision,approved settlement arrangements,finality,disputes and specified contraventions. A failed customer transfer is not automatically the same legal event as a system-participant settlement obligation or a system-provider authorisation defect.\n\nFor a settlement problem,identify the applicable approved procedure and finality event. For a dispute or dishonour issue,read the specific actor,conditions and remedy. The appendix is a navigation aid; the full rule and system facts are needed before asserting that insolvency reverses a settlement or that every electronic failure is a statutory offence.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Why distinguish a customer failure from system settlement?",
+            "expected_takeaway": "They can involve different obligations,actors and legal events."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A participant insolvency occurs after a settlement said to be final. Which research path is central?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only the customer app design",
+              "explanation_md": "It does not decide finality."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The company member register alone",
+              "explanation_md": "It is not the settlement rule."
+            },
+            {
+              "option_id": "C",
+              "text_md": "A presumption that every settlement reverses",
+              "explanation_md": "That ignores the statutory finality framework."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The approved settlement procedure and statutory finality provisions",
+              "explanation_md": "The legal event and system rules matter."
+            }
+          ],
+          "correct_explanation_md": "The legal event and system rules matter."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Every failed electronic transfer is labelled the same offence without checking the statutory conditions. What must be done?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Treat all technical failures as proven crime",
+              "explanation_md": "That is unsupported."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Identify the act,actor and conditions of the specific provision",
+              "explanation_md": "A failure label does not complete the legal test."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Ignore payment-system rules",
+              "explanation_md": "They may govern the obligation."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Only count app notifications",
+              "explanation_md": "Notifications do not establish all elements."
+            }
+          ],
+          "correct_explanation_md": "A failure label does not complete the legal test."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Navigation drafts are original study aids,not a current consolidated bare Act. Substantive lessons remain in their exact units. Antigravity review pending for the dated legal text,judicial status and section references.",
+      "Legacy source indexes contain omitted,amended and State-specific provisions; every operational legal conclusion requires its full applicable text."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-APPENDIX-U01-B007",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_APPENDIX::U01"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_APPENDIX::U01",
+        "objective_ids": [
+          "BRBL::MOD_APPENDIX::U01::LO_07"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_APPENDIX::U01",
+        "objective_ids": [
+          "BRBL::MOD_APPENDIX::U01::LO_07"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_APPENDIX::U01",
+        "objective_ids": [
+          "BRBL::MOD_APPENDIX::U01::LO_07"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-APPENDIX-U01-B007",
+      "draft_id": "D001",
+      "item_id": "item_5f9ee390373d84a4b842e95ad1352441fadb9144c76d64a60a92f4c595b060d2"
+    },
+    {
+      "batch_id": "BRBL-APPENDIX-U01-B007",
+      "draft_id": "D002",
+      "item_id": "item_6fa2d034c52073f81e2df0c9d19b0e625f64ca2ec25d5fa1f8782bb2aceffd67"
+    },
+    {
+      "batch_id": "BRBL-APPENDIX-U01-B007",
+      "draft_id": "D003",
+      "item_id": "item_f23a2eb575dc4d8685ff93780366991eb11ebf7d1c03fe66c81d5d233e6004a3"
+    }
+  ],
+  "items": [
+    {
+      "title": "Identify the system event and the responsible participant",
+      "core_explanation_md": "The payment-system statute addresses authorisation and supervision,approved settlement arrangements,finality,disputes and specified contraventions. A failed customer transfer is not automatically the same legal event as a system-participant settlement obligation or a system-provider authorisation defect.\n\nFor a settlement problem,identify the applicable approved procedure and finality event. For a dispute or dishonour issue,read the specific actor,conditions and remedy. The appendix is a navigation aid; the full rule and system facts are needed before asserting that insolvency reverses a settlement or that every electronic failure is a statutory offence.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Why distinguish a customer failure from system settlement?",
+        "expected_takeaway": "They can involve different obligations,actors and legal events."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_5f9ee390373d84a4b842e95ad1352441fadb9144c76d64a60a92f4c595b060d2",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_APPENDIX",
+      "unit_id": "BRBL::MOD_APPENDIX::U01",
+      "objective_ids": [
+        "BRBL::MOD_APPENDIX::U01::LO_07"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Appendix7,printed pp.613-616 / PDF pp.632-635"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A participant insolvency occurs after a settlement said to be final. Which research path is central?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only the customer app design",
+          "explanation_md": "It does not decide finality."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The company member register alone",
+          "explanation_md": "It is not the settlement rule."
+        },
+        {
+          "option_id": "C",
+          "text_md": "A presumption that every settlement reverses",
+          "explanation_md": "That ignores the statutory finality framework."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The approved settlement procedure and statutory finality provisions",
+          "explanation_md": "The legal event and system rules matter."
+        }
+      ],
+      "correct_explanation_md": "The legal event and system rules matter.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_6fa2d034c52073f81e2df0c9d19b0e625f64ca2ec25d5fa1f8782bb2aceffd67",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_APPENDIX",
+      "unit_id": "BRBL::MOD_APPENDIX::U01",
+      "objective_ids": [
+        "BRBL::MOD_APPENDIX::U01::LO_07"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Appendix7,printed pp.613-616 / PDF pp.632-635"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Every failed electronic transfer is labelled the same offence without checking the statutory conditions. What must be done?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Treat all technical failures as proven crime",
+          "explanation_md": "That is unsupported."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Identify the act,actor and conditions of the specific provision",
+          "explanation_md": "A failure label does not complete the legal test."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Ignore payment-system rules",
+          "explanation_md": "They may govern the obligation."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Only count app notifications",
+          "explanation_md": "Notifications do not establish all elements."
+        }
+      ],
+      "correct_explanation_md": "A failure label does not complete the legal test.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_f23a2eb575dc4d8685ff93780366991eb11ebf7d1c03fe66c81d5d233e6004a3",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_APPENDIX",
+      "unit_id": "BRBL::MOD_APPENDIX::U01",
+      "objective_ids": [
+        "BRBL::MOD_APPENDIX::U01::LO_07"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Appendix7,printed pp.613-616 / PDF pp.632-635"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

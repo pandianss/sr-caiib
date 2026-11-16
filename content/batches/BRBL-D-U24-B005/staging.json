@@ -1,0 +1,120 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U24-B005",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U24: Distinguish actionable-claim assignment from secured-debt transfer",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed p.547 / PDF p.566",
+      "statement": "Actionableclaimexcludesmortgagehypothecationpledgesecureddebt;130writingtransferor signature;noticeprotectsdebtorpaymentbeforeknowledge;assigneesueownname.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Identify the claim and protect the payment trail",
+        "core_explanation_md": "The described actionable-claim definition concerns the qualifying unsecured debt or beneficial movable-property interest outside possession, and excludes the specified mortgage, hypothecation or pledge-secured debts. Do not treat every banking receivable as identical merely because it involves money.\n\nThe assignment route requires the prescribed signed written instrument. Notice to the debtor is not the sole event creating the transfer, but lack of notice can affect the treatment of payments or dealings before the debtor knows of it. The transferee has the described ability to sue in their own name, subject to the applicable law. Keep the instrument, claim identification, notice and payment history together; assignment is not proved by an internal spreadsheet entry.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does absence of debtor notice automatically mean no assignment could occur?",
+          "expected_takeaway": "No. Transfer formalities and debtor-protection consequences differ."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A portfolio includes debts secured by pledge, and a note assumes every debt is an actionable claim under the stated definition. What is missing?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only the portfolio total",
+            "explanation_md": "The legal categories still matter."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The exclusion for the specified secured debts",
+            "explanation_md": "The definition is not every receivable."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A rule that money claims cannot be transferred",
+            "explanation_md": "The source recognises a transfer route for qualifying claims; the question concerns the definition exclusions."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The bank branch code",
+            "explanation_md": "It does not classify the claim."
+          }
+        ],
+        "correct_explanation_md": "The definition is not every receivable."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An assignee relies only on an internal spreadsheet and cannot produce the required signed assignment instrument. Which issue remains?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only the spreadsheet colour",
+            "explanation_md": "Visual formatting does not establish the signed assignment instrument or the legal transfer formalities."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Debtor silence necessarily cures all transfer defects",
+            "explanation_md": "That is unsupported."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Every assignment needs no documentation",
+            "explanation_md": "The source states a written-instrument route."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The prescribed transfer formalities and identification evidence",
+            "explanation_md": "An internal entry is not sufficient proof of the legal transfer."
+          }
+        ],
+        "correct_explanation_md": "An internal entry is not sufficient proof of the legal transfer."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Antigravity independent legal,originality and session review pending; no publication approval.",
+    "Current primary TPA and State rules must reconcile registration,section69 and actionable-claim exceptions; source case facts/table expression not reused."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

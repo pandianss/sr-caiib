@@ -1,0 +1,119 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-C-U16-B001",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_C::U16: Classify insolvency roles, financial/operational debt and institutional responsibilities",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.336-339 / PDF pp.355-358",
+      "statement": "IBC resolution seeks viable reorganisation/value; debt categories distinct; financial debt time-value and inclusions,operational supply/employment/statutorydues. IP/IU/authority/IBBI differentroles;guarantor/individualcommencementnotgeneralassumption.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Classify the claim before selecting the process",
+        "core_explanation_md": "Financial distress is a condition; admission to a statutory process is a legal event. The IBC framework seeks a collective resolution where appropriate, rather than guaranteeing the first creditor full payment. Financial debt concerns the stated time-value-of-money concept and inclusions. Operational debt concerns the described goods, services, employment and statutory dues. Assignment to a bank does not automatically change an operational claim into a financial one.\n\nThe IP administers the process, an information utility supports authenticated financial information, the adjudicating authority makes the required orders, and IBBI regulates the identified ecosystem. Entity coverage and actual commencement of individual/guarantor provisions must be checked separately.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does assigning a supply invoice to a bank necessarily change its legal debt category?",
+          "expected_takeaway": "No. The underlying claim character and applicable definition remain important."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A supply invoice is legally assigned to a bank. The file relabels it financial debt solely because a bank now holds it. What must be examined?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The underlying debt character and applicable statutory definition",
+            "explanation_md": "Assignee identity alone does not transform the claim."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Only the bank licence number",
+            "explanation_md": "Licensing does not define the underlying transaction."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The debtor logo",
+            "explanation_md": "Branding is irrelevant to debt classification."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Whether a branch opened nearby",
+            "explanation_md": "Branch location does not change the debt character."
+          }
+        ],
+        "correct_explanation_md": "Assignee identity alone does not transform the claim."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An information utility record is treated as the authority order admitting CIRP. Which distinction is needed?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Information and adjudication are the same function",
+            "explanation_md": "The institutions have separate statutory responsibilities."
+          },
+          {
+            "option_id": "B",
+            "text_md": "An IP can privately replace every admission order",
+            "explanation_md": "Administration does not substitute for judicial admission."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Default evidence and the competent admission decision are different records",
+            "explanation_md": "The evidence supports, but is not itself, the required order."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Every record proves full recovery",
+            "explanation_md": "A default record does not establish payment."
+          }
+        ],
+        "correct_explanation_md": "The evidence supports, but is not itself, the required order."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Independent Antigravity review remains required for later amendments, commencement, applicable regulations and judgments. Draft authoring is not a publication or legal-accuracy approval."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

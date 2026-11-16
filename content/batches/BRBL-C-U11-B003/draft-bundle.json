@@ -1,0 +1,359 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-C-U11-B003",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_C::U11: Identify a subsisting legally recoverable debt and distinguish Tribunal officers",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.305-306 / PDF pp.324-325",
+        "statement": "Section2(g) debt broad but subsisting/legally recoverable on application; prescribed business nexus; includes interest, assignments,decrees/awards and stated debt-security branch. Presiding Officer adjudicates,Recovery Officer executes certificate.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Build the claim and its legal status together",
+          "core_explanation_md": "A claimed balance is not established merely by copying an account number. The debt definition includes the described liabilities and interest, whether secured or unsecured, assigned or reflected in the specified decree/award routes, but requires the relevant business nexus and a subsisting, legally recoverable claim at application. Preserve the underlying documents, amount reconciliation and limitation analysis.\n\nKeep the institutional roles distinct: the Presiding Officer determines the application and issues the stated recovery certificate; the Recovery Officer carries out recovery under the applicable powers. An execution officer is not a substitute forum for retrying every issue already determined in the certificate.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does assignment alone extinguish the debtor obligation?",
+            "expected_takeaway": "No. The claim transfer and legal recoverability must be analysed separately."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A bank produces a balance but no evidence that the claim is subsisting and legally recoverable on the application date. What remains necessary?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only a new letterhead for the balance",
+              "explanation_md": "Presentation does not establish legal recoverability."
+            },
+            {
+              "option_id": "B",
+              "text_md": "An assumption that every recorded balance is recoverable forever",
+              "explanation_md": "Limitation and substantive liability still matter."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Reconcile the underlying liability, documents and legal status at filing",
+              "explanation_md": "The definition includes more than the presence of a ledger entry."
+            },
+            {
+              "option_id": "D",
+              "text_md": "A declaration that unsecured debts are never debts",
+              "explanation_md": "The source definition includes unsecured claims."
+            }
+          ],
+          "correct_explanation_md": "The definition includes more than the presence of a ledger entry."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "An execution note asks the Recovery Officer to decide the original liability afresh rather than execute or use the proper correction/appeal route. Which distinction matters?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Adjudication and certificate execution have different functions",
+              "explanation_md": "The proper route depends on whether the issue concerns adjudication, correction or execution."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The Recovery Officer is the borrower accountant",
+              "explanation_md": "That is not the statutory role."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Every execution objection automatically cancels the certificate",
+              "explanation_md": "An objection is not an order setting it aside."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The certificate amount can be edited privately by the applicant",
+              "explanation_md": "Private editing is not the statutory correction procedure."
+            }
+          ],
+          "correct_explanation_md": "The proper route depends on whether the issue concerns adjudication, correction or execution."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "RDB courseware snapshot only. Current consolidated statute, notifications, Tribunal Reforms law, procedural rules and later judgments require Antigravity verification. Historical institutional names and court summaries are not current operational instructions."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-C-U11-B003",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_C::U11"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_C::U11",
+        "objective_ids": [
+          "BRBL::MOD_C::U11::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_C::U11",
+        "objective_ids": [
+          "BRBL::MOD_C::U11::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_C::U11",
+        "objective_ids": [
+          "BRBL::MOD_C::U11::LO_03"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-C-U11-B003",
+      "draft_id": "D001",
+      "item_id": "item_6ffac0dcf7d28207f1f92171205af3d8305d9cf3e3ab42d7f0bd7d0ca2ce7521"
+    },
+    {
+      "batch_id": "BRBL-C-U11-B003",
+      "draft_id": "D002",
+      "item_id": "item_a7fe6873b8f1a546b36c3bddb0466c4aa3aa30e3dad87c45cb3b18218629d79a"
+    },
+    {
+      "batch_id": "BRBL-C-U11-B003",
+      "draft_id": "D003",
+      "item_id": "item_72de10fe5e2be20f28b8220268a9f92d3bec9dc7b736b8a593d129b0840a2947"
+    }
+  ],
+  "items": [
+    {
+      "title": "Build the claim and its legal status together",
+      "core_explanation_md": "A claimed balance is not established merely by copying an account number. The debt definition includes the described liabilities and interest, whether secured or unsecured, assigned or reflected in the specified decree/award routes, but requires the relevant business nexus and a subsisting, legally recoverable claim at application. Preserve the underlying documents, amount reconciliation and limitation analysis.\n\nKeep the institutional roles distinct: the Presiding Officer determines the application and issues the stated recovery certificate; the Recovery Officer carries out recovery under the applicable powers. An execution officer is not a substitute forum for retrying every issue already determined in the certificate.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does assignment alone extinguish the debtor obligation?",
+        "expected_takeaway": "No. The claim transfer and legal recoverability must be analysed separately."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_6ffac0dcf7d28207f1f92171205af3d8305d9cf3e3ab42d7f0bd7d0ca2ce7521",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U11",
+      "objective_ids": [
+        "BRBL::MOD_C::U11::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.305-306 / PDF pp.324-325"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A bank produces a balance but no evidence that the claim is subsisting and legally recoverable on the application date. What remains necessary?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only a new letterhead for the balance",
+          "explanation_md": "Presentation does not establish legal recoverability."
+        },
+        {
+          "option_id": "B",
+          "text_md": "An assumption that every recorded balance is recoverable forever",
+          "explanation_md": "Limitation and substantive liability still matter."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Reconcile the underlying liability, documents and legal status at filing",
+          "explanation_md": "The definition includes more than the presence of a ledger entry."
+        },
+        {
+          "option_id": "D",
+          "text_md": "A declaration that unsecured debts are never debts",
+          "explanation_md": "The source definition includes unsecured claims."
+        }
+      ],
+      "correct_explanation_md": "The definition includes more than the presence of a ledger entry.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_a7fe6873b8f1a546b36c3bddb0466c4aa3aa30e3dad87c45cb3b18218629d79a",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U11",
+      "objective_ids": [
+        "BRBL::MOD_C::U11::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.305-306 / PDF pp.324-325"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "An execution note asks the Recovery Officer to decide the original liability afresh rather than execute or use the proper correction/appeal route. Which distinction matters?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Adjudication and certificate execution have different functions",
+          "explanation_md": "The proper route depends on whether the issue concerns adjudication, correction or execution."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The Recovery Officer is the borrower accountant",
+          "explanation_md": "That is not the statutory role."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Every execution objection automatically cancels the certificate",
+          "explanation_md": "An objection is not an order setting it aside."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The certificate amount can be edited privately by the applicant",
+          "explanation_md": "Private editing is not the statutory correction procedure."
+        }
+      ],
+      "correct_explanation_md": "The proper route depends on whether the issue concerns adjudication, correction or execution.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_72de10fe5e2be20f28b8220268a9f92d3bec9dc7b736b8a593d129b0840a2947",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U11",
+      "objective_ids": [
+        "BRBL::MOD_C::U11::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.305-306 / PDF pp.324-325"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

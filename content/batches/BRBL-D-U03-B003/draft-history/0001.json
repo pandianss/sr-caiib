@@ -1,0 +1,360 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-D-U03-B003",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_D::U03: Apply surety subrogation,security protection,misrepresentation and reimbursement",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.417-418 / PDF pp.436-437",
+        "statement": "140subrogationafterperformance;141securitybenefit/lossvalue;142/143misrepresentation/concealment;145rightfullypaidnotwrongfully;PDindemnity.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Payment creates rights,but not a licence to recover any amount",
+          "core_explanation_md": "A surety who performs the covered obligation obtains the described subrogation position and can seek the amounts rightfully paid under the implied indemnity. An unnecessary overpayment is not automatically recoverable from the principal debtor. Preserve the demand,coverage,payment and costs basis.\n\nThe surety also has the stated benefit of creditor-held security,and its loss can affect liability to the extent of the relevant value. Creditor misrepresentation or concealment of material circumstances has its own validity consequences. These are separate analyses:security loss,discharge,wrongful overpayment and fraudulent procurement should not be entered as one unexplained adjustment.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Can a surety automatically recover a knowingly wrongful overpayment from the principal debtor?",
+            "expected_takeaway": "No. The source distinguishes rightful from wrongful payment."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A surety pays an amount beyond the established covered obligation and seeks automatic reimbursement of the excess. What must be checked?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Every voluntary payment is rightfully due by definition",
+              "explanation_md": "The legal payment basis still matters."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The principal debtor loses all defences after any payment",
+              "explanation_md": "Reimbursement remains subject to its conditions."
+            },
+            {
+              "option_id": "C",
+              "text_md": "A larger payment creates a larger original debt",
+              "explanation_md": "Payment does not rewrite the underlying obligation."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Which amounts were rightfully paid under the guarantee",
+              "explanation_md": "The implied indemnity does not automatically cover wrongful excess."
+            }
+          ],
+          "correct_explanation_md": "The implied indemnity does not automatically cover wrongful excess."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "The creditor loses relevant security and ignores the effect on the surety. Which issue arises?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The surety automatically owns every other creditor asset",
+              "explanation_md": "The source gives a defined security benefit."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The surety benefit and possible discharge to the relevant security value",
+              "explanation_md": "Loss of security has a specific legal consequence to assess."
+            },
+            {
+              "option_id": "C",
+              "text_md": "All debt is necessarily cancelled irrespective of value",
+              "explanation_md": "The extent must be evaluated."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Only the bank document colour matters",
+              "explanation_md": "That does not address security rights."
+            }
+          ],
+          "correct_explanation_md": "Loss of security has a specific legal consequence to assess."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Drafts for Antigravity review. Consolidated statute,exceptions and later case law require independent reconciliation;no publication approval.",
+      "Book guarantee examples contain party-name reversal and overbroad underlying-invalidity assertions;not reused. Demand-guarantee injunction and limitation issues require primary review."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-D-U03-B003",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_D::U03"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_D::U03",
+        "objective_ids": [
+          "BRBL::MOD_D::U03::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_D::U03",
+        "objective_ids": [
+          "BRBL::MOD_D::U03::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_D::U03",
+        "objective_ids": [
+          "BRBL::MOD_D::U03::LO_03"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-D-U03-B003",
+      "draft_id": "D001",
+      "item_id": "item_204b31af04c6dd97cb662aa28482e770e4b0d9f05bd6691eda2a1cb308a8c2aa"
+    },
+    {
+      "batch_id": "BRBL-D-U03-B003",
+      "draft_id": "D002",
+      "item_id": "item_3fb31407f4ef68fea8ca56b26865ea93a1457aeb0718d155c9b926ec6c523eaa"
+    },
+    {
+      "batch_id": "BRBL-D-U03-B003",
+      "draft_id": "D003",
+      "item_id": "item_1a6fd5c1bc222bfb631f4600138d236f9ec429f1e96fe9aa36af045df6826bb8"
+    }
+  ],
+  "items": [
+    {
+      "title": "Payment creates rights,but not a licence to recover any amount",
+      "core_explanation_md": "A surety who performs the covered obligation obtains the described subrogation position and can seek the amounts rightfully paid under the implied indemnity. An unnecessary overpayment is not automatically recoverable from the principal debtor. Preserve the demand,coverage,payment and costs basis.\n\nThe surety also has the stated benefit of creditor-held security,and its loss can affect liability to the extent of the relevant value. Creditor misrepresentation or concealment of material circumstances has its own validity consequences. These are separate analyses:security loss,discharge,wrongful overpayment and fraudulent procurement should not be entered as one unexplained adjustment.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Can a surety automatically recover a knowingly wrongful overpayment from the principal debtor?",
+        "expected_takeaway": "No. The source distinguishes rightful from wrongful payment."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_204b31af04c6dd97cb662aa28482e770e4b0d9f05bd6691eda2a1cb308a8c2aa",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U03",
+      "objective_ids": [
+        "BRBL::MOD_D::U03::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.417-418 / PDF pp.436-437"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A surety pays an amount beyond the established covered obligation and seeks automatic reimbursement of the excess. What must be checked?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Every voluntary payment is rightfully due by definition",
+          "explanation_md": "The legal payment basis still matters."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The principal debtor loses all defences after any payment",
+          "explanation_md": "Reimbursement remains subject to its conditions."
+        },
+        {
+          "option_id": "C",
+          "text_md": "A larger payment creates a larger original debt",
+          "explanation_md": "Payment does not rewrite the underlying obligation."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Which amounts were rightfully paid under the guarantee",
+          "explanation_md": "The implied indemnity does not automatically cover wrongful excess."
+        }
+      ],
+      "correct_explanation_md": "The implied indemnity does not automatically cover wrongful excess.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_3fb31407f4ef68fea8ca56b26865ea93a1457aeb0718d155c9b926ec6c523eaa",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U03",
+      "objective_ids": [
+        "BRBL::MOD_D::U03::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.417-418 / PDF pp.436-437"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "The creditor loses relevant security and ignores the effect on the surety. Which issue arises?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The surety automatically owns every other creditor asset",
+          "explanation_md": "The source gives a defined security benefit."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The surety benefit and possible discharge to the relevant security value",
+          "explanation_md": "Loss of security has a specific legal consequence to assess."
+        },
+        {
+          "option_id": "C",
+          "text_md": "All debt is necessarily cancelled irrespective of value",
+          "explanation_md": "The extent must be evaluated."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Only the bank document colour matters",
+          "explanation_md": "That does not address security rights."
+        }
+      ],
+      "correct_explanation_md": "Loss of security has a specific legal consequence to assess.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_1a6fd5c1bc222bfb631f4600138d236f9ec429f1e96fe9aa36af045df6826bb8",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U03",
+      "objective_ids": [
+        "BRBL::MOD_D::U03::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.417-418 / PDF pp.436-437"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

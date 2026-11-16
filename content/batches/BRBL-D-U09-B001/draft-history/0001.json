@@ -1,0 +1,359 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-D-U09-B001",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_D::U09: Identify unpaid-seller status and separate possession-based lien from stoppage in transit",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.450-451 / PDF pp.469-470",
+        "statement": "45priceunpaid/tenderorconditionalinstrumentdishonour;46goods/personalrights;47lienpossessionnocredit/expiredcredit/insolvency;lossliencarrierwithoutreservation,buyerpossession,waiver;stoppagebuyerinsolvencyandtransit.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "The location of goods determines which remedy to examine",
+          "core_explanation_md": "Unpaid-seller status concerns the price and the legal payment arrangement. A dishonoured instrument accepted conditionally differs from an instrument taken as absolute payment. Once status is established,the remedy still depends on the transaction:retention while in possession is not the same as stopping goods already with a carrier.\n\nThe lien route has the described credit/insolvency conditions and can end through the specified delivery or waiver events. Stoppage requires the stated buyer-insolvency and transit facts. Obtaining a price decree does not by itself prove that the possession-based lien was waived. Trace price,payment terms,ownership,possession,carrier stage and insolvency separately.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does every unpaid invoice automatically permit stoppage after the buyer already obtained delivery?",
+            "expected_takeaway": "No. The transit and other conditions must still exist."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A seller calls a completed buyer delivery goods in transit solely because the price is unpaid. What fact is missing?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only the invoice tax amount",
+              "explanation_md": "That does not determine transit."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The seller preferred carrier",
+              "explanation_md": "Preference does not undo completed delivery."
+            },
+            {
+              "option_id": "C",
+              "text_md": "A rule that nonpayment permanently preserves transit",
+              "explanation_md": "The source defines transit by actual events."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Whether the goods remain in the legally relevant transit stage",
+              "explanation_md": "Unpaid status alone does not establish the remedy."
+            }
+          ],
+          "correct_explanation_md": "Unpaid status alone does not establish the remedy."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A credit sale term is still running and no other lien ground is established. The seller assumes nonpayment before maturity alone proves the stated lien right. What is required?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "All credit terms can be ignored",
+              "explanation_md": "The source makes them relevant."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Check the applicable lien ground,including credit expiry or insolvency",
+              "explanation_md": "The remedy is conditional."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Every seller must surrender all rights permanently",
+              "explanation_md": "That blanket conclusion is unsupported."
+            },
+            {
+              "option_id": "D",
+              "text_md": "A decree is automatically full payment",
+              "explanation_md": "A judgment and satisfaction are different events."
+            }
+          ],
+          "correct_explanation_md": "The remedy is conditional."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Antigravity review pending for primary law,exceptions,originality and current applicability. No publication approval."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-D-U09-B001",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_D::U09"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_D::U09",
+        "objective_ids": [
+          "BRBL::MOD_D::U09::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_D::U09",
+        "objective_ids": [
+          "BRBL::MOD_D::U09::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_D::U09",
+        "objective_ids": [
+          "BRBL::MOD_D::U09::LO_01"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-D-U09-B001",
+      "draft_id": "D001",
+      "item_id": "item_d8135e8e47c2a1fff4ee1192f46cc39e4673379b01cc1da721f0f1e2bed494a5"
+    },
+    {
+      "batch_id": "BRBL-D-U09-B001",
+      "draft_id": "D002",
+      "item_id": "item_ab6a05f828efedc674d36cdd01e983480e77fc6b9cd08ccfaae8065a85898d01"
+    },
+    {
+      "batch_id": "BRBL-D-U09-B001",
+      "draft_id": "D003",
+      "item_id": "item_4a997c8e1137a4709687b5f1e2713649fc860f7eab16c0ffa1a34d94da45bc54"
+    }
+  ],
+  "items": [
+    {
+      "title": "The location of goods determines which remedy to examine",
+      "core_explanation_md": "Unpaid-seller status concerns the price and the legal payment arrangement. A dishonoured instrument accepted conditionally differs from an instrument taken as absolute payment. Once status is established,the remedy still depends on the transaction:retention while in possession is not the same as stopping goods already with a carrier.\n\nThe lien route has the described credit/insolvency conditions and can end through the specified delivery or waiver events. Stoppage requires the stated buyer-insolvency and transit facts. Obtaining a price decree does not by itself prove that the possession-based lien was waived. Trace price,payment terms,ownership,possession,carrier stage and insolvency separately.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does every unpaid invoice automatically permit stoppage after the buyer already obtained delivery?",
+        "expected_takeaway": "No. The transit and other conditions must still exist."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_d8135e8e47c2a1fff4ee1192f46cc39e4673379b01cc1da721f0f1e2bed494a5",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U09",
+      "objective_ids": [
+        "BRBL::MOD_D::U09::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.450-451 / PDF pp.469-470"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A seller calls a completed buyer delivery goods in transit solely because the price is unpaid. What fact is missing?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only the invoice tax amount",
+          "explanation_md": "That does not determine transit."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The seller preferred carrier",
+          "explanation_md": "Preference does not undo completed delivery."
+        },
+        {
+          "option_id": "C",
+          "text_md": "A rule that nonpayment permanently preserves transit",
+          "explanation_md": "The source defines transit by actual events."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Whether the goods remain in the legally relevant transit stage",
+          "explanation_md": "Unpaid status alone does not establish the remedy."
+        }
+      ],
+      "correct_explanation_md": "Unpaid status alone does not establish the remedy.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_ab6a05f828efedc674d36cdd01e983480e77fc6b9cd08ccfaae8065a85898d01",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U09",
+      "objective_ids": [
+        "BRBL::MOD_D::U09::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.450-451 / PDF pp.469-470"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A credit sale term is still running and no other lien ground is established. The seller assumes nonpayment before maturity alone proves the stated lien right. What is required?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "All credit terms can be ignored",
+          "explanation_md": "The source makes them relevant."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Check the applicable lien ground,including credit expiry or insolvency",
+          "explanation_md": "The remedy is conditional."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Every seller must surrender all rights permanently",
+          "explanation_md": "That blanket conclusion is unsupported."
+        },
+        {
+          "option_id": "D",
+          "text_md": "A decree is automatically full payment",
+          "explanation_md": "A judgment and satisfaction are different events."
+        }
+      ],
+      "correct_explanation_md": "The remedy is conditional.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_4a997c8e1137a4709687b5f1e2713649fc860f7eab16c0ffa1a34d94da45bc54",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U09",
+      "objective_ids": [
+        "BRBL::MOD_D::U09::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.450-451 / PDF pp.469-470"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-C-U09-B003",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_C::U09: Distinguish rulemaking, historical consequential amendments and limitation outcomes",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.296-298 / PDF pp.315-317",
+      "statement": "Section38 Gazette rulemaking and parliamentary laying/modification;41 schedule amendments;book expressly labels SICA references historical after repeal. Limitation depends claim/cause and applicable law, not universal3year/12year shortcut.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Keep delegated rules and historical cross-references in their own time",
+        "core_explanation_md": "Rules are made through the statutory rulemaking power and notification mechanism, with the stated parliamentary laying and modification framework. An internal bank circular does not become a statutory rule merely by reproducing a section number. Equally, subsequent parliamentary modification must be applied with its statutory saving for earlier acts.\n\nThe Schedule contains consequential amendments to other enactments. The book expressly identifies the SICA/BIFR discussion as historical after repeal; it should not become a present filing guide. A limitation decision also needs the actual cause of action, remedy, applicable article and any legally effective extension or exclusion. A bare elapsed-year figure is insufficient to determine every secured claim.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Can a historical BIFR cross-reference be used as a current application instruction?",
+          "expected_takeaway": "No. Establish the applicable legislation and operative procedure."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A learning note presents a repealed SICA/BIFR procedure as a current compulsory recovery step. Which edit is required?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Label its historical purpose and separate the current applicable framework",
+            "explanation_md": "The source itself identifies the repeal and historical context."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Change the institution name without checking the legal route",
+            "explanation_md": "Cosmetic relabelling does not establish current law."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Delete every reference to legal history from provenance",
+            "explanation_md": "Historical evidence can remain if its role is accurately described."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Assume an old schedule amendment revives the repealed Act",
+            "explanation_md": "A historical cross-reference does not establish revival."
+          }
+        ],
+        "correct_explanation_md": "The source itself identifies the repeal and historical context."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Only the statement four years have elapsed is supplied for a proposed limitation decision. What is the defensible answer?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Every such claim is necessarily timely",
+            "explanation_md": "The claim and applicable article are unspecified."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Every such claim is necessarily time-barred",
+            "explanation_md": "Some remedies or legally effective events can differ."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Identify the remedy, cause of action and applicable limitation facts before deciding",
+            "explanation_md": "An elapsed period alone is not a complete limitation analysis."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Ignore limitation because this is statutory enforcement",
+            "explanation_md": "Section36 expressly keeps limitation relevant."
+          }
+        ],
+        "correct_explanation_md": "An elapsed period alone is not a complete limitation analysis."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Authoring is based on the stated source framework; independent June2026 consolidation, notifications, State/UT scope and later case-law review are deferred to Antigravity. No source gap is resolved by import validity."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

@@ -1,0 +1,119 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U09-B002",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U09: Apply sub-sale/title-document qualifications,resale conditions and personal remedies",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.451-452 / PDF pp.470-471",
+      "statement": "53subsale/pledgequalifiedgoodfaithvalue/title-doc effect;resaleperishableorrequirednotice/reasonabletime;damages/profitconsequences;price/damages/interestpersonalclaims separate.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "A right over goods and a personal claim can coexist",
+        "core_explanation_md": "An unpaid seller may have the described rights against the goods and separate claims for price, damages or interest, depending on their conditions. The original buyer further sale or pledge also requires the statutory qualification for good-faith, value and relevant title-document transfers; do not state either that every later transfer defeats the seller or that none ever can.\n\nResale needs its actual ground and process, such as the described perishable-goods or notice route. Notice can affect damages and profit treatment. A later buyer title question is distinct from what the original parties owe between themselves. Keep each claim and its legal basis separate rather than assuming resale automatically settles every amount.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does resale alone determine all damages and surplus consequences?",
+          "expected_takeaway": "No. The grounds, notice and applicable rules matter."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A collateral review says an original buyer later pledge can never affect unpaid-seller rights under any circumstances. What qualification must be checked?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The statutory good-faith, value and title-document transfer conditions",
+            "explanation_md": "The source describes a qualified exception."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Only whether the later lender has a larger office",
+            "explanation_md": "Office size is irrelevant."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A rule that every transfer always defeats the seller",
+            "explanation_md": "That opposite absolute statement is also wrong."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The original seller branding",
+            "explanation_md": "Branding does not decide priority."
+          }
+        ],
+        "correct_explanation_md": "The source describes a qualified exception."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "The seller resells and claims every loss without examining whether the required notice was given. Which analysis remains?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Resale always proves all damages",
+            "explanation_md": "The source attaches procedural consequences."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The buyer must automatically receive every future seller profit",
+            "explanation_md": "Consequences depend on the applicable route."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The resale ground, notice and resulting damages/profit rules",
+            "explanation_md": "A sale event alone does not establish all inter-party remedies."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The carrier account balance",
+            "explanation_md": "That does not resolve notice compliance."
+          }
+        ],
+        "correct_explanation_md": "A sale event alone does not establish all inter-party remedies."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Antigravity review pending for primary law,exceptions,originality and current applicability. No publication approval."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

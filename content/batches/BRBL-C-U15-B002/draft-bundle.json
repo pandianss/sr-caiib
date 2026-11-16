@@ -1,0 +1,418 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-C-U15-B002",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_C::U15: Apply a conditional payment-time order and update the recovery demand",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed p.329 / PDF p.348",
+        "statement": "Section27 timegrant requiresminimum25%downpayment,unconditionalundertaking,balancewithinreasonabletimeacceptableapplicant;ROstayonreceipt;defaultwithdrawsstay;POupdatespayments/appealchanges;forfeitureappealconsequencerequiresreview.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "A conditional pause needs an order and compliance",
+          "core_explanation_md": "The section 27 framework describes a grant of payment time after the stated minimum down payment and undertaking, on terms acceptable under the provision. The Recovery Officer stay follows receipt of the competent order; a debtor proposal alone is not a stay. Default on the agreed payment terms has the described consequence of withdrawing the stay and resuming recovery of the remaining demand.\n\nEvery subsequent payment, time grant and relevant appellate change must be reflected through the proper certificate/recovery records. Do not keep collecting the original figure after an operative reduction, or assume a proposed reduction is already final. The source also states an appeal consequence for this arrangement, which requires explicit primary review before operational advice.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does a proposed instalment plan itself pause recovery?",
+            "expected_takeaway": "No. The competent order and its conditions must be established."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "card",
+        "variant": "worked_example",
+        "payload": {
+          "title": "Calculate the stated minimum down payment",
+          "core_explanation_md": "Assume a certificate amount INR 920,000 and an otherwise eligible section 27 arrangement requiring at least25% down payment. Calculate the minimum amount only; the order and other conditions are not proved by arithmetic.",
+          "prerequisite_objective_ids": [],
+          "worked_steps": [
+            {
+              "step_number": 1,
+              "description": "Minimum down payment",
+              "formula_or_substitution": "920000*25/100",
+              "intermediate_result": "230000 INR"
+            }
+          ],
+          "final_answer_with_unit": "230000 INR",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Which rule and stipulated facts determine this result?",
+            "expected_takeaway": "Use the sourced rule and stated scenario assumptions; the arithmetic does not establish a live legal entitlement."
+          }
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "numeric_input",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "For a stipulated section 27 arrangement, the certificate amount is INR 1,360,000. Calculate the minimum25% down payment in exact INR. Assume all non-numerical conditions are addressed separately.",
+          "correct_explanation_md": "1360000*25/100=340000 INR.",
+          "numeric_rule": {
+            "expected_answer": "340000",
+            "unit_label": "INR",
+            "precision_decimals": 0,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Use exact whole units; do not round intermediate values.",
+            "allow_negative": false
+          }
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A debtor proposes instalments but no competent time-grant order has reached the Recovery Officer. What is the correct status?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "All recovery is automatically stayed forever",
+              "explanation_md": "A proposal is not an operative stay order."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The certificate has been fully discharged",
+              "explanation_md": "An unpaid proposal is not payment."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The appeal period is automatically restarted",
+              "explanation_md": "A proposed arrangement does not establish that consequence."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The proposed arrangement is pending; any stay depends on the proper order and conditions",
+              "explanation_md": "Track proposal, order and compliance as separate events."
+            }
+          ],
+          "correct_explanation_md": "Track proposal, order and compliance as separate events."
+        },
+        "draft_id": "D004",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "RDB courseware snapshot only. Current consolidated statute, notifications, Tribunal Reforms law, procedural rules and later judgments require Antigravity verification. Historical institutional names and court summaries are not current operational instructions.",
+      "Contradictory textbook appellate/priority summaries and obsolete SICA references require primary reconciliation; they are not used as correct-answer propositions."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-C-U15-B002",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_C::U15"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_C::U15",
+        "objective_ids": [
+          "BRBL::MOD_C::U15::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_C::U15",
+        "objective_ids": [
+          "BRBL::MOD_C::U15::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_C::U15",
+        "objective_ids": [
+          "BRBL::MOD_C::U15::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BRBL::MOD_C::U15",
+        "objective_ids": [
+          "BRBL::MOD_C::U15::LO_02"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-C-U15-B002",
+      "draft_id": "D001",
+      "item_id": "item_30d9aae59c41da1558b9c63e6a59c4d0b6a19b8c4a9574484328f67b55a821ec"
+    },
+    {
+      "batch_id": "BRBL-C-U15-B002",
+      "draft_id": "D002",
+      "item_id": "item_407ca6e99b439bac3c322917a8f8ec76ce88437d6e410b5104de4ab77ea4d22d"
+    },
+    {
+      "batch_id": "BRBL-C-U15-B002",
+      "draft_id": "D003",
+      "item_id": "item_d6440fb755a07fab87a09434719831cd7f9f8836dd43ced96d168fc8592960d5"
+    },
+    {
+      "batch_id": "BRBL-C-U15-B002",
+      "draft_id": "D004",
+      "item_id": "item_17f47f8246c9441f3ae499b53b2af0288a3d3196ddab93174fdafb2318ddae06"
+    }
+  ],
+  "items": [
+    {
+      "title": "A conditional pause needs an order and compliance",
+      "core_explanation_md": "The section 27 framework describes a grant of payment time after the stated minimum down payment and undertaking, on terms acceptable under the provision. The Recovery Officer stay follows receipt of the competent order; a debtor proposal alone is not a stay. Default on the agreed payment terms has the described consequence of withdrawing the stay and resuming recovery of the remaining demand.\n\nEvery subsequent payment, time grant and relevant appellate change must be reflected through the proper certificate/recovery records. Do not keep collecting the original figure after an operative reduction, or assume a proposed reduction is already final. The source also states an appeal consequence for this arrangement, which requires explicit primary review before operational advice.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does a proposed instalment plan itself pause recovery?",
+        "expected_takeaway": "No. The competent order and its conditions must be established."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_30d9aae59c41da1558b9c63e6a59c4d0b6a19b8c4a9574484328f67b55a821ec",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U15",
+      "objective_ids": [
+        "BRBL::MOD_C::U15::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed p.329 / PDF p.348"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Calculate the stated minimum down payment",
+      "core_explanation_md": "Assume a certificate amount INR 920,000 and an otherwise eligible section 27 arrangement requiring at least25% down payment. Calculate the minimum amount only; the order and other conditions are not proved by arithmetic.",
+      "prerequisite_objective_ids": [],
+      "worked_steps": [
+        {
+          "step_number": 1,
+          "description": "Minimum down payment",
+          "formula_or_substitution": "920000*25/100",
+          "intermediate_result": "230000 INR"
+        }
+      ],
+      "final_answer_with_unit": "230000 INR",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Which rule and stipulated facts determine this result?",
+        "expected_takeaway": "Use the sourced rule and stated scenario assumptions; the arithmetic does not establish a live legal entitlement."
+      },
+      "item_type": "card",
+      "card_type": "worked_example",
+      "id": "item_407ca6e99b439bac3c322917a8f8ec76ce88437d6e410b5104de4ab77ea4d22d",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U15",
+      "objective_ids": [
+        "BRBL::MOD_C::U15::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed p.329 / PDF p.348"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "For a stipulated section 27 arrangement, the certificate amount is INR 1,360,000. Calculate the minimum25% down payment in exact INR. Assume all non-numerical conditions are addressed separately.",
+      "correct_explanation_md": "1360000*25/100=340000 INR.",
+      "numeric_rule": {
+        "expected_answer": "340000",
+        "unit_label": "INR",
+        "precision_decimals": 0,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Use exact whole units; do not round intermediate values.",
+        "allow_negative": false
+      },
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_d6440fb755a07fab87a09434719831cd7f9f8836dd43ced96d168fc8592960d5",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U15",
+      "objective_ids": [
+        "BRBL::MOD_C::U15::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed p.329 / PDF p.348"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A debtor proposes instalments but no competent time-grant order has reached the Recovery Officer. What is the correct status?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "All recovery is automatically stayed forever",
+          "explanation_md": "A proposal is not an operative stay order."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The certificate has been fully discharged",
+          "explanation_md": "An unpaid proposal is not payment."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The appeal period is automatically restarted",
+          "explanation_md": "A proposed arrangement does not establish that consequence."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The proposed arrangement is pending; any stay depends on the proper order and conditions",
+          "explanation_md": "Track proposal, order and compliance as separate events."
+        }
+      ],
+      "correct_explanation_md": "Track proposal, order and compliance as separate events.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_17f47f8246c9441f3ae499b53b2af0288a3d3196ddab93174fdafb2318ddae06",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U15",
+      "objective_ids": [
+        "BRBL::MOD_C::U15::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed p.329 / PDF p.348"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

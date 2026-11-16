@@ -1,0 +1,132 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U23-B001",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U23: Identify the LLP entity,partners and designated-partner requirements",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04",
+    "LLP_THC_2021_COMPILATION"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.530-532 / PDF pp.549-551",
+      "statement": "LLPseparatebodyperpetual,ordinaryPartnershipActnotdefault;minimum2partnersand2individualdesignatedone resident;singlepartnerknowinglybusinessaftersixmonthsexposure.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F002",
+      "source_id": "LLP_THC_2021_COMPILATION",
+      "locator": "2021 amendment section4,PDF p.71",
+      "statement": "Section7residency amended from182precedingyearto120daysfinancialyear.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "The LLP is the contracting entity",
+        "core_explanation_md": "An LLP is an incorporated body distinct from its partners and continues through partner changes. The ordinary Partnership Act does not generally supply its rules. Individuals and qualifying bodies corporate may be partners, while the designated-partner requirement uses individuals, including the appropriate nominees of corporate partners. The described minimum is two partners and two designated partners, with the prescribed Indian-residence requirement.\n\nThe 2021 amendment changes the residence wording to at least120 days during the financial year; the sourcebook repeats the older182-day preceding-year wording. Separately, if an LLP knowingly carries on with a sole partner beyond six months, the described personal exposure concerns obligations incurred during the relevant later period. Do not treat this exception as making every partner personally liable for every LLP debt.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Why distinguish a partner from a designated partner?",
+          "expected_takeaway": "The designated role carries specific compliance responsibilities and eligibility requirements."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A body corporate is a partner and the file proposes appointing that corporation itself as a designated partner instead of an individual nominee. What is required?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "No LLP may have a body-corporate partner",
+            "explanation_md": "The source permits qualifying corporate partners."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The designated role must be held by the required individuals",
+            "explanation_md": "Corporate partnership and individual designation are distinct."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Only the corporation logo must be registered",
+            "explanation_md": "That does not satisfy designation."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Every employee automatically becomes a designated partner",
+            "explanation_md": "Specific requirements and consent apply."
+          }
+        ],
+        "correct_explanation_md": "Corporate partnership and individual designation are distinct."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A draft uses the old182-day preceding-year residence test despite the 2021 section 7 amendment. Which test does that amendment introduce?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "No residence requirement",
+            "explanation_md": "The requirement is amended, not abolished."
+          },
+          {
+            "option_id": "B",
+            "text_md": "182 days in any five years",
+            "explanation_md": "That is not the amendment."
+          },
+          {
+            "option_id": "C",
+            "text_md": "30 days before incorporation",
+            "explanation_md": "That is not the stated test."
+          },
+          {
+            "option_id": "D",
+            "text_md": "120 days during the financial year",
+            "explanation_md": "The amendment substitutes the relevant days and period wording."
+          }
+        ],
+        "correct_explanation_md": "The amendment substitutes the relevant days and period wording."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Antigravity independent legal,originality and session review pending; no publication approval.",
+    "Commencement Gazette and later rules/current small-LLP concessions require Antigravity reconciliation."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

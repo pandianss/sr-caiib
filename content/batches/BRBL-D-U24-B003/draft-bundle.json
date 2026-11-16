@@ -1,0 +1,360 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-D-U24-B003",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_D::U24: Choose the enforcement route and reconcile sale proceeds",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.543-545 / PDF pp.562-564",
+        "statement": "69limitedcourtlesssalecategoriesexpresspowerconditionsnoticeordueinterest;proceedspriorencumbrancescostsmortgage residue;courtpreliminaryfinal;SARFAESIindependenteligibility.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "A mortgage is not a universal private-sale power",
+          "core_explanation_md": "Section69 has limited qualifying categories and conditions for sale without court intervention. Express power, location or the specified mortgage/party category may matter, along with the statutory default and notice conditions. Do not infer a private-sale right from any mortgage label. SARFAESI is a distinct route with its own creditor, asset, registration and procedural requirements.\n\nThe court mortgage process distinguishes preliminary and final decrees. For sale proceeds, the source describes prior-encumbrance treatment, proper sale costs, the mortgage obligations and the residue for the entitled person. Keep a transparent reconciliation rather than treating all realisations as bank income. The textbook blanket SARFAESI amount shorthand is not a substitute for the complete eligibility/exclusion analysis.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does every mortgage permit sale without court intervention under section 69?",
+            "expected_takeaway": "No. Qualifying categories and conditions must be established."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A recovery officer assumes section 69 permits private sale under every mortgage simply because the loan defaulted. What is missing?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only an updated valuation",
+              "explanation_md": "Valuation alone does not establish the power."
+            },
+            {
+              "option_id": "B",
+              "text_md": "A rule that default cancels all procedural safeguards",
+              "explanation_md": "Default alone does not establish a qualifying section 69 category or satisfy the statutory exercise conditions."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The borrower preferred sale month",
+              "explanation_md": "Preference does not establish statutory power."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The qualifying category, power and statutory exercise conditions",
+              "explanation_md": "Default alone is insufficient."
+            }
+          ],
+          "correct_explanation_md": "Default alone is insufficient."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A sale surplus remains after the stated prior claims, proper costs and secured dues. The lender treats it as extra interest without a basis. What is required?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Retain every surplus automatically",
+              "explanation_md": "The source describes a residue entitlement."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Reconcile and pay the residue to the entitled person under the applicable rule",
+              "explanation_md": "Sale realisation is not unrestricted lender income."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Ignore the sale costs entirely",
+              "explanation_md": "Proper costs are part of the stated order."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Cancel the entire mortgage retrospectively",
+              "explanation_md": "That does not follow."
+            }
+          ],
+          "correct_explanation_md": "Sale realisation is not unrestricted lender income."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Antigravity independent legal,originality and session review pending; no publication approval.",
+      "Current primary TPA and State rules must reconcile registration,section69 and actionable-claim exceptions; source case facts/table expression not reused."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-D-U24-B003",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_D::U24"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_D::U24",
+        "objective_ids": [
+          "BRBL::MOD_D::U24::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_D::U24",
+        "objective_ids": [
+          "BRBL::MOD_D::U24::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_D::U24",
+        "objective_ids": [
+          "BRBL::MOD_D::U24::LO_03"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-D-U24-B003",
+      "draft_id": "D001",
+      "item_id": "item_9c9e052bcae9b0ac6114952116bf234c02806a50db562c1ae68b5cc1d2c2ece3"
+    },
+    {
+      "batch_id": "BRBL-D-U24-B003",
+      "draft_id": "D002",
+      "item_id": "item_4e8a9926f3715fcb0cf996a2959da9436d370e8a9807a1267ea31b330cb1590d"
+    },
+    {
+      "batch_id": "BRBL-D-U24-B003",
+      "draft_id": "D003",
+      "item_id": "item_e72c28d928cbe02acbc3c800203eadcb7c35ecf08a7546d116eb3cd4b527e78a"
+    }
+  ],
+  "items": [
+    {
+      "title": "A mortgage is not a universal private-sale power",
+      "core_explanation_md": "Section69 has limited qualifying categories and conditions for sale without court intervention. Express power, location or the specified mortgage/party category may matter, along with the statutory default and notice conditions. Do not infer a private-sale right from any mortgage label. SARFAESI is a distinct route with its own creditor, asset, registration and procedural requirements.\n\nThe court mortgage process distinguishes preliminary and final decrees. For sale proceeds, the source describes prior-encumbrance treatment, proper sale costs, the mortgage obligations and the residue for the entitled person. Keep a transparent reconciliation rather than treating all realisations as bank income. The textbook blanket SARFAESI amount shorthand is not a substitute for the complete eligibility/exclusion analysis.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does every mortgage permit sale without court intervention under section 69?",
+        "expected_takeaway": "No. Qualifying categories and conditions must be established."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_9c9e052bcae9b0ac6114952116bf234c02806a50db562c1ae68b5cc1d2c2ece3",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U24",
+      "objective_ids": [
+        "BRBL::MOD_D::U24::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.543-545 / PDF pp.562-564"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A recovery officer assumes section 69 permits private sale under every mortgage simply because the loan defaulted. What is missing?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only an updated valuation",
+          "explanation_md": "Valuation alone does not establish the power."
+        },
+        {
+          "option_id": "B",
+          "text_md": "A rule that default cancels all procedural safeguards",
+          "explanation_md": "Default alone does not establish a qualifying section 69 category or satisfy the statutory exercise conditions."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The borrower preferred sale month",
+          "explanation_md": "Preference does not establish statutory power."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The qualifying category, power and statutory exercise conditions",
+          "explanation_md": "Default alone is insufficient."
+        }
+      ],
+      "correct_explanation_md": "Default alone is insufficient.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_4e8a9926f3715fcb0cf996a2959da9436d370e8a9807a1267ea31b330cb1590d",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U24",
+      "objective_ids": [
+        "BRBL::MOD_D::U24::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.543-545 / PDF pp.562-564"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A sale surplus remains after the stated prior claims, proper costs and secured dues. The lender treats it as extra interest without a basis. What is required?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Retain every surplus automatically",
+          "explanation_md": "The source describes a residue entitlement."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Reconcile and pay the residue to the entitled person under the applicable rule",
+          "explanation_md": "Sale realisation is not unrestricted lender income."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Ignore the sale costs entirely",
+          "explanation_md": "Proper costs are part of the stated order."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Cancel the entire mortgage retrospectively",
+          "explanation_md": "That does not follow."
+        }
+      ],
+      "correct_explanation_md": "Sale realisation is not unrestricted lender income.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_e72c28d928cbe02acbc3c800203eadcb7c35ecf08a7546d116eb3cd4b527e78a",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U24",
+      "objective_ids": [
+        "BRBL::MOD_D::U24::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.543-545 / PDF pp.562-564"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

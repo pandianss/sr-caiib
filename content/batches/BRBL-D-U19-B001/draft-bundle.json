@@ -1,0 +1,360 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-D-U19-B001",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_D::U19: Separate company capacity from officer authority and internal procedure",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.502-503 / PDF pp.521-522",
+        "statement": "Ultravirescompanyobjectsnotcuredbymemberratification;authoritybreachdifferent;tracingrestitutiondirectorliabilityqualified.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Ask which boundary was crossed",
+          "core_explanation_md": "An act beyond the company constitutional capacity differs from an act within that capacity but outside a director authority. Under the described ultra vires doctrine, a company-capacity defect is not cured merely by all members ratifying the transaction. An internal authorisation defect needs its own analysis and cannot automatically be described as the same defect.\n\nThe source discusses tracing, recovery of property and personal consequences for misuse or breach of authority. These are remedy questions requiring facts and legal conditions, not a promise that every invalid borrowing becomes recoverable as an ordinary contract debt. Preserve the use and traceability of funds and the representation of authority rather than announcing that ultra vires means no remedy of any kind.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Can unanimous member approval alone cure an act beyond company capacity?",
+            "expected_takeaway": "Not under the described company ultra vires rule."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A transaction is stipulated to be beyond company constitutional capacity. Members unanimously approve it afterwards. Which proposition follows from the described doctrine?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Approval necessarily makes it intra vires",
+              "explanation_md": "That is the rejected shortcut."
+            },
+            {
+              "option_id": "B",
+              "text_md": "No restitution or property question can ever arise",
+              "explanation_md": "Remedies require separate analysis."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Member ratification alone does not cure the capacity defect",
+              "explanation_md": "Capacity and internal approval differ."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Every director necessarily committed a crime",
+              "explanation_md": "The required facts are not established."
+            }
+          ],
+          "correct_explanation_md": "Capacity and internal approval differ."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A borrowing is within company objects, but the officer lacked the required authority. Why identify the defect precisely?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Officer authority and company capacity have different legal consequences",
+              "explanation_md": "Do not treat all irregularities as identical."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Every internal defect destroys company existence",
+              "explanation_md": "That does not follow."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Objects never matter to a borrowing",
+              "explanation_md": "They remain part of capacity analysis."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The officer title alone proves every power",
+              "explanation_md": "Authority must be established."
+            }
+          ],
+          "correct_explanation_md": "Do not treat all irregularities as identical."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Antigravity must independently review law,exceptions,originality and exam cutoff before publication.",
+      "Textbook tracing and personal-liability statements require qualified primary/case-law review; no source case facts reused."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-D-U19-B001",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_D::U19"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_D::U19",
+        "objective_ids": [
+          "BRBL::MOD_D::U19::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_D::U19",
+        "objective_ids": [
+          "BRBL::MOD_D::U19::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_D::U19",
+        "objective_ids": [
+          "BRBL::MOD_D::U19::LO_01"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-D-U19-B001",
+      "draft_id": "D001",
+      "item_id": "item_4a0a29f6da1111d0706967701f1d7c315053aa04d42b4cb541d70477268af3a1"
+    },
+    {
+      "batch_id": "BRBL-D-U19-B001",
+      "draft_id": "D002",
+      "item_id": "item_df6a97297cbab85bace2f05db77b2396de2eb126f8c1c0e830469b1a791f0381"
+    },
+    {
+      "batch_id": "BRBL-D-U19-B001",
+      "draft_id": "D003",
+      "item_id": "item_9b12465ec7c0091a2a4e9abd9b55c3641cb685fb6d40c06cae3e0d49a404ae96"
+    }
+  ],
+  "items": [
+    {
+      "title": "Ask which boundary was crossed",
+      "core_explanation_md": "An act beyond the company constitutional capacity differs from an act within that capacity but outside a director authority. Under the described ultra vires doctrine, a company-capacity defect is not cured merely by all members ratifying the transaction. An internal authorisation defect needs its own analysis and cannot automatically be described as the same defect.\n\nThe source discusses tracing, recovery of property and personal consequences for misuse or breach of authority. These are remedy questions requiring facts and legal conditions, not a promise that every invalid borrowing becomes recoverable as an ordinary contract debt. Preserve the use and traceability of funds and the representation of authority rather than announcing that ultra vires means no remedy of any kind.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Can unanimous member approval alone cure an act beyond company capacity?",
+        "expected_takeaway": "Not under the described company ultra vires rule."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_4a0a29f6da1111d0706967701f1d7c315053aa04d42b4cb541d70477268af3a1",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U19",
+      "objective_ids": [
+        "BRBL::MOD_D::U19::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.502-503 / PDF pp.521-522"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A transaction is stipulated to be beyond company constitutional capacity. Members unanimously approve it afterwards. Which proposition follows from the described doctrine?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Approval necessarily makes it intra vires",
+          "explanation_md": "That is the rejected shortcut."
+        },
+        {
+          "option_id": "B",
+          "text_md": "No restitution or property question can ever arise",
+          "explanation_md": "Remedies require separate analysis."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Member ratification alone does not cure the capacity defect",
+          "explanation_md": "Capacity and internal approval differ."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Every director necessarily committed a crime",
+          "explanation_md": "The required facts are not established."
+        }
+      ],
+      "correct_explanation_md": "Capacity and internal approval differ.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_df6a97297cbab85bace2f05db77b2396de2eb126f8c1c0e830469b1a791f0381",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U19",
+      "objective_ids": [
+        "BRBL::MOD_D::U19::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.502-503 / PDF pp.521-522"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A borrowing is within company objects, but the officer lacked the required authority. Why identify the defect precisely?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Officer authority and company capacity have different legal consequences",
+          "explanation_md": "Do not treat all irregularities as identical."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Every internal defect destroys company existence",
+          "explanation_md": "That does not follow."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Objects never matter to a borrowing",
+          "explanation_md": "They remain part of capacity analysis."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The officer title alone proves every power",
+          "explanation_md": "Authority must be established."
+        }
+      ],
+      "correct_explanation_md": "Do not treat all irregularities as identical.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_9b12465ec7c0091a2a4e9abd9b55c3641cb685fb6d40c06cae3e0d49a404ae96",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U19",
+      "objective_ids": [
+        "BRBL::MOD_D::U19::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.502-503 / PDF pp.521-522"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

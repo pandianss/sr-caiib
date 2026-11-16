@@ -1,0 +1,120 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U28-B002",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U28: Distinguish bribery,commercial-organisation exposure and criminal misconduct",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.579-580 / PDF pp.598-599",
+      "statement": "7recipient7Ainfluence8giver9commercial10officer11benefit12abetment;13misappropriationillicitenrichmentlawfulsources;14repeat15attemptlimitedclause.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Classify the alleged conduct before choosing an offence",
+        "core_explanation_md": "The source distinguishes receiving an undue advantage, influence-related conduct, giving/promising it, commercial-organisation exposure, responsible-officer conduct and abetment. The offence elements and applicable exceptions must be established for the particular actor. A company payment does not automatically prove every director personally committed the same offence.\n\nThe amended criminal-misconduct definition includes the described dishonest/fraudulent misuse of entrusted property and intentional illicit enrichment. Disproportionate resources and the lawful-source explanation require the statutory evidentiary analysis. Ordinary loss-making lending is not automatically proof of dishonest conversion. Repeat-offence and attempt provisions also have defined conditions; do not extend a provision addressing one clause to every attempted act.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does every bad commercial outcome automatically establish criminal misconduct?",
+          "expected_takeaway": "No. The applicable statutory conduct and evidence must be established."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A loan later defaults and the file labels that outcome alone dishonest misappropriation without identifying conversion or the required conduct. What is missing?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The offence elements and supporting evidence",
+            "explanation_md": "A loss outcome alone does not prove the specified misconduct."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A rule that public servants can never be investigated",
+            "explanation_md": "The statute provides investigative routes subject to the applicable powers and safeguards; it does not give blanket immunity."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Only the borrower photograph",
+            "explanation_md": "It does not establish the offence."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A presumption that every commercial risk is illegal",
+            "explanation_md": "That is unsupported."
+          }
+        ],
+        "correct_explanation_md": "A loss outcome alone does not prove the specified misconduct."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A company-associated bribery allegation is made, and a note treats every director as automatically convicted solely by title. Which distinction is necessary?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Titles always establish guilt",
+            "explanation_md": "The applicable responsibility conditions still matter."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Companies can never face any bribery-related exposure",
+            "explanation_md": "The source identifies a commercial-organisation provision."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Entity exposure and each officer applicable responsibility/elements",
+            "explanation_md": "The actors and provisions must be analysed separately."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Only the company turnover",
+            "explanation_md": "Turnover alone does not prove each offence."
+          }
+        ],
+        "correct_explanation_md": "The actors and provisions must be analysed separately."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Antigravity independent review pending for source accuracy,originality,question quality and session applicability. No publication approval.",
+    "Primary PC Act/SOP and post2024 procedural-code transition require review; source trial answer is overabsolute and was not reproduced."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

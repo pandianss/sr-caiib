@@ -1,0 +1,119 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U02-B001",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U02: Identify indemnity scope and qualifying damages,costs and settlement payments",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.410-412 / PDF pp.429-431",
+      "statement": "124indemnitylossfrompromisor/otherconduct;125coveredcompelleddamages,qualifiedcosts/prudentauthorisedcompromise;indemnityholdervsindemnifier;allinsuranceclaimoverbroad.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "An indemnity claim starts with the covered risk",
+        "core_explanation_md": "The indemnifier promises to protect the indemnity holder against the covered loss. Identify whose conduct and which risk the promise addresses before adding amounts to a claim. Section125 distinguishes damages, costs and compromise payments with the relevant prudence, authority and scope conditions. An invoice marked legal expense is not automatically recoverable in full.\n\nThe undertaking and its limits also distinguish indemnity from a guarantee of another person default. Do not assume all insurance contracts are indemnities or that every indemnity defeats all statutory restrictions. For banking uses such as a duplicate-instrument undertaking, preserve the actual language, claim facts and applicable conditions.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does every expense become recoverable merely because an indemnity exists?",
+          "expected_takeaway": "No. Coverage and the applicable expense/settlement conditions matter."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A claim combines covered damages with an unrelated private expense. Which step is necessary?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Add every amount because the title says indemnity",
+            "explanation_md": "The undertaking scope still limits the claim."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Treat all costs as automatically excluded",
+            "explanation_md": "The source permits qualifying costs."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Assume the claimant can enlarge the promise after loss",
+            "explanation_md": "A claim cannot privately rewrite the undertaking."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Separate covered amounts and apply the statutory/contractual conditions",
+            "explanation_md": "Each component needs its own basis."
+          }
+        ],
+        "correct_explanation_md": "Each component needs its own basis."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A reviewer calls every insurance policy an indemnity without checking its nature. What is the sound correction?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Every policy has exactly the same legal character",
+            "explanation_md": "Insurance products can have different structures."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Examine the actual undertaking and avoid the blanket statement",
+            "explanation_md": "The source generalisation should not become an unchecked universal rule."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The policy premium alone determines every right",
+            "explanation_md": "Terms and applicable law still matter."
+          },
+          {
+            "option_id": "D",
+            "text_md": "All indemnities are promises by a third-party surety",
+            "explanation_md": "That collapses the separate guarantee concept."
+          }
+        ],
+        "correct_explanation_md": "The source generalisation should not become an unchecked universal rule."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Drafts for Antigravity review. Consolidated statute,exceptions and later case law require independent reconciliation;no publication approval."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

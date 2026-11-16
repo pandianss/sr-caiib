@@ -1,0 +1,324 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-D-U03-B004",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_D::U03: Calculate bounded co-surety contribution separately from creditor enforcement",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.418-419 / PDF pp.437-438",
+        "statement": "146equalintersecontributionabsentcontrary;147differentlimitscontributeequallysofarlimitspermit;creditorrightsnotidenticalinterseallocation.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Contribution is an internal allocation question",
+          "core_explanation_md": "The creditor claim against liable sureties and the sureties contribution between themselves are different questions. Under the stated default inter-se rule, co-sureties contribute equally to the unpaid debt, subject to contrary agreement and the limits of their respective obligations. Different ceilings can require a capped allocation rather than dividing every amount equally without regard to limits.\n\nThe exercise below stipulates equal uncapped contribution and an unpaid debt amount. It does not establish the validity of a real guarantee or instruct the creditor to recover only that fraction from each person.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does an equal contribution share necessarily cap the creditor independent enforcement rights?",
+            "expected_takeaway": "No. Inter-se contribution and creditor enforcement must be distinguished."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "card",
+        "variant": "worked_example",
+        "payload": {
+          "title": "Allocate a stipulated uncovered balance between equal co-sureties",
+          "core_explanation_md": "Assume three valid co-sureties with no contrary arrangement or binding lower limits. The principal debtor has paid INR 42,000 of a covered INR 180,000 debt. Calculate each equal contribution to the remaining debt.",
+          "prerequisite_objective_ids": [],
+          "worked_steps": [
+            {
+              "step_number": 1,
+              "description": "Unpaid balance",
+              "formula_or_substitution": "180000-42000",
+              "intermediate_result": "138000 INR"
+            },
+            {
+              "step_number": 2,
+              "description": "Equal contribution",
+              "formula_or_substitution": "138000/3",
+              "intermediate_result": "46000 INR"
+            }
+          ],
+          "final_answer_with_unit": "46000 INR",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Which rule and stipulated facts determine this result?",
+            "expected_takeaway": "Use the sourced rule and stated scenario assumptions; the arithmetic does not establish a live legal entitlement."
+          }
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "numeric_input",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Assume four valid equally contributing co-sureties, no contrary agreement and no lower limits. A covered debt of INR 252,000 has received INR 44,000 from the principal debtor. Calculate each inter-se contribution to the remaining balance in exact INR.",
+          "correct_explanation_md": "(252000-44000)/4=52000 INR.",
+          "numeric_rule": {
+            "expected_answer": "52000",
+            "unit_label": "INR",
+            "precision_decimals": 0,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Use exact whole units; do not round intermediate values.",
+            "allow_negative": false
+          }
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Drafts for Antigravity review. Consolidated statute,exceptions and later case law require independent reconciliation;no publication approval.",
+      "Book guarantee examples contain party-name reversal and overbroad underlying-invalidity assertions;not reused. Demand-guarantee injunction and limitation issues require primary review."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-D-U03-B004",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_D::U03"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_D::U03",
+        "objective_ids": [
+          "BRBL::MOD_D::U03::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_D::U03",
+        "objective_ids": [
+          "BRBL::MOD_D::U03::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_D::U03",
+        "objective_ids": [
+          "BRBL::MOD_D::U03::LO_04"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-D-U03-B004",
+      "draft_id": "D001",
+      "item_id": "item_455869ab71b38d1c81fd8aa656e7818cdaf0e5c93cca0052144de999e35a40c3"
+    },
+    {
+      "batch_id": "BRBL-D-U03-B004",
+      "draft_id": "D002",
+      "item_id": "item_dd3d3c6b5dd7efe678d4d081e28be695023f9d57d8b9163e1b7d9f5876d7adc0"
+    },
+    {
+      "batch_id": "BRBL-D-U03-B004",
+      "draft_id": "D003",
+      "item_id": "item_2eac63fd3661a3a7b69cfae679fc39fccc09946ac7ad65f6884cfdd9a429dab4"
+    }
+  ],
+  "items": [
+    {
+      "title": "Contribution is an internal allocation question",
+      "core_explanation_md": "The creditor claim against liable sureties and the sureties contribution between themselves are different questions. Under the stated default inter-se rule, co-sureties contribute equally to the unpaid debt, subject to contrary agreement and the limits of their respective obligations. Different ceilings can require a capped allocation rather than dividing every amount equally without regard to limits.\n\nThe exercise below stipulates equal uncapped contribution and an unpaid debt amount. It does not establish the validity of a real guarantee or instruct the creditor to recover only that fraction from each person.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does an equal contribution share necessarily cap the creditor independent enforcement rights?",
+        "expected_takeaway": "No. Inter-se contribution and creditor enforcement must be distinguished."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_455869ab71b38d1c81fd8aa656e7818cdaf0e5c93cca0052144de999e35a40c3",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U03",
+      "objective_ids": [
+        "BRBL::MOD_D::U03::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.418-419 / PDF pp.437-438"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Allocate a stipulated uncovered balance between equal co-sureties",
+      "core_explanation_md": "Assume three valid co-sureties with no contrary arrangement or binding lower limits. The principal debtor has paid INR 42,000 of a covered INR 180,000 debt. Calculate each equal contribution to the remaining debt.",
+      "prerequisite_objective_ids": [],
+      "worked_steps": [
+        {
+          "step_number": 1,
+          "description": "Unpaid balance",
+          "formula_or_substitution": "180000-42000",
+          "intermediate_result": "138000 INR"
+        },
+        {
+          "step_number": 2,
+          "description": "Equal contribution",
+          "formula_or_substitution": "138000/3",
+          "intermediate_result": "46000 INR"
+        }
+      ],
+      "final_answer_with_unit": "46000 INR",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Which rule and stipulated facts determine this result?",
+        "expected_takeaway": "Use the sourced rule and stated scenario assumptions; the arithmetic does not establish a live legal entitlement."
+      },
+      "item_type": "card",
+      "card_type": "worked_example",
+      "id": "item_dd3d3c6b5dd7efe678d4d081e28be695023f9d57d8b9163e1b7d9f5876d7adc0",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U03",
+      "objective_ids": [
+        "BRBL::MOD_D::U03::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.418-419 / PDF pp.437-438"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Assume four valid equally contributing co-sureties, no contrary agreement and no lower limits. A covered debt of INR 252,000 has received INR 44,000 from the principal debtor. Calculate each inter-se contribution to the remaining balance in exact INR.",
+      "correct_explanation_md": "(252000-44000)/4=52000 INR.",
+      "numeric_rule": {
+        "expected_answer": "52000",
+        "unit_label": "INR",
+        "precision_decimals": 0,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Use exact whole units; do not round intermediate values.",
+        "allow_negative": false
+      },
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_2eac63fd3661a3a7b69cfae679fc39fccc09946ac7ad65f6884cfdd9a429dab4",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U03",
+      "objective_ids": [
+        "BRBL::MOD_D::U03::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.418-419 / PDF pp.437-438"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

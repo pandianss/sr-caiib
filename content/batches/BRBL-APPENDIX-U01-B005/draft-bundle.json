@@ -1,0 +1,360 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-APPENDIX-U01-B005",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_APPENDIX::U01: Navigate company law through constitution,governance and the specific entity",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "Appendix5,printed pp.595-609 / PDF pp.614-628",
+        "statement": "WidecompanyindexincludesconstitutioncapitalchargesdirectorsaccountsreorganisationforeigncompaniesNCLTandmisc;indexincludeslegacyomittedprovisions.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Use a question-led path through the company index",
+          "core_explanation_md": "Company-law research can start with constitution and identity, then capital or membership, then the governance or transaction provision actually in issue. A charge-registration problem belongs on a different path from a director appointment or prospectus problem. Identify the exact company form and any applicable class exemption.\n\nThe appendix contains a wide statutory index, including headings whose operative text may have been amended or omitted. It is not evidence that every listed provision remains in force. Read the relevant current or exam-pinned Act together with rules, notifications and the entity constitution. Keep company identity, capacity, approval, execution and filing as separate checks.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does inclusion in an old section index prove a provision is still operative?",
+            "expected_takeaway": "No. Verify the dated full text and amendment history."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A lender investigates a missing company charge filing but reads only the member-voting provisions. Which route better fits the issue?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only the company name rules",
+              "explanation_md": "They do not establish charge filing."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The charge-registration provisions and applicable filing rules",
+              "explanation_md": "Match the transaction to its legal requirements."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Only the annual holiday list",
+              "explanation_md": "A holiday list does not establish the charge-registration obligation or whether it was fulfilled."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The personal assets of all shareholders",
+              "explanation_md": "That does not resolve registration."
+            }
+          ],
+          "correct_explanation_md": "Match the transaction to its legal requirements."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "An old index includes a provision later omitted. Which evidence should determine whether to teach it as operative?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The index font size",
+              "explanation_md": "It has no legal effect."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The fact a number appears in the book",
+              "explanation_md": "That does not establish continuing force."
+            },
+            {
+              "option_id": "C",
+              "text_md": "A guessed replacement section",
+              "explanation_md": "Guessing is not valid mapping."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The applicable dated statute and amendment/commencement evidence",
+              "explanation_md": "Version control is part of accurate legal research."
+            }
+          ],
+          "correct_explanation_md": "Version control is part of accurate legal research."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Navigation drafts are original study aids,not a current consolidated bare Act. Substantive lessons remain in their exact units. Antigravity review pending for the dated legal text,judicial status and section references.",
+      "Legacy source indexes contain omitted,amended and State-specific provisions; every operational legal conclusion requires its full applicable text."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-APPENDIX-U01-B005",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_APPENDIX::U01"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_APPENDIX::U01",
+        "objective_ids": [
+          "BRBL::MOD_APPENDIX::U01::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_APPENDIX::U01",
+        "objective_ids": [
+          "BRBL::MOD_APPENDIX::U01::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_APPENDIX::U01",
+        "objective_ids": [
+          "BRBL::MOD_APPENDIX::U01::LO_05"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-APPENDIX-U01-B005",
+      "draft_id": "D001",
+      "item_id": "item_76691fa2332dd80a6efcc81e7ee3f97f159a96ae17b487a8c3d146201d37bcb5"
+    },
+    {
+      "batch_id": "BRBL-APPENDIX-U01-B005",
+      "draft_id": "D002",
+      "item_id": "item_89c3de3ca4a342d8f19d73c4f6520502fd687b80169d5212d7024d8789e24a01"
+    },
+    {
+      "batch_id": "BRBL-APPENDIX-U01-B005",
+      "draft_id": "D003",
+      "item_id": "item_28191cbd5834c89da2c6c592f934ccd73d349473d56502081669c55f7d085883"
+    }
+  ],
+  "items": [
+    {
+      "title": "Use a question-led path through the company index",
+      "core_explanation_md": "Company-law research can start with constitution and identity, then capital or membership, then the governance or transaction provision actually in issue. A charge-registration problem belongs on a different path from a director appointment or prospectus problem. Identify the exact company form and any applicable class exemption.\n\nThe appendix contains a wide statutory index, including headings whose operative text may have been amended or omitted. It is not evidence that every listed provision remains in force. Read the relevant current or exam-pinned Act together with rules, notifications and the entity constitution. Keep company identity, capacity, approval, execution and filing as separate checks.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does inclusion in an old section index prove a provision is still operative?",
+        "expected_takeaway": "No. Verify the dated full text and amendment history."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_76691fa2332dd80a6efcc81e7ee3f97f159a96ae17b487a8c3d146201d37bcb5",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_APPENDIX",
+      "unit_id": "BRBL::MOD_APPENDIX::U01",
+      "objective_ids": [
+        "BRBL::MOD_APPENDIX::U01::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Appendix5,printed pp.595-609 / PDF pp.614-628"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A lender investigates a missing company charge filing but reads only the member-voting provisions. Which route better fits the issue?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only the company name rules",
+          "explanation_md": "They do not establish charge filing."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The charge-registration provisions and applicable filing rules",
+          "explanation_md": "Match the transaction to its legal requirements."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Only the annual holiday list",
+          "explanation_md": "A holiday list does not establish the charge-registration obligation or whether it was fulfilled."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The personal assets of all shareholders",
+          "explanation_md": "That does not resolve registration."
+        }
+      ],
+      "correct_explanation_md": "Match the transaction to its legal requirements.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_89c3de3ca4a342d8f19d73c4f6520502fd687b80169d5212d7024d8789e24a01",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_APPENDIX",
+      "unit_id": "BRBL::MOD_APPENDIX::U01",
+      "objective_ids": [
+        "BRBL::MOD_APPENDIX::U01::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Appendix5,printed pp.595-609 / PDF pp.614-628"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "An old index includes a provision later omitted. Which evidence should determine whether to teach it as operative?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The index font size",
+          "explanation_md": "It has no legal effect."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The fact a number appears in the book",
+          "explanation_md": "That does not establish continuing force."
+        },
+        {
+          "option_id": "C",
+          "text_md": "A guessed replacement section",
+          "explanation_md": "Guessing is not valid mapping."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The applicable dated statute and amendment/commencement evidence",
+          "explanation_md": "Version control is part of accurate legal research."
+        }
+      ],
+      "correct_explanation_md": "Version control is part of accurate legal research.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_28191cbd5834c89da2c6c592f934ccd73d349473d56502081669c55f7d085883",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_APPENDIX",
+      "unit_id": "BRBL::MOD_APPENDIX::U01",
+      "objective_ids": [
+        "BRBL::MOD_APPENDIX::U01::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Appendix5,printed pp.595-609 / PDF pp.614-628"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

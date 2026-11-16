@@ -1,0 +1,120 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U26-B004",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U26: Distinguish first appeal,second appeal,complaint and commission remedies",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.560-562 / PDF pp.579-581",
+      "statement": "Firstseniorofficer30daysqualifiedcondonation;secondcommission90days;firstdisposal30or45reasons;complaintdistinctcommissionaccesscompensationpenalty.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Choose the route for the stage and relief",
+        "core_explanation_md": "The first appeal lies to the designated officer senior to the PIO under the described thirty-day filing rule, with the applicable delay-condonation power. The second appeal goes to the relevant Information Commission under the stated ninety-day rule. The thirty-day disposal period, extendable to a total forty-five days with reasons, belongs to the applicable first-appeal framework; do not promise that every commission second appeal has that same fixed statutory disposal limit.\n\nA complaint concerning inability to submit, refusal, unreasonable fee or misleading/incomplete response is a distinct route requiring the appropriate relief analysis. Commission powers include compliance directions and the specified compensation/penalty consequences. Record the receipt, decision and filing dates and the relief sought before selecting a route.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Can the first-appeal disposal clock be automatically assigned to every second appeal?",
+          "expected_takeaway": "No. Distinguish the statutory stages."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "After the first appeal, a requester seeks the next appellate route. Which institution is relevant under the described framework?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The borrower chosen arbitrator",
+            "explanation_md": "That is not the RTI second-appeal route."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Any commercial bank manager",
+            "explanation_md": "The statutory jurisdiction matters."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Only the original PIO again",
+            "explanation_md": "That is not the stated next appeal."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The appropriate Information Commission",
+            "explanation_md": "The second appeal has a distinct statutory forum."
+          }
+        ],
+        "correct_explanation_md": "The second appeal has a distinct statutory forum."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A guide promises every second appeal must be disposed of within forty-five days by copying the first-appeal rule. What should change?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Delete all appeal rights",
+            "explanation_md": "That is not the correction."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Attribute the disposal rule to the correct statutory stage",
+            "explanation_md": "The stages have different provisions."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Treat ninety days as the ordinary initial response time",
+            "explanation_md": "That confuses filing and response rules."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Assume no dates matter",
+            "explanation_md": "They remain essential."
+          }
+        ],
+        "correct_explanation_md": "The stages have different provisions."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Antigravity independent legal,originality and session review pending; no publication approval.",
+    "Central/State fee rules,current procedural amendments and section11 total-response clock need primary reconciliation; no stale fee table copied."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

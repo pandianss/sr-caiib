@@ -1,0 +1,360 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-C-U15-B003",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_C::U15: Handle third-party recovery notices, joint funds and discharge safeguards",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.329-331 / PDF pp.348-350",
+        "statement": "Section28 writtenthirdpartynotice,attachmentexemptions,jointsharepresumptionrebuttable,copiestodebtor/jointholders,swornnonliabilityobjection,falseobjectionliabilitybounded,recoveryreceipt/discharge;29taxrecoveryscheduleswithmodifications.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "A third-party notice requires an ownership and obligation check",
+          "core_explanation_md": "The described section28 route can require a third party holding or owing the debtor money to pay the Recovery Officer. The notice does not make every rupee at that institution the debtor property. The applicable exemptions, joint-holder notices and rebuttable share presumption matter. A person genuinely not holding or owing the stated amount has the described sworn-objection route.\n\nPayment in compliance with the notice receives the stated receipt and discharge to that extent. False objections and noncompliance have their own consequences, but they should not be assumed without applying the conditions. Section29 borrows specified tax-recovery procedures with necessary modifications; this does not turn the underlying bank debt into a newly assessed income tax.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does a notice targeting one joint holder automatically establish that all joint funds belong to that debtor?",
+            "expected_takeaway": "No. Apply the share evidence, presumption and safeguards."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A notice concerns one debtor in a joint fund. Evidence shows another holder owns a separate share. What must the responding institution examine?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The ownership evidence, applicable presumption, notice scope and exemptions",
+              "explanation_md": "A notice does not make third-party property the debtor own money."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Only the largest account balance at the institution",
+              "explanation_md": "An unrelated balance is not the legal target."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Whether the debtor name appears first on the form",
+              "explanation_md": "Name order alone does not resolve beneficial shares."
+            },
+            {
+              "option_id": "D",
+              "text_md": "A rule that all joint money always belongs to one debtor",
+              "explanation_md": "The source describes a rebuttable share framework."
+            }
+          ],
+          "correct_explanation_md": "A notice does not make third-party property the debtor own money."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A third party makes the legally required payment to the Recovery Officer under the notice. What corresponding record matters?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "A second automatic liability for the same amount to the debtor",
+              "explanation_md": "The described compliant payment carries discharge to that extent."
+            },
+            {
+              "option_id": "B",
+              "text_md": "A receipt stating that all unrelated debts are also paid",
+              "explanation_md": "Discharge must match the actual obligation and amount."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The payment receipt and extent of statutory discharge",
+              "explanation_md": "The record protects against treating the same paid amount as still owed to the debtor."
+            },
+            {
+              "option_id": "D",
+              "text_md": "A new tax assessment replacing the bank claim",
+              "explanation_md": "Borrowed recovery procedures do not change the nature of the underlying debt."
+            }
+          ],
+          "correct_explanation_md": "The record protects against treating the same paid amount as still owed to the debtor."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "RDB courseware snapshot only. Current consolidated statute, notifications, Tribunal Reforms law, procedural rules and later judgments require Antigravity verification. Historical institutional names and court summaries are not current operational instructions.",
+      "Contradictory textbook appellate/priority summaries and obsolete SICA references require primary reconciliation; they are not used as correct-answer propositions."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-C-U15-B003",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_C::U15"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_C::U15",
+        "objective_ids": [
+          "BRBL::MOD_C::U15::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_C::U15",
+        "objective_ids": [
+          "BRBL::MOD_C::U15::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_C::U15",
+        "objective_ids": [
+          "BRBL::MOD_C::U15::LO_03"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-C-U15-B003",
+      "draft_id": "D001",
+      "item_id": "item_ec7a22cec6ecf9b111696b23f1f15329be664ba497fbef35e2f0db85dd624d32"
+    },
+    {
+      "batch_id": "BRBL-C-U15-B003",
+      "draft_id": "D002",
+      "item_id": "item_59f5e6df56679536805fb07db06deadb2084d60b20f4181292910eb86cfcdf51"
+    },
+    {
+      "batch_id": "BRBL-C-U15-B003",
+      "draft_id": "D003",
+      "item_id": "item_8383b5b0d9223da188ea5f2fb1f35a0edb1a2c089b0ddab2da41ebe696cbe2a3"
+    }
+  ],
+  "items": [
+    {
+      "title": "A third-party notice requires an ownership and obligation check",
+      "core_explanation_md": "The described section28 route can require a third party holding or owing the debtor money to pay the Recovery Officer. The notice does not make every rupee at that institution the debtor property. The applicable exemptions, joint-holder notices and rebuttable share presumption matter. A person genuinely not holding or owing the stated amount has the described sworn-objection route.\n\nPayment in compliance with the notice receives the stated receipt and discharge to that extent. False objections and noncompliance have their own consequences, but they should not be assumed without applying the conditions. Section29 borrows specified tax-recovery procedures with necessary modifications; this does not turn the underlying bank debt into a newly assessed income tax.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does a notice targeting one joint holder automatically establish that all joint funds belong to that debtor?",
+        "expected_takeaway": "No. Apply the share evidence, presumption and safeguards."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_ec7a22cec6ecf9b111696b23f1f15329be664ba497fbef35e2f0db85dd624d32",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U15",
+      "objective_ids": [
+        "BRBL::MOD_C::U15::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.329-331 / PDF pp.348-350"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A notice concerns one debtor in a joint fund. Evidence shows another holder owns a separate share. What must the responding institution examine?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The ownership evidence, applicable presumption, notice scope and exemptions",
+          "explanation_md": "A notice does not make third-party property the debtor own money."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Only the largest account balance at the institution",
+          "explanation_md": "An unrelated balance is not the legal target."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Whether the debtor name appears first on the form",
+          "explanation_md": "Name order alone does not resolve beneficial shares."
+        },
+        {
+          "option_id": "D",
+          "text_md": "A rule that all joint money always belongs to one debtor",
+          "explanation_md": "The source describes a rebuttable share framework."
+        }
+      ],
+      "correct_explanation_md": "A notice does not make third-party property the debtor own money.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_59f5e6df56679536805fb07db06deadb2084d60b20f4181292910eb86cfcdf51",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U15",
+      "objective_ids": [
+        "BRBL::MOD_C::U15::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.329-331 / PDF pp.348-350"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A third party makes the legally required payment to the Recovery Officer under the notice. What corresponding record matters?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "A second automatic liability for the same amount to the debtor",
+          "explanation_md": "The described compliant payment carries discharge to that extent."
+        },
+        {
+          "option_id": "B",
+          "text_md": "A receipt stating that all unrelated debts are also paid",
+          "explanation_md": "Discharge must match the actual obligation and amount."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The payment receipt and extent of statutory discharge",
+          "explanation_md": "The record protects against treating the same paid amount as still owed to the debtor."
+        },
+        {
+          "option_id": "D",
+          "text_md": "A new tax assessment replacing the bank claim",
+          "explanation_md": "Borrowed recovery procedures do not change the nature of the underlying debt."
+        }
+      ],
+      "correct_explanation_md": "The record protects against treating the same paid amount as still owed to the debtor.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_8383b5b0d9223da188ea5f2fb1f35a0edb1a2c089b0ddab2da41ebe696cbe2a3",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U15",
+      "objective_ids": [
+        "BRBL::MOD_C::U15::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.329-331 / PDF pp.348-350"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U22-B003",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U22: Distinguish disqualification,vacation,directorship limits and whole-time roles",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.524-525 / PDF pp.543-544",
+      "statement": "20total10publicqualifiedcount;12monthsallboardabsence;164167different;WTDemployment5yeartermreappointmentwindow.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Eligibility, continuing office and employment are separate",
+        "core_explanation_md": "A director must meet the relevant eligibility rules and avoid statutory disqualification. Vacation of office has specified triggers, such as the described absence from all board meetings over twelve months; a leave request does not automatically remove that trigger. Judicial orders, conviction and appeal qualifications require the exact current text rather than the textbook blanket immediate-vacation statement.\n\nThe described directorship limits are twenty overall and ten public-company positions, subject to statutory counting rules and any lower member-imposed limit. Count alternate positions and the relevant private-company group relationships correctly. A whole-time director is in whole-time employment; managerial appointment terms and reappointment timing are distinct from mere share ownership. Do not treat qualification-share wording as a universal current statutory requirement.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does leave automatically erase the twelve-month all-meetings absence trigger?",
+          "expected_takeaway": "No. The described rule includes absence with or without leave."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A director misses every board meeting for the stated twelve-month period and relies solely on leave approvals. Which issue remains?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Leave necessarily preserves office in every case",
+            "explanation_md": "That ignores the stated trigger."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Only the number of emails sent",
+            "explanation_md": "Emails do not replace the statutory test."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The applicable vacation-of-office rule",
+            "explanation_md": "The source includes absence with or without leave."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Automatic conversion into a shareholder",
+            "explanation_md": "Directorship and membership differ."
+          }
+        ],
+        "correct_explanation_md": "The source includes absence with or without leave."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A director counts only ordinary appointments and ignores alternate directorships when testing the overall limit. What must be reconciled?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The statutory counting rules, including the relevant alternate positions",
+            "explanation_md": "A label does not remove a counted position."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Only the travel calendar",
+            "explanation_md": "Travel does not count offices."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The total number of shares",
+            "explanation_md": "Share count is not directorship count."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Every company customer account",
+            "explanation_md": "Accounts are not directorships."
+          }
+        ],
+        "correct_explanation_md": "A label does not remove a counted position."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Antigravity must independently review law,exceptions,originality and exam cutoff before publication.",
+    "POST-CUTOFF primary consolidation: cited amendments/footnotes require cutoff reconciliation; class exemptions,current forms,qualification shares,section167 appeal and section188 exceptions remain reviewer checks."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

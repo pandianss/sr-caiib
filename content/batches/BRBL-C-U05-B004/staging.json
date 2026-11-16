@@ -1,0 +1,120 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-C-U05-B004",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL C U05: Apply acquisition notice and payment-discharge rules without confusing title transfer with notice",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed p.261 / PDF p.280",
+      "statement": "Section6 addresses acquisition notice and payment to ARC after notice; without notice originator receipts are held in trust for ARC. Company notice to relevant registrar is linked to giving notice in stated circumstances.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Payment routing needs the notice record",
+        "core_explanation_md": "Acquisition of the financial asset and notice to the obligor are different events. Section 6 describes the acquisition-notice route and the payment/discharge effect when the notified obligor pays the ARC. Do not require the obligor to infer changed payment instructions solely from an internal transaction between the transferor and acquirer.\n\nWhere the acquisition notice has not been given, the provision addresses money or property the originating bank or institution receives from the obligor: it is held in trust for the ARC and is to be passed on as described. A transferor receiving such money cannot treat it as its own free collection merely because the borrower used the earlier channel. Exact notification and company-register details require the applicable records.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does money received by the originator after an unnotified acquisition automatically belong freely to it?",
+          "expected_takeaway": "No. The statutory trust/remittance treatment must be applied."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Assume the stated acquisition occurred, no acquisition notice was given and the originating bank receives a payment from the obligor. Which treatment fits section 6?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Keep it as unrestricted originator income because notice was absent",
+            "explanation_md": "Absence of notice does not erase the ARC acquired rights."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Apply the statutory trust and onward-payment treatment for the ARC",
+            "explanation_md": "Section6 addresses amounts received by the originator in this situation."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Record that the acquisition never occurred",
+            "explanation_md": "Notice and the transfer event are distinct."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Demand that the obligor pay twice without examining discharge rules",
+            "explanation_md": "Payment and discharge must follow the statutory facts rather than an automatic double demand."
+          }
+        ],
+        "correct_explanation_md": "Section6 addresses amounts received by the originator in this situation."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A notified obligor asks why a payment to the ARC should be linked to the notice and discharge record. Which answer is sound?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The notice is merely an advertisement unrelated to payment",
+            "explanation_md": "The provision links acquisition notice to the payment/discharge framework."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Discharge is established only by the supplier bank borrowing limit",
+            "explanation_md": "A borrowing limit does not establish discharge of this obligation."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Every notice changes every unrelated debt of the obligor",
+            "explanation_md": "The acquired asset and identified obligation matter."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The record identifies the acquired obligation, payee and statutory payment effect",
+            "explanation_md": "Payment routing should follow the actual notice and acquired asset."
+          }
+        ],
+        "correct_explanation_md": "Payment routing should follow the actual notice and acquired asset."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Codex original drafts,16November2026; independent legal/session, originality and pedagogy review pending. No publication approval.",
+    "Whole courseware unit/end questions visually read: printed pp.257-267 / PDF pp.276-286. Source questions and distinctive structure were not reused.",
+    "Book cancellation/hearing shorthand, arbitration applicability, stamp scope and trust/insolvency conclusions require current primary statute and case-law verification. Do not infer June2026 consolidation from the historical BHC copy.",
+    "RBI displayed March2026 snapshot read for registration/NOF/activity conditions; later pre-cutoff amendments remain to be reconciled. June2026 draft directions are not treated as final law."
+  ],
+  "next_batch_hint": "Continue BRBL C U06 Enforcement of Security Interest, printed p.269 / PDF p.288"
+}

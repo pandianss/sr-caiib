@@ -1,0 +1,120 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-C-U12-B001",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_C::U12: Map establishment, territorial notification, staffing and continuity of proceedings",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.310-312 / PDF pp.329-331",
+      "statement": "CentralGovernment establishes DRT/DRAT by notification and jurisdiction; single PresidingOfficer/Chairperson,staff/recovery officers; cross-charge notification; vacancies permit statutory continuation from prior stage.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Identify the forum from its notification and role",
+        "core_explanation_md": "DRT and DRAT are separately established through the stated Central Government notification framework. The DRT is headed by the Presiding Officer and the appellate institution by its Chairperson; the staff and Recovery Officer perform supporting or execution functions rather than becoming extra adjudicating members. Territorial competence should be traced to the applicable notification.\n\nCross-charge arrangements and filling a vacancy do not automatically require every pending matter to restart. The statutory continuity provision identifies how proceedings continue. Keep the appointment instrument, jurisdiction and stage record together so an administrative change is not mistaken for a fresh trial or a transfer order.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does replacing a Presiding Officer itself prove that every pending matter starts again?",
+          "expected_takeaway": "No. Apply the statutory continuity rule and actual proceeding record."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A DRT staff roster is treated as evidence that the Tribunal is a multi-member judicial bench. What is the correction?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Every staff member has an adjudicating vote",
+            "explanation_md": "Administrative staffing does not change the described composition."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The Recovery Officer automatically replaces the Chairperson of DRAT",
+            "explanation_md": "The institutions and roles differ."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The borrower may choose the number of adjudicators",
+            "explanation_md": "Composition is established by law, not party preference."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Separate the single adjudicating office from supporting and recovery staff",
+            "explanation_md": "The source distinguishes composition from staffing."
+          }
+        ],
+        "correct_explanation_md": "The source distinguishes composition from staffing."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A change in the office-holder occurs during a pending case. Which record controls the next procedural step?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The assumption that all earlier evidence vanished",
+            "explanation_md": "Personnel change does not itself erase the record."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The appointment/continuity provisions and stage already reached",
+            "explanation_md": "The law provides for continuation rather than an automatic universal restart."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The branch annual leave calendar",
+            "explanation_md": "That is not the Tribunal continuity rule."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A private applicant instruction to choose a new forum",
+            "explanation_md": "A party cannot privately redefine the statutory forum."
+          }
+        ],
+        "correct_explanation_md": "The law provides for continuation rather than an automatic universal restart."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "RDB courseware snapshot only. Current consolidated statute, notifications, Tribunal Reforms law, procedural rules and later judgments require Antigravity verification. Historical institutional names and court summaries are not current operational instructions.",
+    "Current appointment ages/terms are intentionally not graded from the legacy chapter; obtain current law and judicial reconciliation during review."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

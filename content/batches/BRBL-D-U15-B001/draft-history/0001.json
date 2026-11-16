@@ -1,0 +1,359 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-D-U15-B001",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_D::U15: Apply registration-related suit disabilities and statutory exceptions",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.480-481 / PDF pp.499-500",
+        "statement": "69firm/partnercontractrightssuitsregistrationandregisterentries,exceptionsdissolutionaccountsrealisationdissolvedfirmofficialinsolvency;Statesmayamend.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Registration affects enforcement without rewriting every transaction",
+          "core_explanation_md": "The ordinary partnership framework distinguishes forming the relationship from registration. Section69 imposes specified disabilities on suits enforcing contractual rights by or for a firm or partner where its registration and recorded-partner requirements are not met. Do not convert this into a claim that every unregistered firm contract is automatically void or that no claim of any kind can proceed.\n\nThe source preserves the described routes for dissolution,accounts of a dissolved firm and realising its property,as well as the relevant insolvency-official exception. Set-off and other proceedings also require the statutory analysis. Check the cause of action,parties,registration entries,timing and any State amendment before deciding maintainability. Registration after a dispute is not a universal cure for every filing defect.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "What must be identified before invoking the non-registration bar?",
+            "expected_takeaway": "The precise claimant,right,proceeding and statutory requirements/exceptions."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "An unregistered firm wishes to sue on a contractual receivable. Counsel asks for the register entries and filing facts. Why?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Registration determines whether any agreement ever existed",
+              "explanation_md": "That is not the correct general proposition."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The contractual-suit disability has specific registration and recorded-partner requirements",
+              "explanation_md": "Maintainability needs more than a firm name."
+            },
+            {
+              "option_id": "C",
+              "text_md": "All unregistered-firm claims are criminal cases",
+              "explanation_md": "That classification is unsupported."
+            },
+            {
+              "option_id": "D",
+              "text_md": "A bank statement automatically replaces registration",
+              "explanation_md": "It does not establish the statutory entries."
+            }
+          ],
+          "correct_explanation_md": "Maintainability needs more than a firm name."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A partner seeks dissolution and accounts,and a note says non-registration bars every proceeding without exception. What must be corrected?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Dissolution is never a legal remedy",
+              "explanation_md": "The source recognises it."
+            },
+            {
+              "option_id": "B",
+              "text_md": "All firm contracts must be treated as nonexistent",
+              "explanation_md": "The suit disability is not that blanket rule."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Registration removes all court jurisdiction",
+              "explanation_md": "It does not."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The specified dissolution/accounts exceptions must be considered",
+              "explanation_md": "The statutory exceptions matter to this claim."
+            }
+          ],
+          "correct_explanation_md": "The statutory exceptions matter to this claim."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Primary law, State amendments, session applicability and independent editorial review remain with Antigravity. No publication approval."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-D-U15-B001",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_D::U15"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_D::U15",
+        "objective_ids": [
+          "BRBL::MOD_D::U15::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_D::U15",
+        "objective_ids": [
+          "BRBL::MOD_D::U15::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_D::U15",
+        "objective_ids": [
+          "BRBL::MOD_D::U15::LO_01"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-D-U15-B001",
+      "draft_id": "D001",
+      "item_id": "item_bac57657e5ec0a6613a4f90cb075e3f873ec896fb43e2ef279df989c61b61920"
+    },
+    {
+      "batch_id": "BRBL-D-U15-B001",
+      "draft_id": "D002",
+      "item_id": "item_ea9ec25c5b40599769a6e00cef855e3ecd6fe61aae2383afea5a61c701e027a7"
+    },
+    {
+      "batch_id": "BRBL-D-U15-B001",
+      "draft_id": "D003",
+      "item_id": "item_cb9fe1cffaeeac95489169d3be62197eb418fe3c24d90c0c85f904785083fafa"
+    }
+  ],
+  "items": [
+    {
+      "title": "Registration affects enforcement without rewriting every transaction",
+      "core_explanation_md": "The ordinary partnership framework distinguishes forming the relationship from registration. Section69 imposes specified disabilities on suits enforcing contractual rights by or for a firm or partner where its registration and recorded-partner requirements are not met. Do not convert this into a claim that every unregistered firm contract is automatically void or that no claim of any kind can proceed.\n\nThe source preserves the described routes for dissolution,accounts of a dissolved firm and realising its property,as well as the relevant insolvency-official exception. Set-off and other proceedings also require the statutory analysis. Check the cause of action,parties,registration entries,timing and any State amendment before deciding maintainability. Registration after a dispute is not a universal cure for every filing defect.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "What must be identified before invoking the non-registration bar?",
+        "expected_takeaway": "The precise claimant,right,proceeding and statutory requirements/exceptions."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_bac57657e5ec0a6613a4f90cb075e3f873ec896fb43e2ef279df989c61b61920",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U15",
+      "objective_ids": [
+        "BRBL::MOD_D::U15::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.480-481 / PDF pp.499-500"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "An unregistered firm wishes to sue on a contractual receivable. Counsel asks for the register entries and filing facts. Why?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Registration determines whether any agreement ever existed",
+          "explanation_md": "That is not the correct general proposition."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The contractual-suit disability has specific registration and recorded-partner requirements",
+          "explanation_md": "Maintainability needs more than a firm name."
+        },
+        {
+          "option_id": "C",
+          "text_md": "All unregistered-firm claims are criminal cases",
+          "explanation_md": "That classification is unsupported."
+        },
+        {
+          "option_id": "D",
+          "text_md": "A bank statement automatically replaces registration",
+          "explanation_md": "It does not establish the statutory entries."
+        }
+      ],
+      "correct_explanation_md": "Maintainability needs more than a firm name.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_ea9ec25c5b40599769a6e00cef855e3ecd6fe61aae2383afea5a61c701e027a7",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U15",
+      "objective_ids": [
+        "BRBL::MOD_D::U15::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.480-481 / PDF pp.499-500"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A partner seeks dissolution and accounts,and a note says non-registration bars every proceeding without exception. What must be corrected?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Dissolution is never a legal remedy",
+          "explanation_md": "The source recognises it."
+        },
+        {
+          "option_id": "B",
+          "text_md": "All firm contracts must be treated as nonexistent",
+          "explanation_md": "The suit disability is not that blanket rule."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Registration removes all court jurisdiction",
+          "explanation_md": "It does not."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The specified dissolution/accounts exceptions must be considered",
+          "explanation_md": "The statutory exceptions matter to this claim."
+        }
+      ],
+      "correct_explanation_md": "The statutory exceptions matter to this claim.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_cb9fe1cffaeeac95489169d3be62197eb418fe3c24d90c0c85f904785083fafa",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U15",
+      "objective_ids": [
+        "BRBL::MOD_D::U15::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.480-481 / PDF pp.499-500"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

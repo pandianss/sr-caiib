@@ -1,0 +1,119 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U15-B001",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U15: Apply registration-related suit disabilities and statutory exceptions",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.480-481 / PDF pp.499-500",
+      "statement": "69firm/partnercontractrightssuitsregistrationandregisterentries,exceptionsdissolutionaccountsrealisationdissolvedfirmofficialinsolvency;Statesmayamend.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Registration affects enforcement without rewriting every transaction",
+        "core_explanation_md": "The ordinary partnership framework distinguishes forming the relationship from registration. Section69 imposes specified disabilities on suits enforcing contractual rights by or for a firm or partner where its registration and recorded-partner requirements are not met. Do not convert this into a claim that every unregistered firm contract is automatically void or that no claim of any kind can proceed.\n\nThe source preserves the described routes for dissolution, accounts of a dissolved firm and realising its property, as well as the relevant insolvency-official exception. Set-off and other proceedings also require the statutory analysis. Check the cause of action, parties, registration entries, timing and any State amendment before deciding maintainability. Registration after a dispute is not a universal cure for every filing defect.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "What must be identified before invoking the non-registration bar?",
+          "expected_takeaway": "The precise claimant, right, proceeding and statutory requirements/exceptions."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An unregistered firm wishes to sue on a contractual receivable. Counsel asks for the register entries and filing facts. Why?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Registration determines whether any agreement ever existed",
+            "explanation_md": "That is not the correct general proposition."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The contractual-suit disability has specific registration and recorded-partner requirements",
+            "explanation_md": "Maintainability needs more than a firm name."
+          },
+          {
+            "option_id": "C",
+            "text_md": "All unregistered-firm claims are criminal cases",
+            "explanation_md": "That classification is unsupported."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A bank statement automatically replaces registration",
+            "explanation_md": "It does not establish the statutory entries."
+          }
+        ],
+        "correct_explanation_md": "Maintainability needs more than a firm name."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A partner seeks dissolution and accounts, and a note says non-registration bars every proceeding without exception. What must be corrected?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Dissolution is never a legal remedy",
+            "explanation_md": "The source recognises it."
+          },
+          {
+            "option_id": "B",
+            "text_md": "All firm contracts must be treated as nonexistent",
+            "explanation_md": "The suit disability is not that blanket rule."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Registration removes all court jurisdiction",
+            "explanation_md": "Registration affects the specified suit requirements; it does not abolish court jurisdiction over every firm dispute."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The specified dissolution/accounts exceptions must be considered",
+            "explanation_md": "The statutory exceptions matter to this claim."
+          }
+        ],
+        "correct_explanation_md": "The statutory exceptions matter to this claim."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Primary law, State amendments, session applicability and independent editorial review remain with Antigravity. No publication approval."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

@@ -1,0 +1,418 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-C-U19-B004",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_C::U19: Distinguish complaint limitation,appeal deposits,enforcement and mediation",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.370-375 / PDF pp.389-394",
+        "statement": "Districtappeal45days,statedState/Nationaloriginalroutes30days,requiredpayer50%deposit;complaint2yearcausewithreasonedcondonation;finalityifnoappeal,execution71;mediationcell/panel/procedure.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "An appeal and a mediated resolution follow different records",
+          "core_explanation_md": "A consumer file needs the exact order and proceeding before choosing an appeal route. The source distinguishes the District appeal period from the stated original-jurisdiction State/National appeal routes, and separately requires the prescribed payer deposit. Complaint limitation starts from the relevant cause of action; a late complaint needs the stated sufficient-cause and recorded-condonation decision.\n\nMediation is another process, supported by the designated cells and mediator records. Referral is not settlement. Finality, enforcement as the described decree-like order, and satisfaction are distinct events. An unpaid final order does not become satisfied merely because the case status says disposed.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does disposed necessarily mean the ordered amount was paid?",
+            "expected_takeaway": "No. Decision, finality, enforcement and satisfaction must be tracked separately."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "card",
+        "variant": "worked_example",
+        "payload": {
+          "title": "Compute a stipulated consumer appeal deposit",
+          "core_explanation_md": "Assume the relevant eligible appeal requires50% of the ordered payment and the order directs INR 286,000. Calculate the deposit only; appeal admissibility and fees are separate.",
+          "prerequisite_objective_ids": [],
+          "worked_steps": [
+            {
+              "step_number": 1,
+              "description": "Deposit",
+              "formula_or_substitution": "286000*50/100",
+              "intermediate_result": "143000 INR"
+            }
+          ],
+          "final_answer_with_unit": "143000 INR",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Which rule and stipulated facts determine this result?",
+            "expected_takeaway": "Use the sourced rule and stated scenario assumptions; the arithmetic does not establish a live legal entitlement."
+          }
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "numeric_input",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Assume an otherwise eligible consumer appeal with a stipulated50% deposit on an ordered payment of INR 394,000. Calculate the deposit in exact INR; do not treat it as a refund or reduction of liability.",
+          "correct_explanation_md": "394000*50/100=197000 INR.",
+          "numeric_rule": {
+            "expected_answer": "197000",
+            "unit_label": "INR",
+            "precision_decimals": 0,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Use exact whole units; do not round intermediate values.",
+            "allow_negative": false
+          }
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A case is referred to a mediation cell, but no agreement is reached. What can be concluded solely from referral?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The bank liability is finally admitted",
+              "explanation_md": "Referral alone is not an admission or adjudication."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Every ordered amount has been paid",
+              "explanation_md": "No payment is established."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The dispute entered the mediation process; settlement needs its own record",
+              "explanation_md": "A process event and its result are distinct."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The complaint limitation is automatically waived forever",
+              "explanation_md": "Referral does not establish unlimited procedural relief."
+            }
+          ],
+          "correct_explanation_md": "A process event and its result are distinct."
+        },
+        "draft_id": "D004",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Original drafts for later Antigravity review; source/current applicability, case law and originality review remain pending. No publication approval.",
+      "Appointment/service rules and later consumer notifications require current primary review. Numeric jurisdiction questions expressly stipulate the2021 ordinary-complaint framework;special unfair-contract routes are separate."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-C-U19-B004",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_C::U19"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_C::U19",
+        "objective_ids": [
+          "BRBL::MOD_C::U19::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_C::U19",
+        "objective_ids": [
+          "BRBL::MOD_C::U19::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_C::U19",
+        "objective_ids": [
+          "BRBL::MOD_C::U19::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BRBL::MOD_C::U19",
+        "objective_ids": [
+          "BRBL::MOD_C::U19::LO_04"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-C-U19-B004",
+      "draft_id": "D001",
+      "item_id": "item_cbf2c28ad155acfb86d8879a64294b342894bb6b30e452dfe64eb10ea5a9964e"
+    },
+    {
+      "batch_id": "BRBL-C-U19-B004",
+      "draft_id": "D002",
+      "item_id": "item_d39eda246e73c6e39ec7201e8ce275e0df7c3fd221d61d79f3ec81133c6b151f"
+    },
+    {
+      "batch_id": "BRBL-C-U19-B004",
+      "draft_id": "D003",
+      "item_id": "item_7f831d73701255befab5dfc27699b730f81f401bf304cbc4feea6c8e473db047"
+    },
+    {
+      "batch_id": "BRBL-C-U19-B004",
+      "draft_id": "D004",
+      "item_id": "item_f19d9069c60ab708dce7225034b402dab811ed30b06bf4e356c8be2a637afc9b"
+    }
+  ],
+  "items": [
+    {
+      "title": "An appeal and a mediated resolution follow different records",
+      "core_explanation_md": "A consumer file needs the exact order and proceeding before choosing an appeal route. The source distinguishes the District appeal period from the stated original-jurisdiction State/National appeal routes, and separately requires the prescribed payer deposit. Complaint limitation starts from the relevant cause of action; a late complaint needs the stated sufficient-cause and recorded-condonation decision.\n\nMediation is another process, supported by the designated cells and mediator records. Referral is not settlement. Finality, enforcement as the described decree-like order, and satisfaction are distinct events. An unpaid final order does not become satisfied merely because the case status says disposed.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does disposed necessarily mean the ordered amount was paid?",
+        "expected_takeaway": "No. Decision, finality, enforcement and satisfaction must be tracked separately."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_cbf2c28ad155acfb86d8879a64294b342894bb6b30e452dfe64eb10ea5a9964e",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U19",
+      "objective_ids": [
+        "BRBL::MOD_C::U19::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.370-375 / PDF pp.389-394"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Compute a stipulated consumer appeal deposit",
+      "core_explanation_md": "Assume the relevant eligible appeal requires50% of the ordered payment and the order directs INR 286,000. Calculate the deposit only; appeal admissibility and fees are separate.",
+      "prerequisite_objective_ids": [],
+      "worked_steps": [
+        {
+          "step_number": 1,
+          "description": "Deposit",
+          "formula_or_substitution": "286000*50/100",
+          "intermediate_result": "143000 INR"
+        }
+      ],
+      "final_answer_with_unit": "143000 INR",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Which rule and stipulated facts determine this result?",
+        "expected_takeaway": "Use the sourced rule and stated scenario assumptions; the arithmetic does not establish a live legal entitlement."
+      },
+      "item_type": "card",
+      "card_type": "worked_example",
+      "id": "item_d39eda246e73c6e39ec7201e8ce275e0df7c3fd221d61d79f3ec81133c6b151f",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U19",
+      "objective_ids": [
+        "BRBL::MOD_C::U19::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.370-375 / PDF pp.389-394"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Assume an otherwise eligible consumer appeal with a stipulated50% deposit on an ordered payment of INR 394,000. Calculate the deposit in exact INR; do not treat it as a refund or reduction of liability.",
+      "correct_explanation_md": "394000*50/100=197000 INR.",
+      "numeric_rule": {
+        "expected_answer": "197000",
+        "unit_label": "INR",
+        "precision_decimals": 0,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Use exact whole units; do not round intermediate values.",
+        "allow_negative": false
+      },
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_7f831d73701255befab5dfc27699b730f81f401bf304cbc4feea6c8e473db047",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U19",
+      "objective_ids": [
+        "BRBL::MOD_C::U19::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.370-375 / PDF pp.389-394"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A case is referred to a mediation cell, but no agreement is reached. What can be concluded solely from referral?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The bank liability is finally admitted",
+          "explanation_md": "Referral alone is not an admission or adjudication."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Every ordered amount has been paid",
+          "explanation_md": "No payment is established."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The dispute entered the mediation process; settlement needs its own record",
+          "explanation_md": "A process event and its result are distinct."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The complaint limitation is automatically waived forever",
+          "explanation_md": "Referral does not establish unlimited procedural relief."
+        }
+      ],
+      "correct_explanation_md": "A process event and its result are distinct.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_f19d9069c60ab708dce7225034b402dab811ed30b06bf4e356c8be2a637afc9b",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U19",
+      "objective_ids": [
+        "BRBL::MOD_C::U19::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.370-375 / PDF pp.389-394"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

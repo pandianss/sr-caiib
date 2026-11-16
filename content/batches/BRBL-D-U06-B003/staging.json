@@ -1,0 +1,120 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U06-B003",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U06: Apply fiduciary duties,accounts,retention,remuneration and reciprocal indemnities",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.434-436 / PDF pp.453-455",
+      "statement": "Directions/care/diligence/accounts/communication,nosecretprofits/conflicts;217properexpenses/remunerationretention,219completionqualified,221lien,222/223/225lawful/goodfaithacts/principalneglect;noncriminalindemnitylimitsrequireprimary.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "An agent accounts for both money and loyalty",
+        "core_explanation_md": "The agent must follow the relevant directions, apply care and skill, communicate difficulties and render proper accounts. Secret profits, self-dealing and misuse of agency information are not excused merely because the principal received some benefit. The principal corresponding rights depend on the conduct and applicable remedy.\n\nThe agent also has legitimate rights:the described properly incurred expenses and due remuneration can be retained from receipts, and the applicable lien and completion rules need their contractual qualifications. Principal indemnity for the specified lawful or good-faith acts and compensation for principal neglect do not amount to unlimited cover for every unauthorised or unlawful act. Reconcile gross receipts, allowed retention and net remittance.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does an agent earning a profit automatically mean the profit was authorised?",
+          "expected_takeaway": "No. Disclosure, consent and the duty framework matter."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An agent remits the expected amount but secretly keeps an undisclosed benefit obtained through the agency. What remains relevant?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "No duty exists if the principal received some money",
+            "explanation_md": "Money remittance does not settle fiduciary compliance."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Every secret profit automatically belongs to the agent",
+            "explanation_md": "The source identifies contrary principal rights."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The disclosure, conflict and secret-profit duties",
+            "explanation_md": "Accounting includes the loyalty consequences of the transaction."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Only the date the agent opened a bank account",
+            "explanation_md": "That does not resolve the conduct."
+          }
+        ],
+        "correct_explanation_md": "Accounting includes the loyalty consequences of the transaction."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An agent deducts personal unrelated spending from principal receipts as if it were a proper agency expense. Which reconciliation is needed?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Separate properly incurred expenses and due remuneration from unrelated amounts",
+            "explanation_md": "The retention right has a defined basis."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Every expense claimed is automatically due",
+            "explanation_md": "A label is not evidence of entitlement."
+          },
+          {
+            "option_id": "C",
+            "text_md": "No agent may ever recover any expense",
+            "explanation_md": "The source recognises legitimate expense rights."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The principal loses all money rights when an agent receives funds",
+            "explanation_md": "Receipt in agency does not create unrestricted ownership."
+          }
+        ],
+        "correct_explanation_md": "The retention right has a defined basis."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Drafts for Antigravity review. Consolidated statute,exceptions and later case law require independent reconciliation;no publication approval.",
+    "Book agent-capacity summary conflicts with its quotedsection184;the statutory distinction is retained. Secret-profit section-number attribution requires primary checking."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

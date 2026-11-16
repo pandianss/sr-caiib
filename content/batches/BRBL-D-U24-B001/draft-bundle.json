@@ -1,0 +1,360 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-D-U24-B001",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_D::U24: Distinguish sale,mortgage and authority over the transferable interest",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.540-541 / PDF pp.559-560",
+        "statement": "5livingpersonincludesbodies7competenceentitlement;54saleownershipprice;58mortgageinterestsecurity;capacityrepresentativeinterestchecks.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Identify the interest before accepting the security",
+          "core_explanation_md": "A sale transfers ownership for the described price consideration. A mortgage transfers an interest in specific immovable property to secure the monetary obligation. A lease transfers the right of enjoyment under its own terms. These are different interests; a person cannot supply a greater interest simply by calling a document a title deed.\n\nCheck capacity, ownership or valid disposal authority, and the extent of the interest. A co-owner, lessee, guardian or representative requires the relevant title, consent and statutory analysis. A company also needs the applicable corporate authority. Registration, stamping, encumbrance and local-law checks must be reconciled for the transaction rather than assumed from physical possession of a document.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Can a lessee automatically mortgage the lessor entire ownership?",
+            "expected_takeaway": "No. Identify the lessee interest and the permitted security."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A borrower holds only a leasehold interest but offers the property as if they own the freehold. Which issue is decisive?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only the market valuation",
+              "explanation_md": "Value does not establish the interest owned."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The extent and transferability of the borrower actual interest",
+              "explanation_md": "Security cannot be assessed by value alone."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The age of the borrower account",
+              "explanation_md": "Account history does not create freehold title."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Whether the lender prefers freehold",
+              "explanation_md": "Preference does not change title."
+            }
+          ],
+          "correct_explanation_md": "Security cannot be assessed by value alone."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A company representative holds original deeds and claims that possession alone authorises a mortgage. What remains necessary?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only a larger document envelope",
+              "explanation_md": "It has no legal effect."
+            },
+            {
+              "option_id": "B",
+              "text_md": "No authority check if deeds are original",
+              "explanation_md": "Possession is not unlimited disposal authority."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Assume the representative owns the land",
+              "explanation_md": "That does not follow."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Title, capacity and valid transaction authority",
+              "explanation_md": "The entity and representative powers must be established."
+            }
+          ],
+          "correct_explanation_md": "The entity and representative powers must be established."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Antigravity independent legal,originality and session review pending; no publication approval.",
+      "Current primary TPA and State rules must reconcile registration,section69 and actionable-claim exceptions; source case facts/table expression not reused."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-D-U24-B001",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_D::U24"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_D::U24",
+        "objective_ids": [
+          "BRBL::MOD_D::U24::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_D::U24",
+        "objective_ids": [
+          "BRBL::MOD_D::U24::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_D::U24",
+        "objective_ids": [
+          "BRBL::MOD_D::U24::LO_01"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-D-U24-B001",
+      "draft_id": "D001",
+      "item_id": "item_d0db520f07854e47276385f1c5c59cd663c38082091a91e0fe1b619d9b48105a"
+    },
+    {
+      "batch_id": "BRBL-D-U24-B001",
+      "draft_id": "D002",
+      "item_id": "item_928373f788c9b2926101930f6d935eaba8eb74193dea9274109b8ed3edde75a1"
+    },
+    {
+      "batch_id": "BRBL-D-U24-B001",
+      "draft_id": "D003",
+      "item_id": "item_e0fa92b511c47648888bcb2f30883596a930e91ca3ded805b493bf1f230f3d4d"
+    }
+  ],
+  "items": [
+    {
+      "title": "Identify the interest before accepting the security",
+      "core_explanation_md": "A sale transfers ownership for the described price consideration. A mortgage transfers an interest in specific immovable property to secure the monetary obligation. A lease transfers the right of enjoyment under its own terms. These are different interests; a person cannot supply a greater interest simply by calling a document a title deed.\n\nCheck capacity, ownership or valid disposal authority, and the extent of the interest. A co-owner, lessee, guardian or representative requires the relevant title, consent and statutory analysis. A company also needs the applicable corporate authority. Registration, stamping, encumbrance and local-law checks must be reconciled for the transaction rather than assumed from physical possession of a document.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Can a lessee automatically mortgage the lessor entire ownership?",
+        "expected_takeaway": "No. Identify the lessee interest and the permitted security."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_d0db520f07854e47276385f1c5c59cd663c38082091a91e0fe1b619d9b48105a",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U24",
+      "objective_ids": [
+        "BRBL::MOD_D::U24::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.540-541 / PDF pp.559-560"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A borrower holds only a leasehold interest but offers the property as if they own the freehold. Which issue is decisive?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only the market valuation",
+          "explanation_md": "Value does not establish the interest owned."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The extent and transferability of the borrower actual interest",
+          "explanation_md": "Security cannot be assessed by value alone."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The age of the borrower account",
+          "explanation_md": "Account history does not create freehold title."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Whether the lender prefers freehold",
+          "explanation_md": "Preference does not change title."
+        }
+      ],
+      "correct_explanation_md": "Security cannot be assessed by value alone.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_928373f788c9b2926101930f6d935eaba8eb74193dea9274109b8ed3edde75a1",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U24",
+      "objective_ids": [
+        "BRBL::MOD_D::U24::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.540-541 / PDF pp.559-560"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A company representative holds original deeds and claims that possession alone authorises a mortgage. What remains necessary?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only a larger document envelope",
+          "explanation_md": "It has no legal effect."
+        },
+        {
+          "option_id": "B",
+          "text_md": "No authority check if deeds are original",
+          "explanation_md": "Possession is not unlimited disposal authority."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Assume the representative owns the land",
+          "explanation_md": "That does not follow."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Title, capacity and valid transaction authority",
+          "explanation_md": "The entity and representative powers must be established."
+        }
+      ],
+      "correct_explanation_md": "The entity and representative powers must be established.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_e0fa92b511c47648888bcb2f30883596a930e91ca3ded805b493bf1f230f3d4d",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U24",
+      "objective_ids": [
+        "BRBL::MOD_D::U24::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.540-541 / PDF pp.559-560"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

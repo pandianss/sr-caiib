@@ -1,0 +1,360 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-C-U17-B001",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_C::U17: Identify bankers records and certification requirements for paper and electronic copies",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.352-354 / PDF pp.371-373",
+        "statement": "Bankersbooksordinaryrecordsandbackupsites;certifiedpaperentriestruecopy/ordinarycourse/custody,destroyedoriginalcertificate;electronic2Asystem,access,integrity,recovery,transfer/custodyandoperationcertificates.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Prepare the evidence package, not just a printout",
+          "core_explanation_md": "The1891 framework covers the described ordinary bank records, including electronic and backup records. A printout is not made a certified copy merely by adding a logo. Paper-copy certification addresses the true entry, ordinary business record and custody conditions; where the original was routinely destroyed, the further certification described in the source matters.\n\nFor electronic printouts, section2A adds the computer-system and integrity certifications: authorised access, change detection, recovery, transfer and custody safeguards, plus the required statement about material operation and derivation. Identify the competent signatories and retained record. This unit is expressly about the1891 syllabus framework; later replacement legislation and commencement need separate review.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does an unsigned spreadsheet export itself satisfy the described certification framework?",
+            "expected_takeaway": "No. The applicable certificates and record conditions must be established."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "An electronic account statement is produced without the required system/integrity certification. What must the evidence team address?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only the font size of the statement",
+              "explanation_md": "Appearance does not establish certification."
+            },
+            {
+              "option_id": "B",
+              "text_md": "A declaration that all printouts are conclusive",
+              "explanation_md": "A printout needs the applicable evidentiary foundation."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The borrower preference for paper",
+              "explanation_md": "Preference does not supply the required certificate."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The prescribed certification and underlying system safeguards",
+              "explanation_md": "The source distinguishes electronic integrity evidence from a bare export."
+            }
+          ],
+          "correct_explanation_md": "The source distinguishes electronic integrity evidence from a bare export."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A paper original was destroyed in the ordinary course after a copy was made. Which aspect of the described framework needs attention?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The debt must automatically be written off",
+              "explanation_md": "Record destruction does not itself extinguish a debt."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The further certification about the original record and copy conditions",
+              "explanation_md": "The source addresses this evidentiary circumstance expressly."
+            },
+            {
+              "option_id": "C",
+              "text_md": "A newly invented original should be created",
+              "explanation_md": "Fabricating a record is not certification."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Every transaction becomes legally admitted by the customer",
+              "explanation_md": "The customer admission cannot be assumed."
+            }
+          ],
+          "correct_explanation_md": "The source addresses this evidentiary circumstance expressly."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Independent Antigravity review remains required for later amendments, commencement, applicable regulations and judgments. Draft authoring is not a publication or legal-accuracy approval.",
+      "Territorial text in book is stale. New2026BankersBooksEvidenceAct discovered in official search;1891rules explicitly taught as syllabus/historical framework,not certified current law. Applicability at examcutoff and repeal/savings require primary review."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-C-U17-B001",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_C::U17"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_C::U17",
+        "objective_ids": [
+          "BRBL::MOD_C::U17::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_C::U17",
+        "objective_ids": [
+          "BRBL::MOD_C::U17::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_C::U17",
+        "objective_ids": [
+          "BRBL::MOD_C::U17::LO_01"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-C-U17-B001",
+      "draft_id": "D001",
+      "item_id": "item_f5898d45773bd801e8c4c644b4242d345bb14abd1fb6e6bef64aea275957b9d1"
+    },
+    {
+      "batch_id": "BRBL-C-U17-B001",
+      "draft_id": "D002",
+      "item_id": "item_003233dd9b59f751794885d43a08434d6a99e61898b7fe924ad5d9ba35358c38"
+    },
+    {
+      "batch_id": "BRBL-C-U17-B001",
+      "draft_id": "D003",
+      "item_id": "item_142cc110babac06c8790b78173da1e40204bade96cbe304671a7b6734580ee5b"
+    }
+  ],
+  "items": [
+    {
+      "title": "Prepare the evidence package, not just a printout",
+      "core_explanation_md": "The1891 framework covers the described ordinary bank records, including electronic and backup records. A printout is not made a certified copy merely by adding a logo. Paper-copy certification addresses the true entry, ordinary business record and custody conditions; where the original was routinely destroyed, the further certification described in the source matters.\n\nFor electronic printouts, section2A adds the computer-system and integrity certifications: authorised access, change detection, recovery, transfer and custody safeguards, plus the required statement about material operation and derivation. Identify the competent signatories and retained record. This unit is expressly about the1891 syllabus framework; later replacement legislation and commencement need separate review.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does an unsigned spreadsheet export itself satisfy the described certification framework?",
+        "expected_takeaway": "No. The applicable certificates and record conditions must be established."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_f5898d45773bd801e8c4c644b4242d345bb14abd1fb6e6bef64aea275957b9d1",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U17",
+      "objective_ids": [
+        "BRBL::MOD_C::U17::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.352-354 / PDF pp.371-373"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "An electronic account statement is produced without the required system/integrity certification. What must the evidence team address?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only the font size of the statement",
+          "explanation_md": "Appearance does not establish certification."
+        },
+        {
+          "option_id": "B",
+          "text_md": "A declaration that all printouts are conclusive",
+          "explanation_md": "A printout needs the applicable evidentiary foundation."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The borrower preference for paper",
+          "explanation_md": "Preference does not supply the required certificate."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The prescribed certification and underlying system safeguards",
+          "explanation_md": "The source distinguishes electronic integrity evidence from a bare export."
+        }
+      ],
+      "correct_explanation_md": "The source distinguishes electronic integrity evidence from a bare export.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_003233dd9b59f751794885d43a08434d6a99e61898b7fe924ad5d9ba35358c38",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U17",
+      "objective_ids": [
+        "BRBL::MOD_C::U17::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.352-354 / PDF pp.371-373"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A paper original was destroyed in the ordinary course after a copy was made. Which aspect of the described framework needs attention?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The debt must automatically be written off",
+          "explanation_md": "Record destruction does not itself extinguish a debt."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The further certification about the original record and copy conditions",
+          "explanation_md": "The source addresses this evidentiary circumstance expressly."
+        },
+        {
+          "option_id": "C",
+          "text_md": "A newly invented original should be created",
+          "explanation_md": "Fabricating a record is not certification."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Every transaction becomes legally admitted by the customer",
+          "explanation_md": "The customer admission cannot be assumed."
+        }
+      ],
+      "correct_explanation_md": "The source addresses this evidentiary circumstance expressly.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_142cc110babac06c8790b78173da1e40204bade96cbe304671a7b6734580ee5b",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U17",
+      "objective_ids": [
+        "BRBL::MOD_C::U17::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.352-354 / PDF pp.371-373"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

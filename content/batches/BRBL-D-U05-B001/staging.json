@@ -1,0 +1,120 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U05-B001",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U05: Identify pledge,constructive delivery and limited security interest",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.428-429 / PDF pp.447-448",
+      "statement": "172bailmentsecuritydebt/promise,pawnor/pawnee;actualconstructivedelivery,specialvsownership;limitedinterest179,repledgelimitedandinvalidoriginalcannotcure;specialpurposecustodyfactsnotblanket.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "The pledgee holds a security interest, not unrestricted ownership",
+        "core_explanation_md": "A pledge is the described bailment of goods as security for payment or performance. Identify the goods and the actual or constructive delivery of possession. General ownership remains with the pawnor while the pawnee has the relevant special security interest. Retaining custody with the debtor for a specific purpose needs its actual legal facts; it is not a universal rule that a pledge needs no possession.\n\nA limited-interest pledgor cannot normally convey a larger interest merely by naming a larger loan. Re-pledge likewise needs the applicable limits and a valid underlying interest. An ineffective original pledge is not automatically cured by another transfer of the same goods.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does a pledge automatically make the pawnee absolute owner?",
+          "expected_takeaway": "No. Security and general ownership are different interests."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A pledge file describes the goods as the bank unrestricted property from the moment of pledge. Which distinction is needed?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Every security is a completed sale",
+            "explanation_md": "A pledge is not automatically a sale."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The pawnee special security interest differs from general ownership",
+            "explanation_md": "The source preserves the pawnor general property."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The debt must be ignored because goods exist",
+            "explanation_md": "Security supports the obligation rather than eliminating it."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A custody label alone proves every legal delivery fact",
+            "explanation_md": "Possession/control needs evidence."
+          }
+        ],
+        "correct_explanation_md": "The source preserves the pawnor general property."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A party with only a limited established interest purports to pledge unrestricted ownership. What must be examined?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The declared larger loan automatically expands title",
+            "explanation_md": "Loan size does not create ownership."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Any later pledge cures every original defect",
+            "explanation_md": "A defective original interest cannot be assumed cured."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Only the goods colour",
+            "explanation_md": "That does not establish title scope."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The actual interest and statutory limits on what can be pledged",
+            "explanation_md": "The transfer cannot be assessed without that legal extent."
+          }
+        ],
+        "correct_explanation_md": "The transfer cannot be assessed without that legal extent."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Drafts for Antigravity review. Consolidated statute,exceptions and later case law require independent reconciliation;no publication approval.",
+    "Pledge-sale notice must use the applicable reasonable-notice law;not an arbitrary invented number of days."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

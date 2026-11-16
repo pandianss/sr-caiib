@@ -1,0 +1,438 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-C-U21-B005",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_C::U21: Apply GST supply,place-of-supply and input-credit concepts using stipulated calculation rates",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.394-396 / PDF pp.413-415",
+        "statement": "GSTindirectsupplytax,inputcreditmechanism;intraCGST+SGST/UTGST,interIGSTsubjectplaceofsupply;importservicesrequiresoutsideprovider,IndiarecipientandplaceIndia;specifiedrelatedimportswithoutconsideration;oldcommencementtypo conflicts.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "A cross-border payment is not a complete GST analysis",
+          "core_explanation_md": "GST concerns the taxable supply and its applicable classification, valuation and place-of-supply rules. The source distinguishes the intra-State dual structure from the inter-State IGST structure. Input tax credit reduces eligible output liability subject to the actual statutory conditions; possession of any invoice is not an unlimited credit entitlement.\n\nAn import-of-services analysis needs the provider location, recipient location and place of supply, plus the relevant consideration or specified related/distinct-person rules. Paying in foreign currency alone does not establish every element. Exercises below stipulate a rate and eligible credit to teach arithmetic,not to certify a current banking-service tax treatment.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does foreign-currency payment alone prove an import of services?",
+            "expected_takeaway": "No. The location,place-of-supply and applicable scope conditions matter."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "card",
+        "variant": "worked_example",
+        "payload": {
+          "title": "Separate output tax from stipulated eligible credit",
+          "core_explanation_md": "For a hypothetical taxable fee of INR24,000,use a stipulated total GST rate18% and eligible usable input credit INR1,200. Assume no other adjustments. Calculate net tax for this exercise only.",
+          "prerequisite_objective_ids": [],
+          "worked_steps": [
+            {
+              "step_number": 1,
+              "description": "Output tax",
+              "formula_or_substitution": "24000*18/100",
+              "intermediate_result": "4320 INR"
+            },
+            {
+              "step_number": 2,
+              "description": "Apply stipulated eligible credit",
+              "formula_or_substitution": "4320-1200",
+              "intermediate_result": "3120 INR"
+            }
+          ],
+          "final_answer_with_unit": "3120 INR",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Which rule and stipulated facts determine this result?",
+            "expected_takeaway": "Use the sourced rule and stated scenario assumptions; the arithmetic does not establish a live legal entitlement."
+          }
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "numeric_input",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "For a hypothetical fee INR36,000,use stipulated total GST18% and eligible usable credit INR1,800. No other adjustments apply. Compute net tax in exact INR. This does not determine a live service tax rate or credit eligibility.",
+          "correct_explanation_md": "36000*18/100-1800=4680 INR.",
+          "numeric_rule": {
+            "expected_answer": "4680",
+            "unit_label": "INR",
+            "precision_decimals": 0,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Use exact whole units; do not round intermediate values.",
+            "allow_negative": false
+          }
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A service is paid in foreign currency,but supplier/recipient locations and place of supply are not established. What remains to be checked?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only the currency conversion rounding",
+              "explanation_md": "Currency alone does not establish import scope."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Whether the invoice has a large value",
+              "explanation_md": "Value alone is not the location test."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The statutory service-import and place-of-supply conditions",
+              "explanation_md": "The required geographical and scope facts must be established."
+            },
+            {
+              "option_id": "D",
+              "text_md": "A rule that every foreign-currency receipt is exempt",
+              "explanation_md": "Currency does not itself create exemption."
+            }
+          ],
+          "correct_explanation_md": "The required geographical and scope facts must be established."
+        },
+        "draft_id": "D004",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Original drafts for later Antigravity review; source/current applicability, case law and originality review remain pending. No publication approval.",
+      "Tax chapter contains stale statutory regime,datedrates/thresholds,advance-tax typo,overbroadRNOR/cooperativeTDS/disallowance claims and conflictingGSTcommencement. These are not used as current correct-answer propositions. Numeric rates/eligibility are expressly hypothetical stipulations;currentregulatory publication needs Antigravity reconciliation."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-C-U21-B005",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_C::U21"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "ITD_INCOME_TAX_2025_TRANSITION",
+        "authority": "Income Tax Department, Government of India",
+        "title": "Objective and scope of the New Act FAQs: Income-tax Act2025 transition",
+        "url": "https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/objective-and-scope-new-act-faq",
+        "publication_date": null,
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_C::U21",
+        "objective_ids": [
+          "BRBL::MOD_C::U21::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_C::U21",
+        "objective_ids": [
+          "BRBL::MOD_C::U21::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_C::U21",
+        "objective_ids": [
+          "BRBL::MOD_C::U21::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BRBL::MOD_C::U21",
+        "objective_ids": [
+          "BRBL::MOD_C::U21::LO_05"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-C-U21-B005",
+      "draft_id": "D001",
+      "item_id": "item_ebca92fa4d2956d154d6501d06ad20a4c346caf4fbef357a97b34e97914e7b7f"
+    },
+    {
+      "batch_id": "BRBL-C-U21-B005",
+      "draft_id": "D002",
+      "item_id": "item_28af3a729bd4b2062094b1814b919ea7892fdf3affaaa5d1305da85826f790ad"
+    },
+    {
+      "batch_id": "BRBL-C-U21-B005",
+      "draft_id": "D003",
+      "item_id": "item_617bd1c49eb143be0e4c7647eb390f3e82113037ce98be5a43b582cdb6312026"
+    },
+    {
+      "batch_id": "BRBL-C-U21-B005",
+      "draft_id": "D004",
+      "item_id": "item_deea3c5255b4789895e8ed88221677f5e9e201c2ad2601030b30a984fcfb0161"
+    }
+  ],
+  "items": [
+    {
+      "title": "A cross-border payment is not a complete GST analysis",
+      "core_explanation_md": "GST concerns the taxable supply and its applicable classification, valuation and place-of-supply rules. The source distinguishes the intra-State dual structure from the inter-State IGST structure. Input tax credit reduces eligible output liability subject to the actual statutory conditions; possession of any invoice is not an unlimited credit entitlement.\n\nAn import-of-services analysis needs the provider location, recipient location and place of supply, plus the relevant consideration or specified related/distinct-person rules. Paying in foreign currency alone does not establish every element. Exercises below stipulate a rate and eligible credit to teach arithmetic,not to certify a current banking-service tax treatment.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does foreign-currency payment alone prove an import of services?",
+        "expected_takeaway": "No. The location,place-of-supply and applicable scope conditions matter."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_ebca92fa4d2956d154d6501d06ad20a4c346caf4fbef357a97b34e97914e7b7f",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U21",
+      "objective_ids": [
+        "BRBL::MOD_C::U21::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.394-396 / PDF pp.413-415"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Separate output tax from stipulated eligible credit",
+      "core_explanation_md": "For a hypothetical taxable fee of INR24,000,use a stipulated total GST rate18% and eligible usable input credit INR1,200. Assume no other adjustments. Calculate net tax for this exercise only.",
+      "prerequisite_objective_ids": [],
+      "worked_steps": [
+        {
+          "step_number": 1,
+          "description": "Output tax",
+          "formula_or_substitution": "24000*18/100",
+          "intermediate_result": "4320 INR"
+        },
+        {
+          "step_number": 2,
+          "description": "Apply stipulated eligible credit",
+          "formula_or_substitution": "4320-1200",
+          "intermediate_result": "3120 INR"
+        }
+      ],
+      "final_answer_with_unit": "3120 INR",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Which rule and stipulated facts determine this result?",
+        "expected_takeaway": "Use the sourced rule and stated scenario assumptions; the arithmetic does not establish a live legal entitlement."
+      },
+      "item_type": "card",
+      "card_type": "worked_example",
+      "id": "item_28af3a729bd4b2062094b1814b919ea7892fdf3affaaa5d1305da85826f790ad",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U21",
+      "objective_ids": [
+        "BRBL::MOD_C::U21::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.394-396 / PDF pp.413-415"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "For a hypothetical fee INR36,000,use stipulated total GST18% and eligible usable credit INR1,800. No other adjustments apply. Compute net tax in exact INR. This does not determine a live service tax rate or credit eligibility.",
+      "correct_explanation_md": "36000*18/100-1800=4680 INR.",
+      "numeric_rule": {
+        "expected_answer": "4680",
+        "unit_label": "INR",
+        "precision_decimals": 0,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Use exact whole units; do not round intermediate values.",
+        "allow_negative": false
+      },
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_617bd1c49eb143be0e4c7647eb390f3e82113037ce98be5a43b582cdb6312026",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U21",
+      "objective_ids": [
+        "BRBL::MOD_C::U21::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.394-396 / PDF pp.413-415"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A service is paid in foreign currency,but supplier/recipient locations and place of supply are not established. What remains to be checked?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only the currency conversion rounding",
+          "explanation_md": "Currency alone does not establish import scope."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Whether the invoice has a large value",
+          "explanation_md": "Value alone is not the location test."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The statutory service-import and place-of-supply conditions",
+          "explanation_md": "The required geographical and scope facts must be established."
+        },
+        {
+          "option_id": "D",
+          "text_md": "A rule that every foreign-currency receipt is exempt",
+          "explanation_md": "Currency does not itself create exemption."
+        }
+      ],
+      "correct_explanation_md": "The required geographical and scope facts must be established.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_deea3c5255b4789895e8ed88221677f5e9e201c2ad2601030b30a984fcfb0161",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U21",
+      "objective_ids": [
+        "BRBL::MOD_C::U21::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.394-396 / PDF pp.413-415"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

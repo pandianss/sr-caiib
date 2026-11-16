@@ -1,0 +1,120 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-C-U20-B001",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_C::U20: Select the remedy,limitation article and start event before computing a deadline",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.380-383 / PDF pp.399-402",
+      "statement": "Section3dismissaldespitenodefence,suitnotappeal/application;Schedulevariedstartpoints/lendingvsdemanddeposit/mortgage/foreclosure/execution. Booktablesmisalignmentandblanketcurrentaccountclaimneedsreview.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "A limitation decision begins with the legal claim",
+        "core_explanation_md": "Identify whether the proposed proceeding is a suit, appeal or application, then the relevant article and triggering event. The period is not selected simply because a file contains a loan. Money lent, money deposited on demand, an instalment obligation, mortgage enforcement and decree execution can use different starting rules. The book table should not be copied as a universal three-year shortcut.\n\nSection3 makes limitation relevant even where the opposing party has not raised it. A missing defence plea does not cure an otherwise late proceeding. Mutual-account treatment also requires the actual reciprocal-demand facts; calling a ledger current account is not sufficient to establish every legal condition.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Can the absence of a limitation defence itself make a late suit timely?",
+          "expected_takeaway": "No. The statutory limitation duty remains relevant."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A bank selects a deadline solely because its spreadsheet calls the account current. What additional analysis is needed?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only the spreadsheet colour",
+            "explanation_md": "Formatting does not establish the applicable article."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The legal nature of the claim, reciprocal-demand facts and applicable trigger",
+            "explanation_md": "Account labels cannot replace the statutory test."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A rule that every account has the same start date",
+            "explanation_md": "Different claims can have distinct triggers."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The debtor preferred repayment app",
+            "explanation_md": "Software preference does not define limitation."
+          }
+        ],
+        "correct_explanation_md": "Account labels cannot replace the statutory test."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "The defendant has not pleaded limitation. A late-filing review proposes to ignore it for that reason alone. What does section 3 require?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The parties can automatically remove the statutory rule by silence",
+            "explanation_md": "Silence does not establish a statutory exception."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Every claim becomes a mortgage suit",
+            "explanation_md": "The claim character does not change."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A new cause of action is invented on filing day",
+            "explanation_md": "The trigger must be evidenced."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Check the prescribed period despite the missing defence plea",
+            "explanation_md": "The provision addresses limitation independently of that plea."
+          }
+        ],
+        "correct_explanation_md": "The provision addresses limitation independently of that plea."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Original drafts for later Antigravity review; source/current applicability, case law and originality review remain pending. No publication approval.",
+    "Exact Schedule articles,periods and computation require primary checking;source table is not copied. No unsupported calendar or universal current-account conclusion is graded."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

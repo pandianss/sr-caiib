@@ -1,0 +1,120 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U27-B004",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U27: Distinguish protected systems,nodal protection and cheque application",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.572-573 / PDF pp.591-592",
+      "statement": "70GovernmentnotificationCIIprotectedauthorisedaccess70Anodalagency;81AchequeelectronictruncatedNI6notificationconsultRBI.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Technical importance and statutory protected status differ",
+        "core_explanation_md": "Critical information infrastructure is the described computer-resource category whose loss or destruction would have the specified debilitating national-security, economic, public-health or safety impact. Protected-system status involves the appropriate Government notification and authorised access framework. A manager calling a system critical does not replace that legal designation.\n\nThe national nodal-agency provision concerns critical-infrastructure protection. CERT-In and other statutory roles must be distinguished through their own provisions. The Act also has a specific electronic/truncated-cheque application route linked to the Negotiable Instruments Act definitions and Government notification in consultation with RBI. Do not infer that every scanned document is a legally equivalent cheque.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does an internal critical label itself prove protected-system notification?",
+          "expected_takeaway": "No. Check the statutory designation and access authority."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A compliance file claims protected-system status based only on an internal risk label. What evidence is central?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only the system purchase price",
+            "explanation_md": "Cost is not notification."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The vendor marketing brochure",
+            "explanation_md": "That does not establish statutory designation."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The number of passwords",
+            "explanation_md": "Security controls do not by themselves establish the legal status."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The relevant Government notification and authorised-access framework",
+            "explanation_md": "Protected status is a statutory designation."
+          }
+        ],
+        "correct_explanation_md": "Protected status is a statutory designation."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A staff member treats every cheque photograph as a truncated cheque without examining the NI Act definition or applicable process. What is missing?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only a higher camera resolution",
+            "explanation_md": "Resolution alone does not establish legal classification."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The statutory definition and applicable cheque-processing framework",
+            "explanation_md": "A generic image label is insufficient."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A rule that electronic cheques can never exist",
+            "explanation_md": "The source expressly addresses them."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The cheque drawer occupation",
+            "explanation_md": "It does not determine truncation."
+          }
+        ],
+        "correct_explanation_md": "A generic image label is insufficient."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Antigravity independent review pending for source accuracy,originality,question quality and session applicability. No publication approval.",
+    "Primary2022SO4720,currentJanVishwas amendments,section43A timing and struck-down66A listing must be reconciled before publication. No obsolete penalty table taught."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

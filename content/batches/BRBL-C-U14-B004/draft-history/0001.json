@@ -1,0 +1,359 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-C-U14-B004",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_C::U14: Compute the stated RDB appeal deposit without importing the SARFAESI debt base",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.323-324 / PDF pp.342-343",
+        "statement": "Section21 ordinarydeposit50% ofTribunal-determineddebt,reducibleforrecordedreasonsnotbelow25%. Sourcewordwaive cannotmeanzerodespitefloor.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "worked_example",
+        "payload": {
+          "title": "Use the determined debt for this RDB exercise",
+          "core_explanation_md": "Assume an eligible section21 RDB appeal and Tribunal-determined debt INR840,000. No reduction order exists. Calculate the ordinary 50% deposit; do not import the lower-of-two-amounts rule from a different statute.",
+          "prerequisite_objective_ids": [],
+          "worked_steps": [
+            {
+              "step_number": 1,
+              "description": "Identify the stipulated base",
+              "formula_or_substitution": "determined debt",
+              "intermediate_result": "840000 INR"
+            },
+            {
+              "step_number": 2,
+              "description": "Apply ordinary percentage",
+              "formula_or_substitution": "840000*50/100",
+              "intermediate_result": "420000 INR"
+            }
+          ],
+          "final_answer_with_unit": "420000 INR",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Which rule and stipulated facts determine this result?",
+            "expected_takeaway": "Use the sourced rule and stated scenario assumptions; the arithmetic does not establish a live legal entitlement."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "numeric_input",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "For an otherwise eligible RDB section21 appeal, assume Tribunal-determined debt INR1,180,000 and no reduction order. Calculate the ordinary50% deposit in exact INR.",
+          "correct_explanation_md": "1180000*50/100=590000 INR. The stated base is Tribunal-determined debt.",
+          "numeric_rule": {
+            "expected_answer": "590000",
+            "unit_label": "INR",
+            "precision_decimals": 0,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Use exact whole units; do not round intermediate values.",
+            "allow_negative": false
+          }
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A learning note reads the source word waive as allowing an automatic zero deposit despite the expressed25% minimum. Which correction is needed?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Preserve the statutory floor and distinguish requested from granted reduction",
+              "explanation_md": "The minimum cannot be erased by an isolated word."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Always choose zero when the borrower asks",
+              "explanation_md": "A request does not establish lawful relief."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Use collateral value instead of the specified debt base",
+              "explanation_md": "The deposit base is defined by the provision."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Replace the appeal fee with a deposit and omit one entirely",
+              "explanation_md": "Fee and deposit are different requirements."
+            }
+          ],
+          "correct_explanation_md": "The minimum cannot be erased by an isolated word."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "RDB courseware snapshot only. Current consolidated statute, notifications, Tribunal Reforms law, procedural rules and later judgments require Antigravity verification. Historical institutional names and court summaries are not current operational instructions."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-C-U14-B004",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_C::U14"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_C::U14",
+        "objective_ids": [
+          "BRBL::MOD_C::U14::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_C::U14",
+        "objective_ids": [
+          "BRBL::MOD_C::U14::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_C::U14",
+        "objective_ids": [
+          "BRBL::MOD_C::U14::LO_04"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-C-U14-B004",
+      "draft_id": "D001",
+      "item_id": "item_025af7fe7119c0597608681b58fbf789d245c75505d8574ec4e098dc3a0856e3"
+    },
+    {
+      "batch_id": "BRBL-C-U14-B004",
+      "draft_id": "D002",
+      "item_id": "item_5c862dc4f7fb8bce3482b9739191716d6decb8b44f84d7a71a025cf6f071b208"
+    },
+    {
+      "batch_id": "BRBL-C-U14-B004",
+      "draft_id": "D003",
+      "item_id": "item_b36509db0742b48ed21781420477be2ba6886ca2cde39b9bc8bf59d24f5f8e6d"
+    }
+  ],
+  "items": [
+    {
+      "title": "Use the determined debt for this RDB exercise",
+      "core_explanation_md": "Assume an eligible section21 RDB appeal and Tribunal-determined debt INR840,000. No reduction order exists. Calculate the ordinary 50% deposit; do not import the lower-of-two-amounts rule from a different statute.",
+      "prerequisite_objective_ids": [],
+      "worked_steps": [
+        {
+          "step_number": 1,
+          "description": "Identify the stipulated base",
+          "formula_or_substitution": "determined debt",
+          "intermediate_result": "840000 INR"
+        },
+        {
+          "step_number": 2,
+          "description": "Apply ordinary percentage",
+          "formula_or_substitution": "840000*50/100",
+          "intermediate_result": "420000 INR"
+        }
+      ],
+      "final_answer_with_unit": "420000 INR",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Which rule and stipulated facts determine this result?",
+        "expected_takeaway": "Use the sourced rule and stated scenario assumptions; the arithmetic does not establish a live legal entitlement."
+      },
+      "item_type": "card",
+      "card_type": "worked_example",
+      "id": "item_025af7fe7119c0597608681b58fbf789d245c75505d8574ec4e098dc3a0856e3",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U14",
+      "objective_ids": [
+        "BRBL::MOD_C::U14::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.323-324 / PDF pp.342-343"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "For an otherwise eligible RDB section21 appeal, assume Tribunal-determined debt INR1,180,000 and no reduction order. Calculate the ordinary50% deposit in exact INR.",
+      "correct_explanation_md": "1180000*50/100=590000 INR. The stated base is Tribunal-determined debt.",
+      "numeric_rule": {
+        "expected_answer": "590000",
+        "unit_label": "INR",
+        "precision_decimals": 0,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Use exact whole units; do not round intermediate values.",
+        "allow_negative": false
+      },
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_5c862dc4f7fb8bce3482b9739191716d6decb8b44f84d7a71a025cf6f071b208",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U14",
+      "objective_ids": [
+        "BRBL::MOD_C::U14::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.323-324 / PDF pp.342-343"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A learning note reads the source word waive as allowing an automatic zero deposit despite the expressed25% minimum. Which correction is needed?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Preserve the statutory floor and distinguish requested from granted reduction",
+          "explanation_md": "The minimum cannot be erased by an isolated word."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Always choose zero when the borrower asks",
+          "explanation_md": "A request does not establish lawful relief."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Use collateral value instead of the specified debt base",
+          "explanation_md": "The deposit base is defined by the provision."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Replace the appeal fee with a deposit and omit one entirely",
+          "explanation_md": "Fee and deposit are different requirements."
+        }
+      ],
+      "correct_explanation_md": "The minimum cannot be erased by an isolated word.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_b36509db0742b48ed21781420477be2ba6886ca2cde39b9bc8bf59d24f5f8e6d",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U14",
+      "objective_ids": [
+        "BRBL::MOD_C::U14::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.323-324 / PDF pp.342-343"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

@@ -1,0 +1,441 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-C-U08-B002",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_C::U08: Calculate a bounded section30A ceiling and distinguish penalty from enforcement",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.289-290 / PDF pp.308-309",
+        "statement": "Section30A initial maximum is higher of1crore or twice quantifiable failure amount; continuing increment up to1lakh/day after first. Notice/hearing, repayment/cancellation and non-duplication protections.30B/30C appeal, qualified condonation/stay;30D recovery route.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "A ceiling is not an automatic imposed amount",
+          "core_explanation_md": "For the stated section30A failure, first identify whether the amount involved is quantifiable. The initial ceiling uses the higher of INR1 crore and twice that amount; the stated continuing increment may extend to INR1 lakh for each day after the first. These are upper powers, not a promise that a maximum is imposed in every file. Notice and a reasonable opportunity to be heard remain part of the process.\n\nAppeal, stay, cancellation and recovery are separate statutory acts under sections30A-30D. A stay can have conditions, and the appeal route must use the order actually covered. Non-duplication provisions also require the existing complaint/penalty history. Independent review must reconcile the detailed payment and appeal wording before operational use.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does calculating the maximum establish the actual penalty imposed?",
+            "expected_takeaway": "No. The authority and procedural decision remain separate."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "card",
+        "variant": "worked_example",
+        "payload": {
+          "title": "Bound the initial power and stated continuing component",
+          "core_explanation_md": "Assume for this exercise a quantifiable failure amount of INR6,500,000 and a failure continuing for four days in total. Calculate the upper amount using the stated maximum additional INR100,000 per day after the first. This is not an imposed penalty.",
+          "prerequisite_objective_ids": [],
+          "worked_steps": [
+            {
+              "step_number": 1,
+              "description": "Initial ceiling",
+              "formula_or_substitution": "max(10000000,2*6500000)",
+              "intermediate_result": "13000000 INR"
+            },
+            {
+              "step_number": 2,
+              "description": "Continuing component",
+              "formula_or_substitution": "(4-1)*100000",
+              "intermediate_result": "300000 INR"
+            },
+            {
+              "step_number": 3,
+              "description": "Combined exercise ceiling",
+              "formula_or_substitution": "13000000+300000",
+              "intermediate_result": "13300000 INR"
+            }
+          ],
+          "final_answer_with_unit": "13300000 INR",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Which rule and stipulated facts determine this result?",
+            "expected_takeaway": "Use the sourced rule and stated scenario assumptions; the arithmetic does not establish a live legal entitlement."
+          }
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "numeric_input",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Under the stated section30A ceiling exercise, assume a quantifiable failure amount of INR4,000,000 and three total days of continuing failure. Use the maximum INR100,000 increment for each day after the first. What upper amount results, in exact INR? Do not treat it as an actual penalty.",
+          "correct_explanation_md": "max(10000000,2*4000000)+(3-1)*100000=10200000 INR.",
+          "numeric_rule": {
+            "expected_answer": "10200000",
+            "unit_label": "INR",
+            "precision_decimals": 0,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Use exact whole units; do not round intermediate values.",
+            "allow_negative": false
+          }
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "An appeal file assumes that requesting a stay has already suspended recovery. Which record is required?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The actual stay order and its terms, with compliance evidence",
+              "explanation_md": "Requesting relief is not equivalent to an order granting it."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Only the appeal document title",
+              "explanation_md": "A document label does not prove a granted stay."
+            },
+            {
+              "option_id": "C",
+              "text_md": "A private promise that all penalties will be waived",
+              "explanation_md": "Private expectation does not establish the statutory decision."
+            },
+            {
+              "option_id": "D",
+              "text_md": "A copy of an omitted penalty provision",
+              "explanation_md": "Historical text is not a current stay order."
+            }
+          ],
+          "correct_explanation_md": "Requesting relief is not equivalent to an order granting it."
+        },
+        "draft_id": "D004",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Authoring is based on the stated source framework; independent June2026 consolidation, notifications, State/UT scope and later case-law review are deferred to Antigravity. No source gap is resolved by import validity."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-C-U08-B002",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_C::U08"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_C::U08",
+        "objective_ids": [
+          "BRBL::MOD_C::U08::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_C::U08",
+        "objective_ids": [
+          "BRBL::MOD_C::U08::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_C::U08",
+        "objective_ids": [
+          "BRBL::MOD_C::U08::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BRBL::MOD_C::U08",
+        "objective_ids": [
+          "BRBL::MOD_C::U08::LO_02"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-C-U08-B002",
+      "draft_id": "D001",
+      "item_id": "item_28514e0deabe603c91637172029f81f655b1cc2b01a9e698c99fec0e22d85d00"
+    },
+    {
+      "batch_id": "BRBL-C-U08-B002",
+      "draft_id": "D002",
+      "item_id": "item_02eb5b72057705267210d6bd62794cf0d2c58883b40884cdf820955d83f74d3e"
+    },
+    {
+      "batch_id": "BRBL-C-U08-B002",
+      "draft_id": "D003",
+      "item_id": "item_a7957d60624ba74a0a99cf0aa80a1ac57adc1a8908d2a22c02e3741cc0e01fde"
+    },
+    {
+      "batch_id": "BRBL-C-U08-B002",
+      "draft_id": "D004",
+      "item_id": "item_a38af0437ca930af434448f7a9857ccf11b6be2d37f35a5c3e8bc63f3c307ec8"
+    }
+  ],
+  "items": [
+    {
+      "title": "A ceiling is not an automatic imposed amount",
+      "core_explanation_md": "For the stated section30A failure, first identify whether the amount involved is quantifiable. The initial ceiling uses the higher of INR1 crore and twice that amount; the stated continuing increment may extend to INR1 lakh for each day after the first. These are upper powers, not a promise that a maximum is imposed in every file. Notice and a reasonable opportunity to be heard remain part of the process.\n\nAppeal, stay, cancellation and recovery are separate statutory acts under sections30A-30D. A stay can have conditions, and the appeal route must use the order actually covered. Non-duplication provisions also require the existing complaint/penalty history. Independent review must reconcile the detailed payment and appeal wording before operational use.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does calculating the maximum establish the actual penalty imposed?",
+        "expected_takeaway": "No. The authority and procedural decision remain separate."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_28514e0deabe603c91637172029f81f655b1cc2b01a9e698c99fec0e22d85d00",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U08",
+      "objective_ids": [
+        "BRBL::MOD_C::U08::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.289-290 / PDF pp.308-309"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Bound the initial power and stated continuing component",
+      "core_explanation_md": "Assume for this exercise a quantifiable failure amount of INR6,500,000 and a failure continuing for four days in total. Calculate the upper amount using the stated maximum additional INR100,000 per day after the first. This is not an imposed penalty.",
+      "prerequisite_objective_ids": [],
+      "worked_steps": [
+        {
+          "step_number": 1,
+          "description": "Initial ceiling",
+          "formula_or_substitution": "max(10000000,2*6500000)",
+          "intermediate_result": "13000000 INR"
+        },
+        {
+          "step_number": 2,
+          "description": "Continuing component",
+          "formula_or_substitution": "(4-1)*100000",
+          "intermediate_result": "300000 INR"
+        },
+        {
+          "step_number": 3,
+          "description": "Combined exercise ceiling",
+          "formula_or_substitution": "13000000+300000",
+          "intermediate_result": "13300000 INR"
+        }
+      ],
+      "final_answer_with_unit": "13300000 INR",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Which rule and stipulated facts determine this result?",
+        "expected_takeaway": "Use the sourced rule and stated scenario assumptions; the arithmetic does not establish a live legal entitlement."
+      },
+      "item_type": "card",
+      "card_type": "worked_example",
+      "id": "item_02eb5b72057705267210d6bd62794cf0d2c58883b40884cdf820955d83f74d3e",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U08",
+      "objective_ids": [
+        "BRBL::MOD_C::U08::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.289-290 / PDF pp.308-309"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Under the stated section30A ceiling exercise, assume a quantifiable failure amount of INR4,000,000 and three total days of continuing failure. Use the maximum INR100,000 increment for each day after the first. What upper amount results, in exact INR? Do not treat it as an actual penalty.",
+      "correct_explanation_md": "max(10000000,2*4000000)+(3-1)*100000=10200000 INR.",
+      "numeric_rule": {
+        "expected_answer": "10200000",
+        "unit_label": "INR",
+        "precision_decimals": 0,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Use exact whole units; do not round intermediate values.",
+        "allow_negative": false
+      },
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_a7957d60624ba74a0a99cf0aa80a1ac57adc1a8908d2a22c02e3741cc0e01fde",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U08",
+      "objective_ids": [
+        "BRBL::MOD_C::U08::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.289-290 / PDF pp.308-309"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "An appeal file assumes that requesting a stay has already suspended recovery. Which record is required?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The actual stay order and its terms, with compliance evidence",
+          "explanation_md": "Requesting relief is not equivalent to an order granting it."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Only the appeal document title",
+          "explanation_md": "A document label does not prove a granted stay."
+        },
+        {
+          "option_id": "C",
+          "text_md": "A private promise that all penalties will be waived",
+          "explanation_md": "Private expectation does not establish the statutory decision."
+        },
+        {
+          "option_id": "D",
+          "text_md": "A copy of an omitted penalty provision",
+          "explanation_md": "Historical text is not a current stay order."
+        }
+      ],
+      "correct_explanation_md": "Requesting relief is not equivalent to an order granting it.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_a38af0437ca930af434448f7a9857ccf11b6be2d37f35a5c3e8bc63f3c307ec8",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U08",
+      "objective_ids": [
+        "BRBL::MOD_C::U08::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.289-290 / PDF pp.308-309"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

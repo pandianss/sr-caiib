@@ -1,0 +1,120 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U27-B002",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U27: Explain key pairs,verification,certificates and subscriber responsibility",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.567-570 / PDF pp.586-589",
+      "statement": "Privatekeycreatespublicverifiesrelatedpair;verificationidentityintegrity;ControllerregulatesCAlicencecertificateandsubscriberduties.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Signing and verification use different keys",
+        "core_explanation_md": "In the described asymmetric system, the private key creates the digital signature and the corresponding public key verifies it. Verification addresses the signature relationship and whether the signed record has changed. It is not a general guarantee that every commercial statement in the document is true or that the signer had unlimited authority.\n\nThe Controller supervises certifying authorities and the relevant standards. A licensed certifying authority issues certificates under the statutory framework; the subscriber has the corresponding duties. Check the certificate and its status, the signature, the record integrity and the signer authority as separate parts of the file. An image of a handwritten signature is not automatically the same as this digital-signature process.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does a valid digital signature prove every underlying factual assertion is accurate?",
+          "expected_takeaway": "No. It does not replace substantive transaction verification."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A verification procedure asks the customer to disclose the private key so the bank can check a signature. Which key performs the described verification role?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The private key must be shared with every verifier",
+            "explanation_md": "That confuses signing and verification."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The corresponding public key",
+            "explanation_md": "The key pair uses different signing and verification roles."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Any unrelated public key",
+            "explanation_md": "The corresponding relationship matters."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The account PIN",
+            "explanation_md": "That is not the described cryptographic verification key."
+          }
+        ],
+        "correct_explanation_md": "The key pair uses different signing and verification roles."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A digitally signed instruction is intact, but the signatory authority for this transaction is not established. Which conclusion is supported?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Signature integrity automatically creates unlimited authority",
+            "explanation_md": "An intact signed record does not establish that its signer had power for the particular transaction."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The record must therefore be forged",
+            "explanation_md": "Lack of authority proof is a different issue."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The certificate proves all business facts",
+            "explanation_md": "That overstates its role."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The authority check remains necessary",
+            "explanation_md": "Cryptographic verification and legal authority differ."
+          }
+        ],
+        "correct_explanation_md": "Cryptographic verification and legal authority differ."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Antigravity independent review pending for source accuracy,originality,question quality and session applicability. No publication approval.",
+    "Primary2022SO4720,currentJanVishwas amendments,section43A timing and struck-down66A listing must be reconciled before publication. No obsolete penalty table taught."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

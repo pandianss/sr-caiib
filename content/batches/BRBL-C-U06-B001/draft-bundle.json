@@ -1,0 +1,407 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-C-U06-B001",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL C U06: Apply demand-notice and objection duties without treating a notice as a completed measure",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "SARFAESI_GUJARAT_COMPILATION",
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "SARFAESI_GUJARAT_COMPILATION",
+        "locator": "section13(2)-(4), PDF p.17",
+        "statement": "Ordinary secured-debt route requires stated default/NPA and60-day written notice; notice identifies amount and assets. Debt-security proviso separately dispenses with NPA requirement. Rejected objection reasons communicated within15days; response alone is not section17 trigger.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "source_id": "S04",
+        "locator": "printed pp.269-279 / PDF pp.288-298, whole unit and end questions visually inspected",
+        "statement": "Courseware outlines enforcement; older redemption wording and placement of management restrictions reconciled against amended primary text rather than repeated.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Check the route, then the notice and response",
+          "core_explanation_md": "For the ordinary secured-loan route in section 13(2), establish the secured relationship, default and applicable NPA classification before the sixty-day written demand. The notice must identify the amount payable and the secured assets intended for enforcement. Debt securities have a separate proviso; do not copy the ordinary NPA requirement into that branch without checking it.\n\nIf a borrower objects, section 13(3A) requires consideration and, where rejected, communication of reasons within fifteen days of receipt. A mechanical rejection note is not a substitute for that consideration. Communicating reasons alone is also not the section 13(4) measure that triggers the section 17 remedy. Registry, exclusion and limitation checks remain necessary.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Is rejection of an objection itself the same as taking possession?",
+            "expected_takeaway": "No. The notice/response and enforcement-measure stages are distinct."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "An ordinary secured-loan file proposes possession immediately after sending the demand, with no stipulated expiry of the sixty-day period. Which statutory distinction is missing?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The demand itself always completes a possession measure",
+              "explanation_md": "A demand notice and a later enforcement measure are distinct events."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The demand period and conditions precede recourse to the stated measures",
+              "explanation_md": "Section13 separates demand from the later section13(4) recourse."
+            },
+            {
+              "option_id": "C",
+              "text_md": "An internal overdue label replaces every statutory condition",
+              "explanation_md": "Internal labels do not establish all applicable conditions."
+            },
+            {
+              "option_id": "D",
+              "text_md": "An objection automatically pays the debt",
+              "explanation_md": "A representation is not repayment of the liability."
+            }
+          ],
+          "correct_explanation_md": "Section13 separates demand from the later section13(4) recourse."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A rejected representation is received by the bank legal team. Which response fits section13(3A)?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Keep only a private rejection note without communicating reasons",
+              "explanation_md": "The provision requires communication of reasons for non-acceptance."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Wait for a completed auction before considering the representation",
+              "explanation_md": "The statutory representation duty occurs at the notice-response stage."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Treat the rejection letter itself as proof of physical possession",
+              "explanation_md": "A response letter is not that separate factual event."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Consider the objection and communicate rejection reasons within the specified fifteen days of receipt",
+              "explanation_md": "The statutory response period is linked to receipt of the representation."
+            }
+          ],
+          "correct_explanation_md": "The statutory response period is linked to receipt of the representation."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Codex original draft,16November2026; independent legal/session, originality, calculation and pedagogy review pending; no publication approval.",
+      "Primary compilation includes later amendments but is not certified complete through30June2026; URL date not used as edition evidence. Later judgments, statutory instruments and entity-specific eligibility still need review.",
+      "Remaining unit-depth gaps: current Rules8-9 sale procedure, valuation/reserve/publication/bid payment details, section19 compensation, section13(7)proceeds worked assessment, section13(9)value calculation and liquidation/IBC interplay. These batches do not establish complete unit coverage.",
+      "Source end questions were inspected and not reused. New teaching and assessment scenarios were designed from a factual brief; author comparison is not independent review."
+    ],
+    "next_batch_hint": "Finish C U06 depth/source gaps, then C U07 Central Registry, printed p.281 / PDF p.300"
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-C-U06-B001",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p.12, Compulsory PaperIV ModuleC, Enforcement of Security Interest"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "SARFAESI_GUJARAT_COMPILATION",
+        "authority": "Government of India statute hosted by Gujarat Revenue Department",
+        "title": "SARFAESI Act2002, 38-page compilation including 2016 and 2021 amendments",
+        "url": "https://revenuedepartment.gujarat.gov.in/downloads/4_11_GHRQ_01022026.pdf",
+        "publication_date": null,
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_C::U06",
+        "objective_ids": [
+          "BRBL::MOD_C::U06::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_C::U06",
+        "objective_ids": [
+          "BRBL::MOD_C::U06::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_C::U06",
+        "objective_ids": [
+          "BRBL::MOD_C::U06::LO_01"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-C-U06-B001",
+      "draft_id": "D001",
+      "item_id": "item_94a86b7d0772d0d83dbc950e0a7b3d27d6940cb4b4a561e9db90050f323a178a"
+    },
+    {
+      "batch_id": "BRBL-C-U06-B001",
+      "draft_id": "D002",
+      "item_id": "item_20756c870ee6ab6f240920363cfca65066d7557fca6bc5d84fe1893374270dc2"
+    },
+    {
+      "batch_id": "BRBL-C-U06-B001",
+      "draft_id": "D003",
+      "item_id": "item_0d3fe66125126b5ae2573a09391a050b830b68bf9138c69859aba7748ad3497b"
+    }
+  ],
+  "items": [
+    {
+      "title": "Check the route, then the notice and response",
+      "core_explanation_md": "For the ordinary secured-loan route in section 13(2), establish the secured relationship, default and applicable NPA classification before the sixty-day written demand. The notice must identify the amount payable and the secured assets intended for enforcement. Debt securities have a separate proviso; do not copy the ordinary NPA requirement into that branch without checking it.\n\nIf a borrower objects, section 13(3A) requires consideration and, where rejected, communication of reasons within fifteen days of receipt. A mechanical rejection note is not a substitute for that consideration. Communicating reasons alone is also not the section 13(4) measure that triggers the section 17 remedy. Registry, exclusion and limitation checks remain necessary.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Is rejection of an objection itself the same as taking possession?",
+        "expected_takeaway": "No. The notice/response and enforcement-measure stages are distinct."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_94a86b7d0772d0d83dbc950e0a7b3d27d6940cb4b4a561e9db90050f323a178a",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U06",
+      "objective_ids": [
+        "BRBL::MOD_C::U06::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "SARFAESI_GUJARAT_COMPILATION",
+          "authority": "Government of India statute hosted by Gujarat Revenue Department",
+          "title": "SARFAESI Act2002, 38-page compilation including 2016 and 2021 amendments",
+          "url": "https://revenuedepartment.gujarat.gov.in/downloads/4_11_GHRQ_01022026.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section13(2)-(4), PDF p.17"
+        },
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.269-279 / PDF pp.288-298, whole unit and end questions visually inspected"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "An ordinary secured-loan file proposes possession immediately after sending the demand, with no stipulated expiry of the sixty-day period. Which statutory distinction is missing?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The demand itself always completes a possession measure",
+          "explanation_md": "A demand notice and a later enforcement measure are distinct events."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The demand period and conditions precede recourse to the stated measures",
+          "explanation_md": "Section13 separates demand from the later section13(4) recourse."
+        },
+        {
+          "option_id": "C",
+          "text_md": "An internal overdue label replaces every statutory condition",
+          "explanation_md": "Internal labels do not establish all applicable conditions."
+        },
+        {
+          "option_id": "D",
+          "text_md": "An objection automatically pays the debt",
+          "explanation_md": "A representation is not repayment of the liability."
+        }
+      ],
+      "correct_explanation_md": "Section13 separates demand from the later section13(4) recourse.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_20756c870ee6ab6f240920363cfca65066d7557fca6bc5d84fe1893374270dc2",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U06",
+      "objective_ids": [
+        "BRBL::MOD_C::U06::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "SARFAESI_GUJARAT_COMPILATION",
+          "authority": "Government of India statute hosted by Gujarat Revenue Department",
+          "title": "SARFAESI Act2002, 38-page compilation including 2016 and 2021 amendments",
+          "url": "https://revenuedepartment.gujarat.gov.in/downloads/4_11_GHRQ_01022026.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section13(2)-(4), PDF p.17"
+        },
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.269-279 / PDF pp.288-298, whole unit and end questions visually inspected"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A rejected representation is received by the bank legal team. Which response fits section13(3A)?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Keep only a private rejection note without communicating reasons",
+          "explanation_md": "The provision requires communication of reasons for non-acceptance."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Wait for a completed auction before considering the representation",
+          "explanation_md": "The statutory representation duty occurs at the notice-response stage."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Treat the rejection letter itself as proof of physical possession",
+          "explanation_md": "A response letter is not that separate factual event."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Consider the objection and communicate rejection reasons within the specified fifteen days of receipt",
+          "explanation_md": "The statutory response period is linked to receipt of the representation."
+        }
+      ],
+      "correct_explanation_md": "The statutory response period is linked to receipt of the representation.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_0d3fe66125126b5ae2573a09391a050b830b68bf9138c69859aba7748ad3497b",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U06",
+      "objective_ids": [
+        "BRBL::MOD_C::U06::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "SARFAESI_GUJARAT_COMPILATION",
+          "authority": "Government of India statute hosted by Gujarat Revenue Department",
+          "title": "SARFAESI Act2002, 38-page compilation including 2016 and 2021 amendments",
+          "url": "https://revenuedepartment.gujarat.gov.in/downloads/4_11_GHRQ_01022026.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section13(2)-(4), PDF p.17"
+        },
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.269-279 / PDF pp.288-298, whole unit and end questions visually inspected"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

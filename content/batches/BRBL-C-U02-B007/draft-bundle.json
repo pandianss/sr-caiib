@@ -1,0 +1,481 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-C-U02-B007",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL C U02 MSMED Act: Calculate bounded monthly-rest interest using a stipulated bank rate and exact rounding",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "MSMED_ACT_2006_GAZETTE",
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "MSMED_ACT_2006_GAZETTE",
+        "locator": "section 16, PDF p.8",
+        "statement": "Section 16 specifies compound interest with monthly rests at three times RBI bank rate, notwithstanding contrary agreement. A constant stipulated rate and exact full monthly periods permit a bounded calculation; partial-month/live-rate conventions are not certified.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "source_id": "S04",
+        "locator": "printed pp.233-242 / PDF pp.252-261, whole unit and end questions visually inspected",
+        "statement": "The chapter covers this objective, but its older classification values and historical memorandum treatment must be read with the retained notifications.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "The reference is bank rate; the mechanism is monthly compounding",
+          "core_explanation_md": "Section 16 links the delayed-payment rate to three times the RBI-notified bank rate and requires compound interest with monthly rests. Do not substitute a loan rate, repo rate or a simple-interest convention merely because it is familiar. A private lower-rate term does not displace this statutory rule.\n\nFor a training problem with a constant stipulated annual bank rate and complete monthly periods, multiply that annual rate by three, divide by twelve for the assumed monthly rate, compound the outstanding amount and subtract principal to obtain interest. Live claims need actual rate changes, dates and applicable conventions; this exercise does not certify partial-month computation.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does monthly rests mean charging the annual rate every month?",
+            "expected_takeaway": "No. Convert the annual rate to the stated monthly rate; then compound monthly."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "item_type": "card",
+        "variant": "worked_example",
+        "payload": {
+          "title": "Two full monthly rests on a stipulated overdue amount",
+          "core_explanation_md": "Assume an eligible overdue principal of INR 40,000, no payments, exactly two full monthly periods and a constant stipulated RBI bank rate of 6% per annum throughout. Use annual rate / 12 per month for this bounded exercise. Find interest alone.",
+          "prerequisite_objective_ids": [],
+          "worked_steps": [
+            {
+              "step_number": 1,
+              "description": "Triple the stipulated annual bank rate",
+              "formula_or_substitution": "3 * 6%",
+              "intermediate_result": "18% per annum"
+            },
+            {
+              "step_number": 2,
+              "description": "Convert the stipulated annual rate to a monthly rate",
+              "formula_or_substitution": "18% / 12",
+              "intermediate_result": "1.5% per month"
+            },
+            {
+              "step_number": 3,
+              "description": "Compound through two complete rests",
+              "formula_or_substitution": "40000 * 1.015 * 1.015",
+              "intermediate_result": "41209.00 INR"
+            },
+            {
+              "step_number": 4,
+              "description": "Remove principal to find interest",
+              "formula_or_substitution": "41209.00 - 40000",
+              "intermediate_result": "1209.00 INR"
+            }
+          ],
+          "final_answer_with_unit": "1209.00 INR",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Which assumptions make this a bounded calculation rather than a live claim?",
+            "expected_takeaway": "Eligibility and dates are stipulated; the stated rate and complete monthly periods are assumptions, not current reference data."
+          }
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "numeric_input",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Assume an eligible overdue principal of INR 80,000, no payments, exactly two full monthly rests and a constant stipulated RBI bank rate of 6% per annum. For this exercise use the statutory triple annual rate divided by 12 each month. Find interest alone in INR, rounded only at the end to two decimals.",
+          "correct_explanation_md": "The assumed monthly rate is 3 * 6% / 12 = 1.5%. Interest = 80000 * (1.015^2 - 1) = 2418.00 INR.",
+          "numeric_rule": {
+            "expected_answer": "2418.00",
+            "unit_label": "INR",
+            "precision_decimals": 2,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Retain exact intermediate values; round only the final rupee amount to two decimal places using HALF_UP.",
+            "allow_negative": false
+          }
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "numeric_input",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Assume an eligible overdue principal of INR 125,000, no payments, three full monthly rests and a constant stipulated RBI bank rate of 8% per annum. Use triple annual rate / 12 each month for this exercise. Find interest alone in INR to two decimals, rounding only at the end.",
+          "correct_explanation_md": "The monthly rate is 3 * 8% / 12 = 2%. Interest = 125000 * (1.02^3 - 1) = 7651.00 INR.",
+          "numeric_rule": {
+            "expected_answer": "7651.00",
+            "unit_label": "INR",
+            "precision_decimals": 2,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Retain exact intermediate values; round only the final rupee amount to two decimal places using HALF_UP.",
+            "allow_negative": false
+          }
+        },
+        "draft_id": "D004",
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex drafts, 16 November 2026; independent legal/session applicability, originality and pedagogy review pending. No approval or publication claimed.",
+      "Original Gazette is not a certified June 2026 consolidation. Later amendments, commencement changes, State rules and applicable judgments require independent verification.",
+      "Source questions and textbook table structure were inspected and not reused. Teaching and scenarios were designed from a factual brief; author comparison is not independent editorial review.",
+      "Original notification transition dates and partial-month/live-rate interest conventions are not certified here. Udyam registration timing and legal eligibility disputes need applicable primary evidence."
+    ],
+    "next_batch_hint": "Continue BRBL-C-U02-B008"
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-C-U02-B007",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p.12, Compulsory Paper IV Module C, MSMED Act 2006"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "MSMED_ACT_2006_GAZETTE",
+        "authority": "Ministry of Law and Justice; hosted by Development Commissioner (MSME)",
+        "title": "The Micro, Small and Medium Enterprises Development Act, 2006, No.27 of 2006 (original Gazette enactment)",
+        "url": "https://www.dcmsme.gov.in/msmed2006.pdf",
+        "publication_date": "2006-06-16",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_C::U02",
+        "objective_ids": [
+          "BRBL::MOD_C::U02::LO_07"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_C::U02",
+        "objective_ids": [
+          "BRBL::MOD_C::U02::LO_07"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_C::U02",
+        "objective_ids": [
+          "BRBL::MOD_C::U02::LO_07"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BRBL::MOD_C::U02",
+        "objective_ids": [
+          "BRBL::MOD_C::U02::LO_07"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-C-U02-B007",
+      "draft_id": "D001",
+      "item_id": "item_90836541970967f8cc3f7a267cf3529920afa9dee2299ce92c59998cf7d4dc32"
+    },
+    {
+      "batch_id": "BRBL-C-U02-B007",
+      "draft_id": "D002",
+      "item_id": "item_0014371a6a9a913f136738ba658ed9e7448b6f86d63b9a484136ede03c1c98c5"
+    },
+    {
+      "batch_id": "BRBL-C-U02-B007",
+      "draft_id": "D003",
+      "item_id": "item_df22bcff97f4462beb5defbda7de9de1e85bdab2e9559cf13992f10389eef295"
+    },
+    {
+      "batch_id": "BRBL-C-U02-B007",
+      "draft_id": "D004",
+      "item_id": "item_f6c95c1f6736dc813bc09f75c95a47d63966ab43a45f809d453f5ce01943e3c0"
+    }
+  ],
+  "items": [
+    {
+      "title": "The reference is bank rate; the mechanism is monthly compounding",
+      "core_explanation_md": "Section 16 links the delayed-payment rate to three times the RBI-notified bank rate and requires compound interest with monthly rests. Do not substitute a loan rate, repo rate or a simple-interest convention merely because it is familiar. A private lower-rate term does not displace this statutory rule.\n\nFor a training problem with a constant stipulated annual bank rate and complete monthly periods, multiply that annual rate by three, divide by twelve for the assumed monthly rate, compound the outstanding amount and subtract principal to obtain interest. Live claims need actual rate changes, dates and applicable conventions; this exercise does not certify partial-month computation.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does monthly rests mean charging the annual rate every month?",
+        "expected_takeaway": "No. Convert the annual rate to the stated monthly rate; then compound monthly."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_90836541970967f8cc3f7a267cf3529920afa9dee2299ce92c59998cf7d4dc32",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U02",
+      "objective_ids": [
+        "BRBL::MOD_C::U02::LO_07"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "MSMED_ACT_2006_GAZETTE",
+          "authority": "Ministry of Law and Justice; hosted by Development Commissioner (MSME)",
+          "title": "The Micro, Small and Medium Enterprises Development Act, 2006, No.27 of 2006 (original Gazette enactment)",
+          "url": "https://www.dcmsme.gov.in/msmed2006.pdf",
+          "publication_date": "2006-06-16",
+          "effective_date": null,
+          "locator": "section 16, PDF p.8"
+        },
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.233-242 / PDF pp.252-261, whole unit and end questions visually inspected"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Two full monthly rests on a stipulated overdue amount",
+      "core_explanation_md": "Assume an eligible overdue principal of INR 40,000, no payments, exactly two full monthly periods and a constant stipulated RBI bank rate of 6% per annum throughout. Use annual rate / 12 per month for this bounded exercise. Find interest alone.",
+      "prerequisite_objective_ids": [],
+      "worked_steps": [
+        {
+          "step_number": 1,
+          "description": "Triple the stipulated annual bank rate",
+          "formula_or_substitution": "3 * 6%",
+          "intermediate_result": "18% per annum"
+        },
+        {
+          "step_number": 2,
+          "description": "Convert the stipulated annual rate to a monthly rate",
+          "formula_or_substitution": "18% / 12",
+          "intermediate_result": "1.5% per month"
+        },
+        {
+          "step_number": 3,
+          "description": "Compound through two complete rests",
+          "formula_or_substitution": "40000 * 1.015 * 1.015",
+          "intermediate_result": "41209.00 INR"
+        },
+        {
+          "step_number": 4,
+          "description": "Remove principal to find interest",
+          "formula_or_substitution": "41209.00 - 40000",
+          "intermediate_result": "1209.00 INR"
+        }
+      ],
+      "final_answer_with_unit": "1209.00 INR",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Which assumptions make this a bounded calculation rather than a live claim?",
+        "expected_takeaway": "Eligibility and dates are stipulated; the stated rate and complete monthly periods are assumptions, not current reference data."
+      },
+      "item_type": "card",
+      "card_type": "worked_example",
+      "id": "item_0014371a6a9a913f136738ba658ed9e7448b6f86d63b9a484136ede03c1c98c5",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U02",
+      "objective_ids": [
+        "BRBL::MOD_C::U02::LO_07"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "MSMED_ACT_2006_GAZETTE",
+          "authority": "Ministry of Law and Justice; hosted by Development Commissioner (MSME)",
+          "title": "The Micro, Small and Medium Enterprises Development Act, 2006, No.27 of 2006 (original Gazette enactment)",
+          "url": "https://www.dcmsme.gov.in/msmed2006.pdf",
+          "publication_date": "2006-06-16",
+          "effective_date": null,
+          "locator": "section 16, PDF p.8"
+        },
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.233-242 / PDF pp.252-261, whole unit and end questions visually inspected"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Assume an eligible overdue principal of INR 80,000, no payments, exactly two full monthly rests and a constant stipulated RBI bank rate of 6% per annum. For this exercise use the statutory triple annual rate divided by 12 each month. Find interest alone in INR, rounded only at the end to two decimals.",
+      "correct_explanation_md": "The assumed monthly rate is 3 * 6% / 12 = 1.5%. Interest = 80000 * (1.015^2 - 1) = 2418.00 INR.",
+      "numeric_rule": {
+        "expected_answer": "2418.00",
+        "unit_label": "INR",
+        "precision_decimals": 2,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Retain exact intermediate values; round only the final rupee amount to two decimal places using HALF_UP.",
+        "allow_negative": false
+      },
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_df22bcff97f4462beb5defbda7de9de1e85bdab2e9559cf13992f10389eef295",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U02",
+      "objective_ids": [
+        "BRBL::MOD_C::U02::LO_07"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "MSMED_ACT_2006_GAZETTE",
+          "authority": "Ministry of Law and Justice; hosted by Development Commissioner (MSME)",
+          "title": "The Micro, Small and Medium Enterprises Development Act, 2006, No.27 of 2006 (original Gazette enactment)",
+          "url": "https://www.dcmsme.gov.in/msmed2006.pdf",
+          "publication_date": "2006-06-16",
+          "effective_date": null,
+          "locator": "section 16, PDF p.8"
+        },
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.233-242 / PDF pp.252-261, whole unit and end questions visually inspected"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Assume an eligible overdue principal of INR 125,000, no payments, three full monthly rests and a constant stipulated RBI bank rate of 8% per annum. Use triple annual rate / 12 each month for this exercise. Find interest alone in INR to two decimals, rounding only at the end.",
+      "correct_explanation_md": "The monthly rate is 3 * 8% / 12 = 2%. Interest = 125000 * (1.02^3 - 1) = 7651.00 INR.",
+      "numeric_rule": {
+        "expected_answer": "7651.00",
+        "unit_label": "INR",
+        "precision_decimals": 2,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Retain exact intermediate values; round only the final rupee amount to two decimal places using HALF_UP.",
+        "allow_negative": false
+      },
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_f6c95c1f6736dc813bc09f75c95a47d63966ab43a45f809d453f5ce01943e3c0",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U02",
+      "objective_ids": [
+        "BRBL::MOD_C::U02::LO_07"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "MSMED_ACT_2006_GAZETTE",
+          "authority": "Ministry of Law and Justice; hosted by Development Commissioner (MSME)",
+          "title": "The Micro, Small and Medium Enterprises Development Act, 2006, No.27 of 2006 (original Gazette enactment)",
+          "url": "https://www.dcmsme.gov.in/msmed2006.pdf",
+          "publication_date": "2006-06-16",
+          "effective_date": null,
+          "locator": "section 16, PDF p.8"
+        },
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.233-242 / PDF pp.252-261, whole unit and end questions visually inspected"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-C-U17-B002",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_C::U17: Distinguish prima-facie admissibility from conclusive proof and officer-production exceptions",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.354-355 / PDF pp.373-374",
+      "statement": "Section4prima-facieentryevidence,notconclusiveliability;sourcewarnsfurtherpaymentproof;section5banknotpartyofficerprotectionwithspecialcausecourtorderexception.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Admissible evidence still has to support the claim",
+        "core_explanation_md": "A compliant certified entry is received under the stated framework as prima-facie evidence to the extent the original entry would be admissible. It is not an automatic judgment that every pleaded liability exists. The source specifically warns against treating account entries alone as sufficient proof of every disputed payment or transaction. Reconcile the contract, disbursement, admissions and other relevant evidence.\n\nThe1891 officer-production protection also has a scope: where the bank is not a party, the described books/witness protection is subject to a court or Judge order for special cause. It should not be rewritten as an absolute refusal to respond to every lawful evidence request.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does prima facie mean impossible to dispute?",
+          "expected_takeaway": "No. Admissibility and the ultimate proof of liability are distinct."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A certified statement is treated as conclusive proof of every disputed contractual allegation. Which distinction corrects that claim?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Prima-facie entry evidence and final liability are different determinations",
+            "explanation_md": "The source preserves the need for relevant substantive proof."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Certified copies are never admissible",
+            "explanation_md": "The framework permits properly certified entries."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A bank logo establishes every allegation",
+            "explanation_md": "Branding does not establish a legal claim."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The judge must ignore all other evidence",
+            "explanation_md": "The case still requires evaluation of the relevant record."
+          }
+        ],
+        "correct_explanation_md": "The source preserves the need for relevant substantive proof."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A non-party bank invokes the officer-production protection despite an actual special-cause order. What must be checked?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The bank may disregard every order automatically",
+            "explanation_md": "The protection contains an express exception."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Every non-party bank must send all records publicly",
+            "explanation_md": "The request scope and safeguards still matter."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The order, its special-cause basis and the applicable statutory scope",
+            "explanation_md": "The exception prevents an absolute-refusal interpretation."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Only whether the customer changed address",
+            "explanation_md": "Address alone does not decide the evidentiary order."
+          }
+        ],
+        "correct_explanation_md": "The exception prevents an absolute-refusal interpretation."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Independent Antigravity review remains required for later amendments, commencement, applicable regulations and judgments. Draft authoring is not a publication or legal-accuracy approval.",
+    "Territorial text in book is stale. New2026BankersBooksEvidenceAct discovered in official search;1891rules explicitly taught as syllabus/historical framework,not certified current law. Applicability at examcutoff and repeal/savings require primary review."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

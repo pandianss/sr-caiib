@@ -1,0 +1,120 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U07-B001",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U07: Identify goods,price,delivery and documents of title",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.438-439 / PDF pp.457-458",
+      "statement": "Salegoods movableexceptmoney/actionableclaims,includesstocksharesandagreedseverance;price money;deliverypossession;documentstitlecontrol,notallinvoices;futurevsspecificgoods.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Classify the asset and the transfer",
+        "core_explanation_md": "The Sale of Goods framework concerns the stated movable property category, including shares and things agreed to be severed, but excluding money and actionable claims as goods. Price is money consideration; barter and an immovable-property transfer need a different legal analysis. General contract essentials still apply.\n\nDelivery transfers possession, which need not be the same event as passing ownership. A document of title can support possession/control in the described commercial framework; not every invoice or certificate has that legal character. Specific goods are identified at contracting, while future goods are to be produced or acquired later. Verify what exists and what right the document actually conveys.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does a seller invoice automatically become a document of title?",
+          "expected_takeaway": "No. The legal character and commercial control function must be established."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A lending file treats every commercial invoice as a document of title giving control of stored goods. What is needed?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Examine the document legal character and actual possession/control effect",
+            "explanation_md": "An invoice label alone does not establish title-document status."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Only count the invoice pages",
+            "explanation_md": "Length is irrelevant to the right conveyed."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Assume all documents transfer ownership and possession identically",
+            "explanation_md": "Different documents and events have distinct effects."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Ignore identification of the goods",
+            "explanation_md": "The relevant goods must still be established."
+          }
+        ],
+        "correct_explanation_md": "An invoice label alone does not establish title-document status."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A seller promises goods it will manufacture later. Which distinction is material?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "They are necessarily identified existing goods merely because a price is agreed",
+            "explanation_md": "Price does not make future goods existing."
+          },
+          {
+            "option_id": "B",
+            "text_md": "No contract can ever concern future goods",
+            "explanation_md": "The framework recognises that category."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Future goods differ from goods already specifically identified at the contract date",
+            "explanation_md": "Timing and identification matter to the transaction."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The buyer automatically owns every asset of the seller",
+            "explanation_md": "The promise does not create that broad ownership."
+          }
+        ],
+        "correct_explanation_md": "Timing and identification matter to the transaction."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Antigravity review pending for primary law,exceptions,originality and current applicability. No publication approval.",
+    "No source comparison table copied. Specific-performance,risk and voidable-title exceptions require primary reconciliation before operational use."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

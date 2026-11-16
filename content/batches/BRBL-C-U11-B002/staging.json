@@ -1,0 +1,119 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-C-U11-B002",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_C::U11: Apply the stated monetary threshold without confusing debt definition and forum eligibility",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.305-307 / PDF pp.324-326",
+      "statement": "Book identifies notified20lakh threshold from6September2018; debt includes interest and secured/unsecured claims. Its15lakh end-question answer conflicts with threshold; excluded from reuse. Multistate banks differ from blanket cooperative-bank exclusion.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "A debt can exist while the chosen recovery route is unavailable",
+        "core_explanation_md": "The courseware identifies a notified INR 20 lakh threshold for this recovery route, including principal and interest in the claim analysis. Whether an amount is legally a debt is a different question from whether the application meets the forum threshold. An unsecured claim is not disqualified merely because no mortgage exists.\n\nApplicant status also matters. The source separately discusses multi-State cooperative banks after its broader historical cooperative-bank discussion; a blanket exclusion misses that distinction. Its conflicting smaller-value end-question answer is not used here. Threshold, institution class, jurisdiction and date must each be established before a live filing.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does proving a legally recoverable debt alone establish every forum condition?",
+          "expected_takeaway": "No. Threshold, applicant category and jurisdiction remain separate."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "For a hypothetical exercise expressly using an INR 20 lakh threshold, a claim totals INR 18 lakh including interest. What is the defensible distinction?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "No legal debt can exist below the forum threshold",
+            "explanation_md": "The threshold does not erase the underlying obligation."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Being secured automatically removes the threshold",
+            "explanation_md": "Security alone is not the stated threshold exception."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The source smaller-value answer overrides the stated rule without explanation",
+            "explanation_md": "An inconsistent key is not a sound basis for the assessment."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The debt may exist while this stated forum threshold is not met",
+            "explanation_md": "Debt existence and route eligibility answer different questions."
+          }
+        ],
+        "correct_explanation_md": "Debt existence and route eligibility answer different questions."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A lender classifies every cooperative bank identically despite the source separate multi-State category. What should the legal mapping examine?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only the bank trade name",
+            "explanation_md": "Trade name does not establish the statutory category."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The exact institutional category and applicable inclusion or alternative recovery route",
+            "explanation_md": "The source distinguishes categories and statutory routes."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Whether the customer prefers a Tribunal",
+            "explanation_md": "Borrower preference does not define the applicant class."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The size of the nearest branch",
+            "explanation_md": "Branch size is not a legal category."
+          }
+        ],
+        "correct_explanation_md": "The source distinguishes categories and statutory routes."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "RDB courseware snapshot only. Current consolidated statute, notifications, Tribunal Reforms law, procedural rules and later judgments require Antigravity verification. Historical institutional names and court summaries are not current operational instructions."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

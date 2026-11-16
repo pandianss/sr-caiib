@@ -1,0 +1,120 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U17-B003",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U17: Identify government,foreign,holding and subsidiary relationships",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.492-493 / PDF pp.511-512",
+      "statement": "Government51percentpaidupandincludes subsidiary;foreignincorporationplusIndiabusinesspresence;holdingcontrolboardsorvotingpowerrequirescurrentwording.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Control, location and government ownership answer different questions",
+        "core_explanation_md": "The government-company definition uses not less than fifty-one per cent of paid-up share capital held by the described Central/State government combination and includes a subsidiary of such a government company. Do not replace paid-up capital with revenue or the number of government-appointed employees.\n\nA foreign-company analysis considers foreign incorporation together with the statutory Indian place-of-business and business-activity requirements, including the described electronic presence. Holding/subsidiary relationships require the relevant board-composition or voting-power control test and can extend down a subsidiary chain. Common branding or a minority investment alone does not establish the relationship. Use the current statutory control wording rather than the textbook shorthand of majority shares for every capital structure.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Can common branding alone prove a subsidiary relationship?",
+          "expected_takeaway": "No. Establish the applicable control test."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "The Central and State Governments together hold the required fifty-one per cent of paid-up capital. A note tests government-company status by annual sales instead. What is wrong?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Sales must always equal share capital",
+            "explanation_md": "They are different measures."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Only one government may hold any shares",
+            "explanation_md": "The definition permits the described combination."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The statutory ownership measure is paid-up share capital",
+            "explanation_md": "Revenue is not the stated test."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Government ownership prevents incorporation",
+            "explanation_md": "The source recognises government companies."
+          }
+        ],
+        "correct_explanation_md": "Revenue is not the stated test."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A lender sees a group logo and assumes a subsidiary guarantee is automatically a holding-company guarantee. What must be checked?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Separate entity identity, control relationship and the actual undertaking",
+            "explanation_md": "Group relationship does not merge obligations."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Only the logo colour",
+            "explanation_md": "It does not establish liability."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A rule that all group debts are automatically joint",
+            "explanation_md": "That is unsupported."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Only the parent company address",
+            "explanation_md": "Address alone is insufficient."
+          }
+        ],
+        "correct_explanation_md": "Group relationship does not merge obligations."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Antigravity must independently review law,exceptions,originality and exam cutoff before publication.",
+    "Primary 2025 small-company amendment retrieval pending; no stale numerical limit taught. Old statutory-meeting,deposit,OPC conversion and commencement claims excluded pending reconciliation."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

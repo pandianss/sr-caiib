@@ -1,0 +1,120 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U28-B003",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U28: Distinguish offence-specific punishment,fine factors and special-court procedure",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.578-580 / PDF pp.597-599",
+      "statement": "3-4specialjudgesqualificationsjurisdictionendeavour2yearsextensions6monthordinarily4;punishmentsdifferent7and12three-seven13four-ten;16valuefinefactor.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "A punishment range belongs to a particular offence",
+        "core_explanation_md": "The source gives different imprisonment ranges and fine consequences for different offences. For example, the described section 7 and abetment routes use three-to-seven-year ranges, while criminal misconduct has its own four-to-ten-year range. Do not use a single maximum for all conduct or confuse an attempt with the completed offence. Fine determination considers the described obtained-property/value or unexplained-resource factors under the applicable provision.\n\nSpecial Judges try the specified offences. The source describes a two-year trial endeavour, reasoned extensions in six-month periods and an ordinary aggregate four-year formulation. This is not a promise that every case automatically terminates at an absolute stopwatch deadline. The special forum and lawful transfer/appellate rules must be distinguished; the fact a forum is special does not mean no transfer can ever occur.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Is the described trial-duration formulation an automatic acquittal rule?",
+          "expected_takeaway": "No. Do not replace its qualified language with an absolute outcome."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A revision sheet assigns the same imprisonment range to bribery, misconduct and every attempt. What is the correct method?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Use whichever maximum is largest",
+            "explanation_md": "That does not identify the applicable provision."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Ignore the offence classification",
+            "explanation_md": "It determines the relevant sanction."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Treat a fine as the only possible consequence in all cases",
+            "explanation_md": "That contradicts the source."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Match each alleged offence and version to its own punishment provision",
+            "explanation_md": "Different routes have different ranges and conditions."
+          }
+        ],
+        "correct_explanation_md": "Different routes have different ranges and conditions."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A note says a pending trial automatically ends after two years without considering the statutory extension formulation. What must be corrected?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "No trial-time provision exists",
+            "explanation_md": "The source describes one."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The endeavour and reasoned-extension language must be preserved",
+            "explanation_md": "The text is qualified."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Every case must instead last exactly ten years",
+            "explanation_md": "That is unsupported."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Only the bank may choose the trial end",
+            "explanation_md": "Trial procedure is statutory."
+          }
+        ],
+        "correct_explanation_md": "The text is qualified."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Antigravity independent review pending for source accuracy,originality,question quality and session applicability. No publication approval.",
+    "Primary PC Act/SOP and post2024 procedural-code transition require review; source trial answer is overabsolute and was not reproduced."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

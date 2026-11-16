@@ -1,0 +1,145 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-C-U02-B009",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL C U02 MSMED Act: Distinguish the non-supplier challenge deposit from final award payment",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "MSMED_ACT_2006_GAZETTE",
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "MSMED_ACT_2006_GAZETTE",
+      "locator": "section 19, PDF p.9",
+      "statement": "A setting-aside application by a non-supplier appellant requires deposit of 75% of decree/award/order amount as directed. Court may direct reasonable conditional payment of a percentage of deposit to supplier pending disposal.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F002",
+      "source_id": "S04",
+      "locator": "printed pp.233-242 / PDF pp.252-261, whole unit and end questions visually inspected",
+      "statement": "The chapter covers this objective, but its older classification values and historical memorandum treatment must be read with the retained notifications.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "A challenge deposit is not a new discount on liability",
+        "core_explanation_md": "Section 19 addresses entertaining the stated application to set aside a decree, award or order when the appellant is not a supplier. The required deposit is seventy-five per cent of the amount in terms of that decree, award or order, in the manner directed by the court. It is not a general twenty-five per cent waiver or a promise of success on challenge.\n\nPending disposal, the court directs payment to the supplier of such percentage of the deposit as it considers reasonable, subject to conditions. Do not automatically treat the whole deposit as an unconditional final distribution. Keep the award amount, required deposit and any interim release separate.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does depositing seventy-five per cent erase the remaining award amount?",
+          "expected_takeaway": "No. The deposit is a procedural condition, not a discount or a merits decision."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "item_type": "card",
+      "variant": "worked_example",
+      "payload": {
+        "title": "Keep award, deposit and release distinct",
+        "core_explanation_md": "For a bounded section 19 exercise, assume a non-supplier applicant challenges an award of INR 240,000 and the court directs the statutory 75% deposit. Calculate the deposit only; no interim-release percentage is supplied.",
+        "prerequisite_objective_ids": [],
+        "worked_steps": [
+          {
+            "step_number": 1,
+            "description": "Calculate the directed deposit",
+            "formula_or_substitution": "240000 * 75 / 100",
+            "intermediate_result": "180000.00 INR"
+          }
+        ],
+        "final_answer_with_unit": "180000.00 INR",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Which assumptions make this a bounded calculation rather than a live claim?",
+          "expected_takeaway": "Eligibility and dates are stipulated; the stated rate and complete monthly periods are assumptions, not current reference data."
+        }
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "numeric_input",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "For a stipulated section 19 setting-aside application by a non-supplier, the award amount is INR 318,450. The court directs the statutory 75% deposit. Calculate that deposit only in INR, to two decimals. Do not subtract a purported discount.",
+        "correct_explanation_md": "318450 * 75 / 100 = 238837.50 INR. This is a deposit condition, not a reduction of the award.",
+        "numeric_rule": {
+          "expected_answer": "238837.50",
+          "unit_label": "INR",
+          "precision_decimals": 2,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Retain exact intermediate values; round only the final rupee amount to two decimal places using HALF_UP.",
+          "allow_negative": false
+        }
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A buyer deposits the stipulated section 19 percentage and tells its accounts team that the unpaid balance has been legally forgiven. What is the correct distinction?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Every deposit equals full and final settlement",
+            "explanation_md": "A procedural deposit does not establish settlement or discharge."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The court must automatically reject the supplier claim",
+            "explanation_md": "The deposit condition does not decide the merits."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The deposit permits the specified challenge to be entertained; it does not itself waive the balance",
+            "explanation_md": "Deposit, adjudication and any distribution are separate legal events."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The deposit gives the buyer a new loan from the supplier",
+            "explanation_md": "The statute describes a court deposit, not fresh supplier finance."
+          }
+        ],
+        "correct_explanation_md": "Deposit, adjudication and any distribution are separate legal events."
+      },
+      "draft_id": "D004",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex drafts, 16 November 2026; independent legal/session applicability, originality and pedagogy review pending. No approval or publication claimed.",
+    "Original Gazette is not a certified June 2026 consolidation. Later amendments, commencement changes, State rules and applicable judgments require independent verification.",
+    "Source questions and textbook table structure were inspected and not reused. Teaching and scenarios were designed from a factual brief; author comparison is not independent editorial review.",
+    "Original notification transition dates and partial-month/live-rate interest conventions are not certified here. Udyam registration timing and legal eligibility disputes need applicable primary evidence."
+  ],
+  "next_batch_hint": "Continue BRBL-C-U02-B010"
+}

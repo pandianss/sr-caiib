@@ -1,0 +1,359 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-D-U11-B002",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_D::U11: Apply financial defaults,firm-property and personal-profit accounting",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.461-462 / PDF pp.480-481",
+        "statement": "Section13defaultsequalprofitsloss,noremuneration,capitalinterestprofits,extraadvance6percent;proper/emergencyindemnity,willfulneglect;14-16propertygoodwill,personalprofitscompetition;17continuity.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Start with the agreement,then use the statutory default",
+          "core_explanation_md": "In the absence of a contrary contract,the described defaults include equal sharing of profits and losses and no automatic remuneration for participating in the business. Interest on capital,where payable under the stated rule,is payable out of profits. A qualifying advance beyond agreed capital is treated differently: the source specifies six per cent per annum. Do not confuse this default with a current bank lending rate or silently override an agreed term.\n\nProperty acquired for the firm and goodwill require firm-property analysis rather than treating title in one partner name as decisive. Benefits obtained through firm transactions,property or business connections and competing-business profits can require accounting to the firm,subject to the governing agreement. Reconstitution or continuation of a fixed-term venture also needs the section17 default-continuity analysis.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does working more hours create an automatic salary entitlement under the default?",
+            "expected_takeaway": "No. Examine the agreement; the default does not provide automatic remuneration."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "The agreement is silent on remuneration and one partner demands salary solely for managing daily operations. What is the appropriate starting point?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Salary is automatically equal to the bank manager salary",
+              "explanation_md": "There is no such default."
+            },
+            {
+              "option_id": "B",
+              "text_md": "No automatic remuneration under the described default; examine any agreement",
+              "explanation_md": "Participation alone does not establish the claimed salary."
+            },
+            {
+              "option_id": "C",
+              "text_md": "No partner can ever agree to remuneration",
+              "explanation_md": "The default can be subject to contract."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The largest capital contribution automatically fixes salary",
+              "explanation_md": "Capital alone does not establish remuneration."
+            }
+          ],
+          "correct_explanation_md": "Participation alone does not establish the claimed salary."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A partner secretly earns a benefit through the firm business connections and keeps it outside firm accounts. What should be examined?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Whether the personal account has a debit card",
+              "explanation_md": "That does not determine entitlement."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Whether a secret benefit is always exempt from accounting",
+              "explanation_md": "The source identifies a contrary duty."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Only whether the firm remains profitable",
+              "explanation_md": "Profitability does not settle the accounting duty."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The governing agreement and personal-profit accounting duty",
+              "explanation_md": "The origin and authorisation of the benefit matter."
+            }
+          ],
+          "correct_explanation_md": "The origin and authorisation of the benefit matter."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Primary law, State amendments, session applicability and independent editorial review remain with Antigravity. No publication approval."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-D-U11-B002",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_D::U11"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_D::U11",
+        "objective_ids": [
+          "BRBL::MOD_D::U11::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_D::U11",
+        "objective_ids": [
+          "BRBL::MOD_D::U11::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_D::U11",
+        "objective_ids": [
+          "BRBL::MOD_D::U11::LO_02"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-D-U11-B002",
+      "draft_id": "D001",
+      "item_id": "item_2adce4afe0b9e0dea0746f13ce40b32601a841caf0d7ecf3119202a6da49fb80"
+    },
+    {
+      "batch_id": "BRBL-D-U11-B002",
+      "draft_id": "D002",
+      "item_id": "item_ba2b06916e730d069db98929fb92b3d73930a814fb92cc411425553589798eb7"
+    },
+    {
+      "batch_id": "BRBL-D-U11-B002",
+      "draft_id": "D003",
+      "item_id": "item_61d74f7cd99b0c64703f93bc604230402f38d0073924352a5b9a078bed7f883f"
+    }
+  ],
+  "items": [
+    {
+      "title": "Start with the agreement,then use the statutory default",
+      "core_explanation_md": "In the absence of a contrary contract,the described defaults include equal sharing of profits and losses and no automatic remuneration for participating in the business. Interest on capital,where payable under the stated rule,is payable out of profits. A qualifying advance beyond agreed capital is treated differently: the source specifies six per cent per annum. Do not confuse this default with a current bank lending rate or silently override an agreed term.\n\nProperty acquired for the firm and goodwill require firm-property analysis rather than treating title in one partner name as decisive. Benefits obtained through firm transactions,property or business connections and competing-business profits can require accounting to the firm,subject to the governing agreement. Reconstitution or continuation of a fixed-term venture also needs the section17 default-continuity analysis.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does working more hours create an automatic salary entitlement under the default?",
+        "expected_takeaway": "No. Examine the agreement; the default does not provide automatic remuneration."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_2adce4afe0b9e0dea0746f13ce40b32601a841caf0d7ecf3119202a6da49fb80",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U11",
+      "objective_ids": [
+        "BRBL::MOD_D::U11::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.461-462 / PDF pp.480-481"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "The agreement is silent on remuneration and one partner demands salary solely for managing daily operations. What is the appropriate starting point?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Salary is automatically equal to the bank manager salary",
+          "explanation_md": "There is no such default."
+        },
+        {
+          "option_id": "B",
+          "text_md": "No automatic remuneration under the described default; examine any agreement",
+          "explanation_md": "Participation alone does not establish the claimed salary."
+        },
+        {
+          "option_id": "C",
+          "text_md": "No partner can ever agree to remuneration",
+          "explanation_md": "The default can be subject to contract."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The largest capital contribution automatically fixes salary",
+          "explanation_md": "Capital alone does not establish remuneration."
+        }
+      ],
+      "correct_explanation_md": "Participation alone does not establish the claimed salary.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_ba2b06916e730d069db98929fb92b3d73930a814fb92cc411425553589798eb7",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U11",
+      "objective_ids": [
+        "BRBL::MOD_D::U11::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.461-462 / PDF pp.480-481"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A partner secretly earns a benefit through the firm business connections and keeps it outside firm accounts. What should be examined?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Whether the personal account has a debit card",
+          "explanation_md": "That does not determine entitlement."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Whether a secret benefit is always exempt from accounting",
+          "explanation_md": "The source identifies a contrary duty."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Only whether the firm remains profitable",
+          "explanation_md": "Profitability does not settle the accounting duty."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The governing agreement and personal-profit accounting duty",
+          "explanation_md": "The origin and authorisation of the benefit matter."
+        }
+      ],
+      "correct_explanation_md": "The origin and authorisation of the benefit matter.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_61d74f7cd99b0c64703f93bc604230402f38d0073924352a5b9a078bed7f883f",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U11",
+      "objective_ids": [
+        "BRBL::MOD_D::U11::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.461-462 / PDF pp.480-481"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

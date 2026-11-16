@@ -1,0 +1,132 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-C-U06-B007",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_C::U06: Preserve assets and prepare possession,valuation and reserve-price evidence",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04",
+    "SECURITY_ENFORCEMENT_GSR1046_2016"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.273-274 / PDF pp.292-293",
+      "statement": "Inventoryprudentpreservationinsurancewhere necessary;immovablepossessionnoticeborroweraffixingpublicationtwoleadingonevernacular;valuationreserveconsultcreditor.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F002",
+      "source_id": "SECURITY_ENFORCEMENT_GSR1046_2016",
+      "locator": "GSR1046(E),PDF p.3,paragraphs4 and6",
+      "statement": "Movableinventory/panchnamanotice;electronicserviceadditionalnotautomaticreplacement.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Possession creates a custody responsibility",
+        "core_explanation_md": "Taking possession is followed by an evidence and preservation task. The source describes inventory, prudent care and protection, and insurance where necessary. A wasting asset can require the specified special treatment; do not assume every asset may be held indefinitely without a condition record. Preserve custody, condition, access and expenditure evidence.\n\nFor immovable property, the possession notice, service, affixing and prescribed publication are separate steps. Valuation precedes the reserve-price decision, with the required consultation. Possession is not the same as sale completion or automatic ownership. Electronic service in the retained amendment is additional to the prescribed modes; it should not silently replace every required service/publication step.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does an email alone automatically replace every statutory notice mode?",
+          "expected_takeaway": "No. Read the actual service requirements and additional-mode provision."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "After possession, the lender leaves the secured asset unprotected and says preservation matters only after sale. Which duty was missed?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The described prudent custody and preservation duties",
+            "explanation_md": "Possession carries responsibilities before sale."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A right to treat every deterioration as borrower consent",
+            "explanation_md": "That is unsupported."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Only the final sale certificate font",
+            "explanation_md": "It does not protect the asset."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Automatic lender ownership of all borrower assets",
+            "explanation_md": "Possession does not have that effect."
+          }
+        ],
+        "correct_explanation_md": "Possession carries responsibilities before sale."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "The reserve price is selected without the prescribed valuation or consultation evidence. What should the file contain?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only a preferred recovery target",
+            "explanation_md": "A target does not replace the process."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The purchaser personal opinion alone",
+            "explanation_md": "That is not the prescribed valuation trail."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The valuation and required reserve-price decision record",
+            "explanation_md": "The source identifies these pre-sale steps."
+          },
+          {
+            "option_id": "D",
+            "text_md": "An assumption that possession proves market value",
+            "explanation_md": "Taking custody does not establish market value or replace the prescribed valuation process."
+          }
+        ],
+        "correct_explanation_md": "The source identifies these pre-sale steps."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "NewB007-B013address earlier authoring-depth omissions inB001-B006. Historical envelopes remain unchanged as evidence. Antigravity must reconcile current consolidatedRules8-9,latercase law and cutoff applicability before publication.",
+    "No independent review approval; all legal factsneeds_review and canonicalreviewnull."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

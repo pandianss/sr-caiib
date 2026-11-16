@@ -1,0 +1,407 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-D-U22-B005",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_D::U22: Classify director-connected loans,conflicts and loss-of-office payments",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04",
+      "COMPANIES_ACT_INDIACODE_20260901"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.526-527 / PDF pp.545-546",
+        "statement": "Relatedpartyconsentsdisclosure;loss office191discloseapproveandtrustifcontravention.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+        "locator": "section185,PDF pp.124-125",
+        "statement": "Prohibitedpersonal/firmlendingvsconditionalinterestedbodycorporate;specialresolutionprincipalbusinessuse;specifiedexceptionsnotblanket.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Connected does not mean one universal permission or prohibition",
+          "core_explanation_md": "Section185 distinguishes the specified prohibited director/relative/firm transactions from the conditional route for defined interested entities and from stated exceptions. The conditional route includes a special resolution and the borrower principal-business use, with the required explanatory disclosure. The textbook blanket ban followed by a broad subsidiary exemption must not replace these categories. Other provisions and company-class notifications can also apply.\n\nRelated-party transactions require their own disclosure, approval and exception analysis; an ordinary business label alone is not proof that every condition is met. Compensation linked to loss of office on the described transfers has disclosure and approval requirements; receipt before or contrary to the required approval can engage the trust consequence. Review both the recipient and the transaction purpose.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Can subsidiary status alone establish every connected-loan exemption?",
+            "expected_takeaway": "No. The particular exception and its conditions must be established."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A company guarantees a connected entity loan and relies only on the word subsidiary without checking the section 185 category or use of funds. What is required?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Classify the transaction and satisfy the applicable conditions/exceptions",
+              "explanation_md": "The relationship label is not a universal exemption."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Assume every connected loan is permitted",
+              "explanation_md": "That ignores prohibited categories."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Assume every connected loan is prohibited without exception",
+              "explanation_md": "That ignores conditional routes."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Only compare interest rates",
+              "explanation_md": "Rate alone does not establish compliance."
+            }
+          ],
+          "correct_explanation_md": "The relationship label is not a universal exemption."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A director receives transfer-related loss-of-office compensation before the required member approval. Which issue should be examined?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Whether payment automatically proves approval",
+              "explanation_md": "Receiving money is a different event from obtaining the prescribed disclosure and member approval."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Whether all compensation is always forbidden",
+              "explanation_md": "The framework provides qualified routes."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The section 191 disclosure, approval and trust consequence",
+              "explanation_md": "The timing and authorisation matter."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Whether the director owns a cheque book",
+              "explanation_md": "A personal payment instrument does not establish the required approval for the loss-of-office compensation."
+            }
+          ],
+          "correct_explanation_md": "The timing and authorisation matter."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Antigravity must independently review law,exceptions,originality and exam cutoff before publication.",
+      "POST-CUTOFF primary consolidation: cited amendments/footnotes require cutoff reconciliation; class exemptions,current forms,qualification shares,section167 appeal and section188 exceptions remain reviewer checks."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-D-U22-B005",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_D::U22"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+        "authority": "India Code, Government of India",
+        "title": "Companies Act, 2013 — as on 1 September 2026",
+        "url": "https://indiacode.gov.in/server/api/core/bitstreams/95902c38-5947-4457-a431-5062e234cab0/content",
+        "publication_date": "2026-09-01",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_D::U22",
+        "objective_ids": [
+          "BRBL::MOD_D::U22::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_D::U22",
+        "objective_ids": [
+          "BRBL::MOD_D::U22::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_D::U22",
+        "objective_ids": [
+          "BRBL::MOD_D::U22::LO_05"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-D-U22-B005",
+      "draft_id": "D001",
+      "item_id": "item_d04c0872c6221ccafdd277af49bde35f9a01dfa92606ad063c605a8dcee147e0"
+    },
+    {
+      "batch_id": "BRBL-D-U22-B005",
+      "draft_id": "D002",
+      "item_id": "item_cb28c190ee921ae8e39d81cd1110fdc6822fc13b64d555b6fba59366a97d2816"
+    },
+    {
+      "batch_id": "BRBL-D-U22-B005",
+      "draft_id": "D003",
+      "item_id": "item_2eddd858831aa404619b0e9c975e1d21acc4874611a186563dd861bb3c61cc2b"
+    }
+  ],
+  "items": [
+    {
+      "title": "Connected does not mean one universal permission or prohibition",
+      "core_explanation_md": "Section185 distinguishes the specified prohibited director/relative/firm transactions from the conditional route for defined interested entities and from stated exceptions. The conditional route includes a special resolution and the borrower principal-business use, with the required explanatory disclosure. The textbook blanket ban followed by a broad subsidiary exemption must not replace these categories. Other provisions and company-class notifications can also apply.\n\nRelated-party transactions require their own disclosure, approval and exception analysis; an ordinary business label alone is not proof that every condition is met. Compensation linked to loss of office on the described transfers has disclosure and approval requirements; receipt before or contrary to the required approval can engage the trust consequence. Review both the recipient and the transaction purpose.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Can subsidiary status alone establish every connected-loan exemption?",
+        "expected_takeaway": "No. The particular exception and its conditions must be established."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_d04c0872c6221ccafdd277af49bde35f9a01dfa92606ad063c605a8dcee147e0",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U22",
+      "objective_ids": [
+        "BRBL::MOD_D::U22::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.526-527 / PDF pp.545-546"
+        },
+        {
+          "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+          "authority": "India Code, Government of India",
+          "title": "Companies Act, 2013 — as on 1 September 2026",
+          "url": "https://indiacode.gov.in/server/api/core/bitstreams/95902c38-5947-4457-a431-5062e234cab0/content",
+          "publication_date": "2026-09-01",
+          "effective_date": null,
+          "locator": "section185,PDF pp.124-125"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A company guarantees a connected entity loan and relies only on the word subsidiary without checking the section 185 category or use of funds. What is required?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Classify the transaction and satisfy the applicable conditions/exceptions",
+          "explanation_md": "The relationship label is not a universal exemption."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Assume every connected loan is permitted",
+          "explanation_md": "That ignores prohibited categories."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Assume every connected loan is prohibited without exception",
+          "explanation_md": "That ignores conditional routes."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Only compare interest rates",
+          "explanation_md": "Rate alone does not establish compliance."
+        }
+      ],
+      "correct_explanation_md": "The relationship label is not a universal exemption.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_cb28c190ee921ae8e39d81cd1110fdc6822fc13b64d555b6fba59366a97d2816",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U22",
+      "objective_ids": [
+        "BRBL::MOD_D::U22::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.526-527 / PDF pp.545-546"
+        },
+        {
+          "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+          "authority": "India Code, Government of India",
+          "title": "Companies Act, 2013 — as on 1 September 2026",
+          "url": "https://indiacode.gov.in/server/api/core/bitstreams/95902c38-5947-4457-a431-5062e234cab0/content",
+          "publication_date": "2026-09-01",
+          "effective_date": null,
+          "locator": "section185,PDF pp.124-125"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A director receives transfer-related loss-of-office compensation before the required member approval. Which issue should be examined?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Whether payment automatically proves approval",
+          "explanation_md": "Receiving money is a different event from obtaining the prescribed disclosure and member approval."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Whether all compensation is always forbidden",
+          "explanation_md": "The framework provides qualified routes."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The section 191 disclosure, approval and trust consequence",
+          "explanation_md": "The timing and authorisation matter."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Whether the director owns a cheque book",
+          "explanation_md": "A personal payment instrument does not establish the required approval for the loss-of-office compensation."
+        }
+      ],
+      "correct_explanation_md": "The timing and authorisation matter.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_2eddd858831aa404619b0e9c975e1d21acc4874611a186563dd861bb3c61cc2b",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U22",
+      "objective_ids": [
+        "BRBL::MOD_D::U22::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.526-527 / PDF pp.545-546"
+        },
+        {
+          "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+          "authority": "India Code, Government of India",
+          "title": "Companies Act, 2013 — as on 1 September 2026",
+          "url": "https://indiacode.gov.in/server/api/core/bitstreams/95902c38-5947-4457-a431-5062e234cab0/content",
+          "publication_date": "2026-09-01",
+          "effective_date": null,
+          "locator": "section185,PDF pp.124-125"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

@@ -1,0 +1,360 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-D-U07-B001",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_D::U07: Identify goods,price,delivery and documents of title",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.438-439 / PDF pp.457-458",
+        "statement": "Salegoods movableexceptmoney/actionableclaims,includesstocksharesandagreedseverance;price money;deliverypossession;documentstitlecontrol,notallinvoices;futurevsspecificgoods.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Classify the asset and the transfer",
+          "core_explanation_md": "The Sale of Goods framework concerns the stated movable property category, including shares and things agreed to be severed, but excluding money and actionable claims as goods. Price is money consideration; barter and an immovable-property transfer need a different legal analysis. General contract essentials still apply.\n\nDelivery transfers possession, which need not be the same event as passing ownership. A document of title can support possession/control in the described commercial framework; not every invoice or certificate has that legal character. Specific goods are identified at contracting, while future goods are to be produced or acquired later. Verify what exists and what right the document actually conveys.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does a seller invoice automatically become a document of title?",
+            "expected_takeaway": "No. The legal character and commercial control function must be established."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A lending file treats every commercial invoice as a document of title giving control of stored goods. What is needed?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Examine the document legal character and actual possession/control effect",
+              "explanation_md": "An invoice label alone does not establish title-document status."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Only count the invoice pages",
+              "explanation_md": "Length is irrelevant to the right conveyed."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Assume all documents transfer ownership and possession identically",
+              "explanation_md": "Different documents and events have distinct effects."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Ignore identification of the goods",
+              "explanation_md": "The relevant goods must still be established."
+            }
+          ],
+          "correct_explanation_md": "An invoice label alone does not establish title-document status."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A seller promises goods it will manufacture later. Which distinction is material?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "They are necessarily identified existing goods merely because a price is agreed",
+              "explanation_md": "Price does not make future goods existing."
+            },
+            {
+              "option_id": "B",
+              "text_md": "No contract can ever concern future goods",
+              "explanation_md": "The framework recognises that category."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Future goods differ from goods already specifically identified at the contract date",
+              "explanation_md": "Timing and identification matter to the transaction."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The buyer automatically owns every asset of the seller",
+              "explanation_md": "The promise does not create that broad ownership."
+            }
+          ],
+          "correct_explanation_md": "Timing and identification matter to the transaction."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Antigravity review pending for primary law,exceptions,originality and current applicability. No publication approval.",
+      "No source comparison table copied. Specific-performance,risk and voidable-title exceptions require primary reconciliation before operational use."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-D-U07-B001",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_D::U07"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_D::U07",
+        "objective_ids": [
+          "BRBL::MOD_D::U07::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_D::U07",
+        "objective_ids": [
+          "BRBL::MOD_D::U07::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_D::U07",
+        "objective_ids": [
+          "BRBL::MOD_D::U07::LO_01"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-D-U07-B001",
+      "draft_id": "D001",
+      "item_id": "item_c378d5447bb210daa2cf69da55af5b276ef6b2ffdd4813ddc4104397b6459f88"
+    },
+    {
+      "batch_id": "BRBL-D-U07-B001",
+      "draft_id": "D002",
+      "item_id": "item_a4f844100fe5a08930c90dfbfac191c7d414cdfe72c58bbcd974dab9b9195573"
+    },
+    {
+      "batch_id": "BRBL-D-U07-B001",
+      "draft_id": "D003",
+      "item_id": "item_64a2452af3da591f85ee7cf05558de01a875e98290f4f626a07077525a517ed6"
+    }
+  ],
+  "items": [
+    {
+      "title": "Classify the asset and the transfer",
+      "core_explanation_md": "The Sale of Goods framework concerns the stated movable property category, including shares and things agreed to be severed, but excluding money and actionable claims as goods. Price is money consideration; barter and an immovable-property transfer need a different legal analysis. General contract essentials still apply.\n\nDelivery transfers possession, which need not be the same event as passing ownership. A document of title can support possession/control in the described commercial framework; not every invoice or certificate has that legal character. Specific goods are identified at contracting, while future goods are to be produced or acquired later. Verify what exists and what right the document actually conveys.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does a seller invoice automatically become a document of title?",
+        "expected_takeaway": "No. The legal character and commercial control function must be established."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_c378d5447bb210daa2cf69da55af5b276ef6b2ffdd4813ddc4104397b6459f88",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U07",
+      "objective_ids": [
+        "BRBL::MOD_D::U07::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.438-439 / PDF pp.457-458"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A lending file treats every commercial invoice as a document of title giving control of stored goods. What is needed?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Examine the document legal character and actual possession/control effect",
+          "explanation_md": "An invoice label alone does not establish title-document status."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Only count the invoice pages",
+          "explanation_md": "Length is irrelevant to the right conveyed."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Assume all documents transfer ownership and possession identically",
+          "explanation_md": "Different documents and events have distinct effects."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Ignore identification of the goods",
+          "explanation_md": "The relevant goods must still be established."
+        }
+      ],
+      "correct_explanation_md": "An invoice label alone does not establish title-document status.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_a4f844100fe5a08930c90dfbfac191c7d414cdfe72c58bbcd974dab9b9195573",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U07",
+      "objective_ids": [
+        "BRBL::MOD_D::U07::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.438-439 / PDF pp.457-458"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A seller promises goods it will manufacture later. Which distinction is material?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "They are necessarily identified existing goods merely because a price is agreed",
+          "explanation_md": "Price does not make future goods existing."
+        },
+        {
+          "option_id": "B",
+          "text_md": "No contract can ever concern future goods",
+          "explanation_md": "The framework recognises that category."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Future goods differ from goods already specifically identified at the contract date",
+          "explanation_md": "Timing and identification matter to the transaction."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The buyer automatically owns every asset of the seller",
+          "explanation_md": "The promise does not create that broad ownership."
+        }
+      ],
+      "correct_explanation_md": "Timing and identification matter to the transaction.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_64a2452af3da591f85ee7cf05558de01a875e98290f4f626a07077525a517ed6",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U07",
+      "objective_ids": [
+        "BRBL::MOD_D::U07::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.438-439 / PDF pp.457-458"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U16-B002",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U16: Use corporate-veil and comparison analysis without blanket exemptions",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.486-487 / PDF pp.505-506",
+      "statement": "Veilliftingqualifiedfactsfraud;ordinaryfirmagencyvscompany;separateentitynotblanketimmunity;bookcitizenshiprightsstatementoverbroad.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Separate personality is the starting point, not a licence for misuse",
+        "core_explanation_md": "The corporate veil can be examined in the described exceptional situations, such as misuse of the form for fraud. Establish the applicable legal basis and facts; a disappointed creditor cannot simply label a company a sham and automatically recover from every member. Conversely, incorporation does not erase liability for a person own wrongful conduct or a separate guarantee.\n\nCompare an ordinary firm and a company through the actual legal form, agency, property and continuity rules. Avoid broad claims that a company has no legal protections because it is not a citizen, or that every company must have identical limited liability. The entity documents and applicable law govern the particular question.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does veil-lifting automatically follow any unpaid company debt?",
+          "expected_takeaway": "No. It requires the relevant legal ground and facts."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A recovery proposal demands payment from every shareholder solely because the company defaulted. No guarantee or veil-lifting ground is identified. What is missing?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The company trading name length",
+            "explanation_md": "That is not a liability basis."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A rule that all defaults automatically establish fraud",
+            "explanation_md": "Default alone does not establish fraud."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Proof that all members are directors",
+            "explanation_md": "Even that label would not settle every liability."
+          },
+          {
+            "option_id": "D",
+            "text_md": "An applicable basis for personal liability beyond mere shareholding",
+            "explanation_md": "Separate personality is the starting point."
+          }
+        ],
+        "correct_explanation_md": "Separate personality is the starting point."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A director argues incorporation automatically removes their separately executed personal guarantee. Which analysis is appropriate?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Accept the argument because every personal obligation ends",
+            "explanation_md": "Incorporation does not have that effect."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Examine the guarantee as a separate obligation",
+            "explanation_md": "Company personality does not erase an independent undertaking."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Treat every shareholder as the guarantor",
+            "explanation_md": "Liability must be established individually."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Ignore both the company debt and guarantee",
+            "explanation_md": "Both require their own analysis."
+          }
+        ],
+        "correct_explanation_md": "Company personality does not erase an independent undertaking."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Primary law, State amendments, session applicability and independent editorial review remain with Antigravity. No publication approval.",
+    "Do not publish the book blanket citizenship/constitutional-rights assertion or 100-partner comparison."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

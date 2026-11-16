@@ -1,0 +1,360 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-D-U03-B002",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_D::U03: Distinguish continuing exposure,revocation,death,variance and discharge",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.416-417,419 / PDF pp.435-436,438",
+        "statement": "129series;130futurenoticerevocation;131deathfutureunlesscontrary;133unconsentedvariancefuture;134contractreleasePD;137mereforbearancenotdischarge;138onecosuretyreleaseothersremain.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Separate accrued liability from future transactions",
+          "core_explanation_md": "A continuing guarantee extends to the described series of transactions. Revocation by notice ordinarily concerns future transactions;it does not automatically erase covered exposure already incurred. Death has the stated future-transaction effect absent contrary contract. The actual notice,knowledge,accounting and undertaking need careful reconciliation.\n\nAn unconsented variance and a contractual release of the principal debtor differ from mere forbearance to sue. Releasing one co-surety also has distinct consequences for other sureties and their contribution rights. Do not collapse every collection delay,renewal,settlement or death into the same complete-discharge result. Identify the event,consent,scope and timing before deciding what liability remains.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does revocation necessarily remove covered debt already incurred?",
+            "expected_takeaway": "No. Existing and future exposure must be separated."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A surety revokes a continuing guarantee after covered advances exist. Staff delete both those advances and every future exposure. Which distinction is needed?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Accrued covered liability differs from future transactions after effective revocation",
+              "explanation_md": "Revocation does not automatically erase the earlier exposure."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Every notice is full repayment",
+              "explanation_md": "A notice is not payment."
+            },
+            {
+              "option_id": "C",
+              "text_md": "A continuing guarantee can never be revoked",
+              "explanation_md": "The source provides a future-transaction route."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The bank can invent consent to later changes",
+              "explanation_md": "Consent needs evidence."
+            }
+          ],
+          "correct_explanation_md": "Revocation does not automatically erase the earlier exposure."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "The creditor merely waits before suing,with no stipulated discharge agreement. Which comparison is appropriate?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Waiting and releasing the debtor always have identical effect",
+              "explanation_md": "The source distinguishes forbearance from release."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Any delay automatically changes all guarantee terms",
+              "explanation_md": "A variance must be established."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Mere forbearance is different from the specified release or unconsented-variance grounds",
+              "explanation_md": "Identify the actual legal event."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Every co-surety is released if one is released",
+              "explanation_md": "The source gives a distinct co-surety rule."
+            }
+          ],
+          "correct_explanation_md": "Identify the actual legal event."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Drafts for Antigravity review. Consolidated statute,exceptions and later case law require independent reconciliation;no publication approval.",
+      "Book guarantee examples contain party-name reversal and overbroad underlying-invalidity assertions;not reused. Demand-guarantee injunction and limitation issues require primary review."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-D-U03-B002",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_D::U03"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_D::U03",
+        "objective_ids": [
+          "BRBL::MOD_D::U03::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_D::U03",
+        "objective_ids": [
+          "BRBL::MOD_D::U03::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_D::U03",
+        "objective_ids": [
+          "BRBL::MOD_D::U03::LO_02"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-D-U03-B002",
+      "draft_id": "D001",
+      "item_id": "item_8c93924846d1eae08f19d11e277f162d491a9cfd732e262899a89648084de661"
+    },
+    {
+      "batch_id": "BRBL-D-U03-B002",
+      "draft_id": "D002",
+      "item_id": "item_f42a5ae8d69ec9169f9a32a55b4b4a18e9a23d08e21f19b31b63d72134d9f759"
+    },
+    {
+      "batch_id": "BRBL-D-U03-B002",
+      "draft_id": "D003",
+      "item_id": "item_29983de8eece5dd1c95b73f238cfdf927f72630b0348547ef1c6cd4dc1353358"
+    }
+  ],
+  "items": [
+    {
+      "title": "Separate accrued liability from future transactions",
+      "core_explanation_md": "A continuing guarantee extends to the described series of transactions. Revocation by notice ordinarily concerns future transactions;it does not automatically erase covered exposure already incurred. Death has the stated future-transaction effect absent contrary contract. The actual notice,knowledge,accounting and undertaking need careful reconciliation.\n\nAn unconsented variance and a contractual release of the principal debtor differ from mere forbearance to sue. Releasing one co-surety also has distinct consequences for other sureties and their contribution rights. Do not collapse every collection delay,renewal,settlement or death into the same complete-discharge result. Identify the event,consent,scope and timing before deciding what liability remains.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does revocation necessarily remove covered debt already incurred?",
+        "expected_takeaway": "No. Existing and future exposure must be separated."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_8c93924846d1eae08f19d11e277f162d491a9cfd732e262899a89648084de661",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U03",
+      "objective_ids": [
+        "BRBL::MOD_D::U03::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.416-417,419 / PDF pp.435-436,438"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A surety revokes a continuing guarantee after covered advances exist. Staff delete both those advances and every future exposure. Which distinction is needed?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Accrued covered liability differs from future transactions after effective revocation",
+          "explanation_md": "Revocation does not automatically erase the earlier exposure."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Every notice is full repayment",
+          "explanation_md": "A notice is not payment."
+        },
+        {
+          "option_id": "C",
+          "text_md": "A continuing guarantee can never be revoked",
+          "explanation_md": "The source provides a future-transaction route."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The bank can invent consent to later changes",
+          "explanation_md": "Consent needs evidence."
+        }
+      ],
+      "correct_explanation_md": "Revocation does not automatically erase the earlier exposure.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_f42a5ae8d69ec9169f9a32a55b4b4a18e9a23d08e21f19b31b63d72134d9f759",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U03",
+      "objective_ids": [
+        "BRBL::MOD_D::U03::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.416-417,419 / PDF pp.435-436,438"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "The creditor merely waits before suing,with no stipulated discharge agreement. Which comparison is appropriate?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Waiting and releasing the debtor always have identical effect",
+          "explanation_md": "The source distinguishes forbearance from release."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Any delay automatically changes all guarantee terms",
+          "explanation_md": "A variance must be established."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Mere forbearance is different from the specified release or unconsented-variance grounds",
+          "explanation_md": "Identify the actual legal event."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Every co-surety is released if one is released",
+          "explanation_md": "The source gives a distinct co-surety rule."
+        }
+      ],
+      "correct_explanation_md": "Identify the actual legal event.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_29983de8eece5dd1c95b73f238cfdf927f72630b0348547ef1c6cd4dc1353358",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U03",
+      "objective_ids": [
+        "BRBL::MOD_D::U03::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.416-417,419 / PDF pp.435-436,438"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U14-B002",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U14: Separate winding-up authority and post-dissolution public-notice liability",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed p.477 / PDF p.496",
+      "statement": "45qualifiedliabilityuntilpublicnotice,exceptionsdeceasedinsolventunknownretiree;47windingupandunfinishedtransactionsauthority.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Dissolution does not instantly erase every authority or debt",
+        "core_explanation_md": "Authority can continue for winding up and completing transactions begun but unfinished at dissolution under the described rule. This does not authorise starting unrestricted new business under the old mandate. Establish the purpose and timing of the proposed act.\n\nPublic notice also matters to the specified third-party liability for later acts, with exceptions including the described deceased or insolvent estate and certain unknown retired partners. Do not announce that every estate is liable until notice or that dissolution cancels existing firm debts. A recovery file needs the dissolution evidence, notice history, unfinished transactions and creditor position.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Can a winding-up power be treated as unrestricted authority for new trading?",
+          "expected_takeaway": "No. Its purpose and statutory limits matter."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "After dissolution, a partner signs a fresh unrelated trading contract and relies only on winding-up authority. What is the key question?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Whether the paper uses the old letterhead",
+            "explanation_md": "Letterhead alone is insufficient."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Whether the partner still remembers the password",
+            "explanation_md": "Access is not legal authority."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Whether all old debts are automatically cancelled",
+            "explanation_md": "Dissolution has no such blanket effect."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Whether the act is genuinely within winding up or completion of an unfinished transaction",
+            "explanation_md": "The continuing authority is purpose-limited."
+          }
+        ],
+        "correct_explanation_md": "The continuing authority is purpose-limited."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A notice asserts that every deceased partner estate is liable for all later firm acts until public notice. What is wrong?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Notice never matters",
+            "explanation_md": "Notice is relevant in the qualified framework."
+          },
+          {
+            "option_id": "B",
+            "text_md": "It ignores the statutory exceptions to the post-dissolution liability rule",
+            "explanation_md": "The deceased-estate qualification cannot be erased."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Every estate automatically becomes a new partner",
+            "explanation_md": "That is unsupported."
+          },
+          {
+            "option_id": "D",
+            "text_md": "All later transactions are necessarily void",
+            "explanation_md": "That blanket conclusion is not established."
+          }
+        ],
+        "correct_explanation_md": "The deceased-estate qualification cannot be erased."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Primary law, State amendments, session applicability and independent editorial review remain with Antigravity. No publication approval."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

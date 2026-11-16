@@ -1,0 +1,120 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-C-U04-B006",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL C U04: Map originator, obligor and ARC acquisition without treating transfer as discharge",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.248 and 252-253 / PDF pp.267 and 271-272",
+      "statement": "Originator owns financial asset acquired for securitisation/reconstruction. Obligor is liable to originator in relation to financial asset and includes borrower; ARC acquisition for realisation is distinct from payment/discharge.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Follow the claim from transferor to acquirer",
+        "core_explanation_md": "The originator is the owner of the financial asset acquired for securitisation or reconstruction. The obligor is the person bearing the described payment or discharge obligation in relation to that asset, including the borrower. These roles describe opposite sides of the claim; an originator does not become the debtor merely by transferring it.\n\nAsset reconstruction concerns acquisition of the specified rights for realisation. Acquisition can change who holds or administers rights, while the obligation itself still needs payment or another legally effective discharge. Notifications to obligors, discharge protection and the transfer procedure require the separate operative provisions; do not infer them from a definition alone.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does transfer of the claim itself prove the obligor has paid it?",
+          "expected_takeaway": "No. Transfer and discharge are different events."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Bank X owns a loan receivable acquired by an ARC for reconstruction. The borrower still owes the stipulated amount. How should the transfer roles be recorded?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Bank X is the originator; the borrower remains the obligor under the stated facts",
+            "explanation_md": "Originator and obligor identify the claim-owner and obligation sides."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The ARC is automatically the borrower because it bought the claim",
+            "explanation_md": "Acquiring a claim does not make the acquirer the debtor on it."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Bank X becomes the obligor solely because it transferred the receivable",
+            "explanation_md": "Transferor status is not debtor status under the definition."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The borrower is discharged solely by the acquisition",
+            "explanation_md": "Acquisition is not itself repayment by the obligor."
+          }
+        ],
+        "correct_explanation_md": "Originator and obligor identify the claim-owner and obligation sides."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An analyst reads reconstruction as necessarily meaning a new branch building. What is the relevant statutory meaning here?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Physical rebuilding of every mortgaged property",
+            "explanation_md": "The defined financial-asset concept is not a construction project."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Cancellation of every acquired loan without realisation",
+            "explanation_md": "Acquisition for realisation does not mean automatic cancellation."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The described acquisition of financial-assistance rights for their realisation",
+            "explanation_md": "The statutory term concerns financial claims and realisation."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A registry receipt proving all collateral was sold",
+            "explanation_md": "Recording or documentation is not proof of realised sale proceeds."
+          }
+        ],
+        "correct_explanation_md": "The statutory term concerns financial claims and realisation."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Codex original draft, 16 November 2026. Independent source/session applicability, originality and pedagogy review pending. No publication approval.",
+    "Courseware units 17A and 17B read in full including end questions (printed pp.243-256 / PDF pp.262-275). End questions and distinctive source expression were not reused.",
+    "Historical Bombay High Court compilation omits later amendments; retained as comparison only, not evidence of June2026 consolidation. Current capital floors, later definition additions, registry rules, eligibility notifications and remedy conditions require independent primary verification.",
+    "Judgment review is limited to identified holdings; later authorities and live proceedings are not certified."
+  ],
+  "next_batch_hint": "Continue BRBL C U05, S04 printed p.257 / PDF p.276"
+}

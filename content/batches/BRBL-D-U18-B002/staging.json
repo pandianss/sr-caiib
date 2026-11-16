@@ -1,0 +1,120 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U18-B002",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U18: Distinguish articles,entrenchment and the binding effect of registration",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.498-499 / PDF pp.517-518",
+      "statement": "Section5managementmodelarticlesentrenchmentformationorqualifiedamendment;section10companymembersbinding;articles subordinateActMOA.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Articles organise management within the legal hierarchy",
+        "core_explanation_md": "Articles regulate internal management and operate within the Act and memorandum. Relevant model articles can apply under the statutory framework. An article cannot expand the company objects or override mandatory law simply because the members voted for it.\n\nEntrenchment makes alteration of specified articles subject to conditions more restrictive than the usual special-resolution procedure. The source distinguishes formation from later introduction and the private/public consent routes, with notice to the Registrar. Registration binds the company and its members in the described statutory manner; it is not a universal contract granting every outsider an enforceable benefit from every article. Distinguish capacity, internal authority and outsider rights before choosing a remedy.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Can an article override mandatory law?",
+          "expected_takeaway": "No. The Act and constitutional hierarchy govern."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An article purports to permit an activity outside the memorandum objects. Which analysis is correct?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The article always expands capacity automatically",
+            "explanation_md": "Internal rules cannot simply rewrite the memorandum."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Any manager may choose the higher document",
+            "explanation_md": "The hierarchy is not elective."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Only the article filing date matters",
+            "explanation_md": "Later timing alone does not resolve validity."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Read the article subject to the Act and memorandum",
+            "explanation_md": "The hierarchy limits its operation."
+          }
+        ],
+        "correct_explanation_md": "The hierarchy limits its operation."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An entrenched article is changed using an ordinary alteration route without checking its additional conditions. What was missed?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only the company logo",
+            "explanation_md": "It has no effect on entrenchment."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The more restrictive conditions attached to that article alteration",
+            "explanation_md": "Entrenchment requires the specified additional analysis."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A universal rule that articles can never change",
+            "explanation_md": "Changes are possible through applicable procedures."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The bank loan interest rate",
+            "explanation_md": "It does not determine article alteration."
+          }
+        ],
+        "correct_explanation_md": "Entrenchment requires the specified additional analysis."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Antigravity must independently review law,exceptions,originality and exam cutoff before publication.",
+    "Textbook blanket approval/ratification rules and old registered-office timing need primary reconciliation."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

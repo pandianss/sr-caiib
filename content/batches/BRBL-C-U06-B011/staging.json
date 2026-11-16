@@ -1,0 +1,132 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-C-U06-B011",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_C::U06: Distinguish section19 compensation from automatic liability for every challenge",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04",
+    "SARFAESI_GUJARAT_COMPILATION"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed p.277 / PDF p.296",
+      "statement": "Invalidpossessionfindingandreturnordercompensationcostsdeterminednotautomaticforfiling.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F002",
+      "source_id": "SARFAESI_GUJARAT_COMPILATION",
+      "locator": "section19,PDF p.26",
+      "statement": "Compensationcostsqualifiedunlawfulpossessionandreturnorderextendsotheraggrievedapplicantunderamendedtext.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "The remedial finding matters",
+        "core_explanation_md": "Section19 links the described compensation and costs to the relevant finding that possession was not in accordance with the Act/rules and a direction to return the secured assets. The amended text includes the qualifying other aggrieved person as well as the borrower. The tribunal or relevant court determines the amount under the applicable provision.\n\nFiling a challenge does not itself prove unlawful possession or establish a fixed compensation percentage. Conversely, the remedy should not be erased by assuming that every creditor measure is immune from review. Preserve the measure, orders, restoration direction and claimed loss/cost evidence. Keep this remedy separate from the loss-of-office compensation exclusion in section 16.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does merely filing an application establish a section 19 award?",
+          "expected_takeaway": "No. The statutory findings and order conditions must be met."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An applicant demands a fixed automatic compensation percentage solely because a section 17 application was filed. What must be established?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only the filing-fee receipt",
+            "explanation_md": "Filing alone is insufficient."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A rule that compensation is never possible",
+            "explanation_md": "The source recognises a qualified remedy."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The applicable unlawful-possession finding, return direction and determination",
+            "explanation_md": "The remedy depends on the statutory conditions."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The bank preferred auction date",
+            "explanation_md": "It does not establish the award."
+          }
+        ],
+        "correct_explanation_md": "The remedy depends on the statutory conditions."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A note uses section 16 loss-of-office exclusion to deny every section 19 unlawful-possession remedy. Which distinction is needed?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "All compensation provisions mean the same thing",
+            "explanation_md": "They address different rights."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Loss-of-office exclusion and unlawful-possession compensation are separate provisions",
+            "explanation_md": "Do not transplant one exclusion into another remedy."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Section19 never refers to an aggrieved person",
+            "explanation_md": "The amended text must be read."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Only directors can challenge any measure",
+            "explanation_md": "That is unsupported."
+          }
+        ],
+        "correct_explanation_md": "Do not transplant one exclusion into another remedy."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "NewB007-B013address earlier authoring-depth omissions inB001-B006. Historical envelopes remain unchanged as evidence. Antigravity must reconcile current consolidatedRules8-9,latercase law and cutoff applicability before publication.",
+    "No independent review approval; all legal factsneeds_review and canonicalreviewnull."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

@@ -1,0 +1,120 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U04-B001",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U04: Distinguish bailment possession,purpose and return from ownership or ordinary deposit",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.422-423 / PDF pp.441-442",
+      "statement": "148specificgoodspurpose/returnor directions;actual/constructivepossession;ownershipnottransferred;ordinarybankdepositdebtnotbailment;existingpossession/agreementcanqualify.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Follow possession of identified goods",
+        "core_explanation_md": "Bailment concerns delivery of goods for a purpose with the agreed return or disposal when that purpose is fulfilled. Possession may be actual or constructively established; ownership does not pass merely because the recipient holds the goods. A person already possessing them can enter the described bailment relationship without an unnecessary physical round trip.\n\nDistinguish this from an ordinary bank money deposit, which is a debt relationship rather than an obligation to return the same notes. A custody receipt alone should not be used to infer every condition:identify the goods, control, purpose and return directions. Finder or court-custody situations need their own legal basis and are not resolved by a blanket writing requirement.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does transfer of possession necessarily transfer ownership?",
+          "expected_takeaway": "No. Bailment separates those concepts."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A custodian holds identified items for a stated purpose and agreed return. A clerk labels that holding an outright sale solely because possession changed. What is missing?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The distinction between possession and transfer of ownership",
+            "explanation_md": "Bailment can transfer possession while ownership remains elsewhere."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Only the receipt serial number",
+            "explanation_md": "It does not decide the legal relationship."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A rule that every custody arrangement is a loan",
+            "explanation_md": "Goods custody and money lending differ."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The assumption that every oral arrangement is void",
+            "explanation_md": "The source does not impose universal writing."
+          }
+        ],
+        "correct_explanation_md": "Bailment can transfer possession while ownership remains elsewhere."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Goods are already held by a person who now agrees to hold them as bailee. Must the goods physically leave and re-enter solely to create the described relationship?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Always, because constructive delivery is impossible",
+            "explanation_md": "The source recognises constructive situations."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Never check possession or agreement",
+            "explanation_md": "Those facts still matter."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Not necessarily; the existing-possession explanation can apply",
+            "explanation_md": "The legal agreement can change the capacity of holding."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The agreement automatically transfers ownership",
+            "explanation_md": "Holding capacity is not ownership transfer."
+          }
+        ],
+        "correct_explanation_md": "The legal agreement can change the capacity of holding."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Drafts for Antigravity review. Consolidated statute,exceptions and later case law require independent reconciliation;no publication approval.",
+    "Locker-liability and finder/court-custody situations require current-law analysis;old true/false shorthand is not reused."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

@@ -1,0 +1,120 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U05-B003",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U05: Reconcile pledge-sale surplus and preserve the sale conditions",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.428-429 / PDF pp.447-448",
+      "statement": "176defaultreasonablenoticesale,deficiencyborrowerliabilitysurplusreturn;177redemptionbeforeactualsaleexpenses.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A pawnee sale produces more than the stipulated debt and recoverable expenses. The pawnee proposes keeping the surplus merely because default occurred. What follows under the described rule?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Default converts every surplus into lender profit",
+            "explanation_md": "The source provides a surplus entitlement."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The surplus must be returned to the entitled pawnor under the applicable rule",
+            "explanation_md": "Default does not create unrestricted ownership of excess proceeds."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Every recoverable expense must be ignored",
+            "explanation_md": "The reconciliation includes proper expenses."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The original pledge debt automatically doubles",
+            "explanation_md": "There is no such consequence."
+          }
+        ],
+        "correct_explanation_md": "Default does not create unrestricted ownership of excess proceeds.",
+        "case_study_id": "D003"
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A calculation correctly subtracts debt and stipulated recoverable expenses, but the file has no evidence of the required reasonable sale notice. What does the calculation establish?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Every sale condition was necessarily met",
+            "explanation_md": "Arithmetic does not prove notice."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The pawnee automatically owns all other assets",
+            "explanation_md": "That does not follow."
+          },
+          {
+            "option_id": "C",
+            "text_md": "No sale condition matters once the numbers reconcile",
+            "explanation_md": "The legal requirements remain."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Only the stipulated arithmetic result; sale compliance still needs evidence",
+            "explanation_md": "Correct computation and a lawful sale are separate questions."
+          }
+        ],
+        "correct_explanation_md": "Correct computation and a lawful sale are separate questions.",
+        "case_study_id": "D003"
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "draft_id": "D003",
+      "item_type": "case_study",
+      "variant": "case_study",
+      "payload": {
+        "title": "Pledge-sale reconciliation and notice",
+        "scenario_narrative_md": "A defaulted pledge is sold. For the calculation, the debt, proceeds and recoverable expenses are stipulated. The reviewer must separately examine the sale-notice evidence and the treatment of any excess after the stated deductions.",
+        "reference_tables_md": [],
+        "question_ids": [
+          "D001",
+          "D002"
+        ]
+      },
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Antigravity independent legal/originality review pending."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

@@ -1,0 +1,132 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U22-B002",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U22: Trace appointment,rotation and special appointment routes",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04",
+    "COMPANIES_ACT_INDIACODE_20260901"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.522-524 / PDF pp.541-543",
+      "statement": "DINconsentappointmentrotation2thirdsone-thirdexcludeindependent;additionalalternatecasualdifferentterms;individualmotions.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F002",
+      "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+      "locator": "sections160-162,PDF pp.111-112",
+      "statement": "AdditionalearlierAGMorduedate;casualapprovalnextGM;alternateabsenceIndia3monthsreturnlimit;depositexceptions.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Record the route and the end of office",
+        "core_explanation_md": "The general appointment route uses company approval, identification, eligibility and consent requirements. Public-company rotation uses the described two-thirds rotational pool and one-third retirement rule, excluding independent directors from the relevant total. Longest service since appointment and the statutory tie process determine who retires; do not apply the fraction to every director indiscriminately.\n\nAdditional, alternate and casual-vacancy directors have different authority and term limits. An additional director term ends at the earlier of the next AGM and its due date. An alternate appointment needs the relevant authorisation and qualifying absence from India; return and the original term matter. A casual vacancy does not create a fresh full term. Separate appointment motions are the default, with the specified unanimous procedural qualification. Candidature notice/deposit exceptions and consent filings need the current rules.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does a casual-vacancy appointment automatically grant an entirely new full term?",
+          "expected_takeaway": "No. The predecessor remaining term limits it."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An additional director stays in office because the next AGM was delayed beyond its due date. Which limit is relevant?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only the actual delayed meeting date",
+            "explanation_md": "The primary text uses the earlier-event limit."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The director preferred retirement date",
+            "explanation_md": "Preference does not fix the term."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A universal lifetime term",
+            "explanation_md": "No such term is provided."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The earlier of the next AGM and the date it should have been held",
+            "explanation_md": "Delay does not automatically extend the appointment."
+          }
+        ],
+        "correct_explanation_md": "Delay does not automatically extend the appointment."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A casual vacancy is filled and the appointee claims a fresh full term unrelated to the predecessor. What should be checked?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only the appointee age",
+            "explanation_md": "That does not settle this term."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The predecessor remaining term and required appointment/approval procedure",
+            "explanation_md": "This route has its own limits."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A rule that vacancies can never be filled",
+            "explanation_md": "The source provides a route."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Whether the appointee has more shares",
+            "explanation_md": "Share count does not create a new term."
+          }
+        ],
+        "correct_explanation_md": "This route has its own limits."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Antigravity must independently review law,exceptions,originality and exam cutoff before publication.",
+    "POST-CUTOFF primary consolidation: cited amendments/footnotes require cutoff reconciliation; class exemptions,current forms,qualification shares,section167 appeal and section188 exceptions remain reviewer checks."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

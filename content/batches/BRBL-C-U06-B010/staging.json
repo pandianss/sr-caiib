@@ -1,0 +1,157 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-C-U06-B010",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_C::U06: Calculate the value-based joint-creditor consent threshold",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "SARFAESI_GUJARAT_COMPILATION"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "SARFAESI_GUJARAT_COMPILATION",
+      "locator": "section13(9),PDF p.19",
+      "statement": "Notlessthan60percentoutstandingvaluerecorddatesubjectIBC;amountprincipalinterestotherdues;headcountnotbasis.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Use the record-date value, not votes per institution",
+        "core_explanation_md": "The section 13(9) condition uses not less than sixty per cent in value of the specified amount outstanding on the record date, subject to the IBC qualification. The definition includes the described principal, interest and other dues in the relevant creditor books. A lender headcount majority can fail the value test.\n\nUse a reconciled common record date and denominator. Divide the approving creditors qualifying outstanding amount by the total qualifying outstanding amount. Do not round a below-threshold exact value upward to claim approval. Meeting this calculation alone does not establish every other enforcement condition or defeat an applicable insolvency restriction.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Can three small creditors automatically outvote a larger outstanding-value share?",
+          "expected_takeaway": "No. The statutory condition is value-based."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "card",
+      "variant": "worked_example",
+      "payload": {
+        "title": "Compute the qualifying approval share",
+        "core_explanation_md": "Stipulate qualifying outstanding amounts of INR 2,400,000, INR 3,600,000 and INR 4,000,000 on the same record date. The first two creditors approve.",
+        "prerequisite_objective_ids": [],
+        "worked_steps": [
+          {
+            "step_number": 1,
+            "description": "Add the approving value",
+            "formula_or_substitution": "2,400,000 + 3,600,000",
+            "intermediate_result": "6,000,000"
+          },
+          {
+            "step_number": 2,
+            "description": "Divide by total qualifying value",
+            "formula_or_substitution": "6,000,000 / 10,000,000 × 100",
+            "intermediate_result": "60.00%"
+          }
+        ],
+        "final_answer_with_unit": "Approval share60.00%; the stated value threshold alone is met",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Which rule and stipulated facts determine this result?",
+          "expected_takeaway": "Use the sourced rule and stated scenario assumptions; the arithmetic does not establish a live legal entitlement."
+        }
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "numeric_input",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "On the agreed record date, total qualifying outstanding value is INR 12,000,000. Approving creditors represent INR 6,900,000. Calculate their value share as a percentage, to2decimal places HALF_UP. Enter the percentage number.",
+        "correct_explanation_md": "6,900,000/12,000,000×100=57.50%. This is below60%; headcount does not cure that.",
+        "numeric_rule": {
+          "expected_answer": "57.50",
+          "unit_label": "%",
+          "precision_decimals": 2,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Retain exact intermediate amounts and round only the final answer HALF_UP to the stated decimal places.",
+          "allow_negative": false
+        },
+        "case_study_id": "D005"
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A calculated exact approving share is below60 per cent, but the lender rounds it to a whole number of60 and declares the statutory threshold met. What is wrong?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Display rounding must not turn a below-threshold exact share into compliance",
+            "explanation_md": "Apply the threshold to the exact qualifying ratio."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Headcount always overrides value",
+            "explanation_md": "The provision is value-based."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Any positive share meets the test",
+            "explanation_md": "The stated minimum remains."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The record date is irrelevant",
+            "explanation_md": "The denominator is tied to that date."
+          }
+        ],
+        "correct_explanation_md": "Apply the threshold to the exact qualifying ratio.",
+        "case_study_id": "D005"
+      },
+      "draft_id": "D004",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "draft_id": "D005",
+      "item_type": "case_study",
+      "variant": "case_study",
+      "payload": {
+        "title": "Consortium consent check",
+        "scenario_narrative_md": "The consortium has an agreed record date and reconciled qualifying amounts. For this exercise, calculate only the approval share and test the stated60 per cent value requirement. No conclusion about other enforcement or insolvency conditions is requested.",
+        "reference_tables_md": [],
+        "question_ids": [
+          "D003",
+          "D004"
+        ]
+      },
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "NewB007-B013address earlier authoring-depth omissions inB001-B006. Historical envelopes remain unchanged as evidence. Antigravity must reconcile current consolidatedRules8-9,latercase law and cutoff applicability before publication.",
+    "No independent review approval; all legal factsneeds_review and canonicalreviewnull."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

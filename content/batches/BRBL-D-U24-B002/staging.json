@@ -1,0 +1,120 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U24-B002",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U24: Classify mortgage forms by possession,covenant and transfer terms",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.541-543 / PDF pp.560-562",
+      "statement": "58simplepersonalwithoutpossession;conditionalsalesamedocument;usufructpossessionrents;Englishabsoluteconditionalretransfer;depositdeedsnotifiedplaceintention;anomalousresidual.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Classify from legal features, not the product name",
+        "core_explanation_md": "A simple mortgage combines the described personal repayment covenant and right to cause sale without delivering possession. A usufructuary mortgage centres on possession and appropriation of rents/profits under its terms. An English mortgage has the specified repayment date and absolute transfer subject to retransfer. A conditional-sale mortgage needs the statutory condition in the same instrument effecting the ostensible sale. An anomalous mortgage is the residual statutory category.\n\nFor deposit of title deeds, the debt, delivery and security intention matter, together with the prescribed place of deposit. The property itself need not be located in that notified town. A memorandum that creates the bargain and one merely recording a completed deposit require different registration analysis, with State stamping/registration amendments checked separately.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Is the property location necessarily the same as the required place of title-deed deposit?",
+          "expected_takeaway": "No. The source distinguishes them."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Deeds are held for safekeeping with no security intention established. Can the bank infer a mortgage merely from custody?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "No; the security intention and other requirements must be established",
+            "explanation_md": "Custody alone is insufficient."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Yes, all safe custody creates a mortgage",
+            "explanation_md": "That erases the intention requirement."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Yes, if the envelope is labelled original",
+            "explanation_md": "The label does not establish the bargain."
+          },
+          {
+            "option_id": "D",
+            "text_md": "No deposit-of-deeds mortgage can ever exist",
+            "explanation_md": "The law recognises that route."
+          }
+        ],
+        "correct_explanation_md": "Custody alone is insufficient."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An ostensible sale relies on a mortgage condition contained only in a separate document. Which statutory feature needs attention?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only the stamp colour",
+            "explanation_md": "That does not settle classification."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A rule that possession determines every mortgage type",
+            "explanation_md": "The instrument terms also matter."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The same-document condition for the described conditional-sale mortgage",
+            "explanation_md": "The location of the condition is material."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The bank opening hours",
+            "explanation_md": "The bank operating schedule does not determine whether the mortgage condition is in the required instrument."
+          }
+        ],
+        "correct_explanation_md": "The location of the condition is material."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Antigravity independent legal,originality and session review pending; no publication approval.",
+    "Current primary TPA and State rules must reconcile registration,section69 and actionable-claim exceptions; source case facts/table expression not reused."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

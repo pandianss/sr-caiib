@@ -1,0 +1,360 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-D-U27-B001",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_D::U27: Distinguish electronic recognition,contract formation and reliable retention",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.566-570 / PDF pp.585-589",
+        "statement": "Electronicrecordsandsignatureslegalrecognition;retentionaccessibleaccuraterepresentationorigin destinationdate time;originatorintermediaryaddresseedifferent.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Electronic form is only one part of legal validity",
+          "core_explanation_md": "The IT Act supplies the described recognition of electronic records and signatures and supports electronic contracting and government services. A record is not invalid solely because it is electronic,but that does not prove capacity,consent,authority or every other contract requirement. Distinguish the originator,the intended addressee and an intermediary carrying or storing the message.\n\nRetention requires the described accessibility,accurate representation and origin/destination/time details,subject to the statutory qualification for automatically generated transmission information. A screenshot may preserve appearance while losing relevant metadata or the reliable original record. Design the evidence trail so the record can be retrieved and its integrity assessed later; a file existing somewhere is not enough.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does electronic recognition itself prove the sender had authority?",
+            "expected_takeaway": "No. Form,authority and the other validity requirements differ."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A bank retains a record in a proprietary format it can no longer open. Which retention feature is missing?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only a paper stamp",
+              "explanation_md": "That does not restore electronic accessibility."
+            },
+            {
+              "option_id": "B",
+              "text_md": "A longer file name",
+              "explanation_md": "That does not make the record usable."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Accessibility for subsequent reference",
+              "explanation_md": "Retention requires usable access,not mere storage."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The sender preferred colour theme",
+              "explanation_md": "It is unrelated."
+            }
+          ],
+          "correct_explanation_md": "Retention requires usable access,not mere storage."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A message passes through a hosting provider to its intended recipient. Why distinguish the host from the originator and addressee?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The statutory roles have different meanings and consequences",
+              "explanation_md": "Carrying a record does not automatically make the host its creator or intended recipient."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Every host necessarily signs every message",
+              "explanation_md": "That does not follow."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The recipient always becomes the originator",
+              "explanation_md": "The roles differ."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Electronic messages have no legally relevant parties",
+              "explanation_md": "The framework expressly identifies roles."
+            }
+          ],
+          "correct_explanation_md": "Carrying a record does not automatically make the host its creator or intended recipient."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Antigravity independent review pending for source accuracy,originality,question quality and session applicability. No publication approval.",
+      "Primary2022SO4720,currentJanVishwas amendments,section43A timing and struck-down66A listing must be reconciled before publication. No obsolete penalty table taught."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-D-U27-B001",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_D::U27"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_D::U27",
+        "objective_ids": [
+          "BRBL::MOD_D::U27::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_D::U27",
+        "objective_ids": [
+          "BRBL::MOD_D::U27::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_D::U27",
+        "objective_ids": [
+          "BRBL::MOD_D::U27::LO_01"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-D-U27-B001",
+      "draft_id": "D001",
+      "item_id": "item_64832f619d147b2f469c29fe9794e3e5a78417d702a0cc0b11b5b85cd85e18f9"
+    },
+    {
+      "batch_id": "BRBL-D-U27-B001",
+      "draft_id": "D002",
+      "item_id": "item_cf51c6d0e637574d155255537b700b007b375251af678d1587d598cf51c129ef"
+    },
+    {
+      "batch_id": "BRBL-D-U27-B001",
+      "draft_id": "D003",
+      "item_id": "item_6f77472407fd1b45f13ca870c06aabc60de870bb889dc1d42b8f6226479d0a06"
+    }
+  ],
+  "items": [
+    {
+      "title": "Electronic form is only one part of legal validity",
+      "core_explanation_md": "The IT Act supplies the described recognition of electronic records and signatures and supports electronic contracting and government services. A record is not invalid solely because it is electronic,but that does not prove capacity,consent,authority or every other contract requirement. Distinguish the originator,the intended addressee and an intermediary carrying or storing the message.\n\nRetention requires the described accessibility,accurate representation and origin/destination/time details,subject to the statutory qualification for automatically generated transmission information. A screenshot may preserve appearance while losing relevant metadata or the reliable original record. Design the evidence trail so the record can be retrieved and its integrity assessed later; a file existing somewhere is not enough.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does electronic recognition itself prove the sender had authority?",
+        "expected_takeaway": "No. Form,authority and the other validity requirements differ."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_64832f619d147b2f469c29fe9794e3e5a78417d702a0cc0b11b5b85cd85e18f9",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U27",
+      "objective_ids": [
+        "BRBL::MOD_D::U27::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.566-570 / PDF pp.585-589"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A bank retains a record in a proprietary format it can no longer open. Which retention feature is missing?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only a paper stamp",
+          "explanation_md": "That does not restore electronic accessibility."
+        },
+        {
+          "option_id": "B",
+          "text_md": "A longer file name",
+          "explanation_md": "That does not make the record usable."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Accessibility for subsequent reference",
+          "explanation_md": "Retention requires usable access,not mere storage."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The sender preferred colour theme",
+          "explanation_md": "It is unrelated."
+        }
+      ],
+      "correct_explanation_md": "Retention requires usable access,not mere storage.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_cf51c6d0e637574d155255537b700b007b375251af678d1587d598cf51c129ef",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U27",
+      "objective_ids": [
+        "BRBL::MOD_D::U27::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.566-570 / PDF pp.585-589"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A message passes through a hosting provider to its intended recipient. Why distinguish the host from the originator and addressee?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The statutory roles have different meanings and consequences",
+          "explanation_md": "Carrying a record does not automatically make the host its creator or intended recipient."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Every host necessarily signs every message",
+          "explanation_md": "That does not follow."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The recipient always becomes the originator",
+          "explanation_md": "The roles differ."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Electronic messages have no legally relevant parties",
+          "explanation_md": "The framework expressly identifies roles."
+        }
+      ],
+      "correct_explanation_md": "Carrying a record does not automatically make the host its creator or intended recipient.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_6f77472407fd1b45f13ca870c06aabc60de870bb889dc1d42b8f6226479d0a06",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U27",
+      "objective_ids": [
+        "BRBL::MOD_D::U27::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.566-570 / PDF pp.585-589"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

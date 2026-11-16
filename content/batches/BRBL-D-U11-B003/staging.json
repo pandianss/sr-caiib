@@ -1,0 +1,119 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U11-B003",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U11: Calculate the stipulated default interest on a partner advance",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed p.461 / PDF p.480",
+      "statement": "Section13(d)qualifyingadvancebeyondagreedcapital6percentperannumsubjectcontract.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "worked_example",
+      "payload": {
+        "title": "Separate an advance from agreed capital",
+        "core_explanation_md": "Stipulate no contrary contract, a qualifying INR 360,000 advance beyond agreed capital and a nine-month period. Apply simple interest at the statutory default6 per cent per annum for this exercise.",
+        "prerequisite_objective_ids": [],
+        "worked_steps": [
+          {
+            "step_number": 1,
+            "description": "Convert the time fraction",
+            "formula_or_substitution": "9 / 12",
+            "intermediate_result": "3/4year"
+          },
+          {
+            "step_number": 2,
+            "description": "Calculate exact simple interest",
+            "formula_or_substitution": "360,000 × 6 / 100 × 9 / 12",
+            "intermediate_result": "16,200"
+          }
+        ],
+        "final_answer_with_unit": "Interest INR 16,200",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Which rule and stipulated facts determine this result?",
+          "expected_takeaway": "Use the sourced rule and stated scenario assumptions; the arithmetic does not establish a live legal entitlement."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "numeric_input",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "For this exercise, no contrary agreement applies. A partner makes a qualifying INR 480,000 advance beyond agreed capital for7 months. Apply simple interest at6 per cent per annum and enter interest in INR.",
+        "correct_explanation_md": "480,000×6/100×7/12=INR 16,800. The qualifying advance and absence of a contrary agreement are stipulated.",
+        "numeric_rule": {
+          "expected_answer": "16800",
+          "unit_label": "INR",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Use exact whole units; do not round intermediate values.",
+          "allow_negative": false
+        }
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A partner applies the advance-interest default to agreed capital without checking the separate capital-interest rule. Which distinction matters?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Qualifying advances beyond agreed capital and capital contributions have different default treatment",
+            "explanation_md": "Do not apply one financial rule to both categories."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Every capital contribution is automatically an extra advance",
+            "explanation_md": "That erases the statutory distinction."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A partner may choose any rate retrospectively",
+            "explanation_md": "The agreement/default governs."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Interest calculations determine whether partnership exists",
+            "explanation_md": "Formation has separate requirements."
+          }
+        ],
+        "correct_explanation_md": "Do not apply one financial rule to both categories."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Antigravity independent statutory/calculation review pending; calculation uses exact month fraction,not a current bank rate."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

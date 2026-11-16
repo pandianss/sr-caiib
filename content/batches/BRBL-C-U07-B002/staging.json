@@ -1,0 +1,119 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-C-U07-B002",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_C::U07: Track creation, modification, full satisfaction and inspection separately",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.284-286 / PDF pp.303-305",
+      "statement": "Sections23-26 address prescribed filings, changes, full satisfaction within30days, borrower intimation/show cause up to14days, memorandum and inspection by any person on prescribed conditions.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "A repayment and a satisfied registry record are separate events",
+        "core_explanation_md": "A change to the terms or extent of registered security requires its own modification record under section 24. Full payment or satisfaction also requires the stated intimation under section 25; the creditor or ARC must not treat a bank-ledger closure as proof that the register was updated. The source specifies thirty days from full payment or satisfaction.\n\nIf a borrower reports that satisfaction was not recorded, the statutory process calls for a creditor show-cause notice with a period not exceeding fourteen days. The Registrar then follows the no-cause or cause-shown route. Section26 permits inspection on the prescribed terms; inspecting a record does not itself modify or discharge it.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does viewing an entry remove a charge?",
+          "expected_takeaway": "No. Inspection, modification and satisfaction have distinct purposes."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A borrower has fully paid the secured obligation. The bank closes the loan ledger but has no satisfaction-filing evidence. What remains to be reconciled?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only a new property valuation",
+            "explanation_md": "Valuation does not establish satisfaction filing."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A fresh creation entry for the repaid debt",
+            "explanation_md": "Creating a new entry is not the satisfaction task."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Nothing because loan closure automatically edits every register",
+            "explanation_md": "An internal closure is not proof of registry action."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The section 25 intimation and resulting registry satisfaction record",
+            "explanation_md": "Payment and recording full satisfaction are distinct obligations."
+          }
+        ],
+        "correct_explanation_md": "Payment and recording full satisfaction are distinct obligations."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A person pays the prescribed inspection fee and views the registry particulars. Which effect follows solely from that inspection?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The person becomes the secured creditor",
+            "explanation_md": "Viewing a record does not transfer creditor rights."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Access to the recorded particulars, without automatic alteration of the security",
+            "explanation_md": "Inspection is an information function, not a discharge or assignment."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The security is satisfied because it has been searched",
+            "explanation_md": "A search is not payment or satisfaction."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Every earlier modification is reversed",
+            "explanation_md": "Inspection does not reverse registered transactions."
+          }
+        ],
+        "correct_explanation_md": "Inspection is an information function, not a discharge or assignment."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Authoring is based on the stated source framework; independent June2026 consolidation, notifications, State/UT scope and later case-law review are deferred to Antigravity. No source gap is resolved by import validity."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

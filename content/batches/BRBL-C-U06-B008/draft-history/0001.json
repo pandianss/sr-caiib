@@ -1,0 +1,487 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-C-U06-B008",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_C::U06: Apply sale-notice distinctions and inclusive purchaser-deposit arithmetic",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04",
+      "SECURITY_ENFORCEMENT_GSR1046_2016"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed p.274 / PDF p.293",
+        "statement": "Firstsalesafeguardsvaluationreserveborrowernoticepublicauctionpublication25percentdepositconfirmation.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "source_id": "SECURITY_ENFORCEMENT_GSR1046_2016",
+        "locator": "GSR1046(E),PDF p.3,paragraph7",
+        "statement": "Rule9first30dayssubsequentsaleafterfailure15days;25percentinclusiveEMDsameornextworkingday;writtenextensionpurchasercreditorcap3months.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Separate first sale,repeat sale and the payment stages",
+          "core_explanation_md": "The retained2016 amendment distinguishes the first immovable-property sale thirty-day rule from the not-less-than-fifteen-day subsequent-sale notice after a failed sale. The applicable service,affixing and publication requirements remain part of the process. Do not reuse a single unqualified period for every sale or confuse a possession notice with a sale notice.\n\nThe purchaser deposit is twenty-five per cent of the sale price,inclusive of earnest money already deposited,payable immediately on the same day or not later than the next working day as stated. The balance-payment rule and the permitted written extension must be checked separately; the amendment caps the described extension at three months. A private arrangement cannot be assumed to waive every statutory condition.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Should earnest money be added again on top of the inclusive25per cent target?",
+            "expected_takeaway": "No. Credit the qualifying amount already deposited."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "item_type": "card",
+        "variant": "worked_example",
+        "payload": {
+          "title": "Credit earnest money once",
+          "core_explanation_md": "Stipulate an otherwise valid sale for INR4,800,000 and INR480,000 qualifying earnest money already paid. Calculate only the additional amount needed to reach the25per cent deposit.",
+          "prerequisite_objective_ids": [],
+          "worked_steps": [
+            {
+              "step_number": 1,
+              "description": "Calculate the deposit target",
+              "formula_or_substitution": "4,800,000 × 25 / 100",
+              "intermediate_result": "1,200,000"
+            },
+            {
+              "step_number": 2,
+              "description": "Credit the qualifying earnest money",
+              "formula_or_substitution": "1,200,000 − 480,000",
+              "intermediate_result": "720,000"
+            }
+          ],
+          "final_answer_with_unit": "Additional deposit INR720,000",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Which rule and stipulated facts determine this result?",
+            "expected_takeaway": "Use the sourced rule and stated scenario assumptions; the arithmetic does not establish a live legal entitlement."
+          }
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "numeric_input",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "An otherwise valid immovable sale has a price of INR5,600,000. INR420,000 qualifying earnest money is already deposited. Using the inclusive25per cent deposit rule,how much additional deposit is required in INR?",
+          "correct_explanation_md": "The target is5,600,000×25/100=1,400,000. Credit420,000 once; additional deposit=INR980,000.",
+          "numeric_rule": {
+            "expected_answer": "980000",
+            "unit_label": "INR",
+            "precision_decimals": 0,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Use exact whole units; do not round intermediate values.",
+            "allow_negative": false
+          }
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A repeat sale after a failed first sale is documented using no new notice because the old notice was once published. What is required under the retained amendment?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "No repeat-sale notice can ever be required",
+              "explanation_md": "The amendment expressly addresses it."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The applicable subsequent-sale notice of not less than fifteen days,with the required modes",
+              "explanation_md": "Failure does not remove the repeat-sale safeguard."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Only a private telephone call to the buyer",
+              "explanation_md": "That does not establish prescribed notice."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Automatically treat the first bid as final",
+              "explanation_md": "The source does not support that shortcut."
+            }
+          ],
+          "correct_explanation_md": "Failure does not remove the repeat-sale safeguard."
+        },
+        "draft_id": "D004",
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "NewB007-B013address earlier authoring-depth omissions inB001-B006. Historical envelopes remain unchanged as evidence. Antigravity must reconcile current consolidatedRules8-9,latercase law and cutoff applicability before publication.",
+      "No independent review approval; all legal factsneeds_review and canonicalreviewnull."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-C-U06-B008",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_C::U06"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "SECURITY_ENFORCEMENT_GSR1046_2016",
+        "authority": "Ministry of Finance,Government of India; Gazette reproduced in DRT notice via IBC Law mirror",
+        "title": "GSR1046(E),3November2016,Security Interest Enforcement amendments",
+        "url": "https://ibclaw.in/wp-content/uploads/2019/08/G.S.R.-1046E-dated-03-11-2016.pdf",
+        "publication_date": "2016-11-03",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_C::U06",
+        "objective_ids": [
+          "BRBL::MOD_C::U06::LO_08"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_C::U06",
+        "objective_ids": [
+          "BRBL::MOD_C::U06::LO_08"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_C::U06",
+        "objective_ids": [
+          "BRBL::MOD_C::U06::LO_08"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BRBL::MOD_C::U06",
+        "objective_ids": [
+          "BRBL::MOD_C::U06::LO_08"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-C-U06-B008",
+      "draft_id": "D001",
+      "item_id": "item_f1f15500e818718aaad4e1b9f6f953739c4c00a0f7ed18814fac0f36bd7e2b43"
+    },
+    {
+      "batch_id": "BRBL-C-U06-B008",
+      "draft_id": "D002",
+      "item_id": "item_3ffc7870adec3fc81f37f6dfdec5d0c10ed09e302747800515976d03f20b6f6f"
+    },
+    {
+      "batch_id": "BRBL-C-U06-B008",
+      "draft_id": "D003",
+      "item_id": "item_1c3067a0e56c857dc36dda367aff9a8b9886d62b8daf2925e3295cd925f80e0d"
+    },
+    {
+      "batch_id": "BRBL-C-U06-B008",
+      "draft_id": "D004",
+      "item_id": "item_1cd8bbd449924085a21c6e2693738816c9c1584067f75cf8a270bbaf8fa4b4ca"
+    }
+  ],
+  "items": [
+    {
+      "title": "Separate first sale,repeat sale and the payment stages",
+      "core_explanation_md": "The retained2016 amendment distinguishes the first immovable-property sale thirty-day rule from the not-less-than-fifteen-day subsequent-sale notice after a failed sale. The applicable service,affixing and publication requirements remain part of the process. Do not reuse a single unqualified period for every sale or confuse a possession notice with a sale notice.\n\nThe purchaser deposit is twenty-five per cent of the sale price,inclusive of earnest money already deposited,payable immediately on the same day or not later than the next working day as stated. The balance-payment rule and the permitted written extension must be checked separately; the amendment caps the described extension at three months. A private arrangement cannot be assumed to waive every statutory condition.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Should earnest money be added again on top of the inclusive25per cent target?",
+        "expected_takeaway": "No. Credit the qualifying amount already deposited."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_f1f15500e818718aaad4e1b9f6f953739c4c00a0f7ed18814fac0f36bd7e2b43",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U06",
+      "objective_ids": [
+        "BRBL::MOD_C::U06::LO_08"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed p.274 / PDF p.293"
+        },
+        {
+          "source_id": "SECURITY_ENFORCEMENT_GSR1046_2016",
+          "authority": "Ministry of Finance,Government of India; Gazette reproduced in DRT notice via IBC Law mirror",
+          "title": "GSR1046(E),3November2016,Security Interest Enforcement amendments",
+          "url": "https://ibclaw.in/wp-content/uploads/2019/08/G.S.R.-1046E-dated-03-11-2016.pdf",
+          "publication_date": "2016-11-03",
+          "effective_date": null,
+          "locator": "GSR1046(E),PDF p.3,paragraph7"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Credit earnest money once",
+      "core_explanation_md": "Stipulate an otherwise valid sale for INR4,800,000 and INR480,000 qualifying earnest money already paid. Calculate only the additional amount needed to reach the25per cent deposit.",
+      "prerequisite_objective_ids": [],
+      "worked_steps": [
+        {
+          "step_number": 1,
+          "description": "Calculate the deposit target",
+          "formula_or_substitution": "4,800,000 × 25 / 100",
+          "intermediate_result": "1,200,000"
+        },
+        {
+          "step_number": 2,
+          "description": "Credit the qualifying earnest money",
+          "formula_or_substitution": "1,200,000 − 480,000",
+          "intermediate_result": "720,000"
+        }
+      ],
+      "final_answer_with_unit": "Additional deposit INR720,000",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Which rule and stipulated facts determine this result?",
+        "expected_takeaway": "Use the sourced rule and stated scenario assumptions; the arithmetic does not establish a live legal entitlement."
+      },
+      "item_type": "card",
+      "card_type": "worked_example",
+      "id": "item_3ffc7870adec3fc81f37f6dfdec5d0c10ed09e302747800515976d03f20b6f6f",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U06",
+      "objective_ids": [
+        "BRBL::MOD_C::U06::LO_08"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed p.274 / PDF p.293"
+        },
+        {
+          "source_id": "SECURITY_ENFORCEMENT_GSR1046_2016",
+          "authority": "Ministry of Finance,Government of India; Gazette reproduced in DRT notice via IBC Law mirror",
+          "title": "GSR1046(E),3November2016,Security Interest Enforcement amendments",
+          "url": "https://ibclaw.in/wp-content/uploads/2019/08/G.S.R.-1046E-dated-03-11-2016.pdf",
+          "publication_date": "2016-11-03",
+          "effective_date": null,
+          "locator": "GSR1046(E),PDF p.3,paragraph7"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "An otherwise valid immovable sale has a price of INR5,600,000. INR420,000 qualifying earnest money is already deposited. Using the inclusive25per cent deposit rule,how much additional deposit is required in INR?",
+      "correct_explanation_md": "The target is5,600,000×25/100=1,400,000. Credit420,000 once; additional deposit=INR980,000.",
+      "numeric_rule": {
+        "expected_answer": "980000",
+        "unit_label": "INR",
+        "precision_decimals": 0,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Use exact whole units; do not round intermediate values.",
+        "allow_negative": false
+      },
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_1c3067a0e56c857dc36dda367aff9a8b9886d62b8daf2925e3295cd925f80e0d",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U06",
+      "objective_ids": [
+        "BRBL::MOD_C::U06::LO_08"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed p.274 / PDF p.293"
+        },
+        {
+          "source_id": "SECURITY_ENFORCEMENT_GSR1046_2016",
+          "authority": "Ministry of Finance,Government of India; Gazette reproduced in DRT notice via IBC Law mirror",
+          "title": "GSR1046(E),3November2016,Security Interest Enforcement amendments",
+          "url": "https://ibclaw.in/wp-content/uploads/2019/08/G.S.R.-1046E-dated-03-11-2016.pdf",
+          "publication_date": "2016-11-03",
+          "effective_date": null,
+          "locator": "GSR1046(E),PDF p.3,paragraph7"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A repeat sale after a failed first sale is documented using no new notice because the old notice was once published. What is required under the retained amendment?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "No repeat-sale notice can ever be required",
+          "explanation_md": "The amendment expressly addresses it."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The applicable subsequent-sale notice of not less than fifteen days,with the required modes",
+          "explanation_md": "Failure does not remove the repeat-sale safeguard."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Only a private telephone call to the buyer",
+          "explanation_md": "That does not establish prescribed notice."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Automatically treat the first bid as final",
+          "explanation_md": "The source does not support that shortcut."
+        }
+      ],
+      "correct_explanation_md": "Failure does not remove the repeat-sale safeguard.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_1cd8bbd449924085a21c6e2693738816c9c1584067f75cf8a270bbaf8fa4b4ca",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U06",
+      "objective_ids": [
+        "BRBL::MOD_C::U06::LO_08"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed p.274 / PDF p.293"
+        },
+        {
+          "source_id": "SECURITY_ENFORCEMENT_GSR1046_2016",
+          "authority": "Ministry of Finance,Government of India; Gazette reproduced in DRT notice via IBC Law mirror",
+          "title": "GSR1046(E),3November2016,Security Interest Enforcement amendments",
+          "url": "https://ibclaw.in/wp-content/uploads/2019/08/G.S.R.-1046E-dated-03-11-2016.pdf",
+          "publication_date": "2016-11-03",
+          "effective_date": null,
+          "locator": "GSR1046(E),PDF p.3,paragraph7"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

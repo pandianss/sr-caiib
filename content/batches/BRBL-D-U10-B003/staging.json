@@ -1,0 +1,131 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U10-B003",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U10: Distinguish the prescribed partner ceiling from the statutory delegation maximum",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "MCA_MISC_RULE10_INDEXED",
+    "COMPANIES_ACT_INDIACODE_20260901"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "MCA_MISC_RULE10_INDEXED",
+      "locator": "Rule10,official MCA PDF search-index excerpt retrieved16November2026",
+      "statement": "Prescribedassociation/partnershipceilingfifty,companyorotherlawqualification;fullPDFnotretrieved.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F002",
+      "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+      "locator": "section464,PDF p.246",
+      "statement": "Prescribednumberdelegationmaximum100;specifiedHUFandprofessionexceptionsmustbeconsidered.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "A power to prescribe a limit is not the prescribed limit",
+        "core_explanation_md": "Section464 allows the relevant number to be prescribed within its statutory maximum of100. The official MCA indexed Rule10 text identifies the prescribed ceiling of50for the described gain-seeking association/partnership, unless registered as a company or formed under another applicable law. The textbook treats100as the operative prescribed number; those two numbers answer different questions.\n\nCheck the statutory exceptions, including the specified HUF and professionally governed association categories, and the legal form before applying a ceiling. An LLP is formed under a different statute and must not be treated as an ordinary unincorporated firm for this purpose. Full current-rule consolidation and exemption review remain pending because direct MCA PDF retrieval failed; this draft records the evidence limitation explicitly.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does a statutory authority to prescribe up to100prove that100is the actual prescribed limit?",
+          "expected_takeaway": "No. Read the operative rule and its exceptions separately."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An ordinary gain-seeking association has55persons and is stipulated not to be a company, an LLP or within any exception. A note accepts it solely because55is below the section 464delegation maximum of100. What is the issue?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The delegation maximum always replaces the rule",
+            "explanation_md": "The prescribed number must be checked separately."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Every group of55must be a company automatically",
+            "explanation_md": "Legal formation is not inferred solely from headcount."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The operative Rule10ceiling is distinct from the maximum delegation power",
+            "explanation_md": "Under the stated evidence, the prescribed50ceiling must be considered."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The number of bank accounts determines the limit",
+            "explanation_md": "Accounts do not determine membership compliance."
+          }
+        ],
+        "correct_explanation_md": "Under the stated evidence, the prescribed50ceiling must be considered."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An LLP is assumed to violate an ordinary-firm ceiling solely because its partner count is higher. Which qualification needs analysis?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Its formation under the LLP statute and the applicable statutory/rule scope",
+            "explanation_md": "The legal form and exception wording matter."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The ordinary-firm rule automatically overrides every other formation law",
+            "explanation_md": "That ignores the stated qualification."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Every partner must therefore be a minor",
+            "explanation_md": "That inference is unsupported."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A larger office automatically removes all statutory requirements",
+            "explanation_md": "Office size is not the legal test."
+          }
+        ],
+        "correct_explanation_md": "The legal form and exception wording matter."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Explicit authoring supplement to earlierB001sourcebook100-person conflict. Official fullRule10PDF returned403/timeouts; indexed excerpt is partial evidence,not a certified consolidated rule. Antigravity must verify current rule and exceptions before publication."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

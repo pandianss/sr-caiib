@@ -1,0 +1,514 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-C-U06-B009",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_C::U06: Reconcile section13(7) costs,secured dues and residue",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "SARFAESI_GUJARAT_COMPILATION"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "SARFAESI_GUJARAT_COMPILATION",
+        "locator": "section13(7),PDF p.18",
+        "statement": "Absentcontrarycontractmoneyheldtrustpropercostsfirstsecuredduessecondresidueentitledperson.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Reconcile realisations before allocating the residue",
+          "core_explanation_md": "The retained section 13(7) describes the treatment of money received after the relevant measure: absent a contrary contract, it is held in trust and applied first to properly incurred costs, charges and expenses, then to secured-creditor dues, with the residue paid to the person entitled under their rights and interests. The legal qualification and competing claims must be checked before applying this as a live distribution instruction.\n\nFor a stipulated exercise, show gross proceeds, qualifying costs, the amount available for debt, the amount applied and the remaining residue or shortfall. Do not count the same cost twice or call a surplus additional bank interest. The arithmetic does not settle a disputed cost entitlement or insolvency priority.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does a positive residue automatically become lender income?",
+            "expected_takeaway": "No. Identify the person entitled under the applicable rights."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "card",
+        "variant": "worked_example",
+        "payload": {
+          "title": "Separate gross proceeds from residue",
+          "core_explanation_md": "For this exercise, no contrary contract, other priority or competing entitlement applies. Realisation is INR 3,260,000, proper costs INR 110,000 and secured dues INR 2,870,000.",
+          "prerequisite_objective_ids": [],
+          "worked_steps": [
+            {
+              "step_number": 1,
+              "description": "Deduct proper costs",
+              "formula_or_substitution": "3,260,000 − 110,000",
+              "intermediate_result": "3,150,000"
+            },
+            {
+              "step_number": 2,
+              "description": "Discharge the stipulated secured dues",
+              "formula_or_substitution": "3,150,000 − 2,870,000",
+              "intermediate_result": "280,000"
+            }
+          ],
+          "final_answer_with_unit": "Residue INR 280,000",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Which rule and stipulated facts determine this result?",
+            "expected_takeaway": "Use the sourced rule and stated scenario assumptions; the arithmetic does not establish a live legal entitlement."
+          }
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "numeric_input",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A stipulated section 13(7) exercise has INR 4,120,000 proceeds, INR 145,000 proper costs and INR 3,640,000 secured dues. No contrary contract or other priority applies. What residue remains in INR?",
+          "correct_explanation_md": "4,120,000−145,000−3,640,000=INR 335,000. Legal entitlement to the residue is a separate issue.",
+          "numeric_rule": {
+            "expected_answer": "335000",
+            "unit_label": "INR",
+            "precision_decimals": 0,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "Use exact whole units; do not round intermediate values.",
+            "allow_negative": false
+          },
+          "case_study_id": "D005"
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "The reconciliation credits all gross proceeds to debt and separately asks the borrower to pay costs already retained from those proceeds. What is the problem?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Gross and net proceeds must always be identical",
+              "explanation_md": "Costs can make them differ."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Costs never need a legal basis",
+              "explanation_md": "They must qualify under the applicable rule."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The lender may keep any excess automatically",
+              "explanation_md": "The residue has a separate entitlement."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The accounting must avoid double recovery of the same costs",
+              "explanation_md": "Reconcile the actual application of each amount."
+            }
+          ],
+          "correct_explanation_md": "Reconcile the actual application of each amount.",
+          "case_study_id": "D005"
+        },
+        "draft_id": "D004",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "item_type": "case_study",
+        "variant": "case_study",
+        "payload": {
+          "title": "Recovery reconciliation file",
+          "scenario_narrative_md": "A valid measure is stipulated for an arithmetic-only exercise. The sale team supplies gross proceeds and a documented list of proper costs. The loan team supplies the secured dues. No contrary contract or competing priority applies. Reconcile the amounts and identify whether a repeated cost demand duplicates an amount already retained.",
+          "reference_tables_md": [],
+          "question_ids": [
+            "D003",
+            "D004"
+          ]
+        },
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "NewB007-B013address earlier authoring-depth omissions inB001-B006. Historical envelopes remain unchanged as evidence. Antigravity must reconcile current consolidatedRules8-9,latercase law and cutoff applicability before publication.",
+      "No independent review approval; all legal factsneeds_review and canonicalreviewnull."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-C-U06-B009",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_C::U06"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "SARFAESI_GUJARAT_COMPILATION",
+        "authority": "Government of India statute hosted by Gujarat Revenue Department",
+        "title": "SARFAESI Act2002, 38-page compilation including 2016 and 2021 amendments",
+        "url": "https://revenuedepartment.gujarat.gov.in/downloads/4_11_GHRQ_01022026.pdf",
+        "publication_date": null,
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_C::U06",
+        "objective_ids": [
+          "BRBL::MOD_C::U06::LO_09"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_C::U06",
+        "objective_ids": [
+          "BRBL::MOD_C::U06::LO_09"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_C::U06",
+        "objective_ids": [
+          "BRBL::MOD_C::U06::LO_09"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BRBL::MOD_C::U06",
+        "objective_ids": [
+          "BRBL::MOD_C::U06::LO_09"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "unit_id": "BRBL::MOD_C::U06",
+        "objective_ids": [
+          "BRBL::MOD_C::U06::LO_09"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-C-U06-B009",
+      "draft_id": "D001",
+      "item_id": "item_ba42dda4431ab040f49b6578bae73a188edbfeb1377fe8ab4ab0b8174867b608"
+    },
+    {
+      "batch_id": "BRBL-C-U06-B009",
+      "draft_id": "D002",
+      "item_id": "item_099ad969f6d3c618a155904e3aa6d8a2fd7214498b90efffc1030faa0f081dcc"
+    },
+    {
+      "batch_id": "BRBL-C-U06-B009",
+      "draft_id": "D003",
+      "item_id": "item_74015a188314a9546777e3ae9a95942cf58172e973db2907b5c6645de53933ef"
+    },
+    {
+      "batch_id": "BRBL-C-U06-B009",
+      "draft_id": "D004",
+      "item_id": "item_c5b265569635025d89daec9145557bf07ccb15984fa9ed98b8950824a34425f2"
+    },
+    {
+      "batch_id": "BRBL-C-U06-B009",
+      "draft_id": "D005",
+      "item_id": "item_4ca0281d4080c1903a879866d9c9902d476c51fd275f1517336d90097f972ff6"
+    }
+  ],
+  "items": [
+    {
+      "title": "Reconcile realisations before allocating the residue",
+      "core_explanation_md": "The retained section 13(7) describes the treatment of money received after the relevant measure: absent a contrary contract, it is held in trust and applied first to properly incurred costs, charges and expenses, then to secured-creditor dues, with the residue paid to the person entitled under their rights and interests. The legal qualification and competing claims must be checked before applying this as a live distribution instruction.\n\nFor a stipulated exercise, show gross proceeds, qualifying costs, the amount available for debt, the amount applied and the remaining residue or shortfall. Do not count the same cost twice or call a surplus additional bank interest. The arithmetic does not settle a disputed cost entitlement or insolvency priority.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does a positive residue automatically become lender income?",
+        "expected_takeaway": "No. Identify the person entitled under the applicable rights."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_ba42dda4431ab040f49b6578bae73a188edbfeb1377fe8ab4ab0b8174867b608",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U06",
+      "objective_ids": [
+        "BRBL::MOD_C::U06::LO_09"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "SARFAESI_GUJARAT_COMPILATION",
+          "authority": "Government of India statute hosted by Gujarat Revenue Department",
+          "title": "SARFAESI Act2002, 38-page compilation including 2016 and 2021 amendments",
+          "url": "https://revenuedepartment.gujarat.gov.in/downloads/4_11_GHRQ_01022026.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section13(7),PDF p.18"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Separate gross proceeds from residue",
+      "core_explanation_md": "For this exercise, no contrary contract, other priority or competing entitlement applies. Realisation is INR 3,260,000, proper costs INR 110,000 and secured dues INR 2,870,000.",
+      "prerequisite_objective_ids": [],
+      "worked_steps": [
+        {
+          "step_number": 1,
+          "description": "Deduct proper costs",
+          "formula_or_substitution": "3,260,000 − 110,000",
+          "intermediate_result": "3,150,000"
+        },
+        {
+          "step_number": 2,
+          "description": "Discharge the stipulated secured dues",
+          "formula_or_substitution": "3,150,000 − 2,870,000",
+          "intermediate_result": "280,000"
+        }
+      ],
+      "final_answer_with_unit": "Residue INR 280,000",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Which rule and stipulated facts determine this result?",
+        "expected_takeaway": "Use the sourced rule and stated scenario assumptions; the arithmetic does not establish a live legal entitlement."
+      },
+      "item_type": "card",
+      "card_type": "worked_example",
+      "id": "item_099ad969f6d3c618a155904e3aa6d8a2fd7214498b90efffc1030faa0f081dcc",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U06",
+      "objective_ids": [
+        "BRBL::MOD_C::U06::LO_09"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "SARFAESI_GUJARAT_COMPILATION",
+          "authority": "Government of India statute hosted by Gujarat Revenue Department",
+          "title": "SARFAESI Act2002, 38-page compilation including 2016 and 2021 amendments",
+          "url": "https://revenuedepartment.gujarat.gov.in/downloads/4_11_GHRQ_01022026.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section13(7),PDF p.18"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A stipulated section 13(7) exercise has INR 4,120,000 proceeds, INR 145,000 proper costs and INR 3,640,000 secured dues. No contrary contract or other priority applies. What residue remains in INR?",
+      "correct_explanation_md": "4,120,000−145,000−3,640,000=INR 335,000. Legal entitlement to the residue is a separate issue.",
+      "numeric_rule": {
+        "expected_answer": "335000",
+        "unit_label": "INR",
+        "precision_decimals": 0,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "Use exact whole units; do not round intermediate values.",
+        "allow_negative": false
+      },
+      "case_study_id": "item_4ca0281d4080c1903a879866d9c9902d476c51fd275f1517336d90097f972ff6",
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_74015a188314a9546777e3ae9a95942cf58172e973db2907b5c6645de53933ef",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U06",
+      "objective_ids": [
+        "BRBL::MOD_C::U06::LO_09"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "SARFAESI_GUJARAT_COMPILATION",
+          "authority": "Government of India statute hosted by Gujarat Revenue Department",
+          "title": "SARFAESI Act2002, 38-page compilation including 2016 and 2021 amendments",
+          "url": "https://revenuedepartment.gujarat.gov.in/downloads/4_11_GHRQ_01022026.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section13(7),PDF p.18"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "The reconciliation credits all gross proceeds to debt and separately asks the borrower to pay costs already retained from those proceeds. What is the problem?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Gross and net proceeds must always be identical",
+          "explanation_md": "Costs can make them differ."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Costs never need a legal basis",
+          "explanation_md": "They must qualify under the applicable rule."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The lender may keep any excess automatically",
+          "explanation_md": "The residue has a separate entitlement."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The accounting must avoid double recovery of the same costs",
+          "explanation_md": "Reconcile the actual application of each amount."
+        }
+      ],
+      "correct_explanation_md": "Reconcile the actual application of each amount.",
+      "case_study_id": "item_4ca0281d4080c1903a879866d9c9902d476c51fd275f1517336d90097f972ff6",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_c5b265569635025d89daec9145557bf07ccb15984fa9ed98b8950824a34425f2",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U06",
+      "objective_ids": [
+        "BRBL::MOD_C::U06::LO_09"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "SARFAESI_GUJARAT_COMPILATION",
+          "authority": "Government of India statute hosted by Gujarat Revenue Department",
+          "title": "SARFAESI Act2002, 38-page compilation including 2016 and 2021 amendments",
+          "url": "https://revenuedepartment.gujarat.gov.in/downloads/4_11_GHRQ_01022026.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section13(7),PDF p.18"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Recovery reconciliation file",
+      "scenario_narrative_md": "A valid measure is stipulated for an arithmetic-only exercise. The sale team supplies gross proceeds and a documented list of proper costs. The loan team supplies the secured dues. No contrary contract or competing priority applies. Reconcile the amounts and identify whether a repeated cost demand duplicates an amount already retained.",
+      "reference_tables_md": [],
+      "question_ids": [
+        "item_74015a188314a9546777e3ae9a95942cf58172e973db2907b5c6645de53933ef",
+        "item_c5b265569635025d89daec9145557bf07ccb15984fa9ed98b8950824a34425f2"
+      ],
+      "item_type": "case_study",
+      "id": "item_4ca0281d4080c1903a879866d9c9902d476c51fd275f1517336d90097f972ff6",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U06",
+      "objective_ids": [
+        "BRBL::MOD_C::U06::LO_09"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "SARFAESI_GUJARAT_COMPILATION",
+          "authority": "Government of India statute hosted by Gujarat Revenue Department",
+          "title": "SARFAESI Act2002, 38-page compilation including 2016 and 2021 amendments",
+          "url": "https://revenuedepartment.gujarat.gov.in/downloads/4_11_GHRQ_01022026.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section13(7),PDF p.18"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

@@ -1,0 +1,359 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-D-U02-B002",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_D::U02: Distinguish absolute liability,actual payment,implied indemnity and notice conditions",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.410-411 / PDF pp.429-430",
+        "statement": "Sourceequityabsoluteincurredliabilitymaypermitreliefbeforeactualpayment;impliedindemnitycircumstancesnotautomatic;contractnoticeandcasefacts;cannotcosmeticallyreusecases.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "A payment receipt is not the only possible liability evidence",
+          "core_explanation_md": "The chapter distinguishes a merely feared loss from an incurred absolute liability and discusses relief before actual discharge in the identified judicial approach. Do not convert that discussion into a promise that every threatened claim is immediately payable. Establish the covered liability, its absoluteness and the applicable legal basis.\n\nAn indemnity can also arise through the described implied circumstances, which require their own facts rather than a missing written form alone. Notice conditions must be read in the undertaking and relevant authority; one case excusing a delay is not a universal deadline waiver. Preserve the event, notice, reason and decision as separate records.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does a possible future allegation necessarily establish an absolute incurred liability?",
+            "expected_takeaway": "No. The legal and factual basis must be established."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A threatened claim with no established liability is treated as automatically payable because some indemnity cases permit prepayment relief. What is missing?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only the claimant preferred payment date",
+              "explanation_md": "Preference does not establish entitlement."
+            },
+            {
+              "option_id": "B",
+              "text_md": "A rule that every letter is a final judgment",
+              "explanation_md": "An allegation is not an absolute liability."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The covered absolute-liability and applicable legal conditions",
+              "explanation_md": "The judicial principle has factual limits."
+            },
+            {
+              "option_id": "D",
+              "text_md": "An assumption that no indemnity can ever operate before cash payment",
+              "explanation_md": "That ignores the distinction discussed in the source."
+            }
+          ],
+          "correct_explanation_md": "The judicial principle has factual limits."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A notice condition is disregarded solely because an unrelated case accepted delayed notice. Which review is needed?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The actual term, event, delay facts and relevant legal treatment",
+              "explanation_md": "Case-specific relief cannot be generalised without analysis."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Only the amount on the stationery",
+              "explanation_md": "Amount does not determine notice compliance."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Automatic waiver for every banking claim",
+              "explanation_md": "No universal waiver follows."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Replacement of the undertaking with the reviewer preferred wording",
+              "explanation_md": "The actual contract must be examined."
+            }
+          ],
+          "correct_explanation_md": "Case-specific relief cannot be generalised without analysis."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Drafts for Antigravity review. Consolidated statute,exceptions and later case law require independent reconciliation;no publication approval."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-D-U02-B002",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_D::U02"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_D::U02",
+        "objective_ids": [
+          "BRBL::MOD_D::U02::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_D::U02",
+        "objective_ids": [
+          "BRBL::MOD_D::U02::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_D::U02",
+        "objective_ids": [
+          "BRBL::MOD_D::U02::LO_02"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-D-U02-B002",
+      "draft_id": "D001",
+      "item_id": "item_66b901f8600d50d60e566a3d12b61b149d7569946d15afed7d3f7f354411ee4c"
+    },
+    {
+      "batch_id": "BRBL-D-U02-B002",
+      "draft_id": "D002",
+      "item_id": "item_4e7512cb0414497e2d3a3b4ac19dd6c3c8dd75dfc9e4d8374efa68f2281fc527"
+    },
+    {
+      "batch_id": "BRBL-D-U02-B002",
+      "draft_id": "D003",
+      "item_id": "item_58ccf41e628a43e2cc41fe46696b760029a129543b1405d95a98758097836090"
+    }
+  ],
+  "items": [
+    {
+      "title": "A payment receipt is not the only possible liability evidence",
+      "core_explanation_md": "The chapter distinguishes a merely feared loss from an incurred absolute liability and discusses relief before actual discharge in the identified judicial approach. Do not convert that discussion into a promise that every threatened claim is immediately payable. Establish the covered liability, its absoluteness and the applicable legal basis.\n\nAn indemnity can also arise through the described implied circumstances, which require their own facts rather than a missing written form alone. Notice conditions must be read in the undertaking and relevant authority; one case excusing a delay is not a universal deadline waiver. Preserve the event, notice, reason and decision as separate records.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does a possible future allegation necessarily establish an absolute incurred liability?",
+        "expected_takeaway": "No. The legal and factual basis must be established."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_66b901f8600d50d60e566a3d12b61b149d7569946d15afed7d3f7f354411ee4c",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U02",
+      "objective_ids": [
+        "BRBL::MOD_D::U02::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.410-411 / PDF pp.429-430"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A threatened claim with no established liability is treated as automatically payable because some indemnity cases permit prepayment relief. What is missing?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only the claimant preferred payment date",
+          "explanation_md": "Preference does not establish entitlement."
+        },
+        {
+          "option_id": "B",
+          "text_md": "A rule that every letter is a final judgment",
+          "explanation_md": "An allegation is not an absolute liability."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The covered absolute-liability and applicable legal conditions",
+          "explanation_md": "The judicial principle has factual limits."
+        },
+        {
+          "option_id": "D",
+          "text_md": "An assumption that no indemnity can ever operate before cash payment",
+          "explanation_md": "That ignores the distinction discussed in the source."
+        }
+      ],
+      "correct_explanation_md": "The judicial principle has factual limits.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_4e7512cb0414497e2d3a3b4ac19dd6c3c8dd75dfc9e4d8374efa68f2281fc527",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U02",
+      "objective_ids": [
+        "BRBL::MOD_D::U02::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.410-411 / PDF pp.429-430"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A notice condition is disregarded solely because an unrelated case accepted delayed notice. Which review is needed?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The actual term, event, delay facts and relevant legal treatment",
+          "explanation_md": "Case-specific relief cannot be generalised without analysis."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Only the amount on the stationery",
+          "explanation_md": "Amount does not determine notice compliance."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Automatic waiver for every banking claim",
+          "explanation_md": "No universal waiver follows."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Replacement of the undertaking with the reviewer preferred wording",
+          "explanation_md": "The actual contract must be examined."
+        }
+      ],
+      "correct_explanation_md": "Case-specific relief cannot be generalised without analysis.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_58ccf41e628a43e2cc41fe46696b760029a129543b1405d95a98758097836090",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U02",
+      "objective_ids": [
+        "BRBL::MOD_D::U02::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.410-411 / PDF pp.429-430"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

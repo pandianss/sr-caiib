@@ -1,0 +1,120 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U07-B002",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U07: Distinguish sale from agreement to sell and separate ownership,risk and performance",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.439-441 / PDF pp.458-460",
+      "statement": "Propertypassed=sale,futuretime/condition=agreementtosell,convertsontime/condition;delivery/paymentcanpostpone;risksubjectintention;tableblanketremedyclaimsneedqualification.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Ask when property passes, not merely when cash moves",
+        "core_explanation_md": "A sale and an agreement to sell are distinguished by the passing of property in the goods. A future time or unfulfilled condition can keep a transaction at the agreement-to-sell stage. Payment, delivery and ownership may occur at different times, so a paid invoice alone does not settle the classification.\n\nRisk and remedies also need the contract and applicable rules. The textbook comparison should not be copied as a universal statement that delivery, payment and risk always move together. For finance against goods, preserve identification, title conditions, payment evidence, delivery/control and any unpaid-seller rights as distinct checks.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does paying the price necessarily prove every ownership condition was fulfilled?",
+          "expected_takeaway": "No. The property-transfer terms and facts remain relevant."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Payment is made now, but the stipulated ownership-transfer condition remains unfulfilled. Which fact determines sale versus agreement to sell?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only the payment date",
+            "explanation_md": "Payment alone may not pass property."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The bank preferred collateral description",
+            "explanation_md": "A preferred label does not establish ownership."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The packaging colour",
+            "explanation_md": "Appearance does not settle the legal event."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The actual passing of property under the applicable terms",
+            "explanation_md": "The classification depends on that event."
+          }
+        ],
+        "correct_explanation_md": "The classification depends on that event."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A risk note assumes that physical delivery, ownership and payment always occur simultaneously. What must be checked?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only whether the transaction is profitable",
+            "explanation_md": "Profit does not determine these events."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The contract terms and applicable rules for each separate event",
+            "explanation_md": "They can occur at different times."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A rule that risk never passes",
+            "explanation_md": "That opposite blanket rule is also unsupported."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The buyer preferred accounting software",
+            "explanation_md": "Software does not set legal ownership."
+          }
+        ],
+        "correct_explanation_md": "They can occur at different times."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Antigravity review pending for primary law,exceptions,originality and current applicability. No publication approval.",
+    "No source comparison table copied. Specific-performance,risk and voidable-title exceptions require primary reconciliation before operational use."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

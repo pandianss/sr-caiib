@@ -1,0 +1,120 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-C-U06-B013",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_C::U06: Apply the secured-creditor purchase route after a failed reserve-price sale",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "SARFAESI_GUJARAT_COMPILATION"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "SARFAESI_GUJARAT_COMPILATION",
+      "locator": "section13(5A)-(5C),PDF p.18",
+      "statement": "Postponedwantbidnotlessreserveauthorisedofficermaybidcreditorsubsequentsale;purchasepriceadjustclaimBR9asfarapplicable.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Creditor purchase has a specific statutory route",
+        "core_explanation_md": "The source permits the described authorised officer to bid on behalf of the secured creditor at a subsequent sale where the immovable-property sale was postponed for want of a bid not less than the reserve price. That is not automatic creditor ownership after any default or a general power to skip the sale process.\n\nIf the creditor becomes purchaser under that route, the purchase price is adjusted against its claim as stated, and the relevant Banking Regulation Act non-banking-property provision applies as far as provided. Retain the failed-sale, reserve-price, authority, bid, confirmation and adjustment evidence. Other sale-rule safeguards remain to be reconciled rather than presumed waived by creditor participation.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does a failed sale automatically transfer ownership to the creditor?",
+          "expected_takeaway": "No. The specified subsequent-sale purchase process must be established."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A creditor declares itself owner immediately after a failed auction without an authorised bid or subsequent-sale process. What is missing?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only a new bank signboard",
+            "explanation_md": "That does not transfer title."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The specific statutory purchase route and sale evidence",
+            "explanation_md": "Failure alone is not automatic ownership."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A rule that creditors can never bid",
+            "explanation_md": "The source permits a qualified route."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Only the borrower signature colour",
+            "explanation_md": "Signature appearance does not establish the authorised bid and subsequent-sale route required for this purchase."
+          }
+        ],
+        "correct_explanation_md": "Failure alone is not automatic ownership."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "The creditor purchases through the stipulated statutory route and treats the price as unrelated to its recovery claim. Which consequence must be considered?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Every claim automatically doubles",
+            "explanation_md": "That is unsupported."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The price can always be ignored",
+            "explanation_md": "The source specifies adjustment."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The statutory purchase-price adjustment against the claim",
+            "explanation_md": "The recovery accounting must reflect the purchase."
+          },
+          {
+            "option_id": "D",
+            "text_md": "All other bank-property rules cease forever",
+            "explanation_md": "The source references an applicable further provision."
+          }
+        ],
+        "correct_explanation_md": "The recovery accounting must reflect the purchase."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "NewB007-B013address earlier authoring-depth omissions inB001-B006. Historical envelopes remain unchanged as evidence. Antigravity must reconcile current consolidatedRules8-9,latercase law and cutoff applicability before publication.",
+    "No independent review approval; all legal factsneeds_review and canonicalreviewnull."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

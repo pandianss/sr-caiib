@@ -1,0 +1,360 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-C-U04-B001",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL C U04: Use defined parties and institutions instead of ordinary-language assumptions",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.248-251 / PDF pp.267-270",
+        "statement": "Section2 supplies defined meanings. Board means SEBI; borrower includes specified guarantors/security providers and the post-acquisition borrower. Bank and financial institution depend on enumerated/notified classes. DRT and DRAT are distinct institutions.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Map the legal roles in the file",
+          "core_explanation_md": "In this Act, a familiar word can have a special meaning. The defined Board is SEBI, not the lending bank board. Borrower can include the described guarantor or person who provides mortgage or pledge security for financial assistance, as well as the person receiving the assistance. A person need not have received the cash personally to require analysis under the definition.\n\nBank and financial institution are statutory categories, including the applicable enumerated or notified bodies. Do not assume every finance business qualifies because its name contains finance. DRT and DRAT are also different: the Tribunal and appellate institution must not be collapsed into one forum. Detailed jurisdiction and remedy conditions belong to the relevant provisions.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does no cash received personally settle that a guarantor is outside the defined borrower?",
+            "expected_takeaway": "No. The definition extends beyond the immediate recipient of the assistance."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A security-provider review excludes a guarantor solely because the loan proceeds went to another person. Which definition issue has been overlooked?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Every employee of a borrower is automatically the borrower",
+              "explanation_md": "Employment alone is not the identified statutory inclusion."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Board means the branch credit committee",
+              "explanation_md": "The Act defines Board as SEBI."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Every company with finance in its name is automatically a bank",
+              "explanation_md": "Enumerated and notified statutory classes control."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The borrower definition includes specified guarantee and security-provider roles",
+              "explanation_md": "Receipt of loan cash is not the only route described in the definition."
+            }
+          ],
+          "correct_explanation_md": "Receipt of loan cash is not the only route described in the definition."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A statutory workflow assigns an action to the defined Board. An analyst sends it to the lending bank directors without checking the definition. Which entity does Board mean here?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The borrower company board in every case",
+              "explanation_md": "That ordinary-language interpretation conflicts with the Act definition."
+            },
+            {
+              "option_id": "B",
+              "text_md": "SEBI",
+              "explanation_md": "Section 2 defines Board by reference to SEBI."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The State Facilitation Council",
+              "explanation_md": "That Council belongs to a different statutory framework."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The bank internal sanction committee",
+              "explanation_md": "The statutory definition does not mean an internal credit committee."
+            }
+          ],
+          "correct_explanation_md": "Section 2 defines Board by reference to SEBI."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Codex original draft, 16 November 2026. Independent source/session applicability, originality and pedagogy review pending. No publication approval.",
+      "Courseware units 17A and 17B read in full including end questions (printed pp.243-256 / PDF pp.262-275). End questions and distinctive source expression were not reused.",
+      "Historical Bombay High Court compilation omits later amendments; retained as comparison only, not evidence of June2026 consolidation. Current capital floors, later definition additions, registry rules, eligibility notifications and remedy conditions require independent primary verification.",
+      "Judgment review is limited to identified holdings; later authorities and live proceedings are not certified."
+    ],
+    "next_batch_hint": "Continue BRBL C U05, S04 printed p.257 / PDF p.276"
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-C-U04-B001",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p.12, Compulsory Paper IV Module C, SARFAESI introduction and definitions"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_C::U04",
+        "objective_ids": [
+          "BRBL::MOD_C::U04::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_C::U04",
+        "objective_ids": [
+          "BRBL::MOD_C::U04::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_C::U04",
+        "objective_ids": [
+          "BRBL::MOD_C::U04::LO_01"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-C-U04-B001",
+      "draft_id": "D001",
+      "item_id": "item_73e3c7f1de5b7ab308adac2ca831137ef873259ecd451c3eb2e8939c17a8e100"
+    },
+    {
+      "batch_id": "BRBL-C-U04-B001",
+      "draft_id": "D002",
+      "item_id": "item_c14e6be6cdde1fa93e48d894e4ae9b56b979c8de206560c2c36112efa371ad55"
+    },
+    {
+      "batch_id": "BRBL-C-U04-B001",
+      "draft_id": "D003",
+      "item_id": "item_dc48542f16cd81445b7a8fd47f121b2cff2f398e9e941584a03ecd99c5edb2ef"
+    }
+  ],
+  "items": [
+    {
+      "title": "Map the legal roles in the file",
+      "core_explanation_md": "In this Act, a familiar word can have a special meaning. The defined Board is SEBI, not the lending bank board. Borrower can include the described guarantor or person who provides mortgage or pledge security for financial assistance, as well as the person receiving the assistance. A person need not have received the cash personally to require analysis under the definition.\n\nBank and financial institution are statutory categories, including the applicable enumerated or notified bodies. Do not assume every finance business qualifies because its name contains finance. DRT and DRAT are also different: the Tribunal and appellate institution must not be collapsed into one forum. Detailed jurisdiction and remedy conditions belong to the relevant provisions.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does no cash received personally settle that a guarantor is outside the defined borrower?",
+        "expected_takeaway": "No. The definition extends beyond the immediate recipient of the assistance."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_73e3c7f1de5b7ab308adac2ca831137ef873259ecd451c3eb2e8939c17a8e100",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U04",
+      "objective_ids": [
+        "BRBL::MOD_C::U04::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.248-251 / PDF pp.267-270"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A security-provider review excludes a guarantor solely because the loan proceeds went to another person. Which definition issue has been overlooked?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Every employee of a borrower is automatically the borrower",
+          "explanation_md": "Employment alone is not the identified statutory inclusion."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Board means the branch credit committee",
+          "explanation_md": "The Act defines Board as SEBI."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Every company with finance in its name is automatically a bank",
+          "explanation_md": "Enumerated and notified statutory classes control."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The borrower definition includes specified guarantee and security-provider roles",
+          "explanation_md": "Receipt of loan cash is not the only route described in the definition."
+        }
+      ],
+      "correct_explanation_md": "Receipt of loan cash is not the only route described in the definition.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_c14e6be6cdde1fa93e48d894e4ae9b56b979c8de206560c2c36112efa371ad55",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U04",
+      "objective_ids": [
+        "BRBL::MOD_C::U04::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.248-251 / PDF pp.267-270"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A statutory workflow assigns an action to the defined Board. An analyst sends it to the lending bank directors without checking the definition. Which entity does Board mean here?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The borrower company board in every case",
+          "explanation_md": "That ordinary-language interpretation conflicts with the Act definition."
+        },
+        {
+          "option_id": "B",
+          "text_md": "SEBI",
+          "explanation_md": "Section 2 defines Board by reference to SEBI."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The State Facilitation Council",
+          "explanation_md": "That Council belongs to a different statutory framework."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The bank internal sanction committee",
+          "explanation_md": "The statutory definition does not mean an internal credit committee."
+        }
+      ],
+      "correct_explanation_md": "Section 2 defines Board by reference to SEBI.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_dc48542f16cd81445b7a8fd47f121b2cff2f398e9e941584a03ecd99c5edb2ef",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U04",
+      "objective_ids": [
+        "BRBL::MOD_C::U04::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.248-251 / PDF pp.267-270"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

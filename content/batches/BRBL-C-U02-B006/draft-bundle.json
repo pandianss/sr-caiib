@@ -1,0 +1,407 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-C-U02-B006",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL C U02 MSMED Act: Apply the payment deadline and distinguish the 15-day default from the 45-day written-agreement ceiling",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "MSMED_ACT_2006_GAZETTE",
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "MSMED_ACT_2006_GAZETTE",
+        "locator": "sections 15-17, PDF p.8",
+        "statement": "Payment is due by the written agreed date or, absent agreement, before appointed day. Written period cannot exceed 45 days from acceptance/deemed acceptance. Section 16 interest begins from appointed day or day immediately after agreed date.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "source_id": "S04",
+        "locator": "printed pp.233-242 / PDF pp.252-261, whole unit and end questions visually inspected",
+        "statement": "The chapter covers this objective, but its older classification values and historical memorandum treatment must be read with the retained notifications.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Forty-five days is a ceiling, not a universal grace period",
+          "core_explanation_md": "For an eligible supplier transaction, section 15 requires payment by the written agreed date; without such agreement, payment must occur before the appointed day. Even a written agreement cannot set a period beyond forty-five days from acceptance or deemed acceptance. A shorter valid agreed period remains meaningful: the maximum does not automatically replace it.\n\nFor delay under section 16, identify the proper start: the appointed day for the default route, or immediately after the agreed payment date for the agreement route. First establish the applicable acceptance facts. Do not calculate interest from invoice entry, loan sanction or financial-year closing simply because those dates are easier to find.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does a ten-day written term become forty-five days automatically?",
+            "expected_takeaway": "No. Forty-five days is the outer permitted period, not a replacement for every shorter agreement."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A qualifying supply has a valid written payment date twenty days after acceptance. The buyer proposes to wait until day forty-five without interest solely because the Act mentions forty-five days. Which answer is sound?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The proposal is sound because every buyer gets forty-five interest-free days",
+              "explanation_md": "The ceiling does not erase the shorter valid agreed date."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The supplier must agree to extend because it is an MSME",
+              "explanation_md": "Supplier status does not create an automatic extension right for the buyer."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The shorter valid agreed date governs; delay interest starts immediately after it",
+              "explanation_md": "Sections 15-16 distinguish the agreed date from the maximum period."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Interest always starts on the original purchase-order date",
+              "explanation_md": "The statute identifies acceptance/payment-date rules, not this universal start."
+            }
+          ],
+          "correct_explanation_md": "Sections 15-16 distinguish the agreed date from the maximum period."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A purchase contract proposes payment seventy days after deemed acceptance for an eligible supplier. What should a compliance reviewer flag?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The proposed written period exceeds the forty-five-day statutory ceiling",
+              "explanation_md": "A private written agreement cannot enlarge the stated outer period."
+            },
+            {
+              "option_id": "B",
+              "text_md": "A written contract always overrides section 15",
+              "explanation_md": "The section expressly limits even written agreements."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Only oral terms have any statutory ceiling",
+              "explanation_md": "The forty-five-day restriction explicitly concerns the written agreed period."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The period becomes valid if the buyer records a provision",
+              "explanation_md": "An accounting provision does not cure the prohibited payment term."
+            }
+          ],
+          "correct_explanation_md": "A private written agreement cannot enlarge the stated outer period."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex drafts, 16 November 2026; independent legal/session applicability, originality and pedagogy review pending. No approval or publication claimed.",
+      "Original Gazette is not a certified June 2026 consolidation. Later amendments, commencement changes, State rules and applicable judgments require independent verification.",
+      "Source questions and textbook table structure were inspected and not reused. Teaching and scenarios were designed from a factual brief; author comparison is not independent editorial review.",
+      "Original notification transition dates and partial-month/live-rate interest conventions are not certified here. Udyam registration timing and legal eligibility disputes need applicable primary evidence."
+    ],
+    "next_batch_hint": "Continue BRBL-C-U02-B007"
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-C-U02-B006",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p.12, Compulsory Paper IV Module C, MSMED Act 2006"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "MSMED_ACT_2006_GAZETTE",
+        "authority": "Ministry of Law and Justice; hosted by Development Commissioner (MSME)",
+        "title": "The Micro, Small and Medium Enterprises Development Act, 2006, No.27 of 2006 (original Gazette enactment)",
+        "url": "https://www.dcmsme.gov.in/msmed2006.pdf",
+        "publication_date": "2006-06-16",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_C::U02",
+        "objective_ids": [
+          "BRBL::MOD_C::U02::LO_06"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_C::U02",
+        "objective_ids": [
+          "BRBL::MOD_C::U02::LO_06"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_C::U02",
+        "objective_ids": [
+          "BRBL::MOD_C::U02::LO_06"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-C-U02-B006",
+      "draft_id": "D001",
+      "item_id": "item_e25be8e84f507c90e0d0abaa0f730d6d342dd7a1d7b9bb3473a3e13ddecb3b37"
+    },
+    {
+      "batch_id": "BRBL-C-U02-B006",
+      "draft_id": "D002",
+      "item_id": "item_08385a52c5b5c659aef72f693d49b0e826b8838a0a0e9ec27d062372af4dc08b"
+    },
+    {
+      "batch_id": "BRBL-C-U02-B006",
+      "draft_id": "D003",
+      "item_id": "item_8cad38f482c1ed1af2c72d2ec47348f423cec6fba9b9b72658fd0a48d586be85"
+    }
+  ],
+  "items": [
+    {
+      "title": "Forty-five days is a ceiling, not a universal grace period",
+      "core_explanation_md": "For an eligible supplier transaction, section 15 requires payment by the written agreed date; without such agreement, payment must occur before the appointed day. Even a written agreement cannot set a period beyond forty-five days from acceptance or deemed acceptance. A shorter valid agreed period remains meaningful: the maximum does not automatically replace it.\n\nFor delay under section 16, identify the proper start: the appointed day for the default route, or immediately after the agreed payment date for the agreement route. First establish the applicable acceptance facts. Do not calculate interest from invoice entry, loan sanction or financial-year closing simply because those dates are easier to find.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does a ten-day written term become forty-five days automatically?",
+        "expected_takeaway": "No. Forty-five days is the outer permitted period, not a replacement for every shorter agreement."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_e25be8e84f507c90e0d0abaa0f730d6d342dd7a1d7b9bb3473a3e13ddecb3b37",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U02",
+      "objective_ids": [
+        "BRBL::MOD_C::U02::LO_06"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "MSMED_ACT_2006_GAZETTE",
+          "authority": "Ministry of Law and Justice; hosted by Development Commissioner (MSME)",
+          "title": "The Micro, Small and Medium Enterprises Development Act, 2006, No.27 of 2006 (original Gazette enactment)",
+          "url": "https://www.dcmsme.gov.in/msmed2006.pdf",
+          "publication_date": "2006-06-16",
+          "effective_date": null,
+          "locator": "sections 15-17, PDF p.8"
+        },
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.233-242 / PDF pp.252-261, whole unit and end questions visually inspected"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A qualifying supply has a valid written payment date twenty days after acceptance. The buyer proposes to wait until day forty-five without interest solely because the Act mentions forty-five days. Which answer is sound?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The proposal is sound because every buyer gets forty-five interest-free days",
+          "explanation_md": "The ceiling does not erase the shorter valid agreed date."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The supplier must agree to extend because it is an MSME",
+          "explanation_md": "Supplier status does not create an automatic extension right for the buyer."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The shorter valid agreed date governs; delay interest starts immediately after it",
+          "explanation_md": "Sections 15-16 distinguish the agreed date from the maximum period."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Interest always starts on the original purchase-order date",
+          "explanation_md": "The statute identifies acceptance/payment-date rules, not this universal start."
+        }
+      ],
+      "correct_explanation_md": "Sections 15-16 distinguish the agreed date from the maximum period.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_08385a52c5b5c659aef72f693d49b0e826b8838a0a0e9ec27d062372af4dc08b",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U02",
+      "objective_ids": [
+        "BRBL::MOD_C::U02::LO_06"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "MSMED_ACT_2006_GAZETTE",
+          "authority": "Ministry of Law and Justice; hosted by Development Commissioner (MSME)",
+          "title": "The Micro, Small and Medium Enterprises Development Act, 2006, No.27 of 2006 (original Gazette enactment)",
+          "url": "https://www.dcmsme.gov.in/msmed2006.pdf",
+          "publication_date": "2006-06-16",
+          "effective_date": null,
+          "locator": "sections 15-17, PDF p.8"
+        },
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.233-242 / PDF pp.252-261, whole unit and end questions visually inspected"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A purchase contract proposes payment seventy days after deemed acceptance for an eligible supplier. What should a compliance reviewer flag?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The proposed written period exceeds the forty-five-day statutory ceiling",
+          "explanation_md": "A private written agreement cannot enlarge the stated outer period."
+        },
+        {
+          "option_id": "B",
+          "text_md": "A written contract always overrides section 15",
+          "explanation_md": "The section expressly limits even written agreements."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Only oral terms have any statutory ceiling",
+          "explanation_md": "The forty-five-day restriction explicitly concerns the written agreed period."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The period becomes valid if the buyer records a provision",
+          "explanation_md": "An accounting provision does not cure the prohibited payment term."
+        }
+      ],
+      "correct_explanation_md": "A private written agreement cannot enlarge the stated outer period.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_8cad38f482c1ed1af2c72d2ec47348f423cec6fba9b9b72658fd0a48d586be85",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U02",
+      "objective_ids": [
+        "BRBL::MOD_C::U02::LO_06"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "MSMED_ACT_2006_GAZETTE",
+          "authority": "Ministry of Law and Justice; hosted by Development Commissioner (MSME)",
+          "title": "The Micro, Small and Medium Enterprises Development Act, 2006, No.27 of 2006 (original Gazette enactment)",
+          "url": "https://www.dcmsme.gov.in/msmed2006.pdf",
+          "publication_date": "2006-06-16",
+          "effective_date": null,
+          "locator": "sections 15-17, PDF p.8"
+        },
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.233-242 / PDF pp.252-261, whole unit and end questions visually inspected"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

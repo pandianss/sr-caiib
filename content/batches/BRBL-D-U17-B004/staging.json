@@ -1,0 +1,120 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U17-B004",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U17: Keep small-company classification separate from stale thresholds and MSME status",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed p.493 / PDF p.512",
+      "statement": "Smallcompanycategoryexcludingpublic;bookoldlimitsandORnotcurrent;requiresreconciliationwithcurrentprescriptionandstatutoryexclusions.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "A familiar label can have a versioned legal definition",
+        "core_explanation_md": "Small company is a Companies Act classification with financial criteria and exclusions. It is not automatically the same as a small enterprise under MSME classification. The textbook financial limits and its either/or wording must not be treated as current reference data. Check both prescribed financial criteria and the statutory exclusions for the relevant date before using a relaxation.\n\nRecord the paid-up capital, the relevant financial-year turnover, the legal form and any holding/subsidiary or other excluded status. A claim of smallness based only on staff count or loan size is insufficient. The applicable prescribed thresholds need primary-notification reconciliation before the release question bank tests an exact current limit.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Can MSME registration alone establish small-company status?",
+          "expected_takeaway": "No. These are different legal classifications."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A company seeks a small-company compliance relaxation solely because it has an MSME certificate. What is needed?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only the certificate serial number",
+            "explanation_md": "It does not prove the Companies Act classification."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A rule that all MSMEs are companies",
+            "explanation_md": "MSMEs can have different forms."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Only the bank loan amount",
+            "explanation_md": "That is not the complete classification test."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The applicable Companies Act criteria, exclusions and dated prescribed limits",
+            "explanation_md": "The two classifications must be assessed separately."
+          }
+        ],
+        "correct_explanation_md": "The two classifications must be assessed separately."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An old textbook threshold conflicts with a later prescription before the exam cutoff. Which evidence should control authoring?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Whichever number produces more questions",
+            "explanation_md": "Question volume is irrelevant."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The applicable dated primary prescription, with the conflict recorded",
+            "explanation_md": "Session applicability must be established."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The older number without qualification",
+            "explanation_md": "That ignores the later rule."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A guessed midpoint",
+            "explanation_md": "No legal basis supports averaging thresholds."
+          }
+        ],
+        "correct_explanation_md": "Session applicability must be established."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Antigravity must independently review law,exceptions,originality and exam cutoff before publication.",
+    "Primary 2025 small-company amendment retrieval pending; no stale numerical limit taught. Old statutory-meeting,deposit,OPC conversion and commencement claims excluded pending reconciliation."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

@@ -1,0 +1,119 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-C-U09-B001",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_C::U09: Screen exclusions and notification-based exemptions before enforcement",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.294-295 / PDF pp.313-314",
+      "statement": "Section31 exclusions include specified liens, pledges, ships, aircraft in primary, no-security conditional contracts, unpaid-seller rights, specified attachment exclusions, up-to1lakh security, agricultural land, dues below20% principal+interest.31A notified exemptions parliamentary process.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Security validity and Act applicability are different questions",
+        "core_explanation_md": "Before selecting a SARFAESI measure, screen section 31. Its exclusions include the specified liens, pledges of movables, specified vessel/aircraft interests, contracts that create no security interest, unpaid-seller rights and the stated protected-property situations. It also addresses security for a financial asset not exceeding INR 1 lakh, agricultural land and the stated dues-below-twenty-per-cent condition. Each exclusion needs its own facts; a valid security can have another remedy while being outside this Act.\n\nSection31A also permits class-based exemptions or modifications by the specified notification process. Do not invent an exemption from a lender business name or substitute a generic asset label for factual land-use and legal analysis.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does exclusion from this Act necessarily cancel the underlying debt?",
+          "expected_takeaway": "No. Applicability and the underlying obligation are separate."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An established pledge of movables is valid, but the analyst treats validity alone as proof that SARFAESI must apply. What distinction matters?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Valid security always eliminates statutory exclusions",
+            "explanation_md": "An exclusion can concern a valid security type."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The pledge necessarily becomes an outright transfer of all borrower property",
+            "explanation_md": "That does not follow from pledge validity."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A valid pledge can have a separate remedy while being excluded from this Act",
+            "explanation_md": "Section31 applicability is separate from the existence of the debt/security."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Exclusion proves the borrower has paid",
+            "explanation_md": "Statutory exclusion is not evidence of payment."
+          }
+        ],
+        "correct_explanation_md": "Section31 applicability is separate from the existence of the debt/security."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A proposed section 31A exemption is inferred only from a lender internal policy. Which evidence is missing?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The applicable governmental notification and its scope",
+            "explanation_md": "An internal policy is not the statutory exemption instrument."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Only the branch profit figure",
+            "explanation_md": "Profit does not establish the notified class."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A declaration that every financial institution is exempt",
+            "explanation_md": "No blanket exemption follows from the given evidence."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The borrower preferred repayment channel",
+            "explanation_md": "Payment convenience does not determine the exemption."
+          }
+        ],
+        "correct_explanation_md": "An internal policy is not the statutory exemption instrument."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Authoring is based on the stated source framework; independent June2026 consolidation, notifications, State/UT scope and later case-law review are deferred to Antigravity. No source gap is resolved by import validity."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

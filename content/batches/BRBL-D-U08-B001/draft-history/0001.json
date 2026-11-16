@@ -1,0 +1,359 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-D-U08-B001",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_D::U08: Distinguish condition,warranty and the effect of waiver or acceptance",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed p.444 / PDF p.463",
+        "statement": "12essentialconditionvscollateralwarranty,remedydependscharacter notlabel;13waiver/election,acceptance/nonseverablequalifications.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "The legal effect is not settled by the heading",
+          "core_explanation_md": "A condition concerns an essential part of the sale purpose;its breach can support the applicable repudiation remedy. A warranty is collateral and normally leads to the described damages remedy. Calling a term warranty does not necessarily settle its legal character. Examine the contract and the importance of the obligation.\n\nThe buyer election,waiver,acceptance and relevant severability terms can change how a breach is treated. Do not promise automatic rejection after every nonconformity or assume acceptance eliminates every damages claim. A bank evaluating financed goods needs the actual breach,transaction stage and remedy position,not just a contract heading.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does the word warranty in a heading conclusively decide the term legal character?",
+            "expected_takeaway": "No. The contract substance and applicable law matter."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A central performance requirement is labelled warranty and the reviewer refuses to examine its substance. What is missing?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only the seller signature colour",
+              "explanation_md": "That does not determine the term role."
+            },
+            {
+              "option_id": "B",
+              "text_md": "A rule that headings always override substance",
+              "explanation_md": "The source rejects that shortcut."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The importance and legal character of the obligation in the actual contract",
+              "explanation_md": "The label is not conclusive."
+            },
+            {
+              "option_id": "D",
+              "text_md": "A presumption that every term permits rejection",
+              "explanation_md": "Remedies differ with the term and facts."
+            }
+          ],
+          "correct_explanation_md": "The label is not conclusive."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A buyer has accepted goods and seeks automatic rejection for any later defect without examining the contract or statutory qualifications. What is required?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Review the breach,acceptance,waiver and applicable remedy conditions",
+              "explanation_md": "Acceptance can matter without eliminating every claim."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Assume every complaint has been waived",
+              "explanation_md": "That is an unsupported opposite extreme."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Treat damages and rejection as identical",
+              "explanation_md": "They have different consequences."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Ignore the contract stage",
+              "explanation_md": "The stage is material to the remedy."
+            }
+          ],
+          "correct_explanation_md": "Acceptance can matter without eliminating every claim."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Antigravity review pending for primary law,exceptions,originality and current applicability. No publication approval."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-D-U08-B001",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_D::U08"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_D::U08",
+        "objective_ids": [
+          "BRBL::MOD_D::U08::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_D::U08",
+        "objective_ids": [
+          "BRBL::MOD_D::U08::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_D::U08",
+        "objective_ids": [
+          "BRBL::MOD_D::U08::LO_01"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-D-U08-B001",
+      "draft_id": "D001",
+      "item_id": "item_efa4bec81833c8197f8f86e6d85f43385675e5f6c5c576335a68f095a3008515"
+    },
+    {
+      "batch_id": "BRBL-D-U08-B001",
+      "draft_id": "D002",
+      "item_id": "item_144468128063395415b848fe6b1913a9ee567a3f6c9766587de4fc2d43b3d4c1"
+    },
+    {
+      "batch_id": "BRBL-D-U08-B001",
+      "draft_id": "D003",
+      "item_id": "item_0b89ade0de23af781ebbb2ff8db30bfee987c94085a26789a8e3630a8ddd921d"
+    }
+  ],
+  "items": [
+    {
+      "title": "The legal effect is not settled by the heading",
+      "core_explanation_md": "A condition concerns an essential part of the sale purpose;its breach can support the applicable repudiation remedy. A warranty is collateral and normally leads to the described damages remedy. Calling a term warranty does not necessarily settle its legal character. Examine the contract and the importance of the obligation.\n\nThe buyer election,waiver,acceptance and relevant severability terms can change how a breach is treated. Do not promise automatic rejection after every nonconformity or assume acceptance eliminates every damages claim. A bank evaluating financed goods needs the actual breach,transaction stage and remedy position,not just a contract heading.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does the word warranty in a heading conclusively decide the term legal character?",
+        "expected_takeaway": "No. The contract substance and applicable law matter."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_efa4bec81833c8197f8f86e6d85f43385675e5f6c5c576335a68f095a3008515",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U08",
+      "objective_ids": [
+        "BRBL::MOD_D::U08::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed p.444 / PDF p.463"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A central performance requirement is labelled warranty and the reviewer refuses to examine its substance. What is missing?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only the seller signature colour",
+          "explanation_md": "That does not determine the term role."
+        },
+        {
+          "option_id": "B",
+          "text_md": "A rule that headings always override substance",
+          "explanation_md": "The source rejects that shortcut."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The importance and legal character of the obligation in the actual contract",
+          "explanation_md": "The label is not conclusive."
+        },
+        {
+          "option_id": "D",
+          "text_md": "A presumption that every term permits rejection",
+          "explanation_md": "Remedies differ with the term and facts."
+        }
+      ],
+      "correct_explanation_md": "The label is not conclusive.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_144468128063395415b848fe6b1913a9ee567a3f6c9766587de4fc2d43b3d4c1",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U08",
+      "objective_ids": [
+        "BRBL::MOD_D::U08::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed p.444 / PDF p.463"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A buyer has accepted goods and seeks automatic rejection for any later defect without examining the contract or statutory qualifications. What is required?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Review the breach,acceptance,waiver and applicable remedy conditions",
+          "explanation_md": "Acceptance can matter without eliminating every claim."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Assume every complaint has been waived",
+          "explanation_md": "That is an unsupported opposite extreme."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Treat damages and rejection as identical",
+          "explanation_md": "They have different consequences."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Ignore the contract stage",
+          "explanation_md": "The stage is material to the remedy."
+        }
+      ],
+      "correct_explanation_md": "Acceptance can matter without eliminating every claim.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_0b89ade0de23af781ebbb2ff8db30bfee987c94085a26789a8e3630a8ddd921d",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U08",
+      "objective_ids": [
+        "BRBL::MOD_D::U08::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed p.444 / PDF p.463"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

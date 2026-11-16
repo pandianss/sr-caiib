@@ -1,0 +1,120 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U23-B002",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U23: Verify incorporation,office,consent and filing responsibilities",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.532-534 / PDF pp.551-553",
+      "statement": "Designatedcomplianceconsentidentificationfiling,incorporationdocumentbusinesspartnersofficecertification;registrationcertificateconclusiveincorporation;officechangefiling.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Check legal existence and the current authority trail",
+        "core_explanation_md": "The incorporation document identifies the proposed lawful profit business, the office, the partners and designated partners, together with the required compliance statement. Registration and the certificate establish the described incorporation event. A proposed name or an unsigned agreement alone is not the same evidence.\n\nDesignated partners have the specified compliance responsibilities for filings and other statutory acts. Prior consent, identification and appointment particulars must be checked under the applicable rules. The registered office is a service address and changes require the prescribed filing. Keep legal-existence evidence separate from the LLP agreement and transaction authority: incorporation does not authorise every person to borrow or sign for the entity.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does an incorporation certificate prove a particular signatory has unlimited borrowing power?",
+          "expected_takeaway": "No. Existence and transaction authority are separate checks."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A bank receives only a proposed LLP name and treats it as proof of completed incorporation. What evidence is needed?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The registration/certificate record for the entity",
+            "explanation_md": "A proposal is not the completed legal event."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Only a visiting card",
+            "explanation_md": "That does not establish incorporation."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A partner personal savings passbook",
+            "explanation_md": "It does not prove LLP existence."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Any old firm letterhead",
+            "explanation_md": "That may refer to a different form."
+          }
+        ],
+        "correct_explanation_md": "A proposal is not the completed legal event."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An LLP changes its office and assumes informal email to customers alone completes the statutory change. What must be checked?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only the new building colour",
+            "explanation_md": "It has no legal significance."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Whether office records are always optional",
+            "explanation_md": "The source requires an office and filing."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The prescribed notice and Registrar filing",
+            "explanation_md": "The statutory change procedure matters."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Whether all partner personal addresses also changed",
+            "explanation_md": "That does not replace the office filing."
+          }
+        ],
+        "correct_explanation_md": "The statutory change procedure matters."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Antigravity independent legal,originality and session review pending; no publication approval.",
+    "Commencement Gazette and later rules/current small-LLP concessions require Antigravity reconciliation."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

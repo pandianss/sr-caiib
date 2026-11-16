@@ -1,0 +1,360 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-D-U21-B002",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_D::U21: Apply expert consent,compliance and misstatement-liability distinctions",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.517-518 / PDF pp.536-537",
+        "statement": "Datedsignedfilingexpertwrittenconsentnonwithdrawal;misleadingomissioncontext;34liability447defences;35civilrequiresconditions.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "A technically true sentence can still mislead",
+          "core_explanation_md": "Disclosure analysis includes the context and material omissions,not just whether each isolated sentence is literally true. Expert statements require the described consent and independence checks; a quotation cannot be added merely because a report is publicly available. Filing,date,signature and applicable application-document requirements also need the current statutory route.\n\nCivil and criminal consequences have different conditions,responsible-person tests and defences. Section34 addresses misleading statements and omissions through its section447 reference and stated defences. Do not promise automatic conviction or automatic compensation for every inaccuracy. Preserve the document version,authorisation,materiality,reliance and loss evidence so the appropriate remedy can be analysed.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Can material context make a literally true statement misleading?",
+            "expected_takeaway": "Yes. Context and omissions form part of the analysis."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A prospectus quotes an expert without establishing the required written consent and non-withdrawal. What is missing?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only the report font",
+              "explanation_md": "It does not establish consent."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The applicable expert-statement authorisation evidence",
+              "explanation_md": "Public availability is not the required consent."
+            },
+            {
+              "option_id": "C",
+              "text_md": "A rule that no expert may ever be mentioned",
+              "explanation_md": "The source permits statements subject to conditions."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The issuer bank password",
+              "explanation_md": "That is irrelevant and should not be requested."
+            }
+          ],
+          "correct_explanation_md": "Public availability is not the required consent."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A material omission induced investment,and a note assumes civil damages and criminal conviction follow identically without further proof. What is required?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only the investor occupation",
+              "explanation_md": "That does not establish both consequences."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Treat every omission as immaterial",
+              "explanation_md": "Materiality must be assessed."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Ignore the issue authorisers",
+              "explanation_md": "Responsibility matters."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Separate the applicable liability conditions,defences and remedy evidence",
+              "explanation_md": "The routes have different legal requirements."
+            }
+          ],
+          "correct_explanation_md": "The routes have different legal requirements."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Antigravity must independently review law,exceptions,originality and exam cutoff before publication.",
+      "Current section26/33 and SEBI disclosure requirements must replace any legacy full-prospectus-with-every-form shorthand before publication."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-D-U21-B002",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_D::U21"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_D::U21",
+        "objective_ids": [
+          "BRBL::MOD_D::U21::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_D::U21",
+        "objective_ids": [
+          "BRBL::MOD_D::U21::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_D::U21",
+        "objective_ids": [
+          "BRBL::MOD_D::U21::LO_02"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-D-U21-B002",
+      "draft_id": "D001",
+      "item_id": "item_c03c65a4cede6ca9964f526b68f5ee59d0718faa6a4ef6245f4c52e49cdd16d0"
+    },
+    {
+      "batch_id": "BRBL-D-U21-B002",
+      "draft_id": "D002",
+      "item_id": "item_3d74b25fa2e89616a8177dc87b68dd73a7d2bdc18bf2a72abbee97182f7626c6"
+    },
+    {
+      "batch_id": "BRBL-D-U21-B002",
+      "draft_id": "D003",
+      "item_id": "item_66c9aa04e2fa91f5f3a491898fba29371cf00bbe42a4b97b65711677a1223da1"
+    }
+  ],
+  "items": [
+    {
+      "title": "A technically true sentence can still mislead",
+      "core_explanation_md": "Disclosure analysis includes the context and material omissions,not just whether each isolated sentence is literally true. Expert statements require the described consent and independence checks; a quotation cannot be added merely because a report is publicly available. Filing,date,signature and applicable application-document requirements also need the current statutory route.\n\nCivil and criminal consequences have different conditions,responsible-person tests and defences. Section34 addresses misleading statements and omissions through its section447 reference and stated defences. Do not promise automatic conviction or automatic compensation for every inaccuracy. Preserve the document version,authorisation,materiality,reliance and loss evidence so the appropriate remedy can be analysed.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Can material context make a literally true statement misleading?",
+        "expected_takeaway": "Yes. Context and omissions form part of the analysis."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_c03c65a4cede6ca9964f526b68f5ee59d0718faa6a4ef6245f4c52e49cdd16d0",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U21",
+      "objective_ids": [
+        "BRBL::MOD_D::U21::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.517-518 / PDF pp.536-537"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A prospectus quotes an expert without establishing the required written consent and non-withdrawal. What is missing?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only the report font",
+          "explanation_md": "It does not establish consent."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The applicable expert-statement authorisation evidence",
+          "explanation_md": "Public availability is not the required consent."
+        },
+        {
+          "option_id": "C",
+          "text_md": "A rule that no expert may ever be mentioned",
+          "explanation_md": "The source permits statements subject to conditions."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The issuer bank password",
+          "explanation_md": "That is irrelevant and should not be requested."
+        }
+      ],
+      "correct_explanation_md": "Public availability is not the required consent.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_3d74b25fa2e89616a8177dc87b68dd73a7d2bdc18bf2a72abbee97182f7626c6",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U21",
+      "objective_ids": [
+        "BRBL::MOD_D::U21::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.517-518 / PDF pp.536-537"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A material omission induced investment,and a note assumes civil damages and criminal conviction follow identically without further proof. What is required?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only the investor occupation",
+          "explanation_md": "That does not establish both consequences."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Treat every omission as immaterial",
+          "explanation_md": "Materiality must be assessed."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Ignore the issue authorisers",
+          "explanation_md": "Responsibility matters."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Separate the applicable liability conditions,defences and remedy evidence",
+          "explanation_md": "The routes have different legal requirements."
+        }
+      ],
+      "correct_explanation_md": "The routes have different legal requirements.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_66c9aa04e2fa91f5f3a491898fba29371cf00bbe42a4b97b65711677a1223da1",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U21",
+      "objective_ids": [
+        "BRBL::MOD_D::U21::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.517-518 / PDF pp.536-537"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

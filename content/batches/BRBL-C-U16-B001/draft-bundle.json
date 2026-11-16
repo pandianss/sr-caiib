@@ -1,0 +1,375 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-C-U16-B001",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_C::U16: Classify insolvency roles, financial/operational debt and institutional responsibilities",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.336-339 / PDF pp.355-358",
+        "statement": "IBC resolution seeks viable reorganisation/value; debt categories distinct; financial debt time-value and inclusions,operational supply/employment/statutorydues. IP/IU/authority/IBBI differentroles;guarantor/individualcommencementnotgeneralassumption.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Classify the claim before selecting the process",
+          "core_explanation_md": "Financial distress is a condition; admission to a statutory process is a legal event. The IBC framework seeks a collective resolution where appropriate, rather than guaranteeing the first creditor full payment. Financial debt concerns the stated time-value-of-money concept and inclusions. Operational debt concerns the described goods, services, employment and statutory dues. Assignment to a bank does not automatically change an operational claim into a financial one.\n\nThe IP administers the process, an information utility supports authenticated financial information, the adjudicating authority makes the required orders, and IBBI regulates the identified ecosystem. Entity coverage and actual commencement of individual/guarantor provisions must be checked separately.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does assigning a supply invoice to a bank necessarily change its legal debt category?",
+            "expected_takeaway": "No. The underlying claim character and applicable definition remain important."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A supply invoice is legally assigned to a bank. The file relabels it financial debt solely because a bank now holds it. What must be examined?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The underlying debt character and applicable statutory definition",
+              "explanation_md": "Assignee identity alone does not transform the claim."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Only the bank licence number",
+              "explanation_md": "Licensing does not define the underlying transaction."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The debtor logo",
+              "explanation_md": "Branding is irrelevant to debt classification."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Whether a branch opened nearby",
+              "explanation_md": "Branch location does not change the debt character."
+            }
+          ],
+          "correct_explanation_md": "Assignee identity alone does not transform the claim."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "An information utility record is treated as the authority order admitting CIRP. Which distinction is needed?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Information and adjudication are the same function",
+              "explanation_md": "The institutions have separate statutory responsibilities."
+            },
+            {
+              "option_id": "B",
+              "text_md": "An IP can privately replace every admission order",
+              "explanation_md": "Administration does not substitute for judicial admission."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Default evidence and the competent admission decision are different records",
+              "explanation_md": "The evidence supports, but is not itself, the required order."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Every record proves full recovery",
+              "explanation_md": "A default record does not establish payment."
+            }
+          ],
+          "correct_explanation_md": "The evidence supports, but is not itself, the required order."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Independent Antigravity review remains required for later amendments, commencement, applicable regulations and judgments. Draft authoring is not a publication or legal-accuracy approval."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-C-U16-B001",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_C::U16"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "IBC_AMENDMENT_ACT_2026",
+        "authority": "Government of India (Gazette of India Extraordinary)",
+        "title": "The Insolvency and Bankruptcy Code (Amendment) Act, 2026 (No. 6 of 2026), assent 6 April 2026",
+        "url": "https://ibbi.gov.in/uploads/legalframwork/2026-04-07-115842-i5nsk-7ed69ef2a4d23a8b0d472cc0fcd55e79.pdf",
+        "publication_date": "2026-04-06",
+        "effective_date": null
+      },
+      {
+        "source_id": "IBC_COMMENCEMENT_SO2625_2026",
+        "authority": "Ministry of Corporate Affairs, Gazette of India",
+        "title": "S.O.2625(E),22May2026, commencement of specified IBC Amendment Act2026 provisions from26May2026",
+        "url": "https://egazette.gov.in/WriteReadData/2026/272855.pdf",
+        "publication_date": "2026-05-22",
+        "effective_date": "2026-05-26"
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_C::U16",
+        "objective_ids": [
+          "BRBL::MOD_C::U16::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_C::U16",
+        "objective_ids": [
+          "BRBL::MOD_C::U16::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_C::U16",
+        "objective_ids": [
+          "BRBL::MOD_C::U16::LO_01"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-C-U16-B001",
+      "draft_id": "D001",
+      "item_id": "item_fcdac68fbe05dd60c4b66dab98a69d2474cf38c945b20eb4ea320fdf8dbec212"
+    },
+    {
+      "batch_id": "BRBL-C-U16-B001",
+      "draft_id": "D002",
+      "item_id": "item_e5924c616d72d616998a29105ae6db1c3898bf183b529f1a847d1e37f0a4bfee"
+    },
+    {
+      "batch_id": "BRBL-C-U16-B001",
+      "draft_id": "D003",
+      "item_id": "item_8e6bbeca7c40bb64b65d55ed12159fc9623b47cc988907a236c7194f781a6c14"
+    }
+  ],
+  "items": [
+    {
+      "title": "Classify the claim before selecting the process",
+      "core_explanation_md": "Financial distress is a condition; admission to a statutory process is a legal event. The IBC framework seeks a collective resolution where appropriate, rather than guaranteeing the first creditor full payment. Financial debt concerns the stated time-value-of-money concept and inclusions. Operational debt concerns the described goods, services, employment and statutory dues. Assignment to a bank does not automatically change an operational claim into a financial one.\n\nThe IP administers the process, an information utility supports authenticated financial information, the adjudicating authority makes the required orders, and IBBI regulates the identified ecosystem. Entity coverage and actual commencement of individual/guarantor provisions must be checked separately.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does assigning a supply invoice to a bank necessarily change its legal debt category?",
+        "expected_takeaway": "No. The underlying claim character and applicable definition remain important."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_fcdac68fbe05dd60c4b66dab98a69d2474cf38c945b20eb4ea320fdf8dbec212",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U16",
+      "objective_ids": [
+        "BRBL::MOD_C::U16::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.336-339 / PDF pp.355-358"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A supply invoice is legally assigned to a bank. The file relabels it financial debt solely because a bank now holds it. What must be examined?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The underlying debt character and applicable statutory definition",
+          "explanation_md": "Assignee identity alone does not transform the claim."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Only the bank licence number",
+          "explanation_md": "Licensing does not define the underlying transaction."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The debtor logo",
+          "explanation_md": "Branding is irrelevant to debt classification."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Whether a branch opened nearby",
+          "explanation_md": "Branch location does not change the debt character."
+        }
+      ],
+      "correct_explanation_md": "Assignee identity alone does not transform the claim.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_e5924c616d72d616998a29105ae6db1c3898bf183b529f1a847d1e37f0a4bfee",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U16",
+      "objective_ids": [
+        "BRBL::MOD_C::U16::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.336-339 / PDF pp.355-358"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "An information utility record is treated as the authority order admitting CIRP. Which distinction is needed?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Information and adjudication are the same function",
+          "explanation_md": "The institutions have separate statutory responsibilities."
+        },
+        {
+          "option_id": "B",
+          "text_md": "An IP can privately replace every admission order",
+          "explanation_md": "Administration does not substitute for judicial admission."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Default evidence and the competent admission decision are different records",
+          "explanation_md": "The evidence supports, but is not itself, the required order."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Every record proves full recovery",
+          "explanation_md": "A default record does not establish payment."
+        }
+      ],
+      "correct_explanation_md": "The evidence supports, but is not itself, the required order.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_8e6bbeca7c40bb64b65d55ed12159fc9623b47cc988907a236c7194f781a6c14",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U16",
+      "objective_ids": [
+        "BRBL::MOD_C::U16::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.336-339 / PDF pp.355-358"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

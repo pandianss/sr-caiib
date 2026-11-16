@@ -1,0 +1,119 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-C-U13-B001",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_C::U13: Distinguish appointed-day jurisdiction and statutory civil-court bar from constitutional review",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.314-315 / PDF pp.333-334",
+      "statement": "Section17 jurisdiction from appointed day;18 statutory court bar with SupremeCourt/HighCourt constitutional exceptions. Tribunal establishment date matters,not merely Act commencement.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "The forum date is part of the jurisdiction analysis",
+        "core_explanation_md": "The appointed day for the relevant Tribunal is different from the date an Act first commenced nationally. The source links exercise of the Tribunal powers and the corresponding statutory court bar to the established forum and its jurisdiction. A filing therefore needs both territorial/subject competence and the applicable time facts.\n\nThe statutory bar on ordinary courts for matters assigned to the Tribunal is also distinct from the preserved constitutional jurisdiction of the High Courts and Supreme Court. Constitutional review is not simply an alternative original debt suit whenever a party prefers it. Identify the actual proceeding and legal basis before deciding whether the bar applies.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Are Act commencement and the particular Tribunal appointed day necessarily the same date?",
+          "expected_takeaway": "No. Establish each from the relevant legal record."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A jurisdiction note uses only the national Act commencement date although the relevant Tribunal was established later. What evidence is needed?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The year of the borrower incorporation only",
+            "explanation_md": "That does not establish when the forum became operational."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The Tribunal establishment notification and relevant jurisdiction dates",
+            "explanation_md": "The appointed-day framework must be applied to the actual forum."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The applicant preferred filing date regardless of law",
+            "explanation_md": "Preference cannot create forum jurisdiction."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Only the collateral insurance renewal",
+            "explanation_md": "Insurance timing does not establish the statutory forum."
+          }
+        ],
+        "correct_explanation_md": "The appointed-day framework must be applied to the actual forum."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A summary says the statutory civil-court bar abolishes all High Court constitutional jurisdiction. Which distinction corrects it?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "A recovery suit and constitutional review are always identical",
+            "explanation_md": "They have distinct legal bases and purposes."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Every borrower automatically receives a constitutional remedy on demand",
+            "explanation_md": "Availability still depends on the applicable legal standards."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The bar applies only to courts outside the State",
+            "explanation_md": "That geographical shortcut is not the statutory test."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Separate the assigned ordinary jurisdiction from the preserved constitutional powers",
+            "explanation_md": "The source identifies the constitutional exceptions without making them routine debt suits."
+          }
+        ],
+        "correct_explanation_md": "The source identifies the constitutional exceptions without making them routine debt suits."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "RDB courseware snapshot only. Current consolidated statute, notifications, Tribunal Reforms law, procedural rules and later judgments require Antigravity verification. Historical institutional names and court summaries are not current operational instructions."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

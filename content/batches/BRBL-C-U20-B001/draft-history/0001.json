@@ -1,0 +1,360 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-C-U20-B001",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_C::U20: Select the remedy,limitation article and start event before computing a deadline",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.380-383 / PDF pp.399-402",
+        "statement": "Section3dismissaldespitenodefence,suitnotappeal/application;Schedulevariedstartpoints/lendingvsdemanddeposit/mortgage/foreclosure/execution. Booktablesmisalignmentandblanketcurrentaccountclaimneedsreview.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "A limitation decision begins with the legal claim",
+          "core_explanation_md": "Identify whether the proposed proceeding is a suit, appeal or application, then the relevant article and triggering event. The period is not selected simply because a file contains a loan. Money lent, money deposited on demand, an instalment obligation, mortgage enforcement and decree execution can use different starting rules. The book table should not be copied as a universal three-year shortcut.\n\nSection3 makes limitation relevant even where the opposing party has not raised it. A missing defence plea does not cure an otherwise late proceeding. Mutual-account treatment also requires the actual reciprocal-demand facts; calling a ledger current account is not sufficient to establish every legal condition.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Can the absence of a limitation defence itself make a late suit timely?",
+            "expected_takeaway": "No. The statutory limitation duty remains relevant."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A bank selects a deadline solely because its spreadsheet calls the account current. What additional analysis is needed?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only the spreadsheet colour",
+              "explanation_md": "Formatting does not establish the applicable article."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The legal nature of the claim,reciprocal-demand facts and applicable trigger",
+              "explanation_md": "Account labels cannot replace the statutory test."
+            },
+            {
+              "option_id": "C",
+              "text_md": "A rule that every account has the same start date",
+              "explanation_md": "Different claims can have distinct triggers."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The debtor preferred repayment app",
+              "explanation_md": "Software preference does not define limitation."
+            }
+          ],
+          "correct_explanation_md": "Account labels cannot replace the statutory test."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "The defendant has not pleaded limitation. A late-filing review proposes to ignore it for that reason alone. What does section3 require?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The parties can automatically remove the statutory rule by silence",
+              "explanation_md": "Silence does not establish a statutory exception."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Every claim becomes a mortgage suit",
+              "explanation_md": "The claim character does not change."
+            },
+            {
+              "option_id": "C",
+              "text_md": "A new cause of action is invented on filing day",
+              "explanation_md": "The trigger must be evidenced."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Check the prescribed period despite the missing defence plea",
+              "explanation_md": "The provision addresses limitation independently of that plea."
+            }
+          ],
+          "correct_explanation_md": "The provision addresses limitation independently of that plea."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Original drafts for later Antigravity review; source/current applicability, case law and originality review remain pending. No publication approval.",
+      "Exact Schedule articles,periods and computation require primary checking;source table is not copied. No unsupported calendar or universal current-account conclusion is graded."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-C-U20-B001",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_C::U20"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_C::U20",
+        "objective_ids": [
+          "BRBL::MOD_C::U20::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_C::U20",
+        "objective_ids": [
+          "BRBL::MOD_C::U20::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_C::U20",
+        "objective_ids": [
+          "BRBL::MOD_C::U20::LO_01"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-C-U20-B001",
+      "draft_id": "D001",
+      "item_id": "item_7ae97c77b4eb42aec48c2ae2dd723366542f62064a7c18f5731b5bbf9b8f6237"
+    },
+    {
+      "batch_id": "BRBL-C-U20-B001",
+      "draft_id": "D002",
+      "item_id": "item_18fe6c73fee8c47b993b83a5801475b1e500410bc05b54d0d0ea4d54dc8fa29d"
+    },
+    {
+      "batch_id": "BRBL-C-U20-B001",
+      "draft_id": "D003",
+      "item_id": "item_53e1c060dc4a70f06434437aa9f6f716ac35d98333066f3c83c2fe38d1b9871b"
+    }
+  ],
+  "items": [
+    {
+      "title": "A limitation decision begins with the legal claim",
+      "core_explanation_md": "Identify whether the proposed proceeding is a suit, appeal or application, then the relevant article and triggering event. The period is not selected simply because a file contains a loan. Money lent, money deposited on demand, an instalment obligation, mortgage enforcement and decree execution can use different starting rules. The book table should not be copied as a universal three-year shortcut.\n\nSection3 makes limitation relevant even where the opposing party has not raised it. A missing defence plea does not cure an otherwise late proceeding. Mutual-account treatment also requires the actual reciprocal-demand facts; calling a ledger current account is not sufficient to establish every legal condition.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Can the absence of a limitation defence itself make a late suit timely?",
+        "expected_takeaway": "No. The statutory limitation duty remains relevant."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_7ae97c77b4eb42aec48c2ae2dd723366542f62064a7c18f5731b5bbf9b8f6237",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U20",
+      "objective_ids": [
+        "BRBL::MOD_C::U20::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.380-383 / PDF pp.399-402"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A bank selects a deadline solely because its spreadsheet calls the account current. What additional analysis is needed?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only the spreadsheet colour",
+          "explanation_md": "Formatting does not establish the applicable article."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The legal nature of the claim,reciprocal-demand facts and applicable trigger",
+          "explanation_md": "Account labels cannot replace the statutory test."
+        },
+        {
+          "option_id": "C",
+          "text_md": "A rule that every account has the same start date",
+          "explanation_md": "Different claims can have distinct triggers."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The debtor preferred repayment app",
+          "explanation_md": "Software preference does not define limitation."
+        }
+      ],
+      "correct_explanation_md": "Account labels cannot replace the statutory test.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_18fe6c73fee8c47b993b83a5801475b1e500410bc05b54d0d0ea4d54dc8fa29d",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U20",
+      "objective_ids": [
+        "BRBL::MOD_C::U20::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.380-383 / PDF pp.399-402"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "The defendant has not pleaded limitation. A late-filing review proposes to ignore it for that reason alone. What does section3 require?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The parties can automatically remove the statutory rule by silence",
+          "explanation_md": "Silence does not establish a statutory exception."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Every claim becomes a mortgage suit",
+          "explanation_md": "The claim character does not change."
+        },
+        {
+          "option_id": "C",
+          "text_md": "A new cause of action is invented on filing day",
+          "explanation_md": "The trigger must be evidenced."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Check the prescribed period despite the missing defence plea",
+          "explanation_md": "The provision addresses limitation independently of that plea."
+        }
+      ],
+      "correct_explanation_md": "The provision addresses limitation independently of that plea.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_53e1c060dc4a70f06434437aa9f6f716ac35d98333066f3c83c2fe38d1b9871b",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U20",
+      "objective_ids": [
+        "BRBL::MOD_C::U20::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.380-383 / PDF pp.399-402"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

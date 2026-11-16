@@ -1,0 +1,360 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-D-U01-B001",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_D::U01: Distinguish agreement,promise,acceptance and enforceable contract",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.402-404 / PDF pp.421-423",
+        "statement": "Proposalacceptedbecomespromise;contractenforceableagreement;absoluteunconditionalacceptance/consensus;invitationdistinct;legalintention/formalities.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "A business conversation has several legal stages",
+          "core_explanation_md": "An invitation to discuss terms is different from a definite proposal. Acceptance must match the proposal in the required way; a response changing a material term is not automatically unconditional acceptance. The accepted promise and reciprocal consideration support an agreement, but enforceability also requires the legal essentials.\n\nOral arrangements can have legal effect, while particular transactions require writing, registration or other formalities. A signed page does not cure an unlawful object, and an unsigned discussion is not automatically a concluded bank facility. Identify the communication, terms, intention and transaction-specific formalities before deciding what has been formed.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does a reply changing a material term necessarily accept the original offer?",
+            "expected_takeaway": "No. Matching acceptance and a changed proposal must be distinguished."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A customer replies to a definite facility proposal with a materially different repayment obligation. Staff mark the original terms unconditionally accepted. What must be examined?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only whether the reply was polite",
+              "explanation_md": "Tone does not settle acceptance."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Whether the bank printed the proposal",
+              "explanation_md": "Printing does not establish matching assent."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Whether the response accepts the original terms or proposes a change",
+              "explanation_md": "A material qualification cannot simply be ignored."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The customer balance alone",
+              "explanation_md": "Balance does not prove agreement on terms."
+            }
+          ],
+          "correct_explanation_md": "A material qualification cannot simply be ignored."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A document is signed but concerns an unlawful object. Which conclusion follows about the signature alone?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "It does not establish an enforceable contract despite the unlawful object",
+              "explanation_md": "Formal signature cannot cure every substantive defect."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Every signed agreement is enforceable without exception",
+              "explanation_md": "The legal essentials still apply."
+            },
+            {
+              "option_id": "C",
+              "text_md": "It automatically creates all required statutory registrations",
+              "explanation_md": "Signing is not registration."
+            },
+            {
+              "option_id": "D",
+              "text_md": "It determines the court outcome regardless of evidence",
+              "explanation_md": "The full legal relationship must be assessed."
+            }
+          ],
+          "correct_explanation_md": "Formal signature cannot cure every substantive defect."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Drafts for Antigravity review. Consolidated statute,exceptions and later case law require independent reconciliation;no publication approval.",
+      "Book guardian,locker and blanket insurance descriptions are not adopted as universal rules."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-D-U01-B001",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_D::U01"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_D::U01",
+        "objective_ids": [
+          "BRBL::MOD_D::U01::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_D::U01",
+        "objective_ids": [
+          "BRBL::MOD_D::U01::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_D::U01",
+        "objective_ids": [
+          "BRBL::MOD_D::U01::LO_01"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-D-U01-B001",
+      "draft_id": "D001",
+      "item_id": "item_9aa415affb6a64f0c349316edd4ccfa001664812c664f9dd004126aa70654766"
+    },
+    {
+      "batch_id": "BRBL-D-U01-B001",
+      "draft_id": "D002",
+      "item_id": "item_5f8e298cbc41470201bec5bb651a57a33acfbc1dc48b4b347f6048ac21b74277"
+    },
+    {
+      "batch_id": "BRBL-D-U01-B001",
+      "draft_id": "D003",
+      "item_id": "item_fe7d0165cf35d98e11889e8d9f0a2c9f73bf2856e5dbafca0bf7124671da4d24"
+    }
+  ],
+  "items": [
+    {
+      "title": "A business conversation has several legal stages",
+      "core_explanation_md": "An invitation to discuss terms is different from a definite proposal. Acceptance must match the proposal in the required way; a response changing a material term is not automatically unconditional acceptance. The accepted promise and reciprocal consideration support an agreement, but enforceability also requires the legal essentials.\n\nOral arrangements can have legal effect, while particular transactions require writing, registration or other formalities. A signed page does not cure an unlawful object, and an unsigned discussion is not automatically a concluded bank facility. Identify the communication, terms, intention and transaction-specific formalities before deciding what has been formed.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does a reply changing a material term necessarily accept the original offer?",
+        "expected_takeaway": "No. Matching acceptance and a changed proposal must be distinguished."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_9aa415affb6a64f0c349316edd4ccfa001664812c664f9dd004126aa70654766",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U01",
+      "objective_ids": [
+        "BRBL::MOD_D::U01::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.402-404 / PDF pp.421-423"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A customer replies to a definite facility proposal with a materially different repayment obligation. Staff mark the original terms unconditionally accepted. What must be examined?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only whether the reply was polite",
+          "explanation_md": "Tone does not settle acceptance."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Whether the bank printed the proposal",
+          "explanation_md": "Printing does not establish matching assent."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Whether the response accepts the original terms or proposes a change",
+          "explanation_md": "A material qualification cannot simply be ignored."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The customer balance alone",
+          "explanation_md": "Balance does not prove agreement on terms."
+        }
+      ],
+      "correct_explanation_md": "A material qualification cannot simply be ignored.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_5f8e298cbc41470201bec5bb651a57a33acfbc1dc48b4b347f6048ac21b74277",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U01",
+      "objective_ids": [
+        "BRBL::MOD_D::U01::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.402-404 / PDF pp.421-423"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A document is signed but concerns an unlawful object. Which conclusion follows about the signature alone?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "It does not establish an enforceable contract despite the unlawful object",
+          "explanation_md": "Formal signature cannot cure every substantive defect."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Every signed agreement is enforceable without exception",
+          "explanation_md": "The legal essentials still apply."
+        },
+        {
+          "option_id": "C",
+          "text_md": "It automatically creates all required statutory registrations",
+          "explanation_md": "Signing is not registration."
+        },
+        {
+          "option_id": "D",
+          "text_md": "It determines the court outcome regardless of evidence",
+          "explanation_md": "The full legal relationship must be assessed."
+        }
+      ],
+      "correct_explanation_md": "Formal signature cannot cure every substantive defect.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_fe7d0165cf35d98e11889e8d9f0a2c9f73bf2856e5dbafca0bf7124671da4d24",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U01",
+      "objective_ids": [
+        "BRBL::MOD_D::U01::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.402-404 / PDF pp.421-423"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

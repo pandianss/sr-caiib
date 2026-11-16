@@ -1,0 +1,360 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-D-U05-B001",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_D::U05: Identify pledge,constructive delivery and limited security interest",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.428-429 / PDF pp.447-448",
+        "statement": "172bailmentsecuritydebt/promise,pawnor/pawnee;actualconstructivedelivery,specialvsownership;limitedinterest179,repledgelimitedandinvalidoriginalcannotcure;specialpurposecustodyfactsnotblanket.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "The pledgee holds a security interest, not unrestricted ownership",
+          "core_explanation_md": "A pledge is the described bailment of goods as security for payment or performance. Identify the goods and the actual or constructive delivery of possession. General ownership remains with the pawnor while the pawnee has the relevant special security interest. Retaining custody with the debtor for a specific purpose needs its actual legal facts; it is not a universal rule that a pledge needs no possession.\n\nA limited-interest pledgor cannot normally convey a larger interest merely by naming a larger loan. Re-pledge likewise needs the applicable limits and a valid underlying interest. An ineffective original pledge is not automatically cured by another transfer of the same goods.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does a pledge automatically make the pawnee absolute owner?",
+            "expected_takeaway": "No. Security and general ownership are different interests."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A pledge file describes the goods as the bank unrestricted property from the moment of pledge. Which distinction is needed?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Every security is a completed sale",
+              "explanation_md": "A pledge is not automatically a sale."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The pawnee special security interest differs from general ownership",
+              "explanation_md": "The source preserves the pawnor general property."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The debt must be ignored because goods exist",
+              "explanation_md": "Security supports the obligation rather than eliminating it."
+            },
+            {
+              "option_id": "D",
+              "text_md": "A custody label alone proves every legal delivery fact",
+              "explanation_md": "Possession/control needs evidence."
+            }
+          ],
+          "correct_explanation_md": "The source preserves the pawnor general property."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A party with only a limited established interest purports to pledge unrestricted ownership. What must be examined?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The declared larger loan automatically expands title",
+              "explanation_md": "Loan size does not create ownership."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Any later pledge cures every original defect",
+              "explanation_md": "A defective original interest cannot be assumed cured."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Only the goods colour",
+              "explanation_md": "That does not establish title scope."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The actual interest and statutory limits on what can be pledged",
+              "explanation_md": "The transfer cannot be assessed without that legal extent."
+            }
+          ],
+          "correct_explanation_md": "The transfer cannot be assessed without that legal extent."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Drafts for Antigravity review. Consolidated statute,exceptions and later case law require independent reconciliation;no publication approval.",
+      "Pledge-sale notice must use the applicable reasonable-notice law;not an arbitrary invented number of days."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-D-U05-B001",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_D::U05"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_D::U05",
+        "objective_ids": [
+          "BRBL::MOD_D::U05::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_D::U05",
+        "objective_ids": [
+          "BRBL::MOD_D::U05::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_D::U05",
+        "objective_ids": [
+          "BRBL::MOD_D::U05::LO_01"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-D-U05-B001",
+      "draft_id": "D001",
+      "item_id": "item_d58cca6869a3b33692d9242049d61ea2f8616d5a7388740d169cff164f77a577"
+    },
+    {
+      "batch_id": "BRBL-D-U05-B001",
+      "draft_id": "D002",
+      "item_id": "item_5f7a5c206ad3eb38ea642a465c66e2d3aa22ee88e9f582b4f18943ccdde7c926"
+    },
+    {
+      "batch_id": "BRBL-D-U05-B001",
+      "draft_id": "D003",
+      "item_id": "item_89e18efe195d55cc31b549f25b253ff20e5ecff150bf2431bc0db7f74edf7afa"
+    }
+  ],
+  "items": [
+    {
+      "title": "The pledgee holds a security interest, not unrestricted ownership",
+      "core_explanation_md": "A pledge is the described bailment of goods as security for payment or performance. Identify the goods and the actual or constructive delivery of possession. General ownership remains with the pawnor while the pawnee has the relevant special security interest. Retaining custody with the debtor for a specific purpose needs its actual legal facts; it is not a universal rule that a pledge needs no possession.\n\nA limited-interest pledgor cannot normally convey a larger interest merely by naming a larger loan. Re-pledge likewise needs the applicable limits and a valid underlying interest. An ineffective original pledge is not automatically cured by another transfer of the same goods.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does a pledge automatically make the pawnee absolute owner?",
+        "expected_takeaway": "No. Security and general ownership are different interests."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_d58cca6869a3b33692d9242049d61ea2f8616d5a7388740d169cff164f77a577",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U05",
+      "objective_ids": [
+        "BRBL::MOD_D::U05::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.428-429 / PDF pp.447-448"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A pledge file describes the goods as the bank unrestricted property from the moment of pledge. Which distinction is needed?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Every security is a completed sale",
+          "explanation_md": "A pledge is not automatically a sale."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The pawnee special security interest differs from general ownership",
+          "explanation_md": "The source preserves the pawnor general property."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The debt must be ignored because goods exist",
+          "explanation_md": "Security supports the obligation rather than eliminating it."
+        },
+        {
+          "option_id": "D",
+          "text_md": "A custody label alone proves every legal delivery fact",
+          "explanation_md": "Possession/control needs evidence."
+        }
+      ],
+      "correct_explanation_md": "The source preserves the pawnor general property.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_5f7a5c206ad3eb38ea642a465c66e2d3aa22ee88e9f582b4f18943ccdde7c926",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U05",
+      "objective_ids": [
+        "BRBL::MOD_D::U05::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.428-429 / PDF pp.447-448"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A party with only a limited established interest purports to pledge unrestricted ownership. What must be examined?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The declared larger loan automatically expands title",
+          "explanation_md": "Loan size does not create ownership."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Any later pledge cures every original defect",
+          "explanation_md": "A defective original interest cannot be assumed cured."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Only the goods colour",
+          "explanation_md": "That does not establish title scope."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The actual interest and statutory limits on what can be pledged",
+          "explanation_md": "The transfer cannot be assessed without that legal extent."
+        }
+      ],
+      "correct_explanation_md": "The transfer cannot be assessed without that legal extent.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_89e18efe195d55cc31b549f25b253ff20e5ecff150bf2431bc0db7f74edf7afa",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U05",
+      "objective_ids": [
+        "BRBL::MOD_D::U05::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.428-429 / PDF pp.447-448"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U21-B002",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U21: Apply expert consent,compliance and misstatement-liability distinctions",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.517-518 / PDF pp.536-537",
+      "statement": "Datedsignedfilingexpertwrittenconsentnonwithdrawal;misleadingomissioncontext;34liability447defences;35civilrequiresconditions.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "A technically true sentence can still mislead",
+        "core_explanation_md": "Disclosure analysis includes the context and material omissions, not just whether each isolated sentence is literally true. Expert statements require the described consent and independence checks; a quotation cannot be added merely because a report is publicly available. Filing, date, signature and applicable application-document requirements also need the current statutory route.\n\nCivil and criminal consequences have different conditions, responsible-person tests and defences. Section34 addresses misleading statements and omissions through its section 447 reference and stated defences. Do not promise automatic conviction or automatic compensation for every inaccuracy. Preserve the document version, authorisation, materiality, reliance and loss evidence so the appropriate remedy can be analysed.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Can material context make a literally true statement misleading?",
+          "expected_takeaway": "Yes. Context and omissions form part of the analysis."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A prospectus quotes an expert without establishing the required written consent and non-withdrawal. What is missing?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only the report font",
+            "explanation_md": "It does not establish consent."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The applicable expert-statement authorisation evidence",
+            "explanation_md": "Public availability is not the required consent."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A rule that no expert may ever be mentioned",
+            "explanation_md": "The source permits statements subject to conditions."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The issuer bank password",
+            "explanation_md": "That is irrelevant and should not be requested."
+          }
+        ],
+        "correct_explanation_md": "Public availability is not the required consent."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A material omission induced investment, and a note assumes civil damages and criminal conviction follow identically without further proof. What is required?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only the investor occupation",
+            "explanation_md": "That does not establish both consequences."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Treat every omission as immaterial",
+            "explanation_md": "Materiality must be assessed."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Ignore the issue authorisers",
+            "explanation_md": "Responsibility matters."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Separate the applicable liability conditions, defences and remedy evidence",
+            "explanation_md": "The routes have different legal requirements."
+          }
+        ],
+        "correct_explanation_md": "The routes have different legal requirements."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Antigravity must independently review law,exceptions,originality and exam cutoff before publication.",
+    "Current section26/33 and SEBI disclosure requirements must replace any legacy full-prospectus-with-every-form shorthand before publication."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

@@ -1,0 +1,359 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-C-U14-B002",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_C::U14: Distinguish interim asset protection, adjudication and recovery certificate",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.320-323 / PDF pp.339-342",
+        "statement": "Conditional attachments need statutory obstruction/security/showcause basis;receiver powers distinct;hear claims/setoff/counterclaim;final order/certificate issued byPO;certificate sentRO;electronic filing subject19A rules;target180days not proven actualdisposal.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "An interim order preserves the process; it does not replace the final decision",
+          "core_explanation_md": "The source provides interim tools where the statutory conditions are established, including the described security direction, attachment and receiver arrangements. An attachment should not be treated as automatic merely because a recovery application was filed. The required grounds, property particulars and opportunity must be addressed.\n\nThe final determination considers the claims, set-off, counterclaim and hearing record. The Presiding Officer then issues the stated certificate for the Recovery Officer to execute. Electronic filing under section 19A still needs the applicable form and authentication. A statutory disposal target is a planning standard, not evidence that an actual case was decided on that date.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does an interim attachment prove the final debt amount?",
+            "expected_takeaway": "No. Asset preservation and final adjudication are different stages."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A lender describes an interim attachment as a final certificate for the full claimed debt. What is the correct distinction?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The interim measure preserves assets while the final claim still needs determination",
+              "explanation_md": "Attachment is not itself the final debt adjudication."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Every interim measure conclusively admits every pleading",
+              "explanation_md": "The merits remain subject to the legal process."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The Recovery Officer can issue the original merits judgment privately",
+              "explanation_md": "The offices have distinct statutory functions."
+            },
+            {
+              "option_id": "D",
+              "text_md": "A hearing target proves the case has already been disposed of",
+              "explanation_md": "A target is not an observed order."
+            }
+          ],
+          "correct_explanation_md": "Attachment is not itself the final debt adjudication."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "An electronic upload is assumed valid despite missing the prescribed authentication. Which check is required?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only whether the file extension is PDF",
+              "explanation_md": "File type alone does not satisfy statutory authentication."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Whether the document has colourful headings",
+              "explanation_md": "Visual style does not establish a valid filing."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The applicable electronic form, authentication and filing rules",
+              "explanation_md": "The legal filing requirements remain relevant in electronic form."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Whether the borrower has downloaded the bank app",
+              "explanation_md": "App use does not determine Tribunal authentication."
+            }
+          ],
+          "correct_explanation_md": "The legal filing requirements remain relevant in electronic form."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "RDB courseware snapshot only. Current consolidated statute, notifications, Tribunal Reforms law, procedural rules and later judgments require Antigravity verification. Historical institutional names and court summaries are not current operational instructions."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-C-U14-B002",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_C::U14"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_C::U14",
+        "objective_ids": [
+          "BRBL::MOD_C::U14::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_C::U14",
+        "objective_ids": [
+          "BRBL::MOD_C::U14::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_C::U14",
+        "objective_ids": [
+          "BRBL::MOD_C::U14::LO_02"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-C-U14-B002",
+      "draft_id": "D001",
+      "item_id": "item_768f251858c9ccc8562e58b61fa518a7aa1cf8135bd93af33b770531f3f1dc6a"
+    },
+    {
+      "batch_id": "BRBL-C-U14-B002",
+      "draft_id": "D002",
+      "item_id": "item_b4b39e03cab1aa6997e767ec38447ecc04b44df899c8ecd868e1fdf57102ade5"
+    },
+    {
+      "batch_id": "BRBL-C-U14-B002",
+      "draft_id": "D003",
+      "item_id": "item_fab98dd68c8bb91b20eb4a1352c77ac07847949aa105b36fcd7f16e16fb6b398"
+    }
+  ],
+  "items": [
+    {
+      "title": "An interim order preserves the process; it does not replace the final decision",
+      "core_explanation_md": "The source provides interim tools where the statutory conditions are established, including the described security direction, attachment and receiver arrangements. An attachment should not be treated as automatic merely because a recovery application was filed. The required grounds, property particulars and opportunity must be addressed.\n\nThe final determination considers the claims, set-off, counterclaim and hearing record. The Presiding Officer then issues the stated certificate for the Recovery Officer to execute. Electronic filing under section 19A still needs the applicable form and authentication. A statutory disposal target is a planning standard, not evidence that an actual case was decided on that date.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does an interim attachment prove the final debt amount?",
+        "expected_takeaway": "No. Asset preservation and final adjudication are different stages."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_768f251858c9ccc8562e58b61fa518a7aa1cf8135bd93af33b770531f3f1dc6a",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U14",
+      "objective_ids": [
+        "BRBL::MOD_C::U14::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.320-323 / PDF pp.339-342"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A lender describes an interim attachment as a final certificate for the full claimed debt. What is the correct distinction?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The interim measure preserves assets while the final claim still needs determination",
+          "explanation_md": "Attachment is not itself the final debt adjudication."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Every interim measure conclusively admits every pleading",
+          "explanation_md": "The merits remain subject to the legal process."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The Recovery Officer can issue the original merits judgment privately",
+          "explanation_md": "The offices have distinct statutory functions."
+        },
+        {
+          "option_id": "D",
+          "text_md": "A hearing target proves the case has already been disposed of",
+          "explanation_md": "A target is not an observed order."
+        }
+      ],
+      "correct_explanation_md": "Attachment is not itself the final debt adjudication.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_b4b39e03cab1aa6997e767ec38447ecc04b44df899c8ecd868e1fdf57102ade5",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U14",
+      "objective_ids": [
+        "BRBL::MOD_C::U14::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.320-323 / PDF pp.339-342"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "An electronic upload is assumed valid despite missing the prescribed authentication. Which check is required?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only whether the file extension is PDF",
+          "explanation_md": "File type alone does not satisfy statutory authentication."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Whether the document has colourful headings",
+          "explanation_md": "Visual style does not establish a valid filing."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The applicable electronic form, authentication and filing rules",
+          "explanation_md": "The legal filing requirements remain relevant in electronic form."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Whether the borrower has downloaded the bank app",
+          "explanation_md": "App use does not determine Tribunal authentication."
+        }
+      ],
+      "correct_explanation_md": "The legal filing requirements remain relevant in electronic form.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_fab98dd68c8bb91b20eb4a1352c77ac07847949aa105b36fcd7f16e16fb6b398",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U14",
+      "objective_ids": [
+        "BRBL::MOD_C::U14::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.320-323 / PDF pp.339-342"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

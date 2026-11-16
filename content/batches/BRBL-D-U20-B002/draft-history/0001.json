@@ -1,0 +1,360 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-D-U20-B002",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_D::U20: Maintain registers and distinguish rights,liabilities and cessation",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.510-512 / PDF pp.529-531",
+        "statement": "88membersecurityregistersdepositoryindex;inspection;statutorydocumentaryproprietaryrights;liabilityform;cessationeventsqualified.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "A register is a continuing legal record",
+          "core_explanation_md": "The company maintains the prescribed member and security-holder registers and indexes; depository beneficial-owner records have the described corresponding role. Entry and cessation dates,holdings and paid/unpaid amounts support the relevant rights and obligations. Inspection rights exist under the applicable conditions; do not replace them with a discretionary promise of access.\n\nSeparate statutory rights from constitutional/documentary rights and proprietary claims. Meeting,information,transfer and distribution rights have their own qualifications. A dividend is not an automatic payment merely because a person is a member,and a shareholder does not own each company asset. Liability depends on company form and unpaid obligations. Transfer,redemption,forfeiture or other cessation must be supported by the relevant valid event and records,not a convenient deletion.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does deleting a name alone prove a lawful cessation?",
+            "expected_takeaway": "No. Establish the underlying event and applicable record procedure."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A company removes a member entry without recording the claimed transfer or other legal basis. What evidence is missing?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only the new stationery design",
+              "explanation_md": "It does not establish cessation."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Proof that every member must receive a dividend immediately",
+              "explanation_md": "There is no such unconditional entitlement."
+            },
+            {
+              "option_id": "C",
+              "text_md": "A statement that registers are optional",
+              "explanation_md": "The source requires them."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The valid cessation event and corresponding record trail",
+              "explanation_md": "A deletion alone does not establish the legal change."
+            }
+          ],
+          "correct_explanation_md": "A deletion alone does not establish the legal change."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A shareholder claims direct ownership of a warehouse and an unconditional annual dividend. Which distinction is needed?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Every shareholder owns a separate room",
+              "explanation_md": "That is not the company-property rule."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Membership rights differ from ownership of company assets and unconditional distributions",
+              "explanation_md": "Each claim needs its legal basis and conditions."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Membership never gives any proprietary rights",
+              "explanation_md": "That opposite claim is also wrong."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Only the share certificate size matters",
+              "explanation_md": "It has no bearing on these rights."
+            }
+          ],
+          "correct_explanation_md": "Each claim needs its legal basis and conditions."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Antigravity must independently review law,exceptions,originality and exam cutoff before publication.",
+      "Register-location rule,penalties,minor holdings,insolvency and succession conflicts require current primary review; old numbers not assessed."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-D-U20-B002",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_D::U20"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_D::U20",
+        "objective_ids": [
+          "BRBL::MOD_D::U20::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_D::U20",
+        "objective_ids": [
+          "BRBL::MOD_D::U20::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_D::U20",
+        "objective_ids": [
+          "BRBL::MOD_D::U20::LO_02"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-D-U20-B002",
+      "draft_id": "D001",
+      "item_id": "item_a016a849f0918b9e99ee3eeffc39253c04d4d73c5bca4c888993263d120988e0"
+    },
+    {
+      "batch_id": "BRBL-D-U20-B002",
+      "draft_id": "D002",
+      "item_id": "item_0fed42b82da1bfc74e619ba1bdc4ccadb127e8a1b4a63537ae44e40f688edd70"
+    },
+    {
+      "batch_id": "BRBL-D-U20-B002",
+      "draft_id": "D003",
+      "item_id": "item_8e17bacd852ff74d45ed0e5818ba42b0b0139928681bca0281a55974802c67d7"
+    }
+  ],
+  "items": [
+    {
+      "title": "A register is a continuing legal record",
+      "core_explanation_md": "The company maintains the prescribed member and security-holder registers and indexes; depository beneficial-owner records have the described corresponding role. Entry and cessation dates,holdings and paid/unpaid amounts support the relevant rights and obligations. Inspection rights exist under the applicable conditions; do not replace them with a discretionary promise of access.\n\nSeparate statutory rights from constitutional/documentary rights and proprietary claims. Meeting,information,transfer and distribution rights have their own qualifications. A dividend is not an automatic payment merely because a person is a member,and a shareholder does not own each company asset. Liability depends on company form and unpaid obligations. Transfer,redemption,forfeiture or other cessation must be supported by the relevant valid event and records,not a convenient deletion.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does deleting a name alone prove a lawful cessation?",
+        "expected_takeaway": "No. Establish the underlying event and applicable record procedure."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_a016a849f0918b9e99ee3eeffc39253c04d4d73c5bca4c888993263d120988e0",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U20",
+      "objective_ids": [
+        "BRBL::MOD_D::U20::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.510-512 / PDF pp.529-531"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A company removes a member entry without recording the claimed transfer or other legal basis. What evidence is missing?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only the new stationery design",
+          "explanation_md": "It does not establish cessation."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Proof that every member must receive a dividend immediately",
+          "explanation_md": "There is no such unconditional entitlement."
+        },
+        {
+          "option_id": "C",
+          "text_md": "A statement that registers are optional",
+          "explanation_md": "The source requires them."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The valid cessation event and corresponding record trail",
+          "explanation_md": "A deletion alone does not establish the legal change."
+        }
+      ],
+      "correct_explanation_md": "A deletion alone does not establish the legal change.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_0fed42b82da1bfc74e619ba1bdc4ccadb127e8a1b4a63537ae44e40f688edd70",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U20",
+      "objective_ids": [
+        "BRBL::MOD_D::U20::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.510-512 / PDF pp.529-531"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A shareholder claims direct ownership of a warehouse and an unconditional annual dividend. Which distinction is needed?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Every shareholder owns a separate room",
+          "explanation_md": "That is not the company-property rule."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Membership rights differ from ownership of company assets and unconditional distributions",
+          "explanation_md": "Each claim needs its legal basis and conditions."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Membership never gives any proprietary rights",
+          "explanation_md": "That opposite claim is also wrong."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Only the share certificate size matters",
+          "explanation_md": "It has no bearing on these rights."
+        }
+      ],
+      "correct_explanation_md": "Each claim needs its legal basis and conditions.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_8e17bacd852ff74d45ed0e5818ba42b0b0139928681bca0281a55974802c67d7",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_D",
+      "unit_id": "BRBL::MOD_D::U20",
+      "objective_ids": [
+        "BRBL::MOD_D::U20::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.510-512 / PDF pp.529-531"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

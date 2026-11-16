@@ -1,0 +1,360 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-APPENDIX-U01-B004",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_APPENDIX::U01: Navigate FEMA transaction classification,contravention and appeal routes",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "Appendix4,printed pp.594-595 / PDF pp.613-614",
+        "statement": "5-6currentcapital7export8realisation10authorisedperson13penalty15compounding16adjudication17-19appeal35HC.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Classify the transaction before the remedy",
+          "core_explanation_md": "For foreign-exchange questions,identify the parties,residence,transaction purpose and current/capital-account category before looking for permission or conditions. An authorised-person duty differs from the customer transaction rule. The Act must be read with the applicable rules,regulations and dated directions.\n\nIf a contravention is alleged,distinguish penalty,compounding,adjudication and the relevant appeal. Compounding is not simply another name for an appeal,and a penalty heading alone does not establish the amount or the required process. Keep the transaction date and statutory version attached to the research note.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Why classify the account transaction first?",
+            "expected_takeaway": "The governing permission and conditions depend on the actual category and facts."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A file calls compounding and appellate review the same remedy and sends every case through one route. What is needed?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Separate the statutory purpose,authority and conditions of each route",
+              "explanation_md": "The headings identify distinct mechanisms."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Choose the cheapest route without eligibility analysis",
+              "explanation_md": "Cost does not establish jurisdiction."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Ignore transaction facts",
+              "explanation_md": "They remain relevant."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Assume every foreign payment is prohibited",
+              "explanation_md": "That is not the classification method."
+            }
+          ],
+          "correct_explanation_md": "The headings identify distinct mechanisms."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A transaction is analysed using only a penalty section without deciding its underlying permission or conditions. What should come first?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The customer preferred exchange rate",
+              "explanation_md": "It does not settle legal classification."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The largest possible fine",
+              "explanation_md": "That does not establish a contravention."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The applicable transaction rule and dated regulatory framework",
+              "explanation_md": "A sanction requires an identified legal breach."
+            },
+            {
+              "option_id": "D",
+              "text_md": "An unrelated domestic cheque rule",
+              "explanation_md": "It does not govern this question."
+            }
+          ],
+          "correct_explanation_md": "A sanction requires an identified legal breach."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Navigation drafts are original study aids,not a current consolidated bare Act. Substantive lessons remain in their exact units. Antigravity review pending for the dated legal text,judicial status and section references.",
+      "Legacy source indexes contain omitted,amended and State-specific provisions; every operational legal conclusion requires its full applicable text."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-APPENDIX-U01-B004",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_APPENDIX::U01"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_APPENDIX::U01",
+        "objective_ids": [
+          "BRBL::MOD_APPENDIX::U01::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_APPENDIX::U01",
+        "objective_ids": [
+          "BRBL::MOD_APPENDIX::U01::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_APPENDIX::U01",
+        "objective_ids": [
+          "BRBL::MOD_APPENDIX::U01::LO_04"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-APPENDIX-U01-B004",
+      "draft_id": "D001",
+      "item_id": "item_3a9246e85b125d495c3416482d1a49e7fe1e757052a4f7cde16b0cabd705cdad"
+    },
+    {
+      "batch_id": "BRBL-APPENDIX-U01-B004",
+      "draft_id": "D002",
+      "item_id": "item_a7392fe1b879cb52afb3fbfbbc60f41e220e2de456a6176e19ca12fd3d668702"
+    },
+    {
+      "batch_id": "BRBL-APPENDIX-U01-B004",
+      "draft_id": "D003",
+      "item_id": "item_322b30d22b276ee03770418b8c0e2a7060654f8a55fa60867326b35f78669cf8"
+    }
+  ],
+  "items": [
+    {
+      "title": "Classify the transaction before the remedy",
+      "core_explanation_md": "For foreign-exchange questions,identify the parties,residence,transaction purpose and current/capital-account category before looking for permission or conditions. An authorised-person duty differs from the customer transaction rule. The Act must be read with the applicable rules,regulations and dated directions.\n\nIf a contravention is alleged,distinguish penalty,compounding,adjudication and the relevant appeal. Compounding is not simply another name for an appeal,and a penalty heading alone does not establish the amount or the required process. Keep the transaction date and statutory version attached to the research note.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Why classify the account transaction first?",
+        "expected_takeaway": "The governing permission and conditions depend on the actual category and facts."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_3a9246e85b125d495c3416482d1a49e7fe1e757052a4f7cde16b0cabd705cdad",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_APPENDIX",
+      "unit_id": "BRBL::MOD_APPENDIX::U01",
+      "objective_ids": [
+        "BRBL::MOD_APPENDIX::U01::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Appendix4,printed pp.594-595 / PDF pp.613-614"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A file calls compounding and appellate review the same remedy and sends every case through one route. What is needed?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Separate the statutory purpose,authority and conditions of each route",
+          "explanation_md": "The headings identify distinct mechanisms."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Choose the cheapest route without eligibility analysis",
+          "explanation_md": "Cost does not establish jurisdiction."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Ignore transaction facts",
+          "explanation_md": "They remain relevant."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Assume every foreign payment is prohibited",
+          "explanation_md": "That is not the classification method."
+        }
+      ],
+      "correct_explanation_md": "The headings identify distinct mechanisms.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_a7392fe1b879cb52afb3fbfbbc60f41e220e2de456a6176e19ca12fd3d668702",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_APPENDIX",
+      "unit_id": "BRBL::MOD_APPENDIX::U01",
+      "objective_ids": [
+        "BRBL::MOD_APPENDIX::U01::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Appendix4,printed pp.594-595 / PDF pp.613-614"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A transaction is analysed using only a penalty section without deciding its underlying permission or conditions. What should come first?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The customer preferred exchange rate",
+          "explanation_md": "It does not settle legal classification."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The largest possible fine",
+          "explanation_md": "That does not establish a contravention."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The applicable transaction rule and dated regulatory framework",
+          "explanation_md": "A sanction requires an identified legal breach."
+        },
+        {
+          "option_id": "D",
+          "text_md": "An unrelated domestic cheque rule",
+          "explanation_md": "It does not govern this question."
+        }
+      ],
+      "correct_explanation_md": "A sanction requires an identified legal breach.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_322b30d22b276ee03770418b8c0e2a7060654f8a55fa60867326b35f78669cf8",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_APPENDIX",
+      "unit_id": "BRBL::MOD_APPENDIX::U01",
+      "objective_ids": [
+        "BRBL::MOD_APPENDIX::U01::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Appendix4,printed pp.594-595 / PDF pp.613-614"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

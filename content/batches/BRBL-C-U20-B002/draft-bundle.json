@@ -1,0 +1,360 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-C-U20-B002",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_C::U20: Apply exclusions,closed-court rules and sufficient-cause relief within their scope",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed p.381 / PDF p.400",
+        "statement": "Section4closedcourtreopening;5appeals/applicationswithspecifiedexecutionexception,notgeneraluitextension;12dayandcopytime,15stays/notices/sanctionandotherexclusionsrequirefacts.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "An exclusion changes computation only when its conditions exist",
+          "core_explanation_md": "The source identifies separate rules for a court closed on the last day, exclusion of the starting day, qualifying copy-preparation time, stays and required notice or sanction periods. Keep their facts and authority in the calculation record. An office closure at the bank is not automatically the court-closure rule.\n\nSection5 sufficient-cause relief has a defined scope; it should not be advertised as a general power to forgive every late suit. Nor is a request for condonation already a granted extension. First calculate the ordinary period, then apply only supported exclusions or relief under the proper provision and order.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does every delay become excused when the bank records a reason?",
+            "expected_takeaway": "No. The applicable rule and competent decision must support the relief."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A branch holiday is treated as proof that a court was closed on the final filing day. What must be established?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The actual court calendar and applicable closure rule",
+              "explanation_md": "Branch and court operating days can differ."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Only the bank leave register",
+              "explanation_md": "It does not establish the court status."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The loan interest rate",
+              "explanation_md": "Pricing does not determine court closure."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The borrower agrees that every day is excluded",
+              "explanation_md": "A private preference is not the legal computation rule."
+            }
+          ],
+          "correct_explanation_md": "Branch and court operating days can differ."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A late suit is defended only by saying section 5 always excuses any late proceeding. Which issue is missing?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Every suit is an appeal by definition",
+              "explanation_md": "The Act distinguishes proceeding types."
+            },
+            {
+              "option_id": "B",
+              "text_md": "A private explanation is automatically a court order",
+              "explanation_md": "Relief requires the applicable legal process."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The provision scope and whether that proceeding can use it",
+              "explanation_md": "The source does not provide universal suit condonation."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Only the size of the original advance",
+              "explanation_md": "Claim size alone does not settle condonation power."
+            }
+          ],
+          "correct_explanation_md": "The source does not provide universal suit condonation."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Original drafts for later Antigravity review; source/current applicability, case law and originality review remain pending. No publication approval.",
+      "Exact Schedule articles,periods and computation require primary checking;source table is not copied. No unsupported calendar or universal current-account conclusion is graded."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-C-U20-B002",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_C::U20"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_C::U20",
+        "objective_ids": [
+          "BRBL::MOD_C::U20::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_C::U20",
+        "objective_ids": [
+          "BRBL::MOD_C::U20::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_C::U20",
+        "objective_ids": [
+          "BRBL::MOD_C::U20::LO_02"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-C-U20-B002",
+      "draft_id": "D001",
+      "item_id": "item_ffedcb7c946a086960d112839fe6421edd8e88ccfe6ea22343d7c533b539853e"
+    },
+    {
+      "batch_id": "BRBL-C-U20-B002",
+      "draft_id": "D002",
+      "item_id": "item_0e429a52488b6cca2d8f7c6e99295ce1a14dba3319272eec373e187c55c444e2"
+    },
+    {
+      "batch_id": "BRBL-C-U20-B002",
+      "draft_id": "D003",
+      "item_id": "item_78c6adc496fcc0dd4112f68225143f52e16ccbf5c01bfaacae915c1e904ba157"
+    }
+  ],
+  "items": [
+    {
+      "title": "An exclusion changes computation only when its conditions exist",
+      "core_explanation_md": "The source identifies separate rules for a court closed on the last day, exclusion of the starting day, qualifying copy-preparation time, stays and required notice or sanction periods. Keep their facts and authority in the calculation record. An office closure at the bank is not automatically the court-closure rule.\n\nSection5 sufficient-cause relief has a defined scope; it should not be advertised as a general power to forgive every late suit. Nor is a request for condonation already a granted extension. First calculate the ordinary period, then apply only supported exclusions or relief under the proper provision and order.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does every delay become excused when the bank records a reason?",
+        "expected_takeaway": "No. The applicable rule and competent decision must support the relief."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_ffedcb7c946a086960d112839fe6421edd8e88ccfe6ea22343d7c533b539853e",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U20",
+      "objective_ids": [
+        "BRBL::MOD_C::U20::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed p.381 / PDF p.400"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A branch holiday is treated as proof that a court was closed on the final filing day. What must be established?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The actual court calendar and applicable closure rule",
+          "explanation_md": "Branch and court operating days can differ."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Only the bank leave register",
+          "explanation_md": "It does not establish the court status."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The loan interest rate",
+          "explanation_md": "Pricing does not determine court closure."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The borrower agrees that every day is excluded",
+          "explanation_md": "A private preference is not the legal computation rule."
+        }
+      ],
+      "correct_explanation_md": "Branch and court operating days can differ.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_0e429a52488b6cca2d8f7c6e99295ce1a14dba3319272eec373e187c55c444e2",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U20",
+      "objective_ids": [
+        "BRBL::MOD_C::U20::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed p.381 / PDF p.400"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A late suit is defended only by saying section 5 always excuses any late proceeding. Which issue is missing?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Every suit is an appeal by definition",
+          "explanation_md": "The Act distinguishes proceeding types."
+        },
+        {
+          "option_id": "B",
+          "text_md": "A private explanation is automatically a court order",
+          "explanation_md": "Relief requires the applicable legal process."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The provision scope and whether that proceeding can use it",
+          "explanation_md": "The source does not provide universal suit condonation."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Only the size of the original advance",
+          "explanation_md": "Claim size alone does not settle condonation power."
+        }
+      ],
+      "correct_explanation_md": "The source does not provide universal suit condonation.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_78c6adc496fcc0dd4112f68225143f52e16ccbf5c01bfaacae915c1e904ba157",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U20",
+      "objective_ids": [
+        "BRBL::MOD_C::U20::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed p.381 / PDF p.400"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

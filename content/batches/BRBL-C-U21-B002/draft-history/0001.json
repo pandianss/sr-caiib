@@ -1,0 +1,368 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-C-U21-B002",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_C::U21: Distinguish taxable computation,exempt income,deductions and assessment stages",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.388-391 / PDF pp.407-410",
+        "statement": "Legacycomputationheadswisesum,grosstotalincome,alloweddeductions,taxableincome;exemptionnotdeduction;summary/scrutiny/reassessmentdistinct;return/revision/duedatesdatedandunsafeascurrent.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Classify the amount before applying a tax rate",
+          "core_explanation_md": "The source computation separates income under the relevant heads, gross total income, permitted deductions and taxable income. Exempt income is not simply a deduction chosen after applying a rate, and a deduction is not automatically a rupee-for-rupee tax credit. The applicable regime and eligibility conditions determine what can be used.\n\nFiling a return, processing it, scrutiny and reassessment are also distinct events. An acknowledgement is not proof that every computation was substantively accepted. The textbook deadlines and revision limits are not used as current universal rules; a working file needs the governing year, Act and current instrument for each date.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does a return acknowledgement prove all claimed deductions were finally allowed?",
+            "expected_takeaway": "No. Filing and substantive assessment are separate."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A computation subtracts an eligible deduction directly from tax payable instead of from the stated income base. Which distinction matters?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Deductions and credits always have identical arithmetic",
+              "explanation_md": "They operate on different bases."
+            },
+            {
+              "option_id": "B",
+              "text_md": "All receipts are exempt by default",
+              "explanation_md": "Exemption requires a legal basis."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The taxpayer may choose any base privately",
+              "explanation_md": "The regime determines the computation."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Income deduction and tax credit are different mechanisms",
+              "explanation_md": "Apply the benefit at the stage the law provides."
+            }
+          ],
+          "correct_explanation_md": "Apply the benefit at the stage the law provides."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A return acknowledgement is filed as proof that scrutiny has approved every claim. What should the file distinguish?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Every upload is a final assessment order",
+              "explanation_md": "Submission does not establish scrutiny."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Return filing,processing and substantive assessment",
+              "explanation_md": "The evidence must match the actual stage."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Only whether the return has many pages",
+              "explanation_md": "Length does not establish approval."
+            },
+            {
+              "option_id": "D",
+              "text_md": "A bank balance and an assessment order are the same",
+              "explanation_md": "They are different records."
+            }
+          ],
+          "correct_explanation_md": "The evidence must match the actual stage."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Original drafts for later Antigravity review; source/current applicability, case law and originality review remain pending. No publication approval.",
+      "Tax chapter contains stale statutory regime,datedrates/thresholds,advance-tax typo,overbroadRNOR/cooperativeTDS/disallowance claims and conflictingGSTcommencement. These are not used as current correct-answer propositions. Numeric rates/eligibility are expressly hypothetical stipulations;currentregulatory publication needs Antigravity reconciliation."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-C-U21-B002",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_C::U21"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "ITD_INCOME_TAX_2025_TRANSITION",
+        "authority": "Income Tax Department, Government of India",
+        "title": "Objective and scope of the New Act FAQs: Income-tax Act2025 transition",
+        "url": "https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/objective-and-scope-new-act-faq",
+        "publication_date": null,
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_C::U21",
+        "objective_ids": [
+          "BRBL::MOD_C::U21::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_C::U21",
+        "objective_ids": [
+          "BRBL::MOD_C::U21::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_C::U21",
+        "objective_ids": [
+          "BRBL::MOD_C::U21::LO_02"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-C-U21-B002",
+      "draft_id": "D001",
+      "item_id": "item_38fb1d8fdb03eeb4befa80d1f5d6e2fb66eaa0ab40d2c05c23a24cd2774c1394"
+    },
+    {
+      "batch_id": "BRBL-C-U21-B002",
+      "draft_id": "D002",
+      "item_id": "item_38748a22a5efc22f95d6b71c0ae8f260340225e8f63c56eb31cc3571cf69afeb"
+    },
+    {
+      "batch_id": "BRBL-C-U21-B002",
+      "draft_id": "D003",
+      "item_id": "item_285bf541903c035af8a146575a3595d87460221fbc2ec88ff2045c420a129a12"
+    }
+  ],
+  "items": [
+    {
+      "title": "Classify the amount before applying a tax rate",
+      "core_explanation_md": "The source computation separates income under the relevant heads, gross total income, permitted deductions and taxable income. Exempt income is not simply a deduction chosen after applying a rate, and a deduction is not automatically a rupee-for-rupee tax credit. The applicable regime and eligibility conditions determine what can be used.\n\nFiling a return, processing it, scrutiny and reassessment are also distinct events. An acknowledgement is not proof that every computation was substantively accepted. The textbook deadlines and revision limits are not used as current universal rules; a working file needs the governing year, Act and current instrument for each date.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does a return acknowledgement prove all claimed deductions were finally allowed?",
+        "expected_takeaway": "No. Filing and substantive assessment are separate."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_38fb1d8fdb03eeb4befa80d1f5d6e2fb66eaa0ab40d2c05c23a24cd2774c1394",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U21",
+      "objective_ids": [
+        "BRBL::MOD_C::U21::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.388-391 / PDF pp.407-410"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A computation subtracts an eligible deduction directly from tax payable instead of from the stated income base. Which distinction matters?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Deductions and credits always have identical arithmetic",
+          "explanation_md": "They operate on different bases."
+        },
+        {
+          "option_id": "B",
+          "text_md": "All receipts are exempt by default",
+          "explanation_md": "Exemption requires a legal basis."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The taxpayer may choose any base privately",
+          "explanation_md": "The regime determines the computation."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Income deduction and tax credit are different mechanisms",
+          "explanation_md": "Apply the benefit at the stage the law provides."
+        }
+      ],
+      "correct_explanation_md": "Apply the benefit at the stage the law provides.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_38748a22a5efc22f95d6b71c0ae8f260340225e8f63c56eb31cc3571cf69afeb",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U21",
+      "objective_ids": [
+        "BRBL::MOD_C::U21::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.388-391 / PDF pp.407-410"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A return acknowledgement is filed as proof that scrutiny has approved every claim. What should the file distinguish?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Every upload is a final assessment order",
+          "explanation_md": "Submission does not establish scrutiny."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Return filing,processing and substantive assessment",
+          "explanation_md": "The evidence must match the actual stage."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Only whether the return has many pages",
+          "explanation_md": "Length does not establish approval."
+        },
+        {
+          "option_id": "D",
+          "text_md": "A bank balance and an assessment order are the same",
+          "explanation_md": "They are different records."
+        }
+      ],
+      "correct_explanation_md": "The evidence must match the actual stage.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_285bf541903c035af8a146575a3595d87460221fbc2ec88ff2045c420a129a12",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U21",
+      "objective_ids": [
+        "BRBL::MOD_C::U21::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.388-391 / PDF pp.407-410"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

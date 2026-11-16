@@ -1,0 +1,142 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-C-U02-B011",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL C U02: payment file application case",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "MSMED_ACT_2006_GAZETTE",
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "MSMED_ACT_2006_GAZETTE",
+      "locator": "sections 15-17, PDF p.8",
+      "statement": "Payment is due by the written agreed date or, absent agreement, before appointed day. Written period cannot exceed 45 days from acceptance/deemed acceptance. Section 16 interest begins from appointed day or day immediately after agreed date.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F002",
+      "source_id": "S04",
+      "locator": "printed pp.233-242 / PDF pp.252-261, whole unit and end questions visually inspected",
+      "statement": "The chapter covers this objective, but its older classification values and historical memorandum treatment must be read with the retained notifications.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F003",
+      "source_id": "MSMED_ACT_2006_GAZETTE",
+      "locator": "sections 22-23, PDF pp.9-10",
+      "statement": "Audited buyers disclose specified principal and interest information; the Act interest is not deductible under section 23.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "draft_id": "D001",
+      "item_type": "case_study",
+      "variant": "case_study",
+      "payload": {
+        "title": "Three records in an unpaid supplier file",
+        "scenario_narrative_md": "Assume a legally eligible micro supplier and a transaction governed by the stated MSMED provisions at 30 June 2026. The buyer agreed in writing to pay twenty days after established acceptance. That valid agreed date has passed. The invoice principal is still outstanding. The buyer proposes to wait until day forty-five and separately proposes to close the supplier record after eventually paying principal, even if statutory interest remains unpaid. Questions address these proposals independently; no live entitlement or actual date is being adjudicated.",
+        "question_ids": [
+          "D002",
+          "D003"
+        ],
+        "reference_tables_md": []
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D002",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "For the stipulated file, which interest-start analysis follows the valid shorter written payment term?",
+        "case_study_id": "D001",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "No delay interest can arise before day forty-six in any transaction",
+            "explanation_md": "This wrongly converts the outer permitted written period into universal grace."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Interest begins whenever the buyer accounting team opens the invoice",
+            "explanation_md": "Internal processing does not replace the valid agreed payment date."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Delay interest begins immediately after the valid agreed payment date",
+            "explanation_md": "Section 16 uses the day immediately following the agreed date on this route."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Interest is postponed until the supplier seeks a bank loan",
+            "explanation_md": "Supplier financing is not the statutory interest-start event."
+          }
+        ],
+        "correct_explanation_md": "Section 16 uses the day immediately following the agreed date on this route."
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D003",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Assume this buyer must have its annual accounts audited by law. If it later pays principal but leaves statutory interest unpaid, what should the reconciliation retain?",
+        "case_study_id": "D001",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The distinct unpaid-interest trail and applicable section 22 disclosure information",
+            "explanation_md": "A cleared principal balance does not establish that interest has been discharged."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Only a nil principal line, because interest vanishes automatically",
+            "explanation_md": "Principal payment does not itself eliminate statutory interest."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A statement that interest was paid merely because principal was paid",
+            "explanation_md": "The records must distinguish those two amounts and their actual payments."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A tax-deduction assumption for all unpaid MSMED interest",
+            "explanation_md": "Section 23 disallows the Act interest deduction."
+          }
+        ],
+        "correct_explanation_md": "A cleared principal balance does not establish that interest has been discharged."
+      },
+      "fact_ids": [
+        "F001",
+        "F002",
+        "F003"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex drafts, 16 November 2026; independent legal/session applicability, originality and pedagogy review pending. No approval or publication claimed.",
+    "Original Gazette is not a certified June 2026 consolidation. Later amendments, commencement changes, State rules and applicable judgments require independent verification.",
+    "Source questions and textbook table structure were inspected and not reused. Teaching and scenarios were designed from a factual brief; author comparison is not independent editorial review.",
+    "Original notification transition dates and partial-month/live-rate interest conventions are not certified here. Udyam registration timing and legal eligibility disputes need applicable primary evidence."
+  ],
+  "next_batch_hint": "BRBL C U03 SARFAESI introduction, PDF p.262"
+}

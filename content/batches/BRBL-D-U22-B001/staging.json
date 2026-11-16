@@ -1,0 +1,132 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U22-B001",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U22: Apply board composition and independence requirements",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04",
+    "COMPANIES_ACT_INDIACODE_20260901"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.520-521 / PDF pp.539-540",
+      "statement": "Individualsasdirectors,minimum3public2private1OPC,max15specialresolution;independentnotnominee;sourcecalendarresidencestale.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F002",
+      "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+      "locator": "section149,PDF pp.106-108",
+      "statement": "Residence182daysfinancialyear,listedpublicone-thirdfractionup;independencequalifications.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Board composition is a legal test, not a job-title count",
+        "core_explanation_md": "Directors are individuals. The described minimum is three for a public company, two for a private company and one for an OPC. Fifteen is the ordinary maximum, with a special-resolution route to exceed it. Prescribed woman-director requirements and independence requirements must be checked for the relevant company class.\n\nFor a listed public company, the described one-third independent-director requirement rounds a fraction upward. Independence involves substantive relationships and qualifications: a nominee or whole-time director is not simply relabelled independent. The primary text uses a financial-year residence test of at least182 days, with a proportionate rule for a newly incorporated company; the textbook previous-calendar-year wording is stale.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Can an employee director be made independent merely by changing the title?",
+          "expected_takeaway": "No. The statutory independence conditions govern."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A company wants a sixteenth director and assumes fifteen is an absolute prohibition. Which route does the described framework provide?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Appointment beyond fifteen after the required special resolution",
+            "explanation_md": "The ordinary maximum has an express qualified route."
+          },
+          {
+            "option_id": "B",
+            "text_md": "No company can ever exceed fifteen",
+            "explanation_md": "That omits the proviso."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Any clerk can approve it informally",
+            "explanation_md": "The prescribed company action is required."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A nominee director is not counted because of the label",
+            "explanation_md": "The label does not create that exclusion."
+          }
+        ],
+        "correct_explanation_md": "The ordinary maximum has an express qualified route."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A listed public company labels its nominee as independent without testing relationships or statutory qualifications. What is missing?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only the nominee photograph",
+            "explanation_md": "It does not determine independence."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A rule that all nominees are independent",
+            "explanation_md": "The definition distinguishes them."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The substantive independence test",
+            "explanation_md": "Titles do not replace the legal conditions."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The branch business hours",
+            "explanation_md": "Branch operating times do not establish whether the individual meets the director-independence conditions."
+          }
+        ],
+        "correct_explanation_md": "Titles do not replace the legal conditions."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Antigravity must independently review law,exceptions,originality and exam cutoff before publication.",
+    "POST-CUTOFF primary consolidation: cited amendments/footnotes require cutoff reconciliation; class exemptions,current forms,qualification shares,section167 appeal and section188 exceptions remain reviewer checks."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

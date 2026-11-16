@@ -1,0 +1,360 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-C-U17-B003",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_C::U17: Handle inspection orders, completeness certificates and costs",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.354-356 / PDF pp.373-375",
+        "statement": "Section6inspection/copiesforproceeding,nomorerelevantentriescertificate;threecleardaysexbankholidaysunlessotherwiseordered;offerbooks/showcausebeforeobediencetime;section7costsdiscretion/faultdelayandmoneyorderenforcement.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "An inspection order has scope, time and a response route",
+          "core_explanation_md": "The court can permit inspection and copying or require the bank to produce the specified certified entries. The further completeness certificate concerns other entries relevant to the matters in issue; staff must search the proper record scope before signing it. The source describes three clear days excluding bank holidays unless the authority directs otherwise.\n\nBefore the compliance time, the bank may use the stated offer-to-produce or show-cause route; an intention to object is not permission to silently ignore the process. Costs are in the court discretion, including the described bank fault or improper-delay circumstances, and the cost order has its own enforcement effect.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Can a completeness certificate be signed without checking for other relevant entries?",
+            "expected_takeaway": "No. The certificate must match the actual record search and scope."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A team signs that no other relevant entries exist without searching the relevant period or backup record. What is the defect?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only a missing decorative stamp",
+              "explanation_md": "The substantive completeness assertion lacks support."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The certificate exceeds what the team has established",
+              "explanation_md": "Certification must reflect the actual relevant-record examination."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The customer automatically waives all evidence rights",
+              "explanation_md": "No waiver follows from an unsupported certificate."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The inspection order itself proves the database is complete",
+              "explanation_md": "The order requests evidence; it does not certify it."
+            }
+          ],
+          "correct_explanation_md": "Certification must reflect the actual relevant-record examination."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A bank intends to show cause against an order and simply takes no action before the stated deadline. Which distinction matters?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Intention alone is a granted exemption",
+              "explanation_md": "An internal intention is not procedural relief."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Every inspection order is void if inconvenient",
+              "explanation_md": "Convenience does not establish invalidity."
+            },
+            {
+              "option_id": "C",
+              "text_md": "All costs must automatically be charged to the customer",
+              "explanation_md": "Cost allocation is a legal decision."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Use the prescribed timely response route and track any further order",
+              "explanation_md": "The actual procedure and authority decision govern compliance."
+            }
+          ],
+          "correct_explanation_md": "The actual procedure and authority decision govern compliance."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Independent Antigravity review remains required for later amendments, commencement, applicable regulations and judgments. Draft authoring is not a publication or legal-accuracy approval.",
+      "Territorial text in book is stale. New2026BankersBooksEvidenceAct discovered in official search;1891rules explicitly taught as syllabus/historical framework,not certified current law. Applicability at examcutoff and repeal/savings require primary review."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-C-U17-B003",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_C::U17"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_C::U17",
+        "objective_ids": [
+          "BRBL::MOD_C::U17::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_C::U17",
+        "objective_ids": [
+          "BRBL::MOD_C::U17::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_C::U17",
+        "objective_ids": [
+          "BRBL::MOD_C::U17::LO_03"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-C-U17-B003",
+      "draft_id": "D001",
+      "item_id": "item_6c1c965544be522d8e664096062b4278008c7493b1c06de1bb2ca519ff11b5ed"
+    },
+    {
+      "batch_id": "BRBL-C-U17-B003",
+      "draft_id": "D002",
+      "item_id": "item_9f7055a5f2e354590c5b59c4fac096aa74d8c2f8dfa6de1e033e1eab9c7be2d3"
+    },
+    {
+      "batch_id": "BRBL-C-U17-B003",
+      "draft_id": "D003",
+      "item_id": "item_6f9aca33eb639d4a2b587a64c5b4a23b3521f3e971d06b999321bd8caecc65f7"
+    }
+  ],
+  "items": [
+    {
+      "title": "An inspection order has scope, time and a response route",
+      "core_explanation_md": "The court can permit inspection and copying or require the bank to produce the specified certified entries. The further completeness certificate concerns other entries relevant to the matters in issue; staff must search the proper record scope before signing it. The source describes three clear days excluding bank holidays unless the authority directs otherwise.\n\nBefore the compliance time, the bank may use the stated offer-to-produce or show-cause route; an intention to object is not permission to silently ignore the process. Costs are in the court discretion, including the described bank fault or improper-delay circumstances, and the cost order has its own enforcement effect.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Can a completeness certificate be signed without checking for other relevant entries?",
+        "expected_takeaway": "No. The certificate must match the actual record search and scope."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_6c1c965544be522d8e664096062b4278008c7493b1c06de1bb2ca519ff11b5ed",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U17",
+      "objective_ids": [
+        "BRBL::MOD_C::U17::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.354-356 / PDF pp.373-375"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A team signs that no other relevant entries exist without searching the relevant period or backup record. What is the defect?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only a missing decorative stamp",
+          "explanation_md": "The substantive completeness assertion lacks support."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The certificate exceeds what the team has established",
+          "explanation_md": "Certification must reflect the actual relevant-record examination."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The customer automatically waives all evidence rights",
+          "explanation_md": "No waiver follows from an unsupported certificate."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The inspection order itself proves the database is complete",
+          "explanation_md": "The order requests evidence; it does not certify it."
+        }
+      ],
+      "correct_explanation_md": "Certification must reflect the actual relevant-record examination.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_9f7055a5f2e354590c5b59c4fac096aa74d8c2f8dfa6de1e033e1eab9c7be2d3",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U17",
+      "objective_ids": [
+        "BRBL::MOD_C::U17::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.354-356 / PDF pp.373-375"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A bank intends to show cause against an order and simply takes no action before the stated deadline. Which distinction matters?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Intention alone is a granted exemption",
+          "explanation_md": "An internal intention is not procedural relief."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Every inspection order is void if inconvenient",
+          "explanation_md": "Convenience does not establish invalidity."
+        },
+        {
+          "option_id": "C",
+          "text_md": "All costs must automatically be charged to the customer",
+          "explanation_md": "Cost allocation is a legal decision."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Use the prescribed timely response route and track any further order",
+          "explanation_md": "The actual procedure and authority decision govern compliance."
+        }
+      ],
+      "correct_explanation_md": "The actual procedure and authority decision govern compliance.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_6f9aca33eb639d4a2b587a64c5b4a23b3521f3e971d06b999321bd8caecc65f7",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U17",
+      "objective_ids": [
+        "BRBL::MOD_C::U17::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.354-356 / PDF pp.373-375"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

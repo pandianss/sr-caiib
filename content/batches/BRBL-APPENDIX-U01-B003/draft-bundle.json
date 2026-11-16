@@ -1,0 +1,360 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-APPENDIX-U01-B003",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL::MOD_APPENDIX::U01: Separate PMLA reporting duties from investigation and confiscation powers",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "Appendix3,printed pp.592-593 / PDF pp.611-612",
+        "statement": "ReportingentityidentityrecordsEDDdistinctattachmentadjudicationsearcharrestconfiscationandappeals.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Identify whether the question concerns the bank duty or State power",
+          "core_explanation_md": "PMLA research should first distinguish reporting-entity compliance from attachment, search, arrest, adjudication and confiscation. Identity verification, record maintenance and enhanced due diligence are not interchangeable with the authority power to seize or finally confiscate property.\n\nFor a compliance question, locate the duty together with applicable rules and dated regulatory directions. For a coercive measure, identify the authorised actor, grounds, procedure and review route. A suspicious transaction and a proven offence are different states of evidence. Preserve the actual facts and do not turn a short appendix heading into a customer-specific finding of guilt.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does a reporting duty automatically authorise the bank to confiscate assets?",
+            "expected_takeaway": "No. Those are different statutory roles."
+          }
+        },
+        "draft_id": "D001",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A bank compliance analyst needs the record-maintenance duty but consults only arrest-power headings. Which distinction matters?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Both roles are always identical",
+              "explanation_md": "Reporting-entity duties and investigating-authority powers have distinct statutory actors and conditions."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The analyst may assume every customer is guilty",
+              "explanation_md": "That is unsupported."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Only the account balance matters",
+              "explanation_md": "It does not identify the duty."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Reporting-entity obligations versus investigating-authority powers",
+              "explanation_md": "Choose the text for the actual actor and task."
+            }
+          ],
+          "correct_explanation_md": "Choose the text for the actual actor and task."
+        },
+        "draft_id": "D002",
+        "fact_ids": [
+          "F001"
+        ]
+      },
+      {
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "An attachment heading is treated as proof of final confiscation. What must be distinguished?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only the file number",
+              "explanation_md": "That does not identify the stage."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The different statutory stages, conditions and orders",
+              "explanation_md": "Attachment and final confiscation are not the same event."
+            },
+            {
+              "option_id": "C",
+              "text_md": "A rule that no property measure exists",
+              "explanation_md": "The index identifies several."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The bank preferred outcome",
+              "explanation_md": "Preference is not evidence."
+            }
+          ],
+          "correct_explanation_md": "Attachment and final confiscation are not the same event."
+        },
+        "draft_id": "D003",
+        "fact_ids": [
+          "F001"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+      "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+      "Navigation drafts are original study aids,not a current consolidated bare Act. Substantive lessons remain in their exact units. Antigravity review pending for the dated legal text,judicial status and section references.",
+      "Legacy source indexes contain omitted,amended and State-specific provisions; every operational legal conclusion requires its full applicable text."
+    ],
+    "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-APPENDIX-U01-B003",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "Compulsory Paper IV, official catalogue unit BRBL::MOD_APPENDIX::U01"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_APPENDIX::U01",
+        "objective_ids": [
+          "BRBL::MOD_APPENDIX::U01::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_APPENDIX::U01",
+        "objective_ids": [
+          "BRBL::MOD_APPENDIX::U01::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_APPENDIX::U01",
+        "objective_ids": [
+          "BRBL::MOD_APPENDIX::U01::LO_03"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-APPENDIX-U01-B003",
+      "draft_id": "D001",
+      "item_id": "item_537cdd9943d6666214c1b6efada2adb11f8da92b6c5764f240a51a9027001f2d"
+    },
+    {
+      "batch_id": "BRBL-APPENDIX-U01-B003",
+      "draft_id": "D002",
+      "item_id": "item_3602f0b586da8b7c562055015c9b3b84704d017b672afa25fa456c50a8f591a8"
+    },
+    {
+      "batch_id": "BRBL-APPENDIX-U01-B003",
+      "draft_id": "D003",
+      "item_id": "item_280de4e7cf95659b7e5feae0bedec3636ae37c0fd3d6e542792feb734bb0ac30"
+    }
+  ],
+  "items": [
+    {
+      "title": "Identify whether the question concerns the bank duty or State power",
+      "core_explanation_md": "PMLA research should first distinguish reporting-entity compliance from attachment, search, arrest, adjudication and confiscation. Identity verification, record maintenance and enhanced due diligence are not interchangeable with the authority power to seize or finally confiscate property.\n\nFor a compliance question, locate the duty together with applicable rules and dated regulatory directions. For a coercive measure, identify the authorised actor, grounds, procedure and review route. A suspicious transaction and a proven offence are different states of evidence. Preserve the actual facts and do not turn a short appendix heading into a customer-specific finding of guilt.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does a reporting duty automatically authorise the bank to confiscate assets?",
+        "expected_takeaway": "No. Those are different statutory roles."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_537cdd9943d6666214c1b6efada2adb11f8da92b6c5764f240a51a9027001f2d",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_APPENDIX",
+      "unit_id": "BRBL::MOD_APPENDIX::U01",
+      "objective_ids": [
+        "BRBL::MOD_APPENDIX::U01::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Appendix3,printed pp.592-593 / PDF pp.611-612"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A bank compliance analyst needs the record-maintenance duty but consults only arrest-power headings. Which distinction matters?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Both roles are always identical",
+          "explanation_md": "Reporting-entity duties and investigating-authority powers have distinct statutory actors and conditions."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The analyst may assume every customer is guilty",
+          "explanation_md": "That is unsupported."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Only the account balance matters",
+          "explanation_md": "It does not identify the duty."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Reporting-entity obligations versus investigating-authority powers",
+          "explanation_md": "Choose the text for the actual actor and task."
+        }
+      ],
+      "correct_explanation_md": "Choose the text for the actual actor and task.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_3602f0b586da8b7c562055015c9b3b84704d017b672afa25fa456c50a8f591a8",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_APPENDIX",
+      "unit_id": "BRBL::MOD_APPENDIX::U01",
+      "objective_ids": [
+        "BRBL::MOD_APPENDIX::U01::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Appendix3,printed pp.592-593 / PDF pp.611-612"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "An attachment heading is treated as proof of final confiscation. What must be distinguished?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only the file number",
+          "explanation_md": "That does not identify the stage."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The different statutory stages, conditions and orders",
+          "explanation_md": "Attachment and final confiscation are not the same event."
+        },
+        {
+          "option_id": "C",
+          "text_md": "A rule that no property measure exists",
+          "explanation_md": "The index identifies several."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The bank preferred outcome",
+          "explanation_md": "Preference is not evidence."
+        }
+      ],
+      "correct_explanation_md": "Attachment and final confiscation are not the same event.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_280de4e7cf95659b7e5feae0bedec3636ae37c0fd3d6e542792feb734bb0ac30",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_APPENDIX",
+      "unit_id": "BRBL::MOD_APPENDIX::U01",
+      "objective_ids": [
+        "BRBL::MOD_APPENDIX::U01::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "Appendix3,printed pp.592-593 / PDF pp.611-612"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

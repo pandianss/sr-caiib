@@ -1,0 +1,120 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U28-B001",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U28: Identify public duty,public servant and non-cash undue advantage",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.576-577 / PDF pp.595-596",
+      "statement": "2publicdutypublicinterestpublicservantbroadcategoriesappointmentnotsole;undueadvantagegratificationnotlimitedmoneyexceptlegalremuneration.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "An improper benefit need not be cash",
+        "core_explanation_md": "The Prevention of Corruption Act uses defined public-duty and public-servant categories extending beyond a simple payroll label. The described categories include qualifying public bodies and persons performing the specified public functions. Government appointment is not the sole test. Establish the actual role and statutory category before concluding coverage.\n\nUndue advantage concerns gratification other than legal remuneration and is not confined to money or a benefit that can readily be priced. A favour, service or other non-cash benefit cannot be dismissed solely because no cash changed hands. Equally, an authorised remuneration payment must be distinguished from an improper benefit. Analyse the benefit, purpose, recipient and duty rather than relying on a gift label.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Can a non-cash benefit fall within undue advantage?",
+          "expected_takeaway": "Yes. The definition is not restricted to monetary gratification."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An official accepts a valuable service connected to an improper official favour and argues no undue advantage can exist because no money was paid. Which point matters?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only banknotes can be gratification",
+            "explanation_md": "The definition is broader."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The benefit need not be monetary",
+            "explanation_md": "The act, purpose and statutory elements still need proof."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Every authorised salary payment is corruption",
+            "explanation_md": "Legal remuneration is distinguished."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The service cannot be examined because it has no invoice",
+            "explanation_md": "Invoice absence does not exclude the benefit."
+          }
+        ],
+        "correct_explanation_md": "The act, purpose and statutory elements still need proof."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A person performs a function within a specified public-servant category but was not appointed through a government recruitment process. What should be assessed?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only the recruitment portal used",
+            "explanation_md": "Appointment mode is not the sole test."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A universal exclusion for anyone not government-appointed",
+            "explanation_md": "That ignores the definition."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Only the person private bank account",
+            "explanation_md": "It does not settle the role."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The statutory public-servant category and actual function",
+            "explanation_md": "Coverage depends on the legal definition and facts."
+          }
+        ],
+        "correct_explanation_md": "Coverage depends on the legal definition and facts."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Antigravity independent review pending for source accuracy,originality,question quality and session applicability. No publication approval.",
+    "Primary PC Act/SOP and post2024 procedural-code transition require review; source trial answer is overabsolute and was not reproduced."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}

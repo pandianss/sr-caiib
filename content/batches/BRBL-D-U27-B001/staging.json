@@ -1,0 +1,120 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-D-U27-B001",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL::MOD_D::U27: Distinguish electronic recognition,contract formation and reliable retention",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.566-570 / PDF pp.585-589",
+      "statement": "Electronicrecordsandsignatureslegalrecognition;retentionaccessibleaccuraterepresentationorigin destinationdate time;originatorintermediaryaddresseedifferent.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Electronic form is only one part of legal validity",
+        "core_explanation_md": "The IT Act supplies the described recognition of electronic records and signatures and supports electronic contracting and government services. A record is not invalid solely because it is electronic, but that does not prove capacity, consent, authority or every other contract requirement. Distinguish the originator, the intended addressee and an intermediary carrying or storing the message.\n\nRetention requires the described accessibility, accurate representation and origin/destination/time details, subject to the statutory qualification for automatically generated transmission information. A screenshot may preserve appearance while losing relevant metadata or the reliable original record. Design the evidence trail so the record can be retrieved and its integrity assessed later; a file existing somewhere is not enough.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does electronic recognition itself prove the sender had authority?",
+          "expected_takeaway": "No. Form, authority and the other validity requirements differ."
+        }
+      },
+      "draft_id": "D001",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A bank retains a record in a proprietary format it can no longer open. Which retention feature is missing?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only a paper stamp",
+            "explanation_md": "That does not restore electronic accessibility."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A longer file name",
+            "explanation_md": "That does not make the record usable."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Accessibility for subsequent reference",
+            "explanation_md": "Retention requires usable access, not mere storage."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The sender preferred colour theme",
+            "explanation_md": "A display preference does not establish that the retained record remains accessible for later reference."
+          }
+        ],
+        "correct_explanation_md": "Retention requires usable access, not mere storage."
+      },
+      "draft_id": "D002",
+      "fact_ids": [
+        "F001"
+      ]
+    },
+    {
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A message passes through a hosting provider to its intended recipient. Why distinguish the host from the originator and addressee?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The statutory roles have different meanings and consequences",
+            "explanation_md": "Carrying a record does not automatically make the host its creator or intended recipient."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Every host necessarily signs every message",
+            "explanation_md": "That does not follow."
+          },
+          {
+            "option_id": "C",
+            "text_md": "The recipient always becomes the originator",
+            "explanation_md": "The intended recipient and the person generating or sending the record have distinct defined roles."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Electronic messages have no legally relevant parties",
+            "explanation_md": "The framework expressly identifies roles."
+          }
+        ],
+        "correct_explanation_md": "Carrying a record does not automatically make the host its creator or intended recipient."
+      },
+      "draft_id": "D003",
+      "fact_ids": [
+        "F001"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Original Codex authoring; independent legal/session, originality, calculation and pedagogy review is assigned to Antigravity and remains pending. Canonical review must stay null; do not publish on structural validation.",
+    "Facts are linked to the inspected source locators. Teaching and tasks were independently designed; source passages, tables and end questions were not reused. OCR research notes may contain recognition errors; critical terms/numerals require source reconciliation before publication.",
+    "Antigravity independent review pending for source accuracy,originality,question quality and session applicability. No publication approval.",
+    "Primary2022SO4720,currentJanVishwas amendments,section43A timing and struck-down66A listing must be reconciled before publication. No obsolete penalty table taught."
+  ],
+  "next_batch_hint": "Continue the exact next unfinished BRBL objective recorded in the full authoring queue."
+}
