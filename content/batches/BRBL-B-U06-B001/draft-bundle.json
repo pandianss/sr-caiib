@@ -1,0 +1,695 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-B-U06-B001",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL B U06: Securities and modes of charge II — Apply the payment-appropriation hierarchy and proportional allocation for debts of equal standing",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04",
+      "CONTRACT_ACT_INDIACODE_TEXT"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp. 198–199; PDF page = printed page + 19",
+        "statement": "Courseware explains debtor indication, creditor discretion and the time/proportion rules where neither appropriates; statutory illustrations were inspected but are not reused.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "source_id": "CONTRACT_ACT_INDIACODE_TEXT",
+        "locator": "sections 59–61, PDF pp. 26–27",
+        "statement": "An accepted payment with express or implied debtor indication follows that indication. Without indication/circumstances the creditor may select a lawful debt actually due and payable, even if recovery is time-barred. If neither appropriates, chronological order applies; debts of equal standing share proportionately. These allocation provisions do not themselves revive an action barred by limitation.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "draft_id": "D001",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Read the payment instruction before choosing a debt",
+          "core_explanation_md": "When one debtor owes several distinct debts to a creditor, allocation is a separate decision from receiving the money. Start with **express or implied indication by the debtor**. If the bank accepts a payment accompanied by a valid direction to a particular debt, section 59 requires application accordingly. The bank should preserve the instruction and explain how its posting implements it.\n\nOnly when the debtor has omitted an indication and the circumstances do not indicate a debt does section 60 give the creditor the stated discretion among lawful debts actually due and payable. An internal preference for a secured exposure cannot erase an accepted debtor instruction. A debt need not be legally recoverable by suit to be eligible under section 60, but this does not mean the payment automatically revives every time-barred remedy.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "May a bank silently redirect an accepted payment away from the debt expressly designated by its debtor?",
+            "expected_takeaway": "No. The accepted payment must follow the express or implied indication under section 59."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "The default rule follows time, then proportion",
+          "core_explanation_md": "Section 61 addresses the remaining situation: **neither party appropriates**. Apply the payment to debts in order of time. If relevant debts have equal standing, divide proportionately rather than giving every debt the same rupee amount. Record which rule the file actually invokes; chronological default is not the first step while a debtor direction remains operative.\n\nFor a proportional split, multiply the available payment by each debt divided by the equal-standing total. Check that allocations add back to the payment and do not exceed the debt being discharged. The examples here assume the stated debts alone, no competing appropriation and exact whole-rupee results. Interest, later payments and disputed debt status would need their own inputs.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Why does an equal-standing allocation need the debt amounts, not merely the number of debts?",
+            "expected_takeaway": "The statutory fallback is proportional to the debts, so unequal debts do not receive equal rupee allocations."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "item_type": "card",
+        "variant": "worked_example",
+        "payload": {
+          "title": "Split an unallocated receipt between equal-standing debts",
+          "prerequisite_objective_ids": [],
+          "core_explanation_md": "Two lawful debts of equal standing are INR 84,000 and INR 126,000. Neither party makes an appropriation. Allocate a receipt of INR 70,000 under the stated section 61 assumptions. No other debts, interest or charges are included.",
+          "worked_steps": [
+            {
+              "step_number": 1,
+              "description": "Establish the equal-standing debt pool",
+              "formula_or_substitution": "84000 + 126000",
+              "intermediate_result": "210000 INR"
+            },
+            {
+              "step_number": 2,
+              "description": "Allocate to the first debt",
+              "formula_or_substitution": "70000 × 84000 / 210000",
+              "intermediate_result": "28000 INR"
+            },
+            {
+              "step_number": 3,
+              "description": "Allocate the remaining proportional share and reconcile",
+              "formula_or_substitution": "70000 × 126000 / 210000 = 42000; 28000 + 42000 = 70000",
+              "intermediate_result": "42000 INR to the second debt"
+            }
+          ],
+          "final_answer_with_unit": "First debt: 28000 INR; second debt: 42000 INR",
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Why is INR 35,000 to each debt inappropriate here?",
+            "expected_takeaway": "Equal standing calls for proportional allocation, not equal rupee amounts where the debts differ."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A debtor sends an accepted payment with an express instruction naming an unsecured debt. The bank proposes to post it to a different secured debt because that is its preferred exposure. Under the stated section 59 facts, what controls?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The security type always overrides an express accepted instruction",
+              "explanation_md": "The accepted debtor indication controls this appropriation question; security preference alone does not displace it."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The oldest debt rule applies before examining the instruction",
+              "explanation_md": "Chronological fallback is used where neither party appropriates, rather than before applying the debtor indication."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The accepted payment must be applied to the indicated debt",
+              "explanation_md": "Section 59 gives effect to the express or implied debtor indication when the payment is accepted."
+            },
+            {
+              "option_id": "D",
+              "text_md": "A time-barred debt must receive every payment regardless of directions",
+              "explanation_md": "Eligibility of certain debts under a later rule does not override this accepted instruction."
+            }
+          ],
+          "correct_explanation_md": "Section 59 gives effect to the express or implied debtor indication when the payment is accepted."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "No debtor indication or surrounding circumstance identifies a debt. The creditor elects to allocate to a lawful debt actually due and payable whose recovery by suit is time-barred. What does section 60 establish?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "That debt may be selected under the appropriation discretion, without treating allocation alone as revival of every remedy",
+              "explanation_md": "The section expressly includes such debts in the allocation discretion; limitation consequences need separate analysis."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The debt becomes unlawful solely because recovery by suit is barred",
+              "explanation_md": "The provision distinguishes a lawful debt from whether its recovery is barred by limitation."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The creditor may select a debt not yet due solely because it has the highest interest rate",
+              "explanation_md": "Section 60 specifies a lawful debt actually due and payable; pricing alone is not that condition."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The section requires an equal split across every debt in all cases",
+              "explanation_md": "Proportional fallback belongs to equal-standing debts where neither party appropriates under section 61."
+            }
+          ],
+          "correct_explanation_md": "The section expressly includes such debts in the allocation discretion; limitation consequences need separate analysis."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D006",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Neither party appropriates a receipt of INR 90,000. It is to be shared under section 61 between two lawful debts of equal standing: INR 120,000 and INR 180,000. Assume no other debts, charges or interest. How much of the receipt is allocated to the INR 180,000 debt? State exact whole INR.",
+          "numeric_rule": {
+            "expected_answer": "54000",
+            "unit_label": "INR",
+            "precision_decimals": 0,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "State whole rupees. All given values and the result are exact; no intermediate rounding.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "The equal-standing pool is 120000 + 180000 = 300000 INR. The specified share is 90000 × 180000 / 300000 = 54000 INR. The other share is 36000 INR, reconciling to 90000 INR."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Codex original draft authored 16 November 2026 from source inspection begun 15 November; independent source, cutoff, originality and pedagogical review pending. Keep all canonical items draft with null review.",
+      "Complete S04 unit inspected including end questions: printed pp.197–211 / PDF pp.216–230; PDF p.231 blank. Source expressions, table layouts, statutory illustrations and named-case narratives are not reused as learner tasks.",
+      "All legal facts remain needs_review. Original file-review scenarios and option rationales have author comparison only; schema validity and automated screening do not establish legal correctness or independent review.",
+      "Current case law on running accounts, contractual continuing-security clauses and the Clayton rule requires separate review. No blanket account-history or limitation-revival rule is certified."
+    ],
+    "next_batch_hint": "Continue BRBL-B-U06-B002"
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-B-U06-B001",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p.12, Compulsory Paper IV, Module B: Law Relating to Securities and Modes of Charge II"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "CONTRACT_ACT_INDIACODE_TEXT",
+        "authority": "India Code, Government of India",
+        "title": "Indian Contract Act, 1872 — statutory PDF",
+        "url": "https://www.indiacode.nic.in/bitstream/123456789/2187/2/A187209.pdf",
+        "publication_date": null,
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_B::U06",
+        "objective_ids": [
+          "BRBL::MOD_B::U06::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_B::U06",
+        "objective_ids": [
+          "BRBL::MOD_B::U06::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_B::U06",
+        "objective_ids": [
+          "BRBL::MOD_B::U06::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BRBL::MOD_B::U06",
+        "objective_ids": [
+          "BRBL::MOD_B::U06::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "unit_id": "BRBL::MOD_B::U06",
+        "objective_ids": [
+          "BRBL::MOD_B::U06::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D006",
+        "unit_id": "BRBL::MOD_B::U06",
+        "objective_ids": [
+          "BRBL::MOD_B::U06::LO_01"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-B-U06-B001",
+      "draft_id": "D001",
+      "item_id": "item_12ad5fc7e1d96797d4932c36fb65dc5d5ec0dc59e0ac18754fa5031c17473077"
+    },
+    {
+      "batch_id": "BRBL-B-U06-B001",
+      "draft_id": "D002",
+      "item_id": "item_023fab26061ec9b886acc7290c9fd7d190a3bb34ae0bc168f6451af24e37640e"
+    },
+    {
+      "batch_id": "BRBL-B-U06-B001",
+      "draft_id": "D003",
+      "item_id": "item_d132b1b9a50da2f999a4659c8c0241a2480a797ebd6e1d5b54c1ebd2cc94622c"
+    },
+    {
+      "batch_id": "BRBL-B-U06-B001",
+      "draft_id": "D004",
+      "item_id": "item_3dfa2f9954dff7378909a41cccc3fb74b8a744413405c069d115b0058bdfbe8a"
+    },
+    {
+      "batch_id": "BRBL-B-U06-B001",
+      "draft_id": "D005",
+      "item_id": "item_877a3dc058ce3cee4cf261ea400c9126d24df5e33134af88f388e44f117fbc2d"
+    },
+    {
+      "batch_id": "BRBL-B-U06-B001",
+      "draft_id": "D006",
+      "item_id": "item_93b8778f22867fc8d69b37fc6463748d9d9421f9f5602fffb247668ac4243cbf"
+    }
+  ],
+  "items": [
+    {
+      "title": "Read the payment instruction before choosing a debt",
+      "core_explanation_md": "When one debtor owes several distinct debts to a creditor, allocation is a separate decision from receiving the money. Start with **express or implied indication by the debtor**. If the bank accepts a payment accompanied by a valid direction to a particular debt, section 59 requires application accordingly. The bank should preserve the instruction and explain how its posting implements it.\n\nOnly when the debtor has omitted an indication and the circumstances do not indicate a debt does section 60 give the creditor the stated discretion among lawful debts actually due and payable. An internal preference for a secured exposure cannot erase an accepted debtor instruction. A debt need not be legally recoverable by suit to be eligible under section 60, but this does not mean the payment automatically revives every time-barred remedy.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "May a bank silently redirect an accepted payment away from the debt expressly designated by its debtor?",
+        "expected_takeaway": "No. The accepted payment must follow the express or implied indication under section 59."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_12ad5fc7e1d96797d4932c36fb65dc5d5ec0dc59e0ac18754fa5031c17473077",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U06",
+      "objective_ids": [
+        "BRBL::MOD_B::U06::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp. 198–199; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "CONTRACT_ACT_INDIACODE_TEXT",
+          "authority": "India Code, Government of India",
+          "title": "Indian Contract Act, 1872 — statutory PDF",
+          "url": "https://www.indiacode.nic.in/bitstream/123456789/2187/2/A187209.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 59–61, PDF pp. 26–27"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "The default rule follows time, then proportion",
+      "core_explanation_md": "Section 61 addresses the remaining situation: **neither party appropriates**. Apply the payment to debts in order of time. If relevant debts have equal standing, divide proportionately rather than giving every debt the same rupee amount. Record which rule the file actually invokes; chronological default is not the first step while a debtor direction remains operative.\n\nFor a proportional split, multiply the available payment by each debt divided by the equal-standing total. Check that allocations add back to the payment and do not exceed the debt being discharged. The examples here assume the stated debts alone, no competing appropriation and exact whole-rupee results. Interest, later payments and disputed debt status would need their own inputs.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Why does an equal-standing allocation need the debt amounts, not merely the number of debts?",
+        "expected_takeaway": "The statutory fallback is proportional to the debts, so unequal debts do not receive equal rupee allocations."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_023fab26061ec9b886acc7290c9fd7d190a3bb34ae0bc168f6451af24e37640e",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U06",
+      "objective_ids": [
+        "BRBL::MOD_B::U06::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp. 198–199; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "CONTRACT_ACT_INDIACODE_TEXT",
+          "authority": "India Code, Government of India",
+          "title": "Indian Contract Act, 1872 — statutory PDF",
+          "url": "https://www.indiacode.nic.in/bitstream/123456789/2187/2/A187209.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 59–61, PDF pp. 26–27"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Split an unallocated receipt between equal-standing debts",
+      "prerequisite_objective_ids": [],
+      "core_explanation_md": "Two lawful debts of equal standing are INR 84,000 and INR 126,000. Neither party makes an appropriation. Allocate a receipt of INR 70,000 under the stated section 61 assumptions. No other debts, interest or charges are included.",
+      "worked_steps": [
+        {
+          "step_number": 1,
+          "description": "Establish the equal-standing debt pool",
+          "formula_or_substitution": "84000 + 126000",
+          "intermediate_result": "210000 INR"
+        },
+        {
+          "step_number": 2,
+          "description": "Allocate to the first debt",
+          "formula_or_substitution": "70000 × 84000 / 210000",
+          "intermediate_result": "28000 INR"
+        },
+        {
+          "step_number": 3,
+          "description": "Allocate the remaining proportional share and reconcile",
+          "formula_or_substitution": "70000 × 126000 / 210000 = 42000; 28000 + 42000 = 70000",
+          "intermediate_result": "42000 INR to the second debt"
+        }
+      ],
+      "final_answer_with_unit": "First debt: 28000 INR; second debt: 42000 INR",
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Why is INR 35,000 to each debt inappropriate here?",
+        "expected_takeaway": "Equal standing calls for proportional allocation, not equal rupee amounts where the debts differ."
+      },
+      "item_type": "card",
+      "card_type": "worked_example",
+      "id": "item_d132b1b9a50da2f999a4659c8c0241a2480a797ebd6e1d5b54c1ebd2cc94622c",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U06",
+      "objective_ids": [
+        "BRBL::MOD_B::U06::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp. 198–199; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "CONTRACT_ACT_INDIACODE_TEXT",
+          "authority": "India Code, Government of India",
+          "title": "Indian Contract Act, 1872 — statutory PDF",
+          "url": "https://www.indiacode.nic.in/bitstream/123456789/2187/2/A187209.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 59–61, PDF pp. 26–27"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A debtor sends an accepted payment with an express instruction naming an unsecured debt. The bank proposes to post it to a different secured debt because that is its preferred exposure. Under the stated section 59 facts, what controls?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The security type always overrides an express accepted instruction",
+          "explanation_md": "The accepted debtor indication controls this appropriation question; security preference alone does not displace it."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The oldest debt rule applies before examining the instruction",
+          "explanation_md": "Chronological fallback is used where neither party appropriates, rather than before applying the debtor indication."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The accepted payment must be applied to the indicated debt",
+          "explanation_md": "Section 59 gives effect to the express or implied debtor indication when the payment is accepted."
+        },
+        {
+          "option_id": "D",
+          "text_md": "A time-barred debt must receive every payment regardless of directions",
+          "explanation_md": "Eligibility of certain debts under a later rule does not override this accepted instruction."
+        }
+      ],
+      "correct_explanation_md": "Section 59 gives effect to the express or implied debtor indication when the payment is accepted.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_3dfa2f9954dff7378909a41cccc3fb74b8a744413405c069d115b0058bdfbe8a",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U06",
+      "objective_ids": [
+        "BRBL::MOD_B::U06::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp. 198–199; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "CONTRACT_ACT_INDIACODE_TEXT",
+          "authority": "India Code, Government of India",
+          "title": "Indian Contract Act, 1872 — statutory PDF",
+          "url": "https://www.indiacode.nic.in/bitstream/123456789/2187/2/A187209.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 59–61, PDF pp. 26–27"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "No debtor indication or surrounding circumstance identifies a debt. The creditor elects to allocate to a lawful debt actually due and payable whose recovery by suit is time-barred. What does section 60 establish?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "That debt may be selected under the appropriation discretion, without treating allocation alone as revival of every remedy",
+          "explanation_md": "The section expressly includes such debts in the allocation discretion; limitation consequences need separate analysis."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The debt becomes unlawful solely because recovery by suit is barred",
+          "explanation_md": "The provision distinguishes a lawful debt from whether its recovery is barred by limitation."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The creditor may select a debt not yet due solely because it has the highest interest rate",
+          "explanation_md": "Section 60 specifies a lawful debt actually due and payable; pricing alone is not that condition."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The section requires an equal split across every debt in all cases",
+          "explanation_md": "Proportional fallback belongs to equal-standing debts where neither party appropriates under section 61."
+        }
+      ],
+      "correct_explanation_md": "The section expressly includes such debts in the allocation discretion; limitation consequences need separate analysis.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_877a3dc058ce3cee4cf261ea400c9126d24df5e33134af88f388e44f117fbc2d",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U06",
+      "objective_ids": [
+        "BRBL::MOD_B::U06::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp. 198–199; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "CONTRACT_ACT_INDIACODE_TEXT",
+          "authority": "India Code, Government of India",
+          "title": "Indian Contract Act, 1872 — statutory PDF",
+          "url": "https://www.indiacode.nic.in/bitstream/123456789/2187/2/A187209.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 59–61, PDF pp. 26–27"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Neither party appropriates a receipt of INR 90,000. It is to be shared under section 61 between two lawful debts of equal standing: INR 120,000 and INR 180,000. Assume no other debts, charges or interest. How much of the receipt is allocated to the INR 180,000 debt? State exact whole INR.",
+      "numeric_rule": {
+        "expected_answer": "54000",
+        "unit_label": "INR",
+        "precision_decimals": 0,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "State whole rupees. All given values and the result are exact; no intermediate rounding.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "The equal-standing pool is 120000 + 180000 = 300000 INR. The specified share is 90000 × 180000 / 300000 = 54000 INR. The other share is 36000 INR, reconciling to 90000 INR.",
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_93b8778f22867fc8d69b37fc6463748d9d9421f9f5602fffb247668ac4243cbf",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U06",
+      "objective_ids": [
+        "BRBL::MOD_B::U06::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp. 198–199; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "CONTRACT_ACT_INDIACODE_TEXT",
+          "authority": "India Code, Government of India",
+          "title": "Indian Contract Act, 1872 — statutory PDF",
+          "url": "https://www.indiacode.nic.in/bitstream/123456789/2187/2/A187209.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 59–61, PDF pp. 26–27"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

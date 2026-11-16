@@ -1,0 +1,207 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-B-U06-B002",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL B U06: Securities and modes of charge II — Distinguish execution, notice, transferred remedies and pre-existing equities in an actionable-claim assignment",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04",
+    "TPA_DELHI_TEXT"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp. 199–200; PDF page = printed page + 19",
+      "statement": "Courseware describes assignor/assignee, written transfer, notice and the assignee taking subject to equities; its named-case narratives and insurance illustration are not reused.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F002",
+      "source_id": "TPA_DELHI_TEXT",
+      "locator": "sections 130–132 and 136–137, Chapter VIII headings",
+      "statement": "Section 130 requires the signed written instrument for the described actionable-claim transfer; execution vests the rights/remedies whether notice is given or not, subject to the debtor-dealing proviso and exceptions. Section 131 specifies written signed notice with transferee name/address. Section 132 preserves liabilities/equities at transfer. Sections 136–137 restrict court-connected persons and exclude specified instruments/documents from the chapter; section 130 saves special insurance law.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "draft_id": "D001",
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Assignment changes the recipient of a right",
+        "core_explanation_md": "An assignment transfers a right or benefit from the **assignor** to the **assignee**. It should not be treated as a unilateral means of imposing a new contractual burden on someone else. For an actionable claim within section 130, identify the signed written transfer and its scope. The statute makes the described transfer complete on execution; notice serves a different protective function.\n\nThe assignee may pursue the transferred claim in its own name under the provision. That does not turn every commercial right into the same statutory category: Chapter VIII has exclusions, and insurance has specific rules. Classify the asset and governing regime before applying a generic assignment checklist.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does describing an arrangement as assignment prove that every contractual obligation has moved without any other party assent?",
+          "expected_takeaway": "No. Transfer of a benefit and substitution of contractual burdens are different legal questions."
+        }
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D002",
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "A complete transfer still needs attention to notice",
+        "core_explanation_md": "Execution and debtor notification must be tracked separately. Section 130 does not postpone every transfer until the debtor receives notice, yet its proviso protects the specified dealings where the debtor is neither a party to the transfer nor has received the required express notice. A completed assignment with an unaddressed notice gap can therefore carry a collection risk.\n\nSection 131 calls for written notice, the required signature and the assignee name and address; it specifies the alternative signature route if the transferor refuses to sign. Preserve the actual notice and receipt evidence. A bank should not assume that a private assignment file automatically informed the debtor.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Why is notice evidence relevant even where the signed transfer is complete on execution?",
+          "expected_takeaway": "The debtor-dealing proviso protects specified dealings before the stated participation/notice condition is met."
+        }
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D003",
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Buying a claim does not automatically cleanse its defects",
+        "core_explanation_md": "Section 132 makes the assignee take subject to the liabilities and equities affecting the transferor in respect of the claim at the transfer date. Due diligence should therefore ask about disputes, defences and existing adjustments, rather than look only at the face amount and assignment price. The assignee lack of knowledge does not by itself supply better rights under this rule.\n\nKeep the statutory scope in view: the chapter does not apply to specified negotiable instruments and mercantile documents of title, and it restricts dealings by certain persons connected with courts. The courseware discusses particular judicial exceptions; those have not been converted into general rules in this draft.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Can the assignee rely only on having paid value and being unaware of a pre-existing equity?",
+          "expected_takeaway": "No. Section 132 preserves the applicable liabilities and equities as at transfer."
+        }
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D004",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A signed written transfer of an actionable claim is executed within section 130. No required notice has yet reached the debtor, who was not a party to the transfer. Which review distinguishes the issues correctly?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "There can be no transfer until the debtor signs a new loan agreement",
+            "explanation_md": "The section completes the described transfer on execution and does not impose that universal new-agreement condition."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Execution proves that all later dealings by an uninformed debtor are necessarily invalid",
+            "explanation_md": "The statutory proviso expressly preserves the specified dealings absent participation or the required notice."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Notice and execution are always interchangeable events",
+            "explanation_md": "They serve distinct statutory functions and must be evidenced separately."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Identify the completed transfer and separately examine the proviso protecting debtor dealings before notice",
+            "explanation_md": "This preserves both the execution rule and the notice-related qualification."
+          }
+        ],
+        "correct_explanation_md": "This preserves both the execution rule and the notice-related qualification."
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D005",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An assignee pays full value for a claim but omits any enquiry into liabilities and equities existing against the assignor at transfer. What risk does section 132 identify?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Payment of value necessarily cancels every pre-existing defence",
+            "explanation_md": "The section does not make value paid an automatic cleansing rule."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The claim may remain subject to those liabilities and equities despite the assignee lack of knowledge",
+            "explanation_md": "The transferee takes subject to the relevant liabilities and equities at the transfer date."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Every assignment is invalid whenever the claim is disputed",
+            "explanation_md": "The provision concerns the rights transferred and their qualifications, rather than a universal invalidity rule."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A later assignment price determines the debtor original liability",
+            "explanation_md": "The assignment price does not replace the underlying rights, liabilities and equities."
+          }
+        ],
+        "correct_explanation_md": "The transferee takes subject to the relevant liabilities and equities at the transfer date."
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D006",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A template applies Chapter VIII actionable-claim rules identically to all insurance policies, negotiable instruments and documents of title. Which preliminary check is missing?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Classification against section 130 exceptions, section 137 exclusions and the relevant special law",
+            "explanation_md": "The chapter expressly limits its reach, so the actual asset and special regime matter."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Only whether the assignee paid the same amount as the face value",
+            "explanation_md": "Price does not establish whether the chapter applies to the asset."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Only whether the transfer document uses the word assignment",
+            "explanation_md": "A transaction label cannot override the statutory exclusions and special-law qualifications."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Whether notice can replace every signed instrument regardless of asset type",
+            "explanation_md": "Notice is not a universal substitute for the appropriate transfer formalities."
+          }
+        ],
+        "correct_explanation_md": "The chapter expressly limits its reach, so the actual asset and special regime matter."
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Codex original draft authored 16 November 2026 from source inspection begun 15 November; independent source, cutoff, originality and pedagogical review pending. Keep all canonical items draft with null review.",
+    "Complete S04 unit inspected including end questions: printed pp.197–211 / PDF pp.216–230; PDF p.231 blank. Source expressions, table layouts, statutory illustrations and named-case narratives are not reused as learner tasks.",
+    "All legal facts remain needs_review. Original file-review scenarios and option rationales have author comparison only; schema validity and automated screening do not establish legal correctness or independent review.",
+    "Insurance Act section 38, factoring arrangements, novation, stamp requirements and the cited specific-fund assignment judgment remain separate source gaps. No adapted statutory or textbook case illustration is assessed."
+  ],
+  "next_batch_hint": "Continue BRBL-B-U06-B003"
+}

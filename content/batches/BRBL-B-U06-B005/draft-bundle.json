@@ -1,0 +1,654 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-B-U06-B005",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL B U06: Securities and modes of charge II — Apply pledge default, notice, redemption and sale-surplus rules to a collateral file",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04",
+      "CONTRACT_ACT_INDIACODE_TEXT"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp. 203–205; PDF page = printed page + 19",
+        "statement": "Courseware discusses suit with collateral retention, sale after reasonable notice, redemption before sale, surplus/shortfall and the bank ability to return goods; named cases require separate primary review.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "source_id": "CONTRACT_ACT_INDIACODE_TEXT",
+        "locator": "sections 176–177, PDF p. 42",
+        "statement": "On the stated default section 176 permits suit with retention as collateral or sale after reasonable notice; shortfall remains payable and surplus must be paid over. Section 177 permits redemption before actual sale, including expenses arising from default. No universal numerical notice duration appears in these provisions.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "draft_id": "D001",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Default creates options with conditions",
+          "core_explanation_md": "Section 176 distinguishes suing on the obligation while retaining collateral from selling the pledged goods after reasonable notice. A lender should identify the route and satisfy its conditions. Default is not itself a transfer of full ownership, an instruction to sell immediately or permission to keep an excess realisation.\n\nIf sale proceeds fall short, the stated debt balance remains payable; if they exceed the amount due, account for the surplus to the pawnor. The arithmetic must use the amounts legally included in the file. A calculation question can assume those components are established, but that assumption cannot certify which real charges are enforceable.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does a pledge label alone eliminate the reasonable-notice condition for a sale?",
+            "expected_takeaway": "No. Section 176 conditions the sale route on reasonable notice."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Redemption is tied to actual sale, not merely overdue status",
+          "core_explanation_md": "Under section 177, a defaulting pawnor can redeem before the actual sale by meeting the stated obligation and default-related expenses. The scheduled repayment date having passed does not alone extinguish that right. Record the relevant sale stage and redemption request rather than treating overdue status as automatic forfeiture.\n\nThe courseware also describes case-law qualifications where a pawnee seeks recovery but cannot return the goods. Those judgments require separate verification and are not reduced here to a universal litigation result. This draft does not set a fixed reasonable-notice period, approve a particular sale or decide disputed enforcement facts.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Is expiry of the original repayment date alone the end of section 177 redemption?",
+            "expected_takeaway": "No. The provision permits the stated redemption before actual sale, including default-related expenses."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "item_type": "case_study",
+        "variant": "case_study",
+        "payload": {
+          "title": "A pledge-sale file with a surplus",
+          "scenario_narrative_md": "A bank holds identified goods under an established valid pledge. The borrower defaults. The recovery team proposes sale; its file must separately establish reasonable notice and the other applicable requirements. For the accounting question, assume a legally valid completed sale produces INR 620,000. The secured debt and interest together are INR 545,000. The only additional costs legally payable from these proceeds are INR 12,000. There are no competing claims, taxes or further charges. The figures are fictional and are not a precedent for permitting particular expenses.",
+          "question_ids": [
+            "D004",
+            "D005"
+          ],
+          "reference_tables_md": []
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "In the proposed pledge sale, the borrower has defaulted. A staff member says a sale can proceed with no notice because the agreement is called a pledge. Which statutory requirement still matters?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Default makes the pawnor the automatic purchaser",
+              "explanation_md": "Default does not determine the purchaser or replace sale procedure."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Reasonable notice of the sale to the pawnor under section 176",
+              "explanation_md": "The sale route is expressly qualified by reasonable notice; the security label does not remove it."
+            },
+            {
+              "option_id": "C",
+              "text_md": "A fixed notice period invented from the balance outstanding",
+              "explanation_md": "Section 176 uses reasonable notice; no universal period is established by these facts."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Forfeiture of every surplus to the pawnee without accounting",
+              "explanation_md": "Section 176 instead requires payment of surplus to the pawnor."
+            }
+          ],
+          "correct_explanation_md": "The sale route is expressly qualified by reasonable notice; the security label does not remove it.",
+          "case_study_id": "D003"
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "item_type": "question",
+        "variant": "numeric_input",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "For the pledge sale described in the case, what exact surplus in INR must be accounted to the pawnor, assuming the stated debt and costs are exhaustive? State whole INR.",
+          "numeric_rule": {
+            "expected_answer": "63000",
+            "unit_label": "INR",
+            "precision_decimals": 0,
+            "rounding_mode": "HALF_UP",
+            "rounding_instruction": "State whole rupees. All given values and the result are exact; no intermediate rounding.",
+            "allow_negative": false
+          },
+          "correct_explanation_md": "The case gives proceeds 620000 INR and debt/interest 545000 INR plus permitted costs 12000 INR. Total amount to meet is 557000 INR. Surplus = 620000 − 557000 = 63000 INR; it is payable to the pawnor under the stated section 176 assumptions.",
+          "case_study_id": "D003"
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D006",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "Before any actual sale, a defaulting pawnor offers the amount needed to discharge the pledge together with the stated expenses arising from default. A staff member rejects redemption solely because the original due date has passed. What does section 177 require the reviewer to consider?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "That every default makes the pawnee absolute owner immediately",
+              "explanation_md": "The provision retains a qualified pre-sale redemption right after the stipulated time."
+            },
+            {
+              "option_id": "B",
+              "text_md": "That redemption is possible only before the original due date in every case",
+              "explanation_md": "Section 177 expressly addresses redemption after default and before actual sale."
+            },
+            {
+              "option_id": "C",
+              "text_md": "That a mere proposal to sell is always identical to an actual sale",
+              "explanation_md": "The provision uses actual sale; the transaction stage needs examination."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The continuing pre-actual-sale redemption right and the required default-related expenses",
+              "explanation_md": "Overdue status alone does not answer the statutory redemption question."
+            }
+          ],
+          "correct_explanation_md": "Overdue status alone does not answer the statutory redemption question."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Codex original draft authored 16 November 2026 from source inspection begun 15 November; independent source, cutoff, originality and pedagogical review pending. Keep all canonical items draft with null review.",
+      "Complete S04 unit inspected including end questions: printed pp.197–211 / PDF pp.216–230; PDF p.231 blank. Source expressions, table layouts, statutory illustrations and named-case narratives are not reused as learner tasks.",
+      "All legal facts remain needs_review. Original file-review scenarios and option rationales have author comparison only; schema validity and automated screening do not establish legal correctness or independent review.",
+      "Primary judgments on return of pledged goods, notice sufficiency, wrongful sale, accretions and trust-receipt release remain outstanding. The case is an original operational file, not a variant of the textbook railway/sugar cases."
+    ],
+    "next_batch_hint": "Continue BRBL-B-U06-B006"
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-B-U06-B005",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p.12, Compulsory Paper IV, Module B: Law Relating to Securities and Modes of Charge II"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "CONTRACT_ACT_INDIACODE_TEXT",
+        "authority": "India Code, Government of India",
+        "title": "Indian Contract Act, 1872 — statutory PDF",
+        "url": "https://www.indiacode.nic.in/bitstream/123456789/2187/2/A187209.pdf",
+        "publication_date": null,
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_B::U06",
+        "objective_ids": [
+          "BRBL::MOD_B::U06::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_B::U06",
+        "objective_ids": [
+          "BRBL::MOD_B::U06::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_B::U06",
+        "objective_ids": [
+          "BRBL::MOD_B::U06::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BRBL::MOD_B::U06",
+        "objective_ids": [
+          "BRBL::MOD_B::U06::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "unit_id": "BRBL::MOD_B::U06",
+        "objective_ids": [
+          "BRBL::MOD_B::U06::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D006",
+        "unit_id": "BRBL::MOD_B::U06",
+        "objective_ids": [
+          "BRBL::MOD_B::U06::LO_05"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-B-U06-B005",
+      "draft_id": "D001",
+      "item_id": "item_be6e68ab09e2f9dc642e80da40143b038ed765910d973014b1d3af16eb2d2a87"
+    },
+    {
+      "batch_id": "BRBL-B-U06-B005",
+      "draft_id": "D002",
+      "item_id": "item_349a61ce5e2ec1c7e063654e3619753bbcf14a75e503a3a75465bbc4684e24bd"
+    },
+    {
+      "batch_id": "BRBL-B-U06-B005",
+      "draft_id": "D003",
+      "item_id": "item_38236659eba7ea8c2644769243afc0da8ad51d8d17c80cfaeb371e4bffbfda0c"
+    },
+    {
+      "batch_id": "BRBL-B-U06-B005",
+      "draft_id": "D004",
+      "item_id": "item_ef8f9b259c0bdbae2d1a250620c136c21bc525410f96cc3e56f893f82cdb4a90"
+    },
+    {
+      "batch_id": "BRBL-B-U06-B005",
+      "draft_id": "D005",
+      "item_id": "item_89794782ca3d3c92003cf88a5848d909a557e22ab01d6092405d45d7d7c04f89"
+    },
+    {
+      "batch_id": "BRBL-B-U06-B005",
+      "draft_id": "D006",
+      "item_id": "item_71d7d73dd8501976a03c44caf9eae1220ed13ab4e84a15de4644a997161fc4f2"
+    }
+  ],
+  "items": [
+    {
+      "title": "Default creates options with conditions",
+      "core_explanation_md": "Section 176 distinguishes suing on the obligation while retaining collateral from selling the pledged goods after reasonable notice. A lender should identify the route and satisfy its conditions. Default is not itself a transfer of full ownership, an instruction to sell immediately or permission to keep an excess realisation.\n\nIf sale proceeds fall short, the stated debt balance remains payable; if they exceed the amount due, account for the surplus to the pawnor. The arithmetic must use the amounts legally included in the file. A calculation question can assume those components are established, but that assumption cannot certify which real charges are enforceable.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does a pledge label alone eliminate the reasonable-notice condition for a sale?",
+        "expected_takeaway": "No. Section 176 conditions the sale route on reasonable notice."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_be6e68ab09e2f9dc642e80da40143b038ed765910d973014b1d3af16eb2d2a87",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U06",
+      "objective_ids": [
+        "BRBL::MOD_B::U06::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp. 203–205; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "CONTRACT_ACT_INDIACODE_TEXT",
+          "authority": "India Code, Government of India",
+          "title": "Indian Contract Act, 1872 — statutory PDF",
+          "url": "https://www.indiacode.nic.in/bitstream/123456789/2187/2/A187209.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 176–177, PDF p. 42"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Redemption is tied to actual sale, not merely overdue status",
+      "core_explanation_md": "Under section 177, a defaulting pawnor can redeem before the actual sale by meeting the stated obligation and default-related expenses. The scheduled repayment date having passed does not alone extinguish that right. Record the relevant sale stage and redemption request rather than treating overdue status as automatic forfeiture.\n\nThe courseware also describes case-law qualifications where a pawnee seeks recovery but cannot return the goods. Those judgments require separate verification and are not reduced here to a universal litigation result. This draft does not set a fixed reasonable-notice period, approve a particular sale or decide disputed enforcement facts.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Is expiry of the original repayment date alone the end of section 177 redemption?",
+        "expected_takeaway": "No. The provision permits the stated redemption before actual sale, including default-related expenses."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_349a61ce5e2ec1c7e063654e3619753bbcf14a75e503a3a75465bbc4684e24bd",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U06",
+      "objective_ids": [
+        "BRBL::MOD_B::U06::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp. 203–205; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "CONTRACT_ACT_INDIACODE_TEXT",
+          "authority": "India Code, Government of India",
+          "title": "Indian Contract Act, 1872 — statutory PDF",
+          "url": "https://www.indiacode.nic.in/bitstream/123456789/2187/2/A187209.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 176–177, PDF p. 42"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "A pledge-sale file with a surplus",
+      "scenario_narrative_md": "A bank holds identified goods under an established valid pledge. The borrower defaults. The recovery team proposes sale; its file must separately establish reasonable notice and the other applicable requirements. For the accounting question, assume a legally valid completed sale produces INR 620,000. The secured debt and interest together are INR 545,000. The only additional costs legally payable from these proceeds are INR 12,000. There are no competing claims, taxes or further charges. The figures are fictional and are not a precedent for permitting particular expenses.",
+      "question_ids": [
+        "item_ef8f9b259c0bdbae2d1a250620c136c21bc525410f96cc3e56f893f82cdb4a90",
+        "item_89794782ca3d3c92003cf88a5848d909a557e22ab01d6092405d45d7d7c04f89"
+      ],
+      "reference_tables_md": [],
+      "item_type": "case_study",
+      "id": "item_38236659eba7ea8c2644769243afc0da8ad51d8d17c80cfaeb371e4bffbfda0c",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U06",
+      "objective_ids": [
+        "BRBL::MOD_B::U06::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp. 203–205; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "CONTRACT_ACT_INDIACODE_TEXT",
+          "authority": "India Code, Government of India",
+          "title": "Indian Contract Act, 1872 — statutory PDF",
+          "url": "https://www.indiacode.nic.in/bitstream/123456789/2187/2/A187209.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 176–177, PDF p. 42"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "In the proposed pledge sale, the borrower has defaulted. A staff member says a sale can proceed with no notice because the agreement is called a pledge. Which statutory requirement still matters?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Default makes the pawnor the automatic purchaser",
+          "explanation_md": "Default does not determine the purchaser or replace sale procedure."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Reasonable notice of the sale to the pawnor under section 176",
+          "explanation_md": "The sale route is expressly qualified by reasonable notice; the security label does not remove it."
+        },
+        {
+          "option_id": "C",
+          "text_md": "A fixed notice period invented from the balance outstanding",
+          "explanation_md": "Section 176 uses reasonable notice; no universal period is established by these facts."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Forfeiture of every surplus to the pawnee without accounting",
+          "explanation_md": "Section 176 instead requires payment of surplus to the pawnor."
+        }
+      ],
+      "correct_explanation_md": "The sale route is expressly qualified by reasonable notice; the security label does not remove it.",
+      "case_study_id": "item_38236659eba7ea8c2644769243afc0da8ad51d8d17c80cfaeb371e4bffbfda0c",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_ef8f9b259c0bdbae2d1a250620c136c21bc525410f96cc3e56f893f82cdb4a90",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U06",
+      "objective_ids": [
+        "BRBL::MOD_B::U06::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp. 203–205; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "CONTRACT_ACT_INDIACODE_TEXT",
+          "authority": "India Code, Government of India",
+          "title": "Indian Contract Act, 1872 — statutory PDF",
+          "url": "https://www.indiacode.nic.in/bitstream/123456789/2187/2/A187209.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 176–177, PDF p. 42"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "For the pledge sale described in the case, what exact surplus in INR must be accounted to the pawnor, assuming the stated debt and costs are exhaustive? State whole INR.",
+      "numeric_rule": {
+        "expected_answer": "63000",
+        "unit_label": "INR",
+        "precision_decimals": 0,
+        "rounding_mode": "HALF_UP",
+        "rounding_instruction": "State whole rupees. All given values and the result are exact; no intermediate rounding.",
+        "allow_negative": false
+      },
+      "correct_explanation_md": "The case gives proceeds 620000 INR and debt/interest 545000 INR plus permitted costs 12000 INR. Total amount to meet is 557000 INR. Surplus = 620000 − 557000 = 63000 INR; it is payable to the pawnor under the stated section 176 assumptions.",
+      "case_study_id": "item_38236659eba7ea8c2644769243afc0da8ad51d8d17c80cfaeb371e4bffbfda0c",
+      "item_type": "question",
+      "question_type": "numeric_input",
+      "id": "item_89794782ca3d3c92003cf88a5848d909a557e22ab01d6092405d45d7d7c04f89",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U06",
+      "objective_ids": [
+        "BRBL::MOD_B::U06::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp. 203–205; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "CONTRACT_ACT_INDIACODE_TEXT",
+          "authority": "India Code, Government of India",
+          "title": "Indian Contract Act, 1872 — statutory PDF",
+          "url": "https://www.indiacode.nic.in/bitstream/123456789/2187/2/A187209.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 176–177, PDF p. 42"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "Before any actual sale, a defaulting pawnor offers the amount needed to discharge the pledge together with the stated expenses arising from default. A staff member rejects redemption solely because the original due date has passed. What does section 177 require the reviewer to consider?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "That every default makes the pawnee absolute owner immediately",
+          "explanation_md": "The provision retains a qualified pre-sale redemption right after the stipulated time."
+        },
+        {
+          "option_id": "B",
+          "text_md": "That redemption is possible only before the original due date in every case",
+          "explanation_md": "Section 177 expressly addresses redemption after default and before actual sale."
+        },
+        {
+          "option_id": "C",
+          "text_md": "That a mere proposal to sell is always identical to an actual sale",
+          "explanation_md": "The provision uses actual sale; the transaction stage needs examination."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The continuing pre-actual-sale redemption right and the required default-related expenses",
+          "explanation_md": "Overdue status alone does not answer the statutory redemption question."
+        }
+      ],
+      "correct_explanation_md": "Overdue status alone does not answer the statutory redemption question.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_71d7d73dd8501976a03c44caf9eae1220ed13ab4e84a15de4644a997161fc4f2",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U06",
+      "objective_ids": [
+        "BRBL::MOD_B::U06::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp. 203–205; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "CONTRACT_ACT_INDIACODE_TEXT",
+          "authority": "India Code, Government of India",
+          "title": "Indian Contract Act, 1872 — statutory PDF",
+          "url": "https://www.indiacode.nic.in/bitstream/123456789/2187/2/A187209.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 176–177, PDF p. 42"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

@@ -1,0 +1,487 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-B-U06-B004",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL B U06: Securities and modes of charge II — Distinguish ordinary pledge retainer, extraordinary expenses and unrelated debts",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04",
+      "CONTRACT_ACT_INDIACODE_TEXT"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp. 202–204; PDF page = printed page + 19",
+        "statement": "Courseware separates pledge interest/preservation costs, extraordinary expenses, subsequent advances and reasonable care precautions.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "source_id": "CONTRACT_ACT_INDIACODE_TEXT",
+        "locator": "sections 151–152, PDF p. 39; sections 173–175, PDF p. 42",
+        "statement": "Section 173 retainer includes the secured debt/promise, interest and necessary possession/preservation expenses. Section 174 restricts retention for other debts absent a contract, with the stated presumption for subsequent advances unless contrary terms. Section 175 gives a right to receive extraordinary preservation expenses. Bailment care follows the ordinary-prudence standard with section 152 qualification.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "draft_id": "D001",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Identify why each retained amount is secured",
+          "core_explanation_md": "Section 173 covers retention for the secured obligation, interest and necessary expenses of possession or preservation. A review should match each claimed amount to its legal or contractual basis. An unrelated debt should not be silently added just because the bank already holds the goods.\n\nSection 174 supplies the other-debt qualification and a distinct presumption concerning subsequent advances, subject to anything contrary. Record relevant contract terms and the timing of advances. The useful question is not whether the customer owes anything at all, but whether this retention covers the particular amount under the applicable rule.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Why is a separate unrelated debt not automatically included merely because the bank has possession?",
+            "expected_takeaway": "Section 174 requires the relevant contract basis, subject to its qualified subsequent-advance presumption."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Expense recovery and permission to retain are different",
+          "core_explanation_md": "Section 175 entitles the pawnee to receive extraordinary expenses incurred for preservation. Distinguish that recovery entitlement from section 173 retention for necessary possession or preservation expenses. Do not assume every extraordinary invoice automatically supplies the same statutory retention power without reviewing the governing terms and rule.\n\nThe bank also owes care as bailee. Under section 151, compare its conduct with what an ordinarily prudent person would do for goods of the same bulk, quality and value in similar circumstances. Section 152 qualifies responsibility where the required care is taken and no special contract applies. Insurance and a warehouse receipt do not replace a reasoned custody and care plan.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does the existence of insurance itself establish that the bank exercised the required bailment care?",
+            "expected_takeaway": "No. The statutory care standard concerns the bank conduct in the circumstances."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A pawnee relies only on section 175 to claim that any extraordinary preservation expenditure automatically has the identical statutory retainer treatment as section 173 necessary expenses. What distinction is missing?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "A right to receive extraordinary expenses must be distinguished from the stated retainer rights and any contractual basis",
+              "explanation_md": "The provisions describe distinct rights; their statutory wording should not be collapsed into one universal retention rule."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Extraordinary preservation expenses are never recoverable",
+              "explanation_md": "Section 175 expressly recognises an entitlement to receive them."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Necessary possession expenses can never be relevant to retention",
+              "explanation_md": "Section 173 expressly includes necessary possession/preservation expenses."
+            },
+            {
+              "option_id": "D",
+              "text_md": "All customer debts automatically rank as preservation expenses",
+              "explanation_md": "An unrelated debt does not become a preservation cost merely because the customer owes it."
+            }
+          ],
+          "correct_explanation_md": "The provisions describe distinct rights; their statutory wording should not be collapsed into one universal retention rule."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A pledge agreement expressly limits the secured obligation and excludes later advances. A manager invokes the section 174 presumption to retain goods for a later advance without reading the exclusion. Which response fits the text?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The presumption necessarily overrides every contrary contractual term",
+              "explanation_md": "The statutory presumption is qualified by the absence of anything to the contrary."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Section 174 eliminates the need to identify the debt for which goods were pledged",
+              "explanation_md": "The provision makes that identification and any contract to a different effect relevant."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Read the contrary term before relying on the qualified subsequent-advance presumption",
+              "explanation_md": "The express exclusion cannot be ignored by treating a qualified presumption as absolute."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Later advances automatically transfer full ownership of the goods to the lender",
+              "explanation_md": "Retention as security is not an automatic transfer of full ownership."
+            }
+          ],
+          "correct_explanation_md": "The express exclusion cannot be ignored by treating a qualified presumption as absolute."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Codex original draft authored 16 November 2026 from source inspection begun 15 November; independent source, cutoff, originality and pedagogical review pending. Keep all canonical items draft with null review.",
+      "Complete S04 unit inspected including end questions: printed pp.197–211 / PDF pp.216–230; PDF p.231 blank. Source expressions, table layouts, statutory illustrations and named-case narratives are not reused as learner tasks.",
+      "All legal facts remain needs_review. Original file-review scenarios and option rationales have author comparison only; schema validity and automated screening do not establish legal correctness or independent review.",
+      "Judicial treatment of extraordinary-expense retention and the actual contract wording still requires independent review; no live expense claim is certified."
+    ],
+    "next_batch_hint": "Continue BRBL-B-U06-B005"
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-B-U06-B004",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p.12, Compulsory Paper IV, Module B: Law Relating to Securities and Modes of Charge II"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "CONTRACT_ACT_INDIACODE_TEXT",
+        "authority": "India Code, Government of India",
+        "title": "Indian Contract Act, 1872 — statutory PDF",
+        "url": "https://www.indiacode.nic.in/bitstream/123456789/2187/2/A187209.pdf",
+        "publication_date": null,
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_B::U06",
+        "objective_ids": [
+          "BRBL::MOD_B::U06::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_B::U06",
+        "objective_ids": [
+          "BRBL::MOD_B::U06::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_B::U06",
+        "objective_ids": [
+          "BRBL::MOD_B::U06::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BRBL::MOD_B::U06",
+        "objective_ids": [
+          "BRBL::MOD_B::U06::LO_04"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-B-U06-B004",
+      "draft_id": "D001",
+      "item_id": "item_05d9e07c97188ae2166a6e540e31d072695fbb97fc40a428ea10237087f3a115"
+    },
+    {
+      "batch_id": "BRBL-B-U06-B004",
+      "draft_id": "D002",
+      "item_id": "item_d28c4262ee2c5d7da6cb768b97837a115fd7a0048629214b45b8a5086362439b"
+    },
+    {
+      "batch_id": "BRBL-B-U06-B004",
+      "draft_id": "D003",
+      "item_id": "item_26852355de239fb75b2b6657dacb4406df4b4d9dfef40fd6fa342d96b5a7c08b"
+    },
+    {
+      "batch_id": "BRBL-B-U06-B004",
+      "draft_id": "D004",
+      "item_id": "item_e7cadffb43c9719d6f10d0f659a2b0bc171fd1dcc0c01d823094199744cf212b"
+    }
+  ],
+  "items": [
+    {
+      "title": "Identify why each retained amount is secured",
+      "core_explanation_md": "Section 173 covers retention for the secured obligation, interest and necessary expenses of possession or preservation. A review should match each claimed amount to its legal or contractual basis. An unrelated debt should not be silently added just because the bank already holds the goods.\n\nSection 174 supplies the other-debt qualification and a distinct presumption concerning subsequent advances, subject to anything contrary. Record relevant contract terms and the timing of advances. The useful question is not whether the customer owes anything at all, but whether this retention covers the particular amount under the applicable rule.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Why is a separate unrelated debt not automatically included merely because the bank has possession?",
+        "expected_takeaway": "Section 174 requires the relevant contract basis, subject to its qualified subsequent-advance presumption."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_05d9e07c97188ae2166a6e540e31d072695fbb97fc40a428ea10237087f3a115",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U06",
+      "objective_ids": [
+        "BRBL::MOD_B::U06::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp. 202–204; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "CONTRACT_ACT_INDIACODE_TEXT",
+          "authority": "India Code, Government of India",
+          "title": "Indian Contract Act, 1872 — statutory PDF",
+          "url": "https://www.indiacode.nic.in/bitstream/123456789/2187/2/A187209.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 151–152, PDF p. 39; sections 173–175, PDF p. 42"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Expense recovery and permission to retain are different",
+      "core_explanation_md": "Section 175 entitles the pawnee to receive extraordinary expenses incurred for preservation. Distinguish that recovery entitlement from section 173 retention for necessary possession or preservation expenses. Do not assume every extraordinary invoice automatically supplies the same statutory retention power without reviewing the governing terms and rule.\n\nThe bank also owes care as bailee. Under section 151, compare its conduct with what an ordinarily prudent person would do for goods of the same bulk, quality and value in similar circumstances. Section 152 qualifies responsibility where the required care is taken and no special contract applies. Insurance and a warehouse receipt do not replace a reasoned custody and care plan.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does the existence of insurance itself establish that the bank exercised the required bailment care?",
+        "expected_takeaway": "No. The statutory care standard concerns the bank conduct in the circumstances."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_d28c4262ee2c5d7da6cb768b97837a115fd7a0048629214b45b8a5086362439b",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U06",
+      "objective_ids": [
+        "BRBL::MOD_B::U06::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp. 202–204; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "CONTRACT_ACT_INDIACODE_TEXT",
+          "authority": "India Code, Government of India",
+          "title": "Indian Contract Act, 1872 — statutory PDF",
+          "url": "https://www.indiacode.nic.in/bitstream/123456789/2187/2/A187209.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 151–152, PDF p. 39; sections 173–175, PDF p. 42"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A pawnee relies only on section 175 to claim that any extraordinary preservation expenditure automatically has the identical statutory retainer treatment as section 173 necessary expenses. What distinction is missing?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "A right to receive extraordinary expenses must be distinguished from the stated retainer rights and any contractual basis",
+          "explanation_md": "The provisions describe distinct rights; their statutory wording should not be collapsed into one universal retention rule."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Extraordinary preservation expenses are never recoverable",
+          "explanation_md": "Section 175 expressly recognises an entitlement to receive them."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Necessary possession expenses can never be relevant to retention",
+          "explanation_md": "Section 173 expressly includes necessary possession/preservation expenses."
+        },
+        {
+          "option_id": "D",
+          "text_md": "All customer debts automatically rank as preservation expenses",
+          "explanation_md": "An unrelated debt does not become a preservation cost merely because the customer owes it."
+        }
+      ],
+      "correct_explanation_md": "The provisions describe distinct rights; their statutory wording should not be collapsed into one universal retention rule.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_26852355de239fb75b2b6657dacb4406df4b4d9dfef40fd6fa342d96b5a7c08b",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U06",
+      "objective_ids": [
+        "BRBL::MOD_B::U06::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp. 202–204; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "CONTRACT_ACT_INDIACODE_TEXT",
+          "authority": "India Code, Government of India",
+          "title": "Indian Contract Act, 1872 — statutory PDF",
+          "url": "https://www.indiacode.nic.in/bitstream/123456789/2187/2/A187209.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 151–152, PDF p. 39; sections 173–175, PDF p. 42"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A pledge agreement expressly limits the secured obligation and excludes later advances. A manager invokes the section 174 presumption to retain goods for a later advance without reading the exclusion. Which response fits the text?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The presumption necessarily overrides every contrary contractual term",
+          "explanation_md": "The statutory presumption is qualified by the absence of anything to the contrary."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Section 174 eliminates the need to identify the debt for which goods were pledged",
+          "explanation_md": "The provision makes that identification and any contract to a different effect relevant."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Read the contrary term before relying on the qualified subsequent-advance presumption",
+          "explanation_md": "The express exclusion cannot be ignored by treating a qualified presumption as absolute."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Later advances automatically transfer full ownership of the goods to the lender",
+          "explanation_md": "Retention as security is not an automatic transfer of full ownership."
+        }
+      ],
+      "correct_explanation_md": "The express exclusion cannot be ignored by treating a qualified presumption as absolute.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_e7cadffb43c9719d6f10d0f659a2b0bc171fd1dcc0c01d823094199744cf212b",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U06",
+      "objective_ids": [
+        "BRBL::MOD_B::U06::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp. 202–204; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "CONTRACT_ACT_INDIACODE_TEXT",
+          "authority": "India Code, Government of India",
+          "title": "Indian Contract Act, 1872 — statutory PDF",
+          "url": "https://www.indiacode.nic.in/bitstream/123456789/2187/2/A187209.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 151–152, PDF p. 39; sections 173–175, PDF p. 42"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

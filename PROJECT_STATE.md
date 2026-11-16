@@ -14,15 +14,15 @@
 
 | Takeover acceptance task | Status | Evidence / remaining work |
 | --- | --- | --- |
-| Baseline build/type/lint/behaviour checks | passed | Baseline 614; latest full check passed **637/637** plus typecheck/lint. Production build passed with 3 published packs, 0 fixtures. |
+| Baseline build/type/lint/behaviour checks | passed | Entry baseline 614; 16 November full check passed **668/668** plus typecheck/lint. Production build passed with 3 published packs, 0 fixtures. Includes other agents' current Central Banking tests; evidence retained under codex-2026-11-16 |
 | BRBL B U02 teaching and assessment drafts | passed | 13 bounded batches, 65 imported draft items; independent source/applicability/originality/pedagogy review remains pending |
 | BRBL B U03 teaching and assessment drafts | passed | 8 bounded batches, 40 imported draft items; exact penalty-ceiling arithmetic tested; independent legal/editorial review pending |
 | BRBL B U04 teaching and assessment drafts | passed | 7 bounded batches, 37 imported draft items; exact netting arithmetic tested; statutory copy, dated RBI FAQ and Gazette retained; independent review pending |
 | Source, originality and session review | pending | Authoring checks are not Antigravity or human approval |
-| Draft ledger / visual-map reconciliation | passed | BRBL ledger records all 35 new objectives as draft, with zero published IDs. Map rebuilt after each unit. Browser observed NI and FEMA as 2 of 64 topics drafted/assessed, zero reviewed/published; PSS and securities I add the third and fourth draft topics. |
+| Draft ledger / visual-map reconciliation | passed | BRBL ledger records all 43 new objectives as draft, with zero published IDs. Map rebuilt after U06. Prior browser observations cover NI/FEMA and selector behaviour; the U06 generated map has not yet had a fresh rendered inspection |
 | Single coverage paper selector / context preservation | passed | Removed duplicate map chips; app-bar label follows coverage paper. Browser switched BRBL → RM, returned to Today with ABM still active; unfinished ABM lesson still offered Resume. All nine papers available in coverage sheet; registered elective preserved. |
 | BRBL B U05 draft authoring | passed | 7 batches / 29 draft items. Primary TPA text, Registration Act sections 47–50 and Singh Ram judgment retained; independent legal review and stated source gaps remain pending |
-| BRBL B U06 draft authoring | passed | 8 batches / 41 draft items: 18 concept cards, 1 worked example, 19 MCQs, 2 numeric inputs, 1 case with two linked questions. Three targeted tests passed; full check rerun in progress |
+| BRBL B U06 draft authoring | passed | 8 batches / 41 draft items: 18 concept cards, 1 worked example, 19 MCQs, 2 numeric inputs, 1 case with two linked questions. Three targeted tests and full check passed |
 | Content screening correctness | passed | Missing/empty inputs fail closed; five synthetic adverse/pattern/link tests pass. 212 drafts screened: 111 MCQs, zero stub options, courseware stems or broken case links. Screening is not calculation or editorial approval |
 | Clean setup reproduction | passed | Detached checkout of 641dcd2: npm ci, type/lint, 637 tests and production build passed without local source PDFs. Later dependency override and U06 need refreshed clean evidence |
 | Dependency audit | passed | Scoped typescript-estree → minimatch 11.0.1 override resolved the reported development-only advisory; current npm audit reports zero known vulnerabilities. Full check/build passed after override; subsequent U06 checks in progress |
