@@ -32,7 +32,7 @@ export function Practice() {
       </section>
       {units.length > 0 && <section className="section" aria-labelledby="p2"><h2 id="p2">Practise by topic</h2><ul className="list">{units.map(({ u, n }) => <li key={u.id}><button type="button" className="item" onClick={() => void start('unit', u.id)}><span className="grow"><span className="title">{u.title ?? u.id}</span><span className="meta" style={{ display: 'block' }}>{n} question{n === 1 ? '' : 's'}</span></span><Icon name="chevron" /></button></li>)}</ul></section>}
       {cases.length > 0 && <section className="section" aria-labelledby="p3"><h2 id="p3">Case studies</h2><ul className="list">{cases.map(c => <li key={c.id}><button type="button" className="item" onClick={() => void start('case_study', c.id)}><span className="grow"><span className="title">{c.title}</span><span className="meta" style={{ display: 'block' }}>{c.question_ids.length} linked questions; the scenario stays available while you answer</span></span><Icon name="chevron" /></button></li>)}</ul></section>}
-      <section className="section" aria-labelledby="p4"><h2 id="p4">Timed mock</h2>
+      <section className="card" aria-labelledby="p4"><h2 id="p4"><Icon name="clock" size={18} /> Timed mock</h2>
         {mock.ok ? (<><p className="support">{mock.questionCount} questions in {Math.round(mock.durationSeconds / 60)} minutes{mock.full ? '' : `. This is a short mock: the question pool is smaller than the ${ctx?.config?.question_count}-question exam configuration, so the time is scaled to the same pace and no pass or fail is shown`}.</p>
           <Button variant="filled" disabled={Boolean(active)} onClick={() => setMockSheet(true)}>Start a timed mock</Button></>) : <Banner>{mock.reason}</Banner>}
       </section>

@@ -24,16 +24,17 @@ export function Today() {
   const preset = async (m: 5 | 10) => { const id = await model.startPreset(m); if (id) go(`session/${id}`); };
   return (
     <>
-      <div className="section"><h1>Today</h1><p className="support">{PAPER_NAMES[paper]}</p></div>
+      <div className="section"><h1>Today</h1><p className="support">What to do next in {PAPER_NAMES[paper]}</p></div>
       {elsewhere.map(e => <Banner key={e.id} action={<Button variant="outlined" onClick={() => { void model.setPaper(e.paper).then(() => go(`${e.kind}/${e.id}`)); }}>Resume</Button>}>You have an unfinished {e.kind === 'attempt' ? 'practice or mock' : 'study session'} in {PAPER_NAMES[e.paper]}: {e.title}. It is saved and waiting.</Banner>)}
       {rec.kind === 'none' ? (
         <Empty title={rec.title} action={<div className="actions"><Button variant="filled" href="#/coverage">See the coverage map</Button></div>}>{record ? rec.reason : `Lessons and questions for ${PAPER_NAMES[paper]} have not been published yet. Nothing is hidden behind payment here: the content does not exist yet. Use the paper selector to choose another paper.`}</Empty>
       ) : (
-        <section className="card primary" aria-labelledby="rec-title">
+        <section className="card primary hero" data-paper={paper} aria-labelledby="rec-title">
           <span className="label">{rec.kind.startsWith('resume') ? 'Continue where you stopped' : 'Recommended next'}</span>
           <h1 id="rec-title">{rec.title}</h1>
           <p>{rec.reason}</p>
-          <div className="row between"><span className="label">{minutesLabel(rec.minutes)}{rec.minutes !== null ? ' (estimate)' : ''}</span><Button variant="filled" onClick={() => void run()}>{rec.kind.startsWith('resume') ? 'Resume' : 'Start'}</Button></div>
+          <p className="label">{minutesLabel(rec.minutes)}{rec.minutes !== null ? ' (estimate)' : ''}</p>
+          <Button variant="filled" block onClick={() => void run()}>{rec.kind.startsWith('resume') ? 'Resume' : 'Start'}</Button>
         </section>
       )}
       {record && rec.kind !== 'none' && (
@@ -41,14 +42,13 @@ export function Today() {
           <h2 id="quick">Or choose a short session</h2>
           <p className="support">Due reviews first, then objectives you missed, then new cards, sized to fit the time. You can stop early; progress is saved after every step.</p>
           <div className="actions"><Button variant="tonal" onClick={() => void preset(5)}>5 minutes</Button><Button variant="tonal" onClick={() => void preset(10)}>10 minutes</Button></div>
-          <div className="row"><Button href="#/learn">Browse the syllabus</Button><Button href="#/practice">Practice</Button></div>
-        </section>
+                  </section>
       )}
       {record && (
         <section className="section" aria-labelledby="prog">
           <h2 id="prog">Progress in this paper</h2>
           <div className="stat-grid">
-            <div className="stat"><b>{due.length}</b><span className="support">review{due.length === 1 ? '' : 's'} due</span></div>
+            {due.length > 0 ? <button type="button" className="stat tap" onClick={() => void model.startReviews().then(id => { if (id) go(`session/${id}`); })}><b>{due.length}</b><span className="support">review{due.length === 1 ? '' : 's'} due · start</span></button> : <div className="stat"><b>0</b><span className="support">reviews due</span></div>}
             <div className="stat"><b>{studied}{r.snapshot.mapped_objectives_total !== null ? ` / ${r.snapshot.mapped_objectives_total}` : ''}</b><span className="support">objectives studied</span></div>
             <div className="stat"><b>{r.snapshot.eligible_accuracy_questions ? pct(r.snapshot.assessed_accuracy_pct) : '—'}</b><span className="support">{r.snapshot.eligible_accuracy_questions ? `first-attempt accuracy (${r.snapshot.eligible_accuracy_questions} questions)` : 'no scored practice yet'}</span></div>
           </div>

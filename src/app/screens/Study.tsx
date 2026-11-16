@@ -73,7 +73,7 @@ export function StudyPlayer({ id }: { id: string }) {
   return (
     <Frame title={session.title} subtitle={`${PAPER_NAMES[session.paper_id]} · step ${cursor + 1} of ${total}`} onExit={exit}>
       <Announce message={announce} />
-      <div className="progress" role="progressbar" aria-label="Session progress" aria-valuemin={0} aria-valuemax={total} aria-valuenow={cursor}><span style={{ width: `${(cursor / total) * 100}%` }} /></div>
+      <div className="progress thick" role="progressbar" aria-label="Session progress" aria-valuemin={0} aria-valuemax={total} aria-valuenow={cursor}><span style={{ width: `${(cursor / total) * 100}%` }} /></div>
       {resumed && cursor === session.cursor && <Banner>Resumed. You are back at the step where you stopped; earlier steps are already saved.</Banner>}
       <div className="section">
         <div className="row"><Tag kind="info">{CARD_TYPE_LABEL[card.card_type]}</Tag>{step.relearn && <Tag kind="warn">Second look</Tag>}{step.type === 'review' && !step.relearn && <Tag>Review</Tag>}</div>
@@ -110,7 +110,7 @@ export function StudyPlayer({ id }: { id: string }) {
               <Button variant="filled" block disabled={busy} onClick={() => void rate('Again')}>Continue</Button></>
           ) : (
             <><h2 id="rate">How well did you recall it?</h2><p className="support">Your rating sets when you see this card next. It is recorded separately from right and wrong answers.</p>
-              <div className="rating">{RATINGS.filter(r => !(question && r.rating === 'Again')).map(r => <Button key={r.rating} variant={r.rating === 'Good' ? 'filled' : 'tonal'} disabled={busy} onClick={() => void rate(r.rating)}><span>{r.label}</span><small>{r.hint}</small></Button>)}</div></>
+              <div className="rating">{RATINGS.filter(r => !(question && r.rating === 'Again')).map(r => <Button key={r.rating} variant={r.rating === 'Good' ? 'filled' : 'tonal'} className={`rate-${r.rating.toLowerCase()}`} disabled={busy} onClick={() => void rate(r.rating)}><span>{r.label}</span><small>{r.hint}</small></Button>)}</div></>
           )}
         </section>
       )}

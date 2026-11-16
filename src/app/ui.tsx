@@ -33,9 +33,9 @@ export function Icon({ name, size = 24 }: { name: string; size?: number }) {
 }
 
 // ---- buttons, chips, tabs -------------------------------------------------------------------------------------------
-type BtnProps = { children: ReactNode; onClick?: () => void; variant?: 'filled' | 'tonal' | 'outlined' | 'text' | 'danger'; block?: boolean; disabled?: boolean; type?: 'button' | 'submit'; href?: string; label?: string; describedBy?: string };
-export function Button({ children, onClick, variant = 'text', block, disabled, type = 'button', href, label, describedBy }: BtnProps) {
-  const cls = `btn ${variant === 'text' ? '' : variant}${block ? ' block' : ''}`;
+type BtnProps = { children: ReactNode; onClick?: () => void; variant?: 'filled' | 'tonal' | 'outlined' | 'text' | 'danger'; block?: boolean; disabled?: boolean; type?: 'button' | 'submit'; href?: string; label?: string; describedBy?: string; className?: string };
+export function Button({ children, onClick, variant = 'text', block, disabled, type = 'button', href, label, describedBy, className }: BtnProps) {
+  const cls = `btn ${variant === 'text' ? '' : variant}${block ? ' block' : ''}${className ? ` ${className}` : ''}`;
   if (href) return <a className={cls} href={href} aria-label={label}>{children}</a>;
   return <button className={cls} type={type} onClick={onClick} disabled={disabled} aria-label={label} aria-describedby={describedBy}>{children}</button>;
 }

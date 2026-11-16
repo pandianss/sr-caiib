@@ -17,15 +17,17 @@ export function Learn() {
   const modules = cat?.modulesOf(paper) ?? [];
   return (
     <>
-      <div className="section"><h1>Learn</h1><p className="support">{PAPER_NAMES[paper]} · syllabus by module and unit</p></div>
+      <div className="section"><h1>Learn</h1><p className="support">Pick a unit to study its lesson or practise its questions.</p></div>
       {record?.kind !== 'fixture' && baseline?.status === 'provisional' && <Banner kind="warn">This outline comes from an earlier IIBF elective booklet and has not yet been confirmed for your session. It may change.</Banner>}
       {modules.length === 0 ? (
         <Empty title="The syllabus for this paper is not available yet" action={<Button variant="filled" href="#/coverage">See the coverage map</Button>}>{baseline?.note ?? 'No official syllabus has been loaded for this paper.'} Lessons cannot be published until the official syllabus is verified.</Empty>
       ) : modules.map(m => {
         const units = cat!.unitsOf(m.id);
+        const mCards = units.flatMap(u => s.index.cards(paper, u.id)); const mDone = mCards.filter(c => studied.has(c.id)).length;
         return (
           <section className="section" key={m.id} aria-labelledby={`m-${m.id}`}>
             <h2 id={`m-${m.id}`}>{m.title ?? m.id}</h2>
+            {mCards.length > 0 && <div className="mod-progress"><div className="progress" role="progressbar" aria-valuemin={0} aria-valuemax={mCards.length} aria-valuenow={mDone} aria-label={`${m.title ?? m.id}: ${mDone} of ${mCards.length} cards studied`}><span style={{ width: `${Math.round(100 * mDone / mCards.length)}%` }} /></div><span className="label tabular">{mDone} of {mCards.length} cards studied</span></div>}
             <ul className="list">{units.map(u => {
               const cards = s.index.cards(paper, u.id); const qs = s.index.questions(paper, u.id).length; const done = cards.filter(c => studied.has(c.id)).length;
               const has = cards.length + qs > 0; const open = has && model.unitOpen(paper, u.id);
