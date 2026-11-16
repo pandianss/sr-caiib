@@ -59,11 +59,11 @@ export function Account() {
 
   return (
     <>
-      <div className="section"><h1>Account and pass</h1></div>
+      <div className="section"><h1>Account and pass</h1><p className="support">Sign in to keep a recoverable copy of your progress and to buy or restore the pass. Free study never needs an account.</p></div>
       {s.apiReachable === false && <Banner kind="warn">{s.online ? 'The account service cannot be reached right now.' : 'You are offline.'} Sign-in, purchase and restore need a connection. Study on this device is not affected.</Banner>}
       <PassStatus />
       {s.prefs.account && s.token ? (
-        <section className="section" aria-labelledby="ac"><h2 id="ac">Signed in</h2><p>{s.prefs.account.email}</p>
+        <section className="card" aria-labelledby="ac"><h2 id="ac">Signed in</h2><p>{s.prefs.account.email}</p>
           <p className="support">{s.sync === 'idle' ? 'Progress is synced to this account.' : s.sync === 'pending' ? `${s.pendingSync} action${s.pendingSync === 1 ? '' : 's'} waiting to sync.` : s.sync === 'syncing' ? 'Syncing…' : s.sync === 'error' ? 'Sync could not finish; it will be retried. Nothing is lost on this device.' : ''}</p>
           <div className="row"><Button variant="outlined" onClick={() => void model.syncNow()} disabled={!s.online}>Sync now</Button><Button variant="outlined" disabled={!s.online} onClick={() => void model.restorePurchases().then(setMsg)}>Restore purchases</Button><Button onClick={() => void model.signOut()}>Sign out</Button></div>
           {msg && <Banner>{msg}</Banner>}
@@ -72,8 +72,8 @@ export function Account() {
 
       <section className="section" aria-labelledby="of"><h2 id="of">CAIIB preparation pass</h2>
         {!offer ? <Empty title="Pass details are unavailable">{s.online ? 'The account service could not be reached, so the current offer cannot be shown.' : 'Go online to see the current offer.'}</Empty> : (<>
-          <div className="card">
-            <div className="row between"><h2>{offer.title}</h2><strong style={{ fontSize: '1.375rem' }}>{rupees(offer.amount_minor)}</strong></div>
+          <div className="card offer">
+            <div className="row between"><h2>{offer.title}</h2><strong className="price">{rupees(offer.amount_minor)}</strong></div>
             <dl className="kv"><dt>Price</dt><dd>{rupees(offer.amount_minor)} ({offer.currency}), paid once</dd><dt>Access period</dt><dd>{offer.term_description}</dd><dt>Renewal</dt><dd>Does not renew automatically. Nothing is charged later.</dd>
               <dt>What you get today</dt><dd>{offer.content_availability_description}</dd><dt>Electives</dt><dd>You can change your elective at any time without buying again.</dd>
               <dt>Offline use</dt><dd>Downloaded paid content works offline for up to {s.offers?.offline_lease_days} days between online checks, never beyond the access period.</dd>

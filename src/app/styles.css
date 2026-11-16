@@ -214,3 +214,10 @@ details.more > summary::before { content: "\25B8"; } details.more[open] > summar
 .rating .rate-again:not(:disabled) { background: var(--error-container); color: var(--on-error-container); }
 .rating .rate-easy:not(:disabled) { background: var(--success-container); color: var(--on-success-container); }
 .tabs { scrollbar-width: thin; }
+
+.card.offer { border-top: 0.3125rem solid var(--accent-gold); }
+.price { font-size: 1.5rem; font-variant-numeric: tabular-nums; color: var(--primary); }
+.paper-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr)); gap: var(--space-2); }
+.paper-tile { display: flex; flex-direction: column; gap: 0.125rem; min-height: var(--target); height: 100%; padding: var(--space-3); border: 1px solid var(--outline-variant); border-left: 0.3125rem solid var(--paper-accent, var(--outline)); border-radius: var(--shape-md); background: var(--surface-container-low); color: inherit; text-decoration: none; }
+.paper-tile[aria-current="true"] { background: var(--primary-container); color: var(--on-primary-container); border-color: var(--primary); border-left-color: var(--paper-accent, var(--primary)); }
+.paper-tile[aria-current="true"] .support, .paper-tile[aria-current="true"] .label { color: inherit; }
