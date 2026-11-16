@@ -3,7 +3,9 @@ import { createRoot } from 'react-dom/client';
 import './styles.css';
 import { App } from './App.tsx';
 import { model } from './model.ts';
+import { installNativeBack } from './platform.ts';
 
+installNativeBack();
 void model.boot();
 setInterval(() => { void model.tick(); }, 15_000);
 createRoot(document.getElementById('root')!).render(<StrictMode><App /></StrictMode>);

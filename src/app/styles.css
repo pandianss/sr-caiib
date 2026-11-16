@@ -282,12 +282,12 @@ a { color: var(--primary); }
 
 /* ---- app frame ------------------------------------------------------------------------------------------- */
 .app { min-height: 100dvh; display: flex; flex-direction: column; }
-.appbar { position: static; z-index: 10; display: flex; align-items: center; gap: var(--space-2); padding: var(--space-2) var(--space-3); padding-top: calc(var(--space-2) + env(safe-area-inset-top)); background: var(--surface); border-bottom: 1px solid var(--outline-variant); flex-wrap: wrap; }
+.appbar { position: static; z-index: 10; display: flex; align-items: center; gap: var(--space-2); padding: var(--space-2) var(--space-3); padding-top: calc(var(--space-2) + var(--safe-area-inset-top, env(safe-area-inset-top, 0px))); background: var(--surface); border-bottom: 1px solid var(--outline-variant); flex-wrap: wrap; }
 .appbar .grow { flex: 1 1 8rem; min-width: 0; }
 /* Sticky chrome only when the window is tall relative to the text size, so enlarged text keeps room for content. */
 @media (min-height: 40rem) { .appbar { position: sticky; top: 0; } }
-.main { flex: 1; width: 100%; max-width: 52rem; margin: 0 auto; padding: var(--space-4); padding-bottom: calc(var(--space-6) + 5.5rem + env(safe-area-inset-bottom)); display: flex; flex-direction: column; gap: var(--space-5); }
-.navbar { position: fixed; bottom: 0; left: 0; right: 0; z-index: 10; display: flex; background: var(--surface-container); border-top: 1px solid var(--outline-variant); padding-bottom: env(safe-area-inset-bottom); }
+.main { flex: 1; width: 100%; max-width: 52rem; margin: 0 auto; padding: var(--space-4); padding-bottom: calc(var(--space-6) + 5.5rem + var(--safe-area-inset-bottom, env(safe-area-inset-bottom, 0px))); display: flex; flex-direction: column; gap: var(--space-5); }
+.navbar { position: fixed; bottom: 0; left: 0; right: 0; z-index: 10; display: flex; background: var(--surface-container); border-top: 1px solid var(--outline-variant); padding-bottom: var(--safe-area-inset-bottom, env(safe-area-inset-bottom, 0px)); }
 .navbar a, .rail a { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.125rem; min-height: var(--target); min-width: 48px; padding: var(--space-2) var(--space-1); text-decoration: none; color: var(--on-surface-variant); font-size: 0.75rem; font-weight: 500; text-align: center; }
 .rail a { font-size: 0.75rem; }
 .navbar a .pill, .rail a .pill { display: flex; align-items: center; justify-content: center; width: min(4rem, 90%); height: min(2rem, 9vw); border-radius: var(--shape-full); transition: background var(--motion); }
@@ -364,9 +364,9 @@ button { font: inherit; color: inherit; }
 
 /* ---- overlays --------------------------------------------------------------------------------------------- */
 .scrim { position: fixed; inset: 0; z-index: 30; background: var(--scrim); display: flex; align-items: flex-end; justify-content: center; }
-.sheet { background: var(--surface-container-low); width: 100%; max-width: 40rem; max-height: 90dvh; overflow: auto; border-radius: var(--shape-xl) var(--shape-xl) 0 0; padding: var(--space-5) var(--space-4) calc(var(--space-5) + env(safe-area-inset-bottom)); display: flex; flex-direction: column; gap: var(--space-4); }
+.sheet { background: var(--surface-container-low); width: 100%; max-width: 40rem; max-height: 90dvh; overflow: auto; border-radius: var(--shape-xl) var(--shape-xl) 0 0; padding: var(--space-5) var(--space-4) calc(var(--space-5) + var(--safe-area-inset-bottom, env(safe-area-inset-bottom, 0px))); display: flex; flex-direction: column; gap: var(--space-4); }
 @media (min-width: 40rem) { .scrim { align-items: center; } .sheet { border-radius: var(--shape-xl); } }
-.snackbar { position: fixed; left: var(--space-4); right: var(--space-4); bottom: calc(5rem + env(safe-area-inset-bottom)); z-index: 40; margin: 0 auto; max-width: 32rem; background: var(--on-surface); color: var(--surface); padding: var(--space-3) var(--space-4); border-radius: var(--shape-xs); display: flex; align-items: center; gap: var(--space-3); }
+.snackbar { position: fixed; left: var(--space-4); right: var(--space-4); bottom: calc(5rem + var(--safe-area-inset-bottom, env(safe-area-inset-bottom, 0px))); z-index: 40; margin: 0 auto; max-width: 32rem; background: var(--on-surface); color: var(--surface); padding: var(--space-3) var(--space-4); border-radius: var(--shape-xs); display: flex; align-items: center; gap: var(--space-3); }
 .snackbar .btn { color: var(--surface); min-height: var(--target); }
 
 /* ---- content ---------------------------------------------------------------------------------------------- */
@@ -408,7 +408,7 @@ details.more > summary::before { content: "\25B8"; } details.more[open] > summar
 .feedback { border-radius: var(--shape-lg); padding: var(--space-4); display: flex; flex-direction: column; gap: var(--space-2); }
 .feedback.correct { background: var(--success-container); color: var(--on-success-container); } .feedback.incorrect { background: var(--error-container); color: var(--on-error-container); }
 .actions { display: flex; gap: var(--space-3); flex-wrap: wrap; } .actions .btn { flex: 1 1 9rem; }
-.sticky-actions { background: var(--surface); padding: var(--space-3) 0 calc(var(--space-3) + env(safe-area-inset-bottom)); border-top: 1px solid var(--outline-variant); margin-top: auto; z-index: 5; }
+.sticky-actions { background: var(--surface); padding: var(--space-3) 0 calc(var(--space-3) + var(--safe-area-inset-bottom, env(safe-area-inset-bottom, 0px))); border-top: 1px solid var(--outline-variant); margin-top: auto; z-index: 5; }
 @media (min-height: 40rem) { .sticky-actions { position: sticky; bottom: 0; } }
 .qnav { display: grid; grid-template-columns: repeat(auto-fill, minmax(3rem, 1fr)); gap: var(--space-2); }
 .qnav button { min-height: var(--target); border-radius: var(--shape-sm); border: 1px solid var(--outline); background: var(--surface); cursor: pointer; font-weight: 600; position: relative; }
@@ -491,7 +491,7 @@ h3 { font-size: var(--font-size-title-md); }
 .focused .main > .section { gap: var(--space-5); }
 .focused .appbar { background: var(--surface-container-lowest); }
 .focused .main { padding-top: var(--space-6); }
-.sticky-actions { background: var(--surface); padding: var(--space-4) 0 calc(var(--space-4) + env(safe-area-inset-bottom)); }
+.sticky-actions { background: var(--surface); padding: var(--space-4) 0 calc(var(--space-4) + var(--safe-area-inset-bottom, env(safe-area-inset-bottom, 0px))); }
 .case-scenario .eyebrow { color: var(--secondary); }
 .pane.card { background: var(--surface-container-low); border-top: .25rem solid var(--secondary); }
 .timer { display: inline-flex; align-items: center; gap: var(--space-2); border-radius: var(--shape-full); background: var(--primary-container); color: var(--on-primary-container); padding: var(--space-2) var(--space-3); font-family: var(--mono); }
@@ -526,7 +526,7 @@ h3 { font-size: var(--font-size-title-md); }
 @media (max-width: 30rem) {
   .navbar a { padding-inline: 0; }
   .paper-select { padding-inline: min(var(--space-3), 2vw); gap: min(var(--space-2), 2vw); }
-  .main { padding: min(var(--space-4), 4vw); padding-bottom: calc(7rem + env(safe-area-inset-bottom)); }
+  .main { padding: min(var(--space-4), 4vw); padding-bottom: calc(7rem + var(--safe-area-inset-bottom, env(safe-area-inset-bottom, 0px))); }
   .focused .main { padding-bottom: var(--space-6); }
   .card, .card.hero, .syllabus-module, .pack-inspector { padding: min(var(--space-4), 4vw); }
   details.more > summary { padding-inline: min(var(--space-3), 3vw); }
@@ -539,7 +539,7 @@ h3 { font-size: var(--font-size-title-md); }
 /* At very narrow widths (including doubled text), labels get a full half-row. */
 @media (max-width: 20rem) {
   .navbar { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .main { padding-bottom: calc(10rem + env(safe-area-inset-bottom)); }
+  .main { padding-bottom: calc(10rem + var(--safe-area-inset-bottom, env(safe-area-inset-bottom, 0px))); }
   .focused .main { padding-bottom: var(--space-6); }
 }
 @media (max-width: 40rem) {
@@ -547,3 +547,6 @@ h3 { font-size: var(--font-size-title-md); }
   .kv dd, dl.defs dd { margin-bottom: var(--space-2); }
 }
 @media (prefers-reduced-motion: reduce) { :root { --motion-duration-short: 0ms; --motion-duration-medium: 0ms; --motion-duration-long: 0ms; } }
+
+/* Android 15+ draws edge to edge: screens without an app bar still clear the status bar. */
+.app > .main:first-child { padding-top: calc(var(--space-4) + var(--safe-area-inset-top, env(safe-area-inset-top, 0px))); }

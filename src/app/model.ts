@@ -2,6 +2,7 @@
  * Application state and actions. Every learner action is written to local storage before the in-memory state
  * (and therefore the screen) changes. Network features are optional: free study never depends on them.
  */
+import { PURCHASES_VISIBLE } from './platform.ts';
 import type { ElectivePaperId, LearnerEvent, PaperId, ProductOffer, PurchaseRecord, QuestionItem, SignedOfflineEntitlement, Sm2Rating, Sm2ReviewState, StudyCard } from '../types/contracts.ts';
 import { validateCatalogue } from '../validation/contracts.ts';
 import { indexCatalogue, type CatalogueIndex } from '../core/catalogue.ts';
@@ -451,7 +452,7 @@ export class AppModel {
     return data as T;
   }
   private async afterOnline(): Promise<void> {
-    if (!this.state.online || this.state.phase !== 'ready') return;
+    if (!this.state.online || this.state.phase !== 'ready' || !PURCHASES_VISIBLE) return; // the free Play build has no account service
     try { const k = await this.api<{ keys: PublicJwk[] }>('GET', '/entitlement/keys'); this.keys = k.keys; await this.store.kvPut('entitlement_keys', k.keys); } catch { /* optional service */ }
     if (this.state.token) { await this.refreshEntitlement(); await this.syncNow(); }
   }
