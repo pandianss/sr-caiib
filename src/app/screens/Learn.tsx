@@ -4,6 +4,7 @@ import { cardSeconds } from '../../core/session.ts';
 import { CARD_TYPE_LABEL, CardBody, Sources } from '../content.tsx';
 import { go, useApp } from '../hooks.ts';
 import { model } from '../model.ts';
+import { PURCHASES_VISIBLE } from '../platform.ts';
 import { Banner, Button, Empty, Icon, IconButton, Md, More, Tag } from '../ui.tsx';
 
 function useStudied(): Set<string> {
@@ -35,7 +36,7 @@ export function Learn() {
                 <li key={u.id}><a className="item" href={`#/learn/unit/${encodeURIComponent(u.id)}`}>
                   <span className="grow"><span className="title">{u.title ?? u.id}</span>
                     <span className="meta" style={{ display: 'block' }}>{has ? `${cards.length} card${cards.length === 1 ? '' : 's'} · ${qs} question${qs === 1 ? '' : 's'}${cards.length ? ` · ${done} studied` : ''}` : 'Not yet published'}</span></span>
-                  {has && !open && <Tag kind="info"><Icon name="lock" size={14} /> In the pass</Tag>}
+                  {has && !open && <Tag kind="info"><Icon name="lock" size={14} /> {PURCHASES_VISIBLE ? 'In the pass' : 'Later update'}</Tag>}
                   {has && open && done === cards.length && cards.length > 0 && <Tag kind="ok">✓ Studied</Tag>}
                   <Icon name="chevron" />
                 </a></li>);
@@ -62,9 +63,9 @@ export function UnitScreen({ unitId }: { unitId: string }) {
       {topic?.official_scope_text && <More summary="Official syllabus scope"><p>{topic.official_scope_text}</p><p className="support">Wording from the IIBF syllabus ({topic.locator}). {topic.baseline_issue ?? ''}</p></More>}
       {!has && <Banner>{topic ? topicGap(topic) : 'No lessons or questions have been published for this unit yet.'} This unit is unavailable, not locked: there is nothing to buy here yet.</Banner>}
       {has && !open && (
-        <section className="card" aria-labelledby="lock"><h2 id="lock"><Icon name="lock" size={18} /> This unit is part of the CAIIB pass</h2>
+        <section className="card" aria-labelledby="lock"><h2 id="lock"><Icon name="lock" size={18} /> {PURCHASES_VISIBLE ? 'This unit is part of the CAIIB pass' : 'This unit is not in this version yet'}</h2>
           <p>It has {cards.length} card{cards.length === 1 ? '' : 's'} and {questions.length} question{questions.length === 1 ? '' : 's'}. The free sample units stay open without a pass.</p>
-          <Button variant="filled" onClick={() => { model.setReturnTo(window.location.hash); go('account'); }}>See what the pass includes</Button></section>)}
+          {PURCHASES_VISIBLE ? <Button variant="filled" onClick={() => { model.setReturnTo(window.location.hash); go('account'); }}>See what the pass includes</Button> : <p className="support">It will arrive in a later update of the app.</p>}</section>)}
       {open && (<>
         <div className="actions">
           {cards.length > 0 && <Button variant="filled" onClick={() => void start()}>{resumable ? 'Resume lesson' : cards.every(c => studied.has(c.id)) ? 'Study again' : 'Start lesson'}{cards.length > 0 && !resumable ? ` · about ${minutes} min` : ''}</Button>}
@@ -85,7 +86,7 @@ export function UnitScreen({ unitId }: { unitId: string }) {
 export function ItemScreen({ itemId }: { itemId: string }) {
   const s = useApp(); const item = s.index.item(itemId);
   if (!item || item.item_type === 'question' || item.item_type === 'case_study') return <Empty title="This item is not available" action={<Button variant="filled" href="#/library">Back to Library</Button>}>It may belong to content that is not downloaded on this device.</Empty>;
-  if (!model.unitOpen(item.paper_id, item.unit_id)) return <Empty title="This item is part of the CAIIB pass" action={<Button variant="filled" onClick={() => { model.setReturnTo(window.location.hash); go('account'); }}>See what the pass includes</Button>} />;
+  if (!model.unitOpen(item.paper_id, item.unit_id)) return <Empty title={PURCHASES_VISIBLE ? 'This item is part of the CAIIB pass' : 'This item is not in this version yet'} action={PURCHASES_VISIBLE ? <Button variant="filled" onClick={() => { model.setReturnTo(window.location.hash); go('account'); }}>See what the pass includes</Button> : undefined} />;
   const title = item.title; const marked = model.isBookmarked(item.id);
   return (
     <>

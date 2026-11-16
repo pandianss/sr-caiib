@@ -5,7 +5,7 @@ import reactHooks from 'eslint-plugin-react-hooks';
 export default tseslint.config(
   {
     // Generated output, dependencies, and the files delivered with the original kit (kept byte-identical).
-    ignores: ['dist/**', 'dist-fixtures/**', 'node_modules/**', '.scratch/**', 'caiib-agent-kit/**', 'public/**', 'server/data/**',
+    ignores: ['dist/**', 'android/**', 'capacitor.config.ts', 'dist-fixtures/**', 'node_modules/**', '.scratch/**', 'caiib-agent-kit/**', 'public/**', 'server/data/**',
       'src/types/**', 'src/validation/**', 'src/import/**', 'scripts/import-staging.mjs', 'scripts/validate-pack.mjs', 'scripts/validate-staging.mjs',
       'tests/contracts.test.mjs', 'tests/import-staging.test.mjs', 'tests/types.test.ts', 'visual-map/**'],
   },

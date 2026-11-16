@@ -7,6 +7,7 @@ import { formatDate } from '../../core/time.ts';
 import { CARD_TYPE_LABEL } from '../content.tsx';
 import { go, paperAvailability, useApp } from '../hooks.ts';
 import { model } from '../model.ts';
+import { PURCHASES_VISIBLE } from '../platform.ts';
 import { Banner, Button, Chip, Empty, Icon, More, Sheet, Tabs, Tag } from '../ui.tsx';
 
 type Tab = 'search' | 'formulas' | 'statutes' | 'calculators' | 'bookmarks' | 'downloads';
@@ -110,7 +111,7 @@ function Downloads() {
             {update && dl?.state !== 'downloading' && <Banner kind="warn" action={<Button variant="outlined" onClick={() => void model.installPack(update)}>Update</Button>}>Update available (version {update.pack_version}): {update.change_summary} Unfinished sessions keep the version they started with.</Banner>}
             <div className="row" style={{ marginTop: '0.5rem' }}>
               {!record && installable && dl?.state !== 'downloading' && <Button variant="tonal" onClick={() => void model.installPack(installable)}><Icon name="download" size={18} />Download</Button>}
-              {record && full && record.pack.pack_id !== full.pack_id && (model.entitled(paper) ? <Button variant="tonal" onClick={() => void model.installPack(full)}><Icon name="download" size={18} />Download full paper</Button> : <Button href="#/account">Full paper is part of the pass</Button>)}
+              {record && full && record.pack.pack_id !== full.pack_id && (model.entitled(paper) ? <Button variant="tonal" onClick={() => void model.installPack(full)}><Icon name="download" size={18} />Download full paper</Button> : PURCHASES_VISIBLE ? <Button href="#/account">Full paper is part of the pass</Button> : <span className="support">The full paper arrives in a later update.</span>)}
               {record && <Button variant="danger" onClick={() => setConfirm(paper)}>Remove download</Button>}
             </div>
           </li>);

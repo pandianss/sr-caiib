@@ -2,6 +2,7 @@ import { useEffect, useState, type ReactNode } from 'react';
 import type { ElectivePaperId, PaperId } from '../types/contracts.ts';
 import { ELECTIVE_PAPERS, PAPER_NAMES, isElective } from '../core/catalogue.ts';
 import { FIXTURE_MODE, model, PAPER_ORDER } from './model.ts';
+import { PURCHASES_VISIBLE } from './platform.ts';
 import { go, paperAvailability, useApp, useRoute } from './hooks.ts';
 import { Banner, Button, Chip, Empty, Icon, IconButton, Sheet, Tag } from './ui.tsx';
 import { Today, Performance } from './screens/Home.tsx';
@@ -75,7 +76,7 @@ function Settings() {
       <div className="section"><h2>Elective</h2><div className="chips">{ELECTIVE_PAPERS.map(p => <Chip key={p} selected={s.prefs.selected_elective === p} onClick={() => void model.setElective(p as ElectivePaperId)}>{PAPER_NAMES[p]}</Chip>)}</div></div>
       <div className="section"><h2>Usual session length</h2><div className="chips">{([5, 10] as const).map(m => <Chip key={m} selected={s.prefs.session_minutes === m} onClick={() => void model.setSessionMinutes(m)}>{m} minutes</Chip>)}</div></div>
       <div className="section"><h2>Study data</h2><p className="support">Reviews are scheduled by calendar day in the time zone {s.prefs.time_zone}. Progress is saved on this device{s.prefs.account ? ` and synced to ${s.prefs.account.email}` : '; sign in under Account to keep a recoverable copy'}.</p>
-        <div className="row"><Button variant="outlined" href="#/account">Account and pass</Button><Button variant="outlined" href="#/coverage">Syllabus coverage map</Button></div></div>
+        <div className="row">{PURCHASES_VISIBLE && <Button variant="outlined" href="#/account">Account and pass</Button>}<Button variant="outlined" href="#/coverage">Syllabus coverage map</Button></div></div>
     </>
   );
 }
@@ -99,7 +100,7 @@ function Shell({ route, children }: { route: string[]; children: ReactNode }) {
         <div className="grow"><button type="button" className="paper-select" data-paper={displayedPaper} onClick={() => setSheet(true)} aria-haspopup="dialog" aria-label={`${paperLabel}: ${PAPER_NAMES[displayedPaper]}. Change paper`}>
           <span><small>{paperLabel}</small><strong>{PAPER_NAMES[displayedPaper]}</strong></span><Icon name="expand" /></button></div>
         {!s.online && <Tag kind="warn"><Icon name="offline" size={16} /> Offline</Tag>}
-        <IconButton icon="account" label="Account and pass" href="#/account" />
+        {PURCHASES_VISIBLE && <IconButton icon="account" label="Account and pass" href="#/account" />}
         <IconButton icon="settings" label="Settings" href="#/settings" />
       </header>
       <main className="main" id="main" tabIndex={-1}>

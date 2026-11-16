@@ -4,6 +4,7 @@ import { formatIndian, dec } from '../../core/decimal.ts';
 import { formatDate, formatDateTime } from '../../core/time.ts';
 import { go, useApp } from '../hooks.ts';
 import { model } from '../model.ts';
+import { PURCHASES_VISIBLE } from '../platform.ts';
 import { Banner, Button, Empty, More, Sheet, Tag } from '../ui.tsx';
 
 declare global { interface Window { Razorpay?: new (options: Record<string, unknown>) => { open(): void } } }
@@ -43,7 +44,7 @@ function PassStatus() {
   return null;
 }
 
-export function Account() {
+function AccountFull() {
   const s = useApp(); const [refundId, setRefundId] = useState<string | null>(null); const [msg, setMsg] = useState<string | null>(null);
   useEffect(() => { void model.loadOffers(); if (s.token) { void model.refreshEntitlement(); void model.hasPendingOrder().then(p => { if (p && model.state.checkout.step === 'idle') void model.recheckPendingOrder(); }); } }, [s.token]);
   const offer = s.offers?.offers[0]; const c = s.checkout; const active = s.entitlement.state === 'valid';
@@ -110,4 +111,9 @@ export function Account() {
       <div className="row"><Button onClick={() => go('today')}>Back to Today</Button></div>
     </>
   );
+}
+
+export function Account() {
+  if (!PURCHASES_VISIBLE) return <><div className="section"><h1>Account</h1></div><section className="card"><h2>Everything here is free</h2><p>This version of the app has no sign-in and no purchases. Your progress is saved on this device. Units marked "Later update" will arrive in an update of the app.</p></section><div className="row"><Button onClick={() => go('today')}>Back to Today</Button></div></>;
+  return <AccountFull />;
 }
