@@ -1,4 +1,4 @@
-package app.caiibstudy.learn;
+package in.superrecall.caiib;
 
 import com.getcapacitor.BridgeActivity;
 

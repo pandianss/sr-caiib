@@ -16,8 +16,7 @@ ship inside the app and later content arrives with app updates.
 
 ## Repository state
 
-- `capacitor.config.ts`: `appId` is a PLACEHOLDER (`app.caiibstudy.learn`). Choose the permanent package name
-  before the first upload; it cannot change afterwards.
+- `capacitor.config.ts`: `appId` is `in.superrecall.caiib` (chosen by the owner; permanent once published).
 - `android/` is the generated Gradle project. Build outputs, `local.properties` and keystores are git-ignored.
 - `npm run android:sync` builds the web app and copies it into the Android project.
 

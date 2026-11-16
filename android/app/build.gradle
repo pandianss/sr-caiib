@@ -6,10 +6,10 @@ def keystoreFile = rootProject.file('keystore.properties')
 if (keystoreFile.exists()) { keystoreFile.withInputStream { keystoreProps.load(it) } }
 
 android {
-    namespace = "app.caiibstudy.learn"
+    namespace = "in.superrecall.caiib"
     compileSdk = rootProject.ext.compileSdkVersion
     defaultConfig {
-        applicationId "app.caiibstudy.learn"
+        applicationId "in.superrecall.caiib"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

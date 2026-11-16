@@ -1,9 +1,8 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
-// PLACEHOLDER application id: replace with the permanent Play package name before the first upload.
-// It cannot be changed after the app is published on Google Play.
+// Permanent Play application id (chosen by the owner, 16 Nov 2026). It cannot be changed after publishing.
 const config: CapacitorConfig = {
-  appId: 'app.caiibstudy.learn',
+  appId: 'in.superrecall.caiib',
   appName: 'CAIIB Study',
   webDir: 'dist',
   android: { allowMixedContent: false },
