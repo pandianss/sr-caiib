@@ -52,7 +52,7 @@ export function Practice() {
 }
 
 function Scenario({ cs }: { cs: CaseStudyItem }) {
-  return (<div className="section"><h2>{cs.title}</h2><Md text={cs.scenario_narrative_md} className="lesson" />{cs.reference_tables_md.map((t, i) => <Md key={i} text={t} />)}</div>);
+  return (<div className="section case-scenario"><span className="eyebrow">Case study · reference scenario</span><h2>{cs.title}</h2><Md text={cs.scenario_narrative_md} className="lesson" />{cs.reference_tables_md.map((t, i) => <Md key={i} text={t} />)}</div>);
 }
 
 function Frame({ a, right, children, wide }: { a: AttemptRecord; right?: React.ReactNode; children: React.ReactNode; wide?: boolean }) {

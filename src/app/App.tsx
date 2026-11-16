@@ -19,9 +19,9 @@ function PaperSheet({ onClose, coveragePaper }: { onClose: () => void; coverageP
   const others = ELECTIVE_PAPERS.filter(p => p !== s.prefs.selected_elective);
   return (
     <Sheet title="Choose a paper" onClose={onClose}>
-      <ul className="list" aria-label={coveragePaper ? 'All syllabus papers' : 'Your papers'}>
+      <ul className="list paper-options" aria-label={coveragePaper ? 'All syllabus papers' : 'Your papers'}>
         {papers.map(p => { const a = paperAvailability(s, p); return (
-          <li key={p}><button type="button" className="item" aria-current={p === selected ? 'true' : undefined} onClick={() => { if (coveragePaper) go(`coverage/${p}`); else void model.setPaper(p); onClose(); }}>
+          <li key={p}><button type="button" className="item paper-chip" data-paper={p} aria-pressed={p === selected} onClick={() => { if (coveragePaper) go(`coverage/${p}`); else void model.setPaper(p); onClose(); }}>
             <span className="grow"><span className="title">{PAPER_NAMES[p]} <span className="meta">({p})</span></span><span className="meta" style={{ display: 'block' }}>{isElective(p) ? p === s.prefs.selected_elective ? 'Your elective' : 'Elective' : 'Compulsory'}</span></span>
             <Tag kind={a.kind}>{a.label}</Tag>{p === selected && <Icon name="check" />}
           </button></li>); })}

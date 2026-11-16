@@ -14,7 +14,7 @@ const RATINGS: { rating: Sm2Rating; label: string; hint: string }[] = [
 
 function Frame({ title, subtitle, onExit, children }: { title: string; subtitle: string; onExit: () => void; children: React.ReactNode }) {
   return (
-    <div className="app focused">
+    <div className="app focused study-player">
       <a className="skip" href="#main">Skip to content</a>
       <header className="appbar"><IconButton icon="close" label="Exit session. Your progress is saved." onClick={onExit} /><div className="grow"><strong>{title}</strong><div className="support">{subtitle}</div></div></header>
       <main className="main" id="main" tabIndex={-1}>{children}</main>

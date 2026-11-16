@@ -69,7 +69,7 @@ export function Coverage({ paper: routePaper }: { paper?: PaperId }) {
         <dl className="kv"><dt>Topics listed so far</dt><dd>{overall.topics_listed}</dd><dt>Published</dt><dd>{overall.topic_counts.published}</dd><dt>Reviewed</dt><dd>{overall.topic_counts.reviewed}</dd><dt>Lesson drafted</dt><dd>{overall.topic_counts.drafted}</dd></dl>
       </section>
       <section className="section" aria-labelledby="pp"><h2 id="pp">Papers</h2>
-        <ul className="paper-grid">{papers.map(p => { const cur = p.paper_id === paper; return (
+        <ul className="paper-grid coverage-papers" aria-label="Paper coverage">{papers.map(p => { const cur = p.paper_id === paper; return (
           <li key={p.paper_id}><a className="paper-tile" data-paper={p.paper_id} aria-current={cur ? 'true' : undefined} href={`#/coverage/${p.paper_id}`}>
             <strong>{p.paper_id}</strong><span className="support">{PAPER_NAMES[p.paper_id]}</span>
             <span className="label tabular">{p.topic_counts.published}{p.topic_denominator ? ` of ${p.topic_denominator}` : ` of ${p.topics_listed} listed`} published</span></a></li>); })}</ul>

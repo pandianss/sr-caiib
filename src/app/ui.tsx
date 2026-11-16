@@ -46,6 +46,28 @@ export function IconButton({ icon, label, onClick, pressed, href }: { icon: stri
 export function Chip({ children, selected, onClick }: { children: ReactNode; selected: boolean; onClick: () => void }) {
   return <button type="button" className="chip" aria-pressed={selected} onClick={onClick}>{selected && <Icon name="check" size={18} />}{children}</button>;
 }
+
+/** Presentation only: the caller supplies feedback after explicit submission. */
+export function McqOption({ name, value, selected, state, onSelect, children, explanation }: {
+  name: string; value: string; selected: boolean;
+  state: 'resting' | 'active_selected' | 'verified_correct' | 'examiner_trap';
+  onSelect: () => void; children: ReactNode; explanation?: ReactNode;
+}) {
+  return <label className="option" data-state={state}>
+    <input type="radio" name={name} value={value} checked={selected} onChange={onSelect} />
+    <span className="body"><span className="option-heading"><strong className="option-key">{value}</strong><span>{children}</span></span>
+      {explanation && <span className="why">{explanation}</span>}</span>
+  </label>;
+}
+
+/** Counts published cards studied, never an inferred mastery score. */
+export function ProgressRing({ done, total, label }: { done: number; total: number; label: string }) {
+  const percent = total > 0 ? Math.min(100, Math.max(0, 100 * done / total)) : 0;
+  return <span className="progress-ring" role="img" aria-label={`${label}: ${done} of ${total} published cards studied`}>
+    <svg viewBox="0 0 40 40" aria-hidden="true"><circle className="ring-track" cx="20" cy="20" r="16" /><circle className="ring-value" cx="20" cy="20" r="16" pathLength="100" strokeDasharray={`${percent} 100`} /></svg>
+    <strong aria-hidden="true">{total ? `${Math.round(percent)}%` : '—'}</strong>
+  </span>;
+}
 export function Tabs<T extends string>({ tabs, value, onChange, label }: { tabs: { id: T; label: string }[]; value: T; onChange: (v: T) => void; label: string }) {
   const refs = useRef<(HTMLButtonElement | null)[]>([]);
   const move = (i: number, d: number) => { const n = (i + d + tabs.length) % tabs.length; onChange(tabs[n]!.id); refs.current[n]?.focus(); };

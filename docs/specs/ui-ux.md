@@ -106,3 +106,14 @@ Requirements:
 Define loading, empty, no-results, offline, download-in-progress, download-failed, update-available, sync-pending, and storage-error states. Each state must explain what happened and offer an appropriate next action without discarding work.
 
 ---
+
+
+## Stitch implementation mapping (16 November 2026)
+
+Use `stitch/css_token_specification_sheet.md` as the canonical palette/type/geometry source; the older `DESIGN.md` has differing palette values. Expose `--md-sys-color-*` and `--bank-color-*` roles in vanilla CSS, with existing application variables mapped to them in both themes. Use local font fallbacks; do not require runtime network font delivery. Banking numerals use tabular figures and slashed-zero OpenType features throughout the app.
+
+Translate the component kit into the existing application rather than adding a CSS framework, changing routes, or importing example banking rules. Preserve Today / Learn / Practice / Library. The existing paper sheet contains selected-state paper chips; coverage paper links navigate the map independently of the active study paper. MCQs retain native radio semantics: resting → active_selected before submission; verified_correct and examiner_trap are feedback states supplied only after submission. Static status badges are labels; interactive buttons/chips/options keep at least 48px targets.
+
+Today module rings use completed-lesson events for the active learner and exam session divided by available published cards in that module. They are labelled study coverage, not assessed mastery. Account reuses Library's offline pack inspector and existing recoverable identity/restore actions. Native free-only distribution continues to disclose cloud restore as unavailable. At narrow widths, reduce nested insets, wrap metadata, and collapse key/value lists; at 320px use two navigation rows so enlarged labels retain room. Tables/equations may scroll within their own labelled regions.
+
+Scoped acceptance evidence: `../qa/stitch-2026-11-16/README.md`. This visual implementation does not establish financial accuracy, provider sandbox verification, or full product/release completion.

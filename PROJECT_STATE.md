@@ -1,4 +1,14 @@
 # Project execution state
+## Stitch frontend implementation — 16 November 2026
+
+Latest user scope is the Google Stitch frontend design system. Implemented canonical light/dark tokens, banking numeric typography, native four-state MCQs, Today module rings, structured Learn/coverage layouts, paper chips in the existing selector sheet, case-study reading surfaces, and Account offline-pack/cloud-restore cards. Download management reuses the existing Library component. No grading, model, storage, entitlement, curriculum or source-ledger data changed. Earlier BRBL authoring work is checkpointed below and superseded as the active task by this frontend request.
+
+Acceptance evidence and limitations: `docs/qa/stitch-2026-11-16/README.md`. Frontend verification includes typecheck/lint/692 tests, production build with three published packs and zero fixtures, manual Chromium layouts at 320/390/1280px, 200% root text, explicit-submit/keyboard/reload checks on isolated synthetic content, and a production fixture lesson resumed and advanced with its preview server stopped. These checks do not certify all devices or a full screen-reader/WCAG audit. Existing content, payment-provider and live-launch gates remain separate.
+
+Design decision: the canonical CSS token sheet governs role values where the older overview differs. The kit is translated to vanilla CSS and existing native controls; its illustrative formulas, regulatory examples and five-tab navigation do not change product behaviour. Fonts use offline system fallbacks when Inter/JetBrains Mono are unavailable; no remote font or CSS dependency was added. Module rings label published cards studied, not mastery or pass readiness.
+
+Delivery dimensions: requested frontend implementation **passed**; full-product curriculum **pending independent review/incomplete**; release readiness **blocked by existing project gates**; live launch **pending**. No publication, payment activation or deployment was performed.
+
 
 ## Current scope — BRBL authoring only; Antigravity handles review
 
@@ -115,6 +125,7 @@ synthetic fixtures), **A** = `scripts/ui-audit.js` measured on the rendered DOM.
 
 | Area | Status | Evidence | Remaining |
 | --- | --- | --- | --- |
+| Stitch frontend design system | passed for scoped desktop Chromium checks | `docs/qa/stitch-2026-11-16/README.md`, command logs, role contrast and native screenshots; four MCQ states, 48px controls, responsive/200% text, reload and stopped-server persistence | Full device/screen-reader audit and wider project release gates remain |
 | Paper isolation | passed | T `storage-session` "paper isolation"; B paper switch BFM/CB | — |
 | Elective changes | passed (logic) | B elective chips keep history; unfinished session in another paper shown on Today with Resume | Not re-tested with real packs |
 | Coverage ledger | passed for current inventory | Build reconciles 276 official topics in 44 modules/appendices; BRBL 64 units have 312 editorial objectives and 1,430 draft items, with exact batch/item mappings | Mechanical presence is not independent depth approval; BRBL unpublished |

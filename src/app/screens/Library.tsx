@@ -23,7 +23,7 @@ export function Library({ tab }: { tab?: string }) {
       <Tabs tabs={TABS} value={current} onChange={t => go(`library/${t}`)} label="Library sections" />
       <div role="tabpanel" aria-label={TABS.find(t => t.id === current)?.label} className="section">
         {current === 'search' && <Search />}{current === 'formulas' && <CardList type="formula" />}{current === 'statutes' && <CardList type="statute" />}
-        {current === 'calculators' && <Calculators />}{current === 'bookmarks' && <Bookmarks />}{current === 'downloads' && <Downloads />}
+        {current === 'calculators' && <Calculators />}{current === 'bookmarks' && <Bookmarks />}{current === 'downloads' && <OfflinePackInspector />}
       </div>
     </>
   );
@@ -92,18 +92,18 @@ function Bookmarks() {
   return <>{mine.length > 0 ? <><h2>{PAPER_NAMES[paper]}</h2>{list(mine)}</> : <p className="support">No bookmarks in {PAPER_NAMES[paper]}.</p>}{other.length > 0 && <><h2>Other papers</h2>{list(other)}</>}</>;
 }
 
-function Downloads() {
+export function OfflinePackInspector() {
   const s = useApp(); const [confirm, setConfirm] = useState<PaperId | null>(null); const [usage, setUsage] = useState<string | null>(null);
   useEffect(() => { void navigator.storage?.estimate?.().then(e => { if (e.usage !== undefined && e.quota) setUsage(`${(e.usage / 1_048_576).toFixed(1)} MB used of about ${(e.quota / 1_048_576).toFixed(0)} MB available to this app`); }).catch(() => {}); }, [s.allRecords.length]);
   return (
     <>
       <p className="support">Downloaded content and the app itself work without a connection. Papers that are not downloaded, or not yet published, are not available offline.{usage ? ` ${usage}.` : ''}</p>
-      <ul className="list">{model.studyPapers().map(paper => {
+      <ul className="list pack-list">{model.studyPapers().map(paper => {
         const record = s.index.packFor(paper); const entries = model.entryFor(paper); const dl = s.downloads[paper]; const update = s.updates.find(u => u.paper_id === paper);
         const installable = entries.find(e => e.kind === 'fixture' || e.access === 'free') ?? entries[0]; const a = paperAvailability(s, paper);
         const full = entries.find(e => e.kind === 'published' && e.access === 'full');
         return (
-          <li key={paper} style={{ padding: '0.75rem 0' }}>
+          <li key={paper}>
             <div className="row between"><div className="grow"><strong>{PAPER_NAMES[paper]}</strong>
               <div className="support">{record ? `Version ${record.pack.pack_version} · ${record.pack.items.filter(i => i.item_type === 'card').length} cards, ${record.pack.items.filter(i => i.item_type === 'question').length} questions · installed ${formatDate(record.installed_at)}` : entries.length ? 'Published but not downloaded on this device.' : 'No content has been published for this paper yet.'}</div></div><Tag kind={a.kind}>{a.label}</Tag></div>
             {dl?.state === 'downloading' && <Banner>Downloading and checking the content… Keep the app open.</Banner>}

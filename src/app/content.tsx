@@ -3,7 +3,7 @@ import { useId } from 'react';
 import type { ContentItem, QuestionItem, StudyCard, WorkedStep } from '../types/contracts.ts';
 import { formatDate } from '../core/time.ts';
 import { model } from './model.ts';
-import { Formula, Icon, Md, More, Tag } from './ui.tsx';
+import { Formula, Icon, McqOption, Md, More, Tag } from './ui.tsx';
 
 export const CARD_TYPE_LABEL: Record<StudyCard['card_type'], string> = { concept: 'Concept', formula: 'Formula', statute: 'Statute or rule', worked_example: 'Worked example' };
 
@@ -77,13 +77,12 @@ export function QuestionView({ q, response, onResponse, disabled, feedback, erro
           <legend className="sr-only">Answer options</legend>
           {q.options.map(o => {
             const chosen = response === o.option_id; const isCorrect = o.option_id === q.correct_option_id;
-            const cls = feedback ? (isCorrect ? 'correct' : chosen ? 'incorrect' : '') : '';
+            const state = feedback ? (isCorrect ? 'verified_correct' : chosen ? 'examiner_trap' : 'resting') : chosen ? 'active_selected' : 'resting';
             return (
-              <label key={o.option_id} className={`option ${cls}`}>
-                <input type="radio" name={id} value={o.option_id} checked={chosen} onChange={() => onResponse(o.option_id)} />
-                <span className="body"><span><strong>{o.option_id}.</strong> {o.text_md}</span>
-                  {feedback && <span className="why" style={{ display: 'block' }}><span className="mark">{isCorrect ? '✓ Correct answer' : chosen ? '✗ Your answer' : 'Not correct'}{chosen && isCorrect ? ' (your answer)' : ''}.</span> {o.explanation_md}</span>}</span>
-              </label>);
+              <McqOption key={o.option_id} name={id} value={o.option_id} selected={chosen} state={state} onSelect={() => onResponse(o.option_id)}
+                explanation={feedback ? <><span className="mark">{isCorrect ? '✓ Correct answer' : chosen ? '✗ Your answer' : 'Not correct'}{chosen && isCorrect ? ' (your answer)' : ''}.</span> {o.explanation_md}</> : undefined}>
+                {o.text_md}
+              </McqOption>);
           })}
         </fieldset>
       ) : (

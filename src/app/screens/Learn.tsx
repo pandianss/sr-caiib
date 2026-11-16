@@ -26,8 +26,8 @@ export function Learn() {
         const units = cat!.unitsOf(m.id);
         const mCards = units.flatMap(u => s.index.cards(paper, u.id)); const mDone = mCards.filter(c => studied.has(c.id)).length;
         return (
-          <section className="section" key={m.id} aria-labelledby={`m-${m.id}`}>
-            <h2 id={`m-${m.id}`}>{m.title ?? m.id}</h2>
+          <section className="section syllabus-module" key={m.id} id={`module-${m.id}`} aria-labelledby={`m-${m.id}`}>
+            <div className="row between"><h2 id={`m-${m.id}`}>{m.title ?? m.id}</h2><Tag>{units.length} units</Tag></div>
             {mCards.length > 0 && <div className="mod-progress"><div className="progress" role="progressbar" aria-valuemin={0} aria-valuemax={mCards.length} aria-valuenow={mDone} aria-label={`${m.title ?? m.id}: ${mDone} of ${mCards.length} cards studied`}><span style={{ width: `${Math.round(100 * mDone / mCards.length)}%` }} /></div><span className="label tabular">{mDone} of {mCards.length} cards studied</span></div>}
             <ul className="list">{units.map(u => {
               const cards = s.index.cards(paper, u.id); const qs = s.index.questions(paper, u.id).length; const done = cards.filter(c => studied.has(c.id)).length;

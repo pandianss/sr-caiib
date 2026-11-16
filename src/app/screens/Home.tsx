@@ -3,7 +3,7 @@ import { DEFAULT_EVIDENCE_CONFIG } from '../../core/evidence.ts';
 import { formatDate } from '../../core/time.ts';
 import { go, useApp } from '../hooks.ts';
 import { model } from '../model.ts';
-import { Banner, Button, Empty, More, Tag, minutesLabel } from '../ui.tsx';
+import { Banner, Button, Empty, Icon, More, ProgressRing, Tag, minutesLabel } from '../ui.tsx';
 
 const pct = (n: number | null): string => (n === null ? '—' : `${Math.round(n)}%`);
 
@@ -11,6 +11,8 @@ export function Today() {
   const s = useApp(); const paper = s.prefs.active_paper; const rec = model.recommendation(); const record = s.index.packFor(paper);
   const due = model.due(); const elsewhere = [...s.attempts.filter(a => a.attempt.status === 'active' && a.attempt.paper_id !== paper).map(a => ({ id: a.attempt.attempt_id, kind: 'attempt' as const, title: a.title, paper: a.attempt.paper_id })), ...s.sessions.filter(x => x.status === 'active' && x.paper_id !== paper).map(x => ({ id: x.session_id, kind: 'session' as const, title: x.title, paper: x.paper_id }))];
   const r = model.readiness(); const studied = r.snapshot.completed_objectives;
+  const cat = model.catalogueFor(paper);
+  const studiedCards = new Set(s.events.filter(e => e.event_type === 'lesson_completed' && e.learner_id === s.prefs.learner_id && e.exam_context_id === s.prefs.exam_context_id).map(e => e.item_id));
   const run = async () => {
     let id: string | null = null;
     if (rec.kind === 'resume_attempt' && rec.ref) return go(`attempt/${rec.ref}`);
@@ -30,11 +32,11 @@ export function Today() {
         <Empty title={rec.title} action={<div className="actions"><Button variant="filled" href="#/coverage">See the coverage map</Button></div>}>{record ? rec.reason : `Lessons and questions for ${PAPER_NAMES[paper]} have not been published yet. Nothing is hidden behind payment here: the content does not exist yet. Use the paper selector to choose another paper.`}</Empty>
       ) : (
         <section className="card primary hero" data-paper={paper} aria-labelledby="rec-title">
-          <span className="label">{rec.kind.startsWith('resume') ? 'Continue where you stopped' : 'Recommended next'}</span>
+          <div className="row between"><span className="eyebrow">{rec.kind.startsWith('resume') ? 'Continue where you stopped' : rec.kind === 'reviews' ? 'Your revision, ready' : 'Recommended next'}</span><Icon name={rec.kind === 'reviews' ? 'clock' : 'learn'} /></div>
           <h1 id="rec-title">{rec.title}</h1>
           <p>{rec.reason}</p>
           <p className="label">{minutesLabel(rec.minutes)}{rec.minutes !== null ? ' (estimate)' : ''}</p>
-          <Button variant="filled" block onClick={() => void run()}>{rec.kind.startsWith('resume') ? 'Resume' : 'Start'}</Button>
+          <Button variant="filled" block onClick={() => void run()}>{rec.kind.startsWith('resume') ? 'Resume' : 'Start'}<Icon name="chevron" size={20} /></Button>
         </section>
       )}
       {record && rec.kind !== 'none' && (
@@ -43,6 +45,20 @@ export function Today() {
           <p className="support">Due reviews first, then objectives you missed, then new cards, sized to fit the time. You can stop early; progress is saved after every step.</p>
           <div className="actions"><Button variant="tonal" onClick={() => void preset(5)}>5 minutes</Button><Button variant="tonal" onClick={() => void preset(10)}>10 minutes</Button></div>
                   </section>
+      )}
+      {record && (
+        <section className="section" aria-labelledby="module-progress">
+          <div className="row between"><h2 id="module-progress">Your study by module</h2><Button href="#/learn">Continue learning <Icon name="chevron" size={18} /></Button></div>
+          <p className="support">Published cards studied in this exam session. Study progress is separate from assessed accuracy.</p>
+          <div className="module-grid">{cat?.modulesOf(paper).map(m => {
+            const cards = cat.unitsOf(m.id).flatMap(u => s.index.cards(paper, u.id));
+            const done = cards.filter(c => studiedCards.has(c.id)).length;
+            return <a className="module-card" href="#/learn" key={m.id}>
+              <ProgressRing done={done} total={cards.length} label={m.title ?? m.id} />
+              <span className="grow"><strong>{m.title ?? m.id}</strong><span className="support">{cards.length ? `${done} of ${cards.length} published cards studied` : 'No cards published yet'}</span></span><Icon name="chevron" size={20} />
+            </a>;
+          })}</div>
+        </section>
       )}
       {record && (
         <section className="section" aria-labelledby="prog">

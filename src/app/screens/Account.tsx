@@ -4,6 +4,7 @@ import { formatIndian, dec } from '../../core/decimal.ts';
 import { formatDate, formatDateTime } from '../../core/time.ts';
 import { go, useApp } from '../hooks.ts';
 import { model } from '../model.ts';
+import { OfflinePackInspector } from './Library.tsx';
 import { PURCHASES_VISIBLE } from '../platform.ts';
 import { Banner, Button, Empty, More, Sheet, Tag } from '../ui.tsx';
 
@@ -20,7 +21,7 @@ function SignIn() {
   const request = async () => { setBusy(true); const e = await model.requestCode(email); setBusy(false); setError(e); if (!e) { setSent(true); setDevCode(await model.devLastCode(email.trim().toLowerCase())); } };
   const verify = async () => { setBusy(true); const e = await model.verifyCode(email, code); setBusy(false); setError(e); };
   return (
-    <section className="card" aria-labelledby="si"><h2 id="si">Sign in or create an account</h2>
+    <section className="card cloud-restore" aria-labelledby="si"><span className="eyebrow">Cloud restore</span><h2 id="si">Sign in or create an account</h2>
       <p className="support">An account is needed only to buy or restore the pass and to keep a recoverable copy of your progress. We email you a one-time code; there is no password. Your study history on this device is kept and attached to the account.</p>
       <form className="section" onSubmit={e => { e.preventDefault(); void (sent ? verify() : request()); }} noValidate>
         <div className="field"><label htmlFor="em">Email address</label><div className="input-row"><input id="em" className="input" type="email" autoComplete="email" value={email} disabled={sent} onChange={e => setEmail(e.target.value)} /></div></div>
@@ -62,9 +63,10 @@ function AccountFull() {
     <>
       <div className="section"><h1>Account and pass</h1><p className="support">Sign in to keep a recoverable copy of your progress and to buy or restore the pass. Free study never needs an account.</p></div>
       {s.apiReachable === false && <Banner kind="warn">{s.online ? 'The account service cannot be reached right now.' : 'You are offline.'} Sign-in, purchase and restore need a connection. Study on this device is not affected.</Banner>}
+      <section className="card pack-inspector" aria-labelledby="offline-packs"><div className="row between"><h2 id="offline-packs">Offline packs</h2><Tag kind={s.online ? 'ok' : 'warn'}>{s.online ? 'Online' : 'Offline'}</Tag></div><OfflinePackInspector /></section>
       <PassStatus />
       {s.prefs.account && s.token ? (
-        <section className="card" aria-labelledby="ac"><h2 id="ac">Signed in</h2><p>{s.prefs.account.email}</p>
+        <section className="card cloud-restore" aria-labelledby="ac"><span className="eyebrow">Cloud restore</span><h2 id="ac">Signed in</h2><p>{s.prefs.account.email}</p>
           <p className="support">{s.sync === 'idle' ? 'Progress is synced to this account.' : s.sync === 'pending' ? `${s.pendingSync} action${s.pendingSync === 1 ? '' : 's'} waiting to sync.` : s.sync === 'syncing' ? 'Syncing…' : s.sync === 'error' ? 'Sync could not finish; it will be retried. Nothing is lost on this device.' : ''}</p>
           <div className="row"><Button variant="outlined" onClick={() => void model.syncNow()} disabled={!s.online}>Sync now</Button><Button variant="outlined" disabled={!s.online} onClick={() => void model.restorePurchases().then(setMsg)}>Restore purchases</Button><Button onClick={() => void model.signOut()}>Sign out</Button></div>
           {msg && <Banner>{msg}</Banner>}
@@ -114,6 +116,6 @@ function AccountFull() {
 }
 
 export function Account() {
-  if (!PURCHASES_VISIBLE) return <><div className="section"><h1>Account</h1></div><section className="card"><h2>Everything here is free</h2><p>This version of the app has no sign-in and no purchases. Your progress is saved on this device. Units marked "Later update" will arrive in an update of the app.</p></section><div className="row"><Button onClick={() => go('today')}>Back to Today</Button></div></>;
+  if (!PURCHASES_VISIBLE) return <><div className="section"><h1>Account</h1></div><section className="card"><h2>Everything here is free</h2><p>This version of the app has no sign-in and no purchases. Your progress is saved on this device. Units marked "Later update" will arrive in an update of the app.</p></section><section className="card pack-inspector"><h2>Offline packs</h2><OfflinePackInspector /></section><section className="card cloud-restore"><span className="eyebrow">Cloud restore</span><h2>Study saved on this device</h2><p className="support">Cloud restore is not available in this version. Your downloaded lessons and saved progress work offline on this device.</p></section><div className="row"><Button onClick={() => go('today')}>Back to Today</Button></div></>;
   return <AccountFull />;
 }
