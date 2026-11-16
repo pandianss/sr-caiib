@@ -1,0 +1,684 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-B-U07-B002",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL B U07: Creation/Registration and Satisfaction of Charges — Separate creation, filing, permitted late registration and chargeholder application",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04",
+      "COMPANIES_ACT_INDIACODE_20260901"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.216–218; PDF page = printed page + 19",
+        "statement": "Courseware distinguishes initial registration, historical/newer late-filing regimes, certificates and chargeholder applications. Form/fee labels require reconciliation against current rules.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+        "locator": "sections 77–78, PDF pp.64–65",
+        "statement": "Section 77 has an initial 30-day registration duty and conditional late-registration provisos distinguishing creation regimes. For the stated later regime, the text describes 60 days from creation and then a further 60 days on application and prescribed fees, not automatic approval or a 300-day route for every charge. Section 78 provides the qualified chargeholder application route and fee recovery.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "draft_id": "D001",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Creation, submission and registration are different events",
+          "core_explanation_md": "Keep the signed instrument, creation facts, application, actual registration and certificate as distinct evidence. The file must identify the company, chargeholder, secured assets and scope of the charge, with the prescribed particulars and instrument where applicable. Submitting a form does not by itself prove that the Registrar registered the charge or issued its certificate.\n\nFor the duty under section 77, the text starts with thirty days from creation. Late-registration routes are conditional and version-specific. A bank should diarise the applicable filing obligation and retain the actual result rather than assume an application receipt completes every security requirement. This draft is not a filing calendar for a live transaction.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "What evidence is still needed after an application receipt?",
+            "expected_takeaway": "The actual registration result and certificate, with the applicable legal and filing requirements."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Do not add every extension to every new charge",
+          "core_explanation_md": "The inspected section 77 provisos distinguish charges by their creation regime. Its later-charge route describes a period measured from creation and a further conditional period, with application and prescribed fees. It does not give an automatic extension or make the older three-hundred-day route available to every new charge.\n\nThe courseware own tables distinguish historical regimes, while its earlier unit contains a broader summary. Use the controlling provision and rules applicable at the exam cutoff, not whichever summary offers more time. The retained Act is consolidated after cutoff, so exact form versions, fees, transitional conditions and calendar treatment require independent verification before release.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does a conditional late-registration route amount to automatic acceptance of a late filing?",
+            "expected_takeaway": "No. The applicable regime, application, fee and other conditions still matter."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "The chargeholder has a separate statutory application route",
+          "core_explanation_md": "Section 78 addresses the specified company failure to register and permits an application by the person in whose favour the charge was created. The Registrar process includes the company opportunity stated in the provision. The chargeholder route is therefore different from pretending that the company filed on time.\n\nWhere registration is effected on that application, the section permits the stated fees or additional fees to be recovered from the company. Record who applied, under which provision, the notices and actual outcome. Do not infer either that only the company can ever initiate registration or that the chargeholder can bypass every condition.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Why should the file record who made the registration application?",
+            "expected_takeaway": "The chargeholder statutory route has its own trigger, process and fee-recovery consequences."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A file treats the section 77 later-charge late-registration route as automatic permission to wait, without application or prescribed fees. Which distinction is missing?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The initial duty and the conditional, creation-regime-specific late-registration route",
+              "explanation_md": "The provisos do not remove the initial duty or create automatic late acceptance."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Every charge always has the historical three-hundred-day route",
+              "explanation_md": "The text distinguishes creation regimes and conditions rather than supplying that universal route."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The certificate exists as soon as the security instrument is signed",
+              "explanation_md": "Execution does not itself establish registration and certificate issue."
+            },
+            {
+              "option_id": "D",
+              "text_md": "No chargeholder can ever apply when the company fails",
+              "explanation_md": "Section 78 provides a qualified chargeholder application route."
+            }
+          ],
+          "correct_explanation_md": "The provisos do not remove the initial duty or create automatic late acceptance."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A company has failed to register in the circumstances covered by section 78. The lender says it has no possible application route because it is the chargeholder. What should it examine?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Whether a private account entry can replace the Registrar process",
+              "explanation_md": "An internal entry does not complete the statutory registration process."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Whether all company defaults extinguish the security agreement immediately",
+              "explanation_md": "The provision addresses a registration route rather than such universal extinguishment."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The section 78 chargeholder application, company-notice process and fee-recovery rule",
+              "explanation_md": "The statute expressly recognises this qualified route."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Whether the facility interest rate alone permits bypassing every filing condition",
+              "explanation_md": "Pricing cannot replace statutory procedure."
+            }
+          ],
+          "correct_explanation_md": "The statute expressly recognises this qualified route."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D006",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "An application receipt is placed in the security file and marked as conclusive evidence that the registration certificate has been issued. What is the evidence error?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The receipt proves that the underlying debt is never repayable",
+              "explanation_md": "A filing receipt does not determine repayment liability."
+            },
+            {
+              "option_id": "B",
+              "text_md": "A certificate cannot ever follow a chargeholder application",
+              "explanation_md": "The statute provides a chargeholder route subject to its conditions."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The company registered office alone proves certificate issue",
+              "explanation_md": "An address does not evidence the Registrar decision."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Submission and completed registration/certificate issue have been conflated",
+              "explanation_md": "These are distinct events and the actual result must be retained."
+            }
+          ],
+          "correct_explanation_md": "These are distinct events and the actual result must be retained."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Codex original authoring, 16 November 2026; independent legal, cutoff, originality and pedagogical review pending. Keep canonical items draft, review null.",
+      "Entire S04 unit inspected as page images including end questions: printed pp.213–220 / PDF pp.232–239. Source lists, tables and questions were not copied or adapted with cosmetic swaps.",
+      "The statutory consolidation is dated 1 September 2026, after the 30 June exam cutoff. Selected provisions and amendment footnotes were read; earlier applicability and current rules require separate confirmation. No post-cutoff amendment is asserted as a verified exam rule.",
+      "MCA primary rules URL returned 403; India Code handle timed out and source-mirror download also returned 403. Forms, fees, authentication procedures and calendar calculations remain visibly incomplete; book labels do not establish current rules.",
+      "MCA 2019 rules PDF returned 403; official India Code handle timed out and a mirror download returned 403. Current CHG forms, verification methods, portal rules, fee/ad-valorem schedules and exact deadline computations remain source gaps. No live filing date is graded."
+    ],
+    "next_batch_hint": "Continue BRBL-B-U07-B003"
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-B-U07-B002",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p.12, Compulsory Paper IV, Module B: Creation/Registration and Satisfaction of Charges"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+        "authority": "India Code, Government of India",
+        "title": "Companies Act, 2013 — as on 1 September 2026",
+        "url": "https://indiacode.gov.in/server/api/core/bitstreams/95902c38-5947-4457-a431-5062e234cab0/content",
+        "publication_date": "2026-09-01",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_B::U07",
+        "objective_ids": [
+          "BRBL::MOD_B::U07::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_B::U07",
+        "objective_ids": [
+          "BRBL::MOD_B::U07::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_B::U07",
+        "objective_ids": [
+          "BRBL::MOD_B::U07::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BRBL::MOD_B::U07",
+        "objective_ids": [
+          "BRBL::MOD_B::U07::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "unit_id": "BRBL::MOD_B::U07",
+        "objective_ids": [
+          "BRBL::MOD_B::U07::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D006",
+        "unit_id": "BRBL::MOD_B::U07",
+        "objective_ids": [
+          "BRBL::MOD_B::U07::LO_02"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-B-U07-B002",
+      "draft_id": "D001",
+      "item_id": "item_d2febeee27fce891bd473274bcc7103b95a20476f76f3e2ed8d2693d99f47a69"
+    },
+    {
+      "batch_id": "BRBL-B-U07-B002",
+      "draft_id": "D002",
+      "item_id": "item_84cd09d96a9cb4c1a91c28f37aa771ec14e924de8e487e2da8c92abba6f419c9"
+    },
+    {
+      "batch_id": "BRBL-B-U07-B002",
+      "draft_id": "D003",
+      "item_id": "item_fe372988f43a8b146def5f1cab9449633bd41283dc0ab88c3950de131c01471e"
+    },
+    {
+      "batch_id": "BRBL-B-U07-B002",
+      "draft_id": "D004",
+      "item_id": "item_f9037c71ebe01ade74d3cd1da4dd5119bb63e392d0c635fa2047f1c93ae895ef"
+    },
+    {
+      "batch_id": "BRBL-B-U07-B002",
+      "draft_id": "D005",
+      "item_id": "item_6cf4194d9ff64fdc9a9dbbaf5637d4f8774b0f1cbc507526f305f4dc69a4a4c7"
+    },
+    {
+      "batch_id": "BRBL-B-U07-B002",
+      "draft_id": "D006",
+      "item_id": "item_f9d922f5de671488e53a3bd28371a42fcb2368f5d0c4c28f2ae95bd2b86cd2c5"
+    }
+  ],
+  "items": [
+    {
+      "title": "Creation, submission and registration are different events",
+      "core_explanation_md": "Keep the signed instrument, creation facts, application, actual registration and certificate as distinct evidence. The file must identify the company, chargeholder, secured assets and scope of the charge, with the prescribed particulars and instrument where applicable. Submitting a form does not by itself prove that the Registrar registered the charge or issued its certificate.\n\nFor the duty under section 77, the text starts with thirty days from creation. Late-registration routes are conditional and version-specific. A bank should diarise the applicable filing obligation and retain the actual result rather than assume an application receipt completes every security requirement. This draft is not a filing calendar for a live transaction.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "What evidence is still needed after an application receipt?",
+        "expected_takeaway": "The actual registration result and certificate, with the applicable legal and filing requirements."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_d2febeee27fce891bd473274bcc7103b95a20476f76f3e2ed8d2693d99f47a69",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U07",
+      "objective_ids": [
+        "BRBL::MOD_B::U07::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.216–218; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+          "authority": "India Code, Government of India",
+          "title": "Companies Act, 2013 — as on 1 September 2026",
+          "url": "https://indiacode.gov.in/server/api/core/bitstreams/95902c38-5947-4457-a431-5062e234cab0/content",
+          "publication_date": "2026-09-01",
+          "effective_date": null,
+          "locator": "sections 77–78, PDF pp.64–65"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Do not add every extension to every new charge",
+      "core_explanation_md": "The inspected section 77 provisos distinguish charges by their creation regime. Its later-charge route describes a period measured from creation and a further conditional period, with application and prescribed fees. It does not give an automatic extension or make the older three-hundred-day route available to every new charge.\n\nThe courseware own tables distinguish historical regimes, while its earlier unit contains a broader summary. Use the controlling provision and rules applicable at the exam cutoff, not whichever summary offers more time. The retained Act is consolidated after cutoff, so exact form versions, fees, transitional conditions and calendar treatment require independent verification before release.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does a conditional late-registration route amount to automatic acceptance of a late filing?",
+        "expected_takeaway": "No. The applicable regime, application, fee and other conditions still matter."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_84cd09d96a9cb4c1a91c28f37aa771ec14e924de8e487e2da8c92abba6f419c9",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U07",
+      "objective_ids": [
+        "BRBL::MOD_B::U07::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.216–218; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+          "authority": "India Code, Government of India",
+          "title": "Companies Act, 2013 — as on 1 September 2026",
+          "url": "https://indiacode.gov.in/server/api/core/bitstreams/95902c38-5947-4457-a431-5062e234cab0/content",
+          "publication_date": "2026-09-01",
+          "effective_date": null,
+          "locator": "sections 77–78, PDF pp.64–65"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "The chargeholder has a separate statutory application route",
+      "core_explanation_md": "Section 78 addresses the specified company failure to register and permits an application by the person in whose favour the charge was created. The Registrar process includes the company opportunity stated in the provision. The chargeholder route is therefore different from pretending that the company filed on time.\n\nWhere registration is effected on that application, the section permits the stated fees or additional fees to be recovered from the company. Record who applied, under which provision, the notices and actual outcome. Do not infer either that only the company can ever initiate registration or that the chargeholder can bypass every condition.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Why should the file record who made the registration application?",
+        "expected_takeaway": "The chargeholder statutory route has its own trigger, process and fee-recovery consequences."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_fe372988f43a8b146def5f1cab9449633bd41283dc0ab88c3950de131c01471e",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U07",
+      "objective_ids": [
+        "BRBL::MOD_B::U07::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.216–218; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+          "authority": "India Code, Government of India",
+          "title": "Companies Act, 2013 — as on 1 September 2026",
+          "url": "https://indiacode.gov.in/server/api/core/bitstreams/95902c38-5947-4457-a431-5062e234cab0/content",
+          "publication_date": "2026-09-01",
+          "effective_date": null,
+          "locator": "sections 77–78, PDF pp.64–65"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A file treats the section 77 later-charge late-registration route as automatic permission to wait, without application or prescribed fees. Which distinction is missing?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The initial duty and the conditional, creation-regime-specific late-registration route",
+          "explanation_md": "The provisos do not remove the initial duty or create automatic late acceptance."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Every charge always has the historical three-hundred-day route",
+          "explanation_md": "The text distinguishes creation regimes and conditions rather than supplying that universal route."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The certificate exists as soon as the security instrument is signed",
+          "explanation_md": "Execution does not itself establish registration and certificate issue."
+        },
+        {
+          "option_id": "D",
+          "text_md": "No chargeholder can ever apply when the company fails",
+          "explanation_md": "Section 78 provides a qualified chargeholder application route."
+        }
+      ],
+      "correct_explanation_md": "The provisos do not remove the initial duty or create automatic late acceptance.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_f9037c71ebe01ade74d3cd1da4dd5119bb63e392d0c635fa2047f1c93ae895ef",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U07",
+      "objective_ids": [
+        "BRBL::MOD_B::U07::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.216–218; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+          "authority": "India Code, Government of India",
+          "title": "Companies Act, 2013 — as on 1 September 2026",
+          "url": "https://indiacode.gov.in/server/api/core/bitstreams/95902c38-5947-4457-a431-5062e234cab0/content",
+          "publication_date": "2026-09-01",
+          "effective_date": null,
+          "locator": "sections 77–78, PDF pp.64–65"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A company has failed to register in the circumstances covered by section 78. The lender says it has no possible application route because it is the chargeholder. What should it examine?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Whether a private account entry can replace the Registrar process",
+          "explanation_md": "An internal entry does not complete the statutory registration process."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Whether all company defaults extinguish the security agreement immediately",
+          "explanation_md": "The provision addresses a registration route rather than such universal extinguishment."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The section 78 chargeholder application, company-notice process and fee-recovery rule",
+          "explanation_md": "The statute expressly recognises this qualified route."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Whether the facility interest rate alone permits bypassing every filing condition",
+          "explanation_md": "Pricing cannot replace statutory procedure."
+        }
+      ],
+      "correct_explanation_md": "The statute expressly recognises this qualified route.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_6cf4194d9ff64fdc9a9dbbaf5637d4f8774b0f1cbc507526f305f4dc69a4a4c7",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U07",
+      "objective_ids": [
+        "BRBL::MOD_B::U07::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.216–218; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+          "authority": "India Code, Government of India",
+          "title": "Companies Act, 2013 — as on 1 September 2026",
+          "url": "https://indiacode.gov.in/server/api/core/bitstreams/95902c38-5947-4457-a431-5062e234cab0/content",
+          "publication_date": "2026-09-01",
+          "effective_date": null,
+          "locator": "sections 77–78, PDF pp.64–65"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "An application receipt is placed in the security file and marked as conclusive evidence that the registration certificate has been issued. What is the evidence error?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The receipt proves that the underlying debt is never repayable",
+          "explanation_md": "A filing receipt does not determine repayment liability."
+        },
+        {
+          "option_id": "B",
+          "text_md": "A certificate cannot ever follow a chargeholder application",
+          "explanation_md": "The statute provides a chargeholder route subject to its conditions."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The company registered office alone proves certificate issue",
+          "explanation_md": "An address does not evidence the Registrar decision."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Submission and completed registration/certificate issue have been conflated",
+          "explanation_md": "These are distinct events and the actual result must be retained."
+        }
+      ],
+      "correct_explanation_md": "These are distinct events and the actual result must be retained.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_f9d922f5de671488e53a3bd28371a42fcb2368f5d0c4c28f2ae95bd2b86cd2c5",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U07",
+      "objective_ids": [
+        "BRBL::MOD_B::U07::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.216–218; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+          "authority": "India Code, Government of India",
+          "title": "Companies Act, 2013 — as on 1 September 2026",
+          "url": "https://indiacode.gov.in/server/api/core/bitstreams/95902c38-5947-4457-a431-5062e234cab0/content",
+          "publication_date": "2026-09-01",
+          "effective_date": null,
+          "locator": "sections 77–78, PDF pp.64–65"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

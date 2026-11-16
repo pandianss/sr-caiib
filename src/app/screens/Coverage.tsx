@@ -11,7 +11,7 @@ import { go, useApp } from '../hooks.ts';
 import { model, PAPER_ORDER } from '../model.ts';
 import { Banner, Button, Empty, More, Tag } from '../ui.tsx';
 
-const SHORT: Record<Stage, string> = { source_supported: 'Source', drafted: 'Lesson', assessed: 'Questions', reviewed: 'Reviewed', published: 'Published' };
+const SHORT: Record<Stage, string> = { source_supported: 'Source support', drafted: 'Lesson', assessed: 'Questions', reviewed: 'Reviewed', published: 'Published' };
 
 function StageRow({ stages }: { stages: Record<Stage, boolean> }) {
   return <span className="row" style={{ gap: '0.25rem' }}>{STAGES.map(st => <Tag key={st} kind={stages[st] ? 'ok' : undefined}>{stages[st] ? '✓' : '○'} {SHORT[st]}</Tag>)}</span>;
@@ -74,7 +74,7 @@ export function Coverage({ paper: routePaper }: { paper?: PaperId }) {
           <p className="support">{lp.kind === 'compulsory' ? 'Compulsory paper' : 'Elective paper'} · {lp.baseline.note}</p>
           {lp.baseline.status === 'missing' ? <Empty title="Modules and topics unknown">The official syllabus for this paper has to be obtained before its topics can be listed, taught or counted. It stays on this map so the gap is visible.</Empty> : (<>
             <div className="card"><h2>{ps.topic_denominator ? `${ps.topic_denominator} official topics` : `${ps.topics_listed} topics listed (not yet a verified total)`}</h2><Counts p={ps} />
-              <p className="support">Each row counts whole topics that have reached that stage. Stages are separate views and are not added together. {ps.blocked_topics} topic{ps.blocked_topics === 1 ? ' is' : 's are'} currently blocked.</p></div>
+              <p className="support">Each row counts whole topics that have reached that stage. Stages are separate views and are not added together. Having a book does not by itself confirm full source support or exam applicability. {ps.blocked_topics} topic{ps.blocked_topics === 1 ? ' is' : 's are'} currently blocked.</p></div>
             {modules.map(([id, title]) => { const topics = lp.topics.filter(t => t.module_id === id); const pub = topics.filter(t => topicStages(t).published).length; return (
               <More key={id} summary={`${title} · ${pub} of ${topics.length} topics published`} open={topics.some(t => t.topic_id === openTopic)}><ul className="list">{topics.map(topicRow)}</ul></More>); })}
           </>)}

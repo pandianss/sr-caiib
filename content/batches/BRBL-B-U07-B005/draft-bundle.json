@@ -1,0 +1,569 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-B-U07-B005",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL B U07: Creation/Registration and Satisfaction of Charges — Separate full satisfaction, partial discharge and property release, including the Registrar evidence-based route",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04",
+      "COMPANIES_ACT_INDIACODE_20260901"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.218–219; PDF page = printed page + 19",
+        "statement": "Courseware explains satisfaction intimation and entries by the Registrar on evidence even without company intimation; its form label and complete-notice summary require reconciliation.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+        "locator": "sections 82–83, PDF pp.65–66",
+        "statement": "Section 82 addresses full-payment/satisfaction intimation, conditional later intimation and notice/holder-signed-form qualification. Section 83 permits the stated whole/part satisfaction or property-release entry on evidence satisfactory to the Registrar despite no company intimation, with the affected-party information requirement.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "draft_id": "D001",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Match the record change to what actually happened",
+          "core_explanation_md": "The debt may be satisfied in full, paid only in part or remain while a particular asset is released. These are different events. Section 82 deals with the stated intimation of payment or satisfaction in full. Section 83 separately recognises evidence of satisfaction in whole or part and the described release or departure of property from the company undertaking.\n\nA reviewer should reconcile the payment evidence, lender consent, property and remaining secured amount before describing the entry sought. Avoid treating one released asset as proof that every debt is paid, or treating partial payment as a full discharge. The statement must match the factual scope of the event.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does release of one charged asset necessarily mean full satisfaction of the secured debt?",
+            "expected_takeaway": "No. Partial property release and full debt satisfaction must be distinguished."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "No company intimation does not end every statutory enquiry",
+          "core_explanation_md": "Section 83 allows the Registrar to act on the specified evidence even where no company intimation has been received. The power is conditional on the Registrar being satisfied about the statutory facts; it is not an automatic update whenever a bank sends an email. The provision also requires the affected parties to be informed after the entry.\n\nSection 82 has its own notice process and a qualification where the specified form is signed by the holder. Do not carry forward a summary that every satisfaction case always follows an identical notice path. The courseware satisfaction-form label is held back pending primary rules/form evidence; filing and the Registrar certification are different actions.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "What must support an entry under section 83 when company intimation is absent?",
+            "expected_takeaway": "Evidence satisfying the Registrar of the specified satisfaction or release facts and compliance with the applicable process."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "item_type": "case_study",
+        "variant": "case_study",
+        "payload": {
+          "title": "A partial property release awaiting the correct entry",
+          "scenario_narrative_md": "A company has a registered charge over two separately identified premises. The lender agrees to release one premises after a part payment; the documented debt is not fully repaid and the other premises remains security. The file contains the lender release instrument and payment records. No satisfaction intimation has been received from the company. The reviewer is asked to identify the scope of any entry to seek and whether the Registrar has any relevant evidence-based power. Assume the release instrument itself is valid; no competing creditor rights or filing deadlines are to be decided in these questions.",
+          "question_ids": [
+            "D004",
+            "D005"
+          ],
+          "reference_tables_md": []
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "The case file says the debt is only partly discharged, yet proposes recording full satisfaction merely because one asset has been released. What must the reviewer distinguish?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Debt satisfaction in whole or part from release of a specified part of the charged property",
+              "explanation_md": "Section 83 distinguishes these facts; one partial release does not prove full satisfaction."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Every asset release necessarily extinguishes every secured obligation",
+              "explanation_md": "A partial property release is not proof of full debt discharge."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Only the original loan amount can ever matter after creation",
+              "explanation_md": "Later payments and release events must also be correctly recorded."
+            },
+            {
+              "option_id": "D",
+              "text_md": "An internal email automatically overrides the registered record",
+              "explanation_md": "A communication alone does not establish the required statutory entry or its scope."
+            }
+          ],
+          "correct_explanation_md": "Section 83 distinguishes these facts; one partial release does not prove full satisfaction.",
+          "case_study_id": "D003"
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "In the case, no company satisfaction intimation has been received. Does that fact alone eliminate every section 83 route for recording the evidenced partial release?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Yes; the Registrar can never examine evidence from any other source",
+              "explanation_md": "Section 83 expressly addresses the absence of company intimation."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Yes; partial releases are always impossible while any debt remains",
+              "explanation_md": "The provision recognises partial satisfaction/property release conditions."
+            },
+            {
+              "option_id": "C",
+              "text_md": "No; section 83 provides a qualified evidence-based power even without company intimation",
+              "explanation_md": "The Registrar must be satisfied on the statutory facts; lack of intimation alone is not decisive."
+            },
+            {
+              "option_id": "D",
+              "text_md": "No; it means the record changes automatically without a Registrar decision",
+              "explanation_md": "The provision calls for the qualified Registrar action, not an automatic database change."
+            }
+          ],
+          "correct_explanation_md": "The Registrar must be satisfied on the statutory facts; lack of intimation alone is not decisive.",
+          "case_study_id": "D003"
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Codex original authoring, 16 November 2026; independent legal, cutoff, originality and pedagogical review pending. Keep canonical items draft, review null.",
+      "Entire S04 unit inspected as page images including end questions: printed pp.213–220 / PDF pp.232–239. Source lists, tables and questions were not copied or adapted with cosmetic swaps.",
+      "The statutory consolidation is dated 1 September 2026, after the 30 June exam cutoff. Selected provisions and amendment footnotes were read; earlier applicability and current rules require separate confirmation. No post-cutoff amendment is asserted as a verified exam rule.",
+      "MCA primary rules URL returned 403; India Code handle timed out and source-mirror download also returned 403. Forms, fees, authentication procedures and calendar calculations remain visibly incomplete; book labels do not establish current rules.",
+      "Primary current rules/forms for satisfaction, additional fees, notices and filing deadlines remain pending. Courseware CHG-5 filing label is not taught as verified; no exact date or fee is graded."
+    ],
+    "next_batch_hint": "Continue BRBL-B-U07-B006"
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-B-U07-B005",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p.12, Compulsory Paper IV, Module B: Creation/Registration and Satisfaction of Charges"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+        "authority": "India Code, Government of India",
+        "title": "Companies Act, 2013 — as on 1 September 2026",
+        "url": "https://indiacode.gov.in/server/api/core/bitstreams/95902c38-5947-4457-a431-5062e234cab0/content",
+        "publication_date": "2026-09-01",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_B::U07",
+        "objective_ids": [
+          "BRBL::MOD_B::U07::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_B::U07",
+        "objective_ids": [
+          "BRBL::MOD_B::U07::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_B::U07",
+        "objective_ids": [
+          "BRBL::MOD_B::U07::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BRBL::MOD_B::U07",
+        "objective_ids": [
+          "BRBL::MOD_B::U07::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "unit_id": "BRBL::MOD_B::U07",
+        "objective_ids": [
+          "BRBL::MOD_B::U07::LO_05"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-B-U07-B005",
+      "draft_id": "D001",
+      "item_id": "item_c147e907223fbcaf75a1cbb8be1985a835988d3a5e481f22fc356334d16adb0d"
+    },
+    {
+      "batch_id": "BRBL-B-U07-B005",
+      "draft_id": "D002",
+      "item_id": "item_281c58ce8c19a3a08bcdb3169dc33797afb1bd9c5c1da1f138d9adddd5977671"
+    },
+    {
+      "batch_id": "BRBL-B-U07-B005",
+      "draft_id": "D003",
+      "item_id": "item_973e0ce1f9b353c0dd2831c5ad12267b78b80256c26e2fe3015f1d597e01c0b2"
+    },
+    {
+      "batch_id": "BRBL-B-U07-B005",
+      "draft_id": "D004",
+      "item_id": "item_350fa1e93c46f3c074821a48bf6d905a1e990c3e873b641bddbfa95cee2d8b4b"
+    },
+    {
+      "batch_id": "BRBL-B-U07-B005",
+      "draft_id": "D005",
+      "item_id": "item_74c2ec7f70d85231c11b52dd77d153de390878121ccdd154494ddf0443afd61e"
+    }
+  ],
+  "items": [
+    {
+      "title": "Match the record change to what actually happened",
+      "core_explanation_md": "The debt may be satisfied in full, paid only in part or remain while a particular asset is released. These are different events. Section 82 deals with the stated intimation of payment or satisfaction in full. Section 83 separately recognises evidence of satisfaction in whole or part and the described release or departure of property from the company undertaking.\n\nA reviewer should reconcile the payment evidence, lender consent, property and remaining secured amount before describing the entry sought. Avoid treating one released asset as proof that every debt is paid, or treating partial payment as a full discharge. The statement must match the factual scope of the event.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does release of one charged asset necessarily mean full satisfaction of the secured debt?",
+        "expected_takeaway": "No. Partial property release and full debt satisfaction must be distinguished."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_c147e907223fbcaf75a1cbb8be1985a835988d3a5e481f22fc356334d16adb0d",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U07",
+      "objective_ids": [
+        "BRBL::MOD_B::U07::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.218–219; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+          "authority": "India Code, Government of India",
+          "title": "Companies Act, 2013 — as on 1 September 2026",
+          "url": "https://indiacode.gov.in/server/api/core/bitstreams/95902c38-5947-4457-a431-5062e234cab0/content",
+          "publication_date": "2026-09-01",
+          "effective_date": null,
+          "locator": "sections 82–83, PDF pp.65–66"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "No company intimation does not end every statutory enquiry",
+      "core_explanation_md": "Section 83 allows the Registrar to act on the specified evidence even where no company intimation has been received. The power is conditional on the Registrar being satisfied about the statutory facts; it is not an automatic update whenever a bank sends an email. The provision also requires the affected parties to be informed after the entry.\n\nSection 82 has its own notice process and a qualification where the specified form is signed by the holder. Do not carry forward a summary that every satisfaction case always follows an identical notice path. The courseware satisfaction-form label is held back pending primary rules/form evidence; filing and the Registrar certification are different actions.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "What must support an entry under section 83 when company intimation is absent?",
+        "expected_takeaway": "Evidence satisfying the Registrar of the specified satisfaction or release facts and compliance with the applicable process."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_281c58ce8c19a3a08bcdb3169dc33797afb1bd9c5c1da1f138d9adddd5977671",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U07",
+      "objective_ids": [
+        "BRBL::MOD_B::U07::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.218–219; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+          "authority": "India Code, Government of India",
+          "title": "Companies Act, 2013 — as on 1 September 2026",
+          "url": "https://indiacode.gov.in/server/api/core/bitstreams/95902c38-5947-4457-a431-5062e234cab0/content",
+          "publication_date": "2026-09-01",
+          "effective_date": null,
+          "locator": "sections 82–83, PDF pp.65–66"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "A partial property release awaiting the correct entry",
+      "scenario_narrative_md": "A company has a registered charge over two separately identified premises. The lender agrees to release one premises after a part payment; the documented debt is not fully repaid and the other premises remains security. The file contains the lender release instrument and payment records. No satisfaction intimation has been received from the company. The reviewer is asked to identify the scope of any entry to seek and whether the Registrar has any relevant evidence-based power. Assume the release instrument itself is valid; no competing creditor rights or filing deadlines are to be decided in these questions.",
+      "question_ids": [
+        "item_350fa1e93c46f3c074821a48bf6d905a1e990c3e873b641bddbfa95cee2d8b4b",
+        "item_74c2ec7f70d85231c11b52dd77d153de390878121ccdd154494ddf0443afd61e"
+      ],
+      "reference_tables_md": [],
+      "item_type": "case_study",
+      "id": "item_973e0ce1f9b353c0dd2831c5ad12267b78b80256c26e2fe3015f1d597e01c0b2",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U07",
+      "objective_ids": [
+        "BRBL::MOD_B::U07::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.218–219; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+          "authority": "India Code, Government of India",
+          "title": "Companies Act, 2013 — as on 1 September 2026",
+          "url": "https://indiacode.gov.in/server/api/core/bitstreams/95902c38-5947-4457-a431-5062e234cab0/content",
+          "publication_date": "2026-09-01",
+          "effective_date": null,
+          "locator": "sections 82–83, PDF pp.65–66"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "The case file says the debt is only partly discharged, yet proposes recording full satisfaction merely because one asset has been released. What must the reviewer distinguish?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Debt satisfaction in whole or part from release of a specified part of the charged property",
+          "explanation_md": "Section 83 distinguishes these facts; one partial release does not prove full satisfaction."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Every asset release necessarily extinguishes every secured obligation",
+          "explanation_md": "A partial property release is not proof of full debt discharge."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Only the original loan amount can ever matter after creation",
+          "explanation_md": "Later payments and release events must also be correctly recorded."
+        },
+        {
+          "option_id": "D",
+          "text_md": "An internal email automatically overrides the registered record",
+          "explanation_md": "A communication alone does not establish the required statutory entry or its scope."
+        }
+      ],
+      "correct_explanation_md": "Section 83 distinguishes these facts; one partial release does not prove full satisfaction.",
+      "case_study_id": "item_973e0ce1f9b353c0dd2831c5ad12267b78b80256c26e2fe3015f1d597e01c0b2",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_350fa1e93c46f3c074821a48bf6d905a1e990c3e873b641bddbfa95cee2d8b4b",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U07",
+      "objective_ids": [
+        "BRBL::MOD_B::U07::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.218–219; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+          "authority": "India Code, Government of India",
+          "title": "Companies Act, 2013 — as on 1 September 2026",
+          "url": "https://indiacode.gov.in/server/api/core/bitstreams/95902c38-5947-4457-a431-5062e234cab0/content",
+          "publication_date": "2026-09-01",
+          "effective_date": null,
+          "locator": "sections 82–83, PDF pp.65–66"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "In the case, no company satisfaction intimation has been received. Does that fact alone eliminate every section 83 route for recording the evidenced partial release?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Yes; the Registrar can never examine evidence from any other source",
+          "explanation_md": "Section 83 expressly addresses the absence of company intimation."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Yes; partial releases are always impossible while any debt remains",
+          "explanation_md": "The provision recognises partial satisfaction/property release conditions."
+        },
+        {
+          "option_id": "C",
+          "text_md": "No; section 83 provides a qualified evidence-based power even without company intimation",
+          "explanation_md": "The Registrar must be satisfied on the statutory facts; lack of intimation alone is not decisive."
+        },
+        {
+          "option_id": "D",
+          "text_md": "No; it means the record changes automatically without a Registrar decision",
+          "explanation_md": "The provision calls for the qualified Registrar action, not an automatic database change."
+        }
+      ],
+      "correct_explanation_md": "The Registrar must be satisfied on the statutory facts; lack of intimation alone is not decisive.",
+      "case_study_id": "item_973e0ce1f9b353c0dd2831c5ad12267b78b80256c26e2fe3015f1d597e01c0b2",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_74c2ec7f70d85231c11b52dd77d153de390878121ccdd154494ddf0443afd61e",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U07",
+      "objective_ids": [
+        "BRBL::MOD_B::U07::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.218–219; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+          "authority": "India Code, Government of India",
+          "title": "Companies Act, 2013 — as on 1 September 2026",
+          "url": "https://indiacode.gov.in/server/api/core/bitstreams/95902c38-5947-4457-a431-5062e234cab0/content",
+          "publication_date": "2026-09-01",
+          "effective_date": null,
+          "locator": "sections 82–83, PDF pp.65–66"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

@@ -17,3 +17,5 @@ Objective: Distinguish qualified banker general lien from account set-off and te
 - Primary banker-lien/set-off judgments, demand/notice rules, guarantee crystallisation, joint/partnership accounts, trust restrictions, garnishee and insolvency treatment remain outstanding. Specific automatic-event and partnership table propositions are not assessed as verified rules.
 
 Calculation evidence: no worked numerical or numeric-input item; calculation review not applicable to this batch.
+
+Author distractor refinement (16 November): replaced implausible alternatives with relevant legal/file-review misconceptions; correct keys unchanged. Prior canonical envelope retained under draft-history; changed questions advance revision only. Independent quality review remains pending.

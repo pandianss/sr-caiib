@@ -1,0 +1,603 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-B-U06-B003",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL B U06: Securities and modes of charge II — Evaluate pledge creation through security purpose, delivery and the pledgor authority or limited interest",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04",
+      "CONTRACT_ACT_INDIACODE_TEXT"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp. 200–202, 204–205; PDF page = printed page + 19",
+        "statement": "Courseware explains pledge, actual/constructive control, non-owner situations and precautions. Named railway-receipt and sugar-stock case narratives were inspected but not reused.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "source_id": "CONTRACT_ACT_INDIACODE_TEXT",
+        "locator": "sections 172, 178, 178A and 179, PDF pp. 42–43",
+        "statement": "Pledge is bailment of goods for the secured debt/promise. Mercantile-agent protection depends on owner-consented possession, ordinary business, good faith and no notice of lack of authority. A voidable-contract possessor requires the specified unrescinded contract and good-faith/no-notice conditions. A pledge of a limited interest is valid only to that extent.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "draft_id": "D001",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "A pledge needs more than a security label",
+          "core_explanation_md": "A pledge is a bailment of goods serving a security purpose. Identify the goods, the secured obligation and the delivery or legally effective control arrangement. Actual relocation is not the only possible form of delivery, but a document that merely says goods are pledged does not prove the bank has the required possession or control.\n\nAn original enquiry is to ask who can release the goods, whose instructions the custodian follows and what evidence changes that position. A warehouse acknowledgement may matter to constructive delivery; its effect requires the facts and applicable law. Do not infer effective control solely from an inventory list, a signboard or the bank having visited the warehouse.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Why does the file need to identify who can order release of the goods?",
+            "expected_takeaway": "The pledge enquiry includes delivery and effective control, not merely a label or physical stock list."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Check authority without assuming every possessor is an owner",
+          "core_explanation_md": "The owner is not the only possible valid pledgor, but exceptions are conditional. Under section 178, examine how a mercantile agent obtained possession, the ordinary course of the agent business, good faith and notice of lack of authority. Those conditions cannot be replaced by possession alone. Section 178A separately concerns the specified unrescinded voidable-contract situation.\n\nSection 179 limits a pledge made by someone who has only a limited interest to that interest. The credit decision should therefore distinguish ownership, authority and the value of the interest actually offered. None of these provisions turns every unauthorised pledge into good security merely because the lender acted politely or took a signed declaration.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does possession by a mercantile agent alone settle the section 178 enquiry?",
+            "expected_takeaway": "No. Owner consent to possession, ordinary course, good faith and the notice qualification also matter."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A bank receives a stock list and a pledge-labelled agreement, but the warehouse continues to release every item solely on the borrower instructions. No change in the control arrangement is evidenced. What remains to be established?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only whether the agreement title is printed in capital letters",
+              "explanation_md": "The title typography does not establish the required delivery or control."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The legally effective delivery or control supporting the purported pledge",
+              "explanation_md": "Paper labels and a stock list do not themselves prove the actual or constructive possession arrangement."
+            },
+            {
+              "option_id": "C",
+              "text_md": "That the goods have ceased to be owned by anyone",
+              "explanation_md": "Pledge creates security; it does not require ownerless goods."
+            },
+            {
+              "option_id": "D",
+              "text_md": "That a site visit automatically transfers possession to the bank",
+              "explanation_md": "Observation during a visit is not itself a legally effective delivery arrangement."
+            }
+          ],
+          "correct_explanation_md": "Paper labels and a stock list do not themselves prove the actual or constructive possession arrangement."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A mercantile agent has goods with owner-consented possession and proposes a pledge. The lender knows the agent lacks authority for this transaction. Which section 178 condition prevents reliance on possession alone?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The statute automatically removes all authority conditions for mercantile agents",
+              "explanation_md": "The exception contains specific conditions; agent status alone does not satisfy them."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Owner consent to possession conclusively authorises every possible pledge",
+              "explanation_md": "Consent to possession is one condition and does not erase the good-faith/no-notice qualification."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The lender may disregard known lack of authority by taking a higher margin",
+              "explanation_md": "A financial margin cannot cure a failed statutory authority-protection condition."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The pawnee must act in good faith without notice of the lack of authority at pledge time",
+              "explanation_md": "Known absence of authority defeats reliance on that stated protection."
+            }
+          ],
+          "correct_explanation_md": "Known absence of authority defeats reliance on that stated protection."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A person offers goods in which their legal interest is limited. Under section 179, how should the proposed pledge be evaluated?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The pledge necessarily covers the entire ownership interest regardless of the pledgor rights",
+              "explanation_md": "The statutory rule limits validity to the interest held by the pledgor."
+            },
+            {
+              "option_id": "B",
+              "text_md": "A lender valuation can enlarge the pledgor legal interest",
+              "explanation_md": "Valuation estimates money value; it does not create a larger legal interest."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The pledge is valid to the extent of that limited interest",
+              "explanation_md": "Section 179 expressly ties the pledge to the extent of the pawnor interest."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Every limited-interest pledge is automatically void in its entirety",
+              "explanation_md": "That categorical rejection ignores the express extent-of-interest rule."
+            }
+          ],
+          "correct_explanation_md": "Section 179 expressly ties the pledge to the extent of the pawnor interest."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Codex original draft authored 16 November 2026 from source inspection begun 15 November; independent source, cutoff, originality and pedagogical review pending. Keep all canonical items draft with null review.",
+      "Complete S04 unit inspected including end questions: printed pp.197–211 / PDF pp.216–230; PDF p.231 blank. Source expressions, table layouts, statutory illustrations and named-case narratives are not reused as learner tasks.",
+      "All legal facts remain needs_review. Original file-review scenarios and option rationales have author comparison only; schema validity and automated screening do not establish legal correctness or independent review.",
+      "Constructive-delivery judgments, trust receipts, lost possession and competing-creditor priorities require independent primary-case review. This batch does not certify a live warehouse or automatically preserve pledge through any release."
+    ],
+    "next_batch_hint": "Continue BRBL-B-U06-B004"
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-B-U06-B003",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p.12, Compulsory Paper IV, Module B: Law Relating to Securities and Modes of Charge II"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "CONTRACT_ACT_INDIACODE_TEXT",
+        "authority": "India Code, Government of India",
+        "title": "Indian Contract Act, 1872 — statutory PDF",
+        "url": "https://www.indiacode.nic.in/bitstream/123456789/2187/2/A187209.pdf",
+        "publication_date": null,
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_B::U06",
+        "objective_ids": [
+          "BRBL::MOD_B::U06::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_B::U06",
+        "objective_ids": [
+          "BRBL::MOD_B::U06::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_B::U06",
+        "objective_ids": [
+          "BRBL::MOD_B::U06::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BRBL::MOD_B::U06",
+        "objective_ids": [
+          "BRBL::MOD_B::U06::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "unit_id": "BRBL::MOD_B::U06",
+        "objective_ids": [
+          "BRBL::MOD_B::U06::LO_03"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-B-U06-B003",
+      "draft_id": "D001",
+      "item_id": "item_9e15fccca5ef93667196271b6cfeedc17c271b2ae51aaceeff8260a1e7ffa860"
+    },
+    {
+      "batch_id": "BRBL-B-U06-B003",
+      "draft_id": "D002",
+      "item_id": "item_4724f4f4d08b9d3e222d901091bf0de985ce6e20e2570a76bc61999d55367f65"
+    },
+    {
+      "batch_id": "BRBL-B-U06-B003",
+      "draft_id": "D003",
+      "item_id": "item_a271896c54b283fa154c9974593fbd7742aeb61e21ad97873811726a27f9c14e"
+    },
+    {
+      "batch_id": "BRBL-B-U06-B003",
+      "draft_id": "D004",
+      "item_id": "item_977897e1cd038b6a8427685f741e8d7fc6819c1aacec0bccf673b583f9a74480"
+    },
+    {
+      "batch_id": "BRBL-B-U06-B003",
+      "draft_id": "D005",
+      "item_id": "item_32f9a79d87c2f9f595e9e6faae552066060a67749dfe3a66d1dd5886cb8e603f"
+    }
+  ],
+  "items": [
+    {
+      "title": "A pledge needs more than a security label",
+      "core_explanation_md": "A pledge is a bailment of goods serving a security purpose. Identify the goods, the secured obligation and the delivery or legally effective control arrangement. Actual relocation is not the only possible form of delivery, but a document that merely says goods are pledged does not prove the bank has the required possession or control.\n\nAn original enquiry is to ask who can release the goods, whose instructions the custodian follows and what evidence changes that position. A warehouse acknowledgement may matter to constructive delivery; its effect requires the facts and applicable law. Do not infer effective control solely from an inventory list, a signboard or the bank having visited the warehouse.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Why does the file need to identify who can order release of the goods?",
+        "expected_takeaway": "The pledge enquiry includes delivery and effective control, not merely a label or physical stock list."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_9e15fccca5ef93667196271b6cfeedc17c271b2ae51aaceeff8260a1e7ffa860",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U06",
+      "objective_ids": [
+        "BRBL::MOD_B::U06::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp. 200–202, 204–205; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "CONTRACT_ACT_INDIACODE_TEXT",
+          "authority": "India Code, Government of India",
+          "title": "Indian Contract Act, 1872 — statutory PDF",
+          "url": "https://www.indiacode.nic.in/bitstream/123456789/2187/2/A187209.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 172, 178, 178A and 179, PDF pp. 42–43"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Check authority without assuming every possessor is an owner",
+      "core_explanation_md": "The owner is not the only possible valid pledgor, but exceptions are conditional. Under section 178, examine how a mercantile agent obtained possession, the ordinary course of the agent business, good faith and notice of lack of authority. Those conditions cannot be replaced by possession alone. Section 178A separately concerns the specified unrescinded voidable-contract situation.\n\nSection 179 limits a pledge made by someone who has only a limited interest to that interest. The credit decision should therefore distinguish ownership, authority and the value of the interest actually offered. None of these provisions turns every unauthorised pledge into good security merely because the lender acted politely or took a signed declaration.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does possession by a mercantile agent alone settle the section 178 enquiry?",
+        "expected_takeaway": "No. Owner consent to possession, ordinary course, good faith and the notice qualification also matter."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_4724f4f4d08b9d3e222d901091bf0de985ce6e20e2570a76bc61999d55367f65",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U06",
+      "objective_ids": [
+        "BRBL::MOD_B::U06::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp. 200–202, 204–205; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "CONTRACT_ACT_INDIACODE_TEXT",
+          "authority": "India Code, Government of India",
+          "title": "Indian Contract Act, 1872 — statutory PDF",
+          "url": "https://www.indiacode.nic.in/bitstream/123456789/2187/2/A187209.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 172, 178, 178A and 179, PDF pp. 42–43"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A bank receives a stock list and a pledge-labelled agreement, but the warehouse continues to release every item solely on the borrower instructions. No change in the control arrangement is evidenced. What remains to be established?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only whether the agreement title is printed in capital letters",
+          "explanation_md": "The title typography does not establish the required delivery or control."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The legally effective delivery or control supporting the purported pledge",
+          "explanation_md": "Paper labels and a stock list do not themselves prove the actual or constructive possession arrangement."
+        },
+        {
+          "option_id": "C",
+          "text_md": "That the goods have ceased to be owned by anyone",
+          "explanation_md": "Pledge creates security; it does not require ownerless goods."
+        },
+        {
+          "option_id": "D",
+          "text_md": "That a site visit automatically transfers possession to the bank",
+          "explanation_md": "Observation during a visit is not itself a legally effective delivery arrangement."
+        }
+      ],
+      "correct_explanation_md": "Paper labels and a stock list do not themselves prove the actual or constructive possession arrangement.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_a271896c54b283fa154c9974593fbd7742aeb61e21ad97873811726a27f9c14e",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U06",
+      "objective_ids": [
+        "BRBL::MOD_B::U06::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp. 200–202, 204–205; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "CONTRACT_ACT_INDIACODE_TEXT",
+          "authority": "India Code, Government of India",
+          "title": "Indian Contract Act, 1872 — statutory PDF",
+          "url": "https://www.indiacode.nic.in/bitstream/123456789/2187/2/A187209.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 172, 178, 178A and 179, PDF pp. 42–43"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A mercantile agent has goods with owner-consented possession and proposes a pledge. The lender knows the agent lacks authority for this transaction. Which section 178 condition prevents reliance on possession alone?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The statute automatically removes all authority conditions for mercantile agents",
+          "explanation_md": "The exception contains specific conditions; agent status alone does not satisfy them."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Owner consent to possession conclusively authorises every possible pledge",
+          "explanation_md": "Consent to possession is one condition and does not erase the good-faith/no-notice qualification."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The lender may disregard known lack of authority by taking a higher margin",
+          "explanation_md": "A financial margin cannot cure a failed statutory authority-protection condition."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The pawnee must act in good faith without notice of the lack of authority at pledge time",
+          "explanation_md": "Known absence of authority defeats reliance on that stated protection."
+        }
+      ],
+      "correct_explanation_md": "Known absence of authority defeats reliance on that stated protection.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_977897e1cd038b6a8427685f741e8d7fc6819c1aacec0bccf673b583f9a74480",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U06",
+      "objective_ids": [
+        "BRBL::MOD_B::U06::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp. 200–202, 204–205; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "CONTRACT_ACT_INDIACODE_TEXT",
+          "authority": "India Code, Government of India",
+          "title": "Indian Contract Act, 1872 — statutory PDF",
+          "url": "https://www.indiacode.nic.in/bitstream/123456789/2187/2/A187209.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 172, 178, 178A and 179, PDF pp. 42–43"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A person offers goods in which their legal interest is limited. Under section 179, how should the proposed pledge be evaluated?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The pledge necessarily covers the entire ownership interest regardless of the pledgor rights",
+          "explanation_md": "The statutory rule limits validity to the interest held by the pledgor."
+        },
+        {
+          "option_id": "B",
+          "text_md": "A lender valuation can enlarge the pledgor legal interest",
+          "explanation_md": "Valuation estimates money value; it does not create a larger legal interest."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The pledge is valid to the extent of that limited interest",
+          "explanation_md": "Section 179 expressly ties the pledge to the extent of the pawnor interest."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Every limited-interest pledge is automatically void in its entirety",
+          "explanation_md": "That categorical rejection ignores the express extent-of-interest rule."
+        }
+      ],
+      "correct_explanation_md": "Section 179 expressly ties the pledge to the extent of the pawnor interest.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_32f9a79d87c2f9f595e9e6faae552066060a67749dfe3a66d1dd5886cb8e603f",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U06",
+      "objective_ids": [
+        "BRBL::MOD_B::U06::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp. 200–202, 204–205; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "CONTRACT_ACT_INDIACODE_TEXT",
+          "authority": "India Code, Government of India",
+          "title": "Indian Contract Act, 1872 — statutory PDF",
+          "url": "https://www.indiacode.nic.in/bitstream/123456789/2187/2/A187209.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "sections 172, 178, 178A and 179, PDF pp. 42–43"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

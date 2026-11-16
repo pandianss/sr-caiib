@@ -1,0 +1,172 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-B-U07-B005",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL B U07: Creation/Registration and Satisfaction of Charges — Separate full satisfaction, partial discharge and property release, including the Registrar evidence-based route",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04",
+    "COMPANIES_ACT_INDIACODE_20260901"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.218–219; PDF page = printed page + 19",
+      "statement": "Courseware explains satisfaction intimation and entries by the Registrar on evidence even without company intimation; its form label and complete-notice summary require reconciliation.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F002",
+      "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+      "locator": "sections 82–83, PDF pp.65–66",
+      "statement": "Section 82 addresses full-payment/satisfaction intimation, conditional later intimation and notice/holder-signed-form qualification. Section 83 permits the stated whole/part satisfaction or property-release entry on evidence satisfactory to the Registrar despite no company intimation, with the affected-party information requirement.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "draft_id": "D001",
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Match the record change to what actually happened",
+        "core_explanation_md": "The debt may be satisfied in full, paid only in part or remain while a particular asset is released. These are different events. Section 82 deals with the stated intimation of payment or satisfaction in full. Section 83 separately recognises evidence of satisfaction in whole or part and the described release or departure of property from the company undertaking.\n\nA reviewer should reconcile the payment evidence, lender consent, property and remaining secured amount before describing the entry sought. Avoid treating one released asset as proof that every debt is paid, or treating partial payment as a full discharge. The statement must match the factual scope of the event.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does release of one charged asset necessarily mean full satisfaction of the secured debt?",
+          "expected_takeaway": "No. Partial property release and full debt satisfaction must be distinguished."
+        }
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D002",
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "No company intimation does not end every statutory enquiry",
+        "core_explanation_md": "Section 83 allows the Registrar to act on the specified evidence even where no company intimation has been received. The power is conditional on the Registrar being satisfied about the statutory facts; it is not an automatic update whenever a bank sends an email. The provision also requires the affected parties to be informed after the entry.\n\nSection 82 has its own notice process and a qualification where the specified form is signed by the holder. Do not carry forward a summary that every satisfaction case always follows an identical notice path. The courseware satisfaction-form label is held back pending primary rules/form evidence; filing and the Registrar certification are different actions.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "What must support an entry under section 83 when company intimation is absent?",
+          "expected_takeaway": "Evidence satisfying the Registrar of the specified satisfaction or release facts and compliance with the applicable process."
+        }
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D003",
+      "item_type": "case_study",
+      "variant": "case_study",
+      "payload": {
+        "title": "A partial property release awaiting the correct entry",
+        "scenario_narrative_md": "A company has a registered charge over two separately identified premises. The lender agrees to release one premises after a part payment; the documented debt is not fully repaid and the other premises remains security. The file contains the lender release instrument and payment records. No satisfaction intimation has been received from the company. The reviewer is asked to identify the scope of any entry to seek and whether the Registrar has any relevant evidence-based power. Assume the release instrument itself is valid; no competing creditor rights or filing deadlines are to be decided in these questions.",
+        "question_ids": [
+          "D004",
+          "D005"
+        ],
+        "reference_tables_md": []
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D004",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "The case file says the debt is only partly discharged, yet proposes recording full satisfaction merely because one asset has been released. What must the reviewer distinguish?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Debt satisfaction in whole or part from release of a specified part of the charged property",
+            "explanation_md": "Section 83 distinguishes these facts; one partial release does not prove full satisfaction."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Every asset release necessarily extinguishes every secured obligation",
+            "explanation_md": "A partial property release is not proof of full debt discharge."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Only the original loan amount can ever matter after creation",
+            "explanation_md": "Later payments and release events must also be correctly recorded."
+          },
+          {
+            "option_id": "D",
+            "text_md": "An internal email automatically overrides the registered record",
+            "explanation_md": "A communication alone does not establish the required statutory entry or its scope."
+          }
+        ],
+        "correct_explanation_md": "Section 83 distinguishes these facts; one partial release does not prove full satisfaction.",
+        "case_study_id": "D003"
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D005",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "In the case, no company satisfaction intimation has been received. Does that fact alone eliminate every section 83 route for recording the evidenced partial release?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Yes; the Registrar can never examine evidence from any other source",
+            "explanation_md": "Section 83 expressly addresses the absence of company intimation."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Yes; partial releases are always impossible while any debt remains",
+            "explanation_md": "The provision recognises partial satisfaction/property release conditions."
+          },
+          {
+            "option_id": "C",
+            "text_md": "No; section 83 provides a qualified evidence-based power even without company intimation",
+            "explanation_md": "The Registrar must be satisfied on the statutory facts; lack of intimation alone is not decisive."
+          },
+          {
+            "option_id": "D",
+            "text_md": "No; it means the record changes automatically without a Registrar decision",
+            "explanation_md": "The provision calls for the qualified Registrar action, not an automatic database change."
+          }
+        ],
+        "correct_explanation_md": "The Registrar must be satisfied on the statutory facts; lack of intimation alone is not decisive.",
+        "case_study_id": "D003"
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Codex original authoring, 16 November 2026; independent legal, cutoff, originality and pedagogical review pending. Keep canonical items draft, review null.",
+    "Entire S04 unit inspected as page images including end questions: printed pp.213–220 / PDF pp.232–239. Source lists, tables and questions were not copied or adapted with cosmetic swaps.",
+    "The statutory consolidation is dated 1 September 2026, after the 30 June exam cutoff. Selected provisions and amendment footnotes were read; earlier applicability and current rules require separate confirmation. No post-cutoff amendment is asserted as a verified exam rule.",
+    "MCA primary rules URL returned 403; India Code handle timed out and source-mirror download also returned 403. Forms, fees, authentication procedures and calendar calculations remain visibly incomplete; book labels do not establish current rules.",
+    "Primary current rules/forms for satisfaction, additional fees, notices and filing deadlines remain pending. Courseware CHG-5 filing label is not taught as verified; no exact date or fee is graded."
+  ],
+  "next_batch_hint": "Continue BRBL-B-U07-B006"
+}

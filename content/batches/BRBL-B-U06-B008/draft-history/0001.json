@@ -1,0 +1,683 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-B-U06-B008",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL B U06: Securities and modes of charge II — Distinguish qualified banker general lien from account set-off and test purpose, capacity and maturity",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04",
+      "CONTRACT_ACT_INDIACODE_TEXT"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp. 208–210; PDF page = printed page + 19",
+        "statement": "Courseware describes banker lien, ordinary-business possession, purpose/contrary-agreement exceptions and mutual same-capacity debts for set-off. Automatic-event and partnership table claims are held for primary-case review; no table structure is reused.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "source_id": "CONTRACT_ACT_INDIACODE_TEXT",
+        "locator": "section 171, PDF p. 42",
+        "statement": "Bankers have the stated general balance retainer over goods bailed in the absence of a contrary contract. The provision is a qualified retainer rule, not an unlimited claim over every customer asset or a complete account set-off code. Purpose, capacity, ordinary banking business and set-off qualifications in this batch also rely on the cited courseware and require independent case-law review.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "draft_id": "D001",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "First identify what the bank is trying to retain",
+          "core_explanation_md": "Section 171 concerns a general balance of account and goods bailed to a banker, subject to contrary contract. The courseware further explains lawful possession in ordinary banking business and a purpose inconsistent with general lien. Examine how and why the bank obtained the property before treating every item held on its premises as general security.\n\nDocuments left for a specific safe-custody purpose raise a different enquiry from goods received as security in ordinary business. A general customer debt does not settle that difference. Do not infer an unrestricted power of sale or a right over every deposit simply from the wording of the statutory retainer provision; those require their own legal basis and conditions.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Why must the bank preserve the purpose for which property was delivered?",
+            "expected_takeaway": "A specific purpose or contrary contract can be inconsistent with the general retainer claim."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Set-off concerns mutual obligations, not just shared names",
+          "core_explanation_md": "Set-off concerns adjusting reciprocal monetary claims. The courseware requires attention to the same parties in the same legal capacity and to debts that are sufficiently certain and due. An account holder acting as trustee is not necessarily holding money in the same capacity as a personal borrower. A shared name in two records does not settle mutuality.\n\nSeparate present debt from a future or contingent exposure. A guarantee not yet crystallised or a debt not yet due raises conditions that cannot be ignored merely because the bank also holds a credit balance. Actual account terms, trust notice, joint ownership, applicable law and any required demand or notice must be checked. This draft does not authorise a transfer from a live account.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does matching a person name alone establish the same-capacity requirement?",
+            "expected_takeaway": "No. The legal capacity and reciprocal obligations need separate examination."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Give each proposed adjustment its own reason",
+          "core_explanation_md": "Lien and set-off are not interchangeable labels. A file seeking to retain goods should identify the property, bailment purpose and retainer basis. A file seeking to combine account balances should identify the reciprocal debts, capacity, maturity and authority for the adjustment. Presenting either as a general right to take any customer asset hides the deciding facts.\n\nThe courseware includes special partnership combinations and events said to trigger automatic set-off. Those conclusions need primary authority and insolvency, garnishee and notice analysis before publication. Use the general distinction to ask better questions; do not convert this draft into a universal partnership, joint-account or insolvency rule.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "What should an adjustment note record besides the amounts?",
+            "expected_takeaway": "The legal route, parties/capacities, maturity, purpose restrictions and relevant contractual or statutory conditions."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A bank holds a sealed packet solely under a specific safe-custody arrangement and proposes general lien for a separate loan without examining that purpose. Which enquiry is missing?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only whether the packet is physically inside a bank building",
+              "explanation_md": "Location alone does not establish lawful general-security possession or remove purpose restrictions."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Whether the separate loan has a higher interest rate than other loans",
+              "explanation_md": "Interest pricing does not resolve the delivery purpose or contrary agreement."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Whether the specific custody purpose and agreement are inconsistent with the proposed general retainer",
+              "explanation_md": "The courseware and qualified retainer rule require examination of purpose and terms."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Whether every item on bank premises automatically transfers ownership to the bank",
+              "explanation_md": "Neither physical custody nor section 171 establishes such a universal ownership transfer."
+            }
+          ],
+          "correct_explanation_md": "The courseware and qualified retainer rule require examination of purpose and terms."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A trust account and a personal borrowing carry the same individual name. The branch proposes set-off solely on that match. What must it examine first?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The reciprocal obligations and the capacities in which the funds and debt are held",
+              "explanation_md": "Matching names do not establish mutual debts in the same legal capacity."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Only the total of both balances, ignoring the trust capacity",
+              "explanation_md": "Arithmetic cannot cure a missing mutuality or capacity condition."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Whether a trust label automatically means the bank owns the balance",
+              "explanation_md": "A trust designation does not create bank ownership or settle set-off rights."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Whether all account restrictions disappear when a borrower also acts as trustee",
+              "explanation_md": "A person multiple roles are precisely why capacity must be examined."
+            }
+          ],
+          "correct_explanation_md": "Matching names do not establish mutual debts in the same legal capacity."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D006",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A bank sees a customer credit balance and a guarantee exposure that has not become a determined liability. It treats the exposure as an immediately due debt without further enquiry. Which distinction has been lost?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "A guarantee exposure is always identical to cash already paid by the bank",
+              "explanation_md": "The file must establish the actual liability rather than assume a payment or due debt."
+            },
+            {
+              "option_id": "B",
+              "text_md": "A credit balance by itself determines all guarantee conditions",
+              "explanation_md": "The deposit amount does not establish crystallisation or the guarantee terms."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The word lien resolves maturity of every monetary exposure",
+              "explanation_md": "Lien and monetary set-off are different concepts; a label does not establish maturity."
+            },
+            {
+              "option_id": "D",
+              "text_md": "An undetermined contingent exposure must be distinguished from a certain debt actually due",
+              "explanation_md": "The stated courseware set-off enquiry requires certainty, maturity and the applicable conditions."
+            }
+          ],
+          "correct_explanation_md": "The stated courseware set-off enquiry requires certainty, maturity and the applicable conditions."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Codex original draft authored 16 November 2026 from source inspection begun 15 November; independent source, cutoff, originality and pedagogical review pending. Keep all canonical items draft with null review.",
+      "Complete S04 unit inspected including end questions: printed pp.197–211 / PDF pp.216–230; PDF p.231 blank. Source expressions, table layouts, statutory illustrations and named-case narratives are not reused as learner tasks.",
+      "All legal facts remain needs_review. Original file-review scenarios and option rationales have author comparison only; schema validity and automated screening do not establish legal correctness or independent review.",
+      "Primary banker-lien/set-off judgments, demand/notice rules, guarantee crystallisation, joint/partnership accounts, trust restrictions, garnishee and insolvency treatment remain outstanding. Specific automatic-event and partnership table propositions are not assessed as verified rules."
+    ],
+    "next_batch_hint": "Reconcile all U06 gaps and source/case review; next BRBL B U07 Registration and Satisfaction of Charges, printed p.213 / PDF p.232."
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-B-U06-B008",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p.12, Compulsory Paper IV, Module B: Law Relating to Securities and Modes of Charge II"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "CONTRACT_ACT_INDIACODE_TEXT",
+        "authority": "India Code, Government of India",
+        "title": "Indian Contract Act, 1872 — statutory PDF",
+        "url": "https://www.indiacode.nic.in/bitstream/123456789/2187/2/A187209.pdf",
+        "publication_date": null,
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_B::U06",
+        "objective_ids": [
+          "BRBL::MOD_B::U06::LO_08"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_B::U06",
+        "objective_ids": [
+          "BRBL::MOD_B::U06::LO_08"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_B::U06",
+        "objective_ids": [
+          "BRBL::MOD_B::U06::LO_08"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BRBL::MOD_B::U06",
+        "objective_ids": [
+          "BRBL::MOD_B::U06::LO_08"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "unit_id": "BRBL::MOD_B::U06",
+        "objective_ids": [
+          "BRBL::MOD_B::U06::LO_08"
+        ]
+      },
+      {
+        "draft_id": "D006",
+        "unit_id": "BRBL::MOD_B::U06",
+        "objective_ids": [
+          "BRBL::MOD_B::U06::LO_08"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-B-U06-B008",
+      "draft_id": "D001",
+      "item_id": "item_13e74abe76800a72d396163b78298bb358d5e23ab669ed989e85507d9b34e4a7"
+    },
+    {
+      "batch_id": "BRBL-B-U06-B008",
+      "draft_id": "D002",
+      "item_id": "item_a9294543e703bed05bb46ab769a01bfd8e325fcf9c4ab10afcc46f52bb8f3b3f"
+    },
+    {
+      "batch_id": "BRBL-B-U06-B008",
+      "draft_id": "D003",
+      "item_id": "item_728b27417148491f773f1f3e83fe9f84d02dc4a8a2db440e0ab0692acb45e7ff"
+    },
+    {
+      "batch_id": "BRBL-B-U06-B008",
+      "draft_id": "D004",
+      "item_id": "item_736ab8938842cac5914a9529228bbaabb59550813c4708e42f699a3244e7301e"
+    },
+    {
+      "batch_id": "BRBL-B-U06-B008",
+      "draft_id": "D005",
+      "item_id": "item_0a577a677671c2b77ed12668c5539893b0e0a13fc3137e1823ca47191e9bdc63"
+    },
+    {
+      "batch_id": "BRBL-B-U06-B008",
+      "draft_id": "D006",
+      "item_id": "item_ab89f3140aa8d351f78a27886726b7a35700d0899e6e7f3a379546f5ca439ae7"
+    }
+  ],
+  "items": [
+    {
+      "title": "First identify what the bank is trying to retain",
+      "core_explanation_md": "Section 171 concerns a general balance of account and goods bailed to a banker, subject to contrary contract. The courseware further explains lawful possession in ordinary banking business and a purpose inconsistent with general lien. Examine how and why the bank obtained the property before treating every item held on its premises as general security.\n\nDocuments left for a specific safe-custody purpose raise a different enquiry from goods received as security in ordinary business. A general customer debt does not settle that difference. Do not infer an unrestricted power of sale or a right over every deposit simply from the wording of the statutory retainer provision; those require their own legal basis and conditions.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Why must the bank preserve the purpose for which property was delivered?",
+        "expected_takeaway": "A specific purpose or contrary contract can be inconsistent with the general retainer claim."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_13e74abe76800a72d396163b78298bb358d5e23ab669ed989e85507d9b34e4a7",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U06",
+      "objective_ids": [
+        "BRBL::MOD_B::U06::LO_08"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp. 208–210; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "CONTRACT_ACT_INDIACODE_TEXT",
+          "authority": "India Code, Government of India",
+          "title": "Indian Contract Act, 1872 — statutory PDF",
+          "url": "https://www.indiacode.nic.in/bitstream/123456789/2187/2/A187209.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section 171, PDF p. 42"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Set-off concerns mutual obligations, not just shared names",
+      "core_explanation_md": "Set-off concerns adjusting reciprocal monetary claims. The courseware requires attention to the same parties in the same legal capacity and to debts that are sufficiently certain and due. An account holder acting as trustee is not necessarily holding money in the same capacity as a personal borrower. A shared name in two records does not settle mutuality.\n\nSeparate present debt from a future or contingent exposure. A guarantee not yet crystallised or a debt not yet due raises conditions that cannot be ignored merely because the bank also holds a credit balance. Actual account terms, trust notice, joint ownership, applicable law and any required demand or notice must be checked. This draft does not authorise a transfer from a live account.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does matching a person name alone establish the same-capacity requirement?",
+        "expected_takeaway": "No. The legal capacity and reciprocal obligations need separate examination."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_a9294543e703bed05bb46ab769a01bfd8e325fcf9c4ab10afcc46f52bb8f3b3f",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U06",
+      "objective_ids": [
+        "BRBL::MOD_B::U06::LO_08"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp. 208–210; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "CONTRACT_ACT_INDIACODE_TEXT",
+          "authority": "India Code, Government of India",
+          "title": "Indian Contract Act, 1872 — statutory PDF",
+          "url": "https://www.indiacode.nic.in/bitstream/123456789/2187/2/A187209.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section 171, PDF p. 42"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Give each proposed adjustment its own reason",
+      "core_explanation_md": "Lien and set-off are not interchangeable labels. A file seeking to retain goods should identify the property, bailment purpose and retainer basis. A file seeking to combine account balances should identify the reciprocal debts, capacity, maturity and authority for the adjustment. Presenting either as a general right to take any customer asset hides the deciding facts.\n\nThe courseware includes special partnership combinations and events said to trigger automatic set-off. Those conclusions need primary authority and insolvency, garnishee and notice analysis before publication. Use the general distinction to ask better questions; do not convert this draft into a universal partnership, joint-account or insolvency rule.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "What should an adjustment note record besides the amounts?",
+        "expected_takeaway": "The legal route, parties/capacities, maturity, purpose restrictions and relevant contractual or statutory conditions."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_728b27417148491f773f1f3e83fe9f84d02dc4a8a2db440e0ab0692acb45e7ff",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U06",
+      "objective_ids": [
+        "BRBL::MOD_B::U06::LO_08"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp. 208–210; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "CONTRACT_ACT_INDIACODE_TEXT",
+          "authority": "India Code, Government of India",
+          "title": "Indian Contract Act, 1872 — statutory PDF",
+          "url": "https://www.indiacode.nic.in/bitstream/123456789/2187/2/A187209.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section 171, PDF p. 42"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A bank holds a sealed packet solely under a specific safe-custody arrangement and proposes general lien for a separate loan without examining that purpose. Which enquiry is missing?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only whether the packet is physically inside a bank building",
+          "explanation_md": "Location alone does not establish lawful general-security possession or remove purpose restrictions."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Whether the separate loan has a higher interest rate than other loans",
+          "explanation_md": "Interest pricing does not resolve the delivery purpose or contrary agreement."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Whether the specific custody purpose and agreement are inconsistent with the proposed general retainer",
+          "explanation_md": "The courseware and qualified retainer rule require examination of purpose and terms."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Whether every item on bank premises automatically transfers ownership to the bank",
+          "explanation_md": "Neither physical custody nor section 171 establishes such a universal ownership transfer."
+        }
+      ],
+      "correct_explanation_md": "The courseware and qualified retainer rule require examination of purpose and terms.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_736ab8938842cac5914a9529228bbaabb59550813c4708e42f699a3244e7301e",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U06",
+      "objective_ids": [
+        "BRBL::MOD_B::U06::LO_08"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp. 208–210; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "CONTRACT_ACT_INDIACODE_TEXT",
+          "authority": "India Code, Government of India",
+          "title": "Indian Contract Act, 1872 — statutory PDF",
+          "url": "https://www.indiacode.nic.in/bitstream/123456789/2187/2/A187209.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section 171, PDF p. 42"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A trust account and a personal borrowing carry the same individual name. The branch proposes set-off solely on that match. What must it examine first?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The reciprocal obligations and the capacities in which the funds and debt are held",
+          "explanation_md": "Matching names do not establish mutual debts in the same legal capacity."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Only the total of both balances, ignoring the trust capacity",
+          "explanation_md": "Arithmetic cannot cure a missing mutuality or capacity condition."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Whether a trust label automatically means the bank owns the balance",
+          "explanation_md": "A trust designation does not create bank ownership or settle set-off rights."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Whether all account restrictions disappear when a borrower also acts as trustee",
+          "explanation_md": "A person multiple roles are precisely why capacity must be examined."
+        }
+      ],
+      "correct_explanation_md": "Matching names do not establish mutual debts in the same legal capacity.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_0a577a677671c2b77ed12668c5539893b0e0a13fc3137e1823ca47191e9bdc63",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U06",
+      "objective_ids": [
+        "BRBL::MOD_B::U06::LO_08"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp. 208–210; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "CONTRACT_ACT_INDIACODE_TEXT",
+          "authority": "India Code, Government of India",
+          "title": "Indian Contract Act, 1872 — statutory PDF",
+          "url": "https://www.indiacode.nic.in/bitstream/123456789/2187/2/A187209.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section 171, PDF p. 42"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A bank sees a customer credit balance and a guarantee exposure that has not become a determined liability. It treats the exposure as an immediately due debt without further enquiry. Which distinction has been lost?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "A guarantee exposure is always identical to cash already paid by the bank",
+          "explanation_md": "The file must establish the actual liability rather than assume a payment or due debt."
+        },
+        {
+          "option_id": "B",
+          "text_md": "A credit balance by itself determines all guarantee conditions",
+          "explanation_md": "The deposit amount does not establish crystallisation or the guarantee terms."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The word lien resolves maturity of every monetary exposure",
+          "explanation_md": "Lien and monetary set-off are different concepts; a label does not establish maturity."
+        },
+        {
+          "option_id": "D",
+          "text_md": "An undetermined contingent exposure must be distinguished from a certain debt actually due",
+          "explanation_md": "The stated courseware set-off enquiry requires certainty, maturity and the applicable conditions."
+        }
+      ],
+      "correct_explanation_md": "The stated courseware set-off enquiry requires certainty, maturity and the applicable conditions.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_ab89f3140aa8d351f78a27886726b7a35700d0899e6e7f3a379546f5ca439ae7",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U06",
+      "objective_ids": [
+        "BRBL::MOD_B::U06::LO_08"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp. 208–210; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "CONTRACT_ACT_INDIACODE_TEXT",
+          "authority": "India Code, Government of India",
+          "title": "Indian Contract Act, 1872 — statutory PDF",
+          "url": "https://www.indiacode.nic.in/bitstream/123456789/2187/2/A187209.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "section 171, PDF p. 42"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-B-U07-B006",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL B U07: Creation/Registration and Satisfaction of Charges — Distinguish receiver appointment and cessation notices from charge satisfaction",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04",
+    "COMPANIES_ACT_INDIACODE_20260901"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.219; PDF page = printed page + 19",
+      "statement": "Courseware outlines notice of a receiver/manager appointment; actual statutory text also covers appointment under an instrument and cessation.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F002",
+      "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+      "locator": "section 84, PDF p.66",
+      "statement": "Section 84 covers obtaining the specified appointment order or making an appointment under instrument power, notice to company and Registrar with order/instrument copy within the stated period, and registration particulars. The appointee must notify cessation so it can be registered. These events are distinct from satisfaction of the secured debt.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "draft_id": "D001",
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "The event and the person responsible must be identified",
+        "core_explanation_md": "Section 84 concerns the described receiver or manager appointment. It addresses both an appointment order and appointment under a power in an instrument, with the relevant notice and supporting copy to the company and Registrar. Identify the actual route, date and responsible person rather than assume only a court-order case can engage the section.\n\nThe provision has a stated notice period, but applying it to a real calendar requires the governing facts and rules. Appointment is a management or recovery event; it does not itself prove that the secured debt is paid or that the charge should be recorded as satisfied. Keep the event record and security discharge evidence separate.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does appointing a receiver by itself establish full repayment?",
+          "expected_takeaway": "No. Appointment and debt satisfaction are separate events."
+        }
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D002",
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Cessation is another record event",
+        "core_explanation_md": "Section 84 also requires the appointed person to notify the company and Registrar on ceasing to hold the appointment, with registration of that notice. A file that records only the original appointment may therefore remain incomplete after the role ends. Track the cessation fact rather than silently deleting the appointment record.\n\nThis recordkeeping distinction should not be turned into an enforcement power. Whether the receiver was validly appointed, what powers the instrument gives and what insolvency or other regime applies require their own legal review. The lesson concerns identifying the statutory event and keeping its evidence, not approving a live recovery action.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Why is a cessation record needed separately from the original appointment record?",
+          "expected_takeaway": "The statute treats ceasing to hold the appointment as another event requiring notice."
+        }
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D003",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A receiver is appointed under a power contained in an instrument. The team ignores section 84 solely because no appointment order was obtained from a court. Which feature of the provision is relevant?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "It treats every appointment as automatic debt satisfaction",
+            "explanation_md": "No such satisfaction conclusion follows from appointment alone."
+          },
+          {
+            "option_id": "B",
+            "text_md": "It also addresses appointment under a power contained in an instrument",
+            "explanation_md": "The provision is not confined to the order route described in the question."
+          },
+          {
+            "option_id": "C",
+            "text_md": "It permits omission of the appointment facts whenever security exists",
+            "explanation_md": "Security existence does not remove the specified notice enquiry."
+          },
+          {
+            "option_id": "D",
+            "text_md": "It excludes every instrument-based appointment from the company and Registrar notice process",
+            "explanation_md": "The text expressly includes appointment under an instrument power, subject to its stated scope."
+          }
+        ],
+        "correct_explanation_md": "The provision is not confined to the order route described in the question."
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D004",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An appointee ceases to hold the receiver role, but the record is left unchanged because the original appointment notice was filed. What additional event does section 84 address?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Automatic cancellation of the entire underlying loan",
+            "explanation_md": "Cessation of a role does not itself establish loan discharge."
+          },
+          {
+            "option_id": "B",
+            "text_md": "A fresh notice repeating only the original appointment date and omitting cessation",
+            "explanation_md": "Repeating the earlier event does not record that the appointment has ceased."
+          },
+          {
+            "option_id": "C",
+            "text_md": "An update confined to the lender loan ledger with no company or Registrar cessation notice",
+            "explanation_md": "The statutory notice is to the company and Registrar; an internal ledger change alone does not perform it."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Notice of ceasing to hold the appointment to the company and Registrar",
+            "explanation_md": "The provision expressly requires a cessation notice for registration."
+          }
+        ],
+        "correct_explanation_md": "The provision expressly requires a cessation notice for registration."
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Codex original authoring, 16 November 2026; independent legal, cutoff, originality and pedagogical review pending. Keep canonical items draft, review null.",
+    "Entire S04 unit inspected as page images including end questions: printed pp.213–220 / PDF pp.232–239. Source lists, tables and questions were not copied or adapted with cosmetic swaps.",
+    "The statutory consolidation is dated 1 September 2026, after the 30 June exam cutoff. Selected provisions and amendment footnotes were read; earlier applicability and current rules require separate confirmation. No post-cutoff amendment is asserted as a verified exam rule.",
+    "MCA primary rules URL returned 403; India Code handle timed out and source-mirror download also returned 403. Forms, fees, authentication procedures and calendar calculations remain visibly incomplete; book labels do not establish current rules.",
+    "Actual appointment validity, instrument powers, insolvency interactions and operational forms require separate independent review. No calendar deadline is computed."
+  ],
+  "next_batch_hint": "Continue BRBL-B-U07-B007"
+}

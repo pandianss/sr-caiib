@@ -23,6 +23,7 @@ Calculators are supporting tools within Library and relevant practice flows. Det
 
 - Use one clearly labelled paper selector in the app bar. Open a selection sheet with full paper names, abbreviations, elective identification, and availability.
 - On the full-syllabus coverage map, the same app-bar selector is labelled “Coverage paper” and browses all nine papers. Its label and page content must agree. Browsing coverage does not change the active study paper, selected elective, history or sessions. Leaving coverage restores the study context; do not add a second paper selector inside the map.
+- Label the source-support stage “Full source support”, distinct from having an accessible book. Count it only under the ledger's support rule; explain that an available book alone does not establish full factual support or exam applicability. Keep review and publication separate.
 - Keep the app bar focused on the current context and one or two essential actions. Place detailed progress on the relevant screen.
 - Use tabs for sibling content views and chips for local filters. Do not use the ambiguous component label "segmented chips."
 - Preserve paper scope, filters, scroll position, and unfinished work when moving between destinations.

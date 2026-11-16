@@ -1,0 +1,152 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-B-U07-B003",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL B U07: Creation/Registration and Satisfaction of Charges — Distinguish deemed notice, intervening rights and repayment from a universal first-registration priority rule",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04",
+    "COMPANIES_ACT_INDIACODE_20260901"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.217–218; PDF page = printed page + 19",
+      "statement": "Courseware explains notice on registration and non-registration effects; its broad registration-first priority statement is held back in favour of the qualified statutory text.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F002",
+      "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+      "locator": "section 77(1) intervening-rights proviso and subsections (2)–(4), section 80, PDF p.65",
+      "statement": "Section 80 deems the specified acquirer to have notice from registration. Section 77 protects rights acquired before subsequent registration. Section 77(3) conditions charge treatment by liquidator/other creditor on registration/certificate; subsection (4) preserves the repayment obligation. These do not establish an all-purpose ranking algorithm.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "draft_id": "D001",
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Deemed notice and priority answer different questions",
+        "core_explanation_md": "Section 80 links deemed notice to registration for a person acquiring the described property, assets, undertaking or interest. Notice is not itself a complete priority decision between every possible claimant. Section 77 also says subsequent registration must not prejudice rights acquired before the charge is actually registered.\n\nA ranking opinion needs the interests, relevant dates, instrument terms, applicable statutory regime and any agreed ranking. Do not reduce it to the first registration timestamp in all circumstances. In particular, late registration should not be represented as silently erasing an intervening right simply because a certificate eventually exists.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does deemed notice under section 80 by itself rank every competing claim?",
+          "expected_takeaway": "No. It addresses notice; priority requires the applicable rights and governing rules."
+        }
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D002",
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "A filing failure does not make the loan balance disappear",
+        "core_explanation_md": "Section 77(3) restricts the described treatment of a company-created charge by a liquidator or another creditor unless the stated registration and certificate requirements are met. Section 77(4) then expressly preserves the repayment contract or obligation. Keep those consequences separate in a security report.\n\nThe difference matters because a lender may have an outstanding monetary claim while failing to establish the security position it expected. Conversely, a registration certificate does not prove that every underlying title, priority or enforcement question is settled. This lesson asks for an accurate description of evidence and legal consequence, not a real insolvency distribution outcome.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "What remains distinct from recognition of the registered charge?",
+          "expected_takeaway": "The contract or obligation to repay the secured money."
+        }
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D003",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A charge is registered late after another person has acquired a relevant right in the property. The lender says the later certificate necessarily erases the intervening right. Which section 77 qualification must be examined?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "The lender can choose priority solely from the loan interest rate",
+            "explanation_md": "Pricing does not replace the rights and statutory enquiry."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Subsequent registration must not prejudice rights acquired before actual registration",
+            "explanation_md": "The statutory proviso expressly preserves the stated intervening rights."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Every registration is retrospective for every possible competing claim",
+            "explanation_md": "That universal assertion ignores the intervening-rights qualification."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The company annual turnover alone determines all priority",
+            "explanation_md": "Turnover does not establish the competing interests or their priority."
+          }
+        ],
+        "correct_explanation_md": "The statutory proviso expressly preserves the stated intervening rights."
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D004",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A security review records a missing registration certificate and concludes that the company no longer owes the loan money. Which distinction should correct the conclusion?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Section 77 distinguishes charge treatment from the preserved repayment obligation",
+            "explanation_md": "Subsection (4) expressly prevents that inference from subsection (3)."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The underlying repayment contract is necessarily unenforceable solely because this charge certificate is missing",
+            "explanation_md": "Section 77(4) preserves the repayment obligation rather than allowing that universal inference."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Every monetary obligation requires the same certificate as a company charge",
+            "explanation_md": "The statute distinguishes the repayment contract from this charge-registration consequence."
+          },
+          {
+            "option_id": "D",
+            "text_md": "The lender can treat the monetary claim as registered security merely by restating the loan balance",
+            "explanation_md": "Recording a debt amount does not supply the missing registration or certificate evidence."
+          }
+        ],
+        "correct_explanation_md": "Subsection (4) expressly prevents that inference from subsection (3)."
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Codex original authoring, 16 November 2026; independent legal, cutoff, originality and pedagogical review pending. Keep canonical items draft, review null.",
+    "Entire S04 unit inspected as page images including end questions: printed pp.213–220 / PDF pp.232–239. Source lists, tables and questions were not copied or adapted with cosmetic swaps.",
+    "The statutory consolidation is dated 1 September 2026, after the 30 June exam cutoff. Selected provisions and amendment footnotes were read; earlier applicability and current rules require separate confirmation. No post-cutoff amendment is asserted as a verified exam rule.",
+    "MCA primary rules URL returned 403; India Code handle timed out and source-mirror download also returned 403. Forms, fees, authentication procedures and calendar calculations remain visibly incomplete; book labels do not establish current rules.",
+    "No unqualified first-to-register or insolvency ranking formula is taught. Statutory priority, competing security and pari-passu agreements need independent fact-specific review."
+  ],
+  "next_batch_hint": "Continue BRBL-B-U07-B004"
+}

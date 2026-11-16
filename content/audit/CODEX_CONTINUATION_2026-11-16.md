@@ -31,6 +31,16 @@ Earlier clean reproduction at commit 641dcd2 passed npm ci, type/lint, 637 tests
 
 ## Resume cursor and delivery status
 
-Next: finish current verification/evidence refresh, then BRBL B U07, Registration and Satisfaction of Charges, S04 printed p.213 / PDF p.232 onward. Inspect full unit and questions before authoring; use pre-cutoff primary charge-registration provisions/rules where accessible. Preserve ongoing Central Banking work by other agents and stage only this lane's files.
+U07 added: seven batches, 31 draft items / seven objectives (15 concept cards, 15 MCQs, one partial-property-release case with two linked questions). Entire courseware unit/end questions inspected: printed pp.213–220 / PDF pp.232–239. Primary Companies Act section 2(16), PDF p.20, and sections 81–87, pp.65–67 additionally read; post-cutoff limitation retained. Missing official rule/form/fee evidence is not defaulted from the book. All new items remain draft with null review. Total U02–U07: **243 items / 50 objectives**.
+
+Author quality refinement: ten distractors across seven questions in U06 B003/B008 and U07 B003/B006/B007 replaced with relevant file/legal misconceptions. Prior full canonical envelopes retained in numbered draft-history; only changed question revisions advanced; answer keys unchanged. Exact option mapping in option-refinements.json. The ledger replayed the history successfully.
+
+Fresh browser observation of BRBL map: 6 of 64 topics drafted/assessed, zero reviewed/published; U06 eight objectives and U07 seven objectives present, with source/applicability gaps and no published lesson available. Source label changed from misleading “Source available” to “Full source support”; explanatory text and per-objective Source support tags observed in the browser. Existing sources being physically accessible is different from full objective support. No screen-reader or hardware certification claimed.
+
+Refreshed clean reproduction at d65d724: npm ci (zero known vulnerabilities), typecheck/lint, **670 tests** and production build passed. The detached checkout is clean; no local source PDFs were copied. It precedes the U07/refinement/label changes; later working-tree checks are retained separately. Node 24.18.0 / npm 11.16.0 on Windows.
+
+Latest working-tree verification after U07, distractor revisions and source-support label change: **676 tests**, typecheck/lint and production build passed. Outputs copied into the dated evidence folder.
+
+Next: **BRBL C U01, RBI Integrated Ombudsman Scheme 2021**, S04 printed p.223 / PDF p.242 onward. Only opening/structure inspected; read the entire unit and end questions plus the applicable official RBI scheme before authoring. Preserve ongoing Central Banking and other work by other agents and stage only this lane's files.
 
 Implementation in progress; full-syllabus content in progress; release readiness blocked; live launch pending. Remaining external dependencies include four elective books and provider sandbox configuration. Independent legal/editorial review, broader accessibility/device acceptance and operational release checks remain required.

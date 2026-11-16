@@ -17,3 +17,5 @@ Objective: Evaluate pledge creation through security purpose, delivery and the p
 - Constructive-delivery judgments, trust receipts, lost possession and competing-creditor priorities require independent primary-case review. This batch does not certify a live warehouse or automatically preserve pledge through any release.
 
 Calculation evidence: no worked numerical or numeric-input item; calculation review not applicable to this batch.
+
+Author distractor refinement (16 November): replaced implausible alternatives with relevant legal/file-review misconceptions; correct keys unchanged. Prior canonical envelope retained under draft-history; changed questions advance revision only. Independent quality review remains pending.

@@ -8,7 +8,7 @@ import type { PaperId } from '../types/contracts.ts';
 export type Stage = 'source_supported' | 'drafted' | 'assessed' | 'reviewed' | 'published';
 export const STAGES: readonly Stage[] = ['source_supported', 'drafted', 'assessed', 'reviewed', 'published'];
 export const STAGE_LABELS: Record<Stage, string> = {
-  source_supported: 'Source available', drafted: 'Lesson drafted', assessed: 'Assessment drafted', reviewed: 'Reviewed', published: 'Published',
+  source_supported: 'Full source support', drafted: 'Lesson drafted', assessed: 'Assessment drafted', reviewed: 'Reviewed', published: 'Published',
 };
 
 export interface LedgerObjective {

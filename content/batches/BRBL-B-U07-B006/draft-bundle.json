@@ -1,0 +1,488 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-B-U07-B006",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL B U07: Creation/Registration and Satisfaction of Charges — Distinguish receiver appointment and cessation notices from charge satisfaction",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04",
+      "COMPANIES_ACT_INDIACODE_20260901"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.219; PDF page = printed page + 19",
+        "statement": "Courseware outlines notice of a receiver/manager appointment; actual statutory text also covers appointment under an instrument and cessation.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+        "locator": "section 84, PDF p.66",
+        "statement": "Section 84 covers obtaining the specified appointment order or making an appointment under instrument power, notice to company and Registrar with order/instrument copy within the stated period, and registration particulars. The appointee must notify cessation so it can be registered. These events are distinct from satisfaction of the secured debt.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "draft_id": "D001",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "The event and the person responsible must be identified",
+          "core_explanation_md": "Section 84 concerns the described receiver or manager appointment. It addresses both an appointment order and appointment under a power in an instrument, with the relevant notice and supporting copy to the company and Registrar. Identify the actual route, date and responsible person rather than assume only a court-order case can engage the section.\n\nThe provision has a stated notice period, but applying it to a real calendar requires the governing facts and rules. Appointment is a management or recovery event; it does not itself prove that the secured debt is paid or that the charge should be recorded as satisfied. Keep the event record and security discharge evidence separate.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does appointing a receiver by itself establish full repayment?",
+            "expected_takeaway": "No. Appointment and debt satisfaction are separate events."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Cessation is another record event",
+          "core_explanation_md": "Section 84 also requires the appointed person to notify the company and Registrar on ceasing to hold the appointment, with registration of that notice. A file that records only the original appointment may therefore remain incomplete after the role ends. Track the cessation fact rather than silently deleting the appointment record.\n\nThis recordkeeping distinction should not be turned into an enforcement power. Whether the receiver was validly appointed, what powers the instrument gives and what insolvency or other regime applies require their own legal review. The lesson concerns identifying the statutory event and keeping its evidence, not approving a live recovery action.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Why is a cessation record needed separately from the original appointment record?",
+            "expected_takeaway": "The statute treats ceasing to hold the appointment as another event requiring notice."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A receiver is appointed under a power contained in an instrument. The team ignores section 84 solely because no appointment order was obtained from a court. Which feature of the provision is relevant?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "It treats every appointment as automatic debt satisfaction",
+              "explanation_md": "No such satisfaction conclusion follows from appointment alone."
+            },
+            {
+              "option_id": "B",
+              "text_md": "It also addresses appointment under a power contained in an instrument",
+              "explanation_md": "The provision is not confined to the order route described in the question."
+            },
+            {
+              "option_id": "C",
+              "text_md": "It permits omission of the appointment facts whenever security exists",
+              "explanation_md": "Security existence does not remove the specified notice enquiry."
+            },
+            {
+              "option_id": "D",
+              "text_md": "It excludes every instrument-based appointment from the company and Registrar notice process",
+              "explanation_md": "The text expressly includes appointment under an instrument power, subject to its stated scope."
+            }
+          ],
+          "correct_explanation_md": "The provision is not confined to the order route described in the question."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "An appointee ceases to hold the receiver role, but the record is left unchanged because the original appointment notice was filed. What additional event does section 84 address?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Automatic cancellation of the entire underlying loan",
+              "explanation_md": "Cessation of a role does not itself establish loan discharge."
+            },
+            {
+              "option_id": "B",
+              "text_md": "A fresh notice repeating only the original appointment date and omitting cessation",
+              "explanation_md": "Repeating the earlier event does not record that the appointment has ceased."
+            },
+            {
+              "option_id": "C",
+              "text_md": "An update confined to the lender loan ledger with no company or Registrar cessation notice",
+              "explanation_md": "The statutory notice is to the company and Registrar; an internal ledger change alone does not perform it."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Notice of ceasing to hold the appointment to the company and Registrar",
+              "explanation_md": "The provision expressly requires a cessation notice for registration."
+            }
+          ],
+          "correct_explanation_md": "The provision expressly requires a cessation notice for registration."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Codex original authoring, 16 November 2026; independent legal, cutoff, originality and pedagogical review pending. Keep canonical items draft, review null.",
+      "Entire S04 unit inspected as page images including end questions: printed pp.213–220 / PDF pp.232–239. Source lists, tables and questions were not copied or adapted with cosmetic swaps.",
+      "The statutory consolidation is dated 1 September 2026, after the 30 June exam cutoff. Selected provisions and amendment footnotes were read; earlier applicability and current rules require separate confirmation. No post-cutoff amendment is asserted as a verified exam rule.",
+      "MCA primary rules URL returned 403; India Code handle timed out and source-mirror download also returned 403. Forms, fees, authentication procedures and calendar calculations remain visibly incomplete; book labels do not establish current rules.",
+      "Actual appointment validity, instrument powers, insolvency interactions and operational forms require separate independent review. No calendar deadline is computed."
+    ],
+    "next_batch_hint": "Continue BRBL-B-U07-B007"
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-B-U07-B006",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p.12, Compulsory Paper IV, Module B: Creation/Registration and Satisfaction of Charges"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+        "authority": "India Code, Government of India",
+        "title": "Companies Act, 2013 — as on 1 September 2026",
+        "url": "https://indiacode.gov.in/server/api/core/bitstreams/95902c38-5947-4457-a431-5062e234cab0/content",
+        "publication_date": "2026-09-01",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_B::U07",
+        "objective_ids": [
+          "BRBL::MOD_B::U07::LO_06"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_B::U07",
+        "objective_ids": [
+          "BRBL::MOD_B::U07::LO_06"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_B::U07",
+        "objective_ids": [
+          "BRBL::MOD_B::U07::LO_06"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BRBL::MOD_B::U07",
+        "objective_ids": [
+          "BRBL::MOD_B::U07::LO_06"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-B-U07-B006",
+      "draft_id": "D001",
+      "item_id": "item_234bf6f2ab92a627cac01174f94f575f5408fb389bf2637ebfede6cc8f304a8c"
+    },
+    {
+      "batch_id": "BRBL-B-U07-B006",
+      "draft_id": "D002",
+      "item_id": "item_fe49ae61ffa2d7a19525f8305cdf2dfa93a08e69060ff2b5f6b2d4b983418461"
+    },
+    {
+      "batch_id": "BRBL-B-U07-B006",
+      "draft_id": "D003",
+      "item_id": "item_f70a636a971b04c90cc2c36d6baa9ce312f8339e57f1612033982a4550786eeb"
+    },
+    {
+      "batch_id": "BRBL-B-U07-B006",
+      "draft_id": "D004",
+      "item_id": "item_26465955364651d155d9a0d28d28cbe27ac0fa1abad7cc91362eb7915605839d"
+    }
+  ],
+  "items": [
+    {
+      "title": "The event and the person responsible must be identified",
+      "core_explanation_md": "Section 84 concerns the described receiver or manager appointment. It addresses both an appointment order and appointment under a power in an instrument, with the relevant notice and supporting copy to the company and Registrar. Identify the actual route, date and responsible person rather than assume only a court-order case can engage the section.\n\nThe provision has a stated notice period, but applying it to a real calendar requires the governing facts and rules. Appointment is a management or recovery event; it does not itself prove that the secured debt is paid or that the charge should be recorded as satisfied. Keep the event record and security discharge evidence separate.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does appointing a receiver by itself establish full repayment?",
+        "expected_takeaway": "No. Appointment and debt satisfaction are separate events."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_234bf6f2ab92a627cac01174f94f575f5408fb389bf2637ebfede6cc8f304a8c",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U07",
+      "objective_ids": [
+        "BRBL::MOD_B::U07::LO_06"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.219; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+          "authority": "India Code, Government of India",
+          "title": "Companies Act, 2013 — as on 1 September 2026",
+          "url": "https://indiacode.gov.in/server/api/core/bitstreams/95902c38-5947-4457-a431-5062e234cab0/content",
+          "publication_date": "2026-09-01",
+          "effective_date": null,
+          "locator": "section 84, PDF p.66"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Cessation is another record event",
+      "core_explanation_md": "Section 84 also requires the appointed person to notify the company and Registrar on ceasing to hold the appointment, with registration of that notice. A file that records only the original appointment may therefore remain incomplete after the role ends. Track the cessation fact rather than silently deleting the appointment record.\n\nThis recordkeeping distinction should not be turned into an enforcement power. Whether the receiver was validly appointed, what powers the instrument gives and what insolvency or other regime applies require their own legal review. The lesson concerns identifying the statutory event and keeping its evidence, not approving a live recovery action.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Why is a cessation record needed separately from the original appointment record?",
+        "expected_takeaway": "The statute treats ceasing to hold the appointment as another event requiring notice."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_fe49ae61ffa2d7a19525f8305cdf2dfa93a08e69060ff2b5f6b2d4b983418461",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U07",
+      "objective_ids": [
+        "BRBL::MOD_B::U07::LO_06"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.219; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+          "authority": "India Code, Government of India",
+          "title": "Companies Act, 2013 — as on 1 September 2026",
+          "url": "https://indiacode.gov.in/server/api/core/bitstreams/95902c38-5947-4457-a431-5062e234cab0/content",
+          "publication_date": "2026-09-01",
+          "effective_date": null,
+          "locator": "section 84, PDF p.66"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A receiver is appointed under a power contained in an instrument. The team ignores section 84 solely because no appointment order was obtained from a court. Which feature of the provision is relevant?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "It treats every appointment as automatic debt satisfaction",
+          "explanation_md": "No such satisfaction conclusion follows from appointment alone."
+        },
+        {
+          "option_id": "B",
+          "text_md": "It also addresses appointment under a power contained in an instrument",
+          "explanation_md": "The provision is not confined to the order route described in the question."
+        },
+        {
+          "option_id": "C",
+          "text_md": "It permits omission of the appointment facts whenever security exists",
+          "explanation_md": "Security existence does not remove the specified notice enquiry."
+        },
+        {
+          "option_id": "D",
+          "text_md": "It excludes every instrument-based appointment from the company and Registrar notice process",
+          "explanation_md": "The text expressly includes appointment under an instrument power, subject to its stated scope."
+        }
+      ],
+      "correct_explanation_md": "The provision is not confined to the order route described in the question.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_f70a636a971b04c90cc2c36d6baa9ce312f8339e57f1612033982a4550786eeb",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U07",
+      "objective_ids": [
+        "BRBL::MOD_B::U07::LO_06"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.219; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+          "authority": "India Code, Government of India",
+          "title": "Companies Act, 2013 — as on 1 September 2026",
+          "url": "https://indiacode.gov.in/server/api/core/bitstreams/95902c38-5947-4457-a431-5062e234cab0/content",
+          "publication_date": "2026-09-01",
+          "effective_date": null,
+          "locator": "section 84, PDF p.66"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "An appointee ceases to hold the receiver role, but the record is left unchanged because the original appointment notice was filed. What additional event does section 84 address?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Automatic cancellation of the entire underlying loan",
+          "explanation_md": "Cessation of a role does not itself establish loan discharge."
+        },
+        {
+          "option_id": "B",
+          "text_md": "A fresh notice repeating only the original appointment date and omitting cessation",
+          "explanation_md": "Repeating the earlier event does not record that the appointment has ceased."
+        },
+        {
+          "option_id": "C",
+          "text_md": "An update confined to the lender loan ledger with no company or Registrar cessation notice",
+          "explanation_md": "The statutory notice is to the company and Registrar; an internal ledger change alone does not perform it."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Notice of ceasing to hold the appointment to the company and Registrar",
+          "explanation_md": "The provision expressly requires a cessation notice for registration."
+        }
+      ],
+      "correct_explanation_md": "The provision expressly requires a cessation notice for registration.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_26465955364651d155d9a0d28d28cbe27ac0fa1abad7cc91362eb7915605839d",
+      "schema_version": "2.0.0",
+      "revision": 2,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U07",
+      "objective_ids": [
+        "BRBL::MOD_B::U07::LO_06"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.219; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+          "authority": "India Code, Government of India",
+          "title": "Companies Act, 2013 — as on 1 September 2026",
+          "url": "https://indiacode.gov.in/server/api/core/bitstreams/95902c38-5947-4457-a431-5062e234cab0/content",
+          "publication_date": "2026-09-01",
+          "effective_date": null,
+          "locator": "section 84, PDF p.66"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

@@ -1,0 +1,488 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-B-U07-B001",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL B U07: Creation/Registration and Satisfaction of Charges — Classify a company charge and distinguish fixed security from a floating-charge arrangement",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04",
+      "COMPANIES_ACT_INDIACODE_20260901"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.214–216; PDF page = printed page + 19",
+        "statement": "Courseware introduces the company charge definition, fixed/floating characteristics and crystallisation. Its historical 1956 list, broad exclusions and universal priority language are not adopted as current rules.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+        "locator": "section 2(16), PDF p.20; section 77, PDF pp.64–65",
+        "statement": "Section 2(16) defines the stated security interest/lien on company property, assets or undertakings and includes a mortgage. Section 77 describes registration scope and contains a prescribed-exemption qualification. Fixed/floating characteristics below also rely on the courseware; actual crystallisation and priorities need instrument, statute and case review.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "draft_id": "D001",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Start with the secured interest, not the lending product name",
+          "core_explanation_md": "For company-law purposes, a charge is the described interest or lien created as security on company property, assets or undertakings; the definition includes a mortgage. A facility name does not determine whether its security creates such an interest. Identify the chargor, the property or undertaking and the obligation secured.\n\nSection 77 has broad language concerning property, location and tangible or other assets, with statutory qualifications including prescribed exemptions. Do not use the former 1956 Act list as an exhaustive current checklist or turn a courseware exception into a universal filing exemption. A guarantee and a proprietary security interest also require separate classification; the label alone should not decide the filing result.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Why is the lending product name insufficient to determine whether a company charge exists?",
+            "expected_takeaway": "The enquiry concerns the security interest actually created on the company property, assets or undertaking."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "A floating charge needs its terms and the actual event",
+          "core_explanation_md": "The courseware contrasts security attached to identified property with a floating arrangement covering a changing class of assets while ordinary business dealings continue within the arrangement. Crystallisation describes the charge attaching on the relevant event. It does not mean every floating charge already controls every individual asset in the same way as fixed security.\n\nRead the instrument for the asset class, permitted dealings, event and effect; then check applicable law. A receiver appointment, business cessation or contractual event may be relevant, but a phrase in a stock report cannot replace proof of the event. Nor does crystallisation by itself establish an absolute priority over every competing statutory or insolvency claim.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does a floating-charge label prove that a crystallisation event has already occurred?",
+            "expected_takeaway": "No. The relevant terms, event and legal consequences must be established."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A reviewer uses only the former Companies Act, 1956 list to conclude that an unusual security interest on a company intangible asset can never require current charge registration. What should be corrected?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Treat every intangible asset as outside company property by definition",
+              "explanation_md": "The current scope is not restricted to tangible assets or a historic list."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Assume the loan product name conclusively determines all filing duties",
+              "explanation_md": "The security interest and applicable statutory scope determine the enquiry."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Ignore all exemptions because broad language has no qualifications",
+              "explanation_md": "The statutory text includes qualifications, including prescribed exemptions."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Examine the current charge definition, section 77 scope and applicable exemptions",
+              "explanation_md": "This avoids substituting an obsolete exhaustive list for the present statutory enquiry."
+            }
+          ],
+          "correct_explanation_md": "This avoids substituting an obsolete exhaustive list for the present statutory enquiry."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A floating-charge instrument names a particular crystallisation event. A manager asserts that the event occurred solely because a monthly stock report was late. Which file evidence is needed?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only a larger collateral valuation",
+              "explanation_md": "Value does not establish whether the specified event occurred."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The actual terms, facts establishing the relevant event and applicable legal effect",
+              "explanation_md": "A security label or late report alone cannot substitute for this analysis."
+            },
+            {
+              "option_id": "C",
+              "text_md": "An assumption that floating charges always mean outright bank ownership",
+              "explanation_md": "The security form does not establish such an ownership conclusion."
+            },
+            {
+              "option_id": "D",
+              "text_md": "A rule that every floating charge is invalid until stock stops changing",
+              "explanation_md": "A changing class of assets is part of the courseware floating-charge distinction."
+            }
+          ],
+          "correct_explanation_md": "A security label or late report alone cannot substitute for this analysis."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Codex original authoring, 16 November 2026; independent legal, cutoff, originality and pedagogical review pending. Keep canonical items draft, review null.",
+      "Entire S04 unit inspected as page images including end questions: printed pp.213–220 / PDF pp.232–239. Source lists, tables and questions were not copied or adapted with cosmetic swaps.",
+      "The statutory consolidation is dated 1 September 2026, after the 30 June exam cutoff. Selected provisions and amendment footnotes were read; earlier applicability and current rules require separate confirmation. No post-cutoff amendment is asserted as a verified exam rule.",
+      "MCA primary rules URL returned 403; India Code handle timed out and source-mirror download also returned 403. Forms, fees, authentication procedures and calendar calculations remain visibly incomplete; book labels do not establish current rules.",
+      "Fixed/floating charge and crystallisation case law, current exemptions and insolvency/statutory priority interactions remain pending; no universal all-charge or priority claim is assessed."
+    ],
+    "next_batch_hint": "Continue BRBL-B-U07-B002"
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-B-U07-B001",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p.12, Compulsory Paper IV, Module B: Creation/Registration and Satisfaction of Charges"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+        "authority": "India Code, Government of India",
+        "title": "Companies Act, 2013 — as on 1 September 2026",
+        "url": "https://indiacode.gov.in/server/api/core/bitstreams/95902c38-5947-4457-a431-5062e234cab0/content",
+        "publication_date": "2026-09-01",
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_B::U07",
+        "objective_ids": [
+          "BRBL::MOD_B::U07::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_B::U07",
+        "objective_ids": [
+          "BRBL::MOD_B::U07::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_B::U07",
+        "objective_ids": [
+          "BRBL::MOD_B::U07::LO_01"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BRBL::MOD_B::U07",
+        "objective_ids": [
+          "BRBL::MOD_B::U07::LO_01"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-B-U07-B001",
+      "draft_id": "D001",
+      "item_id": "item_bfa34b074eb406c117ec449be15c5514be2c8c52a8242722a2721634c66c649b"
+    },
+    {
+      "batch_id": "BRBL-B-U07-B001",
+      "draft_id": "D002",
+      "item_id": "item_78d89c34dd7574ea21378fb36964eb35c6d0f2e99218fc73d1fe45f11c5998d8"
+    },
+    {
+      "batch_id": "BRBL-B-U07-B001",
+      "draft_id": "D003",
+      "item_id": "item_fc07c3549628ed48ace89ccf95761abdd065f158853f2a2d6a3da07afbe1f7fb"
+    },
+    {
+      "batch_id": "BRBL-B-U07-B001",
+      "draft_id": "D004",
+      "item_id": "item_0577ffd8daabf2bb9ec311cb3fa8d18e0faeec7cd09d42ca00bac0ec80d8d85c"
+    }
+  ],
+  "items": [
+    {
+      "title": "Start with the secured interest, not the lending product name",
+      "core_explanation_md": "For company-law purposes, a charge is the described interest or lien created as security on company property, assets or undertakings; the definition includes a mortgage. A facility name does not determine whether its security creates such an interest. Identify the chargor, the property or undertaking and the obligation secured.\n\nSection 77 has broad language concerning property, location and tangible or other assets, with statutory qualifications including prescribed exemptions. Do not use the former 1956 Act list as an exhaustive current checklist or turn a courseware exception into a universal filing exemption. A guarantee and a proprietary security interest also require separate classification; the label alone should not decide the filing result.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Why is the lending product name insufficient to determine whether a company charge exists?",
+        "expected_takeaway": "The enquiry concerns the security interest actually created on the company property, assets or undertaking."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_bfa34b074eb406c117ec449be15c5514be2c8c52a8242722a2721634c66c649b",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U07",
+      "objective_ids": [
+        "BRBL::MOD_B::U07::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.214–216; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+          "authority": "India Code, Government of India",
+          "title": "Companies Act, 2013 — as on 1 September 2026",
+          "url": "https://indiacode.gov.in/server/api/core/bitstreams/95902c38-5947-4457-a431-5062e234cab0/content",
+          "publication_date": "2026-09-01",
+          "effective_date": null,
+          "locator": "section 2(16), PDF p.20; section 77, PDF pp.64–65"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "A floating charge needs its terms and the actual event",
+      "core_explanation_md": "The courseware contrasts security attached to identified property with a floating arrangement covering a changing class of assets while ordinary business dealings continue within the arrangement. Crystallisation describes the charge attaching on the relevant event. It does not mean every floating charge already controls every individual asset in the same way as fixed security.\n\nRead the instrument for the asset class, permitted dealings, event and effect; then check applicable law. A receiver appointment, business cessation or contractual event may be relevant, but a phrase in a stock report cannot replace proof of the event. Nor does crystallisation by itself establish an absolute priority over every competing statutory or insolvency claim.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does a floating-charge label prove that a crystallisation event has already occurred?",
+        "expected_takeaway": "No. The relevant terms, event and legal consequences must be established."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_78d89c34dd7574ea21378fb36964eb35c6d0f2e99218fc73d1fe45f11c5998d8",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U07",
+      "objective_ids": [
+        "BRBL::MOD_B::U07::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.214–216; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+          "authority": "India Code, Government of India",
+          "title": "Companies Act, 2013 — as on 1 September 2026",
+          "url": "https://indiacode.gov.in/server/api/core/bitstreams/95902c38-5947-4457-a431-5062e234cab0/content",
+          "publication_date": "2026-09-01",
+          "effective_date": null,
+          "locator": "section 2(16), PDF p.20; section 77, PDF pp.64–65"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A reviewer uses only the former Companies Act, 1956 list to conclude that an unusual security interest on a company intangible asset can never require current charge registration. What should be corrected?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Treat every intangible asset as outside company property by definition",
+          "explanation_md": "The current scope is not restricted to tangible assets or a historic list."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Assume the loan product name conclusively determines all filing duties",
+          "explanation_md": "The security interest and applicable statutory scope determine the enquiry."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Ignore all exemptions because broad language has no qualifications",
+          "explanation_md": "The statutory text includes qualifications, including prescribed exemptions."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Examine the current charge definition, section 77 scope and applicable exemptions",
+          "explanation_md": "This avoids substituting an obsolete exhaustive list for the present statutory enquiry."
+        }
+      ],
+      "correct_explanation_md": "This avoids substituting an obsolete exhaustive list for the present statutory enquiry.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_fc07c3549628ed48ace89ccf95761abdd065f158853f2a2d6a3da07afbe1f7fb",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U07",
+      "objective_ids": [
+        "BRBL::MOD_B::U07::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.214–216; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+          "authority": "India Code, Government of India",
+          "title": "Companies Act, 2013 — as on 1 September 2026",
+          "url": "https://indiacode.gov.in/server/api/core/bitstreams/95902c38-5947-4457-a431-5062e234cab0/content",
+          "publication_date": "2026-09-01",
+          "effective_date": null,
+          "locator": "section 2(16), PDF p.20; section 77, PDF pp.64–65"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A floating-charge instrument names a particular crystallisation event. A manager asserts that the event occurred solely because a monthly stock report was late. Which file evidence is needed?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only a larger collateral valuation",
+          "explanation_md": "Value does not establish whether the specified event occurred."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The actual terms, facts establishing the relevant event and applicable legal effect",
+          "explanation_md": "A security label or late report alone cannot substitute for this analysis."
+        },
+        {
+          "option_id": "C",
+          "text_md": "An assumption that floating charges always mean outright bank ownership",
+          "explanation_md": "The security form does not establish such an ownership conclusion."
+        },
+        {
+          "option_id": "D",
+          "text_md": "A rule that every floating charge is invalid until stock stops changing",
+          "explanation_md": "A changing class of assets is part of the courseware floating-charge distinction."
+        }
+      ],
+      "correct_explanation_md": "A security label or late report alone cannot substitute for this analysis.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_0577ffd8daabf2bb9ec311cb3fa8d18e0faeec7cd09d42ca00bac0ec80d8d85c",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_B",
+      "unit_id": "BRBL::MOD_B::U07",
+      "objective_ids": [
+        "BRBL::MOD_B::U07::LO_01"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.214–216; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "COMPANIES_ACT_INDIACODE_20260901",
+          "authority": "India Code, Government of India",
+          "title": "Companies Act, 2013 — as on 1 September 2026",
+          "url": "https://indiacode.gov.in/server/api/core/bitstreams/95902c38-5947-4457-a431-5062e234cab0/content",
+          "publication_date": "2026-09-01",
+          "effective_date": null,
+          "locator": "section 2(16), PDF p.20; section 77, PDF pp.64–65"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}
