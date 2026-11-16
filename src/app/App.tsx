@@ -96,7 +96,7 @@ function Shell({ route, children }: { route: string[]; children: ReactNode }) {
       {nav('rail')}
       <header className="appbar">
         {secondary && <IconButton icon="back" label="Back" onClick={() => window.history.length > 1 ? window.history.back() : go('today')} />}
-        <div className="grow"><button type="button" className="paper-select" onClick={() => setSheet(true)} aria-haspopup="dialog" aria-label={`${paperLabel}: ${PAPER_NAMES[displayedPaper]}. Change paper`}>
+        <div className="grow"><button type="button" className="paper-select" data-paper={displayedPaper} onClick={() => setSheet(true)} aria-haspopup="dialog" aria-label={`${paperLabel}: ${PAPER_NAMES[displayedPaper]}. Change paper`}>
           <span><small>{paperLabel}</small><strong>{PAPER_NAMES[displayedPaper]}</strong></span><Icon name="expand" /></button></div>
         {!s.online && <Tag kind="warn"><Icon name="offline" size={16} /> Offline</Tag>}
         <IconButton icon="account" label="Account and pass" href="#/account" />
