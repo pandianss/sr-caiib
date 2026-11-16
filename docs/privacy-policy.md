@@ -3,7 +3,7 @@
 Last updated: 16 November 2026
 
 CAIIB Study ("the app") is an independent study app for the CAIIB examinations. It is published by
-**[PUBLISHER NAME]** ("we"). Contact: **[SUPPORT EMAIL]**.
+**SuperRecall** ("we"). Contact: **sspandian.here@gmail.com**.
 
 ## The short version
 
@@ -53,7 +53,7 @@ uninstalling it.
 
 ## Contact
 
-Questions about this policy: **[SUPPORT EMAIL]**.
+Questions about this policy: **sspandian.here@gmail.com**.
 
 *The app is not affiliated with, endorsed by or sponsored by the Indian Institute of Banking & Finance (IIBF).
 CAIIB is a certification of IIBF.*
