@@ -301,3 +301,4 @@ synthetic fixtures), **A** = `scripts/ui-audit.js` measured on the rendered DOM.
 - Progress (Claude, 2026-11-16): CB Module E unit 4 (financial stability) drafted as CB-E-U04-B001 (55 items); resume at CB Module F unit 1 (NBFIs, courseware unit 17, printed p. 435 = PDF p. 452).
 - Progress (Claude, 2026-11-16): CB Module F unit 1 (NBFIs) drafted as CB-F-U01-B001 (54 items); resume at CB Module F unit 2 (primary dealers, courseware unit 18, printed p. 445 = PDF p. 462).
 - Progress (Claude, 2026-11-16): CB Module F unit 2 (primary dealers) drafted as CB-F-U02-B001; resume at the CB appendix (CB::MOD_APPENDIX::U01, PDF p. 475 onward).
+- Progress (Claude, 2026-11-16): CB appendix drafted as CB-APPENDIX-U01-B001 (71 items); all Central Banking courseware units 1-18 and the appendix now have DRAFT batches; remaining glossary entries not itemised; independent audit pending.
