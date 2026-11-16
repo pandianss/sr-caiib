@@ -6,7 +6,7 @@
      Reserve Navy primary, Sovereign Gold tonal secondary, Banking Teal tertiary. Status colours stay text-safe. */
   --primary: #0d3b66; --on-primary: #ffffff; --primary-container: #d3e4ff; --on-primary-container: #001c38;
   --secondary-container: #ffdea8; --on-secondary-container: #271900;
-  --tertiary: #006d77;
+  --tertiary: #006d77; --accent-gold: #b48318;
   --surface: #f8f9ff; --surface-container-low: #eff4fd; --surface-container: #eaeef7; --surface-container-high: #e4e8f2;
   --on-surface: #171c23; --on-surface-variant: #42474f; --outline: #737780; --outline-variant: #c3c6d0;
   --error: #ba1a1a; --on-error: #ffffff; --error-container: #ffdad6; --on-error-container: #410002;
@@ -26,7 +26,7 @@
   color-scheme: dark;
   --primary: #a4c9fc; --on-primary: #00315b; --primary-container: #204874; --on-primary-container: #d3e4ff;
   --secondary-container: #5e4200; --on-secondary-container: #ffdea8;
-  --tertiary: #82d3de;
+  --tertiary: #82d3de; --accent-gold: #f2c035;
   --surface: #101418; --surface-container-low: #181c22; --surface-container: #1f242b; --surface-container-high: #2a303a;
   --on-surface: #e1e7f3; --on-surface-variant: #a9b3c4; --outline: #7a8497; --outline-variant: #3a4250;
   --error: #ffb4ab; --on-error: #690005; --error-container: #93000a; --on-error-container: #ffdad6;
@@ -191,3 +191,10 @@ details.more > summary::before { content: "\25B8"; } details.more[open] > summar
 /* Paper accent from tokens (set via data-paper on the paper selector). */
 [data-paper="ABM"] { --paper-accent: var(--paper-ABM); } [data-paper="BFM"] { --paper-accent: var(--paper-BFM); } [data-paper="ABFM"] { --paper-accent: var(--paper-ABFM); } [data-paper="BRBL"] { --paper-accent: var(--paper-BRBL); }
 [data-paper="CB"] { --paper-accent: var(--paper-CB); } [data-paper="RM"] { --paper-accent: var(--paper-RM); } [data-paper="ITDB"] { --paper-accent: var(--paper-ITDB); } [data-paper="HRM"] { --paper-accent: var(--paper-HRM); } [data-paper="RB"] { --paper-accent: var(--paper-RB); }
+
+/* Stitch DESIGN.md: formulas and statutory rules sit in inset blocks with a left accent stroke. */
+.formula { border-left: 0.1875rem solid var(--accent-gold); text-align: center; }
+.card.rule, .md blockquote { border-left: 0.125rem solid var(--primary); }
+.md blockquote { margin: 0 0 var(--space-3); padding: var(--space-1) var(--space-3); }
+.stat b { font-variant-numeric: tabular-nums; }
+.card.primary { box-shadow: 0 0.25rem 1rem rgba(13, 59, 102, 0.08); }

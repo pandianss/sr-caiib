@@ -7,6 +7,13 @@ import { Formula, Icon, Md, More, Tag } from './ui.tsx';
 
 export const CARD_TYPE_LABEL: Record<StudyCard['card_type'], string> = { concept: 'Concept', formula: 'Formula', statute: 'Statute or rule', worked_example: 'Worked example' };
 
+/** Courseware and publisher editions are editorial evidence, kept on file but not shown to learners as the app's source. */
+const COURSEWARE = /courseware|macmillan|study kit|workbook/i;
+function publicCitations(item: ContentItem) {
+  const seen = new Set<string>();
+  return item.citations.filter(c => !COURSEWARE.test(`${c.title} ${c.authority}`)).filter(c => { const k = `${c.title}|${c.locator}`; if (seen.has(k)) return false; seen.add(k); return true; });
+}
+
 /** Concise provenance with expandable detail. Internal review flags and schema terms are never shown. */
 export function Sources({ item }: { item: ContentItem }) {
   const record = model.state.index.recordOf(item.id) ?? model.state.allRecords.find(r => r.pack.items.some(i => i.id === item.id));
@@ -16,11 +23,13 @@ export function Sources({ item }: { item: ContentItem }) {
   const line = item.context.kind === 'exam'
     ? `Applicable to ${ctx?.label ?? item.context.exam_context_id}${verified ? `; verified ${verified}` : ''}.`
     : `Current reference as of ${formatDate(item.context.as_of_date)}${verified ? `; last verified ${verified}` : ''}. Not updated in real time.`;
+  const published = publicCitations(item);
   return (
     <div className="stack"><p className="support">{line}</p>
-      {item.citations.length > 0 && <More summary={`Sources (${item.citations.length})`}><ul className="list">{item.citations.map((c, i) => (
+      {published.length > 0 && <More summary={`Public sources (${published.length})`}><ul className="list">{published.map((c, i) => (
         <li key={i} style={{ padding: '0.5rem 0' }}><strong>{c.title}</strong><div className="support">{c.authority} · {c.locator}{c.publication_date ? ` · published ${formatDate(c.publication_date)}` : ''}{c.effective_date ? ` · effective ${formatDate(c.effective_date)}` : ''}</div>{c.url && <a href={c.url} target="_blank" rel="noreferrer noopener">Open source</a>}</li>))}</ul>
         {item.context.kind === 'exam' && <p className="support">Regulatory cutoff for this session: {formatDate(item.context.regulatory_cutoff_date)}.</p>}</More>}
+      {published.length === 0 && item.citations.length > 0 && <p className="support">Written independently for this app and checked against the syllabus study reference on file. No public regulator source is linked to this item yet.</p>}
     </div>
   );
 }
@@ -41,7 +50,7 @@ export function CardBody({ card }: { card: StudyCard }) {
         {card.formula_spec.common_errors.length > 0 && <More summary="Common errors"><ul style={{ margin: 0, paddingLeft: '1.25rem' }}>{card.formula_spec.common_errors.map((a, i) => <li key={i}>{a}</li>)}</ul></More>}
       </>)}
       {card.card_type === 'statute' && (<>
-        <div className="card"><h3>Rule</h3><p className="lesson">{card.statute_spec.rule_summary}</p>
+        <div className="card rule"><h3>Rule</h3><p className="lesson">{card.statute_spec.rule_summary}</p>
           <dl className="kv"><dt>Source</dt><dd>{card.statute_spec.act_or_direction_name}</dd>{card.statute_spec.section_or_clause && <><dt>Section or clause</dt><dd>{card.statute_spec.section_or_clause}</dd></>}<dt>Applies to</dt><dd>{card.statute_spec.applicability}</dd></dl></div>
         {card.statute_spec.thresholds_or_penalties.length > 0 && <div className="section"><h3>Thresholds and consequences</h3><ul style={{ margin: 0, paddingLeft: '1.25rem' }}>{card.statute_spec.thresholds_or_penalties.map((a, i) => <li key={i}>{a}</li>)}</ul></div>}
         {card.statute_spec.exceptions.length > 0 && <More summary={`Exceptions (${card.statute_spec.exceptions.length})`}><ul style={{ margin: 0, paddingLeft: '1.25rem' }}>{card.statute_spec.exceptions.map((a, i) => <li key={i}>{a}</li>)}</ul></More>}
