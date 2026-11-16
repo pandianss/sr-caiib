@@ -1,4 +1,4 @@
-import { Capacitor } from '@capacitor/core';
+import { Capacitor, SystemBars, SystemBarsStyle } from '@capacitor/core';
 
 /** True inside the Android (Google Play) app shell. */
 export const IS_NATIVE: boolean = (() => { try { return Capacitor.isNativePlatform(); } catch { return false; } })();
@@ -22,4 +22,10 @@ export function installNativeBack(): void {
       if (canGoBack) window.history.back(); else void App.exitApp();
     });
   }).catch(() => { /* Back falls back to the system default */ });
+}
+
+/** Keeps status and gesture bar icons readable when the in-app theme differs from the device theme. */
+export function setSystemBarsForTheme(dark: boolean): void {
+  if (!IS_NATIVE) return;
+  void SystemBars.setStyle({ style: dark ? SystemBarsStyle.Dark : SystemBarsStyle.Light }).catch(() => { /* cosmetic */ });
 }

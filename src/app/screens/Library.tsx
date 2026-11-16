@@ -5,13 +5,15 @@ import { allCalculators, runCalculator, type CalcResult } from '../../core/calcu
 import { formatIndian, mustDec } from '../../core/decimal.ts';
 import { formatDate } from '../../core/time.ts';
 import { CARD_TYPE_LABEL } from '../content.tsx';
-import { go, paperAvailability, useApp } from '../hooks.ts';
+import { paperAvailability, useApp } from '../hooks.ts';
 import { model } from '../model.ts';
-import { PURCHASES_VISIBLE } from '../platform.ts';
+import { IS_NATIVE, PURCHASES_VISIBLE } from '../platform.ts';
 import { Banner, Button, Chip, Empty, Icon, More, Sheet, Tabs, Tag } from '../ui.tsx';
 
 type Tab = 'search' | 'formulas' | 'statutes' | 'calculators' | 'bookmarks' | 'downloads';
-const TABS: { id: Tab; label: string }[] = [{ id: 'search', label: 'Search' }, { id: 'formulas', label: 'Formulas' }, { id: 'statutes', label: 'Statutes' }, { id: 'calculators', label: 'Calculators' }, { id: 'bookmarks', label: 'Bookmarks' }, { id: 'downloads', label: 'Downloads' }];
+const ALL_TABS: { id: Tab; label: string }[] = [{ id: 'search', label: 'Search' }, { id: 'formulas', label: 'Formulas' }, { id: 'statutes', label: 'Statutes' }, { id: 'calculators', label: 'Calculators' }, { id: 'bookmarks', label: 'Bookmarks' }, { id: 'downloads', label: 'Downloads' }];
+// The Play build bundles its content, so there is nothing to download or remove.
+const TABS = IS_NATIVE ? ALL_TABS.filter(t => t.id !== 'downloads') : ALL_TABS;
 const remember = (k: string, v: string) => { try { sessionStorage.setItem(k, v); } catch { /* optional */ } };
 const recall = (k: string): string => { try { return sessionStorage.getItem(k) ?? ''; } catch { return ''; } };
 
@@ -20,7 +22,7 @@ export function Library({ tab }: { tab?: string }) {
   return (
     <>
       <div className="section"><h1>Library</h1></div>
-      <Tabs tabs={TABS} value={current} onChange={t => go(`library/${t}`)} label="Library sections" idPrefix="library-tab" panelId="library-panel" />
+      <Tabs tabs={TABS} value={current} onChange={t => window.location.replace(`#/library/${t}`)} label="Library sections" idPrefix="library-tab" panelId="library-panel" />
       <div role="tabpanel" id="library-panel" aria-labelledby={`library-tab-${current}`} className="section">
         {current === 'search' && <Search />}{current === 'formulas' && <CardList type="formula" />}{current === 'statutes' && <CardList type="statute" />}
         {current === 'calculators' && <Calculators />}{current === 'bookmarks' && <Bookmarks />}{current === 'downloads' && <OfflinePackInspector />}
@@ -37,9 +39,9 @@ function Search() {
   return (
     <>
       <div className="field"><label htmlFor="q">Search lessons, formulas and references</label><div className="input-row"><input id="q" className="input" type="search" value={query} onChange={e => setQuery(e.target.value)} placeholder="For example: growth" autoComplete="off" /></div></div>
-      <div className="chips" role="group" aria-label="Search scope"><Chip selected={!all} onClick={() => setAll(false)}>This paper: {PAPER_NAMES[paper]}</Chip><Chip selected={all} onClick={() => setAll(true)}>All downloaded papers</Chip></div>
-      <p className="support" role="status">{query.trim().length < 2 ? 'Type at least two characters. Search covers content downloaded on this device and works offline.' : `${hits.length} result${hits.length === 1 ? '' : 's'} in ${all ? 'all downloaded papers' : PAPER_NAMES[paper]}.`}</p>
-      {query.trim().length >= 2 && hits.length === 0 && <Empty title="No results" action={!all ? <Button variant="tonal" onClick={() => setAll(true)}>Search all downloaded papers</Button> : undefined}>Nothing downloaded matches “{query}”. Check the spelling or try a shorter term. Unpublished topics cannot be found here.</Empty>}
+      <div className="chips" role="group" aria-label="Search scope"><Chip selected={!all} onClick={() => setAll(false)}>This paper: {PAPER_NAMES[paper]}</Chip><Chip selected={all} onClick={() => setAll(true)}>All papers</Chip></div>
+      <p className="support" role="status">{query.trim().length < 2 ? 'Type at least two characters. Search covers content on this device and works offline.' : `${hits.length} result${hits.length === 1 ? '' : 's'} in ${all ? 'all papers' : PAPER_NAMES[paper]}.`}</p>
+      {query.trim().length >= 2 && hits.length === 0 && <Empty title="No results" action={!all ? <Button variant="tonal" onClick={() => setAll(true)}>Search all papers</Button> : undefined}>Nothing downloaded matches “{query}”. Check the spelling or try a shorter term. Unpublished topics cannot be found here.</Empty>}
       <ul className="list">{hits.map(h => <li key={h.item.id}><a className="item" href={`#/library/item/${encodeURIComponent(h.item.id)}`}><span className="grow"><span className="title">{h.title}</span><span className="meta" style={{ display: 'block' }}>{model.unitOpen(h.paper_id, h.item.unit_id) ? h.snippet : 'Part of the CAIIB pass'}</span></span>{!model.unitOpen(h.paper_id, h.item.unit_id) && <Tag kind="info"><Icon name="lock" size={14} /> In the pass</Tag>}{all && <Tag>{h.paper_id}</Tag>}<Icon name="chevron" /></a></li>)}</ul>
     </>
   );
@@ -49,7 +51,7 @@ function CardList({ type }: { type: StudyCard['card_type'] }) {
   const s = useApp(); const paper = s.prefs.active_paper; const cat = model.catalogueFor(paper);
   const cards = s.index.cards(paper).filter(c => c.card_type === type && model.unitOpen(paper, c.unit_id));
   const refs = type === 'statute' ? s.index.references(paper).filter(r => model.unitOpen(paper, r.unit_id)) : [];
-  if (!cards.length && !refs.length) return <Empty title={`No ${type === 'formula' ? 'formulas' : 'statutory references'} available for ${PAPER_NAMES[paper]}`}>They appear here when lessons for this paper are published and downloaded.</Empty>;
+  if (!cards.length && !refs.length) return <Empty title={`No ${type === 'formula' ? 'formulas' : 'statutory references'} available for ${PAPER_NAMES[paper]}`}>They appear here when this paper has them in a published lesson.</Empty>;
   return (
     <>
       <p className="support">{PAPER_NAMES[paper]}</p>

@@ -347,3 +347,12 @@ export function recommend(ctx: PlanContext, active: { attempt: AttemptRecord | n
   if (qs.length) return { kind: 'practice', title: 'Practise questions', reason: 'You have studied every available card. Practice shows whether you can apply them.', minutes: Math.max(1, Math.round((Math.min(10, qs.length) * PLANNING_PACE_SECONDS) / 60)), ref: null };
   return { kind: 'none', title: 'No study content is available for this paper yet', reason: 'Content for this paper has not been published. Choose another paper or check the coverage map.', minutes: null, ref: null };
 }
+
+/** Takes one question from each unit in turn so a mixed set covers the paper instead of only its first unit. */
+export function spreadAcrossUnits<T extends { unit_id: string }>(questions: readonly T[]): T[] {
+  const groups = new Map<string, T[]>();
+  for (const q of questions) { const g = groups.get(q.unit_id); if (g) g.push(q); else groups.set(q.unit_id, [q]); }
+  const lists = [...groups.values()]; const out: T[] = [];
+  for (let i = 0; out.length < questions.length; i++) for (const l of lists) if (i < l.length) out.push(l[i]!);
+  return out;
+}

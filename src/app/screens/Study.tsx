@@ -88,7 +88,7 @@ export function StudyPlayer({ id }: { id: string }) {
         <h2 id="sc">Check yourself</h2>
         {question ? (
           <>
-            <QuestionView q={question} response={answered ? prog.response ?? '' : response} onResponse={v => { setResponse(v); setError(null); }} disabled={answered || busy} feedback={answered ? { correct: Boolean(prog.answered_correct) } : null} error={error} />
+            <QuestionView q={question} onSubmit={() => void submit()} response={answered ? prog.response ?? '' : response} onResponse={v => { setResponse(v); setError(null); }} disabled={answered || busy} feedback={answered ? { correct: Boolean(prog.answered_correct) } : null} error={error} />
             {!answered && <Button variant="filled" block disabled={busy} onClick={() => void submit()}>Submit answer</Button>}
           </>
         ) : (

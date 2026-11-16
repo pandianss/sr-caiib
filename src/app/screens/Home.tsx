@@ -66,7 +66,7 @@ export function Today() {
           <div className="stat-grid">
             {due.length > 0 ? <button type="button" className="stat tap" onClick={() => void model.startReviews().then(id => { if (id) go(`session/${id}`); })}><b>{due.length}</b><span className="support">review{due.length === 1 ? '' : 's'} due · start</span></button> : <div className="stat"><b>0</b><span className="support">reviews due</span></div>}
             <div className="stat"><b>{studied}{r.snapshot.mapped_objectives_total !== null ? ` / ${r.snapshot.mapped_objectives_total}` : ''}</b><span className="support">objectives studied</span></div>
-            <div className="stat"><b>{r.snapshot.eligible_accuracy_questions ? pct(r.snapshot.assessed_accuracy_pct) : '—'}</b><span className="support">{r.snapshot.eligible_accuracy_questions ? `first-attempt accuracy (${r.snapshot.eligible_accuracy_questions} questions)` : 'no scored practice yet'}</span></div>
+            <div className="stat"><b>{r.snapshot.eligible_accuracy_questions ? pct(r.snapshot.assessed_accuracy_pct) : '—'}</b><span className="support">{r.snapshot.eligible_accuracy_questions ? `first-attempt accuracy (${r.snapshot.eligible_accuracy_questions} question${r.snapshot.eligible_accuracy_questions === 1 ? '' : 's'})` : 'no scored practice yet'}</span></div>
           </div>
           <div className="row"><Button variant="outlined" href="#/performance">Detailed performance</Button></div>
         </section>

@@ -14,7 +14,7 @@ import { CLIENT_VERSION, type AppManifest, type AppPackEntry, type AttemptRecord
 import { verifyPackBytes } from '../core/packs.ts';
 import {
   accessibleQuestions, answerSelfCheckQuestion, attemptClock, buildMockAttempt, buildPracticeAttempt, buildSession, cardSeconds, cardStep, finishPractice, gradeMock, linkAnswerEvent,
-  nextUnstudiedCards, paceSeconds, presetSteps, rateStep, recommend, remediationCards, remediationQuestions, revealStep, submitPracticeAnswer, unitAccessible, unseenFirst,
+  nextUnstudiedCards, paceSeconds, presetSteps, rateStep, recommend, remediationCards, remediationQuestions, revealStep, submitPracticeAnswer, spreadAcrossUnits, unitAccessible, unseenFirst,
   withFlag, withResponse, withTiming, SELF_CHECK_SECONDS, type PlanContext, type Recommendation,
 } from '../core/session.ts';
 import { deriveReviewStates, dueReviews } from '../core/sm2.ts';
@@ -368,7 +368,7 @@ export class AppModel {
     else if (kind === 'remediation') { qs = remediationQuestions(plan).filter(q => !q.case_study_id); title = 'Missed objectives'; }
     else if (kind === 'numeric') { qs = unseenFirst(plan, accessibleQuestions(plan).filter(q => q.question_type === 'numeric_input' && !q.case_study_id)); title = 'Numerical questions'; }
     else if (kind === 'case_study' && ref) { const cs = this.state.index.caseStudy(ref); qs = cs ? cs.question_ids.map(id => this.state.index.question(id)).filter((q): q is QuestionItem => Boolean(q)) : []; title = cs?.title ?? 'Case study'; limit = undefined; }
-    else { qs = unseenFirst(plan, accessibleQuestions(plan).filter(q => !q.case_study_id)); title = 'Mixed practice'; }
+    else { qs = spreadAcrossUnits(unseenFirst(plan, accessibleQuestions(plan).filter(q => !q.case_study_id))); title = 'Mixed practice'; }
     const args = this.attemptArgs(qs, title, { kind, ref });
     const record = args ? buildPracticeAttempt(args, limit) : null;
     if (!record) { this.toast('No questions are available for this selection yet.'); return null; }

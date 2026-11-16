@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState, useSyncExternalStore } from 'react';
+import { IS_NATIVE } from './platform.ts';
 import type { PaperId } from '../types/contracts.ts';
 import { model, type AppState } from './model.ts';
 
@@ -15,7 +16,7 @@ export const href = (path: string): string => `#/${path}`;
 /** What the learner can actually open for a paper right now. */
 export function paperAvailability(s: AppState, paper: PaperId): { label: string; kind?: 'ok' | 'warn' | 'info' } {
   const record = s.index.packFor(paper);
-  if (record) return record.kind === 'fixture' ? { label: 'Engineering sample', kind: 'warn' } : record.access === 'free' ? { label: 'Free sample on this device', kind: 'ok' } : { label: 'Downloaded', kind: 'ok' };
+  if (record) return record.kind === 'fixture' ? { label: 'Engineering sample', kind: 'warn' } : record.access === 'free' ? { label: IS_NATIVE ? 'Available on this device' : 'Free sample on this device', kind: 'ok' } : { label: 'Downloaded', kind: 'ok' };
   if (model.entryFor(paper).length) return { label: 'Available to download', kind: 'info' };
   return { label: 'Not yet published' };
 }

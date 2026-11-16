@@ -66,7 +66,7 @@ export interface Feedback { correct: boolean }
  * One question. Selecting an option or typing never submits; the parent provides an explicit submit action.
  * With `feedback`, the correct answer and per-option explanations are shown (text and symbols, not colour alone).
  */
-export function QuestionView({ q, response, onResponse, disabled, feedback, error, number, total }: { q: QuestionItem; response: string; onResponse: (v: string) => void; disabled?: boolean; feedback?: Feedback | null; error?: string | null; number?: number; total?: number }) {
+export function QuestionView({ q, response, onResponse, disabled, feedback, error, number, total, onSubmit }: { q: QuestionItem; response: string; onResponse: (v: string) => void; onSubmit?: () => void; disabled?: boolean; feedback?: Feedback | null; error?: string | null; number?: number; total?: number }) {
   const id = useId();
   return (
     <div className="section">
@@ -88,7 +88,7 @@ export function QuestionView({ q, response, onResponse, disabled, feedback, erro
       ) : (
         <div className="field">
           <label htmlFor={`${id}-n`}>Your answer</label>
-          <div className="input-row"><input id={`${id}-n`} className="input" inputMode="decimal" autoComplete="off" value={response} disabled={disabled} aria-invalid={error ? true : undefined} aria-describedby={`${id}-hint${error ? ` ${id}-err` : ''}`} onChange={e => onResponse(e.target.value)} /><span className="unit" aria-label={`Unit: ${q.numeric_rule.unit_label}`}>{q.numeric_rule.unit_label}</span></div>
+          <div className="input-row"><input id={`${id}-n`} className="input" inputMode="decimal" enterKeyHint={onSubmit ? 'done' : undefined} onKeyDown={e => { if (e.key === 'Enter' && onSubmit && !disabled) { e.preventDefault(); onSubmit(); } }} autoComplete="off" value={response} disabled={disabled} aria-invalid={error ? true : undefined} aria-describedby={`${id}-hint${error ? ` ${id}-err` : ''}`} onChange={e => onResponse(e.target.value)} /><span className="unit" aria-label={`Unit: ${q.numeric_rule.unit_label}`}>{q.numeric_rule.unit_label}</span></div>
           <p className="support" id={`${id}-hint`}>{q.numeric_rule.rounding_instruction} Enter digits only{q.numeric_rule.allow_negative ? '; a minus sign is allowed' : ''}, without commas or units.</p>
           {feedback && <p><strong>{feedback.correct ? '✓ Correct.' : '✗ Not correct.'}</strong> Expected answer: <strong>{q.numeric_rule.expected_answer} {q.numeric_rule.unit_label}</strong></p>}
         </div>

@@ -550,3 +550,15 @@ h3 { font-size: var(--font-size-title-md); }
 
 /* Android 15+ draws edge to edge: screens without an app bar still clear the status bar. */
 .app > .main:first-child { padding-top: calc(var(--space-4) + var(--safe-area-inset-top, env(safe-area-inset-top, 0px))); }
+
+/* Tables never break words mid-letter; a wide table scrolls sideways instead. */
+.table-wrap th, .table-wrap td { overflow-wrap: normal; word-break: normal; hyphens: manual; min-width: 5.5rem; }
+.table-wrap th:first-child, .table-wrap td:first-child { min-width: 6.5rem; }
+
+/* With the on-screen keyboard open on a phone there is no room for the tab bar. */
+@media (orientation: portrait) and (max-height: 32rem) { .navbar { display: none; } }
+
+.stat-grid > .stat:last-child:nth-child(odd) { grid-column: 1 / -1; }
+@media (min-width: 40rem) { .stat-grid > .stat:last-child:nth-child(odd) { grid-column: auto; } }
+.module-group { display: flex; flex-direction: column; gap: var(--space-2); margin-top: var(--space-3); } .module-group > h3 { margin: 0; }
+.module-group > h3 { font-size: 0.9375rem; font-weight: 600; color: var(--on-surface); }
