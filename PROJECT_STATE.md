@@ -4,13 +4,13 @@
 **Major Milestone Achieved**: All four compulsory CAIIB papers (`ABM`, `BFM`, `ABFM`, `BRBL`) plus Central Banking (`CB`) are fully authored, independently audited, verified against primary statutes and calculation test suites, and officially published into release packs.
 
 ### Published Content Packs Overview (`public/content/packs/`):
-1. **ABM-2026DEC v47**: 2,174 items (Modules A–D complete, 0.0% stubs, RBI RSA 2025 reconciled).
-2. **BFM-2026DEC v53**: 1,590 items (Modules A–D complete, 31 units, Basel III / FEDAI / UCP 600 verified).
-3. **ABFM-2026DEC v5**: 1,354 items (Modules A–D complete, 25 units, 0.0% stubs).
-4. **BRBL-2026DEC v1**: 1,430 items (Modules A–D + Appendix, 64 units complete, 118 quantitative verified items, MSMED 2025 / SARFAESI / Companies Act / IBC 2026 commencement reconciled under `AUD-008`).
-5. **CB-2026DEC v1**: 1,026 items (Modules A–F + Appendix, 18 units complete, RBI Act / PSS Act / Ombudsman reconciled under `AUD-005` to `AUD-007`).
+1. **ABM-2026DEC v48**: 2,184 items (Modules A–D complete, 46 batches, AUD-003 case studies integrated).
+2. **BFM-2026DEC v54**: 2,060 items (Modules A–D complete, all 31 units + AUD-003 case studies integrated).
+3. **ABFM-2026DEC v6**: 1,695 items (Modules A–D complete, all 25 units complete).
+4. **BRBL-2026DEC v1**: 1,430 items (Modules A–D + Appendix, all 64 units complete, 118 quantitative verified items, MSMED 2025 / SARFAESI / Companies Act / IBC 2026 commencement reconciled under `AUD-008`).
+5. **CB-2026DEC v1**: 1,026 items (Modules A–F + Appendix, all 18 units complete, RBI Act / PSS Act / Ombudsman reconciled under `AUD-005` to `AUD-007`).
 
-Total published curriculum: **7,574 items across 5 complete papers**, 0 fixture items in release builds.
+Total published curriculum: **8,395 items across 5 complete papers**, 0 fixture items in release builds.
 
 ---
 
