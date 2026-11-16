@@ -10,7 +10,7 @@ ship inside the app and later content arrives with app updates.
   (`src/app/platform.ts`, `PURCHASES_VISIBLE`). Google Play requires Play Billing for paid digital access; it is
   not implemented, so no paid pass is offered on Android. Units outside the free sample show "Later update".
 - Content is whatever is **published** (reviewed) in `content/`. Drafts are never shipped. At the time of writing
-  the published set is small; the store listing and in-app coverage map must say plainly that the syllabus is
+  the published packs cover ABM, BFM and ABFM in part (see the listing); the store listing and in-app coverage map must say plainly that the syllabus is
   being added in stages. Do not describe the app as a complete CAIIB course.
 - No exam-pass guarantee, no claim of IIBF endorsement. The app is independent.
 

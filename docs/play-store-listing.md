@@ -44,13 +44,20 @@ This release contains the lessons and questions that have been completed and rev
 large, and more papers and topics will arrive in app updates. Open the coverage map in the app to see what is
 available now. The app is a study aid; it does not guarantee any examination result.
 
-Papers covered over time: Advanced Bank Management, Bank Financial Management, Advanced Business & Financial
-Management, Banking Regulations & Business Laws, and the elective papers.
+Available now (in part): Advanced Bank Management, Bank Financial Management and Advanced Business & Financial
+Management. Banking Regulations & Business Laws and the elective papers will follow in updates. The in-app
+coverage map shows exactly which topics are ready.
 
 Content reflects the syllabus for the stated examination session and is not legal, regulatory or financial advice.
 Always check current IIBF notices and official regulatory sources.
 
-## Graphics checklist
+## Graphics (generated in `store-assets/`)
+
+- `icon-512.png` (512x512), `feature-graphic-1024x500.png`, and phone screenshots `shot-1-today.png` to
+  `shot-8-coverage.png` (1079x1918, taken from the release web build with no engineering banner).
+- Suggested upload order: Today, Learn, unit, lesson, question, feedback, practice, coverage (Play allows 2 to 8).
+
+## Graphics checklist (original)
 
 - App icon 512×512 PNG (export from `public/icon.svg`, no transparency issues on a plain square).
 - Feature graphic 1024×500 PNG.
@@ -83,5 +90,5 @@ coverage map. More content will be added in updates.
 ## Before submitting
 
 - [ ] Replace every placeholder, host the privacy policy, and confirm the descriptions match the installed build.
-- [ ] Confirm which papers/topics are actually published in the bundled content and adjust "Papers covered".
+- [x] Published packs at 16 Nov 2026: ABM (32 units, 535 cards, 1639 questions), BFM (18 units, 377 cards, 797 questions), ABFM (4 units, 58 cards, 283 questions). Re-check the "Available now" paragraph if the bundle changes.
 - [ ] Confirm no screen shows payment, sign-in or "the pass" in the Android build.
