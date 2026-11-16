@@ -375,7 +375,10 @@ button { font: inherit; color: inherit; }
 .table-wrap { overflow-x: auto; max-width: 100%; border: 1px solid var(--outline-variant); border-radius: var(--shape-sm); margin-bottom: var(--space-3); }
 .table-wrap:focus-visible { outline-offset: 0; }
 table { border-collapse: collapse; width: 100%; font-size: 0.9375rem; } th, td { text-align: left; padding: var(--space-2) var(--space-3); border-bottom: 1px solid var(--outline-variant); vertical-align: top; }
-th { background: var(--surface-container); font-weight: 600; } tr:last-child td { border-bottom: 0; }
+th { background: var(--bank-table-header-bg); font-weight: 600; } tr:last-child td { border-bottom: 0; }
+.table-wrap { border-color: var(--bank-table-border); background: var(--surface-container-lowest); } .table-wrap th, .table-wrap td { border-bottom-color: var(--bank-table-border); }
+.table-wrap tbody tr:hover td { background: var(--surface-container-low); }
+.table-wrap th:first-child, .table-wrap td:first-child { position: sticky; left: 0; z-index: 1; background: var(--surface-container-lowest); box-shadow: var(--bank-table-sticky-shadow); } .table-wrap th:first-child { background: var(--bank-table-header-bg); } .table-wrap tbody tr:hover td:first-child { background: var(--surface-container-low); }
 .formula { overflow-x: auto; padding: var(--space-4); background: var(--surface-container); border-radius: var(--shape-sm); font-size: 1.125rem; font-family: "Cambria Math", "STIX Two Math", "Noto Serif", Georgia, serif; white-space: nowrap; text-align: center; }
 .formula .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; margin: 0 0.15em; } .formula .frac > span:first-child { border-bottom: 1px solid currentColor; padding: 0 0.2em; } .formula .frac > span:last-child { padding: 0 0.2em; }
 .formula sup, .formula sub { font-size: 0.75em; }

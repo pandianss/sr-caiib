@@ -36,7 +36,7 @@ export function Icon({ name, size = 24 }: { name: string; size?: number }) {
 type BtnProps = { children: ReactNode; onClick?: () => void; variant?: 'filled' | 'tonal' | 'outlined' | 'text' | 'danger'; block?: boolean; disabled?: boolean; type?: 'button' | 'submit'; href?: string; label?: string; describedBy?: string; className?: string };
 export function Button({ children, onClick, variant = 'text', block, disabled, type = 'button', href, label, describedBy, className }: BtnProps) {
   const cls = `btn ${variant === 'text' ? '' : variant}${block ? ' block' : ''}${className ? ` ${className}` : ''}`;
-  if (href) return <a className={cls} href={href} aria-label={label}>{children}</a>;
+  if (href) return <a className={cls} href={href} aria-label={label} aria-describedby={describedBy}>{children}</a>;
   return <button className={cls} type={type} onClick={onClick} disabled={disabled} aria-label={label} aria-describedby={describedBy}>{children}</button>;
 }
 export function IconButton({ icon, label, onClick, pressed, href }: { icon: string; label: string; onClick?: () => void; pressed?: boolean; href?: string }) {
@@ -64,18 +64,23 @@ export function McqOption({ name, value, selected, state, onSelect, children, ex
 export function ProgressRing({ done, total, label }: { done: number; total: number; label: string }) {
   const percent = total > 0 ? Math.min(100, Math.max(0, 100 * done / total)) : 0;
   return <span className="progress-ring" role="img" aria-label={`${label}: ${done} of ${total} published cards studied`}>
-    <svg viewBox="0 0 40 40" aria-hidden="true"><circle className="ring-track" cx="20" cy="20" r="16" /><circle className="ring-value" cx="20" cy="20" r="16" pathLength="100" strokeDasharray={`${percent} 100`} /></svg>
+    <svg viewBox="0 0 40 40" aria-hidden="true"><circle className="ring-track" cx="20" cy="20" r="16" />{percent > 0 && <circle className="ring-value" cx="20" cy="20" r="16" pathLength="100" strokeDasharray={`${percent} 100`} />}</svg>
     <strong aria-hidden="true">{total ? `${Math.round(percent)}%` : '—'}</strong>
   </span>;
 }
-export function Tabs<T extends string>({ tabs, value, onChange, label }: { tabs: { id: T; label: string }[]; value: T; onChange: (v: T) => void; label: string }) {
+export function Tabs<T extends string>({ tabs, value, onChange, label, idPrefix, panelId }: { tabs: { id: T; label: string }[]; value: T; onChange: (v: T) => void; label: string; idPrefix: string; panelId: string }) {
   const refs = useRef<(HTMLButtonElement | null)[]>([]);
+  useEffect(() => { refs.current[tabs.findIndex(t => t.id === value)]?.scrollIntoView({ block: 'nearest', inline: 'nearest' }); }, [tabs, value]);
   const move = (i: number, d: number) => { const n = (i + d + tabs.length) % tabs.length; onChange(tabs[n]!.id); refs.current[n]?.focus(); };
   return (
     <div className="tabs" role="tablist" aria-label={label}>
       {tabs.map((t, i) => (
-        <button key={t.id} ref={el => { refs.current[i] = el; }} role="tab" type="button" className="tab" aria-selected={value === t.id} tabIndex={value === t.id ? 0 : -1}
-          onClick={() => onChange(t.id)} onKeyDown={e => { if (e.key === 'ArrowRight') move(i, 1); if (e.key === 'ArrowLeft') move(i, -1); }}>{t.label}</button>
+        <button key={t.id} id={`${idPrefix}-${t.id}`} aria-controls={panelId} ref={el => { refs.current[i] = el; }} role="tab" type="button" className="tab" aria-selected={value === t.id} tabIndex={value === t.id ? 0 : -1}
+          onClick={() => onChange(t.id)} onKeyDown={e => {
+            if (!['ArrowRight', 'ArrowLeft', 'Home', 'End'].includes(e.key)) return;
+            e.preventDefault();
+            move(i, e.key === 'Home' ? -i : e.key === 'End' ? tabs.length - 1 - i : e.key === 'ArrowRight' ? 1 : -1);
+          }}>{t.label}</button>
       ))}
     </div>
   );
@@ -84,13 +89,17 @@ export function Tabs<T extends string>({ tabs, value, onChange, label }: { tabs:
 // ---- overlays --------------------------------------------------------------------------------------------------------
 export function Sheet({ title, onClose, children }: { title: string; onClose: () => void; children: ReactNode }) {
   const ref = useRef<HTMLDivElement>(null); const id = useId();
+  const close = useRef(onClose);
+  useEffect(() => { close.current = onClose; }, [onClose]);
   useEffect(() => {
     const previous = document.activeElement as HTMLElement | null;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
     ref.current?.querySelector<HTMLElement>('button, a, input, [tabindex]')?.focus();
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onClose();
+      if (e.key === 'Escape') { e.preventDefault(); close.current(); }
       if (e.key === 'Tab' && ref.current) {
-        const f = [...ref.current.querySelectorAll<HTMLElement>('button:not(:disabled), a[href], input:not(:disabled), select, [tabindex]:not([tabindex="-1"])')];
+        const f = [...ref.current.querySelectorAll<HTMLElement>('button:not(:disabled), a[href], input:not(:disabled), select:not(:disabled), textarea:not(:disabled), summary, [tabindex]:not([tabindex="-1"])')].filter(el => el.tabIndex >= 0 && el.getClientRects().length > 0);
         if (!f.length) return;
         const first = f[0]!, last = f[f.length - 1]!;
         if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
@@ -98,12 +107,12 @@ export function Sheet({ title, onClose, children }: { title: string; onClose: ()
       }
     };
     document.addEventListener('keydown', onKey);
-    return () => { document.removeEventListener('keydown', onKey); previous?.focus?.(); };
-  }, [onClose]);
+    return () => { document.removeEventListener('keydown', onKey); document.body.style.overflow = previousOverflow; if (previous?.isConnected) previous.focus({ preventScroll: true }); };
+  }, []);
   return (
     <div className="scrim" onMouseDown={e => { if (e.target === e.currentTarget) onClose(); }}>
       <div className="sheet" role="dialog" aria-modal="true" aria-labelledby={id} ref={ref}>
-        <div className="row between"><h1 id={id}>{title}</h1><IconButton icon="close" label="Close" onClick={onClose} /></div>
+        <div className="row between"><h2 id={id}>{title}</h2><IconButton icon="close" label="Close" onClick={onClose} /></div>
         {children}
       </div>
     </div>

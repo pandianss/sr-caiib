@@ -20,8 +20,8 @@ export function Library({ tab }: { tab?: string }) {
   return (
     <>
       <div className="section"><h1>Library</h1></div>
-      <Tabs tabs={TABS} value={current} onChange={t => go(`library/${t}`)} label="Library sections" />
-      <div role="tabpanel" aria-label={TABS.find(t => t.id === current)?.label} className="section">
+      <Tabs tabs={TABS} value={current} onChange={t => go(`library/${t}`)} label="Library sections" idPrefix="library-tab" panelId="library-panel" />
+      <div role="tabpanel" id="library-panel" aria-labelledby={`library-tab-${current}`} className="section">
         {current === 'search' && <Search />}{current === 'formulas' && <CardList type="formula" />}{current === 'statutes' && <CardList type="statute" />}
         {current === 'calculators' && <Calculators />}{current === 'bookmarks' && <Bookmarks />}{current === 'downloads' && <OfflinePackInspector />}
       </div>
