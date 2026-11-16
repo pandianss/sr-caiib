@@ -21,6 +21,14 @@ ship inside the app and later content arrives with app updates.
 - `android/` is the generated Gradle project. Build outputs, `local.properties` and keystores are git-ignored.
 - `npm run android:sync` builds the web app and copies it into the Android project.
 
+## Verified build (16 Nov 2026)
+
+`npm run android:sync`, then in `android/` with `JAVA_HOME` set to Android Studio's JBR
+(`C:\Program Files\Android\Android Studio\jbr`, JDK 25) and `local.properties` containing
+`sdk.dir=C:/Users/<you>/AppData/Local/Android/Sdk`: `gradlew assembleDebug` produced a 6.7 MB `app-debug.apk`.
+The Gradle wrapper was raised to 9.1.0 because Capacitor 8 needs Java 21+ and Gradle 8.14 cannot run on JDK 25.
+Not yet done: running the APK (no emulator or device was available) and the signed release bundle.
+
 ## Remaining actions, in order
 
 1. Owner: choose the package name and create a Google Play developer account (one-time registration fee; identity
