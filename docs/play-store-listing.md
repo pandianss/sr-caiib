@@ -7,7 +7,7 @@ Fill the `[...]` placeholders. Keep every claim true of the version you upload; 
 - **App name (max 30):** CAIIB Study: Practice
 - **Category:** Education. **Type:** App. **Free.** No ads. No in-app purchases in release 1.
 - **Default language:** English (India).
-- **Contact email:** sspandian.here@gmail.com · **Privacy policy URL:** [PUBLIC URL OF docs/privacy-policy.md]
+- **Contact email:** sspandian.here@gmail.com · **Privacy policy URL:** https://pandianss.github.io/SuperRecall2026/caiib-study/privacy.html (served once GitHub Pages is enabled; source copy in docs/privacy-policy.md)
 
 ## Short description (max 80)
 
