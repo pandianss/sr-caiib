@@ -73,6 +73,8 @@ npm run content:build
 
 Register one paper per invocation. The command rebuilds each bundle from its saved staging/config against the catalogue and replays any numbered draft history. It rejects stale payloads, missing or invalid revision history, broken mappings, fixture origin, absent authoring evidence and attempts to re-register a published identity as draft. All bundles are validated before the single paper-ledger write. Existing published IDs, gaps, caveats and review references are retained; adding draft material reopens source/originality review and applicable calculation review. This command never publishes, grants approval or creates a passed review. Use the explicit unreviewed-draft correction command documented in [staging-import.md](staging-import.md); do not delete and recreate a retained bundle to hide a correction.
 
+For simultaneous build/authoring work, both ledger and revision commands accept an explicit `--catalogue path.json` snapshot as described in [staging-import.md](staging-import.md). Missing or invalid snapshot inputs reject without falling back to a changing public build directory.
+
 Draft teaching/assessment flags use a mechanical floor (one teaching item and two questions); they indicate authored material awaiting editorial review, not demonstrated depth or complete syllabus coverage. Source support is conservatively partial until applicability and support are reviewed. The visual map must retain pending review, unresolved issues and zero published IDs for new drafts. Its generated narrative must derive review/publication counts from the ledger rather than a fixed zero-content message.
 
 ## Publication controls

@@ -5,16 +5,17 @@ import { resolve, join, relative, dirname, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { isDeepStrictEqual } from 'node:util';
 import { assertDraftLineage, reviseDraftBundle } from '../src/import/draft-revisions.mjs';
+import { parseCatalogueArgs } from '../src/import/catalogue-cli.mjs';
 
 try {
   const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
-  const args = process.argv.slice(2);
-  if (args.length !== 1) throw new Error('Usage: node scripts/revise-draft.mjs content/batches/BATCH');
+  const {paths: args,cataloguePath} = parseCatalogueArgs(process.argv.slice(2),root);
+  if (args.length !== 1) throw new Error('Usage: node scripts/revise-draft.mjs content/batches/BATCH [--catalogue path.json]');
   const path = resolve(root, args[0]), base = join(root, 'content/batches');
   const inside = relative(base, path);
   if (!inside || inside.startsWith('..') || inside.includes(sep)) throw new Error('Select one batch directory directly inside content/batches');
   const read = p => JSON.parse(readFileSync(p, 'utf8'));
-  const catalogue = read(join(root, 'public/content/catalogue.json'));
+  const catalogue = read(cataloguePath);
   const bundlePath = join(path, 'draft-bundle.json');
   const previous = read(bundlePath);
   if (previous.import_config.origin !== 'source_assisted') throw new Error('Release-content revision command rejects fixture origin');

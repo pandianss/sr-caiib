@@ -1,0 +1,569 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-C-U01-B006",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL C U01: Integrated Ombudsman Scheme 2021 (30 June 2026 snapshot) — Manage resolution, extensions, settlement evidence and nonresponse consequences",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04",
+      "RBI_IOS_2021_AMENDED_2022"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.228–229; PDF page = printed page + 19",
+        "statement": "Courseware explains facilitation, conciliation/mediation, written response, recorded settlement and nonresponse consequences.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "source_id": "RBI_IOS_2021_AMENDED_2022",
+        "locator": "clause14, PDF pp.9–10; clause17(1), p.12",
+        "statement": "Summary resolution promotes agreement; RE files written version/documents within15days, with qualified further time on written request. Failure permits ex-parte action on record and a specified RE appeal bar for the nonresponse award. Amicable settlement is recorded/signed by both parties; clause14(9) separately defines resolved outcomes.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "draft_id": "D001",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "A response deadline and a granted extension are different",
+          "core_explanation_md": "The 2021 framework calls for the regulated entity written version and relied-on documents within the stated period. Further time may be granted on the written request described in clause 14(3). Treating the possibility of an extension as an extension already granted creates avoidable process risk. Preserve the request, reasons and decision.\n\nIf the entity fails to file within the applicable time, the Ombudsman may act ex parte on the record. The specified nonresponse award also carries a bar on appeal by the regulated entity. This does not mean the complainant automatically proves every claim by silence; it means the entity cannot assume that ignoring the process is a neutral strategy.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does making an internal plan to request more time amount to receiving an extension?",
+            "expected_takeaway": "No. The actual written request and the decision under the scheme must be distinguished."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "A settlement needs the parties actual agreement",
+          "core_explanation_md": "The scheme promotes resolution through facilitation, conciliation or mediation. For an amicable settlement, clause 14(8) provides for recording and signatures by both parties, with the terms annexed and compliance within the stipulated time. An entity internal closure note does not by itself establish those facts.\n\nClause 14(9) separately identifies the stated resolved outcomes, including satisfaction with the manner/extent of resolution or voluntary withdrawal. Record what actually happened rather than classify every closure as a negotiated settlement. Summary procedure still requires the specified evidence sharing, good-faith cooperation and fair process.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Why should an internal resolved status not be treated as conclusive evidence of an amicable settlement?",
+            "expected_takeaway": "The settlement requires the actual agreement and the specified record; internal status alone does not establish it."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "item_type": "case_study",
+        "variant": "case_study",
+        "payload": {
+          "title": "A complaint response file with two possible paths",
+          "scenario_narrative_md": "This hypothetical file is expressly governed by the 2021 scheme as at 30 June 2026. A covered RE receives the Ombudsman direction to file its written version and relied-on records. No extension has been granted. One proposal is to leave the request unanswered and argue the facts only on appeal. In an alternative path, both parties later reach an amicable resolution through mediation. Each question asks about its own path; no answer from the other question is needed. No actual deadline or customer liability is being determined.",
+          "question_ids": [
+            "D004",
+            "D005"
+          ],
+          "reference_tables_md": []
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "In this 2021-scheme case, the RE proposes to ignore the Ombudsman written-version request and rely on an assumed unrestricted appeal later. What should its reviewer identify?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The complaint amount alone gives an unrestricted appeal after nonresponse",
+              "explanation_md": "Amount does not remove the express nonresponse and appeal qualifications."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Ignoring the request necessarily counts as a signed settlement",
+              "explanation_md": "Nonresponse is not an agreement between the parties."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Possible ex-parte action and the specified bar on the RE appeal for a nonresponse award",
+              "explanation_md": "Clauses14(4) and17(1) make this omission consequential."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Every extension is automatic without a written request or decision",
+              "explanation_md": "The clause describes a qualified extension, not automatic permission."
+            }
+          ],
+          "correct_explanation_md": "Clauses14(4) and17(1) make this omission consequential.",
+          "case_study_id": "D003"
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "In the same case, a later mutually agreed resolution is reached through mediation. What evidence distinguishes an amicable settlement under clause14(8) from an internal bank note saying resolved?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The recorded settlement signed by both parties, with terms annexed and compliance directed",
+              "explanation_md": "The clause specifies a recorded and signed settlement, rather than a unilateral internal label."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Only the bank changing its internal status code",
+              "explanation_md": "An internal status does not establish the parties agreed resolution."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The original request remaining unanswered",
+              "explanation_md": "Nonresponse does not supply a signed agreement."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The compensation amount being below a ceiling",
+              "explanation_md": "A numerical ceiling does not prove a mutually agreed settlement."
+            }
+          ],
+          "correct_explanation_md": "The clause specifies a recorded and signed settlement, rather than a unilateral internal label.",
+          "case_study_id": "D003"
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Codex original drafts, 16 November 2026. Independent legal/session applicability, originality and pedagogy review pending. All canonical items remain draft, review null.",
+      "Whole S04 unit/end questions inspected: printed pp.223–232 / PDF pp.242–251. Primary amended 2021 scheme clauses1–20, PDF pp.1–15 inspected, plus October2025 coverage notification. Statutory forms and source questions were not reused or cosmetically varied.",
+      "Teaching is expressly pinned to the 2021 framework as at30June2026. The 2026 scheme was notified16January2026 and commences1July2026 with express savings; no current-reference procedure is silently substituted. Independent review must reconcile exam treatment of pre-cutoff future-effective developments.",
+      "Source validity and author comparison do not establish independent approval. Individual coverage exclusions, further pre-cutoff instructions, factual maintainability and any live remedy require their own evidence.",
+      "No actual response calendar or live complaint is assessed. The nonresponse appeal bar is the specified RE bar, not a claim that neither party ever has any appeal."
+    ],
+    "next_batch_hint": "Continue BRBL-C-U01-B007"
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-C-U01-B006",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p.12, Compulsory Paper IV, Module C: Reserve Bank Integrated Ombudsman Scheme 2021"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "RBI_IOS_2021_AMENDED_2022",
+        "authority": "Reserve Bank of India",
+        "title": "Reserve Bank - Integrated Ombudsman Scheme, 2021, with 5 August 2022 amendments",
+        "url": "https://rbidocs.rbi.org.in/rdocs/content/pdfs/RBIOS2021_amendments05082022.pdf",
+        "publication_date": null,
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_C::U01",
+        "objective_ids": [
+          "BRBL::MOD_C::U01::LO_06"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_C::U01",
+        "objective_ids": [
+          "BRBL::MOD_C::U01::LO_06"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_C::U01",
+        "objective_ids": [
+          "BRBL::MOD_C::U01::LO_06"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BRBL::MOD_C::U01",
+        "objective_ids": [
+          "BRBL::MOD_C::U01::LO_06"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "unit_id": "BRBL::MOD_C::U01",
+        "objective_ids": [
+          "BRBL::MOD_C::U01::LO_06"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-C-U01-B006",
+      "draft_id": "D001",
+      "item_id": "item_e732b49e2e34a0bb3f5ef3f644df240446edbd27e01514b19957312b9b0bfc31"
+    },
+    {
+      "batch_id": "BRBL-C-U01-B006",
+      "draft_id": "D002",
+      "item_id": "item_19ce0fc7eaf54c5e3cc9fc4a4d8c10b8a7d8590071c17f946b3a6f5f7e0f98bd"
+    },
+    {
+      "batch_id": "BRBL-C-U01-B006",
+      "draft_id": "D003",
+      "item_id": "item_08276ad20b0885691aba163f18f35d044fbce9458c707488d856e363305c4008"
+    },
+    {
+      "batch_id": "BRBL-C-U01-B006",
+      "draft_id": "D004",
+      "item_id": "item_8c391af1c86b7b5e246fd00b1a107366335ba77026e0c4509185492236252c32"
+    },
+    {
+      "batch_id": "BRBL-C-U01-B006",
+      "draft_id": "D005",
+      "item_id": "item_c0f26ac06f83684ef225989af3345dbd79f810016200069a5c26419e96b2d263"
+    }
+  ],
+  "items": [
+    {
+      "title": "A response deadline and a granted extension are different",
+      "core_explanation_md": "The 2021 framework calls for the regulated entity written version and relied-on documents within the stated period. Further time may be granted on the written request described in clause 14(3). Treating the possibility of an extension as an extension already granted creates avoidable process risk. Preserve the request, reasons and decision.\n\nIf the entity fails to file within the applicable time, the Ombudsman may act ex parte on the record. The specified nonresponse award also carries a bar on appeal by the regulated entity. This does not mean the complainant automatically proves every claim by silence; it means the entity cannot assume that ignoring the process is a neutral strategy.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does making an internal plan to request more time amount to receiving an extension?",
+        "expected_takeaway": "No. The actual written request and the decision under the scheme must be distinguished."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_e732b49e2e34a0bb3f5ef3f644df240446edbd27e01514b19957312b9b0bfc31",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U01",
+      "objective_ids": [
+        "BRBL::MOD_C::U01::LO_06"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.228–229; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "RBI_IOS_2021_AMENDED_2022",
+          "authority": "Reserve Bank of India",
+          "title": "Reserve Bank - Integrated Ombudsman Scheme, 2021, with 5 August 2022 amendments",
+          "url": "https://rbidocs.rbi.org.in/rdocs/content/pdfs/RBIOS2021_amendments05082022.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "clause14, PDF pp.9–10; clause17(1), p.12"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "A settlement needs the parties actual agreement",
+      "core_explanation_md": "The scheme promotes resolution through facilitation, conciliation or mediation. For an amicable settlement, clause 14(8) provides for recording and signatures by both parties, with the terms annexed and compliance within the stipulated time. An entity internal closure note does not by itself establish those facts.\n\nClause 14(9) separately identifies the stated resolved outcomes, including satisfaction with the manner/extent of resolution or voluntary withdrawal. Record what actually happened rather than classify every closure as a negotiated settlement. Summary procedure still requires the specified evidence sharing, good-faith cooperation and fair process.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Why should an internal resolved status not be treated as conclusive evidence of an amicable settlement?",
+        "expected_takeaway": "The settlement requires the actual agreement and the specified record; internal status alone does not establish it."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_19ce0fc7eaf54c5e3cc9fc4a4d8c10b8a7d8590071c17f946b3a6f5f7e0f98bd",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U01",
+      "objective_ids": [
+        "BRBL::MOD_C::U01::LO_06"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.228–229; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "RBI_IOS_2021_AMENDED_2022",
+          "authority": "Reserve Bank of India",
+          "title": "Reserve Bank - Integrated Ombudsman Scheme, 2021, with 5 August 2022 amendments",
+          "url": "https://rbidocs.rbi.org.in/rdocs/content/pdfs/RBIOS2021_amendments05082022.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "clause14, PDF pp.9–10; clause17(1), p.12"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "A complaint response file with two possible paths",
+      "scenario_narrative_md": "This hypothetical file is expressly governed by the 2021 scheme as at 30 June 2026. A covered RE receives the Ombudsman direction to file its written version and relied-on records. No extension has been granted. One proposal is to leave the request unanswered and argue the facts only on appeal. In an alternative path, both parties later reach an amicable resolution through mediation. Each question asks about its own path; no answer from the other question is needed. No actual deadline or customer liability is being determined.",
+      "question_ids": [
+        "item_8c391af1c86b7b5e246fd00b1a107366335ba77026e0c4509185492236252c32",
+        "item_c0f26ac06f83684ef225989af3345dbd79f810016200069a5c26419e96b2d263"
+      ],
+      "reference_tables_md": [],
+      "item_type": "case_study",
+      "id": "item_08276ad20b0885691aba163f18f35d044fbce9458c707488d856e363305c4008",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U01",
+      "objective_ids": [
+        "BRBL::MOD_C::U01::LO_06"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.228–229; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "RBI_IOS_2021_AMENDED_2022",
+          "authority": "Reserve Bank of India",
+          "title": "Reserve Bank - Integrated Ombudsman Scheme, 2021, with 5 August 2022 amendments",
+          "url": "https://rbidocs.rbi.org.in/rdocs/content/pdfs/RBIOS2021_amendments05082022.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "clause14, PDF pp.9–10; clause17(1), p.12"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "In this 2021-scheme case, the RE proposes to ignore the Ombudsman written-version request and rely on an assumed unrestricted appeal later. What should its reviewer identify?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The complaint amount alone gives an unrestricted appeal after nonresponse",
+          "explanation_md": "Amount does not remove the express nonresponse and appeal qualifications."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Ignoring the request necessarily counts as a signed settlement",
+          "explanation_md": "Nonresponse is not an agreement between the parties."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Possible ex-parte action and the specified bar on the RE appeal for a nonresponse award",
+          "explanation_md": "Clauses14(4) and17(1) make this omission consequential."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Every extension is automatic without a written request or decision",
+          "explanation_md": "The clause describes a qualified extension, not automatic permission."
+        }
+      ],
+      "correct_explanation_md": "Clauses14(4) and17(1) make this omission consequential.",
+      "case_study_id": "item_08276ad20b0885691aba163f18f35d044fbce9458c707488d856e363305c4008",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_8c391af1c86b7b5e246fd00b1a107366335ba77026e0c4509185492236252c32",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U01",
+      "objective_ids": [
+        "BRBL::MOD_C::U01::LO_06"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.228–229; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "RBI_IOS_2021_AMENDED_2022",
+          "authority": "Reserve Bank of India",
+          "title": "Reserve Bank - Integrated Ombudsman Scheme, 2021, with 5 August 2022 amendments",
+          "url": "https://rbidocs.rbi.org.in/rdocs/content/pdfs/RBIOS2021_amendments05082022.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "clause14, PDF pp.9–10; clause17(1), p.12"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "In the same case, a later mutually agreed resolution is reached through mediation. What evidence distinguishes an amicable settlement under clause14(8) from an internal bank note saying resolved?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The recorded settlement signed by both parties, with terms annexed and compliance directed",
+          "explanation_md": "The clause specifies a recorded and signed settlement, rather than a unilateral internal label."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Only the bank changing its internal status code",
+          "explanation_md": "An internal status does not establish the parties agreed resolution."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The original request remaining unanswered",
+          "explanation_md": "Nonresponse does not supply a signed agreement."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The compensation amount being below a ceiling",
+          "explanation_md": "A numerical ceiling does not prove a mutually agreed settlement."
+        }
+      ],
+      "correct_explanation_md": "The clause specifies a recorded and signed settlement, rather than a unilateral internal label.",
+      "case_study_id": "item_08276ad20b0885691aba163f18f35d044fbce9458c707488d856e363305c4008",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_c0f26ac06f83684ef225989af3345dbd79f810016200069a5c26419e96b2d263",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U01",
+      "objective_ids": [
+        "BRBL::MOD_C::U01::LO_06"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.228–229; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "RBI_IOS_2021_AMENDED_2022",
+          "authority": "Reserve Bank of India",
+          "title": "Reserve Bank - Integrated Ombudsman Scheme, 2021, with 5 August 2022 amendments",
+          "url": "https://rbidocs.rbi.org.in/rdocs/content/pdfs/RBIOS2021_amendments05082022.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "clause14, PDF pp.9–10; clause17(1), p.12"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

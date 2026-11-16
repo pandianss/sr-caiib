@@ -4,6 +4,7 @@ import { readFileSync, writeFileSync, existsSync, readdirSync } from 'node:fs';
 import { resolve, join, relative, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { assertDraftLineage } from '../src/import/draft-revisions.mjs';
+import { parseCatalogueArgs } from '../src/import/catalogue-cli.mjs';
 
 /** Pure reconciliation; validate every bundle before constructing a new ledger. */
 export function registerDraftEvidence(existing, inputs, catalogue) {
@@ -50,10 +51,10 @@ export function registerDraftEvidence(existing, inputs, catalogue) {
 if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   try {
     const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
-    const paths = process.argv.slice(2);
-    if (!paths.length) throw new Error('Usage: node scripts/register-draft-ledger.mjs content/batches/BATCH [...]');
+    const {paths,cataloguePath} = parseCatalogueArgs(process.argv.slice(2),root);
+    if (!paths.length) throw new Error('Usage: node scripts/register-draft-ledger.mjs content/batches/BATCH [...] [--catalogue path.json]');
     const read = p => JSON.parse(readFileSync(p, 'utf8'));
-    const catalogue = read(join(root, 'public/content/catalogue.json'));
+    const catalogue = read(cataloguePath);
     const inputs = paths.map(p => {
       const path = resolve(root, p);
       const reviewPath = join(path, 'review.md');

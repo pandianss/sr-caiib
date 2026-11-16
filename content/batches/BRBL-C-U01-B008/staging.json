@@ -1,0 +1,189 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-C-U01-B008",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL C U01: Integrated Ombudsman Scheme 2021 (30 June 2026 snapshot) — Distinguish award acceptance, compliance and the specified appeal rights and clocks",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04",
+    "RBI_IOS_2021_AMENDED_2022"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.230; PDF page = printed page + 19",
+      "statement": "Courseware summarises acceptance, compliance, appealable decisions, sanction and conditional extension.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F002",
+      "source_id": "RBI_IOS_2021_AMENDED_2022",
+      "locator": "clause15(6)–(8), PDF p.11; clauses16–17, pp.11–13",
+      "statement": "Award acceptance within30days of receipt is qualified by complainant appeal; RE compliance runs from receipt of acceptance unless it appeals. Appeals are limited to specified awards/rejections/closures; no RE appeal for15(1)(a) nonresponse award. RE award appeal uses acceptance-receipt proviso and previous sanction; complainant timing references its receipt. Further30days is conditional on sufficient cause.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "draft_id": "D001",
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "An award, its acceptance and compliance are separate events",
+        "core_explanation_md": "Under the 2021 scheme, the award copy is sent to both sides, but acceptance and compliance have distinct reference events. Clause 15(7) deals with the complainant letter accepting full and final settlement within the stated period from receiving the award, with the appeal qualification. Clause 15(8) then links the entity compliance period to receipt of that acceptance, unless it has preferred the specified appeal.\n\nDo not start every clock from the award issue date or assume that a customer appeal is also acceptance of the same award in full settlement. Preserve receipt and acceptance evidence. These distinctions explain the process; no live filing or compliance date is calculated here.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Why should the award receipt and acceptance receipt be recorded separately?",
+          "expected_takeaway": "They govern distinct steps and time references under the stated provisions."
+        }
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D002",
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "The 2021 appeal right is not a right against every closure",
+        "core_explanation_md": "Clause 17 identifies the awards and specified rejection or closure grounds that can be appealed by the relevant party. It expressly bars the entity appeal for the stated nonresponse award. A general statement that every closure is appealable would erase those distinctions.\n\nFor an entity appeal against an award under the specified merits route, read the acceptance-receipt proviso and the required prior sanction by the stated senior authority. The complainant route has its own receipt reference. Further time is conditional on sufficient cause, not automatic. Do not substitute a replacement-scheme appeal rule for this dated 2021 framework.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does the existence of an Appellate Authority make every complaint closure appealable?",
+          "expected_takeaway": "No. The applicable party, decision and listed grounds must fit clause 17."
+        }
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D003",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A process starts both customer acceptance and RE compliance periods solely from the date printed on the award, ignoring receipt and acceptance records. What must it distinguish?",
+        "correct_option_id": "B",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Only the disputed amount and branch location",
+            "explanation_md": "Those facts do not supply the distinct time-reference events."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Award receipt, the complainant acceptance and the RE receipt of acceptance",
+            "explanation_md": "The provisions use different events for the separate stages."
+          },
+          {
+            "option_id": "C",
+            "text_md": "A complaint acknowledgement and an award as identical records",
+            "explanation_md": "They belong to different process stages."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A further appeal extension as automatically granted in every case",
+            "explanation_md": "The extension is qualified by sufficient cause and the relevant decision."
+          }
+        ],
+        "correct_explanation_md": "The provisions use different events for the separate stages."
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D004",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "An RE seeks an appeal against a 2021-scheme award issued for the specified non-furnishing of documents under clause15(1)(a). What express qualification must be considered?",
+        "correct_option_id": "C",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "A new valuation automatically restores every appeal right",
+            "explanation_md": "Valuation does not remove the express nonresponse qualification."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Every award is appealable by the RE without conditions",
+            "explanation_md": "The scheme expressly excludes this route for the stated RE award category."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Clause17(1) bars the RE appeal for that specified award",
+            "explanation_md": "The decision basis and party matter to the availability of the appeal."
+          },
+          {
+            "option_id": "D",
+            "text_md": "A customer acceptance letter always converts nonresponse into a negotiated settlement",
+            "explanation_md": "Acceptance does not rewrite the basis on which the award was made."
+          }
+        ],
+        "correct_explanation_md": "The decision basis and party matter to the availability of the appeal."
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D005",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A merits-route award appeal by the RE is prepared without checking the acceptance-receipt proviso or previous senior sanction. Which review is necessary?",
+        "correct_option_id": "A",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Verify the relevant clause17 route, clock trigger and prior-sanction condition",
+            "explanation_md": "The specified entity appeal has conditions beyond dissatisfaction with the award."
+          },
+          {
+            "option_id": "B",
+            "text_md": "Assume any junior staff member can automatically waive the scheme conditions",
+            "explanation_md": "An internal preference cannot replace the stated prior sanction."
+          },
+          {
+            "option_id": "C",
+            "text_md": "Use the complainant receipt date for every entity appeal without reading the proviso",
+            "explanation_md": "The relevant entity-award proviso has a distinct acceptance-receipt reference."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Assume a possible further period has already been granted",
+            "explanation_md": "Further time depends on sufficient cause and the appellate decision."
+          }
+        ],
+        "correct_explanation_md": "The specified entity appeal has conditions beyond dissatisfaction with the award."
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Codex original drafts, 16 November 2026. Independent legal/session applicability, originality and pedagogy review pending. All canonical items remain draft, review null.",
+    "Whole S04 unit/end questions inspected: printed pp.223–232 / PDF pp.242–251. Primary amended 2021 scheme clauses1–20, PDF pp.1–15 inspected, plus October2025 coverage notification. Statutory forms and source questions were not reused or cosmetically varied.",
+    "Teaching is expressly pinned to the 2021 framework as at30June2026. The 2026 scheme was notified16January2026 and commences1July2026 with express savings; no current-reference procedure is silently substituted. Independent review must reconcile exam treatment of pre-cutoff future-effective developments.",
+    "Source validity and author comparison do not establish independent approval. Individual coverage exclusions, further pre-cutoff instructions, factual maintainability and any live remedy require their own evidence.",
+    "No live calendar deadline is graded. The source wording on entity closure versus award clock needs careful independent review; the award-specific proviso is not applied indiscriminately to closures."
+  ],
+  "next_batch_hint": "Continue BRBL-C-U01-B009"
+}

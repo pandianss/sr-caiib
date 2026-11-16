@@ -41,6 +41,21 @@ Refreshed clean reproduction at d65d724: npm ci (zero known vulnerabilities), ty
 
 Latest working-tree verification after U07, distractor revisions and source-support label change: **676 tests**, typecheck/lint and production build passed. Outputs copied into the dated evidence folder.
 
-Next: **BRBL C U01, RBI Integrated Ombudsman Scheme 2021**, S04 printed p.223 / PDF p.242 onward. Only opening/structure inspected; read the entire unit and end questions plus the applicable official RBI scheme before authoring. Preserve ongoing Central Banking and other work by other agents and stage only this lane's files.
+Next: **BRBL C U02, MSMED Act 2006**, S04 printed p.233 / PDF p.252 onward. Only opening/structure and printed pp.234–235 inspected; read the remaining unit and end questions before authoring. Use existing 2025 classification primary evidence rather than the obsolete textbook thresholds. Preserve ongoing Central Banking and other work by other agents and stage only this lane's files.
 
 Implementation in progress; full-syllabus content in progress; release readiness blocked; live launch pending. Remaining external dependencies include four elective books and provider sandbox configuration. Independent legal/editorial review, broader accessibility/device acceptance and operational release checks remain required.
+
+
+## Ombudsman unit and concurrent-build tooling
+
+C U01 added nine batches, 42 items / nine objectives: 18 concept cards, one worked example, 20 MCQs, two numeric inputs and one two-question response-handling case. Whole S04 unit/end questions inspected, printed pp.223–232 / PDF pp.242–251. All 285 Codex-authored items across 59 objectives remain draft; review null, legal facts needs_review.
+
+Registered four retained primary sources: RBI_IOS_2021_AMENDED_2022 (19-page amended scheme; clauses1–20, pp.1–15 read), RBI_IOS_COOP_2025 (notification dated7October2025 effective1November), RBI_IOS_2026 (24-page scheme; only clauses1–3 pp.1–4 and20 p.17 inspected for transition), RBI_IOS_2026_RELEASE (official page dated16January2026). Fingerprints in source registry. Systemhealth mirror TLS validation failed; validation was not bypassed. The official rbidocs amended PDF succeeded. Older DFS copy retained locally only as comparison and not substituted for the amended source.
+
+Reconciliation: Credit Information Company differs from Core Investment Company; scheme participant definition differs from the PSS definition; 2025 expanded coverage is incorporated; information power is clause13 rather than the courseware prose cross-reference to14; dispute amount is separate from compensation; specified RE nonresponse appeal bar and different acceptance/compliance/appeal events remain distinct. The 2026 scheme was notified before cutoff but commences1July; its clause20 preserves specified older proceedings. Drafts expressly use the 2021 framework at30June. Independent exam treatment of future-effective announcements remains a publication condition. New rules were not silently imported into pinned questions.
+
+Three targeted tests recompute all worked/numeric upper-amount examples using BigInt and check the case/source/draft invariants. Eight option refinements across six questions in five C U01 batches retain old envelopes and increment changed revisions only; correct keys unchanged. These are author checks, not independent review.
+
+Two concurrent public-catalogue replacement races interrupted imports/revisions before mutation. Both authoring CLIs now accept --catalogue path.json, with a shared strict argument parser and three synthetic adverse/default/snapshot tests. Remaining C U01 revisions and ledger history replay succeeded using the isolated snapshot. No missing-input default or permission bypass was introduced.
+
+Latest full check: **684 tests passed**, typecheck/lint passed; production build passed, three published packs, zero fixtures. Screening:285items/146MCQs/3cases, zero stub explanations, courseware stems or broken case links. Exact outputs retained in the dated evidence folder. Broader operational, source, independent editorial and provider verification gates remain outstanding.

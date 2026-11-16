@@ -1,0 +1,488 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-C-U01-B005",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL C U01: Integrated Ombudsman Scheme 2021 (30 June 2026 snapshot) — Distinguish scrutiny, information requisitions and qualified confidentiality",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04",
+      "RBI_IOS_2021_AMENDED_2022"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.228; PDF page = printed page + 19",
+        "statement": "Courseware outlines initial scrutiny and the information process; its prose calls the information power clause14 whereas the scheme heading is clause13.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "source_id": "RBI_IOS_2021_AMENDED_2022",
+        "locator": "clauses 11–13, PDF pp.8–9",
+        "statement": "Filing information/signature rules and scrutiny distinguish suggestions/guidance, non-maintainable and remaining complaints. Clause13 permits specified information/certified-document requisition and qualified inference on unjustified noncompliance. Confidentiality has law/consent, inter-party natural-justice and RBI/court/forum/authority qualifications.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "draft_id": "D001",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Initial scrutiny sorts the kind of submission",
+          "core_explanation_md": "Under the 2021 scheme, a suggestion or request for general guidance is not treated as a valid complaint merely because it reaches the complaint channel. Clause 12 separately addresses non-maintainable complaints and the remaining complaints assigned for further examination. A copy goes to the regulated entity with a direction to submit its version.\n\nThis is a sorting and examination process, not a presumption that either side is correct. Retain the submitted complaint, required information and receipt record. The physical-signature and specified-format conditions in clause 11 are part of the filing enquiry; an acknowledgement does not cure every missing requirement.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Why should a general request for guidance be separated from a complaint alleging a service shortcoming?",
+            "expected_takeaway": "The scheme initial scrutiny treats these as different kinds of submission."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Confidentiality does not prevent the stated fair-process disclosures",
+          "core_explanation_md": "Clause 13 permits the Ombudsman to request the specified information or certified documents from the relevant regulated entity. Unjustified failure to comply can support the stated inference; it should not be relabelled as a harmless administrative choice.\n\nThe same clause protects information but includes qualifications. Relevant inter-party disclosure for natural justice, legal requirements, consent and the specified RBI or forum disclosures must be read with the confidentiality rule. A bank should not assert either absolute secrecy against every requisition or unrestricted public disclosure of the complaint file. This draft concerns the defined scheme process, not permission to share customer data outside it.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does confidentiality necessarily permit a regulated entity to refuse every Ombudsman information request?",
+            "expected_takeaway": "No. The requisition power and the qualified confidentiality provisions must be read together."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A bank invokes absolute confidentiality to refuse every clause13 document request, without identifying a lawful ground or reading the provision. Which distinction is needed?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Confidentiality allows every party to publish the complete customer file",
+              "explanation_md": "The clause protects information and permits defined qualifications, not unrestricted publication."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The statutory information power and qualified confidentiality rule coexist",
+              "explanation_md": "The bank cannot replace them with a universal refusal rule."
+            },
+            {
+              "option_id": "C",
+              "text_md": "An information request proves the bank must lose the complaint",
+              "explanation_md": "A request is an evidence step, not a final merits conclusion."
+            },
+            {
+              "option_id": "D",
+              "text_md": "A customer data label automatically removes every fair-process disclosure",
+              "explanation_md": "The clause expressly recognises relevant natural-justice and other stated disclosures."
+            }
+          ],
+          "correct_explanation_md": "The bank cannot replace them with a universal refusal rule."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A submission asks only for general financial guidance and alleges no service deficiency. It is processed as a proved complaint solely because the portal accepted it. Which stage has been overlooked?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The later award acceptance automatically determines the submission content",
+              "explanation_md": "A later stage cannot replace initial classification."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The fact that all portal submissions must produce an award",
+              "explanation_md": "The scheme distinguishes suggestions/guidance from valid complaints."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Only the disputed amount matters to whether a submission alleges a deficiency",
+              "explanation_md": "Amount alone does not supply the missing grievance allegation."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Clause12 initial scrutiny and its treatment of guidance/suggestion submissions",
+              "explanation_md": "Portal receipt is not the same as substantive complaint classification."
+            }
+          ],
+          "correct_explanation_md": "Portal receipt is not the same as substantive complaint classification."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Codex original drafts, 16 November 2026. Independent legal/session applicability, originality and pedagogy review pending. All canonical items remain draft, review null.",
+      "Whole S04 unit/end questions inspected: printed pp.223–232 / PDF pp.242–251. Primary amended 2021 scheme clauses1–20, PDF pp.1–15 inspected, plus October2025 coverage notification. Statutory forms and source questions were not reused or cosmetically varied.",
+      "Teaching is expressly pinned to the 2021 framework as at30June2026. The 2026 scheme was notified16January2026 and commences1July2026 with express savings; no current-reference procedure is silently substituted. Independent review must reconcile exam treatment of pre-cutoff future-effective developments.",
+      "Source validity and author comparison do not establish independent approval. Individual coverage exclusions, further pre-cutoff instructions, factual maintainability and any live remedy require their own evidence.",
+      "Current portal mechanics, live document requests and disclosure law outside this scheme are not certified. Source cross-reference correction is retained: information power clause13, resolution clause14."
+    ],
+    "next_batch_hint": "Continue BRBL-C-U01-B006"
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-C-U01-B005",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p.12, Compulsory Paper IV, Module C: Reserve Bank Integrated Ombudsman Scheme 2021"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "RBI_IOS_2021_AMENDED_2022",
+        "authority": "Reserve Bank of India",
+        "title": "Reserve Bank - Integrated Ombudsman Scheme, 2021, with 5 August 2022 amendments",
+        "url": "https://rbidocs.rbi.org.in/rdocs/content/pdfs/RBIOS2021_amendments05082022.pdf",
+        "publication_date": null,
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_C::U01",
+        "objective_ids": [
+          "BRBL::MOD_C::U01::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_C::U01",
+        "objective_ids": [
+          "BRBL::MOD_C::U01::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_C::U01",
+        "objective_ids": [
+          "BRBL::MOD_C::U01::LO_05"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BRBL::MOD_C::U01",
+        "objective_ids": [
+          "BRBL::MOD_C::U01::LO_05"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-C-U01-B005",
+      "draft_id": "D001",
+      "item_id": "item_7bb5abe297a437b6eb876495a285303713ea5a96fc14dd1dc88eec88649c863f"
+    },
+    {
+      "batch_id": "BRBL-C-U01-B005",
+      "draft_id": "D002",
+      "item_id": "item_2ef263755c65d9b717eef0a4373abec125d9cb84122128fd87b5c14bbf09633e"
+    },
+    {
+      "batch_id": "BRBL-C-U01-B005",
+      "draft_id": "D003",
+      "item_id": "item_f5d94154355896df890af31b6c6757c7269f01f2a0830d5313a953be7abe0673"
+    },
+    {
+      "batch_id": "BRBL-C-U01-B005",
+      "draft_id": "D004",
+      "item_id": "item_af253faabdc998db2b2700aac83bf6126f52e027b5e48667024e81cc54eda5b3"
+    }
+  ],
+  "items": [
+    {
+      "title": "Initial scrutiny sorts the kind of submission",
+      "core_explanation_md": "Under the 2021 scheme, a suggestion or request for general guidance is not treated as a valid complaint merely because it reaches the complaint channel. Clause 12 separately addresses non-maintainable complaints and the remaining complaints assigned for further examination. A copy goes to the regulated entity with a direction to submit its version.\n\nThis is a sorting and examination process, not a presumption that either side is correct. Retain the submitted complaint, required information and receipt record. The physical-signature and specified-format conditions in clause 11 are part of the filing enquiry; an acknowledgement does not cure every missing requirement.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Why should a general request for guidance be separated from a complaint alleging a service shortcoming?",
+        "expected_takeaway": "The scheme initial scrutiny treats these as different kinds of submission."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_7bb5abe297a437b6eb876495a285303713ea5a96fc14dd1dc88eec88649c863f",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U01",
+      "objective_ids": [
+        "BRBL::MOD_C::U01::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.228; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "RBI_IOS_2021_AMENDED_2022",
+          "authority": "Reserve Bank of India",
+          "title": "Reserve Bank - Integrated Ombudsman Scheme, 2021, with 5 August 2022 amendments",
+          "url": "https://rbidocs.rbi.org.in/rdocs/content/pdfs/RBIOS2021_amendments05082022.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "clauses 11–13, PDF pp.8–9"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Confidentiality does not prevent the stated fair-process disclosures",
+      "core_explanation_md": "Clause 13 permits the Ombudsman to request the specified information or certified documents from the relevant regulated entity. Unjustified failure to comply can support the stated inference; it should not be relabelled as a harmless administrative choice.\n\nThe same clause protects information but includes qualifications. Relevant inter-party disclosure for natural justice, legal requirements, consent and the specified RBI or forum disclosures must be read with the confidentiality rule. A bank should not assert either absolute secrecy against every requisition or unrestricted public disclosure of the complaint file. This draft concerns the defined scheme process, not permission to share customer data outside it.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does confidentiality necessarily permit a regulated entity to refuse every Ombudsman information request?",
+        "expected_takeaway": "No. The requisition power and the qualified confidentiality provisions must be read together."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_2ef263755c65d9b717eef0a4373abec125d9cb84122128fd87b5c14bbf09633e",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U01",
+      "objective_ids": [
+        "BRBL::MOD_C::U01::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.228; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "RBI_IOS_2021_AMENDED_2022",
+          "authority": "Reserve Bank of India",
+          "title": "Reserve Bank - Integrated Ombudsman Scheme, 2021, with 5 August 2022 amendments",
+          "url": "https://rbidocs.rbi.org.in/rdocs/content/pdfs/RBIOS2021_amendments05082022.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "clauses 11–13, PDF pp.8–9"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A bank invokes absolute confidentiality to refuse every clause13 document request, without identifying a lawful ground or reading the provision. Which distinction is needed?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Confidentiality allows every party to publish the complete customer file",
+          "explanation_md": "The clause protects information and permits defined qualifications, not unrestricted publication."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The statutory information power and qualified confidentiality rule coexist",
+          "explanation_md": "The bank cannot replace them with a universal refusal rule."
+        },
+        {
+          "option_id": "C",
+          "text_md": "An information request proves the bank must lose the complaint",
+          "explanation_md": "A request is an evidence step, not a final merits conclusion."
+        },
+        {
+          "option_id": "D",
+          "text_md": "A customer data label automatically removes every fair-process disclosure",
+          "explanation_md": "The clause expressly recognises relevant natural-justice and other stated disclosures."
+        }
+      ],
+      "correct_explanation_md": "The bank cannot replace them with a universal refusal rule.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_f5d94154355896df890af31b6c6757c7269f01f2a0830d5313a953be7abe0673",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U01",
+      "objective_ids": [
+        "BRBL::MOD_C::U01::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.228; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "RBI_IOS_2021_AMENDED_2022",
+          "authority": "Reserve Bank of India",
+          "title": "Reserve Bank - Integrated Ombudsman Scheme, 2021, with 5 August 2022 amendments",
+          "url": "https://rbidocs.rbi.org.in/rdocs/content/pdfs/RBIOS2021_amendments05082022.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "clauses 11–13, PDF pp.8–9"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A submission asks only for general financial guidance and alleges no service deficiency. It is processed as a proved complaint solely because the portal accepted it. Which stage has been overlooked?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The later award acceptance automatically determines the submission content",
+          "explanation_md": "A later stage cannot replace initial classification."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The fact that all portal submissions must produce an award",
+          "explanation_md": "The scheme distinguishes suggestions/guidance from valid complaints."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Only the disputed amount matters to whether a submission alleges a deficiency",
+          "explanation_md": "Amount alone does not supply the missing grievance allegation."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Clause12 initial scrutiny and its treatment of guidance/suggestion submissions",
+          "explanation_md": "Portal receipt is not the same as substantive complaint classification."
+        }
+      ],
+      "correct_explanation_md": "Portal receipt is not the same as substantive complaint classification.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_af253faabdc998db2b2700aac83bf6126f52e027b5e48667024e81cc54eda5b3",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U01",
+      "objective_ids": [
+        "BRBL::MOD_C::U01::LO_05"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.228; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "RBI_IOS_2021_AMENDED_2022",
+          "authority": "Reserve Bank of India",
+          "title": "Reserve Bank - Integrated Ombudsman Scheme, 2021, with 5 August 2022 amendments",
+          "url": "https://rbidocs.rbi.org.in/rdocs/content/pdfs/RBIOS2021_amendments05082022.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "clauses 11–13, PDF pp.8–9"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

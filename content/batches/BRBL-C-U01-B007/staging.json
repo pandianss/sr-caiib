@@ -1,0 +1,199 @@
+{
+  "schema_version": "notebook-staging-1",
+  "batch_id": "BRBL-C-U01-B007",
+  "paper_id": "BRBL",
+  "unit_label": "BRBL C U01: Integrated Ombudsman Scheme 2021 (30 June 2026 snapshot) — Calculate the distinct 2021 compensation ceilings without treating them as automatic awards or a dispute-amount limit",
+  "publication_state": "draft",
+  "verified_at": null,
+  "source_ids": [
+    "S04",
+    "RBI_IOS_2021_AMENDED_2022"
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "source_id": "S04",
+      "locator": "printed pp.229–230; PDF page = printed page + 19",
+      "statement": "Courseware distinguishes consequential-loss cap, separate time/expense/harassment component and award procedure.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    },
+    {
+      "fact_id": "F002",
+      "source_id": "RBI_IOS_2021_AMENDED_2022",
+      "locator": "clause8(2), PDF p.5; clause15(3)–(5), PDF pp.10–11",
+      "statement": "Consequential-loss compensation is bounded by actual consequential loss or20lakh whichever lower, exclusive of dispute amount. Separate additional compensation may be up to1lakh for stated time/expenses/harassment/mental anguish. No general dispute-amount limit follows; clause16 rejection grounds still matter. Awards are discretionary/reasoned, not automatic maxima.",
+      "regulatory_sensitive": true,
+      "evidence_status": "needs_review"
+    }
+  ],
+  "drafts": [
+    {
+      "draft_id": "D001",
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Three amounts should not be merged",
+        "core_explanation_md": "For this 2021-scheme exercise, distinguish the **amount in dispute**, **consequential loss** and the separate compensation for the stated time, expenses, harassment or mental anguish. Clause 15(4) limits the consequential-loss component to the actual loss or INR 20 lakh, whichever is lower, exclusive of the disputed amount. Clause 15(5) permits the separate additional component up to INR 1 lakh.\n\nThese are powers and limits, not promises that every complaint receives the maximum. A reasoned award, admissibility, evidence and the actual loss still matter. A numerical problem can explicitly assume that the specified components qualify; those assumptions do not establish a real entitlement.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Is the INR 20 lakh consequential-loss ceiling itself a universal cap on the underlying transaction amount?",
+          "expected_takeaway": "No. Dispute amount and the specified compensation components are separate."
+        }
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D002",
+      "item_type": "card",
+      "variant": "concept",
+      "payload": {
+        "title": "Apply each component ceiling before adding",
+        "core_explanation_md": "For a bounded calculation, first cap the qualifying consequential loss at the stated INR 20 lakh ceiling. Then apply the separate INR 1 lakh ceiling to the assumed additional component if the question asks for a combined upper amount. Add only those requested components. Do not add the transaction principal unless the problem expressly asks for a separately authorised payment of that amount.\n\nKeep the exercise tied to the 2021 scheme and its date. Importing a ceiling or appeal rule from the replacement scheme would change the premise. The maximum arithmetically permitted under the stated assumptions is different from predicting what an Ombudsman will award on a live file.",
+        "prerequisite_objective_ids": [],
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Why should the disputed principal not automatically be added to a compensation-only calculation?",
+          "expected_takeaway": "It is a different amount and the question may ask only for the two specified compensation components."
+        }
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D003",
+      "item_type": "card",
+      "variant": "worked_example",
+      "payload": {
+        "title": "Compute a two-component upper amount under the 2021 assumptions",
+        "prerequisite_objective_ids": [],
+        "core_explanation_md": "Assume a maintainable 2021-scheme complaint, proved qualifying consequential loss of INR 2,350,000 and an additional qualifying component of INR 80,000. For this exercise assume no other legal restriction changes the two stated ceilings. Calculate only their maximum combined amount, excluding transaction principal. This is not an automatic award.",
+        "worked_steps": [
+          {
+            "step_number": 1,
+            "description": "Apply the consequential-loss ceiling",
+            "formula_or_substitution": "min(2350000, 2000000)",
+            "intermediate_result": "2000000 INR"
+          },
+          {
+            "step_number": 2,
+            "description": "Apply the separate additional-component ceiling",
+            "formula_or_substitution": "min(80000, 100000)",
+            "intermediate_result": "80000 INR"
+          },
+          {
+            "step_number": 3,
+            "description": "Add only these components",
+            "formula_or_substitution": "2000000 + 80000",
+            "intermediate_result": "2080000 INR"
+          }
+        ],
+        "final_answer_with_unit": "2080000 INR",
+        "self_check": {
+          "mode": "self_assessed",
+          "prompt_text": "Does this arithmetic prove the customer will receive that amount?",
+          "expected_takeaway": "No. It is an upper-amount exercise under stated assumptions, not a merits or award decision."
+        }
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D004",
+      "item_type": "question",
+      "variant": "single_choice",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "A complaint involves a transaction above INR 20 lakh. A learner treats that alone as proof the 2021 scheme can never consider it, confusing transaction amount with consequential-loss compensation. What distinction matters?",
+        "correct_option_id": "D",
+        "options": [
+          {
+            "option_id": "A",
+            "text_md": "Every large transaction guarantees the maximum compensation",
+            "explanation_md": "The scheme still requires the relevant conditions and reasoned decision."
+          },
+          {
+            "option_id": "B",
+            "text_md": "The principal and consequential loss are necessarily identical in every case",
+            "explanation_md": "They are distinct amounts and need the actual facts."
+          },
+          {
+            "option_id": "C",
+            "text_md": "No rejection ground can ever apply once a dispute is received",
+            "explanation_md": "The scheme retains rejection and maintainability qualifications."
+          },
+          {
+            "option_id": "D",
+            "text_md": "Dispute amount, compensation powers and applicable rejection grounds must be examined separately",
+            "explanation_md": "The compensation ceiling is not by itself a universal transaction-amount limit."
+          }
+        ],
+        "correct_explanation_md": "The compensation ceiling is not by itself a universal transaction-amount limit."
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D005",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "Under the 2021 scheme as at 30 June 2026, assume a maintainable complaint with proved qualifying consequential loss of INR 1,650,000 and a separately qualifying additional component of INR 45,000. Assume no other restriction alters the specified ceilings. What is the maximum combined amount for only these two components, excluding transaction principal? State exact INR. This is not a prediction of an award.",
+        "correct_explanation_md": "min(1650000,2000000) + min(45000,100000) = 1650000 + 45000 = 1695000 INR under the stated assumptions.",
+        "numeric_rule": {
+          "expected_answer": "1695000",
+          "unit_label": "INR",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Use exact whole rupees; no intermediate rounding. Calculate only the components specified.",
+          "allow_negative": false
+        }
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    },
+    {
+      "draft_id": "D006",
+      "item_type": "question",
+      "variant": "numeric_input",
+      "payload": {
+        "difficulty": "medium",
+        "stem_md": "For a separate 2021-scheme exercise, assume proved qualifying consequential loss of INR 2,680,000 and a qualifying additional-component claim of INR 140,000. Assume maintainability and no other restriction changing the stated component ceilings. Calculate their maximum combined amount only, excluding principal, in exact INR; do not assume automatic entitlement.",
+        "correct_explanation_md": "The first component is capped at min(2680000,2000000)=2000000 INR. The separate component is capped at min(140000,100000)=100000 INR. Total upper amount = 2100000 INR; it is not an automatic award.",
+        "numeric_rule": {
+          "expected_answer": "2100000",
+          "unit_label": "INR",
+          "precision_decimals": 0,
+          "rounding_mode": "HALF_UP",
+          "rounding_instruction": "Use exact whole rupees; no intermediate rounding. Calculate only the components specified.",
+          "allow_negative": false
+        }
+      },
+      "fact_ids": [
+        "F001",
+        "F002"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Codex original drafts, 16 November 2026. Independent legal/session applicability, originality and pedagogy review pending. All canonical items remain draft, review null.",
+    "Whole S04 unit/end questions inspected: printed pp.223–232 / PDF pp.242–251. Primary amended 2021 scheme clauses1–20, PDF pp.1–15 inspected, plus October2025 coverage notification. Statutory forms and source questions were not reused or cosmetically varied.",
+    "Teaching is expressly pinned to the 2021 framework as at30June2026. The 2026 scheme was notified16January2026 and commences1July2026 with express savings; no current-reference procedure is silently substituted. Independent review must reconcile exam treatment of pre-cutoff future-effective developments.",
+    "Source validity and author comparison do not establish independent approval. Individual coverage exclusions, further pre-cutoff instructions, factual maintainability and any live remedy require their own evidence.",
+    "Independent legal/pedagogical review of all numerical assumptions and award/rejection interactions pending. Exact arithmetic tests do not verify entitlement. Replacement-scheme compensation is not imported into these pinned 2021 exercises."
+  ],
+  "next_batch_hint": "Continue BRBL-C-U01-B008"
+}

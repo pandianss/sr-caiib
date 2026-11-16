@@ -1,0 +1,604 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-C-U01-B004",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL C U01: Integrated Ombudsman Scheme 2021 (30 June 2026 snapshot) — Apply prior-complaint, time-route and parallel-proceeding maintainability conditions without treating every grievance as admissible",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04",
+      "RBI_IOS_2021_AMENDED_2022"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.227–228; PDF page = printed page + 19",
+        "statement": "Courseware describes clause10 exclusions, prior approach to the RE, reply/no-reply timing routes and the criminal-proceeding explanation.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "source_id": "RBI_IOS_2021_AMENDED_2022",
+        "locator": "clauses 9–10, PDF pp.6–7",
+        "statement": "Clause10 contains exclusions including commercial judgment, vendor outsourcing, employment and specified CIC Act disputes. Prior complaint and unsatisfactory rejection/no reply within30days are distinguished. One-year-after-reply and no-reply one-year-and30days routes are distinct. Same-cause merits/parallel-proceeding restrictions have a criminal/police explanation; prior RE complaint also needs Limitation Act timeliness.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "draft_id": "D001",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "A complaint should first identify the service shortcoming",
+          "core_explanation_md": "The 2021 scheme is not a general appeal against every commercial decision. Clause 10 lists excluded matters, including the commercial-judgment category and specified outsourcing, employment and other disputes. A file should identify the service obligation and alleged shortcoming, then examine the actual exclusion rather than decide from dissatisfaction alone.\n\nThe amended text also excludes the specified dispute for which section 18 of the Credit Information Companies Act supplies a remedy. Category coverage does not mean every dispute involving that category is admissible. Other conditions include complete information, proper complainant/representation, the nature of the complaint and timely prior approach to the entity.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does including an institution category automatically make every dispute with that institution maintainable?",
+            "expected_takeaway": "No. The complaint must still avoid the exclusions and satisfy the other conditions."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Choose the correct timing route and check the same cause",
+          "core_explanation_md": "The complainant must first make the stated complaint to the regulated entity. An unsatisfactory whole/partial rejection and absence of a reply within thirty days are alternative entry facts; do not require the no-reply wait after every unsatisfactory final reply. The later filing window also differs: the reply route and no-reply route use different reference events.\n\nCheck whether the same cause is already pending, settled or dealt with on merits in the specified fora. The explanation distinguishes criminal proceedings or police investigation, so those alone should not be equated automatically with the civil/same-cause bar. These rules do not calculate the underlying Limitation Act deadline for the customer initial claim.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Why should a timeline distinguish receipt of an unsatisfactory reply from receiving no reply?",
+            "expected_takeaway": "The scheme gives distinct entry facts and later time-window reference events for those situations."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A customer has received an unsatisfactory final rejection from the RE. A checklist insists that every complainant must nevertheless wait for a no-reply period before any scheme complaint, without reading the alternative wording. What is the error?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "A final rejection automatically guarantees success on the merits",
+              "explanation_md": "It supplies a relevant entry fact, not proof of deficiency or entitlement."
+            },
+            {
+              "option_id": "B",
+              "text_md": "A reply removes every later filing-window condition",
+              "explanation_md": "The later time route still applies."
+            },
+            {
+              "option_id": "C",
+              "text_md": "A no-reply rule can never apply in any complaint",
+              "explanation_md": "It is a distinct branch where no reply is received within the specified period."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The unsatisfactory-rejection and no-reply branches have been treated as one mandatory sequence",
+              "explanation_md": "The scheme states alternatives; the file must select the branch matching its facts."
+            }
+          ],
+          "correct_explanation_md": "The scheme states alternatives; the file must select the branch matching its facts."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A police investigation concerns the same events as a service grievance. The team treats that alone as the complete clause10 parallel-proceeding bar without reading the explanation. What should it check?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The explanation distinguishing criminal proceedings/police investigation from the stated same-cause restriction",
+              "explanation_md": "The scheme expressly qualifies that restriction; other admissibility conditions still need review."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Whether a police investigation automatically proves bank liability",
+              "explanation_md": "Investigation alone does not establish the merits of the service complaint."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Whether all complaint time conditions vanish when police are involved",
+              "explanation_md": "The explanation does not erase the other timing and admissibility conditions."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Whether a police reference always counts as a concluded civil merits decision",
+              "explanation_md": "The explanation specifically requires a distinction rather than that equation."
+            }
+          ],
+          "correct_explanation_md": "The scheme expressly qualifies that restriction; other admissibility conditions still need review."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "An institution is within scheme coverage, but the dispute is solely the employment relationship between it and an employee. What separate enquiry prevents coverage being treated as automatic admissibility?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Only the institution total balance-sheet size",
+              "explanation_md": "That does not replace the dispute-type exclusion enquiry."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Whether the employee can choose a larger compensation figure",
+              "explanation_md": "Requested relief does not remove a specified exclusion."
+            },
+            {
+              "option_id": "C",
+              "text_md": "The clause10 exclusions, including the employee-employer category",
+              "explanation_md": "The institution inclusion does not make every dispute with it admissible."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Whether every covered institution must settle every complaint without scrutiny",
+              "explanation_md": "The scheme retains exclusions and scrutiny."
+            }
+          ],
+          "correct_explanation_md": "The institution inclusion does not make every dispute with it admissible."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Codex original drafts, 16 November 2026. Independent legal/session applicability, originality and pedagogy review pending. All canonical items remain draft, review null.",
+      "Whole S04 unit/end questions inspected: printed pp.223–232 / PDF pp.242–251. Primary amended 2021 scheme clauses1–20, PDF pp.1–15 inspected, plus October2025 coverage notification. Statutory forms and source questions were not reused or cosmetically varied.",
+      "Teaching is expressly pinned to the 2021 framework as at30June2026. The 2026 scheme was notified16January2026 and commences1July2026 with express savings; no current-reference procedure is silently substituted. Independent review must reconcile exam treatment of pre-cutoff future-effective developments.",
+      "Source validity and author comparison do not establish independent approval. Individual coverage exclusions, further pre-cutoff instructions, factual maintainability and any live remedy require their own evidence.",
+      "No actual litigation deadline or limitation period is computed. Special directions, cause-of-action characterisation and the full filing evidence need independent review."
+    ],
+    "next_batch_hint": "Continue BRBL-C-U01-B005"
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-C-U01-B004",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p.12, Compulsory Paper IV, Module C: Reserve Bank Integrated Ombudsman Scheme 2021"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "RBI_IOS_2021_AMENDED_2022",
+        "authority": "Reserve Bank of India",
+        "title": "Reserve Bank - Integrated Ombudsman Scheme, 2021, with 5 August 2022 amendments",
+        "url": "https://rbidocs.rbi.org.in/rdocs/content/pdfs/RBIOS2021_amendments05082022.pdf",
+        "publication_date": null,
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_C::U01",
+        "objective_ids": [
+          "BRBL::MOD_C::U01::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_C::U01",
+        "objective_ids": [
+          "BRBL::MOD_C::U01::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_C::U01",
+        "objective_ids": [
+          "BRBL::MOD_C::U01::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BRBL::MOD_C::U01",
+        "objective_ids": [
+          "BRBL::MOD_C::U01::LO_04"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "unit_id": "BRBL::MOD_C::U01",
+        "objective_ids": [
+          "BRBL::MOD_C::U01::LO_04"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-C-U01-B004",
+      "draft_id": "D001",
+      "item_id": "item_e8b488eaf170a76d04a916feba7074d563aa2ae3bb5c4e704f1dfc4527ad8369"
+    },
+    {
+      "batch_id": "BRBL-C-U01-B004",
+      "draft_id": "D002",
+      "item_id": "item_7b9c1702a5c92f5d352721b582d9ea051835263dfc92525cb9e1ebdb79830ba3"
+    },
+    {
+      "batch_id": "BRBL-C-U01-B004",
+      "draft_id": "D003",
+      "item_id": "item_6eb10cc717201de3da82ebc75065a08aaf14d11ac6d939a729fab9e17d2129d1"
+    },
+    {
+      "batch_id": "BRBL-C-U01-B004",
+      "draft_id": "D004",
+      "item_id": "item_3ee2a993baf3667c7dff56cac9a6f8aef65e5ea66777426da7e2a1003bc86c5e"
+    },
+    {
+      "batch_id": "BRBL-C-U01-B004",
+      "draft_id": "D005",
+      "item_id": "item_09b88c8fd233da95081446aca6bb399a90cf45d8ee0b2acf226e985704d63403"
+    }
+  ],
+  "items": [
+    {
+      "title": "A complaint should first identify the service shortcoming",
+      "core_explanation_md": "The 2021 scheme is not a general appeal against every commercial decision. Clause 10 lists excluded matters, including the commercial-judgment category and specified outsourcing, employment and other disputes. A file should identify the service obligation and alleged shortcoming, then examine the actual exclusion rather than decide from dissatisfaction alone.\n\nThe amended text also excludes the specified dispute for which section 18 of the Credit Information Companies Act supplies a remedy. Category coverage does not mean every dispute involving that category is admissible. Other conditions include complete information, proper complainant/representation, the nature of the complaint and timely prior approach to the entity.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does including an institution category automatically make every dispute with that institution maintainable?",
+        "expected_takeaway": "No. The complaint must still avoid the exclusions and satisfy the other conditions."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_e8b488eaf170a76d04a916feba7074d563aa2ae3bb5c4e704f1dfc4527ad8369",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U01",
+      "objective_ids": [
+        "BRBL::MOD_C::U01::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.227–228; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "RBI_IOS_2021_AMENDED_2022",
+          "authority": "Reserve Bank of India",
+          "title": "Reserve Bank - Integrated Ombudsman Scheme, 2021, with 5 August 2022 amendments",
+          "url": "https://rbidocs.rbi.org.in/rdocs/content/pdfs/RBIOS2021_amendments05082022.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "clauses 9–10, PDF pp.6–7"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Choose the correct timing route and check the same cause",
+      "core_explanation_md": "The complainant must first make the stated complaint to the regulated entity. An unsatisfactory whole/partial rejection and absence of a reply within thirty days are alternative entry facts; do not require the no-reply wait after every unsatisfactory final reply. The later filing window also differs: the reply route and no-reply route use different reference events.\n\nCheck whether the same cause is already pending, settled or dealt with on merits in the specified fora. The explanation distinguishes criminal proceedings or police investigation, so those alone should not be equated automatically with the civil/same-cause bar. These rules do not calculate the underlying Limitation Act deadline for the customer initial claim.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Why should a timeline distinguish receipt of an unsatisfactory reply from receiving no reply?",
+        "expected_takeaway": "The scheme gives distinct entry facts and later time-window reference events for those situations."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_7b9c1702a5c92f5d352721b582d9ea051835263dfc92525cb9e1ebdb79830ba3",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U01",
+      "objective_ids": [
+        "BRBL::MOD_C::U01::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.227–228; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "RBI_IOS_2021_AMENDED_2022",
+          "authority": "Reserve Bank of India",
+          "title": "Reserve Bank - Integrated Ombudsman Scheme, 2021, with 5 August 2022 amendments",
+          "url": "https://rbidocs.rbi.org.in/rdocs/content/pdfs/RBIOS2021_amendments05082022.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "clauses 9–10, PDF pp.6–7"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A customer has received an unsatisfactory final rejection from the RE. A checklist insists that every complainant must nevertheless wait for a no-reply period before any scheme complaint, without reading the alternative wording. What is the error?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "A final rejection automatically guarantees success on the merits",
+          "explanation_md": "It supplies a relevant entry fact, not proof of deficiency or entitlement."
+        },
+        {
+          "option_id": "B",
+          "text_md": "A reply removes every later filing-window condition",
+          "explanation_md": "The later time route still applies."
+        },
+        {
+          "option_id": "C",
+          "text_md": "A no-reply rule can never apply in any complaint",
+          "explanation_md": "It is a distinct branch where no reply is received within the specified period."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The unsatisfactory-rejection and no-reply branches have been treated as one mandatory sequence",
+          "explanation_md": "The scheme states alternatives; the file must select the branch matching its facts."
+        }
+      ],
+      "correct_explanation_md": "The scheme states alternatives; the file must select the branch matching its facts.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_6eb10cc717201de3da82ebc75065a08aaf14d11ac6d939a729fab9e17d2129d1",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U01",
+      "objective_ids": [
+        "BRBL::MOD_C::U01::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.227–228; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "RBI_IOS_2021_AMENDED_2022",
+          "authority": "Reserve Bank of India",
+          "title": "Reserve Bank - Integrated Ombudsman Scheme, 2021, with 5 August 2022 amendments",
+          "url": "https://rbidocs.rbi.org.in/rdocs/content/pdfs/RBIOS2021_amendments05082022.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "clauses 9–10, PDF pp.6–7"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A police investigation concerns the same events as a service grievance. The team treats that alone as the complete clause10 parallel-proceeding bar without reading the explanation. What should it check?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The explanation distinguishing criminal proceedings/police investigation from the stated same-cause restriction",
+          "explanation_md": "The scheme expressly qualifies that restriction; other admissibility conditions still need review."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Whether a police investigation automatically proves bank liability",
+          "explanation_md": "Investigation alone does not establish the merits of the service complaint."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Whether all complaint time conditions vanish when police are involved",
+          "explanation_md": "The explanation does not erase the other timing and admissibility conditions."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Whether a police reference always counts as a concluded civil merits decision",
+          "explanation_md": "The explanation specifically requires a distinction rather than that equation."
+        }
+      ],
+      "correct_explanation_md": "The scheme expressly qualifies that restriction; other admissibility conditions still need review.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_3ee2a993baf3667c7dff56cac9a6f8aef65e5ea66777426da7e2a1003bc86c5e",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U01",
+      "objective_ids": [
+        "BRBL::MOD_C::U01::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.227–228; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "RBI_IOS_2021_AMENDED_2022",
+          "authority": "Reserve Bank of India",
+          "title": "Reserve Bank - Integrated Ombudsman Scheme, 2021, with 5 August 2022 amendments",
+          "url": "https://rbidocs.rbi.org.in/rdocs/content/pdfs/RBIOS2021_amendments05082022.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "clauses 9–10, PDF pp.6–7"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "An institution is within scheme coverage, but the dispute is solely the employment relationship between it and an employee. What separate enquiry prevents coverage being treated as automatic admissibility?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Only the institution total balance-sheet size",
+          "explanation_md": "That does not replace the dispute-type exclusion enquiry."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Whether the employee can choose a larger compensation figure",
+          "explanation_md": "Requested relief does not remove a specified exclusion."
+        },
+        {
+          "option_id": "C",
+          "text_md": "The clause10 exclusions, including the employee-employer category",
+          "explanation_md": "The institution inclusion does not make every dispute with it admissible."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Whether every covered institution must settle every complaint without scrutiny",
+          "explanation_md": "The scheme retains exclusions and scrutiny."
+        }
+      ],
+      "correct_explanation_md": "The institution inclusion does not make every dispute with it admissible.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_09b88c8fd233da95081446aca6bb399a90cf45d8ee0b2acf226e985704d63403",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U01",
+      "objective_ids": [
+        "BRBL::MOD_C::U01::LO_04"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.227–228; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "RBI_IOS_2021_AMENDED_2022",
+          "authority": "Reserve Bank of India",
+          "title": "Reserve Bank - Integrated Ombudsman Scheme, 2021, with 5 August 2022 amendments",
+          "url": "https://rbidocs.rbi.org.in/rdocs/content/pdfs/RBIOS2021_amendments05082022.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "clauses 9–10, PDF pp.6–7"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

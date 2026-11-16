@@ -1,0 +1,761 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-C-U01-B002",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL C U01: Integrated Ombudsman Scheme 2021 (30 June 2026 snapshot) — Apply the amended regulated-entity scope without confusing credit-information companies and excluded investment-company categories",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04",
+      "RBI_IOS_2021_AMENDED_2022",
+      "RBI_IOS_COOP_2025"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.224–226; PDF page = printed page + 19",
+        "statement": "Courseware lists original bank/NBFC/system-participant coverage and August 2022 credit-information inclusion; its bank list omits the later 2025 expansion.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "source_id": "RBI_IOS_2021_AMENDED_2022",
+        "locator": "clauses 1 and 3, PDF pp.1–3",
+        "statement": "Amended definitions include Credit Information Company and related deficiency language; NBFC definition has specified exclusions. Its system-participant definition expressly excludes RBI and a system provider, unlike the broad PSS Act definition.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F003",
+        "source_id": "RBI_IOS_COOP_2025",
+        "locator": "paragraphs 1–4",
+        "statement": "Specified State/Central Co-operative Banks added effective 1 November 2025. Paragraph4 lists bank categories, non-scheduled primary UCB deposit threshold, the alternative NBFC coverage branches, system participants and Credit Information Companies, subject to exclusions.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "draft_id": "D001",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Coverage is a category-and-exclusion enquiry",
+          "core_explanation_md": "Do not apply the older courseware bank list as the complete 30 June 2026 position. The October 2025 notification added the specified State and Central Co-operative Banks from 1 November 2025. It also states the relevant bank, NBFC, system-participant and Credit Information Company categories, subject to the scheme exclusions.\n\nRead the exact branch of the coverage rule. The non-scheduled primary urban co-operative bank threshold and the NBFC conditions are not a single size test imposed on every institution. For an actual institution, category, measured date, relevant threshold and exclusions all need evidence. Being broadly RBI-regulated is not by itself the entire inclusion test.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Why is the original textbook list insufficient for the pinned June 2026 coverage enquiry?",
+            "expected_takeaway": "A later pre-cutoff notification expanded coverage and must be read with the scheme exclusions."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002",
+          "F003"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "The NBFC branches are alternatives, not a universal asset threshold",
+          "core_explanation_md": "The coverage notification distinguishes NBFCs authorised to accept deposits from the stated customer-interface-and-asset-size branch, while excluding Housing Finance Companies and retaining the scheme qualifications. A reviewer should identify which branch the facts rely on rather than attach the customer-interface asset threshold to every NBFC without reading the text.\n\nThe scheme NBFC definition also contains specified exclusions. Keep **Core Investment Company** distinct from **Credit Information Company**: the similar initials do not make these the same legal category. The amended scheme expressly includes the latter category while the NBFC definition treats the former differently. Use full names in ambiguous files.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Why should the full company category be written rather than relying on the initials CIC?",
+            "expected_takeaway": "Core Investment Company and Credit Information Company are distinct categories with different treatment in these provisions."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002",
+          "F003"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "A familiar term can have a scheme-specific definition",
+          "core_explanation_md": "The PSS Act participant definition is broad, but the inspected 2021 Ombudsman scheme defines its system participant by excluding RBI and the system provider. Copying the PSS definition unchanged into this scheme would lose that qualification. Always read a defined term in the instrument actually being applied.\n\nThe amended deficiency definition also does not require financial loss in every case. A service shortcoming can therefore raise a complaint question even where the reviewer cannot identify a monetary loss. That does not guarantee maintainability or an award: exclusions, complaint conditions and available relief still need separate examination.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does the absence of a financial loss automatically establish that there is no possible deficiency in service?",
+            "expected_takeaway": "No. The definition allows a shortcoming with or without financial loss, subject to the rest of the scheme."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002",
+          "F003"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A reviewer excludes a State Co-operative Bank solely because it is absent from the original 2021 coverage list in the book. The question is expressly pinned to 30 June 2026. Which evidence must be considered?",
+          "correct_option_id": "A",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "The October 2025 notification adding the specified State/Central Co-operative Banks from 1 November 2025",
+              "explanation_md": "This predates the cutoff and changes the coverage enquiry, subject to exclusions."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Only the cover year of the textbook",
+              "explanation_md": "The book year does not replace later operative primary notifications."
+            },
+            {
+              "option_id": "C",
+              "text_md": "An assumption that every cooperative body is necessarily covered",
+              "explanation_md": "The notification defines specified categories and retains exclusions; a broad label is insufficient."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The July 2026 commencement alone, ignoring all earlier amendments",
+              "explanation_md": "A later commencement does not erase a distinct November 2025 coverage change."
+            }
+          ],
+          "correct_explanation_md": "This predates the cutoff and changes the coverage enquiry, subject to exclusions."
+        },
+        "fact_ids": [
+          "F001",
+          "F002",
+          "F003"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A file uses the initials CIC and treats an excluded Core Investment Company as identical to a Credit Information Company included in the amended framework. What should correct the classification?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Use only whichever expansion gives the larger asset figure",
+              "explanation_md": "Asset size does not decide which legal company category the initials denote."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Assume all company definitions are interchangeable under one acronym",
+              "explanation_md": "The categories have different definitions and statutory treatment."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Identify the full company type and apply its own inclusion/exclusion provisions",
+              "explanation_md": "Writing the full type prevents the acronym from collapsing distinct categories."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Treat the acronym itself as proof of an RBI complaint award",
+              "explanation_md": "An abbreviation establishes neither coverage nor relief."
+            }
+          ],
+          "correct_explanation_md": "Writing the full type prevents the acronym from collapsing distinct categories."
+        },
+        "fact_ids": [
+          "F001",
+          "F002",
+          "F003"
+        ]
+      },
+      {
+        "draft_id": "D006",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A question imports the PSS Act participant definition into the 2021 Ombudsman scheme without reading the latter definition. Which scheme qualification is at risk?",
+          "correct_option_id": "D",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "That every customer is necessarily the operator of a payment system",
+              "explanation_md": "Customer status does not establish operator or participant classification."
+            },
+            {
+              "option_id": "B",
+              "text_md": "That financial loss is compulsory for every service deficiency",
+              "explanation_md": "The deficiency definition allows a non-financial-loss case."
+            },
+            {
+              "option_id": "C",
+              "text_md": "That a threshold automatically removes all scheme exclusions",
+              "explanation_md": "A threshold does not displace exclusions."
+            },
+            {
+              "option_id": "D",
+              "text_md": "The scheme definition excludes RBI and the system provider from its system-participant term",
+              "explanation_md": "The definition is instrument-specific and cannot be replaced by the broader PSS wording."
+            }
+          ],
+          "correct_explanation_md": "The definition is instrument-specific and cannot be replaced by the broader PSS wording."
+        },
+        "fact_ids": [
+          "F001",
+          "F002",
+          "F003"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Codex original drafts, 16 November 2026. Independent legal/session applicability, originality and pedagogy review pending. All canonical items remain draft, review null.",
+      "Whole S04 unit/end questions inspected: printed pp.223–232 / PDF pp.242–251. Primary amended 2021 scheme clauses1–20, PDF pp.1–15 inspected, plus October2025 coverage notification. Statutory forms and source questions were not reused or cosmetically varied.",
+      "Teaching is expressly pinned to the 2021 framework as at30June2026. The 2026 scheme was notified16January2026 and commences1July2026 with express savings; no current-reference procedure is silently substituted. Independent review must reconcile exam treatment of pre-cutoff future-effective developments.",
+      "Source validity and author comparison do not establish independent approval. Individual coverage exclusions, further pre-cutoff instructions, factual maintainability and any live remedy require their own evidence.",
+      "No particular live institution is certified as covered. Individual RBI restrictions, subsequent pre-cutoff instructions and the precise measured threshold evidence still require independent review."
+    ],
+    "next_batch_hint": "Continue BRBL-C-U01-B003"
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-C-U01-B002",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p.12, Compulsory Paper IV, Module C: Reserve Bank Integrated Ombudsman Scheme 2021"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "RBI_IOS_2021_AMENDED_2022",
+        "authority": "Reserve Bank of India",
+        "title": "Reserve Bank - Integrated Ombudsman Scheme, 2021, with 5 August 2022 amendments",
+        "url": "https://rbidocs.rbi.org.in/rdocs/content/pdfs/RBIOS2021_amendments05082022.pdf",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "RBI_IOS_COOP_2025",
+        "authority": "Reserve Bank of India",
+        "title": "Reserve Bank - Integrated Ombudsman Scheme 2021: State and Central Co-operative Bank coverage notification, CO.CEPD.PRS.No.S684/13-55-001/2025-2026",
+        "url": "https://www.rbi.org.in/scripts/FS_Notification.aspx?Id=12911",
+        "publication_date": "2025-10-07",
+        "effective_date": "2025-11-01"
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_C::U01",
+        "objective_ids": [
+          "BRBL::MOD_C::U01::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_C::U01",
+        "objective_ids": [
+          "BRBL::MOD_C::U01::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_C::U01",
+        "objective_ids": [
+          "BRBL::MOD_C::U01::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BRBL::MOD_C::U01",
+        "objective_ids": [
+          "BRBL::MOD_C::U01::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D005",
+        "unit_id": "BRBL::MOD_C::U01",
+        "objective_ids": [
+          "BRBL::MOD_C::U01::LO_02"
+        ]
+      },
+      {
+        "draft_id": "D006",
+        "unit_id": "BRBL::MOD_C::U01",
+        "objective_ids": [
+          "BRBL::MOD_C::U01::LO_02"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-C-U01-B002",
+      "draft_id": "D001",
+      "item_id": "item_556021862f0adc393959ba184ac6ebe4cee80a4102831d0e0016b226a937591b"
+    },
+    {
+      "batch_id": "BRBL-C-U01-B002",
+      "draft_id": "D002",
+      "item_id": "item_4a81a1d6bf48d5d0b75523e25b2647f11468509d528145ff98e2a3a9c0f15941"
+    },
+    {
+      "batch_id": "BRBL-C-U01-B002",
+      "draft_id": "D003",
+      "item_id": "item_5268a7f029e2b6833138880c09239babc65c4e5fe3251aaca908fe1f45fc3669"
+    },
+    {
+      "batch_id": "BRBL-C-U01-B002",
+      "draft_id": "D004",
+      "item_id": "item_1d7a0f4e0042ab5c268aca7c8361916e7ba9a01df74fada96dc6867b0f514117"
+    },
+    {
+      "batch_id": "BRBL-C-U01-B002",
+      "draft_id": "D005",
+      "item_id": "item_cc43e096eaa36cd958a253672835679db90292d1da63712097fc74668300f584"
+    },
+    {
+      "batch_id": "BRBL-C-U01-B002",
+      "draft_id": "D006",
+      "item_id": "item_15cd0350b6310d5f30157b822e444efaa5fc86a3b4be91c1d251b6b915a1ef0e"
+    }
+  ],
+  "items": [
+    {
+      "title": "Coverage is a category-and-exclusion enquiry",
+      "core_explanation_md": "Do not apply the older courseware bank list as the complete 30 June 2026 position. The October 2025 notification added the specified State and Central Co-operative Banks from 1 November 2025. It also states the relevant bank, NBFC, system-participant and Credit Information Company categories, subject to the scheme exclusions.\n\nRead the exact branch of the coverage rule. The non-scheduled primary urban co-operative bank threshold and the NBFC conditions are not a single size test imposed on every institution. For an actual institution, category, measured date, relevant threshold and exclusions all need evidence. Being broadly RBI-regulated is not by itself the entire inclusion test.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Why is the original textbook list insufficient for the pinned June 2026 coverage enquiry?",
+        "expected_takeaway": "A later pre-cutoff notification expanded coverage and must be read with the scheme exclusions."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_556021862f0adc393959ba184ac6ebe4cee80a4102831d0e0016b226a937591b",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U01",
+      "objective_ids": [
+        "BRBL::MOD_C::U01::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.224–226; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "RBI_IOS_2021_AMENDED_2022",
+          "authority": "Reserve Bank of India",
+          "title": "Reserve Bank - Integrated Ombudsman Scheme, 2021, with 5 August 2022 amendments",
+          "url": "https://rbidocs.rbi.org.in/rdocs/content/pdfs/RBIOS2021_amendments05082022.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "clauses 1 and 3, PDF pp.1–3"
+        },
+        {
+          "source_id": "RBI_IOS_COOP_2025",
+          "authority": "Reserve Bank of India",
+          "title": "Reserve Bank - Integrated Ombudsman Scheme 2021: State and Central Co-operative Bank coverage notification, CO.CEPD.PRS.No.S684/13-55-001/2025-2026",
+          "url": "https://www.rbi.org.in/scripts/FS_Notification.aspx?Id=12911",
+          "publication_date": "2025-10-07",
+          "effective_date": "2025-11-01",
+          "locator": "paragraphs 1–4"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "The NBFC branches are alternatives, not a universal asset threshold",
+      "core_explanation_md": "The coverage notification distinguishes NBFCs authorised to accept deposits from the stated customer-interface-and-asset-size branch, while excluding Housing Finance Companies and retaining the scheme qualifications. A reviewer should identify which branch the facts rely on rather than attach the customer-interface asset threshold to every NBFC without reading the text.\n\nThe scheme NBFC definition also contains specified exclusions. Keep **Core Investment Company** distinct from **Credit Information Company**: the similar initials do not make these the same legal category. The amended scheme expressly includes the latter category while the NBFC definition treats the former differently. Use full names in ambiguous files.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Why should the full company category be written rather than relying on the initials CIC?",
+        "expected_takeaway": "Core Investment Company and Credit Information Company are distinct categories with different treatment in these provisions."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_4a81a1d6bf48d5d0b75523e25b2647f11468509d528145ff98e2a3a9c0f15941",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U01",
+      "objective_ids": [
+        "BRBL::MOD_C::U01::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.224–226; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "RBI_IOS_2021_AMENDED_2022",
+          "authority": "Reserve Bank of India",
+          "title": "Reserve Bank - Integrated Ombudsman Scheme, 2021, with 5 August 2022 amendments",
+          "url": "https://rbidocs.rbi.org.in/rdocs/content/pdfs/RBIOS2021_amendments05082022.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "clauses 1 and 3, PDF pp.1–3"
+        },
+        {
+          "source_id": "RBI_IOS_COOP_2025",
+          "authority": "Reserve Bank of India",
+          "title": "Reserve Bank - Integrated Ombudsman Scheme 2021: State and Central Co-operative Bank coverage notification, CO.CEPD.PRS.No.S684/13-55-001/2025-2026",
+          "url": "https://www.rbi.org.in/scripts/FS_Notification.aspx?Id=12911",
+          "publication_date": "2025-10-07",
+          "effective_date": "2025-11-01",
+          "locator": "paragraphs 1–4"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "A familiar term can have a scheme-specific definition",
+      "core_explanation_md": "The PSS Act participant definition is broad, but the inspected 2021 Ombudsman scheme defines its system participant by excluding RBI and the system provider. Copying the PSS definition unchanged into this scheme would lose that qualification. Always read a defined term in the instrument actually being applied.\n\nThe amended deficiency definition also does not require financial loss in every case. A service shortcoming can therefore raise a complaint question even where the reviewer cannot identify a monetary loss. That does not guarantee maintainability or an award: exclusions, complaint conditions and available relief still need separate examination.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does the absence of a financial loss automatically establish that there is no possible deficiency in service?",
+        "expected_takeaway": "No. The definition allows a shortcoming with or without financial loss, subject to the rest of the scheme."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_5268a7f029e2b6833138880c09239babc65c4e5fe3251aaca908fe1f45fc3669",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U01",
+      "objective_ids": [
+        "BRBL::MOD_C::U01::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.224–226; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "RBI_IOS_2021_AMENDED_2022",
+          "authority": "Reserve Bank of India",
+          "title": "Reserve Bank - Integrated Ombudsman Scheme, 2021, with 5 August 2022 amendments",
+          "url": "https://rbidocs.rbi.org.in/rdocs/content/pdfs/RBIOS2021_amendments05082022.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "clauses 1 and 3, PDF pp.1–3"
+        },
+        {
+          "source_id": "RBI_IOS_COOP_2025",
+          "authority": "Reserve Bank of India",
+          "title": "Reserve Bank - Integrated Ombudsman Scheme 2021: State and Central Co-operative Bank coverage notification, CO.CEPD.PRS.No.S684/13-55-001/2025-2026",
+          "url": "https://www.rbi.org.in/scripts/FS_Notification.aspx?Id=12911",
+          "publication_date": "2025-10-07",
+          "effective_date": "2025-11-01",
+          "locator": "paragraphs 1–4"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A reviewer excludes a State Co-operative Bank solely because it is absent from the original 2021 coverage list in the book. The question is expressly pinned to 30 June 2026. Which evidence must be considered?",
+      "correct_option_id": "A",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "The October 2025 notification adding the specified State/Central Co-operative Banks from 1 November 2025",
+          "explanation_md": "This predates the cutoff and changes the coverage enquiry, subject to exclusions."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Only the cover year of the textbook",
+          "explanation_md": "The book year does not replace later operative primary notifications."
+        },
+        {
+          "option_id": "C",
+          "text_md": "An assumption that every cooperative body is necessarily covered",
+          "explanation_md": "The notification defines specified categories and retains exclusions; a broad label is insufficient."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The July 2026 commencement alone, ignoring all earlier amendments",
+          "explanation_md": "A later commencement does not erase a distinct November 2025 coverage change."
+        }
+      ],
+      "correct_explanation_md": "This predates the cutoff and changes the coverage enquiry, subject to exclusions.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_1d7a0f4e0042ab5c268aca7c8361916e7ba9a01df74fada96dc6867b0f514117",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U01",
+      "objective_ids": [
+        "BRBL::MOD_C::U01::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.224–226; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "RBI_IOS_2021_AMENDED_2022",
+          "authority": "Reserve Bank of India",
+          "title": "Reserve Bank - Integrated Ombudsman Scheme, 2021, with 5 August 2022 amendments",
+          "url": "https://rbidocs.rbi.org.in/rdocs/content/pdfs/RBIOS2021_amendments05082022.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "clauses 1 and 3, PDF pp.1–3"
+        },
+        {
+          "source_id": "RBI_IOS_COOP_2025",
+          "authority": "Reserve Bank of India",
+          "title": "Reserve Bank - Integrated Ombudsman Scheme 2021: State and Central Co-operative Bank coverage notification, CO.CEPD.PRS.No.S684/13-55-001/2025-2026",
+          "url": "https://www.rbi.org.in/scripts/FS_Notification.aspx?Id=12911",
+          "publication_date": "2025-10-07",
+          "effective_date": "2025-11-01",
+          "locator": "paragraphs 1–4"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A file uses the initials CIC and treats an excluded Core Investment Company as identical to a Credit Information Company included in the amended framework. What should correct the classification?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Use only whichever expansion gives the larger asset figure",
+          "explanation_md": "Asset size does not decide which legal company category the initials denote."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Assume all company definitions are interchangeable under one acronym",
+          "explanation_md": "The categories have different definitions and statutory treatment."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Identify the full company type and apply its own inclusion/exclusion provisions",
+          "explanation_md": "Writing the full type prevents the acronym from collapsing distinct categories."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Treat the acronym itself as proof of an RBI complaint award",
+          "explanation_md": "An abbreviation establishes neither coverage nor relief."
+        }
+      ],
+      "correct_explanation_md": "Writing the full type prevents the acronym from collapsing distinct categories.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_cc43e096eaa36cd958a253672835679db90292d1da63712097fc74668300f584",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U01",
+      "objective_ids": [
+        "BRBL::MOD_C::U01::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.224–226; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "RBI_IOS_2021_AMENDED_2022",
+          "authority": "Reserve Bank of India",
+          "title": "Reserve Bank - Integrated Ombudsman Scheme, 2021, with 5 August 2022 amendments",
+          "url": "https://rbidocs.rbi.org.in/rdocs/content/pdfs/RBIOS2021_amendments05082022.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "clauses 1 and 3, PDF pp.1–3"
+        },
+        {
+          "source_id": "RBI_IOS_COOP_2025",
+          "authority": "Reserve Bank of India",
+          "title": "Reserve Bank - Integrated Ombudsman Scheme 2021: State and Central Co-operative Bank coverage notification, CO.CEPD.PRS.No.S684/13-55-001/2025-2026",
+          "url": "https://www.rbi.org.in/scripts/FS_Notification.aspx?Id=12911",
+          "publication_date": "2025-10-07",
+          "effective_date": "2025-11-01",
+          "locator": "paragraphs 1–4"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A question imports the PSS Act participant definition into the 2021 Ombudsman scheme without reading the latter definition. Which scheme qualification is at risk?",
+      "correct_option_id": "D",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "That every customer is necessarily the operator of a payment system",
+          "explanation_md": "Customer status does not establish operator or participant classification."
+        },
+        {
+          "option_id": "B",
+          "text_md": "That financial loss is compulsory for every service deficiency",
+          "explanation_md": "The deficiency definition allows a non-financial-loss case."
+        },
+        {
+          "option_id": "C",
+          "text_md": "That a threshold automatically removes all scheme exclusions",
+          "explanation_md": "A threshold does not displace exclusions."
+        },
+        {
+          "option_id": "D",
+          "text_md": "The scheme definition excludes RBI and the system provider from its system-participant term",
+          "explanation_md": "The definition is instrument-specific and cannot be replaced by the broader PSS wording."
+        }
+      ],
+      "correct_explanation_md": "The definition is instrument-specific and cannot be replaced by the broader PSS wording.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_15cd0350b6310d5f30157b822e444efaa5fc86a3b4be91c1d251b6b915a1ef0e",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U01",
+      "objective_ids": [
+        "BRBL::MOD_C::U01::LO_02"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.224–226; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "RBI_IOS_2021_AMENDED_2022",
+          "authority": "Reserve Bank of India",
+          "title": "Reserve Bank - Integrated Ombudsman Scheme, 2021, with 5 August 2022 amendments",
+          "url": "https://rbidocs.rbi.org.in/rdocs/content/pdfs/RBIOS2021_amendments05082022.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "clauses 1 and 3, PDF pp.1–3"
+        },
+        {
+          "source_id": "RBI_IOS_COOP_2025",
+          "authority": "Reserve Bank of India",
+          "title": "Reserve Bank - Integrated Ombudsman Scheme 2021: State and Central Co-operative Bank coverage notification, CO.CEPD.PRS.No.S684/13-55-001/2025-2026",
+          "url": "https://www.rbi.org.in/scripts/FS_Notification.aspx?Id=12911",
+          "publication_date": "2025-10-07",
+          "effective_date": "2025-11-01",
+          "locator": "paragraphs 1–4"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}

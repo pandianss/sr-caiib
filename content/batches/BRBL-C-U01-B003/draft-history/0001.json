@@ -1,0 +1,488 @@
+{
+  "schema_version": "draft-import-1",
+  "publication_state": "draft",
+  "source_batch": {
+    "schema_version": "notebook-staging-1",
+    "batch_id": "BRBL-C-U01-B003",
+    "paper_id": "BRBL",
+    "unit_label": "BRBL C U01: Integrated Ombudsman Scheme 2021 (30 June 2026 snapshot) — Distinguish Ombudsman roles, receipt channels, representation and the scope of powers",
+    "publication_state": "draft",
+    "verified_at": null,
+    "source_ids": [
+      "S04",
+      "RBI_IOS_2021_AMENDED_2022"
+    ],
+    "facts": [
+      {
+        "fact_id": "F001",
+        "source_id": "S04",
+        "locator": "printed pp.225–226; PDF page = printed page + 19",
+        "statement": "Courseware describes officers, tenure, location, CRPC and complaint entry.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      },
+      {
+        "fact_id": "F002",
+        "source_id": "RBI_IOS_2021_AMENDED_2022",
+        "locator": "clauses 3(c), 4–9, PDF pp.2 and 4–6",
+        "statement": "RBI appoints its officers for up to three years at a time; locations/sittings and CRPC receipt/forwarding are specified. Clause8 distinguishes powers and dispute amount from compensation limits. Authorised representative excludes an advocate, subject to clause10 exception for an advocate who is the aggrieved person.",
+        "regulatory_sensitive": true,
+        "evidence_status": "needs_review"
+      }
+    ],
+    "drafts": [
+      {
+        "draft_id": "D001",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "A receipt channel is not an eligibility decision",
+          "core_explanation_md": "The 2021 scheme provides online registration through the designated portal and electronic or physical submission to CRPC; complaints received directly at RBI offices are to be forwarded for further action. Proper routing and receipt do not themselves decide whether a complaint is maintainable. Keep acknowledgement, initial scrutiny and merits decisions separate.\n\nRBI appoints the Ombudsman and Deputy Ombudsman from its officers, for a term not exceeding three years at a time. The scheme distinguishes their powers, including the Deputy role in specified closures and facilitated settlements. The statutory role should not be inferred from a job title used in an internal bank escalation.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Does a receipt acknowledgement prove that the complaint meets every maintainability condition?",
+            "expected_takeaway": "No. Receipt and routing are different from scrutiny and the merits decision."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "item_type": "card",
+        "variant": "concept",
+        "payload": {
+          "title": "Representation and the amount in dispute need separate checks",
+          "core_explanation_md": "A complaint can be made personally or through a duly authorised representative under the scheme conditions. The advocate restriction has the stated exception when the advocate is the aggrieved person; it should not be turned into a rule that an advocate can never bring their own complaint.\n\nClause 8 also distinguishes the amount in dispute from the Ombudsman compensation powers. The compensation ceiling is not a universal ceiling on the disputed transaction amount. Equally, a large dispute does not guarantee that every requested compensation amount can be awarded. Identify the remedy requested and any rejection ground separately.",
+          "prerequisite_objective_ids": [],
+          "self_check": {
+            "mode": "self_assessed",
+            "prompt_text": "Can the compensation ceiling simply be used as the maximum amount of every underlying dispute?",
+            "expected_takeaway": "No. The scheme separately addresses the dispute amount, compensation powers and rejection grounds."
+          }
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "A customer receives a CRPC acknowledgement and assumes there can be no further maintainability scrutiny. What distinction should the reviewer explain?",
+          "correct_option_id": "C",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Every acknowledged complaint must result in the exact relief requested",
+              "explanation_md": "Acknowledgement does not establish eligibility, deficiency or relief."
+            },
+            {
+              "option_id": "B",
+              "text_md": "Routing is a substitute for all complaint information",
+              "explanation_md": "The scheme still requires the applicable information and conditions."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Receipt/routing, initial scrutiny and the later merits process are separate",
+              "explanation_md": "An acknowledgement establishes receipt rather than a final admissibility decision."
+            },
+            {
+              "option_id": "D",
+              "text_md": "Only a postal complaint can ever be scrutinised",
+              "explanation_md": "The scheme recognises the stated electronic and online modes as well."
+            }
+          ],
+          "correct_explanation_md": "An acknowledgement establishes receipt rather than a final admissibility decision."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "item_type": "question",
+        "variant": "single_choice",
+        "payload": {
+          "difficulty": "medium",
+          "stem_md": "An advocate seeks to lodge a complaint about their own service grievance as the aggrieved customer. A clerk rejects it solely because advocates cannot represent anyone under the scheme. What qualification matters?",
+          "correct_option_id": "B",
+          "options": [
+            {
+              "option_id": "A",
+              "text_md": "Professional status alone guarantees an award",
+              "explanation_md": "The complainant still must meet the scheme conditions and establish the relevant case."
+            },
+            {
+              "option_id": "B",
+              "text_md": "The stated exception where the advocate is the aggrieved person",
+              "explanation_md": "The representation restriction should not erase this express exception."
+            },
+            {
+              "option_id": "C",
+              "text_md": "Every advocate must appoint the bank as representative",
+              "explanation_md": "The scheme does not impose that requirement."
+            },
+            {
+              "option_id": "D",
+              "text_md": "A complaint by an advocate automatically falls outside every timing rule",
+              "explanation_md": "The exception does not remove the other admissibility conditions."
+            }
+          ],
+          "correct_explanation_md": "The representation restriction should not erase this express exception."
+        },
+        "fact_ids": [
+          "F001",
+          "F002"
+        ]
+      }
+    ],
+    "unresolved": [
+      "Codex original drafts, 16 November 2026. Independent legal/session applicability, originality and pedagogy review pending. All canonical items remain draft, review null.",
+      "Whole S04 unit/end questions inspected: printed pp.223–232 / PDF pp.242–251. Primary amended 2021 scheme clauses1–20, PDF pp.1–15 inspected, plus October2025 coverage notification. Statutory forms and source questions were not reused or cosmetically varied.",
+      "Teaching is expressly pinned to the 2021 framework as at30June2026. The 2026 scheme was notified16January2026 and commences1July2026 with express savings; no current-reference procedure is silently substituted. Independent review must reconcile exam treatment of pre-cutoff future-effective developments.",
+      "Source validity and author comparison do not establish independent approval. Individual coverage exclusions, further pre-cutoff instructions, factual maintainability and any live remedy require their own evidence.",
+      "Current contact addresses, portal operations and appointment rosters are not certified. This batch teaches the specified 2021 roles/channels, not present-day filing instructions."
+    ],
+    "next_batch_hint": "Continue BRBL-C-U01-B004"
+  },
+  "import_config": {
+    "schema_version": "staging-import-1",
+    "content_namespace": "CAIIB_NOTEBOOK_D5C1B149",
+    "batch_id": "BRBL-C-U01-B003",
+    "paper_id": "BRBL",
+    "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+    "origin": "source_assisted",
+    "context": {
+      "kind": "exam",
+      "exam_context_id": "CAIIB-2026-DEC",
+      "regulatory_cutoff_date": "2026-06-30"
+    },
+    "context_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p. 4, Cut-off date of guidelines / important developments for examinations (general rule for September to February exams)"
+    },
+    "syllabus_source": {
+      "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+      "locator": "PDF p.12, Compulsory Paper IV, Module C: Reserve Bank Integrated Ombudsman Scheme 2021"
+    },
+    "sources": [
+      {
+        "source_id": "S04",
+        "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+        "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+        "publication_date": null,
+        "effective_date": null
+      },
+      {
+        "source_id": "IIBF_CAIIB_RULES_SYLLABUS_2026",
+        "authority": "Indian Institute of Banking & Finance",
+        "title": "CAIIB Rules & Syllabus 2026",
+        "url": "https://www.iibf.org.in/documents/RulesSyllabus/2026/FlagshipCourses/60%20-%20CAIIB_24.07.25_Change_Final%20Website_23.02.2026.PDF",
+        "publication_date": "2026-02-23",
+        "effective_date": null
+      },
+      {
+        "source_id": "RBI_IOS_2021_AMENDED_2022",
+        "authority": "Reserve Bank of India",
+        "title": "Reserve Bank - Integrated Ombudsman Scheme, 2021, with 5 August 2022 amendments",
+        "url": "https://rbidocs.rbi.org.in/rdocs/content/pdfs/RBIOS2021_amendments05082022.pdf",
+        "publication_date": null,
+        "effective_date": null
+      }
+    ],
+    "mappings": [
+      {
+        "draft_id": "D001",
+        "unit_id": "BRBL::MOD_C::U01",
+        "objective_ids": [
+          "BRBL::MOD_C::U01::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D002",
+        "unit_id": "BRBL::MOD_C::U01",
+        "objective_ids": [
+          "BRBL::MOD_C::U01::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D003",
+        "unit_id": "BRBL::MOD_C::U01",
+        "objective_ids": [
+          "BRBL::MOD_C::U01::LO_03"
+        ]
+      },
+      {
+        "draft_id": "D004",
+        "unit_id": "BRBL::MOD_C::U01",
+        "objective_ids": [
+          "BRBL::MOD_C::U01::LO_03"
+        ]
+      }
+    ]
+  },
+  "draft_item_map": [
+    {
+      "batch_id": "BRBL-C-U01-B003",
+      "draft_id": "D001",
+      "item_id": "item_54519bf23669f308657e1ea70383b0f83847875e880a65285f1230531c8cbc43"
+    },
+    {
+      "batch_id": "BRBL-C-U01-B003",
+      "draft_id": "D002",
+      "item_id": "item_497d5f4f14061593c083c66f787a9990c44a461eecc57b3ae3ba5d4b483be22a"
+    },
+    {
+      "batch_id": "BRBL-C-U01-B003",
+      "draft_id": "D003",
+      "item_id": "item_3c90d22dcefdb998a38c68dfba9e8ecc6c0a254f2ee2c2e5d6c1992d5f423726"
+    },
+    {
+      "batch_id": "BRBL-C-U01-B003",
+      "draft_id": "D004",
+      "item_id": "item_38bf3653ba0756549013e388832ed98e15d7acea9b39d7a45d7019dea92d8c2e"
+    }
+  ],
+  "items": [
+    {
+      "title": "A receipt channel is not an eligibility decision",
+      "core_explanation_md": "The 2021 scheme provides online registration through the designated portal and electronic or physical submission to CRPC; complaints received directly at RBI offices are to be forwarded for further action. Proper routing and receipt do not themselves decide whether a complaint is maintainable. Keep acknowledgement, initial scrutiny and merits decisions separate.\n\nRBI appoints the Ombudsman and Deputy Ombudsman from its officers, for a term not exceeding three years at a time. The scheme distinguishes their powers, including the Deputy role in specified closures and facilitated settlements. The statutory role should not be inferred from a job title used in an internal bank escalation.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Does a receipt acknowledgement prove that the complaint meets every maintainability condition?",
+        "expected_takeaway": "No. Receipt and routing are different from scrutiny and the merits decision."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_54519bf23669f308657e1ea70383b0f83847875e880a65285f1230531c8cbc43",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U01",
+      "objective_ids": [
+        "BRBL::MOD_C::U01::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.225–226; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "RBI_IOS_2021_AMENDED_2022",
+          "authority": "Reserve Bank of India",
+          "title": "Reserve Bank - Integrated Ombudsman Scheme, 2021, with 5 August 2022 amendments",
+          "url": "https://rbidocs.rbi.org.in/rdocs/content/pdfs/RBIOS2021_amendments05082022.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "clauses 3(c), 4–9, PDF pp.2 and 4–6"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "title": "Representation and the amount in dispute need separate checks",
+      "core_explanation_md": "A complaint can be made personally or through a duly authorised representative under the scheme conditions. The advocate restriction has the stated exception when the advocate is the aggrieved person; it should not be turned into a rule that an advocate can never bring their own complaint.\n\nClause 8 also distinguishes the amount in dispute from the Ombudsman compensation powers. The compensation ceiling is not a universal ceiling on the disputed transaction amount. Equally, a large dispute does not guarantee that every requested compensation amount can be awarded. Identify the remedy requested and any rejection ground separately.",
+      "prerequisite_objective_ids": [],
+      "self_check": {
+        "mode": "self_assessed",
+        "prompt_text": "Can the compensation ceiling simply be used as the maximum amount of every underlying dispute?",
+        "expected_takeaway": "No. The scheme separately addresses the dispute amount, compensation powers and rejection grounds."
+      },
+      "item_type": "card",
+      "card_type": "concept",
+      "id": "item_497d5f4f14061593c083c66f787a9990c44a461eecc57b3ae3ba5d4b483be22a",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U01",
+      "objective_ids": [
+        "BRBL::MOD_C::U01::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.225–226; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "RBI_IOS_2021_AMENDED_2022",
+          "authority": "Reserve Bank of India",
+          "title": "Reserve Bank - Integrated Ombudsman Scheme, 2021, with 5 August 2022 amendments",
+          "url": "https://rbidocs.rbi.org.in/rdocs/content/pdfs/RBIOS2021_amendments05082022.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "clauses 3(c), 4–9, PDF pp.2 and 4–6"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "A customer receives a CRPC acknowledgement and assumes there can be no further maintainability scrutiny. What distinction should the reviewer explain?",
+      "correct_option_id": "C",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Every acknowledged complaint must result in the exact relief requested",
+          "explanation_md": "Acknowledgement does not establish eligibility, deficiency or relief."
+        },
+        {
+          "option_id": "B",
+          "text_md": "Routing is a substitute for all complaint information",
+          "explanation_md": "The scheme still requires the applicable information and conditions."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Receipt/routing, initial scrutiny and the later merits process are separate",
+          "explanation_md": "An acknowledgement establishes receipt rather than a final admissibility decision."
+        },
+        {
+          "option_id": "D",
+          "text_md": "Only a postal complaint can ever be scrutinised",
+          "explanation_md": "The scheme recognises the stated electronic and online modes as well."
+        }
+      ],
+      "correct_explanation_md": "An acknowledgement establishes receipt rather than a final admissibility decision.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_3c90d22dcefdb998a38c68dfba9e8ecc6c0a254f2ee2c2e5d6c1992d5f423726",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U01",
+      "objective_ids": [
+        "BRBL::MOD_C::U01::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.225–226; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "RBI_IOS_2021_AMENDED_2022",
+          "authority": "Reserve Bank of India",
+          "title": "Reserve Bank - Integrated Ombudsman Scheme, 2021, with 5 August 2022 amendments",
+          "url": "https://rbidocs.rbi.org.in/rdocs/content/pdfs/RBIOS2021_amendments05082022.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "clauses 3(c), 4–9, PDF pp.2 and 4–6"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    },
+    {
+      "difficulty": "medium",
+      "stem_md": "An advocate seeks to lodge a complaint about their own service grievance as the aggrieved customer. A clerk rejects it solely because advocates cannot represent anyone under the scheme. What qualification matters?",
+      "correct_option_id": "B",
+      "options": [
+        {
+          "option_id": "A",
+          "text_md": "Professional status alone guarantees an award",
+          "explanation_md": "The complainant still must meet the scheme conditions and establish the relevant case."
+        },
+        {
+          "option_id": "B",
+          "text_md": "The stated exception where the advocate is the aggrieved person",
+          "explanation_md": "The representation restriction should not erase this express exception."
+        },
+        {
+          "option_id": "C",
+          "text_md": "Every advocate must appoint the bank as representative",
+          "explanation_md": "The scheme does not impose that requirement."
+        },
+        {
+          "option_id": "D",
+          "text_md": "A complaint by an advocate automatically falls outside every timing rule",
+          "explanation_md": "The exception does not remove the other admissibility conditions."
+        }
+      ],
+      "correct_explanation_md": "The representation restriction should not erase this express exception.",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "id": "item_38bf3653ba0756549013e388832ed98e15d7acea9b39d7a45d7019dea92d8c2e",
+      "schema_version": "2.0.0",
+      "revision": 1,
+      "syllabus_version": "IIBF-CAIIB-RULES-SYLLABUS-2026",
+      "paper_id": "BRBL",
+      "module_id": "BRBL::MOD_C",
+      "unit_id": "BRBL::MOD_C::U01",
+      "objective_ids": [
+        "BRBL::MOD_C::U01::LO_03"
+      ],
+      "context": {
+        "kind": "exam",
+        "exam_context_id": "CAIIB-2026-DEC",
+        "regulatory_cutoff_date": "2026-06-30"
+      },
+      "citations": [
+        {
+          "source_id": "S04",
+          "authority": "Indian Institute of Banking & Finance (published by Macmillan Education India Private Limited)",
+          "title": "Banking Regulations and Business Laws (CAIIB courseware)",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "printed pp.225–226; PDF page = printed page + 19"
+        },
+        {
+          "source_id": "RBI_IOS_2021_AMENDED_2022",
+          "authority": "Reserve Bank of India",
+          "title": "Reserve Bank - Integrated Ombudsman Scheme, 2021, with 5 August 2022 amendments",
+          "url": "https://rbidocs.rbi.org.in/rdocs/content/pdfs/RBIOS2021_amendments05082022.pdf",
+          "publication_date": null,
+          "effective_date": null,
+          "locator": "clauses 3(c), 4–9, PDF pp.2 and 4–6"
+        }
+      ],
+      "origin": "source_assisted",
+      "publication_state": "draft",
+      "review": null
+    }
+  ]
+}
