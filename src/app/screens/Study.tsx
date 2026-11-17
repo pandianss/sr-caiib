@@ -28,6 +28,7 @@ export function StudyPlayer({ id }: { id: string }) {
   const cursor = session?.cursor ?? 0;
   const lap = useStopwatch(`${id}:${cursor}`);
   useEffect(() => { setResponse(''); setError(null); document.getElementById('main')?.focus({ preventScroll: true }); window.scrollTo(0, 0); }, [id, cursor]);
+  const [entryCursor] = useState(cursor);
   const [resumed] = useState(() => Boolean(session && (session.cursor > 0 || Object.keys(session.progress).length > 0)));
 
   if (!session || session.learner_id !== s.prefs.learner_id) return <Frame title="Session" subtitle="" onExit={() => go('today')}><Empty title="This session is not available" action={<Button variant="filled" href="#/today">Go to Today</Button>} /></Frame>;
@@ -74,7 +75,7 @@ export function StudyPlayer({ id }: { id: string }) {
     <Frame title={session.title} subtitle={`${PAPER_NAMES[session.paper_id]} · step ${cursor + 1} of ${total}`} onExit={exit}>
       <Announce message={announce} />
       <div className="progress thick" role="progressbar" aria-label="Session progress" aria-valuemin={0} aria-valuemax={total} aria-valuenow={cursor}><span style={{ width: `${(cursor / total) * 100}%` }} /></div>
-      {resumed && cursor === session.cursor && <Banner>Resumed. You are back at the step where you stopped; earlier steps are already saved.</Banner>}
+      {resumed && cursor === entryCursor && <Banner>Resumed. You are back at the step where you stopped; earlier steps are already saved.</Banner>}
       <div className="section">
         <div className="row"><Tag kind="info">{CARD_TYPE_LABEL[card.card_type]}</Tag>{step.relearn && <Tag kind="warn">Second look</Tag>}{step.type === 'review' && !step.relearn && <Tag>Review</Tag>}</div>
         <h1>{card.title}</h1>

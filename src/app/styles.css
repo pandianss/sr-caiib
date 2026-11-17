@@ -347,7 +347,7 @@ button { font: inherit; color: inherit; }
 .list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
 .list > li { border-bottom: 1px solid var(--outline-variant); } .list > li:last-child { border-bottom: 0; }
 .item { display: flex; align-items: center; gap: var(--space-3); width: 100%; min-height: 3.5rem; padding: var(--space-3) var(--space-1); background: transparent; border: 0; text-align: left; cursor: pointer; text-decoration: none; color: inherit; border-radius: var(--shape-xs); }
-.item:hover { background: var(--surface-container-low); }
+.item:hover:not(:disabled):not([aria-disabled="true"]) { background: var(--surface-container-low); }
 .item .grow { flex: 1; min-width: 0; } .item .title { font-weight: 500; } .item .meta { font-size: 0.8125rem; color: var(--on-surface-variant); }
 .item[aria-disabled="true"] { cursor: default; }
 .banner { display: flex; gap: var(--space-3); align-items: flex-start; padding: var(--space-3) var(--space-4); border-radius: var(--shape-md); background: var(--surface-container-high); font-size: 0.9375rem; flex-wrap: wrap; }
@@ -437,7 +437,7 @@ details.more > summary::before { content: "\25B8"; } details.more[open] > summar
 
 /* Today hero: paper accent along the top, full-width call to action. */
 .card.hero { border-top: 0.3125rem solid var(--paper-accent, var(--primary)); gap: var(--space-3); }
-.card.hero h1 { font-size: 1.5rem; line-height: 1.3; }
+.card.hero h2 { font-size: 1.5rem; line-height: 1.3; }
 .stat.tap { text-align: left; font: inherit; color: inherit; cursor: pointer; min-height: var(--target); border-color: var(--primary); }
 .stat.tap:hover { background: var(--surface-container); }
 .btn.tonal { border-color: transparent; }
@@ -467,7 +467,7 @@ h3 { font-size: var(--font-size-title-md); }
 .appbar { background: var(--surface-container-lowest); }
 .card { background: var(--surface-container-lowest); border-color: var(--outline-variant); padding: var(--space-5); }
 .card.hero { padding: var(--space-6); border-radius: var(--shape-xl); border-top-color: var(--accent-gold); }
-.card.hero h1 { font-size: var(--font-size-headline-md); max-width: 34ch; }
+.card.hero h2 { font-size: var(--font-size-headline-md); max-width: 34ch; }
 .card.hero > p { max-width: 65ch; }
 .card.hero .btn { margin-top: var(--space-2); }
 .module-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr)); gap: var(--space-3); }
@@ -562,3 +562,14 @@ h3 { font-size: var(--font-size-title-md); }
 @media (min-width: 40rem) { .stat-grid > .stat:last-child:nth-child(odd) { grid-column: auto; } }
 .module-group { display: flex; flex-direction: column; gap: var(--space-2); margin-top: var(--space-3); } .module-group > h3 { margin: 0; }
 .module-group > h3 { font-size: 0.9375rem; font-weight: 600; color: var(--on-surface); }
+
+/* Keep scrolling text below Android's transparent status bar, including onboarding and keyboard layouts. */
+body::before { content: ''; position: fixed; inset: 0 0 auto; height: var(--safe-area-inset-top, env(safe-area-inset-top, 0px)); background: var(--surface); z-index: 25; pointer-events: none; }
+.item:disabled { cursor: not-allowed; opacity: .65; }
+html { scrollbar-gutter: stable; }
+.main:focus-visible { outline: none; }
+
+.fixture-bar { padding-top: calc(var(--space-1) + var(--safe-area-inset-top, env(safe-area-inset-top, 0px))); }
+
+/* Scroll cue: a soft shadow shows on whichever side of the tab strip has more tabs hidden. */
+.tabs { background: linear-gradient(to right, var(--surface) 30%, transparent) left center / 2rem 100% no-repeat local, linear-gradient(to left, var(--surface) 30%, transparent) right center / 2rem 100% no-repeat local, radial-gradient(farthest-side at 0 50%, color-mix(in srgb, var(--on-surface) 35%, transparent), transparent) left center / .75rem 100% no-repeat scroll, radial-gradient(farthest-side at 100% 50%, color-mix(in srgb, var(--on-surface) 35%, transparent), transparent) right center / .75rem 100% no-repeat scroll; }

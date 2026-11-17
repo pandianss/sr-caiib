@@ -90,5 +90,5 @@ coverage map. More content will be added in updates.
 ## Before submitting
 
 - [ ] Replace every placeholder, host the privacy policy, and confirm the descriptions match the installed build.
-- [x] Published packs at 16 Nov 2026: ABM (32 units, 535 cards, 1639 questions), BFM (18 units, 377 cards, 797 questions), ABFM (4 units, 58 cards, 283 questions). Re-check the "Available now" paragraph if the bundle changes.
+- [x] Published packs at 17 Nov 2026: ABM (32 units, 537 cards, 1647 questions), BFM (31 units, 531 cards, 1529 questions), ABFM (25 units, 292 cards, 1403 questions), BRBL (64 units, 402 cards, 1028 questions), CB (19 units, 93 cards, 933 questions). Re-check the "Available now" paragraph if the bundle changes.
 - [ ] Confirm no screen shows payment, sign-in or "the pass" in the Android build.

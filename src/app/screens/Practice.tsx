@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import type { CaseStudyItem } from '../../types/contracts.ts';
+import { previewText } from '../../core/display-text.ts';
 import { PAPER_NAMES } from '../../core/catalogue.ts';
 import { parseNumericInput } from '../../core/grading.ts';
 import type { AttemptRecord } from '../../core/model.ts';
@@ -21,21 +22,21 @@ export function Practice() {
   return (
     <>
       <div className="section"><h1>Practice</h1><p className="support">{PAPER_NAMES[paper]} · {all.length} question{all.length === 1 ? '' : 's'} available to you</p></div>
-      {active && <Banner kind="warn" action={<Button variant="outlined" onClick={() => { void model.setPaper(active.attempt.paper_id).then(() => go(`attempt/${active.attempt.attempt_id}`)); }}>Resume</Button>}>Unfinished {active.attempt.mode === 'mock' ? 'timed mock' : 'practice set'}: {active.title} ({PAPER_NAMES[active.attempt.paper_id]}). Finish or end it before starting another.</Banner>}
+      {active && <Banner kind="warn" action={<><Button variant="outlined" onClick={() => { void model.setPaper(active.attempt.paper_id).then(() => go(`attempt/${active.attempt.attempt_id}`)); }}>Resume</Button>{active.attempt.mode === 'practice' && <Button variant="text" onClick={() => void model.practiceFinish(active.attempt.attempt_id)}>End it</Button>}</>}>Unfinished {active.attempt.mode === 'mock' ? 'timed mock' : 'practice set'}: {active.title} ({PAPER_NAMES[active.attempt.paper_id]}). Finish or end it before starting another.</Banner>}
       <section className="section" aria-labelledby="p1"><h2 id="p1">Practise by type</h2>
         <p className="support">You choose or type an answer, then press Submit. Feedback and the explanation appear after each submission. Questions you have not seen come first.</p>
         <ul className="list">
-          <li><button type="button" className="item" onClick={() => void start('preset', null)}><span className="grow"><span className="title">Mixed practice</span><span className="meta" style={{ display: 'block' }}>Up to 10 questions across this paper</span></span><Icon name="chevron" /></button></li>
-          <li><button type="button" className="item" onClick={() => void start('remediation', null)} disabled={!rem} aria-disabled={!rem}><span className="grow"><span className="title">Missed objectives</span><span className="meta" style={{ display: 'block' }}>{rem ? `${rem} question${rem === 1 ? '' : 's'} on objectives you answered wrongly` : 'Nothing to remediate: no objective has more wrong than right first attempts'}</span></span>{rem > 0 && <Icon name="chevron" />}</button></li>
-          <li><button type="button" className="item" onClick={() => void start('numeric', null)} disabled={!numeric} aria-disabled={!numeric}><span className="grow"><span className="title">Numerical questions</span><span className="meta" style={{ display: 'block' }}>{numeric ? `${numeric} questions answered by typing a number` : 'None available yet'}</span></span>{numeric > 0 && <Icon name="chevron" />}</button></li>
+          <li><button type="button" className="item" disabled={Boolean(active)} onClick={() => void start('preset', null)}><span className="grow"><span className="title">Mixed practice</span><span className="meta" style={{ display: 'block' }}>Up to 10 questions across this paper</span></span><Icon name="chevron" /></button></li>
+          <li><button type="button" className="item" onClick={() => void start('remediation', null)} disabled={Boolean(active) || !rem} aria-disabled={Boolean(active) || !rem}><span className="grow"><span className="title">Missed objectives</span><span className="meta" style={{ display: 'block' }}>{rem ? `${rem} question${rem === 1 ? '' : 's'} on objectives you answered wrongly` : 'Nothing to remediate: no objective has more wrong than right first attempts'}</span></span>{rem > 0 && <Icon name="chevron" />}</button></li>
+          <li><button type="button" className="item" onClick={() => void start('numeric', null)} disabled={Boolean(active) || !numeric} aria-disabled={Boolean(active) || !numeric}><span className="grow"><span className="title">Numerical questions</span><span className="meta" style={{ display: 'block' }}>{numeric ? `${numeric} questions answered by typing a number` : 'None available yet'}</span></span>{numeric > 0 && <Icon name="chevron" />}</button></li>
         </ul>
       </section>
       <section className="card" aria-labelledby="p4"><h2 id="p4"><Icon name="clock" size={18} /> Timed mock</h2>
         {mock.ok ? (<><p className="support">{mock.questionCount} questions in {Math.round(mock.durationSeconds / 60)} minutes{mock.full ? '' : `. This is a short mock: the question pool is smaller than the ${ctx?.config?.question_count}-question exam configuration, so the time is scaled to the same pace and no pass or fail is shown`}.</p>
           <Button variant="filled" disabled={Boolean(active)} onClick={() => setMockSheet(true)}>Start a timed mock</Button></>) : <Banner>{mock.reason}</Banner>}
       </section>
-      {units.length > 0 && <section className="section" aria-labelledby="p2"><h2 id="p2">Practise by topic</h2>{[...new Set(units.map(x => x.u.module_id))].map(mid => <div key={mid} className="module-group"><h3 className="label">{cat?.module(mid)?.title ?? mid}</h3><ul className="list">{units.filter(x => x.u.module_id === mid).map(({ u, n }) => <li key={u.id}><button type="button" className="item" onClick={() => void start('unit', u.id)}><span className="grow"><span className="title">{u.title ?? u.id}</span><span className="meta" style={{ display: 'block' }}>{n} question{n === 1 ? '' : 's'}</span></span><Icon name="chevron" /></button></li>)}</ul></div>)}</section>}
-      {cases.length > 0 && <section className="section" aria-labelledby="p3"><h2 id="p3">Case studies</h2><ul className="list">{cases.map(c => <li key={c.id}><button type="button" className="item" onClick={() => void start('case_study', c.id)}><span className="grow"><span className="title">{c.title}</span><span className="meta" style={{ display: 'block' }}>{c.question_ids.length} linked questions; the scenario stays available while you answer</span></span><Icon name="chevron" /></button></li>)}</ul></section>}
+      {units.length > 0 && <section className="section" aria-labelledby="p2"><h2 id="p2">Practise by topic</h2>{[...new Set(units.map(x => x.u.module_id))].map(mid => <div key={mid} className="module-group"><h3 className="label">{cat?.module(mid)?.title ?? mid}</h3><ul className="list">{units.filter(x => x.u.module_id === mid).map(({ u, n }) => <li key={u.id}><button type="button" className="item" disabled={Boolean(active)} onClick={() => void start('unit', u.id)}><span className="grow"><span className="title">{u.title ?? u.id}</span><span className="meta" style={{ display: 'block' }}>{n} question{n === 1 ? '' : 's'}</span></span><Icon name="chevron" /></button></li>)}</ul></div>)}</section>}
+      {cases.length > 0 && <section className="section" aria-labelledby="p3"><h2 id="p3">Case studies</h2><ul className="list">{cases.map(c => <li key={c.id}><button type="button" className="item" disabled={Boolean(active)} onClick={() => void start('case_study', c.id)}><span className="grow"><span className="title">{c.title}</span><span className="meta" style={{ display: 'block' }}>{c.question_ids.length} linked questions; the scenario stays available while you answer</span></span><Icon name="chevron" /></button></li>)}</ul></section>}
       {mockSheet && mock.ok && (
         <Sheet title="Before you start" onClose={() => setMockSheet(false)}>
           <ul style={{ margin: 0, paddingLeft: '1.25rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
@@ -86,11 +87,12 @@ function PracticePlayer({ a }: { a: AttemptRecord }) {
   const lap = useStopwatch(`${id}:${idx}`);
   // The field is driven by local state so typing is never delayed by saving; each change is also saved as a draft.
   const [draft, setDraft] = useState('');
+  const [resumeIndex] = useState(() => a.submitted_item_ids.length > 0 ? a.current_index : null);
   const qid = q?.id ?? '';
   useEffect(() => { setDraft(a.attempt.saved_responses[qid] ?? ''); setError(null); document.getElementById('main')?.focus({ preventScroll: true }); window.scrollTo(0, 0); }, [id, idx, qid]); // eslint-disable-line react-hooks/exhaustive-deps
   if (!q) return <Frame a={a}><Empty title="This question's content is no longer on this device" action={<Button variant="filled" onClick={() => void model.practiceFinish(id)}>End this set</Button>}>Your submitted answers are kept.</Empty></Frame>;
   const submitted = a.submitted_item_ids.includes(q.id); const response = submitted ? a.attempt.saved_responses[q.id] ?? '' : draft; const last = idx === total - 1;
-  const resumed = a.submitted_item_ids.length > 0 && !submitted && idx === a.submitted_item_ids.length;
+  const resumed = resumeIndex === idx && !submitted;
   const submit = async () => {
     setBusy(true); const r = await model.practiceSubmit(id, q, response, lap()); setBusy(false);
     if (!r.ok) { setError(r.message); setAnnounce(r.message); return; }
@@ -193,7 +195,7 @@ function Results({ a }: { a: AttemptRecord }) {
         <ul className="list">{rows.map(r => (
           <li key={r.id}>
             <button type="button" className="item" aria-expanded={open === r.id} onClick={() => setOpen(open === r.id ? null : r.id)}>
-              <span className="grow"><span className="title">Question {r.i + 1}</span><span className="meta" style={{ display: 'block' }}>{r.q ? r.q.stem_md.slice(0, 90) : 'Content no longer on this device'}{r.q && r.q.stem_md.length > 90 ? '…' : ''}</span></span>
+              <span className="grow"><span className="title">Question {r.i + 1}</span><span className="meta" style={{ display: 'block' }}>{r.q ? previewText(r.q.stem_md).slice(0, 90) : 'Content no longer on this device'}{r.q && previewText(r.q.stem_md).length > 90 ? '…' : ''}</span></span>
               {!r.answered ? <Tag>Unanswered</Tag> : r.correct ? <Tag kind="ok">✓ Correct</Tag> : <Tag kind="bad">✗ Not correct</Tag>}
             </button>
             {open === r.id && r.q && <div style={{ padding: '0 0 1rem' }}><QuestionView q={r.q} response={r.response} onResponse={() => {}} disabled feedback={{ correct: r.answered && r.correct }} />{!r.answered && <p className="support">You did not answer this question.</p>}</div>}

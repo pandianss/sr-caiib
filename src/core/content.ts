@@ -1,6 +1,7 @@
 /** Read-only index over the active content packs. Screens depend on this interface, not on storage or files. */
 import type { CalculatorItem, CaseStudyItem, ContentItem, PaperId, QuestionItem, ReferenceItem, StudyCard } from '../types/contracts.ts';
 import type { PackRecord } from './model.ts';
+import { previewText } from './display-text.ts';
 
 export interface SearchHit { item: ContentItem; paper_id: PaperId; title: string; snippet: string; score: number }
 
@@ -54,9 +55,10 @@ export class ContentIndex {
       let score = 0;
       for (const t of terms) { if (nt.includes(t)) score += 3; else if (nb.includes(t)) score += 1; else { score = 0; break; } }
       if (!score) continue;
-      const pos = Math.max(0, body.toLowerCase().indexOf(terms[0] ?? ''));
+      const preview = previewText(body);
+      const pos = Math.max(0, preview.toLowerCase().indexOf(terms[0] ?? ''));
       const start = Math.max(0, pos - 40);
-      hits.push({ item, paper_id: paper, title, snippet: `${start > 0 ? '…' : ''}${body.slice(start, start + 140).replace(/\s+/g, ' ')}${body.length > start + 140 ? '…' : ''}`, score });
+      hits.push({ item, paper_id: paper, title, snippet: `${start > 0 ? '…' : ''}${preview.slice(start, start + 140)}${preview.length > start + 140 ? '…' : ''}`, score });
     }
     return hits.sort((a, b) => b.score - a.score || a.title.localeCompare(b.title));
   }

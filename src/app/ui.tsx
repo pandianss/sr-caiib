@@ -142,6 +142,7 @@ function inline(text: string, key: string): ReactNode[] {
   if (last < text.length) out.push(text.slice(last));
   return out;
 }
+export function InlineMd({ text }: { text: string }) { return <>{inline(text, 'inline')}</>; }
 const cells = (line: string): string[] => line.trim().replace(/^\||\|$/g, '').split('|').map(c => c.trim());
 export function Md({ text, className }: { text: string; className?: string }) {
   const blocks: ReactNode[] = []; const lines = text.replace(/\r/g, '').split('\n'); let i = 0; let k = 0;

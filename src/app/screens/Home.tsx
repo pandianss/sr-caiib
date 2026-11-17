@@ -33,7 +33,7 @@ export function Today() {
       ) : (
         <section className="card primary hero" data-paper={paper} aria-labelledby="rec-title">
           <div className="row between"><span className="eyebrow">{rec.kind.startsWith('resume') ? 'Continue where you stopped' : rec.kind === 'reviews' ? 'Your revision, ready' : 'Recommended next'}</span><Icon name={rec.kind === 'reviews' ? 'clock' : 'learn'} /></div>
-          <h1 id="rec-title">{rec.title}</h1>
+          <h2 id="rec-title">{rec.title}</h2>
           <p>{rec.reason}</p>
           <p className="label">{minutesLabel(rec.minutes)}{rec.minutes !== null ? ' (estimate)' : ''}</p>
           <Button variant="filled" block onClick={() => void run()}>{rec.kind.startsWith('resume') ? 'Resume' : 'Start'}<Icon name="chevron" size={20} /></Button>

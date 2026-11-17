@@ -3,7 +3,7 @@ import { useId } from 'react';
 import type { ContentItem, QuestionItem, StudyCard, WorkedStep } from '../types/contracts.ts';
 import { formatDate } from '../core/time.ts';
 import { model } from './model.ts';
-import { Formula, Icon, McqOption, Md, More, Tag } from './ui.tsx';
+import { Formula, Icon, InlineMd, McqOption, Md, More, Tag } from './ui.tsx';
 
 export const CARD_TYPE_LABEL: Record<StudyCard['card_type'], string> = { concept: 'Concept', formula: 'Formula', statute: 'Statute or rule', worked_example: 'Worked example' };
 
@@ -81,14 +81,14 @@ export function QuestionView({ q, response, onResponse, disabled, feedback, erro
             return (
               <McqOption key={o.option_id} name={id} value={o.option_id} selected={chosen} state={state} onSelect={() => onResponse(o.option_id)}
                 explanation={feedback ? <><span className="mark">{isCorrect ? '✓ Correct answer' : chosen ? '✗ Your answer' : 'Not correct'}{chosen && isCorrect ? ' (your answer)' : ''}.</span> {o.explanation_md}</> : undefined}>
-                {o.text_md}
+                <InlineMd text={o.text_md} />
               </McqOption>);
           })}
         </fieldset>
       ) : (
         <div className="field">
           <label htmlFor={`${id}-n`}>Your answer</label>
-          <div className="input-row"><input id={`${id}-n`} className="input" inputMode="decimal" enterKeyHint={onSubmit ? 'done' : undefined} onKeyDown={e => { if (e.key === 'Enter' && onSubmit && !disabled) { e.preventDefault(); onSubmit(); } }} autoComplete="off" value={response} disabled={disabled} aria-invalid={error ? true : undefined} aria-describedby={`${id}-hint${error ? ` ${id}-err` : ''}`} onChange={e => onResponse(e.target.value)} /><span className="unit" aria-label={`Unit: ${q.numeric_rule.unit_label}`}>{q.numeric_rule.unit_label}</span></div>
+          <div className="input-row"><input id={`${id}-n`} className="input" inputMode="decimal" enterKeyHint={onSubmit ? 'done' : undefined} onKeyDown={e => { if (e.key === 'Enter' && onSubmit && !disabled) { e.preventDefault(); onSubmit(); } }} autoComplete="off" value={response} disabled={disabled} aria-invalid={error ? true : undefined} aria-describedby={`${id}-unit ${id}-hint${error ? ` ${id}-err` : ''}`} onChange={e => onResponse(e.target.value)} /><span className="unit" id={`${id}-unit`} aria-label={`Unit: ${q.numeric_rule.unit_label}`}>{q.numeric_rule.unit_label}</span></div>
           <p className="support" id={`${id}-hint`}>{q.numeric_rule.rounding_instruction} Enter digits only{q.numeric_rule.allow_negative ? '; a minus sign is allowed' : ''}, without commas or units.</p>
           {feedback && <p><strong>{feedback.correct ? '✓ Correct.' : '✗ Not correct.'}</strong> Expected answer: <strong>{q.numeric_rule.expected_answer} {q.numeric_rule.unit_label}</strong></p>}
         </div>

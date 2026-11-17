@@ -76,7 +76,7 @@ export function Coverage({ paper: routePaper }: { paper?: PaperId }) {
       </section>
       {lp && ps && (
         <section className="section" aria-labelledby="pt">
-          <div className="row between"><h1 id="pt">{PAPER_NAMES[paper]}</h1><Tag kind={lp.baseline.status === 'verified' ? 'ok' : 'warn'}>{lp.baseline.status === 'verified' ? '✓ Syllabus verified' : lp.baseline.status === 'provisional' ? '▲ Outline not confirmed' : '▲ Syllabus missing'}</Tag></div>
+          <div className="row between"><h2 id="pt">{PAPER_NAMES[paper]}</h2><Tag kind={lp.baseline.status === 'verified' ? 'ok' : 'warn'}>{lp.baseline.status === 'verified' ? '✓ Syllabus verified' : lp.baseline.status === 'provisional' ? '▲ Outline not confirmed' : '▲ Syllabus missing'}</Tag></div>
           <p className="support">{lp.kind === 'compulsory' ? 'Compulsory paper' : 'Elective paper'} · {lp.baseline.note}</p>
           {lp.baseline.status === 'missing' ? <Empty title="Modules and topics unknown">The official syllabus for this paper has to be obtained before its topics can be listed, taught or counted. It stays on this map so the gap is visible.</Empty> : (<>
             <div className="card"><h2>{ps.topic_denominator ? `${ps.topic_denominator} official topics` : `${ps.topics_listed} topics listed (not yet a verified total)`}</h2><Counts p={ps} />
