@@ -1,21 +1,22 @@
-# Add project specific ProGuard rules here.
-# You can control the set of applied configuration files using the
-# proguardFiles setting in build.gradle.
-#
-# For more details, see
-#   http://developer.android.com/guide/developing/tools/proguard.html
+# ProGuard / R8 rules for Capacitor and Android release build
 
-# If your project uses WebView with JS, uncomment the following
-# and specify the fully qualified class name to the JavaScript interface
-# class:
-#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
-#   public *;
-#}
+# Preserve JavaScript Interface methods
+-keepattributes JavascriptInterface
+-keepclassmembers class * {
+    @android.webkit.JavascriptInterface <methods>;
+}
 
-# Uncomment this to preserve the line number information for
-# debugging stack traces.
-#-keepattributes SourceFile,LineNumberTable
+# Preserve Capacitor runtime, plugins and bridge
+-keep public class * extends com.getcapacitor.Plugin { *; }
+-keep public class com.getcapacitor.** { *; }
+-keep public class * extends com.getcapacitor.BridgeActivity { *; }
+-keep public class * extends com.getcapacitor.BridgeFragment { *; }
+-keep public class * extends com.getcapacitor.Bridge { *; }
 
-# If you keep the line number information, uncomment this to
-# hide the original source file name.
-#-renamesourcefileattribute SourceFile
+# Preserve Cordova plugin compatibility
+-keep public class org.apache.cordova.** { *; }
+-keep public class * extends org.apache.cordova.CordovaPlugin { *; }
+
+# Preserve source file and line numbers for Play Console stack traces and mapping
+-keepattributes SourceFile,LineNumberTable
+-renamesourcefileattribute SourceFile
