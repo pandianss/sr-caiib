@@ -125,7 +125,7 @@
         "self_check": {
           "mode": "self_assessed",
           "prompt_text": "Can a document be executed on a date earlier than the date of stamping?",
-          "expected_takeaway": "No: the date of execution should never be earlier than the date of stamping."
+          "expected_takeaway": "No: a document must not be executed on a date before the date on which it was stamped."
         }
       }
     },
@@ -433,7 +433,7 @@
       "payload": {
         "prerequisite_objective_ids": [],
         "title": "Syndication of loans",
-        "core_explanation_md": "**Syndication** shares a **long-term loan** among **two or more banks**: a way of **spreading the risk** of a **large loan**.\n\n1. The borrower gives a **mandate** to one bank, the **lead bank**.\n2. The lead bank **approaches other banks** with the details.\n3. Each bank **appraises** the proposal under **its own policy and risk appetite** and **decides**.\n4. **Common terms** are agreed in a **meeting of participating banks** arranged by the lead bank.\n5. The lead bank normally charges the borrower a **syndication fee**.\n\n**Contrast with consortium:** a consortium usually shares **working capital** finance with a **formal arrangement** and a lead bank that monitors; syndication is mostly for **term loans**, arranged **loan by loan**.",
+        "core_explanation_md": "**Syndication** shares a **long-term loan** among **two or more banks**: a way of **spreading the risk** of a **large loan**.\n\n1. The borrower gives a **mandate** to one bank, the **lead bank**.\n2. The lead bank **approaches other banks** with the details.\n3. Each bank **appraises** the proposal under **its own policy and risk appetite** and **decides**.\n4. **Common terms** are settled at a **meeting of the participating banks** that the lead bank convenes.\n5. The lead bank normally charges the borrower a **syndication fee**.\n\n**Contrast with consortium:** a consortium usually shares **working capital** finance with a **formal arrangement** and a lead bank that monitors; syndication is mostly for **term loans**, arranged **loan by loan**.",
         "expanded_explanation_md": "In both, the lead bank acts as the liaison.",
         "self_check": {
           "mode": "self_assessed",
@@ -489,7 +489,7 @@
           },
           {
             "option_id": "D",
-            "text_md": "Should never be earlier than the date of stamping",
+            "text_md": "Must not fall before the date of stamping",
             "explanation_md": "Documents should never be executed before the date of stamping, because an unstamped document is not valid evidence of the contract."
           }
         ],
@@ -506,12 +506,12 @@
       ],
       "payload": {
         "difficulty": "medium",
-        "stem_md": "When the owner of the collateral security is someone other than the borrower, the owner should",
+        "stem_md": "A borrower's uncle offers his house as collateral for the loan. What should the bank ask the uncle to do?",
         "options": [
           {
             "option_id": "A",
-            "text_md": "First become a guarantor of the loan and then create the charge",
-            "explanation_md": "The owner of third-party collateral first becomes a guarantor of the loan and then creates the charge, so the bank can enforce against the borrower's debt."
+            "text_md": "Guarantee the loan first and then create the charge on the house",
+            "explanation_md": "A third party offering collateral should first stand as guarantor and then create the charge, which ties the property to the borrower's debt."
           },
           {
             "option_id": "B",
@@ -530,7 +530,7 @@
           }
         ],
         "correct_option_id": "A",
-        "correct_explanation_md": "The owner of third-party collateral first becomes a guarantor of the loan and then creates the charge, so the bank can enforce against the borrower's debt."
+        "correct_explanation_md": "A third party offering collateral should first stand as guarantor and then create the charge, which ties the property to the borrower's debt."
       }
     },
     {
@@ -1704,7 +1704,7 @@
           {
             "option_id": "B",
             "text_md": "There is no formal arrangement between the banks",
-            "explanation_md": "In multiple banking there is no formal arrangement between the banks."
+            "explanation_md": "Banks in a multiple banking arrangement lend separately, with no formal arrangement among them."
           },
           {
             "option_id": "C",
@@ -1718,7 +1718,7 @@
           }
         ],
         "correct_option_id": "B",
-        "correct_explanation_md": "In multiple banking there is no formal arrangement between the banks."
+        "correct_explanation_md": "Banks in a multiple banking arrangement lend separately, with no formal arrangement among them."
       }
     },
     {
@@ -1766,7 +1766,7 @@
       ],
       "payload": {
         "difficulty": "medium",
-        "stem_md": "Lenders exchange information about the conduct of the borrower's account at least",
+        "stem_md": "How often, at the least, do lenders share information on how the borrower's account is being conducted?",
         "options": [
           {
             "option_id": "A",
@@ -1847,7 +1847,7 @@
           },
           {
             "option_id": "B",
-            "text_md": "Sharing a long-term loan to a borrower by two or more banks",
+            "text_md": "Two or more banks sharing a long-term loan to one borrower",
             "explanation_md": "Syndication is used to share a long-term loan among two or more banks."
           },
           {

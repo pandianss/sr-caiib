@@ -18,7 +18,7 @@ const check = (stemStart: string, computed: number, expected: string) => {
 test('BRBL A U07 B001: numerical answers recompute', () => {
   check("At the time of the first Narasimham Committee the combined CRR and SLR was 53.5", 53.5-38.5, "15");
   check("The SLR was brought down from 38.5 per cent to about 28", 38.5-28, "10.5");
-  check("The CRR was brought down from 14 per cent to 10 per cent", 14-10, "4");
+  check("The CRR was reduced from 14 per cent to 10 per cent. By", 14-10, "4");
   check("A bank has net demand and time liabilities of Rs 10,000", (0.385-0.28)*10000, "1050");
   check("Narasimham Committee II was set up in December 1997", 4, "4");
   check("The FSLRC was set up in March 2011", 2013-2011, "2");

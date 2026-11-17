@@ -33,7 +33,7 @@ test('BFM C U06 B001: derivative figures recompute', () => {
   check('A futures contract on GBP 25,000 was bought', rd((1.4 - 1.37) * 25000, 0), '750');
   check('An exposure of USD 245,600 is hedged', Math.round(245600 / 1000), '246');
   check('With 246 contracts of USD 1,000', 246000 - 245600, '400');
-  check('The expected interest rate at the end of the period is 6.5', rd(100 - 6.5, 1), '93.5');
+  check('The market expects an interest rate of 6.5 per cent', rd(100 - 6.5, 1), '93.5');
   check('A corporate sold Treasury bill futures at 93.50', Math.round((93.5 - 92.8) / 0.01) * 25, '1750');
   check('A company pays a fixed 7.00 per cent on a Rs 200 crore', (7 - (4 + 2)) / 100 * 200, '2');
   check('If the T-bill rises to 6.00 per cent', (8 - 7) / 100 * 200, '2');

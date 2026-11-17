@@ -16,9 +16,9 @@ const check = (stemStart: string, computed: number, expected: string) => {
 };
 
 test('CB E U01 B001: numerical answers recompute', () => {
-  check("The Bank of Canada was created nine years", 1925+9, "1934");
+  check("The Office of the Inspector General of Banks", 1925+9, "1934");
   check("The Federal Deposit Insurance Corporation insured", 12000-5000, "7000");
-  check("The Presidency Bank of Bombay was established", 1843-1840, "3");
+  check("The Presidency Bank of Bombay dates from 1840", 1843-1840, "3");
   check("The Imperial Bank was formed in 1921 and SBI", 1955-1921, "34");
   check("The Presidency Banks were reduced by amalgamation", 3-1, "2");
   check("A bank has housing loans of Rs 200 crore", 200*0.25, "50");
