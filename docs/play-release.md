@@ -20,11 +20,12 @@ ship inside the app and later content arrives with app updates.
 - `android/` is the generated Gradle project. Build outputs, `local.properties` and keystores are git-ignored.
 - `npm run android:sync` builds the web app and copies it into the Android project.
 
-## Verified build (17 Nov 2026 — v1.0.4, versionCode 5)
+## Verified build (17 Nov 2026 — v1.0.5, versionCode 6)
 
 Signed release bundle built with R8 code optimization and ProGuard obfuscation:
 - Output: `android/app/build/outputs/bundle/release/app-release.aab` (4.76 MB)
 - De-obfuscation mapping: `android/app/build/outputs/mapping/release/mapping.txt`
+- Explicitly stripped `ACTIVITY_RECOGNITION` permission (`tools:node="remove"`) in `AndroidManifest.xml` to satisfy Play Console Health Apps policy.
 - Built using Android Studio JBR (JDK 25) with Gradle 9.1.0 and R8 `proguard-android-optimize.txt`.
 - Includes all 5 published packs (`ABM@48`, `BFM@54`, `ABFM@6`, `BRBL@1`, `CB@1`, 8,395 items).
 
