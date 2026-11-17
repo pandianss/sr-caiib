@@ -22,7 +22,7 @@ test('CB A U01 B001: numerical answers recompute', () => {
   check("The FOMC has seven Governors and twelve regional presidents", 7+5, "12");
   check("Presidents of the twelve regional Federal Reserve Banks do not", 12-5, "7");
   check("Germany established its central bank in 1876", 1893-1876, "17");
-  check("The courseware says there were about a dozen", 160-12, "148");
+  check("The courseware counts about a dozen central", 160-12, "148");
   check("The currency to deposit ratio is 80 per cent", 0.8*500, "400");
   check("In a developed market the currency to deposit ratio is 10", 0.1*500, "50");
 });

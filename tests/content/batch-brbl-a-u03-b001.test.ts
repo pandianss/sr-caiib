@@ -21,7 +21,7 @@ test('BRBL A U03 B001: numerical answers recompute', () => {
   check("With the same bank rate of 6.25 per cent", 6.25+5, "11.25");
   check("A bank has a CRR shortfall of Rs 365 crore", 365*0.095/365*100, "9.5");
   check("A bank has a profit of Rs 250 crore", 0.2*250, "50");
-  check("A non-scheduled bank has demand and time liabilities of Rs 2,000", 0.03*2000, "60");
+  check("On the last Friday of the second preceding fortnight a", 0.03*2000, "60");
   check("A bank has net demand and time liabilities of Rs 1,500 crore", 0.4*1500, "600");
   check("A fixed deposit matured in 2013", 2013+10, "2023");
 });

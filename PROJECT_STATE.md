@@ -1,4 +1,14 @@
 # Project execution state
+## Originality pass against source courseware (AUD-010) — 17 November 2026
+
+Owner request: confirm that published content is not copied from the source books. All 8,395 items were compared with OCR text of the five courseware books (3,297 pages). Findings, method and residuals: `content/audit/REPORT_002_ORIGINALITY_PASS_2026-11-17.md`.
+
+- **Found**: 1,394 must-fix fields in 1,036 items, including 63 questions that tracked the books' own "Check Your Progress" questions and 368 stems lifted from source sentences. Central Banking held about half.
+- **Corrected**: 1,158 fields in 728 items reworded in the draft batches; facts and answer keys unchanged. Must-fix flags fell to 505, which are proper names, Act titles, statutory wording and standard term lists.
+- **Republished locally**: `ABM@49`, `BFM@55`, `ABFM@7`, `BRBL@2`, `CB@2`. Typecheck, lint and 695/695 tests pass.
+- **Not done**: independent re-verification of the rewordings (Antigravity); decision on about 740 statutory quotations and 8 numeric examples that keep the source's figures; Android release (the Play build still carries the previous text).
+- **Standing rule**: run `scripts/originality/` on every new paper before first publication.
+
 ## Android Release v1.0.4 (versionCode 5) — 17 November 2026
 
 - **Version Bump**: `versionCode 5`, `versionName "1.0.4"` in `android/app/build.gradle`.

@@ -16,7 +16,7 @@ const check = (stemStart: string, computed: number, expected: string) => {
 };
 
 test('CB A U02 B001: numerical answers recompute', () => {
-  check("The money multiplier is 1.8 and base money increases", 1.8*2000, "3600");
+  check("Base money rises by Rs 2,000 crore when the money", 1.8*2000, "3600");
   check("Money supply is Rs 15,000 crore and base money", 15000/6000, "2.5");
   check("The money multiplier is 2.5. By how many crore", 1500/2.5, "600");
   check("A bank has loaned Rs 100 crore", 0.9*100, "90");

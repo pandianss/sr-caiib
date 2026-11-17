@@ -16,8 +16,8 @@ const check = (stemStart: string, computed: number, expected: string) => {
 };
 
 test('CB A U03 B001: numerical answers recompute', () => {
-  check("The Reserve Bank raised the Bank Rate from 4 per cent", 6-4, "2");
-  check("The Reserve Bank could raise the Bank Rate by 50 basis points", 50/100, "0.5");
+  check("During 1960-66 the Reserve Bank took the Bank Rate", 6-4, "2");
+  check("In 1963 the Reserve Bank was able to raise the Bank Rate by", 50/100, "0.5");
   check("A WMA limit is Rs 20,000 crore", 0.75*20000, "15000");
   check("Ad hoc Treasury Bills were phased out", 1996-1994+1, "3");
   check("A Government borrows Rs 8,000 crore", 0.15*8000, "1200");
