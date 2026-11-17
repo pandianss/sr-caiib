@@ -20,13 +20,21 @@ ship inside the app and later content arrives with app updates.
 - `android/` is the generated Gradle project. Build outputs, `local.properties` and keystores are git-ignored.
 - `npm run android:sync` builds the web app and copies it into the Android project.
 
-## Verified build (16 Nov 2026)
+## Verified build (17 Nov 2026 — v1.0.4, versionCode 5)
 
-`npm run android:sync`, then in `android/` with `JAVA_HOME` set to Android Studio's JBR
-(`C:\Program Files\Android\Android Studio\jbr`, JDK 25) and `local.properties` containing
-`sdk.dir=C:/Users/<you>/AppData/Local/Android/Sdk`: `gradlew assembleDebug` produced a 6.7 MB `app-debug.apk`.
-The Gradle wrapper was raised to 9.1.0 because Capacitor 8 needs Java 21+ and Gradle 8.14 cannot run on JDK 25.
-Not yet done: running the APK (no emulator or device was available) and the signed release bundle.
+Signed release bundle built with R8 code optimization and ProGuard obfuscation:
+- Output: `android/app/build/outputs/bundle/release/app-release.aab` (4.76 MB)
+- De-obfuscation mapping: `android/app/build/outputs/mapping/release/mapping.txt`
+- Built using Android Studio JBR (JDK 25) with Gradle 9.1.0 and R8 `proguard-android-optimize.txt`.
+- Includes all 5 published packs (`ABM@48`, `BFM@54`, `ABFM@6`, `BRBL@1`, `CB@1`, 8,395 items).
+
+## Multi-Agent Release Synchronization Protocol (Claude, Codex, Antigravity)
+
+To prevent version clashes in Google Play Console (such as "Version code X has already been used"):
+1. **Monotonic Version Code**: Google Play strictly rejects re-uploads of existing version codes. Every agent cutting a release bundle MUST increment `versionCode` by at least +1 in `android/app/build.gradle` and bump `versionName`.
+2. **Atomic Content Sync**: Always run `npm run build && npx cap copy android` before triggering Gradle, so all published content packs and updated manifest are packaged into `android/app/src/main/assets/public/content/`.
+3. **R8 & ProGuard Preservation**: Ensure `minifyEnabled true`, `shrinkResources true`, and `proguard-rules.pro` remain active so Play Console DEX optimization and obfuscation checks pass.
+4. **Log the Release**: Record the version code, bundle size, and git commit in this file and `PROJECT_STATE.md`.
 
 ## Remaining actions, in order
 

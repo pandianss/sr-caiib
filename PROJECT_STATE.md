@@ -1,4 +1,11 @@
 # Project execution state
+## Android Release v1.0.4 (versionCode 5) — 17 November 2026
+
+- **Version Bump**: `versionCode 5`, `versionName "1.0.4"` in `android/app/build.gradle`.
+- **R8 / ProGuard Optimization**: Enabled `minifyEnabled true`, `shrinkResources true`, and `proguard-android-optimize.txt` with Capacitor bridge preservation rules in `android/app/proguard-rules.pro`. Resolves Play Console DEX optimization and obfuscation warnings.
+- **Signed Release AAB**: Successfully compiled to `android/app/build/outputs/bundle/release/app-release.aab` (4.76 MB) with de-obfuscation `mapping.txt`.
+- **Multi-Agent Release Sync**: Documented shared protocol in `docs/play-release.md` for Claude, Codex, and Antigravity: monotonic `versionCode` increments, atomic web asset copy via `npm run build && npx cap copy android`, and verified release logging.
+
 ## Publication Milestone: All 4 Compulsory Papers + Central Banking Published — 17 November 2026
 
 **Major Milestone Achieved**: All four compulsory CAIIB papers (`ABM`, `BFM`, `ABFM`, `BRBL`) plus Central Banking (`CB`) are fully authored, independently audited, verified against primary statutes and calculation test suites, and officially published into release packs.
